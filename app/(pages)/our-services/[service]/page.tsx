@@ -1,8 +1,12 @@
 "use client";
 import { services } from "@/components/unique/services/Service";
 import SectionLayout from "@/components/universal/SectionLayout";
-import { StickyContainer, Sticky } from "react-sticky";
+// import { usePathname } from "next/navigation";
+
 const page = () => {
+  // const pathname = usePathname();
+  // console.log("test", pathname.split("/")[2]);
+
   return (
     <SectionLayout bg="">
       <div className="grid grid-cols-[65%_30%] gap-8">
