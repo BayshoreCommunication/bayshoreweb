@@ -4,6 +4,7 @@ import { AiOutlineRight } from "react-icons/ai";
 export let services: {
   logo: string;
   url: string;
+  shortTitle: string;
   title: string;
   description: string;
 }[];
@@ -12,6 +13,7 @@ services = [
     logo: "/assets/service/web.svg",
     url: "website-design",
     title: "Website Design Service",
+    shortTitle: "Website Design",
     description: `<p>Any company or business that wants to thrive online in the quick-paced digital world needs a website that is both aesthetically attractive and well-designed. The value of appealing website design services that are tailored to your company's requirements is recognized by Bayshore Communications. Our team of specialists is committed to building websites that have an impact, with an emphasis on user-friendly interfaces and cutting-edge technology.</p>
     <h3>Captivating Designs Tailored for Your Business</h3>
     <p>At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.</p>
@@ -145,6 +147,7 @@ services = [
     logo: "/assets/service/mobile-app.svg",
     url: "mobile-app",
     title: "Mobile App Service",
+    shortTitle: "Mobile App",
     description: `<p>Welcome to the era of the mobile app revolution, where the world fits perfectly in the palm of your hand! We are thrilled to introduce you to our cutting-edge Mobile App service, designed to unleash the true potential of your business in the digital realm. As a trailblazing digital marketing and software solution company, Bayshore understand that having a powerful and intuitive mobile app is the key to staying ahead of the competition in today's fast-paced world.</p>
       <p>Imagine a world where your brand's presence is always just a tap away, customer engagement is at the highest level, and business opportunities flourish effortlessly. With Bayshore Mobile App service, we are here to transform your vision into reality, reining the immense power of mobile technology to elevate your business to new heights. Whether you're a small startup with big dreams or an established enterprise seeking to expand your digital footprint, our team of skilled developers, designers, and marketers will work tirelessly to create a mobile app that reflects the unique essence of your brand.</p>
 
@@ -393,6 +396,7 @@ services = [
     logo: "/assets/service/seo.svg",
     url: "seo-service",
     title: "SEO Service",
+    shortTitle: "SEO",
     description: `<h2>The Digital Marketing Game Changer: Unleash Online Success Through Strategic Search Engine Optimization</h2>
       <p>Are you aware that 93% of all internet encounters start with a search engine, and there are over 5 billion queries made on search engines every day? Yes, it is clear that the importance of SEO (Search Engine Optimization) cannot be understated. With this ability, you might reach millions of potential clients without investing any money in advertising. You may outrank your rivals on Google and other search engines, transforming your website into a potent lead and conversion generator that operates around the clock.</p>
       <p>The method of improving your website and content to rank higher and better in search results is known as SEO or search engine optimization. It is beneficial to match the expectations and interests of your potential consumers with the requirements of search engines when developing your website and content. You may develop your business by using SEO to increase organic traffic, increase internet visibility, build brand credibility, and boost brand trust.</p>
@@ -575,6 +579,7 @@ services = [
     logo: "/assets/service/ui.svg",
     url: "ui-ux-design",
     title: "UI/UX Design Service",
+    shortTitle: "UI/UX Design",
     description: `<p>Do you want to create a website or an app that not only looks good, but also works well? Do you want to improve your retention, conversion rates, as well as user satisfaction? If so, you need a UI/UX design service that can help you achieve your goals. Every brand or company wants to stand out from their competitors and grow their business. And for that they need: the best visual representation of their business. That&rsquo;s where we, Bayshore Communication, come in. We are a team of talented and passionate UI/UX designers who can help you design and develop a product that users love and that expands your business goals.</p>
       <h2>User Research and Persona Development</h2>
       <p>The development of persona and user research are crucial elements in the user experience and interface design process. It helps to understand your users' identities, what they actually require, and how they respond to your service or product. Therefore, the Bayshore team uses different tactics and technologies to help you comprehend their needs and create target user personas.</p>
@@ -735,8 +740,8 @@ services = [
   {
     logo: "/assets/service/ads.svg",
     url: "paid-advertising",
-    title:
-      "Effective Paid Advertising Services to Boost Your Business  ",
+    title: "Effective Paid Advertising Services to Boost Your Business  ",
+    shortTitle: "Paid Advertising",
     description: `<p>Do you want to increase your client base and boost your revenue? Maximize the impact of your marketing spending, and get a good return on your investment? If so, Bayshore Communication must provide you with successful paid advertising services. We are a group of skilled professionals who can assist you in developing and managing programs that are tailored to your target market, produce leads, and boost sales. We have the expertise to make it happen whether you require ads for Google, Facebook, Instagram, or any other platform. Together, we will determine your objectives, examine your market, and develop a plan of action that fits your requirements and price range. Moreover, we monitor and optimize your campaigns to make sure they are performing well and delivering results. With Bayshore Communication, you can trust that your paid advertising is in good hands.</p>
       <h2>Customized Paid Advertising Strategies</h2>
       <p>At Bayshore Communication, we know that every business is different and has its own unique goals and challenges. That&rsquo;s why we don&rsquo;t offer generic solutions, but rather customized paid advertising strategies that match your specific needs and objectives. Whether your goal is to raise brand recognition, produce more leads, enhance conversions, or keep repeat customers, we can help you create and execute a plan that works for you.</p>
@@ -800,6 +805,7 @@ services = [
     url: "social-media-marketing",
     title:
       "Boost Your Business with Expert Social Media Marketing and Management Services",
+    shortTitle: "Social Media Marketing",
     description: `<h2>Introduce to Social Media Marketing</h2>
       <p>Bayshore welcomes you to the extraordinary realm of Social Media Marketing and Management Service, where we specialize in creating digital experiences that resonate with a wide audience. In this era of remarkable technological advancements, social media has become an unstoppable force, connecting billions of individuals worldwide. By harnessing the immense power of this virtual universe, we embark on a journey to unlock the true potential of social media marketing, going beyond the conventional and redefining the very essence of business success.</p>
       <p>At our core, we understand the seismic impact that social media marketing can have on the destiny of a business, serving as a catalyst for growth, innovation, and unparalleled success. But media advertising is not a universal strategy. It requires planning, creativity, and management to achieve the best results. That&rsquo;s where we come in, where we take the reins of management and monitoring, so you can focus on what you do best &ndash; growing your business, providing comprehensive analytics and insights, enabling you to make informed decisions, and fine-tuning your social media strategy for maximum impact.</p>
@@ -967,6 +973,7 @@ services = [
     logo: "/assets/service/social.svg",
     url: "social-media-management",
     title: "Social Media Management",
+    shortTitle: "Social Media Management",
     description:
       "You can safeguard and improve your online reputation with the help of our social media team of executives. We manage all parts of your social media presence, including generating and uploading pertinent material, engaging with followers, scheduling it for the best delivery, monitoring and adjusting your SMM plan, and tracking your outcomes.",
   },
@@ -976,6 +983,7 @@ services = [
     url: "email-marketing",
     title:
       "Professional Email Marketing Services: Drive Engagement & Conversions ",
+    shortTitle: "Email Marketing",
     description: `<p>Trust is essential in email marketing. We at Bayshore Communication are proud of the trust we've earned from countless clients who have seen exceptional results. Our team is made up of seasoned professionals who live and breathe email marketing. We stay up to date on the latest trends, best practices, and innovative techniques to ensure that each email campaign we create is tailored to meet and exceed your specific business objectives.</p>
       <p>Let's get further into the superior email marketing services we offer. We're excited to show you how we can help your company meet new heights.</p>
       <h2>Customized Email Marketing Strategy</h2>
@@ -1190,8 +1198,8 @@ services = [
   {
     logo: "/assets/service/market.svg",
     url: "marketing-automation",
-    title:
-      "Powerful Marketing Automation Services | Boost Efficiency & ROI ",
+    title: "Powerful Marketing Automation Services | Boost Efficiency & ROI ",
+    shortTitle: "Marketing Automation",
     description: `<h2>Introduce to Marketing Automation</h2>
       <p>If you are a business owner or a marketer, you know how challenging and time-consuming it can be to manage all the different aspects of your marketing strategy. You have to create and send emails, post, and monitor social media, generate and qualify leads, and more. And you have to do all this while keeping up with the changing needs and preferences of your customers. How can you do it all without burning out or losing focus? This is where you need marketing automation.</p>
       <p>Marketing automation isn't just about embracing the latest trends; it's about embracing the future of marketing. It's a transformative force that empowers you to connect with your audience in ways you never thought possible. Marketing automation can help you simplify and streamline your marketing workflow, while enhancing your efficiency, boosting your return on investment (ROI), and propelling your business forward in a highly competitive landscape. Gone are the days of manual, time-consuming tasks that drain your resources and hinder your growth. Now is the time to unlock the true potential of your marketing efforts and amplify your impact.</p>
@@ -1355,6 +1363,7 @@ services = [
     url: "content-marketing",
     title:
       "Expert Content Marketing Services: Crafting Impactful Connections  ",
+    shortTitle: "Content Marketing",
     description: `<p>Bayshore Communication is a dependable digital marketing partner that offers comprehensive content marketing services to help businesses reach and engage their target audience. Our talented content strategists, SEO experts, and creative professionals collaborate to develop customized strategies, optimize content for search engines, and track performance. Let's delve into the content marketing services we offer to help your company achieve the success you've always desired.</p>
       <h2>Content Strategy Development</h2>
       <p>We know that a solid content strategy is the foundation of any successful content marketing campaign. Our experts will collaborate with you to create a comprehensive content strategy that is in sync with your specific goals, ensuring that every piece of content created is purposeful and impactful.</p>
@@ -1561,6 +1570,7 @@ services = [
     logo: "/assets/service/content-writing.svg",
     url: "content-writing",
     title: "Content Writing",
+    shortTitle: "Content Writing",
     description:
       "We craft captivating and informative content for various goals and audiences. Whether you want to attract more visitors to your blog, website, newsletter, social media, or any other channel, we can assist you. We have a team of expert content writers who can deliver top-notch content for your business requirements.",
   },
@@ -1568,8 +1578,8 @@ services = [
   {
     logo: "/assets/service/digital-pr.svg",
     url: "digital-pr",
-    title:
-      "Boost Your Online Presence with Expert Digital PR Services ",
+    title: "Boost Your Online Presence with Expert Digital PR Services ",
+    shortTitle: "Digital PR",
     description: `<p>Digital PR, short for Digital Public Relations, is a strategic approach to managing your brand's online reputation and engagement with your target audience. It involves leveraging various digital channels, including online media, social media, influencer collaborations, and content marketing, to create a positive image for your brand.</p>
       <p>In today's digital age, where consumers heavily rely on the internet to make purchasing decisions, having a strong online presence is crucial. Digital PR plays a pivotal role in shaping your brand's online identity, amplifying your key messages, and establishing your authority in the industry.</p>
       <p>At Bayshore Communication, we understand that your online presence can significantly impact your brand's success. Our tailored digital PR strategies ensure that your brand shines across all relevant online platforms, capturing the attention of your potential customers.</p>
@@ -1894,8 +1904,8 @@ services = [
   {
     logo: "/assets/service/graphic-design.svg",
     url: "graphic-design",
-    title:
-      "Successful Graphic Design Services for Effective Branding and Visual Communication ",
+    title: "Successful Graphic Design Services for Effective Branding and Visual Communication ",
+    shortTitle: "Graphic Design",
     description: `<p>Bayshore Communication, your one-stop shop for high quality graphic design services that will propel your company to the top of the market. In today's cutthroat business world, captivating design is the key to winning over your audience and standing out from the crowd.</p>
     <p>Our talented design team offers a wide range of services. Let's take a look at how our top-tier graphic design services can help your company reach new visual heights.</p>
     <h2>Logo Design Services</h2>
@@ -1977,8 +1987,8 @@ services = [
   {
     logo: "/assets/service/motion.svg",
     url: "motion-graphic",
-    title:
-      "Captivate Your Audience with Engaging Motion Graphics Services ",
+    title: "Captivate Your Audience with Engaging Motion Graphics Services ",
+    shortTitle: "Motion Graphic",
     description: `<p>Think about smoothly moving images, dynamic typography, and brilliant colors that express your brand's story and important themes with ease. Our talented team of designers and animators combines artistic vision with technical craftsmanship to create motion graphics that transcend standard marketing approaches and boost your digital presence.</p>
       <p>But what sets Bayshore Communication apart? Our motion graphics services are more than just animations. Let's take a deeper look at the motion graphics services we offer to captivate your audience.</p>
       <h2>Concept Development</h2>
@@ -2205,8 +2215,8 @@ services = [
   {
     logo: "/assets/service/video-production.svg",
     url: "video-production",
-    title:
-      "Video Production Services for Enhanced Online Presence ",
+    title: "Video Production Services for Enhanced Online Presence ",
+    shortTitle: "Video Production",
     description: `<p>Welcome to Bayshore Communication's video production services, where we craft digital masterpieces that bring your brand to life. Consider us the conductors of your brand's symphony, orchestrating mesmerizing video production services that captivate your audience and enhance your online presence.</p>
       <p>We bring together a professional team of video production experts to create fascinating visual narratives that resonate with your target audience, just as a good conductor brings together a diverse ensemble of musicians to create beautiful melodies.</p>
       <h2>Concept Development: Unleash Your Brand's Potential</h2>
@@ -2397,6 +2407,7 @@ services = [
     url: "influencer-marketing",
     title:
       "Effective Influencer Marketing Services for Increased Brand Visibility and Engagement ",
+    shortTitle: "Influencer Marketing",
     description: `<p>Influencer marketing is a powerful force that has emerged to revolutionize brand promotion in today's fast paced digital landscape, where attention spans are fleeting and consumer preferences are constantly evolving. It's a game changer, a dynamic strategy that's sweeping the advertising world. And at Bayshore Communication, we've mastered the art of harnessing this powerful phenomenon to launch brands to new heights.Are you ready to leap in? Here are some of the high quality influencer marketing services we provide:</p>
       <h2>Comprehensive Influencer Strategy Development</h2>
       <p>Crafting a winning influencer strategy is like laying the groundwork for your brand's targeted growth. Bayshore Communication specializes in developing comprehensive influencer strategies tailored to your brand's unique needs. Our expertise lies in unlocking success through the creation of custom influencer campaigns and implementing targeted strategies that resonate with your ideal audience. Let's dive into how we can drive your brand forward with our strategic approach.</p>
@@ -2565,6 +2576,7 @@ interface ServiceProps {
   el: {
     logo: string;
     title: string;
+    shortTitle: "";
     description: string;
   };
 }
