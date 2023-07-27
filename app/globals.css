@@ -267,3 +267,35 @@ body {
     justify-content: center;
   }
 }
+
+
+.service-style h1{
+  font-weight: 800;
+  font-size: 38px;
+}
+.service-style h2{
+  font-weight: 600;
+  font-size: 28px;
+  padding-top: 10px;
+}
+.service-style h3{
+  font-weight: 500;
+  font-size: 22px;
+  padding-top: 10px;
+}
+.service-style p{
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 10px;
+}
+.service-style b{
+  font-size: 18px;
+  padding-top: 10px;
+}
+.service-style ul{
+  list-style: disc;
+  padding-left: 30px;
+}
+.service-style li{
+ padding-top: 10px !important;
+}
