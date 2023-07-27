@@ -391,7 +391,7 @@ services = [
 
   {
     logo: "/assets/service/seo.svg",
-    url: "seo",
+    url: "seo-service",
     title: "SEO Service",
     description: `<h2>The Digital Marketing Game Changer: Unleash Online Success Through Strategic Search Engine Optimization</h2>
       <p>Are you aware that 93% of all internet encounters start with a search engine, and there are over 5 billion queries made on search engines every day? Yes, it is clear that the importance of SEO (Search Engine Optimization) cannot be understated. With this ability, you might reach millions of potential clients without investing any money in advertising. You may outrank your rivals on Google and other search engines, transforming your website into a potent lead and conversion generator that operates around the clock.</p>
