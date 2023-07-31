@@ -44,7 +44,10 @@ const page = () => {
             (
               el: {
                 logo: string;
+                url: string;
                 title: string;
+                shortTitle: string;
+                shortDescription: string;
                 description: string;
               },
               i: number

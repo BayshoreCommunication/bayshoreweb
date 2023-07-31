@@ -1,19 +1,40 @@
 import Image from "next/image";
+import Link from "next/link";
 import { AiOutlineRight } from "react-icons/ai";
+import Parser from "html-react-parser";
+import Package from "@/components/universal/Package";
 
 export let services: {
   logo: string;
   url: string;
+  homeTabBar: [
+    {
+      titleTab: string;
+      contentTab: string;
+      titleIcon: string;
+      titleImage: string;
+    }
+  ];
   shortTitle: string;
   title: string;
+  shortDescription: string;
   description: string;
 }[];
 services = [
   {
     logo: "/assets/service/web.svg",
     url: "website-design",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title: "Website Design Service",
     shortTitle: "Website Design",
+    shortDescription: `Any company or business that wants to thrive online in the quick-paced digital world needs a website that is both aesthetically attractive and well-designed. The value of appealing website design services that are tailored to your company's requirements is recognized by Bayshore Communications. Our team of specialists is committed to building websites that have an impact, with an emphasis on user-friendly interfaces and cutting-edge technology.`,
     description: `<p>Any company or business that wants to thrive online in the quick-paced digital world needs a website that is both aesthetically attractive and well-designed. The value of appealing website design services that are tailored to your company's requirements is recognized by Bayshore Communications. Our team of specialists is committed to building websites that have an impact, with an emphasis on user-friendly interfaces and cutting-edge technology.</p>
     <h3>Captivating Designs Tailored for Your Business</h3>
     <p>At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.</p>
@@ -30,6 +51,7 @@ services = [
     <h3>Intuitive Navigation and Information Architecture</h3>
     <p>A well-organized and intuitive website navigation is essential for guiding visitors through your content effectively. We provide intelligent information architecture as part of our website design services to make sure your website's structure and navigation are simple and easy to use. For example, we will organize your website's material in a logical and user-focused manner like using clear headings, subheadings, menus, links, and buttons, so that your visitors can quickly discover what they're searching for and navigate through your website without becoming confused or frustrated. By providing clear pathways and logical organization, we also help optimize your domain site to rank higher on search engines and attract more traffic.</p>
     <h2>Responsive Web Design for Seamless User Experience</h2>
+
     <p>In today's mobile-centric world, responsive web design is no longer an option but a necessity. Each device has its own screen size, resolution and orientation, which can affect how your website looks and functions. That&rsquo;s why, we, Bayshore Communications, specializes in creating websites that provide a coherent user experience across devices, ensuring your marketing is accessible to users on desktops, smartphones, and tablets.</p>
     <h3>Mobile First Approach for Accessibility Across Devices</h3>
     <p>With the increasing use of smartphones, a mobile-first approach is crucial for website design. Our team prioritizes the mobile version of your website, starting by designing for these devices first, ensuring that your website is optimized for smaller screens. After that, we scale up the design for larger screens, providing a consistent and enjoyable user experience across all devices. In a word, it ensures that your page is compatible with the most common devices and browsers and that your users can access your content and features without any hassle.</p>
@@ -146,8 +168,17 @@ services = [
   {
     logo: "/assets/service/mobile-app.svg",
     url: "mobile-app",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title: "Mobile App Service",
     shortTitle: "Mobile App",
+    shortDescription: `Welcome to the era of the mobile app revolution, where the world fits perfectly in the palm of your hand! We are thrilled to introduce you to our cutting-edge Mobile App service, designed to unleash the true potential of your business in the digital realm. As a trailblazing digital marketing and software solution company, Bayshore understand that having a powerful and intuitive mobile app is the key to staying ahead of the competition in today's fast-paced world.`,
     description: `<p>Welcome to the era of the mobile app revolution, where the world fits perfectly in the palm of your hand! We are thrilled to introduce you to our cutting-edge Mobile App service, designed to unleash the true potential of your business in the digital realm. As a trailblazing digital marketing and software solution company, Bayshore understand that having a powerful and intuitive mobile app is the key to staying ahead of the competition in today's fast-paced world.</p>
       <p>Imagine a world where your brand's presence is always just a tap away, customer engagement is at the highest level, and business opportunities flourish effortlessly. With Bayshore Mobile App service, we are here to transform your vision into reality, reining the immense power of mobile technology to elevate your business to new heights. Whether you're a small startup with big dreams or an established enterprise seeking to expand your digital footprint, our team of skilled developers, designers, and marketers will work tirelessly to create a mobile app that reflects the unique essence of your brand.</p>
 
@@ -395,8 +426,17 @@ services = [
   {
     logo: "/assets/service/seo.svg",
     url: "seo-service",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title: "SEO Service",
     shortTitle: "SEO",
+    shortDescription: `Are you aware that 93% of all internet encounters start with a search engine, and there are over 5 billion queries made on search engines every day? Yes, it is clear that the importance of SEO (Search Engine Optimization) cannot be understated. With this ability, you might reach millions of potential clients without investing any money in advertising. You may outrank your rivals on Google and other search engines, transforming your website into a potent lead and conversion generator that operates around the clock.`,
     description: `<h2>The Digital Marketing Game Changer: Unleash Online Success Through Strategic Search Engine Optimization</h2>
       <p>Are you aware that 93% of all internet encounters start with a search engine, and there are over 5 billion queries made on search engines every day? Yes, it is clear that the importance of SEO (Search Engine Optimization) cannot be understated. With this ability, you might reach millions of potential clients without investing any money in advertising. You may outrank your rivals on Google and other search engines, transforming your website into a potent lead and conversion generator that operates around the clock.</p>
       <p>The method of improving your website and content to rank higher and better in search results is known as SEO or search engine optimization. It is beneficial to match the expectations and interests of your potential consumers with the requirements of search engines when developing your website and content. You may develop your business by using SEO to increase organic traffic, increase internet visibility, build brand credibility, and boost brand trust.</p>
@@ -578,8 +618,17 @@ services = [
   {
     logo: "/assets/service/ui.svg",
     url: "ui-ux-design",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title: "UI/UX Design Service",
     shortTitle: "UI/UX Design",
+    shortDescription: `Do you want to create a website or an app that not only looks good, but also works well? Do you want to improve your retention, conversion rates, as well as user satisfaction? If so, you need a UI/UX design service that can help you achieve your goals. Every brand or company wants to stand out from their competitors and grow their business. And for that they need: the best visual representation of their business. That&rsquo;s where we, Bayshore Communication, come in. We are a team of talented and passionate UI/UX designers who can help you design and develop a product that users love and that expands your business goals.`,
     description: `<p>Do you want to create a website or an app that not only looks good, but also works well? Do you want to improve your retention, conversion rates, as well as user satisfaction? If so, you need a UI/UX design service that can help you achieve your goals. Every brand or company wants to stand out from their competitors and grow their business. And for that they need: the best visual representation of their business. That&rsquo;s where we, Bayshore Communication, come in. We are a team of talented and passionate UI/UX designers who can help you design and develop a product that users love and that expands your business goals.</p>
       <h2>User Research and Persona Development</h2>
       <p>The development of persona and user research are crucial elements in the user experience and interface design process. It helps to understand your users' identities, what they actually require, and how they respond to your service or product. Therefore, the Bayshore team uses different tactics and technologies to help you comprehend their needs and create target user personas.</p>
@@ -740,8 +789,17 @@ services = [
   {
     logo: "/assets/service/ads.svg",
     url: "paid-advertising",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title: "Effective Paid Advertising Services to Boost Your Business  ",
     shortTitle: "Paid Advertising",
+    shortDescription: `Do you want to increase your client base and boost your revenue? Maximize the impact of your marketing spending, and get a good return on your investment? If so, Bayshore Communication must provide you with successful paid advertising services. We are a group of skilled professionals who can assist you in developing and managing programs that are tailored to your target market, produce leads, and boost sales. We have the expertise to make it happen whether you require ads for Google, Facebook, Instagram, or any other platform. Together, we will determine your objectives, examine your market, and develop a plan of action that fits your requirements and price range. Moreover, we monitor and optimize your campaigns to make sure they are performing well and delivering results. With Bayshore Communication, you can trust that your paid advertising is in good hands.`,
     description: `<p>Do you want to increase your client base and boost your revenue? Maximize the impact of your marketing spending, and get a good return on your investment? If so, Bayshore Communication must provide you with successful paid advertising services. We are a group of skilled professionals who can assist you in developing and managing programs that are tailored to your target market, produce leads, and boost sales. We have the expertise to make it happen whether you require ads for Google, Facebook, Instagram, or any other platform. Together, we will determine your objectives, examine your market, and develop a plan of action that fits your requirements and price range. Moreover, we monitor and optimize your campaigns to make sure they are performing well and delivering results. With Bayshore Communication, you can trust that your paid advertising is in good hands.</p>
       <h2>Customized Paid Advertising Strategies</h2>
       <p>At Bayshore Communication, we know that every business is different and has its own unique goals and challenges. That&rsquo;s why we don&rsquo;t offer generic solutions, but rather customized paid advertising strategies that match your specific needs and objectives. Whether your goal is to raise brand recognition, produce more leads, enhance conversions, or keep repeat customers, we can help you create and execute a plan that works for you.</p>
@@ -803,9 +861,18 @@ services = [
   {
     logo: "/assets/service/social-media.svg",
     url: "social-media-marketing",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title:
       "Boost Your Business with Expert Social Media Marketing and Management Services",
     shortTitle: "Social Media Marketing",
+    shortDescription: `Introduce to Social Media Marketing. Bayshore welcomes you to the extraordinary realm of Social Media Marketing and Management Service, where we specialize in creating digital experiences that resonate with a wide audience. In this era of remarkable technological advancements, social media has become an unstoppable force, connecting billions of individuals worldwide. By harnessing the immense power of this virtual universe, we embark on a journey to unlock the true potential of social media marketing, going beyond the conventional and redefining the very essence of business success.`,
     description: `<h2>Introduce to Social Media Marketing</h2>
       <p>Bayshore welcomes you to the extraordinary realm of Social Media Marketing and Management Service, where we specialize in creating digital experiences that resonate with a wide audience. In this era of remarkable technological advancements, social media has become an unstoppable force, connecting billions of individuals worldwide. By harnessing the immense power of this virtual universe, we embark on a journey to unlock the true potential of social media marketing, going beyond the conventional and redefining the very essence of business success.</p>
       <p>At our core, we understand the seismic impact that social media marketing can have on the destiny of a business, serving as a catalyst for growth, innovation, and unparalleled success. But media advertising is not a universal strategy. It requires planning, creativity, and management to achieve the best results. That&rsquo;s where we come in, where we take the reins of management and monitoring, so you can focus on what you do best &ndash; growing your business, providing comprehensive analytics and insights, enabling you to make informed decisions, and fine-tuning your social media strategy for maximum impact.</p>
@@ -972,8 +1039,17 @@ services = [
   {
     logo: "/assets/service/social.svg",
     url: "social-media-management",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title: "Social Media Management",
     shortTitle: "Social Media Management",
+    shortDescription: "",
     description:
       "You can safeguard and improve your online reputation with the help of our social media team of executives. We manage all parts of your social media presence, including generating and uploading pertinent material, engaging with followers, scheduling it for the best delivery, monitoring and adjusting your SMM plan, and tracking your outcomes.",
   },
@@ -981,9 +1057,18 @@ services = [
   {
     logo: "/assets/service/mail.svg",
     url: "email-marketing",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title:
       "Professional Email Marketing Services: Drive Engagement & Conversions ",
     shortTitle: "Email Marketing",
+    shortDescription: `Trust is essential in email marketing. We at Bayshore Communication are proud of the trust we've earned from countless clients who have seen exceptional results. Our team is made up of seasoned professionals who live and breathe email marketing. We stay up to date on the latest trends, best practices, and innovative techniques to ensure that each email campaign we create is tailored to meet and exceed your specific business objectives.`,
     description: `<p>Trust is essential in email marketing. We at Bayshore Communication are proud of the trust we've earned from countless clients who have seen exceptional results. Our team is made up of seasoned professionals who live and breathe email marketing. We stay up to date on the latest trends, best practices, and innovative techniques to ensure that each email campaign we create is tailored to meet and exceed your specific business objectives.</p>
       <p>Let's get further into the superior email marketing services we offer. We're excited to show you how we can help your company meet new heights.</p>
       <h2>Customized Email Marketing Strategy</h2>
@@ -1198,8 +1283,18 @@ services = [
   {
     logo: "/assets/service/market.svg",
     url: "marketing-automation",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title: "Powerful Marketing Automation Services | Boost Efficiency & ROI ",
     shortTitle: "Marketing Automation",
+    shortDescription: `Introduce to Marketing Automation.
+    If you are a business owner or a marketer, you know how challenging and time-consuming it can be to manage all the different aspects of your marketing strategy. You have to create and send emails, post, and monitor social media, generate and qualify leads, and more. And you have to do all this while keeping up with the changing needs and preferences of your customers. How can you do it all without burning out or losing focus? This is where you need marketing automation.`,
     description: `<h2>Introduce to Marketing Automation</h2>
       <p>If you are a business owner or a marketer, you know how challenging and time-consuming it can be to manage all the different aspects of your marketing strategy. You have to create and send emails, post, and monitor social media, generate and qualify leads, and more. And you have to do all this while keeping up with the changing needs and preferences of your customers. How can you do it all without burning out or losing focus? This is where you need marketing automation.</p>
       <p>Marketing automation isn't just about embracing the latest trends; it's about embracing the future of marketing. It's a transformative force that empowers you to connect with your audience in ways you never thought possible. Marketing automation can help you simplify and streamline your marketing workflow, while enhancing your efficiency, boosting your return on investment (ROI), and propelling your business forward in a highly competitive landscape. Gone are the days of manual, time-consuming tasks that drain your resources and hinder your growth. Now is the time to unlock the true potential of your marketing efforts and amplify your impact.</p>
@@ -1361,9 +1456,18 @@ services = [
   {
     logo: "/assets/service/marketing.svg",
     url: "content-marketing",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title:
       "Expert Content Marketing Services: Crafting Impactful Connections  ",
     shortTitle: "Content Marketing",
+    shortDescription: `Bayshore Communication is a dependable digital marketing partner that offers comprehensive content marketing services to help businesses reach and engage their target audience. Our talented content strategists, SEO experts, and creative professionals collaborate to develop customized strategies, optimize content for search engines, and track performance. Let's delve into the content marketing services we offer to help your company achieve the success you've always desired.`,
     description: `<p>Bayshore Communication is a dependable digital marketing partner that offers comprehensive content marketing services to help businesses reach and engage their target audience. Our talented content strategists, SEO experts, and creative professionals collaborate to develop customized strategies, optimize content for search engines, and track performance. Let's delve into the content marketing services we offer to help your company achieve the success you've always desired.</p>
       <h2>Content Strategy Development</h2>
       <p>We know that a solid content strategy is the foundation of any successful content marketing campaign. Our experts will collaborate with you to create a comprehensive content strategy that is in sync with your specific goals, ensuring that every piece of content created is purposeful and impactful.</p>
@@ -1569,8 +1673,17 @@ services = [
   {
     logo: "/assets/service/content-writing.svg",
     url: "content-writing",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title: "Content Writing",
     shortTitle: "Content Writing",
+    shortDescription: "",
     description:
       "We craft captivating and informative content for various goals and audiences. Whether you want to attract more visitors to your blog, website, newsletter, social media, or any other channel, we can assist you. We have a team of expert content writers who can deliver top-notch content for your business requirements.",
   },
@@ -1578,8 +1691,17 @@ services = [
   {
     logo: "/assets/service/digital-pr.svg",
     url: "digital-pr",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title: "Boost Your Online Presence with Expert Digital PR Services ",
     shortTitle: "Digital PR",
+    shortDescription: `Digital PR, short for Digital Public Relations, is a strategic approach to managing your brand's online reputation and engagement with your target audience. It involves leveraging various digital channels, including online media, social media, influencer collaborations, and content marketing, to create a positive image for your brand.`,
     description: `<p>Digital PR, short for Digital Public Relations, is a strategic approach to managing your brand's online reputation and engagement with your target audience. It involves leveraging various digital channels, including online media, social media, influencer collaborations, and content marketing, to create a positive image for your brand.</p>
       <p>In today's digital age, where consumers heavily rely on the internet to make purchasing decisions, having a strong online presence is crucial. Digital PR plays a pivotal role in shaping your brand's online identity, amplifying your key messages, and establishing your authority in the industry.</p>
       <p>At Bayshore Communication, we understand that your online presence can significantly impact your brand's success. Our tailored digital PR strategies ensure that your brand shines across all relevant online platforms, capturing the attention of your potential customers.</p>
@@ -1904,8 +2026,18 @@ services = [
   {
     logo: "/assets/service/graphic-design.svg",
     url: "graphic-design",
-    title: "Successful Graphic Design Services for Effective Branding and Visual Communication ",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
+    title:
+      "Successful Graphic Design Services for Effective Branding and Visual Communication ",
     shortTitle: "Graphic Design",
+    shortDescription: `Bayshore Communication, your one-stop shop for high quality graphic design services that will propel your company to the top of the market. In today's cutthroat business world, captivating design is the key to winning over your audience and standing out from the crowd. Our talented design team offers a wide range of services. Let's take a look at how our top-tier graphic design services can help your company reach new visual heights.`,
     description: `<p>Bayshore Communication, your one-stop shop for high quality graphic design services that will propel your company to the top of the market. In today's cutthroat business world, captivating design is the key to winning over your audience and standing out from the crowd.</p>
     <p>Our talented design team offers a wide range of services. Let's take a look at how our top-tier graphic design services can help your company reach new visual heights.</p>
     <h2>Logo Design Services</h2>
@@ -1987,8 +2119,18 @@ services = [
   {
     logo: "/assets/service/motion.svg",
     url: "motion-graphic",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title: "Captivate Your Audience with Engaging Motion Graphics Services ",
     shortTitle: "Motion Graphic",
+    shortDescription: `Think about smoothly moving images, dynamic typography, and brilliant colors that express your brand's story and important themes with ease. Our talented team of designers and animators combines artistic vision with technical craftsmanship to create motion graphics that transcend standard marketing approaches and boost your digital presence.
+    But what sets Bayshore Communication apart? Our motion graphics services are more than just animations. Let's take a deeper look at the motion graphics services we offer to captivate your audience.`,
     description: `<p>Think about smoothly moving images, dynamic typography, and brilliant colors that express your brand's story and important themes with ease. Our talented team of designers and animators combines artistic vision with technical craftsmanship to create motion graphics that transcend standard marketing approaches and boost your digital presence.</p>
       <p>But what sets Bayshore Communication apart? Our motion graphics services are more than just animations. Let's take a deeper look at the motion graphics services we offer to captivate your audience.</p>
       <h2>Concept Development</h2>
@@ -2215,8 +2357,18 @@ services = [
   {
     logo: "/assets/service/video-production.svg",
     url: "video-production",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title: "Video Production Services for Enhanced Online Presence ",
     shortTitle: "Video Production",
+    shortDescription: `Welcome to Bayshore Communication's video production services, where we craft digital masterpieces that bring your brand to life. Consider us the conductors of your brand's symphony, orchestrating mesmerizing video production services that captivate your audience and enhance your online presence.
+    We bring together a professional team of video production experts to create fascinating visual narratives that resonate with your target audience, just as a good conductor brings together a diverse ensemble of musicians to create beautiful melodies.`,
     description: `<p>Welcome to Bayshore Communication's video production services, where we craft digital masterpieces that bring your brand to life. Consider us the conductors of your brand's symphony, orchestrating mesmerizing video production services that captivate your audience and enhance your online presence.</p>
       <p>We bring together a professional team of video production experts to create fascinating visual narratives that resonate with your target audience, just as a good conductor brings together a diverse ensemble of musicians to create beautiful melodies.</p>
       <h2>Concept Development: Unleash Your Brand's Potential</h2>
@@ -2405,34 +2557,33 @@ services = [
   {
     logo: "/assets/service/influence-marketing.svg",
     url: "influencer-marketing",
+    homeTabBar: [
+      {
+        titleTab: "tab",
+        contentTab: "tab",
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+    ],
     title:
       "Effective Influencer Marketing Services for Increased Brand Visibility and Engagement ",
     shortTitle: "Influencer Marketing",
+    shortDescription: `Influencer marketing is a powerful force that has emerged to revolutionize brand promotion in today's fast paced digital landscape, where attention spans are fleeting and consumer preferences are constantly evolving. It's a game changer, a dynamic strategy that's sweeping the advertising world. And at Bayshore Communication, we've mastered the art of harnessing this powerful phenomenon to launch brands to new heights.Are you ready to leap in? Here are some of the high quality influencer marketing services we provide:`,
     description: `<p>Influencer marketing is a powerful force that has emerged to revolutionize brand promotion in today's fast paced digital landscape, where attention spans are fleeting and consumer preferences are constantly evolving. It's a game changer, a dynamic strategy that's sweeping the advertising world. And at Bayshore Communication, we've mastered the art of harnessing this powerful phenomenon to launch brands to new heights.Are you ready to leap in? Here are some of the high quality influencer marketing services we provide:</p>
       <h2>Comprehensive Influencer Strategy Development</h2>
       <p>Crafting a winning influencer strategy is like laying the groundwork for your brand's targeted growth. Bayshore Communication specializes in developing comprehensive influencer strategies tailored to your brand's unique needs. Our expertise lies in unlocking success through the creation of custom influencer campaigns and implementing targeted strategies that resonate with your ideal audience. Let's dive into how we can drive your brand forward with our strategic approach.</p>
-      
-      
-      
       <h3>Tailored Influencer Strategies for Targeted Brand Growth</h3>
       <p>We know very well that every brand is unique, and a one-size-fits-all approach simply won't cut it. That's why we develop tailored influencer strategies that align with your brand's growth objectives. Our team conducts in depth research to gain a deep understanding of your target audience, industry landscape, and competitive landscape.</p>
       <p>We then craft influencer strategies that focus on reaching the right audience through the most effective channels. By analyzing data, consumer insights, and market trends, we identify the most relevant influencers who can effectively engage and resonate with your target audience. This tailored approach ensures that every influencer campaign is optimized for success, driving targeted brand growth and achieving your desired objectives.</p>
-      
-      
-      
       
       <h3>Unlocking Success: Crafting Custom Influencer Campaigns</h3>
       <p>In the world of influencer marketing, customization is key. We believe in the power of crafting custom influencer campaigns that bring your brand's unique story to life. Our team collaborates closely with you to understand your brand's identity, messaging, and campaign objectives.</p>
       <p>Using this valuable insight, we develop creative and impactful influencer campaigns that authentically showcase your brand. From product reviews and demonstrations to sponsored content and giveaways, we create a diverse range of campaign strategies that resonate with your audience. By harnessing the creativity and influence of carefully selected influencers, we unlock success and drive engagement, awareness, and conversions for your brand.</p>
       
-     
-      
       <h3>Reaching the Right Audience: Targeted Influencer Strategy Development</h3>
       <p>One of the key aspects of influencer marketing is reaching the right audience. At Bayshore Communication, we focus on developing targeted influencer strategies that ensure your brand's message reaches the audience most likely to engage and convert. We conduct meticulous audience analysis to identify the demographics, interests, and preferences of your ideal audience.</p>
       <p>Armed with this valuable data, we select influencers who have a strong connection with your target audience. Whether it's through their niche expertise, relatable content, or shared values, we ensure that your brand is positioned in front of the right eyes. By developing targeted influencer strategies, we maximize the impact of your campaigns, driving meaningful engagement and generating qualified leads.</p>
       <p>Now, let's move on to the next section, where we dive deeper into our targeted influencer identification and outreach strategies.</p>
-      
-     
       
       <p>One of the key aspects of influencer marketing is reaching the right audience. At Bayshore Communication, we focus on developing targeted influencer strategies that ensure your brand's message reaches the audience most likely to engage and convert. We conduct meticulous audience analysis to identify the demographics, interests, and preferences of your ideal audience.</p>
       <p>Armed with this valuable data, we select influencers who have a strong connection with your target audience. Whether it's through their niche expertise, relatable content, or shared values, we ensure that your brand is positioned in front of the right eyes. By developing targeted influencer strategies, we maximize the impact of your campaigns, driving meaningful engagement and generating qualified leads.</p>
@@ -2440,27 +2591,13 @@ services = [
       <h2>Targeted Influencer Identification and Outreach</h2>
       <p>In the vast sea of influencers, finding the perfect match for your brand can be like searching for hidden gems. But fear not! At Bayshore Communication, we're skilled treasure hunters when it comes to targeted influencer identification and outreach. We take pride in our strategic partnership development, uncovering the best influencers in the crowd, and building powerful collaborations that drive results.</p>
       
-      
-      
       <h3>Connecting with Influencers: Strategic Partnership Development</h3>
       <p>We understand that influencer marketing is all about building relationships. We take a strategic approach to partnership development, going beyond superficial connections. Our team invests time and effort to understand influencers on a deeper level, evaluating their content, engagement, and overall brand alignment. By developing strong and authentic relationships, we create a network of influencers who are genuinely enthusiastic about your brand.</p>
       <p>Through strategic partnership development, we lay the foundation for successful and long lasting collaborations. We prioritize influencers who not only have a significant following but also resonate with your target audience. By establishing a genuine connection, we ensure that their endorsements of your brand come across as authentic and compelling, maximizing the impact on your audience.</p>
       
-      
-      
-      
-      
-      
-      
       <h3>Uncovering Influencer Gems: Targeted Identification and Selection</h3>
       <p>Just like gemologists with a discerning eye, our influencer experts carefully uncover the most valuable influencers for your brand. We employ a meticulous process to identify influencers who have the potential to drive real impact for your brand. Our team conducts comprehensive research, leveraging industry leading tools and platforms to uncover hidden talents who align perfectly with your brand's values and target audience.</p>
       <p>We analyze factors such as engagement rates, audience demographics, content quality, and niche relevance to ensure that we select the most suitable influencers for your campaigns. By identifying these hidden gems, we tap into a network of influencers who have the power to authentically connect with your audience and amplify your brand's message.</p>
-      
-      
-      
-     
-      
-      
       
       <h3>Effective Outreach Strategies: Building Influencer Collaborations</h3>
            
@@ -2469,99 +2606,45 @@ services = [
       <p>Throughout the outreach process, we maintain open lines of communication, providing influencers with the support and resources they need to create outstanding content. We ensure that the collaboration journey is seamless, transparent, and rewarding for both influencers and your brand.</p>
       <p>Next up, let's explore the creative campaign planning and execution process, where we bring your brand to life through captivating content collaborations</p>
       
-      
- 
-
-
       <h2>Creative Campaign Planning and Execution</h2>
       <p>In the world of influencer marketing, creativity is the fuel that sets your campaigns ablaze. At Bayshore Communication, we thrive on crafting captivating and innovative campaigns that ignite audience engagement and bring your brand to life. Our creative campaign planning and execution services are designed to spark excitement, drive results, and leave a lasting impact on your target audience.</p>
-      
-      
       
       <h3>Engaging Audiences: Creative Campaign Ideation and Planning</h3>
       <p>At Bayshore Communication, we believe that a great campaign starts with a brilliant idea. Our team of creative minds collaborates closely with you to understand your brand's essence, values, and objectives. We immerse ourselves in your industry, conducting in depth research and staying up-to-date with the latest trends and consumer insights. Armed with this knowledge, we brainstorm creative campaign ideas that resonate with your target audience, ensuring they are excited and eager to engage with your brand.</p>
       <p>From captivating concepts to meticulous planning, we leave no stone unturned in crafting campaigns that capture attention and generate a buzz. Our focus is on creating unique and memorable experiences that not only promote your brand but also forge a meaningful connection with your audience.</p>
       
-    
-      
-   
-      
-      
-      
       <h3>Bringing Brands to Life: Collaborative Content Creation</h3>
       <p>Collaboration is the beating heart of our creative process. We believe that the best campaigns are co-created with influencers who align with your brand's values and have a genuine connection with your target audience. Through close collaboration, we harness the creativity and expertise of influencers, blending it seamlessly with your brand's identity.</p>
       <p>We work hand in hand with influencers to develop captivating content that tells your brand's story in an authentic and compelling way. From visually stunning imagery to engaging videos and thought provoking captions, every piece of content is carefully crafted to resonate with your target audience and leave a lasting impression. By involving influencers as active participants in the content creation process, we ensure that their unique perspectives and creative flair shine through, creating an immersive and memorable experience for your audience.</p>
-      
-     
-      
-
-      
-      
       
       <h3>Seamless Execution: Campaign Planning for Optimal Impact</h3>
       <p>A well executed campaign is like a perfectly choreographed dance. At Bayshore Communication, we leave no room for missteps. Our team meticulously plans and orchestrates every aspect of your influencer marketing campaign to maximize its impact.</p>
       <p>We take care of the nitty gritty details, from the strategic scheduling of content releases to the coordination of collaboration timelines. We ensure that every influencer collaboration is seamlessly integrated into your broader marketing strategy, amplifying your brand's message across multiple channels and platforms. Our goal is to create a cohesive and synchronized campaign that generates maximum visibility, engagement, and conversions.</p>
       <p>Throughout the campaign, we continuously monitor and optimize performance, making data driven decisions to enhance results. By staying agile and adapting to real time insights, we can capitalize on emerging trends, adjust strategies, and seize opportunities to maximize the impact of your campaign.</p>
       
-      
-
       <h2>Performance Tracking and Reporting</h2>
       <p>In the dynamic realm of influencer marketing, measuring the success of your campaigns is crucial for optimizing future strategies. At Bayshore Communication, we're all about insights based on data and transparent reporting. Our performance tracking and reporting services allow you to gauge the impact of your influencer marketing initiatives and make informed decisions to drive even greater results.</p>
     
-     
-      
       <h3>Measuring Success: Tracking Influencer Marketing Performance</h3>
       <p>Tracking the performance of your influencer marketing campaigns is key to understanding their effectiveness. We employ advanced tracking methods to monitor key performance indicators (KPIs) and measure the success of your campaigns. By leveraging industry leading analytics tools and tracking technologies, we collect valuable data on various metrics, including engagement rates, reach, conversions, and return on investment (ROI).</p>
       <p>Our team analyzes these performance metrics to gain insights into the impact and effectiveness of your influencer campaigns. We continuously monitor campaign performance and provide accurate information on how your brand is being received by the target audience. This method based on data enables us to make data backed decisions, optimize strategies, and refine future campaigns for maximum impact.</p>
       
-      
-      
-    
-      
- 
-      
       <h3>Actionable Insights: Performance Metrics and Data Analysis</h3>
       <p>Data analysis is at the core of our performance tracking and reporting process. We go beyond surface level metrics and dive deep into the data to extract actionable insights. Our team examines performance metrics, such as audience demographics, engagement patterns, content reach, and conversion rates, to gain a comprehensive understanding of your campaign's impact.</p>
       <p>By analyzing this wealth of data, we uncover valuable insights about your audience's preferences, behavior, and response to influencer marketing initiatives. These insights enable us to make informed decisions, refine targeting strategies, and optimize future campaigns for even better results. We believe that using data to make decisions is critical to continuously improving the performance of your influencer marketing efforts.</p>
-      
-     
-      
-   
-      
-      
       
       <h3>Transparency in Reporting: ROI and Performance Metrics</h3>
       <p>Transparency is a fundamental value we uphold in our reporting practices. We believe in providing clear, comprehensive, and transparent reports that showcase the performance and ROI of your influencer marketing campaigns. Our team prepares detailed reports that present a comprehensive overview of campaign metrics, performance trends, and key insights.</p>
       <p>We provide transparent reporting on metrics such as engagement, reach, conversions, and other relevant performance indicators. Additionally, we calculate and highlight the ROI generated from your influencer marketing investments. Our goal is to ensure that you have a clear understanding of the value and impact of your influencer campaigns, empowering you to make informed decisions and optimize your marketing strategies.</p>
       <h2>Influencer Relationship Management</h2>
       <p>Building strong and long lasting relationships with influencers is a cornerstone of successful influencer marketing. Bayshore Communication values the importance of effective influencer relationship management in driving impactful campaigns. Our dedicated team specializes in nurturing partnerships, cultivating connections, and streamlining collaboration processes. Let's delve into how we foster strong influencer relationships that amplify the success of your brand.</p>
-      
-   
-      
-     
-      
-      
-      
       <h3>Nurturing Partnerships: Effective Influencer Relationship Management</h3>
       <p>We believe in fostering genuine and meaningful partnerships with influencers. We go beyond transactional interactions and focus on building relationships based on trust, authenticity, and shared goals. Our team invests time and effort in understanding influencers' passions, values, and audience dynamics to ensure the perfect alignment with your brand.</p>
       <p>By nurturing these partnerships, we create a strong foundation for long term collaborations. We engage in open communication, actively listen to influencers' ideas, and provide them with the support they need to effectively promote your brand. Our goal is to foster mutually beneficial relationships that result in authentic, engaging, and impactful influencer campaigns.</p>
       
-      
-      
-     
-      
-     
-      
       <h3>Cultivating Connections: Long lasting Influencer Collaborations</h3>
       <p>In the fast paced world of influencer marketing, cultivating long term relationships is critical for long lasting success. At Bayshore Communication, we prioritize building lasting relationships with influencers who are passionate about your brand and resonate with your target audience. We believe that these connections foster authenticity and credibility, which leads to increased engagement and trust among your target audience.</p>
       <p>Our team focuses on cultivating connections by nurturing ongoing collaborations with influencers. We work closely with influencers to create a collaborative environment where their creativity can flourish, resulting in compelling content that captures the essence of your brand. By fostering these long lasting partnerships, we ensure consistent brand messaging, seamless integration, and increased audience loyalty.</p>
-      
-      
-      
-     
-
-      
-      
       <h3>Streamlined Collaboration: Managing Influencer Relationships</h3>
       <p>Growing influencer relationships requires a streamlined and efficient process. At Bayshore Communication, we understand the importance of seamless collaboration between your brand and influencers. Our team takes care of all aspects of managing influencer relationships, from initial outreach and negotiation to campaign coordination and post campaign follow up.</p>
       <p>We handle the entire process with professionalism and attention to detail. Our streamlined approach ensures effective communication, clear expectations, and timely deliverables. We proactively manage timelines, logistics, and contractual obligations, allowing you to focus on your core business while we take care of the intricacies of influencer relationship management.</p>
@@ -2575,8 +2658,18 @@ services = [
 interface ServiceProps {
   el: {
     logo: string;
+    url: string;
+    homeTabBar: [
+      {
+        titleTab: string;
+        contentTab: string;
+        titleIcon: string;
+        titleImage: string;
+      }
+    ];
     title: string;
-    shortTitle: "";
+    shortTitle: string;
+    shortDescription: string;
     description: string;
   };
 }
@@ -2593,16 +2686,19 @@ const Service: React.FC<ServiceProps> = ({ el }) => {
           className="w-[8rem] h-[8rem] md:w-[9.9rem] md:h-[9.9rem] mb-[1rem] md:mb-[1.5rem]"
         />
       </div>
-      <h4 className="heading-four">{el.title}</h4>
-      <p className="text-base text-cut text-cut-5">{el.description}</p>
-      <button className="flex items-center gap-2 text-[#FE6F1F]">
+      <h4 className="heading-four">{el.shortTitle}</h4>
+      <p className="text-base text-cut text-cut-5">{el.shortDescription}</p>
+      <Link
+        className="flex items-center gap-2 text-[#FE6F1F]"
+        href={`/our-services/${el.url}`}
+      >
         <span>
           Read more
           <span className="inline-block translate-y-[1px]">
             <AiOutlineRight />
           </span>
         </span>
-      </button>
+      </Link>
     </div>
   );
 };

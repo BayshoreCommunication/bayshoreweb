@@ -4,34 +4,53 @@ import SectionLayout from "@/components/universal/SectionLayout";
 import { StickyContainer, Sticky } from "react-sticky";
 import Parser from "html-react-parser";
 import Link from "next/link";
+import AboutUs from "@/components/universal/AboutUs";
+import Consultaion from "@/components/universal/Consultaion";
+import Hero from "@/components/universal/Hero";
+import Info from "@/components/universal/Info";
+import HomeServiceCard from "@/components/unique/Home/HomeServiceCard";
+import { Content } from "next/font/google";
+
+//  Home Hero section
+let hero: {
+  heading: string;
+  description: string;
+}[];
+
+hero = [
+  {
+    heading: "Empower Your Business with Innovative Marketing Solutions",
+    description: `Bayshore Communication is a digital marketing company that offers web and app 
+    development, SEO and online advertising, social media and email marketing, 
+    content creation and distribution, UI/UX, graphics, video production, and 
+    influencer marketing services. We provide innovative and practical solutions to 
+    help you expand your company globally and accomplish your goals.`,
+  },
+];
 
 const page = ({ params }: { params: { service: string } }) => {
   const parameter = params.service;
-  const individualService = services.filter((elem)=> elem.url === parameter)
+  const individualService = services.filter((elem) => elem.url === parameter);
 
   return (
-    <SectionLayout bg="">
-  <div className="grid grid-cols-[65%_30%] gap-8">
-    {individualService.map((elem, index)=>
-    <div className="h-[100%] service-style" key={index}>
-      <h1>{elem.title}</h1>
-      {Parser(elem.description)}
-      </div>
-    )}
-    <div className="sticky top-[72px] h-[100%]">
-      <ul className="flex flex-col bg-[#F4F4F4] gap-6 py-8">
-        {services.map((el: any, i: number) => (
-          <li
-            className="mx-[3rem] rounded-[5px] text-small py-2 px-8 bg-[#fff]"
-            key={i}
-          >
-            <Link href={`/our-services/${el.url}`}>{el.title}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-</SectionLayout>
+    <>
+      <Hero heading={hero[0].heading} description={hero[0].description} />
+      <Info />
+      <SectionLayout bg="">
+        {/* <HomeServiceCard title={title} imgLink={imgLink} box={box}/> */}
+        <div className="">
+          {individualService.map((elem, index) => (
+            <div className="h-[100%] service-style" key={index}>
+              <h1>{elem.title}</h1>
+              {Parser(elem.description)}
+            </div>
+          ))}
+        </div>
+      </SectionLayout>
+
+      <AboutUs />
+      <Consultaion />
+    </>
   );
 };
 
