@@ -10,6 +10,9 @@ import Hero from "@/components/universal/Hero";
 import Info from "@/components/universal/Info";
 import HomeServiceCard from "@/components/unique/Home/HomeServiceCard";
 import { Content } from "next/font/google";
+import HomeTabBar from "@/components/unique/HomeTabBar";
+import Package from "@/components/universal/Package";
+import ServiceTabBar from "@/components/unique/ServiceTabBar";
 
 //  Home Hero section
 let hero: {
@@ -42,7 +45,18 @@ const page = ({ params }: { params: { service: string } }) => {
           {individualService.map((elem, index) => (
             <div className="h-[100%] service-style" key={index}>
               <h1>{elem.title}</h1>
-              {Parser(elem.description)}
+              <ServiceTabBar />
+              {Parser(elem.descriptionTop)}
+
+              <div className="mt-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-[4rem] items-center">
+                  <Package />
+                  <Package />
+                  <Package />
+                </div>
+              </div>
+
+              {Parser(elem.descriptionBottom)}
             </div>
           ))}
         </div>

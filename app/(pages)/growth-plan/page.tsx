@@ -127,3 +127,7 @@ hero = [
     budget. Don’t let this chance slip away to skyrocket your business with our enhanced advertising packages.`,
   },
 ];
+
+function HeadingTitleImg(){
+  return 
+}

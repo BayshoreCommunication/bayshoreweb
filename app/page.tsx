@@ -21,6 +21,7 @@ export const metadata: Metadata = {
   description:
     "Welcome to Bayshore Communication!! Grow your brand or business with us. Whether you need digital marketing services, or software solutions, we've you covered.",
 };
+
 const page = () => {
   return (
     <>
