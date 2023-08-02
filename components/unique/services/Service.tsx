@@ -21,8 +21,12 @@ export let services: {
   shortTitle: string;
   title: string;
   shortDescription: string;
-  descriptionTop: string;
-  descriptionBottom: string;
+  descriptionFirst: string;
+  descriptionSecond: string;
+  descriptionThird: string;
+  descriptionFourth: string;
+  descriptionFifth: string;
+  descriptionSixth: string;
 }[];
 services = [
   {
@@ -34,7 +38,6 @@ services = [
         contentTab: `At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.`,
         titleIcon: "/assets/expertise.svg",
         titleImage: "/assets/tab-1.png",
-    
       },
       {
         titleTab: `User Friendly Interfaces That Delight Visitors`,
@@ -53,7 +56,7 @@ services = [
     shortTitle: "Website Design",
     shortDescription: `Any company or business that wants to thrive online in the quick-paced digital world needs a website that is both aesthetically attractive and well-designed. The value of appealing website design services that are tailored to your company's requirements is recognized by Bayshore Communications. Our team of specialists is committed to building websites that have an impact, with an emphasis on user-friendly interfaces and cutting-edge technology.`,
 
-    descriptionTop: `<p>Any company or business that wants to thrive online in the quick-paced digital world needs a website that is both aesthetically attractive and well-designed. The value of appealing website design services that are tailored to your company's requirements is recognized by Bayshore Communications. Our team of specialists is committed to building websites that have an impact, with an emphasis on user-friendly interfaces and cutting-edge technology.</p>
+    descriptionFirst: `
     
     <h2>Customized Website Design Solutions</h2>
     <p>We know that every business has unique requirements, and off-the-shelf website templates may not always meet your specific needs or expectations. On the other hand, Bayshore Communications offers customized website design solutions that align perfectly with your brand identity and business goals.</p>
@@ -62,7 +65,10 @@ services = [
     <h3>Tailored Website Designs Aligned with Your Brand Identity</h3>
     <p>Every website is an extension of a brand or business that reflects its unique identity. Our expert developer team works closely with you to understand your brand guidelines, color schemes, and typography preferences. Besides, based on the strategic analysis, we will develop a web page design that is consistent with your brand's originality, tone, and voice. We use colors, fonts, images, logos, and other components that match your style and expectations. The Bayshore team also develops custom website designs that elegantly match your business identity, guaranteeing a consistent and expert online presence.</p>
     <h3>Intuitive Navigation and Information Architecture</h3>
-    <p>A well-organized and intuitive website navigation is essential for guiding visitors through your content effectively. We provide intelligent information architecture as part of our website design services to make sure your website's structure and navigation are simple and easy to use. For example, we will organize your website's material in a logical and user-focused manner like using clear headings, subheadings, menus, links, and buttons, so that your visitors can quickly discover what they're searching for and navigate through your website without becoming confused or frustrated. By providing clear pathways and logical organization, we also help optimize your domain site to rank higher on search engines and attract more traffic.</p>
+    <p>A well-organized and intuitive website navigation is essential for guiding visitors through your content effectively. We provide intelligent information architecture as part of our website design services to make sure your website's structure and navigation are simple and easy to use. For example, we will organize your website's material in a logical and user-focused manner like using clear headings, subheadings, menus, links, and buttons, so that your visitors can quickly discover what they're searching for and navigate through your website without becoming confused or frustrated. By providing clear pathways and logical organization, we also help optimize your domain site to rank higher on search engines and attract more traffic.</p>`,
+
+    descriptionSecond: `
+
     <h2>Responsive Web Design for Seamless User Experience</h2>
 
     <p>In today's mobile-centric world, responsive web design is no longer an option but a necessity. Each device has its own screen size, resolution and orientation, which can affect how your website looks and functions. That&rsquo;s why, we, Bayshore Communications, specializes in creating websites that provide a coherent user experience across devices, ensuring your marketing is accessible to users on desktops, smartphones, and tablets.</p>
@@ -71,7 +77,10 @@ services = [
     <h3>Optimized Designs for Different Screen Sizes and Resolutions</h3>
     <p>A responsive web design involves more than just resizing elements to fit different screen sizes. Our skilled designers pay close attention to the little things, adapting the design to different resolutions and making sure that every component looks and works beautifully on multiple devices. For example, we use flexible grids, media queries, and breakpoints to create optimized designs for different screen sizes and resolutions, to make sure that your site's elements, such as images, text, buttons, nav bar, sidebar, or footers, are proportionate, readable, and functional on any device. No matter which platform or browser is being used, our work ensures its quality and consistency.</p>
     <h3>Fluid Layouts for Intuitive Interaction and Navigation</h3>
-    <p>As we talk about fluid layout, basically it gives consumers the best viewing experience by adapting and adjusting to the available screen size. Bayshore professional designers create fluid layouts using clear and simple navigation systems that enable your users to move around your website with ease and convenience. Furthermore, we also integrate interactive features, such as animations, transitions, and hover effects, that enhance the user experience and engagement. As a result, your website will be as simple to use and easy to access, whether your site viewers are using a desktop, tablet, or smartphone.</p>
+    <p>As we talk about fluid layout, basically it gives consumers the best viewing experience by adapting and adjusting to the available screen size. Bayshore professional designers create fluid layouts using clear and simple navigation systems that enable your users to move around your website with ease and convenience. Furthermore, we also integrate interactive features, such as animations, transitions, and hover effects, that enhance the user experience and engagement. As a result, your website will be as simple to use and easy to access, whether your site viewers are using a desktop, tablet, or smartphone.</p>`,
+
+    descriptionThird: `
+
     <h2>Visually Stunning and Engaging Design Elements</h2>
     <p>For any company, a website is more than just a collection of words and information. It is also a visual representation of your brand, your vision, and purpose to serve your client. That&rsquo;s why you need visually stunning and engaging design elements that can capture your audience&rsquo;s attention and interest.</p>
     <h3>Eye Catching Visuals and Graphics That Reflect Your Brand</h3>
@@ -97,7 +106,7 @@ services = [
 
     <p>With our visually stunning and engaging design elements, you can have a website that is not only beautiful and functional, but also reflects your brand, your personality, and your communication.</p>`,
 
-    descriptionBottom: `<h2>Search Engine Optimization (SEO) Integration</h2>
+    descriptionFourth: `<h2>Search Engine Optimization (SEO) Integration</h2>
     <p>Search engine optimization (SEO) is the process of improving your website&rsquo;s visibility and relevance on search engines, such as Google, YouTube, Microsoft Bing, Yahoo, and others. Having a visually appealing and user-friendly website is essential, but it's equally important to ensure that your website is visible to search engines. SEO can help you attract more organic traffic, leads, and conversions to your website.</p>
     <p>That's why, Bayshore Communications integrates search engine optimization (SEO) strategies into our website design process, helping your website rank higher in search engine results and attract organic traffic.</p>
     <h3>Keyword Research and Optimization for Higher Rankings</h3>
@@ -107,6 +116,7 @@ services = [
     <p>Using H1 to H6 tags, we also employ a heading structure to divide your web pages into logical divisions and subsections. When possible, we integrate the keywords in our headers and utilize clear, descriptive headings that are organized hierarchically. These components aid search engines in effectively interpreting the organization and content of your web pages and displaying them on SERPs.</p>
     <h3>Optimized Website Speed and Performance for Better SERP Ranking</h3>
     <p>We optimize your website speed and performance by using various techniques, such as compressing images, minifying code, caching files, reducing redirects, enabling browser compatibility, and using a content delivery network (CDN). We also monitor your website speed and responsiveness using tools such as Google Page Speed Insights, GTmetrix, and Pingdom. Furthermore, we aim to achieve a fast loading time of less than 3 seconds for your web pages, as well as a high score of above 90% for both mobile and desktop devices. This helps you improve your user experience (UX), reduce bounce rate, increase dwell time, and boost your SERP ranking.</p>
+
     <h2  >Content Management Systems (CMS) and Easy Maintenance</h2>
     <p>Content management systems, also known as CMS in short, are software applications that allow you to create, edit, and manage your website content without requiring any programming or technical skills. On the other hand, keeping your website up-to-date with fresh content is essential for engaging your audience and maintaining search engine visibility. And Bayshore Communications provides that service to make it easy for you to update and manage your website's material without technical expertise. CMS can help you save time, money, and effort in maintaining your website.</p>
     <h3>User Friendly CMS Platforms for Effortless Content Updates</h3>
@@ -114,7 +124,10 @@ services = [
     <h3>Training and Support to Empower You in Managing Your Website</h3>
     <p>Along with CMS platforms, we provide training and support to empower you in managing your website. We teach you how to use the CMS platform, how to update your website content, how to add new features, and how to troubleshoot any issues that may occur in the future, and you can do that easily. We also provide ongoing support via phone, email, or chat, whenever you need assistance or guidance. Likewise, we are always ready to help you with any questions or concerns that you may have regarding your website.</p>
     <h3>Regular Maintenance to Ensure Security and Performance</h3>
-    <p>Bayshore believes that each of the websites require regular maintenance to ensure its optimal performance and security. To upkeep your site&rsquo;s functionality and security we update your CMS platform, plugins, extensions, themes, and templates to the latest versions, to prevent any security vulnerabilities or compatibility issues. Furthermore, our expert developers also back up your website data regularly, to protect it from any loss or damage. We test and debug your website thoroughly before launching it and provide ongoing support and maintenance. As we mentioned earlier, we monitor your domain site using the most advanced and effective tools to ensure its efficiency and usability is on track. We optimize your website for speed, performance, and SEO (search engine optimization), to ensure that it runs smoothly and ranks high on search engines.</p>
+    <p>Bayshore believes that each of the websites require regular maintenance to ensure its optimal performance and security. To upkeep your site&rsquo;s functionality and security we update your CMS platform, plugins, extensions, themes, and templates to the latest versions, to prevent any security vulnerabilities or compatibility issues. Furthermore, our expert developers also back up your website data regularly, to protect it from any loss or damage. We test and debug your website thoroughly before launching it and provide ongoing support and maintenance. As we mentioned earlier, we monitor your domain site using the most advanced and effective tools to ensure its efficiency and usability is on track. We optimize your website for speed, performance, and SEO (search engine optimization), to ensure that it runs smoothly and ranks high on search engines.</p>`,
+
+    descriptionFifth: `
+
     <h2>Analytics and Tracking for Continuous Improvement</h2>
     <p>Analytics and tracking are crucial for continuous improvement of your website. They help you measure your website&rsquo;s organic traffic, leads, understand your user behavior, and optimize your user experience and conversion rates. For that, we provide the best analytics and tracking solutions for your business.</p>
     <h3>Integration of Analytics Tools to Monitor Website Performance</h3>
@@ -132,7 +145,10 @@ services = [
     <p>From your CMS platform updates to plugin upgrades, we take care of the technical aspects to prevent any security vulnerabilities or compatibility issues, allowing you to focus on your business growth. We also update your website content, features, design or in a word the overall functionality to reflect your brand&rsquo;s identity, message, and goals.</p>
     <h3>Continuous Optimization to Stay Ahead of Industry Trends</h3>
     <p>The digital landscape is dynamic, with new trends and technologies emerging regularly. Our team stays abreast of industry trends and implements continuous optimization strategies to keep your website ahead of industry trends and customer preferences. Whether it's adopting new design techniques, implementing advanced functionalities, or incorporating emerging SEO practices, we ensure that your website remains competitive and delivers a cutting-edge user experience.</p>
-    <p>For example, conducting a thorough research on the keywords that your target audience is searching for, as well as the keywords that your competitors are ranking for. Optimizing your website content, titles, and tags with these keywords, using natural and strategic placement, density, and variation. Despite using the best method or strategy to develop your website, sometimes we conduct A/B testing to compare different variations of your website elements to determine the best practices and solutions for your website design. By monitoring site analytics and metrics, our team uses the data and reports to improve your user experience (UX), conversion rate optimization (CRO), and return on investment (ROI).</p>
+    <p>For example, conducting a thorough research on the keywords that your target audience is searching for, as well as the keywords that your competitors are ranking for. Optimizing your website content, titles, and tags with these keywords, using natural and strategic placement, density, and variation. Despite using the best method or strategy to develop your website, sometimes we conduct A/B testing to compare different variations of your website elements to determine the best practices and solutions for your website design. By monitoring site analytics and metrics, our team uses the data and reports to improve your user experience (UX), conversion rate optimization (CRO), and return on investment (ROI).</p>`,
+
+    descriptionSixth: `
+
     <h2>Testimonials and Success Stories</h2>
     <p>At Bayshore Communications, we take pride in our successful website design projects and the satisfaction of our clients. We have served many brands and companies since 2020. And now we are proud to share with you some of the testimonials and success stories that we have received from our happy clients who have used our website design services.</p>
     <h3>Showcase Real World Examples of Satisfied Clients</h3>
@@ -173,6 +189,7 @@ services = [
 
     <p>We believe in the quality of our work and are proud of our team&rsquo;s effort. No matter how many brands we served, we always focused on client&rsquo;s satisfaction.</p>
     <p>Do you want to see how we have helped our clients achieve their online goals? We have all of our case studies for you. We also invite you to explore our testimonials and success stories to gain insights into the quality and outcomes of our website design services. Don&rsquo;t take our word for it, see for yourself! Click here to discover how we have transformed our clients&rsquo; position in the world of digital marketing and their continued business growth!</p>
+
     <h2>Why Choose Bayshore Communications</h2>
     <p>If you want to create a website that not only looks astounding but also performs exceptionally, Bayshore Communications is the right choice for you. We are a team of passionate and skilled website designers and developers who can help you to fulfill your desire and expectations. Partner with Bayshore Communications for transformative website design and elevate your online presence as well as drive business growth.</p>
     <p>Contact us today to schedule a free consultation and discover how we can work together to achieve your online objectives. Bayshore Communications will be your best collaborator in creating a website that is customized, user-friendly, and visually stunning, as well as optimized for speed, performance, and SEO (search engine optimization).</p>

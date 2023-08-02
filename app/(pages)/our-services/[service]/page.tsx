@@ -3,6 +3,7 @@ import { services } from "@/components/unique/services/Service";
 import SectionLayout from "@/components/universal/SectionLayout";
 import { StickyContainer, Sticky } from "react-sticky";
 import Parser from "html-react-parser";
+import Image from "next/image";
 import Link from "next/link";
 import AboutUs from "@/components/universal/AboutUs";
 import Consultaion from "@/components/universal/Consultaion";
@@ -13,6 +14,8 @@ import { Content } from "next/font/google";
 import HomeTabBar from "@/components/unique/HomeTabBar";
 import Package from "@/components/universal/Package";
 import ServiceTabBar from "@/components/unique/ServiceTabBar";
+import Boost, { BoostService } from "@/components/universal/Boost";
+
 
 //  Home Hero section
 let hero: {
@@ -45,11 +48,31 @@ const page = ({ params }: { params: { service: string } }) => {
         <div className="">
           {individualService.map((elem, index) => (
             <div className="h-[100%] service-style" key={index}>
-              <h1>{elem.title}</h1>
-              <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
-              {Parser(elem.descriptionTop)}
+              <div className="py-8">
+                <>
+                  {/* <h1>{elem.title}</h1> */}
+                  <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+                    <div className="rounded-[10px] px-4 pb-16 ">
+                      <h1>{elem.title}</h1>
+                      {elem.shortDescription}
+                    </div>
+                    <div className="row-start-1 md:col-start-2">
+                      <Image
+                        src="/assets/tab-1.png"
+                        alt="tab-1"
+                        width={400}
+                        height={400}
+                        className="w-full h-full"
+                      />
+                    </div>
+                  </div>
+                </>
+              </div>
 
-              <div className="mt-8">
+              <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
+              {Parser(elem.descriptionFirst)}
+
+              <div className="mt-20 mb-8">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-[4rem] items-center">
                   <Package />
                   <Package />
@@ -57,7 +80,19 @@ const page = ({ params }: { params: { service: string } }) => {
                 </div>
               </div>
 
-              {Parser(elem.descriptionBottom)}
+              {Parser(elem.descriptionSecond)}
+
+              {/* Boost */}
+
+              <BoostService
+                heading=" Need a boost for you business? Get your FREE Quote Today!"
+                btnText="Send us a proposal"
+              />
+
+              {Parser(elem.descriptionThird)}
+              {Parser(elem.descriptionFourth)}
+              {Parser(elem.descriptionFifth)}
+              {Parser(elem.descriptionSixth)}
             </div>
           ))}
         </div>
