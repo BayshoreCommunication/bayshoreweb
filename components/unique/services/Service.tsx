@@ -27,6 +27,8 @@ export let services: {
   descriptionFourth: string;
   descriptionFifth: string;
   descriptionSixth: string;
+  descriptionSeventh: string;
+  whyBayshore: string;
 }[];
 services = [
   {
@@ -115,7 +117,9 @@ services = [
     <p>Our skilled team designs concise, descriptive URLs that are simple to understand by people and search engines alike. We employ hyphens to divide words, exclude redundant parameters or characters, and incorporate keywords as needed. We also provide meta tags, such as meta titles, meta descriptions, and meta keywords, that offer a brief overview of your web pages. Not only that, but we maintain these tags to the recommended length and employ intriguing and pertinent keywords and phrases.</p>
     <p>Using H1 to H6 tags, we also employ a heading structure to divide your web pages into logical divisions and subsections. When possible, we integrate the keywords in our headers and utilize clear, descriptive headings that are organized hierarchically. These components aid search engines in effectively interpreting the organization and content of your web pages and displaying them on SERPs.</p>
     <h3>Optimized Website Speed and Performance for Better SERP Ranking</h3>
-    <p>We optimize your website speed and performance by using various techniques, such as compressing images, minifying code, caching files, reducing redirects, enabling browser compatibility, and using a content delivery network (CDN). We also monitor your website speed and responsiveness using tools such as Google Page Speed Insights, GTmetrix, and Pingdom. Furthermore, we aim to achieve a fast loading time of less than 3 seconds for your web pages, as well as a high score of above 90% for both mobile and desktop devices. This helps you improve your user experience (UX), reduce bounce rate, increase dwell time, and boost your SERP ranking.</p>
+    <p>We optimize your website speed and performance by using various techniques, such as compressing images, minifying code, caching files, reducing redirects, enabling browser compatibility, and using a content delivery network (CDN). We also monitor your website speed and responsiveness using tools such as Google Page Speed Insights, GTmetrix, and Pingdom. Furthermore, we aim to achieve a fast loading time of less than 3 seconds for your web pages, as well as a high score of above 90% for both mobile and desktop devices. This helps you improve your user experience (UX), reduce bounce rate, increase dwell time, and boost your SERP ranking.</p>`,
+
+    descriptionFifth: `
 
     <h2  >Content Management Systems (CMS) and Easy Maintenance</h2>
     <p>Content management systems, also known as CMS in short, are software applications that allow you to create, edit, and manage your website content without requiring any programming or technical skills. On the other hand, keeping your website up-to-date with fresh content is essential for engaging your audience and maintaining search engine visibility. And Bayshore Communications provides that service to make it easy for you to update and manage your website's material without technical expertise. CMS can help you save time, money, and effort in maintaining your website.</p>
@@ -126,7 +130,7 @@ services = [
     <h3>Regular Maintenance to Ensure Security and Performance</h3>
     <p>Bayshore believes that each of the websites require regular maintenance to ensure its optimal performance and security. To upkeep your site&rsquo;s functionality and security we update your CMS platform, plugins, extensions, themes, and templates to the latest versions, to prevent any security vulnerabilities or compatibility issues. Furthermore, our expert developers also back up your website data regularly, to protect it from any loss or damage. We test and debug your website thoroughly before launching it and provide ongoing support and maintenance. As we mentioned earlier, we monitor your domain site using the most advanced and effective tools to ensure its efficiency and usability is on track. We optimize your website for speed, performance, and SEO (search engine optimization), to ensure that it runs smoothly and ranks high on search engines.</p>`,
 
-    descriptionFifth: `
+    descriptionSixth: `
 
     <h2>Analytics and Tracking for Continuous Improvement</h2>
     <p>Analytics and tracking are crucial for continuous improvement of your website. They help you measure your website&rsquo;s organic traffic, leads, understand your user behavior, and optimize your user experience and conversion rates. For that, we provide the best analytics and tracking solutions for your business.</p>
@@ -147,7 +151,7 @@ services = [
     <p>The digital landscape is dynamic, with new trends and technologies emerging regularly. Our team stays abreast of industry trends and implements continuous optimization strategies to keep your website ahead of industry trends and customer preferences. Whether it's adopting new design techniques, implementing advanced functionalities, or incorporating emerging SEO practices, we ensure that your website remains competitive and delivers a cutting-edge user experience.</p>
     <p>For example, conducting a thorough research on the keywords that your target audience is searching for, as well as the keywords that your competitors are ranking for. Optimizing your website content, titles, and tags with these keywords, using natural and strategic placement, density, and variation. Despite using the best method or strategy to develop your website, sometimes we conduct A/B testing to compare different variations of your website elements to determine the best practices and solutions for your website design. By monitoring site analytics and metrics, our team uses the data and reports to improve your user experience (UX), conversion rate optimization (CRO), and return on investment (ROI).</p>`,
 
-    descriptionSixth: `
+    descriptionSeventh: `
 
     <h2>Testimonials and Success Stories</h2>
     <p>At Bayshore Communications, we take pride in our successful website design projects and the satisfaction of our clients. We have served many brands and companies since 2020. And now we are proud to share with you some of the testimonials and success stories that we have received from our happy clients who have used our website design services.</p>
@@ -188,7 +192,9 @@ services = [
     
 
     <p>We believe in the quality of our work and are proud of our team&rsquo;s effort. No matter how many brands we served, we always focused on client&rsquo;s satisfaction.</p>
-    <p>Do you want to see how we have helped our clients achieve their online goals? We have all of our case studies for you. We also invite you to explore our testimonials and success stories to gain insights into the quality and outcomes of our website design services. Don&rsquo;t take our word for it, see for yourself! Click here to discover how we have transformed our clients&rsquo; position in the world of digital marketing and their continued business growth!</p>
+    <p>Do you want to see how we have helped our clients achieve their online goals? We have all of our case studies for you. We also invite you to explore our testimonials and success stories to gain insights into the quality and outcomes of our website design services. Don&rsquo;t take our word for it, see for yourself! Click here to discover how we have transformed our clients&rsquo; position in the world of digital marketing and their continued business growth!</p>`,
+
+    whyBayshore: `
 
     <h2>Why Choose Bayshore Communications</h2>
     <p>If you want to create a website that not only looks astounding but also performs exceptionally, Bayshore Communications is the right choice for you. We are a team of passionate and skilled website designers and developers who can help you to fulfill your desire and expectations. Partner with Bayshore Communications for transformative website design and elevate your online presence as well as drive business growth.</p>
@@ -2691,11 +2697,17 @@ interface ServiceProps {
     logo: string;
     url: string;
     homeTabBar: HomeTabBarType[];
-    title: string;
     shortTitle: string;
+    title: string;
     shortDescription: string;
-    descriptionTop: string;
-    descriptionBottom: string;
+    descriptionFirst: string;
+    descriptionSecond: string;
+    descriptionThird: string;
+    descriptionFourth: string;
+    descriptionFifth: string;
+    descriptionSixth: string;
+    descriptionSeventh: string;
+    whyBayshore: string;
   };
 }
 

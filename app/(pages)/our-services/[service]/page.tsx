@@ -16,7 +16,6 @@ import Package from "@/components/universal/Package";
 import ServiceTabBar from "@/components/unique/ServiceTabBar";
 import Boost, { BoostService } from "@/components/universal/Boost";
 
-
 //  Home Hero section
 let hero: {
   heading: string;
@@ -42,64 +41,90 @@ const page = ({ params }: { params: { service: string } }) => {
   return (
     <>
       <Hero heading={hero[0].heading} description={hero[0].description} />
-      <Info />
-      <SectionLayout bg="">
-        {/* <HomeServiceCard title={title} imgLink={imgLink} box={box}/> */}
-        <div className="">
-          {individualService.map((elem, index) => (
-            <div className="h-[100%] service-style" key={index}>
-              <div className="py-8">
-                <>
-                  {/* <h1>{elem.title}</h1> */}
-                  <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-                    <div className="rounded-[10px] px-4 pb-16 ">
-                      <h1>{elem.title}</h1>
-                      {elem.shortDescription}
+
+      <div>
+        <Info />
+      </div>
+
+      {/* <HomeServiceCard title={title} imgLink={imgLink} box={box}/> */}
+      <div>
+        {individualService.map((elem, index) => (
+          <div key={index}>
+            <SectionLayout bg="">
+              <div className="h-[100%] service-style">
+                <div className="py-8">
+                  <>
+                    {/* <h1>{elem.title}</h1> */}
+                    <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+                      <div className="rounded-[10px] px-4 pb-16 ">
+                        <h1>{elem.title}</h1>
+                        {elem.shortDescription}
+                      </div>
+                      <div className="row-start-1 md:col-start-2">
+                        <Image
+                          src="/assets/tab-1.png"
+                          alt="tab-1"
+                          width={400}
+                          height={400}
+                          className="w-full h-full"
+                        />
+                      </div>
                     </div>
-                    <div className="row-start-1 md:col-start-2">
-                      <Image
-                        src="/assets/tab-1.png"
-                        alt="tab-1"
-                        width={400}
-                        height={400}
-                        className="w-full h-full"
-                      />
-                    </div>
+                  </>
+                </div>
+
+                <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
+                {Parser(elem.descriptionFirst)}
+
+                <div className="mt-20 mb-8">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-[4rem] items-center">
+                    <Package />
+                    <Package />
+                    <Package />
                   </div>
-                </>
+                </div>
+
+                {Parser(elem.descriptionSecond)}
+
+                {/* Boost */}
+
+                <div className="my-16">
+                  <BoostService
+                    heading=" Need a boost for you business? Get your FREE Quote Today!"
+                    btnText="Send us a proposal"
+                  />
+                </div>
+
+                {Parser(elem.descriptionThird)}
               </div>
+            </SectionLayout>
 
-              <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
-              {Parser(elem.descriptionFirst)}
+            <Info />
 
-              <div className="mt-20 mb-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-[4rem] items-center">
-                  <Package />
-                  <Package />
-                  <Package />
+            <SectionLayout bg="">
+              <div className="h-[100%] service-style">
+                <div className="py-8">
+                  {Parser(elem.descriptionFourth)}
+
+                  <Consultaion />
+
+                  {Parser(elem.descriptionFifth)}
+                  {Parser(elem.descriptionSixth)}
+                  {Parser(elem.descriptionSeventh)}
                 </div>
               </div>
+            </SectionLayout>
 
-              {Parser(elem.descriptionSecond)}
+            <AboutUs />
 
-              {/* Boost */}
-
-              <BoostService
-                heading=" Need a boost for you business? Get your FREE Quote Today!"
-                btnText="Send us a proposal"
-              />
-
-              {Parser(elem.descriptionThird)}
-              {Parser(elem.descriptionFourth)}
-              {Parser(elem.descriptionFifth)}
-              {Parser(elem.descriptionSixth)}
-            </div>
-          ))}
-        </div>
-      </SectionLayout>
-
-      <AboutUs />
-      <Consultaion />
+            <SectionLayout bg="">
+              <div className="h-[100%] service-style">
+                <div className="py-8">{Parser(elem.whyBayshore)}</div>
+              </div>
+            </SectionLayout>
+          </div>
+        ))}
+      </div>
     </>
   );
 };
