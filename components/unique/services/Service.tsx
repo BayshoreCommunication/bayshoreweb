@@ -30,20 +30,21 @@ services = [
     url: "website-design",
     homeTabBar: [
       {
-        titleTab: `<h3>Captivating Designs Tailored for Your Business</h3>`,
-        contentTab: `<p>At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.</p>`,
+        titleTab: `Captivating Designs Tailored for Your Business`,
+        contentTab: `At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.`,
+        titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/tab-1.png",
+    
+      },
+      {
+        titleTab: `User Friendly Interfaces That Delight Visitors`,
+        contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
         titleIcon: "tab",
         titleImage: "tab",
       },
       {
-        titleTab: `<h3>User Friendly Interfaces That Delight Visitors</h3>`,
-        contentTab: `<p>If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.</p>`,
-        titleIcon: "tab",
-        titleImage: "tab",
-      },
-      {
-        titleTab: `<h3>Cutting Edge Techniques for Enhanced Performance</h3>`,
-        contentTab: `<p>As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.</p>`,
+        titleTab: `Cutting Edge Techniques for Enhanced Performance`,
+        contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
         titleIcon: "tab",
         titleImage: "tab",
       },
@@ -53,11 +54,6 @@ services = [
     shortDescription: `Any company or business that wants to thrive online in the quick-paced digital world needs a website that is both aesthetically attractive and well-designed. The value of appealing website design services that are tailored to your company's requirements is recognized by Bayshore Communications. Our team of specialists is committed to building websites that have an impact, with an emphasis on user-friendly interfaces and cutting-edge technology.`,
 
     descriptionTop: `<p>Any company or business that wants to thrive online in the quick-paced digital world needs a website that is both aesthetically attractive and well-designed. The value of appealing website design services that are tailored to your company's requirements is recognized by Bayshore Communications. Our team of specialists is committed to building websites that have an impact, with an emphasis on user-friendly interfaces and cutting-edge technology.</p>
-    
-    
-    
-    
-    
     
     <h2>Customized Website Design Solutions</h2>
     <p>We know that every business has unique requirements, and off-the-shelf website templates may not always meet your specific needs or expectations. On the other hand, Bayshore Communications offers customized website design solutions that align perfectly with your brand identity and business goals.</p>

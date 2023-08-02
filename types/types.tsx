@@ -1,3 +1,7 @@
+export type individualHomeTabBarType = {
+  individualHomeTabBar: HomeTabBarType[];
+};
+
 export type HomeTabBarType = {
   titleTab: string;
   contentTab: string;

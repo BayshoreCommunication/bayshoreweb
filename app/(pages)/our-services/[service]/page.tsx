@@ -34,6 +34,7 @@ hero = [
 const page = ({ params }: { params: { service: string } }) => {
   const parameter = params.service;
   const individualService = services.filter((elem) => elem.url === parameter);
+  const individualHomeTabBar = individualService.map((el) => el.homeTabBar)[0];
 
   return (
     <>
@@ -45,7 +46,7 @@ const page = ({ params }: { params: { service: string } }) => {
           {individualService.map((elem, index) => (
             <div className="h-[100%] service-style" key={index}>
               <h1>{elem.title}</h1>
-              <ServiceTabBar />
+              <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
               {Parser(elem.descriptionTop)}
 
               <div className="mt-8">
