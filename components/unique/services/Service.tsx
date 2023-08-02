@@ -28,6 +28,7 @@ export let services: {
   descriptionFifth: string;
   descriptionSixth: string;
   descriptionSeventh: string;
+  descriptionEightth: string;
   whyBayshore: string;
 }[];
 services = [
@@ -71,9 +72,18 @@ services = [
 
     descriptionSecond: `
 
-    <h2>Responsive Web Design for Seamless User Experience</h2>
+    <h2 className="text-center">Responsive Web Design for Seamless User Experience</h2>
 
-    <p>In today's mobile-centric world, responsive web design is no longer an option but a necessity. Each device has its own screen size, resolution and orientation, which can affect how your website looks and functions. That&rsquo;s why, we, Bayshore Communications, specializes in creating websites that provide a coherent user experience across devices, ensuring your marketing is accessible to users on desktops, smartphones, and tablets.</p>
+    <p className="text-center">In today's mobile-centric world, responsive web design is no longer an option but a necessity. Each device has its own screen size, resolution and orientation, which can affect how your website looks and functions. That&rsquo;s why, we, Bayshore Communications, specializes in creating websites that provide a coherent user experience across devices, ensuring your marketing is accessible to users on desktops, smartphones, and tablets.</p>
+
+    <img
+              src="/assets/service-demo-img.png"
+              alt="tab-1"
+              
+              className="w-full h-full"
+            />
+
+
     <h3>Mobile First Approach for Accessibility Across Devices</h3>
     <p>With the increasing use of smartphones, a mobile-first approach is crucial for website design. Our team prioritizes the mobile version of your website, starting by designing for these devices first, ensuring that your website is optimized for smaller screens. After that, we scale up the design for larger screens, providing a consistent and enjoyable user experience across all devices. In a word, it ensures that your page is compatible with the most common devices and browsers and that your users can access your content and features without any hassle.</p>
     <h3>Optimized Designs for Different Screen Sizes and Resolutions</h3>
@@ -83,8 +93,21 @@ services = [
 
     descriptionThird: `
 
-    <h2>Visually Stunning and Engaging Design Elements</h2>
-    <p>For any company, a website is more than just a collection of words and information. It is also a visual representation of your brand, your vision, and purpose to serve your client. That&rsquo;s why you need visually stunning and engaging design elements that can capture your audience&rsquo;s attention and interest.</p>
+    <h2 className="text-center">Visually Stunning and Engaging Design Elements</h2>
+    <p className="text-center">For any company, a website is more than just a collection of words and information. It is also a visual representation of your brand, your vision, and purpose to serve your client. That&rsquo;s why you need visually stunning and engaging design elements that can capture your audience&rsquo;s attention and interest.</p>
+
+
+
+    <img
+              src="/assets/service-demo-img.png"
+              alt="tab-1"
+              
+              className="w-full h-full"
+            />
+
+
+
+
     <h3>Eye Catching Visuals and Graphics That Reflect Your Brand</h3>
     <p>If you want to create a lasting impression and convey your brand's message on the platform of digital marketing, then there are no more powerful tools than visuals and graphics. For that, we, the Bayshore team, high-quality visuals or graphics, icons, illustrations, and animations that are relevant to your theme and your brand. We mainly focus on the principles of visual design such as visual hierarchy, contrast, scale, Gestalt, and balance. These not only create excellent layouts, but also improve usability when applied in an accurate way. Therefore, our designers leverage their expertise and creativity to develop remarkable visuals that align with your brand appearance.</p>
     <h3>Thoughtful Typography to Enhance Readability and Impact</h3>
@@ -108,9 +131,22 @@ services = [
 
     <p>With our visually stunning and engaging design elements, you can have a website that is not only beautiful and functional, but also reflects your brand, your personality, and your communication.</p>`,
 
-    descriptionFourth: `<h2>Search Engine Optimization (SEO) Integration</h2>
-    <p>Search engine optimization (SEO) is the process of improving your website&rsquo;s visibility and relevance on search engines, such as Google, YouTube, Microsoft Bing, Yahoo, and others. Having a visually appealing and user-friendly website is essential, but it's equally important to ensure that your website is visible to search engines. SEO can help you attract more organic traffic, leads, and conversions to your website.</p>
-    <p>That's why, Bayshore Communications integrates search engine optimization (SEO) strategies into our website design process, helping your website rank higher in search engine results and attract organic traffic.</p>
+    descriptionFourth: `<h2 className="text-center">Search Engine Optimization (SEO) Integration</h2>
+    <p className="text-center">Search engine optimization (SEO) is the process of improving your website&rsquo;s visibility and relevance on search engines, such as Google, YouTube, Microsoft Bing, Yahoo, and others. Having a visually appealing and user-friendly website is essential, but it's equally important to ensure that your website is visible to search engines. SEO can help you attract more organic traffic, leads, and conversions to your website.</p>
+    <p className="text-center">That's why, Bayshore Communications integrates search engine optimization (SEO) strategies into our website design process, helping your website rank higher in search engine results and attract organic traffic.</p>
+
+
+
+    <img
+              src="/assets/service-demo-img.png"
+              alt="tab-1"
+              
+              className="w-full h-full"
+            />
+
+
+
+
     <h3>Keyword Research and Optimization for Higher Rankings</h3>
     <p>We do in-depth research on both the keywords that your competitors are ranking for and the keywords that your target audience is using. We choose the keywords that are most pertinent and profitable for your web page after considering their search traffic, level of competition, and keyword purpose. Additionally, we strategically and naturally insert, vary, and optimize these keywords in your site's content, titles, and tags. By doing this, you may increase your website's ranking for certain keywords on the search engine results page, which is also known as SERPs, and attract more targeted visitors.</p>
     <h3>SEO Friendly URLs, Meta Tags, and Heading Structure</h3>
@@ -121,8 +157,21 @@ services = [
 
     descriptionFifth: `
 
-    <h2  >Content Management Systems (CMS) and Easy Maintenance</h2>
-    <p>Content management systems, also known as CMS in short, are software applications that allow you to create, edit, and manage your website content without requiring any programming or technical skills. On the other hand, keeping your website up-to-date with fresh content is essential for engaging your audience and maintaining search engine visibility. And Bayshore Communications provides that service to make it easy for you to update and manage your website's material without technical expertise. CMS can help you save time, money, and effort in maintaining your website.</p>
+    <h2  className="text-center">Content Management Systems (CMS) and Easy Maintenance</h2>
+    <p className="text-center">Content management systems, also known as CMS in short, are software applications that allow you to create, edit, and manage your website content without requiring any programming or technical skills. On the other hand, keeping your website up-to-date with fresh content is essential for engaging your audience and maintaining search engine visibility. And Bayshore Communications provides that service to make it easy for you to update and manage your website's material without technical expertise. CMS can help you save time, money, and effort in maintaining your website.</p>
+
+    
+
+    <img
+              src="/assets/service-demo-img.png"
+              alt="tab-1"
+              
+              className="w-full h-full"
+            />
+
+
+
+
     <h3>User Friendly CMS Platforms for Effortless Content Updates</h3>
     <p>We use mobile-friendly (or can say user-friendly) CMS platforms, such as WordPress, Shopify, Drupal, and Joomla, to build your website. These platforms are easy to use, flexible, and customizable where you can update your website content, such as text, images, videos, and links, with just a few clicks. Moreover, you can also add new features, such as blogs, forums, e-commerce, and social media integration, using various plugins and extensions. You can also change the look and feel of your website using different themes and templates.</p>
     <h3>Training and Support to Empower You in Managing Your Website</h3>
@@ -132,16 +181,50 @@ services = [
 
     descriptionSixth: `
 
-    <h2>Analytics and Tracking for Continuous Improvement</h2>
-    <p>Analytics and tracking are crucial for continuous improvement of your website. They help you measure your website&rsquo;s organic traffic, leads, understand your user behavior, and optimize your user experience and conversion rates. For that, we provide the best analytics and tracking solutions for your business.</p>
+    <h2 className="text-center">Analytics and Tracking for Continuous Improvement</h2>
+    <p className="text-center">Analytics and tracking are crucial for continuous improvement of your website. They help you measure your website&rsquo;s organic traffic, leads, understand your user behavior, and optimize your user experience and conversion rates. For that, we provide the best analytics and tracking solutions for your business.</p>
+   
+    
+
+    <img
+              src="/assets/service-demo-img.png"
+              alt="tab-1"
+              
+              className="w-full h-full"
+            />
+
+
+   
+   
+   
+   
     <h3>Integration of Analytics Tools to Monitor Website Performance</h3>
     <p>We integrate analytics tools, such as Google Analytics, Google Search Console, and Bing Webmaster Tools, to monitor your website&rsquo;s overall performance. These tools provide you with various data and reports, such as traffic sources, page views, bounce rate, average session duration, and more. They also help you identify any issues or errors that may affect your website&rsquo;s interactivity or SEO (search engine optimization). We help you set up and configure these tools, as well as interpret and analyze the data and reports.</p>
     <h3>Tracking User Behavior, Conversions, and Key Metrics</h3>
     <p>After that our team tracks your user behavior, conversions, and key metrics using tools such as Google Tag Manager, Google Optimize, and Hotjar. These tools allow you to track and measure how your users interact with your website, such as clicks, scrolls, mouse movements, form submissions, and more. Also with the help of using these programs, you may track and measure your conversions, such as leads, sales, sign-ups, and more. They also allow you to track and measure your key metrics, such as conversion rate, cost per acquisition, return on investment, and more. We help you set up and implement these tools, as well as create and test different hypotheses and experiments to improve your website&rsquo;s performance.</p>
     <h3>Data Driven Insights to Enhance User Experience and Conversion Rates</h3>
-    <p>Not only integrate analytic tools or tracking user experience, we use data driven insights to enhance your user experience and conversion rates. To identify the strengths and weaknesses of your website, we use the data and reports from the analytics and tracking tools, as well as the opportunities and threats for improvement. Our Bayshore experts use the hypotheses and experiments from the tracking and measurement tools to test different variations of your website elements, such as headlines, images, colors, buttons, layouts, and more. We use the results from the testing tools to determine the best practices and solutions for your website design. We help you implement these changes and monitor their impact on your website&rsquo;s effectiveness.</p>
-    <h2>Stay Ahead with Ongoing Support and Upgrades</h2>
-    <p>When you create a website, it is not a one-time project, but a long-term investment for your business that requires ongoing support and upgrades. Therefore, you need to keep the website current, secure, and optimized to stay ahead of your competitors and meet your customers&rsquo; expectations with the help of Bayshore Communication.</p>
+    <p>Not only integrate analytic tools or tracking user experience, we use data driven insights to enhance your user experience and conversion rates. To identify the strengths and weaknesses of your website, we use the data and reports from the analytics and tracking tools, as well as the opportunities and threats for improvement. Our Bayshore experts use the hypotheses and experiments from the tracking and measurement tools to test different variations of your website elements, such as headlines, images, colors, buttons, layouts, and more. We use the results from the testing tools to determine the best practices and solutions for your website design. We help you implement these changes and monitor their impact on your website&rsquo;s effectiveness.</p>`,
+
+    descriptionSeventh: `
+
+
+    <h2 className="text-center">Stay Ahead with Ongoing Support and Upgrades</h2>
+    <p className="text-center">When you create a website, it is not a one-time project, but a long-term investment for your business that requires ongoing support and upgrades. Therefore, you need to keep the website current, secure, and optimized to stay ahead of your competitors and meet your customers&rsquo; expectations with the help of Bayshore Communication.</p>
+    
+
+    
+
+    <img
+              src="/assets/service-demo-img.png"
+              alt="tab-1"
+              
+              className="w-full h-full"
+            />
+
+
+
+
+    
     <h3>Proactive Support for Technical Issues and Queries</h3>
     <p>Our dedicated support team is always ready to assist you with any technical issues or queries you may encounter with your website. Whether it's troubleshooting website errors, addressing compatibility issues, or providing guidance on using the CMS platform, we have a team of experts who are available 24/7 via phone, email, or chat to assist you with any problems or questions, and for that we have a consultation section for our service. With our proactive support, you can focus on your core business while knowing that your website is in capable hands.</p>
     <h3>Regular Updates and Upgrades to Keep Your Website Current</h3>
@@ -151,10 +234,23 @@ services = [
     <p>The digital landscape is dynamic, with new trends and technologies emerging regularly. Our team stays abreast of industry trends and implements continuous optimization strategies to keep your website ahead of industry trends and customer preferences. Whether it's adopting new design techniques, implementing advanced functionalities, or incorporating emerging SEO practices, we ensure that your website remains competitive and delivers a cutting-edge user experience.</p>
     <p>For example, conducting a thorough research on the keywords that your target audience is searching for, as well as the keywords that your competitors are ranking for. Optimizing your website content, titles, and tags with these keywords, using natural and strategic placement, density, and variation. Despite using the best method or strategy to develop your website, sometimes we conduct A/B testing to compare different variations of your website elements to determine the best practices and solutions for your website design. By monitoring site analytics and metrics, our team uses the data and reports to improve your user experience (UX), conversion rate optimization (CRO), and return on investment (ROI).</p>`,
 
-    descriptionSeventh: `
+    descriptionEightth: `
 
-    <h2>Testimonials and Success Stories</h2>
-    <p>At Bayshore Communications, we take pride in our successful website design projects and the satisfaction of our clients. We have served many brands and companies since 2020. And now we are proud to share with you some of the testimonials and success stories that we have received from our happy clients who have used our website design services.</p>
+    <h2 className="text-center">Testimonials and Success Stories</h2>
+    <p className="text-center">At Bayshore Communications, we take pride in our successful website design projects and the satisfaction of our clients. We have served many brands and companies since 2020. And now we are proud to share with you some of the testimonials and success stories that we have received from our happy clients who have used our website design services.</p>
+
+    
+
+    <img
+              src="/assets/service-demo-img.png"
+              alt="tab-1"
+              
+              className="w-full h-full"
+            />
+
+
+
+
     <h3>Showcase Real World Examples of Satisfied Clients</h3>
     <p>Our track record speaks for itself. We are proud of our client&rsquo;s achievement and their success stories, as well as, the positive impact our website design services have had on their businesses. Their success is also our success, as we have helped them to fulfill their needs and goals, transforming their online presence into another level. We showcase testimonials and real-world examples of satisfied clients to demonstrate our expertise and the results we deliver.</p>
     <p>From increased conversions and improved user experience to enhanced brand recognition and online visibility, our clients have experienced tangible benefits from our customized website design solutions. Some brands are Swop, Butterfly Matrimonial, Trip Law, Elite Spa, Embark Global, and more. And most importantly, all of their testimonials are authentic, relevant, and credible, and that they highlight the benefits and value of our website design services.</p>
@@ -196,10 +292,10 @@ services = [
 
     whyBayshore: `
 
-    <h2>Why Choose Bayshore Communications</h2>
-    <p>If you want to create a website that not only looks astounding but also performs exceptionally, Bayshore Communications is the right choice for you. We are a team of passionate and skilled website designers and developers who can help you to fulfill your desire and expectations. Partner with Bayshore Communications for transformative website design and elevate your online presence as well as drive business growth.</p>
-    <p>Contact us today to schedule a free consultation and discover how we can work together to achieve your online objectives. Bayshore Communications will be your best collaborator in creating a website that is customized, user-friendly, and visually stunning, as well as optimized for speed, performance, and SEO (search engine optimization).</p>
-    <p>With Bayshore Communications, you can have a website that is not only beautiful and functional but also transformative and effective. Get in touch with us today and unleash your digital potential!</p>`,
+    <h2 className="text-center">Why Choose Bayshore Communications</h2>
+    <p className="text-center">If you want to create a website that not only looks astounding but also performs exceptionally, Bayshore Communications is the right choice for you. We are a team of passionate and skilled website designers and developers who can help you to fulfill your desire and expectations. Partner with Bayshore Communications for transformative website design and elevate your online presence as well as drive business growth.</p>
+    <p className="text-center">Contact us today to schedule a free consultation and discover how we can work together to achieve your online objectives. Bayshore Communications will be your best collaborator in creating a website that is customized, user-friendly, and visually stunning, as well as optimized for speed, performance, and SEO (search engine optimization).</p>
+    <p className="text-center">With Bayshore Communications, you can have a website that is not only beautiful and functional but also transformative and effective. Get in touch with us today and unleash your digital potential!</p>`,
   },
 
   {
@@ -2707,6 +2803,7 @@ interface ServiceProps {
     descriptionFifth: string;
     descriptionSixth: string;
     descriptionSeventh: string;
+    descriptionEightth: string;
     whyBayshore: string;
   };
 }

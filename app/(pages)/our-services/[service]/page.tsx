@@ -111,6 +111,7 @@ const page = ({ params }: { params: { service: string } }) => {
                   {Parser(elem.descriptionFifth)}
                   {Parser(elem.descriptionSixth)}
                   {Parser(elem.descriptionSeventh)}
+                  {Parser(elem.descriptionEightth)}
                 </div>
               </div>
             </SectionLayout>
