@@ -60,6 +60,17 @@ services = [
     shortDescription: `Any company or business that wants to thrive online in the quick-paced digital world needs a website that is both aesthetically attractive and well-designed. The value of appealing website design services that are tailored to your company's requirements is recognized by Bayshore Communications. Our team of specialists is committed to building websites that have an impact, with an emphasis on user-friendly interfaces and cutting-edge technology.`,
 
     descriptionFirst: `
+
+         
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
     
     <h2>Customized Website Design Solutions</h2>
     <p>We know that every business has unique requirements, and off-the-shelf website templates may not always meet your specific needs or expectations. On the other hand, Bayshore Communications offers customized website design solutions that align perfectly with your brand identity and business goals.</p>
@@ -303,17 +314,42 @@ services = [
     url: "mobile-app",
     homeTabBar: [
       {
-        titleTab: "tab",
-        contentTab: "tab",
+        titleTab: `Dummy`,
+        contentTab: `At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.`,
+        titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/tab-1.png",
+      },
+      {
+        titleTab: `Dummy`,
+        contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+      {
+        titleTab: `Dummy`,
+        contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
         titleIcon: "tab",
         titleImage: "tab",
       },
     ],
     title: "Mobile App Service",
     shortTitle: "Mobile App",
-    shortDescription: `Welcome to the era of the mobile app revolution, where the world fits perfectly in the palm of your hand! We are thrilled to introduce you to our cutting-edge Mobile App service, designed to unleash the true potential of your business in the digital realm. As a trailblazing digital marketing and software solution company, Bayshore understand that having a powerful and intuitive mobile app is the key to staying ahead of the competition in today's fast-paced world.`,
-    description: `<p>Welcome to the era of the mobile app revolution, where the world fits perfectly in the palm of your hand! We are thrilled to introduce you to our cutting-edge Mobile App service, designed to unleash the true potential of your business in the digital realm. As a trailblazing digital marketing and software solution company, Bayshore understand that having a powerful and intuitive mobile app is the key to staying ahead of the competition in today's fast-paced world.</p>
-      <p>Imagine a world where your brand's presence is always just a tap away, customer engagement is at the highest level, and business opportunities flourish effortlessly. With Bayshore Mobile App service, we are here to transform your vision into reality, reining the immense power of mobile technology to elevate your business to new heights. Whether you're a small startup with big dreams or an established enterprise seeking to expand your digital footprint, our team of skilled developers, designers, and marketers will work tirelessly to create a mobile app that reflects the unique essence of your brand.</p>
+    shortDescription: `Welcome to the era of the mobile app revolution, where the world fits perfectly in the palm of your hand! We are thrilled to introduce you to our cutting-edge Mobile App service, designed to unleash the true potential of your business in the digital realm. As a trailblazing digital marketing and software solution company, Bayshore understand that having a powerful and intuitive mobile app is the key to staying ahead of the competition in today's fast-paced world. 
+    Imagine a world where your brand's presence is always just a tap away, customer engagement is at the highest level, and business opportunities flourish effortlessly. With Bayshore Mobile App service, we are here to transform your vision into reality, reining the immense power of mobile technology to elevate your business to new heights. Whether you're a small startup with big dreams or an established enterprise seeking to expand your digital footprint, our team of skilled developers, designers, and marketers will work tirelessly to create a mobile app that reflects the unique essence of your brand.`,
+
+    descriptionFirst: `
+
+         
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+      
 
       <h2>Mobile App Development Services</h2>
       <p>Are you seeking for a trustworthy and qualified partner to develop your ideal mobile application? We have the knowledge and expertise to provide high-quality solutions that meet your needs and beyond your expectations, whether you need an app for iOS, Android, or both of them.</p>
@@ -348,17 +384,23 @@ services = [
   
       
       <h3>User Centric Design and Intuitive Interfaces</h3>
-      <p>Along with the above, we believe that a great app is not only functional, but also beautiful and easy to use. That&rsquo;s why we pay attention to the user experience and user interface design of your app. We create wireframes, mockups, and prototypes to test and refine your app&rsquo;s layout, navigation, and features. We also follow the best practices and guidelines of each platform to ensure your app is consistent and intuitive for your users.</p>
+      <p>Along with the above, we believe that a great app is not only functional, but also beautiful and easy to use. That&rsquo;s why we pay attention to the user experience and user interface design of your app. We create wireframes, mockups, and prototypes to test and refine your app&rsquo;s layout, navigation, and features. We also follow the best practices and guidelines of each platform to ensure your app is consistent and intuitive for your users.</p>`,
+
+    descriptionSecond: `
+
+      <h2 className="text-center">Integration of Advanced Features and Functionality</h2>
+      <p className="text-center">Mobile app development is one of the core services that Bayshore Communication offers to its clients. We are a digital marketing and software solution company that specializes in creating innovative and user-friendly mobile apps for various industries and purposes. Our mobile app developers have the skills, experience, and tools to integrate advanced features and functionality that can make your mobile app stand out from the crowd.</p>
+
      
       
-     
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
 
- 
 
-      <h2>Integration of Advanced Features and Functionality</h2>
-      <p>Mobile app development is one of the core services that Bayshore Communication offers to its clients. We are a digital marketing and software solution company that specializes in creating innovative and user-friendly mobile apps for various industries and purposes. Our mobile app developers have the skills, experience, and tools to integrate advanced features and functionality that can make your mobile app stand out from the crowd.</p>
-
-     
       
       <h3>Personalized Push Notifications to Keep Users Engaged</h3>
       <p>Push notifications are messages that pop up on the user&rsquo;s device screen, even when the app is not in use. They can be used to inform, remind, persuade, or entertain the users. Our Bayshore developer team help you create and send personalized push notifications to your users based on their behavior, preferences, location, device, and more. We also help you optimize the timing, frequency, and content of your push notifications to increase engagement and retention.</p>
@@ -400,13 +442,25 @@ services = [
       </ul>
       
 
-      <p>So, if you ever want to create a crypto app, we can use a third-party API to access live coin rankings from Coinranking.com. If you want to create a gaming app, we can use a third-party API to access blockchain-based assets from Etherscan.io or PolygonScan.com.</p>
+      <p>So, if you ever want to create a crypto app, we can use a third-party API to access live coin rankings from Coinranking.com. If you want to create a gaming app, we can use a third-party API to access blockchain-based assets from Etherscan.io or PolygonScan.com.</p>`,
+
+    descriptionThird: `
+      <h2  className="text-center">Robust Backend Development and Data Management</h2>
+
+      <p className="text-center">Mobile apps are not just about the front-end design and features. They also depend on the backend development and data management that support the app&rsquo;s functionality, performance, and security. At Bayshore Communication, we offer robust backend development and data management services for your mobile app project. We can help you build a secure and scalable backend infrastructure, implement efficient data storage and retrieval mechanisms, and integrate seamlessly with in-build APIs and web services.</p>
+
+
+          
       
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
 
-      <h2>Robust Backend Development and Data Management</h2>
 
-      <p>Mobile apps are not just about the front-end design and features. They also depend on the backend development and data management that support the app&rsquo;s functionality, performance, and security. At Bayshore Communication, we offer robust backend development and data management services for your mobile app project. We can help you build a secure and scalable backend infrastructure, implement efficient data storage and retrieval mechanisms, and integrate seamlessly with in-build APIs and web services.</p>
-
+      
       
       <h3>Secure and Scalable Backend Infrastructure</h3>
       <p>The backend infrastructure is the foundation of your mobile app, consists of the servers, databases, networks, and software that handle the app&rsquo;s logic, data processing, and communication. A robust backend infrastructure should protect your app from unauthorized access, cyberattacks, and data breaches, as well as handle high volumes of traffic, requests, and data without compromising the app&rsquo;s speed or quality.</p>
@@ -447,14 +501,23 @@ services = [
       
     <h3>Seamless Integration with In-build APIs and Web Services</h3>
       <p>Our Bayshore expert developer help you to integrate with in-build APIs and web services for your mobile app is by using RESTful architecture. RESTful architecture is a design principle that defines how APIs and web services should be structured, organized, and implemented.</p>
-      <p>As it supports multiple platforms, languages, and device, this architecture can improve the app compatibility by using uniform and consistent interfaces, resources, and representations. RESTful can enhance the security of your mobile app like authentication, user data, product data, normal login and the in-build APIs by using encryption, authentication, and authorization techniques. It can also support HTTPS and SSL protocols for secure data transmission.</p>
-      
-      
+      <p>As it supports multiple platforms, languages, and device, this architecture can improve the app compatibility by using uniform and consistent interfaces, resources, and representations. RESTful can enhance the security of your mobile app like authentication, user data, product data, normal login and the in-build APIs by using encryption, authentication, and authorization techniques. It can also support HTTPS and SSL protocols for secure data transmission.</p>`,
 
-      <h2>Testing, Debugging, and Quality Assurance</h2>
-      <p>No program or software is complete without testing, debugging, and quality assurance, whether it's for website or mobile app. At Bayshore Communication, we offer these essential steps to ensure your mobile app meets the expectations and requirements of your users and clients, deliver a mobile app that is functional, secure, flawless, reliable, and stable.</p>
+    descriptionFourth: `
+      <h2 className="text-center">Testing, Debugging, and Quality Assurance</h2>
+      <p className="text-center">No program or software is complete without testing, debugging, and quality assurance, whether it's for website or mobile app. At Bayshore Communication, we offer these essential steps to ensure your mobile app meets the expectations and requirements of your users and clients, deliver a mobile app that is functional, secure, flawless, reliable, and stable.</p>
       
-
+    
+      
+      <img
+      src="/assets/service-demo-img.png"
+      alt="tab-1"
+      
+      className="w-full h-full"
+    />
+  
+  
+        
       
 
       
@@ -477,17 +540,25 @@ services = [
       
       
      <h3>Quality Assurance Measures for Reliable and Stable Apps</h3>
-      <p>To ensure that your app is reliable and stable, we implement various quality assurance measures, follow the best practices and standards of mobile app development. For example, coding conventions, documentation, version control, code review, and so on. Most importantly, our team follow the guidelines and policies of the app stores(e.g., Google Play and Apple App Store) to ensure that your app meets the quality criteria and requirements of the app stores.</p>
-     
+      <p>To ensure that your app is reliable and stable, we implement various quality assurance measures, follow the best practices and standards of mobile app development. For example, coding conventions, documentation, version control, code review, and so on. Most importantly, our team follow the guidelines and policies of the app stores(e.g., Google Play and Apple App Store) to ensure that your app meets the quality criteria and requirements of the app stores.</p>`,
+
+    descriptionFifth: `
+
+      <h2 className="text-center">App Updates and Maintenance</h2>
+
+      <p className="text-center">App updates and maintenance are integral components of a successful mobile app strategy. To keep your app up to date and bug free, ensure its optimal functionality and security and comply with the OS requirements and standards, you need our Bayshore services. We help you keep your app in top shape and provide a smooth and satisfying experience for your users.</p>
+
+          
       
-   
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
 
       
-
-      <h2>App Updates and Maintenance</h2>
-
-      <p>App updates and maintenance are integral components of a successful mobile app strategy. To keep your app up to date and bug free, ensure its optimal functionality and security and comply with the OS requirements and standards, you need our Bayshore services. We help you keep your app in top shape and provide a smooth and satisfying experience for your users.</p>
-
       
       <h3>Proactive Support for Technical Issues and Queries</h3>
       <p>We provide proactive support for any technical issues or queries that may arise in your app. So for that reason, Bayshore have a team of dedicated and skilled app developers and technicians who are available to assist you with any app-related problems or questions. We also have a customer support portal where you can submit tickets, chat with our agents, or access our knowledge base and FAQs.</p>
@@ -505,14 +576,24 @@ services = [
       
       
      <h3>Compliance with OS Requirements and Standards</h3>
-      <p>We ensure your app complies with the OS requirements and standards. For example, if there are any changes or updates in the OS platforms, such as Google Play and Apple App Store, we continuously monitor that. Moreover, Bayshore always tracks any guidelines or policies that may affect your app&rsquo;s approval or ranking on the app stores.</p>
+      <p>We ensure your app complies with the OS requirements and standards. For example, if there are any changes or updates in the OS platforms, such as Google Play and Apple App Store, we continuously monitor that. Moreover, Bayshore always tracks any guidelines or policies that may affect your app&rsquo;s approval or ranking on the app stores.</p>`,
+
+    descriptionSixth: `
+      <h2 className="text-center">App Store Optimization (ASO) for Maximum Visibility</h2>
+
+      <p className="text-center">Creating a mobile app is not enough to ensure its success. You also need to make sure that your mobile app is visible and discoverable to your target audience. That&rsquo;s where App Store Optimization (ASO) comes in, and we, Bayshore communication, make sure that you get the best ASO service.</p>
+
+          
       
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       
-
-      <h2>App Store Optimization (ASO) for Maximum Visibility</h2>
-
-      <p>Creating a mobile app is not enough to ensure its success. You also need to make sure that your mobile app is visible and discoverable to your target audience. That&rsquo;s where App Store Optimization (ASO) comes in, and we, Bayshore communication, make sure that you get the best ASO service.</p>
-
      
       <h3>Boosting App Visibility with ASO Techniques</h3>
       <p>Our expert team use proven ASO techniques to boost your app&rsquo;s visibility and reach on the app stores. We analyze your app&rsquo;s category, competitors, target audience, and market trends to devise a customized ASO strategy for your app.</p> 
@@ -542,17 +623,49 @@ services = [
     
       
       <h3>App Performance Optimization for Better Discoverability</h3>
-      <p>We optimize your app&rsquo;s performance for better discoverability on the app stores through compression, minification, caching, encryption. Some of the factors that we optimize for better app performance are app size, speed, stability, usability, and quality.</p> 
+      <p>We optimize your app&rsquo;s performance for better discoverability on the app stores through compression, minification, caching, encryption. Some of the factors that we optimize for better app performance are app size, speed, stability, usability, and quality.</p> `,
+
+    descriptionSeventh: `<h2 className="text-center">Dummy Data</h2>
+      <p className="text-center">Lorem Ipsum Dolor sit</p>
+      
+          
+      
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+      `,
+
+    descriptionEightth: `<h2 className="text-center">Dummy Data</h2>
+      <p className="text-center">Lorem Ipsum Dolor sit</p>
+      
+          
+      
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+      `,
+
+    whyBayshore: `
       
       
 
      
 
-      <h2>Why Choose Bayshore&rsquo;s Mobile App Service</h2>
+      <h2 className="text-center">Why Choose Bayshore&rsquo;s Mobile App Service</h2>
 
-      <p>If you want to create an app that not only looks amazing but also performs flawlessly, Bayshore Communications is the right choice for you. We are a team of passionate and skilled app developers and designers who can help you to fulfill your vision and goals.</p>
-      <p>Contact us today to schedule a free consultation and discover how we can work together to achieve your mobile objectives. Bayshore Communications will be your best partner in creating an app that is customized, user-friendly, and visually stunning, as well as optimized for speed, performance, and ASO (app store optimization).</p>
-      <p>With Bayshore Communications, you can have an app that is not only beautiful and functional but also innovative and effective. Get in touch with us today and enhance your mobile presence as well as drive business growth.</p>
+      <p className="text-center">If you want to create an app that not only looks amazing but also performs flawlessly, Bayshore Communications is the right choice for you. We are a team of passionate and skilled app developers and designers who can help you to fulfill your vision and goals.</p>
+      <p className="text-center">Contact us today to schedule a free consultation and discover how we can work together to achieve your mobile objectives. Bayshore Communications will be your best partner in creating an app that is customized, user-friendly, and visually stunning, as well as optimized for speed, performance, and ASO (app store optimization).</p>
+      <p className="text-center">With Bayshore Communications, you can have an app that is not only beautiful and functional but also innovative and effective. Get in touch with us today and enhance your mobile presence as well as drive business growth.</p>
      `,
   },
 
@@ -561,8 +674,20 @@ services = [
     url: "seo-service",
     homeTabBar: [
       {
-        titleTab: "tab",
-        contentTab: "tab",
+        titleTab: `Dummy`,
+        contentTab: `At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.`,
+        titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/tab-1.png",
+      },
+      {
+        titleTab: `Dummy`,
+        contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+      {
+        titleTab: `Dummy`,
+        contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
         titleIcon: "tab",
         titleImage: "tab",
       },
@@ -570,11 +695,39 @@ services = [
     title: "SEO Service",
     shortTitle: "SEO",
     shortDescription: `Are you aware that 93% of all internet encounters start with a search engine, and there are over 5 billion queries made on search engines every day? Yes, it is clear that the importance of SEO (Search Engine Optimization) cannot be understated. With this ability, you might reach millions of potential clients without investing any money in advertising. You may outrank your rivals on Google and other search engines, transforming your website into a potent lead and conversion generator that operates around the clock.`,
-    description: `<h2>The Digital Marketing Game Changer: Unleash Online Success Through Strategic Search Engine Optimization</h2>
+
+    descriptionFirst: `
+    
+         
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+    <h2>The Digital Marketing Game Changer: Unleash Online Success Through Strategic Search Engine Optimization</h2>
       <p>Are you aware that 93% of all internet encounters start with a search engine, and there are over 5 billion queries made on search engines every day? Yes, it is clear that the importance of SEO (Search Engine Optimization) cannot be understated. With this ability, you might reach millions of potential clients without investing any money in advertising. You may outrank your rivals on Google and other search engines, transforming your website into a potent lead and conversion generator that operates around the clock.</p>
-      <p>The method of improving your website and content to rank higher and better in search results is known as SEO or search engine optimization. It is beneficial to match the expectations and interests of your potential consumers with the requirements of search engines when developing your website and content. You may develop your business by using SEO to increase organic traffic, increase internet visibility, build brand credibility, and boost brand trust.</p>
-      <h2>Vital Role of SEO for Fueling Growth in the Digital Landscape</h2>
-      <p>In the current era of intense online competition, everyone wants to maximize their website's potential, and this can only be possible through SEO which has become absolutely crucial. SEO, short for search engine optimization, involves refining your overall online presence to secure higher rankings on search engines and draw in targeted traffic. By doing so, you can effectively connect with your desired audience, enhance brand recognition, and foster substantial online growth for your business.</p>
+      <p>The method of improving your website and content to rank higher and better in search results is known as SEO or search engine optimization. It is beneficial to match the expectations and interests of your potential consumers with the requirements of search engines when developing your website and content. You may develop your business by using SEO to increase organic traffic, increase internet visibility, build brand credibility, and boost brand trust.</p>`,
+
+    descriptionSecond: `
+
+      <h2 className="text-center">Vital Role of SEO for Fueling Growth in the Digital Landscape</h2>
+      <p className="text-center">In the current era of intense online competition, everyone wants to maximize their website's potential, and this can only be possible through SEO which has become absolutely crucial. SEO, short for search engine optimization, involves refining your overall online presence to secure higher rankings on search engines and draw in targeted traffic. By doing so, you can effectively connect with your desired audience, enhance brand recognition, and foster substantial online growth for your business.</p>
+
+        
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+
       <p>As it enables companies to connect with potential consumers, develop their trademark identities, and boost income at the appropriate time and location, SEO plays a crucial role in driving growth in the digital world. You want your website to emerge on the top page of search results when consumers look for goods, services, or information in your niche. You may attract their interest and attention in this manner, leading them to your website. Almost in every business, owners use SEO to accomplish their digital marketing objectives by adhering to best practices and keeping up with the most recent trends and algorithms.</p>
       <p>SEO has many benefits for businesses that want to grow in the digital landscape. Some of these benefits are:</p>
 
@@ -592,9 +745,24 @@ services = [
 
 
       <p>SEO is a continuous process that calls for continuing evaluation and development. That's why you must keep informed and adjust as necessary, since SEO trends and algorithms change constantly. Additionally, you must constantly assess the effectiveness and outcomes of your SEO efforts in order to pinpoint potential areas for progress.</p>
-      <p>As this is a powerful and cost-effective digital marketing strategy that can help you fuel your growth in the online world, by optimizing your site and online presence for search engines, you can gain a competitive edge and achieve your business goals.</p>
-      <h2>Innovative Strategies and Competitive Edge of Our SEO Solutions</h2>
-      <p>At BayShore Communication, we take great pleasure in providing cutting-edge SEO solutions that go above and beyond the norm. We provide SEO services that are customized to meet your unique requirements and objectives. Our distinctive method for providing SEO services separates us from the competition and makes sure that your website stands out in the online environment. With our persistent dedication to quality, we assist you in achieving unmatched online exposure and a clear competitive advantage.</p>
+      <p>As this is a powerful and cost-effective digital marketing strategy that can help you fuel your growth in the online world, by optimizing your site and online presence for search engines, you can gain a competitive edge and achieve your business goals.</p>`,
+
+    descriptionThird: `
+
+      <h2 className="text-center">Innovative Strategies and Competitive Edge of Our SEO Solutions</h2>
+      <p className="text-center">At BayShore Communication, we take great pleasure in providing cutting-edge SEO solutions that go above and beyond the norm. We provide SEO services that are customized to meet your unique requirements and objectives. Our distinctive method for providing SEO services separates us from the competition and makes sure that your website stands out in the online environment. With our persistent dedication to quality, we assist you in achieving unmatched online exposure and a clear competitive advantage.</p>
+
+        
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+
       <p>When we talk about SEO, you should go beyond the fundamentals. Our team of highly trained experts is aware that every website is distinctive. Most importantly, we don't believe in one-size-fits-all solutions; instead, we prefer to develop individualized, innovative methods which yield results. Due to this, we take a moment to thoroughly review your business, your intended audience, and the competitive environment before establishing a customized SEO plan that supports your individual objectives and targets.</p>
       <p>We combine the power of cutting-edge technology with human expertise to stay ahead of the curve. By leveraging advanced analytics tools, industry insights, and our in-depth knowledge of search engine algorithms, we uncover hidden opportunities and identify untapped potential within your website. This allows us to implement highly effective SEO strategies that yield measurable results.</p>
       <p>Our unique approach to SEO services is based on the following key principles and strategies:</p>
@@ -612,16 +780,45 @@ services = [
       </ul>
       
 
-      <p>At BayShore Communication, our SEO solutions are innovative and competitive because we combine data, creativity, and technology to help you achieve your digital marketing goals. Therefore, with our unique approach to SEO services and the implementation of key principles and strategies, we boost your competitiveness in the market. By partnering with us will give you a chance to unleash the full potential of your online presence.</p>
-      <h2>The Right Choice for SEO Excellence: Experience, Expertise, and Proven Results</h2>
-      <p>When it comes to achieving SEO excellence, choosing the right partner can make all the difference. If you are looking for digital marketing services that can help you grow your online presence and business, you need an SEO agency that has the experience, expertise, and proven results to deliver. That partner is Bayshore Communication.</p>
+      <p>At BayShore Communication, our SEO solutions are innovative and competitive because we combine data, creativity, and technology to help you achieve your digital marketing goals. Therefore, with our unique approach to SEO services and the implementation of key principles and strategies, we boost your competitiveness in the market. By partnering with us will give you a chance to unleash the full potential of your online presence.</p>`,
+
+    descriptionFourth: `
+      <h2 className="text-center">The Right Choice for SEO Excellence: Experience, Expertise, and Proven Results</h2>
+      <p className="text-center">When it comes to achieving SEO excellence, choosing the right partner can make all the difference. If you are looking for digital marketing services that can help you grow your online presence and business, you need an SEO agency that has the experience, expertise, and proven results to deliver. That partner is Bayshore Communication.</p>
+
+        
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+
       <p>We offer SEO services that are customized to your specific needs and goals. We don&rsquo;t use cookie-cutter solutions, but rather create strategies that are tailored to your industry, audience, and competitors. Furthermore, we use a combination of data-driven analysis, user-centric content creation, technical SEO excellence, link building and outreach, and continuous improvement and innovation to help you achieve your desired results.</p>
       <p>Bayshore believe in the power of data to drive informed decision-making. Our SEO services are backed by advanced analytics tools and robust data analysis, allowing us to uncover valuable insights about your website's performance, user behavior, and industry trends.</p>
       <p>Our team of SEO professionals consists of seasoned experts who stay at the forefront of industry trends and search engine algorithms. With their deep understanding of the ever-evolving SEO landscape, they bring a wealth of knowledge and expertise to every project.</p>
       <p>With a proven track record in the SEO industry, we have accumulated years of experience working with clients from various sectors. We have tackled diverse challenges and successfully driven organic growth for businesses of all sizes. Our experience equips us with the insights and know-how to navigate the complexities of SEO and tailor our strategies to your specific requirements.</p>
-      <p>We take pride in our ability to provide demonstrable outcomes. Our priority is not just to increase the exposure of your website, but also to drive quality traffic, improve customer satisfaction, and eventually increase conversions. We establish clear standards, monitor key performance metrics, and give comprehensive data, so you can understand the impact of our SEO efforts and the value we provide to your company.</p>
-      <h2>Cracking High-Value Keywords for Maximum Impact</h2>
-      <p>Keywords are the foundation of SEO. They are the words and phrases that users type into search engines to find what they are looking for. Choosing the right keywords for your website is crucial for ranking higher in the search results and attracting more qualified traffic.</p>
+      <p>We take pride in our ability to provide demonstrable outcomes. Our priority is not just to increase the exposure of your website, but also to drive quality traffic, improve customer satisfaction, and eventually increase conversions. We establish clear standards, monitor key performance metrics, and give comprehensive data, so you can understand the impact of our SEO efforts and the value we provide to your company.</p>`,
+
+    descriptionFifth: `
+
+      <h2 className="text-center">Cracking High-Value Keywords for Maximum Impact</h2>
+      <p className="text-center">Keywords are the foundation of SEO. They are the words and phrases that users type into search engines to find what they are looking for. Choosing the right keywords for your website is crucial for ranking higher in the search results and attracting more qualified traffic.</p>
+
+        
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+
       <p>At BayShore Communication, we conduct thorough keyword research to identify the best keywords for your website. Our keyword research process is meticulous, ensuring that no valuable keyword opportunity is overlooked. We go beyond basic keyword tools and delve deep into the data and insights that drive results. Our process involves the following steps:</p>
 
       <ul>
@@ -641,10 +838,25 @@ services = [
       </ul>
       
 
-      <p>We use these high-value keywords to optimize your website content, titles, meta tags, headings, images, and links. Not only that, but we also use them to create engaging and informative content that provides value to your users and answers their queries. We monitor and track the performance of these keywords and adjust our strategies as needed to ensure that you are always ranking well and driving quality traffic to your website.</p>
-      <h2>Crafting a Winning On-Page SEO Formula for Websites</h2>
-      <p>On-page SEO is the practice of optimizing the elements of a website that are within your control. These include the content, the HTML code, the URL structure, and the site architecture. On-page SEO helps you improve your website&rsquo;s relevance, usability, and authority for both users and search engines.</p>
+      <p>We use these high-value keywords to optimize your website content, titles, meta tags, headings, images, and links. Not only that, but we also use them to create engaging and informative content that provides value to your users and answers their queries. We monitor and track the performance of these keywords and adjust our strategies as needed to ensure that you are always ranking well and driving quality traffic to your website.</p>`,
+
+    descriptionSixth: `
+      <h2 className="text-center">Crafting a Winning On-Page SEO Formula for Websites</h2>
+      <p className="text-center">On-page SEO is the practice of optimizing the elements of a website that are within your control. These include the content, the HTML code, the URL structure, and the site architecture. On-page SEO helps you improve your website&rsquo;s relevance, usability, and authority for both users and search engines.</p>
+
+        
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+
       <p>At BayShore Communication, we craft a winning on-page SEO formula for websites that covers the following techniques:</p>
+      
 
       <ul>
       <li>Meta tags:We optimize your website's meta tags, including the meta title and meta description. These tags provide concise summaries of your web pages and appear in search engine results. By crafting compelling, keyword-rich meta tags, we enhance your website's visibility and encourage click-through rates.</li>
@@ -657,9 +869,23 @@ services = [
       </ul>
       
 
-      <p>These are some of the on-page SEO techniques that we use to optimize your website elements. We also use other techniques such as Internal Linking, Site Speed Optimization, Mobile-Friendliness, Keyword Research and Placement, Content Optimization, Schema Markup, Image Optimization and more. We monitor and measure the performance of these techniques and provide you with regular reports and feedback.</p>
-      <h2>Building Bridges to Success: Unlocking the Power of Off-Page Optimization and Link Building</h2>
-      <p>Off-page optimization is the process of improving the external factors that affect the ranking and visibility of a website in search engines. It involves activities such as building trust, authority, and reputation for your website through various channels and platforms. Off-page optimization is crucial for building website authority because it signals to search engines that your website is relevant, valuable, and trustworthy for your target audience.</p>
+      <p>These are some of the on-page SEO techniques that we use to optimize your website elements. We also use other techniques such as Internal Linking, Site Speed Optimization, Mobile-Friendliness, Keyword Research and Placement, Content Optimization, Schema Markup, Image Optimization and more. We monitor and measure the performance of these techniques and provide you with regular reports and feedback.</p>`,
+
+    descriptionSeventh: `
+      <h2 className="text-center">Building Bridges to Success: Unlocking the Power of Off-Page Optimization and Link Building</h2>
+      <p className="text-center">Off-page optimization is the process of improving the external factors that affect the ranking and visibility of a website in search engines. It involves activities such as building trust, authority, and reputation for your website through various channels and platforms. Off-page optimization is crucial for building website authority because it signals to search engines that your website is relevant, valuable, and trustworthy for your target audience.</p>
+
+        
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+
       <p>One of the most effective ways to achieve off-page optimization is through link building. Link building can help you improve your website authority by increasing your referral traffic, brand awareness, and online reputation.</p>
       <p>However, not all links are created equal. Some links can have a positive impact on your website authority, while others can have a negative or neutral impact. Therefore, it is important to have a strategic approach to link building that focuses on quality over quantity.</p>
       <p>Here are some of the link-building strategies that you can use to boost your off-page optimization:</p>
@@ -677,10 +903,24 @@ services = [
       
 
       <p>For example, you can build high-quality backlinks by creating linkable assets such as infographics, videos, guides, ebooks, or tools; by leveraging existing relationships with partners, customers, or suppliers; by participating in industry events or awards; or by conducting original research or surveys.</p></li>
-      </ul>
+      </ul>`,
 
-      <h2>Enhancing Performance through Technical SEO</h2>
-      <p>Technical SEO is the process of ensuring that a website meets the technical requirements and standards of search engines. Technical SEO aims to improve the crawling, indexing, rendering, and ranking of a website by fixing any issues that may affect its performance or user experience. Technical SEO is vital for enhancing the visibility, usability, and conversions of a website.</p>
+    descriptionEightth: `
+
+      <h2 className="text-center">Enhancing Performance through Technical SEO</h2>
+      <p className="text-center">Technical SEO is the process of ensuring that a website meets the technical requirements and standards of search engines. Technical SEO aims to improve the crawling, indexing, rendering, and ranking of a website by fixing any issues that may affect its performance or user experience. Technical SEO is vital for enhancing the visibility, usability, and conversions of a website.</p>
+
+        
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+
       <p>One of the first steps in technical SEO is conducting a technical SEO audit. A technical SEO audit is a comprehensive analysis of a website&rsquo;s technical aspects to identify and prioritize any issues that may hinder its performance or user experience. A technical SEO audit can cover various elements such as:</p>
 
       <ul>
@@ -694,12 +934,13 @@ services = [
       </ul>
       
 
-      <h2>Dominate the Local Market: Targeted Strategies for Local Search</h2>
+      <h3>Dominate the Local Market: Targeted Strategies for Local Search</h3>
       <p>Local search is the process of finding and displaying relevant results based on the user&rsquo;s location or geographic intent. Local search is important for local businesses, as it can help them reach and attract more potential customers who are nearby or looking for their products or services in a specific area. Local businesses can benefit from targeted local SEO strategies that can help them improve their visibility, relevance, and reputation in local search results.</p>
       <p>One of the key strategies for local SEO is optimizing local listings. Local listings are the online profiles of local businesses that appear on various platforms such as Google My Business, Bing Places, Yelp, or Facebook. Local listings can help local businesses showcase their information, such as name, address, phone number, website, hours, reviews, photos, or offers. Optimizing local listings involves claiming, verifying, updating, and managing these profiles to ensure that they are accurate, consistent, and complete across all platforms.</p>
       <p>Another strategy for local SEO is citation building. Citations are the mentions of a local business&rsquo;s name, address, and phone number (NAP) on other websites or directories. Citations can help local businesses increase their authority and trustworthiness in local search results by confirming their existence and location. Building citations involves finding and creating relevant and high-quality citations on various sources such as industry-specific directories, local newspapers, blogs, or social media.</p>
       <p>A third strategy for local SEO is location-specific keyword targeting. Location-specific keywords are the keywords that include a geographic modifier, such as city, state, zip code, or neighborhood. Location-specific keywords can help local businesses match the user&rsquo;s search intent and provide more relevant and personalized results. Targeting location-specific keywords involves conducting keyword research to identify the most popular and profitable keywords for a specific area and incorporating them into the website&rsquo;s content, title tags, meta descriptions, headings, or URLs.</p>
-      <h2>Tailored SEO Services for E-commerce Websites: Maximizing Revenue and Boosting Online Sales</h2>
+
+      <h3>Tailored SEO Services for E-commerce Websites: Maximizing Revenue and Boosting Online Sales</h3>
       <p>E-commerce websites face unique challenges and opportunities in the online market. They need to attract, engage, and convert customers who are looking for products or services that match their needs, preferences, and budget. They also need to stand out from the competition and provide a seamless and satisfying shopping experience. That&rsquo;s why e-commerce websites need specialized SEO services that can help them optimize their online presence and performance.</p>
       <p>Our SEO services for e-commerce websites are tailored to meet the specific goals and requirements of each client. We offer a comprehensive range of SEO services that cover every aspect of e-commerce optimization, such as:</p>
 
@@ -712,14 +953,16 @@ services = [
       </ul>
       
 
-      <h2>Customized Content Services for Online Businesses: Increasing Engagement and Driving Conversions</h2>
+      <h3>Customized Content Services for Online Businesses: Increasing Engagement and Driving Conversions</h3>
       <p>Content is the king of online marketing. It&rsquo;s the medium through which you communicate your message, value proposition, and brand identity to your potential and existing customers. Content is also the fuel that drives your SEO efforts, as it helps you rank higher in search results, generate more organic traffic, and build trust and authority with your audience. Content is the key to increasing engagement and driving conversions on your website.</p>
       <p>But not just any content will do. You need high-quality, engaging content that is tailored to your target audience, their needs, preferences, and expectations. You require content that is relevant, informative, entertaining, and compelling. Furthermore, you need content that differentiates you from your competitors and highlights your unique selling points. You require content that converts.</p>
       <p>That&rsquo;s why you need our customized content services for online businesses. We are a team of experienced content writers, editors, and strategists who can help you create and deliver content that works for your online business. So, how do we develop an effective content strategy?</p>
       <p>Well, first of all we work for content strategy development. It is the blueprint that guides the creation, distribution, and measurement of your content. It defines your goals, audience, tone, style, topics, keywords, formats, channels, and metrics. We can help you develop a smart content strategy that aligns with your online business objectives and audience profile. We can also help you perform a content audit to evaluate and optimize your existing content assets.</p>
       <p>Then content creation, which is the process of producing original and engaging content for your website and other online platforms. It involves researching, writing, editing, proofreading, formatting, and optimizing your content for SEO and user experience. We can help you create various types of content such as blog posts, articles, web pages, landing pages, product descriptions, newsletters, ebooks, white papers, case studies, infographics, videos, podcasts, or social media posts.</p>
       <p>After that, it&rsquo;s time for content marketing to boost and expand your content across various channels and platforms to increase its reach and engagement. It involves using powerful strategies such as social media marketing, email marketing, influencer marketing, guest posting, link building, or paid advertising to attract more traffic and leads to your website.</p>
-      <h2>Stay on top with Continuous SEO Monitoring for Sustainable Growth</h2>
+
+
+      <h3>Stay on top with Continuous SEO Monitoring for Sustainable Growth</h3>
       <p>SEO is not a one-time project. It is an ongoing process that requires constant monitoring and adjustment to keep up with the ever-changing online landscape. SEO is dynamic and competitive, and you need to stay on top of your game to maintain and improve your online performance and growth.</p>
       <p>Continuous SEO monitoring and adjustment can help you achieve sustainable growth by:</p>
 
@@ -743,9 +986,11 @@ services = [
       
 
       <p>We are committed to providing you with continuous SEO monitoring and adjustment services that can help you stay on top of your online business. We have the expertise, experience, and tools to help you monitor and adjust your SEO strategy according to the latest industry trends and algorithm changes. We can help you adapt to the changing online environment and ensure that your website is always optimized for search engines and users alike.</p>
-      <p><b>Finally....</b></p>
-      <p>In the end, we can proudly say that Bayshore Communication is one of the best companies you can find for SEO services. Why? Because we have the skills, experience, and tools to help you dominate the online market and grow your business. We offer a range of SEO services that can help you increase your website&rsquo;s visibility, traffic, and conversions,website&rsquo;s functionality, usability, and security, build and maintain a strong online presence and reputation, stay ahead of the competition and adapt to the changing online environment.</p>
-      <p>We are not just another company but your partner in online success. Our team is committed to delivering results and helping you achieve your business goals. Not only that, but we are not satisfied until you are satisfied. We are Bayshore Communication, and are here to make your online dreams come true. Contact us today to get a free quote and consultation. Don&rsquo;t miss this opportunity to work with the best service provider.</p>`,
+      `,
+
+    whyBayshore: `<p className="text-center"><b>Finally....</b></p>
+      <p className="text-center">In the end, we can proudly say that Bayshore Communication is one of the best companies you can find for SEO services. Why? Because we have the skills, experience, and tools to help you dominate the online market and grow your business. We offer a range of SEO services that can help you increase your website&rsquo;s visibility, traffic, and conversions,website&rsquo;s functionality, usability, and security, build and maintain a strong online presence and reputation, stay ahead of the competition and adapt to the changing online environment.</p>
+      <p className="text-center">We are not just another company but your partner in online success. Our team is committed to delivering results and helping you achieve your business goals. Not only that, but we are not satisfied until you are satisfied. We are Bayshore Communication, and are here to make your online dreams come true. Contact us today to get a free quote and consultation. Don&rsquo;t miss this opportunity to work with the best service provider.</p>`,
   },
 
   {
@@ -753,8 +998,20 @@ services = [
     url: "ui-ux-design",
     homeTabBar: [
       {
-        titleTab: "tab",
-        contentTab: "tab",
+        titleTab: `Dummy`,
+        contentTab: `At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.`,
+        titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/tab-1.png",
+      },
+      {
+        titleTab: `Dummy`,
+        contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+      {
+        titleTab: `Dummy`,
+        contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
         titleIcon: "tab",
         titleImage: "tab",
       },
@@ -762,39 +1019,144 @@ services = [
     title: "UI/UX Design Service",
     shortTitle: "UI/UX Design",
     shortDescription: `Do you want to create a website or an app that not only looks good, but also works well? Do you want to improve your retention, conversion rates, as well as user satisfaction? If so, you need a UI/UX design service that can help you achieve your goals. Every brand or company wants to stand out from their competitors and grow their business. And for that they need: the best visual representation of their business. That&rsquo;s where we, Bayshore Communication, come in. We are a team of talented and passionate UI/UX designers who can help you design and develop a product that users love and that expands your business goals.`,
-    description: `<p>Do you want to create a website or an app that not only looks good, but also works well? Do you want to improve your retention, conversion rates, as well as user satisfaction? If so, you need a UI/UX design service that can help you achieve your goals. Every brand or company wants to stand out from their competitors and grow their business. And for that they need: the best visual representation of their business. That&rsquo;s where we, Bayshore Communication, come in. We are a team of talented and passionate UI/UX designers who can help you design and develop a product that users love and that expands your business goals.</p>
-      <h2>User Research and Persona Development</h2>
-      <p>The development of persona and user research are crucial elements in the user experience and interface design process. It helps to understand your users' identities, what they actually require, and how they respond to your service or product. Therefore, the Bayshore team uses different tactics and technologies to help you comprehend their needs and create target user personas.</p>
+
+    descriptionFirst: `
+    
+         
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+<p>Do you want to create a website or an app that not only looks good, but also works well? Do you want to improve your retention, conversion rates, as well as user satisfaction? If so, you need a UI/UX design service that can help you achieve your goals. Every brand or company wants to stand out from their competitors and grow their business. And for that they need: the best visual representation of their business. That&rsquo;s where we, Bayshore Communication, come in. We are a team of talented and passionate UI/UX designers who can help you design and develop a product that users love and that expands your business goals.</p>`,
+
+    descriptionSecond: `
+      <h2 className="text-center">User Research and Persona Development</h2>
+      <p className="text-center">The development of persona and user research are crucial elements in the user experience and interface design process. It helps to understand your users' identities, what they actually require, and how they respond to your service or product. Therefore, the Bayshore team uses different tactics and technologies to help you comprehend their needs and create target user personas.</p>
+
+           
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h3>Understanding User Needs</h3>
       <p>We assist you understand user needs by uncovering insights into user behavior, preferences, and pain points to create user-centric interfaces. Our expert developers use various user research strategies, such as doing surveys and observations to get their preference and need, usability testing to see what challenges users can face, and more. Additionally, we make use of several technologies for user research, including User Testing, Hotjar, and Google Analytics. Using this information, we design user-centric interfaces that truly resonate with your users and exceed their expectations.</p>
       <h3>Creating Targeted User Personas</h3>
-      <p>Bayshore helps you develop detailed user personas that guide design decisions and ensure a personalized user experience. For that, we use various persona development methods, for example empathy mapping, journey mapping, scenario mapping, and more. Not only those methods, but our team also uses various tools, such as Xtensio, HubSpot, Userforge, and more for personal development. By using these methods and tools, we develop detailed user profiles that represent your target audience&rsquo;s characteristics, goals, motivations, frustrations, and needs.</p>
-      <h2>Information Architecture and Wireframing</h2>
-      <p>After understanding user needs and creating persona, the next step is Information architecture and wireframing, which is crucial in the UI/UX design process. These processes allow us to structure and present your content in a clear, logical, and user-friendly manner. At our fingertips, we have an array of methods and tools that enable us to elevate your app or website to new heights.</p>
+      <p>Bayshore helps you develop detailed user personas that guide design decisions and ensure a personalized user experience. For that, we use various persona development methods, for example empathy mapping, journey mapping, scenario mapping, and more. Not only those methods, but our team also uses various tools, such as Xtensio, HubSpot, Userforge, and more for personal development. By using these methods and tools, we develop detailed user profiles that represent your target audience&rsquo;s characteristics, goals, motivations, frustrations, and needs.</p>`,
+
+    descriptionThird: `
+      <h2 className="text-center">Information Architecture and Wireframing</h2>
+      <p className="text-center">After understanding user needs and creating persona, the next step is Information architecture and wireframing, which is crucial in the UI/UX design process. These processes allow us to structure and present your content in a clear, logical, and user-friendly manner. At our fingertips, we have an array of methods and tools that enable us to elevate your app or website to new heights.</p>
+      
+
+           
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h3>Streamlined Navigation Design</h3>
       <p>With our expertise in information architecture, we create intuitive and efficient navigation systems for seamless user journeys that serve as a compass, guiding users through your digital ecosystem effortlessly. We employ techniques such as card sorting, tree testing, sitemaps, and more to design intuitive and efficient navigation systems. By using tools like UserZoom, Maze, Treejack, Slickplan, and others, we ensure that users can find what they require with ease, resulting in seamless user journeys that keep them engaged and satisfied.</p>
       <h3>Hierarchical Content Organization</h3>
-      <p>To enhance findability and improve user comprehension, we mainly focus on the art of content organization. Through methods like content audits, content inventories, and content mapping, we gain a deep understanding of your content ecosystem. We utilize tools such as Airtable, Content Snare, GatherContent, and more to structure your content in a hierarchical manner that aligns with user needs and expectations. By organizing your content effectively, we empower users to locate information effortlessly, reducing cognitive load and enhancing their overall experience.</p>
-      <h2>Prototyping and Interactive Design</h2>
-      <p>If you want to create engaging and user-friendly interfaces that delight your users, you need prototyping and interactive design. These are important steps in the UI/UX design process that help us test and refine your design concepts.</p>
+      <p>To enhance findability and improve user comprehension, we mainly focus on the art of content organization. Through methods like content audits, content inventories, and content mapping, we gain a deep understanding of your content ecosystem. We utilize tools such as Airtable, Content Snare, GatherContent, and more to structure your content in a hierarchical manner that aligns with user needs and expectations. By organizing your content effectively, we empower users to locate information effortlessly, reducing cognitive load and enhancing their overall experience.</p>`,
+
+    descriptionFourth: `
+      <h2 className="text-center">Prototyping and Interactive Design</h2>
+      <p className="text-center">If you want to create engaging and user-friendly interfaces that delight your users, you need prototyping and interactive design. These are important steps in the UI/UX design process that help us test and refine your design concepts.</p>
+
+           
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h3>Interactive Prototypes for User Feedback</h3>
       <p>We help you develop clickable prototypes to gather early user feedback and validate design decisions with real users, using various prototyping methods, such as sketching, wireframing, mockups, and more. We also use various prototyping tools, such as Figma, Adobe XD, InVision to create clickable prototypes that simulate the look and feel of your product or service. Furthermore, we also use these prototypes to gather early user feedback and validate design decisions.</p>
       <h3>Engaging Microinteractions and Animations</h3>
-      <p>To enhance user experiences to new heights, we infuse your interfaces with engaging microinteractions and animations. Through carefully crafted transitions, feedback mechanisms, gestures, and more, we add a layer of interactivity that engages and delights users. Leveraging microinteraction and animation tools like Lottie, Principle, Framer, and others, we create visually stunning and dynamic elements that inject personality and charm into your interfaces. These microinteractions and animations not only capture users' attention, but also enhance usability and create memorable experiences that set your product or service apart.</p>
-      <h2>Visual Design and Branding</h2>
-      <p>Another vital step in the UI/UX design process are Visual design and branding. Those processes help us create interfaces that reflect your brand personality and appeal to your users.</p>
+      <p>To enhance user experiences to new heights, we infuse your interfaces with engaging microinteractions and animations. Through carefully crafted transitions, feedback mechanisms, gestures, and more, we add a layer of interactivity that engages and delights users. Leveraging microinteraction and animation tools like Lottie, Principle, Framer, and others, we create visually stunning and dynamic elements that inject personality and charm into your interfaces. These microinteractions and animations not only capture users' attention, but also enhance usability and create memorable experiences that set your product or service apart.</p>`,
+
+    descriptionFifth: `
+      <h2 className="text-center">Visual Design and Branding</h2>
+      <p className="text-center">Another vital step in the UI/UX design process are Visual design and branding. Those processes help us create interfaces that reflect your brand personality and appeal to your users.</p>
+
+           
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h3>Captivating Visual Aesthetics</h3>
       <p>By leveraging methods such as mood boards, style guides, and mockups, our skilled developers design visually stunning interfaces that align with your brand identity and captivate users. Using tools like Photoshop, Illustrator, Sketch, and others, we design interfaces that are not only attractive, elegant, and modern but also tailored to your target audience. Each visual element is carefully made to create a cohesive and captivating experience that connects with your users.</p>
       <h3>Consistent Branding Elements</h3>
-      <p>We establish a cohesive visual style through color palettes, typography, and imagery, using different branding elements methods, such as logo design, icon design, font selection, color scheme, and more. Utilizing tools like Canva, Logo Maker, Font Squirrel, Coolors, we create branding elements that are consistent, recognizable, and memorable. By maintaining visual consistency, we ensure that your brand is easily distinguished and leaves a lasting impression on your target audience.</p>
-      <h2>Website with UI/UX Solutions</h2>
-      <p>UI/UX design is a critical part of the website development process. At Bayshore, we believe that a great website is not only functional and informative, but also engaging and delightful. That&rsquo;s why we use UI/UX design principles to create intuitive and visually appealing websites that optimize user engagement, leading to increased traffic and conversions.</p>
-      <p>If you want to learn more about Bayshore&rsquo;s Website Design service, how we can help you to achieve your online goal, then click the link to find out more.</p>
-      <h2>UI/UX for Mobile App Optimized Interfaces</h2>
-      <p>At Bayshore, we know that mobile app users expect a seamless user experience across different devices. So, whenever we use UI/UX design for developing a mobile app or software, we make sure it is designed with responsive interfaces that adapt to different screen sizes, orientations and resolutions. More like structures are consistent, intuitive and elegant, regardless of the device the user is using. We also ensure that our mobile app interfaces are compatible with different platforms, such as iOS and Android, and follow their respective design guidelines and standards.<br /></p>
-      <p>Click here to discover how we can help create a stunning mobile app with Bayshore&rsquo;s Mobile App Design service.</p>
-      <h2>Usability Testing and Iterative Design</h2>
-      <p>Usability testing is assessing a product or service with sample consumers in order to find and fix if there are any utilizing problems with the product. On the other hand, iterative design entails continually enhancing and improving a product or service based on customer input and insights.</p>
+      <p>We establish a cohesive visual style through color palettes, typography, and imagery, using different branding elements methods, such as logo design, icon design, font selection, color scheme, and more. Utilizing tools like Canva, Logo Maker, Font Squirrel, Coolors, we create branding elements that are consistent, recognizable, and memorable. By maintaining visual consistency, we ensure that your brand is easily distinguished and leaves a lasting impression on your target audience.</p>`,
+
+    descriptionSixth: `
+      <h2 className="text-center">Website with UI/UX Solutions</h2>
+      <p className="text-center">UI/UX design is a critical part of the website development process. At Bayshore, we believe that a great website is not only functional and informative, but also engaging and delightful. That&rsquo;s why we use UI/UX design principles to create intuitive and visually appealing websites that optimize user engagement, leading to increased traffic and conversions.</p>
+
+           
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+      <p>If you want to learn more about Bayshore&rsquo;s Website Design service, how we can help you to achieve your online goal, then click the link to find out more.</p>`,
+
+    descriptionSeventh: `
+      <h2 className="text-center">UI/UX for Mobile App Optimized Interfaces</h2>
+      <p className="text-center">At Bayshore, we know that mobile app users expect a seamless user experience across different devices. So, whenever we use UI/UX design for developing a mobile app or software, we make sure it is designed with responsive interfaces that adapt to different screen sizes, orientations and resolutions. More like structures are consistent, intuitive and elegant, regardless of the device the user is using. We also ensure that our mobile app interfaces are compatible with different platforms, such as iOS and Android, and follow their respective design guidelines and standards.<br /></p>
+
+           
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
+      <p>Click here to discover how we can help create a stunning mobile app with Bayshore&rsquo;s Mobile App Design service.</p>`,
+
+    descriptionEightth: `
+
+      <h2 className="text-center">Usability Testing and Iterative Design</h2>
+      <p className="text-center">Usability testing is assessing a product or service with sample consumers in order to find and fix if there are any utilizing problems with the product. On the other hand, iterative design entails continually enhancing and improving a product or service based on customer input and insights.</p>
+
+           
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h3>User Testing for Continuous Improvement</h3>
       <p>By observing real users interact with a product or service, our skilled testers can identify areas where they can improve the user experience. This can save costs. By conducting user testing from the start of the UX user research, they can discover valuable insights that can guide their design decisions. Fixing a mistake after development can be very costly, as it can take up to 100 times the development cost for each UX project.</p>
       <h3>Iterative Design Process</h3>
@@ -815,9 +1177,10 @@ services = [
      <li> Once the prototype has been tested and improved, it can be finalized and launched to users.
      </li>
      </ul>
+
       
 
-      <h2>E-commerce Design and Conversion Optimization</h2>
+      <h2 >E-commerce Design and Conversion Optimization</h2>
       <p>E-commerce design and conversion optimization are essential steps in the UI/UX design process for online stores. They help us create interfaces that increase sales, revenue, and customer loyalty.</p>
       <h3>Conversion Driven E-commerce Interfaces</h3>
       <p>At Bayshore, we help businesses optimize their e-commerce interfaces to drive conversions. We do this by focusing on three key areas:</p>
@@ -850,6 +1213,9 @@ services = [
       
 
       <p>By using conversion-driven e-commerce interfaces and persuasive design techniques, we can help businesses increase the number of conversions on their websites and boost their sales.</p>
+
+
+
       <h2>Accessibility Design and Inclusive Experiences</h2>
       <p>In today's digital world, it is more important than ever to ensure that your website or app is accessible to everyone, regardless of their abilities, as over 1 billion people worldwide are living with disabilities. Because of that, we follow the effective accessibility guidelines and implement user-friendly features that make your interface easy to use for people with disabilities.</p>
       <h3>Inclusive Interface Design</h3>
@@ -885,6 +1251,9 @@ services = [
       
 
       <p>Depending on the nature and purpose of your interface, we also consider implementing other accessibility features, such as captions for videos, transcripts for audio, skip links for bypassing repetitive content, zoom controls for enlarging text or images, dark mode for reducing eye strain or glare, etc. These features can enhance the usability and comfort of your interface for users with different abilities or preferences.</p>
+
+
+
       <h2>UI/UX Audit and Enhancement</h2>
       <h3>Comprehensive Interface Evaluation</h3>
       <p>We conduct thorough audits to identify areas for improvement and optimize the user experience. It helps you understand the strengths and weaknesses of your interface and how it meets the needs and expectations of your users, discover any usability issues or errors that may affect the user experience or cause user frustration or dissatisfaction, and prioritize the most important or urgent areas for improvement and optimization.</p>
@@ -898,14 +1267,11 @@ services = [
       
       <li>Reduced costs: A well-designed UI/UX can help businesses reduce costs by streamlining processes and making it easier for users to find what they require.</li>
      
-      <li>Increased compliance: A well-designed UI/UX can help businesses comply with industry regulations.</li></ul>
+      <li>Increased compliance: A well-designed UI/UX can help businesses comply with industry regulations.</li></ul>`,
 
-      
-      
-      
-
-      <h2>Why Choose Our Bayshore UI/UX Design Service</h2>
-      <p>At Bayshore, we believe that user experience is the key to digital success. That's why we offer a comprehensive UI/UX design service that helps businesses of all sizes create exceptional user experiences that elevate the brand and delight your users. The reason you should choose our service because</p>
+    whyBayshore: `
+      <h2 className="text-center">Why Choose Our Bayshore UI/UX Design Service</h2>
+      <p className="text-center">At Bayshore, we believe that user experience is the key to digital success. That's why we offer a comprehensive UI/UX design service that helps businesses of all sizes create exceptional user experiences that elevate the brand and delight your users. The reason you should choose our service because</p>
 
       <ul><li>
       Our team has a wealth of experience in designing user-friendly and engaging interfaces for a wide range of products and services.</li>
@@ -916,7 +1282,7 @@ services = [
       
       
 
-      <p>If you are looking for a UI/UX design service that can help you elevate your brand and delight your users, then contact Bayshore today for a free consultation. We would be happy to discuss your needs and show you how we can help you achieve your digital success.</p>`,
+      <p className="text-center">If you are looking for a UI/UX design service that can help you elevate your brand and delight your users, then contact Bayshore today for a free consultation. We would be happy to discuss your needs and show you how we can help you achieve your digital success.</p>`,
   },
 
   {
@@ -924,8 +1290,20 @@ services = [
     url: "paid-advertising",
     homeTabBar: [
       {
-        titleTab: "tab",
-        contentTab: "tab",
+        titleTab: `Dummy`,
+        contentTab: `At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.`,
+        titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/tab-1.png",
+      },
+      {
+        titleTab: `Dummy`,
+        contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
+        titleIcon: "tab",
+        titleImage: "tab",
+      },
+      {
+        titleTab: `Dummy`,
+        contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
         titleIcon: "tab",
         titleImage: "tab",
       },
@@ -933,7 +1311,18 @@ services = [
     title: "Effective Paid Advertising Services to Boost Your Business  ",
     shortTitle: "Paid Advertising",
     shortDescription: `Do you want to increase your client base and boost your revenue? Maximize the impact of your marketing spending, and get a good return on your investment? If so, Bayshore Communication must provide you with successful paid advertising services. We are a group of skilled professionals who can assist you in developing and managing programs that are tailored to your target market, produce leads, and boost sales. We have the expertise to make it happen whether you require ads for Google, Facebook, Instagram, or any other platform. Together, we will determine your objectives, examine your market, and develop a plan of action that fits your requirements and price range. Moreover, we monitor and optimize your campaigns to make sure they are performing well and delivering results. With Bayshore Communication, you can trust that your paid advertising is in good hands.`,
-    description: `<p>Do you want to increase your client base and boost your revenue? Maximize the impact of your marketing spending, and get a good return on your investment? If so, Bayshore Communication must provide you with successful paid advertising services. We are a group of skilled professionals who can assist you in developing and managing programs that are tailored to your target market, produce leads, and boost sales. We have the expertise to make it happen whether you require ads for Google, Facebook, Instagram, or any other platform. Together, we will determine your objectives, examine your market, and develop a plan of action that fits your requirements and price range. Moreover, we monitor and optimize your campaigns to make sure they are performing well and delivering results. With Bayshore Communication, you can trust that your paid advertising is in good hands.</p>
+    descriptionFirst: `
+
+            
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h2>Customized Paid Advertising Strategies</h2>
       <p>At Bayshore Communication, we know that every business is different and has its own unique goals and challenges. That&rsquo;s why we don&rsquo;t offer generic solutions, but rather customized paid advertising strategies that match your specific needs and objectives. Whether your goal is to raise brand recognition, produce more leads, enhance conversions, or keep repeat customers, we can help you create and execute a plan that works for you.</p>
       <h3>Customized Paid Advertising Strategies for Your Unique Business Goals</h3>
@@ -941,54 +1330,146 @@ services = [
       <h3>In Depth Audience Analysis for Targeted Advertising Campaigns</h3>
       <p>Knowing your target market and how to reach them successfully is one of the most crucial elements of paid advertising. We segment your audience based on their demographics, interests, habits, and requirements using cutting-edge technologies and techniques. Then, using buyer personas that serve as a representation of your ideal clients, we can better build advertisements that will speak to and resonate with them. We can improve your click-through rates (CTRs), conversions, and return on ad spend (ROAS) by focusing on the appropriate audience with the right message at the right time.</p>
       <h3>Strategic Ad Platform Selection for Maximum Reach and impact</h3>
-      <p>There are many ad platforms available today, each with its own advantages and disadvantages. Choosing the right one for your business can make a huge difference in your campaign performance and results. We help you select the best ad platform for your goals, audience, and budget, whether it&rsquo;s Google, Facebook, Instagram, or any other platform Ad. We also help you optimize your ad formats, placements, keywords, bids, and creatives to ensure they are relevant, engaging, and effective. Furthermore, we leverage the power of each platform to maximize your reach and impact across the web and social media.</p>
-      <h2>Keyword Research and Ad Creation</h2>
-      <p>The overall quality of your advertisements and keywords is one of the primary determinants of the success of your paid advertising efforts. To ensure that your advertisements appear for the most pertinent and lucrative search keywords and that they pique the interest of your potential clients, we assist you with keyword research and ad production.</p>
+      <p>There are many ad platforms available today, each with its own advantages and disadvantages. Choosing the right one for your business can make a huge difference in your campaign performance and results. We help you select the best ad platform for your goals, audience, and budget, whether it&rsquo;s Google, Facebook, Instagram, or any other platform Ad. We also help you optimize your ad formats, placements, keywords, bids, and creatives to ensure they are relevant, engaging, and effective. Furthermore, we leverage the power of each platform to maximize your reach and impact across the web and social media.</p>`,
+
+descriptionSecond:`
+      <h2 className="text-center">Keyword Research and Ad Creation</h2>
+      <p className="text-center">The overall quality of your advertisements and keywords is one of the primary determinants of the success of your paid advertising efforts. To ensure that your advertisements appear for the most pertinent and lucrative search keywords and that they pique the interest of your potential clients, we assist you with keyword research and ad production.</p>
+
+              
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h3>Keyword Research: Uncovering High Value Opportunities for Your Ads</h3>
       <p>The Bayshore expert team uses cutting-edge methods and technologies to carry out thorough keyword research for your company. In order to identify the optimal keywords for your products or services, as well as your goals and budget, we look into your industry, rivals, and target audience. In addition, we search for long-tail keywords, negative keywords, and keyword variants that might raise your cost per click (CPC), quality score, and ad relevance.</p>
       <h3>Compelling Ad Copy and Visuals that Drive Engagement and Conversions</h3>
-      <p>Once we have your keyword list ready, we move on to creating your ads. We write compelling ad copy that highlights your unique value proposition, benefits, and call to action, also create eye-catching visuals that complement your ad copy and showcase your brand identity. Most importantly, our team follows the best practices and guidelines of each ad platform to ensure that your ads are compliant, relevant, and effective, test different variations of your ads to find the ones that perform the best and optimize them accordingly.</p>
-      <h2>Landing Page Optimization</h2>
-      <p>Landing pages are where you convince your visitors or consumers to take the desired action, whether it&rsquo;s signing up, buying, downloading, or anything else. That&rsquo;s why you need to make sure that your landing pages are optimized for user experience and conversion rates.</p>
+      <p>Once we have your keyword list ready, we move on to creating your ads. We write compelling ad copy that highlights your unique value proposition, benefits, and call to action, also create eye-catching visuals that complement your ad copy and showcase your brand identity. Most importantly, our team follows the best practices and guidelines of each ad platform to ensure that your ads are compliant, relevant, and effective, test different variations of your ads to find the ones that perform the best and optimize them accordingly.</p>`,
+
+descriptionThird:`
+      <h2 className="text-center">Landing Page Optimization</h2>
+      <p className="text-center">Landing pages are where you convince your visitors or consumers to take the desired action, whether it&rsquo;s signing up, buying, downloading, or anything else. That&rsquo;s why you need to make sure that your landing pages are optimized for user experience and conversion rates.</p>
+
+              
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h3>Landing Page Optimization: Enhancing User Experience and Conversion Rates</h3>
       <p>Our experts use data-driven methods and tools to analyze your landing pages and identify the areas that need improvement. We look at factors such as loading speed, layout, design, content, navigation, and mobile-friendliness. We then implement the necessary changes and enhancements to make your landing pages more user-friendly, attractive, and persuasive, also use split testing and heatmaps to measure the impact of our optimizations and fine-tune them as needed.</p>
       <h3>Clear Call-to-Action (CTA) Elements: Driving Action on Your Landing Pages</h3>
-      <p>Call-to-action (CTA) instructs your visitors on what to do and how to do what you want them to do next. It might be a link, a button, a form, or any other element that requests action. We work with you to design attractive CTA components that promote engagement and sales. We employ the best design techniques and guiding principles, as well as run tests on various CTA components to determine which ones are most effective for your landing pages and objectives.</p>
-      <h2>Campaign Management and Optimization</h2>
-      <p>At Bayshore, after creating and launching your paid advertising campaigns, we help you to manage and optimize them on a regular basis to ensure they are delivering the best results possible.</p>
+      <p>Call-to-action (CTA) instructs your visitors on what to do and how to do what you want them to do next. It might be a link, a button, a form, or any other element that requests action. We work with you to design attractive CTA components that promote engagement and sales. We employ the best design techniques and guiding principles, as well as run tests on various CTA components to determine which ones are most effective for your landing pages and objectives.</p>`,
+
+descriptionFourth:`
+      <h2 className="text-center">Campaign Management and Optimization</h2>
+      <p className="text-center">At Bayshore, after creating and launching your paid advertising campaigns, we help you to manage and optimize them on a regular basis to ensure they are delivering the best results possible.</p>
+
+              
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h3>Efficient Bid Management for Optimal Campaign Performance</h3>
       <p>We use smart and automated bid management tools and strategies to help you get the most out of your ad budget. While monitoring and adjusting your bids based on various factors, such as keywords, ad groups, campaigns, platforms, devices, locations, time of day, and more, we use bid modifiers and rules to optimize your bids for different scenarios and goals.</p>
       <h3>A/B Testing: Maximizing Ad Effectiveness through Continuous Optimization</h3>
       <p>Our team conduct A/B testing to compare different versions of your ads and landing pages and see which ones perform better. Testing various elements, such as headlines, images, copy, CTA, colors, fonts and analyze the data and insights from the tests and implement the winning variations to improve your ad effectiveness. We also run new tests regularly to keep your campaigns fresh and up-to-date.</p>
       <h3>Targeting Refinement: Reaching the Right Audience for Better Results</h3>
-      <p>We use targeting refinement to fine-tune your audience segments and reach the most relevant and profitable prospects for your business. Using advanced tools and methods, we track and analyze your audience behavior, preferences, and feedback. After that we use this information to adjust your targeting criteria, remarketing and lookalike audiences to re-engage your existing customers and expand your reach to new ones.</p>
-      <h2>Performance Tracking and Reporting</h2>
-      <p>Through our Bayshore paid advertising service, one of the benefits you can get is that you can track and measure every aspect of your campaigns and see how they are performing.</p>
+      <p>We use targeting refinement to fine-tune your audience segments and reach the most relevant and profitable prospects for your business. Using advanced tools and methods, we track and analyze your audience behavior, preferences, and feedback. After that we use this information to adjust your targeting criteria, remarketing and lookalike audiences to re-engage your existing customers and expand your reach to new ones.</p>`,
+
+descriptionFifth:`
+      <h2 className="text-center">Performance Tracking and Reporting</h2>
+      <p className="text-center">Through our Bayshore paid advertising service, one of the benefits you can get is that you can track and measure every aspect of your campaigns and see how they are performing.</p>
+
+              
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h3>Key Performance Indicators (KPIs): Tracking Metrics for Measurable Success</h3>
       <p>The success of your sponsored advertising initiatives is monitored and evaluated using key performance indicators, or KPIs. These are measurements, like impressions, clicks, CTRs, conversions, conversion rates, ROAS, ROI, and others, that represent your particular goals and objectives. We gather and evaluate your KPI data using the best platforms and technologies, then provide you practical advice on how to enhance the effectiveness of your campaigns.</p>
       <h3>Transparent Reporting: Insightful Reports to Measure Campaign Performance</h3>
-      <p>To show you how your campaigns are performing and what results they are delivering, we provide you with transparent and insightful reports. Using clear and easy-to-understand charts, graphs, tables, and dashboards, we present your KPI data and highlight the key findings and trends. Not only that, but our marketing team also includes detailed explanations and interpretations of the data and what they mean for your business. We deliver our reports on a regular basis, such as weekly, monthly, or quarterly, depending on your preferences and needs.</p>
-      <h2>Budget Management</h2>
-      <p>During the whole journey of this sponsored advertising, the most challenging you may face is managing your budget and ensuring that you are spending it wisely and efficiently. And we, Bayshore team, are here to help you to overcome this challenge.</p>
+      <p>To show you how your campaigns are performing and what results they are delivering, we provide you with transparent and insightful reports. Using clear and easy-to-understand charts, graphs, tables, and dashboards, we present your KPI data and highlight the key findings and trends. Not only that, but our marketing team also includes detailed explanations and interpretations of the data and what they mean for your business. We deliver our reports on a regular basis, such as weekly, monthly, or quarterly, depending on your preferences and needs.</p>`,
+
+descriptionSixth:`
+      <h2 className="text-center">Budget Management</h2>
+      <p className="text-center">During the whole journey of this sponsored advertising, the most challenging you may face is managing your budget and ensuring that you are spending it wisely and efficiently. And we, Bayshore team, are here to help you to overcome this challenge.</p>
+
+              
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h3>Effective Budget Allocation for Cost Efficient Advertising</h3>
       <p>Our professional team help you allocate your budget effectively across your different campaigns, platforms, and ad groups. We use data and insights from your previous and current campaigns to determine the best budget distribution for your goals and objectives. We also use smart and automated bidding strategies to optimize your CPC and CPA and reduce your ad waste. Likewise, we aim to achieve the highest ROAS and ROI for your ad spend.</p>
       <h3>Continuous Cost Monitoring: Maximizing ROI for Your Ad Spend</h3>
-      <p>We monitor your ad spend and costs on a continuous basis and make sure that they are within your budget limits and expectations. We use advanced tools and platforms to track and analyze your ad spend and costs across different metrics, such as keywords, ad groups, campaigns, platforms, devices, locations, time of day, and more, also use cost modifiers and rules to adjust your ad spend and costs for different scenarios and goals. Furthermore, we alert you of any issues or anomalies in your ad spend and costs and provide you with solutions to resolve them.</p>
-      <h2>Continuous Optimization and Adaptation</h2>
-      <p>We know paid advertising is a dynamic and competitive field. That&rsquo;s why we ensure its constant optimization and adaptation to stay ahead of the curve and achieve the best results.</p>
+      <p>We monitor your ad spend and costs on a continuous basis and make sure that they are within your budget limits and expectations. We use advanced tools and platforms to track and analyze your ad spend and costs across different metrics, such as keywords, ad groups, campaigns, platforms, devices, locations, time of day, and more, also use cost modifiers and rules to adjust your ad spend and costs for different scenarios and goals. Furthermore, we alert you of any issues or anomalies in your ad spend and costs and provide you with solutions to resolve them.</p>`,
+
+descriptionSeventh:`
+      <h2 className="text-center">Continuous Optimization and Adaptation</h2>
+      <p className="text-center">We know paid advertising is a dynamic and competitive field. That&rsquo;s why we ensure its constant optimization and adaptation to stay ahead of the curve and achieve the best results.</p>
+
+              
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+ 
       <h3>Data Driven Decision Making: Harnessing Insights for Ongoing Optimization</h3>
       <p>We use data driven decision making to optimize your campaigns and improve your performance on a continuous basis. We use the best tools and platforms to collect and analyze data from your campaigns, as well as, use feedback and surveys from your customers and prospects to understand their needs, preferences, and satisfaction. Moreover, we then use these data and insights to make informed decisions and implement changes and enhancements to your campaigns, such as keywords, bids, ads, landing pages, targeting, and more.</p>
       <h3>Staying Ahead of Trends: Capitalizing on Emerging Advertising Opportunities</h3>
-      <p>To help you grow your business and reach new customers, we stay ahead of trends and capitalize on emerging advertising opportunities by keeping track of the latest developments and innovations in the paid advertising industry, including new platforms, features, formats, technologies, and best practices. We also monitor the changes and shifts in your industry, competitors, and market trends to identify new opportunities and challenges for your campaigns. After that, we adapt your campaigns accordingly and leverage the new opportunities to boost your performance and results.</p>
-      <h2>Proven Track Record and Client Success Stories</h2>
-      <p>We are proud of our track record and client success stories that demonstrate our expertise and excellence in paid advertising. We have helped many businesses across different industries and niches achieve their goals and grow their revenue with our advertising services. Here are some examples of our successful case studies and client testimonials.</p>
+      <p>To help you grow your business and reach new customers, we stay ahead of trends and capitalize on emerging advertising opportunities by keeping track of the latest developments and innovations in the paid advertising industry, including new platforms, features, formats, technologies, and best practices. We also monitor the changes and shifts in your industry, competitors, and market trends to identify new opportunities and challenges for your campaigns. After that, we adapt your campaigns accordingly and leverage the new opportunities to boost your performance and results.</p>`,
+
+descriptionEightth:`
+      <h2 className="text-center">Proven Track Record and Client Success Stories</h2>
+      <p className="text-center">We are proud of our track record and client success stories that demonstrate our expertise and excellence in paid advertising. We have helped many businesses across different industries and niches achieve their goals and grow their revenue with our advertising services. Here are some examples of our successful case studies and client testimonials.</p>
+              
+
+    <img
+    src="/assets/service-demo-img.png"
+    alt="tab-1"
+    
+    className="mb-8 w-full h-full"
+  />
+
+
       <h3>Successful Case Studies: Realizing Exceptional Results for Our Clients</h3>
-      <p>We have worked with many clients to create and manage effective paid advertising campaigns that delivered exceptional results. Bayshore believes in work, not words. That&rsquo;s why we let our case studies speak for themselves. So, If you want to see more of our work and achievements, click this link and explore how we have helped our clients achieve their advertising goals.</p>
-      <h2>Contact Us for a Consultation to ignite Your Advertising Success</h2>
-      <p>If you want to grow your business and reach more customers with effective paid advertising, we are here for you. As Bayshore have the skills and experience, no matter what your industry or niche, we can help you reach and engage your target audience with effective paid advertising, optimize your campaigns and improve your ROI. Contact with us today, and schedule a free consultation, so we can help you succeed with your advertising.</p>
-      <h3>Client Testimonials: Satisfied Clients Speak About Our Advertising Services</h3>
-      <p>We have received many positive feedback and reviews from our satisfied clients who speak highly of our advertising services. They appreciate our quality, professionalism, and results. They also recommend us to others who need effective paid advertising services.</p>
-      <p>Click this video of our client about their satisfaction and success that reflect our reputation and trustworthiness. See for yourself what our clients say about us and how we can help you with your advertising needs.</p>`,
+      <p>We have worked with many clients to create and manage effective paid advertising campaigns that delivered exceptional results. Bayshore believes in work, not words. That&rsquo;s why we let our case studies speak for themselves. So, If you want to see more of our work and achievements, click this link and explore how we have helped our clients achieve their advertising goals.</p>`,
+
+whyBayshore:`
+      <h2 className="text-center">Contact Us for a Consultation to ignite Your Advertising Success</h2>
+      <p className="text-center">If you want to grow your business and reach more customers with effective paid advertising, we are here for you. As Bayshore have the skills and experience, no matter what your industry or niche, we can help you reach and engage your target audience with effective paid advertising, optimize your campaigns and improve your ROI. Contact with us today, and schedule a free consultation, so we can help you succeed with your advertising.</p>
+      <h3 className="text-center">Client Testimonials: Satisfied Clients Speak About Our Advertising Services</h3>
+      <p className="text-center">We have received many positive feedback and reviews from our satisfied clients who speak highly of our advertising services. They appreciate our quality, professionalism, and results. They also recommend us to others who need effective paid advertising services.</p>
+      <p className="text-center">Click this video of our client about their satisfaction and success that reflect our reputation and trustworthiness. See for yourself what our clients say about us and how we can help you with your advertising needs.</p>`,
   },
 
   {
@@ -1006,8 +1487,7 @@ services = [
       "Boost Your Business with Expert Social Media Marketing and Management Services",
     shortTitle: "Social Media Marketing",
     shortDescription: `Introduce to Social Media Marketing. Bayshore welcomes you to the extraordinary realm of Social Media Marketing and Management Service, where we specialize in creating digital experiences that resonate with a wide audience. In this era of remarkable technological advancements, social media has become an unstoppable force, connecting billions of individuals worldwide. By harnessing the immense power of this virtual universe, we embark on a journey to unlock the true potential of social media marketing, going beyond the conventional and redefining the very essence of business success.`,
-    description: `<h2>Introduce to Social Media Marketing</h2>
-      <p>Bayshore welcomes you to the extraordinary realm of Social Media Marketing and Management Service, where we specialize in creating digital experiences that resonate with a wide audience. In this era of remarkable technological advancements, social media has become an unstoppable force, connecting billions of individuals worldwide. By harnessing the immense power of this virtual universe, we embark on a journey to unlock the true potential of social media marketing, going beyond the conventional and redefining the very essence of business success.</p>
+    description: `
       <p>At our core, we understand the seismic impact that social media marketing can have on the destiny of a business, serving as a catalyst for growth, innovation, and unparalleled success. But media advertising is not a universal strategy. It requires planning, creativity, and management to achieve the best results. That&rsquo;s where we come in, where we take the reins of management and monitoring, so you can focus on what you do best &ndash; growing your business, providing comprehensive analytics and insights, enabling you to make informed decisions, and fine-tuning your social media strategy for maximum impact.</p>
       <h2>Social Media Strategy Development</h2>
       <p>A successful social media marketing campaign starts with a clear and effective strategy. It&rsquo;s a roadmap that outlines how you will use social media to achieve your business goals and connect with your target audience. Our social media strategy development service includes:</p>

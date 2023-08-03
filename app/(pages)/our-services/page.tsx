@@ -47,11 +47,18 @@ const page = () => {
                 logo: string;
                 url: string;
                 homeTabBar: HomeTabBarType[];
-                title: string;
                 shortTitle: string;
+                title: string;
                 shortDescription: string;
-                descriptionTop: string;
-                descriptionBottom: string;
+                descriptionFirst: string;
+                descriptionSecond: string;
+                descriptionThird: string;
+                descriptionFourth: string;
+                descriptionFifth: string;
+                descriptionSixth: string;
+                descriptionSeventh: string;
+                descriptionEightth: string;
+                whyBayshore: string;
               },
               i: number
             ) => (

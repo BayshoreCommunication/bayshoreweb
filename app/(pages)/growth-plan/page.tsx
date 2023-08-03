@@ -6,6 +6,7 @@ import Info from "@/components/universal/Info";
 import Package from "@/components/universal/Package";
 import Results from "@/components/universal/Results";
 import SectionLayout from "@/components/universal/SectionLayout";
+import SectionPackage from "@/components/universal/SectionPackage";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -89,13 +90,7 @@ const page = () => {
             today!
           </p>
         </div>
-        <div className="mt-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[4rem] items-center">
-            <Package />
-            <Package />
-            <Package />
-          </div>
-        </div>
+        <SectionPackage />
       </SectionLayout>
 
       <Boost
@@ -128,6 +123,6 @@ hero = [
   },
 ];
 
-function HeadingTitleImg(){
-  return 
+function HeadingTitleImg() {
+  return;
 }

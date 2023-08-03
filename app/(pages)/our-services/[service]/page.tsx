@@ -15,6 +15,7 @@ import HomeTabBar from "@/components/unique/HomeTabBar";
 import Package from "@/components/universal/Package";
 import ServiceTabBar from "@/components/unique/ServiceTabBar";
 import Boost, { BoostService } from "@/components/universal/Boost";
+import SectionPackage from "@/components/universal/SectionPackage";
 
 //  Home Hero section
 let hero: {
@@ -30,6 +31,48 @@ hero = [
     content creation and distribution, UI/UX, graphics, video production, and 
     influencer marketing services. We provide innovative and practical solutions to 
     help you expand your company globally and accomplish your goals.`,
+  },
+];
+
+let bulletData: {
+  title: string;
+  price: string;
+  points: string[];
+}[];
+
+bulletData = [
+  {
+    title: "SILVER PLAN",
+    price: "2500",
+    points: [
+      "150 keyphrases optimized",
+      "30 pages optimized",
+      "6 content, outreach, UX, or CRO assets per quarter",
+      "8 custom dashboards",
+      "Phone call, lead, and revenue tracking dashboard",
+    ],
+  },
+  {
+    title: "GOLD PLAN",
+    price: "5000",
+    points: [
+      "200 keyphrases optimized",
+      "40 pages optimized",
+      "12 content, outreach, UX, or CRO assets per quarter",
+      "8 custom dashboards",
+      "Phone call, lead, and revenue tracking dashboard",
+    ],
+  },
+  {
+    title: "DIAMOND PLAN",
+    price: "8000",
+    points: [
+      "300 keyphrases optimized",
+      "60 pages optimized",
+      "24 content, outreach, UX, or CRO assets per quarter",
+      "10 custom dashboards",
+      "Phone call, lead, and revenue tracking dashboard",
+    ],
   },
 ];
 
@@ -76,13 +119,15 @@ const page = ({ params }: { params: { service: string } }) => {
                 <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
                 {Parser(elem.descriptionFirst)}
 
-                <div className="mt-20 mb-8">
+                {/* <div className="mt-20 mb-8">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-[4rem] items-center">
-                    <Package />
-                    <Package />
-                    <Package />
+                  
+                    {bulletData.map((el: any, i: number) => 
+                      <Package data={el} key={i} />
+                    )}
                   </div>
-                </div>
+                </div> */}
+                <SectionPackage />
 
                 {Parser(elem.descriptionSecond)}
 

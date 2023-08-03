@@ -1,13 +1,9 @@
 import Image from "next/image";
 import { FC } from "react";
 
-interface IBulletProps {
-  bullet: string;
-}
-
-const PackageBulletPoint: FC<IBulletProps> = ({ bullet }) => {
+const PackageBulletPoint = ({ point }: any) => {
   return (
-    <li className="flex items-center gap-4">
+    <li className="flex items-start gap-4">
       <span>
         <Image
           src="/assets/growth-plan/bulletpoint.svg"
@@ -17,7 +13,7 @@ const PackageBulletPoint: FC<IBulletProps> = ({ bullet }) => {
           className="w-[1.8rem] h-auto"
         />
       </span>
-      <span className="text-small">{bullet}</span>
+      <span className="text-small">{point}</span>
     </li>
   );
 };
