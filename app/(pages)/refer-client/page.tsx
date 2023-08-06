@@ -1,8 +1,6 @@
 import SectionHeader from "@/components/universal/SectionHeader";
 import SectionLayout from "@/components/universal/SectionLayout";
 import Image from "next/image";
-import React from "react";
-import { FLexCol } from "../growth-plan/page";
 import Head from "next/head";
 
 export const metadata = {

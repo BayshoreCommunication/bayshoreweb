@@ -7,7 +7,7 @@ interface IContent {
   imgLink: string;
 }
 
-export const FLexCol: FC<IContent> = ({ heading, description, imgLink }) => {
+export const ColFlex: FC<IContent> = ({ heading, description, imgLink }) => {
   return (
     <>
       <div className="flex flex-col  items-center custom-shadow p-12 gap-6">
@@ -29,4 +29,4 @@ export const FLexCol: FC<IContent> = ({ heading, description, imgLink }) => {
   );
 };
 
-export default FLexCol;
+export default ColFlex;

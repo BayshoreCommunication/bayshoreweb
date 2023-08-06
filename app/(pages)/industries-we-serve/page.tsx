@@ -1,8 +1,8 @@
+import ColFlex from "@/components/universal/ColFlex";
 import SectionHeader from "@/components/universal/SectionHeader";
 import SectionLayout from "@/components/universal/SectionLayout";
 import Image from "next/image";
 import React from "react";
-import { FLexCol } from "../growth-plan/page";
 
 const page = () => {
   return (
@@ -60,13 +60,13 @@ we have some amazing results"
         </div>
 
         <div className="flex  mt-12 gap-8">
-          <FLexCol
+          <ColFlex
             heading="Flexibility to Test and Experiment"
             description="We’ll build you a high performing engine and you run it by yourself."
             imgLink="/assets/growth-plan/seo.svg"
           />
 
-          <FLexCol
+          <ColFlex
             heading="Collaborative Invironment"
             description="Get ongoing step-by-step advicewith data-driven prioritization."
             imgLink="/assets/growth-plan/seo.svg"

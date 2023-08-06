@@ -1,6 +1,6 @@
 import AboutUs from "@/components/universal/AboutUs";
 import Boost from "@/components/universal/Boost";
-import FLexCol from "@/components/universal/FLexCol";
+import ColFlex from "@/components/universal/ColFlex";
 import Hero from "@/components/universal/Hero";
 import Info from "@/components/universal/Info";
 import Package from "@/components/universal/Package";
@@ -52,13 +52,13 @@ const page = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2  mt-12 gap-8">
-          <FLexCol
+          <ColFlex
             heading="Flexibility to Test and Experiment"
             description="We’ll build you a high performing engine and you run it by yourself."
             imgLink="/assets/growth-plan/seo.svg"
           />
 
-          <FLexCol
+          <ColFlex
             heading="Collaborative Invironment"
             description="Get ongoing step-by-step advicewith data-driven prioritization."
             imgLink="/assets/growth-plan/seo.svg"
