@@ -17,6 +17,7 @@ import { HomeTabBarType } from "@/types/types";
 export let services: {
   logo: string;
   url: string;
+  heroImg:string;
   homeTabBar: HomeTabBarType[];
   shortTitle: string;
   title: string;
@@ -35,24 +36,25 @@ services = [
   {
     logo: "/assets/service/web.svg",
     url: "website-design",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Captivating Designs Tailored for Your Business`,
         contentTab: `At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/Captivating-Designs-Tailored-for-Your-Business.jpg",
       },
       {
         titleTab: `User Friendly Interfaces That Delight Visitors`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/User-Friendly-Interfaces-That-Delight-Visitors.jpg",
       },
       {
         titleTab: `Cutting Edge Techniques for Enhanced Performance`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/Cutting-Edge-Techniques-for-Enhanced-Performance.jpg",
       },
     ],
     title: "Website Design Service",
@@ -61,14 +63,12 @@ services = [
 
     descriptionFirst: `
 
-         
-
     <img
-    src="/assets/service-demo-img.png"
-    alt="tab-1"
-    
-    className="mb-8 w-full h-full"
-  />
+              src="/assets/service/Customized-Website-Design-Solutions.jpg"
+              alt="tab-1"
+              
+              className="w-full h-full py-8"
+            />
 
 
     
@@ -88,10 +88,10 @@ services = [
     <p className="text-center">In today's mobile-centric world, responsive web design is no longer an option but a necessity. Each device has its own screen size, resolution and orientation, which can affect how your website looks and functions. That&rsquo;s why, we, Bayshore Communications, specializes in creating websites that provide a coherent user experience across devices, ensuring your marketing is accessible to users on desktops, smartphones, and tablets.</p>
 
     <img
-              src="/assets/service-demo-img.png"
+              src="/assets/service/Responsive-Web-Design-for-Seamless-User-Experience.jpg"
               alt="tab-1"
               
-              className="w-full h-full"
+              className="w-full h-full py-8"
             />
 
 
@@ -110,10 +110,10 @@ services = [
 
 
     <img
-              src="/assets/service-demo-img.png"
+              src="/assets/service/Visually-Stunning and-Engaging-Design-Elements.jpg"
               alt="tab-1"
               
-              className="w-full h-full"
+              className="w-full h-full py-8"
             />
 
 
@@ -149,10 +149,10 @@ services = [
 
 
     <img
-              src="/assets/service-demo-img.png"
+              src="/assets/service/Search-Engine-Optimization.jpg"
               alt="tab-1"
               
-              className="w-full h-full"
+              className="w-full h-full py-8"
             />
 
 
@@ -174,10 +174,10 @@ services = [
     
 
     <img
-              src="/assets/service-demo-img.png"
+              src="/assets/service/Content-Management-Systems-(CMS)-and-Easy-Maintenance.jpg"
               alt="tab-1"
               
-              className="w-full h-full"
+              className="w-full h-full py-8"
             />
 
 
@@ -198,10 +198,10 @@ services = [
     
 
     <img
-              src="/assets/service-demo-img.png"
+              src="/assets/service/Analytics-and-Tracking-for-Continuous-Improvement.jpg"
               alt="tab-1"
               
-              className="w-full h-full"
+              className="w-full h-full py-8"
             />
 
 
@@ -226,7 +226,7 @@ services = [
     
 
     <img
-              src="/assets/service-demo-img.png"
+              src="/assets/service/Stay-Ahead-with-Ongoing-Support-and-Upgrades.png"
               alt="tab-1"
               
               className="w-full h-full"
@@ -253,10 +253,10 @@ services = [
     
 
     <img
-              src="/assets/service-demo-img.png"
+              src="/assets/service/Testimonials-and-Success-Stories.png"
               alt="tab-1"
               
-              className="w-full h-full"
+              className="w-full h-full py-8"
             />
 
 
@@ -312,24 +312,25 @@ services = [
   {
     logo: "/assets/service/mobile-app.svg",
     url: "mobile-app",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
         contentTab: `At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+        titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+        titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title: "Mobile App Service",
@@ -338,15 +339,6 @@ services = [
     Imagine a world where your brand's presence is always just a tap away, customer engagement is at the highest level, and business opportunities flourish effortlessly. With Bayshore Mobile App service, we are here to transform your vision into reality, reining the immense power of mobile technology to elevate your business to new heights. Whether you're a small startup with big dreams or an established enterprise seeking to expand your digital footprint, our team of skilled developers, designers, and marketers will work tirelessly to create a mobile app that reflects the unique essence of your brand.`,
 
     descriptionFirst: `
-
-         
-
-    <img
-    src="/assets/service-demo-img.png"
-    alt="tab-1"
-    
-    className="mb-8 w-full h-full"
-  />
 
 
       
@@ -672,6 +664,7 @@ services = [
   {
     logo: "/assets/service/seo.svg",
     url: "seo-service",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -682,14 +675,14 @@ services = [
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+        titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+        titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title: "SEO Service",
@@ -996,6 +989,7 @@ services = [
   {
     logo: "/assets/service/ui.svg",
     url: "ui-ux-design",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -1006,14 +1000,14 @@ services = [
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title: "UI/UX Design Service",
@@ -1288,6 +1282,7 @@ services = [
   {
     logo: "/assets/service/ads.svg",
     url: "paid-advertising",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -1298,14 +1293,14 @@ services = [
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title: "Effective Paid Advertising Services to Boost Your Business  ",
@@ -1475,6 +1470,7 @@ services = [
   {
     logo: "/assets/service/social-media.svg",
     url: "social-media-marketing",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -1485,14 +1481,14 @@ services = [
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title:
@@ -1741,6 +1737,7 @@ services = [
   // {
   //   logo: "/assets/service/social.svg",
   //   url: "social-media-management",
+  // heroImg:"/assets/service/website-design-service.jpg",
   //   homeTabBar: [
   //     {
   //       titleTab: "tab",
@@ -1759,6 +1756,7 @@ services = [
   {
     logo: "/assets/service/mail.svg",
     url: "email-marketing",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -1769,14 +1767,14 @@ services = [
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title:
@@ -2068,6 +2066,7 @@ services = [
   {
     logo: "/assets/service/market.svg",
     url: "marketing-automation",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -2078,14 +2077,14 @@ services = [
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title: "Powerful Marketing Automation Services | Boost Efficiency & ROI ",
@@ -2296,6 +2295,7 @@ services = [
   {
     logo: "/assets/service/marketing.svg",
     url: "content-marketing",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -2306,14 +2306,14 @@ services = [
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title:
@@ -2606,6 +2606,7 @@ services = [
   // {
   //   logo: "/assets/service/content-writing.svg",
   //   url: "content-writing",
+  // heroImg:"/assets/service/website-design-service.jpg",
   //   homeTabBar: [
   //     {
   //       titleTab: "tab",
@@ -2624,6 +2625,7 @@ services = [
   {
     logo: "/assets/service/digital-pr.svg",
     url: "digital-pr",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -2634,14 +2636,14 @@ services = [
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title: "Boost Your Online Presence with Expert Digital PR Services ",
@@ -3068,6 +3070,7 @@ descriptionSecond:`
   {
     logo: "/assets/service/graphic-design.svg",
     url: "graphic-design",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -3078,14 +3081,14 @@ descriptionSecond:`
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title:
@@ -3271,6 +3274,7 @@ descriptionSecond:`
   {
     logo: "/assets/service/motion.svg",
     url: "motion-graphic",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -3281,14 +3285,14 @@ descriptionSecond:`
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title: "Captivate Your Audience with Engaging Motion Graphics Services ",
@@ -3598,6 +3602,7 @@ descriptionSecond:`
   {
     logo: "/assets/service/video-production.svg",
     url: "video-production",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -3608,14 +3613,14 @@ descriptionSecond:`
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title: "Video Production Services for Enhanced Online Presence ",
@@ -3893,6 +3898,7 @@ descriptionSecond:`
   {
     logo: "/assets/service/influence-marketing.svg",
     url: "influencer-marketing",
+    heroImg:"/assets/service/website-design-service.jpg",
     homeTabBar: [
       {
         titleTab: `Dummy`,
@@ -3903,14 +3909,14 @@ descriptionSecond:`
       {
         titleTab: `Dummy`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
       {
         titleTab: `Dummy`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "tab",
-        titleImage: "tab",
+         titleIcon: "/assets/expertise.svg",
+        titleImage: "/assets/service/website-design-service.jpg",
       },
     ],
     title:
@@ -4071,6 +4077,7 @@ interface ServiceProps {
   el: {
     logo: string;
     url: string;
+    heroImg:string;
     homeTabBar: HomeTabBarType[];
     shortTitle: string;
     title: string;

@@ -31,7 +31,7 @@ const page = () => {
       </div>
       <SectionLayout bg="">
         <h2 className="heading-secondary text-center">Our Story</h2>
-        <p className="text-base mb-4">
+        {/* <p className="text-base mb-4">
           Bayshore Communication has an outstanding communication team that acts
           as the foundation for their digital marketing, web service, and brand
           support activities. Their communication team, made up of highly
@@ -50,6 +50,61 @@ writing, client handling, and paralegal support. Bayshore
 Communication's remarkable communication abilities, combined with an
 excellent understanding of the industry, enable them to generate
 impressive outcomes and provide outstanding support to their clients.`}
+        </p> */}
+
+        <p className="text-base mb-4">
+          A joyful "Ahoy there!" as you sail into the enthralling world of
+          Bayshore Communication, where dreams come true and creative thinking
+          runs wild. We are a lot more than a digital marketing agency; we are a
+          story of resilience, passion, and the remarkable journeys of three
+          exceptional individuals. Allow us to introduce ourselves—Arjo Neel,
+          the compassionate connection builder; Salman Hossain, the digital
+          virtuoso; and Huraira Shishir, the guiding light of wisdom. </p>
+          
+          <p className="text-base mb-4">In a world
+          filled with challenges and limited resources, we embarked on a
+          remarkable quest to turn our dreams into reality. Arjo Neel, with an
+          empathetic touch, weaves webs of trust that transcend mere business
+          transactions. His genuine warmth and attentive listening forge bonds
+          that stand the test of time, creating relationships that are as
+          meaningful as they are impactful. </p>
+          
+          <p className="text-base mb-4">Salman Hossain, the master of
+          digital wonders, brings to life the realm of innovation. With his
+          limitless creativity and technical brilliance, He crafts digital
+          symphonies that captivate hearts and minds. Each flick of his digital
+          brush breathes life into campaigns that leave audiences spellbound,
+          showcasing the magic that technology can weave.</p>
+          
+          <p className="text-base mb-4"> Guiding our path is
+          Huraira Shishir, a sage guardian whose wisdom spans decades. Her
+          invaluable experience steers us through the complex maze of business,
+          illuminating the way forward with strategic brilliance. Her counsel
+          ensures that every decision we make is grounded in insight and
+          foresight, paving the way for our collective success. </p>
+          
+          <p className="text-base mb-4">Together, we
+          have overcome adversity and transformed Bayshore Communication into a
+          sanctuary of dreams. Our unwavering commitment to our clients and
+          partners has led us to create a family united by a shared vision. We
+          understand that our success lies not only in delivering exceptional
+          results, but also in fostering connections that transcend the business
+          world. </p>
+          
+          <p className="text-base mb-4">At Bayshore Communication, we believe that inspiration and
+          creativity are at the heart of every successful endeavor. Our story is
+          not just about us—it is about you, our cherished clients. We cordially
+          invite you to come along with us on this marvelous journey., where we
+          combine our expertise with your aspirations to bring your visions to
+          life. </p>
+          
+          
+          
+          <p className="text-base mb-4">Beyond the services we offer, we strive to inspire. Our genuine
+          passion for what we do drives us to break new ground that surpasses
+          expectations. We are dedicated to developing unique and tailored
+          strategies that reflect the personality of your brand and resonate
+          with the people you want to reach.
         </p>
       </SectionLayout>
 
@@ -76,13 +131,13 @@ impressive outcomes and provide outstanding support to their clients.`}
         </div>
       </SectionLayout>
 
-      {/* <SectionLayout bg="">
+      <SectionLayout bg="">
         <SectionHeader
           heading="Our History"
           text="By being available to our clients, we can respond to their concerns and questions and carry out our duty for keeping our clients up-to-date about the case."
         />
         <History />
-      </SectionLayout> */}
+      </SectionLayout>
     </>
   );
 };
@@ -163,43 +218,58 @@ cardContentS = [
     destination: "SENIOR DEVELOPER",
   },
   {
-    img: "/assets/about/rakib.png",
-    name: "RAKIBUL ISLAM",
+    img: "/assets/about/orpita.png",
+    name: "ORPITA HAQUE",
     destination: "SENIOR DEVELOPER",
   },
   {
-    img: "/assets/about/rakib.png",
-    name: "RAKIBUL ISLAM",
+    img: "/assets/about/abdullah.png",
+    name: "ABDULLAH ISHA",
+    destination: "WEB DEVELOPER",
+  },
+  {
+    img: "/assets/about/towhidul.png",
+    name: "TOWHIDUL ISLAM",
+    destination: "APP DEVELOPER",
+  },
+  {
+    img: "/assets/about/fardin.png",
+    name: "FARDIN KHAN",
+    destination: "APP DEVELOPER",
+  },
+  {
+    img: "/assets/about/abrar.png",
+    name: "ABRAR FAHIM",
+    destination: "APP DEVELOPER",
+  },
+  {
+    img: "/assets/about/milon.png",
+    name: "Nuruzaman Milon",
+    destination: "FRONTEND DEVELOPER",
+  },
+  {
+    img: "/assets/about/amena.png",
+    name: "Amena Islam Rimi",
+    destination: "CHIEF OPERATING OFFICER (COO)",
+  },
+  {
+    img: "/assets/about/monira.png",
+    name: "MONIRA ISLAM",
+    destination: "JUNIOR DIGITAL MARKETER",
+  },
+  {
+    img: "/assets/about/raju.png",
+    name: "RAJU AHMED",
+    destination: "DIGITAL ADS EXPERT",
+  },
+  {
+    img: "/assets/about/nazmul.png",
+    name: "NAZMUL HOSSAIN",
     destination: "SENIOR DEVELOPER",
   },
   {
-    img: "/assets/about/rakib.png",
-    name: "RAKIBUL ISLAM",
-    destination: "SENIOR DEVELOPER",
-  },
-  {
-    img: "/assets/about/rakib.png",
-    name: "RAKIBUL ISLAM",
-    destination: "SENIOR DEVELOPER",
-  },
-  {
-    img: "/assets/about/rakib.png",
-    name: "RAKIBUL ISLAM",
-    destination: "SENIOR DEVELOPER",
-  },
-  {
-    img: "/assets/about/rakib.png",
-    name: "RAKIBUL ISLAM",
-    destination: "SENIOR DEVELOPER",
-  },
-  {
-    img: "/assets/about/rakib.png",
-    name: "RAKIBUL ISLAM",
-    destination: "SENIOR DEVELOPER",
-  },
-  {
-    img: "/assets/about/rakib.png",
-    name: "RAKIBUL ISLAM",
+    img: "/assets/about/elishah.png",
+    name: "Elishah Hillaria",
     destination: "SENIOR DEVELOPER",
   },
 ];

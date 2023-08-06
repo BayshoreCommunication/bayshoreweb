@@ -105,7 +105,7 @@ const page = ({ params }: { params: { service: string } }) => {
                       </div>
                       <div className="row-start-1 md:col-start-2">
                         <Image
-                          src="/assets/tab-1.png"
+                          src={elem.heroImg}
                           alt="tab-1"
                           width={400}
                           height={400}
@@ -117,6 +117,7 @@ const page = ({ params }: { params: { service: string } }) => {
                 </div>
 
                 <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
+                
                 {Parser(elem.descriptionFirst)}
 
                 {/* <div className="mt-20 mb-8">

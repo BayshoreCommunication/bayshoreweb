@@ -57,11 +57,12 @@ const ServiceTabBar = (individualHomeTabBar: individualHomeTabBarType) => {
                     </div>
                     <div className="row-start-1 md:col-start-2">
                       <Image
-                        src="/assets/tab-1.png"
+                        src={service.titleImage}
                         alt="tab-1"
                         width={400}
                         height={400}
                         className="w-full h-full"
+                        // className="w-[543] h-[226]"
                       />
                     </div>
                   </div>
