@@ -7,6 +7,7 @@ import SectionLayout from "@/components/universal/SectionLayout";
 import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
+import { HomeTabBarType } from "@/types/types";
 import { AiOutlineRight } from "react-icons/ai";
 
 //  Home Hero section
@@ -44,8 +45,20 @@ const page = () => {
             (
               el: {
                 logo: string;
+                url: string;
+                homeTabBar: HomeTabBarType[];
+                shortTitle: string;
                 title: string;
-                description: string;
+                shortDescription: string;
+                descriptionFirst: string;
+                descriptionSecond: string;
+                descriptionThird: string;
+                descriptionFourth: string;
+                descriptionFifth: string;
+                descriptionSixth: string;
+                descriptionSeventh: string;
+                descriptionEightth: string;
+                whyBayshore: string;
               },
               i: number
             ) => (

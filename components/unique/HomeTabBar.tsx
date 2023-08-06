@@ -166,7 +166,7 @@ export default function HomeTabBar() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="md:px-[2rem] lg:px-[8rem]">
+    <div className="md:px-[2rem] ">
       <div className="flex justify-between items-center rounded-[10px] custom-shadow px-[1rem] sm:px-[4rem] md:px-[11rem] py-[1.6rem] gap-2">
         {tabs.map((tab, index) => (
           <button

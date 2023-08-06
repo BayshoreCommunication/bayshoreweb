@@ -1,9 +1,12 @@
 import AboutUs from "@/components/universal/AboutUs";
 import Boost from "@/components/universal/Boost";
+import FLexCol from "@/components/universal/FLexCol";
 import Hero from "@/components/universal/Hero";
 import Info from "@/components/universal/Info";
+import Package from "@/components/universal/Package";
 import Results from "@/components/universal/Results";
 import SectionLayout from "@/components/universal/SectionLayout";
+import SectionPackage from "@/components/universal/SectionPackage";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -87,13 +90,7 @@ const page = () => {
             today!
           </p>
         </div>
-        <div className="mt-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-[4rem]   items-center">
-            <Package />
-            <Package />
-            <Package />
-          </div>
-        </div>
+        <SectionPackage />
       </SectionLayout>
 
       <Boost
@@ -126,88 +123,6 @@ hero = [
   },
 ];
 
-const PackageBulletPoint = () => {
-  return (
-    <li className="flex items-center gap-4">
-      <span>
-        <Image
-          src="/assets/growth-plan/bulletpoint.svg"
-          alt="option"
-          width={100}
-          height={100}
-          className="w-[1.8rem] h-auto"
-        />
-      </span>
-      <span className="text-small">150 keyphrases optimized</span>
-    </li>
-  );
-};
-
-const Package = () => {
-  return (
-    <div className="w-[30rem] sm:w-[35rem] md:w-full justify-self-center mt-[4rem] md:mt-0">
-      <div className="relative flex flex-col items-center gap-4 bg-[#F0F6FE] py-[6rem]">
-        <div className="absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]">
-          <Image
-            src="/assets/growth-plan/growth-plan-silver.svg"
-            alt="option"
-            width={200}
-            height={200}
-            className="w-[9rem] h-auto"
-          />
-        </div>
-        <h4 className="heading-four">SILVER PLAN</h4>
-        <p>
-          <span className="!text-primary !font-bold heading-secondary">
-            $2,500
-          </span>
-          /month
-        </p>
-      </div>
-      <div className="mb-8 px-8 py-12 border-b-[1px] border-[rgba(221,221,221,0.5)]">
-        <ul className="flex flex-col gap-4">
-          <PackageBulletPoint />
-          <PackageBulletPoint />
-          <PackageBulletPoint />
-          <PackageBulletPoint />
-          <PackageBulletPoint />
-        </ul>
-      </div>
-      <div className="center">
-        <button className="btn text-small">Customize My Plan</button>
-      </div>
-    </div>
-  );
-};
-
-interface content {
-  heading: string;
-  description: string;
-  imgLink: string;
+function HeadingTitleImg() {
+  return;
 }
-
-export const FLexCol: React.FC<content> = ({
-  heading,
-  description,
-  imgLink,
-}) => {
-  return (
-    <>
-      <div className="flex flex-col  items-center custom-shadow p-12 gap-6">
-        <div>
-          <h4 className="heading-four text-center mb-4">{heading}</h4>
-          <p className="text-base !text-center">{description}</p>
-        </div>
-        <div>
-          <Image
-            src={imgLink}
-            alt="option"
-            width={300}
-            height={300}
-            className="w-[6rem] md:w-[8rem] lg:w-[10rem] h-auto"
-          />
-        </div>
-      </div>
-    </>
-  );
-};

@@ -1,32 +1,177 @@
 "use client";
 import { services } from "@/components/unique/services/Service";
 import SectionLayout from "@/components/universal/SectionLayout";
-// import { usePathname } from "next/navigation";
+import { StickyContainer, Sticky } from "react-sticky";
+import Parser from "html-react-parser";
+import Image from "next/image";
+import Link from "next/link";
+import AboutUs from "@/components/universal/AboutUs";
+import Consultaion from "@/components/universal/Consultaion";
+import Hero from "@/components/universal/Hero";
+import Info from "@/components/universal/Info";
+import HomeServiceCard from "@/components/unique/Home/HomeServiceCard";
+import { Content } from "next/font/google";
+import HomeTabBar from "@/components/unique/HomeTabBar";
+import Package from "@/components/universal/Package";
+import ServiceTabBar from "@/components/unique/ServiceTabBar";
+import Boost, { BoostService } from "@/components/universal/Boost";
+import SectionPackage from "@/components/universal/SectionPackage";
 
-const page = () => {
-  // const pathname = usePathname();
-  // console.log("test", pathname.split("/")[2]);
+//  Home Hero section
+let hero: {
+  heading: string;
+  description: string;
+}[];
+
+hero = [
+  {
+    heading: "Empower Your Business with Innovative Marketing Solutions",
+    description: `Bayshore Communication is a digital marketing company that offers web and app 
+    development, SEO and online advertising, social media and email marketing, 
+    content creation and distribution, UI/UX, graphics, video production, and 
+    influencer marketing services. We provide innovative and practical solutions to 
+    help you expand your company globally and accomplish your goals.`,
+  },
+];
+
+let bulletData: {
+  title: string;
+  price: string;
+  points: string[];
+}[];
+
+bulletData = [
+  {
+    title: "SILVER PLAN",
+    price: "2500",
+    points: [
+      "150 keyphrases optimized",
+      "30 pages optimized",
+      "6 content, outreach, UX, or CRO assets per quarter",
+      "8 custom dashboards",
+      "Phone call, lead, and revenue tracking dashboard",
+    ],
+  },
+  {
+    title: "GOLD PLAN",
+    price: "5000",
+    points: [
+      "200 keyphrases optimized",
+      "40 pages optimized",
+      "12 content, outreach, UX, or CRO assets per quarter",
+      "8 custom dashboards",
+      "Phone call, lead, and revenue tracking dashboard",
+    ],
+  },
+  {
+    title: "DIAMOND PLAN",
+    price: "8000",
+    points: [
+      "300 keyphrases optimized",
+      "60 pages optimized",
+      "24 content, outreach, UX, or CRO assets per quarter",
+      "10 custom dashboards",
+      "Phone call, lead, and revenue tracking dashboard",
+    ],
+  },
+];
+
+const page = ({ params }: { params: { service: string } }) => {
+  const parameter = params.service;
+  const individualService = services.filter((elem) => elem.url === parameter);
+  const individualHomeTabBar = individualService.map((el) => el.homeTabBar)[0];
 
   return (
-    <SectionLayout bg="">
-      <div className="grid grid-cols-[65%_30%] gap-8">
-        <div className="bg-[#121] h-[200vh]">scroll</div>
+    <>
+      <Hero heading={hero[0].heading} description={hero[0].description} />
 
-        <div className="sticky top-[72px] h-[80vh]">
-          <ul className="flex flex-col bg-[#F4F4F4] gap-6 py-8">
-            {services.map((el: any, i: number) => (
-              <li
-                className="mx-[3rem] rounded-[5px] text-small py-2 px-8 bg-[#fff]"
-                key={i}
-              >
-                {el.title}
-              </li>
-            ))}
-          </ul>
-        </div>
+      <div>
+        <Info />
       </div>
-    </SectionLayout>
-    // </>
+
+      {/* <HomeServiceCard title={title} imgLink={imgLink} box={box}/> */}
+      <div>
+        {individualService.map((elem, index) => (
+          <div key={index}>
+            <SectionLayout bg="">
+              <div className="h-[100%] service-style">
+                <div className="py-8">
+                  <>
+                    {/* <h1>{elem.title}</h1> */}
+                    <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+                      <div className="rounded-[10px] px-4 pb-16 ">
+                        <h1>{elem.title}</h1>
+                        {elem.shortDescription}
+                      </div>
+                      <div className="row-start-1 md:col-start-2">
+                        <Image
+                          src="/assets/tab-1.png"
+                          alt="tab-1"
+                          width={400}
+                          height={400}
+                          className="w-full h-full"
+                        />
+                      </div>
+                    </div>
+                  </>
+                </div>
+
+                <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
+                {Parser(elem.descriptionFirst)}
+
+                {/* <div className="mt-20 mb-8">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-[4rem] items-center">
+                  
+                    {bulletData.map((el: any, i: number) => 
+                      <Package data={el} key={i} />
+                    )}
+                  </div>
+                </div> */}
+                <SectionPackage />
+
+                {Parser(elem.descriptionSecond)}
+
+                {/* Boost */}
+
+                <div className="my-16">
+                  <BoostService
+                    heading=" Need a boost for you business? Get your FREE Quote Today!"
+                    btnText="Send us a proposal"
+                  />
+                </div>
+
+                {Parser(elem.descriptionThird)}
+              </div>
+            </SectionLayout>
+
+            <Info />
+
+            <SectionLayout bg="">
+              <div className="h-[100%] service-style">
+                <div className="py-8">
+                  {Parser(elem.descriptionFourth)}
+
+                  <Consultaion />
+
+                  {Parser(elem.descriptionFifth)}
+                  {Parser(elem.descriptionSixth)}
+                  {Parser(elem.descriptionSeventh)}
+                  {Parser(elem.descriptionEightth)}
+                </div>
+              </div>
+            </SectionLayout>
+
+            <AboutUs />
+
+            <SectionLayout bg="">
+              <div className="h-[100%] service-style">
+                <div className="py-8">{Parser(elem.whyBayshore)}</div>
+              </div>
+            </SectionLayout>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };
 

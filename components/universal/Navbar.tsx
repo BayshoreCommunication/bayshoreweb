@@ -4,11 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useSearchParams } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
-import dynamic from "next/dynamic";
 // import component 👇
-const Drawer = dynamic(() => import("react-modern-drawer"), {
-  ssr: false,
-});
+import Drawer from "react-modern-drawer";
 
 //import styles 👇
 import "react-modern-drawer/dist/index.css";

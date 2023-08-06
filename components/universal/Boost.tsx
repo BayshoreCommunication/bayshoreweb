@@ -61,4 +61,22 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
   );
 };
 
+export const BoostService: React.FC<boostInfo> = ({ heading, btnText }) => {
+  return (
+    <>
+      <h2 className="heading-secondary !text-center">{heading}</h2>
+      <form className="flex md:items-center gap-8 md:gap-12 mt-[4rem] max-w-[100rem] mx-auto flex-col md:flex-row ">
+        <input
+          className="rounded-[10px] outline-none text-small py-4 px-4 md:py-6 md:px-8 flex-1 bg-[#F4F4F4]"
+          type="text"
+          placeholder="Enter your email"
+        />
+        <ProposalBtn />
+      </form>
+      
+    </>
+  );
+};
+
 export default Boost;
+
