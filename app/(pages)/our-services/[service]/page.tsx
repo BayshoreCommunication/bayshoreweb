@@ -34,47 +34,50 @@ hero = [
   },
 ];
 
-let bulletData: {
-  title: string;
-  price: string;
-  points: string[];
-}[];
+// let bulletData: {
+//   title: string;
+//   price: string;
+//   points: string[];
+// }[];
 
-bulletData = [
-  {
-    title: "SILVER PLAN",
-    price: "2500",
-    points: [
-      "150 keyphrases optimized",
-      "30 pages optimized",
-      "6 content, outreach, UX, or CRO assets per quarter",
-      "8 custom dashboards",
-      "Phone call, lead, and revenue tracking dashboard",
-    ],
-  },
-  {
-    title: "GOLD PLAN",
-    price: "5000",
-    points: [
-      "200 keyphrases optimized",
-      "40 pages optimized",
-      "12 content, outreach, UX, or CRO assets per quarter",
-      "8 custom dashboards",
-      "Phone call, lead, and revenue tracking dashboard",
-    ],
-  },
-  {
-    title: "DIAMOND PLAN",
-    price: "8000",
-    points: [
-      "300 keyphrases optimized",
-      "60 pages optimized",
-      "24 content, outreach, UX, or CRO assets per quarter",
-      "10 custom dashboards",
-      "Phone call, lead, and revenue tracking dashboard",
-    ],
-  },
-];
+// bulletData = [
+//   {
+//     title: "SILVER PLAN",
+//     price: "2500",
+//     points: [
+//       "150 keyphrases optimized",
+//       "30 pages optimized",
+//       "6 content, outreach, UX, or CRO assets per quarter",
+//       "8 custom dashboards",
+//       "Phone call, lead, and revenue tracking dashboard",
+//     ],
+//   },
+//   {
+//     title: "GOLD PLAN",
+//     price: "5000",
+//     points: [
+//       "200 keyphrases optimized",
+//       "40 pages optimized",
+//       "12 content, outreach, UX, or CRO assets per quarter",
+//       "8 custom dashboards",
+//       "Phone call, lead, and revenue tracking dashboard",
+//     ],
+//   },
+//   {
+//     title: "DIAMOND PLAN",
+//     price: "8000",
+//     points: [
+//       "300 keyphrases optimized",
+//       "60 pages optimized",
+//       "24 content, outreach, UX, or CRO assets per quarter",
+//       "10 custom dashboards",
+//       "Phone call, lead, and revenue tracking dashboard",
+//     ],
+//   },
+// ];
+
+
+
 
 const page = ({ params }: { params: { service: string } }) => {
   const parameter = params.service;

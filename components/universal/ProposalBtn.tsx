@@ -1,9 +1,11 @@
+import Link from "next/link";
 import React from "react";
 import { AiOutlineRight } from "react-icons/ai";
 
 const ProposalBtn = () => {
   return (
-    <button
+    <Link
+      href="/contact"
       type="submit"
       className="btn text-small !py-4 md:!py-6 flex items-center gap-2 sm:gap-4 md:gap-8 px-[0rem] sm:px-[2rem] justify-center md:justify-start"
     >
@@ -11,7 +13,7 @@ const ProposalBtn = () => {
       <span className="inline-block translate-y-[1px]">
         <AiOutlineRight />
       </span>
-    </button>
+    </Link>
   );
 };
 

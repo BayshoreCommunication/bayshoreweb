@@ -46,6 +46,7 @@ const page = () => {
               el: {
                 logo: string;
                 url: string;
+                heroImg:string;
                 homeTabBar: HomeTabBarType[];
                 shortTitle: string;
                 title: string;

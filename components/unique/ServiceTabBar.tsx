@@ -14,8 +14,6 @@ const ServiceTabBar = (individualHomeTabBar: individualHomeTabBarType) => {
 
   return (
     <>
-      
-
       <div className="py-8">
         <div className="flex justify-between items-center rounded-[10px] custom-shadow px-[1rem] sm:px-[4rem] md:px-[11rem] py-[1.6rem] gap-2">
           {services.map((service, index) => (
@@ -46,24 +44,26 @@ const ServiceTabBar = (individualHomeTabBar: individualHomeTabBarType) => {
           ))}
         </div>
 
-        <div className="py-8">
+        <div className="py-4">
           {services.map(
             (service, index) =>
               activeTab === index && (
                 <>
-                  <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-                    <div className="rounded-[10px]  px-4 pb-16 ">
-                      {service.contentTab}
-                    </div>
-                    <div className="row-start-1 md:col-start-2">
-                      <Image
-                        src={service.titleImage}
-                        alt="tab-1"
-                        width={400}
-                        height={400}
-                        className="w-full h-full"
-                        // className="w-[543] h-[226]"
-                      />
+                  <div className="mt-[4rem]" key={index}>
+                    <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+                      <div className="rounded-[10px]  px-4 pb-16 ">
+                        {service.contentTab}
+                      </div>
+                      <div className="row-start-1 md:col-start-2">
+                        <Image
+                          src={service.titleImage}
+                          alt="tab-1"
+                          width={400}
+                          height={400}
+                          className="w-full h-full"
+                          // className="w-[543] h-[226]"
+                        />
+                      </div>
                     </div>
                   </div>
                 </>

@@ -3,8 +3,8 @@ import { FC } from "react";
 
 const PackageBulletPoint = ({ point }: any) => {
   return (
-    <li className="flex items-start gap-4 ">
-      <span className=" flex-[10%]">
+    <li className="flex items-start gap-6 ">
+      <span className=" ">
         <Image
           src="/assets/growth-plan/bulletpoint.svg"
           alt="option"
@@ -13,7 +13,7 @@ const PackageBulletPoint = ({ point }: any) => {
           className="w-[1.8rem] h-[1.8rem]"
         />
       </span>
-      <span className="text-small flex-[90%] !text-left ">{point}</span>
+      <span className="text-small  !text-left ">{point}</span>
     </li>
   );
 };
