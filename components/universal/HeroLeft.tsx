@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import { AiOutlineRight } from "react-icons/ai";
 import SectionLayout from "./SectionLayout";
 import ProposalBtn from "./ProposalBtn";
@@ -9,12 +10,24 @@ interface heroInfo {
 }
 
 export const HeroForm = () => {
+
+  const [inputValue, setInputValue] = useState("");
+
+  const handleInputChange = (event: {
+    target: { value: React.SetStateAction<string> };
+  }) => {
+    setInputValue(event.target.value);
+  };
+  localStorage.setItem("email", inputValue);
+
   return (
     <form className="cus-form flex items-center justify-center md:justify-start gap-4 sm:gap-8 mt-[1.5rem] lg:mt-[2.5rem] flex-col sm:flex-row">
       <input
         className="placeholder-center rounded-[10px] outline-none text-small py-4 px-4 md:py-6 md:px-8"
         type="text"
         placeholder="Enter your email"
+        onChange={handleInputChange}
+        value={inputValue}
       />
       <ProposalBtn />
     </form>

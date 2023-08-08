@@ -13,6 +13,7 @@ import HomeServiceCard from "@/components/unique/Home/HomeServiceCard";
 import { Content } from "next/font/google";
 import HomeTabBar from "@/components/unique/HomeTabBar";
 import Package from "@/components/universal/Package";
+import { Metadata } from "next";
 import ServiceTabBar from "@/components/unique/ServiceTabBar";
 import Boost, { BoostService } from "@/components/universal/Boost";
 import SectionPackage from "@/components/universal/SectionPackage";
@@ -33,6 +34,12 @@ hero = [
     help you expand your company globally and accomplish your goals.`,
   },
 ];
+
+export const metadata: Metadata = {
+  title: "Service-Bayshore Communication",
+  description:
+    "Are you looking for a communication partner who can help you create a lasting impression on digital market? Browse our website and fulfill your dream with Bayshore. ",
+};
 
 // let bulletData: {
 //   title: string;

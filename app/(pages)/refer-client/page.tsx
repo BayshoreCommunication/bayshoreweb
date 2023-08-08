@@ -40,7 +40,59 @@ const page = () => {
             height={1200}
             className="w-full h-auto"
           />
-          <h2 className="heading-secondary">Submit your referal</h2>
+          <h2 className="heading-secondary !text-center mt-12">
+            Submit your referal
+          </h2>
+        </div>
+        <div className="max-w-[600px] mx-auto">
+          <form className="flex flex-col items-center mt-8 gap-8">
+            <input
+              className="appearance-none border border-[#CED4DA] w-full py-4 px-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]  rounded-[25px]"
+              id="name"
+              type="text"
+              placeholder="Your name"
+            />
+            <input
+              className="appearance-none border w-full py-4 px-10 text-gray-700 border-[#CED4DA] leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]  rounded-[25px]"
+              id="email"
+              type="email"
+              placeholder="Your email"
+            />
+            <input
+              className="appearance-none border border-[#CED4DA] w-full py-4 px-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]  rounded-[25px]"
+              id="name"
+              type="text"
+              placeholder="Referral Name"
+            />
+            <input
+              className="appearance-none border w-full py-4 px-10 text-gray-700 border-[#CED4DA] leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]  rounded-[25px]"
+              id="email"
+              type="email"
+              placeholder="Referral email"
+            />
+            <input
+              className="appearance-none border border-[#CED4DA] w-full py-4 px-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]  rounded-[25px]"
+              id="subject"
+              type="text"
+              placeholder="Referral Phone"
+            />
+            <input
+              className="appearance-none border border-[#CED4DA] w-full py-4 px-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]  rounded-[25px]"
+              id="subject"
+              type="text"
+              placeholder="Company Name"
+            />
+            <input
+              className="appearance-none border border-[#CED4DA] w-full py-4 px-10 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D] rounded-[25px]"
+              id="subject"
+              type="text"
+              placeholder="Refrals Needs"
+            />
+
+            <button className="btn mt-4 text-small px[137px] " type="button">
+              Submit
+            </button>
+          </form>
         </div>
       </SectionLayout>
     </>

@@ -6,7 +6,6 @@ const ProposalBtn = () => {
   return (
     <Link
       href="/contact"
-      type="submit"
       className="btn text-small !py-4 md:!py-6 flex items-center gap-2 sm:gap-4 md:gap-8 px-[0rem] sm:px-[2rem] justify-center md:justify-start"
     >
       <span>Send us a Proposal</span>

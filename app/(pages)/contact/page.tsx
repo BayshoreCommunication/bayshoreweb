@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 
 import SectionLayout from "@/components/universal/SectionLayout";
 import Image from "next/image";
@@ -11,8 +11,9 @@ export const metadata: Metadata = {
   description:
     "Are you concerned about your business growth? Bayshore's here to help. Contact us today and get a free consultation. Let us show you how we can make a difference for your business.",
 };
+import { useEffect, useState } from "react";
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <Image
@@ -46,9 +47,20 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
 const Form = () => {
+  const [email, setEmail] = useState("");
+
+  useEffect(() => {
+    // Perform localStorage action
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const emailValue: string | null = localStorage.getItem("email");
+    if (emailValue) {
+      setEmail(emailValue);
+    }
+  }, []);
+
   return (
     <form className="flex flex-col items-center mt-8 gap-8">
       <input
@@ -62,6 +74,7 @@ const Form = () => {
         id="email"
         type="email"
         placeholder="Enter your email"
+        value={email}
       />
       <input
         className="appearance-none border border-[#CED4DA] rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]"

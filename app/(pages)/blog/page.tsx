@@ -4,6 +4,7 @@ import HeroLeft from "@/components/universal/HeroLeft";
 import SectionLayout from "@/components/universal/SectionLayout";
 import { Metadata } from "next";
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 
@@ -119,9 +120,11 @@ const Blog = () => {
         </p>
       </div>
       <div className="center md:block">
-        <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
-          Read this post
-        </button>
+        <Link href="/blog/slug">
+          <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
+            Read this post
+          </button>
+        </Link>
       </div>
     </div>
   );
