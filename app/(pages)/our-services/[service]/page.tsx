@@ -110,7 +110,7 @@ const page = ({ params }: { params: { service: string } }) => {
                     {/* <h1>{elem.title}</h1> */}
                     <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
                       <div className="rounded-[10px] px-4 pb-16 ">
-                        <h1>{elem.title}</h1>
+                        <h2>{elem.title}</h2>
                         {elem.shortDescription}
                       </div>
                       <div className="row-start-1 md:col-start-2">
@@ -128,7 +128,7 @@ const page = ({ params }: { params: { service: string } }) => {
 
                 <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
                 
-                {Parser(elem.descriptionFirst)}
+                {Parser(elem.description1)}
 
                 {/* <div className="mt-20 mb-8">
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-[4rem] items-center">
@@ -140,7 +140,7 @@ const page = ({ params }: { params: { service: string } }) => {
                 </div> */}
                 <SectionPackage />
 
-                {Parser(elem.descriptionSecond)}
+                {Parser(elem.description2)}
 
                 {/* Boost */}
 
@@ -151,7 +151,7 @@ const page = ({ params }: { params: { service: string } }) => {
                   />
                 </div>
 
-                {Parser(elem.descriptionThird)}
+                {Parser(elem.description3)}
               </div>
             </SectionLayout>
 
@@ -160,25 +160,33 @@ const page = ({ params }: { params: { service: string } }) => {
             <SectionLayout bg="">
               <div className="h-[100%] service-style">
                 <div className="py-8">
-                  {Parser(elem.descriptionFourth)}
+                  {Parser(elem.description4)}
 
                   <Consultaion />
 
-                  {Parser(elem.descriptionFifth)}
-                  {Parser(elem.descriptionSixth)}
-                  {Parser(elem.descriptionSeventh)}
-                  {Parser(elem.descriptionEightth)}
+                  {Parser(elem.description5)}
+                  {Parser(elem.description6)}
+                  {Parser(elem.description7)}
+                  {Parser(elem.description8)}
+                  {Parser(elem.description9)}
+                  {Parser(elem.description10)}
+                  {Parser(elem.description11)}
+                  {Parser(elem.description12)}
+                  {Parser(elem.description13)}
+                  {Parser(elem.description14)}
+                  {Parser(elem.description15)}
+                  
                 </div>
               </div>
             </SectionLayout>
 
             <AboutUs />
 
-            <SectionLayout bg="">
-              <div className="h-[100%] service-style">
-                <div className="py-8">{Parser(elem.whyBayshore)}</div>
-              </div>
-            </SectionLayout>
+            
+              {/* <div className="h-[100%] service-style">
+                <div className="">{Parser(elem.whyBayshore)}</div>
+              </div> */}
+           
           </div>
         ))}
       </div>

@@ -45,20 +45,31 @@ const page = () => {
             (
               el: {
                 logo: string;
+                topHeroLeftTitle: string;
+                topHeroLeftDescription: string;
+                metaName: string;
+                metaDescription: string;
                 url: string;
-                heroImg:string;
-                homeTabBar: HomeTabBarType[];
+                heroImg: string;
                 shortTitle: string;
                 title: string;
                 shortDescription: string;
-                descriptionFirst: string;
-                descriptionSecond: string;
-                descriptionThird: string;
-                descriptionFourth: string;
-                descriptionFifth: string;
-                descriptionSixth: string;
-                descriptionSeventh: string;
-                descriptionEightth: string;
+                homeTabBar: HomeTabBarType[];
+                description1: string;
+                description2: string;
+                description3: string;
+                description4: string;
+                description5: string;
+                description6: string;
+                description7: string;
+                description8: string;
+                description9: string;
+                description10: string;
+                description11: string;
+                description12: string;
+                description13: string;
+                description14: string;
+                description15: string;
                 whyBayshore: string;
               },
               i: number
