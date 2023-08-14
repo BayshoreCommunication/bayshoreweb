@@ -17,14 +17,14 @@ const Info = () => {
             />
             <div>
               <p className="text-base mb-2 opacity-80 !text-[#fff]">
-                Ready to speak with a marketing expert? Give us a ring
+                Ready to speak with us? Give us a ring
               </p>
               <p className="info-text text-center sm:text-start">0168504449</p>
             </div>
           </div>
           <div className="flex flex-wrap sm:flex-nowrap justify-center  items-center gap-8">
             <div className="flex flex-col">
-              <p className="info-text text-center">1.6 million</p>
+              <p className="info-text text-center">1.5 million</p>
               <p className="text-base mb-2 opacity-80 !text-[#fff]">
                 Hours of Expertise
               </p>
@@ -32,7 +32,7 @@ const Info = () => {
 
             <div className="flex flex-col">
               <p className="info-text text-center">
-                <Count num={500} duration={3} />+
+                <Count num={600} duration={3} />+
               </p>
               <p className="text-base mb-2 opacity-80 !text-[#fff]">
                 Digital Marketing Masters On Staff
@@ -41,7 +41,7 @@ const Info = () => {
 
             <div className="flex flex-col">
               <p className="info-text text-center">
-                <Count num={1128} duration={3} />
+                <Count num={1228} duration={3} />
               </p>
               <p className="text-base mb-2 opacity-80 !text-[#fff]">
                 Websites Launched

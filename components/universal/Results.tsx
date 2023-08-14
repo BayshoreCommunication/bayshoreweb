@@ -139,13 +139,7 @@ const ClientLogos = () => {
         height={400}
         className="w-[15rem] h-auto"
       />
-      <Image
-        src="/assets/client-logo/tesla.svg"
-        alt="tesla"
-        width={400}
-        height={400}
-        className="w-[15rem] h-auto"
-      />
+      
       <Image
         src="/assets/client-logo/butterfly.svg"
         alt="butterfly"

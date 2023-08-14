@@ -190,37 +190,18 @@ const FocusOnSelect: React.FC = () => {
           {...settings3}
         >
           <BoxContent
+          title="APEX"
+          subtitle=""
             content="1"
-            text=" Swop’s Flat Rectangle NFC’s are designed to be durable and simple to
-        use. The Flat is great to put under any phone case(non-metal) Users can
-        download our app to program any of our NFC’s with the click of a button."
+            text="As an owner of Apex Advisor Group, I have been very impressed with the service provided by Bayshore. They are a professional and reliable company that offers a range of services. They are committed to enabling and empowering their clients to be as independent as possible within their community. They also have friendly and helpful teams that always go the extra mile to meet the needs and expectations of their clients. I would highly recommend Bayshore's service to anyone who is looking for a quality and compassionate care provider."
           />
           <BoxContent
+          title="Catflix"
+          subtitle=""
             content="2"
-            text="Swop’s Flat Rectangle NFC’s are designed to be durable and simple to
-        use. The Flat is great to put under any phone case(non-metal) Users can
-        download our app to program any of our NFC’s with the click of a button.
-        This will attach your profile to the NFC for easy sharing. You just tap
-        the NFC on any compatible phone to share your digital business card"
+            text="Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust."
           />
-          <BoxContent
-            content="3"
-            text="download our app to program any of our NFC’s with the click of a button.
-        This will attach your profile to the NFC for easy sharing. You just tap
-        the NFC on any compatible phone to share your digital business card"
-          />
-          <BoxContent
-            content="4"
-            text="and simple to
-        use. The Flat is great to put under any phone case(non-metal) Users can
-        download our app to program any of our NFC’s with the click of a button."
-          />
-          <BoxContent
-            content="5"
-            text="NFC’s with the click of a button.
-        This will attach your profile to the NFC for easy sharing. You just tap
-        the NFC on any compatible phone to share your digital business card"
-          />
+         
         </Slider>
       </div>
     </>
@@ -230,14 +211,16 @@ const FocusOnSelect: React.FC = () => {
 export default FocusOnSelect;
 
 interface demo {
+  title: string;
+  subtitle: string;
   content: string;
   text: string;
 }
-const BoxContent = ({ content, text }: demo) => {
+const BoxContent = ({ title, subtitle, content, text }: demo) => {
   return (
     <div className="fade-in-animation max-w-[650px] mx-auto mt-[3rem] flex flex-col items-center">
-      <h3 className="heading-tertiary ">Trip Law {content}</h3>
-      <p className="mb-4 font-semibold">Immigration Lawyer {content}</p>
+      <h3 className="heading-tertiary ">{title}</h3>
+      <p className="mb-4 font-semibold">{subtitle} </p>
       <p className="text-link !text-center">
         {text}
         {/* Swop’s Flat Rectangle NFC’s are designed to be durable and simple to

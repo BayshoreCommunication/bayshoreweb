@@ -49,6 +49,7 @@ const page = () => {
                 topHeroLeftDescription: string;
                 metaName: string;
                 metaDescription: string;
+                readMoreDesc: string;
                 url: string;
                 heroImg: string;
                 shortTitle: string;

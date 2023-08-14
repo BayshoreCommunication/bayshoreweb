@@ -39,13 +39,16 @@ const AccorDion = ({ title, body }: any) => {
       </div>
       <div className="">
         <AccordionBody>
-          <div className=" bg-[#F5F5F5] border-t-[0.5px] border-[#AAAAAA] rounded-b-[10px]">
-            <div className="px-8 !py-8 text-base">
-              {/* No! The other person does not need a SWOP or app to receive your
-              SWOP profile. That's the beauty of SWOP ⚡️ If their phone is on
-              this list of compatible devices you can pop to their phone. If it
-              is not, just use your SWOP QR code on your profile to share! */}
-              {body}
+          <div className="  border-t-[0.5px] border-[#AAAAAA] rounded-b-[10px]">
+            <div className="px-8 !py-8 text-base">{body}</div>
+
+            <div className="mx-auto text-center mb-8 ">
+              <button
+                className="btn mt-4 text-small px[137px] mx-auto "
+                type="button"
+              >
+                Apply
+              </button>
             </div>
           </div>
         </AccordionBody>

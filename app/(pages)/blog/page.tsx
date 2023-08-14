@@ -58,7 +58,7 @@ const page = () => {
         </div>
       </SectionLayout>
 
-      <SectionLayout bg="bg-[#F4F4F4]">
+      {/* <SectionLayout bg="bg-[#F4F4F4]">
         <h2 className="heading-secondary text-center">
           Level Up Your SEO Skills With Our Free Training
         </h2>
@@ -69,7 +69,7 @@ const page = () => {
             <Seo />
           </div>
         </div>
-      </SectionLayout>
+      </SectionLayout> */}
 
       <Consultaion />
     </>
