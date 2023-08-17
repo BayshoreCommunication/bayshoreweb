@@ -3,12 +3,59 @@ import SectionLayout from "@/components/universal/SectionLayout";
 import { Metadata } from "next";
 import Head from "next/head";
 import React from "react";
+import parser from "html-react-parser";
+import {
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+} from "@material-tailwind/react";
+import { Example } from "@/components/unique/faq/FaqAcc";
 
 export const metadata: Metadata = {
   title: "Career-Bayshore Communication",
   description:
     "Looking for an opportunity to show your skills, talent, and work with professionals who share your vision and values? Check out our career page. Apply now and become part of our family. ",
 };
+
+let jobs: {
+  heading: string;
+  description: string;
+}[];
+
+jobs = [
+  {
+    heading: `Junior Immigration Paralegal`,
+    description: `<p>We are hiring an Immigration Case Manager to serve as the main point of contact for clients, providing regular updates, addressing inquiries, and offering guidance throughout the immigration process. Collaboration with our team and basic knowledge of immigration law are preferred. Strong English communication skills and availability from 8:00 am to 5:00 pm EST are required. Join us in providing exceptional service and support to our clients' immigration journey</p>
+  <h5>Responsibilities:</h5>
+  <ul>
+  <li><strong>Client Communication:</strong>&nbsp;Act as the main point of contact for clients, maintaining regular communication and providing updates on their immigration cases. Answer client inquiries, address concerns, and provide guidance throughout the immigration process.</li>
+  <li><strong>Case Assessment:</strong>&nbsp;Evaluate client eligibility for various immigration programs, visas, or permits based on their specific circumstances, goals, and qualifications. Conduct thorough reviews of client documents and information to determine the best course of action.</li>
+  <li><strong>Documentation and Form Preparation:</strong>&nbsp;Assist clients in completing necessary immigration forms accurately and in a timely manner. Ensure all required supporting documents are gathered, organized, and submitted as per the immigration requirements.</li>
+  <li><strong>Case Management:</strong>&nbsp;Oversee the overall progress of immigration cases, managing multiple cases simultaneously. Monitor deadlines, follow-up with clients and relevant authorities, and coordinate with internal teams or external agencies to gather information or resolve any issues.</li>
+  <li><strong>Case Documentation and Record-Keeping:</strong>&nbsp;Maintain accurate and organized case files and records, including client information, correspondence, forms, and supporting documents. Ensure compliance with data protection and confidentiality regulations.</li>
+  <li><strong>Deadline Management:</strong>&nbsp;Track important deadlines, such as application submission dates, document expiry dates, or response deadlines, to ensure timely and complaint handling of clients' cases.</li>
+  <li><strong>Collaboration and Teamwork:</strong>&nbsp;Collaborate with colleagues, including immigration attorneys, paralegals, or other professionals within the firm, to ensure efficient and effective case management. Seek guidance or support when needed and contribute to a positive and collaborative work environment.</li>
+  <li><strong>Time zone:</strong>&nbsp;Candidates must be available to work from 8.00 am to 5 pm in EST time zone that is late night in Bangladesh.</li>
+  </ul>
+  <h5>Requirements:</h5>
+  <ul>
+  <li><strong>Knowledge of Immigration Law and Procedures (Preferred):</strong>&nbsp;An understanding of immigration laws, regulations, policies, and procedures is crucial. Case Managers should be familiar with various visa categories, immigration programs, and the specific requirements for each. They should keep up to date with changes in immigration law and policy.</li>
+  <li><strong>English Language Skills (Required):</strong>&nbsp;Proficiency in English in both reading and writing is very important for this role.</li>
+  <li><strong>Attention to Detail:</strong>&nbsp;Case Managers must demonstrate a high level of attention to detail to ensure accurate completion of forms, documentation, and adherence to immigration requirements. Small errors or omissions can have significant consequences for clients' cases.</li>
+  <li><strong>Technology Proficiency:</strong>&nbsp;Proficiency in using MS Word and MS Excel.</li>
+  <li><strong>Ethics and Professionalism:</strong>&nbsp;Immigration Case Managers handle sensitive and confidential client information. Upholding ethical standards, maintaining client confidentiality, and displaying professionalism in all interactions are crucial qualities.</li>
+  </ul>
+  <h5>Compensation &amp; Other Benefits:</h5>
+  <ul>
+  <li>Full Subsidize Lunch Facilities, Yearly 2 Festival Bonus, Yearly Increments (On Performance)</li>
+  </ul>
+  <h5>Job Location: Aftabnagar, Dhaka</h5>
+  <h5>Work Hours: Monday - Friday (Night Shift)</h5>
+  <h5>Salary: TK. 20,000 - 30,000 (Monthly)</h5>
+  <p>If you have a strong background in immigration law and are passionate about supporting clients through the immigration process, we encourage you to apply for our Immigration Paralegal position at&nbsp;jobs@bayshorecommunication.com. Please include the position you are applying for in the email subject line. Join our team and utilize your expertise to assist our clients in navigating the complexities of immigration law.</p>`,
+  },
+  
+];
 
 const page = () => {
   return (
@@ -21,11 +68,13 @@ const page = () => {
       </div>
       <SectionLayout bg="">
         <div className="border-[0.5px] border-[#AAAAAA] rounded-[10px]">
-          <AccorDion title="Content Writing Intern" body={<Content1 />} />
+          {/* {jobs.map((elem, index) => (
+            <div key={index}>
+              <AccorDion title={`${elem.heading}`} body={<Content />} />
+            </div>
+          ))} */}
 
-          <AccorDion title="Full Stack Web Developer" body={<Content1 />} />
-
-          <AccorDion title="Full Stack Web Developer" body={<Content1 />} />
+          <Example arr={jobs} />
         </div>
       </SectionLayout>
     </>
@@ -34,10 +83,4 @@ const page = () => {
 
 export default page;
 
-const Content1 = () => {
-  return (
-    <div className="flex items-center justify-between">
-      <div><p>Content Writing Intern<br />We are looking for a passionate and motivated intern to join our content writing team. As an intern, you will learn and work closely with our experienced content writers to create high-quality content optimized for search engines. You will also learn about on-page SEO and how to implement it in content to improve its ranking and visibility.<br />Responsibilities:<br />Conducting research and creating high-quality content for websites, blogs, and social media<br />Optimizing content for search engines using on-page SEO techniques<br />Editing and proofreading content for accuracy, grammar, and spelling<br />Staying up-to-date with industry trends and best practices in content writing and SEO<br />Requirements:<br />Good basic English skills<br />Basic understanding of SEO and its importance in content creation<br />Excellent writing, editing, and proofreading skills<br />Ability to work in a team and collaborate effectively<br />Attention to detail and ability to multitask in a fast-paced environment<br />Good communication skills and willingness to learn<br />A portfolio of writing samples or relevant coursework is a plus<br />Compensation &amp; Other Benefits:<br />Full Subsidize Lunch Facilities, Yearly 2 Festival Bonus, Yearly Increments (On Performance)<br />Job Location: Hybrid<br />Work Hours: Saturday - Thursday (10 AM - 6 PM)<br />Salary: TK. 10,000 - 15,000 (Monthly)<br />This is a paid internship that offers valuable hands-on experience in content writing and on-page SEO. If you&apos;re passionate about writing and eager to learn from experienced professionals, we encourage you to apply. Please include your resume and a cover letter detailing your interest and qualifications for the position to jobs@bayshorecommunication.com. Please include the position you are applying for in the email subject.</p></div>
-    </div>
-  );
-};
+

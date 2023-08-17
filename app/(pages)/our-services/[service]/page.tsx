@@ -34,7 +34,7 @@ const Page = ({ params }: { params: { service: string } }) => {
   const individualService = services.filter((elem) => elem.url === parameter);
   const individualHomeTabBar = individualService.map((el) => el.homeTabBar)[0];
   // const params=useParams()
-  console.log("parameter ", parameter);
+  // console.log("parameter ", parameter);
 
   return (
     <>

@@ -1,6 +1,7 @@
 import Count from "../Count";
 import SectionLayout from "./SectionLayout";
 import Image from "next/image";
+import Link from "next/link";
 
 const Info = () => {
   return (
@@ -19,7 +20,11 @@ const Info = () => {
               <p className="text-base mb-2 opacity-80 !text-[#fff]">
                 Ready to speak with us? Give us a ring
               </p>
-              <p className="info-text text-center sm:text-start">0168504449</p>
+              {/* <Link href="tel:+13217659177"> */}
+                <p className="info-text text-center sm:text-start">
+                  +1 (321) 765-9177
+                </p>
+              {/* </Link> */}
             </div>
           </div>
           <div className="flex flex-wrap sm:flex-nowrap justify-center  items-center gap-8">

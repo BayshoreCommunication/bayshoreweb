@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 interface con {
@@ -7,7 +8,7 @@ interface con {
 
 const Box: React.FC<con> = ({ content }) => {
   return (
-    <div className="flex gap-2 md:gap-4  my-[1rem] md:my-[1.5rem]">
+    <div className="flex gap-2 md:gap-4 my-[1rem] md:my-[1.5rem]">
       <Image
         src="/assets/mark.svg"
         alt="marking"
@@ -15,9 +16,18 @@ const Box: React.FC<con> = ({ content }) => {
         height={50}
         className="w-[2rem] h-[2rem]"
       />
-      <p className="underline !text-[#207DE9] text-[12px] md:text-[14px]">
-        {content}
-      </p>
+      {/* <Link
+        href={`/our-services/`}
+        className="underline !text-[#207DE9] text-[12px] md:text-[14px]"
+      >
+        {content} hh
+      </Link> */}
+      <div
+       
+        className="underline !text-[#207DE9] text-[12px] md:text-[14px]"
+      >
+        {content} 
+      </div>
     </div>
   );
 };

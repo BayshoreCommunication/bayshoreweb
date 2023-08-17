@@ -5,6 +5,7 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
+import Link from "next/link";
 
 function Icon({ id, open }: any) {
   return (
@@ -32,23 +33,25 @@ const AccorDion = ({ title, body }: any) => {
 
   return (
     <Accordion open={open === 1} icon={<Icon id={1} open={open} key={1} />}>
-      <div className="px-8  border-t-[0.5px] border-[#AAAAAA] ">
+      <div className="px-8   ">
         <AccordionHeader onClick={() => handleOpen(1)}>
           <div className="text-[16px] md:text-[18px] font-normal">{title}</div>
         </AccordionHeader>
       </div>
       <div className="">
         <AccordionBody>
-          <div className="  border-t-[0.5px] border-[#AAAAAA] rounded-b-[10px]">
-            <div className="px-8 !py-8 text-base">{body}</div>
+          <div className=" ">
+            <div className="px-8 !py-8 ">{body}</div>
 
             <div className="mx-auto text-center mb-8 ">
-              <button
-                className="btn mt-4 text-small px[137px] mx-auto "
-                type="button"
-              >
-                Apply
-              </button>
+              <Link href="mailto:jobs@bayshorecommunication.com">
+                <button
+                  className="btn mt-4 text-small px[137px] mx-auto "
+                  type="button"
+                >
+                  Apply
+                </button>
+              </Link>
             </div>
           </div>
         </AccordionBody>

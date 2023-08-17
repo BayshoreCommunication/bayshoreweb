@@ -16,13 +16,13 @@ const page = () => {
         Frequently Asked Questions (FAQ)
       </h2>
       <SectionLayout bg="">
-        <h4 className="heading-four bg-[#F5F5F5] rounded-[10px] p-4">
+        {/* <h4 className="heading-four bg-[#F5F5F5] rounded-[10px] p-4">
           Troubleshooting SWOP
-        </h4>
+        </h4> */}
 
-        <AccordionCus title="General" />
-        <AccordionCus title="Compatibility" />
-        <AccordionCus title="Shipping" />
+        <AccordionCus  />
+        {/* <AccordionCus title="Compatibility" />
+        <AccordionCus title="Shipping" /> */}
       </SectionLayout>
     </>
   );

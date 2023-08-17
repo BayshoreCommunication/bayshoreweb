@@ -24,10 +24,10 @@ const Page = () => {
         className="w-full h-auto object-cover"
       />
       <SectionLayout bg="">
-        <div className="flex justify-between">
+        <div className="flex justify-around">
           <Adress title="Tampa" />
           <Adress title="Dhaka" />
-          <Adress title="Dubai" />
+          {/* <Adress title="Dubai" /> */}
         </div>
       </SectionLayout>
       <SectionLayout bg="">
