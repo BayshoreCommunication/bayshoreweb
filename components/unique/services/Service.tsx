@@ -1267,7 +1267,7 @@ services = [
       "Get outstanding results with our powerful paid advertising services. Bayshore Communication delivers the boost your business needs to succeed. Contact us now!",
     readMoreDesc: `Boost your brand's visibility with our paid advertising services. Get instant access to small, text-based or product-based ads, providing consumers with brand insights, prices, and reviews. With our expert team, we strategically design ads like social media, display, native, and mobile ads to match your brand identity, performing A/B testing for optimal results.`,
     url: "paid-advertising",
-    heroImg: "/assets/service/Customized Paid Advertising Strategies.jpg",
+    heroImg: "/assets/service/Customized-Paid-Advertising-Strategies.jpg",
     title: "Customized Paid Advertising Strategies",
     shortTitle: "Paid Advertising",
     shortDescription: `At Bayshore Communication, we know that every business is different and has its own unique goals and challenges. That’s why we don’t offer generic solutions, but rather customized paid advertising strategies that match your specific needs and objectives. Whether your goal is to raise brand recognition, produce more leads, enhance conversions, or keep repeat customers, we can help you create and execute a plan that works for you.`,
@@ -1276,26 +1276,26 @@ services = [
         titleTab: `Customized Paid Advertising Strategies for Your Unique Business Goals`,
         contentTab: `We begin by comprehending your company's objectives and what you want to accomplish through sponsored advertising. To determine the greatest possibilities and obstacles for your campaigns, we next do extensive research on your sector, your rivals, and market trends. We develop a customized plan based on this research, which includes the key performance indicators (KPIs) that will be used to determine your success and is in accordance with your goals and budget.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/Customized Paid Advertising Strategies for Your Unique Business Goals.jpg",
+        titleImage: "/assets/service/Customized-Paid-Advertising-Strategies-for-Your-Unique-Business-Goals.jpg",
       },
       {
         titleTab: `In Depth Audience Analysis for Targeted Advertising Campaigns`,
         contentTab: `Knowing your target market and how to reach them successfully is one of the most crucial elements of paid advertising. We segment your audience based on their demographics, interests, habits, and requirements using cutting-edge technologies and techniques. Then, using buyer personas that serve as a representation of your ideal clients, we can better build advertisements that will speak to and resonate with them. We can improve your click-through rates (CTRs), conversions, and return on ad spend (ROAS) by focusing on the appropriate audience with the right message at the right time.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/In Depth Audience Analysis for Targeted Advertising Campaigns.jpg",
+        titleImage: "/assets/service/In-Depth-Audience-Analysis-for-Targeted-Advertising-Campaigns.jpg",
       },
       {
         titleTab: `Strategic Ad Platform Selection for Maximum Reach and impact`,
         contentTab: `There are many ad platforms available today, each with its own advantages and disadvantages. Choosing the right one for your business can make a huge difference in your campaign performance and results. We help you select the best ad platform for your goals, audience, and budget, whether it’s Google, Facebook, Instagram, or any other platform Ad. We also help you optimize your ad formats, placements, keywords, bids, and creatives to ensure they are relevant, engaging, and effective. Furthermore, we leverage the power of each platform to maximize your reach and impact across the web and social media.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/Strategic Ad Platform Selection for Maximum Reach and impact.jpg",
+        titleImage: "/assets/service/Strategic-Ad-Platform-Selection-for-Maximum-Reach-and-impact.jpg",
       },
     ],
 
     description1: `
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Keyword-Research-and-Ad-Creation.jpg
     alt="tab-1"
     
     className="w-full h-full"
