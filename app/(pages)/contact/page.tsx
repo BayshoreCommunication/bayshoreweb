@@ -1,4 +1,4 @@
-"use client";
+
 
 import SectionLayout from "@/components/universal/SectionLayout";
 import Image from "next/image";

@@ -1320,7 +1320,7 @@ services = [
               
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Landing-Page-Optimization.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1339,7 +1339,7 @@ services = [
               
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Campaign-Management-and-Optimization.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1360,7 +1360,7 @@ services = [
               
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Performance-Tracking-and-Reporting.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1379,7 +1379,7 @@ services = [
               
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Budget.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1398,7 +1398,7 @@ services = [
               
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Continuous-Optimization.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1416,7 +1416,7 @@ services = [
               
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Proven-Track-Record-and-Client-Success-Stories.jpg"
     alt="tab-1"
     
     className="w-full h-full"

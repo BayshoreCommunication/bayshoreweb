@@ -1,4 +1,3 @@
-"use client";
 import Consultaion from "@/components/universal/Consultaion";
 import { HeroWithImage } from "@/components/universal/Hero";
 import HeroLeft from "@/components/universal/HeroLeft";
