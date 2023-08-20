@@ -18,7 +18,14 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
   }) => {
     setInputValue(event.target.value);
   };
-  localStorage.setItem("email", inputValue);
+  useEffect(() => {
+    // Perform localStorage action
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const inputValue: string | null = localStorage.getItem("email");
+    if (inputValue) {
+      setItem(inputValue);
+    }
+  }, []);
 
   return (
     <SectionLayout bg="bg-[#F4F4F4]">
@@ -66,7 +73,7 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
               height={150}
               className="w-[53px] h-[53px] rounded-full border-[2px] border-[#207DE9]"
             />
-            <div >
+            <div>
               <div>
                 {" "}
                 <h4 className="heading-four">Salman H Saikote</h4>
@@ -97,3 +104,6 @@ export const BoostService: React.FC<boostInfo> = ({ heading, btnText }) => {
 };
 
 export default Boost;
+function setItem(inputValue: string) {
+  throw new Error("Function not implemented.");
+}
