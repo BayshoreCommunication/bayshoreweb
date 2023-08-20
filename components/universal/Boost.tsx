@@ -58,7 +58,7 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
           <p className="text-base pr-12 !text-start">
             “Fueling Success, Fueled by Client Satisfations”
           </p>
-          <div className="flex mt-8 gap-6">
+          <div className="flex mt-8 gap-6 items-center">
             <Image
               src="/assets/salman-n.png"
               alt="salman"
@@ -66,9 +66,12 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
               height={150}
               className="w-[53px] h-[53px] rounded-full border-[2px] border-[#207DE9]"
             />
-            <div>
-              <h4 className="heading-four">Salman H Saikote</h4>
-              <p className="text-small">CTO</p>
+            <div >
+              <div>
+                {" "}
+                <h4 className="heading-four">Salman H Saikote</h4>
+                <p className="text-small">CTO</p>
+              </div>
             </div>
           </div>
         </div>

@@ -167,7 +167,7 @@ export default function HomeTabBar() {
 
   return (
     <div className="md:px-[2rem] ">
-      <div className="flex justify-between items-center rounded-[10px] custom-shadow px-[1rem] sm:px-[4rem] md:px-[11rem] py-[1.6rem] gap-2">
+      <div className="flex justify-between items-center rounded-[10px] custom-shadow px-[1rem] sm:px-[4rem] md:px-[11rem] py-[1.6rem] gap-2 align-top">
         {tabs.map((tab, index) => (
           <button
             className={`flex flex-col items-center  py-4 px-2 md:px-8 rounded-[10px] cursor-pointer ${
@@ -184,7 +184,7 @@ export default function HomeTabBar() {
               className="md:h-[26px] md:w-[26px] h-[14px] w-[14px]"
             />
             <p
-              className={`py-2 text-[1.2rem] text-[#A2A2A2] text-center font-bold ${
+              className={`py-2 text-[1.2rem] text-[#A2A2A2]  font-bold  ${
                 activeTab === index ? "bg-gray-200" : ""
               }`}
             >

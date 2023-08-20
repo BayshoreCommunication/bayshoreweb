@@ -1,16 +1,19 @@
 "use client";
-import React from "react";
+import { FC } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 
-const SwipeToSlide: React.FC = () => {
+const SwipeToSlide: FC = () => {
+  const { width } = useWindowDimensions();
   const settings = {
     className: "centerHistory",
     infinite: true,
     centerPadding: "0px",
-    slidesToShow: 4,
+    slidesToShow: width != undefined && width < 788 ? 2 : 4,
+
     swipeToSlide: true,
     afterChange: function (index: number) {
       console.log(
@@ -20,7 +23,7 @@ const SwipeToSlide: React.FC = () => {
   };
 
   return (
-    <div className="history">
+    <div className="history mx-6">
       <Slider {...settings}>
         <Card year="2019" />
         <Card year="2020" />
@@ -37,7 +40,7 @@ export default SwipeToSlide;
 const Card = ({ year }: any) => {
   return (
     <div className="pt-[4rem]  ">
-      <div className="bg-primary text-center relative h-[20px] w-full mb-[3rem] mx-[3rem]">
+      <div className="bg-primary text-center relative h-[20px] w-full mb-[3rem]">
         <div className="text-[#fff] absolute border-[4px] h-[7rem] w-[7rem] left-[50%] translate-x-[-50%] top-0 translate-y-[-40%] rounded-full center bg-primary">
           {year}
         </div>
@@ -50,7 +53,7 @@ const Card = ({ year }: any) => {
           height={800}
           className="w-full h-auto"
         />
-        <h4 className="heading-four">{year}</h4>
+        <h4 className="heading-four !text-center">{year}</h4>
         <p className="text-small">
           By being available to our clients, we can respond to their concerns
           and questions and carry out our duty for keeping our clients

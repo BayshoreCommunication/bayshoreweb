@@ -13,6 +13,30 @@ export const metadata: Metadata = {
 };
 import { useEffect, useState } from "react";
 
+let address: {
+  title: string;
+  phone: string;
+  address: string;
+  email: string;
+  // icon: string;
+}[];
+
+address = [
+  {
+    title: "Tampa",
+    phone: "+1 (321) 765-9177",
+    address: "1301 34th ST South, St. Petersburg FL 33711",
+    email: "info@bayshorecommunication.com",
+  },
+  {
+    title: "Dhaka",
+    phone: "+8801685035449",
+    address:
+      "Flat : 2nd , House : 21, Road : 1, Block : A, Aftabnogor, Dhaka - 1212",
+    email: "info@bayshorecommunication.com",
+  },
+];
+
 const Page = () => {
   return (
     <>
@@ -25,8 +49,18 @@ const Page = () => {
       />
       <SectionLayout bg="">
         <div className="flex justify-around">
-          <Adress title="Tampa" />
-          <Adress title="Dhaka" />
+          <Adress
+            title="Tampa"
+            address={address[0].address}
+            phone={address[0].phone}
+            email={address[0].email}
+          />
+          <Adress
+            title="Dhaka"
+            address={address[1].address}
+            phone={address[1].phone}
+            email={address[1].email}
+          />
           {/* <Adress title="Dubai" /> */}
         </div>
       </SectionLayout>
@@ -81,14 +115,12 @@ const Form = () => {
         id="contact"
         type="tel"
         placeholder="Enter your contact no."
-        
       />
       <input
         className="appearance-none border rounded w-full py-4 px-4 text-gray-700 border-[#CED4DA] leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]"
         id="website"
         type="url"
         placeholder="Enter your website"
-        
       />
       <input
         className="appearance-none border border-[#CED4DA] rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]"
@@ -108,11 +140,8 @@ const Form = () => {
   );
 };
 
-interface con {
-  title: string;
-  icon: string;
-}
-const Row: React.FC<con> = ({ title, icon }) => {
+
+const Row = ({ title, icon, address, phone, email }: any) => {
   return (
     <div className="">
       <h4 className="heading-four mb-2 flex items-center gap-4">
@@ -127,21 +156,21 @@ const Row: React.FC<con> = ({ title, icon }) => {
         </span>
         <span>{title}</span>
       </h4>
-      <p className="text-small">+1 (321) 765-9177</p>
+      <p className="text-small">{phone}</p>
+      <p className="text-small">{address}</p>
+      <p className="text-small">{email}</p>
     </div>
   );
 };
-interface col {
-  title: string;
-}
-const Adress = ({ title }: col) => {
+
+const Adress = ({ address, title, phone, email }: any) => {
   return (
     <div className="">
       <h3 className="heading-tertiary">{title}</h3>
       <div className="flex flex-col gap-3">
-        <Row title="Phone" icon="/assets/phone.svg" />
-        <Row title="Address" icon="/assets/location.svg" />
-        <Row title="Email" icon="/assets/email.svg" />
+        <Row title="Phone" icon="/assets/phone.svg" phone={phone} />
+        <Row title="Address" icon="/assets/location.svg" address={address} />
+        <Row title="Email" icon="/assets/email.svg" email={email} />
       </div>
     </div>
   );

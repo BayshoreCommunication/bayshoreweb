@@ -31,7 +31,7 @@ const page = () => {
         />
       </div>
       <SectionLayout bg="">
-        <h2 className="heading-secondary text-center">Our Story</h2>
+        <h2 className="heading-secondary !text-center">Our Story</h2>
         {/* <p className="text-base mb-4">
           Bayshore Communication has an outstanding communication team that acts
           as the foundation for their digital marketing, web service, and brand
@@ -117,7 +117,7 @@ impressive outcomes and provide outstanding support to their clients.`}
         </p>
       </SectionLayout>
 
-      <SectionLayout bg="">
+      <SectionLayout bg="" >
         <SectionHeader
           heading="Our Team"
           text=" By being available to our clients, we can respond to their concerns
@@ -261,7 +261,7 @@ cardContentS = [
   {
     img: "/assets/about/amena.png",
     name: "Amena Islam Rimi",
-    destination: "CHIEF OPERATING OFFICER (COO)",
+    destination: "CHIEF OPERATING OFFICER",
   },
   {
     img: "/assets/about/monira.png",
