@@ -111,15 +111,16 @@ const IndividualBlog = ({ params }: { params: { slug: string } }) => {
 
 export default IndividualBlog;
 
-export const BlogNavigation = () => {
+const BlogNavigation = () => {
   return (
     <>
       {blogindv.map((elem: any, index: any) => (
         <div key={index}>
           <Link
             className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
-            href={`/blog/${elem.url.replace(/\s+/g, "_") // Replace spaces with dashes globally
-            .toLowerCase()}`}
+            href={`/blog/${elem.url
+              .replace(/\s+/g, "_") // Replace spaces with dashes globally
+              .toLowerCase()}`}
           >
             <Image
               src={`/assets/${elem.blogImg}`}
