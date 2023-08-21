@@ -142,13 +142,13 @@ impressive outcomes and provide outstanding support to their clients.`}
 
       <AboutUs />
 
-      <SectionLayout bg="">
+      {/* <SectionLayout bg="">
         <SectionHeader
           heading="Our History"
           text="By being available to our clients, we can respond to their concerns and questions and carry out our duty for keeping our clients up-to-date about the case."
         />
         <History />
-      </SectionLayout>
+      </SectionLayout> */}
     </>
   );
 };

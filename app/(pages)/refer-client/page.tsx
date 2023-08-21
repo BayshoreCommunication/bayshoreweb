@@ -27,7 +27,7 @@ const page = () => {
       <SectionLayout bg="">
         <SectionHeader
           heading="Refer a paying client, earn $500."
-          text="If the referral closes for a $2,000+ package, you earn a $500 payment. No questions asked. It’s that simple. You can do this as many times as you’d like. We appreciate your support of Bayshore Communication"
+          text="If the referral closes for a $1,500+ package, you earn a $500 payment. No questions asked. It’s that simple. You can do this as many times as you’d like. We appreciate your support of Bayshore Communication"
         />
         <div className="center">
           <button className="btn text-small">Submit My Referral</button>
