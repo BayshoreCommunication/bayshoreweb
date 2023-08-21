@@ -244,7 +244,7 @@ services = [
               src="/assets/service/Stay-Ahead-with-Ongoing-Support-and-Upgrades.jpg"
               alt="tab-1"
               
-              className="w-full h-full"
+              className="w-full h-full my-8"
             />
 
 
@@ -373,7 +373,7 @@ services = [
     src="/assets/service/Integration-of-Advanced-Features-and-Functionality.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -439,7 +439,7 @@ services = [
     src="/assets/service/Robust-Backend-Development-and-Data-Management.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -496,7 +496,7 @@ services = [
       src="/assets/service/Testing,-Debugging-and-Quality-Assurance.jpg"
       alt="tab-1"
       
-      className="w-full h-full"
+      className="w-full h-full my-8"
     />
   
   
@@ -537,7 +537,7 @@ services = [
     src="/assets/service/App-Updates-and-Maintenance.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -572,7 +572,7 @@ services = [
     src="/assets/service/App-Store-Optimization-ASO-for-Maximum-Visibility.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -683,7 +683,7 @@ services = [
     src="/assets/service/Innovative-Strategies-and-Competitive-Edge-of-Our-SEO-Solutions.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -720,7 +720,7 @@ services = [
     src="/assets/service/The-Right-Choice-for-SEO-Excellence-Experience-Expertise-and-Proven-Results.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -742,7 +742,7 @@ services = [
     src="/assets/service/Cracking-High-Value-Keywords-for-Maximum-Impact.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -781,7 +781,7 @@ services = [
     src="/assets/service/Crafting-a-Winning-On-Page-SEO-Formula-for-Websites.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -812,7 +812,7 @@ services = [
     src="/assets/service/Building-Bridges-to-Success-Unlocking-the-Power-of-Off-Page-Optimization-and-Link-Building.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -846,7 +846,7 @@ services = [
     src="/assets/service/Enhancing-Performance-through-Technical-SEO.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -874,7 +874,7 @@ services = [
     src="/assets/service/Dominate-the-Local-Market-Targeted-Strategies-for-Local-Search.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -892,7 +892,7 @@ services = [
       src="/assets/service/Tailored-SEO-Services-for-E-commerce-Websites-Maximizing-Revenue-and-Boosting-Online-Sales.jpg"
       alt="tab-1"
       
-      className="w-full h-full"
+      className="w-full h-full my-8"
     />
   
 
@@ -917,7 +917,7 @@ services = [
     src="/assets/service/Customized-Content-Services-for-Online-Businesses-Increasing-Engagement-and-Driving-Conversions.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
       <p className="text-base">But not just any content will do. You need high-quality, engaging content that is tailored to your target audience, their needs, preferences, and expectations. You require content that is relevant, informative, entertaining, and compelling. Furthermore, you need content that differentiates you from your competitors and highlights your unique selling points. You require content that converts.</p>
@@ -936,7 +936,7 @@ services = [
     src="/assets/service/Stay-on-top-with-Continuous-SEO-Monitoring-for-Sustainable-Growth.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
   <p className="text-base">Continuous SEO monitoring and adjustment can help you achieve sustainable growth by:</p>
@@ -1017,7 +1017,7 @@ services = [
     src="/assets/service/Information-Architecture-and-Wireframing.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1040,7 +1040,7 @@ services = [
     src="/assets/service/Prototyping-and-Interactive-Design.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1059,7 +1059,7 @@ services = [
     src="/assets/service/Visual-Design-and-Branding.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1078,7 +1078,7 @@ services = [
     src="/assets/service/Website-with-UI-UX-Solutions.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1094,7 +1094,7 @@ services = [
     src="/assets/service/UIUX-for-Mobile-App-Optimized-Interfaces.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1111,7 +1111,7 @@ services = [
     src="/assets/service/Usability-Testing-and-Iterative-Design.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1144,7 +1144,7 @@ services = [
     src="/assets/service/E-commerce-Design-and-Conversion-Optimization.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
       <h3>Conversion Driven E-commerce Interfaces</h3>
       <p className="text-base">At Bayshore, we help businesses optimize their e-commerce interfaces to drive conversions. We do this by focusing on three key areas:</p>
@@ -1186,7 +1186,7 @@ services = [
     src="/assets/service/Accessibility-Design-and-Inclusive-Experiences.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
       <h3>Inclusive Interface Design</h3>
       <p className="text-base">We design your interface to be compatible with the diverse needs and preferences of users, especially those with disabilities. We follow accessibility guidelines, such as the Web Content Accessibility Guidelines (WCAG), which provide standards and best practices for making web content accessible to people with various disabilities, such as visual, auditory, cognitive, or motor impairments. For example, we-</p>
@@ -1230,7 +1230,7 @@ services = [
     src="/assets/service/UI-UX-Audit-and-Enhancement.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1300,7 +1300,7 @@ services = [
     src="/assets/service/Keyword-Research-and-Ad-Creation.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
       <h2 >Keyword Research and Ad Creation</h2>
@@ -1325,7 +1325,7 @@ services = [
     src="/assets/service/Landing-Page-Optimization.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1344,7 +1344,7 @@ services = [
     src="/assets/service/Campaign-Management-and-Optimization.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1365,7 +1365,7 @@ services = [
     src="/assets/service/Performance-Tracking-and-Reporting.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1384,7 +1384,7 @@ services = [
     src="/assets/service/Budget.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1403,7 +1403,7 @@ services = [
     src="/assets/service/Continuous-Optimization.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
  
@@ -1421,7 +1421,7 @@ services = [
     src="/assets/service/Proven-Track-Record-and-Client-Success-Stories.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1485,7 +1485,7 @@ services = [
     src="/assets/service/Account-setup.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
       <h2 >Account Setup and Optimization</h2>
       <p >Having a social media account is not enough to succeed in social media marketing. You need to have a social media account that stands out from the crowd, attracts and retains your audience, and showcases your brand value.</p>
@@ -1506,7 +1506,7 @@ services = [
     src="/assets/service/Content-Creation-and-Curation.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
       <h3>Creating Compelling Content for Social Media Platforms</h3>
       <p className="text-base">Creating compelling content for social media platforms can be a challenge, but with Bayshore you can easily make that happen easily. We will help you create content for your social media platforms, ensuring that it is relevant, informative, entertaining, and persuasive, and produce high-quality content that matches your strategy, goals, and audience preferences. For example, what your audience is interested in, according to that, creating high-quality content, using visuals, being creative and so forth.</p>
@@ -1523,7 +1523,7 @@ services = [
     src="/assets/service/Content-Scheduling-and-Publishing.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
       
       <h3>Leveraging Social Media Management Tools for Efficient Scheduling</h3>
@@ -1560,7 +1560,7 @@ services = [
     src="/assets/service/Community-Engagement-and-Reputation-Management.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
       <h3>Proactive Community Management: Building Relationships with Your Audience</h3>
@@ -1592,7 +1592,7 @@ services = [
     src="/assets/service/Social-Advertising-Campaigns.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1622,7 +1622,7 @@ services = [
       src="/assets/service/Analytics-and-Reporting.jpg"
       alt="tab-1"
       
-      className="w-full h-full"
+      className="w-full h-full my-8"
     />
 
       <h3>Tracking and Analyzing Key Social Media Metrics</h3>
@@ -1641,7 +1641,7 @@ services = [
       src="/assets/service/Social-media.jpg"
       alt="tab-1"
       
-      className="w-full h-full"
+      className="w-full h-full my-8"
     />
 
 
@@ -1659,7 +1659,7 @@ services = [
     src="/assets/service/Social-media-strategy.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
       <h3 >Evaluating and Adjusting Social Media Strategies for Better Results</h3>
       <p className="text-base">It's not about applying the best social media strategies to boost your business, we also make sure to measure and analyze the effectiveness of those tactics. We define and track key performance indicators (KPIs), identify the strengths and weaknesses of your current strategies, compare your performance with your competitors and industry benchmarks, discover new insights and opportunities for improvement, and finally implement data-driven recommendations and best practices to enhance your strategies.</p>
@@ -1677,7 +1677,7 @@ services = [
     src="/assets/service-demo-img.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1794,7 +1794,7 @@ services = [
     src="/assets/service/Compelling-Email-Design-and-Content.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
       <h2 >Compelling Email Design and Content</h2>
@@ -1824,7 +1824,7 @@ services = [
     src="/assets/service/Targeted-List-Building-and-Management.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1867,7 +1867,7 @@ services = [
     src="/assets/service/Automated-Email-Campaigns.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1908,7 +1908,7 @@ services = [
     src="/assets/service/Conversion-Optimization-and-A-B-Testing.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1942,7 +1942,7 @@ services = [
     src="/assets/service/Deliverability-and-Compliance.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -1975,7 +1975,7 @@ services = [
     src="/assets/service-demo-img.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -2062,7 +2062,7 @@ services = [
     src="/assets/service/Key-Features-of-Our-Marketing-Automation-Services.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
       <h2 >Key Features of Our Marketing Automation Services</h2>
       <p >Our marketing automation services offer a range of features that can help you automate and optimize your marketing processes and campaigns. Here are some of the key features of our marketing automation services:</p>
@@ -2276,7 +2276,7 @@ services = [
     src="/assets/service/Content-Ideation-and-Topic-Research.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
       <h2>Content Ideation and Topic Research</h2>
@@ -2318,7 +2318,7 @@ services = [
     src="/assets/service/Content-Optimization.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -2369,7 +2369,7 @@ services = [
     src="/assets/service/Content-Calendar-Management.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -2405,7 +2405,7 @@ services = [
     src="/assets/service/Content-Repurposing.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -2441,7 +2441,7 @@ services = [
     src="/assets/service/Content-Branding-and-Voice-Development.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -2479,7 +2479,7 @@ services = [
     src="/assets/service/Why-Choose-Bayshore-Communication-for-Content-Marketing-Services.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -2568,7 +2568,7 @@ services = [
     src="/assets/service/Website-Copywriting.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
   
   <h2>Website Copywriting</h2>
@@ -2605,7 +2605,7 @@ services = [
     src="/assets/service/SEO-Copywriting.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
     
     
@@ -2638,7 +2638,7 @@ services = [
     src="/assets/service/Content-Strategy-and-Planning.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -2673,7 +2673,7 @@ services = [
     src="/assets/service/Content-Updates-and-Maintenance.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
     
     <h3>Updating and Refreshing Content for Relevance:</h3>
@@ -2707,7 +2707,7 @@ services = [
     src="/assets/service/Content-Localization-and-Translation.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
     
     
@@ -2742,7 +2742,7 @@ services = [
     src="/assets/service/Content-Types-and-Formats.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
     <h3>Crafting Compelling Articles, Case Studies, and eBooks:</h3>
@@ -2825,7 +2825,7 @@ services = [
     src="/assets/service/Media-Outreach-and-Press-Release-Distribution.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
       <h2 ">Media Outreach and Press Release Distribution</h2>
@@ -2890,7 +2890,7 @@ services = [
     src="/assets/service/Content-Creation-and-Placement.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -2904,7 +2904,7 @@ services = [
     src="/assets/service/Influencer-Relations-and-Collaborations.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
       
       <p className="text-base">Please look <a href="https://docs.google.com/document/u/0/d/1X_7JqrJScCVck8ykML8d96gSllRpIfwRDPPa6u_7ydY/edit"><b>Effective Influencer Marketing Services for Increased Brand Visibility and Engagement </b></a> for more details.</p>
@@ -2923,7 +2923,7 @@ services = [
     src="/assets/service/Social-Media-Engagement.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 `,
@@ -2937,7 +2937,7 @@ services = [
     src="/assets/service/Online-Event-Management.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -2987,7 +2987,7 @@ services = [
     src="/assets/service/Thought-Leadership-Programs.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3034,7 +3034,7 @@ services = [
       src="/assets/service/Brand-Ambassador-Programs.jpg"
       alt="tab-1"
       
-      className="w-full h-full"
+      className="w-full h-full my-8"
     />
   
   
@@ -3076,7 +3076,7 @@ services = [
       src="/assets/service/Online-Community-Management.jpg"
       alt="tab-1"
       
-      className="w-full h-full"
+      className="w-full h-full my-8"
     />
   
       <h3>Building and Nurturing Online Communities for Brand Engagement</h3>
@@ -3122,7 +3122,7 @@ services = [
       src="/assets/service/Testimonials-and-Success-Stories.jpg"
       alt="tab-1"
       
-      className="w-full h-full"
+      className="w-full h-full my-8"
     />
       <h3>Managing Online Reviews: Responding and Building Trust</h3>
       <p className="text-base">Online reviews play a significant role in shaping a brand's reputation and influencing consumer decisions. Effective online review management involves monitoring and responding to reviews promptly, addressing customer concerns, and building trust with your audience. Here's how our online review management services can benefit your business:</p>
@@ -3163,7 +3163,7 @@ services = [
       src="/assets/service/Awards-and-Recognition-Programs.jpg"
       alt="tab-1"
       
-      className="w-full h-full"
+      className="w-full h-full my-8"
     />
       <h3>Identifying Industry Awards and Recognition Opportunities</h3>
       <p className="text-base">Industry awards and recognition provide a valuable opportunity to showcase your brand's achievements, gain credibility, and increase visibility within your industry. Identifying the right awards and recognition opportunities that align with your brand's goals is crucial. Here's how our awards and recognition programs can benefit your business:</p>
@@ -3255,7 +3255,7 @@ services = [
     src="/assets/service/Branding-and-Identity-Design.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
     <h2 >Branding and Identity Design</h2>
@@ -3280,7 +3280,7 @@ services = [
     src="/assets/service/Print-Design-Solutions.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3300,7 +3300,7 @@ services = [
     src="/assets/service/Custom-Digital-Design.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3320,7 +3320,7 @@ services = [
     src="/assets/service/Custom-Illustrations-and-Infographics.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3340,7 +3340,7 @@ services = [
     src="/assets/service/Packaging-Design-Services.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3358,7 +3358,7 @@ services = [
     src="/assets/service/Typography-Design-Expertise.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3378,7 +3378,7 @@ services = [
     src="/assets/service/Engaging-Motion-Graphics-and-Videos.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3395,7 +3395,7 @@ services = [
     src="/assets/service/Professional-Image-Editing-and-Retouching.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3415,7 +3415,7 @@ services = [
     src="/assets/service/Visual-Content-for-Social-Media-Optimization.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
     <h3>Boost Social Media Engagement with Captivating Visuals</h3>
@@ -3478,7 +3478,7 @@ services = [
     src="/assets/service/Storyboarding-and-Visual-Planning.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
       <h2 ">Storyboarding and Visual Planning</h2>
       <p >When it comes to creating captivating motion graphics, translating ideas into visual sequences and scenes is a crucial step. We employ a meticulous process of storyboarding and visual planning to ensure that your animation unfolds seamlessly, conveying your message effectively to your audience.</p>
@@ -3522,7 +3522,7 @@ services = [
     src="/assets/service/Design-and-Art-Direction.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3564,7 +3564,7 @@ services = [
     src="/assets/service/Animation-and-Visual-Effects.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3608,7 +3608,7 @@ services = [
     src="/assets/service/Engaging-Audio-Integration.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3651,7 +3651,7 @@ services = [
     src="/assets/service/Iterative-Revisions-and-Client-Collaboration.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3690,7 +3690,7 @@ services = [
     src="/assets/service/Export-and-Delivery.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3779,7 +3779,7 @@ services = [
     src="/assets/service/Scriptwriting-Captivate-Your-Audience.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
       <h2 >Scriptwriting: Captivate Your Audience</h2>
       <p >Welcome to the enchanting world of scriptwriting, where words weave spells that captivate your audience and propel your brand to new heights. Think of it as the art of composing a symphony of words, where compelling scripts, keyword driven narratives, and concise messaging harmonize to capture viewer attention, boost search engine performance, and inspire meaningful engagement.</p>
@@ -3819,7 +3819,7 @@ services = [
     src="/assets/service/Storyboarding-and-Visualization-Bring-Your-Vision-to-Life.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3846,7 +3846,7 @@ services = [
     src="/assets/service/Professional-Filming-Elevate-Your-Brand's-Image.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3880,7 +3880,7 @@ services = [
     src="/assets/service/Expert-Video-Editing-Polished-and-Memorable-Productions.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3907,7 +3907,7 @@ services = [
     src="/assets/service/Post-production-and-Optimization-Amplify-Your-Reach.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3944,7 +3944,7 @@ services = [
     src="/assets/service/Customized-Delivery-and-Distribution-Expand-Your-Audience.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -3980,7 +3980,7 @@ services = [
     src="/assets/service/Ongoing-Analytics-and-Performance-Tracking-Data-Driven-Success.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -4068,7 +4068,7 @@ services = [
     src="/assets/service-demo-img.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
       <h2 >Targeted Influencer Identification and Outreach</h2>
       <p >In the vast sea of influencers, finding the perfect match for your brand can be like searching for hidden gems. But fear not! At Bayshore Communication, we're skilled treasure hunters when it comes to targeted influencer identification and outreach. We take pride in our strategic partnership development, uncovering the best influencers in the crowd, and building powerful collaborations that drive results.</p>
@@ -4103,7 +4103,7 @@ services = [
     src="/assets/service-demo-img.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -4131,7 +4131,7 @@ services = [
     src="/assets/service-demo-img.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
@@ -4156,7 +4156,7 @@ services = [
     src="/assets/service-demo-img.jpg"
     alt="tab-1"
     
-    className="w-full h-full"
+    className="w-full h-full my-8"
   />
 
 
