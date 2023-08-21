@@ -2273,20 +2273,20 @@ services = [
         titleTab: `Audience Persona: Target Identification`,
         contentTab: `We go beyond surface-level demographics to create content that truly resonates with your audience. Our team conducts extensive research and analysis to determine your target audience's core characteristics. We create detailed buyer personas by delving into their pain points, interests, and motivations. These personas are fictional representations of your ideal customers, allowing us to create content that is tailored to their specific needs, challenges, and aspirations.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Audience-Persona-Target-Identification.jpg",
       },
       {
         titleTab: `Pillars of Content: Theme Discovery`,
         contentTab: `Content pillars are the foundation upon which your content strategy stands. We identify key themes and topics that align with your business, industry trends, and audience preferences. By developing content pillars, we ensure consistency across your content while catering to the diverse interests and information needs of your target audience. Each content pillar acts as a guiding principle, informing the creation of compelling content that reinforces your brand's expertise and thought leadership.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Pillars-of-Content-Theme-Discovery.jpg",
       },
     ],
 
     description1: `
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Ideation-and-Topic-Research.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2328,7 +2328,7 @@ services = [
 
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Optimization.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2379,7 +2379,7 @@ services = [
       
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Calendar-Management.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2415,7 +2415,7 @@ services = [
       
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Repurposing.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2451,7 +2451,7 @@ services = [
       
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Branding-and-Voice-Development.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2548,7 +2548,7 @@ services = [
   metaDescription:"Discover the art of storytelling with Bayshore Communication’s creative content writing services, where words can inspire, engage and resonate. Contact us today!",
   readMoreDesc:`We craft captivating and informative content for various goals and audiences. Whether you want to attract more visitors to your blog, website, newsletter, social media, or any other channel, we can assist you. We have a team of expert content writers who can deliver top-notch content for your business requirements.`,
   url: "content-writing",
-  heroImg:"/assets/service/website-design-service.jpg",
+  heroImg:"/assets/service/Blog-Writing-Services.jpg",
     title: "Blog Writing Services",
     shortTitle: "Content Writing",
     shortDescription:  "We believe that a well crafted blog has enormous potential to connect with your audience, develop brand loyalty, and increase conversions. Our blog writing services are designed to help you build a genuine relationship with your readers. We accomplish this by providing great information that resonates and leaves a lasting impression. Let's explore how we can ensure your blog not only engages but also leaves a lasting impact, adding to your long-term success, by offering ideas and information that genuinely matter.",
@@ -2560,25 +2560,25 @@ services = [
         titleTab: `Convert with Impact: Compelling Blogging`,
         contentTab: `Our writers craft captivating blog posts that pique your readers' interest and forge genuine connections. They also excel at data investigation, analyzing your industry, and staying current with trends. We transform your blog into a treasure trove of valuable information by addressing your audience's pain points and providing valuable solutions. Our data detectives ensure that your content is engaging, informative, and engaging, converting your audience into devoted followers.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/Convert-with-Impact-Compelling-Blogging.jpg",
       },
       {
         titleTab: `Rank Boost: Keyword-Optimized Content`,
         contentTab: `Our blog writing services incorporate a strategic approach to boost your search engine rankings. We conduct comprehensive keyword research to identify relevant and high-value terms that align with your business objectives. Seamlessly integrating these keywords into the content, we strike a balance between organic readability and SEO optimization. By optimizing meta tags, headings, and descriptions, we enhance the discoverability of your blog posts, attracting a larger audience.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Rank-Boost-Keyword-Optimized-Content.jpg",
       },
       {
         titleTab: `Headline Magic: Irresistible Structured Blogging`,
         contentTab: `First impressions matter, and captivating headlines are the gateways to your blog posts. Our writers are skilled in crafting irresistible headlines that grab attention and entice readers to click through. Once inside, they are greeted with thoughtfully structured content that guides them through a seamless reading experience. Our blog posts are organized into logical sections, complemented by subheadings, bullet points, and relevant visuals, ensuring easy comprehension and maximum engagement.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Headline-Magic-Irresistible-Structured-Blogging.jpg",
       },
     ],
     description1: `
     
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Website-Copywriting.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2615,7 +2615,7 @@ services = [
     <p className="text-center">Unlock the power of SEO and watch your website soar to new heights in search engine rankings. Our SEO copywriting services combine creativity and technical expertise to help your brand shine in the digital realm. With our meticulous approach, we ensure that every word is strategically crafted to enhance your online visibility and drive organic traffic.</p>
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/SEO-Copywriting.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2648,7 +2648,7 @@ services = [
     <p className="text-center">A well crafted content strategy is at the heart of every successful content marketing campaign. We believe in the power of strategic planning to propel your brand's online success at Bayshore Communication. Our content strategy and planning services are intended to assist you in connecting with your target audience, consistently delivering valuable content, and optimizing your content performance for maximum impact.</p>
     
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Strategy-and-Planning.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2683,7 +2683,7 @@ services = [
     
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Updates-and-Maintenance.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2717,7 +2717,7 @@ services = [
     <p className="text-center">Reaching international audiences is critical in today's globalized world for expanding your brand's reach and connecting with diverse markets. We specialize in content localization and translation services at Bayshore Communication to support you in adapting your content for global audiences. Our expert linguists and cultural experts collaborate to ensure that your message resonates across borders, increasing the international presence of your brand.</p>
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Localization-and-Translation.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2752,7 +2752,7 @@ services = [
     <p className="text-center">We focus on creating a variety of content types and formats to meet the diverse needs of your target audience. We have the expertise to create content that resonates and has the greatest impact, from compelling articles to interactive eBooks.</p>
     
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Types-and-Formats.jpg"
     alt="tab-1"
     
     className="w-full h-full"
