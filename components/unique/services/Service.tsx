@@ -3236,7 +3236,7 @@ services = [
       "Transform your brand through captivating visuals. Bayshore Communication offers stunning and professional graphic design services that suit your needs and budget.",
     readMoreDesc: `We take action in artistic advertisements, Eye-grabbing websites, stunning product labels & logos. Establish your visual identity through graphic design. Reflects the values and objectives of the business. In all forms of commercial communication, including ads and websites. Bayshore design delivers effective and appealing compositions.`,
     url: "graphic-design",
-    heroImg: "/assets/service/website-design-service.jpg",
+    heroImg: "/assets/service/Logo-Design-Services.jpg",
 
     title: "Logo Design Services",
     shortTitle: "Graphic Design",
@@ -3246,26 +3246,26 @@ services = [
         titleTab: `Brand Reflective Logo Design`,
         contentTab: `Bayshore Communication focuses on developing a professionally designed logo that accurately represents the identity of your company. Our talented designers handpick elements that reflect your values, vision, and personality. They conduct research on your brand, target audience, and industry trends in order to create a visually appealing and authentic logo that speaks directly to your target market.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/Brand-Reflective-Logo-Design.jpg",
       },
       {
         titleTab: `Distinctive Logo Creation: Strong Recognition`,
         contentTab: `A memorable and distinct logo is crucial in a competitive market. We create unique logo concepts that set you apart from your competitors using a combination of creativity, research, and talent. We ensure that your logo has the power to create strong brand recognition and recall by employing thoughtful design elements, color psychology, and typography, making it an indispensable asset for your business.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Distinctive-Logo-Creation-Strong-Recognition.jpg",
       },
       {
         titleTab: `Versatile Logo Designs: Consistent Branding`,
         contentTab: `A versatile logo design is vital in today's technological environment for maintaining its impact across multiple platforms. Our designers create scalable logos that retain visual appeal while ensuring consistency across multiple platforms. To create a cohesive branding experience for your audience, we prioritize legibility, visual balance, and adaptability.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Versatile-Logo-Designs-Consistent-Branding.jpg",
       },
     ],
 
     description1: `
 
     <img
-    src="/assets/service/Logo-Design-Services (3).jpg"
+    src="/assets/service/Branding-and-Identity-Design.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3290,7 +3290,7 @@ services = [
 
     
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Print-Design-Solutions.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3310,7 +3310,7 @@ services = [
 
     
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Custom-Digital-Design.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3330,7 +3330,7 @@ services = [
 
     
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Custom-Illustrations-and-Infographics.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3350,7 +3350,7 @@ services = [
 
     
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Packaging-Design-Services.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3368,7 +3368,7 @@ services = [
 
     
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Typography-Design-Expertise.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3388,23 +3388,49 @@ services = [
 
     
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Engaging-Motion-Graphics-and-Videos.jpg"
     alt="tab-1"
     
     className="w-full h-full"
   />
 
 
-    <h2>Professional Image Editing and Retouching</h2>
-    <p className="text-base">Bayshore Communication's professional image editing services enhance visuals with advanced techniques and software to ensure maximum impact. Our team retouches images, correcting flaws and optimizing them for various uses. We also offer compositing and colour correction services to improve image quality by combining multiple images and ensuring accurate representation.</p>
+    
+
+
+
+
+    `,
+    description8: `<h2 className="text-center">Professional Image Editing and Retouching</h2>
+    <p className="text-center">Bayshore Communication's professional image editing services enhance visuals with advanced techniques and software to ensure maximum impact. Our team retouches images, correcting flaws and optimizing them for various uses. We also offer compositing and colour correction services to improve image quality by combining multiple images and ensuring accurate representation.</p>
+
+    <img
+    src="/assets/service/Professional-Image-Editing-and-Retouching.jpg"
+    alt="tab-1"
+    
+    className="w-full h-full"
+  />
+
+
     <h3>Enhance Visuals with Professional Image Editing Services</h3>
     <p className="text-base">High quality and visually appealing images are crucial for making a strong impact. We provide professional image editing services to enhance your visuals and ensure they stand out from the crowd. Our skilled team of editors utilizes advanced editing techniques and software to optimize your images for maximum visual impact. We can adjust brightness, contrast, saturation, and other elements to enhance the overall look and feel of your images. With our professional image editing services, your visuals will be polished to perfection, captivating your audience and leaving a lasting impression.</p>
     <h3>High-Quality Image Retouching for Polished Visuals</h3>
     <p className="text-base">Sometimes, images may require specific enhancements or corrections to achieve a polished and professional look. Our team excels in high quality image retouching, addressing imperfections, and optimizing images for various purposes. Whether it's removing blemishes, smoothing out skin tones, or enhancing product details, we meticulously retouch your images to ensure they look their best. With our expertise in image retouching, we can transform ordinary photos into stunning visuals that highlight the best features of your subject matter.</p>
     <h3>Compositing and Color Correction to Elevate Image Quality</h3>
-    <p className="text-base">In some cases, you may need to combine multiple images or adjust colors to achieve the desired visual impact. Our professionals at Bayshore Communication are masters in compositing and color correction techniques to elevate the overall quality of your images. Through compositing, we can seamlessly merge elements from different images, creating a cohesive and visually captivating final result. Additionally, we apply color correction techniques to ensure accurate and consistent color representation across your images, enhancing their visual appeal and creating a harmonious visual experience.</p>
-    <h2>Visual Content for Social Media Optimization</h2>
-    <p className="text-base">Bayshore Communication specializes in developing visually appealing content to promote social media engagement and reach. Our creative designers and content strategists develop customized graphics, photos, and videos for a variety of platforms. Visually appealing postings and consistent visual branding establish a strong company identity across many media, improving audience awareness and recall.</p>
+    <p className="text-base">In some cases, you may need to combine multiple images or adjust colors to achieve the desired visual impact. Our professionals at Bayshore Communication are masters in compositing and color correction techniques to elevate the overall quality of your images. Through compositing, we can seamlessly merge elements from different images, creating a cohesive and visually captivating final result. Additionally, we apply color correction techniques to ensure accurate and consistent color representation across your images, enhancing their visual appeal and creating a harmonious visual experience.</p>`,
+
+
+    description9: `<h2 className="text-center">Visual Content for Social Media Optimization</h2>
+    <p className="text-center">Bayshore Communication specializes in developing visually appealing content to promote social media engagement and reach. Our creative designers and content strategists develop customized graphics, photos, and videos for a variety of platforms. Visually appealing postings and consistent visual branding establish a strong company identity across many media, improving audience awareness and recall.</p>
+
+
+    <img
+    src="/assets/service/Visual-Content-for-Social-Media-Optimization.jpg"
+    alt="tab-1"
+    
+    className="w-full h-full"
+  />
+
     <h3>Boost Social Media Engagement with Captivating Visuals</h3>
     <p className="text-base">In the frantic world of social media, captivating visuals are essential for grabbing the attention of your audience and driving engagement. We take pride in creating visual content that boosts social media engagement. Our team of creative designers and content strategists work together to develop visually stunning graphics, images, and videos that are tailor-made for various social media platforms. By utilizing captivating visuals, we help you stand out in the crowded social media landscape, capturing the interest of your audience and sparking meaningful interactions.</p>
     <h3>Stunning Social Media Posts for Increased Reach</h3>
@@ -3412,9 +3438,7 @@ services = [
     <h3>Visual Branding Solutions for Social Media Platforms</h3>
     <p className="text-base">Consistent visual branding across social media platforms is essential for establishing a strong and recognizable brand identity. Our team develops customized templates, graphics, and visual guidelines that ensure consistency in your social media presence. By incorporating your brand colors, typography, and visual elements, we create a cohesive visual experience for your audience, reinforcing brand recognition and enhancing brand recall.</p>
     <h3>For graphic design services, please contact Bayshore Communication.</h3>
-    <p className="text-base">We'd love to hear from you if you're ready to take your graphic design to the next level with Bayshore Communication. Contacting us is simple, and we provide several channels for you to reach out and begin conversations about your unique business vision.</p>`,
-    description8: ` `,
-    description9: ` `,
+    <p className="text-base">We'd love to hear from you if you're ready to take your graphic design to the next level with Bayshore Communication. Contacting us is simple, and we provide several channels for you to reach out and begin conversations about your unique business vision.</p>  `,
     description10: ` `,
     description11: ` `,
     description12: ` `,
