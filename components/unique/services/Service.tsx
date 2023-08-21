@@ -2004,12 +2004,7 @@ services = [
       
       
       
-    <img
-    src="/assets/service-demo-img.jpg"
-    alt="tab-1"
     
-    className="w-full h-full"
-  />
 
 `,
 
@@ -2200,19 +2195,14 @@ services = [
 
 
 
-    <img
-    src="/assets/service-demo-img.jpg"
-    alt="tab-1"
     
-    className="w-full h-full"
-  />
 
   
     <h3 ">Expertise and Experience in Marketing Automation Services</h3>
     <p ">We have a team of passionate and skilled marketing automation experts who have the knowledge and experience to handle various marketing automation tasks and campaigns. We use the advanced technologies and tools to provide you with the best marketing automation services possible.</p>
     <h3 ">Proven Success in Implementing Effective Automation Strategies</h3>
     <p ">We have a track record of success in implementing effective automation strategies for various businesses and industries. We have helped many of our clients achieve their marketing automation goals, which you can find in our Bayshore case studies page. [click here]</p>
-    <h3 className="text-center">Tailored Solutions to Address Your Business's Unique Needs</h3>
+    <h3 >Tailored Solutions to Address Your Business's Unique Needs</h3>
     <p ">As Bayshore believe that every business is different and has unique needs and preferences, that&rsquo;s why we offer tailored solutions that suit your specific business objectives, challenges, opportunities, and expectations. We work with you to create and execute a customized marketing automation strategy that works for you.</p>
     <h3 ">Dedicated Customer Support and Collaboration</h3>
     <p ">We value our customers and their satisfaction. That&rsquo;s why we provide dedicated customer support and collaboration throughout the marketing automation process. Our team communicate with you regularly and get your feedback at every stage of the process, provide you with transparent reporting and dashboards that show your overall marketing performance and outcomes.</p>`,
@@ -2222,12 +2212,7 @@ services = [
       <p className="text-center">Marketing automation is more than just sending emails. It&rsquo;s a way to connect with your customers, understand their needs, and deliver personalized solutions. It&rsquo;s a way to save time, money, and resources while boosting your sales and profits.</p>
 
       
-    <img
-    src="/assets/service-demo-img.jpg"
-    alt="tab-1"
-    
-    className="w-full h-full"
-  />
+  
 
 
       <p className="text-base">But you don&rsquo;t have to do it alone. We are Bayshore Communication, a team of experts in marketing automation, can design and implement customized strategies that suit your goals and budget. We can help you generate more leads and nurture them until they are ready to buy, create engaging campaigns that capture attention and inspire action, track, and measure your results and optimize your performance, and much more!</p>
