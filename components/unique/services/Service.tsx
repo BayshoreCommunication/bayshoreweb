@@ -1295,7 +1295,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Keyword-Research-and-Ad-Creation.jpg
+    src="/assets/service/Keyword-Research-and-Ad-Creation.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1459,7 +1459,7 @@ services = [
         titleTab: `Analyzing Business Goals and Defining Target Audience`,
         contentTab: `The first step is to clearly define your business goals. What do you want to achieve with your marketing efforts? Do you want to increase brand awareness, generate leads, or drive sales? Once you know your goals, you can start to develop a target audience that is most likely to help you achieve them. For that, we help you define and segment your target audience, based on factors such as demographics, psychographics, behavior, and needs. This will help us create a buyer persona that represents your ideal customer and guides our content creation and targeting.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/Defining-Target-Audience.jpg",
       },
       {
         titleTab: `Crafting a Tailored Social Media Strategy for Maximum Impact`,
@@ -1467,20 +1467,20 @@ services = [
         Platform Selection: Choosing the Right Channels for Your 
         `,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Maximum-impact.jpg",
       },
       {
         titleTab: `Platform Selection: Choosing the Right Channels for Your Business`,
         contentTab: `Not all social media platforms are created equal. Each platform has its own features, benefits, drawbacks, and audience preferences. Choosing the right channels for your business is crucial to maximize your social media performance and ROI. After you are done with understanding your target audience and considering goals, set a budget, do research and test different channels. To do that, Bayshore will help you find the right mix of channels that will help you achieve your marketing goals. `,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Platform-selection.jpg",
       },
     ],
 
     description1: `
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Account-setup.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1501,7 +1501,7 @@ services = [
       <p className="text-center">Content is the core thing of social media marketing. It is what attracts, engages, and converts your audience, showcases your brand value and personality that sets you apart from your competitors.</p>
 
       <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Creation-and-Curation.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1518,7 +1518,7 @@ services = [
       <p className="text-center">Content creation is only half the battle, and the other half is content scheduling and publishing. This is the process of planning, organizing, and distributing your content on social media platforms. By doing so, it can help you save time, increase efficiency, and optimize your social media performance.</p>
 
       <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Scheduling-and-Publishing.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1555,7 +1555,7 @@ services = [
       <p className="text-center">In today&rsquo;s digital world, online presence is more than just a website or a social media profile. It is a dynamic and interactive space where you can connect with your customers, prospects, partners, and influencers. However, managing your online community also comes with challenges and responsibilities. You need to engage your audience, monitor your reputation, and respond to feedback and reviews in a timely and professional manner.</p>
 
       <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Community-Engagement-and-Reputation-Management.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1587,7 +1587,7 @@ services = [
       <p className="text-center">Social media advertising is a powerful and cost-effective way to increase your brand awareness, generate leads, drive traffic, or boost sales, social media advertising can help you achieve your goals.</p>
 
       <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Social-Advertising-Campaigns.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1617,7 +1617,7 @@ services = [
       <p className="text-center">Social media analytics and reporting are essential for measuring the effectiveness and impact of your social media marketing efforts. By doing that, you can evaluate your performance, optimize your strategies, justify your budget, and demonstrate your ROI.</p>
 
       <img
-      src="/assets/service-demo-img.jpg"
+      src="/assets/service/Analytics-and-Reporting.jpg"
       alt="tab-1"
       
       className="w-full h-full"
@@ -1636,7 +1636,7 @@ services = [
       <p className="text-center">At Bayshore Communication, we know that social media is more than just a marketing channel. It is also a powerful tool for listening to your customers, competitors, and industry. That&rsquo;s why we will help you harness the power of social media listening tools, monitor brand mentions and customer sentiment, and stay ahead of the curve by tracking industry trends and opportunities.</p>
 
       <img
-      src="/assets/service-demo-img.jpg"
+      src="/assets/service/Social-media.jpg"
       alt="tab-1"
       
       className="w-full h-full"
@@ -1654,7 +1654,7 @@ services = [
       <h2 className="text-center !pt-12">Strategy Refinement and Optimization</h2>
 
       <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Social-media-strategy.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1760,7 +1760,7 @@ services = [
       "Bayshore Communication offers professional email marketing services that help you elevate your business, boost engagement and conversions. Contact us today!",
     readMoreDesc: `Email marketing is a method of reaching out to your clients and prospects via email. In addition to engaging them with worthwhile content and offers, our support team will assist you in keeping them informed about your most recent products, special offers, and other services. Lead generation and connection development are two things that email advertising may help you with.`,
     url: "email-marketing",
-    heroImg: "/assets/service/website-design-service.jpg",
+    heroImg: "/assets/service/Customized-Email-Marketing-Strategy.jpg",
     title: "Customized Email Marketing Strategy",
     shortTitle: "Email Marketing",
     shortDescription: `We can adapt our email marketing plan to promote business growth by understanding each business entity's unique ambitions, target demography, and brand identity. We employ a customized strategy, integrating deep research with market dynamics to create tailored plans that achieve exceptional outcomes. Our systematic approach translates raw data into tailored advertisements that encourage connections and brand loyalty. Our commitment to personalized email strategies is more than just a service; Let’s see how we create personalized email strategies through in-depth analysis and personalized marketing plans.`,
@@ -1770,26 +1770,26 @@ services = [
         titleTab: `Strategic Email Tailoring: Boosting Business`,
         contentTab: `Email marketing necessitates a thorough understanding of your company's goals, objectives, target audience, and market dynamics. Our team works together to identify unique selling propositions and develop customized strategies. Analyzing your industry, competitors, and target market allows you to identify opportunities, understand audience preferences, and develop strategies that set your company apart from the competition.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/Strategic-Email-Tailoring-Boosting-Business.jpg",
       },
       {
         titleTab: `Email Success: Analyze, Achieve, Excel`,
         contentTab: `Email marketing campaigns require in-depth knowledge of the audience's behavior and preferences. To gather data-driven insights, we analyze metrics such as open rates, click-through rates, and conversions. We track user behavior, segment the audience, and identify patterns to optimize campaigns using advanced analytics tools. This data-driven approach improves targeting, refines strategies, and creates personalized, relevant experiences for subscribers.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Email-Success-Analyze-Achiev-Excel.jpg",
       },
       {
         titleTab: `Maximize Results: Personalized Email Mastery`,
         contentTab: `Personalization is critical for capturing the attention of the audience and driving engagement. Our team creates personalized email marketing plans that address the needs and preferences of subscribers, creating relevant content and tailored experiences. To drive action and increase open rates, click-through rates, and conversions, we optimize subject lines, layouts, visuals, CTAs, and landing pages.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Maximize-Results-Personalized-Email-Mastery.jpg",
       },
     ],
 
     description1: `
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Compelling-Email-Design-and-Content.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1819,7 +1819,7 @@ services = [
 
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Targeted-List-Building-and-Management.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1862,7 +1862,7 @@ services = [
 
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Automated-Email-Campaigns.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1903,7 +1903,7 @@ services = [
 
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Conversion-Optimization-and-A-B-Testing.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -1937,7 +1937,7 @@ services = [
 
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Deliverability-and-Compliance.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2034,7 +2034,7 @@ services = [
       "Want to streamline marketing and boost conversions? Try Bayshore's powerful marketing automation services. Boost Efficiency, Grow Sales, and Increase ROI. Find Out More!",
     readMoreDesc: `By offering cutting-edge marketing automation solutions, we will completely transform your company. With the help of our experience, we simplify your marketing initiatives, saving you time and enhancing your output. We use automation to boost your growth through anything from customized advertising to lead follow-up.`,
     url: "marketing-automation",
-    heroImg: "/assets/service/website-design-service.jpg",
+    heroImg: "/assets/service/Marketing-Automation-Approach.jpg",
     title: "Bayshore Marketing Automation Approach",
     shortTitle: "Marketing Automation",
     shortDescription: `Marketing automation is the practice of automating and maximizing different marketing operations and campaigns using software and technology. It may improve your efficiency, effectiveness, and ROI (return on investment), as well as assist you to save time, money, and resources. However, marketing automation is not a one-size-fits-all solution. It necessitates a customized approach that fits your target market, business objectives, and marketing platforms. Because of this, we, Bayshore Communication, provide a tailored marketing automation strategy that fits your unique requirements and preferences.`,
@@ -2043,26 +2043,26 @@ services = [
         titleTab: `Tailored Strategy Development for Marketing Automation`,
         contentTab: `The Bayshore team starts by understanding your business objectives, challenges, opportunities, and expectations. After that, we conduct a thorough analysis of your current marketing situation, such as your audience, competitors, channels, tools, metrics, and more. Based on this analysis, we develop a tailored strategy for marketing automation covering the most effective system, features and capabilities, ideal processes and workflows, messaging and content, as well as marketing automation measures and KPIs for your company.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/Tailored-Strategy-Development-for-Marketing-Automation.jpg",
       },
       {
         titleTab: `Customized Automation For Streamlined Marketing `,
         contentTab: `We help you streamline your marketing processes with customized automation that enhances your productivity, performance, and profitability. We help you automate various marketing tasks and campaigns, such as Lead generation and nurturing, Email marketing and newsletters, Social media marketing and management, Content marketing and distribution, Webinar and event marketing and management, Landing page and form creation and optimization, CRM (customer relationship management) integration and synchronization, Reporting and analytics.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Customized-Automation-For-Streamlined-Marketing.jpg",
       },
       {
         titleTab: `Continuous Improvement For Optimized Marketing Outcomes `,
         contentTab: `Our Bayshore marketing team also assists you to monitor and measure your marketing automation results and outcomes, as well as providing you with regular reports and feedback on your marketing automation metrics and KPIs. Moreover, we help you optimize and improve your marketing automation strategy based on the data and insights. We use various methods like A/B testing, segmentation, content optimization, campaign analysis, and feedback collection to enhance performance to enhance your marketing automation performance. `,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Continuous-Improvement-For-Optimized-Marketing-Outcomes.jpg",
       },
     ],
 
     description1: `
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Key-Features-of-Our-Marketing-Automation-Services.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2258,7 +2258,7 @@ services = [
       "Forge impactful connections with your audience through Bayshore's content marketing service. With our effective strategies, you can amplify your brand's reach.",
     readMoreDesc: `Our team of specialists produces targeted, appealing content that engages your target market, boosts organic traffic, and produces profitable referrals. We create fascinating narratives that enhance the story of your brand in anything from blog articles to social media campaigns.`,
     url: "content-marketing",
-    heroImg: "/assets/service/website-design-service.jpg",
+    heroImg: "/assets/service/Content-Strategy-Development.jpg",
     title: "Content Strategy Development",
     shortTitle: "Content Marketing",
     shortDescription: `We recognize that a solid content strategy is the foundation of a successful content marketing campaign. Our skilled staff collaborates with you to create a comprehensive content strategy that is perfectly customized to your objectives. This collaboration ensures that each crafted piece of content has a specific purpose and has a substantial impact. We ensure a perfect combination that resonates powerfully and propels your content marketing strategy to thunderous success by connecting our skills with your objectives. Let me paint the picture more gracefully,`,
@@ -2267,7 +2267,7 @@ services = [
         titleTab: `Client-Aligned Strategy: Comprehensive Content`,
         contentTab: `Your goals are our compass. We begin by thoroughly understanding your business objectives, whether it's to increase brand awareness, generate leads, or drive conversions. Armed with this knowledge, we craft a content strategy tailored to your specific goals, ensuring that every piece of content produced is strategically aligned to contribute to your desired outcomes.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/Client-Aligned-Strategy-Comprehensive-Content.jpg",
       },
       {
         titleTab: `Audience Persona: Target Identification`,
