@@ -3460,7 +3460,7 @@ services = [
       "Looking for motion graphics services that can help you transform your ideas into stunning visuals? Let Bayshore communication help you bring your story to life.",
     readMoreDesc: `Motion graphics are animated images that tell a story or express a message via movement, sound, and visual effects. Motion graphics have many uses, including branding, teaching, entertainment, and advertising. We can assist you in producing beautiful and useful motion graphics for your professional or non-profit endeavors.`,
     url: "motion-graphic",
-    heroImg: "/assets/service/website-design-service.jpg",
+    heroImg: "/assets/service/Concept-Development.jpg",
     title: "Concept Development",
     shortTitle: "Motion Graphic",
     shortDescription: `We believe that good motion graphics begin with a clear understanding of your objectives and target audience. We shape motion graphics that eloquently deliver your message, resonating emotionally with your viewers, by thoroughly understanding your objectives. We create visually appealing storytelling that transcends screens, leaving an enduring impact and igniting continuous engagement through a mix of our creative expertise and your vision. Let’s see how our collaborative approach guarantees that the motion graphics we produce not only meet, but surpass, your expectations.`,
@@ -3469,26 +3469,26 @@ services = [
         titleTab: `Client Goals, Audience Insights: Effective Understanding`,
         contentTab: `Our collaborative process starts with a conversation about your vision, goals, and desired outcomes. To align our creative process with your objectives, we first perceive your brand's identity, values, and unique selling points. Understanding your target audience is essential for creating effective motion graphics. We investigate demographics, psychographics, and behavioral patterns to clarify preferences, interests, and pain points, resulting in a strong connection that drives engagement and action.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/Client-Goals,-Audience-Insights-Effective-Understanding.jpg",
       },
       {
         titleTab: `Innovative Motion Concepts: Creative Brainstorming`,
         contentTab: `During our creative brainstorming phase, a team of designers, animators, and creative thinkers generate innovative motion graphics concepts that are in line with your goals. They experiment with visual styles, animation techniques, and storytelling approaches, pushing the envelope to create standout motion graphics that capture the essence of your brand and leave a lasting impression.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Innovative-Motion-Concepts-Creative-Brainstorming.jpg",
       },
       {
         titleTab: `Crafting Compelling Stories and Messages`,
         contentTab: `After building a concept, our team creates compelling stories and messages that will resonate with your target audience. In motion graphics, storytelling is a powerful tool for fostering emotional connections and driving desired responses. We construct a unified story arc, ensuring that each frame contributes to the overall message. Audiences are engaged, educated, and entertained by our motion graphics, which include product explainers, brand stories, and promotional videos.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Crafting-Compelling-Stories-and-Messages.jpg",
       },
     ],
 
     description1: `
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Storyboarding-and-Visual-Planning.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3532,7 +3532,7 @@ services = [
       <p className="text-center">We understand the importance of design and art direction in creating impactful motion graphics that truly represent your brand. Our dedicated team of designers and artists combines technical expertise with artistic vision to bring your ideas to life with stunning visuals.</p>
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Design-and-Art-Direction.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3574,7 +3574,7 @@ services = [
       <p className="text-center">We believe that animation and visual effects are key elements in creating engaging and captivating motion graphics. Our team of skilled animators and visual effects artists brings graphics to life, elevating your brand identity and delivering a visually stunning experience to your audience.</p>
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Animation-and-Visual-Effects.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3618,7 +3618,7 @@ services = [
       
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Engaging-Audio-Integration.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3661,7 +3661,7 @@ services = [
       
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Iterative-Revisions-and-Client-Collaboration.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3700,7 +3700,7 @@ services = [
       
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Export-and-Delivery.jpg"
     alt="tab-1"
     
     className="w-full h-full"
