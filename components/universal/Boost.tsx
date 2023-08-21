@@ -76,8 +76,8 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
             <div>
               <div>
                 {" "}
-                <h4 className="heading-four">Salman H Saikote</h4>
-                <p className="text-small">CTO</p>
+                <h4 className="heading-four !text-[1.2rem]">Salman H Saikote</h4>
+                <p className="text-small !text-[1rem]">CTO</p>
               </div>
             </div>
           </div>
