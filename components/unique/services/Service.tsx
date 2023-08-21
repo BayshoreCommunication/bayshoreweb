@@ -2489,7 +2489,7 @@ services = [
       
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Why-Choose-Bayshore-Communication-for-Content-Marketing-Services.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3132,7 +3132,7 @@ services = [
       <p className="text-center">Managing online reviews and encouraging positive testimonials is essential for maintaining a positive brand reputation. Our services aim to actively engage with customers, address concerns, and promote positive experiences to enhance your brand's credibility and attract new customers.</p>
 
       <img
-      src="/assets/service/Online-Review-and-Testimonial-Management.jpg"
+      src="/assets/service/Testimonials-and-Success-Stories.jpg"
       alt="tab-1"
       
       className="w-full h-full"
