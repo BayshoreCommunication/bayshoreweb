@@ -1,7 +1,7 @@
 import Image from "next/image";
 import PackageBulletPoint from "./PackageBulletPoint";
 
-const PackageService = ({ data }: any, title:any) => {
+const PackageService = ({ data , title} : any) => {
   return (
     <div className="w-[30rem] sm:w-[35rem] md:w-full justify-self-center mt-[4rem] md:mt-0 h-full flex flex-col justify-between">
       <div>
@@ -15,7 +15,7 @@ const PackageService = ({ data }: any, title:any) => {
               className="w-[9rem] h-auto"
             /> */}
           </div>
-          <h4 className="heading-four">{data.title}</h4>
+          <h4 className="heading-four">{title}</h4>
           {/* <p>
             <span className="!text-primary !font-bold heading-secondary">
               ${data.price}

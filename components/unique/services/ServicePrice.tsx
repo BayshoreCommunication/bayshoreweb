@@ -417,8 +417,8 @@ const ServicePrice = ({ url }: any) => {
         {ServicePriceData.filter((el: any) => el.url === url).map(
           (el: any, i: number) => (
             <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem]" key={i}>
-              <PackageService data={el.otherCompany} title={"Other Companies"}/>
-              <PackageService data={el.bayshore} title={"Bayshore Communication"}/>
+              <PackageService data={el.otherCompany} title={"Other Company Offer"} />
+              <PackageService data={el.bayshore} title={"We Offer"} />
             </div>
           )
         )}
