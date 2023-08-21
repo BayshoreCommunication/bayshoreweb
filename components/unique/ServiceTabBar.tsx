@@ -2,6 +2,7 @@
 import { individualHomeTabBarType } from "@/types/types";
 import Image from "next/image";
 import { useState } from "react";
+import Service from "./services/Service";
 
 import React from "react";
 

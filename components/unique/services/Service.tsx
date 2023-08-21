@@ -64,7 +64,7 @@ services = [
       {
         titleTab: `Captivating Designs Tailored for Your Business`,
         contentTab: `At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/curve.png",
         titleImage:
           "/assets/service/Captivating-Designs-Tailored-for-Your-Business.jpg",
       },
@@ -4043,13 +4043,13 @@ services = [
         titleTab: `Influencer Magic: Tailored Brand Growth`,
         contentTab: `We develop customized influencer strategies for your brand based on your growth goals. We conduct research on your target audience, the industry landscape, and the competitive landscape, as well as analyze data, consumer insights, and market trends to identify relevant influencers. This tailored approach optimizes campaigns for success, resulting in targeted brand growth and the achievement of desired goals.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/influencer-magic-tailored-brand-growth.jpg",
       },
       {
         titleTab: `Crafting Triumph: Custom Influencer Campaigns`,
         contentTab: `Customized influencer marketing is essential for telling your brand's unique story. Our team works with you to understand your brand's identity, messaging, and goals in order to create impactful campaigns that resonate with your target audience. We unlock achievements and drive engagement, awareness, and conversions for your brand by leveraging carefully selected influencers.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/crafting-triumph-custom-influencer-campaigns.jpg",
       },
       {
         titleTab: `Targeted Reach: Influencer Strategy Perfection`,
@@ -4058,14 +4058,14 @@ services = [
         Now, let's move on to the next section, where we dive deeper into our targeted influencer identification and outreach strategies.
         `,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/targeted-reach-influencer-strategy-perfection.jpg",
       },
     ],
 
     description1: `
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Targeted-Influencer-Identification-and-Outreach.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -4100,7 +4100,7 @@ services = [
 
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Creative-Campaign-Planning-and-Execution.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -4128,7 +4128,7 @@ services = [
 
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Performance-Tracking-and-Reporting.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -4153,7 +4153,7 @@ services = [
 
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Influencer-Relationship-Management.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
