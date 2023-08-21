@@ -3760,7 +3760,7 @@ services = [
       " Looking to enhance your online presence with video production services? Bayshore has a team of experienced video producers who can make your dreams come true!",
     readMoreDesc: `Video production, an art of generating and editing video material for different purposes and platforms. It goes through a number of stages, including planning, scripting, filming, editing, and adding effects. For your commercial or personal projects, our qualified staff will offer video production services. We are able to create videos that meet your requirements and standards.`,
     url: "video-production",
-    heroImg: "/assets/service/website-design-service.jpg",
+    heroImg: "/assets/service/Concept-Development-Unleash-Your-Brand's-Potential.jpg",
 
     title: "Concept Development: Unleash Your Brand's Potential",
     shortTitle: "Video Production",
@@ -3770,26 +3770,26 @@ services = [
         titleTab: `Impactful Video Ideas: Collaborative Crafting`,
         contentTab: `We explore various avenues and create custom-tailored video concepts for your brand during our brainstorming sessions. We delve deeply into its complexities, strengths, and aspirations, resulting in a dynamic, creative environment. Our team creates a blueprint for your video, ensuring that it seamlessly integrates with the essence of your brand, and transforms it into a dynamic and inspiring experience.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/Impactful-Video-Ideas-Collaborative-Crafting.jpg",
       },
       {
         titleTab: `Storytelling Alchemy: Elevating Engagement`,
         contentTab: `Consider your brand to be the hero of a transformational saga, captivating viewers and galvanizing them to action. Our storytelling wizardry creates narratives that elicit emotions, stimulate your audience's interest, and foster an authentic rapport. Masterfully crafted stories captivate audiences, keeping them engrossed until the climax. We increase conversion rates by immersing viewers in your brand's story, converting them into devoted enthusiasts and advocates.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Storytelling-Alchemy-Elevating-Engagement.jpg",
       },
       {
         titleTab: `Cinematic Excellence: Visual Symphony Composition`,
         contentTab: `Our visual symphony composition blends visuals, music, and effects to create an immersive cinematic experience for your brand's story. Our seasoned maestros weave together imagery and audio to create a sensory feast that captivates, resonates, and lingers long after the final frame. This visual masterpiece solidifies your brand's legacy in the minds of viewers, leaving an indelible mark that propels your journey forward.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Cinematic-Excellence-Visual-Symphony-Composition.jpg",
       },
     ],
 
     description1: `
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Scriptwriting-Captivate-Your-Audience.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3829,7 +3829,7 @@ services = [
       
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Storyboarding-and-Visualization-Bring-Your-Vision-to-Life.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3856,7 +3856,7 @@ services = [
       <p className="text-center">We elevate your brand's image through the lens of creativity and expertise. Think of it as a dance between technology and artistry, where cutting edge equipment, on location filming, and captivating interviews and testimonials come together to capture stunning footage, showcase authenticity, and establish credibility, building trust through the power of video.</p>
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Professional-Filming-Elevate-Your-Brand's-Image.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3890,7 +3890,7 @@ services = [
       <p className="text-center">Expert video editing can turn your rough footage into polished and memorable productions. Consider it as the sculpting of videos, where expert video editors enhance your footage, music, and images to create a stunning end product that leaves a lasting impact.</p>
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Expert-Video-Editing-Polished-and-Memorable-Productions.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3917,7 +3917,7 @@ services = [
       <p className="text-center">Skilled technicians enhance video colors, audio, and visuals for maximum impact during post production. Color grading, audio optimization, and visual enhancement are all important components of creating a visually stunning experience. The technical team optimizes video file sizes and formats for quick loading times and consistent streaming across devices and platforms. Advanced compression techniques ensure quality and efficiency, allowing for smooth and continuous viewing experiences.</p>
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Post-production-and-Optimization-Amplify-Your-Reach.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3954,7 +3954,7 @@ services = [
       <p className="text-center" >Customized delivery and distribution can take your video to new heights and expand your audience like never before. Through a combination of technical finesse and strategic thinking, we ensure that your video reaches the right people, on the right platforms, at the right time.</p>
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Customized-Delivery-and-Distribution-Expand-Your-Audience.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3990,7 +3990,7 @@ services = [
       <p className="text-center">Through advanced tracking tools, data analysis for strategy refinement, and incorporating viewer feedback and metrics, Bayshore Communication ensures that your video productions are not just visually stunning, but also highly effective in achieving your goals. Get ready to dive into a realm where data and creativity intersect.</p>
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Ongoing-Analytics-and-Performance-Tracking-Data-Driven-Success.jpg"
     alt="tab-1"
     
     className="w-full h-full"
