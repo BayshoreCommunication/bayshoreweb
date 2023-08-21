@@ -2807,7 +2807,7 @@ services = [
       " Enhance your digital footprint with Bayshore's expert digital PR services. Learn how we can help you achieve your PR goals and boost your brand awareness. ",
     readMoreDesc: `Digital production is an asset of creative ideas. Our team conducts creativity and data with empathy. We pay extreme attention to detail online content management. We work together-designer, developers, and content creators to make sure that everything assures quality. Through Customer experiences, we produce meaningful narratives.`,
     url: "digital-pr",
-    heroImg: "/assets/service/website-design-service.jpg",
+    heroImg: "/assets/service/Online-Reputation-Management.jpg",
     title: "Online Reputation Management",
     shortTitle: "Digital PR",
     shortDescription: `Bayshore Communication is your unwavering partner in meticulously monitoring, enhancing, and fortifying your brand's online status in the ever-changing digital scene, thanks to our expert Online Reputation Management services. This section provides an in-depth examination of our meticulously crafted tactics and proficient procedures, which are designed to expertly navigate the difficult path of online reputation management. By organizing your digital interactions, we create a strong and positive brand image. With our assistance, your brand's reputation will not only survive, but thrive, providing a solid foundation for long-term success.`,
@@ -2816,26 +2816,26 @@ services = [
         titleTab: `Boost Reputation: Bayshore Comm Solutions`,
         contentTab: `It is fundamental to monitor your online reputation in order to effectively manage and improve it. Using advanced tools, Bayshore Communication monitors platforms such as review websites, social media, forums, and news articles. Experts analyze sentiment, tone, and frequency to identify issues, customer concerns, or areas for improvement. Tailored strategies are developed to address negative sentiment and capitalize on positive feedback.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/tab-1.png",
+        titleImage: "/assets/service/Boost-Reputation-Bayshore-Comm-Solutions.jpg",
       },
       {
         titleTab: `Review Mastery: Effective Online Strategies`,
         contentTab: `Positive online reviews and testimonials have a significant impact on the reputation of a brand and influence potential customers. Our expertise in managing these assets contributes to the development of credibility and trust. We devise strategies to encourage satisfied customers to leave reviews and testimonials, ensuring that positive reviews are highlighted and negative reviews are addressed as soon as possible.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Review-Mastery-Effective-Online-Strategies.jpg",
       },
       {
         titleTab: `Positivity Amplified: Elevate Brand Reputation`,
         contentTab: `Our team specializes in dealing with online crises and responding to negative reviews and comments in order to improve your brand's image. We collaborate with you to understand the problem and craft responses that demonstrate concern for its resolution. We also create interesting content that highlights your brand's strengths, values, and stories. We distribute this content to key websites, industry hotspots, and social media hangouts to ensure that the right people see it. This increases your brand's street cred, generates positive feelings, and ensures a strong online reputation.`,
         titleIcon: "/assets/expertise.svg",
-        titleImage: "/assets/service/website-design-service.jpg",
+        titleImage: "/assets/service/Positivity-Amplified-Elevate-Brand-Reputation.jpg",
       },
     ],
 
     description1: `
 
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Media-Outreach-and-Press-Release-Distribution.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2900,7 +2900,7 @@ services = [
 
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Content-Creation-and-Placement.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2914,7 +2914,7 @@ services = [
       <p className="text-center">Bayshore Communication works with industry leaders to expand reach and engagement. We conduct research and collaborate with influencers, with a focus on metrics like reach, engagement rates, content quality, and audience demographics. Bayshore creates engaging content by leveraging influencers' storytelling abilities to capture attention and expand the brand's reach. Collaborations with influencers promote brands through a variety of channels, ensuring effective communication and engagement.</p>
 
       <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Influencer-Relations-and-Collaborations.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2933,7 +2933,7 @@ services = [
       
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Social-Media-Engagement.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2947,7 +2947,7 @@ services = [
 
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Online-Event-Management.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -2997,7 +2997,7 @@ services = [
 
       
     <img
-    src="/assets/service-demo-img.jpg"
+    src="/assets/service/Thought-Leadership-Programs.jpg"
     alt="tab-1"
     
     className="w-full h-full"
@@ -3044,7 +3044,7 @@ services = [
 
 
       <img
-      src="/assets/service-demo-img.jpg"
+      src="/assets/service/Brand-Ambassador-Programs.jpg"
       alt="tab-1"
       
       className="w-full h-full"
@@ -3086,7 +3086,7 @@ services = [
       <p className="text-center">We create a vibrant space for your target audience to connect, share ideas, and engage with your brand by focusing on building and nurturing online communities. Our community management services are designed to foster meaningful conversations, build brand loyalty, and propel community growth.</p>
 
       <img
-      src="/assets/service-demo-img.jpg"
+      src="/assets/service/Online-Community-Management.jpg"
       alt="tab-1"
       
       className="w-full h-full"
@@ -3132,7 +3132,7 @@ services = [
       <p className="text-center">Managing online reviews and encouraging positive testimonials is essential for maintaining a positive brand reputation. Our services aim to actively engage with customers, address concerns, and promote positive experiences to enhance your brand's credibility and attract new customers.</p>
 
       <img
-      src="/assets/service-demo-img.jpg"
+      src="/assets/service/Online-Review-and-Testimonial-Management.jpg"
       alt="tab-1"
       
       className="w-full h-full"
@@ -3173,7 +3173,7 @@ services = [
       <p className="text-center">Awards and recognition programs provide a valuable opportunity to gain industry recognition and enhance your brand's reputation. Our services include identifying relevant awards, crafting compelling entries, and managing the submission process, all with the goal of increasing your brand's recognition and exposure.</p>
 
       <img
-      src="/assets/service-demo-img.jpg"
+      src="/assets/service/Awards-and-Recognition-Programs.jpg"
       alt="tab-1"
       
       className="w-full h-full"
