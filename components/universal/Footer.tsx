@@ -5,14 +5,32 @@ import Link from "next/link";
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
 import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
 
-const service: string[] = [
-  "Website Design",
-  "Digital Marketing",
-  "Social Media Marketing",
-  "Marketing Automation",
-  "Graphics Design",
-  "Content Writing",
-  "Video Production",
+// const service: string[] = [
+//   "Website Design",
+//   "Mobile App",
+//   "SEO",
+//   "UI/UX Design",
+//   "Paid Advertising",
+//   "Social Media Marketing",
+//   "Email Marketing",
+// ];
+
+let service: {
+  title: string;
+  link: string;
+}[];
+
+service = [
+  { title: "Website Design", link: "/our-services/website-design" },
+  { title: "Mobile App", link: "/our-services/mobile-app" },
+  { title: "SEO", link: "/our-services/seo" },
+  { title: "UI/UX Design", link: "/our-services/ui-ux-design" },
+  { title: "Paid Advertising", link: "/our-services/paid-advertising" },
+  {
+    title: "Social Media Marketing",
+    link: "/our-services/social-media-marketing",
+  },
+  { title: "Email Marketing", link: "/our-services/email-marketing" },
 ];
 
 let quickLinks: {
@@ -21,7 +39,7 @@ let quickLinks: {
 }[];
 
 quickLinks = [
-  { title: "Appointment", link: "/" },
+  { title: "Appointment", link: "/contact" },
   { title: "Career", link: "/career" },
   { title: "Refer Client", link: "/refer-client" },
   { title: "FAQs", link: "/faq" },
@@ -97,9 +115,9 @@ const Footer = () => {
 
 export default Footer;
 
-const text: string = ` Our performance, client satisfaction. Our main objective is
+const text: string = `Our performance, client satisfaction. Our main objective is
 client’s pleasure. Our company stands by every personnel's
 dedication. Our working policy is transparent. We try to maintain
 customer Our performance, client satisfaction. Our main objective
 is client’s pleasure. Our company stands by every personnel's
-dedication. Our working policy is transparent. We try to maintain`;
+dedication. Our working policy is transparent. We try to maintain customer relationships.`;
