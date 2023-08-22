@@ -64,21 +64,21 @@ services = [
       {
         titleTab: `Captivating Designs Tailored for Your Business`,
         contentTab: `At Bayshore Communications, we believe that as each business is distinctive, and your website should reflect that too. Our skilled developers do not use pre-customized templates or generic layouts, rather they understand your requirements, your mission, and vision, and create a unique design that indicates your brand and values. By doing this, we produce captivating graphics that reflect the spirit of your company and resonate with your target market. Moreover, we also make sure that your website looks professional, modern, and appealing on any device and browser.`,
-        titleIcon: "/assets/service-icon/curve.png",
+        titleIcon: "/assets/service-icon/wd-captivating.svg",
         titleImage:
           "/assets/service/Captivating-Designs-Tailored-for-Your-Business.jpg",
       },
       {
         titleTab: `User Friendly Interfaces That Delight Visitors`,
         contentTab: `If we talk about today&rsquo;s competitive digital landscape, user experience plays a crucial role in determining the true success of a webpage. As a result, we not only focus on aesthetics, but also focus on functionality and usability. And for that, we design in such a way that is fast in loading pages, easy to navigate, and most importantly responsive to user actions. Our expert team follows the best and advanced strategy of designing and ensures that your site is intuitive, accessible and engaging. In one sentence, a user-friendly interface that delight consumers, give an enjoyable experience on your website, encourage them to explore more and more.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/wd-ui.svg",
         titleImage:
           "/assets/service/User-Friendly-Interfaces-That-Delight-Visitors.jpg",
       },
       {
         titleTab: `Cutting Edge Techniques for Enhanced Performance`,
         contentTab: `As technology is consistently evolving day by day, our bayshore developers always stay up-to-date with the latest trends, and techniques in designing a website. Starting from responsiveness of a webpage to its overall performance optimization, our team implements the latest schemes to improve your website&rsquo;s efficiency. We do not settle for mediocrity. Rather, we always strive for excellence and innovation. By leveraging the power of advanced technology, we optimize your page for security, speed, and SEO for success.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/wd-performance.svg",
         titleImage:
           "/assets/service/Cutting-Edge-Techniques-for-Enhanced-Performance.jpg",
       },
@@ -350,19 +350,19 @@ services = [
       {
         titleTab: `Custom iOS and Android App Development`,
         contentTab: `Bayshore Communication team is your trusted partner for custom iOS and Android app development. We have a group of skilled and certified developers who can create native or hybrid apps using the latest technologies and frameworks, such as Swift, Java, Kotlin, React Native, and Flutter, to ensure your app is fast, secure, and scalable. We also use cloud services like Firebase, AWS, and Azure to provide backend support and functionality for your app.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/ma-app-development.svg",
         titleImage: "/assets/service/Custom-iOS-and-Android-App-Development.jpg",
       },
       {
         titleTab: `Agile Methodology for Efficient Delivery`,
         contentTab: `Bayshore’s expert developers follow the agile methodology to ensure your project is delivered on time and within budget. We work in sprints, where we plan, design, develop, test, and deploy your app in short iterations. We also communicate with you regularly and get your feedback at every stage of the process. This way, we can ensure your app meets your expectations and adapts to any changes or challenges along the way.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/ma-agile.svg",
         titleImage: "/assets/service/Agile-Methodology-for-Efficient-Delivery.jpg",
       },
       {
         titleTab: `User Centric Design and Intuitive Interfaces`,
         contentTab: `Along with the above, we believe that a great app is not only functional, but also beautiful and easy to use. That’s why we pay attention to the user experience and user interface design of your app. We create wireframes, mockups, and prototypes to test and refine your app’s layout, navigation, and features. We also follow the best practices and guidelines of each platform to ensure your app is consistent and intuitive for your users.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/ma-user-centric.svg",
         titleImage: "/assets/service/User-Centric-Design-and-Intuitive-Interfaces.jpg",
       },
     ],
@@ -655,13 +655,13 @@ services = [
       {
         titleTab: `Increased website traffic with SEO strategy`,
         contentTab: `SEO makes websites more visible in search results for terms and phrases related to their products and services. As a result, this draws more purchasers that are interested in the services the company provides. According to a study by BrightEdge, the main source of internet traffic, organic search, generates 53% of all website traffic.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/seo-increased-traffic.svg",
         titleImage: "/assets/service/Increased-website-traffic.jpg",
       },
       {
         titleTab: `Establishing Brand credibility and authority`,
         contentTab: ` Additionally, search engine optimization aids companies in establishing their credibility and authority inside their sector. Businesses may show their experience and understanding by producing high-quality content that benefits users and responds to their questions. Furthermore, being higher in search results tells people that a website is trustworthy and legitimate. This way, you can build an excellent connection with your audience in this manner, which will boost their retention as well as loyalty.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/seo-brand.svg",
         titleImage: "/assets/service/Brand-credibility.jpg",
       },
       {
@@ -672,7 +672,7 @@ services = [
         
         As this is a powerful and cost-effective digital marketing strategy that can help you fuel your growth in the online world, by optimizing your site and online presence for search engines, you can gain a competitive edge and achieve your business goals.
         `,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/seo-higher-revenue.svg",
         titleImage: "/assets/service/Higher-conversion-rates.jpg",
       },
     ],
@@ -994,19 +994,19 @@ services = [
       {
         titleTab: `Understanding User Needs `,
         contentTab: `We assist you understand user needs by uncovering insights into user behavior, preferences, and pain points to create user-centric interfaces. Our expert developers use various user research strategies, such as doing surveys and observations to get their preference and need, usability testing to see what challenges users can face, and more. Additionally, we make use of several technologies for user research, including User Testing, Hotjar, and Google Analytics. Using this information, we design user-centric interfaces that truly resonate with your users and exceed their expectations.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/ux-understanding-user.svg",
         titleImage: "/assets/service/understanding-user-needs.jpg",
       },
       {
         titleTab: `Creating Targeted User Personas`,
         contentTab: `Bayshore helps you develop detailed user personas that guide design decisions and ensure a personalized user experience. For that, we use various persona development methods, for example empathy mapping, journey mapping, scenario mapping, and more. Not only those methods, but our team also uses various tools, such as Xtensio, HubSpot, Userforge, and more for personal development. By using these methods and tools, we develop detailed user profiles that represent your target audience’s characteristics, goals, motivations, frustrations, and needs.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/ux-user-persona.svg",
         titleImage: "/assets/service/Creating-Targeted-User-Personas.jpg",
       },
       {
         titleTab: `Evaluating User Feedback and Satisfaction`,
         contentTab: `Bayshore also helps you evaluate user feedback and satisfaction to ensure that your UI/UX design meets their expectations and requirements. For that, we use various feedback collection and analysis methods, such as interviews and focus groups to get qualitative data, surveys and questionnaires to get quantitative data, NPS and CSAT to measure loyalty and satisfaction, and more. Furthermore, we use various tools for feedback collection and analysis, such as SurveyMonkey, Typeform, Qualtrics, and more. By using these methods and tools, we gather valuable insights from your users that help us improve your UI/UX design continuously.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/ux-user-feedback.svg",
         titleImage: "/assets/service/Evaluating-User-Feedback-and-Satisfaction.jpg",
       },
     ],
@@ -1277,19 +1277,19 @@ services = [
       {
         titleTab: `Customized Paid Advertising Strategies for Your Unique Business Goals`,
         contentTab: `We begin by comprehending your company's objectives and what you want to accomplish through sponsored advertising. To determine the greatest possibilities and obstacles for your campaigns, we next do extensive research on your sector, your rivals, and market trends. We develop a customized plan based on this research, which includes the key performance indicators (KPIs) that will be used to determine your success and is in accordance with your goals and budget.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/pa-paid-advertising.svg",
         titleImage: "/assets/service/Customized-Paid-Advertising-Strategies-for-Your-Unique-Business-Goals.jpg",
       },
       {
         titleTab: `In Depth Audience Analysis for Targeted Advertising Campaigns`,
         contentTab: `Knowing your target market and how to reach them successfully is one of the most crucial elements of paid advertising. We segment your audience based on their demographics, interests, habits, and requirements using cutting-edge technologies and techniques. Then, using buyer personas that serve as a representation of your ideal clients, we can better build advertisements that will speak to and resonate with them. We can improve your click-through rates (CTRs), conversions, and return on ad spend (ROAS) by focusing on the appropriate audience with the right message at the right time.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/pa-targeted-advertising.svg",
         titleImage: "/assets/service/In-Depth-Audience-Analysis-for-Targeted-Advertising-Campaigns.jpg",
       },
       {
         titleTab: `Strategic Ad Platform Selection for Maximum Reach and impact`,
         contentTab: `There are many ad platforms available today, each with its own advantages and disadvantages. Choosing the right one for your business can make a huge difference in your campaign performance and results. We help you select the best ad platform for your goals, audience, and budget, whether it’s Google, Facebook, Instagram, or any other platform Ad. We also help you optimize your ad formats, placements, keywords, bids, and creatives to ensure they are relevant, engaging, and effective. Furthermore, we leverage the power of each platform to maximize your reach and impact across the web and social media.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/pa-strategic-ad.svg",
         titleImage: "/assets/service/Strategic-Ad-Platform-Selection-for-Maximum-Reach-and-impact.jpg",
       },
     ],
@@ -1460,7 +1460,7 @@ services = [
       {
         titleTab: `Analyzing Business Goals and Defining Target Audience`,
         contentTab: `The first step is to clearly define your business goals. What do you want to achieve with your marketing efforts? Do you want to increase brand awareness, generate leads, or drive sales? Once you know your goals, you can start to develop a target audience that is most likely to help you achieve them. For that, we help you define and segment your target audience, based on factors such as demographics, psychographics, behavior, and needs. This will help us create a buyer persona that represents your ideal customer and guides our content creation and targeting.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/smm-analyzing.svg",
         titleImage: "/assets/service/Defining-Target-Audience.jpg",
       },
       {
@@ -1468,13 +1468,13 @@ services = [
         contentTab: `Based on your business goals and target audience, we will craft a tailored social media strategy that aligns with your brand identity and voice. Our team will help you define your social media goals, such as reach, engagement, conversions, or retention, and also help you develop a content strategy that covers the types, formats, topics, and tones of content you will create and share on social media. We will also help you create a content calendar that schedules your posts for optimal times and frequencies.
         Platform Selection: Choosing the Right Channels for Your 
         `,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/smm-strategy-.svg",
         titleImage: "/assets/service/Maximum-impact.jpg",
       },
       {
         titleTab: `Platform Selection: Choosing the Right Channels for Your Business`,
         contentTab: `Not all social media platforms are created equal. Each platform has its own features, benefits, drawbacks, and audience preferences. Choosing the right channels for your business is crucial to maximize your social media performance and ROI. After you are done with understanding your target audience and considering goals, set a budget, do research and test different channels. To do that, Bayshore will help you find the right mix of channels that will help you achieve your marketing goals. `,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/smm-platform-selection.svg",
         titleImage: "/assets/service/Platform-selection.jpg",
       },
     ],
@@ -1771,19 +1771,19 @@ services = [
       {
         titleTab: `Strategic Email Tailoring: Boosting Business`,
         contentTab: `Email marketing necessitates a thorough understanding of your company's goals, objectives, target audience, and market dynamics. Our team works together to identify unique selling propositions and develop customized strategies. Analyzing your industry, competitors, and target market allows you to identify opportunities, understand audience preferences, and develop strategies that set your company apart from the competition.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/email-strategic.svg",
         titleImage: "/assets/service/Strategic-Email-Tailoring-Boosting-Business.jpg",
       },
       {
         titleTab: `Email Success: Analyze, Achieve, Excel`,
         contentTab: `Email marketing campaigns require in-depth knowledge of the audience's behavior and preferences. To gather data-driven insights, we analyze metrics such as open rates, click-through rates, and conversions. We track user behavior, segment the audience, and identify patterns to optimize campaigns using advanced analytics tools. This data-driven approach improves targeting, refines strategies, and creates personalized, relevant experiences for subscribers.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/email-success.svg",
         titleImage: "/assets/service/Email-Success-Analyze-Achiev-Excel.jpg",
       },
       {
         titleTab: `Maximize Results: Personalized Email Mastery`,
         contentTab: `Personalization is critical for capturing the attention of the audience and driving engagement. Our team creates personalized email marketing plans that address the needs and preferences of subscribers, creating relevant content and tailored experiences. To drive action and increase open rates, click-through rates, and conversions, we optimize subject lines, layouts, visuals, CTAs, and landing pages.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/email-maximize.svg",
         titleImage: "/assets/service/Maximize-Results-Personalized-Email-Mastery.jpg",
       },
     ],
@@ -2039,19 +2039,19 @@ services = [
       {
         titleTab: `Tailored Strategy Development for Marketing Automation`,
         contentTab: `The Bayshore team starts by understanding your business objectives, challenges, opportunities, and expectations. After that, we conduct a thorough analysis of your current marketing situation, such as your audience, competitors, channels, tools, metrics, and more. Based on this analysis, we develop a tailored strategy for marketing automation covering the most effective system, features and capabilities, ideal processes and workflows, messaging and content, as well as marketing automation measures and KPIs for your company.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/auto-strategy.svg",
         titleImage: "/assets/service/Tailored-Strategy-Development-for-Marketing-Automation.jpg",
       },
       {
         titleTab: `Customized Automation For Streamlined Marketing `,
         contentTab: `We help you streamline your marketing processes with customized automation that enhances your productivity, performance, and profitability. We help you automate various marketing tasks and campaigns, such as Lead generation and nurturing, Email marketing and newsletters, Social media marketing and management, Content marketing and distribution, Webinar and event marketing and management, Landing page and form creation and optimization, CRM (customer relationship management) integration and synchronization, Reporting and analytics.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/auto-streamlined.svg",
         titleImage: "/assets/service/Customized-Automation-For-Streamlined-Marketing.jpg",
       },
       {
         titleTab: `Continuous Improvement For Optimized Marketing Outcomes `,
         contentTab: `Our Bayshore marketing team also assists you to monitor and measure your marketing automation results and outcomes, as well as providing you with regular reports and feedback on your marketing automation metrics and KPIs. Moreover, we help you optimize and improve your marketing automation strategy based on the data and insights. We use various methods like A/B testing, segmentation, content optimization, campaign analysis, and feedback collection to enhance performance to enhance your marketing automation performance. `,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/auto-continous-improve.svg",
         titleImage: "/assets/service/Continuous-Improvement-For-Optimized-Marketing-Outcomes.jpg",
       },
     ],
@@ -2253,19 +2253,19 @@ services = [
       {
         titleTab: `Client-Aligned Strategy: Comprehensive Content`,
         contentTab: `Your goals are our compass. We begin by thoroughly understanding your business objectives, whether it's to increase brand awareness, generate leads, or drive conversions. Armed with this knowledge, we craft a content strategy tailored to your specific goals, ensuring that every piece of content produced is strategically aligned to contribute to your desired outcomes.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/cm-strategy.svg",
         titleImage: "/assets/service/Client-Aligned-Strategy-Comprehensive-Content.jpg",
       },
       {
         titleTab: `Audience Persona: Target Identification`,
         contentTab: `We go beyond surface-level demographics to create content that truly resonates with your audience. Our team conducts extensive research and analysis to determine your target audience's core characteristics. We create detailed buyer personas by delving into their pain points, interests, and motivations. These personas are fictional representations of your ideal customers, allowing us to create content that is tailored to their specific needs, challenges, and aspirations.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/cm-audience-persona.svg",
         titleImage: "/assets/service/Audience-Persona-Target-Identification.jpg",
       },
       {
         titleTab: `Pillars of Content: Theme Discovery`,
         contentTab: `Content pillars are the foundation upon which your content strategy stands. We identify key themes and topics that align with your business, industry trends, and audience preferences. By developing content pillars, we ensure consistency across your content while catering to the diverse interests and information needs of your target audience. Each content pillar acts as a guiding principle, informing the creation of compelling content that reinforces your brand's expertise and thought leadership.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/cm-pillars.svg",
         titleImage: "/assets/service/Pillars-of-Content-Theme-Discovery.jpg",
       },
     ],
@@ -2546,19 +2546,19 @@ services = [
       {
         titleTab: `Convert with Impact: Compelling Blogging`,
         contentTab: `Our writers craft captivating blog posts that pique your readers' interest and forge genuine connections. They also excel at data investigation, analyzing your industry, and staying current with trends. We transform your blog into a treasure trove of valuable information by addressing your audience's pain points and providing valuable solutions. Our data detectives ensure that your content is engaging, informative, and engaging, converting your audience into devoted followers.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/cw-Convert-with-Impact.svg",
         titleImage: "/assets/service/Convert-with-Impact-Compelling-Blogging.jpg",
       },
       {
         titleTab: `Rank Boost: Keyword-Optimized Content`,
         contentTab: `Our blog writing services incorporate a strategic approach to boost your search engine rankings. We conduct comprehensive keyword research to identify relevant and high-value terms that align with your business objectives. Seamlessly integrating these keywords into the content, we strike a balance between organic readability and SEO optimization. By optimizing meta tags, headings, and descriptions, we enhance the discoverability of your blog posts, attracting a larger audience.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/cw-Rank-Boost.svg",
         titleImage: "/assets/service/Rank-Boost-Keyword-Optimized-Content.jpg",
       },
       {
         titleTab: `Headline Magic: Irresistible Structured Blogging`,
         contentTab: `First impressions matter, and captivating headlines are the gateways to your blog posts. Our writers are skilled in crafting irresistible headlines that grab attention and entice readers to click through. Once inside, they are greeted with thoughtfully structured content that guides them through a seamless reading experience. Our blog posts are organized into logical sections, complemented by subheadings, bullet points, and relevant visuals, ensuring easy comprehension and maximum engagement.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/cw-Headline -Magic.svg",
         titleImage: "/assets/service/Headline-Magic-Irresistible-Structured-Blogging.jpg",
       },
     ],
@@ -2802,19 +2802,19 @@ services = [
       {
         titleTab: `Boost Reputation: Bayshore Comm Solutions`,
         contentTab: `It is fundamental to monitor your online reputation in order to effectively manage and improve it. Using advanced tools, Bayshore Communication monitors platforms such as review websites, social media, forums, and news articles. Experts analyze sentiment, tone, and frequency to identify issues, customer concerns, or areas for improvement. Tailored strategies are developed to address negative sentiment and capitalize on positive feedback.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/dp-boost-reputation.svg",
         titleImage: "/assets/service/Boost-Reputation-Bayshore-Comm-Solutions.jpg",
       },
       {
         titleTab: `Review Mastery: Effective Online Strategies`,
         contentTab: `Positive online reviews and testimonials have a significant impact on the reputation of a brand and influence potential customers. Our expertise in managing these assets contributes to the development of credibility and trust. We devise strategies to encourage satisfied customers to leave reviews and testimonials, ensuring that positive reviews are highlighted and negative reviews are addressed as soon as possible.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/dp-review-.svg",
         titleImage: "/assets/service/Review-Mastery-Effective-Online-Strategies.jpg",
       },
       {
         titleTab: `Positivity Amplified: Elevate Brand Reputation`,
         contentTab: `Our team specializes in dealing with online crises and responding to negative reviews and comments in order to improve your brand's image. We collaborate with you to understand the problem and craft responses that demonstrate concern for its resolution. We also create interesting content that highlights your brand's strengths, values, and stories. We distribute this content to key websites, industry hotspots, and social media hangouts to ensure that the right people see it. This increases your brand's street cred, generates positive feelings, and ensures a strong online reputation.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/dp-positively.svg",
         titleImage: "/assets/service/Positivity-Amplified-Elevate-Brand-Reputation.jpg",
       },
     ],
@@ -3232,19 +3232,19 @@ services = [
       {
         titleTab: `Brand Reflective Logo Design`,
         contentTab: `Bayshore Communication focuses on developing a professionally designed logo that accurately represents the identity of your company. Our talented designers handpick elements that reflect your values, vision, and personality. They conduct research on your brand, target audience, and industry trends in order to create a visually appealing and authentic logo that speaks directly to your target market.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/gd-brand-reflective.svg",
         titleImage: "/assets/service/Brand-Reflective-Logo-Design.jpg",
       },
       {
         titleTab: `Distinctive Logo Creation: Strong Recognition`,
         contentTab: `A memorable and distinct logo is crucial in a competitive market. We create unique logo concepts that set you apart from your competitors using a combination of creativity, research, and talent. We ensure that your logo has the power to create strong brand recognition and recall by employing thoughtful design elements, color psychology, and typography, making it an indispensable asset for your business.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/gd-strong-recognition.svg",
         titleImage: "/assets/service/Distinctive-Logo-Creation-Strong-Recognition.jpg",
       },
       {
         titleTab: `Versatile Logo Designs: Consistent Branding`,
         contentTab: `A versatile logo design is vital in today's technological environment for maintaining its impact across multiple platforms. Our designers create scalable logos that retain visual appeal while ensuring consistency across multiple platforms. To create a cohesive branding experience for your audience, we prioritize legibility, visual balance, and adaptability.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/gd-versatile.svg",
         titleImage: "/assets/service/Versatile-Logo-Designs-Consistent-Branding.jpg",
       },
     ],
@@ -3455,19 +3455,19 @@ services = [
       {
         titleTab: `Client Goals, Audience Insights: Effective Understanding`,
         contentTab: `Our collaborative process starts with a conversation about your vision, goals, and desired outcomes. To align our creative process with your objectives, we first perceive your brand's identity, values, and unique selling points. Understanding your target audience is essential for creating effective motion graphics. We investigate demographics, psychographics, and behavioral patterns to clarify preferences, interests, and pain points, resulting in a strong connection that drives engagement and action.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/mg-client-goals.svg",
         titleImage: "/assets/service/Client-Goals,-Audience-Insights-Effective-Understanding.jpg",
       },
       {
         titleTab: `Innovative Motion Concepts: Creative Brainstorming`,
         contentTab: `During our creative brainstorming phase, a team of designers, animators, and creative thinkers generate innovative motion graphics concepts that are in line with your goals. They experiment with visual styles, animation techniques, and storytelling approaches, pushing the envelope to create standout motion graphics that capture the essence of your brand and leave a lasting impression.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/mg-innovative-moiton.svg",
         titleImage: "/assets/service/Innovative-Motion-Concepts-Creative-Brainstorming.jpg",
       },
       {
         titleTab: `Crafting Compelling Stories and Messages`,
         contentTab: `After building a concept, our team creates compelling stories and messages that will resonate with your target audience. In motion graphics, storytelling is a powerful tool for fostering emotional connections and driving desired responses. We construct a unified story arc, ensuring that each frame contributes to the overall message. Audiences are engaged, educated, and entertained by our motion graphics, which include product explainers, brand stories, and promotional videos.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/mg-crafting-compellling.svg",
         titleImage: "/assets/service/Crafting-Compelling-Stories-and-Messages.jpg",
       },
     ],
@@ -3756,19 +3756,19 @@ services = [
       {
         titleTab: `Impactful Video Ideas: Collaborative Crafting`,
         contentTab: `We explore various avenues and create custom-tailored video concepts for your brand during our brainstorming sessions. We delve deeply into its complexities, strengths, and aspirations, resulting in a dynamic, creative environment. Our team creates a blueprint for your video, ensuring that it seamlessly integrates with the essence of your brand, and transforms it into a dynamic and inspiring experience.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/vp-impactful.svg",
         titleImage: "/assets/service/Impactful-Video-Ideas-Collaborative-Crafting.jpg",
       },
       {
         titleTab: `Storytelling Alchemy: Elevating Engagement`,
         contentTab: `Consider your brand to be the hero of a transformational saga, captivating viewers and galvanizing them to action. Our storytelling wizardry creates narratives that elicit emotions, stimulate your audience's interest, and foster an authentic rapport. Masterfully crafted stories captivate audiences, keeping them engrossed until the climax. We increase conversion rates by immersing viewers in your brand's story, converting them into devoted enthusiasts and advocates.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/vp-alchemy.svg",
         titleImage: "/assets/service/Storytelling-Alchemy-Elevating-Engagement.jpg",
       },
       {
         titleTab: `Cinematic Excellence: Visual Symphony Composition`,
         contentTab: `Our visual symphony composition blends visuals, music, and effects to create an immersive cinematic experience for your brand's story. Our seasoned maestros weave together imagery and audio to create a sensory feast that captivates, resonates, and lingers long after the final frame. This visual masterpiece solidifies your brand's legacy in the minds of viewers, leaving an indelible mark that propels your journey forward.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/vp-excellence.svg",
         titleImage: "/assets/service/Cinematic-Excellence-Visual-Symphony-Composition.jpg",
       },
     ],
@@ -4042,13 +4042,13 @@ services = [
       {
         titleTab: `Influencer Magic: Tailored Brand Growth`,
         contentTab: `We develop customized influencer strategies for your brand based on your growth goals. We conduct research on your target audience, the industry landscape, and the competitive landscape, as well as analyze data, consumer insights, and market trends to identify relevant influencers. This tailored approach optimizes campaigns for success, resulting in targeted brand growth and the achievement of desired goals.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/inf-magic.svg",
         titleImage: "/assets/service/influencer-magic-tailored-brand-growth.jpg",
       },
       {
         titleTab: `Crafting Triumph: Custom Influencer Campaigns`,
         contentTab: `Customized influencer marketing is essential for telling your brand's unique story. Our team works with you to understand your brand's identity, messaging, and goals in order to create impactful campaigns that resonate with your target audience. We unlock achievements and drive engagement, awareness, and conversions for your brand by leveraging carefully selected influencers.`,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/inf-campaign.svg",
         titleImage: "/assets/service/crafting-triumph-custom-influencer-campaigns.jpg",
       },
       {
@@ -4057,7 +4057,7 @@ services = [
 
         Now, let's move on to the next section, where we dive deeper into our targeted influencer identification and outreach strategies.
         `,
-        titleIcon: "/assets/expertise.svg",
+        titleIcon: "/assets/service-icon/inf-targeted-reach.svg",
         titleImage: "/assets/service/targeted-reach-influencer-strategy-perfection.jpg",
       },
     ],

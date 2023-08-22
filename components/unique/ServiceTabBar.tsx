@@ -26,12 +26,13 @@ const ServiceTabBar = (individualHomeTabBar: individualHomeTabBarType) => {
               onClick={() => setActiveTab(index)}
             >
               <Image
-                src="/assets/expertise-active.svg"
+                // src="/assets/expertise-active.svg"
+                src={service.titleIcon}
                 alt="svg-logo"
                 width={100}
                 height={100}
                 className={`md:h-[26px] md:w-[26px] h-[14px] w-[14px] ${
-                  activeTab != index && "grayscale"
+                  activeTab != index && "grayscale" ? "" :"bg-primary"
                 }`}
               />
               <p
