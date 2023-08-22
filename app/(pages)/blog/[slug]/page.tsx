@@ -65,7 +65,7 @@ const IndividualBlog = ({ params }: { params: { slug: string } }) => {
                   <div className="flex-[3]">
                     <div>
                       <Image
-                        src={`/assets/${elem.blogImg}`}
+                        src={`/assets/blog/${elem.blogImg}`}
                         alt="no_image"
                         width={2400}
                         height={2400}
@@ -123,7 +123,7 @@ const BlogNavigation = () => {
               .toLowerCase()}`}
           >
             <Image
-              src={`/assets/${elem.blogImg}`}
+              src={`/assets/blog/${elem.blogImg}`}
               alt="blog_image"
               width={3109}
               height={1752}

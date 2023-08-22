@@ -21,12 +21,11 @@ export const HeroForm = () => {
   useEffect(() => {
     // Perform localStorage action
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    const inputValue: string | null = localStorage.getItem("email");
     if (inputValue) {
-      setItem(inputValue);
+      localStorage.setItem("email", inputValue);
     }
-  }, []);
-  // localStorage.setItem("email", inputValue);
+  }, [inputValue]);
+  localStorage.setItem("email", inputValue);
 
   return (
     <form className="cus-form flex items-center justify-center md:justify-start gap-4 sm:gap-8 mt-[1.5rem] lg:mt-[2.5rem] flex-col sm:flex-row">
