@@ -26,7 +26,7 @@ const IndividualCase = ({ params }: { params: { slug: string } }) => {
   const indvcase = caseindv.filter(
     (elem) =>
       elem.url
-        .replace(/\s+/g, "_") // Replace spaces with dashes globally
+        .replace(/\s+/g, "-") // Replace spaces with dashes globally
         .toLowerCase() === parameter
   );
   console.log(indvcase);
@@ -75,7 +75,7 @@ const IndividualCase = ({ params }: { params: { slug: string } }) => {
         <div key={index}>
           <div className="relative">
             <Image
-              src="/assets/dummy-individual-blog.png"
+              src={`/assets/case-studies/${elem.caseImg}`}
               alt="individual-blog"
               width={2400}
               height={2400}

@@ -47,10 +47,6 @@ import Package from "./Package";
 //   },
 // ];
 
-
-
-
-
 let bulletData: {
   title: string;
   icon: string;
@@ -109,7 +105,7 @@ bulletData = [
 const SectionPackage = () => {
   return (
     <div className="mt-20 mb-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem]">
+      <div className="flex flex-wrap md:flex-nowrap gap-[4rem] justify-center">
         {bulletData.map((el: any, i: number) => (
           <Package data={el} key={i} />
         ))}

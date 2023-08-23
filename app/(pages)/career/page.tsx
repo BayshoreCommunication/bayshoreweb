@@ -25,34 +25,37 @@ let jobs: {
 jobs = [
   {
     heading: `Junior Immigration Paralegal`,
-    description: `<p>We are hiring an Immigration Case Manager to serve as the main point of contact for clients, providing regular updates, addressing inquiries, and offering guidance throughout the immigration process. Collaboration with our team and basic knowledge of immigration law are preferred. Strong English communication skills and availability from 8:00 am to 5:00 pm EST are required. Join us in providing exceptional service and support to our clients' immigration journey</p>
-  <h5>Responsibilities:</h5>
-  <ul>
-  <li><strong>Client Communication:</strong>&nbsp;Act as the main point of contact for clients, maintaining regular communication and providing updates on their immigration cases. Answer client inquiries, address concerns, and provide guidance throughout the immigration process.</li>
-  <li><strong>Case Assessment:</strong>&nbsp;Evaluate client eligibility for various immigration programs, visas, or permits based on their specific circumstances, goals, and qualifications. Conduct thorough reviews of client documents and information to determine the best course of action.</li>
-  <li><strong>Documentation and Form Preparation:</strong>&nbsp;Assist clients in completing necessary immigration forms accurately and in a timely manner. Ensure all required supporting documents are gathered, organized, and submitted as per the immigration requirements.</li>
-  <li><strong>Case Management:</strong>&nbsp;Oversee the overall progress of immigration cases, managing multiple cases simultaneously. Monitor deadlines, follow-up with clients and relevant authorities, and coordinate with internal teams or external agencies to gather information or resolve any issues.</li>
-  <li><strong>Case Documentation and Record-Keeping:</strong>&nbsp;Maintain accurate and organized case files and records, including client information, correspondence, forms, and supporting documents. Ensure compliance with data protection and confidentiality regulations.</li>
-  <li><strong>Deadline Management:</strong>&nbsp;Track important deadlines, such as application submission dates, document expiry dates, or response deadlines, to ensure timely and complaint handling of clients' cases.</li>
-  <li><strong>Collaboration and Teamwork:</strong>&nbsp;Collaborate with colleagues, including immigration attorneys, paralegals, or other professionals within the firm, to ensure efficient and effective case management. Seek guidance or support when needed and contribute to a positive and collaborative work environment.</li>
-  <li><strong>Time zone:</strong>&nbsp;Candidates must be available to work from 8.00 am to 5 pm in EST time zone that is late night in Bangladesh.</li>
-  </ul>
-  <h5>Requirements:</h5>
-  <ul>
-  <li><strong>Knowledge of Immigration Law and Procedures (Preferred):</strong>&nbsp;An understanding of immigration laws, regulations, policies, and procedures is crucial. Case Managers should be familiar with various visa categories, immigration programs, and the specific requirements for each. They should keep up to date with changes in immigration law and policy.</li>
-  <li><strong>English Language Skills (Required):</strong>&nbsp;Proficiency in English in both reading and writing is very important for this role.</li>
-  <li><strong>Attention to Detail:</strong>&nbsp;Case Managers must demonstrate a high level of attention to detail to ensure accurate completion of forms, documentation, and adherence to immigration requirements. Small errors or omissions can have significant consequences for clients' cases.</li>
-  <li><strong>Technology Proficiency:</strong>&nbsp;Proficiency in using MS Word and MS Excel.</li>
-  <li><strong>Ethics and Professionalism:</strong>&nbsp;Immigration Case Managers handle sensitive and confidential client information. Upholding ethical standards, maintaining client confidentiality, and displaying professionalism in all interactions are crucial qualities.</li>
-  </ul>
-  <h5>Compensation &amp; Other Benefits:</h5>
-  <ul>
-  <li>Full Subsidize Lunch Facilities, Yearly 2 Festival Bonus, Yearly Increments (On Performance)</li>
-  </ul>
-  <h5>Job Location: Aftabnagar, Dhaka</h5>
-  <h5>Work Hours: Monday - Friday (Night Shift)</h5>
-  <h5>Salary: TK. 20,000 - 30,000 (Monthly)</h5>
-  <p>If you have a strong background in immigration law and are passionate about supporting clients through the immigration process, we encourage you to apply for our Immigration Paralegal position at&nbsp;jobs@bayshorecommunication.com. Please include the position you are applying for in the email subject line. Join our team and utilize your expertise to assist our clients in navigating the complexities of immigration law.</p>`,
+    description: `<div>
+    <p>We are hiring an Immigration Case Manager to serve as the main point of contact for clients, providing regular updates, addressing inquiries, and offering guidance throughout the immigration process. Collaboration with our team and basic knowledge of immigration law are preferred. Strong English communication skills and availability from 8:00 am to 5:00 pm EST are required. Join us in providing exceptional service and support to our clients' immigration journey</p>
+    <h3>Responsibilities:</h3>
+    <ul>
+    <li><strong>Client Communication:</strong>&nbsp;Act as the main point of contact for clients, maintaining regular communication and providing updates on their immigration cases. Answer client inquiries, address concerns, and provide guidance throughout the immigration process.</li>
+    <li><strong>Case Assessment:</strong>&nbsp;Evaluate client eligibility for various immigration programs, visas, or permits based on their specific circumstances, goals, and qualifications. Conduct thorough reviews of client documents and information to determine the best course of action.</li>
+    <li><strong>Documentation and Form Preparation:</strong>&nbsp;Assist clients in completing necessary immigration forms accurately and in a timely manner. Ensure all required supporting documents are gathered, organized, and submitted as per the immigration requirements.</li>
+    <li><strong>Case Management:</strong>&nbsp;Oversee the overall progress of immigration cases, managing multiple cases simultaneously. Monitor deadlines, follow-up with clients and relevant authorities, and coordinate with internal teams or external agencies to gather information or resolve any issues.</li>
+    <li><strong>Case Documentation and Record-Keeping:</strong>&nbsp;Maintain accurate and organized case files and records, including client information, correspondence, forms, and supporting documents. Ensure compliance with data protection and confidentiality regulations.</li>
+    <li><strong>Deadline Management:</strong>&nbsp;Track important deadlines, such as application submission dates, document expiry dates, or response deadlines, to ensure timely and complaint handling of clients' cases.</li>
+    <li><strong>Collaboration and Teamwork:</strong>&nbsp;Collaborate with colleagues, including immigration attorneys, paralegals, or other professionals within the firm, to ensure efficient and effective case management. Seek guidance or support when needed and contribute to a positive and collaborative work environment.</li>
+    <li><strong>Time zone:</strong>&nbsp;Candidates must be available to work from 8.00 am to 5 pm in EST time zone that is late night in Bangladesh.</li>
+    </ul>
+    <h3>Requirements:</h3>
+    <ul>
+    <li><strong>Knowledge of Immigration Law and Procedures (Preferred):</strong>&nbsp;An understanding of immigration laws, regulations, policies, and procedures is crucial. Case Managers should be familiar with various visa categories, immigration programs, and the specific requirements for each. They should keep up to date with changes in immigration law and policy.</li>
+    <li><strong>English Language Skills (Required):</strong>&nbsp;Proficiency in English in both reading and writing is very important for this role.</li>
+    <li><strong>Attention to Detail:</strong>&nbsp;Case Managers must demonstrate a high level of attention to detail to ensure accurate completion of forms, documentation, and adherence to immigration requirements. Small errors or omissions can have significant consequences for clients' cases.</li>
+    <li><strong>Technology Proficiency:</strong>&nbsp;Proficiency in using MS Word and MS Excel.</li>
+    <li><strong>Ethics and Professionalism:</strong>&nbsp;Immigration Case Managers handle sensitive and confidential client information. Upholding ethical standards, maintaining client confidentiality, and displaying professionalism in all interactions are crucial qualities.</li>
+    </ul>
+    <h3>Compensation &amp; Other Benefits:</h3>
+    <ul>
+    <li>Full Subsidize Lunch Facilities, Yearly 2 Festival Bonus, Yearly Increments (On Performance)</li>
+    </ul>
+    <h3>Job Location: Aftabnagar, Dhaka</h3>
+    <h3>Work Hours: Monday - Friday (Night Shift)</h3>
+    <h3>Salary: TK. 20,000 - 30,000 (Monthly)</h3>
+    <p>If you have a strong background in immigration law and are passionate about supporting clients through the immigration process, we encourage you to apply for our Immigration Paralegal position at&nbsp;jobs@bayshorecommunication.com. Please include the position you are applying for in the email subject line. Join our team and utilize your expertise to assist our clients in navigating the complexities of immigration law.</p>
+    <div><a href="mailto:jobs@bayshorecommunication.com" target="_blank" rel="noopener noreferrer">Apply Now</a></div>
+    </div>`,
   },
   
 ];

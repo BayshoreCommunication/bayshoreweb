@@ -2311,7 +2311,7 @@ services = [
 
     description2: `
       <h2 className="text-center !pt-12">Content Optimization</h2>
-      <p className="text-center">Effective content optimization requires keyword research and optimization. Our team conducts extensive keyword research in order to identify relevant terms and phrases, ensuring that search engines recognize relevance and rank content higher. We also work hard to improve the visibility and readability of meta tags, headers, and on-page elements. Concise, well-structured paragraphs, bullet points, and relevant headings and subheadings improve readability and user experience. A thorough SEO audit of existing content is performed, identifying areas for improvement and making recommendations to improve visibility and effectiveness. This fine-tuning ensures that organic traffic continues and that search engine rankings improve. <a href="https://docs.google.com/document/d/1DtZBJCuX0_YkmiMHlZJ5a0Di5BeadPDQ1T_klNuJF3U/edit"><b>Visit our SEO Services to discover more about the gems we&rsquo;ve stored only for you.</b></a></p>
+      <p className="text-center">Effective content optimization requires keyword research and optimization. Our team conducts extensive keyword research in order to identify relevant terms and phrases, ensuring that search engines recognize relevance and rank content higher. We also work hard to improve the visibility and readability of meta tags, headers, and on-page elements. Concise, well-structured paragraphs, bullet points, and relevant headings and subheadings improve readability and user experience. A thorough SEO audit of existing content is performed, identifying areas for improvement and making recommendations to improve visibility and effectiveness. This fine-tuning ensures that organic traffic continues and that search engine rankings improve. <a href="/our-services/seo"><b>Visit our SEO Services to discover more about the gems we&rsquo;ve stored only for you.</b></a></p>
 
       
     <img
@@ -2894,7 +2894,7 @@ services = [
   />
 
 
-      <p className="text-base">High-quality articles and blog posts boost your brand's credibility and thought leadership in your industry. Bayshore Communication's writers collaborate with subject matter experts to ensure accuracy and depth in their content. You can broaden your reach and establish industry authority by identifying authoritative websites and influential blogs for guest posting. Bayshore Communication also publishes content on reputable websites to gain additional exposure, valuable backlinks, traffic generation, and search engine rankings. To learn more about our content writing services, you may visit <a href="https://docs.google.com/document/d/1P0QsTpfqZcLnrEKWnf0Af671j5JbqIZAQe_ohoqh8ss/edit"><b>Creative Content Writing Services .</b></a></p>`,
+      <p className="text-base">High-quality articles and blog posts boost your brand's credibility and thought leadership in your industry. Bayshore Communication's writers collaborate with subject matter experts to ensure accuracy and depth in their content. You can broaden your reach and establish industry authority by identifying authoritative websites and influential blogs for guest posting. Bayshore Communication also publishes content on reputable websites to gain additional exposure, valuable backlinks, traffic generation, and search engine rankings. To learn more about our content writing services, you may visit <a href="/our-services/content-writing"><b>Creative Content Writing Services .</b></a></p>`,
 
     description3: `
       <h2 className="text-center !pt-12">Influencer Relations and Collaborations</h2>
@@ -2907,7 +2907,7 @@ services = [
     className="w-full h-full my-10"
   />
       
-      <p className="text-base">Please look <a href="https://docs.google.com/document/u/0/d/1X_7JqrJScCVck8ykML8d96gSllRpIfwRDPPa6u_7ydY/edit"><b>Effective Influencer Marketing Services for Increased Brand Visibility and Engagement </b></a> for more details.</p>
+      <p className="text-base">Please look <a href="/our-services/influencer-marketing"><b>Effective Influencer Marketing Services for Increased Brand Visibility and Engagement </b></a> for more details.</p>
       
       
     
@@ -3371,7 +3371,7 @@ services = [
 
     description7: `
     <h2 className="text-center !pt-12">Engaging Motion Graphics and Videos</h2>
-    <p className="text-center">Understanding your vision, objectives, and target audience is an important part of our collaboration process. We investigate demographics, psychographics, and behavioural tendencies in order to create motion graphics that will engage and fascinate your audience. Exploring graphic styles, animation techniques, and storytelling approaches are all part of our creative brainstorming phase. We create fascinating stories and messages that will resonate with your audience, resulting in a unified narrative that will engage, educate, and entertain them. Head on to our <a href="https://docs.google.com/document/d/1z7mD-_1scD-Nkbj6WlsK7Tj04MilPbAmb19XLq36tsw/edit#heading=h.9j0zf4lzij6v"><b>Captivate Your Audience with Engaging Motion Graphics Services </b></a> to know more.</p>
+    <p className="text-center">Understanding your vision, objectives, and target audience is an important part of our collaboration process. We investigate demographics, psychographics, and behavioural tendencies in order to create motion graphics that will engage and fascinate your audience. Exploring graphic styles, animation techniques, and storytelling approaches are all part of our creative brainstorming phase. We create fascinating stories and messages that will resonate with your audience, resulting in a unified narrative that will engage, educate, and entertain them. Head on to our <a href="/our-services/motion-graphic"><b>Captivate Your Audience with Engaging Motion Graphics Services </b></a> to know more.</p>
 
     
     <img

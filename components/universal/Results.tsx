@@ -3,6 +3,8 @@ import SectionLayout from "./SectionLayout";
 import { AiOutlineRight } from "react-icons/ai";
 import Image from "next/image";
 import SectionHeader from "./SectionHeader";
+import Link from "next/link";
+
 
 interface resultInfo {
   heading: string;
@@ -20,6 +22,7 @@ const Results: React.FC<resultInfo> = ({ heading }) => {
             amazing experience with our clients.
           </p>
         </div>
+        <Link href="/case-studies">
         <button
           type="submit"
           className="btn text-small !py-4 flex items-center gap-8"
@@ -28,7 +31,7 @@ const Results: React.FC<resultInfo> = ({ heading }) => {
           <span className="inline-block translate-y-[1px]">
             <AiOutlineRight />
           </span>
-        </button>
+        </button></Link>
       </div>
 
       <div className="mt-16">

@@ -407,21 +407,35 @@ ServicePriceData = [
   },
 ];
 
-const ServicePrice = ({ url }: any) => {
-  //   console.log("Data check", TestData.map((el) => el.otherCompany)[0]);
+// const ServicePrice = ({ url }: any) => {
+//   //   console.log("Data check", TestData.map((el) => el.otherCompany)[0]);
+//   const data = ServicePriceData.filter((el: any) => el.url === url);
+//   console.log("data ", data);
+//   return (
+//     <div className="mt-20 mb-8">
+//       <div >
+//         {ServicePriceData.filter((el: any) => el.url === url).map(
+//           (el: any, i: number) => (
+//             <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem]" key={i}>
+//               <PackageService data={el.otherCompany} title={"Other Company Offer"} />
+//               <PackageService data={el.bayshore} title={"We Offer"} />
+//             </div>
+//           )
+//         )}
+//       </div>
+//     </div>
+//   );
+// };
+
+const ServicePrice = ({url}:any) => {
   const data = ServicePriceData.filter((el: any) => el.url === url);
-  console.log("data ", data);
   return (
     <div className="mt-20 mb-8">
-      <div >
-        {ServicePriceData.filter((el: any) => el.url === url).map(
-          (el: any, i: number) => (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem]" key={i}>
-              <PackageService data={el.otherCompany} title={"Other Company Offer"} />
-              <PackageService data={el.bayshore} title={"We Offer"} />
-            </div>
-          )
-        )}
+      <div className="flex flex-wrap md:flex-nowrap gap-[4rem] justify-center">
+      {ServicePriceData.filter((el: any) => el.url === url).map((el: any, i: number) => (
+          <><PackageService data={el.otherCompany} title={"Market Offer"} />
+          <PackageService data={el.bayshore} title={"Our Offer"} /></>
+        ))}
       </div>
     </div>
   );

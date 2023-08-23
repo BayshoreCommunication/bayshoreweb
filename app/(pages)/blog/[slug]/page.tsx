@@ -24,7 +24,7 @@ const IndividualBlog = ({ params }: { params: { slug: string } }) => {
   const indvblog = blogindv.filter(
     (elem) =>
       elem.url
-        .replace(/\s+/g, "_") // Replace spaces with dashes globally
+        .replace(/\s+/g, "-") // Replace spaces with dashes globally
         .toLowerCase() === parameter
   );
   console.log(indvblog);
@@ -119,7 +119,7 @@ const BlogNavigation = () => {
           <Link
             className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
             href={`/blog/${elem.url
-              .replace(/\s+/g, "_") // Replace spaces with dashes globally
+              .replace(/\s+/g, "-") // Replace spaces with dashes globally
               .toLowerCase()}`}
           >
             <Image

@@ -413,7 +413,7 @@ const Featured = () => {
               </h4>
               <p className="text-small text-cut text-cut-5">{parser(elem.desc)}</p>
 
-              <Link href={`/case-studies/${elem.url.replace(/\s+/g, "_") // Replace spaces with dashes globally
+              <Link href={`/case-studies/${elem.url.replace(/\s+/g, "-") // Replace spaces with dashes globally
     .toLowerCase()}`}>
               <button className="!text-[#565EE8] font-semibold text-small">
                 Learn more

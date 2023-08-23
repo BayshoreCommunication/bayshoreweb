@@ -9,6 +9,7 @@ interface progress {
   border: string;
   percentage: string;
   percentageVal: string;
+  percentageValpx:string;
 }
 const Progress = ({
   title,
@@ -16,6 +17,7 @@ const Progress = ({
   border,
   percentage,
   percentageVal,
+  percentageValpx,
 }: progress) => {
   const [hasPlayed, setHasPlayed] = useState(false);
 
@@ -37,7 +39,7 @@ const Progress = ({
               hasPlayed ? percentage : "w-0"
             } rounded-[10px] h-full ${bg} top-0 left-0 transition-all duration-1000`}
           ></div>
-          <div className="absolute right-0 z-10 top-[-4px] font-semibold">
+          <div className={`absolute ${percentageValpx} z-10 top-[-3px] font-semibold !text-[#f4f4f4]`}>
             {percentageVal}
           </div>
           {/* <div

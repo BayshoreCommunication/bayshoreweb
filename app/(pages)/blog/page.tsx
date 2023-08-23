@@ -76,7 +76,7 @@ blogindv = [
     <p>Now that you have a better understanding of what local SEO is and why it matters for your business, let&rsquo;s see how Bayshore Communications, a full-service digital marketing agency, can help you achieve your local SEO goals.&nbsp;</p>
     <h2>Key Growth Tactics for Small Business Local SEO</h2>
     <p>Local SEO can help you gain a competitive edge over larger businesses that may not have a strong local presence. Here are some key growth tactics for small business local SEO that you can implement today.</p>
-    <h2>Optimizing Google My Business</h2>
+    <h3>Optimizing Google My Business</h3>
     <p>Google My Business (GMB) is a free tool that allows you to manage how your business appears on Google Search and Maps. It is one of the most important factors for local SEO, as it can influence your ranking, visibility, and credibility.</p>
     <h3>1. Claiming and Verifying Your GMB Listing</h3>
     <p>The first step to optimizing your GMB is to claim and verify your listing. This will give you access to edit and update your business information, as well as respond to reviews and messages from customers. To claim and verify your GMB listing, follow these steps:</p>
@@ -110,7 +110,7 @@ blogindv = [
     <li>Respond to reviews promptly and professionally, both positive and negative ones.&nbsp;</li>
     </ul>
     <p>Responding is essential for any business that wants to demonstrate engagement and commitment to customer satisfaction. Not only does it show that you care about what your customers think, but it can also help lead more new customers, increase CTR and improve your online visibility.</p>
-    <h2>Local Keyword Research and Optimization</h2>
+    <h3>Local Keyword Research and Optimization</h3>
     <p>Keywords are the words and phrases that users type into search engines to find what they are looking for. This includes geographic modifiers which can help you target the right audience, increase traffic, and improve relevance.</p>
     <h3>1. Identifying Relevant Local Keywords for Your Business&nbsp;</h3>
     <p>To identify relevant local keywords for your business, you can use keyword research tools like Google Keyword Planner, SEMrush, or Moz. These tools can help you find localized keywords with high search volume and low competition, as well as analyze the keywords used by your competitors and find gaps or opportunities.</p>
@@ -140,7 +140,7 @@ blogindv = [
     </ol>
     <h3>3. Utilizing Location Based Landing Pages for Targeted Optimization&nbsp;</h3>
     <p>Location based landing pages are web pages that are dedicated to a specific city or area, and provide relevant information and offers for that location. So, if your business serves multiple locations or areas, you can utilize it to target specific audiences and optimize your local SEO. This can showcase your local presence and authority in that area, which can lead to rank higher for local searches.&nbsp;</p>
-    <h2>Acquiring Local Citations and Backlinks</h2>
+    <h3>Acquiring Local Citations and Backlinks</h3>
     <p>Local citations and backlinks are two important factors for local SEO that can boost your overall brand's visibility and authority.&nbsp;</p>
     <h3>1. Researching and Listing on Authoritative Local Directories</h3>
     <p>One of the easiest ways to acquire local citations is to research and list your business on authoritative local directories. These are online platforms that provide information about local businesses in various categories and locations.&nbsp;</p>
@@ -163,7 +163,7 @@ blogindv = [
     <ul>
     <li>Event details: If your business hosts events, structured data markup can be used to display information about upcoming events hosted by your business.&nbsp;</li>
     </ul>
-    <h2>Creating Location Specific Content</h2>
+    <h3>Creating Location Specific Content</h3>
     <p>Content is king when it comes to SEO, and local SEO is no exception. Creating location specific content can help you attract and engage your local audience.</p>
     <h3>1. Developing Localized Blog Posts, Articles, or Guides&nbsp;</h3>
     <p>One of the best ways to create location specific content is to develop localized blog posts, articles, or guides that address the specific needs, challenges, or interests of your local audience. It can help you showcase your expertise, provide value, and build trust with your potential customers.</p>
@@ -190,9 +190,9 @@ blogindv = [
     <ul>
     <li>Offer exclusive discounts, deals, or incentives for local customers.</li>
     </ul>
-    <h2>Leveraging Online Reviews and Reputation Management</h2>
+    <h3>Leveraging Online Reviews and Reputation Management</h3>
     <p>Online reviews and reputation management are vital for local SEO and customer trust. They can influence your ranking, visibility, and conversion rate.</p>
-    <p>1. Encouraging Customer Reviews on Relevant Platforms</p>
+    <h3>1. Encouraging Customer Reviews on Relevant Platforms</h3>
     <p>To leverage online reviews for local SEO, you need to encourage your customers to leave reviews on relevant platforms such as Google My Business, Yelp, Facebook, or industry-specific sites. Reviews on these platforms can help you increase your exposure and credibility on search engines and social media.</p>
     <p>To encourage customer reviews on relevant platforms, you can use tips such as:</p>
     <ul>
@@ -207,7 +207,7 @@ blogindv = [
     <ul>
     <li>Follow review platform guidelines and avoid incentivizing or manipulating reviews. Offering rewards or discounts for reviews can violate the terms of service of some platforms and damage your reputation.</li>
     </ul>
-    <p>2. Responding to Reviews in a Timely and Professional Manner</p>
+    <h3>2. Responding to Reviews in a Timely and Professional Manner</h3>
     <p>Encouraging customer reviews is not enough. You also need to respond to reviews in a timely and professional manner. To do this, you should:</p>
     <ul>
     <li>Monitor online reviews regularly using tools like Moz Local, BrightLocal, or Whitespark.&nbsp;</li>
@@ -221,16 +221,16 @@ blogindv = [
     <ul>
     <li>Invite customers to contact you directly if they have any further questions or complaints.</li>
     </ul>
-    <p>3. Monitoring and Addressing Online Reputation&nbsp;</p>
+    <h3>3. Monitoring and Addressing Online Reputation&nbsp;</h3>
     <p>&nbsp;You also need to monitor and address other online mentions of your business, such as social media posts, blog comments, or news articles. These can affect your brand awareness and perception, as well as your SEO performance.&nbsp;</p>
     <p>Actively monitor online reviews and social media mentions of your business using alerts or reputation management tools like Google Alerts, Mention, or Brand24. This can help you identify and address customer concerns promptly and prevent negative sentiment from spreading.&nbsp;</p>
-    <p>Harnessing Social Media for Local SEO</p>
-    <p>1. Creating and Optimizing Social Media Profiles&nbsp;</p>
+    <h3>Harnessing Social Media for Local SEO</h3>
+    <h3>1. Creating and Optimizing Social Media Profiles&nbsp;</h3>
     <p>You need to create and optimize profiles on platforms relevant to your target audience, such as Facebook, Instagram, Twitter, or LinkedIn, to harness social media for local SEO. These platforms can help you reach and connect with potential customers, as well as drive traffic to your website.&nbsp;</p>
     <p>For that, make sure to use consistent branding across all platforms, such as logo, color scheme, tone of voice, and message. Provide accurate and up-to-date business information, and link to your other social media profiles or review platforms.</p>
-    <p>2. Engaging with the Local Community through Social Media&nbsp;</p>
+    <h3>2. Engaging with the Local Community through Social Media&nbsp;</h3>
     <p>After that, you also need to engage with the local community through social media. To engage with the local community through social media, you should respond to comments, messages, or positive mentions of your business and express appreciation for the recognition. Share local news or events that are relevant to your business or niche, and feature customer stories or testimonials on your social media posts. This can help you showcase your success and credibility in the area.</p>
-    <p>3. Sharing Locally Relevant Content and Promotions&nbsp;</p>
+    <h3>3. Sharing Locally Relevant Content and Promotions&nbsp;</h3>
     <p>The key to successful social media marketing is to share locally relevant content and promotions that provide value to your audience. It will resonate with your consumers and make them feel like you understand their needs and interests.</p>
     <p>Social media is a great way to reach a large audience quickly and easily. By promoting your local discounts, events, or limited-time offers on social media, you can attract new customers and encourage existing customers to come back for more.</p>
     <h2>Measuring Success and Monitoring Progress</h2>
@@ -244,10 +244,12 @@ blogindv = [
     <p>To do that, you can set SMART (Specific, Measurable, Achievable, Relevant, Time-bound) goals for your local SEO performance. For example: Increase organic traffic by 20% in 6 months. Moreover, if you want to visualize and summarize your data in an easy-to-understand way, you can use analytics dashboards or reports.</p>
     <h2>Conclusion</h2>
     <p>You have reached the end of this guide on local SEO for small businesses. I hope you have learned some useful and practical tips and strategies to optimize your online presence and attract more customers from relevant local searches. If you need any further assistance, you can always rely on Bayshore Communication.&nbsp;</p>
-    <p>To get started with Bayshore Communication, you can visit our website at [......]. You can also contact them via email at [abc.com] or phone at [000-000-0000] to discuss your project details. Bayshore Communication will assign you a dedicated team who will work with you closely to help you meet your expectations and goals.</p>`,
+    <p>To get started with Bayshore Communication, you can visit our website at [......]. You can also contact them via email at [abc.com] or phone at [000-000-0000] to discuss your project details. Bayshore Communication will assign you a dedicated team who will work with you closely to help you meet your expectations and goals.</p>
+    <p>Meta- Boost your small business's online visibility and attract local customers with effective growth tactics. Learn local SEO strategies with Bayshore Communication!</p>
+    <p><br /><br /><br /><br /></p>`,
   },
   {
-    url:`${("How Google Maps Can Help Your business")}`,
+    url:`${("How_Google_Maps_Can_Help_Your_business")}`,
     meta: ``,
     blogImg: `blog-img-1.jpg`,
     blogDate: `June 8, 2023`,
@@ -818,7 +820,7 @@ blogindv = [
   {
     url:`${("Marketing to Millennials Reaching the Digital Native Generation")}`,
     meta: `Want to reach millennials? This guide is for you! Learn their needs, and interests, also how to reach and engage them with effective digital marketing strategies`,
-    blogImg: `blog-img-1.jpg`,
+    blogImg: `blog-dumy.jpg`,
     blogDate: `June 7, 2023`,
     writerImg: ``,
     writerName: `Kelsey Jones`,
@@ -1006,6 +1008,96 @@ blogindv = [
     <h3>2. Key Performance Indicators (KPIs) to Monitor the Success of Millennial Focused Campaigns</h3>
     <p>The specific KPIs that you track will depend on your specific goals. However, some common KPIs for millennial focused campaigns include, website traffic, social media engagement, email opens and clicks, leads generated, retention, and the ratio of the revenue generated by your marketing campaigns to the cost invested in them. By tracking these KPIs, you can measure the success of your millennial focused campaigns and make changes as needed.</p>`,
   },
+  {
+    url:`${("why_is_an_seo_friendly_website_important_for_usiness")}`,
+    meta: ``,
+    blogImg: `blog-img-2.jpg`,
+    blogDate: `June 7, 2023`,
+    writerImg: ``,
+    writerName: `Kelsey Jones`,
+    title: `Why is an SEO Friendly Website Important for Business`,
+    desc: `<p>More SEO friendly website is equal to a more business centric one. Business centric website means more connected with potential customer needs. And improve your customer relationship. Another vital thing of SEO is ranking your page. Are you a webmaster? Want to know about SEO and business? Then you have come to the right place. Everyone concerned about the website should know about it. So, in this article we will discuss about- the reason for adopting an SEO friendly website for business.</p>
+    <h3>What is SEO And How It Works?</h3>
+    <p>Search engine optimization, or SEO. SEO is the practice of optimising your&nbsp;<a href="https://bayshorecommunication.com/our-services/web-design">website</a>&nbsp;for search engines. So that it may be found by users looking for particular information. Ranking in search engines is the core of SEO. Your website will be decorated with it. Google has to choose which material to display for a given search. Thus, the search result is chosen in accordance with SEO guidelines. SEO provides you with free organic ranking assistance. There are several variables and ongoing ranking.</p>
+    <p>Example: Someone looked up a pizza recipe. Numerous recipes may be found on various websites. However, the user can only view a small portion of the forest page. These pages were deemed by Google to be the most pertinent to the pizza recipe's content. It denotes that the sites adopt.</p>
+    <p>White hat SEO is totally ethical and follows Google's search engine criteria. Grey hat and black hat SEO are the other two forms of SEO. The content is created by Grey Hat only to raise the page's position in search results. Even if the content helps the website rank better. Readers would still find the page to be just as valuable without it. It hardly provides any value and merely contains enough keywords to draw people to the page. They adhere to their own unethical, self-published rules for Black Hat SEO. Content that is expressly a gateway page. It has been keyword-stuffed, or has been plagiarised from other pages. They may easily accomplish their aim in this way.</p>
+    <p>According to SEO strategies, there are two groups: on-page SEO and off-page SEO. On page SEO deals with your website that is under owner&rsquo;s control to improve position. It improves the experience for users. Off page SEO deals with promoting your site or brand around the internet. Your website, business, or brand mentioned on another website. It is the main goal of this SEO component.</p>
+    <h2>What Makes a Website SEO Friendly?</h2>
+    <p>What distinguishes a website as being search engine friendly or search engine optimised? It is often unclear.When a company hires a<a href="https://bayshorecommunication.com/">web development agency</a>&nbsp;to build their website. The developer's best bet is to ensure that the site is search engine friendly. Yet, both in terms of breadth and size, the&nbsp;<a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">optimization procedure</a>&nbsp;differs from one website to another.</p>
+    <ul>
+    <li>Each page's names and descriptions are distinctive</li>
+    <li>Title tags, header tags, image alt tags, and the meta description tag correctly</li>
+    <li>URLs with well formatted</li>
+    <li>Meaningful structured pages</li>
+    <li>Creating an internal link structure, navigation, and information architecture</li>
+    <li>Unique content</li>
+    <li>Search engines optimised image</li>
+    <li>Fast loading speed</li>
+    <li>selecting the right keywords and topics</li>
+    <li>visually appealing website</li>
+    <li>responsive website</li>
+    </ul>
+    <h2>Benefits of SEO Friendly Websites Important for Business?</h2>
+    <h3>Mobile Friendly Website</h3>
+    <p>More than Half of web traffic comes from mobile devices. So, it is a matter of concern, for developing mobile user experience and building trust. Top mobile websites are already mobile friendly by SEO. It will help us to reach a wider range of audience as well as attention. SEO serves better browsing experience.</p>
+    <h3>URL structure</h3>
+    <p>Uniform Resource Locator (URL) are also called links. What your link looks like matters! Because many people enter through it into your website. Simple URL provides confidence without confusion. SEO friendly links ensure keywords and readability. Linking your page with another page or other website page improves page rank.</p>
+    <h3>Site architecture/silo</h3>
+    <p>SEO enables less learning curves by working on site architecture. How you arrange your website content is called organisational silo. It&rsquo;s all about how you organise your content on your website. These matters are controlled by SEO friendly websites. That means an SEO friendly website enriches your website content. As a result, your website developed along with crawlability, better engagement and improved organic ranking.</p>
+    <h3>Organic traffic</h3>
+    <p>By optimising your website for search vc , you may draw in more targeted traffic. As well as boost conversions by keeping visitors on your site for longer. Websites that have been optimised can develop organically over time. There is no need to run ads.</p>
+    <h3>Understand the Voice of the Consumer</h3>
+    <p>The SEO concept has come from customer preference. So, we can say that it is a guideline to your consumer choice. You can know about the customer's needs and wants.</p>
+    <h3>Trust &amp; Credibility</h3>
+    <p>The majority of individuals would not have gone to the second page of Google results. Information seen on the first page of a website is more likely to be trusted by users. Contact a company that offers the top&nbsp;<a href="https://bayshorecommunication.com/our-services/graphic-design">ui/ux design</a>&nbsp;services to boost your position.</p>
+    <h3>Cost-effective</h3>
+    <p>There is no payment for SEO service. In contrast to other digital marketing tactics like pay-per-click. Search engines constantly search your website, highlighting the valuable information. Along with aiding in the natural growth of your consumer base. The guidelines and efforts of SEO are cost-effective. Because if you can think for the future, your website is up-to-date. You need not have to bear extra hassle for your business. SEO delivers a full marketing guideline that can help you. So, we can say that SEO is cost-efficient and lifesaver also.</p>
+    <h3>Better User Experience</h3>
+    <p>Every search engine optimization tactic is intended to enhance user experience. To provide your consumers the greatest experience possible. You must offer a flawless and appealing user interface. Here are some techniques for improving a website's SEO. That is to plan your digital marketing strategy. To get the desired outcomes.</p>
+    <h3>Competitive Lead</h3>
+    <p>The search engine market is quite competitive. There are millions of competitors for a single category of business. Those who invest effort for SEO often rank. For the competition environmentYou can observe your mistakes and those of your rivals. whatever area of our website needs improvement.</p>
+    <h3>Influence the Buying Cycle</h3>
+    <p>SEO is becoming a key component. For SEO, real-time research It will be a game-changer to use SEO strategies. When done correctly, it will unquestionably have a good effect on the buying cycle as well. To establish a meaningful relationship, brands must be present where consumers are looking for SEO. And exposure is improved. The potential clients may identify the solutions and the companies.</p>
+    <h3>Develops PR</h3>
+    <p>SEO is a long term process. It is a never ending procedure because frequent updates are available continuously. SEO changes the website by PR strategy. A good SEO and PR enables more visibility to the public. As a result, people 's experiences are good. Customers will visit your website for certain products or services.</p>
+    <h3>SEO is Calculable</h3>
+    <p>SEO is calculable. Firstly, a specific brand can monitor their position through it. And brands can measure the search engine optimization. So that they can have an idea of the progress of the company. As a result they can progress their performance as well as lacking. The company can also gather knowledge of their competitor and competition.</p>
+    <h3>SEO Uncovers New Possibilities</h3>
+    <p>SEO discovers new thinking for business. Whether it is with sales, product, and customer service strategies. It enables owners to better brand understanding along with more opportunities. It ensures the standard of a website.</p>
+    <h3>Increase Usability and Quality</h3>
+    <p>SEO assures-</p>
+    <ul>
+    <li>well designed and useful website</li>
+    <li>interesting content</li>
+    <li>client trust</li>
+    <li>wisely used links</li>
+    <li>website loading speed</li>
+    </ul>
+    <p>And there are other many basic needs for websites. These all factors improve customer experience. On the basis of usability search engines rank a specific website.</p>
+    <h3>Advance User Engagement Rates &amp; ROI</h3>
+    <p>An optimised website attracts targeted visitors. If it has relevant, helpful information that meets their search criteria. The searcher will probably spend more time perusing your site. Longer website visits often result in a stronger sense of connection with the brand by customers. Which may boost repeat business and consumer loyalty. Utilise one of the many online tools to audit your website. After that make necessary changes to the title and meta tags. that improve visitor engagement.</p>
+    <h3>Mostly asked Question About SEO</h3>
+    <p>How to Improve SEO?</p>
+    <ul>
+    <li>Publish relevant content along with keywords, keyword phrases and placement of keywords.</li>
+    <li>Use internal linking</li>
+    <li>Get Backlinks From Content Curators</li>
+    <li>Regularly updated content</li>
+    <li>Decrease load times</li>
+    <li>Improve local SEO</li>
+    <li>Optimise images</li>
+    </ul>
+    <h3>Does SEO Matter in the Present?</h3>
+    <p>Of course,&nbsp;<a href="https://developers.google.com/search/docs/fundamentals/do-i-need-seo">you need an SEO</a>&nbsp;SEO improves customer experience and relationships along with improving performance of websites. Nowadays,&nbsp;<a href="https://bayshorecommunication.com/our-services/digital-marketing">digital marketing</a>strategies are ruled by SEO. It is not just about ranking in search engines.</p>
+    <h3>Do I Need to Hire a SEO Firm?</h3>
+    <p>There is huge competition in search engines. There are guidelines of SEO. So, for these reasons you need expert help. Otherwise, it will not be fruitful. The SEO firm audits your page and maintains it for SEO. The firm has experience in specific markets and environments. It is important for a website to hire a firm for SEO expertise.</p>
+    <h3>How Do SEO Agencies Work?</h3>
+    <p>An SEO firm will spot possibilities to get connections from websites. That are pertinent to the sector, reputable directories, and several other places. The goal is to drive traffic making sure the link generates useful content for the reader. The performance and traffic levels of your website is monitored regularly by an&nbsp;<a href="https://bayshorecommunication.com/our-services/digital-marketing">SEO company.</a>&nbsp;That also makes suggestions for future work along the way.</p>
+    <h3>Is SEO Worth It for E-commerce?</h3>
+    <p>Search engine optimization attracts more leads, increases lead quality. It also reduces marketing spend, deals multiple sales and builds authority. Now you tell me, is it worth it?</p>
+    <h3>When Should a Business Stop Working in Search Engine Optimization?</h3>
+    <p>Though you have rank to your website, still you have to maintain SEO. If you stop working on SEO then the website slowly begins to drop. Because the search engines are too competitive for a marketplace.</p>`,
+  },
 ];
 
 const page = () => {
@@ -1099,7 +1191,7 @@ const Blog = ({el, i}: any) => {
         </p>
       </div>
       <div className="center md:block">
-        <Link href={`/blog/${el.url.replace(/\s+/g, "_") // Replace spaces with dashes globally
+        <Link href={`/blog/${el.url.replace(/\s+/g, "-") // Replace spaces with dashes globally
     .toLowerCase()}`}>
           <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
             Read this post

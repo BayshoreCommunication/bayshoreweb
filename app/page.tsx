@@ -6,6 +6,7 @@ import HomeTabBar from "@/components/unique/HomeTabBar";
 import AboutUs from "@/components/universal/AboutUs";
 import Boost from "@/components/universal/Boost";
 import Footer from "@/components/universal/Footer";
+import Footer2 from "@/components/universal/Footer2";
 import HeroLeft, { HeroForm } from "@/components/universal/HeroLeft";
 import Info from "@/components/universal/Info";
 import Navbar from "@/components/universal/Navbar";
@@ -134,20 +135,23 @@ to create, engage, and convert leads. Plus, our exclusive tech-powered tools giv
               border="border-[#FFBF45]"
               percentage="w-[90%]"
               percentageVal="90%"
+              percentageValpx="left-[80%]"
             />
             <Progress
               title="Advanced Technology"
               bg="bg-[#3A7EEE]"
               border="border-[#3A7EEE]"
-              percentage="w-[99%]"
-              percentageVal="99%"
+              percentage="w-[96%]"
+              percentageVal="96%"
+              percentageValpx="left-[86%]"
             />
             <Progress
               title="Industry Specific Expertise"
               bg="bg-[#6C6C6C]"
               border="border-[#6C6C6C]"
-              percentage="w-[95%]"
-              percentageVal="95%"
+              percentage="w-[92%]"
+              percentageVal="92%"
+              percentageValpx="left-[82%]"
             />
           </div>
         </div>
@@ -220,7 +224,7 @@ let hero: {
 hero = [
   {
     text: "Marketing That Drive Business.",
-    heading: "Get your own marketing team for you business",
+    heading: "Get your own marketing team for your business",
     description: `Are you ready to bring in a well-rounded marketing team to help your company expand? Bayshore Communication is here!! Choose Bayshore to gain access to our innovative technology platform and our skilled digital marketing experts. With the help of our service, you can build your own marketing team to manage all aspects of your company's expansion and goal-setting. Don't pass up the chance to increase your brand's visibility and outperform your competition.`,
   },
 ];
