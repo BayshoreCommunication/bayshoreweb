@@ -19,7 +19,7 @@ const Package = ({ data }: any) => {
             <h4 className="heading-four !text-white bg-[#fe6f1f] rounded-tr-[13px] rounded-tl-[10px] w-[50%] py-8 ">{data.title}</h4>
           
           
-            <p className="-translate-x-[80%]">
+            <p className="md:-translate-x-[80%] -translate-x-[150%]">
               <span className="!text-primary !font-bold heading-secondary translate-x-[50%] ">
                 ${data.price}
               </span>

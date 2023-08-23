@@ -49,23 +49,35 @@ const Page = () => {
         className="w-full h-auto object-cover"
       />
       <SectionLayout bg="">
-        <div className="flex justify-around">
-          <Adress
+        <div className="flex justify-between gap-20 ">
+          <div className="flex-1"><Adress
             title="Tampa"
             address={address[0].address}
             phone={address[0].phone}
             email={address[0].email}
-          />
+          /></div>
+
+          <div className="flex-1">
           <Adress
             title="Dhaka"
             address={address[1].address}
             phone={address[1].phone}
             email={address[1].email}
           />
+          </div>
+          <div className="flex-[2]">
+          <div className=" mx-auto">
+          <h4 className="heading-four !text-center">
+            Just send us your questions or concerns by starting a new message
+            and we will give you the help you need.
+          </h4>
+          <Form />
+        </div>
+          </div>
           {/* <Adress title="Dubai" /> */}
         </div>
       </SectionLayout>
-      <SectionLayout bg="">
+      {/* <SectionLayout bg="">
         <div className="max-w-[600px] mx-auto">
           <h4 className="heading-four !text-center">
             Just send us your questions or concerns by starting a new message
@@ -73,7 +85,7 @@ const Page = () => {
           </h4>
           <Form />
         </div>
-      </SectionLayout>
+      </SectionLayout> */}
       <SectionLayout bg="">
         {" "}
         <SimpleMap />{" "}
@@ -89,7 +101,7 @@ export default Page;
 
 const Row = ({ title, icon, address, phone, email }: any) => {
   return (
-    <div className="">
+    <div className="flex flex-col items-center">
       <h4 className="heading-four mb-2 flex items-center gap-4">
         <span>
           <Image
@@ -102,17 +114,19 @@ const Row = ({ title, icon, address, phone, email }: any) => {
         </span>
         <span>{title}</span>
       </h4>
+      <div className="mb-[1rem]">
       <p className="text-small">{phone}</p>
       <p className="text-small">{address}</p>
       <p className="text-small">{email}</p>
+      </div>
     </div>
   );
 };
 
 const Adress = ({ address, title, phone, email }: any) => {
   return (
-    <div className="">
-      <h3 className="heading-tertiary">{title}</h3>
+    <div className="flex flex-col justify-around items-center">
+      <h3 className="heading-secondary">{title}</h3>
       <div className="flex flex-col gap-3">
         <Row title="Phone" icon="/assets/phone.svg" phone={phone} />
         <Row title="Address" icon="/assets/location.svg" address={address} />
