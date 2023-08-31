@@ -1,5 +1,3 @@
-
-
 import SectionLayout from "@/components/universal/SectionLayout";
 import Image from "next/image";
 import React from "react";
@@ -12,7 +10,6 @@ export const metadata: Metadata = {
   description:
     "Are you concerned about your business growth? Bayshore's here to help. Contact us today and get a free consultation. Let us show you how we can make a difference for your business.",
 };
-
 
 let address: {
   title: string;
@@ -49,30 +46,32 @@ const Page = () => {
         className="w-full h-auto object-cover"
       />
       <SectionLayout bg="">
-        <div className="flex justify-between gap-20 ">
-          <div className="flex-1"><Adress
-            title="Tampa"
-            address={address[0].address}
-            phone={address[0].phone}
-            email={address[0].email}
-          /></div>
-
-          <div className="flex-1">
-          <Adress
-            title="Dhaka"
-            address={address[1].address}
-            phone={address[1].phone}
-            email={address[1].email}
-          />
+        <div className="flex flex-wrap justify-center md:justify-between gap-20 ">
+          <div className="md:flex-1 ">
+            <Adress
+              title="Tampa"
+              address={address[0].address}
+              phone={address[0].phone}
+              email={address[0].email}
+            />
           </div>
-          <div className="flex-[2]">
-          <div className=" mx-auto">
-          <h4 className="heading-four !text-center">
-            Just send us your questions or concerns by starting a new message
-            and we will give you the help you need.
-          </h4>
-          <Form />
-        </div>
+
+          <div className="md:flex-1 ">
+            <Adress
+              title="Dhaka"
+              address={address[1].address}
+              phone={address[1].phone}
+              email={address[1].email}
+            />
+          </div>
+          <div className="md:flex-[2]">
+            <div className=" mx-auto">
+              <h4 className="heading-four !text-center">
+                Just send us your questions or concerns by starting a new
+                message and we will give you the help you need.
+              </h4>
+              <Form />
+            </div>
           </div>
           {/* <Adress title="Dubai" /> */}
         </div>
@@ -96,9 +95,6 @@ const Page = () => {
 
 export default Page;
 
-
-
-
 const Row = ({ title, icon, address, phone, email }: any) => {
   return (
     <div className="flex flex-col items-center">
@@ -115,9 +111,9 @@ const Row = ({ title, icon, address, phone, email }: any) => {
         <span>{title}</span>
       </h4>
       <div className="mb-[1rem]">
-      <p className="text-small">{phone}</p>
-      <p className="text-small">{address}</p>
-      <p className="text-small">{email}</p>
+        <p className="text-small !text-center">{phone}</p>
+        <p className="text-small !text-center">{address}</p>
+        <p className="text-small !text-center">{email}</p>
       </div>
     </div>
   );
@@ -127,7 +123,7 @@ const Adress = ({ address, title, phone, email }: any) => {
   return (
     <div className="flex flex-col justify-around items-center">
       <h3 className="heading-secondary">{title}</h3>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 ">
         <Row title="Phone" icon="/assets/phone.svg" phone={phone} />
         <Row title="Address" icon="/assets/location.svg" address={address} />
         <Row title="Email" icon="/assets/email.svg" email={email} />
