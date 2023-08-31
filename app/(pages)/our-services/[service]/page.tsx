@@ -72,7 +72,7 @@ const Page = ({ params }: { params: { service: string } }) => {
                   </>
                 </div>
                 <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
-                <div className="!mb-8 !text-justify  service-style-ind">
+                <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                 {Parser(elem.description1)}
 
                 </div>
@@ -80,7 +80,7 @@ const Page = ({ params }: { params: { service: string } }) => {
                 <ServicePrice url={parameter} />
                 {/* <h1>check</h1> */}
 
-                <div className="!mb-8 !text-justify  service-style-ind"> 
+                <div className="!mb-8 !text-justify !md:text-left service-style-ind"> 
 
                 {Parser(elem.description2)}
                 </div>
@@ -90,7 +90,7 @@ const Page = ({ params }: { params: { service: string } }) => {
                     btnText="Send us a proposal"
                   />
                 </div>
-                <div className="!mb-8 !text-justify  service-style-ind">
+                <div className="!mb-8 !text-justify !md:text-left service-style-ind">
 
 
                 {Parser(elem.description3)}
@@ -99,43 +99,43 @@ const Page = ({ params }: { params: { service: string } }) => {
             </SectionLayout>
             <Info />
             <SectionLayout bg="">
-              <div className="h-[100%] service-style service-style-ind !md:text-start">
+              <div className="h-[100%] service-style service-style-ind ">
                 <div>
 
-                <div className="!mb-8 !text-justify  service-style-ind">
+                <div className="!mb-8 !text-justify !md:text-left service-style-ind">
 
                   {Parser(elem.description4)}
                   </div>
                   <Consultaion />
-                  <div className="!mb-8 !text-justify  service-style-ind">
+                  <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                     {Parser(elem.description5)}
                     </div>
                     
-                    <div className="!mb-8 !text-justify  service-style-ind">
+                    <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                     {Parser(elem.description6)}
                     </div>
-                    <div className="!mb-8 !text-justify  service-style-ind">
+                    <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                     {Parser(elem.description7)}
                     </div>
-                    <div className="!mb-8 !text-justify  service-style-ind">
+                    <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                     {Parser(elem.description8)}
                     </div>
-                    <div className="!mb-8 !text-justify ">
+                    <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description9)}
                     </div>
-                    <div className="!mb-8 !text-justify ">
+                    <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description10)}
                     </div>
-                    <div className="!mb-8 !text-justify ">
+                    <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description11)}
                     </div>
-                    <div className="!mb-8 !text-justify ">
+                    <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description12)}
                     </div>
-                    <div className="!mb-8 !text-justify ">
+                    <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description13)}
                     </div>
-                    <div className="!mb-8 !text-justify ">
+                    <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description14)}
                     </div>
                   {Parser(elem.description15)}

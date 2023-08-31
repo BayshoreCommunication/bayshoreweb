@@ -294,7 +294,7 @@ body {
   font-weight: 500;
   font-size: 22px;
   padding-top: 10px;
-  text-align: center !important;
+  text-align: left !important;
 }
 .service-style p{
   font-weight: 400;
