@@ -21,10 +21,10 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
   useEffect(() => {
     // Perform localStorage action
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    const inputValue: string | null = localStorage.getItem("email");
-    if (inputValue) {
-      setItem(inputValue);
-    }
+    // const inputValue: string | null = localStorage.getItem("email");
+    // if (inputValue) {
+    //   setItem(inputValue);
+    // }
   }, []);
 
   return (

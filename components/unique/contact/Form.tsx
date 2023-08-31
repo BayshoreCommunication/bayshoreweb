@@ -8,10 +8,10 @@ const Form = () => {
   useEffect(() => {
     // Perform localStorage action
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    const emailValue: string | null = localStorage.getItem("email");
-    if (emailValue) {
-      setEmail(emailValue);
-    }
+    // const emailValue: string | null = localStorage.getItem("email");
+    // if (emailValue) {
+    //   setEmail(emailValue);
+    // }
   }, []);
 
   return (
