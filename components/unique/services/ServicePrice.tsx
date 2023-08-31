@@ -427,15 +427,19 @@ ServicePriceData = [
 //   );
 // };
 
-const ServicePrice = ({url}:any) => {
+const ServicePrice = ({ url }: any) => {
   const data = ServicePriceData.filter((el: any) => el.url === url);
   return (
     <div className="mt-20 mb-8">
       <div className="flex flex-wrap md:flex-nowrap gap-[4rem] justify-center">
-      {ServicePriceData.filter((el: any) => el.url === url).map((el: any, i: number) => (
-          <><PackageService data={el.otherCompany} title={"Market Offer"} />
-          <PackageService data={el.bayshore} title={"Our Offer"} /></>
-        ))}
+        {ServicePriceData.filter((el: any) => el.url === url).map(
+          (el: any, i: number) => (
+            <>
+              <PackageService data={el.otherCompany} title={"Market Offer"} />
+              <PackageService data={el.bayshore} title={"Our Offer"} />
+            </>
+          )
+        )}
       </div>
     </div>
   );

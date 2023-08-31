@@ -97,16 +97,16 @@ const Footer = () => {
               <BsFacebook className=" w-[2rem] lg:w-[2.8rem] h-auto  hover:text-[#3b5998] " />
               </Link>
               <Link href={"https://www.instagram.com/bayshorecommunication"} target="_blank">
-              <AiFillInstagram className="w-[2.6rem] lg:w-[3.4rem] h-auto hover:text-[#bb3380]" />
+              <AiFillInstagram className="w-[2.6rem] lg:w-[3.6rem] h-auto hover:text-[#bb3380]" />
               </Link>
               <Link href={"https://www.linkedin.com/company/bayshore-communication"} target="_blank">
-              <BsLinkedin className="w-[2rem] lg:w-[2.8rem] h-auto hover:text-[#007bb6]" />
+              <BsLinkedin className="w-[2rem] lg:w-[2.7rem] h-auto hover:text-[#007bb6]" />
               </Link>
               <Link href={"https://twitter.com/BayshoreCom"} target="_blank">
-              <AiFillTwitterCircle className="w-[2.6rem] lg:w-[3.4rem] h-auto hover:text-[#00aced] hover:fill-blue-500   " />
+              <AiFillTwitterCircle className="w-[2.6rem] lg:w-[3.3rem] h-auto hover:text-[#00aced] hover:fill-blue-500   " />
               </Link>
               <Link href={"https://www.youtube.com/channel/UCAaI96cOP7GGpYhEOPFhu8w"} target="_blank">
-              <SiYoutubemusic className="w-[2.5rem] lg:w-[3.3rem] h-auto hover:text-[#FF0000]" />
+              <SiYoutubemusic className="w-[2.5rem] lg:w-[3.1rem] h-auto hover:text-[#FF0000]" />
               </Link>
               
               

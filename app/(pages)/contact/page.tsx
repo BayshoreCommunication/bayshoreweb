@@ -86,8 +86,23 @@ const Page = () => {
         </div>
       </SectionLayout> */}
       <SectionLayout bg="">
-        {" "}
-        <SimpleMap />{" "}
+        
+        {/* <SimpleMap /> */}
+
+
+
+
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019.8052045544562!2d-82.67877466610979!3d27.756943436867076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e242db96ffff%3A0x6a7fc5cfe7f891a3!2sBayshore%20Communication!5e0!3m2!1sen!2sbd!4v1693473942600!5m2!1sen!2sbd"
+            className="w-full h-screen shadow-lg"
+            
+           
+            
+            
+            
+          ></iframe>
+        </div>
       </SectionLayout>
     </>
   );

@@ -52,7 +52,7 @@ const Page = ({ params }: { params: { service: string } }) => {
           <div key={index}>
             <SectionLayout bg="">
               <div className="h-[100%] service-style">
-                <div className="py-8">
+                <div >
                   <>
                     <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
                       <div className="rounded-[10px] px-4 pb-16 ">
@@ -72,36 +72,72 @@ const Page = ({ params }: { params: { service: string } }) => {
                   </>
                 </div>
                 <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
+                <div className="!mb-8 !text-justify  service-style-ind">
                 {Parser(elem.description1)}
-                <ServicePrice url={parameter}/>
+
+                </div>
+                
+                <ServicePrice url={parameter} />
                 {/* <h1>check</h1> */}
+
+                <div className="!mb-8 !text-justify  service-style-ind"> 
+
                 {Parser(elem.description2)}
-                <div className="my-16">
+                </div>
+                <div >
                   <BoostService
                     heading=" Need a boost for you business? Get your FREE Quote Today!"
                     btnText="Send us a proposal"
                   />
                 </div>
+                <div className="!mb-8 !text-justify  service-style-ind">
+
 
                 {Parser(elem.description3)}
+</div>
               </div>
             </SectionLayout>
             <Info />
             <SectionLayout bg="">
-              <div className="h-[100%] service-style">
-                <div className="py-8">
+              <div className="h-[100%] service-style service-style-ind !md:text-start">
+                <div>
+
+                <div className="!mb-8 !text-justify  service-style-ind">
+
                   {Parser(elem.description4)}
+                  </div>
                   <Consultaion />
-                  {Parser(elem.description5)}
-                  {Parser(elem.description6)}
-                  {Parser(elem.description7)}
-                  {Parser(elem.description8)}
-                  {Parser(elem.description9)}
-                  {Parser(elem.description10)}
-                  {Parser(elem.description11)}
-                  {Parser(elem.description12)}
-                  {Parser(elem.description13)}
-                  {Parser(elem.description14)}
+                  <div className="!mb-8 !text-justify  service-style-ind">
+                    {Parser(elem.description5)}
+                    </div>
+                    
+                    <div className="!mb-8 !text-justify  service-style-ind">
+                    {Parser(elem.description6)}
+                    </div>
+                    <div className="!mb-8 !text-justify  service-style-ind">
+                    {Parser(elem.description7)}
+                    </div>
+                    <div className="!mb-8 !text-justify  service-style-ind">
+                    {Parser(elem.description8)}
+                    </div>
+                    <div className="!mb-8 !text-justify ">
+                    {Parser(elem.description9)}
+                    </div>
+                    <div className="!mb-8 !text-justify ">
+                    {Parser(elem.description10)}
+                    </div>
+                    <div className="!mb-8 !text-justify ">
+                    {Parser(elem.description11)}
+                    </div>
+                    <div className="!mb-8 !text-justify ">
+                    {Parser(elem.description12)}
+                    </div>
+                    <div className="!mb-8 !text-justify ">
+                    {Parser(elem.description13)}
+                    </div>
+                    <div className="!mb-8 !text-justify ">
+                    {Parser(elem.description14)}
+                    </div>
                   {Parser(elem.description15)}
                 </div>
               </div>

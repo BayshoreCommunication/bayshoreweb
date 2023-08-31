@@ -32,7 +32,7 @@ const ServiceTabBar = (individualHomeTabBar: individualHomeTabBarType) => {
                 width={100}
                 height={100}
                 className={`md:h-[26px] md:w-[26px] h-[14px] w-[14px] ${
-                  activeTab != index && "grayscale" ? "" :"bg-primary"
+                  activeTab != index && "grayscale" ? "" : ""
                 }`}
               />
               <p

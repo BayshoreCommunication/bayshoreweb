@@ -64,7 +64,7 @@ const PackageService = ({ data, title }: any) => {
               ${data.price}
             </span>
             {/* /month */}
-          {/* </p> */} 
+          {/* </p> */}
         </div>
 
         <div className="mb-8 px-8 py-12 flex justify-center ">
@@ -75,13 +75,15 @@ const PackageService = ({ data, title }: any) => {
           </ul>
         </div>
       </div>
-      <div className="flex justify-center  border-t-[1px] border-[rgba(221,221,221,0.5)] pt-3">
-        <div className="center !py-5">
-          <button className="btn text-small !py-6 !px-8">
-            Customize My Plan
-          </button>
+      {title === "Our Offer" && (
+        <div className="flex justify-center  border-t-[1px] border-[rgba(221,221,221,0.5)] pt-3">
+          <div className="center !py-5">
+            <button className="btn text-small !py-6 !px-8">
+              Customize My Plan
+            </button>
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

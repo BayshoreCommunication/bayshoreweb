@@ -221,17 +221,17 @@ cardContentS = [
   {
     img: "/assets/about/razon.png",
     name: "REZAUL KARIM",
-    destination: "DIGITAL ADS EXPERT",
+    destination: "LEAD DIGITAL MARKETING MANAGER",
   },
   {
     img: "/assets/about/rakib.png",
     name: "RAKIBUL ISLAM",
-    destination: "SENIOR DEVELOPER",
+    destination: "LEAD SOFTWARE ENGINEER",
   },
   {
     img: "/assets/about/orpita.png",
     name: "ORPITA HAQUE",
-    destination: "SENIOR DEVELOPER",
+    destination: "",
   },
   {
     img: "/assets/about/abdullah.png",
@@ -271,17 +271,17 @@ cardContentS = [
   {
     img: "/assets/about/raju.png",
     name: "RAJU AHMED",
-    destination: "DIGITAL ADS EXPERT",
+    destination: "CLIENT COMMUNICATION MANAGER",
   },
   {
     img: "/assets/about/nazmul.png",
-    name: "NAZMUL HOSSAIN",
-    destination: "SENIOR DEVELOPER",
+    name: "NAZMUL HASAN",
+    destination: "JUNIOR DIGITAL MARKETING EXECUTIVE",
   },
   {
     img: "/assets/about/elishah.png",
     name: "Elishah Hillaria",
-    destination: "SENIOR DEVELOPER",
+    destination: "CONTENT WRITER",
   },
 ];
 

@@ -4,30 +4,30 @@ import React from "react";
 const cardData = [
   {
     image: "/assets/funnel.svg",
-    title: "Access the data-fueled plans behind",
-    value: "$3,021,182,299",
-    bottomTitle: "IN CLIENT REVENUE",
+    title: "Business Automation helps Increasing",
+    value: "1500%",
+    bottomTitle: "Leads to our clients business",
   },
 
   {
     image: "/assets/funnel.svg",
-    title: "Use the expert-led tactics behind",
-    value: "7,839,684",
-    bottomTitle: "IN LEADS FOR OUR CLIENTS",
+    title: "Optimizing Clients website UI & UX ",
+    value: "600%",
+    bottomTitle: "Sales Increase",
   },
 
   {
     image: "/assets/funnel.svg",
-    title: "Unlock do-it-for-me marketing with",
-    value: "500",
-    bottomTitle: "DIGITAL MARKETING EXPERTS",
+    title: "Our Retargeting ads able to generates",
+    value: "4x",
+    bottomTitle: "Time better results",
   },
 
   {
     image: "/assets/funnel.svg",
-    title: "Accelerate ROI with",
-    value: "1+ BILLION",
-    bottomTitle: "DATA POINTS FROM MARKETINGCLOUDFX",
+    title: "All of our clients got",
+    value: "5x",
+    bottomTitle: "Of minimum ROI",
   },
 ];
 

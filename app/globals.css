@@ -281,15 +281,32 @@ body {
   font-size: 28px;
   padding-top: 10px;
 }
+.service-style-ind h2{
+  font-weight: 600;
+  font-size: 28px;
+}
 .service-style h3{
   font-weight: 500;
   font-size: 22px;
   padding-top: 10px;
 }
+.service-style-ind h3{
+  font-weight: 500;
+  font-size: 22px;
+  padding-top: 10px;
+  text-align: center !important;
+}
 .service-style p{
   font-weight: 400;
   font-size: 16px;
   padding-top: 10px;
+}
+
+.service-style-ind p{
+  font-weight: 400;
+  font-size: 16px;
+  padding-top: 10px;
+  text-align: justify !important;
 }
 .service-style b{
   font-size: 18px;
