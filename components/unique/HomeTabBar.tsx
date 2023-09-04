@@ -34,7 +34,7 @@ const tabs: Tab[] = [
           </div>
           <div className="row-start-1 md:col-start-2">
             <Image
-              src="/assets/service/expertise-and-experience.jpg"
+              src="/assets/service/Expertise-an-Experience.jpg"
               alt="tab-1"
               width={400}
               height={400}
@@ -70,7 +70,7 @@ const tabs: Tab[] = [
           </div>
           <div className="row-start-1 md:col-start-2">
             <Image
-              src="/assets/service/focus-on-result.jpg"
+              src="/assets/service/Focus-On-Result.jpg"
               alt="tab-1"
               width={400}
               height={400}
@@ -111,7 +111,7 @@ const tabs: Tab[] = [
           </div>
           <div className="row-start-1 md:col-start-2">
             <Image
-              src="/assets/service/access-to-advance-tools-and-technologies.jpg"
+              src="/assets/service/Access-to-Advanced-Tools-and-Technologies.jpg"
               alt="tab-1"
               width={400}
               height={400}
@@ -147,7 +147,7 @@ const tabs: Tab[] = [
           </div>
           <div className="row-start-1 md:col-start-2">
             <Image
-              src="/assets/service/time-and-cost-efficiency.jpg"
+              src="/assets/service/Time-and-Cost-Efficiency.jpg"
               alt="tab-1"
               width={400}
               height={400}

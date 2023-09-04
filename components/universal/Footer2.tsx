@@ -10,7 +10,6 @@ import { SiYoutube } from "react-icons/si";
 import { BsInstagram } from "react-icons/bs";
 import Link from "next/link";
 
-
 const Footer2 = () => {
   return (
     <>
@@ -18,12 +17,12 @@ const Footer2 = () => {
         <div className="container flex justify-center">
           <div className="">
             <div className="col-12 col-mid-6 col-md-4">
-              <Image src='' alt="bayshorelogo" id="bayfooterlogo" />
+              <Image src="" alt="bayshorelogo" id="bayfooterlogo" />
               <p className="text-justify">
                 Our performance, client satisfaction. Our main objective is
-                client&apos;s pleasure. Our company stands by every personnel&apos;s
-                dedication. Our working policy is transparent. We try to
-                maintain customer relationships.
+                client&apos;s pleasure. Our company stands by every
+                personnel&apos;s dedication. Our working policy is transparent.
+                We try to maintain customer relationships.test
               </p>
             </div>
             <div className="col-12 col-mid-6 col-md-3">
@@ -57,7 +56,9 @@ const Footer2 = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/our-services/graphic-design">Graphic Design</Link>
+                  <Link href="/our-services/graphic-design">
+                    Graphic Design
+                  </Link>
                 </li>
                 <li>
                   <Link href="/our-services/digital-production">
@@ -87,7 +88,9 @@ const Footer2 = () => {
                   <Link href="/blog">Blog</Link>
                 </li>
                 <li>
-                  <a href="/https://calendly.com/info-bayshorecommunication/30min?back=1&month=2023-08">Appoinment</a>
+                  <a href="/https://calendly.com/info-bayshorecommunication/30min?back=1&month=2023-08">
+                    Appoinment
+                  </a>
                 </li>
                 <li>
                   <Link href="/contact">Contact</Link>

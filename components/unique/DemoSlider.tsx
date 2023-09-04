@@ -16,7 +16,6 @@ interface Settings3 {
   centerPadding: string;
   arrows: boolean;
   fade: boolean;
-  
 }
 
 interface Settings2 {
@@ -96,27 +95,39 @@ const FocusOnSelect: React.FC = () => {
           ref={(slider: Slider) => setNav2(slider)}
           {...settings2}
         >
-          <Image
-            src={slides[0]}
-            alt="trip-law"
+          <iframe
             width={1000}
             height={1000}
-            className="w-[350px] h-auto"
-          />
-          <Image
-            src={slides[1]}
-            alt="trip-law"
+            src="https://www.youtube.com/embed/rT53DKdj6dQ?si=FdY29cj8RYGALVXQ"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="w-[350px] h-[275px]"
+          ></iframe>
+
+          <iframe
             width={1000}
             height={1000}
-            className="w-[350px] h-auto"
-          />
-          <Image
-            src={slides[2]}
-            alt="trip-law"
+            src="https://www.youtube.com/embed/UuHB0efkhPE?si=RaXVJwtU0dhMc5hY"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="w-[350px] h-[275px]"
+          ></iframe>
+
+          <iframe
             width={1000}
             height={1000}
-            className="w-[350px] h-auto"
-          />
+            src="https://www.youtube.com/embed/tP-4B9MSMRU?si=6VYNZ3MjW93FPkOK"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="w-[350px] h-[275px]"
+          ></iframe>
+
           <Image
             src={slides[3]}
             alt="trip-law"
@@ -124,6 +135,7 @@ const FocusOnSelect: React.FC = () => {
             height={1000}
             className="w-[350px] h-auto"
           />
+
           <Image
             src={slides[4]}
             alt="trip-law"
@@ -190,18 +202,17 @@ const FocusOnSelect: React.FC = () => {
           {...settings3}
         >
           <BoxContent
-          title="APEX"
-          subtitle=""
+            title="APEX"
+            subtitle=""
             content="1"
             text="As an owner of Apex Advisor Group, I have been very impressed with the service provided by Bayshore. They are a professional and reliable company that offers a range of services. They are committed to enabling and empowering their clients to be as independent as possible within their community. They also have friendly and helpful teams that always go the extra mile to meet the needs and expectations of their clients. I would highly recommend Bayshore's service to anyone who is looking for a quality and compassionate care provider."
           />
           <BoxContent
-          title="Catflix"
-          subtitle=""
+            title="Catflix"
+            subtitle=""
             content="2"
             text="Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust."
           />
-         
         </Slider>
       </div>
     </>
@@ -218,7 +229,7 @@ interface demo {
 }
 const BoxContent = ({ title, subtitle, content, text }: demo) => {
   return (
-    <div className="fade-in-animation max-w-[650px] mx-auto mt-[3rem] flex flex-col items-center">
+    <div className="fade-in-animation max-w-[650px] mx-auto mt-[3rem] flex flex-col items-center translate-x-[-2rem]">
       <h3 className="heading-tertiary ">{title}</h3>
       <p className="mb-4 font-semibold">{subtitle} </p>
       <p className="text-link !text-center">
@@ -240,3 +251,11 @@ const slides: string[] = [
   "/assets/trip.png",
   "/assets/trip.png",
 ];
+
+// const slides: string[] = [
+//   "https://www.youtube.com/embed/rT53DKdj6dQ?si=FdY29cj8RYGALVXQassets/tab-1.png",
+//   "https://www.youtube.com/embed/UuHB0efkhPE?si=FSlvXQfjEAeUcFKi",
+//   "https://www.youtube.com/embed/tP-4B9MSMRU?si=JA5FRh7INcT7f6RZ",
+//   "/assets/trip.png",
+//   "/assets/trip.png",
+// ];

@@ -49,7 +49,7 @@ import "~slick-carousel/slick/slick-theme.css"; */
   @apply text-headingPrimary font-semibold text-[2rem] md:text-[2rem] lg:text-[2.4rem] mb-[1rem] text-center md:text-start;
 }
 .heading-four {
-  @apply text-headingPrimary font-semibold text-[1.6rem] lg:text-[1.8rem] leading-[1.2] text-center ;
+  @apply text-headingPrimary font-semibold text-[1.6rem] lg:text-[1.8rem] leading-[1.2] text-center;
 }
 .heading-five {
   @apply text-headingPrimary font-semibold text-[1.5rem] lg:text-[1.7rem] leading-[1.2] text-center md:text-start;
@@ -58,8 +58,6 @@ import "~slick-carousel/slick/slick-theme.css"; */
 .btn {
   @apply bg-primary text-white rounded-[10px] px-[20px] py-[6px];
 }
-
-
 
 * {
   margin: 0;
@@ -161,6 +159,15 @@ body {
   transition: all 0.6s;
 }
 .slick-current img {
+  transform: scale(1);
+}
+
+.slick-list iframe {
+  margin: 10px 0px;
+  transform: scale(0.7);
+  transition: all 0.6s;
+}
+.slick-current iframe {
   transform: scale(1);
 }
 .slick-prev:hover,
@@ -271,51 +278,50 @@ body {
   }
 }
 
-
-.service-style h1{
+.service-style h1 {
   font-weight: 800;
   font-size: 38px;
 }
-.service-style h2{
+.service-style h2 {
   font-weight: 600;
   font-size: 28px;
   padding-top: 10px;
 }
-.service-style-ind h2{
+.service-style-ind h2 {
   font-weight: 600;
   font-size: 28px;
 }
-.service-style h3{
+.service-style h3 {
   font-weight: 500;
   font-size: 22px;
   padding-top: 10px;
 }
-.service-style-ind h3{
+.service-style-ind h3 {
   font-weight: 500;
   font-size: 22px;
   padding-top: 10px;
   text-align: left !important;
 }
-.service-style p{
+.service-style p {
   font-weight: 400;
   font-size: 16px;
   padding-top: 10px;
 }
 
-.service-style-ind p{
+.service-style-ind p {
   font-weight: 400;
   font-size: 16px;
   padding-top: 10px;
   text-align: justify !important;
 }
-.service-style b{
+.service-style b {
   font-size: 18px;
   padding-top: 10px;
 }
-.service-style ul{
+.service-style ul {
   list-style: disc;
   padding-left: 30px;
 }
-.service-style li{
- padding-top: 10px !important;
+.service-style li {
+  padding-top: 10px !important;
 }

@@ -110,17 +110,22 @@ to create, engage, and convert leads. Plus, our exclusive tech-powered tools giv
       <Info />
       {/* Benefits */}
       <SectionLayout bg="bg-[#F4F4F4]">
-        <SectionHeader
-          heading=" Benefits of Choosing Us as Your Digital Marketing Agency
-          "
-          text="We offer creative solutions, data-driven strategies, and measurable results for your digital marketing needs. Choose us and grow your business online."
-        />
+        <div className="flex flex-col items-center">
+          <h2 className="heading-secondary !text-center">
+            Benefits of Choosing Us as <br /> Your Digital Marketing Agency
+          </h2>
+          <p className="text-[1.5rem] !text-center max-w-[622px] mx-auto mb-10">
+            We offer creative solutions, data-driven strategies, and measurable
+            results for your digital marketing needs. Choose us and grow your
+            business online.
+          </p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-12 gap-16 items-center">
           <div className="">
             <h3 className="heading-tertiary">
-              Get Advantage and Access to Our Tools and Expertise
+              Get Advantage and Access to <br /> Our Tools and Expertise
             </h3>
-            <p className="text-base">
+            <p className="text-[1.5rem] text-[gray]">
               Don’t settle for mediocre results. With our cutting-edge tools and
               experienced team, you can achieve your digital marketing goals
               faster and easier. No matter what kind of digital marketing
@@ -135,7 +140,7 @@ to create, engage, and convert leads. Plus, our exclusive tech-powered tools giv
               border="border-[#FFBF45]"
               percentage="w-[90%]"
               percentageVal="90%"
-              percentageValpx="left-[80%]"
+              percentageValpx="left-[84%]"
             />
             <Progress
               title="Advanced Technology"
@@ -143,7 +148,7 @@ to create, engage, and convert leads. Plus, our exclusive tech-powered tools giv
               border="border-[#3A7EEE]"
               percentage="w-[96%]"
               percentageVal="96%"
-              percentageValpx="left-[86%]"
+              percentageValpx="left-[90%]"
             />
             <Progress
               title="Industry Specific Expertise"
@@ -151,7 +156,7 @@ to create, engage, and convert leads. Plus, our exclusive tech-powered tools giv
               border="border-[#6C6C6C]"
               percentage="w-[92%]"
               percentageVal="92%"
-              percentageValpx="left-[82%]"
+              percentageValpx="left-[86%]"
             />
           </div>
         </div>

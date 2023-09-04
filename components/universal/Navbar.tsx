@@ -46,9 +46,9 @@ const Navbar = () => {
           <Image
             src="/assets/bayshore-logo.svg"
             alt="bayshore-logo"
-            width={366}
-            height={106}
-            className=" w-[16rem] h-[36px] "
+            width={400}
+            height={150}
+            className="w-[16rem] h-[36px]"
             priority
           />
         </Link>
@@ -69,8 +69,8 @@ const Navbar = () => {
               <Image
                 src="/assets/bayshore-logo.svg"
                 alt="bayshore-logo"
-                width={366}
-                height={106}
+                width={400}
+                height={150}
                 className="w-[14rem] md:w-[16rem] h-auto "
                 priority
               />
@@ -85,7 +85,7 @@ const Navbar = () => {
               {linksO.map((el: { title: string; link: string }, i: number) => (
                 <li
                   className={`text-link border-t-[0.5px] border-[rgba(0,0,0,0.16)] py-4 text-center ${
-                    pathname === el.link ? "active !text-primary" : ""
+                    pathname === el.link ? "active !text-primary font-bold" : ""
                   }`}
                   key={i}
                   onClick={toggleDrawer}
