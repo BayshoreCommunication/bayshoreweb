@@ -8,7 +8,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
-import  parser  from "html-react-parser";
+import parser from "html-react-parser";
 
 export const metadata: Metadata = {
   title: "Case-Bayshore Communication",
@@ -20,7 +20,7 @@ export let caseindv: {
   url: string;
   meta: string;
   caseImg: string;
-  logoImg:string;
+  logoImg: string;
   caseDate: string;
   writerImg: string;
   writerName: string;
@@ -32,8 +32,8 @@ caseindv = [
   {
     url: `Feline Flicks to Success Tale of Catflix and Bayshore Communications A Digital Marketing Case Study`,
     meta: ``,
-    caseImg: `office.png`,
-    logoImg:`individual-service-logo.png`,
+    caseImg: `a-digital-marketing-case-studies.jpg`,
+    logoImg: `individual-service-logo.png`,
     caseDate: ``,
     writerImg: ``,
     writerName: ``,
@@ -259,8 +259,8 @@ caseindv = [
   {
     url: `Transforming Immigration Services Triplaw's Global Success with Bayshore Communications`,
     meta: ``,
-    caseImg: `office.png`,
-    logoImg:`individual-service-logo.png`,
+    caseImg: `triplaw's-global-success-with-bayshore-communications.jpg`,
+    logoImg: `individual-service-logo.png`,
     caseDate: ``,
     writerImg: ``,
     writerName: ``,
@@ -386,44 +386,39 @@ hero = [
 const Featured = () => {
   return (
     <>
-    {caseindv.map((elem, index) => (
-      <div key={index}>
-    <div className="grid grid-cols-1 md:grid-cols-2 ">
-      
-          <div className="">
-            <Image
-              src={`/assets/case-studies/${elem.caseImg}`}
-              alt="man-working-on-office"
-              width={600}
-              height={600}
-              className="w-full h-auto"
-            />
-          </div>
-          <div className=" bg-[#F4F4F4] md:rounded-r-[20px] px-8 md:px-[10rem] py-[2rem]">
-            <div className="flex flex-col gap-[1.5rem] md:gap-[2.5rem] md:items-start items-center">
+      {caseindv.map((elem, index) => (
+        <div key={index}>
+          <div className=" bg-[#F4F4F4] grid grid-cols-1 md:grid-cols-2 items-center">
+            <div className="">
               <Image
-                src="/assets/case-studies/arm-candy.svg"
-                alt="arm-candy"
-                width={200}
-                height={100}
-                className="w-[12rem] sm:w-[15rem] md:w-[17.4rem] h-auto"
+                src={`/assets/case-studies/${elem.caseImg}`}
+                alt="man-working-on-office"
+                width={600}
+                height={600}
+                className="w-full h-auto"
               />
-              <h4 className="heading-four !text-left">
-                {elem.title}
-              </h4>
-              <p className="text-small text-cut text-cut-5">{parser(elem.desc)}</p>
+            </div>
+            <div className=" md:rounded-r-[20px] px-8 md:px-[10rem] py-[2rem]">
+              <div className="flex flex-col gap-[1.5rem] md:gap-[2.5rem] md:items-start items-center">
+                <h4 className="heading-four !text-left">{elem.title}</h4>
+                <p className="text-small text-cut text-cut-5">
+                  {parser(elem.desc)}
+                </p>
 
-              <Link href={`/case-studies/${elem.url.replace(/\s+/g, "-") // Replace spaces with dashes globally
-    .toLowerCase()}`}>
-              <button className="!text-[#565EE8] font-semibold text-small">
-                Learn more
-              </button></Link>
+                <Link
+                  href={`/case-studies/${elem.url
+                    .replace(/\s+/g, "-") // Replace spaces with dashes globally
+                    .toLowerCase()}`}
+                >
+                  <button className="!text-[#565EE8] font-semibold text-small">
+                    Learn more
+                  </button>
+                </Link>
+              </div>
             </div>
           </div>
-        
-    </div>
-    </div>
+        </div>
       ))}
-      </>
+    </>
   );
 };

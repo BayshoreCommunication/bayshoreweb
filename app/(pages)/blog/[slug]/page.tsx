@@ -83,7 +83,7 @@ const IndividualBlog = ({ params }: { params: { slug: string } }) => {
                     </div>
                   </div>
 
-                  <div className="flex-1">
+                  <div className="flex-1 ">
                     {/* <div className="bg-[url('/assets/help-banner-bg.jpg')]">
                   <h4>
                     Need <br />
@@ -94,7 +94,9 @@ const IndividualBlog = ({ params }: { params: { slug: string } }) => {
                   </p>
                   <Link href="/contact">Contact Us</Link>
                 </div> */}
-                    <BlogNavigation />
+                    <div className="sticky top-24">
+                      <BlogNavigation />
+                    </div>
                   </div>
                 </div>
               </div>

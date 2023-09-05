@@ -55,27 +55,27 @@ let bulletData: {
 }[];
 
 bulletData = [
-  {
-    title: "Package 1",
-    icon: "/assets/growth-plan/growth-plan-silver.svg",
-    price: "499",
-    points: [
-      "Website Maintenance",
-      "Google My Business",
-      "2 Blog Post",
-      "SMM(FB,IG,Twitter,LinkedIn,Pinterest)",
-      "YouTube, TikTok",
-      "Google Ads - PPC/Display",
-      "FB, Ig Lead Ads",
-      "FB, Ig Lead Ads",
-      "Graphic Design (5)",
-      "Video Editing (2)",
-      "Local SEO",
-      "Marketing Automation",
-      "Technical Support",
-      "Monthly Support",
-    ],
-  },
+  // {
+  //   title: "Package 1",
+  //   icon: "/assets/growth-plan/growth-plan-silver.svg",
+  //   price: "499",
+  //   points: [
+  //     "Website Maintenance",
+  //     "Google My Business",
+  //     "2 Blog Post",
+  //     "SMM(FB,IG,Twitter,LinkedIn,Pinterest)",
+  //     "YouTube, TikTok",
+  //     "Google Ads - PPC/Display",
+  //     "FB, Ig Lead Ads",
+  //     "FB, Ig Lead Ads",
+  //     "Graphic Design (5)",
+  //     "Video Editing (2)",
+  //     "Local SEO",
+  //     "Marketing Automation",
+  //     "Technical Support",
+  //     "Monthly Support",
+  //   ],
+  // },
   {
     title: "Package 2",
     icon: "/assets/growth-plan/growth-plan-gold.svg",

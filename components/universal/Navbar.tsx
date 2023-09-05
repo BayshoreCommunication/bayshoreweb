@@ -95,10 +95,9 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
-          <div className="center gap-[1.5rem]">
-            {/* <div className="text-[#3E7BE2]">Login</div> */}
+          {/* <div className="center gap-[1.5rem]">
             <button className="btn text-link">Portfolio</button>
-          </div>
+          </div> */}
         </nav>
       </Drawer>
 
@@ -131,10 +130,9 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="center gap-[1.5rem]">
-          {/* <div className="text-[#3E7BE2]">Login</div> */}
+        {/* <div className="center gap-[1.5rem]">
           <button className="btn text-link">Portfolio</button>
-        </div>
+        </div> */}
       </nav>
     </header>
   );

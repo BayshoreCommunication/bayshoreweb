@@ -1,4 +1,3 @@
-
 import Consultaion from "@/components/universal/Consultaion";
 import { HeroWithImage } from "@/components/universal/Hero";
 import HeroLeft from "@/components/universal/HeroLeft";
@@ -73,7 +72,7 @@ const IndividualCase = ({ params }: { params: { slug: string } }) => {
     <>
       {indvcase.map((elem, index) => (
         <div key={index}>
-          <div className="relative">
+          <div>
             <Image
               src={`/assets/case-studies/${elem.caseImg}`}
               alt="individual-blog"
@@ -82,7 +81,7 @@ const IndividualCase = ({ params }: { params: { slug: string } }) => {
               className="w-full h-auto object-cover"
             />
 
-            <div className="absolute transform left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]">
+            {/* <div className="absolute transform left-[50%] top-[50%] -translate-x-[50%] -translate-y-[50%]">
               <Image
                 src="/assets/individual-service-logo.png"
                 alt="individual-blog"
@@ -90,20 +89,23 @@ const IndividualCase = ({ params }: { params: { slug: string } }) => {
                 height={2400}
                 className="w-[493px] h-auto object-cover"
               />
-            </div>
+            </div> */}
           </div>
 
           <SectionLayout bg="">
             <div className="h-[100%] service-style">
               <div className="container">
-                <div><h1 className="heading-primary !text-center py-4">{elem.title}</h1></div>
+                <div>
+                  <h1 className="heading-primary !text-center py-4">
+                    {elem.title}
+                  </h1>
+                </div>
                 <div>{parser(elem.desc)}</div>
               </div>
-              
             </div>
           </SectionLayout>
           <AboutUs />
-              <Consultaion />
+          <Consultaion />
         </div>
       ))}
     </>

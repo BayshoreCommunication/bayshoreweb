@@ -1,5 +1,6 @@
 import Image from "next/image";
 import PackageBulletPoint from "./PackageBulletPoint";
+import Link from "next/link";
 
 const Package = ({ data }: any) => {
   return (
@@ -15,17 +16,17 @@ const Package = ({ data }: any) => {
               className="w-[9rem] h-auto"
             />
           </div> */}
-          
-            <h4 className="heading-four !text-white bg-[#fe6f1f] rounded-tr-[13px] rounded-tl-[10px] w-[50%] py-8 ">{data.title}</h4>
-          
-          
-            <p className="md:-translate-x-[80%] -translate-x-[150%]">
-              <span className="!text-primary !font-bold heading-secondary translate-x-[50%] ">
-                ${data.price}
-              </span>
-              {/* /month */}
-            </p>
-          
+
+          <h4 className="heading-four !text-white bg-[#fe6f1f] rounded-tr-[13px] rounded-tl-[10px] w-[50%] py-8 ">
+            {data.title}
+          </h4>
+
+          <p className="md:-translate-x-[80%] -translate-x-[150%]">
+            <span className="!text-primary !font-bold heading-secondary translate-x-[50%] ">
+              ${data.price}
+            </span>
+            {/* /month */}
+          </p>
         </div>
 
         <div className="mb-8 px-8 py-12 flex justify-center ">
@@ -38,9 +39,9 @@ const Package = ({ data }: any) => {
       </div>
       <div className="flex justify-center  border-t-[1px] border-[rgba(221,221,221,0.5)] pt-3">
         <div className="center !py-5">
-          <button className="btn text-small !py-6 !px-8">
+          <Link href={`/contact`} className="btn text-small !py-6 !px-8">
             Customize My Plan
-          </button>
+          </Link>
         </div>
       </div>
     </div>

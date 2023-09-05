@@ -4,13 +4,14 @@ import Parser from "html-react-parser";
 import Image from "next/image";
 import AboutUs from "@/components/universal/AboutUs";
 import Consultaion from "@/components/universal/Consultaion";
-import Hero from "@/components/universal/Hero";
+import Hero, { HeroIndividual } from "@/components/universal/Hero";
 import Info from "@/components/universal/Info";
 import ServiceTabBar from "@/components/unique/ServiceTabBar";
 import { BoostService } from "@/components/universal/Boost";
 import SectionPackage from "@/components/universal/SectionPackage";
 import ServicePrice from "@/components/unique/services/ServicePrice";
 import { useParams } from "next/navigation";
+import { log } from "console";
 
 //  Home Hero section
 let hero: {
@@ -33,16 +34,14 @@ const Page = ({ params }: { params: { service: string } }) => {
   const parameter = params.service;
   const individualService = services.filter((elem) => elem.url === parameter);
   const individualHomeTabBar = individualService.map((el) => el.homeTabBar)[0];
-  // const params=useParams()
-  // console.log("parameter ", parameter);
 
   return (
     <>
-      <Hero
-        heading={individualService.map((elem, index) => elem.topHeroLeftTitle)}
-        description={individualService.map(
-          (elem, index) => elem.topHeroLeftDescription
-        )}
+      <HeroIndividual
+        heading={individualService[0].topHeroLeftTitle}
+        description={individualService[0].topHeroLeftDescription}
+        // src={individualService.map((elem, index) => elem.heroImg)}
+        imgLink={individualService[0].heroImg}
       />
       <div>
         <Info />
@@ -52,7 +51,7 @@ const Page = ({ params }: { params: { service: string } }) => {
           <div key={index}>
             <SectionLayout bg="">
               <div className="h-[100%] service-style">
-                <div >
+                <div>
                   <>
                     <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
                       <div className="rounded-[10px] px-4 pb-16 ">
@@ -73,71 +72,65 @@ const Page = ({ params }: { params: { service: string } }) => {
                 </div>
                 <ServiceTabBar individualHomeTabBar={individualHomeTabBar} />
                 <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                {Parser(elem.description1)}
-
+                  {Parser(elem.description1)}
                 </div>
-                
+
                 <ServicePrice url={parameter} />
                 {/* <h1>check</h1> */}
 
-                <div className="!mb-8 !text-justify !md:text-left service-style-ind"> 
-
-                {Parser(elem.description2)}
+                <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                  {Parser(elem.description2)}
                 </div>
-                <div >
+                <div>
                   <BoostService
                     heading=" Need a boost for you business? Get your FREE Quote Today!"
                     btnText="Send us a proposal"
                   />
                 </div>
                 <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-
-
-                {Parser(elem.description3)}
-</div>
+                  {Parser(elem.description3)}
+                </div>
               </div>
             </SectionLayout>
             <Info />
             <SectionLayout bg="">
               <div className="h-[100%] service-style service-style-ind ">
                 <div>
-
-                <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-
-                  {Parser(elem.description4)}
+                  <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                    {Parser(elem.description4)}
                   </div>
                   <Consultaion />
                   <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                     {Parser(elem.description5)}
-                    </div>
-                    
-                    <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                  </div>
+
+                  <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                     {Parser(elem.description6)}
-                    </div>
-                    <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                  </div>
+                  <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                     {Parser(elem.description7)}
-                    </div>
-                    <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                  </div>
+                  <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                     {Parser(elem.description8)}
-                    </div>
-                    <div className="!mb-8 !text-justify !md:text-left">
+                  </div>
+                  <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description9)}
-                    </div>
-                    <div className="!mb-8 !text-justify !md:text-left">
+                  </div>
+                  <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description10)}
-                    </div>
-                    <div className="!mb-8 !text-justify !md:text-left">
+                  </div>
+                  <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description11)}
-                    </div>
-                    <div className="!mb-8 !text-justify !md:text-left">
+                  </div>
+                  <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description12)}
-                    </div>
-                    <div className="!mb-8 !text-justify !md:text-left">
+                  </div>
+                  <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description13)}
-                    </div>
-                    <div className="!mb-8 !text-justify !md:text-left">
+                  </div>
+                  <div className="!mb-8 !text-justify !md:text-left">
                     {Parser(elem.description14)}
-                    </div>
+                  </div>
                   {Parser(elem.description15)}
                 </div>
               </div>

@@ -128,21 +128,24 @@ const FocusOnSelect: React.FC = () => {
             className="w-[350px] h-[275px]"
           ></iframe>
 
-          <Image
-            src={slides[3]}
-            alt="trip-law"
+          <iframe
             width={1000}
             height={1000}
-            className="w-[350px] h-auto"
-          />
+            src="https://www.youtube.com/embed/UuHB0efkhPE?si=RaXVJwtU0dhMc5hY"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="w-[350px] h-[275px]"
+          ></iframe>
 
-          <Image
+          {/* <Image
             src={slides[4]}
             alt="trip-law"
             width={1000}
             height={1000}
             className="w-[350px] h-auto"
-          />
+          /> */}
         </Slider>
       </div>
       <div className="testimonial-slider max-w-[470px] mx-auto ">
@@ -180,14 +183,6 @@ const FocusOnSelect: React.FC = () => {
             <Image
               alt="test"
               src="/assets/dot-3.png"
-              height={120}
-              width={120}
-            />
-          </div>
-          <div>
-            <Image
-              alt="test"
-              src="/assets/dot-4.png"
               height={120}
               width={120}
             />
