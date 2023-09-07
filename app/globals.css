@@ -325,3 +325,7 @@ body {
 .service-style li {
   padding-top: 10px !important;
 }
+
+.swal2-popup {
+  font-size: 1.6rem;
+}

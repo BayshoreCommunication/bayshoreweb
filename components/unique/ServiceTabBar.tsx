@@ -16,7 +16,7 @@ const ServiceTabBar = (individualHomeTabBar: individualHomeTabBarType) => {
   return (
     <>
       <div className="py-8">
-        <div className="flex justify-between items-center rounded-[10px] custom-shadow px-[1rem] sm:px-[4rem] md:px-[11rem] py-[1.6rem] gap-2">
+        <div className="flex justify-between items-center rounded-[10px] custom-shadow px-[1rem] sm:px-[2rem] md:px-[2rem] py-[1.6rem] gap-4">
           {services.map((service, index) => (
             <button
               className={`flex flex-col items-center  py-4 px-2 md:px-8 rounded-[10px] cursor-pointer ${
