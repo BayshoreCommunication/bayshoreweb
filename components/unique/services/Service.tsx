@@ -23,6 +23,7 @@ export let services: {
   readMoreDesc: string;
   url: string;
   heroImg: string;
+  secondHeroImg: string;
   shortTitle: string;
   title: string;
   shortDescription: string;
@@ -56,6 +57,7 @@ services = [
     readMoreDesc: `At Bayshore's website design service, you can enhance your online image with our professional and affordable web design solutions. We create custom websites that are attractive, highly secured, user-friendly, SEO-ready, and most importantly professionally styled. Whether you need a simple landing page or a complex e-commerce site, our expert developers can provide your need. `,
     url: "website-design",
     heroImg: "/assets/our-service/website-design.png",
+    secondHeroImg: "/assets/service/website-design-service.jpg",
     title: "Excellence and Innovation in Website Design",
     shortTitle: "Website Design",
     shortDescription: `Your website is the face of your business online, and it can make or break your reputation, credibility, and sales. That’s why you need a website design service that can create a stunning and effective website for your business. At Bayshore Communications, we offer you the best website design service that combines captivating designs, user-friendly interfaces, and cutting-edge techniques to enhance your online presence and performance.`,
@@ -343,6 +345,7 @@ services = [
     readMoreDesc: `We generate Native Mobile Applications, Cross-Platform Native Mobile Applications, Hybrid Mobile Applications, Progressive Web Applications. We use several functionality tools for development- applying automation, add cloud services, open source tools, testing. We create a prototype of a website for visualizing our clients and use.`,
     url: "mobile-app",
     heroImg: "/assets/our-service/mobile-app-development.png",
+    secondHeroImg: "/assets/service/Your-Gateway-to-the-Mobile-World.jpg",
     title: "Your Gateway to the Mobile World",
     shortTitle: "Mobile App",
     shortDescription: `Imagine a world where your brand's presence is always just a tap away, customer engagement is at the highest level, and business opportunities flourish effortlessly. With Bayshore Mobile App service, we are here to transform your vision into reality, reining the immense power of mobile technology to elevate your business to new heights. Whether you're a small startup with big dreams or an established enterprise seeking to expand your digital footprint, our team of skilled developers, designers, and marketers will work tirelessly to create a mobile app that reflects the unique essence of your brand. `,
@@ -645,7 +648,8 @@ services = [
     readMoreDesc: `We provide both local and international search optimization for SEO services, assisting you in improving your search engine ranking and attracting more organic visitors from your intended market. We can help you with keywords, link building, citations, online reputation management, online reviews, structure, technical elements, and website’s content optimization.`,
     url: "seo-service",
     heroImg: "/assets/our-service/seo-service.png",
-
+    secondHeroImg:
+      "/assets/service/Vital-Role-of-SEO-for-Fueling-Growth-in-the-Digital-Landscape.jpg",
     title: "Vital Role of SEO for Fueling Growth in the Digital Landscape",
     shortTitle: "SEO",
     shortDescription: `In the current era of intense online competition, everyone wants to maximize their website's potential, and this can only be possible through SEO which has become absolutely crucial. SEO, short for search engine optimization, involves refining your overall online presence to secure higher rankings on search engines and draw in targeted traffic. By doing so, you can effectively connect with your desired audience, enhance brand recognition, and foster substantial online growth for your business.
@@ -990,6 +994,7 @@ services = [
     readMoreDesc: `Standard, user-friendly, and functional interfaces are created by our UX/UI design specialists. We can assist you with creating your website, app, or software's graphical user interface (GUI) and user experience (UX). Along with branding, usability testing, and prototyping, we can assist you.`,
     url: "ui-ux-design",
     heroImg: "/assets/our-service/ui-ux-design.png",
+    secondHeroImg: "/assets/service/User-Research-and-Persona-Development.jpg",
     title: "User Research and Persona Development",
     shortTitle: "UI/UX Design",
     shortDescription: `The development of persona and user research are crucial elements in the user experience and interface design process. It helps to understand your users' identities, what they actually require, and how they respond to your service or product. Therefore, the Bayshore team uses different tactics and technologies to help you comprehend their needs and create target user personas.`,
@@ -1274,6 +1279,7 @@ services = [
     readMoreDesc: `Boost your brand's visibility with our paid advertising services. Get instant access to small, text-based or product-based ads, providing consumers with brand insights, prices, and reviews. With our expert team, we strategically design ads like social media, display, native, and mobile ads to match your brand identity, performing A/B testing for optimal results.`,
     url: "paid-advertising",
     heroImg: "/assets/our-service/paid-advertising-service.png",
+    secondHeroImg: "/assets/service/Customized-Paid-Advertising-Strategies.jpg",
     title: "Customized Paid Advertising Strategies",
     shortTitle: "Paid Advertising",
     shortDescription: `At Bayshore Communication, we know that every business is different and has its own unique goals and challenges. That’s why we don’t offer generic solutions, but rather customized paid advertising strategies that match your specific needs and objectives. Whether your goal is to raise brand recognition, produce more leads, enhance conversions, or keep repeat customers, we can help you create and execute a plan that works for you.`,
@@ -1459,6 +1465,7 @@ services = [
     readMoreDesc: `On well-known sites like Facebook, Twitter, Instagram, and YouTube, we provide social media advertising services to assist you in connecting with your target audience. Also evaluate your existing SMM strategy, including creation of content, social media promotion, and analytics, to assist businesses in raising their profile, attracting consumers, and enhancing their bottom line.`,
     url: "social-media-marketing",
     heroImg: "/assets/service/Social-Media-Marketing.jpg",
+    secondHeroImg: "/assets/service/Social-Media-Marketing.jpg",
     title:
       "Boost Your Business with Expert Social Media Marketing and Management Services",
     shortTitle: "Social Media Marketing",
@@ -1770,6 +1777,7 @@ services = [
     readMoreDesc: `Email marketing is a method of reaching out to your clients and prospects via email. In addition to engaging them with worthwhile content and offers, our support team will assist you in keeping them informed about your most recent products, special offers, and other services. Lead generation and connection development are two things that email advertising may help you with.`,
     url: "email-marketing",
     heroImg: "/assets/service/Customized-Email-Marketing-Strategy.jpg",
+    secondHeroImg: "/assets/service/Customized-Email-Marketing-Strategy.jpg",
     title: "Customized Email Marketing Strategy",
     shortTitle: "Email Marketing",
     shortDescription: `We can adapt our email marketing plan to promote business growth by understanding each business entity's unique ambitions, target demography, and brand identity. We employ a customized strategy, integrating deep research with market dynamics to create tailored plans that achieve exceptional outcomes. Our systematic approach translates raw data into tailored advertisements that encourage connections and brand loyalty. Our commitment to personalized email strategies is more than just a service; Let’s see how we create personalized email strategies through in-depth analysis and personalized marketing plans.`,
@@ -2041,6 +2049,7 @@ services = [
     readMoreDesc: `By offering cutting-edge marketing automation solutions, we will completely transform your company. With the help of our experience, we simplify your marketing initiatives, saving you time and enhancing your output. We use automation to boost your growth through anything from customized advertising to lead follow-up.`,
     url: "marketing-automation",
     heroImg: "/assets/service/Marketing-Automation-Approach.jpg",
+    secondHeroImg: "/assets/service/Marketing-Automation-Approach.jpg",
     title: "Bayshore Marketing Automation Approach",
     shortTitle: "Marketing Automation",
     shortDescription: `Marketing automation is the practice of automating and maximizing different marketing operations and campaigns using software and technology. It may improve your efficiency, effectiveness, and ROI (return on investment), as well as assist you to save time, money, and resources. However, marketing automation is not a one-size-fits-all solution. It necessitates a customized approach that fits your target market, business objectives, and marketing platforms. Because of this, we, Bayshore Communication, provide a tailored marketing automation strategy that fits your unique requirements and preferences.`,
@@ -2258,6 +2267,7 @@ services = [
     readMoreDesc: `Our team of specialists produces targeted, appealing content that engages your target market, boosts organic traffic, and produces profitable referrals. We create fascinating narratives that enhance the story of your brand in anything from blog articles to social media campaigns.`,
     url: "content-marketing",
     heroImg: "/assets/service/Content-Strategy-Development.jpg",
+    secondHeroImg: "/assets/service/Content-Strategy-Development.jpg",
     title: "Content Strategy Development",
     shortTitle: "Content Marketing",
     shortDescription: `We recognize that a solid content strategy is the foundation of a successful content marketing campaign. Our skilled staff collaborates with you to create a comprehensive content strategy that is perfectly customized to your objectives. This collaboration ensures that each crafted piece of content has a specific purpose and has a substantial impact. We ensure a perfect combination that resonates powerfully and propels your content marketing strategy to thunderous success by connecting our skills with your objectives. Let me paint the picture more gracefully,`,
@@ -2552,6 +2562,7 @@ services = [
     readMoreDesc: `We craft captivating and informative content for various goals and audiences. Whether you want to attract more visitors to your blog, website, newsletter, social media, or any other channel, we can assist you. We have a team of expert content writers who can deliver top-notch content for your business requirements.`,
     url: "content-writing",
     heroImg: "/assets/service/Blog-Writing-Services.jpg",
+    secondHeroImg: "/assets/service/Blog-Writing-Services.jpg",
     title: "Blog Writing Services",
     shortTitle: "Content Writing",
     shortDescription:
@@ -2812,6 +2823,7 @@ services = [
     readMoreDesc: `Digital production is an asset of creative ideas. Our team conducts creativity and data with empathy. We pay extreme attention to detail online content management. We work together-designer, developers, and content creators to make sure that everything assures quality. Through Customer experiences, we produce meaningful narratives.`,
     url: "digital-pr",
     heroImg: "/assets/service/Online-Reputation-Management.jpg",
+    secondHeroImg: "/assets/service/Online-Reputation-Management.jpg",
     title: "Online Reputation Management",
     shortTitle: "Digital PR",
     shortDescription: `Bayshore Communication is your unwavering partner in meticulously monitoring, enhancing, and fortifying your brand's online status in the ever-changing digital scene, thanks to our expert Online Reputation Management services. This section provides an in-depth examination of our meticulously crafted tactics and proficient procedures, which are designed to expertly navigate the difficult path of online reputation management. By organizing your digital interactions, we create a strong and positive brand image. With our assistance, your brand's reputation will not only survive, but thrive, providing a solid foundation for long-term success.`,
@@ -3244,7 +3256,7 @@ services = [
     readMoreDesc: `We take action in artistic advertisements, Eye-grabbing websites, stunning product labels & logos. Establish your visual identity through graphic design. Reflects the values and objectives of the business. In all forms of commercial communication, including ads and websites. Bayshore design delivers effective and appealing compositions.`,
     url: "graphic-design",
     heroImg: "/assets/service/Logo-Design-Services.jpg",
-
+    secondHeroImg: "/assets/service/Logo-Design-Services.jpg",
     title: "Logo Design Services",
     shortTitle: "Graphic Design",
     shortDescription: `Logo design arises as a vital cornerstone within the world of graphic design, transcending aesthetics to become a conduit for enduring impressions. It orchestrates a visual symphony that resonates, crafting an indelible tapestry within the corridors of clients' brains through a harmonic blend of shapes, colors, and symbolism. It captures the essence of your brand, triggers emotions and associations, and goes beyond basic representation. Let’s explore new ways to enhance its attractiveness and carve a memory that will outlast the passage of time.`,
@@ -3469,6 +3481,7 @@ services = [
     readMoreDesc: `Motion graphics are animated images that tell a story or express a message via movement, sound, and visual effects. Motion graphics have many uses, including branding, teaching, entertainment, and advertising. We can assist you in producing beautiful and useful motion graphics for your professional or non-profit endeavors.`,
     url: "motion-graphic",
     heroImg: "/assets/service/Concept-Development.jpg",
+    secondHeroImg: "/assets/service/Concept-Development.jpg",
     title: "Concept Development",
     shortTitle: "Motion Graphic",
     shortDescription: `We believe that good motion graphics begin with a clear understanding of your objectives and target audience. We shape motion graphics that eloquently deliver your message, resonating emotionally with your viewers, by thoroughly understanding your objectives. We create visually appealing storytelling that transcends screens, leaving an enduring impact and igniting continuous engagement through a mix of our creative expertise and your vision. Let’s see how our collaborative approach guarantees that the motion graphics we produce not only meet, but surpass, your expectations.`,
@@ -3773,6 +3786,8 @@ services = [
     url: "video-production",
     heroImg:
       "/assets/service/Concept-Development-Unleash-Your-Brand's-Potential.jpg",
+    secondHeroImg:
+      "/assets/service/Concept-Development-Unleash-Your-Brand's-Potential.jpg",
 
     title: "Concept Development: Unleash Your Brand's Potential",
     shortTitle: "Video Production",
@@ -4062,6 +4077,7 @@ services = [
     readMoreDesc: `Influencers are modern-day powerhouses, revered for their vast following and remarkable influence over their dedicated fans. Brands and influencers are seamlessly merged in this innovative marketing approach to create an irresistible force. Our team of professionals can assist you in achieving your objectives of increasing ROI, increasing site traffic, and increasing sales.`,
     url: "influencer-marketing",
     heroImg: "/assets/service/website-design-service.jpg",
+    secondHeroImg: "/assets/service/website-design-service.jpg",
     title: "Strategic Development of Influencer Initiatives",
     shortTitle: "Influencer Marketing",
     shortDescription: `Creating a strong and impactful influencer strategy is the foundation for propelling your brand's careful expansion. At our core, we excel at meticulously crafting comprehensive influencer blueprints that seamlessly align with your brand's distinct requirements. Our proven expertise lies in adeptly uncovering victories by ingeniously designing custom influencer campaigns and flawlessly executing strategic maneuvers that deeply and meaningfully resonate with your discerning target demographic. Now, let's get into the specifics of how our meticulous approach can ingeniously propel your brand to unprecedented heights.`,

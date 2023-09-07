@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname, useSearchParams } from "next/navigation";
-import React, { useEffect, useRef, useState } from "react";
+import { usePathname } from "next/navigation";
 // import component 👇
 import Drawer from "react-modern-drawer";
 
@@ -11,6 +10,7 @@ import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrFormClose } from "react-icons/gr";
+import { useState } from "react";
 
 let linksO: {
   title: string;
@@ -29,8 +29,9 @@ linksO = [
 
 const Navbar = () => {
   const pathname = usePathname();
+  const splitPath = `/${pathname.split("/")[1]}`;
 
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
     setIsOpen((prevState) => !prevState);
     if (!isOpen) document.documentElement.style.overflow = "hidden";
@@ -85,7 +86,9 @@ const Navbar = () => {
               {linksO.map((el: { title: string; link: string }, i: number) => (
                 <li
                   className={`text-link border-t-[0.5px] border-[rgba(0,0,0,0.16)] py-4 text-center ${
-                    pathname === el.link ? "active !text-primary font-bold" : ""
+                    splitPath === el.link
+                      ? "active !text-primary font-bold"
+                      : ""
                   }`}
                   key={i}
                   onClick={toggleDrawer}
@@ -121,7 +124,7 @@ const Navbar = () => {
             {linksO.map((el: { title: string; link: string }, i: number) => (
               <li
                 className={`text-link ${
-                  pathname === el.link ? "active !text-primary" : ""
+                  splitPath === el.link ? "active !text-primary" : ""
                 }`}
                 key={i}
               >

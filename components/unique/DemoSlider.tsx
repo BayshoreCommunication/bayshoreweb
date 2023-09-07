@@ -138,14 +138,6 @@ const FocusOnSelect: React.FC = () => {
             allowFullScreen
             className="w-[350px] h-[275px]"
           ></iframe>
-
-          {/* <Image
-            src={slides[4]}
-            alt="trip-law"
-            width={1000}
-            height={1000}
-            className="w-[350px] h-auto"
-          /> */}
         </Slider>
       </div>
       <div className="testimonial-slider max-w-[470px] mx-auto ">
@@ -158,33 +150,37 @@ const FocusOnSelect: React.FC = () => {
           <div className="">
             <Image
               alt="test"
-              src="/assets/dot-0.png"
+              src="/assets/about/Trip.jpg"
               height={120}
               width={120}
+              className="rounded-full"
             />
           </div>
           <div>
             <Image
               alt="test"
-              src="/assets/dot-1.png"
+              src="/assets/about/Carlos.jpg"
               height={120}
               width={120}
+              className="rounded-full"
             />
           </div>
           <div>
             <Image
               alt="test"
-              src="/assets/dot-2.png"
+              src="/assets/about/Cris.jpg"
               height={120}
               width={120}
+              className="rounded-full"
             />
           </div>
           <div>
             <Image
               alt="test"
-              src="/assets/dot-3.png"
+              src="/assets/about/Carlos.jpg"
               height={120}
               width={120}
+              className="rounded-full"
             />
           </div>
         </Slider>
@@ -207,6 +203,18 @@ const FocusOnSelect: React.FC = () => {
             subtitle=""
             content="2"
             text="Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust."
+          />
+          <BoxContent
+            title="Catflix"
+            subtitle=""
+            content="2"
+            text="Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust."
+          />
+          <BoxContent
+            title="APEX"
+            subtitle=""
+            content="1"
+            text="As an owner of Apex Advisor Group, I have been very impressed with the service provided by Bayshore. They are a professional and reliable company that offers a range of services. They are committed to enabling and empowering their clients to be as independent as possible within their community. They also have friendly and helpful teams that always go the extra mile to meet the needs and expectations of their clients. I would highly recommend Bayshore's service to anyone who is looking for a quality and compassionate care provider."
           />
         </Slider>
       </div>

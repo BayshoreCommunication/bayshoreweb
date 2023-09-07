@@ -60,7 +60,7 @@ const Page = ({ params }: { params: { service: string } }) => {
                       </div>
                       <div className="row-start-1 md:col-start-2">
                         <Image
-                          src={elem.heroImg}
+                          src={elem.secondHeroImg}
                           alt="tab-1"
                           width={400}
                           height={400}
