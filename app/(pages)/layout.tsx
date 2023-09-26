@@ -1,5 +1,3 @@
-"use client";
-
 import Footer from "@/components/universal/Footer";
 import Navbar from "@/components/universal/Navbar";
 import ModalPopup from "@/components/universal/PopUp/ModalPopUp";
@@ -9,7 +7,7 @@ const layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Navbar />
-      <ModalPopup />
+      {/* <ModalPopup /> */}
       <div className="mt-[72px]">{children}</div>
       <Footer />
     </>

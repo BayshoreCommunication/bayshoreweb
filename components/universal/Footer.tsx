@@ -146,9 +146,4 @@ const Footer = () => {
 
 export default Footer;
 
-const text: string = `Our performance, client satisfaction. Our main objective is
-client’s pleasure. Our company stands by every personnel's
-dedication. Our working policy is transparent. We try to maintain
-customer Our performance, client satisfaction. Our main objective
-is client’s pleasure. Our company stands by every personnel's
-dedication. Our working policy is transparent. We try to maintain customer relationships.`;
+const text: string = `We deliver quality projects, focus on client satisfaction and customized solutions. Our track record prides best-in-industry expertise and reliability. We have proudly and successfully served over 70+ amazing clients, launched 220+ websites, generated 500k leads since we started our journey in 2016. `;

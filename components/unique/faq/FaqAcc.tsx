@@ -31,7 +31,6 @@ faq = [
     description: `We have worked with clients from diverse industries, including e-commerce, healthcare, finance, education, technology, and more. Our versatile experience allows us to tailor our solutions to meet the specific needs of any industry.
     `,
   },
-  
   {
     heading: ` How do you ensure the security of sensitive data in software development?
     `,
@@ -50,33 +49,20 @@ faq = [
     description: `We utilize a combination of key performance indicators (KPIs) tailored to each campaign's objectives. These may include metrics such as website traffic, conversion rates, click-through rates (CTR), engagement on social media platforms, and return on investment (ROI).`,
   },
   {
-    heading: `What technologies do you use for software development?
-
-    `,
-    description: `We stay updated with the latest technologies and frameworks to provide cutting-edge solutions. Our tech stack includes but is not limited to languages like Python, JavaScript, frameworks like React and Angular, and databases like MySQL and MongoDB.
-    `,
+    heading: `What technologies do you use for software development?`,
+    description: `We stay updated with the latest technologies and frameworks to provide cutting-edge solutions. Our tech stack includes but is not limited to languages like Python, JavaScript, frameworks like React and Angular, and databases like MySQL and MongoDB.`,
   },
   {
-    heading: `How do you ensure effective communication throughout a project?
-
-    `,
-    description: `We prioritize communication to keep clients involved at every stage. We assign dedicated project managers to ensure timely updates, regular meetings, and a transparent flow of information between our team and the client.
-    `,
+    heading: `How do you ensure effective communication throughout a project?`,
+    description: `We prioritize communication to keep clients involved at every stage. We assign dedicated project managers to ensure timely updates, regular meetings, and a transparent flow of information between our team and the client.`,
   },
   {
-    heading: `Can you redesign an existing application or website?
-
-    `,
-    description: `Certainly. We offer redesign and rebranding services to give your existing application or website a fresh and modern look. This process can involve improving user experience, updating visuals, and enhancing functionality.
-    `,
+    heading: `Can you redesign an existing application or website?`,
+    description: `Certainly. We offer redesign and rebranding services to give your existing application or website a fresh and modern look. This process can involve improving user experience, updating visuals, and enhancing functionality.`,
   },
   {
-    heading: `What sets your company apart from competitors?
-
-
-    `,
-    description: `Our company stands out due to our comprehensive approach that combines both digital marketing and software development expertise. This integrated approach allows us to create holistic solutions that align with our clients' business goals and drive exceptional results.
-    `,
+    heading: `What sets your company apart from competitors?`,
+    description: `Our company stands out due to our comprehensive approach that combines both digital marketing and software development expertise. This integrated approach allows us to create holistic solutions that align with our clients' business goals and drive exceptional results.`,
   },
 ];
 
@@ -86,7 +72,6 @@ const AccordionCus = ({ title }: any) => {
       <h4 className="heading-four bg-[#F5F5F5] rounded-[10px] p-4 flex items-center gap-2 px-8">
         {title}
       </h4>
-
       <Example arr={faq} />
     </div>
   );
@@ -122,7 +107,6 @@ export function Example({ arr }: any) {
     <Fragment>
       {arr.map((el: any, i: number) => (
         <Accordion
-        
           key={el}
           open={open === i + 1}
           icon={<Icon id={1 + i} open={open} />}

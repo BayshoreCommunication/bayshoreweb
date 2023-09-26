@@ -8,7 +8,7 @@ interface con {
 
 const Box: React.FC<con> = ({ content }) => {
   return (
-    <div className="flex gap-2 md:gap-4 my-[1rem] md:my-[1.5rem]">
+    <div className="flex gap-1 md:gap-2 my-[1rem] md:my-[1.5rem]">
       <Image
         src="/assets/mark.svg"
         alt="marking"
@@ -16,18 +16,12 @@ const Box: React.FC<con> = ({ content }) => {
         height={50}
         className="w-[2rem] h-[2rem]"
       />
-      {/* <Link
-        href={`/our-services/`}
-        className="underline !text-[#207DE9] text-[12px] md:text-[14px]"
+      <Link
+        href="/#"
+        className="hover:underline underline-offset-[3px] !text-[#207DE9] text-[12px] md:text-[14px]"
       >
-        {content} hh
-      </Link> */}
-      <div
-       
-        className="underline !text-[#207DE9] text-[12px] md:text-[14px]"
-      >
-        {content} 
-      </div>
+        {content}
+      </Link>
     </div>
   );
 };
@@ -42,9 +36,9 @@ const HomeServiceCard: React.FC<box> = ({ title, imgLink, box }) => {
   return (
     <div className="border-2 border-[#DBDBDB]  rounded-[10px] px-[3rem] py-[2rem]">
       <div className="flex justify-between items-center">
-        <h3 className="heading-tertiary !text-[#222] text-cut text-cut-1 !text-start">
+        <h4 className="heading-tertiary !text-[#222] text-cut text-cut-1 !text-start">
           {title}
-        </h3>
+        </h4>
         <div>
           <Image
             src={imgLink}
@@ -55,7 +49,7 @@ const HomeServiceCard: React.FC<box> = ({ title, imgLink, box }) => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-2 gap-x-3 md:gap-4 md:gap-y-[2rem] lg:gap-8 mt-8">
+      <div className="grid grid-cols-2 gap-x-1 md:gap-4 md:gap-y-2 lg:gap-1 mt-2">
         {box.map((el: string, i: number) => (
           <Box key={i} content={el} />
         ))}

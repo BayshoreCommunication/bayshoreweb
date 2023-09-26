@@ -20,7 +20,7 @@ const page = () => {
           Troubleshooting SWOP
         </h4> */}
 
-        <AccordionCus  />
+        <AccordionCus />
         {/* <AccordionCus title="Compatibility" />
         <AccordionCus title="Shipping" /> */}
       </SectionLayout>

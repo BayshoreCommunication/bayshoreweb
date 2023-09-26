@@ -13,28 +13,31 @@ const tabs: Tab[] = [
   {
     label: (
       <>
-        Expertise <br /> an Experience
+        Growth <br /> Marketing
       </>
     ),
     content: (
       <>
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
           <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16">
-            <h3 className="heading-tertiary ">Domain Specific Talents </h3>
+            <h3 className="heading-tertiary">Growth Marketing</h3>
             <p className="text-base">
-              {`   Bayshore's expert teams can create engaging and responsive
-                websites and apps, design stunning and visually appealing
-                graphics, produce expert and captivating videos, create compelling
-                and pertinent content, and optimize your site for search engines
-                and revenues. They can also use influential and real voices to
-                advance your brand. With the help of Bayshore, You may grow your
-                company and accomplish your digital marketing objectives.
-                `}
+              As business competition increases year after year, a strong online
+              presence along with growth marketing and strategic planning
+              becomes essential to outpace competitors. Our Growth Marketing
+              services can turbocharge your brand visibility, engagement, and
+              growth. We're a team of experts in SEO, Paid Ads, Social Media,
+              Email Marketing, Content that actually makes sense, Digital PR
+              (yep, we know people), smart Automation, and even the cool world
+              of Influencers. All these fancy terms aside, what we really do is
+              make YOUR Business bigger and better in today's digital age.In
+              short, we're here to get your brand where you want it to be. No
+              fluff, just results.
             </p>
           </div>
           <div className="row-start-1 md:col-start-2">
             <Image
-              src="/assets/service/expertise-an-the-experience.jpg"
+              src="/assets/service/growth-marketing.jpg"
               alt="tab-1"
               width={400}
               height={400}
@@ -48,29 +51,35 @@ const tabs: Tab[] = [
     activeLink: "/assets/expertise-active.svg",
   },
   {
-    label: "Focus on Results",
+    label: (
+      <>
+        Software Solution <br />
+        and Development
+      </>
+    ),
     content: (
       <>
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
           <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16">
-            <h3 className="heading-tertiary">Only Numbers Speaks</h3>
+            <h3 className="heading-tertiary">
+              Software Solution and Development
+            </h3>
             <p className="text-base">
-              {`
-               Bayshore prioritizes measurable outcomes. The outcomes we achieve
-               from our clients' ensure success. To evaluate the efficacy, we use
-               statistics and key performance indicators. We offer insightful
-               data by measuring conversions, traffic, and other analytics. Our
-               team analyzes data, identifies patterns, and makes wise judgments
-               for better marketing success. Transparency and regular updates
-               guarantee you see progress. With Bayshore, experience the power of
-               data-driven digital marketing and let the numbers speak for
-               themselves.
-              `}
+              Meet your tech team at Bayshore Communication. When it comes to
+              Web or Software Solutions and Development, we're all about turning
+              your ideas into reality. Whether you want to make Android and IOS
+              Apps, build eye-catching websites, create seamless ecommerce
+              experiences, or even develop cutting-edge SaaS solutions, we have
+              the skills and experience to do it. We ensure your project stays
+              current, provide visually stunning designs, and conduct thorough
+              testing to guarantee flawless performance. We don't just develop,
+              we excel in innovation. Join us on your innovation journey with
+              Bayshore.
             </p>
           </div>
           <div className="row-start-1 md:col-start-2">
             <Image
-              src="/assets/service/focus-on-the-result.jpg"
+              src="/assets/service/design-development.jpg"
               alt="tab-1"
               width={400}
               height={400}
@@ -86,32 +95,30 @@ const tabs: Tab[] = [
   {
     label: (
       <>
-        Access to Advanced <br /> Tools and Technologies
+        Offshore <br /> Office
       </>
     ),
     content: (
       <>
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
           <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16">
-            <h3 className="heading-tertiary">{`Industry's Best Tools`}</h3>
+            <h3 className="heading-tertiary">Offshore Office</h3>
             <p className="text-base">
-              {`
-                Our Bayshore team develops and manages your digital marketing
-                strategies using the most leading-edge and potent techniques and
-                technologies. In order to design, develop, track performance, and
-                enhance your footprint in the digital world, we use powerful
-                analytics tools, marketing automation software, other management
-                tools, and platforms. This allows us to stay ahead of the curve.
-                With our assistance, you may make use of our access to
-                cutting-edge equipment and technology, giving you a competitive
-                advantage.
-                
-                `}
+              Bayshore’s Offshore Office supports are all about helping you to
+              expand your business with your own efficient expert team, all
+              staying cost-effective. We offer dedicated teams for various tasks
+              like development, marketing, bookkeeping, finance, design,
+              customer service, virtual assistance, project management, and CRM
+              support. Our goal? Boost your efficiency and save you money. With
+              our help, you can expand your operations without the usual high
+              costs, keeping you ahead of the competition. Say hello to a more
+              streamlined, cost effective way of working with Bayshore
+              Communication.
             </p>
           </div>
           <div className="row-start-1 md:col-start-2">
             <Image
-              src="/assets/service/access-to-the-advanced-tools-and-technologies.jpg"
+              src="/assets/service/offshore-office.jpg"
               alt="tab-1"
               width={400}
               height={400}
@@ -125,29 +132,33 @@ const tabs: Tab[] = [
     activeLink: "/assets/tools-active.svg",
   },
   {
-    label: "Time and Cost Efficiency",
+    label: (
+      <>
+        Content <br />
+        Development
+      </>
+    ),
     content: (
       <>
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
           <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16">
-            <h3 className="heading-tertiary">Ignore AB Testing</h3>
+            <h3 className="heading-tertiary">Content Development</h3>
             <p className="text-base">
-              {`
-                At Bayshore, we prioritize time and cost efficiency, and that's
-                why we go beyond traditional AB testing. We furnish our expertise
-                and data-directed insights to implement strategies that deliver
-                optimal results right from the start. Our experienced team applies
-                proven methodologies and industry best practices to save you
-                valuable time and resources. By avoiding lengthy and costly
-                processes like split or bucket testing, we focus on implementing
-                effective strategies that maximize your ROI and accelerate your
-                digital marketing success.
-                `}
+              Enhancing brand visibility relies on audience engagement, and the
+              key to achieving that is creative content. For that, Bayshore
+              Communication is your ultimate creative content powerhouse. We
+              offer diverse content development services, such as writing
+              engaging articles, designing eye-catching social media posts, and
+              making attention-grabbing videos. We bring your products to life
+              with outstanding 3D visualization and captivating TVC/Ad creative
+              ideas. Also, we are your behind-the-scenes experts, helping you
+              set the stage for memorable video productions. We turn your vision
+              into irresistible content that leaves lasting impressions.
             </p>
           </div>
           <div className="row-start-1 md:col-start-2">
             <Image
-              src="/assets/service/time-and-the-cost-efficiency.jpg"
+              src="/assets/service/content-development.jpg"
               alt="tab-1"
               width={400}
               height={400}
@@ -171,7 +182,7 @@ export default function HomeTabBar() {
         {tabs.map((tab, index) => (
           <button
             className={`flex flex-col items-center  py-4 px-2 md:px-8 rounded-[10px] cursor-pointer ${
-              activeTab === index ? "custom-shadow " : ""
+              activeTab === index ? "custom-shadow" : ""
             }`}
             key={index}
             onClick={() => setActiveTab(index)}

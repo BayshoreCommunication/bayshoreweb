@@ -15,7 +15,6 @@ import SectionHeader from "@/components/universal/SectionHeader";
 import SectionLayout from "@/components/universal/SectionLayout";
 import { Metadata } from "next";
 import Image from "next/image";
-import { AiOutlineRight } from "react-icons/ai";
 
 export const metadata: Metadata = {
   title: "Bayshore Communication",
@@ -57,8 +56,8 @@ const page = () => {
       {/* Tailored */}
       <SectionLayout bg="">
         <SectionHeader
-          heading="Tailored marketing solutions for your unique needs"
-          text="  We deliver results that exceed your expectations, marketing needs,
+          heading="Tailored business solutions for your unique needs"
+          text="We deliver results that exceed your expectations, marketing needs,
             goals and fits your budget. Our expertise, creativity, and passion
             will make your business shine."
         />
@@ -70,37 +69,35 @@ const page = () => {
       {/* Boost */}
 
       <Boost
-        heading=" Need a boost for you business? Get your FREE Quote Today!"
+        heading="Need a boost for you business? Get your FREE Quote Today!"
         btnText="Send us a proposal"
       />
       {/* Campaigns */}
       <SectionLayout bg="">
         <SectionHeader
           heading="Drive results through innovative digital marketing campaigns"
-          text="Enhance your online presence and reach more customers with Bayshore Communication.
-We provides an extensive digital marketing services that work in synergy 
-to create, engage, and convert leads. Plus, our exclusive tech-powered tools give you an edge over the competition."
+          text="Enhance your online presence and reach more customers with Bayshore Communication. We provides an extensive digital marketing services that work in synergy to create, engage, and convert leads. Plus, our exclusive tech-powered tools give you an edge over the competition."
         />
         <div className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2  mb-8 gap-8 lg:gap-[5rem] px-2 sm:px-[10vw] md:px-0 justify-between ">
             <HomeServiceCard
               imgLink="/assets/web.svg"
-              title="Grow Website Organic Traffic"
+              title="Growth marketing"
               box={Box1}
             />
             <HomeServiceCard
               imgLink="/assets/data.svg"
-              title="Targeted Data-Driven ad campaigns"
+              title="Software solution and development"
               box={Box2}
             />
             <HomeServiceCard
               imgLink="/assets/analytics.svg"
-              title="Tracking, Measure and Management "
+              title="Offshore Office"
               box={Box3}
             />
             <HomeServiceCard
               imgLink="/assets/note.svg"
-              title="Improve ROI and Conversion"
+              title="Content development"
               box={Box4}
             />
           </div>
@@ -112,7 +109,7 @@ to create, engage, and convert leads. Plus, our exclusive tech-powered tools giv
       <SectionLayout bg="bg-[#F4F4F4]">
         <div className="flex flex-col items-center">
           <h2 className="heading-secondary !text-center">
-            Benefits of Choosing Us as <br /> Your Digital Marketing Agency
+            Benefits of Choosing Us
           </h2>
           <p className="text-[1.5rem] !text-center max-w-[622px] mx-auto mb-10">
             We offer creative solutions, data-driven strategies, and measurable
@@ -126,11 +123,14 @@ to create, engage, and convert leads. Plus, our exclusive tech-powered tools giv
               Get Advantage and Access to <br /> Our Tools and Expertise
             </h3>
             <p className="text-[1.5rem] text-[gray]">
-              Don’t settle for mediocre results. With our cutting-edge tools and
-              experienced team, you can achieve your digital marketing goals
-              faster and easier. No matter what kind of digital marketing
-              service you require, we can deliver it with excellence and
-              efficiency. Get in touch today and get ahead of the competition.
+              Unlock excellence with Bayshore Communication's core services.
+              From Growth Marketing to Software Solution and Development,
+              Offshore Office, and Content Development, we're your path to
+              exceptional results. Don't settle for less – our cutting-edge
+              tools and experienced team will help you achieve your digital
+              marketing goals faster and easier. Get ahead of the competition by
+              getting in touch with us today, and experience the difference in
+              our comprehensive approach.
             </p>
           </div>
           <div className=" flex flex-col gap-8 lg:gap-12 md:pl-[5rem] sm:px-[15vw] md:px-0">
@@ -192,31 +192,47 @@ to create, engage, and convert leads. Plus, our exclusive tech-powered tools giv
 export default page;
 
 const Box1: any = [
-  "SEO Services",
-  "Ecommerce SEO Services",
-  "Local SEO Services",
-  "Content Marketing Services",
+  "SEO",
+  "Paid Advertising",
+  "Social media marketing",
+  "Email Marketing",
+  "Marketing Automation",
+  "Content Marketing",
+  "Digital PR",
+  "Influencer Marketing",
 ];
 
 const Box2: any = [
-  "PPC Management Services",
-  "Social Advertising Services",
-  "Programmatic Advertising Services",
-  "Geofencing Advertising Services",
+  "Android App Development",
+  "IOS App Development",
+  "Website Development",
+  "Ecommerce Web & App Development",
+  "SaaS Development",
+  "Prototype",
+  "Update and Maintenance",
+  "UI/UX",
 ];
 
 const Box3: any = [
-  "MarketingCloudFX",
-  "Nutshell",
-  "Website Call Tracking",
-  "Lead Management",
+  "Own Development Team",
+  "Own Marketing Team",
+  "Graphics Design",
+  "Call Center",
+  "Bookkeeping and Finance Team",
+  "Virtual Assistant",
+  "Project Management",
+  "CRM",
 ];
 
 const Box4: any = [
-  "Website Design Services",
-  "CRO Services",
-  "Landing Page Design Services",
-  "Social Media Management Services",
+  "Video Production",
+  "Video Editing",
+  "Article Writing",
+  "Social Media Post Design",
+  "Motion Graphics",
+  "3D product visualization",
+  "TVC/ Ad Creative Design",
+  "Helping With Video Production Setup",
 ];
 
 //  Home Hero section
@@ -228,9 +244,9 @@ let hero: {
 
 hero = [
   {
-    text: "Marketing That Drive Business.",
-    heading: "Get your own marketing team for your business",
-    description: `Are you ready to bring in a well-rounded marketing team to help your company expand? Bayshore Communication is here!! Choose Bayshore to gain access to our innovative technology platform and our skilled digital marketing experts. With the help of our service, you can build your own marketing team to manage all aspects of your company's expansion and goal-setting. Don't pass up the chance to increase your brand's visibility and outperform your competition.`,
+    text: "Ease Your Business Challenges With our expertise.",
+    heading: "Get your own workforce for your business",
+    description: `Bayshore Communication is your all-in-one partner for accelerating business growth. With a dynamic range of services spanning Growth Marketing, Software Solutions, Offshore Office Support, and Content Development, we empower business owners to thrive in the digital era. Experience a seamless journey towards excellence and discover endless possibilities – where your vision meets innovation!`,
   },
 ];
 
