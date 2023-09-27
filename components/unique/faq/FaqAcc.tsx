@@ -17,35 +17,27 @@ let faq: {
 
 faq = [
   {
-    heading: `What services does your company offer?
-    `,
+    heading: `What services does your company offer?`,
     description: `We provide a range of services, including digital marketing solutions such as SEO, SEM, social media marketing, content creation, and email marketing. Additionally, we specialize in software development, offering custom web and mobile application development, software consulting, and UI/UX design.`,
   },
   {
     heading: `How experienced is your team?`,
-    description: `Our team comprises highly skilled professionals with extensive experience in both digital marketing and software development. Our experts have successfully executed numerous projects across various industries, delivering exceptional results each time.
-    `,
+    description: `Our team comprises highly skilled professionals with extensive experience in both digital marketing and software development. Our experts have successfully executed numerous projects across various industries, delivering exceptional results each time.`,
   },
   {
     heading: ` What industries do you cater to?`,
-    description: `We have worked with clients from diverse industries, including e-commerce, healthcare, finance, education, technology, and more. Our versatile experience allows us to tailor our solutions to meet the specific needs of any industry.
-    `,
+    description: `We have worked with clients from diverse industries, including e-commerce, healthcare, finance, education, technology, and more. Our versatile experience allows us to tailor our solutions to meet the specific needs of any industry.`,
   },
   {
-    heading: ` How do you ensure the security of sensitive data in software development?
-    `,
-    description: `We take security seriously and follow industry best practices to safeguard sensitive data. Our development processes include regular security audits, code reviews, encryption techniques, and adherence to relevant compliance standards.
-    `,
+    heading: ` How do you ensure the security of sensitive data in software development?`,
+    description: `We take security seriously and follow industry best practices to safeguard sensitive data. Our development processes include regular security audits, code reviews, encryption techniques, and adherence to relevant compliance standards.`,
   },
   {
-    heading: ` Can you handle both small and large-scale projects?
-    `,
-    description: `Absolutely. Our company is equipped to handle projects of all sizes, from small businesses to large enterprises. We tailor our approach based on the scope and requirements of each project to ensure optimal results.
-    `,
+    heading: ` Can you handle both small and large-scale projects?`,
+    description: `Absolutely. Our company is equipped to handle projects of all sizes, from small businesses to large enterprises. We tailor our approach based on the scope and requirements of each project to ensure optimal results.`,
   },
   {
-    heading: `How do you measure the success of a digital marketing campaign?
-    `,
+    heading: `How do you measure the success of a digital marketing campaign?`,
     description: `We utilize a combination of key performance indicators (KPIs) tailored to each campaign's objectives. These may include metrics such as website traffic, conversion rates, click-through rates (CTR), engagement on social media platforms, and return on investment (ROI).`,
   },
   {
@@ -111,9 +103,12 @@ export function Example({ arr }: any) {
           open={open === i + 1}
           icon={<Icon id={1 + i} open={open} />}
         >
-          <div className="px-8  border-t-[0.5px] border-[#AAAAAA] ">
-            <AccordionHeader onClick={() => handleOpen(i + 1)}>
-              <div className="text-[16px] md:text-[18px] font-normal">
+          <div className="px-8">
+            <AccordionHeader
+              className="border-b-0"
+              onClick={() => handleOpen(i + 1)}
+            >
+              <div className="text-[16px] md:text-[18px]  font-normal">
                 {el.heading}
               </div>
             </AccordionHeader>

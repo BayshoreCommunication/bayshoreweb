@@ -57,7 +57,6 @@ jobs = [
     <div><a href="mailto:jobs@bayshorecommunication.com" target="_blank" rel="noopener noreferrer">Apply Now</a></div>
     </div>`,
   },
-  
 ];
 
 const page = () => {
@@ -85,5 +84,3 @@ const page = () => {
 };
 
 export default page;
-
-

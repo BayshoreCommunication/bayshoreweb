@@ -16,13 +16,7 @@ const page = () => {
         Frequently Asked Questions (FAQ)
       </h2>
       <SectionLayout bg="">
-        {/* <h4 className="heading-four bg-[#F5F5F5] rounded-[10px] p-4">
-          Troubleshooting SWOP
-        </h4> */}
-
-        <AccordionCus />
-        {/* <AccordionCus title="Compatibility" />
-        <AccordionCus title="Shipping" /> */}
+        <AccordionCus title="Questions" />
       </SectionLayout>
     </>
   );
