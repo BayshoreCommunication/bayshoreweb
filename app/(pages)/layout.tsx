@@ -3,15 +3,15 @@ import Navbar from "@/components/universal/Navbar";
 import ModalPopup from "@/components/universal/PopUp/ModalPopUp";
 import { LayoutProps } from "@/types/LayoutProps";
 
-const layout = ({ children }: LayoutProps) => {
+const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Navbar />
-      {/* <ModalPopup /> */}
+      <ModalPopup />
       <div className="mt-[72px]">{children}</div>
       <Footer />
     </>
   );
 };
 
-export default layout;
+export default Layout;
