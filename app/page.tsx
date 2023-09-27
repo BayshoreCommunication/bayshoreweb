@@ -123,14 +123,14 @@ const page = () => {
               Get Advantage and Access to <br /> Our Tools and Expertise
             </h3>
             <p className="text-[1.5rem] text-[gray]">
-              Unlock excellence with Bayshore Communication's core services.
-              From Growth Marketing to Software Solution and Development,
-              Offshore Office, and Content Development, we're your path to
-              exceptional results. Don't settle for less – our cutting-edge
-              tools and experienced team will help you achieve your digital
-              marketing goals faster and easier. Get ahead of the competition by
-              getting in touch with us today, and experience the difference in
-              our comprehensive approach.
+              Unlock excellence with Bayshore Communication&apos;s core
+              services. From Growth Marketing to Software Solution and
+              Development, Offshore Office, and Content Development, we&apos;re
+              your path to exceptional results. Don&apos;t settle for less – our
+              cutting-edge tools and experienced team will help you achieve your
+              digital marketing goals faster and easier. Get ahead of the
+              competition by getting in touch with us today, and experience the
+              difference in our comprehensive approach.
             </p>
           </div>
           <div className=" flex flex-col gap-8 lg:gap-12 md:pl-[5rem] sm:px-[15vw] md:px-0">

@@ -18,7 +18,7 @@ const tabs: Tab[] = [
     ),
     content: (
       <>
-        <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16">
             <h3 className="heading-tertiary">Growth Marketing</h3>
             <p className="text-base">
@@ -26,13 +26,13 @@ const tabs: Tab[] = [
               presence along with growth marketing and strategic planning
               becomes essential to outpace competitors. Our Growth Marketing
               services can turbocharge your brand visibility, engagement, and
-              growth. We're a team of experts in SEO, Paid Ads, Social Media,
-              Email Marketing, Content that actually makes sense, Digital PR
-              (yep, we know people), smart Automation, and even the cool world
-              of Influencers. All these fancy terms aside, what we really do is
-              make YOUR Business bigger and better in today's digital age.In
-              short, we're here to get your brand where you want it to be. No
-              fluff, just results.
+              growth. We&apos;re a team of experts in SEO, Paid Ads, Social
+              Media, Email Marketing, Content that actually makes sense, Digital
+              PR (yep, we know people), smart Automation, and even the cool
+              world of Influencers. All these fancy terms aside, what we really
+              do is make YOUR Business bigger and better in today&apos;s digital
+              age.In short, we&apos;re here to get your brand where you want it
+              to be. No fluff, just results.
             </p>
           </div>
           <div className="row-start-1 md:col-start-2">
@@ -66,15 +66,15 @@ const tabs: Tab[] = [
             </h3>
             <p className="text-base">
               Meet your tech team at Bayshore Communication. When it comes to
-              Web or Software Solutions and Development, we're all about turning
-              your ideas into reality. Whether you want to make Android and IOS
-              Apps, build eye-catching websites, create seamless ecommerce
-              experiences, or even develop cutting-edge SaaS solutions, we have
-              the skills and experience to do it. We ensure your project stays
-              current, provide visually stunning designs, and conduct thorough
-              testing to guarantee flawless performance. We don't just develop,
-              we excel in innovation. Join us on your innovation journey with
-              Bayshore.
+              Web or Software Solutions and Development, we&apos;re all about
+              turning your ideas into reality. Whether you want to make Android
+              and IOS Apps, build eye-catching websites, create seamless
+              ecommerce experiences, or even develop cutting-edge SaaS
+              solutions, we have the skills and experience to do it. We ensure
+              your project stays current, provide visually stunning designs, and
+              conduct thorough testing to guarantee flawless performance. We
+              don&apos;t just develop, we excel in innovation. Join us on your
+              innovation journey with Bayshore.
             </p>
           </div>
           <div className="row-start-1 md:col-start-2">
