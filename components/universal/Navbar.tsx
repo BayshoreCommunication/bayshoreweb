@@ -42,7 +42,6 @@ const Navbar = () => {
       {/* Mobile */}
 
       <nav className="container justify-between gap-12 py-[1.8rem] flex md:hidden">
-        {" "}
         <Link href="/">
           <Image
             src="/assets/bayshore-logo.svg"
@@ -114,7 +113,7 @@ const Navbar = () => {
               alt="bayshore-logo"
               width={366}
               height={106}
-              className="lg:w-[16.6rem] w-[14rem] h-[36px]"
+              className="lg:w-[16.6rem] w-[14rem] h-auto"
               priority
             />
           </Link>

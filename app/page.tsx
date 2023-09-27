@@ -206,7 +206,7 @@ const Box2: any = [
   "Android App Development",
   "IOS App Development",
   "Website Development",
-  "Ecommerce Web & App Development",
+  "Ecommerce Development",
   "SaaS Development",
   "Prototype",
   "Update and Maintenance",
@@ -232,7 +232,7 @@ const Box4: any = [
   "Motion Graphics",
   "3D product visualization",
   "TVC/ Ad Creative Design",
-  "Helping With Video Production Setup",
+  "Video Production Setup",
 ];
 
 //  Home Hero section
