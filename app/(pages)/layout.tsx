@@ -7,7 +7,7 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <>
       <Navbar />
-      {/* <ModalPopup /> */}
+      <ModalPopup />
       <div className="mt-[72px]">{children}</div>
       <Footer />
     </>
