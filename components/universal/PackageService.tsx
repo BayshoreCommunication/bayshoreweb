@@ -43,8 +43,8 @@ import PackageBulletPoint from "./PackageBulletPoint";
 const PackageService = ({ data, title }: any) => {
   return (
     <div className="sm:w-[35rem] w-full md:w-1/2 justify-self-center mt-[4rem] md:mt-0 h-full flex flex-col justify-between  rounded-[15px] ">
-      <div className="bg-cyan-500 shadow-lg shadow-cyan-500 rounded-bl-[15px] rounded-br-[15px]">
-        <div className=" relative flex justify-between items-center gap-8 bg-[#Ffffff]  rounded-tl-[15px] rounded-tr-[15px] border-[3px] border-[#fe6f1f]">
+      <div className="shadow-lg rounded-bl-[15px] rounded-br-[15px]">
+        <div className="relative flex justify-between items-center gap-8 bg-[#Ffffff]  rounded-tl-[15px] rounded-tr-[15px] border-[3px] border-[#fe6f1f]">
           {/* <div className="absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]">
             <Image
               src={data.icon}
@@ -76,7 +76,7 @@ const PackageService = ({ data, title }: any) => {
         </div>
       </div>
       {title === "Our Offer" && (
-        <div className="flex justify-center  border-t-[1px] border-[rgba(221,221,221,0.5)] pt-3">
+        <div className="flex justify-center pt-3">
           <div className="center !py-5">
             <button className="btn text-small !py-6 !px-8">
               Customize My Plan

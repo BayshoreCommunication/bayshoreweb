@@ -1100,7 +1100,7 @@ blogindv = [
 ];
 
 const page = () => {
-  console.log("tt", blogindv);
+  // console.log("tt", blogindv);
   return (
     <>
       <HeroWithImage

@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import SectionLayout from "./SectionLayout";
 import Image from "next/image";
@@ -14,14 +15,22 @@ let service: {
 service = [
   { title: "Website Design", link: "/our-services/website-design" },
   { title: "Mobile App", link: "/our-services/mobile-app" },
-  { title: "SEO", link: "/our-services/seo" },
+  { title: "SEO", link: "/our-services/seo-service" },
   { title: "UI/UX Design", link: "/our-services/ui-ux-design" },
   { title: "Paid Advertising", link: "/our-services/paid-advertising" },
   {
     title: "Social Media Marketing",
     link: "/our-services/social-media-marketing",
   },
-  // { title: "Email Marketing", link: "/our-services/email-marketing" },
+  { title: "Email Marketing", link: "/our-services/email-marketing" },
+  { title: "Marketing Automation", link: "/our-services/marketing-automation" },
+  { title: "Content Marketing", link: "/our-services/content-marketing" },
+  { title: "Content Writing", link: "/our-services/content-writing" },
+  { title: "Digital PR", link: "/our-services/digital-pr" },
+  { title: "Graphic Design", link: "/our-services/graphic-design" },
+  { title: "Motion Graphic", link: "/our-services/motion-graphic" },
+  { title: "Video Production", link: "/our-services/video-production" },
+  { title: "Influencer Marketing", link: "/our-services/influencer-marketing" },
 ];
 
 let quickLinks: {
@@ -44,15 +53,43 @@ const Col = ({ text, links }: any) => {
     <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
       <h4 className="mb-10 heading-four text-center md:text-start ">{text}</h4>
       <ul className="flex flex-col gap-2">
-        {links.map((el: any, i: number) => (
-          <li className="text-small " key={i}>
-            {typeof el === "string" ? (
-              <>{el}</>
-            ) : (
-              <Link href={`${el.link}`}>{el.title}</Link>
-            )}
-          </li>
-        ))}
+        {links.map((el: any, i: number) => {
+          if (text === "Service") {
+            if (i < links.length / 2) {
+              return (
+                <li className="text-small" key={i}>
+                  {typeof el === "string" ? (
+                    <>{el}</>
+                  ) : (
+                    <Link href={`${el.link}`}>{el.title}</Link>
+                  )}
+                </li>
+              );
+            }
+          } else if (text === "More Service") {
+            if (i > links.length / 2) {
+              return (
+                <li className="text-small " key={i}>
+                  {typeof el === "string" ? (
+                    <>{el}</>
+                  ) : (
+                    <Link href={`${el.link}`}>{el.title}</Link>
+                  )}
+                </li>
+              );
+            }
+          } else {
+            return (
+              <li className="text-small " key={i}>
+                {typeof el === "string" ? (
+                  <>{el}</>
+                ) : (
+                  <Link href={`${el.link}`}>{el.title}</Link>
+                )}
+              </li>
+            );
+          }
+        })}
       </ul>
     </div>
   );
@@ -69,7 +106,7 @@ const Footer = () => {
                 alt="bayshore-logo"
                 width={366}
                 height={106}
-                className="w-[166px] h-[36px] mb-6"
+                className="w-[185px] h-auto mb-6"
                 priority
               />
             </div>
@@ -78,9 +115,10 @@ const Footer = () => {
             </p>
           </div>
           <Col text="Service" links={service} />
+          <Col text="More Service" links={service} />
           <Col text="Quick links" links={quickLinks} />
 
-          <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
+          {/* <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
             <h4 className="mb-10 heading-four text-center md:text-start ">
               By subscribing we inform about
             </h4>
@@ -97,7 +135,7 @@ const Footer = () => {
                 <span>Get a Proposal</span>
               </button>
             </div>
-          </div>
+          </div> */}
           {/*  */}
         </div>
         <div className="w-full mt-6 h-[1px] bg-[#DBDBDB]"></div>
