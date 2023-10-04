@@ -117,7 +117,7 @@ impressive outcomes and provide outstanding support to their clients.`}
         </p>
       </SectionLayout>
 
-      <SectionLayout bg="" >
+      <SectionLayout bg="">
         <SectionHeader
           heading="Our Team"
           text=" By being available to our clients, we can respond to their concerns
@@ -210,7 +210,7 @@ let cardContentS: {
 cardContentS = [
   {
     img: "/assets/about/romiz.png",
-    name: "ASHRAF UJJAMAN",
+    name: "ASHRAF UZZAMAN",
     destination: "CHIEF OPERATING OFFICER (COO)",
   },
   {
@@ -235,7 +235,7 @@ cardContentS = [
   },
   {
     img: "/assets/about/abdullah.png",
-    name: "ABDULLAH ISHA",
+    name: "ABDULLAH ESHA",
     destination: "WEB DEVELOPER",
   },
   {

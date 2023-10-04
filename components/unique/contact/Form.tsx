@@ -11,8 +11,6 @@ const Form = () => {
     email: "",
     contact: "",
     website: "",
-    subject: "",
-    description: "",
   });
 
   const SendMail = (e: any) => {
@@ -33,8 +31,6 @@ const Form = () => {
             email: "",
             contact: "",
             website: "",
-            subject: "",
-            description: "",
           });
         });
       })
@@ -49,14 +45,10 @@ const Form = () => {
             email: "",
             contact: "",
             website: "",
-            subject: "",
-            description: "",
           });
         });
       });
   };
-
-  console.log("testttt", emailForm);
 
   return (
     <form onSubmit={SendMail} className="flex flex-col items-center mt-8 gap-8">
@@ -112,7 +104,7 @@ const Form = () => {
           });
         }}
       />
-      <input
+      {/* <input
         className="appearance-none border border-[#CED4DA] rounded w-full py-4 px-4 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]"
         id="subject"
         type="text"
@@ -136,7 +128,7 @@ const Form = () => {
             description: event.target.value,
           });
         }}
-      ></textarea>
+      ></textarea> */}
       <button className="btn mt-4 text-small" type="submit">
         Send Message
       </button>

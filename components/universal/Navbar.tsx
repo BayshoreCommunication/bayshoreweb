@@ -64,7 +64,6 @@ const Navbar = () => {
       >
         <nav className=" px-[2rem] flex flex-col gap-12 py-[1.8rem] relative">
           <div className="flex justify-between items-center">
-            {" "}
             <Link href="/">
               <Image
                 src="/assets/bayshore-logo.svg"
@@ -127,7 +126,16 @@ const Navbar = () => {
                 }`}
                 key={i}
               >
-                <Link href={`${el.link}`}>{el.title}</Link>
+                <Link
+                  href={`${el.link}`}
+                  className={`font-semibold hover:border-b-2  ${
+                    splitPath === el.link
+                      ? "hover:border-orange-700"
+                      : "hover:border-blue-gray-500"
+                  }`}
+                >
+                  {el.title}
+                </Link>
               </li>
             ))}
           </ul>

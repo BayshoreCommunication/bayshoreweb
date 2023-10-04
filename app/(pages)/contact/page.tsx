@@ -21,13 +21,13 @@ let address: {
 
 address = [
   {
-    title: "Tampa",
+    title: "Tampa Office",
     phone: "+1 (321) 765-9177",
     address: "1301 34th ST South, St. Petersburg FL 33711",
     email: "info@bayshorecommunication.com",
   },
   {
-    title: "Dhaka",
+    title: "Asia Office",
     phone: "+8801685035449",
     address:
       "Flat : 2nd , House : 21, Road : 1, Block : A, Aftabnogor, Dhaka - 1212",
@@ -43,13 +43,13 @@ const Page = () => {
         alt="contact-office"
         width={2000}
         height={600}
-        className="w-full h-auto object-cover"
+        className="w-full max-h-[30rem] object-top"
       />
       <SectionLayout bg="">
         <div className="flex flex-wrap justify-center md:justify-between gap-20 ">
           <div className="md:flex-1 ">
             <Adress
-              title="Tampa"
+              title="Tampa Office"
               address={address[0].address}
               phone={address[0].phone}
               email={address[0].email}
@@ -58,7 +58,7 @@ const Page = () => {
 
           <div className="md:flex-1 ">
             <Adress
-              title="Dhaka"
+              title="Asia Office"
               address={address[1].address}
               phone={address[1].phone}
               email={address[1].email}
@@ -85,25 +85,14 @@ const Page = () => {
           <Form />
         </div>
       </SectionLayout> */}
-      <SectionLayout bg="">
-        
-        {/* <SimpleMap /> */}
 
-
-
-
-        <div>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019.8052045544562!2d-82.67877466610979!3d27.756943436867076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e242db96ffff%3A0x6a7fc5cfe7f891a3!2sBayshore%20Communication!5e0!3m2!1sen!2sbd!4v1693473942600!5m2!1sen!2sbd"
-            className="w-full h-screen shadow-lg"
-            
-           
-            
-            
-            
-          ></iframe>
-        </div>
-      </SectionLayout>
+      {/* <SimpleMap /> */}
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019.8052045544562!2d-82.67877466610979!3d27.756943436867076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e242db96ffff%3A0x6a7fc5cfe7f891a3!2sBayshore%20Communication!5e0!3m2!1sen!2sbd!4v1693473942600!5m2!1sen!2sbd"
+          className="w-full h-[35rem] shadow-lg"
+        ></iframe>
+      </div>
     </>
   );
 };

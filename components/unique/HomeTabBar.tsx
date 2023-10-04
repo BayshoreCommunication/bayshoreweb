@@ -194,13 +194,7 @@ export default function HomeTabBar() {
               height={100}
               className="md:h-[26px] md:w-[26px] h-[14px] w-[14px]"
             />
-            <p
-              className={`py-2 text-[1.2rem] text-[#A2A2A2]  font-bold  ${
-                activeTab === index ? "bg-gray-200" : ""
-              }`}
-            >
-              {tab.label}
-            </p>
+            <p className="py-2 text-[1.2rem] text-[#A2A2A2]">{tab.label}</p>
           </button>
         ))}
       </div>

@@ -35,11 +35,7 @@ const ServiceTabBar = (individualHomeTabBar: individualHomeTabBarType) => {
                   activeTab != index && "grayscale" ? "" : ""
                 }`}
               />
-              <p
-                className={`py-2 text-[1.2rem] text-[#A2A2A2] text-center font-bold ${
-                  activeTab === index ? "bg-gray-200" : ""
-                }`}
-              >
+              <p className="py-2 text-[1.2rem] text-[#A2A2A2] text-center font-bold">
                 {service.titleTab}
               </p>
             </button>
