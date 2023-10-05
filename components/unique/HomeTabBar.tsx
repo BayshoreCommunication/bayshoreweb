@@ -47,8 +47,8 @@ const tabs: Tab[] = [
         </div>
       </>
     ),
-    link: "/assets/expertise.svg",
-    activeLink: "/assets/expertise-active.svg",
+    link: "/assets/growth-marketing.svg",
+    activeLink: "/assets/growth-marketing.svg",
   },
   {
     label: (
@@ -89,8 +89,8 @@ const tabs: Tab[] = [
         </div>
       </>
     ),
-    link: "/assets/result.svg",
-    activeLink: "/assets/result-active.svg",
+    link: "/assets/software-solution.svg",
+    activeLink: "/assets/software-solution.svg",
   },
   {
     label: (
@@ -128,8 +128,8 @@ const tabs: Tab[] = [
         </div>
       </>
     ),
-    link: "/assets/tools.svg",
-    activeLink: "/assets/tools-active.svg",
+    link: "/assets/offshore-office.svg",
+    activeLink: "/assets/offshore-office.svg",
   },
   {
     label: (
@@ -168,8 +168,8 @@ const tabs: Tab[] = [
         </div>
       </>
     ),
-    link: "/assets/time.svg",
-    activeLink: "/assets/time-active.svg",
+    link: "/assets/content-development.svg",
+    activeLink: "/assets/content-development.svg",
   },
 ];
 
@@ -188,11 +188,13 @@ export default function HomeTabBar() {
             onClick={() => setActiveTab(index)}
           >
             <Image
-              src={activeTab === index ? tab.activeLink : tab.link}
+              src={tab.link ? tab.link : "/"}
               alt="svg-logo"
               width={100}
               height={100}
-              className="md:h-[26px] md:w-[26px] h-[14px] w-[14px]"
+              className={`md:h-[26px] md:w-[26px] h-[14px] w-[14px] ${
+                activeTab === index ? "" : "grayscale"
+              }`}
             />
             <p className="py-2 text-[1.2rem] text-[#A2A2A2]">{tab.label}</p>
           </button>
