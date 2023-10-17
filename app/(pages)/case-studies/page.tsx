@@ -28,7 +28,7 @@ export let caseindv: {
 
 caseindv = [
   {
-    url: `Tale of Catflix and Bayshore Communications A Digital Marketing Case Study`,
+    url: `Catflix Digital Marketing Case-Study`,
     meta: ``,
     caseImg: `a-digital-marketing-case-studies.jpg`,
     logoImg: `individual-service-logo.png`,
@@ -255,7 +255,7 @@ caseindv = [
     <p className="text-base"><br /><br /><br /></p>`,
   },
   {
-    url: `Triplaws Global Success with Bayshore Communications`,
+    url: `Immigration Lawyer Trip Laws Global Success with Bayshore Communications`,
     meta: ``,
     caseImg: `triplaw's-global-success-with-bayshore-communications.jpg`,
     logoImg: `individual-service-logo.png`,
