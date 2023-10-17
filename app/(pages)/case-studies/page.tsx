@@ -1,10 +1,8 @@
 import Consultaion from "@/components/universal/Consultaion";
 import { HeroWithImage } from "@/components/universal/Hero";
-import HeroLeft from "@/components/universal/HeroLeft";
 import SectionHeader from "@/components/universal/SectionHeader";
 import SectionLayout from "@/components/universal/SectionLayout";
 import { Metadata } from "next";
-import Head from "next/head";
 import Image from "next/image";
 import React from "react";
 import Link from "next/link";
@@ -30,7 +28,7 @@ export let caseindv: {
 
 caseindv = [
   {
-    url: `Feline Flicks to Success Tale of Catflix and Bayshore Communications A Digital Marketing Case Study`,
+    url: `Tale of Catflix and Bayshore Communications A Digital Marketing Case Study`,
     meta: ``,
     caseImg: `a-digital-marketing-case-studies.jpg`,
     logoImg: `individual-service-logo.png`,
@@ -257,7 +255,7 @@ caseindv = [
     <p className="text-base"><br /><br /><br /></p>`,
   },
   {
-    url: `Transforming Immigration Services Triplaw's Global Success with Bayshore Communications`,
+    url: `Triplaws Global Success with Bayshore Communications`,
     meta: ``,
     caseImg: `triplaw's-global-success-with-bayshore-communications.jpg`,
     logoImg: `individual-service-logo.png`,
@@ -342,7 +340,7 @@ caseindv = [
   },
 ];
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <HeroWithImage
@@ -369,7 +367,7 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
 let hero: {
   heading: string;
@@ -407,7 +405,7 @@ const Featured = () => {
 
                 <Link
                   href={`/case-studies/${elem.url
-                    .replace(/\s+/g, "-") // Replace spaces with dashes globally
+                    .replace(/\s+/g, "-")
                     .toLowerCase()}`}
                 >
                   <button className="!text-[#565EE8] font-semibold text-small">

@@ -98,8 +98,8 @@ const FocusOnSelect: React.FC = () => {
           <iframe
             width={1000}
             height={1000}
-            src="https://www.youtube.com/embed/rT53DKdj6dQ?si=FdY29cj8RYGALVXQ"
-            title="YouTube video player"
+            src="https://www.youtube.com/embed/RVit6poGLRs?si=Pv8CCqx6Qtehy56N"
+            title="YouTube video player trip law"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -109,8 +109,8 @@ const FocusOnSelect: React.FC = () => {
           <iframe
             width={1000}
             height={1000}
-            src="https://www.youtube.com/embed/UuHB0efkhPE?si=RaXVJwtU0dhMc5hY"
-            title="YouTube video player"
+            src="https://www.youtube.com/embed/ohyUTzLiLbI?si=IrLApSH4eZOvcYPQ"
+            title="YouTube video player apex"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -120,8 +120,18 @@ const FocusOnSelect: React.FC = () => {
           <iframe
             width={1000}
             height={1000}
-            src="https://www.youtube.com/embed/tP-4B9MSMRU?si=6VYNZ3MjW93FPkOK"
-            title="YouTube video player"
+            src="https://www.youtube.com/embed/iqHA7By9OAI?si=jhmzmTsMEhjIyqZa"
+            title="YouTube video player catflix"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="w-[350px] h-[275px]"
+          ></iframe>
+          <iframe
+            width={1000}
+            height={1000}
+            src="https://www.youtube.com/embed/RVit6poGLRs?si=Pv8CCqx6Qtehy56N"
+            title="YouTube video player trip law"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -131,8 +141,19 @@ const FocusOnSelect: React.FC = () => {
           <iframe
             width={1000}
             height={1000}
-            src="https://www.youtube.com/embed/UuHB0efkhPE?si=RaXVJwtU0dhMc5hY"
-            title="YouTube video player"
+            src="https://www.youtube.com/embed/ohyUTzLiLbI?si=IrLApSH4eZOvcYPQ"
+            title="YouTube video player apex"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+            className="w-[350px] h-[275px]"
+          ></iframe>
+
+          <iframe
+            width={1000}
+            height={1000}
+            src="https://www.youtube.com/embed/iqHA7By9OAI?si=jhmzmTsMEhjIyqZa"
+            title="YouTube video player catflix"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
@@ -174,10 +195,28 @@ const FocusOnSelect: React.FC = () => {
               className="rounded-full"
             />
           </div>
+          <div className="">
+            <Image
+              alt="test"
+              src="/assets/about/Trip.jpg"
+              height={120}
+              width={120}
+              className="rounded-full"
+            />
+          </div>
           <div>
             <Image
               alt="test"
               src="/assets/about/Carlos.jpg"
+              height={120}
+              width={120}
+              className="rounded-full"
+            />
+          </div>
+          <div>
+            <Image
+              alt="test"
+              src="/assets/about/Cris.jpg"
               height={120}
               width={120}
               className="rounded-full"
@@ -193,13 +232,13 @@ const FocusOnSelect: React.FC = () => {
           {...settings3}
         >
           <BoxContent
-            title="APEX"
+            title="Trip Law"
             subtitle=""
             content="1"
             text="As an owner of Apex Advisor Group, I have been very impressed with the service provided by Bayshore. They are a professional and reliable company that offers a range of services. They are committed to enabling and empowering their clients to be as independent as possible within their community. They also have friendly and helpful teams that always go the extra mile to meet the needs and expectations of their clients. I would highly recommend Bayshore's service to anyone who is looking for a quality and compassionate care provider."
           />
           <BoxContent
-            title="Catflix"
+            title="Apex Advisor Group"
             subtitle=""
             content="2"
             text="Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust."
@@ -211,7 +250,7 @@ const FocusOnSelect: React.FC = () => {
             text="Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust."
           />
           <BoxContent
-            title="APEX"
+            title="Apex Advisor Group"
             subtitle=""
             content="1"
             text="As an owner of Apex Advisor Group, I have been very impressed with the service provided by Bayshore. They are a professional and reliable company that offers a range of services. They are committed to enabling and empowering their clients to be as independent as possible within their community. They also have friendly and helpful teams that always go the extra mile to meet the needs and expectations of their clients. I would highly recommend Bayshore's service to anyone who is looking for a quality and compassionate care provider."
