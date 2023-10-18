@@ -136,8 +136,8 @@ const page = () => {
           <div className=" flex flex-col gap-8 lg:gap-12 md:pl-[5rem] sm:px-[15vw] md:px-0">
             <Progress
               title="Growth marketing"
-              bg="bg-[#FFBF45]"
-              border="border-[#FFBF45]"
+              bg="bg-[#FF5733]"
+              border="border-[#FF5733]"
               percentage="w-[90%]"
               percentageVal="90%"
               percentageValpx="left-[84%]"
@@ -160,8 +160,8 @@ const page = () => {
             />
             <Progress
               title="Content development"
-              bg="bg-[#50C878]"
-              border="border-[#50C878]"
+              bg="bg-[#008000]"
+              border="border-[#008000]"
               percentage="w-[88%]"
               percentageVal="88%"
               percentageValpx="left-[82%]"
