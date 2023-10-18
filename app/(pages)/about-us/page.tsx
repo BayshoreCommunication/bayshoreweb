@@ -32,26 +32,6 @@ const page = () => {
       </div>
       <SectionLayout bg="">
         <h2 className="heading-secondary !text-center">Our Story</h2>
-        {/* <p className="text-base mb-4">
-          Bayshore Communication has an outstanding communication team that acts
-          as the foundation for their digital marketing, web service, and brand
-          support activities. Their communication team, made up of highly
-          skilled experts, is adept at developing strong connections and
-          efficiently communicating messages to their clients. They thrive at
-          forming strategic alliances, comprehending customer needs, and
-          maintaining open lines of communication to enable seamless
-          collaboration.
-        </p>
-        <p className="text-base">
-          {" "}
-          {`  This diversified team brings a variety of knowledge and experience to
-the table, with competence in digital marketing, social media
-management, site building, SEO specialization, graphic design, content
-writing, client handling, and paralegal support. Bayshore
-Communication's remarkable communication abilities, combined with an
-excellent understanding of the industry, enable them to generate
-impressive outcomes and provide outstanding support to their clients.`}
-        </p> */}
 
         <p className="text-base mb-4">
           A joyful &quot;Ahoy there!&quot; as you sail into the enthralling
@@ -132,7 +112,7 @@ impressive outcomes and provide outstanding support to their clients.`}
             ))}
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 mt-[4rem] gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 mt-[4rem] gap-8">
             {cardContentS.map((el: any, i: number) => (
               <CardSmall el={el} key={i} />
             ))}
@@ -236,8 +216,9 @@ cardContentS = [
   {
     img: "/assets/about/abdullah.png",
     name: "ABDULLAH ESHA",
-    destination: "WEB DEVELOPER",
+    destination: "FULL STACK DEVELOPER",
   },
+
   {
     img: "/assets/about/towhidul.png",
     name: "TOWHIDUL ISLAM",
@@ -253,15 +234,21 @@ cardContentS = [
     name: "ABRAR FAHIM",
     destination: "APP DEVELOPER",
   },
+
+  // {
+  //   img: "/assets/about/nasim3.png",
+  //   name: "NASIM REJA",
+  //   destination: "WEB DEVELOPER",
+  // },
   {
     img: "/assets/about/milon.png",
     name: "Nuruzaman Milon",
-    destination: "FRONTEND DEVELOPER",
+    destination: "FULL STACK DEVELOPER",
   },
   {
     img: "/assets/about/amena.png",
     name: "Amena Islam Rimi",
-    destination: "CHIEF OPERATING OFFICER",
+    destination: "CONTENT WRITER",
   },
   {
     img: "/assets/about/monira.png",
@@ -293,7 +280,7 @@ const CardSmall = ({ el }: any) => {
         alt={el.name}
         width={400}
         height={400}
-        className="w-[120px] h-auto"
+        className="w-[120px] h-[120px] rounded-full"
       />
       <h5 className="heading-five mt-[5px]">{el.name}</h5>
       <p className="text-xsmall !text-center">{el.destination}</p>

@@ -15,7 +15,7 @@ import "~slick-carousel/slick/slick-theme.css"; */
 /* tailwind class */
 
 .container {
-  @apply max-w-[1298px] mx-auto px-[30px];
+  @apply max-w-[1650px] mx-auto px-[30px];
 }
 .center {
   @apply flex justify-center items-center;
