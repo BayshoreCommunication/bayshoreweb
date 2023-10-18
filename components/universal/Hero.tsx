@@ -12,13 +12,11 @@ export const HeroWithImage = ({ heading, description, imgLink }: any) => {
         <HeroLeft heading={heading} description={description} />
         <div className="px-[2rem] sm:px-[6rem] md:px-0">
           <Image
-            // src="/assets/case-studies/case-studies.png"
-            //   src="/assets/blog/blog.png"
             src={imgLink}
             alt="marketing"
             width={800}
             height={800}
-            className="w-full h-auto"
+            className="w-full h-auto rounded-lg"
           />
         </div>
       </div>

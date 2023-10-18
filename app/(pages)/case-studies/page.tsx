@@ -354,7 +354,6 @@ const Page = () => {
           heading="Featured case studies"
           text="Be inspired by our clients’ success stories. Learn how they used our solutions to grow their businesses. You can do it too."
         />
-
         <div className="mt-8">
           <div className="flex flex-col gap-[3rem]">
             <Featured />
@@ -386,16 +385,14 @@ const Featured = () => {
     <>
       {caseindv.map((elem, index) => (
         <div key={index}>
-          <div className=" bg-[#F4F4F4] grid grid-cols-1 md:grid-cols-2 items-center">
-            <div className="">
-              <Image
-                src={`/assets/case-studies/${elem.caseImg}`}
-                alt="man-working-on-office"
-                width={600}
-                height={600}
-                className="w-full h-auto"
-              />
-            </div>
+          <div className="bg-[#F4F4F4] grid grid-cols-1 md:grid-cols-2 items-center">
+            <Image
+              src={`/assets/case-studies/${elem.caseImg}`}
+              alt="man-working-on-office"
+              width={600}
+              height={600}
+              className="w-full h-auto"
+            />
             <div className=" md:rounded-r-[20px] px-8 md:px-[10rem] py-[2rem]">
               <div className="flex flex-col gap-[1.5rem] md:gap-[2.5rem] md:items-start items-center">
                 <h4 className="heading-four !text-left">{elem.title}</h4>
