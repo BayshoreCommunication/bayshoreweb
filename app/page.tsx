@@ -17,7 +17,8 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Bayshore Communication",
+  title:
+    "Bayshore Communication is your all-in-one partner for accelerating business growth",
   description:
     "Welcome to Bayshore Communication!! Grow your brand or business with us. Whether you need digital marketing services, or software solutions, we've you covered.",
 };
@@ -82,12 +83,12 @@ const page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2  mb-8 gap-8 lg:gap-[5rem] px-2 sm:px-[10vw] md:px-0 justify-between ">
             <HomeServiceCard
               imgLink="/assets/web.svg"
-              title="Growth marketing"
+              title="Growth Marketing"
               box={Box1}
             />
             <HomeServiceCard
               imgLink="/assets/data.svg"
-              title="Software solution and development"
+              title="Software Solution"
               box={Box2}
             />
             <HomeServiceCard
@@ -97,7 +98,7 @@ const page = () => {
             />
             <HomeServiceCard
               imgLink="/assets/note.svg"
-              title="Content development"
+              title="Content Development"
               box={Box4}
             />
           </div>

@@ -38,7 +38,7 @@ const Navbar = () => {
     else document.documentElement.style.overflow = "auto";
   };
   return (
-    <header className="fixed w-full bg-[#fff] z-50 top-0 left-0 ">
+    <header className="fixed w-full bg-[#fff] z-50 top-0 left-0">
       {/* Mobile */}
 
       <nav className="container justify-between gap-12 py-[1.8rem] flex md:hidden">

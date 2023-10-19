@@ -19,7 +19,7 @@ const tabs: Tab[] = [
     content: (
       <>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16">
+          <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16 flex flex-col justify-center">
             <h3 className="heading-tertiary">Growth Marketing</h3>
             <p className="text-base">
               As business competition increases year after year, a strong online
@@ -60,9 +60,9 @@ const tabs: Tab[] = [
     content: (
       <>
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-          <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16">
+          <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16 flex flex-col justify-center">
             <h3 className="heading-tertiary">
-              Software Solution and Development
+              Software Solution & Development
             </h3>
             <p className="text-base">
               Meet your tech team at Bayshore Communication. When it comes to
@@ -101,7 +101,7 @@ const tabs: Tab[] = [
     content: (
       <>
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-          <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16">
+          <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16 flex flex-col justify-center">
             <h3 className="heading-tertiary">Offshore Office</h3>
             <p className="text-base">
               Bayshore’s Offshore Office supports are all about helping you to
@@ -141,7 +141,7 @@ const tabs: Tab[] = [
     content: (
       <>
         <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-          <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16">
+          <div className="rounded-[10px] custom-shadow px-4 py-16 md:p-16 flex flex-col justify-center">
             <h3 className="heading-tertiary">Content Development</h3>
             <p className="text-base">
               Enhancing brand visibility relies on audience engagement, and the
@@ -193,7 +193,9 @@ export default function HomeTabBar() {
               width={100}
               height={100}
               className={`md:h-[26px] md:w-[26px] h-[14px] w-[14px] ${
-                activeTab === index ? "" : "grayscale"
+                activeTab === index
+                  ? "transition-transform duration-300 ease-in-out"
+                  : "grayscale"
               }`}
             />
             <p className="py-2 text-[1.2rem] text-[#A2A2A2]">{tab.label}</p>
@@ -205,7 +207,7 @@ export default function HomeTabBar() {
         {tabs.map(
           (tab, index) =>
             activeTab === index && (
-              <div className="mt-[4rem]" key={index}>
+              <div className="mt-[4rem] active-tab image" key={index}>
                 {tab.content}
               </div>
             )

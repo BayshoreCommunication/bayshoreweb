@@ -329,3 +329,18 @@ body {
 .swal2-popup {
   font-size: 1.6rem;
 }
+
+.active-tab {
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

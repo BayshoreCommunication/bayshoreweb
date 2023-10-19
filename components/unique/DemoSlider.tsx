@@ -174,7 +174,7 @@ const FocusOnSelect: React.FC = () => {
               src="/assets/about/Trip.jpg"
               height={120}
               width={120}
-              className="rounded-full"
+              className="rounded-full  ease-in-out duration-1000 transition-all"
             />
           </div>
           <div>
@@ -183,7 +183,7 @@ const FocusOnSelect: React.FC = () => {
               src="/assets/about/Carlos.jpg"
               height={120}
               width={120}
-              className="rounded-full"
+              className="rounded-full  ease-in-out duration-1000 transition-all"
             />
           </div>
           <div>
@@ -192,7 +192,7 @@ const FocusOnSelect: React.FC = () => {
               src="/assets/about/Cris.jpg"
               height={120}
               width={120}
-              className="rounded-full"
+              className="rounded-full  ease-in-out duration-1000 transition-all"
             />
           </div>
           <div className="">
@@ -201,7 +201,7 @@ const FocusOnSelect: React.FC = () => {
               src="/assets/about/Trip.jpg"
               height={120}
               width={120}
-              className="rounded-full"
+              className="rounded-full  ease-in-out duration-1000 transition-all"
             />
           </div>
           <div>
@@ -210,7 +210,7 @@ const FocusOnSelect: React.FC = () => {
               src="/assets/about/Carlos.jpg"
               height={120}
               width={120}
-              className="rounded-full"
+              className="rounded-full  ease-in-out duration-1000 transition-all"
             />
           </div>
           <div>
@@ -219,7 +219,7 @@ const FocusOnSelect: React.FC = () => {
               src="/assets/about/Cris.jpg"
               height={120}
               width={120}
-              className="rounded-full"
+              className="rounded-full  ease-in-out duration-1000 transition-all"
             />
           </div>
         </Slider>
@@ -235,13 +235,13 @@ const FocusOnSelect: React.FC = () => {
             title="Trip Law"
             subtitle=""
             content="1"
-            text="As an owner of Apex Advisor Group, I have been very impressed with the service provided by Bayshore. They are a professional and reliable company that offers a range of services. They are committed to enabling and empowering their clients to be as independent as possible within their community. They also have friendly and helpful teams that always go the extra mile to meet the needs and expectations of their clients. I would highly recommend Bayshore's service to anyone who is looking for a quality and compassionate care provider."
+            text="Hello, I'm U.S. immigration attorney Hardam Tripathi from Trip Law. If you're a young attorney, know that success in starting your law firm requires a strong marketing team. Law school doesn't teach marketing, but it's vital. Invest in your marketing to avoid future problems and achieve growth. Salman from Bayshore can guide you with SEO and creative strategies. Marketing helps attract clients, establish authority, and grow financially. It's crucial for young attorneys. Best of luck as you grow your firm and help others."
           />
           <BoxContent
             title="Apex Advisor Group"
             subtitle=""
             content="2"
-            text="Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust."
+            text="As an owner of Apex Advisor Group, I have been very impressed with the service provided by Bayshore. They are a professional and reliable company that offers a range of services. They are committed to enabling and empowering their clients to be as independent as possible within their community. They also have friendly and helpful teams that always go the extra mile to meet the needs and expectations of their clients. I would highly recommend Bayshore's service to anyone who is looking for a quality and compassionate care provider."
           />
           <BoxContent
             title="Catflix"
@@ -250,10 +250,22 @@ const FocusOnSelect: React.FC = () => {
             text="Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust."
           />
           <BoxContent
-            title="Apex Advisor Group"
+            title="Trip Law"
             subtitle=""
             content="1"
+            text="Hello, I'm U.S. immigration attorney Hardam Tripathi from Trip Law. If you're a young attorney, know that success in starting your law firm requires a strong marketing team. Law school doesn't teach marketing, but it's vital. Invest in your marketing to avoid future problems and achieve growth. Salman from Bayshore can guide you with SEO and creative strategies. Marketing helps attract clients, establish authority, and grow financially. It's crucial for young attorneys. Best of luck as you grow your firm and help others."
+          />
+          <BoxContent
+            title="Apex Advisor Group"
+            subtitle=""
+            content="2"
             text="As an owner of Apex Advisor Group, I have been very impressed with the service provided by Bayshore. They are a professional and reliable company that offers a range of services. They are committed to enabling and empowering their clients to be as independent as possible within their community. They also have friendly and helpful teams that always go the extra mile to meet the needs and expectations of their clients. I would highly recommend Bayshore's service to anyone who is looking for a quality and compassionate care provider."
+          />
+          <BoxContent
+            title="Catflix"
+            subtitle=""
+            content="2"
+            text="Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust."
           />
         </Slider>
       </div>

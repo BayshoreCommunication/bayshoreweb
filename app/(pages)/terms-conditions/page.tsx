@@ -1,9 +1,8 @@
 import SectionLayout from "@/components/universal/SectionLayout";
 import React from "react";
-import parser  from "html-react-parser"
+import parser from "html-react-parser";
 
-const pAr: string = 
-  `<p>Welcome to Bayshore Communication!</p>
+const pAr: string = `<p>Welcome to Bayshore Communication!</p>
   <p>These terms and conditions outline the rules and regulations for the use of Bayshore Communication's Website, located at https://bayshorecommunication.com/.</p>
   <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use Bayshore Communication if you do not agree to take all of the terms and conditions stated on this page.</p>
   <p>The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company's terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client's needs in respect of provision of the Company's stated services, in accordance with and subject to, prevailing law of us. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to the same.</p>
@@ -90,18 +89,16 @@ const pAr: string =
   </ul>
   <p>The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.</p>
   <p>As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
-  `
-;
+  `;
+// interface t {
+//   text: string;
+// }
 
-interface t {
-  text: string;
-}
+// const Paragraph = ({ text }: t) => {
+//   return <p className="text-small mb-8 !text-justify">{text}</p>;
+// };
 
-const Paragraph = ({ text }: t) => {
-  return <p className="text-small mb-8 !text-justify">{text}</p>;
-};
-
-const page = () => {
+const Page = () => {
   return (
     <>
       <h2 className="heading-secondary !text-center bg-[#F4F4F4] py-4 !mb-0">
@@ -109,10 +106,9 @@ const page = () => {
       </h2>
       <SectionLayout bg="">
         <div className="h-[100%] service-style"> {parser(pAr)}</div>
-       
       </SectionLayout>
     </>
   );
 };
 
-export default page;
+export default Page;
