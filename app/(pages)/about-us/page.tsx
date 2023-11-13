@@ -274,7 +274,10 @@ cardContentS = [
 
 const CardSmall = ({ el }: any) => {
   return (
-    <div className="  flex flex-col items-center gap-3 custom-shadow py-4 px-4">
+    <div
+      className="  flex flex-col items-center gap-3 custom-shadow py-4 px-4"
+      data-aos="zoom-in"
+    >
       <Image
         src={el.img}
         alt={el.name}

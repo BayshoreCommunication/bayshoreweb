@@ -1,13 +1,11 @@
 import HomeLogoLoop from "@/components/unique/Home/HomeLogoLoop";
-import LogoSlide from "@/components/unique/Home/HomeLogoSlider";
 import HomeServiceCard from "@/components/unique/Home/HomeServiceCard";
 import Progress from "@/components/unique/Home/Progress";
 import HomeTabBar from "@/components/unique/HomeTabBar";
 import AboutUs from "@/components/universal/AboutUs";
 import Boost from "@/components/universal/Boost";
 import Footer from "@/components/universal/Footer";
-import Footer2 from "@/components/universal/Footer2";
-import HeroLeft, { HeroForm } from "@/components/universal/HeroLeft";
+import HeroLeft from "@/components/universal/HeroLeft";
 import Info from "@/components/universal/Info";
 import Navbar from "@/components/universal/Navbar";
 import Results from "@/components/universal/Results";
@@ -27,7 +25,11 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <SectionLayout bg="bg-[#F4F4F4]">
+      <SectionLayout
+        bg="bg-[#F4F4F4]"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-[72px] items-center">
           <div>
             <p className="text-[2rem] text-center md:text-start text-[#3E7BE2] mb-[1.5rem] lg:mb-[2.5rem]">

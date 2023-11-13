@@ -37,6 +37,7 @@ const Navbar = () => {
     if (!isOpen) document.documentElement.style.overflow = "hidden";
     else document.documentElement.style.overflow = "auto";
   };
+
   return (
     <header className="fixed w-full bg-[#fff] z-50 top-0 left-0">
       {/* Mobile */}

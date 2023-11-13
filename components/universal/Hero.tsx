@@ -36,8 +36,6 @@ const Hero = ({ heading, description }: any) => {
 };
 
 export const HeroIndividual: any = ({ heading, description, imgLink }: any) => {
-  console.log("Image link", imgLink);
-
   return (
     <SectionLayout bg="bg-[#F4F4F4]">
       <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-16">

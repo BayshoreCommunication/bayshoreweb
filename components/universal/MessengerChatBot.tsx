@@ -1,10 +1,21 @@
+"use client";
 import Script from "next/script";
 
-function Facebook() {
+// aos styles 👇 import
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
+const Facebook = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1200,
+    });
+  }, []);
+
   return (
     <div>
       <div id="fb-root"></div>
-
       <div id="fb-customer-chat" className="fb-customerchat"></div>
       <Script id="txtesdfasdf" strategy="lazyOnload">
         {`
@@ -31,6 +42,6 @@ function Facebook() {
       </Script>
     </div>
   );
-}
+};
 
 export default Facebook;
