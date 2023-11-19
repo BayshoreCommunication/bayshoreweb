@@ -46,6 +46,14 @@ quickLinks = [
   // { title: "Industries We Serve", link: "/industries-we-serve" },
   { title: "Privacy Policy", link: "/privacy-policy" },
   { title: "Terms & Conditions", link: "/terms-conditions" },
+  {
+    title: "Client Portal",
+    link: "https://billing.stripe.com/p/login/6oE8xFda4ac42Ws4gg",
+  },
+  {
+    title: "Portfolio",
+    link: "https://docs.google.com/presentation/d/1xYTNa-HSNlu2nxNGcOxwCIHTXmOJG55xd67GSxuCf60/edit?usp=sharing",
+  },
 ];
 
 const Col = ({ text, links }: any) => {
@@ -84,7 +92,16 @@ const Col = ({ text, links }: any) => {
                 {typeof el === "string" ? (
                   <>{el}</>
                 ) : (
-                  <Link href={`${el.link}`}>{el.title}</Link>
+                  <Link
+                    href={`${el.link}`}
+                    target={`${
+                      el.title === "Client Portal" || "Portfolio"
+                        ? "_blank"
+                        : ""
+                    }`}
+                  >
+                    {el.title}
+                  </Link>
                 )}
               </li>
             );

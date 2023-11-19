@@ -98,6 +98,11 @@ const Footer2 = () => {
                 <li>
                   <Link href="/career">Career</Link>
                 </li>
+                <li>
+                  <Link href="https://billing.stripe.com/p/login/6oE8xFda4ac42Ws4gg">
+                    Client Portal
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
