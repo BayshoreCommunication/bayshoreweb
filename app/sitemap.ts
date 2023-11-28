@@ -47,7 +47,7 @@ export default function Sitemap(): Sitemap {
 
   const sitemap: Sitemap = pages.map((url) => ({
     url,
-    lastModified: new Date(),
+    // lastModified: new Date(),
   }));
 
   return sitemap;
