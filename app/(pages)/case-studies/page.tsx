@@ -255,7 +255,7 @@ caseindv = [
     <p className="text-base"><br /><br /><br /></p>`,
   },
   {
-    url: `Immigration Lawyer Trip Laws Global Success with Bayshore Communications`,
+    url: `Immigration Lawyer Digital Marketing Case Study`,
     meta: ``,
     caseImg: `triplaw's-global-success-with-bayshore-communications.jpg`,
     logoImg: `individual-service-logo.png`,
