@@ -434,10 +434,10 @@ const ServicePrice = ({ url }: any) => {
       <div className="flex flex-wrap md:flex-nowrap gap-[4rem] justify-center">
         {ServicePriceData.filter((el: any) => el.url === url).map(
           (el: any, i: number) => (
-            <>
+            <div key={i}>
               <PackageService data={el.otherCompany} title={"Market Offer"} />
               <PackageService data={el.bayshore} title={"Our Offer"} />
-            </>
+            </div>
           )
         )}
       </div>
