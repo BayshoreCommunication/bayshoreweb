@@ -45,7 +45,7 @@ const HomeServiceCard: React.FC<box> = ({ title, imgLink, box }) => {
             alt="marketing"
             width={100}
             height={100}
-            className="lg:w-[5.4rem] lg:h-[5.4rem] w-[3.4rem] h-[3.4rem] sm:w-[4rem] sm:h-[4rem]"
+            className="lg:w-[5.4rem] lg:h-[5.4rem] w-[3.4rem] h-[3.4rem] sm:w-[4rem] sm:h-[4rem] grayscale"
           />
         </div>
       </div>

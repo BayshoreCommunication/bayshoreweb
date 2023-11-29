@@ -20,14 +20,12 @@ export const metadata: Metadata = {
 
 const IndividualBlog = ({ params }: { params: { slug: string } }) => {
   const parameter = params.slug;
-  console.log(parameter);
   const indvblog = blogindv.filter(
     (elem) =>
       elem.url
         .replace(/\s+/g, "-") // Replace spaces with dashes globally
         .toLowerCase() === parameter
   );
-  console.log(indvblog);
 
   const today = new Date();
   const dateToday = `${today.getDate()} / ${
@@ -105,7 +103,7 @@ const IndividualBlog = ({ params }: { params: { slug: string } }) => {
         </div>
       </SectionLayout>
 
-      <AboutUs />
+      {/* <AboutUs /> */}
       <Consultaion />
     </>
   );

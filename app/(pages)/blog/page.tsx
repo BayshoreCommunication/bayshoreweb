@@ -1100,7 +1100,6 @@ blogindv = [
 ];
 
 const page = () => {
-  // console.log("tt", blogindv);
   return (
     <>
       <HeroWithImage
@@ -1114,7 +1113,7 @@ const page = () => {
       <SectionLayout bg="">
         <div className="flex flex-col items-center">
           <h2 className="heading-secondary ">
-            {`  The Digital Marketer's Playbook: Insights, Ideas, and Inspiration`}
+            {`The Digital Marketer's Playbook: Insights, Ideas, and Inspiration`}
           </h2>
           <p className="text-base !text-center max-w-[622px] mx-auto mb-10">
             Get valuable tips and tricks from our skilled digital marketing
@@ -1123,9 +1122,9 @@ const page = () => {
           </p>
         </div>
         <div className="mt-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] grid-flow-row-dense">
             {blogindv.map((el, i) => (
-              <div key={i}>
+              <div key={i} className="h-fit">
                 <Blog el={el} i={i} />
               </div>
             ))}
@@ -1162,7 +1161,7 @@ const Blog = ({ el, i }: any) => {
           alt="marketing"
           width={800}
           height={800}
-          className="w-full h-[203px]"
+          className="w-full h-auto"
         />
         <Image
           src="/assets/blog/mike.png"

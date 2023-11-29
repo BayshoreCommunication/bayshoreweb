@@ -31,7 +31,7 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
     <SectionLayout bg="bg-[#F4F4F4]">
       <h2 className="heading-secondary !text-center">{heading}</h2>
 
-      <form
+      {/* <form
         className="flex md:items-center gap-8 md:gap-12 mt-[4rem] max-w-[100rem] mx-auto flex-col md:flex-row "
         // onSubmit={sendEmail}
       >
@@ -43,7 +43,7 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
           value={inputValue}
         />
         <ProposalBtn />
-      </form>
+      </form> */}
       <div className="mt-20 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-12 px-[4rem] sm:px-[15rem]  md:px-[10rem] lg:px-0">
         <HomeHeroCard
           bgImg="bg-heroimg-1"
@@ -76,7 +76,9 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
             <div>
               <div>
                 {" "}
-                <h4 className="heading-four !text-[1.2rem]">Salman H Saikote</h4>
+                <h4 className="heading-four !text-[1.2rem]">
+                  Salman H Saikote
+                </h4>
                 <p className="text-small !text-[1rem]">CTO</p>
               </div>
             </div>
@@ -91,14 +93,14 @@ export const BoostService: React.FC<boostInfo> = ({ heading, btnText }) => {
   return (
     <>
       <h2 className="heading-secondary !text-center">{heading}</h2>
-      <form className="flex md:items-center gap-8 md:gap-12 mt-[4rem] max-w-[100rem] mx-auto flex-col md:flex-row ">
+      {/* <form className="flex md:items-center gap-8 md:gap-12 mt-[4rem] max-w-[100rem] mx-auto flex-col md:flex-row ">
         <input
           className="rounded-[10px] outline-none text-small py-4 px-4 md:py-6 md:px-8 flex-1 bg-[#F4F4F4]"
           type="text"
           placeholder="Enter your email"
         />
         <ProposalBtn />
-      </form>
+      </form> */}
     </>
   );
 };

@@ -10,7 +10,7 @@ import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrFormClose } from "react-icons/gr";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 let linksO: {
   title: string;
@@ -37,6 +37,17 @@ const Navbar = () => {
     if (!isOpen) document.documentElement.style.overflow = "hidden";
     else document.documentElement.style.overflow = "auto";
   };
+
+  const [hasAnimated, setHasAnimated] = useState(false);
+
+  // This useEffect hook will run once when the component mounts
+  useEffect(() => {
+    // Apply AOS animations here
+    setHasAnimated(true);
+    return () => {
+      setHasAnimated(false); // This worked for me
+    };
+  }, []); // The empty dependency array ensures that this effect runs only once
 
   return (
     <header className="fixed w-full bg-[#fff] z-50 top-0 left-0">
@@ -81,7 +92,7 @@ const Navbar = () => {
           </div>
 
           <div>
-            <ul className="  md:px-[2rem] flex flex-col md:gap-[2.6rem]">
+            <ul className="md:px-[2rem] flex flex-col md:gap-[2.6rem]">
               {linksO.map((el: { title: string; link: string }, i: number) => (
                 <li
                   className={`text-link border-t-[0.5px] border-[rgba(0,0,0,0.16)] py-4 text-center ${
@@ -126,12 +137,14 @@ const Navbar = () => {
                   splitPath === el.link ? "active !text-primary" : ""
                 }`}
                 key={i}
+                data-aos={hasAnimated ? "" : "fade-down"} // Apply AOS animation only if it hasn't been applied yet
+                data-aos-delay={hasAnimated ? 0 : i * 200}
               >
                 <Link
                   href={`${el.link}`}
                   className={`font-semibold hover:border-b-2  ${
                     splitPath === el.link
-                      ? "hover:border-orange-700"
+                      ? "border-orange-700 border-b-2"
                       : "hover:border-blue-gray-500"
                   }`}
                 >
@@ -141,9 +154,6 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        {/* <div className="center gap-[1.5rem]">
-          <button className="btn text-link">Portfolio</button>
-        </div> */}
       </nav>
     </header>
   );

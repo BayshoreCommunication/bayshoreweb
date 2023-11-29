@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "Welcome to Bayshore Communication!! Grow your brand or business with us. Whether you need digital marketing services, or software solutions, we've you covered.",
 };
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <Navbar />
@@ -84,22 +84,22 @@ const page = () => {
         <div className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2  mb-8 gap-8 lg:gap-[5rem] px-2 sm:px-[10vw] md:px-0 justify-between ">
             <HomeServiceCard
-              imgLink="/assets/web.svg"
+              imgLink="/assets/growth-marketing.svg"
               title="Growth Marketing"
               box={Box1}
             />
             <HomeServiceCard
-              imgLink="/assets/data.svg"
+              imgLink="/assets/software-solution.svg"
               title="Software Solution"
               box={Box2}
             />
             <HomeServiceCard
-              imgLink="/assets/analytics.svg"
+              imgLink="/assets/offshore-office.svg"
               title="Offshore Office"
               box={Box3}
             />
             <HomeServiceCard
-              imgLink="/assets/note.svg"
+              imgLink="/assets/content-development.svg"
               title="Content Development"
               box={Box4}
             />
@@ -192,7 +192,7 @@ const page = () => {
         </div>
       </SectionLayout>
       {/* about us */}
-      <AboutUs />
+      {/* <AboutUs /> */}
       {/*  Result */}
       <Results heading="We Have Some Amazing Results" />
       <Footer />
@@ -200,7 +200,7 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
 
 const Box1: any = [
   "SEO",

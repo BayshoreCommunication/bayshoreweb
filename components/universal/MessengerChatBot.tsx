@@ -8,9 +8,7 @@ import { useEffect } from "react";
 
 const Facebook = () => {
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
+    AOS.init();
   }, []);
 
   return (

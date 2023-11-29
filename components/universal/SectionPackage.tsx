@@ -77,7 +77,7 @@ bulletData = [
   //   ],
   // },
   {
-    title: "Package 2",
+    title: "Our Package",
     icon: "/assets/growth-plan/growth-plan-gold.svg",
     price: "999",
     points: [

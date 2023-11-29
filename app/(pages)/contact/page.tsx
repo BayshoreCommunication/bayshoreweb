@@ -22,7 +22,7 @@ let address: {
 address = [
   {
     title: "Tampa Office",
-    phone: "+1 (321) 765-9177",
+    phone: "+1 (509) 592-1745",
     address: "1301 34th ST South, St. Petersburg FL 33711",
     email: "info@bayshorecommunication.com",
   },

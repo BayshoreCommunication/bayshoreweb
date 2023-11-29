@@ -50,7 +50,7 @@ const IndividualCase = ({ params }: { params: { slug: string } }) => {
               </div>
             </div>
           </SectionLayout>
-          <AboutUs />
+          {/* <AboutUs /> */}
           <Consultaion />
         </div>
       ))}

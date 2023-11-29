@@ -21,9 +21,9 @@ const Info = () => {
                 Ready to speak with us? Give us a ring
               </p>
               {/* <Link href="tel:+13217659177"> */}
-                <p className="info-text text-center sm:text-start">
-                  +1 (321) 765-9177
-                </p>
+              <p className="info-text text-center sm:text-start">
+                +1 (509) 592-1745
+              </p>
               {/* </Link> */}
             </div>
           </div>

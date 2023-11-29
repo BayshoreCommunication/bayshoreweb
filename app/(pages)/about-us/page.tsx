@@ -120,7 +120,7 @@ const page = () => {
         </div>
       </SectionLayout>
 
-      <AboutUs />
+      {/* <AboutUs /> */}
 
       {/* <SectionLayout bg="">
         <SectionHeader

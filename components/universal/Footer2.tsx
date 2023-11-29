@@ -31,7 +31,7 @@ const Footer2 = () => {
                 <li>1301 34th ST South,</li>
                 <li>St.Petersburg FL 33711</li>
                 <li>
-                  <a href="tel:+1 (321) 765-9177">+1 (321) 765-9177</a>
+                  <a href="tel:+1 (509) 592-1745">+1 (509) 592-1745</a>
                 </li>
                 <li>
                   <a href="mailto:info@bayshorecommunication.com">

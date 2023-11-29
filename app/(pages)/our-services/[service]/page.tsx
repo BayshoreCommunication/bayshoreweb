@@ -196,7 +196,7 @@ const Page = ({ params }: { params: { service: string } }) => {
                   </div>
                 </div>
               </SectionLayout>
-              <AboutUs />
+              {/* <AboutUs /> */}
             </div>
           ))}
         </div>

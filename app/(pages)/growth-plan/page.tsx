@@ -97,7 +97,7 @@ const page = () => {
         heading="Ready to Grow? Get your FREE Quote Today!"
         btnText="Get a Proposal "
       />
-      <AboutUs />
+      {/* <AboutUs /> */}
       <Info />
       <Results
         heading="Even though we don’t like showing off; 
