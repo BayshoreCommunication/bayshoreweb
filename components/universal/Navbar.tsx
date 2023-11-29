@@ -141,7 +141,7 @@ const Navbar = () => {
                 data-aos-delay={hasAnimated ? 0 : i * 200}
               >
                 <Link
-                  href={`${el.link}`}
+                  href={el.link}
                   className={`font-semibold hover:border-b-2  ${
                     splitPath === el.link
                       ? "border-orange-700 border-b-2"
