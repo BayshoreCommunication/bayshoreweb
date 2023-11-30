@@ -20,6 +20,10 @@ const Head = () => {
         `}
       </Script>
       <link rel="canonical" href={process.env.NEXT_PUBLIC_APP_URL + url} />
+      <meta
+        name="google-site-verification"
+        content="4D7c8Md6e4LutBgarRA2BWlVkh_7gW1XdRGya8bW1-g"
+      />
     </head>
   );
 };
