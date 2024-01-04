@@ -375,7 +375,7 @@ const LogosM = ({ el }: any) => {
     <>
       <a
         href="#"
-        className="flex flex-col items-center md:flex-row md:max-w-2xl gap-2"
+        className="flex flex-col items-left sm:items-center md:flex-row md:max-w-2xl gap-2"
       >
         <Image
           src={el.link}
@@ -384,7 +384,7 @@ const LogosM = ({ el }: any) => {
           height={600}
           className="w-[35%] sm:w-[35%] h-auto "
         />
-        <div className="flex flex-col pl-4 leading-normal">
+        <div className="flex flex-col sm:pl-4 leading-normal">
           <h5 className="mb-2 text-2xl font-bold text-gray-900 tracking-widest">
             {el.text}
           </h5>
