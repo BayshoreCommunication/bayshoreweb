@@ -37,12 +37,14 @@ const Progress = ({
           <div
             className={`absolute ${
               hasPlayed ? percentage : "w-0"
-            } rounded-[4px] h-full ${bg} top-0 left-0 transition-all duration-1000`}
+            } rounded-[4px] h-full ${bg} top-0 left-0 transition-all duration-1000 rounded-r-2xl`}
           ></div>
           <p
             className={`absolute ${percentageValpx} z-10 top-[50%] translate-y-[-50%] font-semibold !text-[#f4f4f4] text-[1.5rem]`}
           >
-            {percentageVal}
+            <div className="bg-blue-gray-700 px-3 rounded-[95%] text-lg font-normal ">
+              {percentageVal}
+            </div>
           </p>
           {/* <div
             className={`border-2 rounded-full ${border} h-[72px] w-[72px] absolute top-0 right-0 translate-y-[-40%]`}
