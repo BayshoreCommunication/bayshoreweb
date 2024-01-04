@@ -6,6 +6,7 @@ import React from "react";
 import { caseindv } from "../page";
 import parser from "html-react-parser";
 import AboutUs from "@/components/universal/AboutUs";
+import Reveal from "@/components/motion/Reveal";
 
 export const metadata: Metadata = {
   title: "Case-Bayshore Communication",
@@ -50,7 +51,9 @@ const IndividualCase = ({ params }: { params: { slug: string } }) => {
               </div>
             </div>
           </SectionLayout>
+
           {/* <AboutUs /> */}
+
           <Consultaion />
         </div>
       ))}

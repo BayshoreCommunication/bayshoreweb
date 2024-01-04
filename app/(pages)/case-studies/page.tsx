@@ -7,6 +7,7 @@ import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import parser from "html-react-parser";
+import Reveal from "@/components/motion/Reveal";
 
 export const metadata: Metadata = {
   title: "Case-Bayshore Communication",
@@ -343,25 +344,34 @@ caseindv = [
 const Page = () => {
   return (
     <>
-      <HeroWithImage
-        heading={hero[0].heading}
-        description={hero[0].description}
-        imgLink="/assets/case-studies/case-studies.png"
-      />
-      {/* Featured */}
-      <SectionLayout bg="">
-        <SectionHeader
-          heading="Featured case studies"
-          text="Be inspired by our clients’ success stories. Learn how they used our solutions to grow their businesses. You can do it too."
+      <Reveal>
+        <HeroWithImage
+          heading={hero[0].heading}
+          description={hero[0].description}
+          imgLink="/assets/case-studies/case-studies.png"
         />
-        <div className="mt-8">
-          <div className="flex flex-col gap-[3rem]">
-            <Featured />
+      </Reveal>
+      {/* Featured */}
+
+      <SectionLayout bg="">
+        <Reveal>
+          <SectionHeader
+            heading="Featured case studies"
+            text="Be inspired by our clients’ success stories. Learn how they used our solutions to grow their businesses. You can do it too."
+          />
+        </Reveal>
+        <Reveal>
+          <div className="mt-8">
+            <div className="flex flex-col gap-[3rem]">
+              <Featured />
+            </div>
           </div>
-        </div>
+        </Reveal>
       </SectionLayout>
 
-      <Consultaion />
+      <Reveal>
+        <Consultaion />
+      </Reveal>
     </>
   );
 };
@@ -385,33 +395,35 @@ const Featured = () => {
     <>
       {caseindv.map((elem, index) => (
         <div key={index}>
-          <div className="bg-[#F4F4F4] grid grid-cols-1 md:grid-cols-2 items-center">
-            <Image
-              src={`/assets/case-studies/${elem.caseImg}`}
-              alt="man-working-on-office"
-              width={600}
-              height={600}
-              className="w-full h-auto"
-            />
-            <div className=" md:rounded-r-[20px] px-8 md:px-[10rem] py-[2rem]">
-              <div className="flex flex-col gap-[1.5rem] md:gap-[2.5rem] md:items-start items-center">
-                <h4 className="heading-four !text-left">{elem.title}</h4>
-                <p className="text-small text-cut text-cut-5">
-                  {parser(elem.desc)}
-                </p>
+          <Reveal>
+            <div className="bg-[#F4F4F4] grid grid-cols-1 md:grid-cols-2 items-center">
+              <Image
+                src={`/assets/case-studies/${elem.caseImg}`}
+                alt="man-working-on-office"
+                width={600}
+                height={600}
+                className="w-full h-auto"
+              />
+              <div className=" md:rounded-r-[20px] px-8 md:px-[10rem] py-[2rem]">
+                <div className="flex flex-col gap-[1.5rem] md:gap-[2.5rem] md:items-start items-center">
+                  <h4 className="heading-four !text-left">{elem.title}</h4>
+                  <p className="text-small text-cut text-cut-5">
+                    {parser(elem.desc)}
+                  </p>
 
-                <Link
-                  href={`/case-studies/${elem.url
-                    .replace(/\s+/g, "-")
-                    .toLowerCase()}`}
-                >
-                  <button className="!text-[#565EE8] font-semibold text-small">
-                    Learn more
-                  </button>
-                </Link>
+                  <Link
+                    href={`/case-studies/${elem.url
+                      .replace(/\s+/g, "-")
+                      .toLowerCase()}`}
+                  >
+                    <button className="!text-[#565EE8] font-semibold text-small">
+                      Learn more
+                    </button>
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
       ))}
     </>

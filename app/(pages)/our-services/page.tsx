@@ -9,6 +9,7 @@ import Image from "next/image";
 import React from "react";
 import { HomeTabBarType } from "@/types/types";
 import { AiOutlineRight } from "react-icons/ai";
+import Reveal from "@/components/motion/Reveal";
 
 //  Home Hero section
 let hero: {
@@ -36,11 +37,20 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      <Hero heading={hero[0].heading} description={hero[0].description} />
-      <Info />
+      <Reveal>
+        <Hero heading={hero[0].heading} description={hero[0].description} />
+      </Reveal>
+      <div className="mt-20 container max-w-2xl">
+        <Info />
+      </div>
       <SectionLayout bg="">
-        <h2 className="heading-secondary text-center">Our Services</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-[8rem] mt-[6rem]">
+        <Reveal>
+          <h2 className="heading-secondary flex justify-center mt-10">
+            Our Services
+          </h2>
+        </Reveal>
+
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-[3rem] mt-[6rem] mb-10">
           {services.map(
             (
               el: {
@@ -75,7 +85,11 @@ const page = () => {
               },
               i: number
             ) => (
-              <Service el={el} key={i} />
+              <>
+                <Reveal>
+                  <Service el={el} key={i} />
+                </Reveal>
+              </>
             )
           )}
         </div>
@@ -83,7 +97,9 @@ const page = () => {
 
       <AboutUs />
 
-      <Consultaion />
+      <Reveal>
+        <Consultaion />
+      </Reveal>
     </>
   );
 };

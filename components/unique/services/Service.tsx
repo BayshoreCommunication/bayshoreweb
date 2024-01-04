@@ -5,6 +5,7 @@ import { AiOutlineRight } from "react-icons/ai";
 import Parser from "html-react-parser";
 import Package from "@/components/universal/Package";
 import { HomeTabBarType } from "@/types/types";
+import Reveal from "../../motion/Reveal";
 // import HomeTabBar from "../HomeTabBar";
 
 // interface IHomeTabBar {
@@ -4263,30 +4264,34 @@ interface ServiceProps {
 
 const Service: FC<ServiceProps> = ({ el }) => {
   return (
-    <div className="flex flex-col  items-center gap-[1rem] custom-shadow px-[3rem] pt-[3rem] pb-[1rem]">
-      <div>
-        <Image
-          src={el.logo}
-          alt="service-hero"
-          width={399}
-          height={400}
-          className="w-[8rem] h-[8rem] md:w-[9.9rem] md:h-[9.9rem] mb-[1rem] md:mb-[1.5rem]"
-        />
-      </div>
-      <h4 className="heading-four">{el.shortTitle}</h4>
-      <p className="text-base text-cut text-cut-5">{el.readMoreDesc}</p>
-      <Link
-        className="flex items-center gap-2 text-[#FE6F1F]"
-        href={`/our-services/${el.url}`}
-      >
-        <span>
-          Read more
-          <span className="inline-block translate-y-[1px]">
-            <AiOutlineRight />
+    <>
+      <div className="flex flex-col items-center gap-[1rem] border-2 rounded-[40px] px-[3rem] pt-[4rem] pb-[2rem] hover:border-[#FE6F1F]">
+        <div>
+          <Image
+            src={el.logo}
+            alt="service-hero"
+            width={399}
+            height={400}
+            className="w-[8rem] h-[8rem] md:w-[9.9rem] md:h-[9.9rem] mb-[1rem] md:mb-[1.5rem] opacity-50"
+          />
+        </div>
+        <h4 className="heading-four opacity-90">{el.shortTitle}</h4>
+        <p className="text-base text-cut text-cut-5 opacity-90">
+          {el.readMoreDesc}
+        </p>
+        <Link
+          className="flex items-center gap-2 text-[#FE6F1F]"
+          href={`/our-services/${el.url}`}
+        >
+          <span>
+            Read more
+            <span className="inline-block translate-y-[1px]">
+              <AiOutlineRight />
+            </span>
           </span>
-        </span>
-      </Link>
-    </div>
+        </Link>
+      </div>
+    </>
   );
 };
 export default Service;

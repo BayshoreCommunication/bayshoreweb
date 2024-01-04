@@ -4,6 +4,7 @@ import { AiOutlineRight } from "react-icons/ai";
 import Image from "next/image";
 import SectionHeader from "./SectionHeader";
 import Link from "next/link";
+import Reveal from "../motion/Reveal";
 
 interface resultInfo {
   heading: string;
@@ -35,7 +36,9 @@ const Results: React.FC<resultInfo> = ({ heading }) => {
       </div>
 
       <div className="mt-16">
-        <ClientLogos />
+        <Reveal>
+          <ClientLogos />
+        </Reveal>
       </div>
     </SectionLayout>
   );
@@ -51,13 +54,6 @@ let logos: {
 const ClientLogos = () => {
   return (
     <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 justify-center gap-x-20 gap-y-[5rem] justify-items-center items-center lg:mb-20 lg:mt-10">
-      <Image
-        src="/assets/client-logo/swop.svg"
-        alt="swop"
-        width={400}
-        height={400}
-        className="w-[11rem]"
-      />
       <Image
         src="/assets/client-logo/apex.svg"
         alt="marketing"

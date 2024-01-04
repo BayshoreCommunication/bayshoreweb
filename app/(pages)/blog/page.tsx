@@ -8,6 +8,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import parser from "html-react-parser";
+import Reveal from "@/components/motion/Reveal";
 
 let hero: {
   heading: string;
@@ -1102,25 +1103,29 @@ blogindv = [
 const page = () => {
   return (
     <>
-      <HeroWithImage
-        heading={hero[0].heading}
-        description={hero[0].description}
-        imgLink="/assets/blog/expert-tips-and-strategy-for-digital-marketing.png"
-      />
+      <Reveal>
+        <HeroWithImage
+          heading={hero[0].heading}
+          description={hero[0].description}
+          imgLink="/assets/blog/expert-tips-and-strategy-for-digital-marketing.png"
+        />
+      </Reveal>
 
       {/* section blog */}
 
       <SectionLayout bg="">
-        <div className="flex flex-col items-center">
-          <h2 className="heading-secondary ">
-            {`The Digital Marketer's Playbook: Insights, Ideas, and Inspiration`}
-          </h2>
-          <p className="text-base !text-center max-w-[622px] mx-auto mb-10">
-            Get valuable tips and tricks from our skilled digital marketing
-            teams. Boost your online performance and reach your goals with our
-            insights, ideas, and inspirations.
-          </p>
-        </div>
+        <Reveal>
+          <div className="flex flex-col items-center">
+            <h2 className="heading-secondary ">
+              {`The Digital Marketer's Playbook: Insights, Ideas, and Inspiration`}
+            </h2>
+            <p className="text-base !text-center max-w-[622px] mx-auto mb-10">
+              Get valuable tips and tricks from our skilled digital marketing
+              teams. Boost your online performance and reach your goals with our
+              insights, ideas, and inspirations.
+            </p>
+          </div>
+        </Reveal>
         <div className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] grid-flow-row-dense">
             {blogindv.map((el, i) => (
@@ -1145,7 +1150,9 @@ const page = () => {
         </div>
       </SectionLayout> */}
 
-      <Consultaion />
+      <Reveal>
+        <Consultaion />
+      </Reveal>
     </>
   );
 };
@@ -1154,53 +1161,59 @@ export default page;
 
 const Blog = ({ el, i }: any) => {
   return (
-    <div>
-      <div className="relative mb-4">
-        <Image
-          src={`/assets/blog/${el.blogImg}`}
-          alt="marketing"
-          width={800}
-          height={800}
-          className="w-full h-auto"
-        />
-        <Image
-          src="/assets/blog/mike.png"
-          alt="marketing"
-          width={800}
-          height={800}
-          className="w-[6rem] md:w-[8rem] h-auto absolute bottom-0 left-[3%] translate-y-[50%]"
-        />
-      </div>
-      <div className="cus-name flex justify-between items-center w-[78%] sm:w-[80%] ml-auto">
-        <p className="text-xsmall">
-          By: <span className="text-[#0077B3]">{el.writerName} </span>
-        </p>
-        <p className="text-xsmall">{el.blogDate}</p>
-      </div>
-      <h4 className="heading-tertiary mt-[3rem] md:mt-[4.5rem]">{el.title}</h4>
+    <Reveal>
       <div>
-        {/* <h5 className="text-small !text-[#0077B3] md:mt-[3rem] md:mb-[2rem] my-[1.5rem]">
+        <div className="relative mb-4">
+          <Image
+            src={`/assets/blog/${el.blogImg}`}
+            alt="marketing"
+            width={800}
+            height={800}
+            className="w-full h-auto"
+          />
+          <Image
+            src="/assets/blog/mike.png"
+            alt="marketing"
+            width={800}
+            height={800}
+            className="w-[6rem] md:w-[8rem] h-auto absolute bottom-0 left-[3%] translate-y-[50%]"
+          />
+        </div>
+        <div className="cus-name flex justify-between items-center w-[78%] sm:w-[80%] ml-auto">
+          <p className="text-xsmall">
+            By: <span className="text-[#0077B3]">{el.writerName} </span>
+          </p>
+          <p className="text-xsmall">{el.blogDate}</p>
+        </div>
+        <h4 className="heading-tertiary mt-[3rem] md:mt-[4.5rem]">
+          {el.title}
+        </h4>
+        <div>
+          {/* <h5 className="text-small !text-[#0077B3] md:mt-[3rem] md:mb-[2rem] my-[1.5rem]">
           Content Marketing
         </h5> */}
-        <p className="text-small mt-4 text-cut text-cut-5">{parser(el.desc)}</p>
-      </div>
-      <div className="center md:block">
-        <Link
-          href={`/blog/${el.url
-            .replace(/\s+/g, "-") // Replace spaces with dashes globally
-            .toLowerCase()}`}
-        >
-          <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
-            Read this post
-          </button>
-        </Link>
-        {/* <Link href={`/blog/${el.url}`}>
+          <p className="text-small mt-4 text-cut text-cut-5">
+            {parser(el.desc)}
+          </p>
+        </div>
+        <div className="center md:block">
+          <Link
+            href={`/blog/${el.url
+              .replace(/\s+/g, "-") // Replace spaces with dashes globally
+              .toLowerCase()}`}
+          >
+            <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
+              Read this post
+            </button>
+          </Link>
+          {/* <Link href={`/blog/${el.url}`}>
           <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
             Read this post
           </button>
         </Link> */}
+        </div>
       </div>
-    </div>
+    </Reveal>
   );
 };
 

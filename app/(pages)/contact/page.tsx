@@ -4,6 +4,7 @@ import React from "react";
 import { Metadata } from "next";
 import SimpleMap from "@/components/unique/contact/Map";
 import Form from "@/components/unique/contact/Form";
+import Reveal from "@/components/motion/Reveal";
 
 export const metadata: Metadata = {
   title: "Contact-Bayshore Communication",
@@ -38,43 +39,49 @@ address = [
 const Page = () => {
   return (
     <>
-      <Image
-        src="/assets/contact.png"
-        alt="contact-office"
-        width={2000}
-        height={600}
-        className="w-full max-h-[30rem] object-top"
-      />
+      <Reveal>
+        <Image
+          src="/assets/contact.png"
+          alt="contact-office"
+          width={2000}
+          height={600}
+          className="w-full max-h-[30rem] object-top"
+        />
+      </Reveal>
       <SectionLayout bg="">
-        <div className="flex flex-wrap justify-center md:justify-between gap-20 ">
-          <div className="md:flex-1 ">
-            <Adress
-              title="Tampa Office"
-              address={address[0].address}
-              phone={address[0].phone}
-              email={address[0].email}
-            />
-          </div>
-
-          <div className="md:flex-1 ">
-            <Adress
-              title="Asia Office"
-              address={address[1].address}
-              phone={address[1].phone}
-              email={address[1].email}
-            />
-          </div>
-          <div className="md:flex-[2]">
-            <div className=" mx-auto">
-              <h4 className="heading-four !text-center">
-                Just send us your questions or concerns by starting a new
-                message and we will give you the help you need.
-              </h4>
-              <Form />
+        <Reveal>
+          <div className="flex flex-wrap justify-center md:justify-between gap-20 mt-20">
+            <div className="md:flex-1 ">
+              <Adress
+                title="Tampa Office"
+                address={address[0].address}
+                phone={address[0].phone}
+                email={address[0].email}
+              />
             </div>
+
+            <div className="md:flex-1 ">
+              <Adress
+                title="Asia Office"
+                address={address[1].address}
+                phone={address[1].phone}
+                email={address[1].email}
+              />
+            </div>
+
+            <div className="md:flex-[2]">
+              <div className=" mx-auto">
+                <h4 className="heading-four !text-center">
+                  Just send us your questions or concerns by starting a new
+                  message and we will give you the help you need.
+                </h4>
+                <Form />
+              </div>
+            </div>
+
+            {/* <Adress title="Dubai" /> */}
           </div>
-          {/* <Adress title="Dubai" /> */}
-        </div>
+        </Reveal>
       </SectionLayout>
       {/* <SectionLayout bg="">
         <div className="max-w-[600px] mx-auto">
@@ -87,12 +94,14 @@ const Page = () => {
       </SectionLayout> */}
 
       {/* <SimpleMap /> */}
-      <div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019.8052045544562!2d-82.67877466610979!3d27.756943436867076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e242db96ffff%3A0x6a7fc5cfe7f891a3!2sBayshore%20Communication!5e0!3m2!1sen!2sbd!4v1693473942600!5m2!1sen!2sbd"
-          className="w-full h-[35rem] shadow-lg"
-        ></iframe>
-      </div>
+      <Reveal>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1019.8052045544562!2d-82.67877466610979!3d27.756943436867076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2e242db96ffff%3A0x6a7fc5cfe7f891a3!2sBayshore%20Communication!5e0!3m2!1sen!2sbd!4v1693473942600!5m2!1sen!2sbd"
+            className="w-full h-[35rem] shadow-lg"
+          ></iframe>
+        </div>
+      </Reveal>
     </>
   );
 };

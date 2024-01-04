@@ -16,7 +16,6 @@ import Image from "next/image";
 import { log } from "console";
 import Reveal from "@/components/motion/Reveal";
 
-
 export function AnimationHomeTabBar() {
   const data = [
     {
@@ -96,12 +95,11 @@ export function AnimationHomeTabBar() {
         <TabsHeader
           className="p-2 rounded-[45px] bg-[#F4F4F4]"
           indicatorProps={{
-            className:
-              "bg-[#FAF0E4] shadow-none !text-gray-900 sm:rounded-[45px]",
+            className: "bg-[#FAF0E4] shadow-none !text-gray-900 rounded-[45px]",
           }}
         >
           {data.map(({ label, value, link, activeLink }) => (
-            <Tab key={value} value={value} className="sm:p-16 ">
+            <Tab key={value} value={value} className="md:p-16 p-8">
               <div className="flex items-center gap-10">
                 <Image
                   src={activeLink}
@@ -110,7 +108,9 @@ export function AnimationHomeTabBar() {
                   height={100}
                   className={`md:h-[26px] md:w-[26px] h-[16px] w-[16px] `}
                 />
-                <p className="py-2 text-[1.6rem] text-gray-600">{label}</p>
+                <p className="py-2 sm:text-[1.6rem] text-[1rem] text-gray-600 hidden md:block">
+                  {label}
+                </p>
               </div>
             </Tab>
           ))}
@@ -124,12 +124,14 @@ export function AnimationHomeTabBar() {
               value={value}
               className="border-2 mt-10 rounded-[45px]"
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
                 <div className="rounded-[10px] px-4 py-16 md:p-16 flex flex-col justify-center">
-                  <h3 className="heading-tertiary">{label}</h3>
+                  <h2 className="heading-secondary sm:text-left text-center">
+                    {label}
+                  </h2>
                   <p className="text-base">{desc}</p>
                 </div>
-                <div className="row-start-1 md:col-start-2 p-20">
+                <div className="row-start-1 md:col-start-2 p-10">
                   <Image
                     src={img}
                     alt="tab-1"

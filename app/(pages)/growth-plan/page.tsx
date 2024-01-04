@@ -1,3 +1,4 @@
+import Reveal from "@/components/motion/Reveal";
 import AboutUs from "@/components/universal/AboutUs";
 import Boost from "@/components/universal/Boost";
 import ColFlex from "@/components/universal/ColFlex";
@@ -21,61 +22,66 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      <Hero heading={hero[0].heading} description={hero[0].description} />
+      <Reveal>
+        <Hero heading={hero[0].heading} description={hero[0].description} />
+      </Reveal>
       {/* FLexiblity */}
-      <SectionLayout bg="">
-        <h2 className="heading-secondary text-center ">
-          Flexibility at its Best: From One-Time Assessments to Complete
-          Marketing Solutions
-        </h2>
-        <div className="mt-8 custom-shadow md:py-[7rem] md:px-[10rem] py-[3rem] px-[1rem] sm:px-[4rem] ">
-          <div className="grid grid-cols-1 md:grid-cols-2 items-center   gap-4">
-            <div>
-              <h4 className="heading-four text-center mb-4">
-                Budget-Friendly Options
-              </h4>
-              <p className="text-base text-center">
-                We’ll do everything, take care of everything,and report directly
-                to you.
-              </p>
-            </div>
-            <div className="justify-self-center">
-              <Image
-                src="/assets/growth-plan/option.svg"
-                alt="option"
-                width={300}
-                height={300}
-                className="w-[8rem] md:w-[12rem] lg:w-[14rem] h-auto"
-              />
+      <Reveal>
+        <SectionLayout bg="">
+          <h2 className="heading-secondary flex justify-center">
+            Flexibility at its Best: From One-Time Assessments to Complete
+            Marketing Solutions
+          </h2>
+          <div className="mt-8 border-2 rounded-[40px] border-gray-300 md:py-[7rem] md:px-[10rem] py-[3rem] px-[1rem] sm:px-[4rem] ">
+            <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+              <div>
+                <h4 className="heading-four text-center mb-4">
+                  Budget-Friendly Options
+                </h4>
+                <p className="text-base text-center">
+                  We’ll do everything, take care of everything,and report
+                  directly to you.
+                </p>
+              </div>
+              <div className="justify-self-center opacity-70">
+                <Image
+                  src="/assets/growth-plan/option.svg"
+                  alt="option"
+                  width={300}
+                  height={300}
+                  className="w-[8rem] md:w-[12rem] lg:w-[14rem] h-auto"
+                />
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2  mt-12 gap-8">
-          <ColFlex
-            heading="Flexibility to Test and Experiment"
-            description="We’ll build you a high performing engine and you run it by yourself."
-            imgLink="/assets/growth-plan/seo.svg"
-          />
+          <div className="grid grid-cols-1 md:grid-cols-2  mt-12 gap-8">
+            <ColFlex
+              heading="Flexibility to Test and Experiment"
+              description="We’ll build you a high performing engine and you run it by yourself."
+              imgLink="/assets/growth-plan/seo.svg"
+            />
 
-          <ColFlex
-            heading="Collaborative Invironment"
-            description="Get ongoing step-by-step advicewith data-driven prioritization."
-            imgLink="/assets/growth-plan/seo.svg"
-          />
-        </div>
-      </SectionLayout>
+            <ColFlex
+              heading="Collaborative Invironment"
+              description="Get ongoing step-by-step advicewith data-driven prioritization."
+              imgLink="/assets/growth-plan/seo.svg"
+            />
+          </div>
+        </SectionLayout>
+      </Reveal>
 
       {/* Package */}
 
       <SectionLayout bg="">
-        <div className="flex flex-col items-center">
-          <h2 className="heading-secondary !text-center max-w-[800px] mx-auto ">
-            Affordable Marketing Solutions to Fit Your Budget with our Value
-            Package
-          </h2>
-          <p className="text-base !text-center  mb-10">
-            {`
+        <Reveal>
+          <div className="flex flex-col items-center">
+            <h2 className="heading-secondary !text-center max-w-[800px] mx-auto ">
+              Affordable Marketing Solutions to Fit Your Budget with our Value
+              Package
+            </h2>
+            <p className="text-base !text-center  mb-10">
+              {`
             We are aware that there is no one size fits all approach to SEO. To
             create a unique SEO plan for your company, Bayishore team takes into
             account your firm's particular demands, industry, existing SEO
@@ -83,26 +89,35 @@ const page = () => {
             investigation. Contact us right away if you're prepared to begin
             developing your unique, revenue-generating SEO approach.
             `}
-            <Link className="text-[#4C74B9] underline" href="/contact">
-              {" "}
-              contact us{" "}
-            </Link>{" "}
-            today!
-          </p>
-        </div>
-        <SectionPackage />
+              <Link className="text-[#4C74B9] underline" href="/contact">
+                {" "}
+                contact us{" "}
+              </Link>{" "}
+              today!
+            </p>
+          </div>
+        </Reveal>
+        <Reveal>
+          <SectionPackage />
+        </Reveal>
       </SectionLayout>
 
-      <Boost
-        heading="Ready to Grow? Get your FREE Quote Today!"
-        btnText="Get a Proposal "
-      />
+      <Reveal>
+        <Boost
+          heading="Ready to Grow? Get your FREE Quote Today!"
+          btnText="Get a Proposal "
+        />
+      </Reveal>
       {/* <AboutUs /> */}
-      <Info />
-      <Results
-        heading="Even though we don’t like showing off; 
+      <div className="mt-10 container">
+        <Info />
+      </div>
+      <Reveal>
+        <Results
+          heading="Even though we don’t like showing off; 
 we have some amazing results"
-      />
+        />
+      </Reveal>
     </>
   );
 };

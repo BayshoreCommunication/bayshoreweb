@@ -34,7 +34,7 @@ interface box {
 
 const HomeServiceCard: React.FC<box> = ({ title, imgLink, box }) => {
   return (
-    <div className="border-2 border-[#DBDBDB]  rounded-[10px] px-[3rem] py-[2rem]">
+    <div className="border-2 border-[#DBDBDB] rounded-[70px] px-[5rem] py-[5rem]">
       <div className="flex justify-between items-center">
         <h4 className="heading-tertiary !text-[#222] text-cut text-cut-1 !text-start">
           {title}

@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const Info = () => {
   return (
-    <div className="bg-img rounded-r-[75px] rounded-l-[75px] container">
-      <SectionLayout bg="">
-        <Reveal>
+    <Reveal>
+      <div className="bg-img rounded-r-[75px] rounded-l-[75px] container">
+        <SectionLayout bg="">
           <div className="custom-info grid  grid-cols-2 justify-between items-center">
             <div className="flex flex-wrap sm:flex-nowrap items-center justify-center gap-8 ">
               <Image
@@ -55,10 +55,10 @@ const Info = () => {
                 </p>
               </div>
             </div>
-          </div>{" "}
-        </Reveal>
-      </SectionLayout>
-    </div>
+          </div>
+        </SectionLayout>
+      </div>
+    </Reveal>
   );
 };
 

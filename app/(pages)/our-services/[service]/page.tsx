@@ -14,6 +14,7 @@ import { useParams } from "next/navigation";
 import { log } from "console";
 import { blogindv } from "../../blog/page";
 import Link from "next/link";
+import Reveal from "@/components/motion/Reveal";
 
 //  Home Hero section
 let hero: {
@@ -39,163 +40,188 @@ const Page = ({ params }: { params: { service: string } }) => {
 
   return (
     <>
-      <HeroIndividual
-        heading={individualService[0].topHeroLeftTitle}
-        description={individualService[0].topHeroLeftDescription}
-        // src={individualService.map((elem, index) => elem.heroImg)}
-        imgLink={individualService[0].heroImg}
-      />
-      <div>
+      <Reveal>
+        <HeroIndividual
+          heading={individualService[0].topHeroLeftTitle}
+          description={individualService[0].topHeroLeftDescription}
+          // src={individualService.map((elem, index) => elem.heroImg)}
+          imgLink={individualService[0].heroImg}
+        />
+      </Reveal>
+
+      {/* <div className="mt-16">
         <Info />
-      </div>
-      <div className="relative">
+      </div> */}
+
+      <div className="relative mt-16">
         <div className="">
           {individualService.map((elem, index) => (
             <div key={index}>
-              <SectionLayout bg="">
-                <div className="flex gap-10">
-                  <div className="flex-[5] h-[100%] service-style">
-                    <div>
-                      <>
-                        <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-                          <div className="rounded-[10px] px-4 pb-16 ">
-                            <h2>{elem.title}</h2>
-                            {elem.shortDescription}
+              <Reveal>
+                <SectionLayout bg="">
+                  <div className="flex gap-10">
+                    <div className="flex-[5] h-[100%] service-style">
+                      <Reveal>
+                        <div>
+                          <>
+                            <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
+                              <div className="rounded-[10px] px-4 pb-16 ">
+                                <h2>{elem.title}</h2>
+                                {elem.shortDescription}
+                              </div>
+                              <div className="row-start-1 md:col-start-2">
+                                <Image
+                                  src={elem.secondHeroImg}
+                                  alt="tab-1"
+                                  width={400}
+                                  height={400}
+                                  className="w-full h-full"
+                                />
+                              </div>
+                            </div>
+                          </>
+                        </div>
+                      </Reveal>
+                      {/* <h1>Tab</h1> */}
+
+                      {/*Responsive Problem*/}
+
+                      {/* <Reveal>
+                        <ServiceTabBar
+                          individualHomeTabBar={individualHomeTabBar}
+                        />
+                      </Reveal> */}
+
+                      <Reveal>
+                        <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                          {Parser(elem.description1)}
+                        </div>
+                      </Reveal>
+                      {/* <h1>prie</h1> */}
+
+                      <Reveal>
+                        <ServicePrice url={parameter} />
+                      </Reveal>
+
+                      {/* <h1>check</h1> */}
+
+                      <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                        {Parser(elem.description2)}
+                      </div>
+                      <div>
+                        <BoostService
+                          heading=" Need a boost for you business? Get your FREE Quote Today!"
+                          btnText="Send us a proposal"
+                        />
+                      </div>
+                      <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                        {Parser(elem.description3)}
+                      </div>
+                    </div>
+                    <div className="flex-[1.5] hidden sm:block">
+                      <div className="sticky top-28">
+                        <h3 className="text-[1.8rem] font-semibold text-center mb-3">
+                          Our Services
+                        </h3>
+                        {services.map((elem: any, index: any) => (
+                          <div key={index}>
+                            <Link
+                              className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
+                              href={`/our-services/${elem.url
+                                .replace(/\s+/g, "-") // Replace spaces with dashes globally
+                                .toLowerCase()}`}
+                            >
+                              <Image
+                                src={`${elem.heroImg}`}
+                                alt="blog_image"
+                                width={3109}
+                                height={1752}
+                                className="w-[100px] h-[80px]"
+                              />{" "}
+                              <p className="!text-xl">{elem.title}</p>
+                            </Link>
                           </div>
-                          <div className="row-start-1 md:col-start-2">
-                            <Image
-                              src={elem.secondHeroImg}
-                              alt="tab-1"
-                              width={400}
-                              height={400}
-                              className="w-full h-full"
-                            />
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                </SectionLayout>
+              </Reveal>
+              <div className="container">
+                <Info />
+              </div>
+              <Reveal>
+                <SectionLayout bg="">
+                  <div className="flex gap-10">
+                    <div className="flex-[5] h-[100%] service-style service-style-ind ">
+                      <div>
+                        <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                          {Parser(elem.description4)}
+                        </div>
+                        <Consultaion />
+                        <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                          {Parser(elem.description5)}
+                        </div>
+
+                        <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                          {Parser(elem.description6)}
+                        </div>
+                        <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                          {Parser(elem.description7)}
+                        </div>
+                        <div className="!mb-8 !text-justify !md:text-left service-style-ind">
+                          {Parser(elem.description8)}
+                        </div>
+                        <div className="!mb-8 !text-justify !md:text-left">
+                          {Parser(elem.description9)}
+                        </div>
+                        <div className="!mb-8 !text-justify !md:text-left">
+                          {Parser(elem.description10)}
+                        </div>
+                        <div className="!mb-8 !text-justify !md:text-left">
+                          {Parser(elem.description11)}
+                        </div>
+                        <div className="!mb-8 !text-justify !md:text-left">
+                          {Parser(elem.description12)}
+                        </div>
+                        <div className="!mb-8 !text-justify !md:text-left">
+                          {Parser(elem.description13)}
+                        </div>
+                        <div className="!mb-8 !text-justify !md:text-left">
+                          {Parser(elem.description14)}
+                        </div>
+                        {Parser(elem.description15)}
+                      </div>
+                    </div>
+                    <div className="flex-[1.5] hidden sm:block">
+                      <div className="sticky top-28">
+                        <h3 className="text-[1.8rem] font-semibold text-center mb-3">
+                          Our Blogs
+                        </h3>
+                        {blogindv.map((elem: any, index: any) => (
+                          <div key={index}>
+                            <Link
+                              className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
+                              href={`/blog/${elem.url
+                                .replace(/\s+/g, "-") // Replace spaces with dashes globally
+                                .toLowerCase()}`}
+                            >
+                              <Image
+                                src={`/assets/blog/${elem.blogImg}`}
+                                alt="blog_image"
+                                width={3109}
+                                height={1752}
+                                className="w-[100px] h-[80px]"
+                              />{" "}
+                              <p className="!text-xl">{elem.title}</p>
+                            </Link>
                           </div>
-                        </div>
-                      </>
-                    </div>
-                    <ServiceTabBar
-                      individualHomeTabBar={individualHomeTabBar}
-                    />
-                    <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                      {Parser(elem.description1)}
-                    </div>
-
-                    <ServicePrice url={parameter} />
-                    {/* <h1>check</h1> */}
-
-                    <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                      {Parser(elem.description2)}
-                    </div>
-                    <div>
-                      <BoostService
-                        heading=" Need a boost for you business? Get your FREE Quote Today!"
-                        btnText="Send us a proposal"
-                      />
-                    </div>
-                    <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                      {Parser(elem.description3)}
+                        ))}
+                      </div>
                     </div>
                   </div>
-                  <div className="flex-[1.5]">
-                    <div className="sticky top-28">
-                      <h3 className="text-[1.8rem] font-semibold text-center mb-3">
-                        Our Services
-                      </h3>
-                      {services.map((elem: any, index: any) => (
-                        <div key={index}>
-                          <Link
-                            className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
-                            href={`/our-services/${elem.url
-                              .replace(/\s+/g, "-") // Replace spaces with dashes globally
-                              .toLowerCase()}`}
-                          >
-                            <Image
-                              src={`${elem.heroImg}`}
-                              alt="blog_image"
-                              width={3109}
-                              height={1752}
-                              className="w-[100px] h-[80px]"
-                            />{" "}
-                            <p className="!text-xl">{elem.title}</p>
-                          </Link>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </SectionLayout>
-              <Info />
-              <SectionLayout bg="">
-                <div className="flex gap-10">
-                  <div className="flex-[5] h-[100%] service-style service-style-ind ">
-                    <div>
-                      <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                        {Parser(elem.description4)}
-                      </div>
-                      <Consultaion />
-                      <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                        {Parser(elem.description5)}
-                      </div>
-
-                      <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                        {Parser(elem.description6)}
-                      </div>
-                      <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                        {Parser(elem.description7)}
-                      </div>
-                      <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                        {Parser(elem.description8)}
-                      </div>
-                      <div className="!mb-8 !text-justify !md:text-left">
-                        {Parser(elem.description9)}
-                      </div>
-                      <div className="!mb-8 !text-justify !md:text-left">
-                        {Parser(elem.description10)}
-                      </div>
-                      <div className="!mb-8 !text-justify !md:text-left">
-                        {Parser(elem.description11)}
-                      </div>
-                      <div className="!mb-8 !text-justify !md:text-left">
-                        {Parser(elem.description12)}
-                      </div>
-                      <div className="!mb-8 !text-justify !md:text-left">
-                        {Parser(elem.description13)}
-                      </div>
-                      <div className="!mb-8 !text-justify !md:text-left">
-                        {Parser(elem.description14)}
-                      </div>
-                      {Parser(elem.description15)}
-                    </div>
-                  </div>
-                  <div className="flex-[1.5]">
-                    <div className="sticky top-28">
-                      <h3 className="text-[1.8rem] font-semibold text-center mb-3">
-                        Our Blogs
-                      </h3>
-                      {blogindv.map((elem: any, index: any) => (
-                        <div key={index}>
-                          <Link
-                            className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
-                            href={`/blog/${elem.url
-                              .replace(/\s+/g, "-") // Replace spaces with dashes globally
-                              .toLowerCase()}`}
-                          >
-                            <Image
-                              src={`/assets/blog/${elem.blogImg}`}
-                              alt="blog_image"
-                              width={3109}
-                              height={1752}
-                              className="w-[100px] h-[80px]"
-                            />{" "}
-                            <p className="!text-xl">{elem.title}</p>
-                          </Link>
-                        </div>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </SectionLayout>
+                </SectionLayout>
+              </Reveal>
               {/* <AboutUs /> */}
             </div>
           ))}

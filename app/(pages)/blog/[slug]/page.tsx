@@ -74,14 +74,16 @@ const IndividualBlog = ({ params }: { params: { slug: string } }) => {
                       </div>
 
                       <div>
-                        <h1 className="heading-primary">{elem.title}</h1>
+                        <h1 className="font-semibold text-[80px] leading-normal">
+                          {elem.title}
+                        </h1>
                       </div>
 
                       <div>{parser(elem.desc)}</div>
                     </div>
                   </div>
 
-                  <div className="flex-1 ">
+                  <div className="flex-1 hidden sm:block">
                     {/* <div className="bg-[url('/assets/help-banner-bg.jpg')]">
                   <h4>
                     Need <br />

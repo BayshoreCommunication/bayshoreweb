@@ -102,7 +102,7 @@ const Page = () => {
         </Reveal>
 
         <div className="mt-8">
-          <div className="grid grid-cols-1 md:grid-cols-2  mb-8 gap-8 lg:gap-[5rem] px-2 sm:px-[10vw] md:px-0 justify-between ">
+          <div className="grid grid-cols-1 md:grid-cols-2  mb-8 gap-8 lg:gap-[5rem] px-1 sm:px-[10vw] md:px-0 justify-between ">
             <Reveal>
               <HomeServiceCard
                 imgLink="/assets/growth-marketing.svg"
@@ -185,34 +185,34 @@ const Page = () => {
               <Progress
                 title="Growth marketing"
                 bg="bg-gradient-to-r from-[#D4145A] to-[#FBB03B]"
-                border="border-[#FBB03B]"
+                border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
                 percentage="w-[90%]"
                 percentageVal="90%"
-                percentageValpx="left-[84%]"
+                percentageValpx="sm:left-[85%] left-[79%]"
               />
               <Progress
                 title="Software solution and development"
                 bg="bg-gradient-to-r from-[#2E3192] to-[#1BFFFF]"
-                border="border-[#1BFFFF]"
+                border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
                 percentage="w-[96%]"
                 percentageVal="96%"
-                percentageValpx="left-[90%]"
+                percentageValpx="sm:left-[91%] left-[85%]"
               />
               <Progress
                 title="Offshore Office"
                 bg="bg-gradient-to-r from-[#11998E] to-[#38EF7D]"
-                border="border-[#38EF7D]"
+                border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
                 percentage="w-[92%]"
                 percentageVal="92%"
-                percentageValpx="left-[86%]"
+                percentageValpx="sm:left-[87%] left-[81%]"
               />
               <Progress
                 title="Content development"
                 bg="bg-gradient-to-r from-[#FF61D2] to-[#FE9090]"
-                border="border-[#FE9090]"
+                border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
                 percentage="w-[88%]"
                 percentageVal="88%"
-                percentageValpx="left-[82%]"
+                percentageValpx="sm:left-[83%] left-[77%]"
               />
             </div>
           </Reveal>
@@ -238,7 +238,7 @@ const Page = () => {
         </div>
         <Reveal>
           <div className="mt-16 mb-5 bg-cover bg-[url('/assets/icons-for-web/dots-backgound1.png')]">
-            <div className="grid grid-cols-2 md:grid-cols-3  gap-[4rem] sm:gap-[2rem] md:gap-[4rem] lg:gap-[8rem] ">
+            <div className="grid grid-cols-2 md:grid-cols-3 sm:grid-cols-2 gap-[4rem] sm:gap-[2rem] md:gap-[4rem] lg:gap-[8rem] ">
               {links.map((el: any, i: number) => (
                 <LogosM el={el} key={i} />
               ))}
@@ -368,32 +368,39 @@ links = [
     alt: "ui-ux",
     text: "UI UX",
   },
+  {
+    link: "/assets/icons-for-web/color-icon/video-production.png",
+    alt: "video-production",
+    text: "Video Production",
+  },
 ];
 
 const LogosM = ({ el }: any) => {
   return (
     <>
-      <a
-        href="#"
-        className="flex flex-col items-left sm:items-center md:flex-row md:max-w-2xl gap-2"
-      >
-        <Image
-          src={el.link}
-          alt={el.alt}
-          width={600}
-          height={600}
-          className="w-[35%] sm:w-[35%] h-auto "
-        />
-        <div className="flex flex-col sm:pl-4 leading-normal">
-          <h5 className="mb-2 text-2xl font-bold text-gray-900 tracking-widest">
-            {el.text}
-          </h5>
-          <p className="mb-3 font-normal text-xl text-gray-600 tracking-widest leading-loose	">
-            We have some amazing results to show you. Ddelighted with our
-            services and their outcomes.
-          </p>
-        </div>
-      </a>
+      <Reveal>
+        <a
+          href="#"
+          className="flex flex-col items-left sm:items-center justify-start md:flex-row md:max-w-2xl gap-2"
+        >
+          <Image
+            src={el.link}
+            alt={el.alt}
+            width={600}
+            height={600}
+            className="w-[35%] sm:w-[35%] h-auto"
+          />
+          <div className="flex flex-col sm:pl-4 leading-normal mt-6 md:mt-0">
+            <h5 className="mb-2 text-2xl font-bold text-gray-900 tracking-widest">
+              {el.text}
+            </h5>
+            <p className="mb-3 font-normal text-xl text-gray-600 tracking-widest leading-loose	">
+              We have some amazing results to show you. Ddelighted with our
+              services and their outcomes.
+            </p>
+          </div>
+        </a>
+      </Reveal>
     </>
   );
 };
