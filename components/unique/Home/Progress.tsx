@@ -41,9 +41,9 @@ const Progress = ({
           <p
             className={`absolute ${percentageValpx} z-10 top-[50%] translate-y-[-50%] font-semibold !text-[#f4f4f4] text-[1.5rem]`}
           >
-            <div className="bg-blue-gray-700 px-2 rounded-r-3xl rounded-l-3xl text-[11px] font-normal">
+            <span className="bg-blue-gray-700 px-2 py-1.5 rounded-r-3xl rounded-l-3xl text-[11px] font-normal">
               {percentageVal}
-            </div>
+            </span>
           </p>
           {/* <div
             className={`border-2 rounded-full ${border} h-[72px] w-[72px] absolute top-0 right-0 translate-y-[-40%]`}

@@ -22,7 +22,7 @@ export function AnimationHomeTabBar() {
       label: "Growth Marketing",
       value: "growth_marketing",
       link: "/assets/growth-marketing.svg",
-      img: "/assets/service/growth-test2.png",
+      img: "/assets/service/growth-marketing1.png",
       activeLink: "/assets/growth-marketing.svg",
       desc: `As business competition increases year after year, a strong online
       presence along with growth marketing and strategic planning
@@ -39,7 +39,7 @@ export function AnimationHomeTabBar() {
     {
       label: "Software Solution & Development",
       value: "software_solution_development",
-      img: "/assets/service/design-development.jpg",
+      img: "/assets/service/software-development2.png",
       link: "/assets/software-solution.svg",
       activeLink: "/assets/software-solution.svg",
       desc: `Meet your tech team at Bayshore Communication. When it comes to
@@ -56,7 +56,7 @@ export function AnimationHomeTabBar() {
     {
       label: "Offshore Office",
       value: "offshore-office",
-      img: "/assets/service/offshore-office.jpg",
+      img: "/assets/service/offshore-office3.png",
       link: "/assets/offshore-office.svg",
       activeLink: "/assets/offshore-office.svg",
       desc: ` Bayshore’s Offshore Office supports are all about helping you to
@@ -73,7 +73,7 @@ export function AnimationHomeTabBar() {
     {
       label: "Content Development",
       value: "content-development",
-      img: "/assets/service/content-development.jpg",
+      img: "/assets/service/content-development4.png",
       link: "/assets/content-development.svg",
       activeLink: "/assets/content-development.svg",
       desc: `Enhancing brand visibility relies on audience engagement, and the

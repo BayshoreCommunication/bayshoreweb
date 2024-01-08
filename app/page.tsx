@@ -180,42 +180,41 @@ const Page = () => {
               </p>
             </Reveal>
           </div>
-          <Reveal>
-            <div className=" flex flex-col gap-8 lg:gap-12 md:pl-[5rem] sm:px-[15vw] md:px-0">
-              <Progress
-                title="Growth marketing"
-                bg="bg-gradient-to-r from-[#D4145A] to-[#FBB03B]"
-                border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
-                percentage="w-[90%]"
-                percentageVal="90%"
-                percentageValpx="sm:left-[85%] left-[79%]"
-              />
-              <Progress
-                title="Software solution and development"
-                bg="bg-gradient-to-r from-[#2E3192] to-[#1BFFFF]"
-                border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
-                percentage="w-[96%]"
-                percentageVal="96%"
-                percentageValpx="sm:left-[91%] left-[85%]"
-              />
-              <Progress
-                title="Offshore Office"
-                bg="bg-gradient-to-r from-[#11998E] to-[#38EF7D]"
-                border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
-                percentage="w-[92%]"
-                percentageVal="92%"
-                percentageValpx="sm:left-[87%] left-[81%]"
-              />
-              <Progress
-                title="Content development"
-                bg="bg-gradient-to-r from-[#FF61D2] to-[#FE9090]"
-                border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
-                percentage="w-[88%]"
-                percentageVal="88%"
-                percentageValpx="sm:left-[83%] left-[77%]"
-              />
-            </div>
-          </Reveal>
+
+          <div className=" flex flex-col gap-8 lg:gap-12 md:pl-[5rem] sm:px-[15vw] md:px-0">
+            <Progress
+              title="Growth marketing"
+              bg="bg-gradient-to-r from-[#D4145A] to-[#FBB03B]"
+              border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
+              percentage="w-[90%]"
+              percentageVal="90%"
+              percentageValpx="sm:left-[85%] left-[79%]"
+            />
+            <Progress
+              title="Software solution and development"
+              bg="bg-gradient-to-r from-[#2E3192] to-[#1BFFFF]"
+              border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
+              percentage="w-[96%]"
+              percentageVal="96%"
+              percentageValpx="sm:left-[91%] left-[85%]"
+            />
+            <Progress
+              title="Offshore Office"
+              bg="bg-gradient-to-r from-[#11998E] to-[#38EF7D]"
+              border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
+              percentage="w-[92%]"
+              percentageVal="92%"
+              percentageValpx="sm:left-[87%] left-[81%]"
+            />
+            <Progress
+              title="Content development"
+              bg="bg-gradient-to-r from-[#FF61D2] to-[#FE9090]"
+              border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
+              percentage="w-[88%]"
+              percentageVal="88%"
+              percentageValpx="sm:left-[83%] left-[77%]"
+            />
+          </div>
         </div>
       </SectionLayout>
 
@@ -320,6 +319,7 @@ let links: {
   link: string;
   alt: string;
   text: string;
+  desc: string;
 }[];
 
 links = [
@@ -327,51 +327,60 @@ links = [
     link: "/assets/icons-for-web/color-icon/analyze-and-measure-results.png",
     alt: "analyze-and-Measure-Results",
     text: "Analyze and Measure Results",
+    desc: "We analyze the numbers of your marketing efforts. We track every step customers take and turn that data into smart ideas to make your strategy better and get results you can see",
   },
   {
     link: "/assets/icons-for-web/color-icon/conversion-optimization.png",
     alt: "conversion-optimization",
     text: "Conversion Optimization",
+    desc: "When someone checks out your site, we make sure they don't just browse they buy. We smooth out the buying process, make offers too good to resist, and bring in strategies that turn clicks into sales",
   },
 
   {
     link: "/assets/icons-for-web/color-icon/define.png",
     alt: "Define",
     text: "Define",
+    desc: "We’ll help you find what really makes your brand tick. By diving deep into what you stand for and who you're trying to reach, we'll create a brand that feels just right everywhere it shows up",
   },
 
   {
     link: "/assets/icons-for-web/color-icon/engage.png",
     alt: "engage",
     text: "Engage",
+    desc: "We make your brand more than just another name online. We create awesome content, build lively communities, and start conversations that really connect with the people you want to reach",
   },
 
   {
     link: "/assets/icons-for-web/color-icon/seo-and-sem.png",
     alt: "seo-sem",
     text: "Seo and Sem",
+    desc: "We'll make sure your brand shines bright online. We've got tricks up our sleeves to get you to the top of those Google searches, both through organic methods and clever paid strategies",
   },
 
   {
     link: "/assets/icons-for-web/color-icon/strategy.png",
     alt: "strategy",
     text: "Strategy",
+    desc: "Let's plan your success step by step. We use the info we gather to create plans that match your goals, making sure your marketing helps your business grow in a big way",
   },
 
   {
     link: "/assets/icons-for-web/color-icon/target-audience.png",
     alt: "target-audience",
     text: "Target Audience",
+    desc: "No more random ads to everyone! We use smart ways to find exactly who your best customers are. That way, your marketing hits the bullseye with the right audience at just the right time",
   },
   {
     link: "/assets/icons-for-web/color-icon/ui-ux.png",
     alt: "ui-ux",
     text: "UI UX",
+    desc: "Your website and digital spaces won't just look good—they'll be easy and enjoyable to use. We design them so that your customers can move around effortlessly, keeping them engaged and loya",
   },
   {
     link: "/assets/icons-for-web/color-icon/video-production.png",
     alt: "video-production",
     text: "Video Production",
+    desc: "Our videos aren't just about showing off your brand; they tell its story. They're emotional, attention-grabbing, and get people to take action, making your brand stand out in the online crowd",
   },
 ];
 
@@ -395,8 +404,7 @@ const LogosM = ({ el }: any) => {
               {el.text}
             </h5>
             <p className="mb-3 font-normal text-xl text-gray-600 tracking-widest leading-loose	">
-              We have some amazing results to show you. Ddelighted with our
-              services and their outcomes.
+              {el.desc}
             </p>
           </div>
         </a>

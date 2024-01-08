@@ -1,5 +1,3 @@
-"use client";
-import React, { useRef } from "react";
 import { ReactNode } from "react";
 import "./globals.css";
 import Facebook from "@/components/universal/MessengerChatBot";
@@ -8,8 +6,6 @@ import Script from "next/script";
 import SmoothScrolling from "@/components/motion/SmoothScrolling";
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
-  const containerRef = useRef(null);
-
   return (
     <html lang="en">
       <Head />

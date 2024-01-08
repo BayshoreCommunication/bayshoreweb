@@ -35,7 +35,6 @@ const page = () => {
       </div>
       <SectionLayout bg="">
         <Reveal>
-          {" "}
           <h2 className="heading-secondary !text-center">Our Story</h2>
           <p className="text-base mb-4">
             In a world filled with challenges and limited resources, we embarked
@@ -54,13 +53,12 @@ const page = () => {
             technology can weave.
           </p>
           <p className="text-base mb-4">
-            {" "}
             Guiding our path is Huraira Shishir, a sage guardian whose wisdom
             spans decades. Her invaluable experience steers us through the
             complex maze of business, illuminating the way forward with
             strategic brilliance. Her counsel ensures that every decision we
             make is grounded in insight and foresight, paving the way for our
-            collective success.{" "}
+            collective success.
           </p>
           <p className="text-base mb-4">
             Together, we have overcome adversity and transformed Bayshore
@@ -106,13 +104,13 @@ const page = () => {
               ))}
             </div>
           </Reveal>
-          <Reveal>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 mt-[4rem] gap-8">
-              {cardContentS.map((el: any, i: number) => (
-                <CardSmall el={el} key={i} />
-              ))}
-            </div>
-          </Reveal>
+          {/* <Reveal> */}
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 mt-[4rem] gap-8">
+            {cardContentS.map((el: any, i: number) => (
+              <CardSmall el={el} key={i} />
+            ))}
+          </div>
+          {/* </Reveal> */}
         </div>
       </SectionLayout>
 

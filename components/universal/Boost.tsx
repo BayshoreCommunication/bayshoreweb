@@ -5,6 +5,7 @@ import { AiOutlineRight } from "react-icons/ai";
 import HomeHeroCard from "../unique/Home/HomeHeroCard";
 import Image from "next/image";
 import ProposalBtn from "./ProposalBtn";
+import Reveal from "../motion/Reveal";
 
 interface boostInfo {
   heading: string;
@@ -29,7 +30,9 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
 
   return (
     <SectionLayout bg="bg-[#F4F4F4]">
-      <h2 className="heading-secondary !text-center">{heading}</h2>
+      <Reveal>
+        <h2 className="heading-secondary !text-center">{heading}</h2>
+      </Reveal>
 
       {/* <form
         className="flex md:items-center gap-8 md:gap-12 mt-[4rem] max-w-[100rem] mx-auto flex-col md:flex-row "
@@ -44,47 +47,50 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
         />
         <ProposalBtn />
       </form> */}
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-12 px-[4rem] sm:px-[15rem]  md:px-[10rem] lg:px-0">
-        <HomeHeroCard
-          bgImg="bg-heroimg-1"
-          heading="Business Growth Increased By"
-          stat={87}
-        />
-        <HomeHeroCard
-          bgImg="bg-heroimg-2"
-          heading="Website Engagement Increased By"
-          stat={71}
-        />
-        <HomeHeroCard
-          bgImg="bg-heroimg-3"
-          heading="Social Media Engagement Increased By"
-          stat={60}
-        />
+      <Reveal>
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-12 px-[4rem] sm:px-[15rem]  md:px-[10rem] lg:px-0">
+          <HomeHeroCard
+            bgImg="bg-heroimg-1"
+            heading="Business Growth Increased By"
+            stat={87}
+          />
 
-        <div className="flex-1 flex flex-col items-center custom-shadow p-[3rem]">
-          <p className="text-base pr-12 !text-start">
-            “Fueling Success, Fueled by Client Satisfations”
-          </p>
-          <div className="flex mt-8 gap-6 items-center">
-            <Image
-              src="/assets/salman-n.png"
-              alt="salman"
-              width={150}
-              height={150}
-              className="w-[53px] h-[53px] rounded-full border-[2px] border-[#207DE9]"
-            />
-            <div>
+          <HomeHeroCard
+            bgImg="bg-heroimg-2"
+            heading="Website Engagement Increased By"
+            stat={71}
+          />
+          <HomeHeroCard
+            bgImg="bg-heroimg-3"
+            heading="Social Media Engagement Increased By"
+            stat={60}
+          />
+
+          <div className="flex-1 flex flex-col items-center custom-shadow p-[3rem]">
+            <p className="text-base pr-12 !text-start">
+              “Fueling Success, Fueled by Client Satisfations”
+            </p>
+            <div className="flex mt-8 gap-6 items-center">
+              <Image
+                src="/assets/salman-n.png"
+                alt="salman"
+                width={150}
+                height={150}
+                className="w-[53px] h-[53px] rounded-full border-[2px] border-[#207DE9]"
+              />
               <div>
-                {" "}
-                <h4 className="heading-four !text-[1.2rem]">
-                  Salman H Saikote
-                </h4>
-                <p className="text-small !text-[1rem]">CTO</p>
+                <div>
+                  {" "}
+                  <h4 className="heading-four !text-[1.2rem]">
+                    Salman H Saikote
+                  </h4>
+                  <p className="text-small !text-[1rem]">CTO</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Reveal>
     </SectionLayout>
   );
 };
