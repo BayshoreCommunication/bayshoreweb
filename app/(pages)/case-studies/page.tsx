@@ -348,7 +348,7 @@ const Page = () => {
         <HeroWithImage
           heading={hero[0].heading}
           description={hero[0].description}
-          imgLink="/assets/case-studies/case-studies.png"
+          imgLink="/assets/case-studies/case-studies-update.png"
         />
       </Reveal>
       {/* Featured */}

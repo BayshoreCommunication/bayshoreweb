@@ -13,7 +13,6 @@ import {
   Cog6ToothIcon,
 } from "@heroicons/react/24/solid";
 import Image from "next/image";
-import { log } from "console";
 import Reveal from "@/components/motion/Reveal";
 
 export function AnimationHomeTabBar() {
@@ -22,7 +21,7 @@ export function AnimationHomeTabBar() {
       label: "Growth Marketing",
       value: "growth_marketing",
       link: "/assets/growth-marketing.svg",
-      img: "/assets/service/growth-marketing1.png",
+      img: "/assets/service/growth-marketing.svg",
       activeLink: "/assets/growth-marketing.svg",
       desc: `As business competition increases year after year, a strong online
       presence along with growth marketing and strategic planning
@@ -39,7 +38,7 @@ export function AnimationHomeTabBar() {
     {
       label: "Software Solution & Development",
       value: "software_solution_development",
-      img: "/assets/service/software-development2.png",
+      img: "/assets/service/software-development.svg",
       link: "/assets/software-solution.svg",
       activeLink: "/assets/software-solution.svg",
       desc: `Meet your tech team at Bayshore Communication. When it comes to
@@ -56,7 +55,7 @@ export function AnimationHomeTabBar() {
     {
       label: "Offshore Office",
       value: "offshore-office",
-      img: "/assets/service/offshore-office3.png",
+      img: "/assets/service/offshore-office.svg",
       link: "/assets/offshore-office.svg",
       activeLink: "/assets/offshore-office.svg",
       desc: ` Bayshore’s Offshore Office supports are all about helping you to
@@ -73,7 +72,7 @@ export function AnimationHomeTabBar() {
     {
       label: "Content Development",
       value: "content-development",
-      img: "/assets/service/content-development4.png",
+      img: "/assets/service/content-development.svg",
       link: "/assets/content-development.svg",
       activeLink: "/assets/content-development.svg",
       desc: `Enhancing brand visibility relies on audience engagement, and the
@@ -93,14 +92,14 @@ export function AnimationHomeTabBar() {
     <Tabs value="growth_marketing">
       <Reveal>
         <TabsHeader
-          className="p-2 rounded-[45px] bg-[#F4F4F4]"
+          className="p-2 rounded-[45px] bg-[#F4F4F4] md:p-2 flex justify-center items-center"
           indicatorProps={{
             className: "bg-[#FAF0E4] shadow-none !text-gray-900 rounded-[45px]",
           }}
         >
           {data.map(({ label, value, link, activeLink }) => (
-            <Tab key={value} value={value} className="md:p-16 p-8">
-              <div className="flex items-center gap-10">
+            <Tab key={value} value={value} className="md:p-16 p-8 !text-center">
+              <div className="flex items-center gap-x-10 gap-y-2 md:flex-col md:justify-center 2xl:flex-row">
                 <Image
                   src={activeLink}
                   alt="svg-logo"
