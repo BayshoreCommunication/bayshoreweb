@@ -188,7 +188,7 @@ const Page = () => {
               border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
               percentage="w-[90%]"
               percentageVal="90%"
-              percentageValpx="left-[82%] md:left-[80%] lg:left-[85%]"
+              percentageValpx="sm:left-[82%] left-[81%] md:left-[80%] lg:left-[84%]"
             />
             <Progress
               title="Software solution and development"
@@ -196,7 +196,7 @@ const Page = () => {
               border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
               percentage="w-[96%]"
               percentageVal="96%"
-              percentageValpx="left-[88%] md:left-[86%] lg:left-[91%]"
+              percentageValpx="sm:left-[87%] left-[87%] md:left-[86%] lg:left-[90%]"
             />
             <Progress
               title="Offshore Office"
@@ -204,7 +204,7 @@ const Page = () => {
               border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
               percentage="w-[92%]"
               percentageVal="92%"
-              percentageValpx="left-[84%] md:left-[82%] lg:left-[87%]"
+              percentageValpx="sm:left-[83%] left-[83%] md:left-[82%] lg:left-[86%]"
             />
             <Progress
               title="Content development"
@@ -212,7 +212,7 @@ const Page = () => {
               border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
               percentage="w-[88%]"
               percentageVal="88%"
-              percentageValpx="md:left-[78%] lg:left-[83%] left-[80%]"
+              percentageValpx="sm:left-[80%] md:left-[78%] lg:left-[82%] left-[79%]"
             />
           </div>
         </div>
