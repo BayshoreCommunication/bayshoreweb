@@ -188,7 +188,7 @@ const Page = () => {
               border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
               percentage="w-[90%]"
               percentageVal="90%"
-              percentageValpx="sm:left-[85%] left-[79%]"
+              percentageValpx="left-[82%] md:left-[80%] lg:left-[85%]"
             />
             <Progress
               title="Software solution and development"
@@ -196,7 +196,7 @@ const Page = () => {
               border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
               percentage="w-[96%]"
               percentageVal="96%"
-              percentageValpx="sm:left-[91%] left-[85%]"
+              percentageValpx="left-[88%] md:left-[86%] lg:left-[91%]"
             />
             <Progress
               title="Offshore Office"
@@ -204,7 +204,7 @@ const Page = () => {
               border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
               percentage="w-[92%]"
               percentageVal="92%"
-              percentageValpx="sm:left-[87%] left-[81%]"
+              percentageValpx="left-[84%] md:left-[82%] lg:left-[87%]"
             />
             <Progress
               title="Content development"
@@ -212,7 +212,7 @@ const Page = () => {
               border="bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]"
               percentage="w-[88%]"
               percentageVal="88%"
-              percentageValpx="sm:left-[83%] left-[77%]"
+              percentageValpx="md:left-[78%] lg:left-[83%] left-[80%]"
             />
           </div>
         </div>
