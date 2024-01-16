@@ -388,10 +388,7 @@ const LogosM = ({ el }: any) => {
   return (
     <>
       <Reveal>
-        <a
-          href="#"
-          className="flex flex-col items-left sm:items-center justify-start md:flex-row md:max-w-2xl gap-2"
-        >
+        <div className="flex flex-col items-left sm:items-center justify-start md:flex-row md:max-w-2xl gap-2">
           <Image
             src={el.link}
             alt={el.alt}
@@ -407,7 +404,7 @@ const LogosM = ({ el }: any) => {
               {el.desc}
             </p>
           </div>
-        </a>
+        </div>
       </Reveal>
     </>
   );

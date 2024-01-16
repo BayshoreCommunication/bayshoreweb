@@ -23,17 +23,7 @@ export function AnimationHomeTabBar() {
       link: "/assets/growth-marketing.svg",
       img: "/assets/service/growth-marketing.svg",
       activeLink: "/assets/growth-marketing.svg",
-      desc: `As business competition increases year after year, a strong online
-      presence along with growth marketing and strategic planning
-      becomes essential to outpace competitors. Our Growth Marketing
-      services can turbocharge your brand visibility, engagement, and
-      growth. We&apos;re a team of experts in SEO, Paid Ads, Social
-      Media, Email Marketing, Content that actually makes sense, Digital
-      PR (yep, we know people), smart Automation, and even the cool
-      world of Influencers. All these fancy terms aside, what we really
-      do is make YOUR Business bigger and better in today&apos;s digital
-      age.In short, we&apos;re here to get your brand where you want it
-      to be. No fluff, just results.`,
+      desc: `As business competition increases year after year, a strong online presence along with growth marketing and strategic planning becomes essential to outpace competitors. Our Growth Marketing services can turbocharge your brand visibility, engagement, and growth. We're a team of experts in SEO, Paid Ads, Social Media, Email Marketing, Content that actually makes sense, Digital PR (yep, we know people), smart Automation, and even the cool world of Influencers. All these fancy terms aside, what we really do is make YOUR Business bigger and better in today’s digital age. In short, we’re here to get your brand where you want it to be. No fluff, just results.`,
     },
     {
       label: "Software Solution & Development",
@@ -41,16 +31,7 @@ export function AnimationHomeTabBar() {
       img: "/assets/service/software-development.svg",
       link: "/assets/software-solution.svg",
       activeLink: "/assets/software-solution.svg",
-      desc: `Meet your tech team at Bayshore Communication. When it comes to
-      Web or Software Solutions and Development, we&apos;re all about
-      turning your ideas into reality. Whether you want to make Android
-      and IOS Apps, build eye-catching websites, create seamless
-      ecommerce experiences, or even develop cutting-edge SaaS
-      solutions, we have the skills and experience to do it. We ensure
-      your project stays current, provide visually stunning designs, and
-      conduct thorough testing to guarantee flawless performance. We
-      don&apos;t just develop, we excel in innovation. Join us on your
-      innovation journey with Bayshore.`,
+      desc: `Meet your tech team at Bayshore Communication. When it comes to Web or Software Solutions and Development, we’re all about turning your ideas into reality. Whether you want to make Android and IOS Apps, build eye-catching websites, create seamless ecommerce experiences, or even develop cutting-edge SaaS solutions, we have the skills and experience to do it. We ensure your project stays current, provide visually stunning designs, and conduct thorough testing to guarantee flawless performance. We don’t just develop, we excel in innovation. Join us on your innovation journey with Bayshore.`,
     },
     {
       label: "Offshore Office",

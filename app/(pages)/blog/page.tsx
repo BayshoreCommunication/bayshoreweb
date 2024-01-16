@@ -1107,7 +1107,7 @@ const page = () => {
         <HeroWithImage
           heading={hero[0].heading}
           description={hero[0].description}
-          imgLink="/assets/blog/expert-tips-and-strategy-for-digital-marketing.png"
+          imgLink="/assets/blog/blog-hero-img.svg"
         />
       </Reveal>
 
