@@ -31,7 +31,7 @@ caseindv = [
   {
     url: `Catflix Digital Marketing Case-Study`,
     meta: ``,
-    caseImg: `a-digital-marketing-case-studies.jpg`,
+    caseImg: `cat-flix.svg`,
     logoImg: `individual-service-logo.png`,
     caseDate: ``,
     writerImg: ``,
@@ -416,7 +416,7 @@ const Featured = () => {
                       .replace(/\s+/g, "-")
                       .toLowerCase()}`}
                   >
-                    <button className="!text-[#565EE8] font-semibold text-small">
+                    <button className="!text-gray-800 font-semibold text-small border-2 border-gray-800 rounded-full p-5 hover:!bg-#FE6F1F hover:text-white">
                       Learn more
                     </button>
                   </Link>
