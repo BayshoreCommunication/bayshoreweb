@@ -1171,21 +1171,22 @@ const Blog = ({ el, i }: any) => {
             height={800}
             className="w-full h-auto"
           />
-          <Image
+          {/* <Image
             src="/assets/blog/mike.png"
             alt="marketing"
             width={800}
             height={800}
             className="w-[6rem] md:w-[8rem] h-auto absolute bottom-0 left-[3%] translate-y-[50%]"
-          />
+          /> */}
+          <p className="text-xsmall mt-1">{el.blogDate}</p>
         </div>
         <div className="cus-name flex justify-between items-center w-[78%] sm:w-[80%] ml-auto">
-          <p className="text-xsmall">
+          {/* <p className="text-xsmall">
             By: <span className="text-[#0077B3]">{el.writerName} </span>
-          </p>
-          <p className="text-xsmall">{el.blogDate}</p>
+          </p> */}
+          {/* <p className="text-xsmall">{el.blogDate}</p> */}
         </div>
-        <h4 className="heading-tertiary mt-[3rem] md:mt-[4.5rem]">
+        <h4 className="heading-tertiary mt-[1rem] md:mt-[2.5rem]">
           {el.title}
         </h4>
         <div>
@@ -1202,7 +1203,10 @@ const Blog = ({ el, i }: any) => {
               .replace(/\s+/g, "-") // Replace spaces with dashes globally
               .toLowerCase()}`}
           >
-            <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
+            {/* <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
+           
+            </button> */}
+            <button className="text-gray-500 font-semibold text-small border border-gray-800 rounded-full p-5 hover:!bg-[#FE6F1F] hover:text-white hover:border-[#FE6F1F] mt-[2rem]">
               Read this post
             </button>
           </Link>

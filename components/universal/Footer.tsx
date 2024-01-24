@@ -158,7 +158,7 @@ const Footer = () => {
         <div className="w-full mt-6 h-[1px] bg-[#DBDBDB]"></div>
         <div className="flex flex-wrap justify-center md:justify-between items-center   ">
           <p className="text-small mt-8 ">
-            Copyright © 2023 All Rights Reserved by Bayshore Communication.
+            Copyright © 2024 All Rights Reserved by Bayshore Communication.
           </p>
           <div className=" flex flex-col items-center  gap-6 pl-8 ">
             <div className="center mt-8 gap-4 ">

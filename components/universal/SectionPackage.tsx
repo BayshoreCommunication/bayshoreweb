@@ -79,7 +79,7 @@ bulletData = [
   {
     title: "Our Package",
     icon: "/assets/growth-plan/growth-plan-gold.svg",
-    price: "999",
+    price: "1999",
     points: [
       "Website Maintenance",
       "Google My Business",
@@ -88,7 +88,6 @@ bulletData = [
       "SMM(FB,IG,Twitter,LinkedIn,Pinterest)",
       "YouTube, TikTok",
       "Google Ads - PPC/Display",
-      "FB, Ig Lead Ads",
       "FB, Ig Lead Ads",
       "Graphic Design & Motion Graphic (5)",
       "Video Topic & Script",

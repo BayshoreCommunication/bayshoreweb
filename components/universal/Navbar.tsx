@@ -130,7 +130,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div>
-          <ul className="flex items-center justify-center gap-[1.5rem] lg:gap-[2.6rem]">
+          <ul className="flex items-center justify-center gap-[1.5rem] lg:gap-[2.6rem] w-full">
             {linksO.map((el: { title: string; link: string }, i: number) => (
               <li
                 className={`text-link ${
@@ -140,6 +140,114 @@ const Navbar = () => {
                 data-aos={hasAnimated ? "" : "fade-down"} // Apply AOS animation only if it hasn't been applied yet
                 data-aos-delay={hasAnimated ? 0 : i * 200}
               >
+                {/* <div className="group relative cursor-pointer py-2 w-full">
+                  <div className="flex items-center justify-between space-x-5 bg-white px-4">
+                    <a className="menu-hover my-2 py-2 text-[14px] font-semibold lg:mx-4">
+                      Service
+                    </a>
+                    <span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        className="h-6 w-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div className="invisible absolute z-50 flex w-[1000px] flex-col bg-gray-100 py-1 px-4 text-gray-800 group-hover:visible">
+                    <div
+                      id="mega-menu-full-dropdown"
+                      className="mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600"
+                    >
+                      <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-6">
+                        <ul>
+                          <li>
+                            <a
+                              href="#"
+                              className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                            >
+                              <div className="font-semibold">Online Stores</div>
+                              <span className="text-sm text-gray-500 dark:text-gray-400">
+                                Connect with third-party tools that you're
+                                already using.
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                            >
+                              <div className="font-semibold">Segmentation</div>
+                              <span className="text-sm text-gray-500 dark:text-gray-400">
+                                Connect with third-party tools that you're
+                                already using.
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                            >
+                              <div className="font-semibold">Marketing CRM</div>
+                              <span className="text-sm text-gray-500 dark:text-gray-400">
+                                Connect with third-party tools that you're
+                                already using.
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul>
+                          <li>
+                            <a
+                              href="#"
+                              className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                            >
+                              <div className="font-semibold">Online Stores</div>
+                              <span className="text-sm text-gray-500 dark:text-gray-400">
+                                Connect with third-party tools that you're
+                                already using.
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                            >
+                              <div className="font-semibold">Segmentation</div>
+                              <span className="text-sm text-gray-500 dark:text-gray-400">
+                                Connect with third-party tools that you're
+                                already using.
+                              </span>
+                            </a>
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              className="block p-3 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700"
+                            >
+                              <div className="font-semibold">Marketing CRM</div>
+                              <span className="text-sm text-gray-500 dark:text-gray-400">
+                                Connect with third-party tools that you're
+                                already using.
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div> */}
                 <Link
                   href={el.link}
                   className={`font-semibold hover:border-b-2  ${
@@ -152,6 +260,9 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
+            {/* <div className="mx-auto flex h-screen w-full items-center justify-center bg-gray-200 py-20"> */}
+
+            {/* </div> */}
           </ul>
         </div>
       </nav>

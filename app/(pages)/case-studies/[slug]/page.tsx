@@ -7,6 +7,9 @@ import { caseindv } from "../page";
 import parser from "html-react-parser";
 import AboutUs from "@/components/universal/AboutUs";
 import Reveal from "@/components/motion/Reveal";
+import { TypeAnimation } from "react-type-animation";
+import AnimateText from "@/components/universal/AnimateText";
+import BlogTextMtion from "@/components/universal/BlogTextMtion";
 
 export const metadata: Metadata = {
   title: "Case-Bayshore Communication",
@@ -36,14 +39,14 @@ const IndividualCase = ({ params }: { params: { slug: string } }) => {
             src={`/assets/case-studies/${elem.caseImg}`}
             alt="individual-blog"
             width={2400}
-            height={2400}
+            height={450}
             className="w-full h-auto object-cover"
           />
           <SectionLayout bg="">
             <div className="h-[100%] service-style">
               <div className="container">
                 <div>
-                  <h1 className="heading-primary !text-center py-4">
+                  <h1 className="heading-primary !text-center py-4 !leading-normal">
                     {elem.title}
                   </h1>
                 </div>
