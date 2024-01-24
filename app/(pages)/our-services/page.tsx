@@ -85,9 +85,7 @@ const page = () => {
               },
               i: number
             ) => (
-              <>
-                <Reveal>{/* <Service el={el} key={i} /> */}</Reveal>
-              </>
+              <>{/* <Service el={el} key={i} /> */}</>
             )
           )}
         </div>
