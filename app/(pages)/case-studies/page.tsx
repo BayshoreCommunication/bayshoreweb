@@ -58,7 +58,7 @@ caseindv = [
 
     <p className="text-base">As Apex's desperation grew, they started to doubt their choices. Had they made a mistake by going digital? Had they not thought enough about how hard online marketing is? Or was it just a matter of finding the right partner, someone who understood their special needs and could handle the ever-changing digital world?</p>
 
-    <h2 className="text-secondary sm:text-left text-center">Part 2: A Glimmer of Hope</h2>
+    <h2 className="text-secondary sm:text-left text-center">Chapter 2: A Glimmer of Hope</h2>
 
     <p className="text-base">Even with their doubts and fears, Apex kept searching, clinging to whatever hope they had left. After a while, they stumbled upon Bayshore Communication. During our free consultation, we could tell they were still unsure about our expertise. To be honest, they were skeptical about all digital marketing agencies. Despite our assurances, they couldn't shake off the lingering doubts: how could Bayshore possibly pull it off?</p>
 
@@ -94,7 +94,7 @@ caseindv = [
     <p className="text-base">After digging into everything, we found a bunch of big issues holding Apex back online. Their website, lacking a clear brand identity and optimized for the wrong keywords, was driving potential clients away rather than attracting them. Social media was dull, not showing off Apex's skills or connecting with potential clients. And their Google listing was basically invisible to most people searching online, like they didn't even exist.</p>
 
 
-    <h2 className="text-secondary sm:text-left text-center">Part 3: The Digital Transformation Journey
+    <h2 className="text-secondary sm:text-left text-center">The Digital Transformation Journey
     </h2>
 
     <p className="text-base">Once we figured out what was wrong, our next job was putting together a team to fix it. We gathered a crew of 7 experts who got to establish Apex Advisor as a digital juggernaut of financial consultancy.</p>

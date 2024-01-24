@@ -8,7 +8,6 @@ import parser from "html-react-parser";
 import AboutUs from "@/components/universal/AboutUs";
 import Reveal from "@/components/motion/Reveal";
 import { TypeAnimation } from "react-type-animation";
-import AnimateText from "@/components/universal/AnimateText";
 import BlogTextMtion from "@/components/universal/BlogTextMtion";
 
 export const metadata: Metadata = {
