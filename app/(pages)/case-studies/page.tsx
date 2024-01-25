@@ -211,7 +211,6 @@ caseindv = [
     <p className="text-base">Don't let poor digital marketing damage your company's reputation or future. Team up with the right experts and schedule a free consultation with us today.
     </p>
     </br>
-    <h4 className ="font-bold">Meta:- Discover how Apex Advisors went from frustration to success by choosing Bayshore Communication as their digital marketing partner.</h4>
     `,
   },
   {
