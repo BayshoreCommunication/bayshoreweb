@@ -12,13 +12,16 @@ import { blogindv } from "../page";
 import { useParams } from "next/navigation";
 import parser from "html-react-parser";
 import AboutUs from "@/components/universal/AboutUs";
+import GetAllBlogData from "@/lib/GetAllBlogData";
 
 export const metadata: Metadata = {
   title: "Blogs: Expert Tips and Strategies from Our Agency",
   description: `You've chosen the best place to learn more about web marketing and how to develop your online presence. Our blog features insightful articles from our team of experts, covering topics such as SEO, social media, content marketing, web design, and more. You'll discover useful tactics and tips that you may use in your own business. By reading our blog, you may keep up with the most recent trends and best practices in the digital world.`,
 };
 
-const IndividualBlog = ({ params }: { params: { slug: string } }) => {
+const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
+  const blogData = await GetAllBlogData();
+
   const parameter = params.slug;
   const indvblog = blogindv.filter(
     (elem) =>
@@ -31,6 +34,15 @@ const IndividualBlog = ({ params }: { params: { slug: string } }) => {
   const dateToday = `${today.getDate()} / ${
     today.getMonth() + 1
   } / ${today.getFullYear()}`;
+
+  const dateFormate = (date: any) => {
+    const formattedDate = new Date(date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    return formattedDate;
+  };
 
   return (
     <>
@@ -57,20 +69,26 @@ const IndividualBlog = ({ params }: { params: { slug: string } }) => {
       <SectionLayout bg="">
         <div className="h-[100%] service-style">
           <div className="container">
-            {indvblog.map((elem, index) => (
+            {blogData?.data?.map((elem: any, index: any) => (
               <div key={index}>
                 <div className="flex gap-x-10">
                   <div className="flex-[3]">
                     <div>
-                      <Image
+                      <img
+                        src={elem.featuredImage.image.url}
+                        alt={elem.featuredImage.altText}
+                        className="w-full h-full"
+                      />
+                      {/* <Image
                         src={`/assets/blog/${elem.blogImg}`}
                         alt="no_image"
                         width={2400}
                         height={2400}
                         className="w-full h-full"
-                      />
+                      /> */}
                       <div className="flex py-6 gap-4">
-                        <VscCalendar size={22} /> {dateToday}
+                        {/* <VscCalendar size={22} /> {dateToday} */}
+                        {dateFormate(elem.createdAt)}
                       </div>
 
                       <div>
@@ -79,7 +97,7 @@ const IndividualBlog = ({ params }: { params: { slug: string } }) => {
                         </h1>
                       </div>
 
-                      <div>{parser(elem.desc)}</div>
+                      <div>{parser(elem.body)}</div>
                     </div>
                   </div>
 
@@ -113,24 +131,30 @@ const IndividualBlog = ({ params }: { params: { slug: string } }) => {
 
 export default IndividualBlog;
 
-const BlogNavigation = () => {
+const BlogNavigation = async () => {
+  const blogData = await GetAllBlogData();
   return (
     <>
-      {blogindv.map((elem: any, index: any) => (
+      {blogData?.data?.map((elem: any, index: any) => (
         <div key={index}>
           <Link
             className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
-            href={`/blog/${elem.url
+            href={`/blog/${elem.title
               .replace(/\s+/g, "-") // Replace spaces with dashes globally
               .toLowerCase()}`}
           >
-            <Image
-              src={`/assets/blog/${elem.blogImg}`}
+            <img
+              src={elem.featuredImage.image.url}
+              alt={elem.featuredImage.altText}
+              className="w-[100px] h-[80px]"
+            />
+            {/* <Image
+              src={`/assets/blog/${elem.featuredImage.image.url}`}
               alt="blog_image"
               width={3109}
               height={1752}
               className="w-[100px] h-[80px]"
-            />{" "}
+            /> */}
             <p className="!text-xl">{elem.title}</p>
           </Link>
         </div>

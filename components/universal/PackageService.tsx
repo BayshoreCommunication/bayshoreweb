@@ -42,7 +42,7 @@ import PackageBulletPoint from "./PackageBulletPoint";
 
 const PackageService = ({ data, title }: any) => {
   return (
-    <div className="sm:w-[35rem] w-full md:w-1/2 justify-self-center mt-[4rem] md:mt-0 h-full flex flex-col justify-between  rounded-[15px] ">
+    <div className="sm:w-[35rem] w-full md:w-2/3 justify-self-center mt-[4rem] md:mt-0 h-full flex flex-col justify-between  rounded-[15px] ">
       <div className="shadow-lg rounded-bl-[15px] rounded-br-[15px]">
         <div className="relative flex justify-between items-center gap-8 bg-[#Ffffff]  rounded-tl-[15px] rounded-tr-[15px] border-[3px] border-[#fe6f1f]">
           {/* <div className="absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]">

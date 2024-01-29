@@ -9,6 +9,7 @@ import Image from "next/image";
 import React from "react";
 import parser from "html-react-parser";
 import Reveal from "@/components/motion/Reveal";
+import GetAllBlogData from "@/lib/GetAllBlogData";
 
 let hero: {
   heading: string;
@@ -1100,7 +1101,9 @@ blogindv = [
   },
 ];
 
-const page = () => {
+const page = async () => {
+  const blogData = await GetAllBlogData();
+
   return (
     <>
       <Reveal>
@@ -1128,7 +1131,7 @@ const page = () => {
         </Reveal>
         <div className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] grid-flow-row-dense">
-            {blogindv.map((el, i) => (
+            {blogData?.data?.map((el: any, i: number) => (
               <div key={i} className="h-fit">
                 <Blog el={el} i={i} />
               </div>
@@ -1160,17 +1163,29 @@ const page = () => {
 export default page;
 
 const Blog = ({ el, i }: any) => {
+  const dateFormate = (date: any) => {
+    const formattedDate = new Date(date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    return formattedDate;
+  };
   return (
     <Reveal>
       <div>
-        <div className="relative mb-4">
-          <Image
-            src={`/assets/blog/${el.blogImg}`}
+        <div className="relative mb-2">
+          <img
+            src={el.featuredImage.image.url}
+            alt={el.featuredImage.altText}
+          />
+          {/* <Image
+            src={`image`}
             alt="marketing"
             width={800}
             height={800}
             className="w-full h-auto"
-          />
+          /> */}
           {/* <Image
             src="/assets/blog/mike.png"
             alt="marketing"
@@ -1178,7 +1193,7 @@ const Blog = ({ el, i }: any) => {
             height={800}
             className="w-[6rem] md:w-[8rem] h-auto absolute bottom-0 left-[3%] translate-y-[50%]"
           /> */}
-          <p className="text-xsmall mt-1">{el.blogDate}</p>
+          <p className="text-xsmall mt-6">{dateFormate(el.createdAt)}</p>
         </div>
         <div className="cus-name flex justify-between items-center w-[78%] sm:w-[80%] ml-auto">
           {/* <p className="text-xsmall">
@@ -1186,7 +1201,7 @@ const Blog = ({ el, i }: any) => {
           </p> */}
           {/* <p className="text-xsmall">{el.blogDate}</p> */}
         </div>
-        <h4 className="heading-tertiary mt-[1rem] md:mt-[2.5rem]">
+        <h4 className="heading-tertiary mt-[1rem] md:mt-[1.5rem]">
           {el.title}
         </h4>
         <div>
@@ -1194,12 +1209,12 @@ const Blog = ({ el, i }: any) => {
           Content Marketing
         </h5> */}
           <p className="text-small mt-4 text-cut text-cut-5">
-            {parser(el.desc)}
+            {parser(el.body)}
           </p>
         </div>
         <div className="center md:block">
           <Link
-            href={`/blog/${el.url
+            href={`/blog/${el.title
               .replace(/\s+/g, "-") // Replace spaces with dashes globally
               .toLowerCase()}`}
           >

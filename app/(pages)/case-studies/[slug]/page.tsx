@@ -34,13 +34,18 @@ const IndividualCase = ({ params }: { params: { slug: string } }) => {
     <>
       {indvcase.map((elem, index) => (
         <div key={index}>
-          <Image
-            src={`/assets/case-studies/${elem.caseImg}`}
-            alt="individual-blog"
-            width={2400}
-            height={450}
-            className="w-full h-auto object-cover"
-          />
+          <div>
+            <Reveal>
+              <Image
+                src={`/assets/case-studies/${elem.caseImg}`}
+                alt="individual-blog"
+                width={2400}
+                height={450}
+                className="w-full h-auto object-cover"
+              />
+            </Reveal>
+          </div>
+
           <SectionLayout bg="">
             <div className="h-[100%] service-style">
               <div className="container">

@@ -59,7 +59,7 @@ const page = () => {
             <ColFlex
               heading="Flexibility to Test and Experiment"
               description="We’ll build you a high performing engine and you run it by yourself."
-              imgLink="/assets/growth-plan/seo.svg"
+              imgLink="/assets/growth-plan/flexibility.png"
             />
 
             <ColFlex
