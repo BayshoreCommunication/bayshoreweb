@@ -2,7 +2,7 @@ import SectionLayout from "@/components/universal/SectionLayout";
 import React from "react";
 import parser from "html-react-parser";
 
-export let termsContent = [
+let termsContent = [
   {
     desc: `
     <p className="text-base">Welcome to Bayshore Communication!</p>

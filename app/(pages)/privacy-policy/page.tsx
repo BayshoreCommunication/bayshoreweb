@@ -4,7 +4,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 import React from "react";
 
-export let privacyContent = [
+let privacyContent = [
   {
     desc: `
   <p className="text-base">Bayshore Communications ("Bayshore", "we", "us") value your privacy and are dedicated to safeguarding your information. This Privacy Policy details what data we collect (from website visits, service engagements, or any interaction), how we use it to personalize your experience and improve our services, what choices you have over your data (including access, correction, and deletion), and how we employ robust security measures to keep your information protected.</p>
