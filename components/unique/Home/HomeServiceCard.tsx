@@ -18,6 +18,7 @@ const Box: React.FC<con> = ({ content }) => {
       />
       <Link
         href="/#"
+        aria-disabled
         className="hover:underline underline-offset-[3px] !text-[#207DE9] text-[12px] md:text-[14px]"
       >
         {content}

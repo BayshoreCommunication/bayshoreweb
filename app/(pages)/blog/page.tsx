@@ -10,6 +10,7 @@ import React from "react";
 import parser from "html-react-parser";
 import Reveal from "@/components/motion/Reveal";
 import GetAllBlogData from "@/lib/GetAllBlogData";
+import { log } from "console";
 
 let hero: {
   heading: string;
@@ -1131,11 +1132,13 @@ const page = async () => {
         </Reveal>
         <div className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] grid-flow-row-dense">
-            {blogData?.data?.map((el: any, i: number) => (
-              <div key={i} className="h-fit">
-                <Blog el={el} i={i} />
-              </div>
-            ))}
+            {blogData?.data
+              ?.filter((blog: any) => blog?.published === true)
+              ?.map((el: any, i: number) => (
+                <div key={i} className="h-fit">
+                  <Blog el={el} i={i} />
+                </div>
+              ))}
           </div>
         </div>
       </SectionLayout>
@@ -1171,6 +1174,7 @@ const Blog = ({ el, i }: any) => {
     });
     return formattedDate;
   };
+
   return (
     <Reveal>
       <div>
@@ -1213,11 +1217,7 @@ const Blog = ({ el, i }: any) => {
           </p>
         </div>
         <div className="center md:block">
-          <Link
-            href={`/blog/${el.title
-              .replace(/\s+/g, "-") // Replace spaces with dashes globally
-              .toLowerCase()}`}
-          >
+          <Link href={`/blog/${el.slug}`}>
             {/* <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
            
             </button> */}

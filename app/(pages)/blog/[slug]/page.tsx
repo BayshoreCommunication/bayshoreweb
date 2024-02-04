@@ -23,11 +23,8 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
   const blogData = await GetAllBlogData();
 
   const parameter = params.slug;
-  const indvblog = blogindv.filter(
-    (elem) =>
-      elem.url
-        .replace(/\s+/g, "-") // Replace spaces with dashes globally
-        .toLowerCase() === parameter
+  const indvblog = blogData?.data?.filter(
+    (elem: any) => elem.slug === parameter
   );
 
   const today = new Date();
@@ -69,40 +66,42 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
       <SectionLayout bg="">
         <div className="h-[100%] service-style">
           <div className="container">
-            {blogData?.data?.map((elem: any, index: any) => (
-              <div key={index}>
-                <div className="flex gap-x-10">
-                  <div className="flex-[3]">
-                    <div>
-                      <img
-                        src={elem.featuredImage.image.url}
-                        alt={elem.featuredImage.altText}
-                        className="w-full h-full"
-                      />
-                      {/* <Image
+            {indvblog
+              ?.filter((blog: any) => blog?.published === true)
+              ?.map((elem: any, index: any) => (
+                <div key={index}>
+                  <div className="flex gap-x-10">
+                    <div className="flex-[3]">
+                      <div>
+                        <img
+                          src={elem.featuredImage.image.url}
+                          alt={elem.featuredImage.altText}
+                          className="w-full h-full"
+                        />
+                        {/* <Image
                         src={`/assets/blog/${elem.blogImg}`}
                         alt="no_image"
                         width={2400}
                         height={2400}
                         className="w-full h-full"
                       /> */}
-                      <div className="flex py-6 gap-4">
-                        {/* <VscCalendar size={22} /> {dateToday} */}
-                        {dateFormate(elem.createdAt)}
-                      </div>
+                        <div className="flex py-6 gap-4">
+                          {/* <VscCalendar size={22} /> {dateToday} */}
+                          {dateFormate(elem.createdAt)}
+                        </div>
 
-                      <div>
-                        <h1 className="font-semibold text-[80px] leading-normal">
-                          {elem.title}
-                        </h1>
-                      </div>
+                        <div>
+                          <h1 className="font-semibold text-[80px] leading-normal">
+                            {elem.title}
+                          </h1>
+                        </div>
 
-                      <div>{parser(elem.body)}</div>
+                        <div>{parser(elem.body)}</div>
+                      </div>
                     </div>
-                  </div>
 
-                  <div className="flex-1 hidden sm:block">
-                    {/* <div className="bg-[url('/assets/help-banner-bg.jpg')]">
+                    <div className="flex-1 hidden sm:block">
+                      {/* <div className="bg-[url('/assets/help-banner-bg.jpg')]">
                   <h4>
                     Need <br />
                     Consultacy Help?
@@ -112,13 +111,13 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                   </p>
                   <Link href="/contact">Contact Us</Link>
                 </div> */}
-                    <div className="sticky top-24">
-                      <BlogNavigation />
+                      <div className="sticky top-24">
+                        <BlogNavigation />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
         </div>
       </SectionLayout>
@@ -135,30 +134,30 @@ const BlogNavigation = async () => {
   const blogData = await GetAllBlogData();
   return (
     <>
-      {blogData?.data?.map((elem: any, index: any) => (
-        <div key={index}>
-          <Link
-            className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
-            href={`/blog/${elem.title
-              .replace(/\s+/g, "-") // Replace spaces with dashes globally
-              .toLowerCase()}`}
-          >
-            <img
-              src={elem.featuredImage.image.url}
-              alt={elem.featuredImage.altText}
-              className="w-[100px] h-[80px]"
-            />
-            {/* <Image
+      {blogData?.data
+        ?.filter((blog: any) => blog?.published === true)
+        ?.map((elem: any, index: any) => (
+          <div key={index}>
+            <Link
+              className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
+              href={`/blog/${elem.slug}`}
+            >
+              <img
+                src={elem.featuredImage.image.url}
+                alt={elem.featuredImage.altText}
+                className="w-[100px] h-[80px]"
+              />
+              {/* <Image
               src={`/assets/blog/${elem.featuredImage.image.url}`}
               alt="blog_image"
               width={3109}
               height={1752}
               className="w-[100px] h-[80px]"
             /> */}
-            <p className="!text-xl">{elem.title}</p>
-          </Link>
-        </div>
-      ))}
+              <p className="!text-xl">{elem.title}</p>
+            </Link>
+          </div>
+        ))}
     </>
   );
 };
