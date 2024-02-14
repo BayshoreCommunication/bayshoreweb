@@ -48,10 +48,10 @@ const page = () => {
           </h2>
         </Reveal>
         <Reveal>
-          <div className="grid grid-cols-1 md:grid-cols-2 mt-10 gap-5">
+          <div className="grid grid-cols-1 gap-5 mt-28 md:grid-cols-2">
             <div className="mb-16">
               <Image
-                src="/assets/refer.svg"
+                src="/assets/rafer-image.svg"
                 alt="marketing"
                 width={1200}
                 height={1200}
@@ -105,7 +105,7 @@ const page = () => {
                 <button className="!text-white !text-center  font-semibold text-small rounded-full w-full  p-5 !bg-[#FE6F1F] hover:!bg-[#fe711fd4]">
                   Submit
                 </button>
-                {/* <button className="btn  " type="button">
+                {/* <button className="btn " type="button">
                 Submit
               </button> */}
               </form>

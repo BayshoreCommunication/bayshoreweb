@@ -10,7 +10,6 @@ import React from "react";
 import parser from "html-react-parser";
 import Reveal from "@/components/motion/Reveal";
 import GetAllBlogData from "@/lib/GetAllBlogData";
-import { log } from "console";
 
 let hero: {
   heading: string;
