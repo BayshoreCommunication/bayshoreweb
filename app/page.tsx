@@ -394,7 +394,7 @@ const LogosM = ({ el }: any) => {
             alt={el.alt}
             width={600}
             height={600}
-            className="w-[35%] sm:w-[35%] h-auto"
+            className="w-[35%] sm:w-[35%] h-auto hover:animate-bounce"
           />
           <div className="flex flex-col sm:pl-4 leading-normal mt-6 md:mt-0">
             <h5 className="mb-2 text-2xl font-bold text-gray-900 tracking-widest">

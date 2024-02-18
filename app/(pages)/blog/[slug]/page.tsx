@@ -73,18 +73,18 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                   <div className="flex gap-x-10">
                     <div className="flex-[3]">
                       <div>
-                        <img
+                        {/* <img
                           src={elem.featuredImage.image.url}
                           alt={elem.featuredImage.altText}
                           className="w-full h-full"
+                        /> */}
+                        <Image
+                          src={elem?.featuredImage?.image?.url}
+                          alt="no_image"
+                          width={2400}
+                          height={2400}
+                          className="w-full h-full"
                         />
-                        {/* <Image
-                        src={`/assets/blog/${elem.blogImg}`}
-                        alt="no_image"
-                        width={2400}
-                        height={2400}
-                        className="w-full h-full"
-                      /> */}
                         <div className="flex py-6 gap-4">
                           {/* <VscCalendar size={22} /> {dateToday} */}
                           {dateFormate(elem.createdAt)}
@@ -142,18 +142,18 @@ const BlogNavigation = async () => {
               className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
               href={`/blog/${elem.slug}`}
             >
-              <img
+              {/* <img
                 src={elem.featuredImage.image.url}
                 alt={elem.featuredImage.altText}
                 className="w-[100px] h-[80px]"
+              /> */}
+              <Image
+                src={elem.featuredImage.image.url}
+                alt="blog_image"
+                width={3109}
+                height={1752}
+                className="w-[100px] h-[80px]"
               />
-              {/* <Image
-              src={`/assets/blog/${elem.featuredImage.image.url}`}
-              alt="blog_image"
-              width={3109}
-              height={1752}
-              className="w-[100px] h-[80px]"
-            /> */}
               <p className="!text-xl">{elem.title}</p>
             </Link>
           </div>

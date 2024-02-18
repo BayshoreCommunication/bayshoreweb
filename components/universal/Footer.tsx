@@ -60,12 +60,15 @@ const Col = ({ text, links }: any) => {
   return (
     <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
       <h4 className="mb-10 heading-four text-center md:text-start ">{text}</h4>
-      <ul className="flex flex-col gap-2">
+      <ul className="flex flex-col gap-4 ">
         {links.map((el: any, i: number) => {
           if (text === "Service") {
             if (i < links.length / 2) {
               return (
-                <li className="text-small" key={i}>
+                <li
+                  className="text-small hover:underline hover:text-primary"
+                  key={i}
+                >
                   {typeof el === "string" ? (
                     <>{el}</>
                   ) : (
@@ -77,7 +80,10 @@ const Col = ({ text, links }: any) => {
           } else if (text === "More Service") {
             if (i > links.length / 2) {
               return (
-                <li className="text-small " key={i}>
+                <li
+                  className="text-small hover:underline hover:text-primary"
+                  key={i}
+                >
                   {typeof el === "string" ? (
                     <>{el}</>
                   ) : (
@@ -88,7 +94,10 @@ const Col = ({ text, links }: any) => {
             }
           } else {
             return (
-              <li className="text-small " key={i}>
+              <li
+                className="text-small hover:underline hover:text-primary"
+                key={i}
+              >
                 {typeof el === "string" ? (
                   <>{el}</>
                 ) : (

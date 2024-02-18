@@ -1176,61 +1176,58 @@ const Blog = ({ el, i }: any) => {
 
   return (
     <Reveal>
-      <div>
-        <div className="relative mb-2">
-          <img
-            src={el.featuredImage.image.url}
-            alt={el.featuredImage.altText}
-          />
-          {/* <Image
-            src={`image`}
-            alt="marketing"
-            width={800}
-            height={800}
-            className="w-full h-auto"
-          /> */}
-          {/* <Image
+      <Link href={`/blog/${el.slug}`}>
+        <div>
+          <div className="relative mb-2">
+            <Image
+              src={el.featuredImage.image.url}
+              alt="marketing"
+              width={800}
+              height={800}
+              className="w-full h-auto"
+            />
+            {/* <Image
             src="/assets/blog/mike.png"
             alt="marketing"
             width={800}
             height={800}
             className="w-[6rem] md:w-[8rem] h-auto absolute bottom-0 left-[3%] translate-y-[50%]"
           /> */}
-          <p className="text-xsmall mt-6">{dateFormate(el.createdAt)}</p>
-        </div>
-        <div className="cus-name flex justify-between items-center w-[78%] sm:w-[80%] ml-auto">
-          {/* <p className="text-xsmall">
+            <p className="text-xsmall mt-6">{dateFormate(el.createdAt)}</p>
+          </div>
+          <div className="cus-name flex justify-between items-center w-[78%] sm:w-[80%] ml-auto">
+            {/* <p className="text-xsmall">
             By: <span className="text-[#0077B3]">{el.writerName} </span>
           </p> */}
-          {/* <p className="text-xsmall">{el.blogDate}</p> */}
-        </div>
-        <h4 className="heading-tertiary mt-[1rem] md:mt-[1.5rem]">
-          {el.title}
-        </h4>
-        <div>
-          {/* <h5 className="text-small !text-[#0077B3] md:mt-[3rem] md:mb-[2rem] my-[1.5rem]">
+            {/* <p className="text-xsmall">{el.blogDate}</p> */}
+          </div>
+          <h4 className="heading-tertiary mt-[1rem] md:mt-[1.5rem]">
+            {el.title}
+          </h4>
+          <div>
+            {/* <h5 className="text-small !text-[#0077B3] md:mt-[3rem] md:mb-[2rem] my-[1.5rem]">
           Content Marketing
         </h5> */}
-          <p className="text-small mt-4 text-cut text-cut-5">
-            {parser(el.body)}
-          </p>
-        </div>
-        <div className="center md:block">
-          <Link href={`/blog/${el.slug}`}>
+            <p className="text-small mt-4 text-cut text-cut-5">
+              {parser(el.body)}
+            </p>
+          </div>
+          <div className="center md:block">
             {/* <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
            
             </button> */}
             <button className="text-gray-500 font-semibold text-small border border-gray-800 rounded-full p-5 hover:!bg-[#FE6F1F] hover:text-white hover:border-[#FE6F1F] mt-[2rem]">
               Read this post
             </button>
-          </Link>
-          {/* <Link href={`/blog/${el.url}`}>
+
+            {/* <Link href={`/blog/${el.url}`}>
           <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
             Read this post
           </button>
         </Link> */}
+          </div>
         </div>
-      </div>
+      </Link>
     </Reveal>
   );
 };
