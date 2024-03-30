@@ -40,17 +40,8 @@ address = [
 const Page = () => {
   return (
     <>
-      <Reveal>
-        <Image
-          src="/assets/contact.png"
-          alt="contact-office"
-          width={2000}
-          height={600}
-          className="w-full max-h-[30rem] object-top"
-        />
-      </Reveal>
+      <AnimateContactHero />
       <SectionLayout bg="">
-        <AnimateContactHero />
         <Reveal>
           <div className="flex flex-wrap justify-center md:justify-between gap-20 mt-20 mb-20 items-center">
             <div className="md:flex-1 ">
@@ -71,15 +62,15 @@ const Page = () => {
               />
             </div>
 
-            <div className="hidden md:block">
+            {/* <div className="hidden md:block">
               <div className="border border-red-700 w-3 h-96 rounded-full flex items-start justify-center">
                 <div className="bg-deep-orange-600 w-3 h-16 rounded-full"></div>
               </div>
-            </div>
+            </div> */}
 
             <div className="md:flex-[2]">
-              <div className=" mx-auto">
-                <h4 className="text-xl font-bold !text-center">
+              <div className="mx-auto">
+                <h4 className="text-xl font-bold !text-center mb-12">
                   Just send us your questions or concerns by starting a new
                   message and we will give you the help you need.
                 </h4>
