@@ -195,6 +195,11 @@ cardContentS = [
     destination: "SENIOR GRAPHICS DESIGNER",
   },
   {
+    img: "/assets/Bayshore-Employe/Orpita Haque.png",
+    name: "ORPITA HAQUE",
+    destination: "",
+  },
+  {
     img: "/assets/Bayshore-Employe/Nazmul Hasan (Associate Digital Marketing Executive).png",
     name: "NAZMUL HASAN",
     destination: "ASSOCIATE DIGITAL MARKETING EXECUTIVE",
@@ -202,7 +207,7 @@ cardContentS = [
   {
     img: "/assets/Bayshore-Employe/Raju Ahmed (Branding & Client Communication Manager).png",
     name: "RAJU AHMED",
-    destination: "CLIENT COMMUNICATION MANAGER",
+    destination: "MANAGER (BRANDING & CLIENT COMMUNICATION)",
   },
   {
     img: "/assets/Bayshore-Employe/Md. Sohel Rana (Digital Marketing Manager).png",
@@ -212,10 +217,10 @@ cardContentS = [
   {
     img: "/assets/Bayshore-Employe/Monira Akter (Digital Marketing Executive).png",
     name: "MONIRA ISLAM",
-    destination: "JUNIOR DIGITAL MARKETER",
+    destination: "SOCIAL MEDIA MANAGER",
   },
   {
-    img: "/assets/Bayshore-Employe/demo.png",
+    img: "/assets/Bayshore-Employe/Eyamin Hossain Pritul (Executive Graphics Designer).png",
     name: "YAMIN HOSSAIN PRITUL",
     destination: "GRAPHICS DESIGNER",
   },
@@ -249,11 +254,7 @@ cardContentS = [
     name: "ABRAR FAISAAL",
     destination: "EXECUTIVE",
   },
-  {
-    img: "/assets/Bayshore-Employe/Orpita Haque.png",
-    name: "ORPITA HAQUE",
-    destination: "",
-  },
+
   {
     img: "/assets/Bayshore-Employe/Rakibul Islam (Senior Software Engineer).png",
     name: "RAKIBUL ISLAM",
@@ -313,7 +314,7 @@ const CardSmall = ({ el }: any) => {
           className="w-[120px] h-[120px] rounded-full"
         />
         <h5 className="heading-five mt-[5px] !text-center">{el.name}</h5>
-        <p className="text-xsmall !text-center">{el.destination}</p>
+        <p className="text-[13px] !text-center">{el.destination}</p>
         <div className="flex items-center gap-2">
           <BsLinkedin className="text-[#5A5A5A] w-[1.8rem] h-auto" />
           <FaTwitterSquare className="text-[#5A5A5A] w-[2rem] h-auto" />
