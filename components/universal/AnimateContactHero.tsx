@@ -9,7 +9,7 @@ const container = {
     scale: 1,
     transition: {
       delayChildren: 0.2,
-      staggerChildren: 0.2,
+      staggerChildren: 0.1,
     },
   },
 };
@@ -19,10 +19,6 @@ const item = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: {
-      delayChildren: 0.5,
-      staggerChildren: 0.2,
-    },
   },
 };
 
@@ -75,11 +71,14 @@ export const AnimateContactHero = () => {
         animate="visible"
       >
         {ContactInfo.map((el, index) => (
-          <motion.div key={index} className={`${el.style}`} variants={item}>
-            <p className="text-xl md:text-6xl font-blod text-white">
+          <div key={index} className={`${el.style}`}>
+            <motion.p
+              className="text-xl md:text-6xl font-blod text-white"
+              variants={item}
+            >
               {el.title}
-            </p>
-          </motion.div>
+            </motion.p>
+          </div>
         ))}
       </motion.div>
     </div>

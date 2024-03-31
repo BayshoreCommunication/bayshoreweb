@@ -100,20 +100,17 @@ const page = () => {
         </Reveal>
 
         <div className="mt-8">
-          <Reveal>
-            <div className="grid  md:w-full grid-cols-1 md:grid-cols-3 gap-16 xl:gap-[10rem] max-w-[1000px] mx-auto px-4">
-              {cardContent.map((el: any, i: number) => (
-                <Card el={el} key={i} />
-              ))}
-            </div>
-          </Reveal>
-          {/* <Reveal> */}
+          <div className="grid  md:w-full grid-cols-1 md:grid-cols-3 gap-16 xl:gap-[10rem] max-w-[1000px] mx-auto px-4">
+            {cardContent.map((el: any, i: number) => (
+              <Card el={el} key={i} />
+            ))}
+          </div>
+
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 mt-[4rem] gap-8">
             {cardContentS.map((el: any, i: number) => (
               <CardSmall el={el} key={i} />
             ))}
           </div>
-          {/* </Reveal> */}
         </div>
       </SectionLayout>
 
@@ -158,23 +155,25 @@ cardContent = [
 
 const Card = ({ el }: any) => {
   return (
-    <div className=" flex flex-col items-center gap-3 custom-shadow py-8  px-4  w-[26rem] lg:w-[30rem] justify-self-center">
-      <Image
-        src={el.img}
-        alt={el.name}
-        width={400}
-        height={400}
-        className="w-[20rem] h-auto"
-      />
-      <h4 className="heading-four mt-[1rem]">{el.name}</h4>
-      <p className="text-small !text-center">{el.destination}</p>
-      <div className="flex items-center gap-2">
-        <BsLinkedin className="text-[#5A5A5A] w-[18px] h-auto" />
-        <FaTwitterSquare className="text-[#5A5A5A] w-[20px] h-auto" />
-        <FaWhatsappSquare className="text-[#5A5A5A] w-[20px] h-auto" />
-        <MdMarkEmailUnread className="text-[#5A5A5A] w-[24px] h-auto" />
+    <Reveal>
+      <div className=" flex flex-col items-center gap-3 custom-shadow py-8  px-4  w-[26rem] lg:w-[30rem] justify-self-center">
+        <Image
+          src={el.img}
+          alt={el.name}
+          width={400}
+          height={400}
+          className="w-[20rem] h-auto"
+        />
+        <h4 className="heading-four mt-[1rem]">{el.name}</h4>
+        <p className="text-small !text-center">{el.destination}</p>
+        <div className="flex items-center gap-2">
+          <BsLinkedin className="text-[#5A5A5A] w-[18px] h-auto" />
+          <FaTwitterSquare className="text-[#5A5A5A] w-[20px] h-auto" />
+          <FaWhatsappSquare className="text-[#5A5A5A] w-[20px] h-auto" />
+          <MdMarkEmailUnread className="text-[#5A5A5A] w-[24px] h-auto" />
+        </div>
       </div>
-    </div>
+    </Reveal>
   );
 };
 
@@ -186,110 +185,142 @@ let cardContentS: {
 
 cardContentS = [
   {
-    img: "/assets/about/romiz.png",
+    img: "/assets/Bayshore-Employe/Ashraf Uzzaman (Chief Operating officer).png",
     name: "ASHRAF UZZAMAN",
     destination: "CHIEF OPERATING OFFICER (COO)",
   },
   {
-    img: "/assets/about/sadit.png",
+    img: "/assets/Bayshore-Employe/Sadit Ahsan (Lead UI, UX and Graphics Designer).png",
     name: "SADIT AHSAN",
     destination: "SENIOR GRAPHICS DESIGNER",
   },
   {
-    img: "/assets/about/razon.png",
-    name: "REZAUL KARIM",
-    destination: "LEAD DIGITAL MARKETING MANAGER",
+    img: "/assets/Bayshore-Employe/Nazmul Hasan (Associate Digital Marketing Executive).png",
+    name: "NAZMUL HASAN",
+    destination: "ASSOCIATE DIGITAL MARKETING EXECUTIVE",
   },
   {
-    img: "/assets/about/rakib.png",
-    name: "RAKIBUL ISLAM",
-    destination: "LEAD SOFTWARE ENGINEER",
-  },
-  {
-    img: "/assets/about/orpita.png",
-    name: "ORPITA HAQUE",
-    destination: "",
-  },
-  {
-    img: "/assets/about/abdullah.png",
-    name: "ABDULLAH ESHA",
-    destination: "FULL STACK DEVELOPER",
-  },
-
-  {
-    img: "/assets/about/towhidul.png",
-    name: "TOWHIDUL ISLAM",
-    destination: "APP DEVELOPER",
-  },
-  {
-    img: "/assets/about/fardin.png",
-    name: "FARDIN KHAN",
-    destination: "APP DEVELOPER",
-  },
-  {
-    img: "/assets/about/abrar.png",
-    name: "ABRAR FAHIM",
-    destination: "APP DEVELOPER",
-  },
-
-  // {
-  //   img: "/assets/about/nasim3.png",
-  //   name: "NASIM REJA",
-  //   destination: "WEB DEVELOPER",
-  // },
-  {
-    img: "/assets/about/milon.png",
-    name: "Nuruzaman Milon",
-    destination: "FULL STACK DEVELOPER",
-  },
-  {
-    img: "/assets/about/amena.png",
-    name: "Amena Islam Rimi",
-    destination: "CONTENT WRITER",
-  },
-  {
-    img: "/assets/about/monira.png",
-    name: "MONIRA ISLAM",
-    destination: "JUNIOR DIGITAL MARKETER",
-  },
-  {
-    img: "/assets/about/raju.png",
+    img: "/assets/Bayshore-Employe/Raju Ahmed (Branding & Client Communication Manager).png",
     name: "RAJU AHMED",
     destination: "CLIENT COMMUNICATION MANAGER",
   },
   {
-    img: "/assets/about/nazmul.png",
-    name: "NAZMUL HASAN",
-    destination: "JUNIOR DIGITAL MARKETING EXECUTIVE",
+    img: "/assets/Bayshore-Employe/Md. Sohel Rana (Digital Marketing Manager).png",
+    name: "SOHEL RANA",
+    destination: "DIGITAL MARKETING MANAGER",
   },
   {
-    img: "/assets/about/elishah.png",
-    name: "Elishah Hillaria",
+    img: "/assets/Bayshore-Employe/Monira Akter (Digital Marketing Executive).png",
+    name: "MONIRA ISLAM",
+    destination: "JUNIOR DIGITAL MARKETER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/demo.png",
+    name: "YAMIN HOSSAIN PRITUL",
+    destination: "GRAPHICS DESIGNER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Amena Islam Rimi (Assoiciate Content Writer).png",
+    name: "AMENA ISLAM RIMI",
     destination: "CONTENT WRITER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Nazmim Islam Zeniya (Associate Content writer).png",
+    name: "NAZMIM ISLAM ZENIYA",
+    destination: "CONTENT WRITER (INTERN)",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Tanzid Mahmud Shuvo (Lead Content Writer).png",
+    name: "TANZID MAHMUD SHUVO",
+    destination: "LEAD CONTENT WRITER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Israt Jahan Mridula (Associate Content Writer).png",
+    name: "ISRAT JAHAN MRIDULA",
+    destination: "CONTENT WRITER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/demo.png",
+    name: "SAKAWAT HOSSAIN",
+    destination: "EXECUTIVE",
+  },
+  {
+    img: "/assets/Bayshore-Employe/demo.png",
+    name: "ABRAR FAISAAL",
+    destination: "EXECUTIVE",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Orpita Haque.png",
+    name: "ORPITA HAQUE",
+    destination: "",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Rakibul Islam (Senior Software Engineer).png",
+    name: "RAKIBUL ISLAM",
+    destination: "SENIOR SOFTWARE ENGINEER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Gazi Monir-Uz Zaman (Senior Software Engineer).png",
+    name: "GAZI MONIR-UZ-ZAMAN",
+    destination: "SENIOR SOFTWARE ENGINEER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Shouvik Chowdhury (Associate Software Engineer).png",
+    name: "SHOUVIK CHOWDHURY",
+    destination: "SOFTWARE ENGINEER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/demo.png",
+    name: "ADNAN SAMI SHAZIM",
+    destination: "SOFTWARE ENGINEER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Nuruzaman Milon (Associate Software Engineer).png",
+    name: "NURUZAMAN MILON",
+    destination: "ASSOCIATE SOFTWARE ENGINEER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Md. Abdur Raof Sahak (Associate Software Engineer).png",
+    name: "AR SAHAK",
+    destination: "SOFTWARE ENGINEER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/demo.png",
+    name: "NURUL ISLAM (RAIHAN)",
+    destination: "ASSOCIATE SOFTWARE ENGINEER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/demo.png",
+    name: "ABU KAWSAR",
+    destination: "UI/UX DESIGNER (INTERN)",
+  },
+  {
+    img: "/assets/Bayshore-Employe/demo.png",
+    name: "MD. RAIHAN ALI",
+    destination: "BUSINESS ANALYST (INTERN)",
   },
 ];
 
 const CardSmall = ({ el }: any) => {
   return (
-    <div
-      className="  flex flex-col items-center gap-3 custom-shadow py-4 px-4"
-      data-aos="zoom-in"
-    >
-      <Image
-        src={el.img}
-        alt={el.name}
-        width={400}
-        height={400}
-        className="w-[120px] h-[120px] rounded-full"
-      />
-      <h5 className="heading-five mt-[5px]">{el.name}</h5>
-      <p className="text-xsmall !text-center">{el.destination}</p>
-      <div className="flex items-center gap-2">
-        <BsLinkedin className="text-[#5A5A5A] w-[1.8rem] h-auto" />
-        <FaTwitterSquare className="text-[#5A5A5A] w-[2rem] h-auto" />
-        <FaWhatsappSquare className="text-[#5A5A5A] w-[2rem] h-auto" />
-        <MdMarkEmailUnread className="text-[#5A5A5A] w-[2.4rem] h-auto" />
+    <Reveal>
+      <div className="flex flex-col items-center gap-3 custom-shadow py-4 px-4">
+        <Image
+          src={el.img}
+          alt={el.name}
+          width={400}
+          height={400}
+          className="w-[120px] h-[120px] rounded-full"
+        />
+        <h5 className="heading-five mt-[5px]">{el.name}</h5>
+        <p className="text-xsmall !text-center">{el.destination}</p>
+        <div className="flex items-center gap-2">
+          <BsLinkedin className="text-[#5A5A5A] w-[1.8rem] h-auto" />
+          <FaTwitterSquare className="text-[#5A5A5A] w-[2rem] h-auto" />
+          <FaWhatsappSquare className="text-[#5A5A5A] w-[2rem] h-auto" />
+          <MdMarkEmailUnread className="text-[#5A5A5A] w-[2.4rem] h-auto" />
+        </div>
       </div>
-    </div>
+    </Reveal>
   );
 };
