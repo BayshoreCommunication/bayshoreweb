@@ -54,12 +54,12 @@ const Page = () => {
             </div>
 
             <div className="hidden md:block">
-              <div className="border bg-[#FE631A] w-2 h-96 rounded-full flex items-start justify-center">
+              <div className="border bg-[#FE631A] w-2 h-[250px] rounded-full flex items-start justify-center">
                 {/* <div className="bg-deep-orange-600 w-3 h-16 rounded-full"></div> */}
               </div>
             </div>
 
-            <div className="md:flex-1 ">
+            <div className="md:flex-1 mt-[14px]">
               <Adress
                 title="Asia Office"
                 address={address[1].address}
