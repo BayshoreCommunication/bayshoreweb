@@ -53,6 +53,12 @@ const Page = () => {
               />
             </div>
 
+            <div className="hidden md:block">
+              <div className="border bg-[#FE631A] w-2 h-96 rounded-full flex items-start justify-center">
+                {/* <div className="bg-deep-orange-600 w-3 h-16 rounded-full"></div> */}
+              </div>
+            </div>
+
             <div className="md:flex-1 ">
               <Adress
                 title="Asia Office"
@@ -62,17 +68,13 @@ const Page = () => {
               />
             </div>
 
-            {/* <div className="hidden md:block">
-              <div className="border border-red-700 w-3 h-96 rounded-full flex items-start justify-center">
-                <div className="bg-deep-orange-600 w-3 h-16 rounded-full"></div>
-              </div>
-            </div> */}
-
             <div className="md:flex-[2]">
               <div className="mx-auto">
-                <h4 className="text-xl font-bold !text-center mb-12">
-                  Just send us your questions or concerns by starting a new
-                  message and we will give you the help you need.
+                <h4 className="text-3xl font-bold !text-center mb-2">
+                  Tired of searching? Get the help you need instantly!
+                </h4>
+                <h4 className="text-[17px] font-normal !text-center mb-12">
+                  Just fire away your questions or concerns in a new message
                 </h4>
                 <Form />
               </div>
@@ -133,9 +135,9 @@ const Row = ({ title, icon, address, phone, email }: any) => {
 
 const Adress = ({ address, title, phone, email }: any) => {
   return (
-    <div className="flex flex-col justify-around items-center">
+    <div className="flex flex-col items-center">
       <h3 className="heading-secondary">{title}</h3>
-      <div className="flex flex-col gap-3 ">
+      <div className="flex flex-col gap-3">
         <Row title="Phone" icon="/assets/phone.svg" phone={phone} />
         <Row title="Address" icon="/assets/location.svg" address={address} />
         <Row title="Email" icon="/assets/email.svg" email={email} />

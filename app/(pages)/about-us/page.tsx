@@ -312,7 +312,7 @@ const CardSmall = ({ el }: any) => {
           height={400}
           className="w-[120px] h-[120px] rounded-full"
         />
-        <h5 className="heading-five mt-[5px]">{el.name}</h5>
+        <h5 className="heading-five mt-[5px] !text-center">{el.name}</h5>
         <p className="text-xsmall !text-center">{el.destination}</p>
         <div className="flex items-center gap-2">
           <BsLinkedin className="text-[#5A5A5A] w-[1.8rem] h-auto" />

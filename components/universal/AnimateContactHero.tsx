@@ -3,13 +3,15 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const container = {
-  hidden: { opacity: 1, scale: 0 },
+  hidden: { opacity: 0, scale: 0 },
   visible: {
     opacity: 1,
     scale: 1,
     transition: {
       delayChildren: 0.2,
       staggerChildren: 0.1,
+      duration: 0.5, // Adjust transition duration
+      ease: "easeInOut", // Adjust transition timing function
     },
   },
 };
@@ -71,14 +73,14 @@ export const AnimateContactHero = () => {
         animate="visible"
       >
         {ContactInfo.map((el, index) => (
-          <div key={index} className={`${el.style}`}>
+          <motion.div key={index} className={`${el.style}`}>
             <motion.p
               className="text-xl md:text-6xl font-blod text-white"
               variants={item}
             >
               {el.title}
             </motion.p>
-          </div>
+          </motion.div>
         ))}
       </motion.div>
     </div>

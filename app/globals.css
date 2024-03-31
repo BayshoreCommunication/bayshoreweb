@@ -52,7 +52,7 @@ import "~slick-carousel/slick/slick-theme.css"; */
   @apply text-headingPrimary font-semibold text-[1.6rem] lg:text-[1.8rem] leading-[1.2] text-center;
 }
 .heading-five {
-  @apply text-headingPrimary font-semibold text-[1.5rem] lg:text-[1.7rem] leading-[1.2] text-center md:text-start;
+  @apply text-headingPrimary font-semibold text-[1.5rem] lg:text-[1.5rem] leading-[1.2] text-center md:text-start;
 }
 /* button */
 .btn {

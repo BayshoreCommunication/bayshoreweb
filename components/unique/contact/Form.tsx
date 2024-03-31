@@ -126,12 +126,12 @@ const Form = () => {
             placeholder="Write your thoughts here..."
           />
           <span className="text-orange-600">{formErrors.message}</span>
-          <div className="mt-3">
+          <div className="mt-3 w-full">
             {loading ? (
               <button
                 disabled
                 type="button"
-                className="bg-[#FE631A] py-4 px-6 mt-3.5 rounded-3xl text-base !text-black"
+                className="bg-[#FE631A] py-4 px-6 mt-3.5 rounded-3xl text-base !text-white w-full !text-center"
               >
                 <svg
                   aria-hidden="true"
@@ -155,7 +155,7 @@ const Form = () => {
             ) : (
               <button
                 type="button"
-                className="bg-[#FE631A] py-4 px-6 mt-3.5 rounded-3xl text-base !text-black"
+                className="py-4 px-6 mt-3.5 border bg-gray-200 border-[#FE631A] hover:bg-[#FE631A] rounded-3xl text-base w-full !text-center hover:!text-white"
                 onClick={handleSubmit}
               >
                 Send Message
