@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      <div className="relative">
+      <div className="relative overflow-x-hidden">
         {/* <div className="absolute w-32 h-32 rounded-full top-[18%] left-[38%] bg-primary"></div> */}
         <Reveal>
           <Image
@@ -156,7 +156,7 @@ cardContent = [
 const Card = ({ el }: any) => {
   return (
     <Reveal>
-      <div className=" flex flex-col items-center gap-3 custom-shadow py-8  px-4  w-[26rem] lg:w-[30rem] justify-self-center">
+      <div className=" flex flex-col items-center mx-auto gap-3 custom-shadow py-8  px-4  w-[26rem] lg:w-[30rem] justify-self-center min-h-full md:min-h-[360px]" >
         <Image
           src={el.img}
           alt={el.name}
@@ -166,7 +166,7 @@ const Card = ({ el }: any) => {
         />
         <h4 className="heading-four mt-[1rem]">{el.name}</h4>
         <p className="text-small !text-center">{el.destination}</p>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-center gap-2" style={{ marginTop: 'auto' }}>
           <BsLinkedin className="text-[#5A5A5A] w-[18px] h-auto" />
           <FaTwitterSquare className="text-[#5A5A5A] w-[20px] h-auto" />
           <FaWhatsappSquare className="text-[#5A5A5A] w-[20px] h-auto" />
@@ -305,7 +305,7 @@ cardContentS = [
 const CardSmall = ({ el }: any) => {
   return (
     <Reveal>
-      <div className="flex flex-col items-center gap-3 custom-shadow py-4 px-4">
+      <div className="flex flex-col items-center gap-3 custom-shadow py-4 px-4 min-h-[270px] md:min-h-[250px]">
         <Image
           src={el.img}
           alt={el.name}
@@ -315,13 +315,14 @@ const CardSmall = ({ el }: any) => {
         />
         <h5 className="heading-five mt-[5px] !text-center">{el.name}</h5>
         <p className="text-[13px] !text-center">{el.destination}</p>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center justify-center gap-2" style={{ marginTop: 'auto' }}>
           <BsLinkedin className="text-[#5A5A5A] w-[1.8rem] h-auto" />
           <FaTwitterSquare className="text-[#5A5A5A] w-[2rem] h-auto" />
           <FaWhatsappSquare className="text-[#5A5A5A] w-[2rem] h-auto" />
           <MdMarkEmailUnread className="text-[#5A5A5A] w-[2.4rem] h-auto" />
         </div>
       </div>
+
     </Reveal>
   );
 };

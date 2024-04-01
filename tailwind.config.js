@@ -19,6 +19,9 @@ module.exports = withMT({
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      maxHeight: {
+        'card': 'calc(100vh - 10rem)', // Adjust as needed
+      },
     },
   },
   plugins: [],
