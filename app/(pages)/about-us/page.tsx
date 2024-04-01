@@ -245,12 +245,12 @@ cardContentS = [
     destination: "CONTENT WRITER (INTERN)",
   },
   {
-    img: "/assets/Bayshore-Employe/demo.png",
+    img: "/assets/Bayshore-Employe/Sakawat Hossain.png",
     name: "SAKAWAT HOSSAIN",
     destination: "EXECUTIVE",
   },
   {
-    img: "/assets/Bayshore-Employe/demo.png",
+    img: "/assets/Bayshore-Employe/Abrar Faisaal.png",
     name: "ABRAR FAISAAL",
     destination: "EXECUTIVE",
   },
