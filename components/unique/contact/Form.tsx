@@ -121,7 +121,7 @@ const Form = () => {
             id="message"
             value={contactInfo.message}
             onChange={onTextAreaInput}
-            rows={8}
+            rows={5}
             className="block p-2.5 w-full text-small text-gray-900 border border-[#FE631A] rounded-2xl"
             placeholder="Write your thoughts here..."
           />

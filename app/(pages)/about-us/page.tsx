@@ -225,24 +225,24 @@ cardContentS = [
     destination: "GRAPHICS DESIGNER",
   },
   {
+    img: "/assets/Bayshore-Employe/Tanzid Mahmud Shuvo (Lead Content Writer).png",
+    name: "TANZID MAHMUD SHUVO",
+    destination: "LEAD CONTENT WRITER",
+  },
+  {
     img: "/assets/Bayshore-Employe/Amena Islam Rimi (Assoiciate Content Writer).png",
     name: "AMENA ISLAM RIMI",
+    destination: "CONTENT WRITER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Israt Jahan Mridula (Associate Content Writer).png",
+    name: "ISRAT JAHAN MRIDULA",
     destination: "CONTENT WRITER",
   },
   {
     img: "/assets/Bayshore-Employe/Nazmim Islam Zeniya (Associate Content writer).png",
     name: "NAZMIM ISLAM ZENIYA",
     destination: "CONTENT WRITER (INTERN)",
-  },
-  {
-    img: "/assets/Bayshore-Employe/Tanzid Mahmud Shuvo (Lead Content Writer).png",
-    name: "TANZID MAHMUD SHUVO",
-    destination: "LEAD CONTENT WRITER",
-  },
-  {
-    img: "/assets/Bayshore-Employe/Israt Jahan Mridula (Associate Content Writer).png",
-    name: "ISRAT JAHAN MRIDULA",
-    destination: "CONTENT WRITER",
   },
   {
     img: "/assets/Bayshore-Employe/demo.png",
@@ -271,8 +271,13 @@ cardContentS = [
     destination: "SOFTWARE ENGINEER",
   },
   {
-    img: "/assets/Bayshore-Employe/demo.png",
+    img: "/assets/Bayshore-Employe/Adnan Sami Shazim (Software Engineer).png",
     name: "ADNAN SAMI SHAZIM",
+    destination: "SOFTWARE ENGINEER",
+  },
+  {
+    img: "/assets/Bayshore-Employe/Md. Abdur Raof Sahak (Associate Software Engineer).png",
+    name: "AR SAHAK",
     destination: "SOFTWARE ENGINEER",
   },
   {
@@ -281,22 +286,17 @@ cardContentS = [
     destination: "ASSOCIATE SOFTWARE ENGINEER",
   },
   {
-    img: "/assets/Bayshore-Employe/Md. Abdur Raof Sahak (Associate Software Engineer).png",
-    name: "AR SAHAK",
-    destination: "SOFTWARE ENGINEER",
-  },
-  {
-    img: "/assets/Bayshore-Employe/demo.png",
+    img: "/assets/Bayshore-Employe/Nurul Islam Raihan (Associate Software Engineer).png",
     name: "NURUL ISLAM (RAIHAN)",
     destination: "ASSOCIATE SOFTWARE ENGINEER",
   },
   {
-    img: "/assets/Bayshore-Employe/demo.png",
+    img: "/assets/Bayshore-Employe/Abu Kawsar (UI,UX Designer Intern).png",
     name: "ABU KAWSAR",
     destination: "UI/UX DESIGNER (INTERN)",
   },
   {
-    img: "/assets/Bayshore-Employe/demo.png",
+    img: "/assets/Bayshore-Employe/MD. Rayhan Ali (Business Analysts Intern).png",
     name: "MD. RAIHAN ALI",
     destination: "BUSINESS ANALYST (INTERN)",
   },
