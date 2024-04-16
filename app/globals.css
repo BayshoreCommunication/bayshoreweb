@@ -17,6 +17,7 @@ import "~slick-carousel/slick/slick-theme.css"; */
 .container {
   @apply max-w-[1650px] mx-auto px-[30px];
 }
+
 .center {
   @apply flex justify-center items-center;
 }
@@ -25,35 +26,45 @@ import "~slick-carousel/slick/slick-theme.css"; */
 .text-link {
   @apply text-[1.6rem] md:text-[1.3rem] lg:text-[1.4rem] text-[#343];
 }
+
 .text-small {
-  @apply text-[1.5rem] sm:text-[1.4rem] lg:text-[1.4rem] text-[#343] leading-[1.4] text-center  md:text-justify;
+  @apply text-[1.5rem] sm:text-[1.4rem] lg:text-[1.4rem] text-[#343] leading-[1.4] text-center md:text-justify;
 }
+
 .text-xsmall {
-  @apply text-[1.3rem]  text-[#343] leading-[1.4] text-center  md:text-justify;
+  @apply text-[1.3rem] text-[#343] leading-[1.4] text-center md:text-justify;
 }
+
 .text-base {
-  @apply text-[1.6rem] sm:text-[1.8rem] md:text-[1.6rem] leading-[143%] text-center  md:text-justify text-[#343];
+  @apply text-[1.6rem] sm:text-[1.8rem] md:text-[1.6rem] leading-[143%] text-center md:text-justify text-[#343];
 }
+
 .info-text {
-  @apply text-[2.2rem] md:text-[3rem]  text-[#fff];
+  @apply text-[2.2rem] md:text-[3rem] text-[#fff];
 }
+
 /* Header */
 .heading-primary {
-  @apply text-[2.8rem] sm:text-[3.4rem]  leading-[3.4rem]  lg:text-[3.8rem] xl:text-[4.2rem] 2xl:text-[4.8rem] lg:leading-[4.9rem] text-headingPrimary font-[700] mb-[1.5rem] md:mb-[2.5rem] text-center md:text-start;
+  @apply text-[2.8rem] sm:text-[3.4rem] leading-[3.4rem] lg:text-[3.8rem] xl:text-[4.2rem] 2xl:text-[4.8rem] lg:leading-[4.9rem] text-headingPrimary font-[700] mb-[1.5rem] md:mb-[2.5rem] text-center md:text-start;
 }
+
 .heading-secondary {
   /* @apply text-[32px] leading-[38px]  md:text-[43px] lg:text-[48px] lg:leading-[53px] text-headingPrimary font-[700] mb-[2rem]; */
   @apply text-[18px] sm:text-[20px] md:text-[24px] lg:text-[30px] xl:text-[36px] font-[600] text-headingPrimary mb-[1.8rem] text-center md:text-start;
 }
+
 .heading-tertiary {
   @apply text-headingPrimary font-semibold text-[2rem] md:text-[2rem] lg:text-[2.4rem] mb-[1rem] text-center md:text-start;
 }
+
 .heading-four {
   @apply text-headingPrimary font-semibold text-[1.6rem] lg:text-[1.8rem] leading-[1.2] text-center;
 }
+
 .heading-five {
   @apply text-headingPrimary font-semibold text-[1.5rem] lg:text-[1.5rem] leading-[1.2] text-center md:text-start;
 }
+
 /* button */
 .btn {
   @apply bg-primary text-white rounded-[10px] px-[20px] py-[6px];
@@ -86,7 +97,8 @@ body {
 
 .bg-img {
   background: url("/assets/info-bg.png") center center / cover no-repeat;
-  background-color: #241836; /* Replace with your desired color */
+  background-color: #241836;
+  /* Replace with your desired color */
 }
 
 .bg-heroimg-1 {
@@ -96,9 +108,11 @@ body {
 .bg-heroimg-2 {
   background-image: url("/assets/website-increase.png");
 }
+
 .bg-heroimg-3 {
   background-image: url("/assets/social-media.png");
 }
+
 .text-cut-2 {
   text-overflow: ellipsis;
   word-wrap: break-word;
@@ -107,6 +121,7 @@ body {
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
+
 .text-cut {
   text-overflow: ellipsis;
   word-wrap: break-word;
@@ -114,12 +129,15 @@ body {
   display: -webkit-box;
   -webkit-box-orient: vertical;
 }
+
 .text-cut-1 {
   -webkit-line-clamp: 1;
 }
+
 .text-cut-5 {
   -webkit-line-clamp: 5;
 }
+
 .text-cut-4 {
   -webkit-line-clamp: 4;
 }
@@ -130,6 +148,7 @@ body {
   white-space: nowrap;
   animation: scroll 20s linear infinite;
 }
+
 .scrolling-element span {
   display: inline-block;
   border: 2px solid black;
@@ -137,10 +156,12 @@ body {
   width: 220px;
   margin-right: 20px;
 }
+
 @keyframes scroll {
   0% {
     transform: translateX(0%);
   }
+
   100% {
     transform: translateX(-100%);
   }
@@ -153,11 +174,13 @@ body {
 .slick-list {
   padding: 0 25px !important;
 }
+
 .slick-list img {
   margin: 10px 0px;
   transform: scale(0.7);
   transition: all 0.6s;
 }
+
 .slick-current img {
   transform: scale(1);
 }
@@ -167,12 +190,15 @@ body {
   transform: scale(0.7);
   transition: all 0.6s;
 }
+
 .slick-current iframe {
   transform: scale(1);
 }
+
 .slick-prev:hover,
 .slick-next:hover {
-  background-color: blue; /* Change this to your desired color */
+  background-color: blue;
+  /* Change this to your desired color */
 }
 
 .testimonial-slider .slick-arrow {
@@ -184,12 +210,15 @@ body {
   opacity: 0.6;
   text-align: center;
 }
+
 .testimonial-slider .slick-prev {
   left: -80px;
 }
+
 .testimonial-slider .slick-next {
   right: -80px;
 }
+
 .testimonial-slider .slick-arrow:hover {
   opacity: 1;
 }
@@ -201,9 +230,11 @@ body {
   width: 42px;
   height: 42px;
 }
+
 .testimonial-slider .slick-prev {
   left: -80px;
 }
+
 .slick-prev:before,
 .slick-next:before {
   color: gray !important;
@@ -217,6 +248,7 @@ body {
   0% {
     opacity: 0.7;
   }
+
   100% {
     opacity: 1;
   }
@@ -227,6 +259,7 @@ body {
 .centerHistory .slick-list img {
   transform: scale(1);
 }
+
 .centerHistory .slick-list {
   padding: 0rem !important;
 }
@@ -234,12 +267,15 @@ body {
 .centerHistory .slick-arrow {
   top: 65%;
 }
+
 .centerHistory .slick-prev {
   left: -50px;
 }
+
 .centerHistory .slick-next {
   right: -50px;
 }
+
 .overflow-hidden .py-4 {
   padding: 0 !important;
 }
@@ -269,10 +305,12 @@ body {
   .cus-form {
     flex-direction: column !important;
   }
+
   .cus-form input,
   .cus-form button {
     width: 100%;
   }
+
   .cus-form button {
     justify-content: center;
   }
@@ -282,26 +320,31 @@ body {
   font-weight: 800;
   font-size: 38px;
 }
+
 .service-style h2 {
   font-weight: 600;
   font-size: 28px;
   padding-top: 10px;
 }
+
 .service-style-ind h2 {
   font-weight: 600;
   font-size: 28px;
 }
+
 .service-style h3 {
   font-weight: 500;
   font-size: 22px;
   padding-top: 10px;
 }
+
 .service-style-ind h3 {
   font-weight: 500;
   font-size: 22px;
   padding-top: 10px;
   text-align: left !important;
 }
+
 .service-style p {
   font-weight: 400;
   font-size: 16px;
@@ -314,14 +357,17 @@ body {
   padding-top: 10px;
   text-align: justify !important;
 }
+
 .service-style b {
   font-size: 18px;
   padding-top: 10px;
 }
+
 .service-style ul {
   list-style: disc;
   padding-left: 30px;
 }
+
 .service-style li {
   padding-top: 10px !important;
 }
@@ -339,6 +385,7 @@ body {
     transform: scale(0.4);
     opacity: 0;
   }
+
   to {
     transform: scale(1);
     opacity: 1;
@@ -358,6 +405,7 @@ body {
   overflow: hidden;
   z-index: 1;
 }
+
 .button:after {
   content: "";
   position: absolute;
@@ -370,6 +418,7 @@ body {
   border-radius: 10rem;
   z-index: -2;
 }
+
 .button:before {
   content: "";
   position: absolute;
@@ -382,9 +431,105 @@ body {
   border-radius: 10rem;
   z-index: -1;
 }
+
 .button:hover {
   color: black;
 }
+
 .button:hover:before {
+  width: 100%;
+}
+
+
+/* PROPOSAL BUTTON */
+
+
+.a-button {
+  display: inline-block;
+  border-radius: 10rem;
+  color: #fff;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.a-button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 111, 0);
+  /* border-radius: 10rem; */
+  z-index: -2;
+}
+
+.a-button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #F4F4F4;
+  transition: all .3s;
+  /* border-radius: 10rem; */
+  z-index: -1;
+}
+
+.a-button:hover {
+  color: #fff;
+}
+
+.a-button:hover:before {
+  width: 100%;
+}
+
+
+/* RESULT BUTTON */
+
+
+.r-button {
+  display: inline-block;
+  border-radius: 10rem;
+  color: #fff;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.r-button:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 111, 0);
+  /* border-radius: 10rem; */
+  z-index: -2;
+}
+
+.r-button:before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: white;
+  transition: all .3s;
+  /* border-radius: 10rem; */
+  z-index: -1;
+}
+
+.r-button:hover {
+  color: #fff;
+}
+
+.r-button:hover:before {
   width: 100%;
 }

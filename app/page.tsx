@@ -35,17 +35,20 @@ const Page = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mt-[72px] items-center">
           <div>
-            <Reveal>
+            {/* <Reveal>
               <p className="text-[2rem] text-center md:text-start text-[#3E7BE2] mb-[1.5rem] lg:mb-[2.5rem]">
                 {hero[0].text}
               </p>
-            </Reveal>
-            <Reveal>
-              <HeroLeft
-                heading={hero[0].heading}
-                description={hero[0].description}
-              />
-            </Reveal>
+            </Reveal> */}
+
+
+            <HeroLeft
+              text={hero[0].text}
+              heading={hero[0].heading}
+              description={hero[0].description}
+            />
+
+
           </div>
           <div className="px-[2rem] sm:px-[6rem] md:px-0">
             <Reveal>
@@ -318,7 +321,7 @@ hero = [
 let links: {
   link: string;
   alt: string;
-  text: string;
+  text: string
   desc: string;
 }[];
 

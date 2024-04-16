@@ -4285,7 +4285,7 @@ const Service: FC<ServiceProps> = ({ el }) => {
         >
           <span>
             Read more
-            <span className="inline-block translate-y-[1px]">
+            <span className="inline-block translate-y-[3px] ml-1">
               <AiOutlineRight />
             </span>
           </span>

@@ -15,18 +15,18 @@ const Consultaion = () => {
             `}
         </p>
 
-        <Link href={ "https://calendly.com/info-bayshorecommunication/30min?month=2023-08"}>
-        <button className="btn text-small !py-4 flex items-center gap-4 md:gap-8">
-          <span>Book now 30 min Free Consultation</span>
-          <span className="inline-block translate-y-[0px]">
-            <AiOutlineRight />
-          </span>
-        </button>
+        <Link href={"https://calendly.com/info-bayshorecommunication/30min?month=2023-08"}>
+          <button className="btn text-small !py-4 flex items-center gap-4 md:gap-8 r-button border-2 border-primary hover:text-primary">
+            <span>Book now 30 min Free Consultation</span>
+            <span className="inline-block translate-y-[2px] ml-2">
+              <AiOutlineRight />
+            </span>
+          </button>
         </Link>
 
-        
 
-       
+
+
       </div>
     </SectionLayout>
   );

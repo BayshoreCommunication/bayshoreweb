@@ -25,10 +25,10 @@ const Results: React.FC<resultInfo> = ({ heading }) => {
         <Link href="/case-studies">
           <button
             type="submit"
-            className="btn text-small !py-4 flex items-center gap-8"
+            className="btn text-small !py-4 flex items-center gap-8 r-button border-2 border-primary hover:text-primary"
           >
             <span>View our success stories</span>
-            <span className="inline-block translate-y-[1px]">
+            <span className="inline-block translate-y-[2px] ml-2">
               <AiOutlineRight />
             </span>
           </button>

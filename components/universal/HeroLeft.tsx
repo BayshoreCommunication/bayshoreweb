@@ -3,9 +3,11 @@ import Service, { services } from "@/components/unique/services/Service";
 import React, { FC, useEffect, useState } from "react";
 import { AiOutlineRight } from "react-icons/ai";
 import SectionLayout from "./SectionLayout";
+import { motion } from "framer-motion";
 import ProposalBtn from "./ProposalBtn";
 
 interface heroInfo {
+  text: string;
   heading: string;
   description: string;
 }
@@ -41,13 +43,65 @@ export const HeroForm = () => {
   );
 };
 
-const HeroLeft: FC<heroInfo> = ({ heading, description }) => {
+const HeroLeft: FC<heroInfo> = ({ text, heading, description }) => {
+  const visible = { opacity: 1, y: 0, transition: { duration: 0.5 } };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 10 },
+    visible,
+  };
+
   return (
-    <div className="">
-      <h1 className="heading-primary">{heading}</h1>
-      <p className="text-base">{description}</p>
-      <HeroForm />
-    </div>
+    <motion.div initial="hidden"
+      animate="visible"
+      exit={{ opacity: 0, transition: { duration: 1 } }}
+      variants={{ visible: { transition: { staggerChildren: 0.3 } } }} className="">
+      <motion.p variants={{
+        hidden: { opacity: 0, y: -20 },
+        visible,
+      }} className="text-[2rem] text-center md:text-start text-[#3E7BE2] mb-[1.5rem] lg:mb-[2.5rem]">
+        {text}
+      </motion.p>
+      <h1 className="heading-primary">{heading.split("").map((el, i) => (
+        <motion.span
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{
+            duration: 0.55,
+            delay: i / 30,
+          }}
+          key={i}
+        >
+          {el}
+        </motion.span>
+      ))}</h1>
+
+      {/* <h1
+        className={`text-[50px] md:text-[100px] font-[800] text-white md:text-left `}
+      >
+        {text.split(" ").map((el, i) => (
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 0.25,
+              delay: i / 10,
+            }}
+            key={i}
+          >
+            {el}
+          </motion.span>
+        ))}
+      </h1> */}
+      <motion.p variants={itemVariants} className="text-base">{description}</motion.p>
+
+      <motion.div variants={itemVariants}>
+        <HeroForm />
+
+       
+
+      </motion.div>
+    </motion.div>
   );
 };
 

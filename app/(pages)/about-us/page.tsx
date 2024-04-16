@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-      <div className="relative overflow-x-hidden">
+      <div className="relative">
         {/* <div className="absolute w-32 h-32 rounded-full top-[18%] left-[38%] bg-primary"></div> */}
         <Reveal>
           <Image

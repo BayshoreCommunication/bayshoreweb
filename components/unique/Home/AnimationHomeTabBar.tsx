@@ -36,9 +36,12 @@ export function AnimationHomeTabBar() {
     {
       label: "Offshore Office",
       value: "offshore-office",
-      img: "/assets/service/offshore-office.svg",
+      img: "/assets/service/Home page images-new.svg",
       link: "/assets/offshore-office.svg",
       activeLink: "/assets/offshore-office.svg",
+      // link: "/assets/growth-marketing.svg",
+      // img: "/assets/service/growth-marketing.svg",
+      // activeLink: "/assets/growth-marketing.svg",
       desc: ` Bayshore’s Offshore Office supports are all about helping you to
       expand your business with your own efficient expert team, all
       staying cost-effective. We offer dedicated teams for various tasks
@@ -53,9 +56,12 @@ export function AnimationHomeTabBar() {
     {
       label: "Content Development",
       value: "content-development",
-      img: "/assets/service/content-development.svg",
-      link: "/assets/content-development.svg",
-      activeLink: "/assets/content-development.svg",
+      // img: "/assets/service/content-development.svg",
+      // link: "/assets/content-development.svg",
+      // activeLink: "/assets/content-development.svg",
+      link: "/assets/growth-marketing.svg",
+      img: "/assets/service/growth-marketing.svg",
+      activeLink: "/assets/growth-marketing.svg",
       desc: `Enhancing brand visibility relies on audience engagement, and the
       key to achieving that is creative content. For that, Bayshore
       Communication is your ultimate creative content powerhouse. We

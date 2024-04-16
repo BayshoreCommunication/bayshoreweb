@@ -39,7 +39,7 @@ const Package = ({ data }: any) => {
       </div>
       <div className="flex justify-center pt-3">
         <div className="center !py-5">
-          <Link href={`/contact`} className="btn text-small !py-6 !px-8">
+          <Link href={`/contact`} className="btn text-small !py-6 !px-8 r-button border-2 border-primary hover:text-primary">
             Customize My Plan
           </Link>
         </div>
