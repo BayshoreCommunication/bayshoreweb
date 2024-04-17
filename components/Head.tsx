@@ -9,7 +9,7 @@ const Head = () => {
   const url = pathname === "/" ? "" : pathname;
 
   return (
-    <head>
+    <>
       <Script id="txtesdfasdf" strategy="lazyOnload">
         {`
            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -24,7 +24,7 @@ const Head = () => {
         name="google-site-verification"
         content="4D7c8Md6e4LutBgarRA2BWlVkh_7gW1XdRGya8bW1-g"
       />
-    </head>
+    </>
   );
 };
 

@@ -36,7 +36,7 @@ export function AnimationHomeTabBar() {
     {
       label: "Offshore Office",
       value: "offshore-office",
-      img: "/assets/service/Home page images-new.svg",
+      img: "/assets/service/offshore-office-newone.svg",
       link: "/assets/offshore-office.svg",
       activeLink: "/assets/offshore-office.svg",
       // link: "/assets/growth-marketing.svg",
