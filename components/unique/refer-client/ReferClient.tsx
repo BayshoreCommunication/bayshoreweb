@@ -10,7 +10,6 @@ import { ExclamationTriangleIcon } from '@heroicons/react/24/outline'
 import emailjs from '@emailjs/browser';
 
 
-
 interface FormValues {
   referral_email: string;
   referral_phone: string;
@@ -77,16 +76,14 @@ const ReferClient: React.FC = () => {
     } else if (!regex.test(values.referral_email)) {
       errors.referral_email = "This is not a valid email format!";
     }
+    else {
+      setShowConfrimPopup(true)
+    }
     return errors;
   };
 
   const onCheckFormValidation = () => {
     setFormErrors(validate(formData));
-
-    if (formErrors.referral_email === "Email is required!" || formErrors.referral_email === "This is not a valid email format!") {
-      setShowConfrimPopup(true)
-    }
-
   }
 
 
@@ -311,7 +308,7 @@ const ReferClient: React.FC = () => {
                               </div>
                             </div>
                           </div>
-                          <div className="bg-gray-50 px-4 py-3 gap-1 flex justify-end items-center">
+                          <div className="bg-gray-50 px-4 py-3 gap-2 flex justify-center items-center ">
                             <form onSubmit={handleSubmit}>
                               <input
                                 className=" hidden appearance-none border w-full py-4 px-10 border-[#CED4DA] leading-tight focus:outline-none focus:shadow-outline text-small !text-[#6C757D]  rounded-[25px]"
@@ -379,13 +376,10 @@ const ReferClient: React.FC = () => {
                               <button
                                 type="submit"
 
-                                className="py-2.5 px-5 me-2 mb-2 text-xl font-blod text-gray-900 focus:outline-none bg-white rounded-full border border-gray-600 hover:!bg-[#FE6F1F] hover:text-white">Confrim</button>
+                                className="py-2.5 px-5 me-2 mb-2 text-xl font-blod text-gray-900 focus:outline-none bg-white rounded-full border border-gray-600 hover:!bg-[#FE6F1F] hover:!border-[#FE6F1F] hover:text-white">Confrim</button>
                             </form>
 
-
-
-
-                            <button onClick={() => setShowConfrimPopup(false)} type="button" className="py-2.5 px-5 me-2 mb-2 text-xl font-blod text-gray-900 focus:outline-none bg-white rounded-full border border-gray-600 hover:!bg-[#FE6F1F] hover:text-white"> Cancel</button>
+                            <button onClick={() => setShowConfrimPopup(false)} type="button" className="py-2.5 px-5 me-2 mb-2 text-xl font-blod text-gray-900 focus:outline-none bg-white rounded-full border hover:!border-[#FE6F1F] border-gray-600 hover:!bg-[#FE6F1F] hover:text-white"> Cancel</button>
 
                           </div>
                         </Dialog.Panel>

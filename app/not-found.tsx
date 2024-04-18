@@ -18,7 +18,7 @@ const NotFound = () => {
       <h1 className="text-center text-3xl font-bold mt-20">
         Page not found, redirecting...
       </h1>
-      <button className="btn mt-10" onClick={() => router.back()}>
+      <button className="btn mt-10 mx-auto" onClick={() => router.back()}>
         Go back
       </button>
     </div>

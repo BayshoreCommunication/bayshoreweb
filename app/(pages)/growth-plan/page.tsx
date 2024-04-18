@@ -25,6 +25,40 @@ const page = () => {
       <Reveal>
         <Hero heading={hero[0].heading} description={hero[0].description} />
       </Reveal>
+
+
+      {/* Package */}
+
+      <SectionLayout bg="">
+        <Reveal>
+          <div className="flex flex-col items-center">
+            <h2 className="heading-secondary !text-center max-w-[800px] mx-auto ">
+              Affordable Marketing Solutions to Fit Your Budget with our Value
+              Package
+            </h2>
+            <p className="text-base !text-center  mb-10">
+              {`
+            We are aware that there is no one size fits all approach to SEO. To
+            create a unique SEO plan for your company, Bayishore team takes into
+            account your firm's particular demands, industry, existing SEO
+            performance, and goals in addition to their own in-depth
+            investigation. Contact us right away if you're prepared to begin
+            developing your unique, revenue-generating SEO approach.
+            `}
+              <Link className="text-[#4C74B9] underline" href="/contact">
+                {" "}
+                contact us{" "}
+              </Link>{" "}
+              today!
+            </p>
+          </div>
+        </Reveal>
+        <Reveal>
+          <SectionPackage />
+        </Reveal>
+      </SectionLayout>
+
+
       {/* FLexiblity */}
       <Reveal>
         <SectionLayout bg="">
@@ -70,37 +104,6 @@ const page = () => {
           </div>
         </SectionLayout>
       </Reveal>
-
-      {/* Package */}
-
-      <SectionLayout bg="">
-        <Reveal>
-          <div className="flex flex-col items-center">
-            <h2 className="heading-secondary !text-center max-w-[800px] mx-auto ">
-              Affordable Marketing Solutions to Fit Your Budget with our Value
-              Package
-            </h2>
-            <p className="text-base !text-center  mb-10">
-              {`
-            We are aware that there is no one size fits all approach to SEO. To
-            create a unique SEO plan for your company, Bayishore team takes into
-            account your firm's particular demands, industry, existing SEO
-            performance, and goals in addition to their own in-depth
-            investigation. Contact us right away if you're prepared to begin
-            developing your unique, revenue-generating SEO approach.
-            `}
-              <Link className="text-[#4C74B9] underline" href="/contact">
-                {" "}
-                contact us{" "}
-              </Link>{" "}
-              today!
-            </p>
-          </div>
-        </Reveal>
-        <Reveal>
-          <SectionPackage />
-        </Reveal>
-      </SectionLayout>
 
       <Reveal>
         <Boost

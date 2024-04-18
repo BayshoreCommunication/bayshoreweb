@@ -1,8 +1,5 @@
 
-
-
 import ReferClient from '@/components/unique/refer-client/ReferClient';
-
 
 export const metadata = {
   title: "Refer-Bayshore Communication",
@@ -13,7 +10,6 @@ export const metadata = {
 
 
 const page = () => {
-
 
   return (
     <div>

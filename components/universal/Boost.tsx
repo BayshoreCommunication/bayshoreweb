@@ -51,40 +51,44 @@ const Boost: React.FC<boostInfo> = ({ heading, btnText }) => {
         <div className="mt-20 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-12 px-[4rem] sm:px-[15rem]  md:px-[10rem] lg:px-0">
           <HomeHeroCard
             bgImg="bg-heroimg-1"
-            heading="Business Growth Increased By"
+            heading="Business Growth Increased"
             stat={87}
+            link="Immigration Lawyer Digital Marketing Case Study"
           />
 
           <HomeHeroCard
             bgImg="bg-heroimg-2"
-            heading="Website Engagement Increased By"
+            heading="Website Engagement Increased"
             stat={71}
+            link="Catflix Digital Marketing Case-Study"
           />
           <HomeHeroCard
             bgImg="bg-heroimg-3"
-            heading="Social Media Engagement Increased By"
+            heading="Social Media Engagement Increased"
             stat={60}
+            link="Bayshore Communication Case Study of Apex Advisors"
           />
 
-          <div className="flex-1 flex flex-col items-center custom-shadow p-[3rem]">
-            <p className="text-base pr-12 !text-start">
-              “Fueling Success, Fueled by Client Satisfations”
-            </p>
-            <div className="flex mt-8 gap-6 items-center">
-              <Image
-                src="/assets/salman-n.png"
-                alt="salman"
-                width={150}
-                height={150}
-                className="w-[53px] h-[53px] rounded-full border-[2px] border-[#207DE9]"
-              />
-              <div>
+          <div className="flex-1 flex flex-col items-center custom-shadow p-[3rem] !rounded-[45px]">
+            <div>
+              <p className="text-base !text-center">
+                “Fueling Success, Fueled by Client Satisfations”
+              </p>
+              <div className="flex mt-8 gap-6 items-center justify-center">
+                <Image
+                  src="/assets/salman-n.png"
+                  alt="salman"
+                  width={150}
+                  height={150}
+                  className="w-[57px] h-[57px] rounded-full border-[2px] border-[#207DE9]"
+                />
                 <div>
-                  {" "}
-                  <h4 className="heading-four !text-[1.2rem]">
-                    Salman H Saikote
-                  </h4>
-                  <p className="text-small !text-[1rem]">CTO</p>
+                  <div>
+                    <h4 className="heading-four !text-[1.4rem]">
+                      Salman H Saikote
+                    </h4>
+                    <p className="text-small !text-[1rem]">CTO</p>
+                  </div>
                 </div>
               </div>
             </div>

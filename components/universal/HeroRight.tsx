@@ -1,35 +1,42 @@
 import Image from "next/image";
 import React from "react";
+import Count from "../Count";
 
 const cardData = [
   {
     image: "/assets/funnel.svg",
     title: "Business Automation helps Increasing",
-    value: "1500%",
+    value: 1500,
+    end: "%",
     bottomTitle: "Leads to our clients business",
   },
 
   {
     image: "/assets/funnel.svg",
     title: "Optimizing Clients website UI & UX ",
-    value: "600%",
+    value: 600,
+    end: "%",
     bottomTitle: "Sales Increase",
   },
 
   {
     image: "/assets/funnel.svg",
     title: "Our Retargeting ads able to generates",
-    value: "4x",
+    value: 4,
+    end: "x",
     bottomTitle: "Time better results",
   },
 
   {
     image: "/assets/funnel.svg",
     title: "All of our clients got",
-    value: "5x",
+    value: 5,
+    end: "x",
     bottomTitle: "Of minimum ROI",
   },
 ];
+
+
 
 const HeroRight = () => {
   return (
@@ -38,7 +45,7 @@ const HeroRight = () => {
         {cardData.map((data) => (
           <div
             key={data.title}
-            className="bg-[#18112E] grid grid-cols-[20%_80%] items-center rounded-[10px] py-3 px-2 md:px-[2rem] w-full"
+            className="bg-[#18112E] grid grid-cols-[20%_80%] items-center rounded-[45px] py-4 px-2 md:px-[2rem] w-full"
           >
             <div>
               <Image
@@ -54,7 +61,7 @@ const HeroRight = () => {
                 {data.title}
               </p>
               <p className="text-white font-bold text-[14px] sm:text-[15px] md:text-[16px] lg:text-[18px] my-[2px]">
-                {data.value}
+                <Count num={data.value} duration={3} />{data.end}
               </p>
               <p className="text-small !text-[#fff] !text-start">
                 {data.bottomTitle}
