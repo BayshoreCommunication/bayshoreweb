@@ -28,9 +28,8 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
   );
 
   const today = new Date();
-  const dateToday = `${today.getDate()} / ${
-    today.getMonth() + 1
-  } / ${today.getFullYear()}`;
+  const dateToday = `${today.getDate()} / ${today.getMonth() + 1
+    } / ${today.getFullYear()}`;
 
   const dateFormate = (date: any) => {
     const formattedDate = new Date(date).toLocaleDateString("en-US", {
@@ -96,7 +95,7 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                           </h1>
                         </div>
 
-                        <div>{parser(elem.body)}</div>
+                        <div className="externallink">{parser(elem.body)}</div>
                       </div>
                     </div>
 
@@ -120,10 +119,10 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
               ))}
           </div>
         </div>
-      </SectionLayout>
+      </SectionLayout >
 
       {/* <AboutUs /> */}
-      <Consultaion />
+      < Consultaion />
     </>
   );
 };

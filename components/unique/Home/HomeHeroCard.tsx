@@ -41,7 +41,7 @@ interface hero {
 const HomeHeroCard = ({ heading, stat, bgImg, link }: hero) => {
   return (
     <div
-      className={`flex-1 custom-shadow bg-cover bg-center bg-no-repeat flex flex-col items-center py-[2rem] px-[2rem] h-full !rounded-[45px]`}
+      className={`flex-1 custom-shadow bg-cover bg-center bg-no-repeat flex flex-col items-center py-[4rem] px-[2rem] h-full !rounded-[45px]`}
     >
       <p className=" heading-primary !text-primary !mb-4 text-left">
         +<Count num={stat} duration={3} />%

@@ -379,7 +379,7 @@ const ReferClient: React.FC = () => {
                                 className="py-2.5 px-5 me-2 mb-2 text-xl font-blod text-gray-900 focus:outline-none bg-white rounded-full border border-gray-600 hover:!bg-[#FE6F1F] hover:!border-[#FE6F1F] hover:text-white">Confrim</button>
                             </form>
 
-                            <button onClick={() => setShowConfrimPopup(false)} type="button" className="py-2.5 px-5 me-2 mb-2 text-xl font-blod text-gray-900 focus:outline-none bg-white rounded-full border hover:!border-[#FE6F1F] border-gray-600 hover:!bg-[#FE6F1F] hover:text-white"> Cancel</button>
+                            <button onClick={() => setShowConfrimPopup(false)} type="button" className="py-2.5 px-5 me-2 mb-2 text-xl font-blod text-gray-900 focus:outline-none bg-white rounded-full border  border-gray-600 hover:!bg-[#FE6F1F] hover:text-white"> Cancel</button>
 
                           </div>
                         </Dialog.Panel>

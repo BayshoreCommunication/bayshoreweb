@@ -533,3 +533,9 @@ body {
 .r-button:hover:before {
   width: 100%;
 }
+
+
+.externallink a {
+  color: rgb(33, 35, 192);
+  text-decoration: underline;
+}

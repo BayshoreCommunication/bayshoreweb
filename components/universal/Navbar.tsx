@@ -94,17 +94,17 @@ const Navbar = () => {
           <div>
             <ul className="md:px-[2rem] flex flex-col md:gap-[2.6rem]">
               {linksO.map((el: { title: string; link: string }, i: number) => (
-                <li
-                  className={`text-link border-t-[0.5px] border-[rgba(0,0,0,0.16)] py-4 text-center ${
-                    splitPath === el.link
+
+                <Link href={`${el.link}`} key={i}>
+                  <li
+                    className={`text-link border-t-[0.5px] border-[rgba(0,0,0,0.16)] py-4 text-center ${splitPath === el.link
                       ? "active !text-primary font-bold"
                       : ""
-                  }`}
-                  key={i}
-                  onClick={toggleDrawer}
-                >
-                  <Link href={`${el.link}`}>{el.title}</Link>
-                </li>
+                      }`}
+                    onClick={toggleDrawer}
+                  >{el.title} </li>
+                </Link>
+
               ))}
             </ul>
           </div>
@@ -133,9 +133,8 @@ const Navbar = () => {
           <ul className="flex items-center justify-center gap-[1.5rem] lg:gap-[2.6rem] w-full">
             {linksO.map((el: { title: string; link: string }, i: number) => (
               <li
-                className={`text-link ${
-                  splitPath === el.link ? "active !text-primary" : ""
-                }`}
+                className={`text-link ${splitPath === el.link ? "active !text-primary" : ""
+                  }`}
                 key={i}
                 data-aos={hasAnimated ? "" : "fade-down"} // Apply AOS animation only if it hasn't been applied yet
                 data-aos-delay={hasAnimated ? 0 : i * 200}
@@ -250,11 +249,10 @@ const Navbar = () => {
                 </div> */}
                 <Link
                   href={el.link}
-                  className={`font-semibold hover:border-b-2  ${
-                    splitPath === el.link
-                      ? "border-orange-700 border-b-2"
-                      : "hover:border-blue-gray-500"
-                  }`}
+                  className={`font-semibold hover:border-b-2  ${splitPath === el.link
+                    ? "border-orange-700 border-b-2"
+                    : "hover:border-blue-gray-500"
+                    }`}
                 >
                   {el.title}
                 </Link>
