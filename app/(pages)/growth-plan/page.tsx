@@ -58,7 +58,6 @@ const page = () => {
         </Reveal>
       </SectionLayout>
 
-
       {/* FLexiblity */}
       <Reveal>
         <SectionLayout bg="">
@@ -66,7 +65,7 @@ const page = () => {
             Flexibility at its Best: From One-Time Assessments to Complete
             Marketing Solutions
           </h2>
-          <div className="mt-8 border-2 rounded-[40px] border-gray-300 md:py-[7rem] md:px-[10rem] py-[3rem] px-[1rem] sm:px-[4rem] ">
+          {/* <div className="mt-8 border-2 rounded-[40px] border-gray-300 md:py-[7rem] md:px-[10rem] py-[3rem] px-[1rem] sm:px-[4rem] ">
             <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-4">
               <div>
                 <h4 className="heading-four text-center mb-4">
@@ -87,19 +86,24 @@ const page = () => {
                 />
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className="grid grid-cols-1 md:grid-cols-2  mt-12 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 mt-12 gap-8 mb-12">
+            <ColFlex
+              heading="Budget-Friendly Options"
+              description="We’ll do everything, take care of everything,and report
+              directly to you."
+              imgLink="/assets/growth-plan/save-money.png"
+            />
             <ColFlex
               heading="Flexibility to Test and Experiment"
               description="We’ll build you a high performing engine and you run it by yourself."
-              imgLink="/assets/growth-plan/flexibility.png"
+              imgLink="/assets/growth-plan/data-sharing.png"
             />
-
             <ColFlex
               heading="Collaborative Invironment"
               description="Get ongoing step-by-step advicewith data-driven prioritization."
-              imgLink="/assets/growth-plan/seo.svg"
+              imgLink="/assets/growth-plan/seo.png"
             />
           </div>
         </SectionLayout>
