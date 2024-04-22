@@ -19,7 +19,7 @@ import Image from "next/image";
 
 export const metadata: Metadata = {
   title:
-    "Bayshore Communication is your all-in-one partner for accelerating business growth",
+    "Bayshore Communication is Your all-in-one partner for accelerating business growth",
   description:
     "Welcome to Bayshore Communication!! Grow your brand or business with us. Whether you need digital marketing services, or software solutions, we've you covered.",
 };
@@ -76,7 +76,7 @@ const Page = () => {
       <SectionLayout bg="">
         <div>
           <SectionHeader
-            heading="Tailored business solutions for your unique needs"
+            heading="Tailored Business Solutions for Your Unique Needs"
             text="We deliver results that exceed your expectations, marketing needs,
             goals and fits your budget. Our expertise, creativity, and passion
             will make your business shine."
@@ -91,7 +91,7 @@ const Page = () => {
       {/* Boost */}
 
       <Boost
-        heading="Need a boost for you business? Get your FREE Quote Today!"
+        heading="Need a Boost for You Business? Get Your FREE Quote Today!"
         btnText="Send us a proposal"
       />
 
@@ -99,7 +99,8 @@ const Page = () => {
       <SectionLayout bg="">
         <Reveal>
           <SectionHeader
-            heading="Drive results through innovative digital marketing campaigns"
+            heading="Drive Results Through Innovative Digital Marketing 
+            Campaigns"
             text="Enhance your online presence and reach more customers with Bayshore Communication. We provides an extensive digital marketing services that work in synergy to create, engage, and convert leads. Plus, our exclusive tech-powered tools give you an edge over the competition."
           />
         </Reveal>
@@ -313,7 +314,7 @@ let hero: {
 hero = [
   {
     text: "Ease Your Business Challenges With our expertise.",
-    heading: "Get your own workforce for your business",
+    heading: "Get Your Own Workforce for Your Business",
     description: `Bayshore Communication is your all-in-one partner for accelerating business growth. With a dynamic range of services spanning Growth Marketing, Software Solutions, Offshore Office Support, and Content Development, we empower business owners to thrive in the digital era. Experience a seamless journey towards excellence and discover endless possibilities – where your vision meets innovation!`,
   },
 ];

@@ -7,7 +7,7 @@ const Consultaion = () => {
   return (
     <SectionLayout bg="">
       <div className="flex flex-col items-center">
-        <h2 className="heading-secondary ">Consultations for our service</h2>
+        <h2 className="heading-secondary ">Consultations for Our Service</h2>
         <p className="text-base !text-center max-w-[622px] mx-auto mb-10">
           {` Consultations for our service are free and easy. Simply click below to
             fix a suitable date and time that works for you. We'll contact you
@@ -23,10 +23,6 @@ const Consultaion = () => {
             </span>
           </button>
         </Link>
-
-
-
-
       </div>
     </SectionLayout>
   );

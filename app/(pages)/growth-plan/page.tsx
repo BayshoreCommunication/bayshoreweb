@@ -33,7 +33,7 @@ const page = () => {
         <Reveal>
           <div className="flex flex-col items-center">
             <h2 className="heading-secondary !text-center max-w-[800px] mx-auto ">
-              Affordable Marketing Solutions to Fit Your Budget with our Value
+              Affordable Marketing Solutions to Fit Your Budget with Our Value
               Package
             </h2>
             <p className="text-base !text-center  mb-10">
@@ -102,7 +102,7 @@ const page = () => {
             />
             <ColFlex
               heading="Collaborative Invironment"
-              description="Get ongoing step-by-step advicewith data-driven prioritization."
+              description="Get ongoing step-by-step advice with data-driven prioritization, achieving your goals faster."
               imgLink="/assets/growth-plan/seo.png"
             />
           </div>
@@ -121,8 +121,8 @@ const page = () => {
       </div>
       <Reveal>
         <Results
-          heading="Even though we don’t like showing off; 
-we have some amazing results"
+          heading="Even Though We Don’t Like Showing off; 
+We Have Some Amazing Results"
         />
       </Reveal>
     </>
@@ -138,7 +138,7 @@ let hero: {
 
 hero = [
   {
-    heading: "Experience Rapid Growth with our Enhanced Marketing ",
+    heading: "Experience Rapid Growth with Our Enhanced Marketing ",
     description: `Do you wish to benefit from the most recent marketing techniques and resources? If so, 
     you require one of our upgraded marketing bundles. We provide a broad spectrum of services that can expand your brand and boost sales. From the website, or software solutions to digital marketing services, we have a bundle that suits  your needs and 
     budget. Don’t let this chance slip away to skyrocket your business with our enhanced advertising packages.`,

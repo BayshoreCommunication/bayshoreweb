@@ -71,7 +71,7 @@ const Page = () => {
             <div className="md:flex-[2]">
               <div className="mx-auto">
                 <h4 className="text-3xl font-bold !text-center mb-2">
-                  Tired of searching? Get the help you need instantly!
+                  Tired of Searching? Get the Help You Need Instantly!
                 </h4>
                 <h4 className="text-[17px] font-normal !text-center mb-12">
                   Just fire away your questions or concerns in a new message

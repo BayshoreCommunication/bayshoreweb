@@ -754,7 +754,7 @@ const Page = () => {
       <SectionLayout bg="">
         <Reveal>
           <SectionHeader
-            heading="Featured case studies"
+            heading="Featured Case Studies"
             text="Be inspired by our clients’ success stories. Learn how they used our solutions to grow their businesses. You can do it too."
           />
         </Reveal>

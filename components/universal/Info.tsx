@@ -20,7 +20,7 @@ const Info = () => {
               />
               <div>
                 <p className="text-base mb-2 opacity-80 !text-[#fff]">
-                  Ready to speak with us? Give us a ring
+                  Ready to Speak with Us? Give Us a Ring
                 </p>
                 {/* <Link href="tel:+13217659177"> */}
                 <p className="info-text text-center sm:text-start">
