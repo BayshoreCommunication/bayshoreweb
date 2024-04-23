@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import Slider from "react-slick";
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
@@ -41,9 +40,9 @@ interface Settings {
 }
 
 const FocusOnSelect: React.FC = () => {
-  const [activeSlide, setActiveSlide] = useState(0);
-  const [activeSlides, setActiveSlides] = React.useState([4, 0, 1]);
-  const numberOfSlides = 5;
+  const [oldSlide, setOldSlide] = useState<number>(0);
+  const [activeSlide, setActiveSlide] = useState<number>(0);
+  const [activeSlide2, setActiveSlide2] = useState<number>(0)
 
   const settings: Settings = {
     focusOnSelect: true,
@@ -65,6 +64,7 @@ const FocusOnSelect: React.FC = () => {
     centerPadding: "0px",
     arrows: false,
     focusOnSelect: true,
+
   };
 
   const settings3: Settings3 = {
@@ -79,13 +79,133 @@ const FocusOnSelect: React.FC = () => {
     fade: true,
   };
 
-  // const [nav1, setNav1] = useState<Slider | null>(null);
-  // const [nav2, setNav2] = useState<Slider | null>(null);
-  // const [nav3, setNav3] = useState<Slider | null>(null);
 
   const [nav1, setNav1] = useState<Slider | undefined>(undefined);
   const [nav2, setNav2] = useState<Slider | undefined>(undefined);
   const [nav3, setNav3] = useState<Slider | undefined>(undefined);
+
+
+  const iframeData = [{
+    src: "https://www.youtube.com/embed/RVit6poGLRs?si=Pv8CCqx6Qtehy56N",
+    title: "YouTube video player trip law"
+  },
+  {
+    src: "https://www.youtube.com/embed/ohyUTzLiLbI?si=IrLApSH4eZOvcYPQ",
+    title: "YouTube video player apex"
+  },
+  {
+    src: "https://www.youtube.com/embed/iqHA7By9OAI?si=jhmzmTsMEhjIyqZa",
+    title: "YouTube video player catflix"
+  },
+  {
+    src: "https://www.youtube.com/embed/RVit6poGLRs?si=Pv8CCqx6Qtehy56N",
+    title: "YouTube video player trip law"
+  },
+  {
+    src: "https://www.youtube.com/embed/ohyUTzLiLbI?si=IrLApSH4eZOvcYPQ",
+    title: "YouTube video player apex"
+  },
+  {
+    src: "https://www.youtube.com/embed/iqHA7By9OAI?si=jhmzmTsMEhjIyqZa",
+    title: "YouTube video player catflix"
+  },
+  {
+    src: "https://www.youtube.com/embed/RVit6poGLRs?si=Pv8CCqx6Qtehy56N",
+    title: "YouTube video player trip law"
+  },
+  {
+    src: "https://www.youtube.com/embed/ohyUTzLiLbI?si=IrLApSH4eZOvcYPQ",
+    title: "YouTube video player apex"
+  },
+  {
+    src: "https://www.youtube.com/embed/iqHA7By9OAI?si=jhmzmTsMEhjIyqZa",
+    title: "YouTube video player catflix"
+  },
+  {
+    src: "https://www.youtube.com/embed/RVit6poGLRs?si=Pv8CCqx6Qtehy56N",
+    title: "YouTube video player trip law"
+  },
+  {
+    src: "https://www.youtube.com/embed/ohyUTzLiLbI?si=IrLApSH4eZOvcYPQ",
+    title: "YouTube video player apex"
+  },
+  {
+    src: "https://www.youtube.com/embed/iqHA7By9OAI?si=jhmzmTsMEhjIyqZa",
+    title: "YouTube video player catflix"
+  },
+  {
+    src: "https://www.youtube.com/embed/RVit6poGLRs?si=Pv8CCqx6Qtehy56N",
+    title: "YouTube video player trip law"
+  },
+  {
+    src: "https://www.youtube.com/embed/ohyUTzLiLbI?si=IrLApSH4eZOvcYPQ",
+    title: "YouTube video player apex"
+  },
+  {
+    src: "https://www.youtube.com/embed/iqHA7By9OAI?si=jhmzmTsMEhjIyqZa",
+    title: "YouTube video player catflix"
+  },
+  {
+    src: "https://www.youtube.com/embed/RVit6poGLRs?si=Pv8CCqx6Qtehy56N",
+    title: "YouTube video player trip law"
+  },
+  {
+    src: "https://www.youtube.com/embed/ohyUTzLiLbI?si=IrLApSH4eZOvcYPQ",
+    title: "YouTube video player apex"
+  },
+  {
+    src: "https://www.youtube.com/embed/iqHA7By9OAI?si=jhmzmTsMEhjIyqZa",
+    title: "YouTube video player catflix"
+  },
+  ]
+
+  const imageDaa = [{
+    src: "/assets/about/Trip.jpg"
+  },
+  {
+    src: "/assets/about/Carlos.jpg"
+  },
+  {
+    src: "/assets/about/Cris.jpg"
+  },
+  {
+    src: "/assets/about/Trip.jpg"
+  },
+  {
+    src: "/assets/about/Carlos.jpg"
+  },
+  {
+    src: "/assets/about/Cris.jpg"
+  },
+  {
+    src: "/assets/about/Trip.jpg"
+  },
+  {
+    src: "/assets/about/Carlos.jpg"
+  },
+  {
+    src: "/assets/about/Cris.jpg"
+  },
+  {
+    src: "/assets/about/Trip.jpg"
+  },
+  {
+    src: "/assets/about/Carlos.jpg"
+  },
+  {
+    src: "/assets/about/Cris.jpg"
+  },
+  {
+    src: "/assets/about/Trip.jpg"
+  },
+  {
+    src: "/assets/about/Carlos.jpg"
+  },
+  {
+    src: "/assets/about/Cris.jpg"
+  },
+
+  ]
 
   return (
     <>
@@ -95,6 +215,38 @@ const FocusOnSelect: React.FC = () => {
           ref={(slider: Slider) => setNav2(slider)}
           {...settings2}
         >
+          {/* <div className="mx-auto bg-deep-orange-400 p-80 flex h-80 w-[500px]">
+            demo one
+          </div>
+          <div className="mx-auto bg-light-green-500 p-80 flex h-80 w-[500px]">
+            demo two
+          </div>
+          <div className="mx-auto bg-teal-600 p-80 flex h-80 w-[500px]">
+            demo three
+          </div>
+          <div className="mx-auto bg-red-500 p-80 flex h-80 w-[500px]">
+            demo four
+          </div>
+          <div className="mx-auto bg-blue-gray-600 p-80 flex h-80 w-[500px]">
+            demo five
+          </div>
+          <div className="mx-auto bg-blue-800 p-80 flex h-80 w-[500px]">
+            demo six
+          </div> */}
+          {
+            iframeData?.map((item: any, index: any) => <iframe
+              key={index}
+              width={1000}
+              height={1000}
+              src={item.src}
+              title={item.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              className="w-[350px] h-[275px]"
+            ></iframe>)
+          }
+          {/* 
           <iframe
             width={1000}
             height={1000}
@@ -127,6 +279,7 @@ const FocusOnSelect: React.FC = () => {
             allowFullScreen
             className="w-[350px] h-[275px]"
           ></iframe>
+
           <iframe
             width={1000}
             height={1000}
@@ -158,9 +311,10 @@ const FocusOnSelect: React.FC = () => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
             className="w-[350px] h-[275px]"
-          ></iframe>
+          ></iframe> */}
+
         </Slider>
-      </div>
+      </div >
       <div className="testimonial-slider max-w-[470px] mx-auto ">
         <Slider
           {...settings}
@@ -224,7 +378,6 @@ const FocusOnSelect: React.FC = () => {
           </div>
         </Slider>
       </div>
-
       <div>
         <Slider
           asNavFor={nav2}

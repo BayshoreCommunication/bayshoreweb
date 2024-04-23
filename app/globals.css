@@ -193,6 +193,7 @@ body {
 
 .slick-current iframe {
   transform: scale(1);
+  transition-delay: initial;
 }
 
 .slick-prev:hover,
@@ -539,3 +540,7 @@ body {
   color: rgb(33, 35, 192);
   text-decoration: underline;
 }
+
+/* .slick-slide .slick-active .slick-center .slick-current {
+  cursor: pointer;
+} */

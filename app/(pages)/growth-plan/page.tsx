@@ -39,7 +39,7 @@ const page = () => {
             <p className="text-base !text-center  mb-10">
               {`
             We are aware that there is no one size fits all approach to SEO. To
-            create a unique SEO plan for your company, Bayishore team takes into
+            create a unique SEO plan for your company, Bayshore team takes into
             account your firm's particular demands, industry, existing SEO
             performance, and goals in addition to their own in-depth
             investigation. Contact us right away if you're prepared to begin
@@ -111,7 +111,7 @@ const page = () => {
 
       <Reveal>
         <Boost
-          heading="Ready to Grow? Get your FREE Quote Today!"
+          heading="Ready to Grow? Get Your FREE Quote Today!"
           btnText="Get a Proposal "
         />
       </Reveal>
@@ -121,8 +121,8 @@ const page = () => {
       </div>
       <Reveal>
         <Results
-          heading="Even Though We Don’t Like Showing off; 
-We Have Some Amazing Results"
+          heading="Even Though We Don’t Like Showing off, 
+          We Have Some Amazing Results"
         />
       </Reveal>
     </>
