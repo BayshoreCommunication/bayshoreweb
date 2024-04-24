@@ -197,7 +197,7 @@ const FocusOnSelect: React.FC = () => {
             demo six
           </div> */}
           {
-            iframeData?.map((item: any, index: number) => <div className="flex flex-row gap-2 items-center justify-center">
+            iframeData?.map((item: any, index: number) => <div key={index} className="flex flex-row gap-2 items-center justify-center">
               <div className="flex w-[100%] items-center justify-center">
                 <div className="flex-1 w-[100%]">
                   <iframe
