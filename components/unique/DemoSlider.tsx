@@ -107,7 +107,7 @@ const FocusOnSelect: React.FC = () => {
     titles: "Catflix",
     subtitle: "",
     content: "2",
-    text: "Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust.",
+    text: "Hello,Chris Chris Thayer, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust.",
   },
   {
     src: "https://www.youtube.com/embed/RVit6poGLRs?si=Pv8CCqx6Qtehy56N",
@@ -131,7 +131,7 @@ const FocusOnSelect: React.FC = () => {
     titles: "Catflix",
     subtitle: "",
     content: "2",
-    text: "Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust.",
+    text: "Hello,Chris Chris Thayer, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust.",
   },
   {
     src: "https://www.youtube.com/embed/RVit6poGLRs?si=Pv8CCqx6Qtehy56N",
@@ -155,7 +155,7 @@ const FocusOnSelect: React.FC = () => {
     titles: "Catflix",
     subtitle: "",
     content: "3",
-    text: "Hello,Chris here, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust.",
+    text: "Hello,Chris Thayer, I'm thrilled to say that I am the proud owner of Catflix, a journey that wasn't always easy. Thankfully, Bayshore Communications came to my rescue, transforming my dull website into a thriving business strategy. They treated me like family, addressing security concerns, improving customer communication, and optimizing our online presence. Entrusting them with every aspect of my business was a decision I'll never regret. Bayshore Communications handled it all with utmost care, and their dedication and expertise turned Catflix into a phenomenal success. I'm forever grateful for their genuine support and trust."
   },
   ]
 
@@ -172,7 +172,7 @@ const FocusOnSelect: React.FC = () => {
 
   return (
     <>
-      <div className="mt-[3rem] mb-[4rem] client-slider">
+      <div className="mt-[0rem] mb-[0rem] client-slider">
         <Slider
           asNavFor={nav1}
           ref={(slider: Slider) => setNav1(slider)}
@@ -415,7 +415,7 @@ interface demo {
 }
 const BoxContent = ({ title, subtitle, content, text }: demo) => {
   return (
-    <div className="fade-in-animation mt-[0rem] flex flex-col !text-left">
+    <div className="fade-in-animation max-w-[600px] mt-[0rem] flex flex-col !text-left">
       <h3 className="heading-tertiary !text-[34px] !text-left">{title}</h3>
       <p className="mb-4 font-semibold">{subtitle} </p>
       <p className="text-link !text-[16px] !text-left">
