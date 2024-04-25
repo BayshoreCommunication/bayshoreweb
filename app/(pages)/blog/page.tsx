@@ -1132,7 +1132,7 @@ const page = async () => {
         <div className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] grid-flow-row-dense">
             {blogData?.data
-              ?.filter((blog: any) => blog?.published === true)
+              ?.filter((blog: any) => blog?.published === true )
               ?.map((el: any, i: number) => (
                 <div key={i} className="h-fit">
                   <Blog el={el} i={i} />

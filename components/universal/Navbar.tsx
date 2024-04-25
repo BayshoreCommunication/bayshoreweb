@@ -116,7 +116,7 @@ const Navbar = () => {
 
       {/* Desktop */}
 
-      <nav className="container  justify-between items-center py-[1.8rem] hidden md:flex">
+      <nav className="container justify-between items-center py-[1.8rem] hidden md:flex">
         <div>
           <Link href="/">
             <Image

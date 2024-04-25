@@ -15,6 +15,7 @@ import { log } from "console";
 import { blogindv } from "../../blog/page";
 import Link from "next/link";
 import Reveal from "@/components/motion/Reveal";
+import GetAllBlogData from "@/lib/GetAllBlogData";
 
 //  Home Hero section
 let hero: {
@@ -33,10 +34,15 @@ hero = [
   },
 ];
 
-const Page = ({ params }: { params: { service: string } }) => {
+const Page = async ({ params }: { params: { service: string } }) => {
   const parameter = params.service;
   const individualService = services.filter((elem) => elem.url === parameter);
   const individualHomeTabBar = individualService.map((el) => el.homeTabBar)[0];
+
+  const blogData = await GetAllBlogData();
+
+
+
 
   return (
     <>
@@ -108,12 +114,7 @@ const Page = ({ params }: { params: { service: string } }) => {
                       <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                         {Parser(elem.description2)}
                       </div>
-                      <div>
-                        <BoostService
-                          heading=" Need a boost for you business? Get your FREE Quote Today!"
-                          btnText="Send us a proposal"
-                        />
-                      </div>
+
                       <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                         {Parser(elem.description3)}
                       </div>
@@ -148,6 +149,12 @@ const Page = ({ params }: { params: { service: string } }) => {
                 </SectionLayout>
               </Reveal>
               <div className="container">
+                <div>
+                  <BoostService
+                    heading=" Need a boost for you business? Get your FREE Quote Today!"
+                    btnText="Send us a proposal"
+                  />
+                </div>
                 <Info />
               </div>
               <Reveal>
@@ -198,25 +205,25 @@ const Page = ({ params }: { params: { service: string } }) => {
                         <h3 className="text-[1.8rem] font-semibold text-center mb-3">
                           Our Blogs
                         </h3>
-                        {blogindv.map((elem: any, index: any) => (
-                          <div key={index}>
-                            <Link
-                              className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
-                              href={`/blog/${elem.url
-                                .replace(/\s+/g, "-") // Replace spaces with dashes globally
-                                .toLowerCase()}`}
-                            >
-                              <Image
-                                src={`/assets/blog/${elem.blogImg}`}
-                                alt="blog_image"
-                                width={3109}
-                                height={1752}
-                                className="w-[100px] h-[80px]"
-                              />{" "}
-                              <p className="!text-xl">{elem.title}</p>
-                            </Link>
-                          </div>
-                        ))}
+                        {blogData?.data
+                          ?.filter((blog: any) => blog?.published === true)
+                          ?.slice(0, 4)?.map((elem: any, index: any) => (
+                            <div key={index}>
+                              <Link
+                                className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
+                                href={`/blog/${elem.slug}`}
+                              >
+                                <Image
+                                  src={elem?.featuredImage?.image?.url}
+                                  alt="blog_image"
+                                  width={3109}
+                                  height={1752}
+                                  className="w-[100px] h-[80px]"
+                                />
+                                <p className="!text-xl">{elem.title}</p>
+                              </Link>
+                            </div>
+                          ))}
                       </div>
                     </div>
                   </div>
@@ -242,8 +249,7 @@ export async function generateMetadata({
   const individualService = services.filter((elem) => elem.url === parameter);
   return {
     title: `${individualService.map((elem, index) => elem.topHeroLeftTitle)}`,
-    description: `${
-      individualService.map((elem, index) => elem.metaDescription)[0]
-    }`,
+    description: `${individualService.map((elem, index) => elem.metaDescription)[0]
+      }`,
   };
 }
