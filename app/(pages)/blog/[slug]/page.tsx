@@ -8,7 +8,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { VscCalendar } from "react-icons/vsc";
-import { blogindv } from "../page";
 import { useParams } from "next/navigation";
 import parser from "html-react-parser";
 import AboutUs from "@/components/universal/AboutUs";
