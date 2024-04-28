@@ -46,6 +46,7 @@ export let services: {
   description15: string;
   whyBayshore: string;
 }[];
+
 services = [
   {
     logo: "/assets/service/web.svg",
@@ -58,7 +59,7 @@ services = [
     readMoreDesc: `At Bayshore's website design service, you can enhance your online image with our professional and affordable web design solutions. We create custom websites that are attractive, highly secured, user-friendly, SEO-ready, and most importantly professionally styled. Whether you need a simple landing page or a complex e-commerce site, our expert developers can provide your need. `,
     url: "website-design",
     heroImg: "/assets/our-service/website-design.png",
-    secondHeroImg: "/assets/service/website-design-service.jpg",
+    secondHeroImg: "/assets/service/Bayshore-Servoces-Images/Website-services/Excellence-and-Innovation-in-Website-Design.jpg",
     title: "Excellence and Innovation in Website Design",
     shortTitle: "Website Design",
     shortDescription: `Your website is the face of your business online, and it can make or break your reputation, credibility, and sales. That’s why you need a website design service that can create a stunning and effective website for your business. At Bayshore Communications, we offer you the best website design service that combines captivating designs, user-friendly interfaces, and cutting-edge techniques to enhance your online presence and performance.`,
@@ -90,7 +91,7 @@ services = [
     description1: `
 
     <img
-              src="/assets/service/Customized-Website-Design-Solutions.jpg"
+              src="/assets/service/Bayshore-Servoces-Images/Website-services/Customized-Website-Design-Solutions.jpg"
               alt="tab-1"
               
               className="w-full h-full py-8"
@@ -114,7 +115,7 @@ services = [
     <p className="text-center">In today's mobile-centric world, responsive web design is no longer an option but a necessity. Each device has its own screen size, resolution and orientation, which can affect how your website looks and functions. That&rsquo;s why, we, Bayshore Communications, specializes in creating websites that provide a coherent user experience across devices, ensuring your marketing is accessible to users on desktops, smartphones, and tablets.</p>
 
     <img
-              src="/assets/service/Responsive-Web-Design-for-Seamless-User-Experience.jpg"
+              src="/assets/service/Bayshore-Servoces-Images/Website-services/Responsive-Web-Design-for-Seamless-User-Experience.jpg"
               alt="tab-1"
               
               className="w-full h-full py-8"
@@ -136,7 +137,7 @@ services = [
 
 
     <img
-              src="/assets/service/Visually-Stunning-and-Engaging-Design-Elements.jpg"
+              src="/assets/service/Bayshore-Servoces-Images/Website-services/Visually-Stunning-and-Engaging-Design-Elements.jpg"
               alt="tab-1"
               
               className="w-full h-full py-8"
@@ -172,7 +173,7 @@ services = [
 
 
     <img
-              src="/assets/service/Search-Engine-Optimization.jpg"
+              src="/assets/service/Bayshore-Servoces-Images/Website-services/Search-Engine-Optimization-(SEO)-Integration.jpg"
               alt="tab-1"
               
               className="w-full h-full py-8"
@@ -183,6 +184,7 @@ services = [
 
     <h3>Keyword Research and Optimization for Higher Rankings</h3>
     <p className="text-base">We do in-depth research on both the keywords that your competitors are ranking for and the keywords that your target audience is using. We choose the keywords that are most pertinent and profitable for your web page after considering their search traffic, level of competition, and keyword purpose.  <br><br> Additionally, we strategically and naturally insert, vary, and optimize these keywords in your site's content, titles, and tags. By doing this, you may increase your website's ranking for certain keywords on the search engine results page, which is also known as SERPs, and attract more targeted visitors.</p>
+
     <h3>SEO Friendly URLs, Meta Tags, and Heading Structure</h3>
     <p className="text-base">Our skilled team designs concise, descriptive URLs that are simple to understand by people and search engines alike. We employ hyphens to divide words, exclude redundant parameters or characters, and incorporate keywords as needed. We also provide meta tags, such as meta titles, meta descriptions, and meta keywords, that offer a brief overview of your web pages. Not only that, but we maintain these tags to the recommended length and employ intriguing and pertinent keywords and phrases.</p>
     <p className="text-base">Using H1 to H6 tags, we also employ a heading structure to divide your web pages into logical divisions and subsections. When possible, we integrate the keywords in our headers and utilize clear, descriptive headings that are organized hierarchically. These components aid search engines in effectively interpreting the organization and content of your web pages and displaying them on SERPs.</p>
@@ -196,7 +198,7 @@ services = [
 
     
 
-    <img src="/assets/service/Content-Management-Systems-(CMS)-and-Easy-Maintenance.jpg" alt="tab-1" className="w-full h-full py-8" />
+    <img src="/assets/service/Bayshore-Servoces-Images/Website-services/Content-Management-Systems-(CMS)-and-Easy-Maintenance.jpg" alt="tab-1" className="w-full h-full py-8" />
 
 
 
@@ -205,6 +207,7 @@ services = [
     <p className="text-base">We use mobile-friendly (or can say user-friendly) CMS platforms, such as WordPress, Shopify, Drupal, and Joomla, to build your website. These platforms are easy to use, flexible, and customizable where you can update your website content, such as text, images, videos, and links, with just a few clicks. Moreover, you can also add new features, such as blogs, forums, e-commerce, and social media integration, using various plugins and extensions. You can also change the look and feel of your website using different themes and templates.</p>
     <h3>Training and Support to Empower You in Managing Your Website</h3>
     <p className="text-base">Along with CMS platforms, we provide training and support to empower you in managing your website. We teach you how to use the CMS platform, how to update your website content, how to add new features, and how to troubleshoot any issues that may occur in the future, and you can do that easily. We also provide ongoing support via phone, email, or chat, whenever you need assistance or guidance. Likewise, we are always ready to help you with any questions or concerns that you may have regarding your website.</p>
+
     <h3>Regular Maintenance to Ensure Security and Performance</h3>
     <p className="text-base">Bayshore believes that each of the websites require regular maintenance to ensure its optimal performance and security. To upkeep your site&rsquo;s functionality and security we update your CMS platform, plugins, extensions, themes, and templates to the latest versions, to prevent any security vulnerabilities or compatibility issues. Furthermore, our expert developers also back up your website data regularly, to protect it from any loss or damage.  <br><br>  We test and debug your website thoroughly before launching it and provide ongoing support and maintenance. As we mentioned earlier, we monitor your domain site using the most advanced and effective tools to ensure its efficiency and usability is on track. We optimize your website for speed, performance, and SEO (search engine optimization), to ensure that it runs smoothly and ranks high on search engines.</p>`,
 
@@ -216,7 +219,7 @@ services = [
     
 
     <img
-              src="/assets/service/Analytics-and-Tracking-for-Continuous-Improvement.jpg"
+              src="/assets/service/Bayshore-Servoces-Images/Website-services/Analytics-and-Tracking-for-Continuous-Improvement.jpg"
               alt="tab-1"
               
               className="w-full h-full py-8"
@@ -244,11 +247,10 @@ services = [
     
 
     <img
-              src="/assets/service/Stay-Ahead-with-Ongoing-Support-and-Upgrades.jpg"
-              alt="tab-1"
-              
-              className="w-full h-full my-10"
-            />
+    src="/assets/service/Bayshore-Servoces-Images/Website-services/Stay-Ahead-with-Ongoing-Support-and-Upgrades.jpg"
+    alt="tab-1"     
+    className="w-full h-full my-10"
+   />
 
 
 
@@ -271,11 +273,9 @@ services = [
     
 
     <img
-              src="/assets/service/Testimonials-and-Success-Stories.jpg"
-              alt="tab-1"
-              
-              className="w-full h-full py-8"
-            />
+    src="/assets/service/Bayshore-Servoces-Images/Website-services/Success.jpg"
+    alt="tab-1"   
+    className="w-full h-full py-8"/>
 
 
 
@@ -377,7 +377,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Integration-of-Advanced-Features-and-Functionality.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Mobile-App-Development/Integration-of-Advanced-Features-and-Functionality.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -443,7 +443,7 @@ services = [
           
       
     <img
-    src="/assets/service/Robust-Backend-Development-and-Data-Management.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Mobile-App-Development/Robust-Backend-Development-and-Data-Management.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -476,8 +476,7 @@ services = [
       
       <p className="text-base">Not only web3 blockchain, we use other infrastructure like Alchemy, Infura, Chainstack and more.</p>
 
-
-     
+  
       
      <h3>Efficient Data Storage and Retrieval Mechanisms</h3>
       <p className="text-base">Data is the lifeblood of your mobile app. It consists of the information that your app collects, stores, analyzes, and displays to the users. Data can include user profiles, preferences, activities, feedbacks, ratings, reviews, orders, payments, products, services, etc.</p>
@@ -541,7 +540,7 @@ services = [
           
       
     <img
-    src="/assets/service/App-Updates-and-Maintenance.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Mobile-App-Development/App-Updates-and-Maintenance.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -576,7 +575,7 @@ services = [
           
       
     <img
-    src="/assets/service/App-Store-Optimization-ASO-for-Maximum-Visibility.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Mobile-App-Development/App-Store-Optimization-(ASO)-for-Maximum-Visibility.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -688,7 +687,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Innovative-Strategies-and-Competitive-Edge-of-Our-SEO-Solutions.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/SEO/Innovative-Strategies-and-Competitive-Edge-of-Our-SEO-Solutions.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -725,7 +724,7 @@ services = [
         
 
     <img
-    src="/assets/service/The-Right-Choice-for-SEO-Excellence-Experience-Expertise-and-Proven-Results.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/SEO/The-Right-Choice-for-SEO-Excellence.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -747,7 +746,7 @@ services = [
         
 
     <img
-    src="/assets/service/Cracking-High-Value-Keywords-for-Maximum-Impact.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/SEO/CrackingHigh-Value-Keywords-for-Maximum-Impact.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -786,7 +785,7 @@ services = [
         
 
     <img
-    src="/assets/service/Crafting-a-Winning-On-Page-SEO-Formula-for-Websites.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/SEO/Crafting-a-Winning-On-Page-SEO-Formula-for-Websites.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -817,7 +816,7 @@ services = [
         
 
     <img
-    src="/assets/service/Building-Bridges-to-Success-Unlocking-the-Power-of-Off-Page-Optimization-and-Link-Building.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/SEO/Unlocking-the-Power-of-Off-Page-Optimization-and-Link-Building.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -851,9 +850,8 @@ services = [
         
 
     <img
-    src="/assets/service/Enhancing-Performance-through-Technical-SEO.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/SEO/Enhancing-Performance-through-Technical-SEO.jpg"
     alt="tab-1"
-    
     className="w-full h-full my-10"
   />
 
@@ -879,7 +877,7 @@ services = [
       <p className="text-center">Local search is the process of finding and displaying relevant results based on the user&rsquo;s location or geographic intent. Local search is important for local businesses, as it can help them reach and attract more potential customers who are nearby or looking for their products or services in a specific area. Local businesses can benefit from targeted local SEO strategies that can help them improve their visibility, relevance, and reputation in local search results.</p>
 
       <img
-    src="/assets/service/Dominate-the-Local-Market-Targeted-Strategies-for-Local-Search.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/SEO/Dominate-the-Local-Market-Targeted-Strategies-for-Local-Search.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -897,7 +895,7 @@ services = [
 
 
       <img
-      src="/assets/service/Tailored-SEO-Services-for-E-commerce-Websites-Maximizing-Revenue-and-Boosting-Online-Sales.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/SEO/Maximizing-Revenueand-Boosting-Online-Sales.jpg"
       alt="tab-1"
       
       className="w-full h-full my-10"
@@ -922,7 +920,7 @@ services = [
       <p className="text-center">Content is the king of online marketing. It&rsquo;s the medium through which you communicate your message, value proposition, and brand identity to your potential and existing customers. Content is also the fuel that drives your SEO efforts, as it helps you rank higher in search results, generate more organic traffic, and build trust and authority with your audience. Content is the key to increasing engagement and driving conversions on your website.</p>
 
       <img
-    src="/assets/service/Customized-Content-Services-for-Online-Businesses-Increasing-Engagement-and-Driving-Conversions.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/SEO/Customized-Content-Services-for-Online-Businesses.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -941,7 +939,7 @@ services = [
       <p className="text-center">SEO is not a one-time project. It is an ongoing process that requires constant monitoring and adjustment to keep up with the ever-changing online landscape. SEO is dynamic and competitive, and you need to stay on top of your game to maintain and improve your online performance and growth.</p>
 
       <img
-    src="/assets/service/Stay-on-top-with-Continuous-SEO-Monitoring-for-Sustainable-Growth.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/SEO/Stay-on-top-with-Continuous-SEO-Monitoring-for-Sustainable-Growth.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1024,7 +1022,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Information-Architecture-and-Wireframing.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/UI-UX Design/Information-Architecture-and-Wireframing.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1047,7 +1045,7 @@ services = [
            
 
     <img
-    src="/assets/service/Prototyping-and-Interactive-Design.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/UI-UX Design/Prototyping-and-Interactive-Design.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1066,7 +1064,7 @@ services = [
            
 
     <img
-    src="/assets/service/Visual-Design-and-Branding.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/UI-UX Design/Visual-Design-and-Branding.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1118,7 +1116,7 @@ services = [
            
 
     <img
-    src="/assets/service/Usability-Testing-and-Iterative-Design.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/UI-UX Design/Usability-Testing-and-Iterative-Design.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1151,7 +1149,7 @@ services = [
       <p className="text-center">E-commerce design and conversion optimization are essential steps in the UI/UX design process for online stores. They help us create interfaces that increase sales, revenue, and customer loyalty.</p>
 
       <img
-    src="/assets/service/E-commerce-Design-and-Conversion-Optimization.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/UI-UX Design/E-commerce-Design-and-Conversion-Optimization.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1193,7 +1191,7 @@ services = [
       <p className="text-center">In today's digital world, it is more important than ever to ensure that your website or app is accessible to everyone, regardless of their abilities, as over 1 billion people worldwide are living with disabilities. Because of that, we follow the effective accessibility guidelines and implement user-friendly features that make your interface easy to use for people with disabilities.</p>
 
       <img
-    src="/assets/service/Accessibility-Design-and-Inclusive-Experiences.jpg"
+      src="/assets/service/Accessibility-Design-and-Inclusive-Experiences.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1237,7 +1235,8 @@ services = [
 
 
       <img
-    src="/assets/service/UI-UX-Audit-and-Enhancement.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/UI-UX Design/UI-UX-Audit-and-Enhancement.jpg"
+
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1311,7 +1310,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Keyword-Research-and-Ad-Creation.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Paid-Advertising/Keyword-Research-and-Ad-Creation.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1336,7 +1335,7 @@ services = [
               
 
     <img
-    src="/assets/service/Landing-Page-Optimization.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Paid-Advertising/Landing-Page-Optimization.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1355,7 +1354,7 @@ services = [
               
 
     <img
-    src="/assets/service/Campaign-Management-and-Optimization.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Paid-Advertising/Campaign-Management-and-Optimization.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1376,7 +1375,7 @@ services = [
               
 
     <img
-    src="/assets/service/Performance-Tracking-and-Reporting.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Paid-Advertising/Performance-Trackingand-Reporting.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1395,7 +1394,7 @@ services = [
               
 
     <img
-    src="/assets/service/Budget.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Paid-Advertising/budget-management.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1414,7 +1413,7 @@ services = [
               
 
     <img
-    src="/assets/service/Continuous-Optimization.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Paid-Advertising/Continuous-Optimization-and-Adaptation.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1432,7 +1431,7 @@ services = [
               
 
     <img
-    src="/assets/service/Proven-Track-Record-and-Client-Success-Stories.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Paid-Advertising/Proven-Track-Record-and-Client-Success-Stories.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1497,7 +1496,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Account-setup.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Social-Media-marketing/Account-Setup-and-Optimization.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1518,8 +1517,8 @@ services = [
       <p className="text-center">Content is the core thing of social media marketing. It is what attracts, engages, and converts your audience, showcases your brand value and personality that sets you apart from your competitors.</p>
 
       <img
-    src="/assets/service/Content-Creation-and-Curation.jpg"
-    alt="tab-1"
+      src="/assets/service/Bayshore-Servoces-Images/Social-Media-marketing/content-creation-and-Curation.jpg"
+      alt="tab-1"
     
     className="w-full h-full my-10"
   />
@@ -1535,7 +1534,7 @@ services = [
       <p className="text-center">Content creation is only half the battle, and the other half is content scheduling and publishing. This is the process of planning, organizing, and distributing your content on social media platforms. By doing so, it can help you save time, increase efficiency, and optimize your social media performance.</p>
 
       <img
-    src="/assets/service/Content-Scheduling-and-Publishing.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/Social-Media-marketing/Content-Scheduling-and-Publishing.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1572,7 +1571,7 @@ services = [
       <p className="text-center">In today&rsquo;s digital world, online presence is more than just a website or a social media profile. It is a dynamic and interactive space where you can connect with your customers, prospects, partners, and influencers. However, managing your online community also comes with challenges and responsibilities. You need to engage your audience, monitor your reputation, and respond to feedback and reviews in a timely and professional manner.</p>
 
       <img
-    src="/assets/service/Community-Engagement-and-Reputation-Management.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/Social-Media-marketing/Community-Engagement-and-Reputation-Management.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1604,7 +1603,7 @@ services = [
       <p className="text-center">Social media advertising is a powerful and cost-effective way to increase your brand awareness, generate leads, drive traffic, or boost sales, social media advertising can help you achieve your goals.</p>
 
       <img
-    src="/assets/service/Social-Advertising-Campaigns.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/Social-Media-marketing/Social-Advertising-Campaigns.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1634,7 +1633,7 @@ services = [
       <p className="text-center">Social media analytics and reporting are essential for measuring the effectiveness and impact of your social media marketing efforts. By doing that, you can evaluate your performance, optimize your strategies, justify your budget, and demonstrate your ROI.</p>
 
       <img
-      src="/assets/service/Analytics-and-Reporting.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/Social-Media-marketing/Analytics-and-Reporting.jpg"
       alt="tab-1"
       
       className="w-full h-full my-10"
@@ -1653,7 +1652,7 @@ services = [
       <p className="text-center">At Bayshore Communication, we know that social media is more than just a marketing channel. It is also a powerful tool for listening to your customers, competitors, and industry. That&rsquo;s why we will help you harness the power of social media listening tools, monitor brand mentions and customer sentiment, and stay ahead of the curve by tracking industry trends and opportunities.</p>
 
       <img
-      src="/assets/service/Social-media.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/Social-Media-marketing/Social-Media-Trend-Monitoring.jpg"
       alt="tab-1"
       
       className="w-full h-full my-10"
@@ -1671,7 +1670,7 @@ services = [
       <h2 className="text-center ">Strategy Refinement and Optimization</h2>
 
       <img
-    src="/assets/service/Social-media-strategy.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/Social-Media-marketing/Strategy-Refinement-and-Optimization.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1809,7 +1808,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Compelling-Email-Design-and-Content.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Email-Marketing/Compelling-Email-Design-and-Content.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1839,7 +1838,7 @@ services = [
 
       
     <img
-    src="/assets/service/Targeted-List-Building-and-Management.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Email-Marketing/Targeted-List-Building-and-Management.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1882,7 +1881,7 @@ services = [
 
       
     <img
-    src="/assets/service/Automated-Email-Campaigns.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Email-Marketing/Automated-Email-Campaigns.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1923,7 +1922,7 @@ services = [
 
       
     <img
-    src="/assets/service/Conversion-Optimization-and-A-B-Testing.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Email-Marketing/Conversion-Optimization-and-A-B-Testing.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1957,7 +1956,7 @@ services = [
 
       
     <img
-    src="/assets/service/Deliverability-and-Compliance.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Email-Marketing/Deliverability-and-Compliance.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -1990,7 +1989,8 @@ services = [
 
       
     <img
-    src="/assets/service/Performance-Tracking-and-Reporting.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Email-Marketing/Performance-Tracking-and-Reporting.jpg"
+
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2072,16 +2072,13 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Key-Features-of-Our-Marketing-Automation-Services.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Marketing-Automation/Key-Features-of-Our-Marketing-Automation-Services.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
   />
       <h2 >Key Features of Our Marketing Automation Services</h2>
       <p >Our marketing automation services offer a range of features that can help you automate and optimize your marketing processes and campaigns. Here are some of the key features of our marketing automation services:</p>
-
-      
-   
 
 
       <h3>Workflow Automation</h3>
@@ -2289,7 +2286,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Content-Ideation-and-Topic-Research.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Marketing/Content-Ideation-and-Topic-Research.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2331,7 +2328,8 @@ services = [
 
       
     <img
-    src="/assets/service/Content-Optimization.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Marketing/Content-Distribution-Strategy.jpg"
+
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2382,7 +2380,7 @@ services = [
       
       
     <img
-    src="/assets/service/Content-Calendar-Management.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Marketing/Content-Calendar-Management.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2418,7 +2416,7 @@ services = [
       
       
     <img
-    src="/assets/service/Content-Repurposing.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Marketing/Content-Repurposing.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2454,7 +2452,7 @@ services = [
       
       
     <img
-    src="/assets/service/Content-Branding-and-Voice-Development.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Marketing/Content-Branding-and-Voice-Development.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2492,7 +2490,7 @@ services = [
       
       
     <img
-    src="/assets/service/Why-Choose-Bayshore-Communication-for-Content-Marketing-Services.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Marketing/Why-Choose-Bayshore-Communication-for-Content-Marketing-Services.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2585,7 +2583,7 @@ services = [
     description1: `
     
     <img
-    src="/assets/service/Website-Copywriting.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Writing/Website-Copywriting.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2622,7 +2620,7 @@ services = [
     <p className="text-center">Unlock the power of SEO and watch your website soar to new heights in search engine rankings. Our SEO copywriting services combine creativity and technical expertise to help your brand shine in the digital realm. With our meticulous approach, we ensure that every word is strategically crafted to enhance your online visibility and drive organic traffic.</p>
 
     <img
-    src="/assets/service/SEO-Copywriting.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Writing/SEO-Copywriting.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2655,7 +2653,7 @@ services = [
     <p className="text-center">A well crafted content strategy is at the heart of every successful content marketing campaign. We believe in the power of strategic planning to propel your brand's online success at Bayshore Communication. Our content strategy and planning services are intended to assist you in connecting with your target audience, consistently delivering valuable content, and optimizing your content performance for maximum impact.</p>
     
     <img
-    src="/assets/service/Content-Strategy-and-Planning.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Writing/Content-Strategy-and-Planning.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2690,7 +2688,7 @@ services = [
     
 
     <img
-    src="/assets/service/Content-Updates-and-Maintenance.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Writing/Content-Updates-and-Maintenance.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2724,7 +2722,8 @@ services = [
     <p className="text-center">Reaching international audiences is critical in today's globalized world for expanding your brand's reach and connecting with diverse markets. We specialize in content localization and translation services at Bayshore Communication to support you in adapting your content for global audiences. Our expert linguists and cultural experts collaborate to ensure that your message resonates across borders, increasing the international presence of your brand.</p>
 
     <img
-    src="/assets/service/Content-Localization-and-Translation.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Writing/Content-Localization-and-Translation.jpg"
+
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2759,7 +2758,7 @@ services = [
     <p className="text-center">We focus on creating a variety of content types and formats to meet the diverse needs of your target audience. We have the expertise to create content that resonates and has the greatest impact, from compelling articles to interactive eBooks.</p>
     
     <img
-    src="/assets/service/Content-Types-and-Formats.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Content-Writing/Content-Types-and-Formats.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2846,7 +2845,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Media-Outreach-and-Press-Release-Distribution.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Digital-PR/Media-Outreach-and-Press-Release-Distribution.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2911,7 +2910,7 @@ services = [
 
       
     <img
-    src="/assets/service/Content-Creation-and-Placement.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Digital-PR/Content-Creation-and-Placement.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2925,8 +2924,8 @@ services = [
       <p className="text-center">Bayshore Communication works with industry leaders to expand reach and engagement. We conduct research and collaborate with influencers, with a focus on metrics like reach, engagement rates, content quality, and audience demographics. Bayshore creates engaging content by leveraging influencers' storytelling abilities to capture attention and expand the brand's reach. Collaborations with influencers promote brands through a variety of channels, ensuring effective communication and engagement.</p>
 
       <img
-    src="/assets/service/Influencer-Relations-and-Collaborations.jpg"
-    alt="tab-1"
+      src="/assets/service/Bayshore-Servoces-Images/Digital-PR/Influencer-Relations-and-Collaborations.jpg"
+      alt="tab-1"
     
     className="w-full h-full my-10"
   />
@@ -2944,7 +2943,7 @@ services = [
       
       
     <img
-    src="/assets/service/Social-Media-Engagement.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Digital-PR/Social-media-engagement.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -2958,7 +2957,7 @@ services = [
 
       
     <img
-    src="/assets/service/Online-Event-Management.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Digital-PR/Online-Event-Management.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3008,7 +3007,7 @@ services = [
 
       
     <img
-    src="/assets/service/Thought-Leadership-Programs.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Digital-PR/Thought-Leadership-Programs.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3055,7 +3054,7 @@ services = [
 
 
       <img
-      src="/assets/service/Brand-Ambassador-Programs.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/Digital-PR/Brand-Ambassador-Programs.jpg"
       alt="tab-1"
       
       className="w-full h-full my-10"
@@ -3097,7 +3096,7 @@ services = [
       <p className="text-center">We create a vibrant space for your target audience to connect, share ideas, and engage with your brand by focusing on building and nurturing online communities. Our community management services are designed to foster meaningful conversations, build brand loyalty, and propel community growth.</p>
 
       <img
-      src="/assets/service/Online-Community-Management.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/Digital-PR/Online-Community-Management.jpg"
       alt="tab-1"
       
       className="w-full h-full my-10"
@@ -3143,7 +3142,7 @@ services = [
       <p className="text-center">Managing online reviews and encouraging positive testimonials is essential for maintaining a positive brand reputation. Our services aim to actively engage with customers, address concerns, and promote positive experiences to enhance your brand's credibility and attract new customers.</p>
 
       <img
-      src="/assets/service/Testimonials-and-Success-Stories.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/Digital-PR/Online-Review-and-Testimonial-Management.jpg"
       alt="tab-1"
       
       className="w-full h-full my-10"
@@ -3184,7 +3183,7 @@ services = [
       <p className="text-center">Awards and recognition programs provide a valuable opportunity to gain industry recognition and enhance your brand's reputation. Our services include identifying relevant awards, crafting compelling entries, and managing the submission process, all with the goal of increasing your brand's recognition and exposure.</p>
 
       <img
-      src="/assets/service/Awards-and-Recognition-Programs.jpg"
+      src="/assets/service/Bayshore-Servoces-Images/Digital-PR/Awards and-Recognition-Programs.jpg"
       alt="tab-1"
       
       className="w-full h-full my-10"
@@ -3278,7 +3277,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Branding-and-Identity-Design.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Graphics-Design/Branding-and-Identity-Design.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3303,7 +3302,7 @@ services = [
 
     
     <img
-    src="/assets/service/Print-Design-Solutions.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Graphics-Design/Print-Design-Solutions.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3323,7 +3322,7 @@ services = [
 
     
     <img
-    src="/assets/service/Custom-Digital-Design.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Graphics-Design/Custom-Digital-Design.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3343,7 +3342,7 @@ services = [
 
     
     <img
-    src="/assets/service/Custom-Illustrations-and-Infographics.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Graphics-Design/Custom-Illustrations-and-Infographics.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3363,7 +3362,7 @@ services = [
 
     
     <img
-    src="/assets/service/Packaging-Design-Services.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Graphics-Design/Packaging-Design-Services.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3381,7 +3380,7 @@ services = [
 
     
     <img
-    src="/assets/service/Typography-Design-Expertise.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Graphics-Design/Typography-Design-Expertise.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3401,7 +3400,7 @@ services = [
 
     
     <img
-    src="/assets/service/Engaging-Motion-Graphics-and-Videos.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Graphics-Design/Engaging-Motion-Graphics-and-Videos.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3418,7 +3417,7 @@ services = [
     <p className="text-center">Bayshore Communication's professional image editing services enhance visuals with advanced techniques and software to ensure maximum impact. Our team retouches images, correcting flaws and optimizing them for various uses. We also offer compositing and colour correction services to improve image quality by combining multiple images and ensuring accurate representation.</p>
 
     <img
-    src="/assets/service/Professional-Image-Editing-and-Retouching.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Graphics-Design/Professional-Image-Editing-and-Retouching.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3437,7 +3436,7 @@ services = [
 
 
     <img
-    src="/assets/service/Visual-Content-for-Social-Media-Optimization.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Graphics-Design/Visual-Content-for-Social-Media-Optimization.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3504,7 +3503,8 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Storyboarding-and-Visual-Planning.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Motion-Graphics/Storyboarding-and -isual-Planning.jpg"
+
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3548,7 +3548,8 @@ services = [
       <p className="text-center">We understand the importance of design and art direction in creating impactful motion graphics that truly represent your brand. Our dedicated team of designers and artists combines technical expertise with artistic vision to bring your ideas to life with stunning visuals.</p>
       
     <img
-    src="/assets/service/Design-and-Art-Direction.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Motion-Graphics/Design and Art Direction.jpg"
+
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3677,7 +3678,7 @@ services = [
       
       
     <img
-    src="/assets/service/Iterative-Revisions-and-Client-Collaboration.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Motion-Graphics/Iterative-Revisions-and-Client-Collaboration.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3716,7 +3717,7 @@ services = [
       
       
     <img
-    src="/assets/service/Export-and-Delivery.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Motion-Graphics/Export-and-Delivery.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3810,7 +3811,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Scriptwriting-Captivate-Your-Audience.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Video-production/Scriptwriting-Captivate-Your-Audience.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3850,7 +3851,7 @@ services = [
       
       
     <img
-    src="/assets/service/Storyboarding-and-Visualization-Bring-Your-Vision-to-Life.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Video-production/Storyboarding--and-Visualization-Bring-Your-Vision-to-Life.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3877,7 +3878,7 @@ services = [
       <p className="text-center">We elevate your brand's image through the lens of creativity and expertise. Think of it as a dance between technology and artistry, where cutting edge equipment, on location filming, and captivating interviews and testimonials come together to capture stunning footage, showcase authenticity, and establish credibility, building trust through the power of video.</p>
       
     <img
-    src="/assets/service/Professional-Filming-Elevate-Your-Brand's-Image.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Video-production/Professional-Filming-Elevate-Your-Brand's-Image.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3911,7 +3912,7 @@ services = [
       <p className="text-center">Expert video editing can turn your rough footage into polished and memorable productions. Consider it as the sculpting of videos, where expert video editors enhance your footage, music, and images to create a stunning end product that leaves a lasting impact.</p>
       
     <img
-    src="/assets/service/Expert-Video-Editing-Polished-and-Memorable-Productions.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Video-production/Expert-Video-Editing-Polished-and-Memorable-Productions.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3938,7 +3939,7 @@ services = [
       <p className="text-center">Skilled technicians enhance video colors, audio, and visuals for maximum impact during post production. Color grading, audio optimization, and visual enhancement are all important components of creating a visually stunning experience. The technical team optimizes video file sizes and formats for quick loading times and consistent streaming across devices and platforms. Advanced compression techniques ensure quality and efficiency, allowing for smooth and continuous viewing experiences.</p>
       
     <img
-    src="/assets/service/Post-production-and-Optimization-Amplify-Your-Reach.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Video-production/Post-production-and-Optimization.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -3975,7 +3976,7 @@ services = [
       <p className="text-center" >Customized delivery and distribution can take your video to new heights and expand your audience like never before. Through a combination of technical finesse and strategic thinking, we ensure that your video reaches the right people, on the right platforms, at the right time.</p>
       
     <img
-    src="/assets/service/Customized-Delivery-and-Distribution-Expand-Your-Audience.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Video-production/Customized-Delivery-and-Distribution.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -4011,7 +4012,7 @@ services = [
       <p className="text-center">Through advanced tracking tools, data analysis for strategy refinement, and incorporating viewer feedback and metrics, Bayshore Communication ensures that your video productions are not just visually stunning, but also highly effective in achieving your goals. Get ready to dive into a realm where data and creativity intersect.</p>
       
     <img
-    src="/assets/service/Ongoing-Analytics-and-Performance-Tracking-Data-Driven-Success.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Video-production/Ongoing-Analytics-and-Performance-Tracking.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -4103,7 +4104,7 @@ services = [
     description1: `
 
     <img
-    src="/assets/service/Targeted-Influencer-Identification-and-Outreach.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Influencer-Marketing/Targeted-Influencer-Identification-and-Outreach.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"
@@ -4138,7 +4139,7 @@ services = [
 
       
     <img
-    src="/assets/service/Creative-Campaign-Planning-and-Execution.jpg"
+    src="/assets/service/Bayshore-Servoces-Images/Influencer-Marketing/Performance-Tracking-and-Reporting.jpg"
     alt="tab-1"
     
     className="w-full h-full my-10"

@@ -12,7 +12,6 @@ import SectionPackage from "@/components/universal/SectionPackage";
 import ServicePrice from "@/components/unique/services/ServicePrice";
 import { useParams } from "next/navigation";
 import { log } from "console";
-import { blogindv } from "../../blog/page";
 import Link from "next/link";
 import Reveal from "@/components/motion/Reveal";
 import GetAllBlogData from "@/lib/GetAllBlogData";
@@ -70,12 +69,12 @@ const Page = async ({ params }: { params: { service: string } }) => {
                       <Reveal>
                         <div>
                           <>
-                            <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
-                              <div className="rounded-[10px] px-4 pb-16 ">
+                            <div className="">
+                              <div className="rounded-[10px] px-4 pb-16 !text-justify">
                                 <h2>{elem.title}</h2>
                                 {elem.shortDescription}
                               </div>
-                              <div className="row-start-1 md:col-start-2">
+                              {/* <div className="row-start-1 md:col-start-2">
                                 <Image
                                   src={elem.secondHeroImg}
                                   alt="tab-1"
@@ -83,7 +82,7 @@ const Page = async ({ params }: { params: { service: string } }) => {
                                   height={400}
                                   className="w-full h-full"
                                 />
-                              </div>
+                              </div> */}
                             </div>
                           </>
                         </div>
