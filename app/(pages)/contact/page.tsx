@@ -32,7 +32,7 @@ address = [
     title: "Asia Office",
     phone: "+8801685035449",
     address:
-      "Flat : 2nd , House : 21, Road : 1, Block : A, Aftabnogor, Dhaka - 1212",
+      "Flat : 2nd , House : 21, Road : 1, Block : A, Aftab Nagar, Dhaka - 1212",
     email: "info@bayshorecommunication.com",
   },
 ];
