@@ -43,7 +43,7 @@ const Page = () => {
       <AnimateContactHero />
       <SectionLayout bg="">
         <Reveal>
-          <div className="flex flex-wrap justify-center md:justify-between gap-20 mt-20 mb-20 items-center">
+          <div className="flex flex-wrap justify-center md:justify-between gap-20 md:gap-20 mt-20 mb-20 items-center">
             <div className="md:flex-1 ">
               <Adress
                 title="Tampa Office"
@@ -55,6 +55,12 @@ const Page = () => {
 
             <div className="hidden md:block">
               <div className="border bg-[#FE631A] w-2 h-[250px] rounded-full flex items-start justify-center">
+                {/* <div className="bg-deep-orange-600 w-3 h-16 rounded-full"></div> */}
+              </div>
+            </div>
+
+            <div className="md:hidden md:visible sm:visible">
+              <div className="bg-[#FE631A] w-[250px] h-1 rounded-full flex items-start justify-center">
                 {/* <div className="bg-deep-orange-600 w-3 h-16 rounded-full"></div> */}
               </div>
             </div>
