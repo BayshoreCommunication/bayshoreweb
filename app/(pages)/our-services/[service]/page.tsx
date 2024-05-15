@@ -155,6 +155,7 @@ const Page = async ({ params }: { params: { service: string } }) => {
                   />
                 </div>
                 <Info />
+                <Consultaion />
               </div>
               <Reveal>
                 <SectionLayout bg="">
@@ -164,7 +165,7 @@ const Page = async ({ params }: { params: { service: string } }) => {
                         <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                           {Parser(elem.description4)}
                         </div>
-                        <Consultaion />
+                       
                         <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                           {Parser(elem.description5)}
                         </div>

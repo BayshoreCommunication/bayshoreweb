@@ -1595,6 +1595,14 @@ services = [
 
     description9: `
       <h2 className="text-center ">Bayshore provides Customizable Packages and Flexible Pricing</h2>
+
+      <img
+      src="/assets/service/Bayshore-Servoces-Images/Social-Media-marketing/Bayshore provides-Customizable-Packages-and-Flexible-Pricing.jpg"
+      alt="tab-1"
+    
+      className="w-full h-full my-10"
+      />
+
       <p className="text-center">At Bayshore, we know that social media marketing is not a one-size-fits-all solution. Every business has different needs, goals, and budgets when it comes to reaching and engaging with their target audience on social media platforms. That&rsquo;s why we provide customizable packages and flexible pricing options that suit your specific requirements and expectations.</p>
 
 
