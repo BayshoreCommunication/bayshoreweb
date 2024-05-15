@@ -149,7 +149,7 @@ cardContent = [
   {
     img: "/assets/about/neel.png",
     name: "ARJO NEEL",
-    destination: "DIGITAL MARKETING  STRATEGIST CONSULTENT",
+    destination: "DIGITAL MARKETING STRATEGIST CONSULTANT",
   },
 ];
 
