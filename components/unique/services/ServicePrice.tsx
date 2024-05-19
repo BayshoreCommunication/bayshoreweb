@@ -96,8 +96,25 @@ ServicePriceData = [
   {
     url: "ui-ux-design",
     serviceName: "UI/UX Design",
-    otherCompany: [],
-    bayshore: [],
+    otherCompany: [
+    "10 page ($600)",
+    "UI Design ($600)",
+    "Responsive Design ($600)",
+    "Mobile Design View ($600)",
+    "Source File ($600)",
+
+  ],
+    bayshore: [
+    "10 page ($800)",
+    "UI Design ($800)",
+    "Responsive Design ($800)",
+    "Mobile Design View ($800)",
+    "Source File ($800)",
+    "Prototype ($800)",
+    "User Flow ($800)",
+    "Wireframe ($800)",
+    "Source File ($800)",
+  ],
   },
   {
     url: "paid-advertising",
