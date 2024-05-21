@@ -1,5 +1,6 @@
 import Reveal from "@/components/motion/Reveal";
 import { AnimationHomeTabBar } from "@/components/unique/Home/AnimationHomeTabBar";
+import HeroScrollImage from "@/components/unique/Home/HeroScrollImage";
 import HomeLogoLoop from "@/components/unique/Home/HomeLogoLoop";
 import HomeServiceCard from "@/components/unique/Home/HomeServiceCard";
 import Progress from "@/components/unique/Home/Progress";
@@ -60,6 +61,7 @@ const Page = () => {
                   height={800}
                   className="w-full h-auto"
                 />
+                {/* <HeroScrollImage/> */}
               </div>
             </Reveal>
           </div>
