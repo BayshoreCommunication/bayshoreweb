@@ -106,6 +106,7 @@ ServicePriceData = [
     "Wireframe ($800)",
     "Source File ($800)",
   ],
+  
     bayshore: [
     "10 page ($600)",
     "UI Design ($600)",

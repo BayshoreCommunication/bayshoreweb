@@ -2,6 +2,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const HeroScrollImage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -21,25 +22,53 @@ const HeroScrollImage = () => {
 
   // Calculate the scale and x position based on scroll position
   const scale = 1 + scrollY / 1000; // Adjust the divisor to control the zoom speed
-  const x = scrollY / 4; // Adjust the divisor to control the movement speed
+  const x = scrollY / 3; // Adjust the divisor to control the movement speed
 
   return (
     <motion.div
       style={{
         overflow: 'hidden',
-        height: '100vh',
+        height: '60vh',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
       }}
     >
-      <motion.img
-        src="/assets/demo.svg" // Replace with your image URL
-        alt="Zoomable"
-        style={{ width: '70%', height: 'auto' }}
-        animate={{ scale, x }}
-        transition={{ type: 'spring', stiffness: 300 }}
-      />
+     <motion.div style={{ width: '75%', height: 'auto' }}
+      animate={{ scale, x }}
+      transition={{ type: 'spring', stiffness: 300 }}>
+
+      <div>
+        <Image
+          src="/assets/HeroGifImage/Black-Website-GIF.gif"
+          alt="Zoomable"
+          className='rounded-xl w-[200px] h-[auto]'
+          width={300}
+          height={100}         
+        />
+      </div>
+
+      <div>
+        <Image
+          src="/assets/HeroGifImage/Graph-GIF.gif"
+          alt="Zoomable"
+          className='rounded-xl'
+          width={300}
+          height={100}        
+        />
+      </div>
+
+      <div>
+        <Image
+          src="/assets/HeroGifImage/Lines-GIF-with-icons.gif"
+          alt="Zoomable"
+          className='rounded-xl'
+          width={300}
+          height={100}         
+        />
+      </div>
+
+     </motion.div>
     </motion.div>
   );
 };
