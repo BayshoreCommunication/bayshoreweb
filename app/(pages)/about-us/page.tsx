@@ -213,15 +213,16 @@ cardContentS = [
     destination: 'MANAGER (BRANDING & CLIENT RELATIONSHIP)',
   },
   {
+    img: '/assets/Bayshore-Employe/CHRIS-THAYER.png',
+    name: 'CHRIS THAYER',
+    destination: 'CLIENT GROWTH MANAGER',
+  },
+  {
     img: '/assets/Bayshore-Employe/Md. Sohel Rana (Digital Marketing Manager).png',
     name: 'SOHEL RANA',
     destination: 'DIGITAL MARKETING MANAGER',
   },
-  // {
-  //   img: '/assets/Bayshore-Employe/Monira Akter (Digital Marketing Executive).png',
-  //   name: 'MONIRA ISLAM',
-  //   destination: 'SOCIAL MEDIA MANAGER',
-  // },
+
   {
     img: '/assets/Bayshore-Employe/Eyamin Hossain Pritul (Executive Graphics Designer).png',
     name: 'YAMIN HOSSAIN PRITUL',
@@ -250,12 +251,12 @@ cardContentS = [
   {
     img: '/assets/Bayshore-Employe/Sakawat Hossain.png',
     name: 'SAKAWAT HOSSAIN',
-    destination: 'EXECUTIVE',
+    destination: 'ASSOCIATE MANAGER',
   },
   {
     img: '/assets/Bayshore-Employe/Abrar Faisaal.png',
     name: 'ABRAR FAISAAL',
-    destination: 'EXECUTIVE',
+    destination: 'ASSOCIAT PARALEGAL',
   },
 
   {

@@ -34,7 +34,7 @@ const Page = () => {
         data-aos='fade-up'
         data-aos-duration='1000'
       >
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mt-[72px] items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-12 mt-[72px] items-center '>
           <div>
             {/* <Reveal>
               <p className="text-[2rem] text-center md:text-start text-[#3E7BE2] mb-[1.5rem] lg:mb-[2.5rem]">
@@ -59,7 +59,8 @@ const Page = () => {
                   className='w-full h-auto'
                 />
               </Reveal>
-              {/* <HeroScrollImage/> */}
+
+              {/* <HeroScrollImage /> */}
             </div>
           </div>
         </div>
