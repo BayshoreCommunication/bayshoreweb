@@ -1,47 +1,9 @@
-'use client';
 import React from 'react';
-import { motion } from 'framer-motion';
-import Image from 'next/image';
 import Count from '@/components/Count';
 
 const HeroScrollImage = () => {
-  // const [scrollY, setScrollY] = useState(0);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     setScrollY(window.scrollY);
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   // Cleanup event listener on component unmount
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
-
-  // Calculate the scale and x position based on scroll position
-  // const scale = 1 + scrollY / 1000; // Adjust the divisor to control the zoom speed
-  // const x = scrollY / 3; // Adjust the divisor to control the movement speed
-
   return (
-    <div
-      // style={{
-      //   overflow: 'hidden',
-      //   height: '60vh',
-      //   display: 'flex',
-      //   alignItems: 'center',
-      //   justifyContent: 'center',
-      // }}
-      className='my-14'
-    >
-      {/* <motion.div
-        style={{ width: '75%', height: 'auto' }}
-        animate={{ scale, x }}
-        transition={{ type: 'spring', stiffness: 300 }}
-      > */}
-      {/* <Count num={data.value} duration={3} /> */}
-
+    <div className='my-14'>
       <div className='flex justify-center items-center relative'>
         <video
           width={700}
@@ -90,8 +52,6 @@ const HeroScrollImage = () => {
           </div>
         </div>
       </div>
-
-      {/* </motion.div> */}
     </div>
   );
 };
