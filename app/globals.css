@@ -548,3 +548,25 @@ body {
 /* .slick-slide .slick-active .slick-center .slick-current {
   cursor: pointer;
 } */
+
+
+@keyframes zoomInOut {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.animated-circle-one {
+  animation: zoomInOut 2s ease-in-out infinite;
+}
+
+.animated-circle-two {
+  animation: zoomInOut 2.5s ease-in-out infinite;
+}
+
+.animated-circle-three {
+  animation: zoomInOut 3s ease-in-out infinite;
+}

@@ -51,16 +51,15 @@ const Page = () => {
           <div className='px-[2rem] sm:px-[6rem] md:px-0'>
             <div>
               <Reveal>
-                <Image
+                {/* <Image
                   src='/assets/demo.svg'
                   alt='marketing'
                   width={800}
                   height={800}
                   className='w-full h-auto'
-                />
+                /> */}
+                <HeroScrollImage />
               </Reveal>
-
-              {/* <HeroScrollImage /> */}
             </div>
           </div>
         </div>
