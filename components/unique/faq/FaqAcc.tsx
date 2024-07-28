@@ -108,25 +108,26 @@ export function Example({ arr }: any) {
             key={el}
             open={open === i + 1}
             icon={<Icon id={1 + i} open={open} />}
+            className='border-b-2 py-2 border-gray-300'
           >
             <div className='px-8'>
               <AccordionHeader
                 className='border-b-0'
                 onClick={() => handleOpen(i + 1)}
               >
-                <div className='text-[16px] md:text-[18px]  font-normal'>
+                <div className='text-[16px] md:text-[22px] !font-medium'>
                   {el.title}
                 </div>
               </AccordionHeader>
             </div>
             <div className=''>
               <AccordionBody>
-                <div className=' bg-[#F5F5F5] border-t-[0.5px] border-[#AAAAAA] rounded-b-[10px] !px-8 !pt-8 !pb-16 '>
+                <div className=' bg-[#F5F5F5] border-t-[0.5px] border-[#AAAAAA] rounded-b-[10px] !px-8 !pt-4 !pb-8 '>
                   <div className='jobpost-css-style'>{parser(el.body)}</div>
                   <div className='flex justify-center'>
                     <Link
                       href={'mailto:jobs@bayshorecommunication.com'}
-                      className='!text-white font-semibold text-small rounded-xl py-5 px-12 !bg-[#FE6F1F] mt-1 border hover:!text-gray-900 hover:!bg-[#F5F5F5] hover:!border-gray-900'
+                      className='!text-white font-semibold text-small rounded-xl py-5 px-12 !bg-[#FE6F1F] mt-[-15px] border hover:!text-gray-900 hover:!bg-[#F5F5F5] hover:!border-gray-900'
                     >
                       Apply Now
                     </Link>
