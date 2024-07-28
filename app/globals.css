@@ -570,3 +570,56 @@ body {
 .animated-circle-three {
   animation: zoomInOut 3s ease-in-out infinite;
 }
+
+
+
+.jobpost-css-style h1,
+.jobpost-css-style h2,
+.jobpost-css-style h3,
+.jobpost-css-style h4,
+.jobpost-css-style p,
+.jobpost-css-style br,
+.jobpost-css-style nav {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: normal;
+}
+
+.jobpost-css-style a {
+  text-underline-offset: 1px; /* Specify units like px, em, rem, etc. */
+  color: blue;
+}
+
+.jobpost-css-style h1,
+.jobpost-css-style h2,
+.jobpost-css-style h3,
+.jobpost-css-style h4 {
+  font-weight: bold;
+}
+
+.jobpost-css-style h1 {
+  font-size: 40px;
+}
+
+.jobpost-css-style h2 {
+  font-size: 25px;
+}
+
+.jobpost-css-style h3 {
+  font-size: 16px;
+}
+
+.jobpost-css-style h4 {
+  font-size: 15px;
+}
+
+.jobpost-css-style p {
+  font-size: 17px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.jobpost-css-style ul {
+  list-style-type: disc;
+  margin-left: 30px;
+}

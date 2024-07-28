@@ -1,14 +1,15 @@
-"use client";
+'use client';
 
-import { Fragment, useState } from "react";
+import { Fragment, useState } from 'react';
 import {
   Accordion,
   AccordionHeader,
   AccordionBody,
-} from "@material-tailwind/react";
-import Image from "next/image";
+} from '@material-tailwind/react';
+import Image from 'next/image';
 
-import parser from "html-react-parser";
+import parser from 'html-react-parser';
+import Link from 'next/link';
 
 let faq: {
   heading: String;
@@ -60,8 +61,8 @@ faq = [
 
 const AccordionCus = ({ title }: any) => {
   return (
-    <div className="mt-12 border-[0.5px] border-[#AAAAAA] rounded-[10px] ">
-      <h4 className="heading-four bg-[#F5F5F5] rounded-[10px] p-4 flex items-center gap-2 px-8">
+    <div className='mt-12 border-[0.5px] border-[#AAAAAA] rounded-[10px] '>
+      <h4 className='heading-four bg-[#F5F5F5] rounded-[10px] p-4 flex items-center gap-2 px-8'>
         {title}
       </h4>
       <Example arr={faq} />
@@ -74,16 +75,16 @@ export default AccordionCus;
 function Icon({ id, open }: any) {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
+      xmlns='http://www.w3.org/2000/svg'
       className={`${
-        id === open ? "rotate-180" : ""
+        id === open ? 'rotate-180' : ''
       } h-5 w-5 transition-transform`}
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
+      fill='none'
+      viewBox='0 0 24 24'
+      stroke='currentColor'
       strokeWidth={2}
     >
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+      <path strokeLinecap='round' strokeLinejoin='round' d='M19 9l-7 7-7-7' />
     </svg>
   );
 }
@@ -97,33 +98,44 @@ export function Example({ arr }: any) {
 
   return (
     <Fragment>
-      {arr.map((el: any, i: number) => (
-        <Accordion
-          key={el}
-          open={open === i + 1}
-          icon={<Icon id={1 + i} open={open} />}
-        >
-          <div className="px-8">
-            <AccordionHeader
-              className="border-b-0"
-              onClick={() => handleOpen(i + 1)}
-            >
-              <div className="text-[16px] md:text-[18px]  font-normal">
-                {el.heading}
-              </div>
-            </AccordionHeader>
-          </div>
-          <div className="">
-            <AccordionBody>
-              <div className=" bg-[#F5F5F5] border-t-[0.5px] border-[#AAAAAA] rounded-b-[10px]">
-                <div className="px-8 !py-8 text-base">
-                  {parser(el.description)}
+      {arr
+        ?.filter(
+          (blog: any) =>
+            blog?.published === true && blog?.category[0] === 'Job Post',
+        )
+        ?.map((el: any, i: number) => (
+          <Accordion
+            key={el}
+            open={open === i + 1}
+            icon={<Icon id={1 + i} open={open} />}
+          >
+            <div className='px-8'>
+              <AccordionHeader
+                className='border-b-0'
+                onClick={() => handleOpen(i + 1)}
+              >
+                <div className='text-[16px] md:text-[18px]  font-normal'>
+                  {el.title}
                 </div>
-              </div>
-            </AccordionBody>
-          </div>
-        </Accordion>
-      ))}
+              </AccordionHeader>
+            </div>
+            <div className=''>
+              <AccordionBody>
+                <div className=' bg-[#F5F5F5] border-t-[0.5px] border-[#AAAAAA] rounded-b-[10px] !px-8 !pt-8 !pb-16 '>
+                  <div className='jobpost-css-style'>{parser(el.body)}</div>
+                  <div className='flex justify-center'>
+                    <Link
+                      href={'mailto:jobs@bayshorecommunication.com'}
+                      className='!text-white font-semibold text-small rounded-xl py-5 px-12 !bg-[#FE6F1F] mt-1 border hover:!text-gray-900 hover:!bg-[#F5F5F5] hover:!border-gray-900'
+                    >
+                      Apply Now
+                    </Link>
+                  </div>
+                </div>
+              </AccordionBody>
+            </div>
+          </Accordion>
+        ))}
     </Fragment>
   );
 }
