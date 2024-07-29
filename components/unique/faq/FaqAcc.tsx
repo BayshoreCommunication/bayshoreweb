@@ -125,12 +125,18 @@ export function Example({ arr }: any) {
                 <div className=' bg-[#F5F5F5] border-t-[0.5px] border-[#AAAAAA] rounded-b-[10px] !px-8 !pt-4 !pb-8 '>
                   <div className='jobpost-css-style'>{parser(el.body)}</div>
                   <div className='flex justify-center'>
-                    <Link
-                      href={'mailto:jobs@bayshorecommunication.com'}
-                      className='!text-white font-semibold text-small rounded-xl py-5 px-12 !bg-[#FE6F1F] mt-[-15px] border hover:!text-gray-900 hover:!bg-[#F5F5F5] hover:!border-gray-900'
-                    >
-                      Apply Now
-                    </Link>
+                    {open === i + 1 && (
+                      <button
+                        onClick={() => {
+                          window.location.href =
+                            'mailto:jobs@bayshorecommunication.com';
+                        }}
+                        type='button'
+                        className='!text-white font-semibold text-small rounded-xl py-5 px-12 !bg-[#FE6F1F] mt-[-15px] border hover:!text-gray-900 hover:!bg-[#F5F5F5] hover:!border-gray-900'
+                      >
+                        Apply Now
+                      </button>
+                    )}
                   </div>
                 </div>
               </AccordionBody>
