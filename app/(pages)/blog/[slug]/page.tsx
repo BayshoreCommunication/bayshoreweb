@@ -1,20 +1,20 @@
-import Consultaion from "@/components/universal/Consultaion";
-import { HeroWithImage } from "@/components/universal/Hero";
-import HeroLeft from "@/components/universal/HeroLeft";
-import SectionLayout from "@/components/universal/SectionLayout";
-import { Metadata } from "next";
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
-import React from "react";
-import { VscCalendar } from "react-icons/vsc";
-import { useParams } from "next/navigation";
-import parser from "html-react-parser";
-import AboutUs from "@/components/universal/AboutUs";
-import GetAllBlogData from "@/lib/GetAllBlogData";
+import Consultaion from '@/components/universal/Consultaion';
+import { HeroWithImage } from '@/components/universal/Hero';
+import HeroLeft from '@/components/universal/HeroLeft';
+import SectionLayout from '@/components/universal/SectionLayout';
+import { Metadata } from 'next';
+import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
+import React from 'react';
+import { VscCalendar } from 'react-icons/vsc';
+import { useParams } from 'next/navigation';
+import parser from 'html-react-parser';
+import AboutUs from '@/components/universal/AboutUs';
+import GetAllBlogData from '@/lib/GetAllBlogData';
 
 export const metadata: Metadata = {
-  title: "Blogs: Expert Tips and Strategies from Our Agency",
+  title: 'Blogs: Expert Tips and Strategies from Our Agency',
   description: `You've chosen the best place to learn more about web marketing and how to develop your online presence. Our blog features insightful articles from our team of experts, covering topics such as SEO, social media, content marketing, web design, and more. You'll discover useful tactics and tips that you may use in your own business. By reading our blog, you may keep up with the most recent trends and best practices in the digital world.`,
 };
 
@@ -23,18 +23,19 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
 
   const parameter = params.slug;
   const indvblog = blogData?.data?.filter(
-    (elem: any) => elem.slug === parameter
+    (elem: any) => elem.slug === parameter,
   );
 
   const today = new Date();
-  const dateToday = `${today.getDate()} / ${today.getMonth() + 1
-    } / ${today.getFullYear()}`;
+  const dateToday = `${today.getDate()} / ${
+    today.getMonth() + 1
+  } / ${today.getFullYear()}`;
 
   const dateFormate = (date: any) => {
-    const formattedDate = new Date(date).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric",
+    const formattedDate = new Date(date).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
     });
     return formattedDate;
   };
@@ -61,15 +62,15 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
         </div>
       </div> */}
 
-      <SectionLayout bg="">
-        <div className="h-[100%] service-style">
-          <div className="container">
+      <SectionLayout bg=''>
+        <div className='h-[100%] service-style'>
+          <div className='container'>
             {indvblog
               ?.filter((blog: any) => blog?.published === true)
               ?.map((elem: any, index: any) => (
                 <div key={index}>
-                  <div className="flex gap-x-10">
-                    <div className="flex-[3]">
+                  <div className='flex gap-x-10'>
+                    <div className='flex-[3]'>
                       <div>
                         {/* <img
                           src={elem.featuredImage.image.url}
@@ -78,27 +79,27 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                         /> */}
                         <Image
                           src={elem?.featuredImage?.image?.url}
-                          alt="no_image"
+                          alt='no_image'
                           width={2400}
                           height={2400}
-                          className="w-full h-full"
+                          className='w-full h-full'
                         />
-                        <div className="flex py-6 gap-4">
+                        <div className='flex py-6 gap-4'>
                           {/* <VscCalendar size={22} /> {dateToday} */}
                           {dateFormate(elem.createdAt)}
                         </div>
 
                         <div>
-                          <h1 className="font-semibold text-[80px] leading-normal">
+                          <h1 className='font-semibold text-[80px] leading-normal'>
                             {elem.title}
                           </h1>
                         </div>
 
-                        <div className="externallink">{parser(elem.body)}</div>
+                        <div className='externallink'>{parser(elem.body)}</div>
                       </div>
                     </div>
 
-                    <div className="flex-1 hidden sm:block">
+                    <div className='flex-1 hidden sm:block'>
                       {/* <div className="bg-[url('/assets/help-banner-bg.jpg')]">
                   <h4>
                     Need <br />
@@ -109,7 +110,7 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                   </p>
                   <Link href="/contact">Contact Us</Link>
                 </div> */}
-                      <div className="sticky top-24">
+                      <div className='sticky top-24'>
                         <BlogNavigation />
                       </div>
                     </div>
@@ -118,10 +119,10 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
               ))}
           </div>
         </div>
-      </SectionLayout >
+      </SectionLayout>
 
       {/* <AboutUs /> */}
-      < Consultaion />
+      <Consultaion />
     </>
   );
 };
@@ -133,11 +134,14 @@ const BlogNavigation = async () => {
   return (
     <>
       {blogData?.data
-        ?.filter((blog: any) => blog?.published === true)
+        ?.filter(
+          (blog: any) =>
+            blog?.published === true && blog?.category[0] !== 'Job Post',
+        )
         ?.map((elem: any, index: any) => (
           <div key={index}>
             <Link
-              className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
+              className='flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded '
               href={`/blog/${elem.slug}`}
             >
               {/* <img
@@ -146,13 +150,13 @@ const BlogNavigation = async () => {
                 className="w-[100px] h-[80px]"
               /> */}
               <Image
-                src={elem.featuredImage.image.url}
-                alt="blog_image"
+                src={elem?.featuredImage?.image?.url}
+                alt='blog_image'
                 width={3109}
                 height={1752}
-                className="w-[100px] h-[80px]"
+                className='w-[100px] h-[80px]'
               />
-              <p className="!text-xl">{elem.title}</p>
+              <p className='!text-xl'>{elem.title}</p>
             </Link>
           </div>
         ))}
