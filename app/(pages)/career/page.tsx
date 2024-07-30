@@ -161,6 +161,15 @@ const page = async () => {
               <AccorDion title={`${elem.heading}`} body={<Content />} />
             </div>
           ))} */}
+          {/* {jobData?.data
+            ?.filter(
+              (blog: any) =>
+                blog?.published === true && blog?.category.includes('Job Post'),
+            )
+            ?.map((el: any, index: number) => (
+              <Example arr={[...el]} key={el.id || index} />
+            ))} */}
+
           <Example arr={jobData?.data} />
         </div>
       </SectionLayout>

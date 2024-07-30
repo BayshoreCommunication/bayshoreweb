@@ -47,12 +47,12 @@ const page = () => {
               impactful.{' '}
             </p>
             <p className='text-base mb-4'>
-              Salman Hossain, the master of digital wonders, brings to life the
-              realm of innovation. With his limitless creativity and technical
-              brilliance, He crafts digital symphonies that captivate hearts and
-              minds. Each flick of his digital brush breathes life into
-              campaigns that leave audiences spellbound, showcasing the magic
-              that technology can weave.
+              Salman H Hossain, the master of digital wonders, brings to life
+              the realm of innovation. With his limitless creativity and
+              technical brilliance, He crafts digital symphonies that captivate
+              hearts and minds. Each flick of his digital brush breathes life
+              into campaigns that leave audiences spellbound, showcasing the
+              magic that technology can weave.
             </p>
             <p className='text-base mb-4'>
               Guiding our path is Huraira Shishir, a sage guardian whose wisdom
@@ -156,17 +156,17 @@ cardContent = [
 const Card = ({ el }: any) => {
   return (
     <Reveal>
-      <div className=' flex flex-col items-center mx-auto gap-3 custom-shadow py-8  px-4  w-[26rem] lg:w-[30rem] justify-self-center min-h-full md:min-h-[360px]'>
+      <div className=' flex flex-col items-center mx-auto gap-3 custom-shadow py-8  px-4  w-[26rem] lg:w-[30rem] justify-self-center min-h-full md:min-h-[330px]'>
         <Image
           src={el.img}
           alt={el.name}
           width={400}
           height={400}
-          className='w-[20rem] h-auto'
+          className='w-[20rem] h-auto !mt-6'
         />
         <h4 className='heading-four mt-[1rem]'>{el.name}</h4>
         <p className='text-small !text-center'>{el.destination}</p>
-        <div
+        {/* <div
           className='flex items-center justify-center gap-2'
           style={{ marginTop: 'auto' }}
         >
@@ -174,7 +174,7 @@ const Card = ({ el }: any) => {
           <FaTwitterSquare className='text-[#5A5A5A] w-[20px] h-auto' />
           <FaWhatsappSquare className='text-[#5A5A5A] w-[20px] h-auto' />
           <MdMarkEmailUnread className='text-[#5A5A5A] w-[24px] h-auto' />
-        </div>
+        </div> */}
       </div>
     </Reveal>
   );
@@ -213,8 +213,8 @@ cardContentS = [
     destination: 'MANAGER (BRANDING & CLIENT RELATIONSHIP)',
   },
   {
-    img: '/assets/Bayshore-Employe/CHRIS-THAYER.png',
-    name: 'CHRIS THAYER',
+    img: '/assets/Bayshore-Employe/christopher_patrick_thayer.webp',
+    name: 'Christopher Patrick Thayer',
     destination: 'CLIENT GROWTH MANAGER',
   },
   {
@@ -309,17 +309,17 @@ cardContentS = [
 const CardSmall = ({ el }: any) => {
   return (
     <Reveal>
-      <div className='flex flex-col items-center gap-3 custom-shadow py-4 px-4 min-h-[270px] md:min-h-[250px]'>
+      <div className='flex flex-col items-center gap-3 custom-shadow min-h-[220px] md:min-h-[220px] !mt-9'>
         <Image
           src={el.img}
           alt={el.name}
           width={400}
           height={400}
-          className='w-[120px] h-[120px] rounded-full'
+          className='w-[120px] h-[120px] rounded-full !mt-6'
         />
         <h5 className='heading-five mt-[5px] !text-center'>{el.name}</h5>
         <p className='text-[13px] !text-center'>{el.destination}</p>
-        <div
+        {/* <div
           className='flex items-center justify-center gap-2'
           style={{ marginTop: 'auto' }}
         >
@@ -327,7 +327,7 @@ const CardSmall = ({ el }: any) => {
           <FaTwitterSquare className='text-[#5A5A5A] w-[2rem] h-auto' />
           <FaWhatsappSquare className='text-[#5A5A5A] w-[2rem] h-auto' />
           <MdMarkEmailUnread className='text-[#5A5A5A] w-[2.4rem] h-auto' />
-        </div>
+        </div> */}
       </div>
     </Reveal>
   );
