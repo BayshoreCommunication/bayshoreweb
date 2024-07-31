@@ -582,7 +582,7 @@ body {
 .jobpost-css-style nav {
   padding-top: 10px;
   padding-bottom: 10px;
-  line-height: normal;
+  line-height: 2.5rem;
 }
 
 .jobpost-css-style a {
