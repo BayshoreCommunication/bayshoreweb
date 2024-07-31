@@ -167,7 +167,7 @@ const page = async () => {
                 blog?.published === true && blog?.category.includes('Job Post'),
             )
             ?.map((el: any, index: number) => (
-              <Example arr={[...el]} key={el.id || index} />
+              <Example arr={[el]} key={el.id || index} />
             ))} */}
 
           <Example arr={jobData?.data} />

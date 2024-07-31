@@ -10,6 +10,7 @@ import Image from 'next/image';
 
 import parser from 'html-react-parser';
 import Link from 'next/link';
+import { log } from 'console';
 
 let faq: {
   heading: String;
@@ -96,53 +97,84 @@ export function Example({ arr }: any) {
     setOpen(open === value ? 0 : value);
   };
 
+  // const orderByList = [
+  //   { title: 'Blockchain Developer' },
+  //   { title: 'Full Stack Developer' },
+  //   { title: 'React Native Developer' },
+  //   { title: 'Business Growth Manager' },
+  //   { title: 'Digital Marketing Executive' },
+  //   { title: 'Graphic Designer' },
+  //   { title: 'Social Media Manager' },
+  //   { title: 'Call Centre Executive (Night Shift)' },
+  //   { title: 'Business Analyst Intern ' },
+  //   { title: 'Content Writing Intern' },
+  // ];
+
+  // const orderMap = orderByList.reduce((acc, value, index) => {
+  //   acc[value.title] = index;
+  //   return acc;
+  // }, {} as { [key: string]: number });
+
+  // // Sort 'arr' based on the index positions in 'orderMap'
+  // const sortedArr = [...arr]?.sort(
+  //   (x: any, y: any) =>
+  //     (orderMap[x.title] ?? Infinity) - (orderMap[y.title] ?? Infinity),
+  // );
+
+  const filterData = arr?.filter(
+    (blog: any) =>
+      blog?.published === true && blog?.category.includes('Job Post'),
+  );
+
+  // Sort the filtered data
+  const sortedData = [...filterData].sort((a, b) => {
+    if (a.title.toLowerCase() < b.title.toLowerCase()) return -1;
+    if (a.title.toLowerCase() > b.title.toLowerCase()) return 1;
+    return 0;
+  });
+
   return (
     <Fragment>
-      {arr
-        ?.filter(
-          (blog: any) =>
-            blog?.published === true && blog?.category[0] === 'Job Post',
-        )
-        ?.map((el: any, i: number) => (
-          <Accordion
-            key={el}
-            open={open === i + 1}
-            icon={<Icon id={1 + i} open={open} />}
-            className='border-b-2 py-2 border-gray-300'
-          >
-            <div className='px-8'>
-              <AccordionHeader
-                className='border-b-0'
-                onClick={() => handleOpen(i + 1)}
-              >
-                <div className='text-[16px] md:text-[22px] !font-medium'>
-                  {el.title}
+      {sortedData?.map((el: any, i: number) => (
+        <Accordion
+          key={el}
+          open={open === i + 1}
+          icon={<Icon id={1 + i} open={open} />}
+          className='border-b-2 py-2 border-gray-300'
+        >
+          <div className='px-8'>
+            <AccordionHeader
+              className='border-b-0'
+              onClick={() => handleOpen(i + 1)}
+            >
+              <div className='text-[16px] md:text-[22px] !font-medium'>
+                {el.title}
+              </div>
+            </AccordionHeader>
+          </div>
+          <div className=''>
+            <AccordionBody>
+              <div className=' bg-[#F5F5F5] border-t-[0.5px] border-[#AAAAAA] rounded-b-[10px] !px-8 !pt-4 !pb-8 '>
+                <div className='jobpost-css-style'>{parser(el.body)}</div>
+                <div className='flex justify-center'>
+                  {open === i + 1 && (
+                    <button
+                      onClick={() => {
+                        window.location.href =
+                          'mailto:jobs@bayshorecommunication.com';
+                      }}
+                      type='button'
+                      className='!text-white font-semibold text-small rounded-xl py-5 px-12 !bg-[#FE6F1F] mt-[-15px] border hover:!text-gray-900 hover:!bg-[#F5F5F5] hover:!border-gray-900'
+                    >
+                      Apply Now
+                    </button>
+                  )}
                 </div>
-              </AccordionHeader>
-            </div>
-            <div className=''>
-              <AccordionBody>
-                <div className=' bg-[#F5F5F5] border-t-[0.5px] border-[#AAAAAA] rounded-b-[10px] !px-8 !pt-4 !pb-8 '>
-                  <div className='jobpost-css-style'>{parser(el.body)}</div>
-                  <div className='flex justify-center'>
-                    {open === i + 1 && (
-                      <button
-                        onClick={() => {
-                          window.location.href =
-                            'mailto:jobs@bayshorecommunication.com';
-                        }}
-                        type='button'
-                        className='!text-white font-semibold text-small rounded-xl py-5 px-12 !bg-[#FE6F1F] mt-[-15px] border hover:!text-gray-900 hover:!bg-[#F5F5F5] hover:!border-gray-900'
-                      >
-                        Apply Now
-                      </button>
-                    )}
-                  </div>
-                </div>
-              </AccordionBody>
-            </div>
-          </Accordion>
-        ))}
+              </div>
+            </AccordionBody>
+          </div>
+        </Accordion>
+      ))}
     </Fragment>
   );
 }
