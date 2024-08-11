@@ -91,7 +91,7 @@ const Page = () => {
 
       <Boost
         heading='Need a Boost for You Business? Get Your FREE Quote Today!'
-        btnText='Send us a proposal'
+        btnText='Send Us a proposal'
       />
 
       {/* Campaigns */}
@@ -162,7 +162,7 @@ const Page = () => {
             </p>
           </Reveal>
         </div>
-        <div className='grid grid-cols-1 md:grid-cols-2 mt-12 gap-16 items-center'>
+        <div className='grid items-center grid-cols-1 gap-16 mt-12 md:grid-cols-2'>
           <div className=''>
             <Reveal>
               <h3 className='heading-tertiary'>
@@ -262,7 +262,7 @@ export default Page;
 const Box1: any = [
   'SEO',
   'Paid Advertising',
-  'Social media marketing',
+  'Social Media Marketing',
   'Email Marketing',
   'Marketing Automation',
   'Content Marketing',
@@ -278,7 +278,7 @@ const Box2: any = [
   'SaaS Development',
   'Prototype',
   'Update and Maintenance',
-  'UI/UX',
+  'UI/UX Design',
 ];
 
 const Box3: any = [
@@ -298,7 +298,7 @@ const Box4: any = [
   'Article Writing',
   'Social Media Post Design',
   'Motion Graphics',
-  '3D product visualization',
+  '3D Product Visualization',
   'TVC/ Ad Creative Design',
   'Video Production Setup',
 ];
@@ -312,7 +312,7 @@ let hero: {
 
 hero = [
   {
-    text: 'Ease Your Business Challenges With our expertise.',
+    text: 'Ease Your Business Challenges with Our Expertise.',
     heading: 'Get Your Own Workforce for Your Business',
     description: `Bayshore Communication is your all-in-one partner for accelerating business growth. With a dynamic range of services spanning Growth Marketing, Software Solutions, Offshore Office Support, and Content Development, we empower business owners to thrive in the digital era. Experience a seamless journey towards excellence and discover endless possibilities – where your vision meets innovation!`,
   },
@@ -356,7 +356,7 @@ links = [
   {
     link: '/assets/icons-for-web/color-icon/seo-and-sem.png',
     alt: 'seo-sem',
-    text: 'Seo and Sem',
+    text: 'SEO and SEM',
     desc: "We'll make sure your brand shines bright online. We've got tricks up our sleeves to get you to the top of those Google searches, both through organic methods and clever paid strategies",
   },
 
@@ -376,7 +376,7 @@ links = [
   {
     link: '/assets/icons-for-web/color-icon/ui-ux.png',
     alt: 'ui-ux',
-    text: 'UI UX',
+    text: 'UI UX Design',
     desc: "Your website and digital spaces won't just look good—they'll be easy and enjoyable to use. We design them so that your customers can move around effortlessly, keeping them engaged and loya",
   },
   {
@@ -391,7 +391,7 @@ const LogosM = ({ el }: any) => {
   return (
     <>
       <Reveal>
-        <div className='flex flex-col items-left sm:items-center justify-start md:flex-row md:max-w-2xl gap-2'>
+        <div className='flex flex-col justify-start gap-2 items-left sm:items-center md:flex-row md:max-w-2xl'>
           <Image
             src={el.link}
             alt={el.alt}
@@ -399,11 +399,11 @@ const LogosM = ({ el }: any) => {
             height={600}
             className='w-[35%] sm:w-[35%] h-auto hover:animate-bounce'
           />
-          <div className='flex flex-col sm:pl-4 leading-normal mt-6 md:mt-0'>
-            <h5 className='mb-2 text-2xl font-bold text-gray-900 tracking-widest'>
+          <div className='flex flex-col mt-6 leading-normal sm:pl-4 md:mt-0'>
+            <h5 className='mb-2 text-2xl font-bold tracking-widest text-gray-900'>
               {el.text}
             </h5>
-            <p className='mb-3 font-normal text-xl text-gray-600 tracking-widest leading-loose	'>
+            <p className='mb-3 text-xl font-normal leading-loose tracking-widest text-gray-600 '>
               {el.desc}
             </p>
           </div>

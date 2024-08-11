@@ -140,7 +140,7 @@ export function Example({ arr }: any) {
           key={el}
           open={open === i + 1}
           icon={<Icon id={1 + i} open={open} />}
-          className='border-b-2 py-2 border-gray-300'
+          className='py-2 border-b-2 border-gray-300'
         >
           <div className='px-8'>
             <AccordionHeader

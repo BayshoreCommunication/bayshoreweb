@@ -37,7 +37,7 @@ const page = () => {
         <Reveal>
           <>
             <h2 className='heading-secondary !text-center'>Our Story</h2>
-            <p className='text-base mb-4'>
+            <p className='mb-4 text-base'>
               In a world filled with challenges and limited resources, we
               embarked on a remarkable quest to turn our dreams into reality.
               Arjo Neel, with an empathetic touch, weaves webs of trust that
@@ -46,15 +46,15 @@ const page = () => {
               creating relationships that are as meaningful as they are
               impactful.{' '}
             </p>
-            <p className='text-base mb-4'>
-              Salman H Hossain, the master of digital wonders, brings to life
+            <p className='mb-4 text-base'>
+              Salman H Saikote, the master of digital wonders, brings to life
               the realm of innovation. With his limitless creativity and
               technical brilliance, He crafts digital symphonies that captivate
               hearts and minds. Each flick of his digital brush breathes life
               into campaigns that leave audiences spellbound, showcasing the
               magic that technology can weave.
             </p>
-            <p className='text-base mb-4'>
+            <p className='mb-4 text-base'>
               Guiding our path is Huraira Shishir, a sage guardian whose wisdom
               spans decades. Her invaluable experience steers us through the
               complex maze of business, illuminating the way forward with
@@ -62,7 +62,7 @@ const page = () => {
               make is grounded in insight and foresight, paving the way for our
               collective success.
             </p>
-            <p className='text-base mb-4'>
+            <p className='mb-4 text-base'>
               Together, we have overcome adversity and transformed Bayshore
               Communication into a sanctuary of dreams. Our unwavering
               commitment to our clients and partners has led us to create a
@@ -70,7 +70,7 @@ const page = () => {
               lies not only in delivering exceptional results, but also in
               fostering connections that transcend the business world.{' '}
             </p>
-            <p className='text-base mb-4'>
+            <p className='mb-4 text-base'>
               At Bayshore Communication, we believe that inspiration and
               creativity are at the heart of every successful endeavor. Our
               story is not just about us—it is about you, our cherished clients.
@@ -78,7 +78,7 @@ const page = () => {
               journey., where we combine our expertise with your aspirations to
               bring your visions to life.{' '}
             </p>
-            <p className='text-base mb-4'>
+            <p className='mb-4 text-base'>
               Beyond the services we offer, we strive to inspire. Our genuine
               passion for what we do drives us to break new ground that
               surpasses expectations. We are dedicated to developing unique and
@@ -214,7 +214,7 @@ cardContentS = [
   },
   {
     img: '/assets/Bayshore-Employe/christopher_patrick_thayer.webp',
-    name: 'Christopher Patrick Thayer',
+    name: 'CHRISTOPHER PATRICK THAYER',
     destination: 'CLIENT GROWTH MANAGER',
   },
   {
