@@ -89,7 +89,7 @@ const page = () => {
         </Reveal>
       </SectionLayout>
 
-      <SectionLayout bg=''>
+      {/* <SectionLayout bg=''>
         <Reveal>
           <SectionHeader
             heading='Our Team'
@@ -112,7 +112,7 @@ const page = () => {
             ))}
           </div>
         </div>
-      </SectionLayout>
+      </SectionLayout> */}
 
       {/* <AboutUs /> */}
 
