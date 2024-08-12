@@ -54,8 +54,8 @@ const page = () => {
           </div>
         </Reveal>
         <Reveal>
-          {/* <SectionPackage /> */}
-          <ServicePricingPlan />
+          <SectionPackage />
+          {/* <ServicePricingPlan /> */}
         </Reveal>
       </SectionLayout>
 
