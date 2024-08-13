@@ -1,159 +1,258 @@
-// import Image from 'next/image';
-// import React from 'react';
+'use client';
+import React from 'react';
+import Image from 'next/image';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
 
-// const ServicePriicngSaveData = ({ pricingList }) => {
-//   return (
-//     <div className='relative overflow-scroll shadow-md bg-gray-0 md:rounded-lg'>
-//       <div className='flex flex-col items-center justify-center'>
-//         <Image
-//           src='/assets/bayshore-logo.svg'
-//           alt='bayshore-logo'
-//           width={300}
-//           height={150}
-//           className='w-[200px] md:w-[300px] h-auto py-6'
-//           priority
-//         />
-//       </div>
-//       <div className='p-12 '>data</div>
-//       <table className='w-full text-left text-black rtl:text-right '>
-//         <thead className='text-2xl uppercase gray-700 !bg-primary '>
-//           <tr>
-//             <th scope='col' className='px-6 py-10'>
-//               Service Name
-//             </th>
-//             <th scope='col' className='px-8 py-10'>
-//               Service Details
-//             </th>
-//             <th scope='col' className='px-6 py-10 text-center'>
-//               Unit Price
-//             </th>
-//             <th scope='col' className='px-6 py-10 text-center'>
-//               Quantity
-//             </th>
-//             <th scope='col' className='px-0 py-10 text-center'>
-//               Estimated Total Price
-//             </th>
-//           </tr>
-//         </thead>
-//         <tbody>
-//           {pricingList?.map((service: any, serviceIndex: number) => (
-//             <tr
-//               key={serviceIndex}
-//               className='text-2xl text-black border-b odd:bg-white even:bg-gray-200 '
-//             >
-//               <th
-//                 scope='row'
-//                 className='px-6 py-8 font-bold text-gray-900 whitespace-nowrap '
-//               >
-//                 {service?.servicesName}
-//               </th>
-//               <td className='px-6 py-8'>
-//                 <div>
-//                   <ul className='max-w-xl space-y-4 list-disc list-inside'>
-//                     {service?.serviceDetails?.map((items: any, i: number) => (
-//                       <div key={i}>
-//                         <li>{items?.services} </li>
-//                       </div>
-//                     ))}
-//                   </ul>
-//                 </div>
-//               </td>
-//               <td className='px-6 py-8'>
-//                 <div>
-//                   <ul className='max-w-xl space-y-4 list-none list-inside '>
-//                     {service?.unitPrice?.map(
-//                       (serviceDetail: any, detailIndex: number) => (
-//                         <div key={detailIndex}>
-//                           <li
-//                             className={` text-center ${
-//                               serviceDetail?.price !== null
-//                                 ? 'text-black'
-//                                 : serviceIndex % 2 !== 0
-//                                 ? 'text-gray-200'
-//                                 : 'text-white'
-//                             }`}
-//                           >
-//                             {serviceDetail?.price}
-//                           </li>
-//                         </div>
-//                       ),
-//                     )}
-//                   </ul>
-//                 </div>
-//               </td>
-//               <td className='px-6 py-8'>
-//                 <div>
-//                   <ul className='max-w-md space-y-4 list-none list-inside '>
-//                     {service?.quantity?.map(
-//                       (serviceDetail: any, detailIndex: number) => (
-//                         <div key={detailIndex}>
-//                           <li
-//                             className={` text-center ${
-//                               serviceDetail?.quantitys !== null
-//                                 ? 'text-black'
-//                                 : serviceIndex % 2 !== 0
-//                                 ? 'text-gray-200'
-//                                 : 'text-white'
-//                             }`}
-//                           >
-//                             {serviceDetail?.quantitys}
-//                           </li>
-//                         </div>
-//                       ),
-//                     )}
-//                   </ul>
-//                 </div>
-//               </td>
-//               <td className='px-6 py-8'>
-//                 <div>
-//                   <ul className='max-w-md space-y-4 font-bold list-none list-inside'>
-//                     {service?.estimatedTotalPrice?.map(
-//                       (serviceDetail: any, detailIndex: number) => (
-//                         <div key={detailIndex}>
-//                           <li
-//                             className={`text-center ${
-//                               serviceDetail?.totalPrice !== null
-//                                 ? 'text-black'
-//                                 : serviceIndex % 2 !== 0
-//                                 ? 'text-gray-200'
-//                                 : 'text-white'
-//                             }`}
-//                           >
-//                             {serviceDetail?.totalPrice}
-//                           </li>
-//                         </div>
-//                       ),
-//                     )}
-//                   </ul>
-//                 </div>
-//               </td>
-//             </tr>
-//           ))}
-//         </tbody>
-//         <thead className='text-2xl uppercase gray-700 !bg-orange-50 '>
-//           <tr>
-//             <th scope='col' className='px-6 py-6'></th>
-//             <th scope='col' className='px-8 py-6'></th>
-//             <th scope='col' className='px-6 py-6'>
-//               Total
-//             </th>
-//             <th scope='col' className='px-6 py-6'></th>
-//             <th scope='col' className='px-0 py-6'>
-//               $2730
-//             </th>
-//           </tr>
-//         </thead>
-//       </table>
-//     </div>
-//   );
-// };
+interface ServiceDetail {
+  services: string;
+}
 
-// export default ServicePriicngSaveData;
+// Define the Service interface
+interface Service {
+  servicesName: string;
+  serviceDetails: ServiceDetail[];
+  unitPrice: { price: number | null }[];
+  quantity: { quantitys: number | null }[];
+  estimatedTotalPrice: { totalPrice: number | null }[];
+}
 
-// // import React from 'react';
+interface FormValue {
+  businessName: string;
+  partnerName: string;
+  email: string;
+  phone: string;
+  website: string;
+  address: string;
+}
 
-// // const ServicePriicngSaveData = () => {
-// //   return <div>ServicePriicngSaveData</div>;
-// // };
+interface Props {
+  customizedPricingList: Service[];
+  estimatedTotalPrice: string;
+  clientInfo: FormValue;
+  handleOpenPreview?: () => void; // Define this if used, or remove if not needed
+}
 
-// // export default ServicePriicngSaveData;
+const ServicePricingSaveData: React.FC<Props> = ({
+  customizedPricingList,
+  estimatedTotalPrice,
+  clientInfo,
+  handleOpenPreview,
+}) => {
+  const generatePDF = async () => {
+    const input = document.getElementById(
+      'table-container',
+    ) as HTMLElement | null;
+
+    if (input) {
+      // Increase the scale for better quality
+      const canvas = await html2canvas(input, {
+        scale: 2,
+        backgroundColor: '#ffffff',
+      });
+      const imgData = canvas.toDataURL('image/png');
+      const pdf = new jsPDF('p', 'mm', 'a4');
+      const pageWidth = pdf.internal.pageSize.getWidth();
+      const pageHeight = pdf.internal.pageSize.getHeight();
+      const imgWidth = pageWidth - 20; // Adjust for padding
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
+      let heightLeft = imgHeight;
+      let position = 10;
+
+      // Render the first page
+      pdf.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
+      heightLeft -= pageHeight;
+
+      // Render additional pages if content exceeds one page
+      while (heightLeft > 0) {
+        pdf.addPage();
+        position = heightLeft - imgHeight + 10;
+        pdf.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
+        heightLeft -= pageHeight;
+      }
+
+      pdf.save('our-customized-plan.pdf');
+    }
+    if (handleOpenPreview) handleOpenPreview(); // Call this function if defined
+  };
+
+  return (
+    <>
+      <div
+        id='table-container'
+        className='relative p-10 overflow-x-auto overflow-y-auto shadow-md bg-gray-0 md:rounded-lg bg-gray-50'
+      >
+        <div className='flex flex-col items-center justify-center'>
+          <Image
+            src='/assets/bayshore-logo.svg'
+            alt='bayshore-logo'
+            width={300}
+            height={150}
+            className='w-[200px] md:w-[300px] h-auto py-6'
+            priority
+          />
+        </div>
+        <div className='p-12 '>
+          <div className='grid items-center grid-cols-2 gap-y-8'>
+            <p>
+              <strong className='font-bold'>Business Name: </strong>{' '}
+              {clientInfo.businessName}
+            </p>
+            <p>
+              <strong className='font-bold'>Partner Name:</strong>{' '}
+              {clientInfo.partnerName}
+            </p>
+            <p>
+              <strong className='font-bold'>Email:</strong> {clientInfo.email}
+            </p>
+            <p>
+              <strong className='font-bold'>Phone:</strong> {clientInfo.phone}
+            </p>
+            <p>
+              <strong className='font-bold'>Website:</strong>{' '}
+              {clientInfo.website}
+            </p>
+            <p>
+              <strong className='font-bold'>Address: </strong>{' '}
+              {clientInfo.address}
+            </p>
+          </div>
+        </div>
+        <div>
+          <table className='w-full text-left text-black rtl:text-right'>
+            <thead className='text-2xl uppercase gray-700 !bg-primary'>
+              <tr>
+                <th scope='col' className='px-6 py-10'>
+                  Service Name
+                </th>
+                <th scope='col' className='px-8 py-10'>
+                  Service Details
+                </th>
+                <th scope='col' className='px-6 py-10 text-center'>
+                  Unit Price
+                </th>
+                <th scope='col' className='px-6 py-10 text-center'>
+                  Quantity
+                </th>
+                <th scope='col' className='px-0 py-10 text-center'>
+                  Estimated Total Price
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {customizedPricingList.map((service, serviceIndex) => (
+                <tr
+                  key={serviceIndex}
+                  className='text-2xl text-black border-b odd:bg-white even:bg-gray-200'
+                >
+                  <th
+                    scope='row'
+                    className='px-6 py-8 font-bold text-gray-900 whitespace-nowrap'
+                  >
+                    {service.servicesName}
+                  </th>
+                  <td className='px-6 py-8'>
+                    <div>
+                      <ul className='max-w-xl space-y-4 list-disc list-outside '>
+                        {service.serviceDetails.map((items, i) => (
+                          <li className='' key={i}>
+                            {items.services}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </td>
+                  <td className='px-6 py-8'>
+                    <div>
+                      <ul className='max-w-xl space-y-4 list-none list-inside'>
+                        {service.unitPrice.map((serviceDetail, detailIndex) => (
+                          <li
+                            key={detailIndex}
+                            className={`text-center ${
+                              serviceDetail.price !== null
+                                ? 'text-black'
+                                : serviceIndex % 2 !== 0
+                                ? 'text-gray-200'
+                                : 'text-white'
+                            }`}
+                          >
+                            {serviceDetail.price}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </td>
+                  <td className='px-6 py-8'>
+                    <div>
+                      <ul className='max-w-md space-y-4 list-none list-inside'>
+                        {service.quantity.map((serviceDetail, detailIndex) => (
+                          <li
+                            key={detailIndex}
+                            className={`text-center ${
+                              serviceDetail.quantitys !== null
+                                ? 'text-black'
+                                : serviceIndex % 2 !== 0
+                                ? 'text-gray-200'
+                                : 'text-whitetext-gray-200'
+                            }`}
+                          >
+                            {serviceDetail.quantitys}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </td>
+                  <td className='px-6 py-8'>
+                    <div>
+                      <ul className='max-w-md space-y-4 font-bold list-none list-inside'>
+                        {service.estimatedTotalPrice.map(
+                          (serviceDetail, detailIndex) => (
+                            <li
+                              key={detailIndex}
+                              className={`text-center ${
+                                serviceDetail.totalPrice !== null
+                                  ? 'text-black'
+                                  : serviceIndex % 2 !== 0
+                                  ? 'text-gray-200'
+                                  : 'text-white'
+                              }`}
+                            >
+                              {serviceDetail.totalPrice}
+                            </li>
+                          ),
+                        )}
+                      </ul>
+                    </div>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+            <thead className='text-2xl uppercase gray-700 !bg-orange-50'>
+              <tr>
+                <th scope='col' className='px-6 py-6'></th>
+                <th scope='col' className='px-8 py-6'></th>
+                <th scope='col' className='px-6 py-6'>
+                  Total
+                </th>
+                <th scope='col' className='px-6 py-6'></th>
+                <th scope='col' className='px-0 py-6'>
+                  {estimatedTotalPrice}
+                </th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+      </div>
+      <div className='flex justify-center py-20 gap-x-8'>
+        <button
+          onClick={generatePDF}
+          className='btn text-base !py-6 !px-8 r-button border-2 border-primary hover:text-primary w-[180px] !text-center'
+        >
+          Download Plan
+        </button>
+      </div>
+    </>
+  );
+};
+
+export default ServicePricingSaveData;

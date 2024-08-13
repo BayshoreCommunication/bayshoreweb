@@ -253,10 +253,10 @@ const ServicePricingPlan = () => {
                   </th>
                   <td className='px-6 py-8'>
                     <div>
-                      <ul className='max-w-xl space-y-4 list-disc '>
+                      <ul className='max-w-xl space-y-4 list-disc list-outside'>
                         {el?.serviceDetails?.map((items: any, i: number) => (
                           <div key={i}>
-                            <li>{items?.services}</li>
+                            <li className=''>{items?.services}</li>
                           </div>
                         ))}
                       </ul>
@@ -290,11 +290,11 @@ const ServicePricingPlan = () => {
                           <div key={i}>
                             <li
                               className={` text-center ${
-                                items?.quantitys !== 'null'
+                                items?.quantitys === null
                                   ? 'text-black'
-                                  : index % 2 !== 0
-                                  ? 'text-gray-200'
-                                  : 'text-white'
+                                  : index % 2 === 0
+                                  ? 'text-white'
+                                  : 'text-gray-200'
                               }`}
                             >
                               {items?.quantitys}
