@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import CalculateServicePricingCalculate from './CalculateServicePricingCalculate';
 import { InitialPricingList } from './initialPricingList';
 import ServicePriicngSaveData from './ServicePriicngSaveData';
-// import TestPage from './TestPage';
+import ServicesPriceCard from './ServicesPriceCard';
 
 interface ServiceDetail {
   name: number | string | null;
@@ -44,6 +44,7 @@ const ServicePricingPlanCustomized: React.FC = () => {
 
   return (
     <>
+      {/* <ServicesPriceCard /> */}
       <div className='px-0 pt-16 pb-16 md:px-36'>
         {openPreview ? (
           <ServicePriicngSaveData
@@ -70,9 +71,6 @@ const ServicePricingPlanCustomized: React.FC = () => {
                 Save Plan
               </button>
             </div>
-            {/* <div>
-              <TestPage />
-            </div> */}
           </>
         )}
       </div>

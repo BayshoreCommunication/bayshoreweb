@@ -321,7 +321,7 @@ const CalculateServicePricingCalculate: React.FC<Props> = ({
                                 : 'text-white'
                             }`}
                           >
-                            ${priceItem?.price}
+                            {priceItem?.price}
                           </li>
                         </div>
                       ),
@@ -339,7 +339,7 @@ const CalculateServicePricingCalculate: React.FC<Props> = ({
                           {quantityItem?.quantitys !== null ? (
                             <input
                               type='number'
-                              value={quantityItem?.quantitys || ''}
+                              value={quantityItem?.quantitys || 0}
                               onChange={(e) =>
                                 handleQuantityChange(
                                   serviceIndex,
@@ -382,7 +382,7 @@ const CalculateServicePricingCalculate: React.FC<Props> = ({
                                 : 'text-white'
                             }`}
                           >
-                            ${totalPriceItem?.totalPrice}
+                            {totalPriceItem?.totalPrice}
                           </li>
                         </div>
                       ),

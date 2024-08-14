@@ -11,7 +11,7 @@ interface Service {
   estimatedTotalPrice: { totalPrice: number | null }[];
 }
 
-export const InitialPricingList: Service[] = [
+export const InitialPricingListMain: Service[] = [
   {
     servicesName: [
       { name: null },
@@ -24,10 +24,10 @@ export const InitialPricingList: Service[] = [
       { services: 'Technical SEO' },
     ],
     unitPrice: [{ price: null }, { price: 100 }, { price: null }],
-    quantity: [{ quantitys: null }, { quantitys: 0 }, { quantitys: null }],
+    quantity: [{ quantitys: null }, { quantitys: 1 }, { quantitys: null }],
     estimatedTotalPrice: [
       { totalPrice: null },
-      { totalPrice: 0 },
+      { totalPrice: 100 },
       { totalPrice: null },
     ],
   },
@@ -43,10 +43,10 @@ export const InitialPricingList: Service[] = [
       { services: 'Off Page SEO, SEO Tools' },
     ],
     unitPrice: [{ price: null }, { price: 550 }, { price: null }],
-    quantity: [{ quantitys: null }, { quantitys: 0 }, { quantitys: null }],
+    quantity: [{ quantitys: null }, { quantitys: 1 }, { quantitys: null }],
     estimatedTotalPrice: [
       { totalPrice: null },
-      { totalPrice: 0 },
+      { totalPrice: 550 },
       { totalPrice: null },
     ],
   },
@@ -61,10 +61,10 @@ export const InitialPricingList: Service[] = [
       { services: 'On Page SEO, Social Share' },
     ],
     unitPrice: [{ price: 50 }, { price: 5 }, { price: null }],
-    quantity: [{ quantitys: 0 }, { quantitys: 0 }, { quantitys: null }],
+    quantity: [{ quantitys: 4 }, { quantitys: 12 }, { quantitys: null }],
     estimatedTotalPrice: [
-      { totalPrice: 0 },
-      { totalPrice: 0 },
+      { totalPrice: 200 },
+      { totalPrice: 60 },
       { totalPrice: null },
     ],
   },
@@ -72,8 +72,8 @@ export const InitialPricingList: Service[] = [
     servicesName: [{ name: 'Google My Business' }],
     serviceDetails: [{ services: 'Management' }, { services: 'SEO ' }],
     unitPrice: [{ price: 100 }],
-    quantity: [{ quantitys: 0 }],
-    estimatedTotalPrice: [{ totalPrice: 0 }],
+    quantity: [{ quantitys: 1 }],
+    estimatedTotalPrice: [{ totalPrice: 100 }],
   },
   {
     servicesName: [
@@ -95,8 +95,8 @@ export const InitialPricingList: Service[] = [
       { services: 'Facebook, Instagram, Threads, Twitter, LinkedIn' },
     ],
     unitPrice: [{ price: 250 }],
-    quantity: [{ quantitys: 0 }, { quantitys: null }],
-    estimatedTotalPrice: [{ totalPrice: 0 }],
+    quantity: [{ quantitys: 1 }, { quantitys: null }],
+    estimatedTotalPrice: [{ totalPrice: 250 }],
   },
 
   {

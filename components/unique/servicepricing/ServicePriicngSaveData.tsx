@@ -4,6 +4,7 @@ import Image from 'next/image';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 import { redirect } from 'next/navigation';
+import DownloadPdf from './DownloadPdf';
 
 interface ServiceDetail {
   services: string;
@@ -81,10 +82,7 @@ const ServicePricingSaveData: React.FC<Props> = ({
 
   return (
     <>
-      <div
-        id='table-container'
-        className='relative p-10 overflow-x-auto overflow-y-auto shadow-md bg-gray-0 md:rounded-lg bg-gray-50'
-      >
+      <div className='relative p-10 overflow-x-auto overflow-y-auto shadow-md bg-gray-0 md:rounded-lg bg-gray-50'>
         <div className='flex flex-col items-center justify-center'>
           <Image
             src='/assets/bayshore-logo.svg'
@@ -158,7 +156,7 @@ const ServicePricingSaveData: React.FC<Props> = ({
                           (serviceName, detailIndex) => (
                             <li
                               key={detailIndex}
-                              className={`text-center ${
+                              className={` ${
                                 serviceName.name !== null
                                   ? 'text-black'
                                   : serviceIndex % 2 !== 0
@@ -266,12 +264,11 @@ const ServicePricingSaveData: React.FC<Props> = ({
         </div>
       </div>
       <div className='flex justify-center pt-20'>
-        <button
-          onClick={generatePDF}
-          className='btn text-base !py-6 !px-8 r-button border-2 border-primary hover:text-primary w-[180px] !text-center'
-        >
-          Download Plan
-        </button>
+        <DownloadPdf
+          clientInfo={clientInfo}
+          estimatedTotalPrice={estimatedTotalPrice}
+          customizedPricingList={customizedPricingList}
+        />
       </div>
     </>
   );
