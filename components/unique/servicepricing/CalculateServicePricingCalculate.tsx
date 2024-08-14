@@ -276,7 +276,24 @@ const CalculateServicePricingCalculate: React.FC<Props> = ({
                 scope='row'
                 className='px-6 py-8 font-bold text-gray-900 whitespace-nowrap'
               >
-                {service.servicesName}
+                <ul className='max-w-xl space-y-4 list-none list-inside'>
+                  {service.servicesName.map(
+                    (serviceName: any, detailIndex: any) => (
+                      <li
+                        key={detailIndex}
+                        className={`${
+                          serviceName.name !== null
+                            ? 'text-black'
+                            : serviceIndex % 2 !== 0
+                            ? 'text-gray-200'
+                            : 'text-white'
+                        }`}
+                      >
+                        {serviceName.name}
+                      </li>
+                    ),
+                  )}
+                </ul>
               </th>
               <td className='px-6 py-8'>
                 <div>

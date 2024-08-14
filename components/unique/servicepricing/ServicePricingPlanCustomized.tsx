@@ -4,8 +4,10 @@ import React, { useState } from 'react';
 import CalculateServicePricingCalculate from './CalculateServicePricingCalculate';
 import { InitialPricingList } from './initialPricingList';
 import ServicePriicngSaveData from './ServicePriicngSaveData';
+// import TestPage from './TestPage';
 
 interface ServiceDetail {
+  name: number | string | null;
   price: number | string | null;
   quantitys: number | string | null;
   totalPrice: number | string | null;
@@ -13,7 +15,7 @@ interface ServiceDetail {
 }
 
 interface Service {
-  servicesName: string;
+  servicesName: ServiceDetail[];
   serviceDetails: ServiceDetail[];
   unitPrice: ServiceDetail[];
   quantity: ServiceDetail[];
@@ -42,7 +44,7 @@ const ServicePricingPlanCustomized: React.FC = () => {
 
   return (
     <>
-      <div className='pt-16 pb-16 px-36'>
+      <div className='px-0 pt-16 pb-16 md:px-36'>
         {openPreview ? (
           <ServicePriicngSaveData
             customizedPricingList={pricingList}
@@ -60,7 +62,7 @@ const ServicePricingPlanCustomized: React.FC = () => {
               formValues={formValues}
               setFormValues={setFormValues}
             />
-            <div className='flex justify-center py-20 gap-x-8'>
+            <div className='flex justify-center pt-20'>
               <button
                 onClick={handleOpenPreview}
                 className='btn text-base !py-6 !px-8 r-button border-2 border-primary hover:text-primary w-[180px] !text-center'
@@ -68,6 +70,9 @@ const ServicePricingPlanCustomized: React.FC = () => {
                 Save Plan
               </button>
             </div>
+            {/* <div>
+              <TestPage />
+            </div> */}
           </>
         )}
       </div>

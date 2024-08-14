@@ -217,7 +217,7 @@ const pricingList = [
 const ServicePricingPlan = () => {
   return (
     <>
-      <div className='pt-16 pb-16 px-36'>
+      <div className='px-0 pt-16 pb-16 md:px-36'>
         <div className='relative overflow-x-auto shadow-md md:rounded-lg'>
           <table className='w-full text-left text-black rtl:text-right '>
             <thead className='text-2xl uppercase gray-700 !bg-primary '>
@@ -290,11 +290,11 @@ const ServicePricingPlan = () => {
                           <div key={i}>
                             <li
                               className={` text-center ${
-                                items?.quantitys === null
+                                items?.quantitys !== 'null'
                                   ? 'text-black'
-                                  : index % 2 === 0
-                                  ? 'text-white'
-                                  : 'text-gray-200'
+                                  : index % 2 !== 0
+                                  ? 'text-gray-200'
+                                  : 'text-white'
                               }`}
                             >
                               {items?.quantitys}
@@ -346,7 +346,7 @@ const ServicePricingPlan = () => {
           </table>
         </div>
       </div>
-      <div className='flex justify-center pt-20'>
+      <div className='flex justify-center pt-6'>
         <Link
           href={`/customize-plan`}
           className='btn text-base !py-6 !px-8 r-button border-2 border-primary hover:text-primary'

@@ -3,6 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
+import { redirect } from 'next/navigation';
 
 interface ServiceDetail {
   services: string;
@@ -10,7 +11,7 @@ interface ServiceDetail {
 
 // Define the Service interface
 interface Service {
-  servicesName: string;
+  servicesName: { name: string | null }[];
   serviceDetails: ServiceDetail[];
   unitPrice: { price: number | null }[];
   quantity: { quantitys: number | null }[];
@@ -73,7 +74,9 @@ const ServicePricingSaveData: React.FC<Props> = ({
 
       pdf.save('our-customized-plan.pdf');
     }
-    if (handleOpenPreview) handleOpenPreview(); // Call this function if defined
+    if (handleOpenPreview) handleOpenPreview();
+
+    // Call this function if defined
   };
 
   return (
@@ -149,7 +152,26 @@ const ServicePricingSaveData: React.FC<Props> = ({
                     scope='row'
                     className='px-6 py-8 font-bold text-gray-900 whitespace-nowrap'
                   >
-                    {service.servicesName}
+                    <div>
+                      <ul className='max-w-xl space-y-4 list-none list-inside'>
+                        {service.servicesName.map(
+                          (serviceName, detailIndex) => (
+                            <li
+                              key={detailIndex}
+                              className={`text-center ${
+                                serviceName.name !== null
+                                  ? 'text-black'
+                                  : serviceIndex % 2 !== 0
+                                  ? 'text-gray-200'
+                                  : 'text-white'
+                              }`}
+                            >
+                              {serviceName.name}
+                            </li>
+                          ),
+                        )}
+                      </ul>
+                    </div>
                   </th>
                   <td className='px-6 py-8'>
                     <div>
@@ -243,7 +265,7 @@ const ServicePricingSaveData: React.FC<Props> = ({
           </table>
         </div>
       </div>
-      <div className='flex justify-center py-20 gap-x-8'>
+      <div className='flex justify-center pt-20'>
         <button
           onClick={generatePDF}
           className='btn text-base !py-6 !px-8 r-button border-2 border-primary hover:text-primary w-[180px] !text-center'
