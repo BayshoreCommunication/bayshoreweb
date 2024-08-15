@@ -186,7 +186,7 @@ const Page = () => {
 
           <div className=' flex flex-col gap-8 lg:gap-12 md:pl-[5rem] sm:px-[15vw] md:px-0'>
             <Progress
-              title='Growth marketing'
+              title='Growth Marketing'
               bg='bg-gradient-to-r from-[#D4145A] to-[#FBB03B]'
               border='bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]'
               percentage='w-[90%]'
@@ -194,7 +194,7 @@ const Page = () => {
               percentageValpx='sm:left-[82%] left-[80%] md:left-[80%] lg:left-[84%]'
             />
             <Progress
-              title='Software solution and development'
+              title='Software Solution and Development'
               bg='bg-gradient-to-r from-[#2E3192] to-[#1BFFFF]'
               border='bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]'
               percentage='w-[96%]'
@@ -210,7 +210,7 @@ const Page = () => {
               percentageValpx='sm:left-[83%] left-[82%] md:left-[82%] lg:left-[86%]'
             />
             <Progress
-              title='Content development'
+              title='Content Development'
               bg='bg-gradient-to-r from-[#FF61D2] to-[#FE9090]'
               border='bg-gradient-to-r from-[#4D4855] to-[#D7D7D7]'
               percentage='w-[88%]'

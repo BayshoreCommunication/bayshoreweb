@@ -104,8 +104,6 @@ export const InitialPricingList: Service[] = [
       { name: null },
       { name: null },
       { name: null },
-      { name: null },
-      { name: null },
       { name: 'Video Production' },
       { name: null },
       { name: null },
@@ -162,12 +160,12 @@ export const InitialPricingList: Service[] = [
     ],
     serviceDetails: [
       {
-        services:
-          'Enviorment Setup, CRM Intrigration, Ad Creative, Campaign Management',
+        services: 'Campaign Plan',
       },
-      { services: 'Facebook, Instagram, Google, YouTube, Google Map' },
-      { services: 'Lead Ads, Display Ad' },
-      { services: 'With 15% Ad Spend' },
+      { services: 'Email Copy Writing (4/Month)' },
+      { services: 'Email Graphic (4/Month)' },
+      { services: 'Template Design' },
+      { services: 'Campaign Management' },
     ],
     unitPrice: [{ price: 200 }],
     quantity: [{ quantitys: 0 }],

@@ -2,6 +2,7 @@ import React from 'react';
 import { InitialPricingListMain } from './initialPricingListMain';
 import Link from 'next/link';
 import Image from 'next/image';
+import ServicesPriceCard from './ServicesPriceCard';
 
 const dataInfo = {
   bussinesName: '',
@@ -30,8 +31,11 @@ interface Service {
 
 const ServicePricingPlan: React.FC = () => {
   return (
-    <div className='px-0 pt-14 md:px-36'>
-      <div className='relative p-10 overflow-x-auto overflow-y-auto shadow-md bg-gray-50 md:rounded-lg'>
+    <div className='px-0 pt-4 md:px-36 mb-[-24px]'>
+      <div className='md:hidden'>
+        <ServicesPriceCard />
+      </div>
+      <div className='relative hidden p-10 overflow-x-auto overflow-y-auto shadow-md bg-gray-50 md:rounded-lg md:block'>
         <table className='w-full text-left text-black border rounded-md rtl:text-right'>
           <thead className='text-2xl uppercase !bg-primary'>
             <tr>
@@ -83,7 +87,7 @@ const ServicePricingPlan: React.FC = () => {
                 </th>
                 <td className='px-6 py-8'>
                   <div>
-                    <ul className='max-w-xl space-y-6 list-disc list-outside'>
+                    <ul className={`max-w-xl space-y-6 list-outside list-disc`}>
                       {service.serviceDetails.map((items: any, i: any) => (
                         <div key={i}>
                           <li>{items.services}</li>
@@ -184,7 +188,7 @@ const ServicePricingPlan: React.FC = () => {
       <div className='flex justify-center pt-20'>
         <Link
           href={`/customize-plan`}
-          className='btn text-base !py-6 !px-8 r-button border-2 border-primary hover:text-primary'
+          className='!py-4 md:!py-4 flex items-center gap-2 sm:gap-4 md:gap-8 px-[3rem] justify-center md:justify-start border-2 bg-primary border-primary rounded-full hover:rounded-full text-white hover:bg-transparent hover:text-primary a-button'
         >
           Customize My Plan
         </Link>

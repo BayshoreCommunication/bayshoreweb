@@ -44,7 +44,6 @@ const ServicePricingPlanCustomized: React.FC = () => {
 
   return (
     <>
-      {/* <ServicesPriceCard /> */}
       <div className='px-0 pt-16 pb-16 md:px-36'>
         {openPreview ? (
           <ServicePriicngSaveData
@@ -66,7 +65,7 @@ const ServicePricingPlanCustomized: React.FC = () => {
             <div className='flex justify-center pt-20'>
               <button
                 onClick={handleOpenPreview}
-                className='btn text-base !py-6 !px-8 r-button border-2 border-primary hover:text-primary w-[180px] !text-center'
+                className='!py-4 md:!py-4 flex items-center gap-2 sm:gap-4 md:gap-8 px-[3rem] justify-center md:justify-start border-2 bg-primary border-primary rounded-full hover:rounded-full text-white hover:bg-transparent hover:text-primary a-button'
               >
                 Save Plan
               </button>

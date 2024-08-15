@@ -106,7 +106,7 @@ export function AnimationHomeTabBar() {
             >
               <div className='grid grid-cols-1 gap-8 p-6 md:grid-cols-2'>
                 <div className='rounded-[10px] px-4 py-16 md:p-16 flex flex-col justify-center'>
-                  <h2 className='text-center heading-secondary sm:text-left li'>
+                  <h2 className='leading-snug text-center heading-secondary sm:text-left'>
                     {label}
                   </h2>
                   <p className='text-base'>{desc}</p>

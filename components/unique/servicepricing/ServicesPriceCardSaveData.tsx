@@ -1,10 +1,39 @@
 import React from 'react';
-import { InitialPricingList } from './initialPricingList';
 
-const ServicesPriceCard = () => {
+interface ServiceDetail {
+  services: string;
+}
+
+// Define the Service interface
+interface Service {
+  servicesName: { name: string | null }[];
+  serviceDetails: ServiceDetail[];
+  unitPrice: { price: number | null }[];
+  quantity: { quantitys: number | null }[];
+  estimatedTotalPrice: { totalPrice: number | null }[];
+}
+
+interface FormValue {
+  businessName: string;
+  partnerName: string;
+  email: string;
+  phone: string;
+  website: string;
+  address: string;
+}
+
+interface Props {
+  customizedPricingList: Service[];
+  estimatedTotalPrice: string;
+}
+
+const ServicesPriceCardSaveData: React.FC<Props> = ({
+  customizedPricingList,
+  estimatedTotalPrice,
+}) => {
   return (
     <div>
-      {InitialPricingList.map((service, serviceIndex) => (
+      {customizedPricingList.map((service, serviceIndex) => (
         <div className='p-4 mb-3 rounded-lg bg-orange-50' key={serviceIndex}>
           <h2 className='text-[12px] font-semibold text-primary'>
             Service Name
@@ -133,10 +162,12 @@ const ServicesPriceCard = () => {
       ))}
       <div className='flex items-center justify-end pr-16 bg-orange-50 gap-x-10'>
         <p className='px-6 py-4 text-[10px] font-semibold '>Total</p>
-        <p className='px-6 py-4 text-[10px] font-semibold'>$1420</p>
+        <p className='px-6 py-4 text-[10px] font-semibold'>
+          ${estimatedTotalPrice}
+        </p>
       </div>
     </div>
   );
 };
 
-export default ServicesPriceCard;
+export default ServicesPriceCardSaveData;

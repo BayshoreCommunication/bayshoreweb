@@ -1,10 +1,8 @@
 'use client';
 import React from 'react';
 import Image from 'next/image';
-import jsPDF from 'jspdf';
-import html2canvas from 'html2canvas';
-import { redirect } from 'next/navigation';
 import DownloadPdf from './DownloadPdf';
+import ServicesPriceCardSaveData from './ServicesPriceCardSaveData';
 
 interface ServiceDetail {
   services: string;
@@ -30,7 +28,7 @@ interface FormValue {
 
 interface Props {
   customizedPricingList: Service[];
-  estimatedTotalPrice: string;
+  estimatedTotalPrice: any | null;
   clientInfo: FormValue;
   handleOpenPreview?: () => void; // Define this if used, or remove if not needed
 }
@@ -39,47 +37,7 @@ const ServicePricingSaveData: React.FC<Props> = ({
   customizedPricingList,
   estimatedTotalPrice,
   clientInfo,
-  handleOpenPreview,
 }) => {
-  const generatePDF = async () => {
-    const input = document.getElementById(
-      'table-container',
-    ) as HTMLElement | null;
-
-    if (input) {
-      // Increase the scale for better quality
-      const canvas = await html2canvas(input, {
-        scale: 2,
-        backgroundColor: '#ffffff',
-      });
-      const imgData = canvas.toDataURL('image/png');
-      const pdf = new jsPDF('p', 'mm', 'a4');
-      const pageWidth = pdf.internal.pageSize.getWidth();
-      const pageHeight = pdf.internal.pageSize.getHeight();
-      const imgWidth = pageWidth - 20; // Adjust for padding
-      const imgHeight = (canvas.height * imgWidth) / canvas.width;
-      let heightLeft = imgHeight;
-      let position = 10;
-
-      // Render the first page
-      pdf.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
-      heightLeft -= pageHeight;
-
-      // Render additional pages if content exceeds one page
-      while (heightLeft > 0) {
-        pdf.addPage();
-        position = heightLeft - imgHeight + 10;
-        pdf.addImage(imgData, 'PNG', 10, position, imgWidth, imgHeight);
-        heightLeft -= pageHeight;
-      }
-
-      pdf.save('our-customized-plan.pdf');
-    }
-    if (handleOpenPreview) handleOpenPreview();
-
-    // Call this function if defined
-  };
-
   return (
     <>
       <div className='relative p-10 overflow-x-auto overflow-y-auto shadow-md bg-gray-0 md:rounded-lg bg-gray-50'>
@@ -93,33 +51,39 @@ const ServicePricingSaveData: React.FC<Props> = ({
             priority
           />
         </div>
-        <div className='p-12 '>
-          <div className='grid items-center grid-cols-2 gap-y-8'>
-            <p>
+        <div className='p-2 md:p-12 '>
+          <div className='grid items-center grid-cols-1 md:grid-cols-2 gap-y-8'>
+            <p className='md:!text-2xl !text-xl'>
               <strong className='font-bold'>Business Name: </strong>{' '}
               {clientInfo.businessName}
             </p>
-            <p>
+            <p className='md:!text-2xl !text-xl'>
               <strong className='font-bold'>Partner Name:</strong>{' '}
               {clientInfo.partnerName}
             </p>
-            <p>
+            <p className='md:!text-2xl !text-xl'>
               <strong className='font-bold'>Email:</strong> {clientInfo.email}
             </p>
-            <p>
+            <p className='md:!text-2xl !text-xl'>
               <strong className='font-bold'>Phone:</strong> {clientInfo.phone}
             </p>
-            <p>
+            <p className='md:!text-2xl !text-xl'>
               <strong className='font-bold'>Website:</strong>{' '}
               {clientInfo.website}
             </p>
-            <p>
+            <p className='md:!text-2xl !text-xl'>
               <strong className='font-bold'>Address: </strong>{' '}
               {clientInfo.address}
             </p>
           </div>
         </div>
-        <div>
+        <div className='mt-8 md:hidden'>
+          <ServicesPriceCardSaveData
+            estimatedTotalPrice={estimatedTotalPrice}
+            customizedPricingList={customizedPricingList}
+          />
+        </div>
+        <div className='hidden md:block'>
           <table className='w-full text-left text-black rtl:text-right'>
             <thead className='text-2xl uppercase gray-700 !bg-primary'>
               <tr>

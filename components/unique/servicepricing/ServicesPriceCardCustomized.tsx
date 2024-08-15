@@ -1,10 +1,36 @@
 import React from 'react';
-import { InitialPricingList } from './initialPricingList';
+// Define the ServiceDetail interface
+interface ServiceDetail {
+  services: string;
+}
 
-const ServicesPriceCard = () => {
+// Define the Service interface
+interface Service {
+  servicesName: { name: string | null }[];
+  serviceDetails: ServiceDetail[];
+  unitPrice: { price: number | null }[];
+  quantity: { quantitys: number | null }[];
+  estimatedTotalPrice: { totalPrice: number | null }[];
+}
+
+interface Props {
+  handleQuantityChange: (
+    serviceIndex: number,
+    detailIndex: number,
+    newQuantity: string,
+  ) => void;
+  pricingList: Service[];
+  totalPrice: number | null; // Assuming totalPrice is a number or null
+}
+
+const ServicesPriceCardCustomized: React.FC<Props> = ({
+  handleQuantityChange,
+  pricingList,
+  totalPrice,
+}) => {
   return (
     <div>
-      {InitialPricingList.map((service, serviceIndex) => (
+      {pricingList.map((service, serviceIndex) => (
         <div className='p-4 mb-3 rounded-lg bg-orange-50' key={serviceIndex}>
           <h2 className='text-[12px] font-semibold text-primary'>
             Service Name
@@ -82,21 +108,36 @@ const ServicesPriceCard = () => {
                     </td>
                     <td className='px-2 py-2'>
                       <div>
-                        <ul className='max-w-md space-y-4 list-none'>
+                        <ul className='max-w-md space-y-2 list-none'>
                           {service.quantity.map(
-                            (serviceDetail, detailIndex) => (
-                              <li
+                            (quantityItem: any, detailIndex: any) => (
+                              <div
                                 key={detailIndex}
-                                className={`text-center text-[8px] ${
-                                  serviceDetail.quantitys !== null
-                                    ? 'text-black'
-                                    : serviceIndex % 2 !== 0
-                                    ? 'text-gray-200'
-                                    : 'text-whitetext-gray-200'
-                                }`}
+                                className='flex justify-center mx-0'
                               >
-                                {serviceDetail.quantitys}
-                              </li>
+                                {quantityItem?.quantitys !== null ? (
+                                  <input
+                                    type='number'
+                                    value={quantityItem?.quantitys || 0}
+                                    onChange={(e) =>
+                                      handleQuantityChange(
+                                        serviceIndex,
+                                        detailIndex,
+                                        e.target.value,
+                                      )
+                                    }
+                                    className='text-center text-black border border-gray-300 rounded-md w-14 text-[8px]'
+                                  />
+                                ) : (
+                                  <p
+                                    className={`${
+                                      serviceIndex % 2 !== 0
+                                        ? 'text-gray-200'
+                                        : 'text-white'
+                                    }`}
+                                  ></p>
+                                )}
+                              </div>
                             ),
                           )}
                         </ul>
@@ -133,10 +174,10 @@ const ServicesPriceCard = () => {
       ))}
       <div className='flex items-center justify-end pr-16 bg-orange-50 gap-x-10'>
         <p className='px-6 py-4 text-[10px] font-semibold '>Total</p>
-        <p className='px-6 py-4 text-[10px] font-semibold'>$1420</p>
+        <p className='px-6 py-4 text-[10px] font-semibold'>${totalPrice}</p>
       </div>
     </div>
   );
 };
 
-export default ServicesPriceCard;
+export default ServicesPriceCardCustomized;

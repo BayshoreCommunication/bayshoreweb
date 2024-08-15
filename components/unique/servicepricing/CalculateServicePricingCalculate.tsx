@@ -1,6 +1,7 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
+import ServicesPriceCardCustomized from './ServicesPriceCardCustomized';
 
 interface ServiceDetail {
   services: string;
@@ -246,167 +247,180 @@ const CalculateServicePricingCalculate: React.FC<Props> = ({
           </div>
         </form>
       </div>
-      <table className='w-full text-left text-black border rounded-md rtl:text-right'>
-        <thead className='text-2xl uppercase !bg-primary'>
-          <tr>
-            <th scope='col' className='px-6 py-10'>
-              Service Name
-            </th>
-            <th scope='col' className='px-8 py-10'>
-              Service Details
-            </th>
-            <th scope='col' className='px-6 py-10 text-center'>
-              Unit Price
-            </th>
-            <th scope='col' className='px-6 py-10 text-center'>
-              Quantity
-            </th>
-            <th scope='col' className='px-0 py-10 text-center'>
-              Estimated Total Price
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {pricingList.map((service: any, serviceIndex: any) => (
-            <tr
-              key={serviceIndex}
-              className='text-2xl text-black border-b odd:bg-white even:bg-gray-200'
-            >
-              <th
-                scope='row'
-                className='px-6 py-8 font-bold text-gray-900 whitespace-nowrap'
-              >
-                <ul className='max-w-xl space-y-4 list-none list-inside'>
-                  {service.servicesName.map(
-                    (serviceName: any, detailIndex: any) => (
-                      <li
-                        key={detailIndex}
-                        className={`${
-                          serviceName.name !== null
-                            ? 'text-black'
-                            : serviceIndex % 2 !== 0
-                            ? 'text-gray-200'
-                            : 'text-white'
-                        }`}
-                      >
-                        {serviceName.name}
-                      </li>
-                    ),
-                  )}
-                </ul>
+      <div className='md:hidden'>
+        <ServicesPriceCardCustomized
+          handleQuantityChange={handleQuantityChange}
+          pricingList={pricingList}
+          totalPrice={totalPrice}
+        />
+      </div>
+      <div className='hidden md:block'>
+        <table className='w-full text-left text-black border rounded-md rtl:text-right'>
+          <thead className='text-2xl uppercase !bg-primary'>
+            <tr>
+              <th scope='col' className='px-6 py-10'>
+                Service Name
               </th>
-              <td className='px-6 py-8'>
-                <div>
-                  <ul className='max-w-xl space-y-6 list-disc list-outside'>
-                    {service.serviceDetails.map((items: any, i: any) => (
-                      <div key={i}>
-                        <li>{items.services}</li>
-                      </div>
-                    ))}
-                  </ul>
-                </div>
-              </td>
-              <td className='px-6 py-8'>
-                <div>
-                  <ul className='max-w-xl space-y-6 list-none list-inside '>
-                    {service.unitPrice.map(
-                      (priceItem: any, detailIndex: any) => (
-                        <div key={detailIndex}>
-                          <li
-                            className={` text-center ${
-                              priceItem?.price !== null
-                                ? 'text-black'
-                                : serviceIndex % 2 !== 0
-                                ? 'text-gray-200'
-                                : 'text-white'
-                            }`}
-                          >
-                            {priceItem?.price}
-                          </li>
-                        </div>
+              <th scope='col' className='px-8 py-10'>
+                Service Details
+              </th>
+              <th scope='col' className='px-6 py-10 text-center'>
+                Unit Price
+              </th>
+              <th scope='col' className='px-6 py-10 text-center'>
+                Quantity
+              </th>
+              <th scope='col' className='px-0 py-10 text-center'>
+                Estimated Total Price
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {pricingList.map((service: any, serviceIndex: any) => (
+              <tr
+                key={serviceIndex}
+                className='text-2xl text-black border-b odd:bg-white even:bg-gray-200'
+              >
+                <th
+                  scope='row'
+                  className='px-6 py-8 font-bold text-gray-900 whitespace-nowrap'
+                >
+                  <ul className='max-w-xl space-y-4 list-none list-inside'>
+                    {service.servicesName.map(
+                      (serviceName: any, detailIndex: any) => (
+                        <li
+                          key={detailIndex}
+                          className={`${
+                            serviceName.name !== null
+                              ? 'text-black'
+                              : serviceIndex % 2 !== 0
+                              ? 'text-gray-200'
+                              : 'text-white'
+                          }`}
+                        >
+                          {serviceName.name}
+                        </li>
                       ),
                     )}
                   </ul>
-                </div>
-              </td>
-
-              <td className='px-6 py-8 text-center '>
-                <div>
-                  <ul className='max-w-md space-y-4 list-none list-inside '>
-                    {service.quantity.map(
-                      (quantityItem: any, detailIndex: any) => (
-                        <div key={detailIndex}>
-                          {quantityItem?.quantitys !== null ? (
-                            <input
-                              type='number'
-                              value={quantityItem?.quantitys || 0}
-                              onChange={(e) =>
-                                handleQuantityChange(
-                                  serviceIndex,
-                                  detailIndex,
-                                  e.target.value,
-                                )
-                              }
-                              className='w-20 p-1 text-center border border-gray-300 rounded-md'
-                            />
-                          ) : (
-                            <p
-                              className={`${
-                                serviceIndex % 2 !== 0
+                </th>
+                <td className='px-6 py-8'>
+                  <div>
+                    <ul
+                      className={`max-w-xl space-y-6 list-outside ${
+                        service.serviceDetails.length !== 0
+                          ? 'list-disc '
+                          : 'list-none'
+                      }`}
+                    >
+                      {service.serviceDetails.map((items: any, i: any) => (
+                        <div key={i}>
+                          <li>{items.services}</li>
+                        </div>
+                      ))}
+                    </ul>
+                  </div>
+                </td>
+                <td className='px-6 py-8'>
+                  <div>
+                    <ul className='max-w-xl space-y-6 list-none list-inside '>
+                      {service.unitPrice.map(
+                        (priceItem: any, detailIndex: any) => (
+                          <div key={detailIndex}>
+                            <li
+                              className={` text-center ${
+                                priceItem?.price !== null
+                                  ? 'text-black'
+                                  : serviceIndex % 2 !== 0
                                   ? 'text-gray-200'
                                   : 'text-white'
                               }`}
                             >
-                              $
-                            </p>
-                          )}
-                        </div>
-                      ),
-                    )}
-                  </ul>
-                </div>
-              </td>
+                              {priceItem?.price}
+                            </li>
+                          </div>
+                        ),
+                      )}
+                    </ul>
+                  </div>
+                </td>
 
-              <td className='px-6 py-8'>
-                <div>
-                  <ul className='max-w-xl space-y-6 list-none list-inside'>
-                    {service.estimatedTotalPrice.map(
-                      (totalPriceItem: any, detailIndex: any) => (
-                        <div key={detailIndex}>
-                          <li
-                            className={`text-center ${
-                              totalPriceItem?.totalPrice !== null
-                                ? 'text-black'
-                                : serviceIndex % 2 !== 0
-                                ? 'text-gray-200'
-                                : 'text-white'
-                            }`}
-                          >
-                            {totalPriceItem?.totalPrice}
-                          </li>
-                        </div>
-                      ),
-                    )}
-                  </ul>
-                </div>
-              </td>
+                <td className='px-6 py-8 text-center '>
+                  <div>
+                    <ul className='max-w-md space-y-4 list-none list-inside '>
+                      {service.quantity.map(
+                        (quantityItem: any, detailIndex: any) => (
+                          <div key={detailIndex}>
+                            {quantityItem?.quantitys !== null ? (
+                              <input
+                                type='number'
+                                value={quantityItem?.quantitys || 0}
+                                onChange={(e) =>
+                                  handleQuantityChange(
+                                    serviceIndex,
+                                    detailIndex,
+                                    e.target.value,
+                                  )
+                                }
+                                className='w-20 p-1 text-center border border-gray-300 rounded-md'
+                              />
+                            ) : (
+                              <p
+                                className={`${
+                                  serviceIndex % 2 !== 0
+                                    ? 'text-gray-200'
+                                    : 'text-white'
+                                }`}
+                              ></p>
+                            )}
+                          </div>
+                        ),
+                      )}
+                    </ul>
+                  </div>
+                </td>
+
+                <td className='px-6 py-8'>
+                  <div>
+                    <ul className='max-w-xl space-y-6 list-none list-inside'>
+                      {service.estimatedTotalPrice.map(
+                        (totalPriceItem: any, detailIndex: any) => (
+                          <div key={detailIndex}>
+                            <li
+                              className={`text-center ${
+                                totalPriceItem?.totalPrice !== null
+                                  ? 'text-black'
+                                  : serviceIndex % 2 !== 0
+                                  ? 'text-gray-200'
+                                  : 'text-white'
+                              }`}
+                            >
+                              {totalPriceItem?.totalPrice}
+                            </li>
+                          </div>
+                        ),
+                      )}
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+          <thead className='text-2xl uppercase gray-700 !bg-orange-50'>
+            <tr>
+              <th scope='col' className='px-6 py-6'></th>
+              <th scope='col' className='px-8 py-6'></th>
+              <th scope='col' className='px-6 py-6'>
+                Total
+              </th>
+              <th scope='col' className='px-6 py-6'></th>
+              <th scope='col' className='px-0 py-6'>
+                ${totalPrice}
+              </th>
             </tr>
-          ))}
-        </tbody>
-        <thead className='text-2xl uppercase gray-700 !bg-orange-50'>
-          <tr>
-            <th scope='col' className='px-6 py-6'></th>
-            <th scope='col' className='px-8 py-6'></th>
-            <th scope='col' className='px-6 py-6'>
-              Total
-            </th>
-            <th scope='col' className='px-6 py-6'></th>
-            <th scope='col' className='px-0 py-6'>
-              ${totalPrice}
-            </th>
-          </tr>
-        </thead>
-      </table>
+          </thead>
+        </table>
+      </div>
     </div>
   );
 };

@@ -41,9 +41,9 @@ interface FormValue {
 }
 
 interface Props {
-  estimatedTotalPrice: any;
+  estimatedTotalPrice: number | null;
   clientInfo: FormValue;
-  customizedPricingList: Array<Service>;
+  customizedPricingList: Service[];
 }
 
 declare module 'jspdf' {
@@ -59,6 +59,11 @@ const DownloadPdf: React.FC<Props> = ({
 }) => {
   const router = useRouter();
 
+  const formatPrice = (value: any): string => {
+    const numericValue = parseFloat(value);
+    return isNaN(numericValue) ? '' : numericValue.toFixed(2);
+  };
+
   const generatePDF = () => {
     const doc = new jsPDF('portrait', 'mm', 'a4');
     const pageWidth = doc.internal.pageSize.getWidth();
@@ -73,27 +78,30 @@ const DownloadPdf: React.FC<Props> = ({
     // Add Company Information
     doc.setFontSize(7);
     // Left Part
-    doc.text(`Business Name: ${clientInfo?.businessName}`, 20, 30);
-    doc.text(`Partner Name: ${clientInfo?.partnerName}`, 20, 35);
-    doc.text(`Email: ${clientInfo?.email}`, 20, 40);
+    doc.text(`Business Name: ${clientInfo?.businessName || ''}`, 20, 30);
+    doc.text(`Partner Name: ${clientInfo?.partnerName || ''}`, 20, 35);
+    doc.text(`Email: ${clientInfo?.email || ''}`, 20, 40);
     // Right Part
-    doc.text(`Phone: ${clientInfo?.phone}`, pageWidth - 80, 30);
-    doc.text(`Website: ${clientInfo?.website}`, pageWidth - 80, 35);
-    doc.text(`Address: ${clientInfo?.address}`, pageWidth - 80, 40);
+    doc.text(`Phone: ${clientInfo?.phone || ''}`, pageWidth - 80, 30);
+    doc.text(`Website: ${clientInfo?.website || ''}`, pageWidth - 80, 35);
+    doc.text(`Address: ${clientInfo?.address || ''}`, pageWidth - 80, 40);
 
     // Prepare the table rows with alternating row colors
-    const rows: string[][] = [];
-    customizedPricingList?.forEach((service) => {
-      service.serviceDetails.forEach((detail: any, index: any) => {
-        rows.push([
-          service.servicesName[index]?.name || '',
-          detail.services || '',
-          service.unitPrice[index]?.price?.toFixed(2) || '',
-          service.quantity[index]?.quantitys?.toString() || '',
-          service.estimatedTotalPrice[index]?.totalPrice?.toFixed(2) || '',
-        ]);
-      });
-    });
+    const rows: string[][] = customizedPricingList?.reduce(
+      (acc: string[][], service: Service) => {
+        service.serviceDetails.forEach((detail, index) => {
+          acc.push([
+            service.servicesName[index]?.name || '',
+            detail.services || '',
+            formatPrice(service.unitPrice[index]?.price),
+            service.quantity[index]?.quantitys?.toString() || '',
+            formatPrice(service.estimatedTotalPrice[index]?.totalPrice),
+          ]);
+        });
+        return acc;
+      },
+      [],
+    );
 
     // Add headers and rows to table with custom colors
     doc.autoTable({
@@ -127,8 +135,9 @@ const DownloadPdf: React.FC<Props> = ({
 
     // Total amount (centered below the table)
     doc.setFontSize(5);
+    const totalAmount = formatPrice(estimatedTotalPrice);
     doc.text(
-      `Total Amount: $${estimatedTotalPrice}`,
+      `Total Amount: $${totalAmount}`,
       pageWidth / 2,
       (doc as any).autoTable.previous.finalY + 10,
       { align: 'center' },
@@ -143,7 +152,7 @@ const DownloadPdf: React.FC<Props> = ({
     <div>
       <button
         onClick={generatePDF}
-        className='btn text-base !py-6 !px-8 r-button border-2 border-primary hover:text-primary w-[180px] !text-center'
+        className='!py-4 md:!py-4 flex items-center gap-2 sm:gap-4 md:gap-8 px-[3rem] justify-center md:justify-start border-2 bg-primary border-primary rounded-full hover:rounded-full text-white hover:bg-transparent hover:text-primary a-button'
       >
         Download Plan
       </button>
