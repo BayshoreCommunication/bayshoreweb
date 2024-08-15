@@ -105,7 +105,7 @@ const DownloadPdf: React.FC<Props> = ({
 
     // Add headers and rows to table with custom colors
     doc.autoTable({
-      startY: 45, // Adjust the starting Y position based on the content above
+      startY: 43, // Adjust the starting Y position based on the content above
       head: [
         [
           'Service Name',
@@ -118,7 +118,7 @@ const DownloadPdf: React.FC<Props> = ({
       body: rows,
       theme: 'plain', // Use 'plain' to remove grid lines
       styles: {
-        fontSize: 5,
+        fontSize: 4,
       },
       headStyles: {
         fillColor: '#FE641A',
@@ -134,7 +134,7 @@ const DownloadPdf: React.FC<Props> = ({
     });
 
     // Total amount (centered below the table)
-    doc.setFontSize(5);
+    doc.setFontSize(4);
     const totalAmount = formatPrice(estimatedTotalPrice);
     doc.text(
       `Total Amount: $${totalAmount}`,

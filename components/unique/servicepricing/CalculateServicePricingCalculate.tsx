@@ -121,7 +121,7 @@ const CalculateServicePricingCalculate: React.FC<Props> = ({
   // };
 
   return (
-    <div className='relative p-10 overflow-x-auto overflow-y-auto shadow-md bg-gray-50 md:rounded-lg'>
+    <div className='relative p-0 overflow-x-auto overflow-y-auto shadow-md md:p-10 bg-gray-50 md:rounded-lg'>
       <div className='flex flex-col items-center justify-center'>
         <Image
           src='/assets/bayshore-logo.svg'

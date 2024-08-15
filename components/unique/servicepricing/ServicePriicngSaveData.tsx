@@ -40,7 +40,7 @@ const ServicePricingSaveData: React.FC<Props> = ({
 }) => {
   return (
     <>
-      <div className='relative p-10 overflow-x-auto overflow-y-auto shadow-md bg-gray-0 md:rounded-lg bg-gray-50'>
+      <div className='relative p-0 overflow-x-auto overflow-y-auto shadow-md md:p-10 bg-gray-0 md:rounded-lg bg-gray-50'>
         <div className='flex flex-col items-center justify-center'>
           <Image
             src='/assets/bayshore-logo.svg'
@@ -220,7 +220,7 @@ const ServicePricingSaveData: React.FC<Props> = ({
                 </th>
                 <th scope='col' className='px-6 py-6'></th>
                 <th scope='col' className='px-0 py-6'>
-                  {estimatedTotalPrice}
+                  ${estimatedTotalPrice}
                 </th>
               </tr>
             </thead>
