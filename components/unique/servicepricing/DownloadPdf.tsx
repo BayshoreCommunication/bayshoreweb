@@ -76,7 +76,7 @@ const DownloadPdf: React.FC<Props> = ({
     doc.addImage(logoUrl, 'PNG', logoX, 10, logoWidth, logoHeight);
 
     // Add Company Information
-    doc.setFontSize(7);
+    doc.setFontSize(4);
     // Left Part
     doc.text(`Business Name: ${clientInfo?.businessName || ''}`, 20, 30);
     doc.text(`Partner Name: ${clientInfo?.partnerName || ''}`, 20, 35);
@@ -135,7 +135,8 @@ const DownloadPdf: React.FC<Props> = ({
     });
 
     // Total amount (centered below the table)
-    doc.setFontSize(4);
+    doc.setFontSize(14);
+    doc.setFont('helvetica', 'bold');
     const totalAmount = formatPrice(estimatedTotalPrice);
     doc.text(
       `Total Amount: $${totalAmount}`,
