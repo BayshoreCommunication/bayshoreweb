@@ -27,10 +27,6 @@ const ServicePricingPlanCustomized: React.FC = () => {
   const [totalPrice, setTotalPrice] = useState<string>('0');
   const [openPreview, setOpenPreview] = useState<boolean>(false);
 
-  const handleOpenPreview = () => {
-    setOpenPreview(!openPreview);
-  };
-
   const [formValues, setFormValues] = useState({
     businessName: '',
     partnerName: '',
@@ -40,7 +36,17 @@ const ServicePricingPlanCustomized: React.FC = () => {
     address: '',
   });
 
-  console.log('check form value', formValues);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Smooth scrolling
+    });
+  };
+
+  const handleOpenPreview = () => {
+    setOpenPreview(!openPreview);
+    scrollToTop();
+  };
 
   return (
     <>

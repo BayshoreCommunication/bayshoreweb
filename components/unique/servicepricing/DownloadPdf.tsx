@@ -69,14 +69,14 @@ const DownloadPdf: React.FC<Props> = ({
     const pageWidth = doc.internal.pageSize.getWidth();
 
     // Add Logo (centered at the top)
-    const logoUrl = '/bayshore-logo.png'; // Replace with your logo URL
+    const logoUrl = '/bayshore-logo.png';
     const logoWidth = 40;
     const logoHeight = 12;
     const logoX = (pageWidth - logoWidth) / 2;
     doc.addImage(logoUrl, 'PNG', logoX, 10, logoWidth, logoHeight);
 
     // Add Company Information
-    doc.setFontSize(4);
+    doc.setFontSize(5);
     // Left Part
     doc.text(`Business Name: ${clientInfo?.businessName || ''}`, 20, 30);
     doc.text(`Partner Name: ${clientInfo?.partnerName || ''}`, 20, 35);
@@ -105,7 +105,7 @@ const DownloadPdf: React.FC<Props> = ({
 
     // Add headers and rows to table with custom colors
     doc.autoTable({
-      startY: 43, // Adjust the starting Y position based on the content above
+      startY: 43,
       head: [
         [
           'Service Name',
@@ -135,7 +135,7 @@ const DownloadPdf: React.FC<Props> = ({
     });
 
     // Total amount (centered below the table)
-    doc.setFontSize(14);
+    doc.setFontSize(12);
     doc.setFont('helvetica', 'bold');
     const totalAmount = formatPrice(estimatedTotalPrice);
     doc.text(
