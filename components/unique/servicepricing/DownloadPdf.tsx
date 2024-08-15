@@ -116,10 +116,11 @@ const DownloadPdf: React.FC<Props> = ({
         ],
       ],
       body: rows,
-      theme: 'plain', // Use 'plain' to remove grid lines
+      theme: 'striped',
       styles: {
         fontSize: 4,
       },
+
       headStyles: {
         fillColor: '#FE641A',
         textColor: '#FFFFFF',
