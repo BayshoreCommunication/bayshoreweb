@@ -57,7 +57,7 @@ const WebsitesDevelopment = () => {
           {websiteData.map((item, index) => (
             <div
               key={index}
-              className="timeline-item w-full lg:max-w-[70%] mx-auto"
+              className="timeline-item w-full lg:max-w-[60%] mx-auto"
             >
               <Image
                 src={item.img}

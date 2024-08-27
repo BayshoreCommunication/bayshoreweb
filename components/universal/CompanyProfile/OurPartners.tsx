@@ -10,7 +10,7 @@ const OurPartners = () => {
           Our Partners
         </h2>
         <div className="flex flex-col gap-10">
-          <div className="timeline-item w-full lg:max-w-[70%] mx-auto">
+          <div className="timeline-item w-full lg:max-w-[60%] mx-auto">
             <Image
               src="/assets/company-profile/our-partners.png"
               alt=""
