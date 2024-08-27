@@ -55,7 +55,7 @@ const valueData = [
 
 const CoreValue = () => {
   return (
-    <div className="relative min-h-screen w-full">
+    <div className="relative h-[60vh] md:h-[78vh] lg:h-[110vh] xl:h-[130vh] w-full ">
       {/* Background Image */}
       <Image
         src="/assets/company-profile/core-value-bg.png"
@@ -66,9 +66,9 @@ const CoreValue = () => {
         className="z-0"
       />
 
-      <SectionLayout bg="py-0 lg:py-16">
-        <div className="relative z-10 ">
-          <div className="w-full lg:w-[60%] mx-auto text-center mb-14">
+      <SectionLayout bg="">
+        <div className="absolute inset-0 flex flex-col items-center justify-center z-10 py-0 lg:py-16 px-6">
+          <div className="w-full  lg:w-[60%] mx-auto text-center mb-14">
             <h3 className="text-[28px] md:text-40px lg:text-[50px] px-14 text-white font-semibold mb-4 lg:mb-8 text-center w-full">
               Our Core Value
             </h3>

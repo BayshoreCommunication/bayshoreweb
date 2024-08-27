@@ -4,7 +4,7 @@ import SectionLayout from "../SectionLayout";
 
 const CPHeader = () => {
   return (
-    <div className="relative h-screen w-full">
+    <div className="relative h-[90vh]  xl:-[100vh]  w-full">
       {/* Background Image */}
       <Image
         src="/assets/company-profile/header-bg.png"
@@ -25,7 +25,7 @@ const CPHeader = () => {
             width={300}
             height={100}
             quality={100}
-            className="w-1/2 lg:w-full mx-auto"
+            className="w-1/3 mx-auto"
           />
         </div>
 
@@ -37,7 +37,7 @@ const CPHeader = () => {
           </h1>
         </div>
 
-        <div className="text-center mt-10">
+        <div className="text-center mt-10 lg:mt-20">
           <h3 className="text-white text-[28px] md:text-40px lg:text-[50px] px-14 font-medium pb-4">
             Achieve Growth, Online Success
           </h3>

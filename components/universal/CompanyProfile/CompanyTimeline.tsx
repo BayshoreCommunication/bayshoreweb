@@ -55,7 +55,7 @@ const timelineData = [
 
 const CompanyTimeline = () => {
   return (
-    <div className="relative h-[60vh] lg:h-[100vh] w-full">
+    <div className="relative h-[45vh] md:h-[60vh] lg:h-[80vh] xl:h-[110vh] w-full">
       {/* Background Image */}
       <Image
         src="/assets/company-profile/company-timeline-bg.png"
