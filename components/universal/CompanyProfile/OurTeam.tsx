@@ -138,13 +138,13 @@ const OurTeam = () => {
         className="z-0"
       />
 
-      <SectionLayout bg="py-16">
+      <SectionLayout bg="py-0 lg:py-16">
         <div className="relative z-10 ">
           <div className="w-full lg:w-[60%] mx-auto text-center mb-14">
-            <h3 className="text-2xl md:text-4xl lg:text-6xl text-white font-semibold mb-4 lg:mb-8 text-center w-full">
+            <h3 className="text-[28px] md:text-40px lg:text-[50px] px-14 text-white font-semibold mb-4 lg:mb-8 text-center w-full">
               Our Team
             </h3>
-            <p className="text-[20px] text-white">
+            <p className="text-[16px] lg:text-[20px] text-white">
               Bayshore Communication is proud to have a diverse and talented
               team of 40 professionals, each contributing their expertise across
               various domains. Our team includes:
@@ -160,7 +160,7 @@ const OurTeam = () => {
                   height={200}
                   className="mx-auto rounded-full"
                 />
-                <h3 className="mt-4 text-[20px] font-bold text-white">
+                <h3 className="mt-4 text-[18px] lg:text-[20px] font-bold text-white">
                   {member.name}
                 </h3>
                 <p className="text-white">{member.designation}</p>
@@ -169,12 +169,12 @@ const OurTeam = () => {
           </div>
           <div className="flex flex-col lg:flex-row gap-20">
             {/* Software Engineer Team */}
-            <div className="p-10 md:p-14 lg:p-20 bg-[#222222] rounded-[60px] overflow-hidden flex flex-1 items-center">
+            <div className="p-10 md:p-14 lg:p-20 bg-[#222222] rounded-[30px] lg:rounded-[60px] overflow-hidden flex flex-1 items-center">
               <div className="flex flex-col gap-8">
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Software Engineer Team:
                     </h4>
                     <p className="text-[16px]">
@@ -186,7 +186,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Web Developer Team:
                     </h4>
                     <p className="text-[16px]">
@@ -198,7 +198,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       UI/UX Engineers:
                     </h4>
                     <p className="text-[16px]">
@@ -210,7 +210,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Business Analysts:
                     </h4>
                     <p className="text-[16px]">
@@ -222,7 +222,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Project Managers:
                     </h4>
                     <p className="text-[16px]">
@@ -234,7 +234,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Digital Marketing Team:
                     </h4>
                     <p className="text-[16px]">
@@ -246,7 +246,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Community Management Team:
                     </h4>
                     <p className="text-[16px]">
@@ -258,12 +258,12 @@ const OurTeam = () => {
               </div>
             </div>
             {/* Graphic Design Team: */}
-            <div className="p-10 md:p-14 lg:p-20 bg-[#222222] rounded-[60px] overflow-hidden flex  flex-1 items-center">
+            <div className="p-10 md:p-14 lg:p-20 bg-[#222222] rounded-[30px] lg:rounded-[60px] overflow-hidden flex  flex-1 items-center">
               <div className="flex flex-col gap-8">
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Graphic Design Team:
                     </h4>
                     <p className="text-[16px]">
@@ -275,7 +275,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Video Production Team:
                     </h4>
                     <p className="text-[16px]">
@@ -287,7 +287,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Video Editing Team:
                     </h4>
                     <p className="text-[16px]">
@@ -299,7 +299,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Content Writing Team:
                     </h4>
                     <p className="text-[16px]">
@@ -311,7 +311,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Offshore Team:
                     </h4>
                     <p className="text-[16px]">
@@ -323,7 +323,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Sales and Marketing Team:
                     </h4>
                     <p className="text-[16px]">
@@ -335,7 +335,7 @@ const OurTeam = () => {
                 <div className="flex gap-6">
                   <div className="w-5 h-5 bg-[#F77224] rounded-full mt-[8px] flex-shrink-0"></div>
                   <div className="text-white">
-                    <h4 className="text-[20px] font-medium mb-3">
+                    <h4 className="text-[16px] lg:text-[20px] font-medium mb-3">
                       Client Communication & Reporting Team:{" "}
                     </h4>
                     <p className="text-[16px]">
@@ -349,7 +349,7 @@ const OurTeam = () => {
             </div>
           </div>
           <div className="w-full lg:w-[60%] mx-auto text-center mt-20">
-            <p className="text-[20px] text-white">
+            <p className="text-[16px] lg:text-[20px] text-white">
               Our dedicated team works collaboratively to deliver exceptional
               results, combining creativity, technical prowess, and strategic
               insight to help our clients achieve their goals.

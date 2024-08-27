@@ -66,13 +66,13 @@ const CoreValue = () => {
         className="z-0"
       />
 
-      <SectionLayout bg="py-16">
+      <SectionLayout bg="py-0 lg:py-16">
         <div className="relative z-10 ">
           <div className="w-full lg:w-[60%] mx-auto text-center mb-14">
-            <h3 className="text-2xl md:text-4xl lg:text-6xl text-white font-semibold mb-4 lg:mb-8 text-center w-full">
+            <h3 className="text-[28px] md:text-40px lg:text-[50px] px-14 text-white font-semibold mb-4 lg:mb-8 text-center w-full">
               Our Core Value
             </h3>
-            <p className="text-[20px] text-white">
+            <p className="text-[16px] lg:text-[20px] text-white">
               At Bayshore Communication, our core values guide our actions and
               define our approach to business. These values are the foundation
               of our success and the principles we uphold in every project
@@ -104,7 +104,7 @@ const CoreValue = () => {
             ))}
           </div> */}
           <div className="w-full lg:w-[60%] mx-auto text-center">
-            <p className="text-[20px] text-white">
+            <p className="text-[16px] lg:text-[20px] text-white">
               These core values are embedded in everything we do, driving us to
               deliver excellence and create lasting partnerships with our
               clients.

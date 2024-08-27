@@ -55,7 +55,7 @@ const timelineData = [
 
 const CompanyTimeline = () => {
   return (
-    <div className="relative min-h-screen w-full">
+    <div className="relative h-[60vh] lg:h-[100vh] w-full">
       {/* Background Image */}
       <Image
         src="/assets/company-profile/company-timeline-bg.png"
@@ -66,9 +66,9 @@ const CompanyTimeline = () => {
         className="z-0"
       />
 
-      <SectionLayout bg="py-16">
-        <div className="relative z-10 ">
-          <h3 className="text-2xl md:text-4xl lg:text-6xl text-white font-semibold mb-4 lg:mb-8 text-center w-full">
+      <SectionLayout bg="">
+        <div className="absolute inset-0 flex flex-col  items-center justify-center gap-3 z-10">
+          <h3 className="text-[28px] md:text-40px lg:text-[50px] px-14 text-white font-semibold  text-center w-full">
             Company Timeline
           </h3>
           {/* <div className="hidden lg:block"> */}

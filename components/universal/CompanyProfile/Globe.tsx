@@ -5,7 +5,7 @@ const GlobeClients = () => {
   return (
     <SectionLayout bg="pt-16">
       <div>
-        <h2 className="text-white text-center text-2xl md:text-4xl lg:text-6xl font-medium uppercase mb-8">
+        <h2 className="text-white text-center text-[28px] md:text-40px lg:text-[50px] px-14 font-medium uppercase mb-8">
           Worked with{" "}
           <span className="text-[#FF7422] text-3xl md:text-5xl lg:text-8xl">
             Partners

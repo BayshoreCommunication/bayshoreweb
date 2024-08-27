@@ -8,7 +8,7 @@ const FAQ = () => {
   return (
     <SectionLayout bg="py-10">
       <div>
-        <h2 className="text-[50px] font-medium text-white text-center mb-10 uppercase">
+        <h2 className="text-[28px] md:text-40px lg:text-[50px] font-medium text-white text-center mb-10 uppercase">
           Asked Questions
         </h2>
         <div className="flex flex-col lg:flex-row-reverse items-center">

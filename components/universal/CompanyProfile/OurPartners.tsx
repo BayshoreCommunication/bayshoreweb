@@ -6,7 +6,7 @@ const OurPartners = () => {
   return (
     <div>
       <SectionLayout bg="">
-        <h2 className="text-[50px] font-medium text-white text-center mb-10 uppercase">
+        <h2 className="text-[28px] md:text-40px lg:text-[50px] font-medium text-white text-center mb-10 uppercase">
           Our Partners
         </h2>
         <div className="flex flex-col gap-10">

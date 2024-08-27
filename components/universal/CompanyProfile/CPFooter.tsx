@@ -7,7 +7,7 @@ import { MdOutlineEmail } from "react-icons/md";
 
 const CPFooter = () => {
   return (
-    <div className="relative h-[230vh] lg:h-[100vh] xl:[90vh] w-full">
+    <div className="relative h-[110vh] lg:h-[100vh] xl:[90vh] w-full">
       {/* Background Image */}
       <Image
         src="/assets/company-profile/footer-bg.png"
@@ -23,7 +23,7 @@ const CPFooter = () => {
         {/* Title Text */}
         <SectionLayout bg="">
           <div className=" w-full   lg:py-20 lg:px-10 text-center bg-[rgba(0,0,0,0.6)] p-4 rounded-lg">
-            <h1 className="text-white md:text-6xl lg:!text-[70px] font-bold uppercase ">
+            <h1 className="text-white text-[28px] md:text-40px lg:text-[50px] px-16 font-bold uppercase ">
               THANK YOU
             </h1>
           </div>
@@ -33,27 +33,29 @@ const CPFooter = () => {
           <div className="flex flex-col lg:flex-row items-center justify-between">
             {/* Tampa Office */}
             <div className="w-full lg:w-1/2 text-center px-8">
-              <h4 className="text-[40px] font-bold text-white mb-8">
+              <h4 className="text-[28px] md:text-40px lg:text-[50px] text-white mb-8">
                 Tampa Office
               </h4>
 
               <div className="mb-8">
                 <div className="flex gap-2 items-center justify-center mb-2">
                   <IoCallOutline size={30} color="#F77224" />{" "}
-                  <span className="text-[30px] font-semibold text-white">
+                  <span className="text-[24px] lg:text-[30px] font-semibold text-white">
                     Phone
                   </span>
                 </div>
-                <p className="text-[22px] text-white">+1 (509) 592-1745</p>
+                <p className="text-[16px] md:text-[18px] lg:text-[22px] text-white">
+                  +1 (509) 592-1745
+                </p>
               </div>
               <div className="mb-8">
                 <div className="flex gap-2 items-center justify-center mb-2">
                   <GrLocation size={30} color="#F77224" />{" "}
-                  <span className="text-[30px] font-semibold text-white">
+                  <span className="text-[24px] lg:text-[30px] font-semibold text-white">
                     Address
                   </span>
                 </div>
-                <p className="text-[22px] text-white">
+                <p className="text-[16px] md:text-[18px] lg:text-[22px] text-white">
                   1301 34th ST South, St. Petersburg FL 33711
                 </p>
               </div>
@@ -61,11 +63,11 @@ const CPFooter = () => {
               <div className="mb-8">
                 <div className="flex gap-2 items-center justify-center mb-2">
                   <MdOutlineEmail size={30} color="#F77224" />{" "}
-                  <span className="text-[30px] font-semibold text-white">
+                  <span className="text-[24px] lg:text-[30px] font-semibold text-white">
                     Email
                   </span>
                 </div>
-                <p className="text-[22px] text-white">
+                <p className="text-[16px] md:text-[18px] lg:text-[22px] text-white">
                   neel@bayshorecommunication.com
                 </p>
               </div>
@@ -76,27 +78,29 @@ const CPFooter = () => {
 
             {/* Asia Office */}
             <div className="w-full lg:w-1/2 text-center px-8">
-              <h4 className="text-[40px] font-bold text-white mb-8">
+              <h4 className="text-[28px] md:text-40px lg:text-[50px] text-white mb-8">
                 Asia Office
               </h4>
 
               <div className="mb-8">
                 <div className="flex gap-2 items-center justify-center mb-2">
                   <IoCallOutline size={30} color="#F77224" />{" "}
-                  <span className="text-[30px] font-semibold text-white">
+                  <span className="text-[24px] lg:text-[30px] font-semibold text-white">
                     Phone
                   </span>
                 </div>
-                <p className="text-[22px] text-white">+880 168-503-5449</p>
+                <p className="text-[16px] md:text-[18px] lg:text-[22px] text-white">
+                  +880 168-503-5449
+                </p>
               </div>
               <div className="mb-8">
                 <div className="flex gap-2 items-center justify-center mb-2">
                   <GrLocation size={30} color="#F77224" />{" "}
-                  <span className="text-[30px] font-semibold text-white">
+                  <span className="text-[24px] lg:text-[30px] font-semibold text-white">
                     Address
                   </span>
                 </div>
-                <p className="text-[22px] text-white">
+                <p className="text-[16px] md:text-[18px] lg:text-[22px] text-white">
                   F-2, H-21, R-1, B-A, Aftab Nagar, Dhaka-1212
                 </p>
               </div>
@@ -104,11 +108,11 @@ const CPFooter = () => {
               <div className="mb-8">
                 <div className="flex gap-2 items-center justify-center mb-2">
                   <MdOutlineEmail size={30} color="#F77224" />{" "}
-                  <span className="text-[30px] font-semibold text-white">
+                  <span className="text-[24px] lg:text-[30px] font-semibold text-white">
                     Email
                   </span>
                 </div>
-                <p className="text-[22px] text-white">
+                <p className="text-[16px] md:text-[18px] lg:text-[22px] text-white">
                   info@bayshorecommunication.com
                 </p>
               </div>
