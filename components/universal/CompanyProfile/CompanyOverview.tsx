@@ -7,7 +7,7 @@ const CompanyOverview = () => {
     <SectionLayout bg="">
       <div className=" p-10 md:p-12 lg:py-20 lg:px-40 bg-[#222222] rounded-[30px] lg:rounded-[60px] overflow-hidden flex flex-col lg:flex-row items-center gap-14">
         <div className="flex-1 ps-8 lg:ps-14 border-l-4 border-[#FF7422]">
-          <h3 className="text-[28px] md:text-40px lg:text-[50px] px-14 text-white font-medium mb-4 lg:mb-8">
+          <h3 className="text-[24px] md:text-40px lg:text-[50px] text-white text-start font-medium mb-4 lg:mb-8">
             Company Overview
           </h3>
           <p className="text-white font-medium text-[16px]">
