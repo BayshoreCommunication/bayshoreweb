@@ -46,7 +46,7 @@ const Testimonials = () => {
   return (
     <div>
       <SectionLayout bg="">
-        <h2 className="text-[50px] font-medium text-white text-center mb-10 uppercase">
+        <h2 className="text-[28px] md:text-40px lg:text-[50px] font-medium text-white text-center mb-10 uppercase">
           What Our Partners Saying About Us
         </h2>
         <div className="flex flex-col gap-10">
@@ -95,7 +95,7 @@ const Testimonials = () => {
                           <iframe
                             src={client?.video_link}
                             allowFullScreen
-                            className="w-full h-[210px]  lg:h-[300px] rounded-lg"
+                            className="w-full h-[152px]  lg:h-[300px] rounded-lg"
                           />
                         </div>
                       ) : (
@@ -103,7 +103,7 @@ const Testimonials = () => {
                           onClick={() => handlePlay(index)}
                           className="block w-full"
                         >
-                          <div className="relative  rounded-3xl overflow-hidden  w-full">
+                          <div className="relative  rounded-3xl overflow-hidden ">
                             <Image
                               src={client?.video_thumbnail}
                               alt={client?.video_thumbnail}
