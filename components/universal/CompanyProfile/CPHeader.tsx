@@ -25,7 +25,7 @@ const CPHeader = () => {
             width={300}
             height={100}
             quality={100}
-            className="w-1/3 mx-auto"
+            className="w-[30%] mx-auto"
           />
         </div>
 
