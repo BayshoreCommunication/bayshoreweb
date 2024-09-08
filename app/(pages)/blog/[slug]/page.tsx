@@ -2,7 +2,6 @@ import Consultaion from '@/components/universal/Consultaion';
 import { HeroWithImage } from '@/components/universal/Hero';
 import HeroLeft from '@/components/universal/HeroLeft';
 import SectionLayout from '@/components/universal/SectionLayout';
-import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -10,11 +9,6 @@ import parser from 'html-react-parser';
 import AboutUs from '@/components/universal/AboutUs';
 import GetAllBlogData from '@/lib/GetAllBlogData';
 import parse from 'html-react-parser';
-
-// export const metadata: Metadata = {
-//   title: 'Blogs: Expert Tips and Strategies from Our Agency',
-//   description: `You've chosen the best place to learn more about web marketing and how to develop your online presence. Our blog features insightful articles from our team of experts, covering topics such as SEO, social media, content marketing, web design, and more. You'll discover useful tactics and tips that you may use in your own business. By reading our blog, you may keep up with the most recent trends and best practices in the digital world.`,
-// };
 
 interface BlogPost {
   slug: string;
