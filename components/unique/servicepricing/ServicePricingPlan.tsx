@@ -186,6 +186,7 @@ const ServicePricingPlan: React.FC = () => {
         </table>
       </div>
       <div className='flex justify-center pt-20'>
+        {/* <TestTableSectionData /> */}
         <Link
           href={`/customize-plan`}
           className='!py-4 md:!py-4 flex items-center gap-2 sm:gap-4 md:gap-8 px-[3rem] justify-center md:justify-start border-2 bg-primary border-primary rounded-full hover:rounded-full text-white hover:bg-transparent hover:text-primary a-button'
