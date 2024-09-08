@@ -6,10 +6,10 @@ import Link from "next/link";
 
 const AboutBayshore = () => {
   return (
-    <SectionLayout bg="pb-20">
-      <div className=" p-10 md:p-14 lg:py-20 lg:px-40 bg-[#222222] rounded-[60px] overflow-hidden">
+    <SectionLayout bg="lg:pb-20">
+      <div className=" p-10 md:p-14 lg:py-20 lg:px-40 bg-[#222222] rounded-[30px] lg:rounded-[60px] overflow-hidden">
         <div className=" text-center mb-14">
-          <h3 className="text-2xl md:text-4xl lg:text-6xl text-white font-semibold mb-4 lg:mb-8">
+          <h3 className="text-[28px] md:text-40px lg:text-[50px] px-14 text-white font-semibold mb-4 lg:mb-8">
             About Bayshore Communication
           </h3>
           <p className="text-white  text-[18px] mb-5">
@@ -29,7 +29,7 @@ const AboutBayshore = () => {
           </p>
         </div>
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 items-center">
-          <div className="flex gap-8 items-center px-8 py-8  bg-[#313131] rounded-[50px]">
+          <div className="flex flex-col lg:flex-row gap-8 items-center px-8 py-8  bg-[#313131] rounded-[30px] lg:rounded-[50px]">
             <Image
               src="/assets/company-profile/neel.png"
               alt="ARJO NEE"
@@ -48,7 +48,7 @@ const AboutBayshore = () => {
                   beyond mere business transactions.
                 </p>
               </div>
-              <div className="flex gap-4 items-center mt-14">
+              <div className="flex gap-4 items-center mt-6 lg:mt-14">
                 <Link
                   href="#"
                   className="bg-[#F77224] p-3 inline-block rounded-full"
@@ -70,7 +70,7 @@ const AboutBayshore = () => {
               </div>
             </div>
           </div>
-          <div className="flex gap-8 items-center px-8 py-8  bg-[#313131] rounded-[50px]">
+          <div className="flex flex-col lg:flex-row gap-8 items-center px-8 py-8  bg-[#313131] rounded-[30px] lg:rounded-[50px]">
             <Image
               src="/assets/company-profile/salman.png"
               alt="SALMAN H SAIKOTE"
@@ -89,7 +89,7 @@ const AboutBayshore = () => {
                   digital campaigns and  innovation.
                 </p>
               </div>
-              <div className="flex gap-4 items-center mt-14">
+              <div className="flex gap-4 items-center mt-6 lg:mt-14">
                 <Link
                   href="#"
                   className="bg-[#F77224] p-3 inline-block rounded-full"

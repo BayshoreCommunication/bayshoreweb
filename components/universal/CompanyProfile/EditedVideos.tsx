@@ -68,7 +68,7 @@ const EditedVideos = () => {
   return (
     <div className="py-10">
       <SectionLayout bg="">
-        <h2 className="text-[50px] font-medium text-white text-center mb-10">
+        <h2 className="text-[28px] md:text-40px lg:text-[50px] font-medium text-white text-center mb-10">
           Produced & Edited Videos
         </h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20">

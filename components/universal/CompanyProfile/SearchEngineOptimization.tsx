@@ -17,7 +17,7 @@ const seoData = [
 const SearchEngineOptimization = () => {
   return (
     <div className="py-10">
-      <div className="relative h-[50vh] w-full">
+      <div className="relative h-[30vh]  lg:h-[50vh] w-full">
         {/* Background Image */}
         <Image
           src="/assets/company-profile/seo-heading.png"
@@ -33,7 +33,7 @@ const SearchEngineOptimization = () => {
           {/* Title Text */}
           <SectionLayout bg="">
             <div className=" w-full   lg:py-20 lg:px-10 text-center bg-[rgba(0,0,0,0.6)] p-4 rounded-lg">
-              <h1 className="text-white md:text-5xl lg:!text-[60px] font-bold uppercase w-full">
+              <h1 className="text-white text-[28px] md:text-40px lg:text-[50px] px-14 font-bold uppercase w-full">
                 SEARCH ENGINE OPTIMIZATION
               </h1>
             </div>
@@ -45,7 +45,7 @@ const SearchEngineOptimization = () => {
           {seoData.map((item, index) => (
             <div
               key={index}
-              className="timeline-item w-full lg:max-w-[70%] mx-auto"
+              className="timeline-item w-full lg:max-w-[60%] mx-auto"
             >
               <Image
                 src={item.img}
