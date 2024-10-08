@@ -1,10 +1,11 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import CalculateServicePricingCalculate from './CalculateServicePricingCalculate';
-import { InitialPricingList } from './initialPricingList';
-import ServicePriicngSaveData from './ServicePriicngSaveData';
-import ServicesPriceCard from './ServicesPriceCard';
+import React, { useState } from "react";
+import CalculateServicePricingCalculate from "./CalculateServicePricingCalculate";
+// import { InitialPricingList } from './initialPricingList';
+import ServicePriicngSaveData from "./ServicePriicngSaveData";
+import ServicesPriceCard from "./ServicesPriceCard";
+import { InitialPricingList } from "./initialPricingListMain";
 
 interface ServiceDetail {
   name: number | string | null;
@@ -15,31 +16,30 @@ interface ServiceDetail {
 }
 
 interface Service {
-  servicesName: ServiceDetail[];
-  serviceDetails: ServiceDetail[];
-  unitPrice: ServiceDetail[];
-  quantity: ServiceDetail[];
-  estimatedTotalPrice: ServiceDetail[];
+  servicesName: string | null;
+  serviceDetails: string | null;
+  unitPrice: number | null;
+  quantity: number | null;
+  estimatedTotalPrice: number | null;
 }
-
 const ServicePricingPlanCustomized: React.FC = () => {
   const [pricingList, setPricingList] = useState(InitialPricingList);
-  const [totalPrice, setTotalPrice] = useState<string>('0');
+  const [totalPrice, setTotalPrice] = useState<string>("0");
   const [openPreview, setOpenPreview] = useState<boolean>(false);
 
   const [formValues, setFormValues] = useState({
-    businessName: '',
-    partnerName: '',
-    email: '',
-    phone: '',
-    website: '',
-    address: '',
+    businessName: "",
+    partnerName: "",
+    email: "",
+    phone: "",
+    website: "",
+    address: "",
   });
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth', // Smooth scrolling
+      behavior: "smooth", // Smooth scrolling
     });
   };
 
@@ -50,7 +50,7 @@ const ServicePricingPlanCustomized: React.FC = () => {
 
   return (
     <>
-      <div className='px-0 pt-16 pb-16 md:px-36'>
+      <div className="px-0 pt-16 pb-16 md:px-36">
         {openPreview ? (
           <ServicePriicngSaveData
             customizedPricingList={pricingList}
@@ -68,10 +68,10 @@ const ServicePricingPlanCustomized: React.FC = () => {
               formValues={formValues}
               setFormValues={setFormValues}
             />
-            <div className='flex justify-center pt-20'>
+            <div className="flex justify-center pt-20">
               <button
                 onClick={handleOpenPreview}
-                className='!py-4 md:!py-4 flex items-center gap-2 sm:gap-4 md:gap-8 px-[3rem] justify-center md:justify-start border-2 bg-primary border-primary rounded-full hover:rounded-full text-white hover:bg-transparent hover:text-primary a-button'
+                className="!py-4 md:!py-4 flex items-center gap-2 sm:gap-4 md:gap-8 px-[3rem] justify-center md:justify-start border-2 bg-primary border-primary rounded-full hover:rounded-full text-white hover:bg-transparent hover:text-primary a-button"
               >
                 Save Plan
               </button>

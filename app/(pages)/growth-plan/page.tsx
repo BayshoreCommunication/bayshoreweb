@@ -1,23 +1,23 @@
-import Reveal from '@/components/motion/Reveal';
-import ServicePricingPlan from '@/components/unique/servicepricing/ServicePricingPlan';
-import AboutUs from '@/components/universal/AboutUs';
-import Boost from '@/components/universal/Boost';
-import ColFlex from '@/components/universal/ColFlex';
-import Hero from '@/components/universal/Hero';
-import Info from '@/components/universal/Info';
-import Package from '@/components/universal/Package';
-import Results from '@/components/universal/Results';
-import SectionLayout from '@/components/universal/SectionLayout';
-import SectionPackage from '@/components/universal/SectionPackage';
-import { Metadata } from 'next';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
+import Reveal from "@/components/motion/Reveal";
+import ServicePricingPlan from "@/components/unique/servicepricing/ServicePricingPlan";
+import AboutUs from "@/components/universal/AboutUs";
+import Boost from "@/components/universal/Boost";
+import ColFlex from "@/components/universal/ColFlex";
+import Hero from "@/components/universal/Hero";
+import Info from "@/components/universal/Info";
+import Package from "@/components/universal/Package";
+import Results from "@/components/universal/Results";
+import SectionLayout from "@/components/universal/SectionLayout";
+import SectionPackage from "@/components/universal/SectionPackage";
+import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
 export const metadata: Metadata = {
-  title: 'Growth-Bayshore Communication',
+  title: "Growth-Bayshore Communication",
   description:
-    'Do you want to take your company to the next stage? Increase conversions, or boost brand awareness? Join Bayshore and experience rapid growth with best marketing bundles.',
+    "Do you want to take your company to the next stage? Increase conversions, or boost brand awareness? Join Bayshore and experience rapid growth with best marketing bundles.",
 };
 
 const page = () => {
@@ -29,14 +29,14 @@ const page = () => {
 
       {/* Package */}
 
-      <SectionLayout bg=''>
+      <SectionLayout bg="">
         <Reveal>
-          <div className='flex flex-col items-center'>
-            <h2 className='heading-secondary !text-center max-w-[800px] mx-auto '>
+          <div className="flex flex-col items-center">
+            <h2 className="heading-secondary !text-center max-w-[800px] mx-auto ">
               Affordable Marketing Solutions to Fit Your Budget with Our Value
               Package
             </h2>
-            <p className='text-base !text-center  mb-10'>
+            <p className="text-base !text-center  mb-10">
               {`
             We are aware that there is no one size fits all approach to SEO. To
             create a unique SEO plan for your company, Bayshore team takes into
@@ -45,10 +45,9 @@ const page = () => {
             investigation. Contact us right away if you're prepared to begin
             developing your unique, revenue-generating SEO approach.
             `}
-              <Link className='text-[#4C74B9] underline' href='/contact'>
-                {' '}
-                contact us{' '}
-              </Link>{' '}
+              <Link className="text-[#4C74B9] underline" href="/contact">
+                contact us{" "}
+              </Link>{" "}
               today!
             </p>
           </div>
@@ -61,8 +60,8 @@ const page = () => {
 
       {/* FLexiblity */}
       <Reveal>
-        <SectionLayout bg=''>
-          <h2 className='flex justify-center heading-secondary'>
+        <SectionLayout bg="">
+          <h2 className="flex justify-center heading-secondary">
             Flexibility at its Best: From One-Time Assessments to Complete
             Marketing Solutions
           </h2>
@@ -89,22 +88,22 @@ const page = () => {
             </div>
           </div> */}
 
-          <div className='grid grid-cols-1 gap-8 mt-12 mb-12 md:grid-cols-3'>
+          <div className="grid grid-cols-1 gap-8 mt-12 mb-12 md:grid-cols-3">
             <ColFlex
-              heading='Budget-Friendly Options'
-              description='We’ll do everything, take care of everything,and report
-              directly to you.'
-              imgLink='/assets/growth-plan/save-money.png'
+              heading="Budget-Friendly Options"
+              description="We’ll do everything, take care of everything,and report
+              directly to you."
+              imgLink="/assets/growth-plan/save-money.png"
             />
             <ColFlex
-              heading='Flexibility to Test and Experiment'
-              description='We’ll build you a high performing engine and you run it by yourself.'
-              imgLink='/assets/growth-plan/data-sharing.png'
+              heading="Flexibility to Test and Experiment"
+              description="We’ll build you a high performing engine and you run it by yourself."
+              imgLink="/assets/growth-plan/data-sharing.png"
             />
             <ColFlex
-              heading='Collaborative Invironment'
-              description='Get ongoing step-by-step advice with data-driven prioritization, achieving your goals faster.'
-              imgLink='/assets/growth-plan/seo.png'
+              heading="Collaborative Invironment"
+              description="Get ongoing step-by-step advice with data-driven prioritization, achieving your goals faster."
+              imgLink="/assets/growth-plan/seo.png"
             />
           </div>
         </SectionLayout>
@@ -112,18 +111,18 @@ const page = () => {
 
       <Reveal>
         <Boost
-          heading='Ready to Grow? Get Your FREE Quote Today!'
-          btnText='Get a Proposal '
+          heading="Ready to Grow? Get Your FREE Quote Today!"
+          btnText="Get a Proposal "
         />
       </Reveal>
       {/* <AboutUs /> */}
-      <div className='container mt-10'>
+      <div className="container mt-10">
         <Info />
       </div>
       <Reveal>
         <Results
-          heading='Even Though We Don’t Like Showing off, 
-          We Have Some Amazing Results'
+          heading="Even Though We Don’t Like Showing off, 
+          We Have Some Amazing Results"
         />
       </Reveal>
     </>
@@ -139,7 +138,7 @@ let hero: {
 
 hero = [
   {
-    heading: 'Experience Rapid Growth with Our Enhanced Marketing ',
+    heading: "Experience Rapid Growth with Our Enhanced Marketing ",
     description: `Do you wish to benefit from the most recent marketing techniques and resources? If so, 
     you require one of our upgraded marketing bundles. We provide a broad spectrum of services that can expand your brand and boost sales. From the website, or software solutions to digital marketing services, we have a bundle that suits  your needs and 
     budget. Don’t let this chance slip away to skyrocket your business with our enhanced advertising packages.`,
