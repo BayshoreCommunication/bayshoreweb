@@ -12,15 +12,14 @@ interface Service {
   quantity: number | null;
   estimatedTotalPrice: number | null;
 }
-
 interface Props {
-  handleQuantityChange: (serviceIndex: any, newQuantity: string) => void;
+  handleQuantityChange: (serviceIndex: number, newQuantity: string) => void;
   pricingList: Service[];
   totalPrice: number | null; // Assuming totalPrice is a number or null
 }
 
 const ServicesPriceCardCustomized: React.FC<Props> = ({
-  handleQuantityChange,
+  // handleQuantityChange,
   pricingList,
   totalPrice,
 }) => {
@@ -28,7 +27,7 @@ const ServicesPriceCardCustomized: React.FC<Props> = ({
     <div>
       {pricingList.map((service, serviceIndex) => (
         <div className="p-4 mb-3 rounded-lg bg-orange-50" key={serviceIndex}>
-          <p className="mt-1 mb-4">{service?.serviceName}</p>
+          <p className="mt-1 mb-4">{service?.servicesName}</p>
           <div>
             <div className="relative w-full overflow-x-auto">
               <table className="w-full text-sm text-left text-primary">
@@ -87,7 +86,7 @@ const ServicesPriceCardCustomized: React.FC<Props> = ({
                           <li className="">
                             <input
                               type="number"
-                              value={service?.quantity}
+                              // value={service?.quantity}
                               // onChange={(e) =>
                               //   handleQuantityChange(
                               //     serviceIndex,

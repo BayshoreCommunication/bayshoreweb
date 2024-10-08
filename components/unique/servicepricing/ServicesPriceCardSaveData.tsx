@@ -12,6 +12,7 @@ interface Service {
   quantity: number | null;
   estimatedTotalPrice: number | null;
 }
+
 interface FormValue {
   businessName: string;
   partnerName: string;

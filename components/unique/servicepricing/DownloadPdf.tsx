@@ -24,11 +24,11 @@ interface TotalPrice {
 }
 
 interface Service {
-  servicesName: ServicesName[];
-  serviceDetails: ServiceDetail[];
-  unitPrice: Price[];
-  quantity: Quantity[];
-  estimatedTotalPrice: TotalPrice[];
+  servicesName: string | null;
+  serviceDetails: string | null;
+  unitPrice: number | null;
+  quantity: number | null;
+  estimatedTotalPrice: number | null;
 }
 
 interface FormValue {

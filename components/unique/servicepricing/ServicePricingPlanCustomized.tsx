@@ -7,14 +7,6 @@ import ServicePriicngSaveData from "./ServicePriicngSaveData";
 import ServicesPriceCard from "./ServicesPriceCard";
 import { InitialPricingList } from "./initialPricingListMain";
 
-interface ServiceDetail {
-  name: number | string | null;
-  price: number | string | null;
-  quantitys: number | string | null;
-  totalPrice: number | string | null;
-  services: string;
-}
-
 interface Service {
   servicesName: string | null;
   serviceDetails: string | null;
@@ -22,6 +14,7 @@ interface Service {
   quantity: number | null;
   estimatedTotalPrice: number | null;
 }
+
 const ServicePricingPlanCustomized: React.FC = () => {
   const [pricingList, setPricingList] = useState(InitialPricingList);
   const [totalPrice, setTotalPrice] = useState<string>("0");

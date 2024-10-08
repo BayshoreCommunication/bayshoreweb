@@ -9,11 +9,11 @@ interface ServiceDetail {
 
 // Define the Service interface
 interface Service {
-  servicesName: string;
-  serviceDetails: ServiceDetail[];
-  unitPrice: { price: number | null }[];
-  quantity: { quantitys: number | null }[];
-  estimatedTotalPrice: { totalPrice: number | null }[];
+  servicesName: string | null;
+  serviceDetails: string | null;
+  unitPrice: number | null;
+  quantity: number | null;
+  estimatedTotalPrice: number | null;
 }
 
 interface Form {

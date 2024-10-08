@@ -6,7 +6,6 @@ interface Service {
   quantity: number | null;
   estimatedTotalPrice: number | null;
 }
-
 // export const InitialPricingListMain: Service[] = [
 //   {
 //     servicesName: [

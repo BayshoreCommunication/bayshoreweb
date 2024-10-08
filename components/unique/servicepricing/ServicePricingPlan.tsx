@@ -13,14 +13,6 @@ const dataInfo = {
   address: "",
 };
 
-interface ServiceDetail {
-  name: number | string | null;
-  price: number | string | null;
-  quantitys: number | string | null;
-  totalPrice: number | string | null;
-  services: string;
-}
-
 interface Service {
   servicesName: string | null;
   serviceDetails: string | null;
@@ -57,7 +49,7 @@ const ServicePricingPlan: React.FC = () => {
             </tr>
           </thead>
           <tbody>
-            {InitialPricingList?.map((service: any, serviceIndex: any) => (
+            {InitialPricingList?.map((service, serviceIndex) => (
               <tr
                 key={serviceIndex}
                 className="text-2xl text-black border-b odd:bg-white even:bg-gray-200"
