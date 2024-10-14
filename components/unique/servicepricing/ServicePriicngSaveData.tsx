@@ -129,14 +129,14 @@ const ServicePricingSaveData: React.FC<Props> = ({
                   <td className="px-6 py-8">
                     <div>
                       <ul className="max-w-xl space-y-4 list-none list-inside">
-                        <li className={`text-center`}>{service?.quantity}</li>
+                        <li className={`text-center`}>{service?.unitPrice}</li>
                       </ul>
                     </div>
                   </td>
                   <td className="px-6 py-8">
                     <div>
                       <ul className="max-w-md space-y-4 list-none list-inside">
-                        <li className={`text-center `}>{service?.unitPrice}</li>
+                        <li className={`text-center `}>{service?.quantity}</li>
                       </ul>
                     </div>
                   </td>
