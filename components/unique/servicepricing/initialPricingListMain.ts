@@ -287,17 +287,17 @@ export const InitialPricingList: Service[] = [
     serviceDetails: `Copyright Free Human Written Blogs (Avg 1500
   Words/Blog), On-Page SEO.`,
     unitPrice: 50,
-    quantity: 0,
-    estimatedTotalPrice: 0,
+    quantity: 1,
+    estimatedTotalPrice: 50,
   },
 
   {
     servicesName: "Creative Content (Graphic Design)",
     serviceDetails: `Blog Graphics, Thumniels & Image SEO Optimization
   (Avg 4 Copyright Free Images/Blog)`,
-    unitPrice: 40,
-    quantity: 5,
-    estimatedTotalPrice: 200,
+    unitPrice: 5,
+    quantity: 1,
+    estimatedTotalPrice: 5,
   },
 
   {
@@ -325,8 +325,8 @@ export const InitialPricingList: Service[] = [
     serviceDetails: `Video Production Training, Studio Setup, Video Shoot (1
 Day/Month)`,
     unitPrice: 350,
-    quantity: 0,
-    estimatedTotalPrice: 0,
+    quantity: 1,
+    estimatedTotalPrice: 350,
   },
 
   {
@@ -335,8 +335,8 @@ Day/Month)`,
 Editing, Publishing with Creative Description & SEO on
 YouTube, TikTok, Facebook, and Instagram.`,
     unitPrice: 100,
-    quantity: 4,
-    estimatedTotalPrice: 440,
+    quantity: 1,
+    estimatedTotalPrice: 100,
   },
 
   {
@@ -344,8 +344,8 @@ YouTube, TikTok, Facebook, and Instagram.`,
     serviceDetails: `Campaign Plan, Email Copy Writing (4/Month), Email
 Graphic (4/Month), Email Template Design, Campaign Management, Direct Sales Campaign.`,
     unitPrice: 200,
-    quantity: 0,
-    estimatedTotalPrice: 0,
+    quantity: 1,
+    estimatedTotalPrice: 200,
   },
 
   {
@@ -354,8 +354,8 @@ Graphic (4/Month), Email Template Design, Campaign Management, Direct Sales Camp
 Campaign Management Facebook, Instagram, Google,
 YouTube Lead Ads, Display ads with 15% Ad Spend.`,
     unitPrice: 200,
-    quantity: 0,
-    estimatedTotalPrice: 0,
+    quantity: 1,
+    estimatedTotalPrice: 200,
   },
 
   {
@@ -364,7 +364,7 @@ YouTube Lead Ads, Display ads with 15% Ad Spend.`,
 Nurcharing & Forwording, Growth Monitoring,
 Performance Tracking & Reporting`,
     unitPrice: 650,
-    quantity: 0,
-    estimatedTotalPrice: 0,
+    quantity: 1,
+    estimatedTotalPrice: 650,
   },
 ];

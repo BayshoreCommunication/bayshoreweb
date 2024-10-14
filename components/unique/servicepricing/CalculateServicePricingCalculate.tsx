@@ -314,11 +314,11 @@ const CalculateServicePricingCalculate: React.FC<Props> = ({
             <tr>
               <th scope="col" className="px-6 py-6"></th>
               <th scope="col" className="px-8 py-6"></th>
-              <th scope="col" className="px-6 py-6">
+              <th scope="col" className="px-6 py-6 pl-24">
                 Total
               </th>
               <th scope="col" className="px-6 py-6"></th>
-              <th scope="col" className="px-0 py-6">
+              <th scope="col" className="px-0 py-6 pl-32">
                 ${totalPrice}
               </th>
             </tr>

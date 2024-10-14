@@ -100,13 +100,14 @@ const ServicePricingPlan: React.FC = () => {
           <thead className="text-2xl uppercase gray-700 !bg-orange-50">
             <tr>
               <th scope="col" className="px-6 py-6"></th>
-              <th scope="col" className="px-8 py-6"></th>
-              <th scope="col" className="px-6 py-6">
+              <th scope="col" className="px-6 py-6"></th>
+              <th scope="col" className="px-6 py-6 pl-24">
                 Total
               </th>
               <th scope="col" className="px-6 py-6"></th>
-              <th scope="col" className="px-0 py-6">
-                $1750
+
+              <th scope="col" className="px-6 py-6 pl-32">
+                $2655.00
               </th>
             </tr>
           </thead>
