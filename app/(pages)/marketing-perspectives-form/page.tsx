@@ -1,5 +1,5 @@
 import React from "react";
-import MarketingPerspectivesFrom from "@/components/unique/MarketingPerspectivesFrom/MarketingPerspectivesFrom";
+import MarketingPerspectivesFrom from "@/components/unique/MarketingPerspectivesForm/MarketingPerspectivesForm";
 
 const page = () => {
   return <MarketingPerspectivesFrom />;

@@ -23,6 +23,15 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/unique/servicepricing/initialPricingList.ts", "components/unique/servicepricing/DownloadPdf.tsx", "components/unique/MarketingPerspectivesFrom/MarketingPerspectivesFromCustomized.jsx", "components/unique/MarketingPerspectivesFrom/MarketingPerspectivesFromPreview.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/unique/servicepricing/initialPricingList.ts",
+    "components/unique/servicepricing/DownloadPdf.tsx",
+    "components/unique/MarketingPerspectivesForm/MarketingPerspectivesFormCustomized.jsx",
+    "components/unique/MarketingPerspectivesForm/MarketingPerspectivesFormPreview.jsx"
+  ],
   "exclude": ["node_modules"]
 }
