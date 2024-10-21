@@ -54,6 +54,10 @@ quickLinks = [
     title: "Portfolio",
     link: "https://docs.google.com/presentation/d/1xYTNa-HSNlu2nxNGcOxwCIHTXmOJG55xd67GSxuCf60/edit?usp=sharing",
   },
+  {
+    title: "Perspectives From",
+    link: "/marketing-perspectives-from",
+  },
 ];
 
 const Col = ({ text, links }: any) => {
