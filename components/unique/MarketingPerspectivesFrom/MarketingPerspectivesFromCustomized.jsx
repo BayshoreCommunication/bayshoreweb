@@ -7,9 +7,8 @@ import DaynamicTableAddValue from "./DaynamicTableAddValue";
 import Slider from "@mui/material/Slider";
 
 function valuetext(value) {
-  return `${value}°C`;
+  return value > 60 ? "60+" : `${value}`;
 }
-
 const MarketingPerspectivesFromCustomized = ({
   setMarketingPerspectivesFromDataDetails,
 }) => {
@@ -18,6 +17,9 @@ const MarketingPerspectivesFromCustomized = ({
   const [ageRange, setAgeRange] = useState([15, 35]);
 
   const ageRangeHandleChange = (event, newValue) => {
+    // Ensure the value doesn't exceed 60
+    // const limitedValue = newValue.map((val) => (val > 60 ? 60 : val));
+
     setAgeRange(newValue);
   };
 
@@ -583,12 +585,14 @@ const MarketingPerspectivesFromCustomized = ({
                 </label>
                 <div className="max-w-2xl">
                   <Slider
-                    getAriaLabel={() => "Temperature range"}
+                    getAriaLabel={() => "Age range"}
+                    valueLabelDisplay="auto"
                     value={ageRange}
                     onChange={ageRangeHandleChange}
-                    valueLabelDisplay="auto"
                     getAriaValueText={valuetext}
                     sx={{ color: "#424242" }}
+                    getAriaValueText={valuetext}
+                    valueLabelFormat={(value) => (value > 60 ? "60+" : value)}
                   />
                 </div>
                 {/* <input
@@ -714,7 +718,7 @@ const MarketingPerspectivesFromCustomized = ({
                   value={inputKeywords}
                   onChange={handleKeywordsChange}
                   onKeyDown={handleKeywordsDown}
-                  placeholder="Add key competitors"
+                  placeholder="Add key (press enter)"
                   className="bg-transparent border-none text-gray-900 text-2xl focus:outline-none focus:ring-0 focus:border-none max-w-lg p-3 pl-2 placeholder-gray-500"
                 />
               </div>
