@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import MarketingPerspectivesFromCustomized from "./MarketingPerspectivesFormCustomized";
 import MarketingPerspectivesFromPreview from "./MarketingPerspectivesFormPreview";
+import MarketingPerspectivesFromCustomized from "./MarketingPerspectivesFormCustomized";
 
 const MarketingPerspectivesFrom = () => {
   const [
