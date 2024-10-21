@@ -8,8 +8,8 @@ import { jsPDF } from "jspdf";
 import html2canvas from "html2canvas";
 import emailjs from "emailjs-com";
 
-const MarketingPerspectivesFromPreview = ({
-  marketingPerspectivesFromDataDetails,
+const MarketingPerspectivesFormPreview = ({
+  marketingPerspectivesFormDataDetails,
 }) => {
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
   const [showErrorPopup, setShowErrorPopup] = useState(false);
@@ -97,7 +97,7 @@ const MarketingPerspectivesFromPreview = ({
                     </label>
                     <p className="block text-2xl font-medium text-gray-900 mb-2">
                       {
-                        marketingPerspectivesFromDataDetails?.businessInfo
+                        marketingPerspectivesFormDataDetails?.businessInfo
                           ?.businessName
                       }
                     </p>
@@ -111,7 +111,7 @@ const MarketingPerspectivesFromPreview = ({
                     </label>
                     <p className="block text-2xl font-medium text-gray-900 mb-2">
                       {
-                        marketingPerspectivesFromDataDetails?.businessInfo
+                        marketingPerspectivesFormDataDetails?.businessInfo
                           ?.businessWebsite
                       }
                     </p>
@@ -125,7 +125,7 @@ const MarketingPerspectivesFromPreview = ({
                     </label>
                     <p className="block text-2xl font-medium text-gray-900 mb-2">
                       {
-                        marketingPerspectivesFromDataDetails?.businessInfo
+                        marketingPerspectivesFormDataDetails?.businessInfo
                           ?.industry
                       }
                     </p>
@@ -142,7 +142,7 @@ const MarketingPerspectivesFromPreview = ({
 
                   <p className="block text-2xl font-medium text-gray-900 mb-2">
                     {
-                      marketingPerspectivesFromDataDetails?.businessInfo
+                      marketingPerspectivesFormDataDetails?.businessInfo
                         ?.businessDetails
                     }
                   </p>
@@ -164,7 +164,7 @@ const MarketingPerspectivesFromPreview = ({
                       <p className="block text-2xl font-medium text-gray-900">
                         Minimum:-{" "}
                         {
-                          marketingPerspectivesFromDataDetails?.businessInfo
+                          marketingPerspectivesFormDataDetails?.businessInfo
                             ?.ageRange[0]
                         }
                       </p>
@@ -174,7 +174,7 @@ const MarketingPerspectivesFromPreview = ({
                       <p className="block text-2xl font-medium text-gray-900">
                         Miximum:-{" "}
                         {
-                          marketingPerspectivesFromDataDetails?.businessInfo
+                          marketingPerspectivesFormDataDetails?.businessInfo
                             ?.ageRange[1]
                         }
                       </p>
@@ -186,7 +186,7 @@ const MarketingPerspectivesFromPreview = ({
                     </label>
                     <p className="block text-2xl font-medium text-gray-900">
                       {
-                        marketingPerspectivesFromDataDetails?.businessInfo
+                        marketingPerspectivesFormDataDetails?.businessInfo
                           ?.gender
                       }
                     </p>
@@ -201,7 +201,7 @@ const MarketingPerspectivesFromPreview = ({
                     </label>
                     <p className="block text-2xl font-medium text-gray-900 mb-2">
                       {
-                        marketingPerspectivesFromDataDetails?.businessInfo
+                        marketingPerspectivesFormDataDetails?.businessInfo
                           ?.location
                       }
                     </p>
@@ -215,7 +215,7 @@ const MarketingPerspectivesFromPreview = ({
                     Key Competitors (List):
                   </label>
                   <div className="flex flex-wrap gap-2 pointer-events-none">
-                    {marketingPerspectivesFromDataDetails?.businessInfo?.keyCompetitors?.map(
+                    {marketingPerspectivesFormDataDetails?.businessInfo?.keyCompetitors?.map(
                       (name) => (
                         <div
                           key={name}
@@ -245,13 +245,13 @@ const MarketingPerspectivesFromPreview = ({
                 <div className="flex items-start gap-x-2">
                   <p className="block text-2xl font-medium text-gray-900">
                     {
-                      marketingPerspectivesFromDataDetails?.marketingStatus
+                      marketingPerspectivesFormDataDetails?.marketingStatus
                         ?.marketingStrategy
                     }
                   </p>
                 </div>
               </div>
-              {marketingPerspectivesFromDataDetails?.marketingStatus
+              {marketingPerspectivesFormDataDetails?.marketingStatus
                 ?.marketingStrategy === "yes" && (
                 <div className="flex  items-center gap-x-6 w-full justify-between  mt-8 mb-8">
                   <div className="w-full flex items-start gap-x-2">
@@ -263,7 +263,7 @@ const MarketingPerspectivesFromPreview = ({
                     </label>
                     <p className="block text-2xl font-medium text-gray-900">
                       {
-                        marketingPerspectivesFromDataDetails?.marketingStatus
+                        marketingPerspectivesFormDataDetails?.marketingStatus
                           ?.marketingTools
                       }
                     </p>
@@ -278,7 +278,7 @@ const MarketingPerspectivesFromPreview = ({
                     </label>
                     <p className="text-2xl font-medium text-gray-900">
                       {
-                        marketingPerspectivesFromDataDetails?.marketingStatus
+                        marketingPerspectivesFormDataDetails?.marketingStatus
                           ?.marketingTools
                       }
                     </p>
@@ -297,12 +297,12 @@ const MarketingPerspectivesFromPreview = ({
                 </label>
 
                 <p className="text-2xl font-medium text-gray-900">
-                  {marketingPerspectivesFromDataDetails?.mediaNeeds?.primaryGoals?.join(
+                  {marketingPerspectivesFormDataDetails?.mediaNeeds?.primaryGoals?.join(
                     ", "
                   )}{" "}
-                  {marketingPerspectivesFromDataDetails?.mediaNeeds
+                  {marketingPerspectivesFormDataDetails?.mediaNeeds
                     ?.otherPrimaryGoals &&
-                    ` , ${marketingPerspectivesFromDataDetails?.mediaNeeds?.otherPrimaryGoals}`}
+                    ` , ${marketingPerspectivesFormDataDetails?.mediaNeeds?.otherPrimaryGoals}`}
                 </p>
               </div>
 
@@ -313,12 +313,12 @@ const MarketingPerspectivesFromPreview = ({
                   all that apply)
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
-                  {marketingPerspectivesFromDataDetails?.mediaNeeds?.mediaPlatforms?.join(
+                  {marketingPerspectivesFormDataDetails?.mediaNeeds?.mediaPlatforms?.join(
                     ", "
                   )}{" "}
-                  {marketingPerspectivesFromDataDetails?.mediaNeeds
+                  {marketingPerspectivesFormDataDetails?.mediaNeeds
                     ?.otherPrimaryGoals &&
-                    ` , ${marketingPerspectivesFromDataDetails?.mediaNeeds?.otherMediaPlatforms}`}
+                    ` , ${marketingPerspectivesFormDataDetails?.mediaNeeds?.otherMediaPlatforms}`}
                 </p>
               </div>
               <div className="mb-5 mt-6  flex items-start gap-x-2">
@@ -327,7 +327,7 @@ const MarketingPerspectivesFromPreview = ({
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
                   {
-                    marketingPerspectivesFromDataDetails?.mediaNeeds
+                    marketingPerspectivesFormDataDetails?.mediaNeeds
                       ?.mainChallenges
                   }
                 </p>
@@ -348,12 +348,12 @@ const MarketingPerspectivesFromPreview = ({
                   all that apply)
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
-                  {marketingPerspectivesFromDataDetails?.mediaChannels?.likeToFocus?.join(
+                  {marketingPerspectivesFormDataDetails?.mediaChannels?.likeToFocus?.join(
                     ", "
                   )}{" "}
-                  {marketingPerspectivesFromDataDetails?.mediaChannels
+                  {marketingPerspectivesFormDataDetails?.mediaChannels
                     ?.otherLikeToFocus &&
-                    ` , ${marketingPerspectivesFromDataDetails?.mediaChannels?.otherLikeToFocus}`}
+                    ` , ${marketingPerspectivesFormDataDetails?.mediaChannels?.otherLikeToFocus}`}
                 </p>
               </div>
 
@@ -366,12 +366,12 @@ const MarketingPerspectivesFromPreview = ({
                   What type of content do you want to create on these platforms?
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
-                  {marketingPerspectivesFromDataDetails?.mediaChannels?.mediaPlatforms?.join(
+                  {marketingPerspectivesFormDataDetails?.mediaChannels?.mediaPlatforms?.join(
                     ", "
                   )}{" "}
-                  {marketingPerspectivesFromDataDetails?.mediaChannels
+                  {marketingPerspectivesFormDataDetails?.mediaChannels
                     ?.otherMediaPlatforms &&
-                    ` , ${marketingPerspectivesFromDataDetails?.mediaChannels?.otherMediaPlatforms}`}
+                    ` , ${marketingPerspectivesFormDataDetails?.mediaChannels?.otherMediaPlatforms}`}
                 </p>
               </div>
 
@@ -388,13 +388,13 @@ const MarketingPerspectivesFromPreview = ({
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
                   {
-                    marketingPerspectivesFromDataDetails
+                    marketingPerspectivesFormDataDetails
                       ?.digitalAdvertisingNeeds?.runningAds
                   }
                 </p>
               </div>
 
-              {marketingPerspectivesFromDataDetails?.digitalAdvertisingNeeds
+              {marketingPerspectivesFormDataDetails?.digitalAdvertisingNeeds
                 ?.runningAds === "yes" ? (
                 <div className="mt-6 flex items-start gap-x-2">
                   <label
@@ -405,7 +405,7 @@ const MarketingPerspectivesFromPreview = ({
                   </label>
                   <p className="text-2xl font-medium text-gray-900">
                     {
-                      marketingPerspectivesFromDataDetails
+                      marketingPerspectivesFormDataDetails
                         ?.digitalAdvertisingNeeds?.whichPlatforms
                     }
                   </p>
@@ -420,12 +420,12 @@ const MarketingPerspectivesFromPreview = ({
                   What are your main advertising goals?
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
-                  {marketingPerspectivesFromDataDetails?.digitalAdvertisingNeeds?.advertisingGoals.join(
+                  {marketingPerspectivesFormDataDetails?.digitalAdvertisingNeeds?.advertisingGoals.join(
                     ", "
                   )}{" "}
-                  {marketingPerspectivesFromDataDetails?.digitalAdvertisingNeeds
+                  {marketingPerspectivesFormDataDetails?.digitalAdvertisingNeeds
                     ?.otherAdvertisingGoals &&
-                    ` , ${marketingPerspectivesFromDataDetails?.digitalAdvertisingNeeds?.otherAdvertisingGoals}`}
+                    ` , ${marketingPerspectivesFormDataDetails?.digitalAdvertisingNeeds?.otherAdvertisingGoals}`}
                 </p>
               </div>
 
@@ -438,7 +438,7 @@ const MarketingPerspectivesFromPreview = ({
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
                   {
-                    marketingPerspectivesFromDataDetails
+                    marketingPerspectivesFormDataDetails
                       ?.digitalAdvertisingNeeds?.budgetForDigitalAdvertising
                   }
                 </p>
@@ -450,12 +450,12 @@ const MarketingPerspectivesFromPreview = ({
                   Preferred Platforms for Digital Advertising:
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
-                  {marketingPerspectivesFromDataDetails?.digitalAdvertisingNeeds?.preferredPlatforms.join(
+                  {marketingPerspectivesFormDataDetails?.digitalAdvertisingNeeds?.preferredPlatforms.join(
                     ", "
                   )}{" "}
-                  {marketingPerspectivesFromDataDetails?.digitalAdvertisingNeeds
+                  {marketingPerspectivesFormDataDetails?.digitalAdvertisingNeeds
                     ?.otherPreferredPlatforms &&
-                    ` , ${marketingPerspectivesFromDataDetails?.digitalAdvertisingNeeds?.otherPreferredPlatforms}`}
+                    ` , ${marketingPerspectivesFormDataDetails?.digitalAdvertisingNeeds?.otherPreferredPlatforms}`}
                 </p>
               </div>
 
@@ -472,13 +472,13 @@ const MarketingPerspectivesFromPreview = ({
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
                   {
-                    marketingPerspectivesFromDataDetails?.seoKeywordsTopics
+                    marketingPerspectivesFormDataDetails?.seoKeywordsTopics
                       ?.currentlySeo
                   }
                 </p>
               </div>
 
-              {marketingPerspectivesFromDataDetails?.seoKeywordsTopics
+              {marketingPerspectivesFormDataDetails?.seoKeywordsTopics
                 ?.currentlySeo === "yes" ? (
                 <div className="flex items-start gap-x-2 mt-5">
                   <label
@@ -490,7 +490,7 @@ const MarketingPerspectivesFromPreview = ({
                   </label>
                   <p className="text-2xl font-medium text-gray-900">
                     {
-                      marketingPerspectivesFromDataDetails?.seoKeywordsTopics
+                      marketingPerspectivesFormDataDetails?.seoKeywordsTopics
                         ?.whatTools
                     }
                   </p>
@@ -510,7 +510,7 @@ const MarketingPerspectivesFromPreview = ({
                 </label>
                 <DaynamicTableDataShow
                   daynamicRowsData={
-                    marketingPerspectivesFromDataDetails?.seoKeywordsTopics
+                    marketingPerspectivesFormDataDetails?.seoKeywordsTopics
                       ?.topKeywords
                   }
                 />
@@ -523,7 +523,7 @@ const MarketingPerspectivesFromPreview = ({
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
                   {
-                    marketingPerspectivesFromDataDetails?.seoKeywordsTopics
+                    marketingPerspectivesFormDataDetails?.seoKeywordsTopics
                       ?.specificTopics
                   }
                 </p>
@@ -535,12 +535,12 @@ const MarketingPerspectivesFromPreview = ({
                   What are your primary goals for SEO?
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
-                  {marketingPerspectivesFromDataDetails?.seoKeywordsTopics?.primaryGoalsForSeo?.join(
+                  {marketingPerspectivesFormDataDetails?.seoKeywordsTopics?.primaryGoalsForSeo?.join(
                     ", "
                   )}{" "}
-                  {marketingPerspectivesFromDataDetails?.seoKeywordsTopics
+                  {marketingPerspectivesFormDataDetails?.seoKeywordsTopics
                     ?.otherPrimaryGoalsForSeo &&
-                    ` , ${marketingPerspectivesFromDataDetails?.seoKeywordsTopics?.otherPrimaryGoalsForSeo}`}
+                    ` , ${marketingPerspectivesFormDataDetails?.seoKeywordsTopics?.otherPrimaryGoalsForSeo}`}
                 </p>
               </div>
               {/* 7. Other Marketing Needs*/}
@@ -559,12 +559,12 @@ const MarketingPerspectivesFromPreview = ({
                   all that apply)
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
-                  {marketingPerspectivesFromDataDetails?.marketingNeeds?.followingServices?.join(
+                  {marketingPerspectivesFormDataDetails?.marketingNeeds?.followingServices?.join(
                     ", "
                   )}{" "}
-                  {marketingPerspectivesFromDataDetails?.marketingNeeds
+                  {marketingPerspectivesFormDataDetails?.marketingNeeds
                     ?.otherFollowingServices &&
-                    ` , ${marketingPerspectivesFromDataDetails?.marketingNeeds?.otherFollowingServices}`}
+                    ` , ${marketingPerspectivesFormDataDetails?.marketingNeeds?.otherFollowingServices}`}
                 </p>
               </div>
 
@@ -581,7 +581,7 @@ const MarketingPerspectivesFromPreview = ({
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
                   {
-                    marketingPerspectivesFromDataDetails?.additionalInformation
+                    marketingPerspectivesFormDataDetails?.additionalInformation
                       ?.timeline
                   }
                 </p>
@@ -592,7 +592,7 @@ const MarketingPerspectivesFromPreview = ({
                 </label>
                 <p className="text-2xl font-medium text-gray-900">
                   {
-                    marketingPerspectivesFromDataDetails?.additionalInformation
+                    marketingPerspectivesFormDataDetails?.additionalInformation
                       ?.specificRequests
                   }
                 </p>
@@ -611,7 +611,7 @@ const MarketingPerspectivesFromPreview = ({
                   </label>
                   <p className="text-2xl font-medium text-gray-900">
                     {
-                      marketingPerspectivesFromDataDetails?.contactInformation
+                      marketingPerspectivesFormDataDetails?.contactInformation
                         ?.primaryContactName
                     }
                   </p>
@@ -622,7 +622,7 @@ const MarketingPerspectivesFromPreview = ({
                   </label>
                   <p className="text-2xl font-medium text-gray-900">
                     {
-                      marketingPerspectivesFromDataDetails?.contactInformation
+                      marketingPerspectivesFormDataDetails?.contactInformation
                         ?.email
                     }
                   </p>
@@ -633,7 +633,7 @@ const MarketingPerspectivesFromPreview = ({
                   </label>
                   <p className="text-2xl font-medium text-gray-900">
                     {
-                      marketingPerspectivesFromDataDetails?.contactInformation
+                      marketingPerspectivesFormDataDetails?.contactInformation
                         ?.phoneNumber
                     }
                   </p>
@@ -726,4 +726,4 @@ const MarketingPerspectivesFromPreview = ({
   );
 };
 
-export default MarketingPerspectivesFromPreview;
+export default MarketingPerspectivesFormPreview;

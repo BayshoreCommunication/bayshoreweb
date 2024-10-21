@@ -1,38 +1,38 @@
 "use client";
 import React, { useState } from "react";
-import MarketingPerspectivesFromPreview from "./MarketingPerspectivesFormPreview";
-import MarketingPerspectivesFromCustomized from "./MarketingPerspectivesFormCustomized";
+import MarketingPerspectivesFormPreview from "./MarketingPerspectivesFormPreview";
+import MarketingPerspectivesFormCustomized from "./MarketingPerspectivesFormCustomized";
 
 const MarketingPerspectivesFrom = () => {
   const [
-    marketingPerspectivesFromDataDetails,
-    setMarketingPerspectivesFromDataDetails,
+    marketingPerspectivesFormDataDetails,
+    setMarketingPerspectivesFormDataDetails,
   ] = useState({});
 
-  const [marketingPerspectivesFromShow, setMarketingPerspectivesFromShow] =
+  const [marketingPerspectivesFormShow, setMarketingPerspectivesFormShow] =
     useState(false);
 
   return (
     <div>
-      {marketingPerspectivesFromShow ? (
+      {marketingPerspectivesFormShow ? (
         <div>
-          <MarketingPerspectivesFromPreview
-            marketingPerspectivesFromDataDetails={
-              marketingPerspectivesFromDataDetails
+          <MarketingPerspectivesFormPreview
+            marketingPerspectivesFormDataDetails={
+              marketingPerspectivesFormDataDetails
             }
           />
         </div>
       ) : (
         <div>
-          <MarketingPerspectivesFromCustomized
-            setMarketingPerspectivesFromDataDetails={
-              setMarketingPerspectivesFromDataDetails
+          <MarketingPerspectivesFormCustomized
+            setMarketingPerspectivesFormDataDetails={
+              setMarketingPerspectivesFormDataDetails
             }
           />
           <div className="flex justify-center mt-10 mb-20">
             <button
               onClick={() =>
-                setMarketingPerspectivesFromShow(!marketingPerspectivesFromShow)
+                setMarketingPerspectivesFormShow(!marketingPerspectivesFormShow)
               }
               className="!py-4 md:!py-4 flex items-center gap-2 sm:gap-4 md:gap-8 px-[3rem] justify-center md:justify-start border-2 bg-primary border-primary rounded-full hover:rounded-full text-white hover:bg-transparent hover:text-primary a-button"
             >

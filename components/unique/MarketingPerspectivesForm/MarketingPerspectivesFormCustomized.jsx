@@ -9,8 +9,8 @@ import Slider from "@mui/material/Slider";
 function valuetext(value) {
   return value > 60 ? "60+" : `${value}`;
 }
-const MarketingPerspectivesFromCustomized = ({
-  setMarketingPerspectivesFromDataDetails,
+const MarketingPerspectivesFormCustomized = ({
+  setMarketingPerspectivesFormDataDetails,
 }) => {
   // 1. Business Information
 
@@ -453,7 +453,7 @@ const MarketingPerspectivesFromCustomized = ({
   // );
 
   useEffect(() => {
-    setMarketingPerspectivesFromDataDetails((prevInfo) => ({
+    setMarketingPerspectivesFormDataDetails((prevInfo) => ({
       ...prevInfo,
       businessInfo: businessInfo,
       marketingStatus: marketingStatus,
@@ -2321,4 +2321,4 @@ const MarketingPerspectivesFromCustomized = ({
   );
 };
 
-export default MarketingPerspectivesFromCustomized;
+export default MarketingPerspectivesFormCustomized;
