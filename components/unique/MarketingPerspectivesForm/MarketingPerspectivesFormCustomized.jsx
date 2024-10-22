@@ -440,18 +440,6 @@ const MarketingPerspectivesFormCustomized = ({
     }));
   };
 
-  // console.log(
-  //   "check value 48",
-  //   businessInfo,
-  //   marketingStatus,
-  //   mediaNeeds,
-  //   mediaChannels,
-  //   digitalAdvertisingNeeds,
-  //   daynamicRowsData,
-  //   marketingNeeds,
-  //   additionalInformation
-  // );
-
   useEffect(() => {
     setMarketingPerspectivesFormDataDetails((prevInfo) => ({
       ...prevInfo,
@@ -471,7 +459,6 @@ const MarketingPerspectivesFormCustomized = ({
     mediaNeeds,
     mediaChannels,
     digitalAdvertisingNeeds,
-    daynamicRowsData,
     marketingNeeds,
     seoKeywordsTopics,
     additionalInformation,
@@ -591,7 +578,6 @@ const MarketingPerspectivesFormCustomized = ({
                     onChange={ageRangeHandleChange}
                     getAriaValueText={valuetext}
                     sx={{ color: "#424242" }}
-                    getAriaValueText={valuetext}
                     valueLabelFormat={(value) => (value > 60 ? "60+" : value)}
                   />
                 </div>
