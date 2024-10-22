@@ -173,10 +173,11 @@ const MarketingPerspectivesFormPreview = ({
                       </p>
                       <p className="block text-2xl font-medium text-gray-900">
                         Miximum:-{" "}
-                        {
-                          marketingPerspectivesFormDataDetails?.businessInfo
-                            ?.ageRange[1]
-                        }
+                        {marketingPerspectivesFormDataDetails?.businessInfo
+                          ?.ageRange[1] <= 60
+                          ? marketingPerspectivesFormDataDetails?.businessInfo
+                              ?.ageRange[1]
+                          : "60+"}
                       </p>
                     </div>
                   </div>
