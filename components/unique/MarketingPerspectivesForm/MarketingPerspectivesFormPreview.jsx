@@ -14,63 +14,136 @@ const MarketingPerspectivesFormPreview = ({
   const [showSuccessPopup, setShowSuccessPopup] = useState(false);
   const [showErrorPopup, setShowErrorPopup] = useState(false);
 
-  const captureAndSendPDF = async () => {
-    const pages = document.querySelectorAll(".page"); // Select the pages you want to capture
+  // const captureAndSendPDF = async () => {
+  //   const pages = document.querySelectorAll(".page"); // Select the pages you want to capture
 
+  //   const pdf = new jsPDF("p", "mm", "a4");
+
+  //   for (let i = 0; i < pages.length; i++) {
+  //     const canvas = await html2canvas(pages[i]);
+  //     const imgData = canvas.toDataURL("image/png");
+
+  //     // Add each page to the PDF
+  //     const imgWidth = 210;
+  //     const imgHeight = (canvas.height * imgWidth) / canvas.width;
+  //     if (i < pages.length - 1) {
+  //       pdf.addPage();
+  //     }
+  //   }
+
+  //   pdf.save("marketing-perspectives-from.pdf");
+  //   const pdfBlob = pdf.output("blob");
+
+  //   const reader = new FileReader();
+  //   reader.readAsDataURL(pdfBlob);
+  //   reader.onloadend = () => {
+  //     const base64data = reader.result?.toString();
+
+  //     emailjs
+  //       .send(
+  //         "service_o4z5ryj",
+  //         "template_220uure",
+  //         {
+  //           to_email: "arsahak.bayshore@gmail.com",
+  //           pdf_attachment: base64data,
+  //         },
+  //         "EVNtRahViRmUCuu7C"
+  //       )
+  //       .then(
+  //         (result) => {
+  //           setShowSuccessPopup(true);
+  //           setTimeout(() => {
+  //             setShowSuccessPopup(false);
+  //           }, 5000);
+  //           console.log("PDF sent successfully", result.text);
+  //         },
+  //         (error) => {
+  //           setShowSuccessPopup(true);
+  //           setShowErrorPopup(true);
+  //           setTimeout(() => {
+  //             setShowSuccessPopup(false);
+  //             setShowErrorPopup(false);
+  //           }, 5000);
+  //           console.error("Failed to send PDF", error.text);
+  //         }
+  //       );
+  //   };
+  // };
+
+  const captureAndSendPDF = async () => {
+    const pages = document.querySelectorAll(".page");
     const pdf = new jsPDF("p", "mm", "a4");
 
     for (let i = 0; i < pages.length; i++) {
       const canvas = await html2canvas(pages[i]);
       const imgData = canvas.toDataURL("image/png");
 
-      // Add each page to the PDF
-      const imgWidth = 210; // A4 width in mm
-      const imgHeight = (canvas.height * imgWidth) / canvas.width; // Calculate height while maintaining aspect ratio
+      const imgWidth = 210;
+      const imgHeight = (canvas.height * imgWidth) / canvas.width;
       pdf.addImage(imgData, "PNG", 0, 0, imgWidth, imgHeight);
 
       if (i < pages.length - 1) {
-        pdf.addPage(); // Add a new page if there are more pages to capture
+        pdf.addPage();
       }
     }
 
-    // Download the PDF locally
-    pdf.save("marketing-perspectives-from.pdf"); // This will prompt the user to download the file locally
-
-    // Convert the PDF blob to base64 (required for EmailJS)
+    pdf.save("marketing-perspectives-from.pdf");
     const pdfBlob = pdf.output("blob");
+
+    const imgbbApiKey = "1825be391df34e8fb74e71b399c94c17";
+    const formData = new FormData();
+    formData.append("image", pdfBlob, "marketing-perspectives-from.pdf");
 
     const reader = new FileReader();
     reader.readAsDataURL(pdfBlob);
-    reader.onloadend = () => {
-      const base64data = reader.result?.toString();
+    reader.onloadend = async () => {
+      const base64data = reader.result?.split(",")[1];
 
-      // Send email using EmailJS
-      emailjs
-        .send(
-          "service_o4z5ryj", // Replace with your actual service ID
-          "template_220uure", // Replace with your template ID
+      formData.append("image", base64data);
+
+      try {
+        const response = await fetch(
+          `https://api.imgbb.com/1/upload?key=${imgbbApiKey}`,
           {
-            to_email: "arsahak.bayshore@gmail.com", // Replace with the recipient's email
-            pdf_attachment: base64data, // Attach PDF as base64
-          },
-          "EVNtRahViRmUCuu7C" // Replace with your user ID
-        )
-        .then(
-          (result) => {
-            setShowSuccessPopup(true); // Show success popup
-            setTimeout(() => {
-              setShowSuccessPopup(false); // Hide success popup after 5 seconds
-            }, 5000);
-            console.log("PDF sent successfully", result.text);
-          },
-          (error) => {
-            setShowErrorPopup(true); // Show error popup
-            setTimeout(() => {
-              setShowErrorPopup(false); // Hide error popup after 5 seconds
-            }, 5000);
-            console.error("Failed to send PDF", error.text);
+            method: "POST",
+            body: formData,
           }
         );
+
+        const result = await response.json();
+        const imgbbUrl = result.data.url;
+
+        emailjs
+          .send(
+            "service_o4z5ryj",
+            "template_220uure",
+            {
+              to_email: "arsahak.bayshore@gmail.com",
+              image_url: imgbbUrl,
+            },
+            "EVNtRahViRmUCuu7C"
+          )
+          .then(
+            (result) => {
+              setShowSuccessPopup(true);
+              setTimeout(() => {
+                setShowSuccessPopup(false);
+              }, 5000);
+              console.log("PDF and link sent successfully", result.text);
+            },
+            (error) => {
+              setShowSuccessPopup(true);
+              setShowErrorPopup(true);
+              setTimeout(() => {
+                setShowSuccessPopup(false);
+                setShowErrorPopup(false);
+              }, 5000);
+              console.error("Failed to send PDF and link", error.text);
+            }
+          );
+      } catch (error) {
+        console.error("Failed to upload to ImgBB", error);
+      }
     };
   };
 
@@ -682,7 +755,7 @@ const MarketingPerspectivesFormPreview = ({
                   leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
                 >
                   <Dialog.Panel className="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                    <div className="bg-white px-4 pb-4 pt-5">
+                    <div className="bg-white px-4 pb-14 pt-16">
                       <div className="mx-auto">
                         <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-green-100">
                           <svg
