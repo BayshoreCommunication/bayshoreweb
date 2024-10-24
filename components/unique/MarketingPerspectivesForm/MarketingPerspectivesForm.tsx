@@ -12,6 +12,21 @@ const MarketingPerspectivesFrom = () => {
   const [marketingPerspectivesFormShow, setMarketingPerspectivesFormShow] =
     useState(false);
 
+  const [openPreview, setOpenPreview] = useState(false);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Smooth scrolling
+    });
+  };
+
+  const handleOpenPreview = () => {
+    setMarketingPerspectivesFormShow(!marketingPerspectivesFormShow);
+    setOpenPreview(!openPreview);
+    scrollToTop();
+  };
+
   return (
     <div>
       {marketingPerspectivesFormShow ? (
@@ -20,6 +35,8 @@ const MarketingPerspectivesFrom = () => {
             marketingPerspectivesFormDataDetails={
               marketingPerspectivesFormDataDetails
             }
+            marketingPerspectivesFormShow={marketingPerspectivesFormShow}
+            setMarketingPerspectivesFormShow={setMarketingPerspectivesFormShow}
           />
         </div>
       ) : (
@@ -31,10 +48,8 @@ const MarketingPerspectivesFrom = () => {
           />
           <div className="flex justify-center mt-10 mb-20">
             <button
-              onClick={() =>
-                setMarketingPerspectivesFormShow(!marketingPerspectivesFormShow)
-              }
               className="!py-4 md:!py-4 flex items-center gap-2 sm:gap-4 md:gap-8 px-[3rem] justify-center md:justify-start border-2 bg-primary border-primary rounded-full hover:rounded-full text-white hover:bg-transparent hover:text-primary a-button"
+              onClick={handleOpenPreview}
             >
               Preview
             </button>

@@ -23,30 +23,6 @@ const MarketingPerspectivesFormCustomized = ({
     setAgeRange(newValue);
   };
 
-  const [selectedKeywords, setSelectedKeywords] = useState([]);
-  const [inputKeywords, setInputKeywords] = useState("");
-
-  // Handle typing in the input
-  const handleKeywordsChange = (event) => {
-    setInputKeywords(event.target.value);
-  };
-
-  // Handle adding a new chip when Enter or comma is pressed
-  const handleKeywordsDown = (event) => {
-    if ((event.key === "Enter" || event.key === ",") && inputKeywords.trim()) {
-      event.preventDefault();
-      if (!selectedKeywords.includes(inputKeywords.trim())) {
-        setSelectedKeywords([...selectedKeywords, inputKeywords.trim()]);
-      }
-      setInputKeywords(""); // Clear the input field
-    }
-  };
-
-  // Handle removing a chip
-  const handleRemoveKeywordsChip = (name) => {
-    setSelectedKeywords(selectedKeywords.filter((n) => n !== name));
-  };
-
   const [businessInfo, setBusinessInfo] = useState({
     businessName: "",
     businessWebsite: "",
@@ -58,13 +34,25 @@ const MarketingPerspectivesFormCustomized = ({
     keyCompetitors: [],
   });
 
-  // Sync keyCompetitors with selectedKeywords
-  useEffect(() => {
-    setBusinessInfo((prevInfo) => ({
-      ...prevInfo,
-      keyCompetitors: selectedKeywords,
+  const [competitor, setCompetitor] = useState("");
+
+  // Add new competitor to the array
+  const addCompetitor = () => {
+    if (competitor.trim() !== "") {
+      setBusinessInfo((prevState) => ({
+        ...prevState, // Keep other businessInfo fields unchanged
+        keyCompetitors: [...prevState.keyCompetitors, competitor], // Add the new competitor
+      }));
+      setCompetitor(""); // Clear the input after adding
+    }
+  };
+
+  const handleRemoveKeywordsChip = (key) => {
+    setBusinessInfo((prevState) => ({
+      ...prevState,
+      keyCompetitors: prevState.keyCompetitors.filter((el) => el !== key),
     }));
-  }, [selectedKeywords]);
+  };
 
   useEffect(() => {
     setBusinessInfo((prevInfo) => ({
@@ -465,9 +453,6 @@ const MarketingPerspectivesFormCustomized = ({
     contactInformation,
   ]);
 
-
-   
-
   return (
     <SectionLayout bg={""}>
       <div className="px-0 pt-4 md:px-36 mb-[-24px]">
@@ -582,6 +567,8 @@ const MarketingPerspectivesFormCustomized = ({
                     getAriaValueText={valuetext}
                     sx={{ color: "#424242" }}
                     valueLabelFormat={(value) => (value > 60 ? "60+" : value)}
+                    max={70}
+                    min={15}
                   />
                 </div>
                 {/* <input
@@ -624,7 +611,6 @@ const MarketingPerspectivesFormCustomized = ({
                     value={businessInfo.gender}
                     onChange={businessInfoHandleChange}
                     className="bg-gray-50 border border-gray-300 text-gray-900 text-2xl rounded-lg focus:ring-gray-600 focus:border-gray-600 w-full p-3"
-                    // className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                   >
                     <option selected>Choose a gender</option>
                     <option value="male" className="py-2">
@@ -679,10 +665,10 @@ const MarketingPerspectivesFormCustomized = ({
                 placeholder="Type..."
                 required
               /> */}
-              <div className="w-full flex flex-wrap items-center bg-gray-50 border border-gray-300 text-gray-900 text-2xl rounded-lg focus:ring-orange-500 focus:border-orange-500 p-1">
+              <div className="w-full flex flex-wrap items-center gap-x-2">
                 {/* Container for chips */}
                 <div className="flex flex-wrap gap-2 pointer-events-none">
-                  {selectedKeywords.map((name) => (
+                  {businessInfo?.keyCompetitors?.map((name) => (
                     <div
                       key={name}
                       className="flex items-center bg-gray-200 text-black px-3 py-1 rounded-full text-2xl font-medium pointer-events-auto"
@@ -704,12 +690,17 @@ const MarketingPerspectivesFormCustomized = ({
                   autoComplete="none"
                   id="name-input"
                   type="text"
-                  value={inputKeywords}
-                  onChange={handleKeywordsChange}
-                  onKeyDown={handleKeywordsDown}
-                  placeholder="Add key (press enter)"
-                  className="bg-transparent border-none text-gray-900 text-2xl focus:outline-none focus:ring-0 focus:border-none max-w-lg p-3 pl-2 placeholder-gray-500"
+                  value={competitor}
+                  onChange={(e) => setCompetitor(e.target.value)}
+                  placeholder="Add key..."
+                  className="bg-gray-50 border border-gray-300 text-gray-900 text-2xl rounded-lg focus:ring-orange-500 focus:border-orange-500 max-w-md p-3"
                 />
+                <button
+                  className="px-4 py-2 bg-primary text-white hover:bg-orange-900 rounded-md"
+                  onClick={addCompetitor}
+                >
+                  Add
+                </button>
               </div>
             </div>
           </div>
@@ -2306,6 +2297,9 @@ const MarketingPerspectivesFormCustomized = ({
           </div>
         </div>
       </div>
+      {/* <button className="" onClick={handleOpenPreview}>
+        div
+      </button> */}
     </SectionLayout>
   );
 };
