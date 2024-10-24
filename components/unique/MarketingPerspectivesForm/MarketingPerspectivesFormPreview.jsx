@@ -27,62 +27,6 @@ const MarketingPerspectivesFormPreview = ({
     });
   };
 
-  // const captureAndSendPDF = async () => {
-  //   const pages = document.querySelectorAll(".page"); // Select the pages you want to capture
-
-  //   const pdf = new jsPDF("p", "mm", "a4");
-
-  //   for (let i = 0; i < pages.length; i++) {
-  //     const canvas = await html2canvas(pages[i]);
-  //     const imgData = canvas.toDataURL("image/png");
-
-  //     // Add each page to the PDF
-  //     const imgWidth = 210;
-  //     const imgHeight = (canvas.height * imgWidth) / canvas.width;
-  //     if (i < pages.length - 1) {
-  //       pdf.addPage();
-  //     }
-  //   }
-
-  //   pdf.save("marketing-perspectives-from.pdf");
-  //   const pdfBlob = pdf.output("blob");
-
-  //   const reader = new FileReader();
-  //   reader.readAsDataURL(pdfBlob);
-  //   reader.onloadend = () => {
-  //     const base64data = reader.result?.toString();
-
-  //     emailjs
-  //       .send(
-  //         "service_o4z5ryj",
-  //         "template_220uure",
-  //         {
-  //           to_email: "arsahak.bayshore@gmail.com",
-  //           pdf_attachment: base64data,
-  //         },
-  //         "EVNtRahViRmUCuu7C"
-  //       )
-  //       .then(
-  //         (result) => {
-  //           setShowSuccessPopup(true);
-  //           setTimeout(() => {
-  //             setShowSuccessPopup(false);
-  //           }, 5000);
-  //           console.log("PDF sent successfully", result.text);
-  //         },
-  //         (error) => {
-  //           setShowSuccessPopup(true);
-  //           setShowErrorPopup(true);
-  //           setTimeout(() => {
-  //             setShowSuccessPopup(false);
-  //             setShowErrorPopup(false);
-  //           }, 5000);
-  //           console.error("Failed to send PDF", error.text);
-  //         }
-  //       );
-  //   };
-  // };
-
   const captureAndSendPDF = async () => {
     setLoading(true);
     const pages = document.querySelectorAll(".page");

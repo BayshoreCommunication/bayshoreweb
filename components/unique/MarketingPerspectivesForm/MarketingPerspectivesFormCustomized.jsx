@@ -2297,9 +2297,6 @@ const MarketingPerspectivesFormCustomized = ({
           </div>
         </div>
       </div>
-      {/* <button className="" onClick={handleOpenPreview}>
-        div
-      </button> */}
     </SectionLayout>
   );
 };
