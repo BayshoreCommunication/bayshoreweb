@@ -293,7 +293,7 @@ export const InitialPricingList: Service[] = [
 
   {
     servicesName: "Creative Content (Graphic Design)",
-    serviceDetails: `Blog Graphics, Thumniels & Image SEO Optimization
+    serviceDetails: `Blog Graphics, Thumbnails & Image SEO Optimization
   (Avg 4 Copyright Premium Images/Blog)`,
     unitPrice: 5,
     quantity: 1,

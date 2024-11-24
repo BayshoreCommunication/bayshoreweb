@@ -54,7 +54,7 @@ export const InitialPricingList: Service[] = [
       },
       {
         services:
-          "Thumniels & Image SEO Optimization (Avg 4 Copyright Free Images/Blog)",
+          "Thumbnails & Image SEO Optimization (Avg 4 Copyright Free Images/Blog)",
       },
     ],
     unitPrice: [{ price: 5 }],
