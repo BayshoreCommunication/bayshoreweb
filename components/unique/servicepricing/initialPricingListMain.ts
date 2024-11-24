@@ -294,7 +294,7 @@ export const InitialPricingList: Service[] = [
   {
     servicesName: "Creative Content (Graphic Design)",
     serviceDetails: `Blog Graphics, Thumniels & Image SEO Optimization
-  (Avg 4 Copyright Free Images/Blog)`,
+  (Avg 4 Copyright Premium Images/Blog)`,
     unitPrice: 5,
     quantity: 1,
     estimatedTotalPrice: 5,
@@ -341,7 +341,7 @@ YouTube, TikTok, Facebook, and Instagram.`,
 
   {
     servicesName: `Email Marketing`,
-    serviceDetails: `Campaign Plan, Email Copy Writing (4/Month), Email
+    serviceDetails: `Campaign Plan, Lead Generation, Email Copy Writing (4/Month), Email
 Graphic (4/Month), Email Template Design, Campaign Management, Direct Sales Campaign.`,
     unitPrice: 200,
     quantity: 1,
@@ -350,7 +350,7 @@ Graphic (4/Month), Email Template Design, Campaign Management, Direct Sales Camp
 
   {
     servicesName: `Digital Advertising`,
-    serviceDetails: `Enviorment Setup, CRM Integration, Ad Creative,
+    serviceDetails: `Environment Setup, CRM Integration, Ad Creative,
 Campaign Management Facebook, Instagram, Google,
 YouTube Lead Ads, Display ads with 15% Ad Spend.`,
     unitPrice: 200,
@@ -360,8 +360,8 @@ YouTube Lead Ads, Display ads with 15% Ad Spend.`,
 
   {
     servicesName: `Dedicated Marketing Manager`,
-    serviceDetails: `Accounts Managment, Crisis Management, Lead
-Nurcharing & Forwording, Growth Monitoring,
+    serviceDetails: `Accounts Management, Crisis Management, Lead
+Nurturing & Forwording, Growth Monitoring,
 Performance Tracking & Reporting`,
     unitPrice: 650,
     quantity: 1,

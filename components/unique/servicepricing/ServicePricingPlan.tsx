@@ -89,7 +89,10 @@ const ServicePricingPlan: React.FC = () => {
                   <div>
                     <ul className="max-w-xl space-y-6 list-none list-inside">
                       <li className={`text-center `}>
-                        {service?.estimatedTotalPrice}
+                        {service?.estimatedTotalPrice != null &&
+                        !isNaN(Number(service.estimatedTotalPrice))
+                          ? Number(service.estimatedTotalPrice).toFixed(2)
+                          : "0.00"}
                       </li>
                     </ul>
                   </div>

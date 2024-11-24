@@ -65,7 +65,7 @@ const ServicesPriceCardCustomized: React.FC<Props> = ({
                       <div>
                         <ul className="max-w-xl space-y-2 list-none">
                           <li className="text-[8px] text-black">
-                            {service.serviceDetails}
+                            {service.serviceDetails}fdgfdgfgdf
                           </li>
                         </ul>
                       </div>

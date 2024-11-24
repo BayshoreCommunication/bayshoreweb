@@ -138,7 +138,7 @@ const DownloadPdf: React.FC<Props> = ({
     );
 
     // Save the PDF
-    doc.save("Bayshore Growth Plan.pdf");
+    doc.save(`${clientInfo?.businessName || ""} Bayshore Growth Plan.pdf`);
     router.push("/growth-plan");
   };
 

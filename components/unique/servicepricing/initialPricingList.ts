@@ -13,90 +13,98 @@ interface Service {
 
 export const InitialPricingList: Service[] = [
   {
-    servicesName: [
-      { name: null },
-      { name: 'Website Maintains' },
-      { name: null },
-    ],
+    servicesName: [{ name: "Website Maintains" }],
     serviceDetails: [
-      { services: 'Maintains, Cybersecurity, Hosting, SSL' },
-      { services: 'Technical Support' },
-      { services: 'Technical SEO' },
+      { services: "Website Maintains, Cybersecurity, Hosting, SSL" },
+      { services: "Technical Support" },
+      { services: "Technical SEO" },
     ],
-    unitPrice: [{ price: null }, { price: 100 }, { price: null }],
-    quantity: [{ quantitys: null }, { quantitys: 0 }, { quantitys: null }],
-    estimatedTotalPrice: [
-      { totalPrice: null },
-      { totalPrice: 0 },
-      { totalPrice: null },
-    ],
+    unitPrice: [{ price: 100 }],
+    quantity: [{ quantitys: 1 }],
+    estimatedTotalPrice: [{ totalPrice: 100 }],
   },
   {
-    servicesName: [
-      { name: null },
-      { name: 'Search Engine Optimization' },
-      { name: null },
-    ],
+    servicesName: [{ name: "Search Engine Optimization" }],
     serviceDetails: [
-      { services: 'Keywords Analysis' },
-      { services: 'On Page SEO' },
-      { services: 'Off Page SEO, SEO Tools' },
+      { services: "Keywords Analysis" },
+      { services: "On-Page SEO" },
+      { services: "Off-Page SEO, Including All SEO Tools" },
     ],
-    unitPrice: [{ price: null }, { price: 550 }, { price: null }],
-    quantity: [{ quantitys: null }, { quantitys: 0 }, { quantitys: null }],
-    estimatedTotalPrice: [
-      { totalPrice: null },
-      { totalPrice: 0 },
-      { totalPrice: null },
-    ],
+    unitPrice: [{ price: 550 }],
+    quantity: [{ quantitys: 1 }],
+    estimatedTotalPrice: [{ totalPrice: 550 }],
   },
   {
-    servicesName: [{ name: null }, { name: 'Content Writing' }, { name: null }],
+    servicesName: [{ name: "Content Writing" }],
     serviceDetails: [
-      { services: 'Blogs Writing (Avg 1500 Words/Blog)' },
+      { services: "Copyright Free Human Written Blogs (Avg 1500 Words/Blog)" },
+      {
+        services: "On-Page SEO",
+      },
+    ],
+    unitPrice: [{ price: 50 }],
+    quantity: [{ quantitys: 1 }],
+    estimatedTotalPrice: [{ totalPrice: 50 }],
+  },
+  {
+    servicesName: [{ name: "Creative Content (Graphic Design)" }],
+    serviceDetails: [
+      {
+        services: "Blog Graphics",
+      },
       {
         services:
-          'Blog Graphics, Thumniels & Image SEO Optimization (Avg 3 Copyright Free Images/Blog)',
+          "Thumniels & Image SEO Optimization (Avg 4 Copyright Free Images/Blog) ",
       },
-      { services: 'On Page SEO, Social Share' },
     ],
-    unitPrice: [{ price: 50 }, { price: 5 }, { price: null }],
-    quantity: [{ quantitys: 0 }, { quantitys: 0 }, { quantitys: null }],
-    estimatedTotalPrice: [
-      { totalPrice: 0 },
-      { totalPrice: 0 },
-      { totalPrice: null },
-    ],
+    unitPrice: [{ price: 5 }],
+    quantity: [{ quantitys: 1 }],
+    estimatedTotalPrice: [{ totalPrice: 5 }],
   },
   {
-    servicesName: [{ name: 'Google My Business' }],
-    serviceDetails: [{ services: 'Management' }, { services: 'SEO ' }],
-    unitPrice: [{ price: 100 }],
-    quantity: [{ quantitys: 0 }],
-    estimatedTotalPrice: [{ totalPrice: 0 }],
-  },
-  {
-    servicesName: [
-      { name: null },
-      { name: null },
-      { name: 'Social Media Management' },
-      { name: null },
-      { name: null },
-      { name: null },
-    ],
+    servicesName: [{ name: "Local SEO - Google My Business" }],
     serviceDetails: [
-      { services: 'Content Idea Genaration' },
       {
-        services: 'Content Design',
+        services: "Management & SEO",
       },
-      { services: 'Social Media Calender Management (4/Month)' },
-      { services: 'Event Calender Management (16/Year' },
-      { services: 'Publishing with Creative Caption & HashTag' },
-      { services: 'Facebook, Instagram, Threads, Twitter, LinkedIn' },
+    ],
+    unitPrice: [{ price: 200 }],
+    quantity: [{ quantitys: 1 }],
+    estimatedTotalPrice: [{ totalPrice: 200 }],
+  },
+  {
+    servicesName: [{ name: "Social Media Management & Content Creation" }],
+    serviceDetails: [
+      { services: "Content Idea Genaration" },
+      {
+        services: "Content Design",
+      },
+      { services: "Social Media Calender Management (4/Month)" },
+      { services: "Event Calender Management (16/Year" },
+      { services: "Publishing with Creative Caption & HashTag" },
+      {
+        services:
+          "Social Share on Facebook, Instagram, Threads, Twitter, LinkedIn",
+      },
     ],
     unitPrice: [{ price: 250 }],
-    quantity: [{ quantitys: 0 }, { quantitys: null }],
-    estimatedTotalPrice: [{ totalPrice: 0 }],
+    quantity: [{ quantitys: 1 }, { quantitys: null }],
+    estimatedTotalPrice: [{ totalPrice: 250 }],
+  },
+  {
+    servicesName: [{ name: "Video Production" }],
+    serviceDetails: [
+      { services: "Video Production Training" },
+      {
+        services: "Studio Setup",
+      },
+      {
+        services: "Video Shoot (1 Day/Month",
+      },
+    ],
+    unitPrice: [{ price: 350 }],
+    quantity: [{ quantitys: 1 }],
+    estimatedTotalPrice: [{ totalPrice: 350 }],
   },
 
   {
@@ -104,164 +112,82 @@ export const InitialPricingList: Service[] = [
       { name: null },
       { name: null },
       { name: null },
-      { name: 'Video Production' },
+      { name: "Video Editing (Long & Short)" },
       { name: null },
       { name: null },
       { name: null },
       { name: null },
     ],
+
     serviceDetails: [
-      { services: 'Video Production Tranning' },
-      { services: 'Studio Setup' },
-      { services: 'Video Shoot (1 Day/Month)' },
-      { services: 'Topics With Outline' },
-      { services: 'Video Editing (4/Month)' },
-      { services: 'Reels Editing (4/Month)' },
-      { services: 'Publishing with Creative Description & SEO' },
-      { services: 'YouTube, TikTok, Facebook, Instagram' },
+      { services: "Topics Research With Outline" },
+      { services: "Video Editing" },
+      { services: "Short Video Editing" },
+      {
+        services:
+          "Publishing with Creative Description & SEO on YouTube, TikTok, Facebook, and Instagram",
+      },
     ],
-    unitPrice: [
-      { price: null },
-      { price: null },
-      { price: 350 },
-      { price: null },
-      { price: 50 },
-      { price: 20 },
-      { price: 20 },
-      { price: null },
-    ],
-    quantity: [
-      { quantitys: null },
-      { quantitys: null },
-      { quantitys: 0 },
-      { quantitys: null },
-      { quantitys: 0 },
-      { quantitys: 0 },
-      { quantitys: 0 },
-      { quantitys: null },
-    ],
-    estimatedTotalPrice: [
-      { totalPrice: null },
-      { totalPrice: null },
-      { totalPrice: 0 },
-      { totalPrice: null },
-      { totalPrice: 0 },
-      { totalPrice: 0 },
-      { totalPrice: 0 },
-      { totalPrice: null },
-    ],
+    unitPrice: [{ price: 100 }],
+    quantity: [{ quantitys: 1 }],
+    estimatedTotalPrice: [{ totalPrice: 100 }],
   },
   {
     servicesName: [
       { name: null },
-      { name: 'Email Marketing' },
+      { name: "Email Marketing" },
       { name: null },
       { name: null },
     ],
+
     serviceDetails: [
       {
-        services: 'Campaign Plan',
+        services: "Campaign Plan",
       },
-      { services: 'Email Copy Writing (4/Month)' },
-      { services: 'Email Graphic (4/Month)' },
-      { services: 'Template Design' },
-      { services: 'Campaign Management' },
+      {
+        services: "Lead Generation",
+      },
+      { services: "Email Copy Writing (4/Month)" },
+      { services: "Email Graphic (4/Month)" },
+      { services: "Template Design" },
+      { services: "Campaign Management" },
+      { services: "Direct Sales Campaign" },
     ],
     unitPrice: [{ price: 200 }],
-    quantity: [{ quantitys: 0 }],
-    estimatedTotalPrice: [{ totalPrice: 0 }],
+    quantity: [{ quantitys: 1 }],
+    estimatedTotalPrice: [{ totalPrice: 200 }],
   },
   {
     servicesName: [
       { name: null },
-      { name: 'Digital Advertising' },
+      { name: "Digital Advertising" },
       { name: null },
       { name: null },
     ],
     serviceDetails: [
       {
         services:
-          'Enviorment Setup, CRM Intrigration, Ad Creative, Campaign Management',
+          "Environment  Setup, CRM Intrigration, Ad Creative, Campaign Management",
       },
-      { services: 'Facebook, Instagram, Google, YouTube' },
-      { services: 'Email Graphic (4/Month)' },
-      { services: 'Lead Ads, Display Ad With 15% Ad Spend' },
+      { services: "Facebook, Instagram, Google, YouTube" },
+      { services: "Email Graphic (4/Month)" },
+      { services: "Lead Ads, Display Ad With 15% Ad Spend" },
     ],
     unitPrice: [{ price: 200 }],
-    quantity: [{ quantitys: 0 }],
-    estimatedTotalPrice: [{ totalPrice: 0 }],
+    quantity: [{ quantitys: 1 }],
+    estimatedTotalPrice: [{ totalPrice: 200 }],
   },
+
   {
-    servicesName: [
-      { name: null },
-      { name: 'Community Managment' },
-      { name: null },
-    ],
+    servicesName: [{ name: "Dedicated Marketing Manager" }],
     serviceDetails: [
       {
-        services: 'Social Media Group Managment',
-      },
-      { services: 'Cold DM' },
-      { services: 'Lead Forwording' },
-    ],
-    unitPrice: [{ price: 300 }],
-    quantity: [{ quantitys: 0 }],
-    estimatedTotalPrice: [{ totalPrice: 0 }],
-  },
-  {
-    servicesName: [{ name: 'Dedicated Marketing Manager' }],
-    serviceDetails: [
-      {
-        services: '',
+        services:
+          "Accounts Management, Crisis Management, Lead Nurturing & Forwording, Growth Monitoring, Performance Tracking & Reporting",
       },
     ],
     unitPrice: [{ price: 650 }],
-    quantity: [{ quantitys: 0 }],
-    estimatedTotalPrice: [{ totalPrice: 0 }],
-  },
-  {
-    servicesName: [{ name: 'Offshore Support' }],
-    serviceDetails: [
-      {
-        services: '',
-      },
-    ],
-    unitPrice: [{ price: 500 }],
-    quantity: [{ quantitys: 0 }],
-    estimatedTotalPrice: [{ totalPrice: 0 }],
-  },
-  {
-    servicesName: [{ name: 'Marketing Automation' }],
-    serviceDetails: [
-      {
-        services: '',
-      },
-    ],
-    unitPrice: [{ price: null }],
-    quantity: [{ quantitys: null }],
-    estimatedTotalPrice: [{ totalPrice: null }],
-  },
-  {
-    servicesName: [{ name: 'Technical Support' }],
-    serviceDetails: [
-      {
-        services: '',
-      },
-    ],
-    unitPrice: [{ price: null }],
-    quantity: [{ quantitys: null }],
-    estimatedTotalPrice: [{ totalPrice: null }],
-  },
-
-  {
-    servicesName: [{ name: 'Monthly Report' }],
-    serviceDetails: [
-      {
-        services: 'Work Update & Performance',
-      },
-    ],
-    unitPrice: [{ price: null }],
-    quantity: [{ quantitys: null }],
-    estimatedTotalPrice: [{ totalPrice: null }],
+    quantity: [{ quantitys: 1 }],
+    estimatedTotalPrice: [{ totalPrice: 650 }],
   },
 ];
