@@ -183,7 +183,7 @@ export const InitialPricingList: Service[] = [
     serviceDetails: [
       {
         services:
-          "Accounts Management, Crisis Management, Lead Nurturing & Forwording, Growth Monitoring, Performance Tracking & Reporting",
+          "Accounts Management, Crisis Management, Lead Nurturing & Forwarding, Growth Monitoring, Performance Tracking & Reporting",
       },
     ],
     unitPrice: [{ price: 650 }],

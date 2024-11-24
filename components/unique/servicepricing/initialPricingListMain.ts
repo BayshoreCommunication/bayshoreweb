@@ -199,7 +199,7 @@ interface Service {
 //         services: "Social Media Group Managment",
 //       },
 //       { services: "Cold DM" },
-//       { services: "Lead Forwording" },
+//       { services: "Lead Forwarding" },
 //     ],
 //     unitPrice: [{ price: 300 }],
 //     quantity: [{ quantitys: 0 }],
@@ -361,7 +361,7 @@ YouTube Lead Ads, Display ads with 15% Ad Spend.`,
   {
     servicesName: `Dedicated Marketing Manager`,
     serviceDetails: `Accounts Management, Crisis Management, Lead
-Nurturing & Forwording, Growth Monitoring,
+Nurturing & Forwarding, Growth Monitoring,
 Performance Tracking & Reporting`,
     unitPrice: 650,
     quantity: 1,
