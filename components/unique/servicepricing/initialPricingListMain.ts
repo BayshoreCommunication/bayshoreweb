@@ -267,7 +267,7 @@ export const InitialPricingList: Service[] = [
   {
     servicesName: "Website Maintains",
     serviceDetails: `Website Maintenance, Cybersecurity, Hosting, SSL,
-  Technical Support, Technical SEO.`,
+  Technical Support, Technical SEO`,
     unitPrice: 100,
     quantity: 1,
     estimatedTotalPrice: 100,
@@ -276,7 +276,7 @@ export const InitialPricingList: Service[] = [
   {
     servicesName: "Search Engine Optimization",
     serviceDetails: `Keywords Research, On-Page SEO, Off-Page SEO
-  Including All SEO Tools.`,
+  Including All SEO Tools`,
     unitPrice: 550,
     quantity: 1,
     estimatedTotalPrice: 550,
@@ -285,7 +285,7 @@ export const InitialPricingList: Service[] = [
   {
     servicesName: "Content Writing",
     serviceDetails: `Copyright Free Human Written Blogs (Avg 1500
-  Words/Blog), On-Page SEO.`,
+  Words/Blog), On-Page SEO`,
     unitPrice: 50,
     quantity: 1,
     estimatedTotalPrice: 50,
@@ -314,7 +314,7 @@ export const InitialPricingList: Service[] = [
     serviceDetails: `Content Idea Generation, Content Design, Social Media
   Calendar Management (4/Month), Event Calendar Management (16/Year), Publishing with Creative
   Captions & HashTags & Social Share on Facebook,
-  Instagram, Threads, Twitter, and LinkedIn.`,
+  Instagram, Threads, Twitter, and LinkedIn`,
     unitPrice: 250,
     quantity: 1,
     estimatedTotalPrice: 250,
@@ -333,7 +333,7 @@ Day/Month)`,
     servicesName: `Video Editing (Long & Short)`,
     serviceDetails: `Topics Research With Outline, Video Editing, Short Video
 Editing, Publishing with Creative Description & SEO on
-YouTube, TikTok, Facebook, and Instagram.`,
+YouTube, TikTok, Facebook, and Instagram`,
     unitPrice: 100,
     quantity: 1,
     estimatedTotalPrice: 100,
@@ -342,7 +342,7 @@ YouTube, TikTok, Facebook, and Instagram.`,
   {
     servicesName: `Email Marketing`,
     serviceDetails: `Campaign Plan, Lead Generation, Email Copy Writing (4/Month), Email
-Graphic (4/Month), Email Template Design, Campaign Management, Direct Sales Campaign.`,
+Graphic (4/Month), Email Template Design, Campaign Management, Direct Sales Campaign`,
     unitPrice: 200,
     quantity: 1,
     estimatedTotalPrice: 200,
@@ -352,7 +352,7 @@ Graphic (4/Month), Email Template Design, Campaign Management, Direct Sales Camp
     servicesName: `Digital Advertising`,
     serviceDetails: `Environment Setup, CRM Integration, Ad Creative,
 Campaign Management Facebook, Instagram, Google,
-YouTube Lead Ads, Display ads with 15% Ad Spend.`,
+YouTube Lead Ads, Display ads with 15% Ad Spend`,
     unitPrice: 200,
     quantity: 1,
     estimatedTotalPrice: 200,
