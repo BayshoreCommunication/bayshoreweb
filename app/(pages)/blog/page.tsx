@@ -1,15 +1,15 @@
-import Consultaion from '@/components/universal/Consultaion';
-import { HeroWithImage } from '@/components/universal/Hero';
-import HeroLeft from '@/components/universal/HeroLeft';
-import SectionLayout from '@/components/universal/SectionLayout';
-import { Metadata } from 'next';
-import Head from 'next/head';
-import Link from 'next/link';
-import Image from 'next/image';
-import React from 'react';
-import parser from 'html-react-parser';
-import Reveal from '@/components/motion/Reveal';
-import GetAllBlogData from '@/lib/GetAllBlogData';
+import Consultaion from "@/components/universal/Consultaion";
+import { HeroWithImage } from "@/components/universal/Hero";
+import HeroLeft from "@/components/universal/HeroLeft";
+import SectionLayout from "@/components/universal/SectionLayout";
+import { Metadata } from "next";
+import Head from "next/head";
+import Link from "next/link";
+import Image from "next/image";
+import React from "react";
+import parser from "html-react-parser";
+import Reveal from "@/components/motion/Reveal";
+import GetAllBlogData from "@/lib/GetAllBlogData";
 
 let hero: {
   heading: string;
@@ -18,15 +18,15 @@ let hero: {
 
 hero = [
   {
-    heading: 'Blogs: Expert Tips and Strategies from Our Agency',
+    heading: "Blogs: Expert Tips and Strategies from Our Agency",
     description: `You've chosen the best place to learn more about web marketing and how to develop your online presence. Our blog features insightful articles from our team of experts, covering topics such as SEO, social media, content marketing, web design, and more. You'll discover useful tactics and tips that you may use in your own business. By reading our blog, you may keep up with the most recent trends and best practices in the digital world.`,
   },
 ];
 
 export const metadata: Metadata = {
-  title: 'Blog-Bayshore Communication',
+  title: "Blog-Bayshore Communication",
   description:
-    'Learn communication tips from our Bayshore experts. Read our blogs on web-mobile app design, content writing, social media marketing, video production, and more.',
+    "Learn communication tips from our Bayshore experts. Read our blogs on web-mobile app design, content writing, social media marketing, video production, and more.",
 };
 
 const page = async () => {
@@ -38,34 +38,34 @@ const page = async () => {
         <HeroWithImage
           heading={hero[0].heading}
           description={hero[0].description}
-          imgLink='/assets/blog/blog-hero-img.svg'
+          imgLink="/assets/blog/blog-hero-img.svg"
         />
       </Reveal>
 
       {/* section blog */}
 
-      <SectionLayout bg=''>
+      <SectionLayout bg="">
         <Reveal>
-          <div className='flex flex-col items-center'>
-            <h2 className='heading-secondary '>
+          <div className="flex flex-col items-center">
+            <h2 className="heading-secondary ">
               {`The Digital Marketer's Playbook: Insights, Ideas, and Inspiration`}
             </h2>
-            <p className='text-base !text-center max-w-[622px] mx-auto mb-10'>
+            <p className="text-base !text-center max-w-[622px] mx-auto mb-10">
               Get valuable tips and tricks from our skilled digital marketing
               teams. Boost your online performance and reach your goals with our
               insights, ideas, and inspirations.
             </p>
           </div>
         </Reveal>
-        <div className='mt-8'>
-          <div className='grid grid-cols-1 md:grid-cols-2 gap-[4rem] grid-flow-row-dense'>
+        <div className="mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] grid-flow-row-dense">
             {blogData?.data
               ?.filter(
                 (blog: any) =>
-                  blog?.published === true && blog?.category[0] !== 'Job Post',
+                  blog?.published === true && blog?.category[0] !== "Job Post"
               )
               ?.map((el: any, i: number) => (
-                <div key={i} className='h-fit'>
+                <div key={i} className="h-fit">
                   <Blog el={el} i={i} />
                 </div>
               ))}
@@ -97,25 +97,24 @@ export default page;
 
 const Blog = ({ el, i }: any) => {
   const dateFormate = (date: any) => {
-    const formattedDate = new Date(date).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
+    const formattedDate = new Date(date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
     return formattedDate;
   };
-
   return (
     <Reveal>
       <Link href={`/blog/${el.slug}`}>
         <div>
-          <div className='relative mb-2'>
+          <div className="relative mb-2">
             <Image
               src={el.featuredImage.image.url}
-              alt='marketing'
+              alt="marketing"
               width={800}
               height={800}
-              className='w-full h-auto'
+              className="w-full h-auto"
             />
             {/* <Image
             src="/assets/blog/mike.png"
@@ -124,30 +123,30 @@ const Blog = ({ el, i }: any) => {
             height={800}
             className="w-[6rem] md:w-[8rem] h-auto absolute bottom-0 left-[3%] translate-y-[50%]"
           /> */}
-            <p className='text-xsmall mt-6'>{dateFormate(el.createdAt)}</p>
+            <p className="text-xsmall mt-6">{dateFormate(el.createdAt)}</p>
           </div>
-          <div className='cus-name flex justify-between items-center w-[78%] sm:w-[80%] ml-auto'>
+          <div className="cus-name flex justify-between items-center w-[78%] sm:w-[80%] ml-auto">
             {/* <p className="text-xsmall">
             By: <span className="text-[#0077B3]">{el.writerName} </span>
           </p> */}
             {/* <p className="text-xsmall">{el.blogDate}</p> */}
           </div>
-          <h4 className='heading-tertiary mt-[1rem] md:mt-[1.5rem]'>
+          <h4 className="heading-tertiary mt-[1rem] md:mt-[1.5rem]">
             {el.title}
           </h4>
           <div>
             {/* <h5 className="text-small !text-[#0077B3] md:mt-[3rem] md:mb-[2rem] my-[1.5rem]">
           Content Marketing
         </h5> */}
-            <p className='text-small mt-4 text-cut text-cut-5'>
+            <p className="text-small mt-4 text-cut text-cut-5">
               {parser(el.body)}
             </p>
           </div>
-          <div className='center md:block'>
+          <div className="center md:block">
             {/* <button className="!text-[#4DBDEB] border-[1px] border-[#4DBDEB] px-[1rem] py-[0.8rem] rounded-[10px] text-xsmall mt-[2rem]">
            
             </button> */}
-            <button className='text-gray-500 font-semibold text-small border border-gray-800 rounded-full p-5 hover:!bg-[#FE6F1F] hover:text-white hover:border-[#FE6F1F] mt-[2rem]'>
+            <button className="text-gray-500 font-semibold text-small border border-gray-800 rounded-full p-5 hover:!bg-[#FE6F1F] hover:text-white hover:border-[#FE6F1F] mt-[2rem]">
               Read this post
             </button>
 

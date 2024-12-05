@@ -15,6 +15,7 @@ import { log } from "console";
 import Link from "next/link";
 import Reveal from "@/components/motion/Reveal";
 import GetAllBlogData from "@/lib/GetAllBlogData";
+import Head from "next/head";
 
 //  Home Hero section
 let hero: {
@@ -39,9 +40,6 @@ const Page = async ({ params }: { params: { service: string } }) => {
   const individualHomeTabBar = individualService.map((el) => el.homeTabBar)[0];
 
   const blogData = await GetAllBlogData();
-
-
-
 
   return (
     <>
@@ -165,7 +163,7 @@ const Page = async ({ params }: { params: { service: string } }) => {
                         <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                           {Parser(elem.description4)}
                         </div>
-                       
+
                         <div className="!mb-8 !text-justify !md:text-left service-style-ind">
                           {Parser(elem.description5)}
                         </div>
@@ -207,7 +205,8 @@ const Page = async ({ params }: { params: { service: string } }) => {
                         </h3>
                         {blogData?.data
                           ?.filter((blog: any) => blog?.published === true)
-                          ?.slice(0, 4)?.map((elem: any, index: any) => (
+                          ?.slice(0, 4)
+                          ?.map((elem: any, index: any) => (
                             <div key={index}>
                               <Link
                                 className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
@@ -247,9 +246,61 @@ export async function generateMetadata({
 }) {
   const parameter = params.service;
   const individualService = services.filter((elem) => elem.url === parameter);
+  console.log(individualService.map((elem, index) => elem.metaDescription)[0]);
   return {
     title: `${individualService.map((elem, index) => elem.topHeroLeftTitle)}`,
-    description: `${individualService.map((elem, index) => elem.metaDescription)[0]
+    description: `${
+      individualService.map((elem, index) => elem.metaDescription)[0]
+    }`,
+    openGraph: {
+      title: `${individualService.map((elem, index) => elem.topHeroLeftTitle)}`,
+      description: `${
+        individualService.map((elem, index) => elem.metaDescription)[0]
       }`,
+      images: individualService[0].heroImg,
+      url: `https://www.carterinjurylaw.com/our-services/${individualService[0].url}`,
+      type: "article",
+      site_name: "https://www.bayshorecommunication.com/",
+    },
   };
 }
+
+// export async function generateMetadata({ params }) {
+//   const blogPostData = await GetAllPostData();
+
+//   const blogDetails = blogPostData?.data?.find(
+//     (blogs) => blogs.slug === params.slug
+//   );
+
+//   if (!blogDetails) {
+//     return {
+//       title: "Blog not found",
+//       description: "No blog post available.",
+//     };
+//   }
+
+//   let description = parse(blogDetails?.body);
+//   // console.log(
+//   //   description[0]?.props?.children.props?.children == undefined
+//   //     ? description[0]?.props?.children[0].props?.children
+//   //     : description[0]?.props?.children.props?.children
+//   // );
+//   return {
+//     title: blogDetails?.title,
+//     description:
+//       description[0]?.props?.children.props?.children == undefined
+//         ? description[0]?.props?.children[0].props?.children
+//         : description[0]?.props?.children.props?.children,
+//     openGraph: {
+//       title: blogDetails?.title,
+//       description:
+//         description[0]?.props?.children.props?.children == undefined
+//           ? description[0]?.props?.children[0].props?.children
+//           : description[0]?.props?.children.props?.children,
+//       images: blogDetails?.featuredImage?.image?.url,
+//       url: `https://www.carterinjurylaw.com/blog/${blogDetails?.slug}`,
+//       type: "article",
+//       site_name: "carterinjurylaw.com",
+//     },
+//   };
+// }

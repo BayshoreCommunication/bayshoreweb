@@ -40,6 +40,7 @@ address = [
 const Page = () => {
   return (
     <>
+      <h1 className="text-[#F4F4F4] inline absolute">Contact Us</h1>
       <AnimateContactHero />
       <SectionLayout bg="">
         <Reveal>

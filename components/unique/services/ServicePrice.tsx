@@ -97,26 +97,26 @@ ServicePriceData = [
     url: "ui-ux-design",
     serviceName: "UI/UX Design",
     otherCompany: [
-    "10 page ($800)",
-    "UI Design ($800)",
-    "Responsive Design ($800)",
-    "Mobile Design View ($800)",
-    "Prototype ($800)",
-    "User Flow ($800)",
-    "Wireframe ($800)",
-    "Source File ($800)",
-  ],
-  
+      "10 page ($800)",
+      "UI Design ($800)",
+      "Responsive Design ($800)",
+      "Mobile Design View ($800)",
+      "Prototype ($800)",
+      "User Flow ($800)",
+      "Wireframe ($800)",
+      "Source File ($800)",
+    ],
+
     bayshore: [
-    "10 page ($600)",
-    "UI Design ($600)",
-    "Responsive Design ($600)",
-    "Mobile Design View ($600)",
-    "Prototype ($600)",
-    "User Flow ($600)",
-    "Wireframe ($600)",
-    "Source File ($600)",
-  ],
+      "10 page ($600)",
+      "UI Design ($600)",
+      "Responsive Design ($600)",
+      "Mobile Design View ($600)",
+      "Prototype ($600)",
+      "User Flow ($600)",
+      "Wireframe ($600)",
+      "Source File ($600)",
+    ],
   },
   {
     url: "paid-advertising",
@@ -429,7 +429,7 @@ ServicePriceData = [
 const ServicePrice = ({ url }: any) => {
   //   console.log("Data check", TestData.map((el) => el.otherCompany)[0]);
   const data = ServicePriceData.filter((el: any) => el.url === url);
-  console.log("data ", data);
+  //console.log("data ", data);
   return (
     <div className="mt-20 mb-8">
       <div>
