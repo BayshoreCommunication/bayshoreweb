@@ -246,7 +246,7 @@ export async function generateMetadata({
 }) {
   const parameter = params.service;
   const individualService = services.filter((elem) => elem.url === parameter);
-  console.log(individualService.map((elem, index) => elem.metaDescription)[0]);
+  //console.log(individualService.map((elem, index) => elem.metaDescription)[0]);
   return {
     title: `${individualService.map((elem, index) => elem.topHeroLeftTitle)}`,
     description: `${
@@ -264,43 +264,3 @@ export async function generateMetadata({
     },
   };
 }
-
-// export async function generateMetadata({ params }) {
-//   const blogPostData = await GetAllPostData();
-
-//   const blogDetails = blogPostData?.data?.find(
-//     (blogs) => blogs.slug === params.slug
-//   );
-
-//   if (!blogDetails) {
-//     return {
-//       title: "Blog not found",
-//       description: "No blog post available.",
-//     };
-//   }
-
-//   let description = parse(blogDetails?.body);
-//   // console.log(
-//   //   description[0]?.props?.children.props?.children == undefined
-//   //     ? description[0]?.props?.children[0].props?.children
-//   //     : description[0]?.props?.children.props?.children
-//   // );
-//   return {
-//     title: blogDetails?.title,
-//     description:
-//       description[0]?.props?.children.props?.children == undefined
-//         ? description[0]?.props?.children[0].props?.children
-//         : description[0]?.props?.children.props?.children,
-//     openGraph: {
-//       title: blogDetails?.title,
-//       description:
-//         description[0]?.props?.children.props?.children == undefined
-//           ? description[0]?.props?.children[0].props?.children
-//           : description[0]?.props?.children.props?.children,
-//       images: blogDetails?.featuredImage?.image?.url,
-//       url: `https://www.carterinjurylaw.com/blog/${blogDetails?.slug}`,
-//       type: "article",
-//       site_name: "carterinjurylaw.com",
-//     },
-//   };
-// }
