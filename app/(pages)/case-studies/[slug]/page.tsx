@@ -31,14 +31,14 @@ export async function generateMetadata({
         .toLowerCase() === parameter
   );
   let description: any = parser(individualCase[0].desc);
-  //console.log(individualCase);
+  console.log(individualCase[0].caseImg);
   return {
     title: `${individualCase[0].title}`,
     description: `${description[0]?.props.children[2]}`,
     openGraph: {
       title: `${individualCase[0].title}`,
       description: `${description[0]?.props.children[2]}`,
-      images: individualCase[0].caseImg,
+      images: `/assets/case-studies/${individualCase[0].caseImg}`,
       url: `https://www.carterinjurylaw.com/our-services/${individualCase[0].url
         .replace(/\s+/g, "-")
         .toLowerCase()}`,
