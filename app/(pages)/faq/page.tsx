@@ -12,9 +12,9 @@ export const metadata = {
 const page = () => {
   return (
     <>
-      <h2 className="heading-secondary !text-center bg-[#F4F4F4] py-4 !mb-0">
+      <h1 className="heading-secondary !text-center bg-[#F4F4F4] py-4 !mb-0">
         Frequently Asked Questions (FAQ)
-      </h2>
+      </h1>
       <SectionLayout bg="">
         <AccordionCus title="Questions" />
       </SectionLayout>

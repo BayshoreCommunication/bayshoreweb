@@ -2,6 +2,12 @@ import SectionLayout from "@/components/universal/SectionLayout";
 import React from "react";
 import parser from "html-react-parser";
 
+export const metadata = {
+  title: "Terms & Conditions-Bayshore Communications",
+  name: "description",
+  description: `These terms and conditions outline the rules and regulations for the use of Bayshore Communication's Website, located at https://bayshorecommunication.com/.`,
+};
+
 let termsContent = [
   {
     desc: `
@@ -336,9 +342,9 @@ let termsContent = [
 const Page = () => {
   return (
     <>
-      <h2 className="heading-secondary !text-center bg-[#F4F4F4] py-4 !mb-0">
+      <h1 className="heading-secondary !text-center bg-[#F4F4F4] py-4 !mb-0">
         Terms & Conditions
-      </h2>
+      </h1>
       {termsContent.map((elem, index) => (
         <div key={index}>
           <SectionLayout bg="">

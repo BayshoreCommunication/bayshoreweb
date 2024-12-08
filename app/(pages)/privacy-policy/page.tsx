@@ -1,9 +1,15 @@
 import SectionLayout from "@/components/universal/SectionLayout";
 import parser from "html-react-parser";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Head from "next/head";
+import { Metadata } from "next";
 
 import React from "react";
-
+export const metadata = {
+  title: "Privacy Policy-Bayshore Communications",
+  name: "description",
+  description: `Bayshore Communications ("Bayshore", "we", "us") value your privacy and are dedicated to safeguarding your information. This Privacy Policy details what data we collect (from website visits, service engagements, or any interaction), how we use it to personalize your experience and improve our services, what choices you have over your data (including access, correction, and deletion), and how we employ robust security measures to keep your information protected`,
+};
 let privacyContent = [
   {
     desc: `
@@ -305,9 +311,9 @@ const Paragraph = ({ text }: t) => {
 const page = () => {
   return (
     <>
-      <h2 className="heading-secondary !text-center bg-[#F4F4F4] py-4 !mb-0">
+      <h1 className="heading-secondary !text-center bg-[#F4F4F4] py-4 !mb-0">
         Privacy Policy
-      </h2>
+      </h1>
 
       {privacyContent.map((elem, index) => (
         <div key={index}>

@@ -1,21 +1,26 @@
-import AccorDion from '@/components/universal/AccorDion';
-import SectionLayout from '@/components/universal/SectionLayout';
-import { Metadata } from 'next';
-import Head from 'next/head';
-import React from 'react';
-import parser from 'html-react-parser';
+import AccorDion from "@/components/universal/AccorDion";
+import SectionLayout from "@/components/universal/SectionLayout";
+import { Metadata } from "next";
+import Head from "next/head";
+import React from "react";
+import parser from "html-react-parser";
 import {
   Accordion,
   AccordionBody,
   AccordionHeader,
-} from '@material-tailwind/react';
-import { Example } from '@/components/unique/faq/FaqAcc';
-import GetAllBlogData from '@/lib/GetAllBlogData';
+} from "@material-tailwind/react";
+import { Example } from "@/components/unique/faq/FaqAcc";
+import GetAllBlogData from "@/lib/GetAllBlogData";
 
 export const metadata: Metadata = {
-  title: 'Career-Bayshore Communication',
+  title: "Career-Bayshore Communication",
   description:
-    'Looking for an opportunity to show your skills, talent, and work with professionals who share your vision and values? Check out our career page. Apply now and become part of our family. ',
+    "Looking for an opportunity to show your skills, talent, and work with professionals who share your vision and values? Check out our career page. Apply now and become part of our family. ",
+  openGraph: {
+    title: "Career-Bayshore Communication",
+    description:
+      "Looking for an opportunity to show your skills, talent, and work with professionals who share your vision and values? Check out our career page. Apply now and become part of our family. ",
+  },
 };
 
 let jobs: {
@@ -148,14 +153,14 @@ const page = async () => {
   const jobData = await GetAllBlogData();
   return (
     <>
-      <div className='bg-[#F4F4F4]'>
-        <h2 className='heading-secondary !text-center  py-4 !mb-0 max-w-[800px] mx-auto'>
+      <div className="bg-[#F4F4F4]">
+        <h1 className="heading-secondary !text-center  py-4 !mb-0 max-w-[800px] mx-auto">
           Empower Your Career: Discover Growth Opportunities at Bayshore
           Communication
-        </h2>
+        </h1>
       </div>
-      <SectionLayout bg=''>
-        <div className='border-[0.5px] border-[#AAAAAA] rounded-[10px]'>
+      <SectionLayout bg="">
+        <div className="border-[0.5px] border-[#AAAAAA] rounded-[10px]">
           {/* {jobs.map((elem, index) => (
             <div key={index}>
               <AccorDion title={`${elem.heading}`} body={<Content />} />

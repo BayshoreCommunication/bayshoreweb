@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import MarketingPerspectivesFormPreview from "./MarketingPerspectivesFormPreview";
 import MarketingPerspectivesFormCustomized from "./MarketingPerspectivesFormCustomized";
 
+export const metadata = {
+  title: "Marketing Perspectives-Bayshore Communication",
+};
 const MarketingPerspectivesFrom = () => {
   const [
     marketingPerspectivesFormDataDetails,
@@ -29,6 +32,7 @@ const MarketingPerspectivesFrom = () => {
 
   return (
     <div>
+      <h1 className="text-white inline-block">Marketing Perspectives</h1>
       {marketingPerspectivesFormShow ? (
         <div>
           <MarketingPerspectivesFormPreview
