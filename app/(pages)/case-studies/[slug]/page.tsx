@@ -59,7 +59,7 @@ export async function generateMetadata({
       title: `${individualCase[0].title}`,
       description: `${shortDescription}`,
       images: [`/assets/case-studies/${individualCase[0].caseImg}`],
-      url: `https://www.carterinjurylaw.com/our-services/${individualCase[0].url
+      url: `https://www.carterinjurylaw.com/case-studies/${individualCase[0].url
         .replace(/\s+/g, "-")
         .toLowerCase()}`,
       type: "article",
