@@ -68,7 +68,7 @@ export async function generateMetadata({
 
   // Fallback to blogDetails.excerpt if description parsing fails
 
-  console.log(shortDescription);
+  //console.log(shortDescription);
 
   return {
     title: blogDetails.title,
