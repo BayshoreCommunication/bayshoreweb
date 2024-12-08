@@ -10,6 +10,7 @@ import AboutUs from "@/components/universal/AboutUs";
 import Reveal from "@/components/motion/Reveal";
 import { TypeAnimation } from "react-type-animation";
 import BlogTextMtion from "@/components/universal/BlogTextMtion";
+import { url } from "inspector";
 
 // export const metadata: Metadata = {
 //   title: "Case-Bayshore Communication",
@@ -59,9 +60,14 @@ export async function generateMetadata({
       title: `${individualCase[0].title}`,
       description: shortDescription,
       images: [
-        `/assets/case-studies/${
-          individualCase[0].caseImg.slice(0, -4) + ".jpg"
-        }`,
+        {
+          url: `/assets/case-studies/${
+            individualCase[0].caseImg.slice(0, -4) + ".jpg"
+          }`,
+          width: 1200,
+          height: 600,
+          alt: `${individualCase[0].title}`,
+        },
       ],
       url: `https://www.carterinjurylaw.com/case-studies/${individualCase[0].url
         .replace(/\s+/g, "-")

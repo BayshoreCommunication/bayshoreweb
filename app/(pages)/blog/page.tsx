@@ -27,6 +27,19 @@ export const metadata: Metadata = {
   title: "Blog-Bayshore Communication",
   description:
     "Learn communication tips from our Bayshore experts. Read our blogs on web-mobile app design, content writing, social media marketing, video production, and more.",
+  openGraph: {
+    title: "Blog-Bayshore Communication",
+    description:
+      "Learn communication tips from our Bayshore experts. Read our blogs on web-mobile app design, content writing, social media marketing, video production, and more.",
+    images: [
+      {
+        url: "/assets/blog/blog-hero-img.svg",
+        width: 1200,
+        height: 600,
+        alt: "Blog-Bayshore Communication",
+      },
+    ],
+  },
 };
 
 const page = async () => {

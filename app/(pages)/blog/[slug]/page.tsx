@@ -28,7 +28,7 @@ interface Metadata {
   openGraph: {
     title: string;
     description: string;
-    images: string[];
+    images: any;
     url: string;
     type: string;
     site_name: string;
@@ -76,7 +76,14 @@ export async function generateMetadata({
     openGraph: {
       title: blogDetails.title,
       description: shortDescription,
-      images: [blogDetails.featuredImage?.image?.url || ""],
+      images: [
+        {
+          url: `${blogDetails.featuredImage?.image?.url}`,
+          width: 1200,
+          height: 600,
+          alt: blogDetails.title,
+        },
+      ],
       url: `https://www.bayshorecommunication.com/blog/${blogDetails.slug}`,
       type: "article",
       site_name: "Bayshorecommunication",
