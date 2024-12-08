@@ -62,23 +62,20 @@ export async function generateMetadata({
       },
     };
   }
-
-  // Parse the blog body and extract description
-  let description: any[] = parse(blogDetails.body) as any[];
+  const rawDescription = blogDetails.body || "";
+  const plainTextDescription = rawDescription.replace(/<[^>]+>/g, "");
+  const shortDescription = plainTextDescription.slice(0, 200);
 
   // Fallback to blogDetails.excerpt if description parsing fails
-  const parsedDescription =
-    description?.[0]?.props?.children?.props?.children ||
-    description?.[0]?.props?.children?.toString() ||
-    blogDetails.excerpt;
-  //console.log(description?.[0]?.props?.children.props.children);
+
+  console.log(shortDescription);
 
   return {
     title: blogDetails.title,
-    description: parsedDescription,
+    description: shortDescription,
     openGraph: {
       title: blogDetails.title,
-      description: parsedDescription.slice(0, 200),
+      description: shortDescription,
       images: [blogDetails.featuredImage?.image?.url || ""],
       url: `https://www.bayshorecommunication.com/blog/${blogDetails.slug}`,
       type: "article",

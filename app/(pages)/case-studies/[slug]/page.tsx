@@ -30,28 +30,35 @@ export async function generateMetadata({
         .replace(/\s+/g, "-") // Replace spaces with dashes globally
         .toLowerCase() === parameter
   );
-  let description: any = parser(individualCase[0].desc);
-  const MetaDescription = (des: [any]) => {
-    if (Array.isArray(des))
-      return (
-        description[0]?.props.children[0] +
-        description[0]?.props.children[1].props.children[0] +
-        description[0]?.props.children[2]
-      );
-  };
-  //console.log(MetaDescription(description[0]?.props.children));
+  // let description: any = parser(individualCase[0].desc);
+  // const MetaDescription = (des: [any]) => {
+  //   if (Array.isArray(des))
+  //     return (
+  //       description[0]?.props.children[0] +
+  //       description[0]?.props.children[1].props.children[0] +
+  //       description[0]?.props.children[2]
+  //     );
+  // };
+  // console.log(individualCase[0].caseImg);
+
+  if (!individualCase) {
+    return {
+      title: "Blog not found",
+      description: "No blog post available.",
+    };
+  }
+
+  const rawDescription = individualCase[0].desc || "";
+  const plainTextDescription = rawDescription.replace(/<[^>]+>/g, "");
+  const shortDescription = plainTextDescription.slice(0, 200);
+  // console.log(shortDescription);
   return {
     title: `${individualCase[0].title}`,
-    description: `${MetaDescription(description[0]?.props.children)}||${
-      description[0]?.props.children[0]
-    }`,
+    description: `${shortDescription}`,
     openGraph: {
       title: `${individualCase[0].title}`,
-      description: `${MetaDescription(description[0]?.props.children).slice(
-        0,
-        200
-      )}||${description[0]?.props.children[0].slice(0, 200)}`,
-      images: `/assets/case-studies/${individualCase[0].caseImg}`,
+      description: `${shortDescription}`,
+      images: [`/assets/case-studies/${individualCase[0].caseImg}`],
       url: `https://www.carterinjurylaw.com/our-services/${individualCase[0].url
         .replace(/\s+/g, "-")
         .toLowerCase()}`,
