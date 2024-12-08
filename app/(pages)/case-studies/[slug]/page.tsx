@@ -31,13 +31,25 @@ export async function generateMetadata({
         .toLowerCase() === parameter
   );
   let description: any = parser(individualCase[0].desc);
-  console.log(individualCase[0].caseImg);
+  const MetaDescription = (des: [any]) => {
+    if (Array.isArray(des))
+      return (
+        description[0]?.props.children[0] +
+        description[0]?.props.children[1].props.children[0] +
+        description[0]?.props.children[2]
+      );
+  };
+  //console.log(MetaDescription(description[0]?.props.children));
   return {
     title: `${individualCase[0].title}`,
-    description: `${description[0]?.props.children[2]}`,
+    description: `${MetaDescription(description[0]?.props.children)}||${
+      description[0]?.props.children[0]
+    }`,
     openGraph: {
       title: `${individualCase[0].title}`,
-      description: `${description[0]?.props.children[2]}`,
+      description: `${MetaDescription(description[0]?.props.children)}||${
+        description[0]?.props.children[0]
+      }`,
       images: `/assets/case-studies/${individualCase[0].caseImg}`,
       url: `https://www.carterinjurylaw.com/our-services/${individualCase[0].url
         .replace(/\s+/g, "-")
