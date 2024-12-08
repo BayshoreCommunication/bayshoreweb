@@ -3,9 +3,6 @@ import React, { useState } from "react";
 import MarketingPerspectivesFormPreview from "./MarketingPerspectivesFormPreview";
 import MarketingPerspectivesFormCustomized from "./MarketingPerspectivesFormCustomized";
 
-export const metadata = {
-  title: "Marketing Perspectives-Bayshore Communication",
-};
 const MarketingPerspectivesFrom = () => {
   const [
     marketingPerspectivesFormDataDetails,
