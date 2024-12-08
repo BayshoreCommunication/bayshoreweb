@@ -1,14 +1,14 @@
-import Consultaion from '@/components/universal/Consultaion';
-import { HeroWithImage } from '@/components/universal/Hero';
-import HeroLeft from '@/components/universal/HeroLeft';
-import SectionLayout from '@/components/universal/SectionLayout';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import parser from 'html-react-parser';
-import AboutUs from '@/components/universal/AboutUs';
-import GetAllBlogData from '@/lib/GetAllBlogData';
-import parse from 'html-react-parser';
+import Consultaion from "@/components/universal/Consultaion";
+import { HeroWithImage } from "@/components/universal/Hero";
+import HeroLeft from "@/components/universal/HeroLeft";
+import SectionLayout from "@/components/universal/SectionLayout";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import parser from "html-react-parser";
+import AboutUs from "@/components/universal/AboutUs";
+import GetAllBlogData from "@/lib/GetAllBlogData";
+import parse from "html-react-parser";
 
 interface BlogPost {
   slug: string;
@@ -44,21 +44,21 @@ export async function generateMetadata({
 
   // Find blog post details by slug
   const blogDetails: BlogPost | undefined = blogPostData?.data?.find(
-    (blogs: BlogPost) => blogs.slug === params.slug,
+    (blogs: BlogPost) => blogs.slug === params.slug
   );
 
   // If no blog is found, return default metadata
   if (!blogDetails) {
     return {
-      title: 'Blog not found',
-      description: 'No blog post available.',
+      title: "Blog not found",
+      description: "No blog post available.",
       openGraph: {
-        title: 'Blog not found',
-        description: 'No blog post available.',
+        title: "Blog not found",
+        description: "No blog post available.",
         images: [],
-        url: 'https://www.bayshorecommunication.com/blog/not-found',
-        type: 'article',
-        site_name: 'Bayshorecommunication',
+        url: "https://www.bayshorecommunication.com/blog/not-found",
+        type: "article",
+        site_name: "Bayshorecommunication",
       },
     };
   }
@@ -68,7 +68,10 @@ export async function generateMetadata({
 
   // Fallback to blogDetails.excerpt if description parsing fails
   const parsedDescription =
-    description?.[0]?.props?.children?.toString() || blogDetails.excerpt;
+    description?.[0]?.props?.children?.props?.children ||
+    description?.[0]?.props?.children?.toString() ||
+    blogDetails.excerpt;
+  //console.log(description?.[0]?.props?.children.props.children);
 
   return {
     title: blogDetails.title,
@@ -76,10 +79,10 @@ export async function generateMetadata({
     openGraph: {
       title: blogDetails.title,
       description: parsedDescription,
-      images: [blogDetails.featuredImage?.image?.url || ''],
+      images: [blogDetails.featuredImage?.image?.url || ""],
       url: `https://www.bayshorecommunication.com/blog/${blogDetails.slug}`,
-      type: 'article',
-      site_name: 'Bayshorecommunication',
+      type: "article",
+      site_name: "Bayshorecommunication",
     },
   };
 }
@@ -89,7 +92,7 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
 
   const parameter = params.slug;
   const indvblog = blogData?.data?.filter(
-    (elem: any) => elem.slug === parameter,
+    (elem: any) => elem.slug === parameter
   );
 
   const today = new Date();
@@ -98,10 +101,10 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
   } / ${today.getFullYear()}`;
 
   const dateFormate = (date: any) => {
-    const formattedDate = new Date(date).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
+    const formattedDate = new Date(date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     });
     return formattedDate;
   };
@@ -128,15 +131,15 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
         </div>
       </div> */}
 
-      <SectionLayout bg=''>
-        <div className='h-[100%] service-style'>
-          <div className='container'>
+      <SectionLayout bg="">
+        <div className="h-[100%] service-style">
+          <div className="container">
             {indvblog
               ?.filter((blog: any) => blog?.published === true)
               ?.map((elem: any, index: any) => (
                 <div key={index}>
-                  <div className='flex gap-x-10'>
-                    <div className='flex-[3]'>
+                  <div className="flex gap-x-10">
+                    <div className="flex-[3]">
                       <div>
                         {/* <img
                           src={elem.featuredImage.image.url}
@@ -145,27 +148,27 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                         /> */}
                         <Image
                           src={elem?.featuredImage?.image?.url}
-                          alt='no_image'
+                          alt="no_image"
                           width={2400}
                           height={2400}
-                          className='w-full h-full'
+                          className="w-full h-full"
                         />
-                        <div className='flex gap-4 py-6'>
+                        <div className="flex gap-4 py-6">
                           {/* <VscCalendar size={22} /> {dateToday} */}
                           {dateFormate(elem.createdAt)}
                         </div>
 
                         <div>
-                          <h1 className='font-semibold text-[80px] leading-normal'>
+                          <h1 className="font-semibold text-[80px] leading-normal">
                             {elem.title}
                           </h1>
                         </div>
 
-                        <div className='externallink'>{parser(elem.body)}</div>
+                        <div className="externallink">{parser(elem.body)}</div>
                       </div>
                     </div>
 
-                    <div className='flex-1 hidden sm:block'>
+                    <div className="flex-1 hidden sm:block">
                       {/* <div className="bg-[url('/assets/help-banner-bg.jpg')]">
                   <h4>
                     Need <br />
@@ -176,7 +179,7 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                   </p>
                   <Link href="/contact">Contact Us</Link>
                 </div> */}
-                      <div className='sticky top-24'>
+                      <div className="sticky top-24">
                         <BlogNavigation />
                       </div>
                     </div>
@@ -202,12 +205,12 @@ const BlogNavigation = async () => {
       {blogData?.data
         ?.filter(
           (blog: any) =>
-            blog?.published === true && blog?.category[0] !== 'Job Post',
+            blog?.published === true && blog?.category[0] !== "Job Post"
         )
         ?.map((elem: any, index: any) => (
           <div key={index}>
             <Link
-              className='flex gap-5 p-4 mb-4 rounded shadow-md bg-slate-500 '
+              className="flex gap-5 p-4 mb-4 rounded shadow-md bg-slate-500 "
               href={`/blog/${elem.slug}`}
             >
               {/* <img
@@ -217,12 +220,12 @@ const BlogNavigation = async () => {
               /> */}
               <Image
                 src={elem?.featuredImage?.image?.url}
-                alt='blog_image'
+                alt="blog_image"
                 width={3109}
                 height={1752}
-                className='w-[100px] h-[80px]'
+                className="w-[100px] h-[80px]"
               />
-              <p className='!text-xl'>{elem.title}</p>
+              <p className="!text-xl">{elem.title}</p>
             </Link>
           </div>
         ))}
