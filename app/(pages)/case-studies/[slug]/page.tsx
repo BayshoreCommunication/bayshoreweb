@@ -54,11 +54,15 @@ export async function generateMetadata({
   // console.log(shortDescription);
   return {
     title: `${individualCase[0].title}`,
-    description: `${shortDescription}`,
+    description: shortDescription,
     openGraph: {
       title: `${individualCase[0].title}`,
-      description: `${shortDescription}`,
-      images: [`/assets/case-studies/${individualCase[0].caseImg}`],
+      description: shortDescription,
+      images: [
+        `/assets/case-studies/${
+          individualCase[0].caseImg.slice(0, -4) + ".png"
+        }`,
+      ],
       url: `https://www.carterinjurylaw.com/case-studies/${individualCase[0].url
         .replace(/\s+/g, "-")
         .toLowerCase()}`,
