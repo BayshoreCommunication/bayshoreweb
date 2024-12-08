@@ -60,7 +60,7 @@ export async function generateMetadata({
       description: shortDescription,
       images: [
         `/assets/case-studies/${
-          individualCase[0].caseImg.slice(0, -4) + ".png"
+          individualCase[0].caseImg.slice(0, -4) + ".jpg"
         }`,
       ],
       url: `https://www.carterinjurylaw.com/case-studies/${individualCase[0].url
