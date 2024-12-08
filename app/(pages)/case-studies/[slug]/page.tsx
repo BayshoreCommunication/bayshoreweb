@@ -47,9 +47,10 @@ export async function generateMetadata({
     }`,
     openGraph: {
       title: `${individualCase[0].title}`,
-      description: `${MetaDescription(description[0]?.props.children)}||${
-        description[0]?.props.children[0]
-      }`,
+      description: `${MetaDescription(description[0]?.props.children).slice(
+        0,
+        200
+      )}||${description[0]?.props.children[0].slice(0, 200)}`,
       images: `/assets/case-studies/${individualCase[0].caseImg}`,
       url: `https://www.carterinjurylaw.com/our-services/${individualCase[0].url
         .replace(/\s+/g, "-")

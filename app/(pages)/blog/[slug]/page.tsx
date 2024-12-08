@@ -78,7 +78,7 @@ export async function generateMetadata({
     description: parsedDescription,
     openGraph: {
       title: blogDetails.title,
-      description: parsedDescription,
+      description: parsedDescription.slice(0, 200),
       images: [blogDetails.featuredImage?.image?.url || ""],
       url: `https://www.bayshorecommunication.com/blog/${blogDetails.slug}`,
       type: "article",
