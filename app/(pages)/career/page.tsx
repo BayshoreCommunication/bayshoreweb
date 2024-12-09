@@ -16,11 +16,11 @@ export const metadata: Metadata = {
   title: "Career-Bayshore Communication",
   description:
     "Looking for an opportunity to show your skills, talent, and work with professionals who share your vision and values? Check out our career page. Apply now and become part of our family. ",
-  openGraph: {
-    title: "Career-Bayshore Communication",
-    description:
-      "Looking for an opportunity to show your skills, talent, and work with professionals who share your vision and values? Check out our career page. Apply now and become part of our family. ",
-  },
+  // openGraph: {
+  //   title: "Career-Bayshore Communication",
+  //   description:
+  //     "Looking for an opportunity to show your skills, talent, and work with professionals who share your vision and values? Check out our career page. Apply now and become part of our family. ",
+  // },
 };
 
 let jobs: {
