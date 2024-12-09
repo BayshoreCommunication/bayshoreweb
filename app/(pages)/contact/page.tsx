@@ -40,7 +40,9 @@ address = [
 const Page = () => {
   return (
     <>
-      <h1 className="text-[#F4F4F4] inline absolute">Contact Us</h1>
+      <h1 className="bg-clip-text text-transparent bg-[#F4F4F4] inline absolute">
+        Contact Us
+      </h1>
       <AnimateContactHero />
       <SectionLayout bg="">
         <Reveal>
