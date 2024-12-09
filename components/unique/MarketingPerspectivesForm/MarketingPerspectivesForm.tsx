@@ -29,7 +29,7 @@ const MarketingPerspectivesFrom = () => {
 
   return (
     <div>
-      <h1 className="Marketing Perspectives bg-white inline-block">
+      <h1 className="bg-clip-text text-transparent bg-white inline-block">
         Marketing Perspectives
       </h1>
       {marketingPerspectivesFormShow ? (
