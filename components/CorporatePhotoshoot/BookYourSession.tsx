@@ -1,7 +1,6 @@
 import React from "react";
 import SectionLayout from "../universal/SectionLayout";
 import Link from "next/link";
-import { AiOutlineRight } from "react-icons/ai";
 import Reveal from "../motion/Reveal";
 
 const BookYourSession = () => {

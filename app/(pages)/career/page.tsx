@@ -1,4 +1,3 @@
-import AccorDion from "@/components/universal/AccorDion";
 import SectionLayout from "@/components/universal/SectionLayout";
 import { Metadata } from "next";
 import React from "react";
