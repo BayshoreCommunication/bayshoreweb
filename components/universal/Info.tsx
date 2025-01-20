@@ -12,7 +12,7 @@ const Info = () => {
           <div className="custom-info grid  grid-cols-2 justify-between items-center">
             <div className="flex flex-wrap sm:flex-nowrap items-center justify-center gap-8 ">
               <Image
-                src="/assets/salman-n.png"
+                src="/assets/ArjoNeel.png"
                 alt="salman"
                 width={150}
                 height={150}
