@@ -6,6 +6,7 @@ import Link from "next/link";
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
 import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
 import { SiYoutubemusic } from "react-icons/si";
+import { IoLogoBehance } from "react-icons/io5";
 
 let service: {
   title: string;
@@ -203,6 +204,12 @@ const Footer = () => {
                 target="_blank"
               >
                 <SiYoutubemusic className="w-[2.5rem] lg:w-[2.5rem] h-auto hover:text-[#FF0000]" />
+              </Link>
+              <Link
+                href={"https://www.behance.net/bayshorcommuni"}
+                target="_blank"
+              >
+                <IoLogoBehance className="w-[3rem] lg:w-[3rem] h-auto hover:text-[#003ECB]" />
               </Link>
             </div>
           </div>
