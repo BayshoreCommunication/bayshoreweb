@@ -52,7 +52,7 @@ const Page = () => {
   }, [api]);
 
   const plugin = React.useRef(
-    Autoplay({ delay: 5000, stopOnInteraction: false })
+    Autoplay({ delay: 5000, stopOnInteraction: true })
   );
 
   //=============
@@ -433,20 +433,17 @@ const Page = () => {
             className={"w-full  "}
             opts={{ loop: true, align: "center" }}
             plugins={[plugin.current]}
-            // onMouseEnter={plugin.current.stop}
-            // onMouseLeave={plugin.current.reset}
+            onMouseEnter={plugin.current.stop}
+            onMouseLeave={plugin.current.reset}
           >
             <CarouselContent className={"p-5 -ml-5"}>
               <CarouselItem className="pl-1 md:basis-1/2  ">
                 <div className="pl-1">
-                  <div className="p-10">
-                    <Image
-                      src="/assets/new/trip.png"
-                      alt="hero"
-                      width={356}
-                      height={200}
-                      quality={100}
-                      className="w-full rounded-3xl"
+                  <div className="p-10 ">
+                    <iframe
+                      src="https://www.youtube.com/embed/RVit6poGLRs?si=2WY4n0dji9pshlxZ"
+                      allowFullScreen
+                      className="w-full md:h-[200px] lg:h-[300px] xl:h-[350px] rounded-3xl"
                     />
                     <h3 className="text-[26px] pt-4">Trip Law</h3>
                     <p className="text-[18px]">
@@ -460,13 +457,10 @@ const Page = () => {
               <CarouselItem className="pl-1 md:basis-1/2 ">
                 <div className="pl-1">
                   <div className="p-10">
-                    <Image
-                      src="/assets/new/apex.png"
-                      alt="hero"
-                      width={356}
-                      height={200}
-                      quality={100}
-                      className="w-full rounded-3xl"
+                    <iframe
+                      src="https://www.youtube.com/embed/ohyUTzLiLbI?si=eFmJ9z2F9xSXO9g_"
+                      allowFullScreen
+                      className="w-full md:h-[200px] lg:h-[300px] xl:h-[350px]  rounded-3xl"
                     />
                     <h3 className="text-[26px] pt-4">Apex Advisor</h3>
                     <p className="text-[18px]">
@@ -480,13 +474,10 @@ const Page = () => {
               <CarouselItem className="pl-1 md:basis-1/2 ">
                 <div className="pl-1">
                   <div className="p-10">
-                    <Image
-                      src="/assets/new/cat.png"
-                      alt="hero"
-                      width={356}
-                      height={200}
-                      quality={100}
-                      className="w-full rounded-3xl"
+                    <iframe
+                      src="https://www.youtube.com/embed/iqHA7By9OAI?si=Nowq__MmNp3AUIM6"
+                      allowFullScreen
+                      className="w-full md:h-[200px] lg:h-[300px] xl:h-[350px]   rounded-3xl"
                     />
                     <h3 className="text-[26px] pt-4 ">Catflix</h3>
                     <p className="text-[18px]">
