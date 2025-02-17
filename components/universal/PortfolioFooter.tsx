@@ -32,7 +32,6 @@ service = [
   { title: "Motion Graphic", link: "/our-services/motion-graphic" },
   { title: "Video Production", link: "/our-services/video-production" },
   { title: "Influencer Marketing", link: "/our-services/influencer-marketing" },
-  { title: "Marketing Solutions", link: "/marketing-solutions" },
 ];
 
 let quickLinks: {
@@ -65,64 +64,9 @@ quickLinks = [
 const Col = ({ text, links }: any) => {
   return (
     <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
-      <h4 className="mb-10 heading-four text-center md:text-start ">{text}</h4>
-      <ul className="flex flex-col gap-4 ">
-        {links.map((el: any, i: number) => {
-          if (text === "Service") {
-            if (i < links.length / 2) {
-              return (
-                <li
-                  className="text-small hover:underline hover:text-primary"
-                  key={i}
-                >
-                  {typeof el === "string" ? (
-                    <>{el}</>
-                  ) : (
-                    <Link href={`${el.link}`}>{el.title}</Link>
-                  )}
-                </li>
-              );
-            }
-          } else if (text === "More Service") {
-            if (i > links.length / 2) {
-              return (
-                <li
-                  className="text-small hover:underline hover:text-primary"
-                  key={i}
-                >
-                  {typeof el === "string" ? (
-                    <>{el}</>
-                  ) : (
-                    <Link href={`${el.link}`}>{el.title}</Link>
-                  )}
-                </li>
-              );
-            }
-          } else {
-            return (
-              <li
-                className="text-small hover:underline hover:text-primary"
-                key={i}
-              >
-                {typeof el === "string" ? (
-                  <>{el}</>
-                ) : (
-                  <Link
-                    href={`${el.link}`}
-                    target={`${
-                      el.title === "Client Portal" || "Portfolio"
-                        ? "_blank"
-                        : ""
-                    }`}
-                  >
-                    {el.title}
-                  </Link>
-                )}
-              </li>
-            );
-          }
-        })}
-      </ul>
+      <h4 className="mb-10 heading-four text-headingPrimary lg:text-[1.8rem]  text-center md:text-start ">
+        {text}
+      </h4>
     </div>
   );
 };
@@ -130,8 +74,8 @@ const Footer = () => {
   return (
     <footer>
       <SectionLayout bg="bg-[#F4F4F4]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-[3rem] md:gap-8">
-          <div className="">
+        <div className="grid grid-cols-1  justify-items-center gap-[3rem] md:gap-8 lg:w-[50%] m-auto">
+          <div className=" flex flex-col justify-center items-center">
             <div className="center md:block">
               <Image
                 src="/assets/bayshore-logo.svg"
@@ -142,16 +86,13 @@ const Footer = () => {
                 priority
               />
             </div>
-            <p className="text-small  leading-[1.3] px-[2vw]  sm:px-0 ">
+            <p className="text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  leading-[1.3] px-[2vw] text-center  sm:px-0 ">
               {text}
             </p>
           </div>
-          <Col text="Service" links={service} />
-          <Col text="More Service" links={service} />
-          <Col text="Quick links" links={quickLinks} />
 
           {/* <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
-            <h4 className="mb-10 heading-four text-center md:text-start ">
+            <h4 className="mb-10 heading-four text-headingPrimary lg:text-[1.8rem]  text-center md:text-start ">
               By subscribing we inform about
             </h4>
             <div className="flex flex-col items-center gap-y-4">
@@ -162,7 +103,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="btn text-small !py-3 flex items-center gap-8 w-max"
+                className="btn text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify !py-3 flex items-center gap-8 w-max"
               >
                 <span>Get a Proposal</span>
               </button>
@@ -172,7 +113,7 @@ const Footer = () => {
         </div>
         <div className="w-full mt-6 h-[1px] bg-[#DBDBDB]"></div>
         <div className="flex flex-wrap justify-center md:justify-between items-center   ">
-          <p className="text-small mt-8 ">
+          <p className="text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify mt-8 ">
             Copyright © 2024 All Rights Reserved by Bayshore Communication.
           </p>
           <div className=" flex flex-col items-center  gap-6 pl-8 ">

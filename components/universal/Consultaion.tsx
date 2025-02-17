@@ -15,9 +15,9 @@ const Consultaion = () => {
             `}
         </p>
 
-        <Link href={"https://calendly.com/bayshorecommunication-info/30min"}>
+        <Link href={"https://calendly.com/bayshorec/45min?month=2025-02"}>
           <button className="btn text-small !py-4 flex items-center gap-4 md:gap-8 r-button border-2 border-primary hover:text-primary">
-            <span>Book now 30 min Free Consultation</span>
+            <span>Book now 45 min Free Consultation</span>
             <span className="inline-block translate-y-[2px] ml-2">
               <AiOutlineRight />
             </span>

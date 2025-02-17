@@ -445,22 +445,20 @@ body {
   width: 100%;
 }
 
-
 /* PROPOSAL BUTTON */
-
 
 .a-button {
   display: inline-block;
   border-radius: 10rem;
   color: #fff;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
 .a-button:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -472,14 +470,14 @@ body {
 }
 
 .a-button:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #F4F4F4;
-  transition: all .3s;
+  background-color: #f4f4f4;
+  transition: all 0.3s;
   /* border-radius: 10rem; */
   z-index: -1;
 }
@@ -492,22 +490,20 @@ body {
   width: 100%;
 }
 
-
 /* RESULT BUTTON */
-
 
 .r-button {
   display: inline-block;
   border-radius: 10rem;
   color: #fff;
-  transition: all .3s;
+  transition: all 0.3s;
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
 .r-button:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -519,14 +515,14 @@ body {
 }
 
 .r-button:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   width: 0%;
   height: 100%;
   background-color: white;
-  transition: all .3s;
+  transition: all 0.3s;
   /* border-radius: 10rem; */
   z-index: -1;
 }
@@ -539,7 +535,6 @@ body {
   width: 100%;
 }
 
-
 .externallink a {
   color: rgb(33, 35, 192);
   text-decoration: underline;
@@ -549,9 +544,9 @@ body {
   cursor: pointer;
 } */
 
-
 @keyframes zoomInOut {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
   }
   50% {
@@ -570,8 +565,6 @@ body {
 .animated-circle-three {
   animation: zoomInOut 3s ease-in-out infinite;
 }
-
-
 
 .jobpost-css-style h1,
 .jobpost-css-style h2,
