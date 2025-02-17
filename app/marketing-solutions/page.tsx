@@ -223,7 +223,7 @@ const Page = () => {
              Schedule Your Discovery Call{" "}
           </p>
           <p className=" text-[16px]    place-self-start   lg:text-[24px] pb-16 md:pb-0 ">{`Your responses are strictly confidential and will be used to tailor a customized strategy for you before our call.`}</p>
-          <div className="w-[95%] md:w-[70%] h-auto rounded-3xl  overflow-hidden">
+          <div className="w-full h-auto rounded-3xl  overflow-hidden">
             <InlineWidget
               url="https://calendly.com/bayshorec/45min?month=2025-02"
               styles={{
