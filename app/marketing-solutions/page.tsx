@@ -161,12 +161,12 @@ const Page = () => {
   return (
     <div className=" scroll-smooth">
       {" "}
-      <SectionLayout bg="flex flex-col justify-start items-center bg-[#2B2B2B] md:py-10 text-white  scroll-smooth">
+      <SectionLayout bg="flex flex-col justify-start items-center bg-[#2B2B2B] md:py-10 lg:px-20 text-white  scroll-smooth">
         {/* step1 */}
         <div className="flex flex-col justify-start items-center ">
           <div
             className={
-              "text-[26px] lg:text-[80px] font-bold text-center place-self-start pb-5"
+              "text-[26px] lg:text-[48px] font-bold text-center place-self-start pb-5"
             }
           >
             <p className="inline    ">LAW FIRM </p>
@@ -180,7 +180,7 @@ const Page = () => {
             <p className="inline   ">{` & `} </p>
             <p className="text-left inline lg:block">Legal Professionals:</p>
           </div>
-          <p className="text-[16px] text-center md:text-left lg:text-[28px] md:w-[70%] place-self-start text-[#AFAFB2] pb-10 lg:pb-16">
+          <p className="text-[16px] text-center md:text-left lg:text-[20px] md:w-[70%] place-self-start text-[#AFAFB2] pb-10 lg:pb-16">
             Your&apos;re One Step Away From Discovering How You Can Consistently
             Attract High-Value Clients Through Organic Marketing & SEO—Without
             Relying on Ads.{" "}
@@ -192,13 +192,13 @@ const Page = () => {
             </span>
           </p>
           <p
-            className=" text-[14px] lg:text-[24px] text-center underline place-self-start
+            className=" text-[14px] lg:text-[20px] text-center underline place-self-start
               "
             style={{ textUnderlineOffset: "5px" }}
           >
             You don&apos;t pay for effort—you pay for real, measurable growth.
           </p>
-          <p className="py-10 md:py-16 text-[20px] lg:text-[65px]  place-self-start font-bold">
+          <p className="py-10 md:py-16 text-[20px] lg:text-[48px]  place-self-start font-bold">
             <span className="text-[#FE5218] ">Step 1 of 2:</span>
              Watch Video
           </p>
@@ -213,12 +213,12 @@ const Page = () => {
         </div>
         {/* part2 */}
       </SectionLayout>
-      <SectionLayout bg="bg-white  scroll-smooth">
+      <SectionLayout bg="bg-white  scroll-smooth  lg:px-20 ">
         <div
           id="call"
           className="flex flex-col justify-start items-center md:mt-28 "
         >
-          <p className="py-5  text-[20px] lg:text-[65px]  place-self-start font-bold">
+          <p className="py-5  text-[20px] lg:text-[48px]  place-self-start font-bold">
             <span className="text-[#FE5218]">Step 2 of 2:</span>
              Schedule Your Discovery Call{" "}
           </p>
@@ -243,7 +243,7 @@ const Page = () => {
         </div>
         <div className="flex lg:py-20 flex-col justify-start items-center mt-10 md:mt-28 text-center w-full">
           <p
-            className="text-[20px] lg:text-[30px] underline place-self-start"
+            className="text-[20px] lg:text-[28px] underline place-self-start"
             style={{ textUnderlineOffset: "8px" }}
           >
             What You’ll Learn on Your Discovery Call
@@ -337,10 +337,10 @@ const Page = () => {
           </div>
         </div>
       </SectionLayout>
-      <SectionLayout bg="bg-gray-200  scroll-smooth">
+      <SectionLayout bg="bg-gray-200  scroll-smooth lg:px-20 ">
         {" "}
         <div className="py-5 lg:py-20 lg:px-20 xl:px-36 2xl:px-64  ">
-          <p className="text-[20px] lg:text-[30px] pb-10  font-semibold  md:text-start">
+          <p className="text-[20px] lg:text-[28px] pb-10  font-semibold  md:text-start">
             No Marketing Expertise? No Problem – We’ve Got You.
           </p>
           <ol className="text-[14px] md:text-[20px] list-none ">
@@ -412,10 +412,10 @@ const Page = () => {
           </ol>
         </div>
       </SectionLayout>
-      <SectionLayout bg="bg-white  scroll-smooth">
+      <SectionLayout bg="bg-white  scroll-smooth  lg:px-20 ">
         {" "}
         <div className="  py-5 lg:py-20">
-          <div className=" text-[20px] lg:text-[72px] font-bold">
+          <div className=" text-[20px] lg:text-[48px] font-bold">
             <p>
               <span className={"text-[#FE5218] underline underline-offset-2"}>
                 Recent Results
@@ -424,7 +424,7 @@ const Page = () => {
               Like You: 
             </p>
           </div>
-          <div className=" text-[18px] lg:text-[26px] py-5 lg:py-16 underline underline-offset-4">
+          <div className=" text-[18px] lg:text-[24px] py-5 lg:py-16 underline underline-offset-4">
             <p>{`How we took our clients business to the next level!`}</p>
           </div>
           {/* mobile */}
@@ -596,17 +596,17 @@ const Page = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-44"></div>
         </div>
       </SectionLayout>
-      <SectionLayout bg="bg-[#2B2B2B] py-5 lg:py-20  scroll-smooth">
+      <SectionLayout bg="bg-[#2B2B2B] py-5 lg:py-20  lg:px-20  scroll-smooth">
         <div
           className={
             "grid grid-cols-1 xl:grid-cols-2 h-fit  items-center lg:h-fit gap-20 p-5"
           }
         >
           <div>
-            <h2 className="text-[#FE5218] pb-5 text-[30px] lg:text-[100px] font-bold ">
+            <h2 className="text-[#FE5218] pb-5 text-[30px] lg:text-[48px] font-bold ">
               Why Us?
             </h2>
-            <p className="text-white pb-10 m-auto text-[18px] lg:text-[28px] ">
+            <p className="text-white pb-10 m-auto text-[18px] lg:text-[24px] ">
               We’re not here to sell—we’re here to show you exactly how to get
               real results using the same system that has worked for 100+ law
               firms across the U.S.
@@ -787,8 +787,8 @@ const Page = () => {
           </Carousel>
         </div>
       </SectionLayout>
-      <SectionLayout bg="bg-[#F4F4F4]  scroll-smooth">
-        <div className=" bg-gray-200 rounded-3xl border border-gray-300 px-8 py-12 lg:p-20 shadow-xl">
+      <SectionLayout bg="bg-[#F4F4F4]  scroll-smooth  lg:px-20 ">
+        <div className=" bg-gray-200 rounded-3xl border border-gray-300 px-8 py-12 lg:p-20 shadow-xl lg:mx-52 m-auto">
           <div>
             <h2 className="font-bold text-[24px] lg:text-[36px] text-center">
               Ready to Schedule Your Meeting?
@@ -933,12 +933,12 @@ const Page = () => {
                   </div>
                 </div>
               </div>
-              <div className="mt-3 w-full lg:w-1/4 m-auto flex justify-center items-center text-white">
+              <div className="mt-3 w-full lg:w-1/3 m-auto flex justify-center items-center text-white">
                 {loading ? (
                   <button
                     disabled
                     type="button"
-                    className="bg-[#FE631A] py-3 px-20 mt-6 text-white rounded-3xl text-base sm:text-[1.8rem] md:text-[1.6rem] md:text-justify m-auto !text-center "
+                    className="btn text-[11px] md:text-small !py-4 flex text-white items-center gap-2 md:gap-8 r-button border-2 border-primary hover:text-[#FE6F1F] "
                   >
                     <svg
                       aria-hidden="true"
@@ -962,7 +962,7 @@ const Page = () => {
                 ) : (
                   <button
                     type="submit"
-                    className="py-3 px-20 mt-6 !text-white  bg-[#FE5218] rounded-3xl text-base sm:text-[1.8rem] md:text-[1.6rem] md:text-justify m-auto !text-center "
+                    className="btn text-[11px] md:text-small !py-4 flex text-white items-center gap-2 md:gap-8 r-button border-2 border-primary hover:text-[#FE6F1F]"
                   >
                     Book Your Session Now{" "}
                   </button>
