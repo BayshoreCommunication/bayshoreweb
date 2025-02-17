@@ -223,25 +223,44 @@ const Page = () => {
              Schedule Your Discovery Call{" "}
           </p>
           <p className=" text-[16px]    place-self-start   lg:text-[24px] pb-16 md:pb-0 ">{`Your responses are strictly confidential and will be used to tailor a customized strategy for you before our call.`}</p>
-          <div className="w-full h-auto rounded-3xl  overflow-hidden">
-            <InlineWidget
-              url="https://calendly.com/bayshorec/45min?month=2025-02"
-              styles={{
-                height: "660px",
-                width: "100%",
-                borderRadius: "20px",
-              }}
-              pageSettings={{
-                backgroundColor: "ffffff",
-                hideEventTypeDetails: false,
-                hideLandingPageDetails: false,
-                primaryColor: "#0b7788",
-                textColor: "4d5055",
-              }}
-            />
+          <div className="w-full h-[1250px] lg:h-auto rounded-3xl  overflow-hidden">
+            <div className="block xl:hidden">
+              <InlineWidget
+                url="https://calendly.com/bayshorec/45min?month=2025-02"
+                styles={{
+                  height: "1250px",
+                  width: "100%",
+                  borderRadius: "20px",
+                }}
+                pageSettings={{
+                  backgroundColor: "ffffff",
+                  hideEventTypeDetails: false,
+                  hideLandingPageDetails: false,
+                  primaryColor: "#0b7788",
+                  textColor: "4d5055",
+                }}
+              />
+            </div>
+            <div className="hidden xl:block">
+              <InlineWidget
+                url="https://calendly.com/bayshorec/45min?month=2025-02"
+                styles={{
+                  height: "660px",
+                  width: "100%",
+                  borderRadius: "20px",
+                }}
+                pageSettings={{
+                  backgroundColor: "ffffff",
+                  hideEventTypeDetails: false,
+                  hideLandingPageDetails: false,
+                  primaryColor: "#0b7788",
+                  textColor: "4d5055",
+                }}
+              />
+            </div>
           </div>
         </div>
-        <div className="flex lg:py-20 flex-col justify-start items-center mt-10 md:mt-28 text-center w-full">
+        <div className="flex py-10 lg:py-20 flex-col justify-start items-center text-center w-full">
           <p
             className="text-[20px] lg:text-[28px] underline place-self-start"
             style={{ textUnderlineOffset: "8px" }}
@@ -444,6 +463,9 @@ const Page = () => {
                       src="https://www.youtube.com/embed/RVit6poGLRs?si=2WY4n0dji9pshlxZ"
                       allowFullScreen
                       className="w-full md:h-[200px] lg:h-[300px] xl:h-[350px] rounded-3xl"
+                      onMouseEnter={plugin.current.stop}
+                      onMouseLeave={plugin.current.reset}
+                      onClick={plugin.current.stop}
                     />
                     <h3 className="text-[26px] pt-4">Trip Law</h3>
                     <p className="text-[18px]">
@@ -461,6 +483,9 @@ const Page = () => {
                       src="https://www.youtube.com/embed/ohyUTzLiLbI?si=eFmJ9z2F9xSXO9g_"
                       allowFullScreen
                       className="w-full md:h-[200px] lg:h-[300px] xl:h-[350px]  rounded-3xl"
+                      onMouseEnter={plugin.current.stop}
+                      onMouseLeave={plugin.current.reset}
+                      onClick={plugin.current.stop}
                     />
                     <h3 className="text-[26px] pt-4">Apex Advisor</h3>
                     <p className="text-[18px]">
@@ -478,6 +503,9 @@ const Page = () => {
                       src="https://www.youtube.com/embed/iqHA7By9OAI?si=Nowq__MmNp3AUIM6"
                       allowFullScreen
                       className="w-full md:h-[200px] lg:h-[300px] xl:h-[350px]   rounded-3xl"
+                      onMouseEnter={plugin.current.stop}
+                      onMouseLeave={plugin.current.reset}
+                      onClick={plugin.current.stop}
                     />
                     <h3 className="text-[26px] pt-4 ">Catflix</h3>
                     <p className="text-[18px]">
