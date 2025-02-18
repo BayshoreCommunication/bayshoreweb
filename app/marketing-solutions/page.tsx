@@ -264,9 +264,9 @@ const Page = () => {
               //     videoRef.current.seekTo(played);
               // }}
               // onContextMenu={(e) => e.preventDefault()}
-              // onEnded={() => {
-              //   setIsVideoFinished(true);
-              // }}
+              onEnded={() => {
+                setIsVideoFinished(true);
+              }}
             />
           </div>
 
