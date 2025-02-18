@@ -40,23 +40,17 @@ const Page = () => {
     {
       src: `https://www.youtube.com/embed/RVit6poGLRs?si=2WY4n0dji9pshlxZ`,
       title: `Trip Law`,
-      text: `Read the feedback from our satisfied clients who have
-                      benefited from our services. Their words reflect our
-                      high-quality work and dedication to their success.`,
+      text: `Since 2016, working with Trip Law, we've grown the practice from $60,000 to $2.3 million without spending a dime on ads. We consistently generate 20+ new client appointments per month, each with a $5,000 case value. Client acquisition is no longer Trip Law’s challenge—managing the caseload is.`,
     },
     {
       src: `https://www.youtube.com/embed/ohyUTzLiLbI?si=eFmJ9z2F9xSXO9g_`,
       title: `Apex Advisor`,
-      text: `Read the feedback from our satisfied clients who have
-                      benefited from our services. Their words reflect our
-                      high-quality work and dedication to their success.`,
+      text: `Apex had a strong brand presence, but poor SEO analysis from another agency left them invisible on Google. Our video production team built a powerful social media presence, driving trust through informative video marketing. Meanwhile, Salman identified SEO errors, optimized the site, and ranked it in 25 days, leading to 9x growth in consumer appointments and XXXX site visits.`,
     },
     {
       src: `https://www.youtube.com/embed/iqHA7By9OAI?si=Nowq__MmNp3AUIM6`,
       title: `Catflix`,
-      text: `Read the feedback from our satisfied clients who have
-                      benefited from our services. Their words reflect our
-                      high-quality work and dedication to their success.`,
+      text: `Despite having a brilliant idea, The Cat Flix struggled to get noticed online. We stepped in—making their website faster, improving their content, and creating a smart marketing plan. In just three months, their traffic jumped 320%, their blog ranked for 50+ key topics, and customer inquiries increased 47%. Now, Cat Flix is reaching the right people and growing every day.`,
     },
   ];
 
