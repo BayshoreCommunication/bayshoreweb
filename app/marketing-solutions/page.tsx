@@ -961,9 +961,9 @@ const Page = () => {
           </div>
         </div>
         <div className="flex flex-col md:gap-10 gap-5 justify-start items-start pt-36 ">
-          <div className="text-[26px] lg:text-[36px] font-bold text-center md:px-12">
+          {/* <div className="text-[26px] lg:text-[36px] font-bold text-center md:px-12">
             <p>We&apos;re Also Rated &apos;&apos;Excellent&apos;&apos;</p>
-          </div>
+          </div> */}
           {/* <div className={"place-self-center md:px-12 md:place-self-start "}>
             <Image
               src="/assets/new/star.png"
@@ -974,7 +974,7 @@ const Page = () => {
             />
           </div> */}
 
-          <div className="py-5 text-[26px] md:px-12">
+          <div className=" text-[26px] md:px-12">
             <ol className="text-[16px] md:text-[20px]  list-none ">
               <li className="pb-4">
                 ✔️ <span className="font-bold">Attract High-Value Clients</span>{" "}
