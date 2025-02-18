@@ -830,7 +830,7 @@ const Page = () => {
                 <div className="flex-1 mt-2 text-left">
                   <label className={" pl-4 pb-6"}>First Name</label>
                   <input
-                    className="appearance-none rounded-3xl w-full  mb-8 py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem]  !text-left"
+                    className="appearance-none rounded-3xl w-full mt-3   mb-5 py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem]  !text-left"
                     type="text"
                     placeholder="Enter your first name"
                     name="first_name"
@@ -844,7 +844,7 @@ const Page = () => {
 
                   <label className=" md:hidden pl-4 pb-6">Last Name</label>
                   <input
-                    className="appearance-none md:hidden  rounded-3xl w-full    mb-5  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
+                    className="appearance-none md:hidden  rounded-3xl w-full   mt-3   mb-5  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
                     type="text"
                     placeholder="Enter your last name"
                     name="last_name"
@@ -858,7 +858,7 @@ const Page = () => {
 
                   <label className={" pl-4 pb-6 "}>Email</label>
                   <input
-                    className="appearance-none  rounded-3xl w-full   mt-2 mb-8  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
+                    className="appearance-none  rounded-3xl w-full   mt-3 mb-5  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
                     type="text"
                     placeholder="Enter your email"
                     name="email"
@@ -869,7 +869,7 @@ const Page = () => {
                   <span className="text-orange-600">{formErrors.email}</span>
                   <label className=" md:hidden pl-4 pb-6">Phone</label>
                   <input
-                    className="appearance-none  md:hidden rounded-3xl w-full    mb-5  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
+                    className="appearance-none  md:hidden rounded-3xl w-full   mt-3   mb-5  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
                     type="text"
                     placeholder="Phone"
                     name="phone"
@@ -886,7 +886,7 @@ const Page = () => {
                     id="address"
                     value={contactInfo.address}
                     onChange={handleChange}
-                    className="appearance-none  rounded-3xl w-full  mt-1   mb-8 py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify !text-left"
+                    className="appearance-none  rounded-3xl w-full    mt-3   mb-5 py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify !text-left"
                     placeholder="Street address"
                   />
                   <span className="text-orange-600">{formErrors.address}</span>
@@ -897,7 +897,7 @@ const Page = () => {
                       id="zip"
                       value={contactInfo.zip}
                       onChange={handleChange}
-                      className="appearance-none  rounded-3xl w-full   mb-8  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify   !text-left"
+                      className="appearance-none  rounded-3xl w-full   mt-3  mb-5  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify   !text-left"
                       placeholder="Zip Code"
                     />
                     <span className="text-orange-600 md:hidden">
@@ -905,10 +905,10 @@ const Page = () => {
                     </span>
                   </div>
                 </div>
-                <div className="flex-1 ">
-                  <label className="hidden md:block pl-4 pb-6">Last Name</label>
+                <div className="flex-1 mt-2">
+                  <label className="hidden md:block pl-4 ">Last Name</label>
                   <input
-                    className="appearance-none hidden md:block rounded-3xl w-full    mb-8  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
+                    className="appearance-none hidden md:block rounded-3xl w-full   mt-3  mb-5   py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
                     type="text"
                     placeholder="Enter your last name"
                     name="last_name"
@@ -920,9 +920,9 @@ const Page = () => {
                   <span className="text-orange-600 hidden md:block">
                     {formErrors.last_name}
                   </span>
-                  <label className="hidden md:block pl-4 pb-6">Phone</label>
+                  <label className="hidden md:block pl-4 ">Phone</label>
                   <input
-                    className="appearance-none  rounded-3xl w-full    hidden md:block  mb-8  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
+                    className="appearance-none  rounded-3xl w-full    hidden md:block  mt-3  mb-5   py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
                     type="text"
                     placeholder="Phone"
                     name="phone"
@@ -934,16 +934,14 @@ const Page = () => {
                     {formErrors.phone}
                   </span>
 
-                  <label className={" pl-4 pb-6 hidden md:block"}>
-                    Zip Code
-                  </label>
+                  <label className={" pl-4 hidden md:block"}>Zip Code</label>
                   <div className="flex-1 hidden md:block">
                     <input
                       name="zip"
                       id="zip"
                       value={contactInfo.zip}
                       onChange={handleChange}
-                      className="appearance-none  rounded-3xl w-full   mb-8  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left "
+                      className="appearance-none  rounded-3xl w-full   mt-3  mb-5   py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left "
                       placeholder="Zip Code"
                     />
                     <span className="text-orange-600 hidden md:block">
