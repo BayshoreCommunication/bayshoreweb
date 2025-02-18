@@ -60,16 +60,16 @@ const Page = () => {
     },
   ];
 
-  const [isPlaying, setIsPlaying] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
+  // const videoRef = useRef<ReactPlayer>(null);
+  // const [played, setPlayed] = useState(0);
 
-  const handlePlayPause = () => {
-    setIsPlaying(!isPlaying);
-  };
+  // const handlePlayPause = () => {
+  //   setIsPlaying(!isPlaying);
+  // };
 
-  const handleMuteUnmute = () => {
-    setIsMuted(!isMuted);
-  };
+  // const handleMuteUnmute = () => {
+  //   setIsMuted(!isMuted);
+  // };
 
   //carousel==========
   const [api, setApi] = React.useState<CarouselApi>();
@@ -248,15 +248,25 @@ const Page = () => {
             
           /> */}
 
-          <div className="relative flex w-[95%] h-[275px] md:h-[400px] lg:h-[490px] xl:h-[600px] justify-center rounded-2xl overflow-hidden items-center m-auto">
+          <div className="relative flex w-[95%] h-[275px] md:h-[400px] lg:h-[490px] xl:h-[600px] xl:w-[70%] justify-center rounded-2xl overflow-hidden items-center m-auto">
             <ReactPlayer
               url="https://www.youtube.com/watch?v=pQD5jqtRjFI&t=3s"
               width={"100%"}
               height={"100%"}
-              playing={isPlaying}
-              onEnded={() => {
-                setIsVideoFinished(true);
-              }}
+              // ref={videoRef}
+              // controls
+              // onProgress={() => {
+              //   videoRef.current.getCurrentTime() >= played &&
+              //     setPlayed(videoRef?.current.getCurrentTime());
+              // }}
+              // onSeek={() => {
+              //   videoRef.current.getCurrentTime() > played &&
+              //     videoRef.current.seekTo(played);
+              // }}
+              // onContextMenu={(e) => e.preventDefault()}
+              // onEnded={() => {
+              //   setIsVideoFinished(true);
+              // }}
             />
           </div>
 
