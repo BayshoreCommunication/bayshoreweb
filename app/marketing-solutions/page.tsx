@@ -45,7 +45,7 @@ const Page = () => {
     {
       src: `https://www.youtube.com/embed/ohyUTzLiLbI?si=eFmJ9z2F9xSXO9g_`,
       title: `Apex Advisor`,
-      text: `Apex had a strong brand presence, but poor SEO analysis from another agency left them invisible on Google. Our video production team built a powerful social media presence, driving trust through informative video marketing. Meanwhile, Salman identified SEO errors, optimized the site, and ranked it in 25 days, leading to 9x growth in consumer appointments and XXXX site visits.`,
+      text: `Apex had a strong brand presence, but poor SEO analysis from another agency left them invisible on Google. Our video production team built a powerful social media presence, driving trust through informative video marketing. Meanwhile, Salman identified SEO errors, optimized the site, and ranked it in 25 days, leading to 9x growth in consumer appointments and 45,000+ site visits.`,
     },
     {
       src: `https://www.youtube.com/embed/iqHA7By9OAI?si=Nowq__MmNp3AUIM6`,
