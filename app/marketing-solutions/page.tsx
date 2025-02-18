@@ -242,7 +242,7 @@ const Page = () => {
             
           /> */}
 
-          <div className="relative flex w-[95%] h-[275px] md:h-[400px] lg:h-[490px] xl:h-[600px] xl:w-[70%] justify-center rounded-2xl overflow-hidden items-center m-auto">
+          <div className="relative flex w-[95%] h-[275px] md:h-[350px] lg:h-[450px] xl:h-[500px] 2xl:h-[550px] 2xl:w-[61.5%] justify-center rounded-2xl overflow-hidden items-center m-auto">
             <ReactPlayer
               url="https://www.youtube.com/watch?v=pQD5jqtRjFI&t=3s"
               width={"100%"}
@@ -953,12 +953,9 @@ const Page = () => {
         </div>
         <div className="flex flex-col md:gap-10 gap-5 justify-start items-start pt-36 ">
           <div className="text-[26px] lg:text-[36px] font-bold text-center md:px-12">
-            <p>
-              We&apos;re Also Rated &apos;&apos;Excellent&apos;&apos; On
-              TrustPilot
-            </p>
+            <p>We&apos;re Also Rated &apos;&apos;Excellent&apos;&apos;</p>
           </div>
-          <div className={"place-self-center md:px-12 md:place-self-start "}>
+          {/* <div className={"place-self-center md:px-12 md:place-self-start "}>
             <Image
               src="/assets/new/star.png"
               alt="star"
@@ -966,9 +963,9 @@ const Page = () => {
               height={100}
               quality={100}
             />
-          </div>
+          </div> */}
 
-          <div className="py-10 text-[26px] md:px-12">
+          <div className="py-5 text-[26px] md:px-12">
             <ol className="text-[16px] md:text-[20px]  list-none ">
               <li className="pb-4">
                 ✔️ <span className="font-bold">Attract High-Value Clients</span>{" "}
