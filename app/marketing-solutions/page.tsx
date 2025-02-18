@@ -960,7 +960,7 @@ const Page = () => {
             </form>
           </div>
         </div>
-        <div className="flex flex-col md:gap-10 gap-5 justify-start items-start pt-36 ">
+        <div className="flex flex-col md:gap-10 gap-5 justify-start items-start pt-20 ">
           {/* <div className="text-[26px] lg:text-[36px] font-bold text-center md:px-12">
             <p>We&apos;re Also Rated &apos;&apos;Excellent&apos;&apos;</p>
           </div> */}
