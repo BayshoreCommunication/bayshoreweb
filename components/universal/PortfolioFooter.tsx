@@ -86,7 +86,7 @@ const Footer = () => {
                 priority
               />
             </div>
-            <p className="text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  leading-[1.3] px-[2vw] text-center  sm:px-0 ">
+            <p className="text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  leading-[1.3] px-[2vw] !text-center  sm:px-0 ">
               {text}
             </p>
           </div>
