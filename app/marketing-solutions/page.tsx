@@ -1,7 +1,7 @@
 "use client";
 
 import Autoplay from "embla-carousel-autoplay";
-
+import ReactPlayer from "react-player";
 import { InlineWidget } from "react-calendly";
 import React, { useCallback } from "react";
 import Image from "next/image";
@@ -23,6 +23,8 @@ import axios from "axios";
 import emailjs from "emailjs-com";
 import Link from "next/link";
 import { AiOutlineRight } from "react-icons/ai";
+import { Button } from "@material-tailwind/react";
+import { PauseIcon, PlayIcon } from "lucide-react";
 
 interface FormValues {
   first_name: string;
@@ -34,6 +36,41 @@ interface FormValues {
 }
 
 const Page = () => {
+  const carouselVideo = [
+    {
+      src: `https://www.youtube.com/embed/RVit6poGLRs?si=2WY4n0dji9pshlxZ`,
+      title: `Trip Law`,
+      text: `Read the feedback from our satisfied clients who have
+                      benefited from our services. Their words reflect our
+                      high-quality work and dedication to their success.`,
+    },
+    {
+      src: `https://www.youtube.com/embed/ohyUTzLiLbI?si=eFmJ9z2F9xSXO9g_`,
+      title: `Apex Advisor`,
+      text: `Read the feedback from our satisfied clients who have
+                      benefited from our services. Their words reflect our
+                      high-quality work and dedication to their success.`,
+    },
+    {
+      src: `https://www.youtube.com/embed/iqHA7By9OAI?si=Nowq__MmNp3AUIM6`,
+      title: `Catflix`,
+      text: `Read the feedback from our satisfied clients who have
+                      benefited from our services. Their words reflect our
+                      high-quality work and dedication to their success.`,
+    },
+  ];
+
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+
+  const handlePlayPause = () => {
+    setIsPlaying(!isPlaying);
+  };
+
+  const handleMuteUnmute = () => {
+    setIsMuted(!isMuted);
+  };
+
   //carousel==========
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
@@ -45,6 +82,7 @@ const Page = () => {
     }
 
     setCount(api.scrollSnapList().length);
+
     setCurrent(api.selectedScrollSnap() + 1);
     api?.on("select", () => {
       setCurrent(api.selectedScrollSnap() + 1);
@@ -57,6 +95,7 @@ const Page = () => {
 
   //=============
 
+  const [isVideoFinished, setIsVideoFinished] = React.useState(false);
   const initialValues = {
     first_name: "",
     last_name: "",
@@ -161,7 +200,7 @@ const Page = () => {
   return (
     <div className=" scroll-smooth">
       {" "}
-      <SectionLayout bg="flex flex-col justify-start items-center bg-[#2B2B2B] md:py-10 lg:px-20 text-white  scroll-smooth">
+      <SectionLayout bg="flex flex-col justify-start items-center bg-[#2B2B2B] md:py-10 lg:px-20 lg:pb-20 text-white  scroll-smooth">
         {/* step1 */}
         <div className="flex flex-col justify-start items-center ">
           <div
@@ -202,18 +241,43 @@ const Page = () => {
             <span className="text-[#FE5218] ">Step 1 of 2:</span>
              Watch Video
           </p>
-          <Image
+          {/* <Image
             src="/assets/new/step1.png"
             alt="hero"
-            width={1900}
-            height={1200}
             quality={100}
-            className="w-[95%] md:w-[70%] h-auto  pb-10"
-          />
+            
+          /> */}
+
+          <div className="relative flex w-[95%] h-[275px] md:h-[400px] lg:h-[490px] xl:h-[600px] justify-center rounded-2xl overflow-hidden items-center m-auto">
+            <ReactPlayer
+              url="https://www.youtube.com/watch?v=pQD5jqtRjFI&t=3s"
+              width={"100%"}
+              height={"100%"}
+              playing={isPlaying}
+              onEnded={() => {
+                setIsVideoFinished(true);
+              }}
+            />
+          </div>
+
+          {/* <video width={1900} height={1200} controls preload="none">
+            <source src="/path/to/video.mp4" type="video/mp4" />
+            <track
+              src="/path/to/captions.vtt"
+              kind="subtitles"
+              srcLang="en"
+              label="English"
+            />
+            Your browser does not support the video tag.
+          </video> */}
         </div>
         {/* part2 */}
       </SectionLayout>
-      <SectionLayout bg="bg-white  scroll-smooth  lg:px-20 ">
+      <SectionLayout
+        bg={`bg-white  scroll-smooth  lg:px-20 ${
+          isVideoFinished ? " " : " blur"
+        }`}
+      >
         <div
           id="call"
           className="flex flex-col justify-start items-center md:mt-28 "
@@ -356,7 +420,11 @@ const Page = () => {
           </div>
         </div>
       </SectionLayout>
-      <SectionLayout bg="bg-gray-200  scroll-smooth lg:px-20 ">
+      <SectionLayout
+        bg={`bg-gray-200  scroll-smooth lg:px-20  ${
+          isVideoFinished ? " " : " blur"
+        }`}
+      >
         {" "}
         <div className="py-5 lg:py-20 lg:px-20 xl:px-36 2xl:px-64  ">
           <p className="text-[20px] lg:text-[28px] pb-10  font-semibold  md:text-start">
@@ -431,7 +499,11 @@ const Page = () => {
           </ol>
         </div>
       </SectionLayout>
-      <SectionLayout bg="bg-white  scroll-smooth  lg:px-20 ">
+      <SectionLayout
+        bg={`bg-white  scroll-smooth  lg:px-20 ${
+          isVideoFinished ? " " : " blur"
+        }`}
+      >
         {" "}
         <div className="  py-5 lg:py-20">
           <div className=" text-[20px] lg:text-[48px] font-bold">
@@ -456,66 +528,24 @@ const Page = () => {
             onMouseLeave={plugin.current.reset}
           >
             <CarouselContent className={"p-5 -ml-5"}>
-              <CarouselItem className="pl-1 md:basis-1/2  ">
-                <div className="pl-1">
-                  <div className="p-10 ">
-                    <iframe
-                      src="https://www.youtube.com/embed/RVit6poGLRs?si=2WY4n0dji9pshlxZ"
-                      allowFullScreen
-                      className="w-full md:h-[200px] lg:h-[300px] xl:h-[350px] rounded-3xl"
-                      onMouseEnter={plugin.current.stop}
-                      onMouseLeave={plugin.current.reset}
-                      onClick={plugin.current.stop}
-                    />
-                    <h3 className="text-[26px] pt-4">Trip Law</h3>
-                    <p className="text-[18px]">
-                      Read the feedback from our satisfied clients who have
-                      benefited from our services. Their words reflect our
-                      high-quality work and dedication to their success.
-                    </p>
-                  </div>{" "}
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-1 md:basis-1/2 ">
-                <div className="pl-1">
-                  <div className="p-10">
-                    <iframe
-                      src="https://www.youtube.com/embed/ohyUTzLiLbI?si=eFmJ9z2F9xSXO9g_"
-                      allowFullScreen
-                      className="w-full md:h-[200px] lg:h-[300px] xl:h-[350px]  rounded-3xl"
-                      onMouseEnter={plugin.current.stop}
-                      onMouseLeave={plugin.current.reset}
-                      onClick={plugin.current.stop}
-                    />
-                    <h3 className="text-[26px] pt-4">Apex Advisor</h3>
-                    <p className="text-[18px]">
-                      Read the feedback from our satisfied clients who have
-                      benefited from our services. Their words reflect our
-                      high-quality work and dedication to their success.
-                    </p>
+              {carouselVideo?.map((item, index) => (
+                <CarouselItem key={index} className="pl-1 md:basis-1/2  ">
+                  <div className="pl-1">
+                    <div className="p-10 ">
+                      <iframe
+                        src={item.src}
+                        allowFullScreen
+                        className="w-full md:h-[200px] lg:h-[300px] xl:h-[350px] rounded-3xl"
+                        onMouseEnter={plugin.current.stop}
+                        onMouseLeave={plugin.current.reset}
+                        onClick={plugin.current.stop}
+                      />
+                      <h3 className="text-[26px] pt-4">{item.title}</h3>
+                      <p className="text-[18px]">{item.text}</p>
+                    </div>{" "}
                   </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-1 md:basis-1/2 ">
-                <div className="pl-1">
-                  <div className="p-10">
-                    <iframe
-                      src="https://www.youtube.com/embed/iqHA7By9OAI?si=Nowq__MmNp3AUIM6"
-                      allowFullScreen
-                      className="w-full md:h-[200px] lg:h-[300px] xl:h-[350px]   rounded-3xl"
-                      onMouseEnter={plugin.current.stop}
-                      onMouseLeave={plugin.current.reset}
-                      onClick={plugin.current.stop}
-                    />
-                    <h3 className="text-[26px] pt-4 ">Catflix</h3>
-                    <p className="text-[18px]">
-                      Read the feedback from our satisfied clients who have
-                      benefited from our services. Their words reflect our
-                      high-quality work and dedication to their success.
-                    </p>
-                  </div>
-                </div>
-              </CarouselItem>
+                </CarouselItem>
+              ))}
             </CarouselContent>
             <CarouselPrevious
               className={"text-gray-700 hover:text-[#FE5218] "}
@@ -523,99 +553,24 @@ const Page = () => {
             <CarouselNext className={"text-gray-700 hover:text-[#FE5218] "} />
           </Carousel>
           <div className="py-2 text-center text-sm text-muted-foreground  justify-center items-center gap-20 flex">
-            <div
-              className={`h-5  w-5 rounded-full  ${
-                current == 1 ? "bg-[#FE5218]" : "   bg-gray-300"
-              }`}
-            ></div>{" "}
-            <div
-              className={`h-5  w-5 rounded-full  ${
-                current == 2 ? "bg-[#FE5218]" : "   bg-gray-300"
-              }`}
-            ></div>{" "}
-            <div
-              className={`h-5  w-5 rounded-full  ${
-                current == 3 ? "bg-[#FE5218]" : "   bg-gray-300"
-              }`}
-            ></div>{" "}
+            {carouselVideo.map((item, index) => (
+              <div
+                key={index}
+                className={`h-5  w-5 rounded-full  ${
+                  current == index + 1 ? "bg-[#FE5218]" : "   bg-gray-300"
+                }`}
+              ></div>
+            ))}
           </div>
-          {/* desktop */}
-          {/* <Carousel
-            setApi={setApi}
-            className={"w-full hidden md:block"}
-            opts={{ loop: true, align: "end" }}
-            // plugins={[plugin.current]}
-            // onMouseEnter={plugin.current.stop}
-            // onMouseLeave={plugin.current.reset}
-          >
-            <CarouselContent className={"p-5 "}>
-              <CarouselItem className="pl-1 md:basis-1/2  ">
-                <div className="p-10">
-                  <Image
-                    src="/assets/new/trip.png"
-                    alt="hero"
-                    width={356}
-                    height={200}
-                    quality={100}
-                    className="w-full rounded-3xl"
-                  />
-                  <h3 className="text-[26px] pt-4">Trip Law</h3>
-                  <p className="text-[18px]">
-                    Read the feedback from our satisfied clients who have
-                    benefited from our services. Their words reflect our
-                    high-quality work and dedication to their success.
-                  </p>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-1 md:basis-1/2 ">
-                <div className="p-10">
-                  <Image
-                    src="/assets/new/apex.png"
-                    alt="hero"
-                    width={356}
-                    height={200}
-                    quality={100}
-                    className="w-full rounded-3xl"
-                  />
-                  <h3 className="text-[26px] pt-4">Apex Advisor</h3>
-                  <p className="text-[18px]">
-                    Read the feedback from our satisfied clients who have
-                    benefited from our services. Their words reflect our
-                    high-quality work and dedication to their success.
-                  </p>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-1 md:basis-1/2 ">
-                <div className="p-10">
-                  <Image
-                    src="/assets/new/cat.png"
-                    alt="hero"
-                    width={356}
-                    height={200}
-                    quality={100}
-                    className="w-full rounded-3xl"
-                  />
-                  <h3 className="text-[26px] pt-4 ">Catflix</h3>
-                  <p className="text-[18px]">
-                    Read the feedback from our satisfied clients who have
-                    benefited from our services. Their words reflect our
-                    high-quality work and dedication to their success.
-                  </p>
-                </div>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious
-              className={"text-gray-700 hover:text-[#FE5218] hidden md:block"}
-            />
-            <CarouselNext
-              className={"text-gray-700 hover:text-[#FE5218] hidden md:block"}
-            />
-          </Carousel> */}
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-44"></div>
         </div>
       </SectionLayout>
-      <SectionLayout bg="bg-[#2B2B2B] py-5 lg:py-20  lg:px-20  scroll-smooth">
+      <SectionLayout
+        bg={`bg-[#2B2B2B] py-5 lg:py-20  lg:px-20  scroll-smooth ${
+          isVideoFinished ? " " : " blur"
+        }`}
+      >
         <div
           className={
             "grid grid-cols-1 xl:grid-cols-2 h-fit  items-center lg:h-fit gap-20 p-5"
@@ -651,7 +606,7 @@ const Page = () => {
               className={"p-5 -mt-1 h-[350px] lg:h-[500px] text-white"}
             >
               <CarouselItem className="pt-0 basis-1/3 flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8 bg-[#30323E]  h-fit   rounded-3xl">
+                <div className="flex flex-col gap-5 p-8 lg:p-12  bg-[#30323E]  h-fit   rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -676,7 +631,7 @@ const Page = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8 bg-[#30323E]   h-fit    rounded-3xl">
+                <div className="flex flex-col gap-5 p-8  lg:p-12 bg-[#30323E]   h-fit    rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -701,7 +656,7 @@ const Page = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8  bg-[#30323E]   h-fit     rounded-3xl">
+                <div className="flex flex-col gap-5 p-8  lg:p-12  bg-[#30323E]   h-fit     rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -725,7 +680,7 @@ const Page = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8  bg-[#30323E]   h-fit     rounded-3xl">
+                <div className="flex flex-col gap-5 p-8 lg:p-12   bg-[#30323E]   h-fit     rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -750,7 +705,7 @@ const Page = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8 bg-[#30323E]   h-fit     rounded-3xl">
+                <div className="flex flex-col gap-5 p-8 lg:p-12  bg-[#30323E]   h-fit     rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -775,7 +730,7 @@ const Page = () => {
                 </div>
               </CarouselItem>
               <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8 bg-[#30323E]  h-fit    rounded-3xl">
+                <div className="flex flex-col gap-5 p-8 lg:p-12 bg-[#30323E]  h-fit    rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -806,7 +761,11 @@ const Page = () => {
           </Carousel>
         </div>
       </SectionLayout>
-      <SectionLayout bg="bg-[#F4F4F4]  scroll-smooth  lg:px-20 ">
+      <SectionLayout
+        bg={`bg-[#F4F4F4]  scroll-smooth  lg:px-20  ${
+          isVideoFinished ? " " : " blur"
+        }`}
+      >
         <div className=" bg-gray-200 rounded-3xl border border-gray-300 px-8 py-12 lg:p-20 shadow-xl lg:mx-52 m-auto">
           <div>
             <h2 className="font-bold text-[24px] lg:text-[36px] text-center">
