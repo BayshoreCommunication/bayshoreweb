@@ -223,7 +223,7 @@ const Page = () => {
              Schedule Your Discovery Call{" "}
           </p>
           <p className=" text-[16px]    place-self-start   lg:text-[24px] pb-16 md:pb-0 ">{`Your responses are strictly confidential and will be used to tailor a customized strategy for you before our call.`}</p>
-          <div className="w-full h-[1250px] lg:h-auto rounded-3xl  overflow-hidden">
+          <div className="w-full h-[1200px] md:h-[1250px] lg:h-auto rounded-3xl  overflow-hidden">
             <div className="block xl:hidden">
               <InlineWidget
                 url="https://calendly.com/bayshorec/45min?month=2025-02"
@@ -260,7 +260,7 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="flex py-10 lg:py-20 flex-col justify-start items-center text-center w-full">
+        <div className="flex pb-10 xl:py-20 flex-col justify-start items-center text-center w-full">
           <p
             className="text-[20px] lg:text-[28px] underline place-self-start"
             style={{ textUnderlineOffset: "8px" }}
@@ -270,7 +270,7 @@ const Page = () => {
           <p className="text-[18px] lg:text-[24px] py-10 place-self-start">
             🚫 Not a sales pitch. No fluff, no gimmicks—
           </p>
-          <p className="text-[18px] lg:text-[20px] pb-20 place-self-start lg:w-[60%] text-left">
+          <p className="text-[18px] lg:text-[20px] pb-20 place-self-start lg:w-[60%] text-center md:text-left">
             Just real, proven strategies that have helped 100+ law firms across
             the U.S. attract high-value clients through organic marketing and
             SEO.
@@ -648,10 +648,10 @@ const Page = () => {
             // onMouseLeave={plugin.current.reset}
           >
             <CarouselContent
-              className={"p-5 lg:-mt-1 h-[335px] lg:h-[500px] text-white"}
+              className={"p-5 -mt-1 h-[350px] lg:h-[500px] text-white"}
             >
-              <CarouselItem className="pt-0 md:basis-1/2 ">
-                <div className="flex flex-col gap-5 p-8 bg-[#30323E]  h-full  rounded-3xl">
+              <CarouselItem className="pt-0 basis-1/3 flex  justify-center items-center">
+                <div className="flex flex-col gap-5 p-8 bg-[#30323E]  h-fit   rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -662,10 +662,10 @@ const Page = () => {
                       className=" rounded-3xl"
                     />
                   </div>
-                  <div className="font-medium  text-[16px]">
+                  <div className="font-medium  text-[14px] lg:text-[16px]">
                     <p>We Specialize in Law Firm Growth</p>
                   </div>
-                  <div className="text-[14px]">
+                  <div className="text-[12px] lg:text-[14px]">
                     <p>
                       We Specialize in Law Firm Growth – Unlike generic
                       marketing agencies, we focus exclusively on helping law
@@ -675,8 +675,8 @@ const Page = () => {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="pl-1 md:basis-1/2 ">
-                <div className="flex flex-col gap-5 p-8 bg-[#30323E]   h-full  rounded-3xl">
+              <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
+                <div className="flex flex-col gap-5 p-8 bg-[#30323E]   h-fit    rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -688,10 +688,10 @@ const Page = () => {
                     />
                   </div>
 
-                  <div className="font-medium text-[16px]">
+                  <div className="font-medium  text-[14px] lg:text-[16px]">
                     <p>Proven Track Record</p>
                   </div>
-                  <div className="text-[14px]">
+                  <div className="text-[12px] lg:text-[14px]">
                     <p>
                       Since 2016, we’ve helped 100+ law firms across the U.S.
                       consistently generate more cases and increase
@@ -700,8 +700,8 @@ const Page = () => {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="pl-1 md:basis-1/2 ">
-                <div className="flex flex-col gap-5 p-8  bg-[#30323E]  h-full   rounded-3xl">
+              <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
+                <div className="flex flex-col gap-5 p-8  bg-[#30323E]   h-fit     rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -712,10 +712,10 @@ const Page = () => {
                       className=" rounded-3xl"
                     />
                   </div>
-                  <div className="font-medium text-[16px]">
+                  <div className="font-medium  text-[14px] lg:text-[16px]">
                     <p>Organic, Sustainable Growth</p>
                   </div>
-                  <div className="text-[14px]">
+                  <div className="text-[12px] lg:text-[14px]">
                     <p>
                       Our strategies ensure long-term success, not just
                       short-term spikes. We create a system that works for a
@@ -724,8 +724,8 @@ const Page = () => {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="pl-1 md:basis-1/2 ">
-                <div className="flex flex-col gap-5 p-8  bg-[#30323E]  h-full   rounded-3xl">
+              <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
+                <div className="flex flex-col gap-5 p-8  bg-[#30323E]   h-fit     rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -736,10 +736,10 @@ const Page = () => {
                       className=" rounded-3xl"
                     />
                   </div>
-                  <div className="font-medium  text-[16px]">
+                  <div className="font-medium   text-[14px] lg:text-[16px]">
                     <p>No Guesswork</p>
                   </div>
-                  <div className="text-[14px]">
+                  <div className="text-[12px] lg:text-[14px]">
                     <p>
                       Just Results – We use data-driven insights, real case
                       studies, and a step-by-step blueprint to ensure that your
@@ -749,8 +749,8 @@ const Page = () => {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="pl-1 md:basis-1/2 ">
-                <div className="flex flex-col gap-5 p-8 bg-[#30323E]  h-full   rounded-3xl">
+              <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
+                <div className="flex flex-col gap-5 p-8 bg-[#30323E]   h-fit     rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -762,10 +762,10 @@ const Page = () => {
                     />
                   </div>
 
-                  <div className="font-medium  text-[16px]">
+                  <div className="font-medium   text-[14px] lg:text-[16px]">
                     <p>Tailored for Your Practice</p>
                   </div>
-                  <div className="text-[14px]">
+                  <div className="text-[12px] lg:text-[14px]">
                     <p>
                       Whether you’re a solo attorney or a multi-location law
                       firm, we design a custom growth strategy that fits your
@@ -774,8 +774,8 @@ const Page = () => {
                   </div>
                 </div>
               </CarouselItem>
-              <CarouselItem className="pl-1 md:basis-1/2 ">
-                <div className="flex flex-col gap-5 p-8 bg-[#30323E] h-full  rounded-3xl">
+              <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
+                <div className="flex flex-col gap-5 p-8 bg-[#30323E]  h-fit    rounded-3xl">
                   <div className="h-[70px] w-[70px]">
                     <Image
                       src="/assets/new/why.png"
@@ -786,10 +786,10 @@ const Page = () => {
                       className=" rounded-3xl"
                     />
                   </div>
-                  <div className="font-medium  text-[16px]">
+                  <div className="font-medium   text-[14px] lg:text-[16px]">
                     <p>We Empower You</p>
                   </div>
-                  <div className="text-[14px]">
+                  <div className="text-[12px] lg:text-[14px]">
                     <p>
                       We don’t just provide a service—we train you and your team
                       to build a repeatable process that ensures continuous
@@ -827,10 +827,10 @@ const Page = () => {
               className="pt-10 lg:pt-20 lg:w-[90%] m-auto"
             >
               <div className="flex flex-col md:flex-row justify-between md:gap-10">
-                <div className="flex-1 mt-2">
-                  <label className={" pl-4 pb-2"}>First Name</label>
+                <div className="flex-1 mt-2 text-left">
+                  <label className={" pl-4 pb-6"}>First Name</label>
                   <input
-                    className="appearance-none  rounded-3xl w-full  mb-8 py-8 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify "
+                    className="appearance-none rounded-3xl w-full  mb-8 py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem]  !text-left"
                     type="text"
                     placeholder="Enter your first name"
                     name="first_name"
@@ -842,9 +842,9 @@ const Page = () => {
                     {formErrors.first_name}
                   </span>
 
-                  <label className=" md:hidden pl-4 pb-2">Last Name</label>
+                  <label className=" md:hidden pl-4 pb-6">Last Name</label>
                   <input
-                    className="appearance-none md:hidden  rounded-3xl w-full    mb-8  py-8 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify "
+                    className="appearance-none md:hidden  rounded-3xl w-full    mb-5  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
                     type="text"
                     placeholder="Enter your last name"
                     name="last_name"
@@ -856,9 +856,9 @@ const Page = () => {
                     {formErrors.last_name}
                   </span>
 
-                  <label className={" pl-4 pb-4 "}>Email</label>
+                  <label className={" pl-4 pb-6 "}>Email</label>
                   <input
-                    className="appearance-none  rounded-3xl w-full   mt-2 mb-8  py-8 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify "
+                    className="appearance-none  rounded-3xl w-full   mt-2 mb-8  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
                     type="text"
                     placeholder="Enter your email"
                     name="email"
@@ -867,9 +867,9 @@ const Page = () => {
                     onChange={handleChange}
                   />
                   <span className="text-orange-600">{formErrors.email}</span>
-                  <label className=" md:hidden pl-4 pb-2">Phone</label>
+                  <label className=" md:hidden pl-4 pb-6">Phone</label>
                   <input
-                    className="appearance-none  md:hidden rounded-3xl w-full    mb-8  py-8 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify "
+                    className="appearance-none  md:hidden rounded-3xl w-full    mb-5  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
                     type="text"
                     placeholder="Phone"
                     name="phone"
@@ -880,24 +880,24 @@ const Page = () => {
                   <span className="text-orange-600 md:hidden">
                     {formErrors.phone}
                   </span>
-                  <label className={" pl-4 pb-2"}>Street Address</label>
+                  <label className={" pl-4 pb-6"}>Street Address</label>
                   <input
                     name="address"
                     id="address"
                     value={contactInfo.address}
                     onChange={handleChange}
-                    className="appearance-none  rounded-3xl w-full  mt-1   mb-8 py-8 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify"
+                    className="appearance-none  rounded-3xl w-full  mt-1   mb-8 py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify !text-left"
                     placeholder="Street address"
                   />
                   <span className="text-orange-600">{formErrors.address}</span>
-                  <label className={" pl-4 pb-2 md:hidden"}>Zip Code</label>
+                  <label className={" pl-4 pb-6 md:hidden"}>Zip Code</label>
                   <div className="flex-1 md:hidden">
                     <input
                       name="zip"
                       id="zip"
                       value={contactInfo.zip}
                       onChange={handleChange}
-                      className="appearance-none  rounded-3xl w-full   mb-8  py-8 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  "
+                      className="appearance-none  rounded-3xl w-full   mb-8  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify   !text-left"
                       placeholder="Zip Code"
                     />
                     <span className="text-orange-600 md:hidden">
@@ -906,9 +906,9 @@ const Page = () => {
                   </div>
                 </div>
                 <div className="flex-1 ">
-                  <label className="hidden md:block pl-4 pb-2">Last Name</label>
+                  <label className="hidden md:block pl-4 pb-6">Last Name</label>
                   <input
-                    className="appearance-none hidden md:block rounded-3xl w-full    mb-8  py-8 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify "
+                    className="appearance-none hidden md:block rounded-3xl w-full    mb-8  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
                     type="text"
                     placeholder="Enter your last name"
                     name="last_name"
@@ -920,9 +920,9 @@ const Page = () => {
                   <span className="text-orange-600 hidden md:block">
                     {formErrors.last_name}
                   </span>
-                  <label className="hidden md:block pl-4 pb-2">Phone</label>
+                  <label className="hidden md:block pl-4 pb-6">Phone</label>
                   <input
-                    className="appearance-none  rounded-3xl w-full    hidden md:block  mb-8  py-8 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify "
+                    className="appearance-none  rounded-3xl w-full    hidden md:block  mb-8  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left"
                     type="text"
                     placeholder="Phone"
                     name="phone"
@@ -934,7 +934,7 @@ const Page = () => {
                     {formErrors.phone}
                   </span>
 
-                  <label className={" pl-4 pb-2 hidden md:block"}>
+                  <label className={" pl-4 pb-6 hidden md:block"}>
                     Zip Code
                   </label>
                   <div className="flex-1 hidden md:block">
@@ -943,7 +943,7 @@ const Page = () => {
                       id="zip"
                       value={contactInfo.zip}
                       onChange={handleChange}
-                      className="appearance-none  rounded-3xl w-full   mb-8  py-8 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  "
+                      className="appearance-none  rounded-3xl w-full   mb-8  py-5 px-4 leading-tight focus:outline-none focus:shadow-outline text-small  sm:text-[1.4rem] lg:text-[1.4rem] md:text-justify  !text-left "
                       placeholder="Zip Code"
                     />
                     <span className="text-orange-600 hidden md:block">
@@ -981,7 +981,7 @@ const Page = () => {
                 ) : (
                   <button
                     type="submit"
-                    className="btn text-[11px] md:text-small !py-4 flex text-white items-center gap-2 md:gap-8 r-button border-2 border-primary hover:text-[#FE6F1F]"
+                    className="btn text-[14px] md:text-small !py-4 flex text-white items-center gap-2 md:gap-8 r-button border-2 border-primary hover:text-[#FE6F1F]"
                   >
                     Book Your Session Now{" "}
                   </button>
@@ -1078,7 +1078,7 @@ const Page = () => {
               </p>
 
               <Link href={"https://calendly.com/bayshorec/45min?month=2025-02"}>
-                <button className="btn text-[11px] md:text-small !py-4 flex text-white items-center gap-2 md:gap-8 r-button border-2 border-primary hover:text-[#FE6F1F]">
+                <button className="btn text-[12px] md:text-small !py-4 flex text-white items-center gap-2 md:gap-8 r-button border-2 border-primary hover:text-[#FE6F1F]">
                   <span>Book now 45 min Free Consultation</span>
                   <span className="inline-block translate-y-[2px] ml-2">
                     <AiOutlineRight />
