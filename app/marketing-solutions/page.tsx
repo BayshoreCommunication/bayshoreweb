@@ -24,7 +24,7 @@ import emailjs from "emailjs-com";
 import Link from "next/link";
 import { AiOutlineRight } from "react-icons/ai";
 import { Button } from "@material-tailwind/react";
-import { PauseIcon, PlayIcon } from "lucide-react";
+import { CloudDownload, PauseIcon, PlayIcon } from "lucide-react";
 
 interface FormValues {
   first_name: string;
@@ -65,6 +65,17 @@ const Page = () => {
   //   setIsMuted(!isMuted);
   // };
 
+  const [isVideoFinished, setIsVideoFinished] = React.useState("false");
+  useEffect(() => {
+    if (isVideoFinished == "true")
+      window.localStorage.setItem("isVideoFinishedLocal", "true");
+  }, [isVideoFinished]);
+
+  useEffect(() => {
+    const i = window.localStorage.getItem("isVideoFinishedLocal");
+    if (i == null) setIsVideoFinished("false");
+    else setIsVideoFinished(i);
+  }, []);
   //carousel==========
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
@@ -89,12 +100,10 @@ const Page = () => {
 
   //=============
 
-  const [isVideoFinished, setIsVideoFinished] = React.useState(false);
   const initialValues = {
     first_name: "",
     last_name: "",
     email: "",
-
     phone: "",
     address: "",
     zip: "",
@@ -259,7 +268,7 @@ const Page = () => {
               // }}
               // onContextMenu={(e) => e.preventDefault()}
               onEnded={() => {
-                setIsVideoFinished(true);
+                setIsVideoFinished("true");
               }}
             />
           </div>
@@ -279,7 +288,7 @@ const Page = () => {
       </SectionLayout>
       <SectionLayout
         bg={`bg-white  scroll-smooth  lg:px-20 ${
-          isVideoFinished ? " " : " blur"
+          isVideoFinished == "true" ? " " : " blur"
         }`}
       >
         <div
@@ -426,7 +435,7 @@ const Page = () => {
       </SectionLayout>
       <SectionLayout
         bg={`bg-gray-200  scroll-smooth lg:px-20  ${
-          isVideoFinished ? " " : " blur"
+          isVideoFinished == "true" ? " " : " blur"
         }`}
       >
         {" "}
@@ -505,7 +514,7 @@ const Page = () => {
       </SectionLayout>
       <SectionLayout
         bg={`bg-white  scroll-smooth  lg:px-20 ${
-          isVideoFinished ? " " : " blur"
+          isVideoFinished == "true" ? " " : " blur"
         }`}
       >
         {" "}
@@ -572,7 +581,7 @@ const Page = () => {
       </SectionLayout>
       <SectionLayout
         bg={`bg-[#2B2B2B] py-5 lg:py-20  lg:px-20  scroll-smooth ${
-          isVideoFinished ? " " : " blur"
+          isVideoFinished == "true" ? " " : " blur"
         }`}
       >
         <div
@@ -597,7 +606,7 @@ const Page = () => {
           </div>
           <Carousel
             opts={{
-              align: "center",
+              align: "start",
               loop: true,
             }}
             orientation="vertical"
@@ -767,7 +776,7 @@ const Page = () => {
       </SectionLayout>
       <SectionLayout
         bg={`bg-[#F4F4F4]  scroll-smooth  lg:px-20  ${
-          isVideoFinished ? " " : " blur"
+          isVideoFinished == "true" ? " " : " blur"
         }`}
       >
         <div className=" bg-gray-200 rounded-3xl border border-gray-300 px-8 py-12 lg:p-20 shadow-xl lg:mx-52 m-auto">
