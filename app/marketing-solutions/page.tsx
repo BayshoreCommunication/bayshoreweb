@@ -6,7 +6,13 @@ import { InlineWidget } from "react-calendly";
 import React, { useCallback } from "react";
 import Image from "next/image";
 import Head from "next/head";
-
+import {
+  useGetCookies,
+  useSetCookie,
+  useHasCookie,
+  useDeleteCookie,
+  useGetCookie,
+} from "cookies-next";
 import { Metadata } from "next";
 import SectionLayout from "@/components/universal/SectionLayout";
 import {
@@ -25,6 +31,7 @@ import Link from "next/link";
 import { AiOutlineRight } from "react-icons/ai";
 import { Button } from "@material-tailwind/react";
 import { CloudDownload, PauseIcon, PlayIcon } from "lucide-react";
+import { hasCookie } from "cookies-next/client";
 
 interface FormValues {
   first_name: string;
@@ -54,28 +61,31 @@ const Page = () => {
     },
   ];
 
-  // const videoRef = useRef<ReactPlayer>(null);
-  // const [played, setPlayed] = useState(0);
+  const setCookie = useSetCookie();
 
-  // const handlePlayPause = () => {
-  //   setIsPlaying(!isPlaying);
-  // };
+  const [isVideoEnded, setIsVideoEnded] = React.useState("false");
+  const [isVideoFinishedCookie, setIsVideoFinishedCookie] = React.useState("");
 
-  // const handleMuteUnmute = () => {
-  //   setIsMuted(!isMuted);
-  // };
-
-  const [isVideoFinished, setIsVideoFinished] = React.useState("false");
-  useEffect(() => {
-    if (isVideoFinished == "true")
-      window.localStorage.setItem("isVideoFinishedLocal", "true");
-  }, [isVideoFinished]);
+  if (isVideoFinishedCookie === "") {
+    setIsVideoFinishedCookie(
+      JSON.stringify(hasCookie("isVideoFinishedCookie"))
+    );
+  }
 
   useEffect(() => {
-    const i = window.localStorage.getItem("isVideoFinishedLocal");
-    if (i == null) setIsVideoFinished("false");
-    else setIsVideoFinished(i);
-  }, []);
+    if (isVideoEnded == "true") {
+      setCookie("isVideoFinishedCookie", "true", {
+        maxAge: 43000,
+      });
+
+      setIsVideoFinishedCookie(
+        JSON.stringify(hasCookie("isVideoFinishedCookie"))
+      );
+
+      setIsVideoEnded("false");
+    }
+  }, [isVideoEnded]);
+
   //carousel==========
   const [api, setApi] = React.useState<CarouselApi>();
   const [current, setCurrent] = React.useState(0);
@@ -268,7 +278,8 @@ const Page = () => {
               // }}
               // onContextMenu={(e) => e.preventDefault()}
               onEnded={() => {
-                setIsVideoFinished("true");
+                console.log("hi");
+                setIsVideoEnded("true");
               }}
             />
           </div>
@@ -288,7 +299,7 @@ const Page = () => {
       </SectionLayout>
       <SectionLayout
         bg={`bg-white  scroll-smooth  lg:px-20 ${
-          isVideoFinished == "true" ? " " : " blur"
+          isVideoFinishedCookie == "true" ? " " : " blur"
         }`}
       >
         <div
@@ -435,7 +446,7 @@ const Page = () => {
       </SectionLayout>
       <SectionLayout
         bg={`bg-gray-200  scroll-smooth lg:px-20  ${
-          isVideoFinished == "true" ? " " : " blur"
+          isVideoFinishedCookie == "true" ? " " : " blur"
         }`}
       >
         {" "}
@@ -514,7 +525,7 @@ const Page = () => {
       </SectionLayout>
       <SectionLayout
         bg={`bg-white  scroll-smooth  lg:px-20 ${
-          isVideoFinished == "true" ? " " : " blur"
+          isVideoFinishedCookie === "true" ? " " : " blur"
         }`}
       >
         {" "}
@@ -581,7 +592,7 @@ const Page = () => {
       </SectionLayout>
       <SectionLayout
         bg={`bg-[#2B2B2B] py-5 lg:py-20  lg:px-20  scroll-smooth ${
-          isVideoFinished == "true" ? " " : " blur"
+          isVideoFinishedCookie == "true" ? " " : " blur"
         }`}
       >
         <div
@@ -776,7 +787,7 @@ const Page = () => {
       </SectionLayout>
       <SectionLayout
         bg={`bg-[#F4F4F4]  scroll-smooth  lg:px-20  ${
-          isVideoFinished == "true" ? " " : " blur"
+          isVideoFinishedCookie == "true" ? " " : " blur"
         }`}
       >
         <div className=" bg-gray-200 rounded-3xl border border-gray-300 px-8 py-12 lg:p-20 shadow-xl lg:mx-52 m-auto">

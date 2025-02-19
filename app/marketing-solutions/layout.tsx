@@ -3,6 +3,8 @@ import Navbar from "@/components/universal/PortfolioNavbar";
 import ModalPopup from "@/components/universal/PopUp/ModalPopUp";
 import { LayoutProps } from "@/types/LayoutProps";
 
+import { asString } from "html2canvas/dist/types/css/types/color";
+
 export const metadata = {
   title:
     "Bayshore Communication is your all-in-one partner for accelerating business growth",
