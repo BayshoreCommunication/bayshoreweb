@@ -6,6 +6,7 @@ import { InlineWidget } from "react-calendly";
 import React, { useCallback } from "react";
 import Image from "next/image";
 import Head from "next/head";
+
 import {
   useGetCookies,
   useSetCookie,
@@ -213,9 +214,70 @@ const Page = () => {
   return (
     <div className=" scroll-smooth">
       {" "}
-      <SectionLayout bg="flex flex-col justify-start items-center bg-[#2B2B2B] md:py-10 lg:px-20 lg:pb-20 text-white  scroll-smooth">
+      <div className="w-full relative  h-fit pb-16 flex-col  justify-start items-center md:hidden ">
+        <Image
+          src={"/bg.png"}
+          alt="bg image"
+          width={1200}
+          height={1200}
+          className=" absolute -z-10"
+        />
+
+        <div
+          className={
+            "container text-[26px] lg:text-[48px] font-bold text-center place-self-start pb-5 pt-[95px]  text-white z-50"
+          }
+        >
+          <p className="inline    ">LAW FIRM </p>
+          <button
+            className={
+              "inline border border-[#FE5218] text-[#FE5218] bg-transparent  px-4 py-0 leading-tight rounded-full"
+            }
+          >
+            OWNERS
+          </button>
+          <p className="   text-[26px]  ">{` & Legal Professionals`} </p>
+        </div>
+
+        {/* <Image
+            src="/assets/new/step1.png"
+            alt="hero"
+            quality={100}
+            
+          /> */}
+
+        <div className=" relative flex w-[80%] h-[220px] md:h-[350px] lg:h-[450px] xl:h-[500px] 2xl:h-[550px] 2xl:w-[61.5%] justify-center rounded-2xl overflow-hidden items-center m-auto mb-5">
+          <ReactPlayer
+            url="https://www.youtube.com/watch?v=pQD5jqtRjFI&t=3s"
+            width={"100%"}
+            height={"100%"}
+            onEnded={() => {
+              setIsVideoEnded("true");
+            }}
+          />
+        </div>
+        <p className=" container text-[17px] text-center md:text-left lg:text-[20px] md:w-[70%] place-self-start text-gray-700  lg:pb-16">
+          Your&apos;re One Step Away From Discovering How You Can Consistently
+          Attract High-Value Clients Through Organic Marketing & SEO—Without
+          Relying on Ads.{" "}
+        </p>
+        <p
+          className=" container text-[18px] text-center md:text-left lg:text-[20px] md:w-[70%] place-self-start  pb-10 lg:pb-16 text-[#FE5218] "
+          // style={{ textUnderlineOffset: "8px" }}
+        >
+          GUARANTEED.
+        </p>
+        <p
+          className=" container text-[16px] lg:text-[20px] font-semibold text-center underline place-self-start
+              "
+          style={{ textUnderlineOffset: "5px" }}
+        >
+          You don&apos;t pay for effort—you pay for real, measurable growth.
+        </p>
+      </div>
+      <SectionLayout bg="flex bg-[#ececec] md:bg-[#2B2B2B] flex-col justify-start items-center bg-[#2B2B2B] md:py-10 lg:px-20 lg:pb-20 text-white  scroll-smooth hidden md:block">
         {/* step1 */}
-        <div className="flex flex-col justify-start items-center ">
+        <div className="hidden  flex-col justify-start items-center md:flex">
           <div
             className={
               "text-[26px] lg:text-[48px] font-bold text-center place-self-start pb-5"
@@ -295,10 +357,12 @@ const Page = () => {
             Your browser does not support the video tag.
           </video> */}
         </div>
+        {/* step1 mobile */}
+
         {/* part2 */}
       </SectionLayout>
       <SectionLayout
-        bg={`bg-white  scroll-smooth  lg:px-20 ${
+        bg={`bg-[#ececec]  scroll-smooth  lg:px-20 ${
           isVideoFinishedCookie == "true" ? " " : " blur"
         }`}
       >
@@ -306,11 +370,13 @@ const Page = () => {
           id="call"
           className="flex flex-col justify-start items-center md:mt-28 "
         >
-          <p className="py-5  text-[20px] lg:text-[48px]  place-self-start font-bold">
-            <span className="text-[#FE5218]">Step 2 of 2:</span>
+          <p className="py-5  text-[28px] lg:text-[48px]  place-self-start font-bold text-center md:text-left">
+            <span className="text-[#FE5218]  underline underline-offset-2">
+              Step 2 of 2:
+            </span>
              Schedule Your Discovery Call{" "}
           </p>
-          <p className=" text-[16px]    place-self-start   lg:text-[24px] pb-16 md:pb-0 ">{`Your responses are strictly confidential and will be used to tailor a customized strategy for you before our call.`}</p>
+          <p className=" text-[18px]  text-center  place-self-start  text-[#1e1e1e]  lg:text-[24px] pb-16 md:pb-0 ">{`Your responses are strictly confidential and will be used to tailor a customized strategy for you before our call.`}</p>
           <div className="w-full h-[1200px] md:h-[1250px] lg:h-auto rounded-3xl  overflow-hidden">
             <div className="block xl:hidden">
               <InlineWidget
@@ -350,18 +416,19 @@ const Page = () => {
         </div>
         <div className="flex pb-10 xl:py-20 flex-col justify-start items-center text-center w-full">
           <p
-            className="text-[20px] lg:text-[28px] underline place-self-start"
+            className="text-[28px] lg:text-[28px] underline place-self-start"
             style={{ textUnderlineOffset: "8px" }}
           >
             What You’ll Learn on Your Discovery Call
           </p>
-          <p className="text-[18px] lg:text-[24px] py-10 place-self-start">
+          <p className="text-[20px] lg:text-[24px] py-10 place-self-start text-left">
             🚫 Not a sales pitch. No fluff, no gimmicks—
           </p>
-          <p className="text-[18px] lg:text-[20px] pb-20 place-self-start lg:w-[60%] text-center md:text-left">
-            Just real, proven strategies that have helped 100+ law firms across
-            the U.S. attract high-value clients through organic marketing and
-            SEO.
+          <p className="text-[17px] lg:text-[20px] pb-20 place-self-start lg:w-[60%] text-left">
+            Just real, proven strategies that have helped{" "}
+            <span className=" font-semibold">100+ law firms</span> across the
+            U.S. attract high-value clients through organic{" "}
+            <span className=" font-semibold">marketing and SEO.</span>
           </p>
           <div className="flex lg:pt-10 flex-wrap gap-20 items-start justify-center">
             <div className="flex flex-col justify-start items-center gap-6 w-[320px] ">
@@ -445,7 +512,7 @@ const Page = () => {
         </div>
       </SectionLayout>
       <SectionLayout
-        bg={`bg-gray-200  scroll-smooth lg:px-20  ${
+        bg={`bg-white  scroll-smooth lg:px-20  ${
           isVideoFinishedCookie == "true" ? " " : " blur"
         }`}
       >
@@ -524,13 +591,13 @@ const Page = () => {
         </div>
       </SectionLayout>
       <SectionLayout
-        bg={`bg-white  scroll-smooth  lg:px-20 ${
+        bg={`bg-gray-200  scroll-smooth  lg:px-20 ${
           isVideoFinishedCookie === "true" ? " " : " blur"
         }`}
       >
         {" "}
         <div className="  py-5 lg:py-20">
-          <div className=" text-[20px] lg:text-[48px] font-bold">
+          <div className=" text-[32px] lg:text-[48px] font-bold leading-tight">
             <p>
               <span className={"text-[#FE5218] underline underline-offset-2"}>
                 Recent Results
@@ -539,8 +606,12 @@ const Page = () => {
               Like You: 
             </p>
           </div>
-          <div className=" text-[18px] lg:text-[24px] py-5 lg:py-16 underline underline-offset-4">
+          <div className="text-gray-800 text-[18px] lg:text-[24px] py-5 lg:py-16 underline underline-offset-4 hidden md:block">
             <p>{`How we took our clients business to the next level!`}</p>
+          </div>
+          <div className="text-gray-800 text-[18px] lg:text-[24px] py-5 lg:py-16  md:hidden">
+            <p>{`How we took our clients business to the next level!`}</p>
+            <p className="w-full h-0.5  mt-1 bg-gray-500"></p>
           </div>
           {/* mobile */}
           <Carousel
@@ -551,9 +622,12 @@ const Page = () => {
             onMouseEnter={plugin.current.stop}
             onMouseLeave={plugin.current.reset}
           >
-            <CarouselContent className={"p-5 -ml-5"}>
+            <CarouselContent className={"py-5 px-o md:px-5 -ml-5"}>
               {carouselVideo?.map((item, index) => (
-                <CarouselItem key={index} className="pl-1 md:basis-1/2  ">
+                <CarouselItem
+                  key={index}
+                  className="pl-1 md:basis-1/2 text-gray-800  "
+                >
                   <div className="pl-1">
                     <div className="p-10 ">
                       <iframe
@@ -565,7 +639,7 @@ const Page = () => {
                         onClick={plugin.current.stop}
                       />
                       <h3 className="text-[26px] pt-4">{item.title}</h3>
-                      <p className="text-[18px]">{item.text}</p>
+                      <p className="text-[14px]">{item.text}</p>
                     </div>{" "}
                   </div>
                 </CarouselItem>
@@ -591,7 +665,7 @@ const Page = () => {
         </div>
       </SectionLayout>
       <SectionLayout
-        bg={`bg-[#2B2B2B] py-5 lg:py-20  lg:px-20  scroll-smooth ${
+        bg={`bg-[#00031A] py-5 lg:py-20  lg:px-20  scroll-smooth ${
           isVideoFinishedCookie == "true" ? " " : " blur"
         }`}
       >
@@ -601,188 +675,359 @@ const Page = () => {
           }
         >
           <div>
-            <h2 className="text-[#FE5218] pb-5 text-[30px] lg:text-[48px] font-bold ">
+            <h2 className="text-[#FE5218] pb-5 text-[60px] lg:text-[48px] font-bold ">
               Why Us?
             </h2>
-            <p className="text-white pb-10 m-auto text-[18px] lg:text-[24px] ">
+            <p className="text-gray-400 pb-10 m-auto text-[18px] lg:text-[24px] ">
               We’re not here to sell—we’re here to show you exactly how to get
               real results using the same system that has worked for 100+ law
               firms across the U.S.
             </p>
-            <div className=" text-white  text-[18px] lg:text-[24px]  font-semibold">
+            <div className=" text-gray-300  text-[18px] lg:text-[24px]  font-semibold">
               🚀 If you’re looking for a marketing partner that understands the
               legal industry and delivers real, measurable results— you’re in
               the right place. Let’s grow your firm together.
             </div>
           </div>
-          <Carousel
-            opts={{
-              align: "start",
-              loop: true,
-            }}
-            orientation="vertical"
-            className={"px-5"}
-            // plugins={[plugin.current]}
-            // onMouseEnter={plugin.current.stop}
-            // onMouseLeave={plugin.current.reset}
-          >
-            <CarouselContent
-              className={"p-5 -mt-1 h-[350px] lg:h-[500px] text-white"}
+          <div className="hidden md:block">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              orientation="vertical"
+              className={"px-5"}
+              // plugins={[plugin.current]}
+              // onMouseEnter={plugin.current.stop}
+              // onMouseLeave={plugin.current.reset}
             >
-              <CarouselItem className="pt-0 basis-1/3 flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8 lg:p-12  bg-[#30323E]  h-fit   rounded-3xl">
-                  <div className="h-[70px] w-[70px]">
-                    <Image
-                      src="/assets/new/why.png"
-                      alt="hero"
-                      width={400}
-                      height={200}
-                      quality={100}
-                      className=" rounded-3xl"
-                    />
+              <CarouselContent
+                className={"p-5 -mt-1 h-[350px] lg:h-[500px] text-white"}
+              >
+                <CarouselItem className="pt-0 basis-1/3 flex  justify-center items-center">
+                  <div className="flex flex-col gap-5 p-8 lg:p-12  bg-[#30323E]  h-fit   rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
+                    <div className="font-medium  text-[14px] lg:text-[16px]">
+                      <p>We Specialize in Law Firm Growth</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        We Specialize in Law Firm Growth – Unlike generic
+                        marketing agencies, we focus exclusively on helping law
+                        firms attract high-value clients through organic
+                        marketing and SEO.
+                      </p>
+                    </div>
                   </div>
-                  <div className="font-medium  text-[14px] lg:text-[16px]">
-                    <p>We Specialize in Law Firm Growth</p>
-                  </div>
-                  <div className="text-[12px] lg:text-[14px]">
-                    <p>
-                      We Specialize in Law Firm Growth – Unlike generic
-                      marketing agencies, we focus exclusively on helping law
-                      firms attract high-value clients through organic marketing
-                      and SEO.
-                    </p>
-                  </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8  lg:p-12 bg-[#30323E]   h-fit    rounded-3xl">
-                  <div className="h-[70px] w-[70px]">
-                    <Image
-                      src="/assets/new/why.png"
-                      alt="hero"
-                      width={400}
-                      height={200}
-                      quality={100}
-                      className=" rounded-3xl"
-                    />
-                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
+                  <div className="flex flex-col gap-5 p-8  lg:p-12 bg-[#30323E]   h-fit    rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
 
-                  <div className="font-medium  text-[14px] lg:text-[16px]">
-                    <p>Proven Track Record</p>
+                    <div className="font-medium  text-[14px] lg:text-[16px]">
+                      <p>Proven Track Record</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        Since 2016, we’ve helped 100+ law firms across the U.S.
+                        consistently generate more cases and increase
+                        revenue—without relying on expensive ads.
+                      </p>
+                    </div>
                   </div>
-                  <div className="text-[12px] lg:text-[14px]">
-                    <p>
-                      Since 2016, we’ve helped 100+ law firms across the U.S.
-                      consistently generate more cases and increase
-                      revenue—without relying on expensive ads.
-                    </p>
+                </CarouselItem>
+                <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
+                  <div className="flex flex-col gap-5 p-8  lg:p-12  bg-[#30323E]   h-fit     rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
+                    <div className="font-medium  text-[14px] lg:text-[16px]">
+                      <p>Organic, Sustainable Growth</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        Our strategies ensure long-term success, not just
+                        short-term spikes. We create a system that works for a
+                        lifetime and grows as your firm grows.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8  lg:p-12  bg-[#30323E]   h-fit     rounded-3xl">
-                  <div className="h-[70px] w-[70px]">
-                    <Image
-                      src="/assets/new/why.png"
-                      alt="hero"
-                      width={400}
-                      height={200}
-                      quality={100}
-                      className=" rounded-3xl"
-                    />
+                </CarouselItem>
+                <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
+                  <div className="flex flex-col gap-5 p-8 lg:p-12   bg-[#30323E]   h-fit     rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
+                    <div className="font-medium   text-[14px] lg:text-[16px]">
+                      <p>No Guesswork</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        Just Results – We use data-driven insights, real case
+                        studies, and a step-by-step blueprint to ensure that
+                        your firm ranks higher, attracts more clients, and
+                        converts leads effectively.
+                      </p>
+                    </div>
                   </div>
-                  <div className="font-medium  text-[14px] lg:text-[16px]">
-                    <p>Organic, Sustainable Growth</p>
-                  </div>
-                  <div className="text-[12px] lg:text-[14px]">
-                    <p>
-                      Our strategies ensure long-term success, not just
-                      short-term spikes. We create a system that works for a
-                      lifetime and grows as your firm grows.
-                    </p>
-                  </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8 lg:p-12   bg-[#30323E]   h-fit     rounded-3xl">
-                  <div className="h-[70px] w-[70px]">
-                    <Image
-                      src="/assets/new/why.png"
-                      alt="hero"
-                      width={400}
-                      height={200}
-                      quality={100}
-                      className=" rounded-3xl"
-                    />
-                  </div>
-                  <div className="font-medium   text-[14px] lg:text-[16px]">
-                    <p>No Guesswork</p>
-                  </div>
-                  <div className="text-[12px] lg:text-[14px]">
-                    <p>
-                      Just Results – We use data-driven insights, real case
-                      studies, and a step-by-step blueprint to ensure that your
-                      firm ranks higher, attracts more clients, and converts
-                      leads effectively.
-                    </p>
-                  </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8 lg:p-12  bg-[#30323E]   h-fit     rounded-3xl">
-                  <div className="h-[70px] w-[70px]">
-                    <Image
-                      src="/assets/new/why.png"
-                      alt="hero"
-                      width={400}
-                      height={200}
-                      quality={100}
-                      className=" rounded-3xl"
-                    />
-                  </div>
+                </CarouselItem>
+                <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
+                  <div className="flex flex-col gap-5 p-8 lg:p-12  bg-[#30323E]   h-fit     rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
 
-                  <div className="font-medium   text-[14px] lg:text-[16px]">
-                    <p>Tailored for Your Practice</p>
+                    <div className="font-medium   text-[14px] lg:text-[16px]">
+                      <p>Tailored for Your Practice</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        Whether you’re a solo attorney or a multi-location law
+                        firm, we design a custom growth strategy that fits your
+                        specific goals and legal niche.
+                      </p>
+                    </div>
                   </div>
-                  <div className="text-[12px] lg:text-[14px]">
-                    <p>
-                      Whether you’re a solo attorney or a multi-location law
-                      firm, we design a custom growth strategy that fits your
-                      specific goals and legal niche.
-                    </p>
+                </CarouselItem>
+                <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
+                  <div className="flex flex-col gap-5 p-8 lg:p-12 bg-[#30323E]  h-fit    rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
+                    <div className="font-medium   text-[14px] lg:text-[16px]">
+                      <p>We Empower You</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        We don’t just provide a service—we train you and your
+                        team to build a repeatable process that ensures
+                        continuous growth—with or without us.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </CarouselItem>
-              <CarouselItem className="pl-1 basis-1/3  flex  justify-center items-center">
-                <div className="flex flex-col gap-5 p-8 lg:p-12 bg-[#30323E]  h-fit    rounded-3xl">
-                  <div className="h-[70px] w-[70px]">
-                    <Image
-                      src="/assets/new/why.png"
-                      alt="hero"
-                      width={400}
-                      height={200}
-                      quality={100}
-                      className=" rounded-3xl"
-                    />
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious
+                className={"text-gray-100 hover:text-[#FE5218]"}
+              />
+              <CarouselNext className={"text-gray-100 hover:text-[#FE5218]"} />
+            </Carousel>
+          </div>
+          <div className="md:hidden">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className={"w-full"}
+              // plugins={[plugin.current]}
+              // onMouseEnter={plugin.current.stop}
+              // onMouseLeave={plugin.current.reset}
+            >
+              <CarouselContent className={"-ml-1 text-white"}>
+                <CarouselItem className=" flex  p-10 justify-center items-center">
+                  <div className="flex flex-col px-10 py-16 w-full  lg:p-12  bg-[#30323E]  h-full   rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
+                    <div className="font-medium  text-[14px] lg:text-[16px]">
+                      <p>We Specialize in Law Firm Growth</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        We Specialize in Law Firm Growth – Unlike generic
+                        marketing agencies, we focus exclusively on helping law
+                        firms attract high-value clients through organic
+                        marketing and SEO.
+                      </p>
+                    </div>
                   </div>
-                  <div className="font-medium   text-[14px] lg:text-[16px]">
-                    <p>We Empower You</p>
+                </CarouselItem>
+                <CarouselItem className=" flex  p-10 justify-center items-center">
+                  <div className="flex flex-col px-10 py-16 w-full  lg:p-12  bg-[#30323E]  h-full   rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
+
+                    <div className="font-medium  text-[14px] lg:text-[16px]">
+                      <p>Proven Track Record</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        Since 2016, we’ve helped 100+ law firms across the U.S.
+                        consistently generate more cases and increase
+                        revenue—without relying on expensive ads.
+                      </p>
+                    </div>
                   </div>
-                  <div className="text-[12px] lg:text-[14px]">
-                    <p>
-                      We don’t just provide a service—we train you and your team
-                      to build a repeatable process that ensures continuous
-                      growth—with or without us.
-                    </p>
+                </CarouselItem>
+                <CarouselItem className=" flex  p-10 justify-center items-center">
+                  <div className="flex flex-col px-10 py-16 w-full  lg:p-12  bg-[#30323E]  h-full   rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
+                    <div className="font-medium  text-[14px] lg:text-[16px]">
+                      <p>Organic, Sustainable Growth</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        Our strategies ensure long-term success, not just
+                        short-term spikes. We create a system that works for a
+                        lifetime and grows as your firm grows.
+                      </p>
+                    </div>
                   </div>
-                </div>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious
-              className={"text-gray-100 hover:text-[#FE5218]"}
-            />
-            <CarouselNext className={"text-gray-100 hover:text-[#FE5218]"} />
-          </Carousel>
+                </CarouselItem>
+                <CarouselItem className=" flex  p-10 justify-center items-center">
+                  <div className="flex flex-col px-10 py-16 w-full  lg:p-12  bg-[#30323E]  h-full   rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
+                    <div className="font-medium   text-[14px] lg:text-[16px]">
+                      <p>No Guesswork</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        Just Results – We use data-driven insights, real case
+                        studies, and a step-by-step blueprint to ensure that
+                        your firm ranks higher, attracts more clients, and
+                        converts leads effectively.
+                      </p>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className=" flex  p-10 justify-center items-center">
+                  <div className="flex flex-col px-10 py-16 w-full  lg:p-12  bg-[#30323E]  h-full  rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
+
+                    <div className="font-medium   text-[14px] lg:text-[16px]">
+                      <p>Tailored for Your Practice</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        Whether you’re a solo attorney or a multi-location law
+                        firm, we design a custom growth strategy that fits your
+                        specific goals and legal niche.
+                      </p>
+                    </div>
+                  </div>
+                </CarouselItem>
+                <CarouselItem className=" flex  p-10 justify-center items-center">
+                  <div className="flex flex-col px-10 py-16 w-full h-full  lg:p-12  bg-[#30323E]     rounded-3xl">
+                    <div className="h-[70px] w-[70px]">
+                      <Image
+                        src="/assets/new/why.png"
+                        alt="hero"
+                        width={400}
+                        height={200}
+                        quality={100}
+                        className=" rounded-3xl"
+                      />
+                    </div>
+                    <div className="font-medium   text-[14px] lg:text-[16px]">
+                      <p>We Empower You</p>
+                    </div>
+                    <div className="text-[12px] lg:text-[14px]">
+                      <p>
+                        We don’t just provide a service—we train you and your
+                        team to build a repeatable process that ensures
+                        continuous growth—with or without us.
+                      </p>
+                    </div>
+                  </div>
+                </CarouselItem>
+              </CarouselContent>
+              <CarouselPrevious
+                className={"text-gray-100 hover:text-[#FE5218] !-translate-x-5"}
+              />
+              <CarouselNext
+                className={"text-gray-100 hover:text-[#FE5218] !translate-x-5"}
+              />
+            </Carousel>
+          </div>
         </div>
       </SectionLayout>
       <SectionLayout

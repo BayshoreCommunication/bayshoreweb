@@ -50,39 +50,60 @@ const Navbar = () => {
   }, []); // The empty dependency array ensures that this effect runs only once
 
   return (
-    <header className="fixed w-full bg-[#fff] z-50 top-0 left-0">
-      {/* Mobile */}
+    <>
+      <header className=" w-full  z-50 top-0 left-0 hidden md:block">
+        {/* Mobile */}
 
-      <nav className=" justify-center items-center  py-[1.8rem] flex md:hidden">
-        <Link href="#">
+        {/* Desktop */}
+
+        <nav className=" justify-center items-center py-[1.8rem] flex">
+          <div>
+            <Link href="#">
+              <Image
+                src="/assets/bayshore-logo.svg"
+                alt="bayshore-logo"
+                width={366}
+                height={106}
+                className="lg:w-[20rem] w-[20rem] h-auto"
+                priority
+              />
+            </Link>
+          </div>
+        </nav>
+      </header>
+      <header className="absolute w-full bg-transparent z-50 top-0 left-0 md:hidden">
+        {/* Mobile */}
+
+        <nav className=" justify-center items-center  flex md:hidden">
           <Image
-            src="/assets/bayshore-logo.svg"
+            src="/bayshore-logo-white.png"
             alt="bayshore-logo"
             width={400}
-            height={150}
-            className="w-[20rem] h-[45px]"
+            height={200}
+            quality={100}
+            className="w-[150px] h-[140px] -translate-y-8"
             priority
           />
-        </Link>
-      </nav>
+        </nav>
 
-      {/* Desktop */}
+        {/* Desktop */}
 
-      <nav className=" justify-center items-center py-[1.8rem] hidden md:flex">
-        <div>
-          <Link href="#">
-            <Image
-              src="/assets/bayshore-logo.svg"
-              alt="bayshore-logo"
-              width={366}
-              height={106}
-              className="lg:w-[20rem] w-[20rem] h-auto"
-              priority
-            />
-          </Link>
-        </div>
-      </nav>
-    </header>
+        <nav className=" justify-center items-center py-[1.8rem] hidden md:flex">
+          <div>
+            <Link href="#">
+              <Image
+                src="/assets/bayshore-logo.svg"
+                alt="bayshore-logo"
+                width={366}
+                height={106}
+                className="lg:w-[20rem] w-[20rem] h-auto"
+                priority
+              />
+            </Link>
+          </div>
+        </nav>
+      </header>
+    </>
   );
 };
 
