@@ -231,8 +231,7 @@ const Form = () => {
         });
       }
 
-      // Fire EmailJS after successful POST request
-      await handleSubmitEmail();
+
     } catch (error) {
       console.error("Error:", error);
       Swal.fire({
