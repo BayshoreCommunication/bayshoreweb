@@ -225,7 +225,7 @@ const Form = () => {
       if (response) {
         Swal.fire({
           title: "Thank you!",
-          text: "Thank you! Your message has been sent successfully. We will get back to you soon.",
+          text: "Your message has been sent successfully. We will get back to you soon.",
           icon: "success",
           confirmButtonColor: "#FE6F1F",
         });
