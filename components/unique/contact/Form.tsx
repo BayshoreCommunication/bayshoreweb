@@ -171,9 +171,10 @@
 // export default Form;
 
 "use client";
-import { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import emailjs from "emailjs-com";
+import { useEffect, useRef, useState } from "react";
+import Swal from "sweetalert2";
 
 interface FormValues {
   name: string;
@@ -220,12 +221,25 @@ const Form = () => {
       );
       await new Promise((resolve) => setTimeout(resolve, 1000));
       console.log("Response:", response.data);
-      
+
+      if (response) {
+        Swal.fire({
+          title: "Thank you!",
+          text: "You clicked the button!",
+          icon: "success",
+          confirmButtonColor: "#FE6F1F",
+        });
+      }
+
       // Fire EmailJS after successful POST request
       await handleSubmitEmail();
-      
     } catch (error) {
       console.error("Error:", error);
+      Swal.fire({
+        text: "You clicked the button!",
+        icon: "error",
+        confirmButtonColor: "#FE6F1F",
+      });
     } finally {
       setLoading(false);
     }
@@ -235,17 +249,17 @@ const Form = () => {
     try {
       if (form.current) {
         const result = await emailjs.sendForm(
-          'service_o4z5ryj', 
-          'template_220uure', 
-          form.current, 
-          'EVNtRahViRmUCuu7C'
+          "service_o4z5ryj",
+          "template_220uure",
+          form.current,
+          "EVNtRahViRmUCuu7C"
         );
-        console.log('Email sent successfully:', result.text);
+        console.log("Email sent successfully:", result.text);
         setContactInfo(initialValues);
         form.current.reset();
       }
     } catch (error) {
-      console.error('Email send failed:');
+      console.error("Email send failed:");
     }
   };
 
@@ -331,7 +345,7 @@ const Form = () => {
                 <svg
                   aria-hidden="true"
                   role="status"
-                  className="inline w-4 h-4 me-3 text-white animate-spin"
+                  className="inline w-5 h-5 me-3 text-white animate-spin"
                   viewBox="0 0 100 101"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
