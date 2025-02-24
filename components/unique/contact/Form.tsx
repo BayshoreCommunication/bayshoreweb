@@ -225,7 +225,7 @@ const Form = () => {
       if (response) {
         Swal.fire({
           title: "Thank you!",
-          text: "You clicked the button!",
+          text: "Thank you! Your message has been sent successfully. We will get back to you soon.",
           icon: "success",
           confirmButtonColor: "#FE6F1F",
         });
@@ -236,7 +236,7 @@ const Form = () => {
     } catch (error) {
       console.error("Error:", error);
       Swal.fire({
-        text: "You clicked the button!",
+        text: "We’re experiencing some technical issues. Please try again later or contact us directly.",
         icon: "error",
         confirmButtonColor: "#FE6F1F",
       });
