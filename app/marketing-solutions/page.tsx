@@ -368,7 +368,7 @@ const Page = () => {
       >
         <div
           id="call"
-          className="flex flex-col justify-start items-center md:mt-28 "
+          className="flex flex-col justify-start items-center md:mt-5 "
         >
           <p className="py-5  text-[28px] lg:text-[48px]  place-self-start font-bold text-center md:text-left">
             <span className="text-[#FE5218]  underline underline-offset-2">
