@@ -1,13 +1,13 @@
 "use client";
-import React, { Fragment, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { ExclamationTriangleIcon } from "@heroicons/react/24/outline";
 import SectionLayout from "@/components/universal/SectionLayout";
-import DaynamicTableDataShow from "./DaynamicTableDataShow";
-import { jsPDF } from "jspdf";
-import html2canvas from "html2canvas";
+import { Dialog, Transition } from "@headlessui/react";
 import emailjs from "emailjs-com";
+import html2canvas from "html2canvas";
+import { jsPDF } from "jspdf";
 import Image from "next/image";
+import { Fragment, useState } from "react";
+import Swal from "sweetalert2";
+import DaynamicTableDataShow from "./DaynamicTableDataShow";
 
 const MarketingPerspectivesFormPreview = ({
   marketingPerspectivesFormDataDetails,
@@ -88,6 +88,12 @@ const MarketingPerspectivesFormPreview = ({
               setOpenPreview(!openPreview);
               scrollToTop();
               console.log("PDF and link sent successfully", result.text);
+              Swal.fire({
+                title: "Thank you!",
+                text: "Your message has been sent successfully. We will get back to you soon.",
+                icon: "success",
+                confirmButtonColor: "#FE6F1F",
+              });
             },
             (error) => {
               setShowSuccessPopup(true);
@@ -96,6 +102,11 @@ const MarketingPerspectivesFormPreview = ({
                 setShowSuccessPopup(false);
                 setShowErrorPopup(false);
               }, 5000);
+              Swal.fire({
+                text: "We’re experiencing some technical issues. Please try again later or contact us directly.",
+                icon: "error",
+                confirmButtonColor: "#FE6F1F",
+              });
               console.error("Failed to send PDF and link", error.text);
             }
           );
