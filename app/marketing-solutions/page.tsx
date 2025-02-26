@@ -164,10 +164,10 @@ const Page = () => {
     try {
       if (form.current) {
         const result = await emailjs.sendForm(
-          "service_o",
-          "template_r",
+          "service_o4z5ryj",
+          "template_220uure",
           form.current,
-          "EVNtRahu"
+          "EVNtRahViRmUCuu7C"
         );
         console.log("Email sent successfully:", result.text);
         setContactInfo(initialValues);
@@ -368,7 +368,7 @@ const Page = () => {
       >
         <div
           id="call"
-          className="flex flex-col justify-start items-center md:mt-28 "
+          className="flex flex-col justify-start items-center md:mt-5 "
         >
           <p className="py-5  text-[28px] lg:text-[48px]  place-self-start font-bold text-center md:text-left">
             <span className="text-[#FE5218]  underline underline-offset-2">
