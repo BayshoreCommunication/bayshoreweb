@@ -1,11 +1,10 @@
 "use client";
 import SectionLayout from "@/components/universal/SectionLayout";
-import { Dialog, Transition } from "@headlessui/react";
 import emailjs from "emailjs-com";
 import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
 import Image from "next/image";
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import Swal from "sweetalert2";
 import DaynamicTableDataShow from "./DaynamicTableDataShow";
 
@@ -703,7 +702,7 @@ const MarketingPerspectivesFormPreview = ({
         </SectionLayout>
       </div>
 
-      <div className="flex justify-center mt-10 mb-20">
+      <div className="flex justify-center items-center flex-col mt-10 mb-20">
         <button
           onClick={captureAndSendPDF}
           className="!py-4 md:!py-4 flex items-center gap-2 sm:gap-4 md:gap-8 px-[3rem] justify-center md:justify-start border-2 bg-primary border-primary rounded-full hover:rounded-full text-white hover:bg-transparent hover:text-primary a-button"
@@ -734,76 +733,16 @@ const MarketingPerspectivesFormPreview = ({
             "Submit Form"
           )}
         </button>
-        <Transition.Root show={showSuccessPopup} as={Fragment}>
-          <Dialog
-            as="div"
-            className="relative z-10"
-            onClose={() => setShowSuccessPopup(!showSuccessPopup)}
-          >
-            <Transition.Child
-              as={Fragment}
-              enter="ease-out duration-300"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="ease-in duration-200"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
-            </Transition.Child>
 
-            <div className="fixed inset-0 z-10 w-screen overflow-y-auto pt-3">
-              <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
-                <Transition.Child
-                  as={Fragment}
-                  enter="ease-out duration-300"
-                  enterFrom="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                  enterTo="opacity-100 translate-y-0 sm:scale-100"
-                  leave="ease-in duration-200"
-                  leaveFrom="opacity-100 translate-y-0 sm:scale-100"
-                  leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                >
-                  <Dialog.Panel className="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                    <div className="bg-white px-4 pb-14 pt-16">
-                      <div className="mx-auto">
-                        <div className="mx-auto flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-full bg-green-100">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            strokeWidth={1.5}
-                            stroke="currentColor"
-                            className="w-6 h-6 text-green-500"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"
-                            />
-                          </svg>
-                        </div>
-                        <div className="!mt-6 text-center">
-                          <Dialog.Title
-                            as="h3"
-                            className="text-3xl font-semibold leading-6 text-gray-900"
-                          >
-                            Successfully submitted!
-                          </Dialog.Title>
-                          <div className="mt-5">
-                            <p className="text-2xl text-gray-800">
-                              We will be in touch with you soon.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="bg-gray-50 px-4 py-3 gap-1 flex justify-end items-center"></div>
-                  </Dialog.Panel>
-                </Transition.Child>
-              </div>
-            </div>
-          </Dialog>
-        </Transition.Root>
+        <div className="mt-8">
+          {loading ? (
+            <p className="text-2xl">
+              Please wait your submission is processing...
+            </p>
+          ) : (
+            ""
+          )}
+        </div>
       </div>
     </div>
   );
