@@ -1021,11 +1021,11 @@ const Page = () => {
         </div>
       </SectionLayout>
       <SectionLayout
-        bg={`bg-[#F4F4F4]  scroll-smooth  lg:px-20  ${
+        bg={`bg-[#F4F4F4]  scroll-smooth  lg:px-20 pt-10  ${
           isVideoFinishedCookie == "true" ? " " : " blur"
         }`}
       >
-        <div className=" bg-gray-200 rounded-3xl border border-gray-300 px-8 py-12 lg:p-20 shadow-xl lg:mx-52 m-auto">
+        <div className=" bg-gray-200 rounded-3xl border border-gray-300 px-8 py-12  shadow-xl lg:mx-52 m-auto">
           <div>
             <h2 className="font-bold text-[24px] lg:text-[36px] text-center">
               Ready to Schedule Your Meeting?
