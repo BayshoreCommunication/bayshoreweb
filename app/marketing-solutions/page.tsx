@@ -3,18 +3,10 @@
 import Autoplay from "embla-carousel-autoplay";
 import ReactPlayer from "react-player";
 import { InlineWidget } from "react-calendly";
-import React, { useCallback } from "react";
+import React from "react";
 import Image from "next/image";
-import Head from "next/head";
 
-import {
-  useGetCookies,
-  useSetCookie,
-  useHasCookie,
-  useDeleteCookie,
-  useGetCookie,
-} from "cookies-next";
-import { Metadata } from "next";
+import { useSetCookie } from "cookies-next";
 import SectionLayout from "@/components/universal/SectionLayout";
 import {
   Carousel,
@@ -30,8 +22,6 @@ import axios from "axios";
 import emailjs from "emailjs-com";
 import Link from "next/link";
 import { AiOutlineRight } from "react-icons/ai";
-import { Button } from "@material-tailwind/react";
-import { CloudDownload, PauseIcon, PlayIcon } from "lucide-react";
 import { hasCookie } from "cookies-next/client";
 
 interface FormValues {
@@ -382,7 +372,7 @@ const Page = () => {
               <InlineWidget
                 url="https://calendly.com/bayshorec/45min?month=2025-02"
                 styles={{
-                  height: "1250px",
+                  height: "1270px",
                   width: "100%",
                   borderRadius: "20px",
                 }}
@@ -399,7 +389,7 @@ const Page = () => {
               <InlineWidget
                 url="https://calendly.com/bayshorec/45min?month=2025-02"
                 styles={{
-                  height: "660px",
+                  height: "685px",
                   width: "100%",
                   borderRadius: "20px",
                 }}
