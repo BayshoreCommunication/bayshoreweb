@@ -114,6 +114,7 @@ const Page = () => {
   const [contactInfo, setContactInfo] = useState(initialValues);
   const [formErrors, setFormErrors] = useState<any>({});
   const [isSubmit, setIsSubmit] = useState(false);
+  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -173,6 +174,34 @@ const Page = () => {
       handlePostRequest();
     }
   }, [formErrors]);
+  // function handelScroll() {
+  //   const vid = document.querySelector("#video");
+  //   vid.scrollIntoView({
+  //     behavior: "smooth",
+  //   });
+  // }
+  useEffect(() => {
+    const watchVideoButton = document.querySelector(".watchButton");
+    // const links = document.querySelector(".scrollto");
+
+    // if (links !== null) links.addEventListener("click", clickHandler);
+
+    // function clickHandler(e) {
+    //   e.preventDefault();
+    //   document.querySelector(e.target.getAttribute("href")).scrollIntoView({
+    //     behavior: "smooth",
+    //   });
+    // }
+    window.onscroll = function () {
+      if (window.scrollY >= window.screen.height) {
+        watchVideoButton?.classList.remove("hidden");
+        watchVideoButton?.classList.add("block");
+      } else if (window.scrollY <= window.screen.height) {
+        watchVideoButton?.classList.add("hidden");
+        watchVideoButton?.classList.remove("block");
+      }
+    };
+  });
 
   const validate = (values: FormValues) => {
     const errors: any = {};
@@ -202,9 +231,9 @@ const Page = () => {
   };
 
   return (
-    <div className=" scroll-smooth">
+    <div className="scroll-smooth">
       {" "}
-      <div className="w-full relative  h-fit pb-16 flex-col  justify-start items-center md:hidden ">
+      <div className="w-full z-30 h-fit pb-16 flex-col  justify-start items-center md:hidden ">
         <Image
           src={"/bg.png"}
           alt="bg image"
@@ -243,6 +272,9 @@ const Page = () => {
             height={"100%"}
             onEnded={() => {
               setIsVideoEnded("true");
+            }}
+            onPlay={() => {
+              setIsVideoPlaying(true);
             }}
           />
         </div>
@@ -302,7 +334,10 @@ const Page = () => {
           >
             You don&apos;t pay for effort—you pay for real, measurable growth.
           </p>
-          <p className="py-10 md:py-16 text-[20px] lg:text-[48px]  place-self-start font-bold">
+          <p
+            id="video"
+            className="py-10 md:py-16 text-[20px] lg:text-[48px]  place-self-start font-bold"
+          >
             <span className="text-[#FE5218] ">Step 1 of 2:</span>
              Watch Video
           </p>
@@ -329,10 +364,14 @@ const Page = () => {
               //     videoRef.current.seekTo(played);
               // }}
               // onContextMenu={(e) => e.preventDefault()}
+              onPlay={() => {
+                setIsVideoPlaying(true);
+              }}
               onEnded={() => {
-                console.log("hi");
+                // console.log("hi");
                 setIsVideoEnded("true");
               }}
+              playsinline
             />
           </div>
 
@@ -351,20 +390,50 @@ const Page = () => {
 
         {/* part2 */}
       </SectionLayout>
+      {/* <SectionLayout bg={"absolute bottom-10"}> */}
+      {/*   <div className="text-[#FE5218] text-center py-10 bg-white sticky px-5 z-50  "> */}
+      {/*     Watch the video first! */}
+      {/*   </div> */}
+      {/* </SectionLayout> */}
       <SectionLayout
-        bg={`bg-[#ececec]  scroll-smooth  lg:px-20 ${
-          isVideoFinishedCookie == "true" ? " " : " blur"
-        }`}
+        bg={`bg-[#ececec]  scroll-smooth  lg:px-20 relative cursor-pointer`}
       >
+        <SectionLayout
+          bg={`absolute inset-0 w-full m-auto  z-20  transition-all duration-300 ease-in-out scrollto ${
+            isVideoFinishedCookie != "true" ? " " : " hidden"
+          }`}
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
+          <div className="watchButton w-[80%] lg:w-[30%] px-5 h-80 m-auto inset-0 scrollto text-[#FE5218] text-center py-6 bg-white fixed rounded-3xl border-[#fe5218] border-2  hidden text-4xl lg:text-6xl font-semibold  align-baseline">
+            <p
+              className={`h-full flex justify-center items-center scrollto ${
+                isVideoPlaying ? "hidden" : "block"
+              }`}
+            >
+              Watch the video first!
+            </p>
+            <p
+              className={`h-full flex justify-center text-3xl lg:text-5xl items-center scrollto ${
+                isVideoPlaying ? "block" : "hidden"
+              }`}
+            >
+              Watch the video till the end!
+            </p>
+          </div>
+        </SectionLayout>
+
         <div
           id="call"
-          className="flex flex-col justify-start items-center md:mt-5 "
+          className={`flex flex-col justify-start items-center md:mt-5  ${
+            isVideoFinishedCookie == "true" ? " " : " blur"
+          }`}
         >
           <p className="py-5  text-[28px] lg:text-[48px]  place-self-start font-bold text-center md:text-left">
             <span className="text-[#FE5218]  underline underline-offset-2">
               Step 2 of 2:
             </span>
-             Schedule Your Discovery Call{" "}
+             Schedule Your Discovery Call
           </p>
           <p className=" text-[18px]  text-center  place-self-start  text-[#1e1e1e]  lg:text-[24px] pb-16 md:pb-0 ">{`Your responses are strictly confidential and will be used to tailor a customized strategy for you before our call.`}</p>
           <div className="w-full h-[1200px] md:h-[1250px] lg:h-auto rounded-3xl  overflow-hidden">
@@ -404,7 +473,11 @@ const Page = () => {
             </div>
           </div>
         </div>
-        <div className="flex pb-10 xl:py-20 flex-col justify-start items-center text-center w-full">
+        <div
+          className={`flex pb-10 xl:py-20 flex-col justify-start items-center text-center w-full ${
+            isVideoFinishedCookie == "true" ? " " : " blur"
+          }`}
+        >
           <p
             className="text-[28px] lg:text-[28px] underline place-self-start"
             style={{ textUnderlineOffset: "8px" }}
@@ -502,7 +575,7 @@ const Page = () => {
         </div>
       </SectionLayout>
       <SectionLayout
-        bg={`bg-white  scroll-smooth lg:px-20  ${
+        bg={`bg-white  scroll-smooth lg:px-20  relative${
           isVideoFinishedCookie == "true" ? " " : " blur"
         }`}
       >
