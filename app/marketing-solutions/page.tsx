@@ -1,21 +1,11 @@
 "use client";
 
 import Autoplay from "embla-carousel-autoplay";
-<<<<<<< HEAD
 import Image from "next/image";
 import React from "react";
 import { InlineWidget } from "react-calendly";
 import ReactPlayer from "react-player";
 
-=======
-import ReactPlayer from "react-player";
-import { InlineWidget } from "react-calendly";
-import React from "react";
-import Image from "next/image";
-
-import { useSetCookie } from "cookies-next";
-import SectionLayout from "@/components/universal/SectionLayout";
->>>>>>> 7c29bf594d0a1b368d56960d3055c6e6ddcc6cc3
 import {
   Carousel,
   CarouselContent,
@@ -33,10 +23,6 @@ import emailjs from "emailjs-com";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { AiOutlineRight } from "react-icons/ai";
-<<<<<<< HEAD
-=======
-import { hasCookie } from "cookies-next/client";
->>>>>>> 7c29bf594d0a1b368d56960d3055c6e6ddcc6cc3
 
 interface FormValues {
   first_name: string;
