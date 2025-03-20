@@ -1,21 +1,11 @@
 "use client";
 
 import Autoplay from "embla-carousel-autoplay";
-import ReactPlayer from "react-player";
-import { InlineWidget } from "react-calendly";
-import React, { useCallback } from "react";
 import Image from "next/image";
-import Head from "next/head";
+import React from "react";
+import { InlineWidget } from "react-calendly";
+import ReactPlayer from "react-player";
 
-import {
-  useGetCookies,
-  useSetCookie,
-  useHasCookie,
-  useDeleteCookie,
-  useGetCookie,
-} from "cookies-next";
-import { Metadata } from "next";
-import SectionLayout from "@/components/universal/SectionLayout";
 import {
   Carousel,
   CarouselContent,
@@ -24,15 +14,15 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import SectionLayout from "@/components/universal/SectionLayout";
+import { useSetCookie } from "cookies-next";
 
-import { useEffect, useState, useRef } from "react";
 import axios from "axios";
+import { hasCookie } from "cookies-next/client";
 import emailjs from "emailjs-com";
 import Link from "next/link";
+import { useEffect, useRef, useState } from "react";
 import { AiOutlineRight } from "react-icons/ai";
-import { Button } from "@material-tailwind/react";
-import { CloudDownload, PauseIcon, PlayIcon } from "lucide-react";
-import { hasCookie } from "cookies-next/client";
 
 interface FormValues {
   first_name: string;
@@ -380,7 +370,7 @@ const Page = () => {
           <div className="w-full h-[1200px] md:h-[1250px] lg:h-auto rounded-3xl  overflow-hidden">
             <div className="block xl:hidden">
               <InlineWidget
-                url="https://calendly.com/bayshorec/45min?month=2025-02"
+                url="https://calendly.com/bayshorec/one-on-one-meeting?month=2025-03"
                 styles={{
                   height: "1250px",
                   width: "100%",
@@ -397,7 +387,7 @@ const Page = () => {
             </div>
             <div className="hidden xl:block">
               <InlineWidget
-                url="https://calendly.com/bayshorec/45min?month=2025-02"
+                url="https://calendly.com/bayshorec/one-on-one-meeting?month=2025-03month=2025-03"
                 styles={{
                   height: "660px",
                   width: "100%",
@@ -1300,7 +1290,12 @@ const Page = () => {
             `}
               </p>
 
-              <Link href={"https://calendly.com/bayshorec/45min?month=2025-02"}>
+              <Link
+                target="_blank"
+                href={
+                  "https://calendly.com/bayshorec/one-on-one-meeting?month=2025-03"
+                }
+              >
                 <button className="btn text-[12px] md:text-small !py-4 flex text-white items-center gap-2 md:gap-8 r-button border-2 border-primary hover:text-[#FE6F1F]">
                   <span>Book now 45 min Free Consultation</span>
                   <span className="inline-block translate-y-[2px] ml-2">

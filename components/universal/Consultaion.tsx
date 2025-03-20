@@ -1,7 +1,6 @@
-import React from "react";
-import SectionLayout from "./SectionLayout";
-import { AiOutlineRight } from "react-icons/ai";
 import Link from "next/link";
+import { AiOutlineRight } from "react-icons/ai";
+import SectionLayout from "./SectionLayout";
 
 const Consultaion = () => {
   return (
@@ -15,7 +14,12 @@ const Consultaion = () => {
             `}
         </p>
 
-        <Link href={"https://calendly.com/bayshorec/45min?month=2025-02"}>
+        <Link
+          href={
+            "https://calendly.com/bayshorec/one-on-one-meeting?month=2025-03"
+          }
+          target="_blank"
+        >
           <button className="btn text-small !py-4 flex items-center gap-4 md:gap-8 r-button border-2 border-primary hover:text-primary">
             <span>Book now 45 min Free Consultation</span>
             <span className="inline-block translate-y-[2px] ml-2">
