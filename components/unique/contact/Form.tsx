@@ -230,8 +230,6 @@ const Form = () => {
           confirmButtonColor: "#FE6F1F",
         });
       }
-
-
     } catch (error) {
       console.error("Error:", error);
       Swal.fire({
@@ -244,21 +242,42 @@ const Form = () => {
     }
   };
 
-  const handleSubmitEmail = async () => {
+  const handleSubmitEmail = async (event: React.FormEvent) => {
+    event.preventDefault(); // Prevent page reload
+
+    if (!form.current) return;
+
+    setLoading(true);
+
     try {
-      if (form.current) {
-        const result = await emailjs.sendForm(
-          "service_o4z5ryj",
-          "template_220uure",
-          form.current,
-          "EVNtRahViRmUCuu7C"
-        );
-        console.log("Email sent successfully:", result.text);
-        setContactInfo(initialValues);
-        form.current.reset();
-      }
+      const result = await emailjs.sendForm(
+        "service_o4z5ryj",
+        "template_220uure",
+        form.current,
+        "EVNtRahViRmUCuu7C"
+      );
+
+      console.log("Email sent successfully:", result.text);
+
+      Swal.fire({
+        title: "Thank you!",
+        text: "Your message has been sent successfully. We will get back to you soon.",
+        icon: "success",
+        confirmButtonColor: "#FE6F1F",
+      });
+
+      setContactInfo(initialValues);
+      // form.current.reset(); // optional
     } catch (error) {
-      console.error("Email send failed:");
+      console.error("Email send failed:", error);
+
+      Swal.fire({
+        text: "We’re experiencing some technical issues. Please try again later or contact us directly.",
+        icon: "error",
+        confirmButtonColor: "#FE6F1F",
+      });
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -289,7 +308,7 @@ const Form = () => {
   };
 
   return (
-    <form ref={form} onSubmit={handleSubmit} className="">
+    <form ref={form} onSubmit={handleSubmitEmail} className="">
       <div className="flex flex-col md:flex-row justify-between gap-8">
         <div className="flex-1 space-y-10">
           <input
