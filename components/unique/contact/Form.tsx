@@ -251,10 +251,10 @@ const Form = () => {
 
     try {
       const result = await emailjs.sendForm(
-        "service_o4z5ryj",
-        "template_220uure",
+        "service_xak0y8q",
+        "template_h0e3tr9",
         form.current,
-        "EVNtRahViRmUCuu7C"
+        "x_A7wpJ4uetSYsy72"
       );
 
       console.log("Email sent successfully:", result.text);
