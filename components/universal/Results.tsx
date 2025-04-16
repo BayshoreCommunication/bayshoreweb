@@ -209,7 +209,7 @@ const ClientLogos = () => {
         className="w-[12rem]"
       />
       <Image
-        src="/assets/client-logo/melamed-law.png"
+        src="/assets/client-logo/tampa-motion.png"
         alt=""
         width={400}
         height={400}
