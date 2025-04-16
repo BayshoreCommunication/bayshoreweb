@@ -215,6 +215,13 @@ const ClientLogos = () => {
         height={400}
         className="w-[12rem]"
       />
+      <Image
+        src="/assets/client-logo/uncle.jpg"
+        alt=""
+        width={400}
+        height={400}
+        className="w-[12rem]"
+      />
     </div>
   );
 };
