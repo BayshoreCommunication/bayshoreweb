@@ -439,7 +439,7 @@ const Page = () => {
           <div className="w-full h-[1200px] md:h-[1250px] lg:h-auto rounded-3xl  overflow-hidden">
             <div className="block xl:hidden">
               <InlineWidget
-                url="https://calendly.com/bayshorec/one-on-one-meeting?month=2025-03"
+                url="https://calendly.com/info-bayshorecommunication/meeting?month=2025-04"
                 styles={{
                   height: "1270px",
                   width: "100%",
@@ -456,7 +456,7 @@ const Page = () => {
             </div>
             <div className="hidden xl:block">
               <InlineWidget
-                url="https://calendly.com/bayshorec/one-on-one-meeting?month=2025-03month=2025-03"
+                url="https://calendly.com/info-bayshorecommunication/meeting?month=2025-04month=2025-03"
                 styles={{
                   height: "685px",
                   width: "100%",
@@ -1366,7 +1366,7 @@ const Page = () => {
               <Link
                 target="_blank"
                 href={
-                  "https://calendly.com/bayshorec/one-on-one-meeting?month=2025-03"
+                  "https://calendly.com/info-bayshorecommunication/meeting?month=2025-04"
                 }
               >
                 <button className="btn text-[12px] md:text-small !py-4 flex text-white items-center gap-2 md:gap-8 r-button border-2 border-primary hover:text-[#FE6F1F]">
