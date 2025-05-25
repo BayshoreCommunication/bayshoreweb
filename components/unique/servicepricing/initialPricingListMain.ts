@@ -359,6 +359,20 @@ YouTube Lead Ads, Display ads with 15% Ad Spend`,
   },
 
   {
+    servicesName: `AI-Driven Marketing`,
+    serviceDetails: `Leverage AI tools to analyze customer behavior, automate campaign delivery, personalize content, and optimize conversion funnels. Includes AI-generated content, predictive analysis, chatbot enhancements, and A/B testing.`,
+    unitPrice: 350,
+    quantity: 1,
+    estimatedTotalPrice: 350.00,
+  },
+  {
+    servicesName: `Social Media Endorsement (Quora, Reddit, Facebook)`,
+    serviceDetails: `Strategic brand promotion through trusted community-based platforms. Includes native post creation, engagement through comments, reputation building, and audience-targeted endorsement campaigns across Quora, Reddit, and Facebook Groups.`,
+    unitPrice: 350,
+    quantity: 1,
+    estimatedTotalPrice: 350.00,
+  },
+  {
     servicesName: `Dedicated Marketing Manager`,
     serviceDetails: `Accounts Management, Crisis Management, Lead
 Nurturing & Forwarding, Growth Monitoring,
