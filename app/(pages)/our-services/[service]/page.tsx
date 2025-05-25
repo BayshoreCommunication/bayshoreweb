@@ -45,10 +45,10 @@ const Page = async ({ params }: { params: { service: string } }) => {
     <>
       <Reveal>
         <HeroIndividual
-          heading={individualService[0].topHeroLeftTitle}
-          description={individualService[0].topHeroLeftDescription}
+          heading={individualService[0]?.topHeroLeftTitle}
+          description={individualService[0]?.topHeroLeftDescription}
           // src={individualService.map((elem, index) => elem.heroImg)}
-          imgLink={individualService[0].heroImg}
+          imgLink={individualService[0]?.heroImg}
         />
       </Reveal>
 
@@ -58,7 +58,7 @@ const Page = async ({ params }: { params: { service: string } }) => {
 
       <div className="relative mt-16">
         <div className="">
-          {individualService.map((elem, index) => (
+          {individualService?.map((elem, index) => (
             <div key={index}>
               <Reveal>
                 <SectionLayout bg="">
@@ -69,8 +69,8 @@ const Page = async ({ params }: { params: { service: string } }) => {
                           <>
                             <div className="">
                               <div className="rounded-[10px] px-4 pb-16 !text-justify">
-                                <h2>{elem.title}</h2>
-                                {elem.shortDescription}
+                                <h2>{elem?.title}</h2>
+                                {elem?.shortDescription}
                               </div>
                               {/* <div className="row-start-1 md:col-start-2">
                                 <Image
@@ -97,7 +97,7 @@ const Page = async ({ params }: { params: { service: string } }) => {
 
                       <Reveal>
                         <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                          {Parser(elem.description1)}
+                          {Parser(elem?.description1)}
                         </div>
                       </Reveal>
                       {/* <h1>prie</h1> */}
@@ -109,11 +109,11 @@ const Page = async ({ params }: { params: { service: string } }) => {
                       {/* <h1>check</h1> */}
 
                       <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                        {Parser(elem.description2)}
+                        {Parser(elem?.description2)}
                       </div>
 
                       <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                        {Parser(elem.description3)}
+                        {Parser(elem?.description3)}
                       </div>
                     </div>
                     <div className="flex-[1.5] hidden sm:block">
@@ -121,22 +121,22 @@ const Page = async ({ params }: { params: { service: string } }) => {
                         <h3 className="text-[1.8rem] font-semibold text-center mb-3">
                           Our Services
                         </h3>
-                        {services.map((elem: any, index: any) => (
+                        {services?.map((elem: any, index: any) => (
                           <div key={index}>
                             <Link
                               className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
-                              href={`/our-services/${elem.url
+                              href={`/our-services/${elem?.url
                                 .replace(/\s+/g, "-") // Replace spaces with dashes globally
                                 .toLowerCase()}`}
                             >
                               <Image
-                                src={`${elem.heroImg}`}
+                                src={`${elem?.heroImg}`}
                                 alt="blog_image"
                                 width={3109}
                                 height={1752}
                                 className="w-[100px] h-[80px]"
                               />{" "}
-                              <p className="!text-xl">{elem.title}</p>
+                              <p className="!text-xl">{elem?.title}</p>
                             </Link>
                           </div>
                         ))}
@@ -161,41 +161,41 @@ const Page = async ({ params }: { params: { service: string } }) => {
                     <div className="flex-[5] h-[100%] service-style service-style-ind ">
                       <div>
                         <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                          {Parser(elem.description4)}
+                          {Parser(elem?.description4)}
                         </div>
 
                         <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                          {Parser(elem.description5)}
+                          {Parser(elem?.description5)}
                         </div>
 
                         <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                          {Parser(elem.description6)}
+                          {Parser(elem?.description6)}
                         </div>
                         <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                          {Parser(elem.description7)}
+                          {Parser(elem?.description7)}
                         </div>
                         <div className="!mb-8 !text-justify !md:text-left service-style-ind">
-                          {Parser(elem.description8)}
+                          {Parser(elem?.description8)}
                         </div>
                         <div className="!mb-8 !text-justify !md:text-left">
-                          {Parser(elem.description9)}
+                          {Parser(elem?.description9)}
                         </div>
                         <div className="!mb-8 !text-justify !md:text-left">
-                          {Parser(elem.description10)}
+                          {Parser(elem?.description10)}
                         </div>
                         <div className="!mb-8 !text-justify !md:text-left">
-                          {Parser(elem.description11)}
+                          {Parser(elem?.description11)}
                         </div>
                         <div className="!mb-8 !text-justify !md:text-left">
-                          {Parser(elem.description12)}
+                          {Parser(elem?.description12)}
                         </div>
                         <div className="!mb-8 !text-justify !md:text-left">
-                          {Parser(elem.description13)}
+                          {Parser(elem?.description13)}
                         </div>
                         <div className="!mb-8 !text-justify !md:text-left">
-                          {Parser(elem.description14)}
+                          {Parser(elem?.description14)}
                         </div>
-                        {Parser(elem.description15)}
+                        {Parser(elem?.description15)}
                       </div>
                     </div>
                     <div className="flex-[1.5] hidden sm:block">
@@ -210,7 +210,7 @@ const Page = async ({ params }: { params: { service: string } }) => {
                             <div key={index}>
                               <Link
                                 className="flex gap-5 p-4 shadow-md mb-4 bg-slate-500 rounded "
-                                href={`/blog/${elem.slug}`}
+                                href={`/blog/${elem?.slug}`}
                               >
                                 <Image
                                   src={elem?.featuredImage?.image?.url}
@@ -219,7 +219,7 @@ const Page = async ({ params }: { params: { service: string } }) => {
                                   height={1752}
                                   className="w-[100px] h-[80px]"
                                 />
-                                <p className="!text-xl">{elem.title}</p>
+                                <p className="!text-xl">{elem?.title}</p>
                               </Link>
                             </div>
                           ))}
@@ -244,21 +244,23 @@ export async function generateMetadata({
 }: {
   params: { service: string };
 }) {
-  const parameter = params.service;
-  const individualService = services.filter((elem) => elem.url === parameter);
+  const parameter = params?.service;
+  const individualService = services?.filter((elem) => elem?.url === parameter);
   //console.log(individualService.map((elem, index) => elem.metaDescription)[0]);
   return {
-    title: `${individualService.map((elem, index) => elem.topHeroLeftTitle)}`,
+    title: `${individualService?.map((elem, index) => elem?.topHeroLeftTitle)}`,
     description: `${
-      individualService.map((elem, index) => elem.metaDescription)[0]
+      individualService?.map((elem, index) => elem?.metaDescription)[0]
     }`,
     openGraph: {
-      title: `${individualService.map((elem, index) => elem.topHeroLeftTitle)}`,
+      title: `${individualService?.map(
+        (elem, index) => elem?.topHeroLeftTitle
+      )}`,
       description: `${
-        individualService.map((elem, index) => elem.metaDescription)[0]
+        individualService?.map((elem, index) => elem?.metaDescription)[0]
       }`,
-      images: individualService[0].heroImg,
-      url: `https://www.carterinjurylaw.com/our-services/${individualService[0].url}`,
+      images: individualService[0]?.heroImg,
+      url: `https://www.carterinjurylaw.com/our-services/${individualService[0]?.url}`,
       type: "article",
       site_name: "https://www.bayshorecommunication.com/",
     },

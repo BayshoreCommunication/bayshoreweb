@@ -52,29 +52,37 @@ const HeroLeft: FC<heroInfo> = ({ text, heading, description }) => {
   };
 
   return (
-    <motion.div initial="hidden"
+    <motion.div
+      initial="hidden"
       animate="visible"
       exit={{ opacity: 0, transition: { duration: 1 } }}
-      variants={{ visible: { transition: { staggerChildren: 0.3 } } }} className="">
-      <motion.p variants={{
-        hidden: { opacity: 0, y: -20 },
-        visible,
-      }} className="text-[2rem] text-center md:text-start text-[#3E7BE2] mb-[1.5rem] lg:mb-[2.5rem]">
+      variants={{ visible: { transition: { staggerChildren: 0.3 } } }}
+      className=""
+    >
+      <motion.p
+        variants={{
+          hidden: { opacity: 0, y: -20 },
+          visible,
+        }}
+        className="text-[2rem] text-center md:text-start text-[#3E7BE2] mb-[1.5rem] lg:mb-[2.5rem]"
+      >
         {text}
       </motion.p>
-      <h1 className="heading-primary">{heading.split("").map((el, i) => (
-        <motion.span
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            duration: 0.55,
-            delay: i / 30,
-          }}
-          key={i}
-        >
-          {el}
-        </motion.span>
-      ))}</h1>
+      <h1 className="heading-primary">
+        {heading?.split("").map((el, i) => (
+          <motion.span
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 0.55,
+              delay: i / 30,
+            }}
+            key={i}
+          >
+            {el}
+          </motion.span>
+        ))}
+      </h1>
 
       {/* <h1
         className={`text-[50px] md:text-[100px] font-[800] text-white md:text-left `}
@@ -93,13 +101,12 @@ const HeroLeft: FC<heroInfo> = ({ text, heading, description }) => {
           </motion.span>
         ))}
       </h1> */}
-      <motion.p variants={itemVariants} className="text-base">{description}</motion.p>
+      <motion.p variants={itemVariants} className="text-base">
+        {description}
+      </motion.p>
 
       <motion.div variants={itemVariants}>
         <HeroForm />
-
-       
-
       </motion.div>
     </motion.div>
   );
