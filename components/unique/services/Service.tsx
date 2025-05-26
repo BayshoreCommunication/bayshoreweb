@@ -3888,7 +3888,7 @@ services = [
   //AI-Driven Marketing
   {
     logo: "/assets/service/influencer-marketing.svg",
-    topHeroLeftTitle: "AI-Driven Marketing Services That Put People Firs",
+    topHeroLeftTitle: "AI-Driven Marketing Services That Put People First",
     topHeroLeftDescription: `There’s something oddly beautiful about patterns. The way people pause before they click. The late-night scrolls filled with quiet curiosity. The impulsive sign-up that feels like fate. Behind every digital interaction lies a trail of intent, often invisible to the eye, but not to the algorithm.
 We live in a time where machines compute and anticipate. They respond and they learn. However, as artificial intelligence changes the face of modern marketing, the real question is not, "What can AI do?" It’s “What should we do with it?”
 We believe that AI is not here to replace intuition or creativity, but rather to sharpen them. Not to overshadow human connection, but to ensure it occurs in the right places.

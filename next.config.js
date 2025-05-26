@@ -8,6 +8,7 @@ const nextConfig = {
   //   domains: ["cdn-icons-png.flaticon.com"],
   // },
   images: {
+    unoptimized: true,
     domains: ["cdn-icons-png.flaticon.com"],
     remotePatterns: [
       {
