@@ -72,13 +72,13 @@ const MarketingPerspectivesFormPreview = ({
 
         emailjs
           .send(
-            "service_o4z5ryj",
-            "template_220uure",
+            "service_xak0y8q",
+            "template_nh7stuq",
             {
               to_email: "arsahak.bayshore@gmail.com",
               image_url: imgbbUrl,
             },
-            "EVNtRahViRmUCuu7C"
+            "x_A7wpJ4uetSYsy72"
           )
           .then(
             (result) => {
