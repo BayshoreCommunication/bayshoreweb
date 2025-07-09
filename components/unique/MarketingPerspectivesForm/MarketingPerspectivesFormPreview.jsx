@@ -75,7 +75,6 @@ const MarketingPerspectivesFormPreview = ({
             "service_xak0y8q",
             "template_nh7stuq",
             {
-              to_email: "arsahak.bayshore@gmail.com",
               image_url: imgbbUrl,
             },
             "x_A7wpJ4uetSYsy72"
