@@ -4,6 +4,10 @@ const nextConfig = {
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
   },
 
+  // Workaround for V8 invalid size error on Windows/Node 20 with Next 13.x
+  // Disable SWC minify to avoid build crash
+  swcMinify: false,
+
   // images: {
   //   domains: ["cdn-icons-png.flaticon.com"],
   // },

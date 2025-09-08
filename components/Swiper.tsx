@@ -10,8 +10,8 @@ import "swiper/css/navigation";
 
 import "./swiper.css";
 
-// import required modules
-import { Autoplay, Pagination, Navigation } from "swiper";
+// import required modules (Swiper v11)
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 
 const Content = () => {

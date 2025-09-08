@@ -15,10 +15,9 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import SectionLayout from "@/components/universal/SectionLayout";
-import { useSetCookie } from "cookies-next";
+import { setCookie, hasCookie } from "cookies-next";
 
 import axios from "axios";
-import { hasCookie } from "cookies-next/client";
 import emailjs from "emailjs-com";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
@@ -52,7 +51,7 @@ const Page = () => {
     },
   ];
 
-  const setCookie = useSetCookie();
+  
 
   const [isVideoEnded, setIsVideoEnded] = React.useState("false");
   const [isVideoFinishedCookie, setIsVideoFinishedCookie] = React.useState("");

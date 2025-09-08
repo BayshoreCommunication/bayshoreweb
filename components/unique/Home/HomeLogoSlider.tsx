@@ -10,8 +10,8 @@ import "swiper/css/navigation";
 
 import "./swiperLogo.css";
 
-// import required modules
-import { Pagination, Navigation } from "swiper";
+// import required modules (Swiper v11)
+import { Pagination, Navigation } from "swiper/modules";
 
 export default function LogoSlide() {
   return (
