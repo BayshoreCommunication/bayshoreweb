@@ -12,7 +12,7 @@ import Footer from "@/components/universal/Footer";
 import HeroLeft from "@/components/universal/HeroLeft";
 import Info from "@/components/universal/Info";
 import Navbar from "@/components/universal/Navbar";
-import Results from "@/components/universal/Results";
+import Results from "@/components/universal/Results";   
 import SectionHeader from "@/components/universal/SectionHeader";
 import SectionLayout from "@/components/universal/SectionLayout";
 import { Metadata } from "next";
