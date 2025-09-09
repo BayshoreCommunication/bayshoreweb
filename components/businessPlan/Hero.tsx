@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { useState } from "react";
 import { IoStarOutline } from "react-icons/io5";
+import { TfiMenuAlt } from "react-icons/tfi";
+import { FaPeopleLine } from "react-icons/fa6";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -10,10 +12,10 @@ export default function Home() {
   const videoId = "VIDEO_ID"; // Replace with your YouTube video ID
 
   return (
-    <div className="bg-white font-sans min-h-screen px-8">
+    <div className="bg-white  min-h-screen px-8 mb-16">
       {/* HEADER */}
       <header className="w-full border-b border-gray-100 shadow-sm">
-        <div className="max-w-[1440px] mx-auto flex justify-between items-center py-4 px-6">
+        <div className="max-w-[1640px] mx-auto flex justify-between items-center py-4 px-6">
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <Image
@@ -33,11 +35,11 @@ export default function Home() {
       </header>
 
       {/* HERO SECTION */}
-      <section className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-[100vh] flex flex-col justify-center">
+      <section className="max-w-[10xl] mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-[100vh] flex flex-col justify-center">
         {/* Headline */}
-        <h1 className="text-[36px]  lg:text-[42px] font-bold text-center leading-snug max-w-7xl mx-auto">
+        <h1 className="text-[36px]  lg:text-[54px] font-bold text-center leading-snug max-w-[1240px] mx-auto">
           Stop Relying on Referrals Start Getting{" "}
-          <span className="bg-[#FE641A] text-white px-2 rounded">
+          <span className="bg-[#FE641A] text-white px-3 rounded">
             Consistent
           </span>{" "}
           Clients Online
@@ -45,7 +47,7 @@ export default function Home() {
 
         {/* Video Frame */}
         <div className="mt-10 flex justify-center">
-          <div className="bg-[#0C1D3D] rounded-3xl relative overflow-hidden w-full max-w-7xl h-[380px] sm:h-[400px] flex items-center justify-center">
+          <div className="bg-[#0C1D3D] rounded-3xl relative overflow-hidden w-full max-w-[1000px] h-[380px] sm:h-[400px] flex items-center justify-center">
             {!isPlaying ? (
               // Thumbnail with play button
               <div
@@ -85,12 +87,14 @@ export default function Home() {
         </div>
 
         {/* CTA Button */}
-        <div className="flex justify-center mt-10">
-          <button className="bg-[#FE641A] hover:bg-orange-700 text-white px-10 py-4 rounded-full text-xl font-semibold shadow-xl transition">
-            Schedule a Call Now <br />
-            <span className="text-sm">
-              Get Your Free 30-Minute Consultation
-            </span>
+        <div className="mx-auto justify-center mt-20 border border-[#FE641A] p-3 inline-block rounded-full">
+          <button className="bg-[#FE641A] hover:bg-orange-700 text-white rounded-full text-xl font-semibold shadow-xl transition ">
+            <div className="px-12 py-5 flex flex-col items-center text-center">
+              <span>Schedule a Call Now</span>
+              <span className="text-sm font-normal">
+                Get Your Free 30-Minute Consultation
+              </span>
+            </div>
           </button>
         </div>
 
@@ -108,20 +112,28 @@ export default function Home() {
         </div>
 
         {/* Stats Section */}
-        <div className="mt-12 bg-gradient-to-r from-white to-orange-50 shadow-md rounded-2xl flex flex-col sm:flex-row justify-around items-center py-6 px-4">
+        <div className="sm:w-3/5 mx-auto mt-12 bg-gradient-to-r from-cyan-200/20 to-orange-50 shadow-md rounded-xl flex w-full flex-row justify-around items-center py-16 px-4">
           <div className="text-center">
             <div className="flex items-center justify-center space-x-2">
-              <IoStarOutline></IoStarOutline>
+              <IoStarOutline className="text-[#FE641A]" />
               <h3 className="text-[#FE641A] text-2xl font-bold">150+</h3>
             </div>
             <p className="text-gray-600">Current Clients</p>
           </div>
+
           <div className="text-center sm:border-l sm:border-r sm:px-6">
-            <h3 className="text-[#FE641A] text-2xl font-bold">25,000+</h3>
+            <div className="flex items-center justify-center space-x-2">
+              <TfiMenuAlt className="text-[#FE641A]"></TfiMenuAlt>
+              <h3 className="text-[#FE641A] text-2xl font-bold">25,000+</h3>
+            </div>
             <p className="text-gray-600">Completed Projects</p>
           </div>
+
           <div className="text-center">
-            <h3 className="text-[#FE641A] text-2xl font-bold">90+</h3>
+            <div className="flex items-center justify-center space-x-2">
+              <FaPeopleLine className="text-[#FE641A]"></FaPeopleLine>
+              <h3 className="text-[#FE641A] text-2xl font-bold">90+</h3>
+            </div>
             <p className="text-gray-600">Bayshore Team-mates</p>
           </div>
         </div>
