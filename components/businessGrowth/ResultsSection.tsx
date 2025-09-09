@@ -57,8 +57,11 @@ export default function ResultsSection() {
         viewport={{ once: true }}
       >
         <h2 className="text-[20px] lg:text-[36px] xl:text-[38px] font-bold leading-normal">
-          <span className="bg-primary text-white px-2">Recent Results</span> <span className="">We
-          Have Gotten For Attorneys, Consultants And Business Professionals Just Like You</span>
+          <span className="bg-primary text-white px-2">Recent Results</span>{" "}
+          <span className="">
+            We Have Gotten For Attorneys, Consultants And Business Professionals
+            Just Like You
+          </span>
         </h2>
         <p className="mt-3 sm:mt-4  text-base ">
           How we took our clients’ businesses to the next level!
@@ -66,7 +69,7 @@ export default function ResultsSection() {
       </motion.div>
 
       {/* Results Cards */}
-      <section className="max-w-[1240px] mx-auto px-2 sm:px-4 py-8 sm:py-12">
+      <section className=" mx-auto px-2 sm:px-4 py-8 sm:py-12">
         <Swiper
           modules={[Pagination, Navigation, Autoplay]}
           spaceBetween={20}
