@@ -5,14 +5,28 @@ import { useState } from "react";
 import { IoStarOutline } from "react-icons/io5";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { FaPeopleLine } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
-
   const videoId = "VIDEO_ID"; // Replace with your YouTube video ID
 
+  // Variants for staggered animation
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3 },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
   return (
-    <div className="bg-white  min-h-screen px-8 mb-16">
+    <div className="bg-white min-h-screen px-8 mb-16">
       {/* HEADER */}
       <header className="w-full border-b border-gray-100 shadow-sm">
         <div className="max-w-[1640px] mx-auto flex justify-between items-center py-4 px-6">
@@ -35,18 +49,26 @@ export default function Home() {
       </header>
 
       {/* HERO SECTION */}
-      <section className="max-w-[10xl] mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-[100vh] flex flex-col justify-center">
+      <motion.section
+        className="max-w-[10xl] mx-auto px-4 sm:px-6 lg:px-8 py-12 min-h-[100vh] flex flex-col justify-center"
+        variants={container}
+        initial="hidden"
+        animate="show"
+      >
         {/* Headline */}
-        <h1 className="text-[36px]  lg:text-[54px] font-bold text-center leading-snug max-w-[1240px] mx-auto">
+        <motion.h1
+          className="text-[36px] lg:text-[54px] font-bold text-center leading-snug max-w-[1240px] mx-auto"
+          variants={item}
+        >
           Stop Relying on Referrals Start Getting{" "}
           <span className="bg-[#FE641A] text-white px-3 rounded">
             Consistent
           </span>{" "}
           Clients Online
-        </h1>
+        </motion.h1>
 
         {/* Video Frame */}
-        <div className="mt-10 flex justify-center">
+        <motion.div className="mt-10 flex justify-center" variants={item}>
           <div className="bg-[#0C1D3D] rounded-3xl relative overflow-hidden w-full max-w-[1000px] h-[380px] sm:h-[400px] flex items-center justify-center">
             {!isPlaying ? (
               // Thumbnail with play button
@@ -84,22 +106,28 @@ export default function Home() {
               ></iframe>
             )}
           </div>
-        </div>
+        </motion.div>
 
         {/* CTA Button */}
-        <div className="mx-auto justify-center mt-20 border border-[#FE641A] p-3 inline-block rounded-full">
-          <button className="bg-[#FE641A] hover:bg-orange-700 text-white rounded-full text-xl font-semibold shadow-xl transition ">
-            <div className="px-12 py-5 flex flex-col items-center text-center">
+        <motion.div
+          className="mx-auto justify-center mt-20 border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-5000 hover:border-transparent"
+          variants={item}
+        >
+          <button className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000">
+            <div className="px-12 py-6 flex flex-col items-center text-center">
               <span>Schedule a Call Now</span>
               <span className="text-sm font-normal">
-                Get Your Free 30-Minute Consultation
+                Claim Your $1000 Marketing Coupon Today!
               </span>
             </div>
           </button>
-        </div>
+        </motion.div>
 
         {/* Google Review */}
-        <div className="flex flex-col items-center space-y-3 mt-10">
+        <motion.div
+          className="flex flex-col items-center space-y-3 mt-10"
+          variants={item}
+        >
           <div className="flex -space-x-3">
             <Image
               src="image/hero/group.png"
@@ -109,35 +137,40 @@ export default function Home() {
             />
           </div>
           <p className="text-2xl text-gray-600">⭐⭐⭐⭐⭐ Google Review</p>
-        </div>
+        </motion.div>
 
         {/* Stats Section */}
-        <div className="sm:w-3/5 mx-auto mt-12 bg-gradient-to-r from-cyan-200/20 to-orange-50 shadow-md rounded-xl flex w-full flex-row justify-around items-center py-16 px-4">
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-2">
-              <IoStarOutline className="text-[#FE641A]" />
-              <h3 className="text-[#FE641A] text-2xl font-bold">150+</h3>
+        <motion.div
+          className="sm:w-[50%] mx-auto mt-12 bg-gradient-to-r from-cyan-200/20 via-white to-orange-50 p-[1px] rounded-2xl shadow-lg text-black border border-white/10"
+          variants={item}
+        >
+          <div className="bg-white/10 backdrop-blur-md border border-gray/50 rounded-xl flex w-full flex-row justify-around items-center py-16 px-4">
+            <div className="text-center">
+              <div className="flex items-center justify-center space-x-2">
+                <IoStarOutline className="text-[#FE641A]" />
+                <h3 className="text-[#FE641A] text-[20px] font-bold">150+</h3>
+              </div>
+              <p className="text-black/80 text-[12px]">Current Clients</p>
             </div>
-            <p className="text-gray-600">Current Clients</p>
-          </div>
 
-          <div className="text-center sm:border-l sm:border-r sm:px-6">
-            <div className="flex items-center justify-center space-x-2">
-              <TfiMenuAlt className="text-[#FE641A]"></TfiMenuAlt>
-              <h3 className="text-[#FE641A] text-2xl font-bold">25,000+</h3>
+            <div className="text-center sm:border-l sm:border-r sm:border-white/10 sm:px-6">
+              <div className="flex items-center justify-center space-x-2">
+                <TfiMenuAlt className="text-[#FE641A]" />
+                <h3 className="text-[#FE641A] text-[20px] font-bold">25,000+</h3>
+              </div>
+              <p className="text-black/80 text-[12px]">Completed Projects</p>
             </div>
-            <p className="text-gray-600">Completed Projects</p>
-          </div>
 
-          <div className="text-center">
-            <div className="flex items-center justify-center space-x-2">
-              <FaPeopleLine className="text-[#FE641A]"></FaPeopleLine>
-              <h3 className="text-[#FE641A] text-2xl font-bold">90+</h3>
+            <div className="text-center">
+              <div className="flex items-center justify-center space-x-2">
+                <FaPeopleLine className="text-[#FE641A]" />
+                <h3 className="text-[#FE641A] text-[20px] font-bold">90+</h3>
+              </div>
+              <p className="text-black/80 text-[12px]">Bayshore Team-mates</p>
             </div>
-            <p className="text-gray-600">Bayshore Team-mates</p>
           </div>
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </div>
   );
 }
