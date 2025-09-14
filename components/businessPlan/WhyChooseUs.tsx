@@ -28,7 +28,7 @@ export default function WhyChooseUs() {
   };
 
   return (
-    <div className="w-full bg-gradient-to-r from-gray-200 via-white to-orange-500/10 py-16">
+    <div className="w-full bg-gradient-to-r from-gray-200 via-white to-orange-500/10 py-10 md:py-20">
       <div className="max-w-[1440px] mx-auto px-4">
         {/* Heading */}
         <motion.div

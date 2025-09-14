@@ -26,7 +26,7 @@ const teamMembers = [
 
 export default function Team() {
   return (
-    <div className="relative bg-[url('/image/bayshore-team/bg.png')] bg-cover bg-center min-h-screen">
+    <div className="relative bg-[url('/image/bayshore-team/bg.png')] bg-cover bg-center">
       <div className="max-w-[1240px] mx-auto px-6 py-16 text-center">
 
         {/* Header Image */}

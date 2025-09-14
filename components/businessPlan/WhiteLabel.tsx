@@ -3,20 +3,20 @@ import Image from "next/image";
 
 const WhiteLabel = () => {
   return (
-    <div className="max-w-[1240px] mx-auto px-4 sm:px-6 md:px-8 mb-16">
+    <div className="max-w-[1240px] mx-auto px-4 sm:px-6 md:px-8 mt-0 md:mt-[-80px]">
       {/* Header */}
       <div className="flex flex-col justify-center items-center mb-20 md:mb-[400px]">
         <h1 className="text-[24px] sm:text-[32px] md:text-[36px] font-bold text-center uppercase leading-tight">
           Our 3-Step <span className="text-[#FE641A]">Success Recipe</span>
         </h1>
-        <p className="text-[16px] sm:text-[18px] text-center mt-2">
+        <p className="text-[16px] sm:text-[18px] text-center mt-2 ">
           Built for Agencies. Designed to Deliver.
         </p>
       </div>
 
-      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 py-8 md:py-16 text-base mt-0 md:mt-[-200px]">
+      <div className="max-w-[1440px] mx-auto px-4 sm:px-6 py-8 md:py-16 text-base mt-[-50px] md:mt-[-200px]">
         {/* Grid → 1 column on mobile, 3 columns on md+ */}
-        <div className="grid grid-cols-1 md:grid-cols-3 text-center gap-y-12 md:gap-y-0">
+        <div className="grid grid-cols-1 md:grid-cols-3 text-center gap-y-6 md:gap-y-0">
           {/* Card 1 */}
           <div className="flex flex-col items-center px-4">
             <div className="relative flex items-center justify-center rounded-full mb-4">
@@ -72,7 +72,7 @@ const WhiteLabel = () => {
         </div>
 
         {/* Bottom Note */}
-        <p className="text-center mt-8 sm:mt-10 md:mt-12 text-gray-600 italic text-[16px] sm:text-lg md:text-xl lg:text-3xl font-bold px-4">
+        <p className="text-center mt-8 sm:mt-10 md:mt-12 text-gray-600 italic text-[16px] sm:text-lg md:text-xl lg:text-3xl font-bold px-4 mt-10 mt:mb-0">
           Skip the stress. Skip the follow-ups. We handle your marketing with speed,
           <br className="hidden sm:block" /> precision, and results you can count on.
         </p>

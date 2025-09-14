@@ -16,17 +16,17 @@ import Marque from '@/components/businessPlan/Marque';
 const page = () => {
   return (
     <div>
-        <Hero></Hero>
-        <Marque></Marque>
-        <WhiteLabel></WhiteLabel>
-        <SmartSolution></SmartSolution>
-        <Testimonial></Testimonial>
-        <WhyChooseUs></WhyChooseUs>
-        <Blueprint></Blueprint>
-        <Calandy></Calandy>
-        <BayshoreTeam></BayshoreTeam>
-        <Footer></Footer>
-        
+      <Hero />
+      <Marque />
+      <WhiteLabel />
+      <SmartSolution />
+      <Testimonial />
+      <WhyChooseUs />
+      <Blueprint />
+      <Calandy />
+      <BayshoreTeam />
+      <Footer />
+
     </div>
   )
 }

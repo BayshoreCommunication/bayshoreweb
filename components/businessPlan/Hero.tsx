@@ -27,7 +27,7 @@ export default function Home() {
   };
 
   return (
-    <div className="bg-white min-h-screen px-8 mb-16">
+    <div className="bg-white min-h-screen px-8 mb-10 md:mb-16">
       {/* HEADER */}
       <header className="w-full border-b border-gray-100 shadow-sm">
         <div className="max-w-[1640px] mx-auto flex justify-between items-center py-4 px-2 sm:px-4">
@@ -59,7 +59,7 @@ export default function Home() {
       >
         {/* Headline */}
         <motion.h1
-          className="text-[36px] lg:text-[54px] font-bold text-left sm:text-center leading-snug max-w-[1240px] mx-auto uppercase"
+          className="text-[36px] lg:text-[54px] font-bold text-center leading-snug max-w-[1240px] mx-auto uppercase"
           variants={item}
         >
           Stop Relying on Referrals Start Getting{" "}
@@ -114,7 +114,7 @@ export default function Home() {
 
         {/* CTA Button */}
         <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center"><motion.div
-          className="mx-auto justify-center mt-8 sm:mt-20 border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
+          className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
           variants={item}
         >
           <button className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000">
@@ -129,7 +129,7 @@ export default function Home() {
 
         {/* Google Review */}
         <motion.div
-          className="flex flex-col items-center space-y-3 mt-6 sm:mt-10"
+          className="flex flex-col items-center space-y-3"
           variants={item}
         >
           <div className="flex -space-x-3">
@@ -146,7 +146,7 @@ export default function Home() {
 
         {/* Stats Section */}
         <motion.div
-          className="w-full sm:w-[55%]  mx-auto mt-12 bg-gradient-to-r from-cyan-200/20 via-white to-orange-50 p-[1px] rounded-2xl shadow-lg text-black border border-white/10"
+          className="w-full sm:w-[55%]  mx-auto mt-12 bg-gradient-to-r from-cyan-200/20 via-white to-orange-50 p-[1px] rounded-2xl shadow-lg text-black border border-white/10 my-[-30px]"
           variants={item}
         >
           <div className="bg-white/10 backdrop-blur-md border border-gray/50 rounded-xl flex w-full flex-row justify-around items-center py-16 px-4">
@@ -155,7 +155,7 @@ export default function Home() {
                 <IoStarOutline className="text-[#FE641A]" />
                 <h3 className="text-[#FE641A] text-[20px] font-bold">60+</h3>
               </div>
-              <p className="text-black/80 text-[8px] sm:text-[12px]">Current Clients</p>
+              <p className="text-black/80 text-[10px] sm:text-[14px]">Current Clients</p>
             </div>
 
             <div className="text-center sm:border-l sm:border-r sm:border-white/10 sm:px-6">
@@ -165,7 +165,7 @@ export default function Home() {
                   3,000+
                 </h3>
               </div>
-              <p className="text-black/80 text-[8px] sm:text-[12px]">Completed Projects</p>
+              <p className="text-black/80 text-[10px] sm:text-[14px]">Completed Projects</p>
             </div>
 
             <div className="text-center">
@@ -173,7 +173,7 @@ export default function Home() {
                 <FaPeopleLine className="text-[#FE641A]" />
                 <h3 className="text-[#FE641A] text-[20px] font-bold">90+</h3>
               </div>
-              <p className="text-black/80 text-[8px] sm:text-[12px]">Bayshore Team-mates</p>
+              <p className="text-black/80 text-[10px] sm:text-[14px]">Bayshore Team-mates</p>
             </div>
           </div>
         </motion.div>
