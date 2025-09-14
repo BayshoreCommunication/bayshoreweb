@@ -5,6 +5,7 @@ import { useState } from "react";
 import { IoStarOutline } from "react-icons/io5";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { FaPeopleLine } from "react-icons/fa6";
+import { FiPhone } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -29,21 +30,22 @@ export default function Home() {
     <div className="bg-white min-h-screen px-8 mb-16">
       {/* HEADER */}
       <header className="w-full border-b border-gray-100 shadow-sm">
-        <div className="max-w-[1640px] mx-auto flex justify-between items-center py-4 px-6">
+        <div className="max-w-[1640px] mx-auto flex justify-between items-center py-4 px-2 sm:px-4">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center">
             <Image
               src="image/hero/logo.png"
               alt="BayShore Logo"
               width={250}
               height={70}
-              className="sm:w-[250px] sm:h-[70px] w-[180px] h-[50px] object-contain"
+              className="sm:w-[250px] sm:h-[70px] w-[160px] h-[45px] object-contain"
             />
           </div>
 
-          {/* Call Button */}
-          <button className="bg-[#FE641A] text-white font-semibold px-6 py-3 rounded-full shadow-md hover:scale-105 transition ">
-            Schedule Call →
+          {/* Call Button - Icon on mobile, text on desktop */}
+          <button className="bg-[#FE641A] text-white font-semibold rounded-full shadow-md hover:scale-105 transition flex items-center justify-center sm:px-6 sm:py-3 w-12 h-12 sm:w-auto sm:h-auto">
+            <FiPhone className="sm:hidden text-2xl" />
+            <span className="hidden sm:inline">Schedule Call →</span>
           </button>
         </div>
       </header>
@@ -57,7 +59,7 @@ export default function Home() {
       >
         {/* Headline */}
         <motion.h1
-          className="text-[36px] lg:text-[54px] font-bold text-center leading-snug max-w-[1240px] mx-auto"
+          className="text-[36px] lg:text-[54px] font-bold text-left sm:text-center leading-snug max-w-[1240px] mx-auto uppercase"
           variants={item}
         >
           Stop Relying on Referrals Start Getting{" "}
@@ -69,7 +71,7 @@ export default function Home() {
 
         {/* Video Frame */}
         <motion.div className="mt-10 flex justify-center" variants={item}>
-          <div className="bg-[#0C1D3D] rounded-3xl relative overflow-hidden w-full max-w-[1000px] h-[380px] sm:h-[400px] flex items-center justify-center">
+          <div className="bg-[#0C1D3D] rounded-3xl relative overflow-hidden w-full max-w-[1000px] h-[180px] sm:h-[400px] flex items-center justify-center">
             {!isPlaying ? (
               // Thumbnail with play button
               <div
@@ -111,12 +113,12 @@ export default function Home() {
         </motion.div>
 
         {/* CTA Button */}
-        <div className="w-full h-[180px] flex justify-center items-center"><motion.div
-          className="mx-auto justify-center mt-20 border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-5000 hover:border-transparent"
+        <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center"><motion.div
+          className="mx-auto justify-center mt-8 sm:mt-20 border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
           variants={item}
         >
           <button className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000">
-            <div className="px-12 py-6 flex flex-col items-center text-center">
+            <div className="px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center">
               <span>Schedule a Call Now</span>
               <span className="text-sm font-normal">
                 Claim Your $1000 Coupon Today!
@@ -127,7 +129,7 @@ export default function Home() {
 
         {/* Google Review */}
         <motion.div
-          className="flex flex-col items-center space-y-3 mt-10"
+          className="flex flex-col items-center space-y-3 mt-6 sm:mt-10"
           variants={item}
         >
           <div className="flex -space-x-3">
@@ -136,9 +138,10 @@ export default function Home() {
               alt="alt"
               width={275}
               height={70}
+              className="w-[200px] h-[50px] sm:w-[275px] sm:h-[70px] object-contain"
             />
           </div>
-          <p className="text-2xl text-gray-600">⭐⭐⭐⭐⭐ Google Review</p>
+          <p className="text-xl sm:text-2xl text-gray-600">⭐⭐⭐⭐⭐ Google Review</p>
         </motion.div>
 
         {/* Stats Section */}
@@ -150,7 +153,7 @@ export default function Home() {
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2">
                 <IoStarOutline className="text-[#FE641A]" />
-                <h3 className="text-[#FE641A] text-[20px] font-bold">150+</h3>
+                <h3 className="text-[#FE641A] text-[20px] font-bold">60+</h3>
               </div>
               <p className="text-black/80 text-[8px] sm:text-[12px]">Current Clients</p>
             </div>
@@ -159,7 +162,7 @@ export default function Home() {
               <div className="flex items-center justify-center space-x-2">
                 <TfiMenuAlt className="text-[#FE641A]" />
                 <h3 className="text-[#FE641A] text-[20px] font-bold">
-                  25,000+
+                  3,000+
                 </h3>
               </div>
               <p className="text-black/80 text-[8px] sm:text-[12px]">Completed Projects</p>

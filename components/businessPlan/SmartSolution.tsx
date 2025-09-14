@@ -31,7 +31,7 @@ export default function Home() {
       >
         {/* Grid Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 items-center">
-          
+
           {/* Left - Image */}
           <motion.div className="col-span-6 flex justify-center p-6" variants={item}>
             <img

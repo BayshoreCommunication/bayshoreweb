@@ -2,10 +2,9 @@
 
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation, Autoplay } from "swiper/modules";
+import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/navigation";
 import Image from "next/image";
 
 const slides = [
@@ -66,7 +65,7 @@ export default function ResultsSection() {
     <section className="px-8 sm:px-6 md:px-12 overflow-hidden">
       {/* Heading */}
       <div className="max-w-[1440px] mx-auto text-center py-6">
-        <h2 className="text-center text-[36px] font-bold mb-12 mt-32">
+        <h2 className="text-center text-[36px] font-bold mb-12 mt-20">
           CLIENT{" "}
           <span className="border-2 border-[#FE641A] text-[#FE641A] px-2">
             TESTIMONIALS
@@ -75,7 +74,7 @@ export default function ResultsSection() {
       </div>
 
       {/* Testimonial Carousel */}
-      <div className="max-w-[1440px] mx-auto my-[50px]">
+      <div className="max-w-[1440px] mx-auto my-[30px]">
         <Swiper
           modules={[Pagination, Autoplay]}
           pagination={{ clickable: true }}
@@ -191,10 +190,9 @@ export default function ResultsSection() {
       {/* 🎥 Swiper Video Testimonials */}
       <section className="max-w-[1440px] mx-auto py-8 sm:py-12">
         <Swiper
-          modules={[Pagination, Navigation]}
+          modules={[Pagination]}
           spaceBetween={30}
           slidesPerView={2}
-          navigation
           loop
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000, disableOnInteraction: false }}

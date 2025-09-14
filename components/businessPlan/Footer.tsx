@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <div className="flex justify-center items-center bg-white px-4 md:px-8 py-6 md:mt-[60px] mb-[50px]">
       <div className="w-full max-w-[1640px] text-center">
-        
+
         {/* Top contact info */}
         <motion.div
           className="flex flex-col md:flex-row md:justify-center md:space-x-16 space-y-4 md:space-y-0 text-[#FE641A] text-base md:text-[16px] mb-10"
@@ -23,7 +23,7 @@ export default function Footer() {
             <span>support@Bayshorewebdesignservices.com</span>
           </div>
           <div className="flex justify-center items-center space-x-2">
-            <FiPhone size={20} className="text-[#FE641A]" />
+            <FiPhone size={40} className="text-[#FE641A]" />
             <span>+18888408033</span>
           </div>
           <div className="flex justify-center items-center space-x-2">
@@ -34,7 +34,7 @@ export default function Footer() {
 
         {/* Disclaimer text */}
         <motion.p
-          className="text-sm md:text-[16px] text-black max-w-[90vw] md:max-w-[1200px] mx-auto mb-12 leading-relaxed"
+          className="text-[14px] md:text-[16px] text-black max-w-[90vw] md:max-w-[1200px] mx-auto mb-12 "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}

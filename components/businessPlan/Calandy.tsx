@@ -8,7 +8,7 @@ const Calandy = () => {
   return (
     <div className="flex justify-center items-center md:px-12 px-8">
       <div className="max-w-[1440px] w-full mx-auto overflow-hidden">
-        
+
         {/* Header */}
         <motion.h1
           className="text-[30px] md:text-[36px] uppercase text-center mb-16 font-bold"

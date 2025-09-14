@@ -24,7 +24,7 @@ export default function Blueprint() {
           viewport={{ once: true }}
           className="text-center mb-6"
         >
-          <h2 className="text-2xl lg:text-[36px] font-bold text-gray-900 uppercase leading-snug">
+          <h2 className="text-[36px] font-bold text-gray-900 uppercase leading-snug">
             The Blueprint for Law Firm <br />
             <span className="text-[#FE641A] px-2">Growth & Success</span>
           </h2>
