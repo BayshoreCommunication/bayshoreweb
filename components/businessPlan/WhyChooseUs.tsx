@@ -63,13 +63,15 @@ export default function WhyChooseUs() {
               whileHover={{ scale: 1.05, boxShadow: "0 20px 35px rgba(0,0,0,0.2)" }}
               transition={{ type: "spring", stiffness: 120 }}
             >
-              <Image
-                src={feature.img}
-                alt={feature.title}
-                width={64}
-                height={64}
-                className="absolute top-[-25%]"
-              />
+              <div className="absolute top-[-25%] w-24 h-24 bg-white rounded-full flex items-center justify-center">
+                <Image
+                  src={feature.img}
+                  alt={feature.title}
+                  width={64}
+                  height={64}
+                  className="w-20 h-20 object-contain"
+                />
+              </div>
               <p className="font-semibold text-gray-800 mt-20">
                 {feature.title}
               </p>

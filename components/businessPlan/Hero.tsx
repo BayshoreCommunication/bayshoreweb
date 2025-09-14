@@ -76,9 +76,11 @@ export default function Home() {
                 className="absolute inset-0 w-full h-full cursor-pointer"
                 onClick={() => setIsPlaying(true)}
               >
-                <img
-                  src="image/hero/thumbnail.png"
+                <Image
+                  src="/image/hero/thumbnail.png"
                   alt="Video Thumbnail"
+                  width={1000}
+                  height={400}
                   className="w-full h-full object-cover rounded-3xl"
                 />
                 <div className="absolute inset-0 flex items-center justify-center">
@@ -109,7 +111,7 @@ export default function Home() {
         </motion.div>
 
         {/* CTA Button */}
-        <motion.div
+        <div className="w-full h-[180px] flex justify-center items-center"><motion.div
           className="mx-auto justify-center mt-20 border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-5000 hover:border-transparent"
           variants={item}
         >
@@ -117,11 +119,11 @@ export default function Home() {
             <div className="px-12 py-6 flex flex-col items-center text-center">
               <span>Schedule a Call Now</span>
               <span className="text-sm font-normal">
-                Claim Your $1000 Marketing Coupon Today!
+                Claim Your $1000 Coupon Today!
               </span>
             </div>
           </button>
-        </motion.div>
+        </motion.div></div>
 
         {/* Google Review */}
         <motion.div
@@ -141,7 +143,7 @@ export default function Home() {
 
         {/* Stats Section */}
         <motion.div
-          className="sm:w-[50%] mx-auto mt-12 bg-gradient-to-r from-cyan-200/20 via-white to-orange-50 p-[1px] rounded-2xl shadow-lg text-black border border-white/10"
+          className="w-full sm:w-[55%]  mx-auto mt-12 bg-gradient-to-r from-cyan-200/20 via-white to-orange-50 p-[1px] rounded-2xl shadow-lg text-black border border-white/10"
           variants={item}
         >
           <div className="bg-white/10 backdrop-blur-md border border-gray/50 rounded-xl flex w-full flex-row justify-around items-center py-16 px-4">
@@ -150,15 +152,17 @@ export default function Home() {
                 <IoStarOutline className="text-[#FE641A]" />
                 <h3 className="text-[#FE641A] text-[20px] font-bold">150+</h3>
               </div>
-              <p className="text-black/80 text-[12px]">Current Clients</p>
+              <p className="text-black/80 text-[8px] sm:text-[12px]">Current Clients</p>
             </div>
 
             <div className="text-center sm:border-l sm:border-r sm:border-white/10 sm:px-6">
               <div className="flex items-center justify-center space-x-2">
                 <TfiMenuAlt className="text-[#FE641A]" />
-                <h3 className="text-[#FE641A] text-[20px] font-bold">25,000+</h3>
+                <h3 className="text-[#FE641A] text-[20px] font-bold">
+                  25,000+
+                </h3>
               </div>
-              <p className="text-black/80 text-[12px]">Completed Projects</p>
+              <p className="text-black/80 text-[8px] sm:text-[12px]">Completed Projects</p>
             </div>
 
             <div className="text-center">
@@ -166,7 +170,7 @@ export default function Home() {
                 <FaPeopleLine className="text-[#FE641A]" />
                 <h3 className="text-[#FE641A] text-[20px] font-bold">90+</h3>
               </div>
-              <p className="text-black/80 text-[12px]">Bayshore Team-mates</p>
+              <p className="text-black/80 text-[8px] sm:text-[12px]">Bayshore Team-mates</p>
             </div>
           </div>
         </motion.div>

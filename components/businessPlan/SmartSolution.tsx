@@ -48,7 +48,7 @@ export default function Home() {
               variants={item}
             >
               <span className="text-[#FE641A] uppercase">Data-Driven Strategies</span>{" "}
-              <span className="text-black"> That Bring More Clients to Your Firm</span>
+              <span className="text-black"> That Bring More Clients <br /> to Your Firm</span>
             </motion.h2>
 
             <motion.p className="text-gray-600 mt-6 text-center sm:text-left font-bold" variants={item}>

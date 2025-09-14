@@ -3,11 +3,10 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import { motion } from "framer-motion";
-
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import Image from "next/image";
 
 const slides = [
   {
@@ -22,123 +21,181 @@ const slides = [
   },
   {
     title: "Catflix",
-    desc: "Despite having a brilliant idea, the Cat Flix has trouble getting noticed online. In order to catapult their brand to the top of search results, our team created a high-performance website, optimized blogs for search engines, and put a content ranking plan into place. In just a few weeks, their blog entries started to dominate industry terms, resulting in a spike in organic traffic and an increase in customer interaction.",
+    desc: "Despite having a brilliant idea, Catflix had trouble getting noticed online. To catapult their brand to the top of search results, our team created a high-performance website, optimized blogs for SEO, and built a content ranking plan. In just a few weeks, their blog entries started dominating industry terms, resulting in a spike in organic traffic and customer interaction.",
     videoId: "iqHA7By9OAI",
   },
 ];
 
-// Variants for the testimonial cards
-const cardVariants = {
-  hidden: { opacity: 0, y: 50, scale: 0.95 },
-  show: (i: number) => ({
-    opacity: 1,
-    y: 0,
-    scale: 1,
-    transition: {
-      delay: i * 0.3,
-      type: "spring",
-      stiffness: 80,
-      damping: 12,
-    },
-  }),
-};
+const testimonials = [
+  {
+    name: "David Carter",
+    role: "Founder of Carter Injury Law",
+    img: "/image/testimonial/person1.png",
+    testimonial:
+      "Before partnering h Bayshore, we were struggling with our marketing. In just one year, Google impressions skyrocketed by 6,000%, website traffic tripled, and qualified leads reached a consistent monthly number. Their Meta Ads alone generated 220+ leads at only $35 each, creating a dependable pipeline of new cases. Bayshore didn’t just enhance our marketing- they built a complete growth system for our firm.",
+    stat1: "220+ Leads",
+    stat1desc: "Meta Ads alone generated 220+ leads at only $35 each",
+    stat2: "Growth Marketing Service",
+  },
+  {
+    name: "Carlos Rosario",
+    role: "Founder of Apex Advisor Group",
+    img: "/image/testimonial/person2.png",
+    testimonial:
+      "I’ve been working with Bayshore for over 2 years, and honestly, they’ve been a huge part of our growth. Their SEO has helped us show up where it matters most, bringing in steady traffic every month. Social media is no longer a headache; they’ve boosted our engagement and made our brand actually feel alive online. Plus, their design work gave us a fresh, professional look that our clients notice right away.",
+    stat1: "186+ Leads",
+    stat1desc: "Meta Ads alone generated 186+ leads at only $25 each",
+    stat2: "Seo Marketing Service",
+  },
+  {
+    name: "Hardam Tripathi, Esq.",
+    role: "Founder of Trip Law",
+    img: "/image/testimonial/person3.png",
+    testimonial:
+      "Bayshore has been our trusted partner for over 3 years, and the results speak for themselves. Our site now generates more than 12,000 clicks and has surpassed 550,000 impressions, providing us with continuous visibility and growth. Beyond SEO, their design, video editing, social media, and cybersecurity support have made a measurable difference in how we operate and present our brand. With Bayshore, we’ve built not just marketing results but long-term momentum.",
+    stat1: "12000+ Clicks",
+    stat1desc:
+      "Our site now generates more than 12,000 clicks and has surpassed 550,000 impressions",
+    stat2: "Business Growth Service",
+  },
+  // ➕ Add more testimonials here
+];
 
 export default function ResultsSection() {
   return (
-    <section className="px-8 sm:px-6 md:px-12 lg:mt-12 sm:mt-0 overflow-hidden">
+    <section className="px-8 sm:px-6 md:px-12 overflow-hidden">
       {/* Heading */}
-      <motion.div
-        className="max-w-[1440px] mx-auto text-center md:text-left py-6"
-        initial={{ opacity: 0, y: -40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
-      >
+      <div className="max-w-[1440px] mx-auto text-center py-6">
         <h2 className="text-center text-[36px] font-bold mb-12 mt-32">
           CLIENT{" "}
           <span className="border-2 border-[#FE641A] text-[#FE641A] px-2">
             TESTIMONIALS
           </span>
         </h2>
+      </div>
 
-        {/* Content Box */}
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-10 rounded-2xl border border-gray-200 p-8 shadow-lg text-center my-[50px]"
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true }}
+      {/* Testimonial Carousel */}
+      <div className="max-w-[1440px] mx-auto my-[50px]">
+        <Swiper
+          modules={[Pagination, Autoplay]}
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
+          loop={true}
+          spaceBetween={30}
+          slidesPerView={1}
+          className="testimonial-swiper"
         >
-          {/* Testimonial 1 */}
-          <motion.div
-            className="flex flex-col items-start"
-            custom={0}
-            variants={cardVariants}
-          >
-            <div className="flex items-center space-x-4 text-left">
-              <img
-                src="/image/testimonial/person.png"
-                alt="Client"
-                className="w-32 h-32 rounded-full object-cover"
-              />
-              <div className="ml-8">
-                <h3 className="text-[#FE641A] font-bold text-[22px]">
-                  Scott Brigham
-                </h3>
-                <p className="text-[14px] text-gray-500 italic">
-                  Founder of Brigham Media Group
-                </p>
+          <style jsx global>{`
+            .testimonial-swiper {
+              margin-bottom: 3rem; /* 48px */
+              padding-bottom: 50px;
+            }
+            
+            .testimonial-swiper .swiper-pagination {
+              bottom: 10px;
+            }
+            
+            .testimonial-swiper .swiper-pagination-bullet {
+              width: 12px;
+              height: 12px;
+              background-color: #d1d5db;
+              border-radius: 50%;
+              opacity: 0.5;
+              margin: 0 8px;
+              transition: all 0.3s ease;
+            }
+            
+            .testimonial-swiper .swiper-pagination-bullet-active {
+              background-color: #FE641A;
+              opacity: 1;
+              transform: scale(1.2);
+            }
+
+            .custom-swiper {
+              padding-bottom: 50px;
+            }
+            
+            .custom-swiper .swiper-pagination {
+              bottom: 10px;
+            }
+            
+            .custom-swiper .swiper-pagination-bullet {
+              width: 12px;
+              height: 12px;
+              background-color: #d1d5db;
+              border-radius: 50%;
+              opacity: 0.5;
+              margin: 0 8px;
+              transition: all 0.3s ease;
+            }
+            
+            .custom-swiper .swiper-pagination-bullet-active {
+              background-color: #FE641A;
+              opacity: 1;
+              transform: scale(1.2);
+            }
+          `}</style>
+
+          {testimonials.map((item, index) => (
+            <SwiperSlide key={index}>
+              <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-12 rounded-2xl border border-gray-200 p-6 md:p-10 shadow-lg">
+                {/* Testimonial */}
+                <div className="flex flex-col items-start w-[280px] md:w-[400px] lg:w-[500px] my-4">
+                  <div className="flex items-center gap-6 text-left mb-6">
+                    <Image
+                      src={item.img}
+                      alt={item.name}
+                      width={128}
+                      height={128}
+                      className="w-32 h-32 rounded-full object-cover"
+                    />
+                    <div>
+                      <h3 className="text-[#FE641A] font-bold text-[22px] mb-2">
+                        {item.name}
+                      </h3>
+                      <p className="text-[14px] text-gray-500 italic">
+                        {item.role}
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-[15px] text-gray-700 text-left leading-relaxed mb-4">
+                    {item.testimonial}
+                  </p>
+                  <a href="#" className="text-[13px] text-orange-500 hover:text-orange-600 transition-colors underline">
+                    View Video Testimonial
+                  </a>
+                </div>
+
+                {/* Stat 1 */}
+                <div className="flex flex-col justify-start w-[280px] my-4">
+                  <h3 className="text-[#FE641A] text-[18px] md:text-[36px] font-bold mb-3">
+                    {item.stat1}
+                  </h3>
+                  <p className="text-[14px] text-gray-600 leading-relaxed">
+                    {item.stat1desc}
+                  </p>
+                </div>
+
+                {/* Stat 2 */}
+                <div className="flex flex-col justify-start w-[350px] my-4">
+                  <h3 className="text-[#FE641A] text-[18px] md:text-[39px] font-bold">
+                    {item.stat2}
+                  </h3>
+                </div>
               </div>
-            </div>
-            <p className="mt-4 text-[14px] text-gray-700 text-left">
-              <span className="text-[#FE641A] font-medium">
-                “I’ve white-labeled them for everything.”
-              </span>{" "}
-              Scott’s worked with teams all over the globe — none delivered like
-              Bayshore. He now white-labels all his funnel needs with them.
-              <span className="text-[#FE641A]">
-                “Their can-do attitude and creativity are next-level.”
-              </span>
-            </p>
-            <a href="#" className="mt-2 text-[12px] text-orange-400">
-              View Video Testimonial
-            </a>
-          </motion.div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
 
-          {/* Stat 1 */}
-          <motion.div
-            className="flex flex-col justify-start"
-            custom={1}
-            variants={cardVariants}
-          >
-            <h3 className="text-[#FE641A] text-[18px] md:text-[36px] font-bold">
-              5+ Funnel Types
-            </h3>
-            <p className="text-[14px] text-gray-600 mt-2">
-              delivered (books, coaching, supplements)
-            </p>
-          </motion.div>
-
-          {/* Stat 2 */}
-          <motion.div
-            className="flex flex-col justify-start"
-            custom={2}
-            variants={cardVariants}
-          >
-            <h3 className="text-[#FE641A] text-[18px] md:text-[39px] font-bold">
-              Full White-Label Service
-            </h3>
-          </motion.div>
-        </motion.div>
-      </motion.div>
-
-      {/* Results Cards */}
+      {/* 🎥 Swiper Video Testimonials */}
       <section className="max-w-[1440px] mx-auto py-8 sm:py-12">
         <Swiper
-          modules={[Pagination, Navigation, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={3}
+          modules={[Pagination, Navigation]}
+          spaceBetween={30}
+          slidesPerView={2}
           navigation
-          loop={true}
+          loop
           pagination={{ clickable: true }}
           autoplay={{ delay: 5000, disableOnInteraction: false }}
           breakpoints={{
@@ -149,14 +206,7 @@ export default function ResultsSection() {
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <motion.div
-                className="bg-white rounded-2xl shadow-md overflow-hidden cursor-pointer h-auto md:h-[450px]"
-                custom={index}
-                variants={cardVariants}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true }}
-              >
+              <div className="bg-white rounded-2xl shadow-md overflow-hidden cursor-pointer h-auto md:h-[450px]">
                 {/* Video */}
                 <div className="relative w-full h-[200px] sm:h-[250px] overflow-hidden">
                   <iframe
@@ -170,68 +220,19 @@ export default function ResultsSection() {
                 </div>
 
                 {/* Content */}
-                <div className="p-4 sm:p-5">
-                  <motion.h3
-                    className="font-bold text-[20px]"
-                    whileHover={{ color: "#f97316" }}
-                  >
+                <div className="p-4 sm:p-6">
+                  <h3 className="font-bold text-[20px] hover:text-orange-500 transition-colors mb-3">
                     {slide.title}
-                  </motion.h3>
-                  <p className="text-gray-600 mt-2 text-sm sm:text-[14px] leading-relaxed">
+                  </h3>
+                  <p className="text-gray-600 text-sm sm:text-[14px] leading-relaxed">
                     {slide.desc}
                   </p>
                 </div>
-              </motion.div>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </section>
-
-      {/* Custom Styling */}
-      <style jsx global>{`
-        .custom-swiper .swiper-pagination {
-          position: relative;
-          margin-top: 2rem;
-          text-align: center;
-        }
-        .custom-swiper .swiper-pagination-bullet {
-          width: 10px;
-          height: 10px;
-          background-color: #d1d5db;
-          opacity: 1;
-          margin: 0 6px !important;
-          transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        .custom-swiper .swiper-pagination-bullet-active {
-          background-color: #f97316;
-          transform: scale(1.3);
-        }
-        .custom-swiper .swiper-button-next,
-        .custom-swiper .swiper-button-prev {
-          width: 35px;
-          height: 35px;
-          border-radius: 50%;
-          background: #ffffff;
-          color: #000000;
-          font-size: 14px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-          transition: all 0.3s ease;
-        }
-        .custom-swiper .swiper-button-next:hover,
-        .custom-swiper .swiper-button-prev:hover {
-          background: #f3f4f6;
-          color: #f97316;
-          transform: scale(1.05);
-        }
-        .custom-swiper .swiper-button-next::after,
-        .custom-swiper .swiper-button-prev::after {
-          font-size: 14px;
-          font-weight: bold;
-        }
-      `}</style>
     </section>
   );
 }

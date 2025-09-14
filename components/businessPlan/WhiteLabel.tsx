@@ -28,9 +28,9 @@ const WhiteLabel = () => {
                 className=""
               />
             </div>
-            <p className=" md:order-first mt-6 text-[18px] sm:text-[20px] text-gray-700 max-w-lg mb-8 leading-snug">
-              We take time to deeply understand your business, industry, and
-              goals. Then, we craft a tailored digital strategy that aligns with
+            <p className=" md:order-first mt-6 text-[16px] sm:text-[18px] text-gray-700 max-w-lg mb-8 leading-snug">
+              We take time to deeply <span className="text-[#FE641A] font-bold">understand your business, industry, and
+              goals.</span> Then, we craft a tailored digital strategy that aligns with
               your vision.
             </p>
           </div>
@@ -46,9 +46,9 @@ const WhiteLabel = () => {
                 className=""
               />
             </div>
-            <p className="mt-6 text-[18px] sm:text-[20px] text-gray-700 max-w-lg bt-8 leading-snug">
+            <p className="mt-6 text-[16px] sm:text-[18px] text-gray-700 max-w-lg bt-8 leading-snug">
               Create & Execute Our team designs, develops, and launches
-              impactful solutions—focused on performance and results.
+              <span className="text-[#FE641A] font-bold"> impactful solutions—focused on performance</span> and results.
             </p>
           </div>
 
@@ -63,9 +63,9 @@ const WhiteLabel = () => {
                 className=""
               />
             </div>
-            <p className="md:order-first mt-6 text-[18px] sm:text-[20px] text-gray-700 max-w-lg mb-25 leading-snug">
-              Optimize & Grow We don’t stop at launch. We continuously monitor,
-              analyze, and refine campaigns to maximize ROI and drive
+            <p className="md:order-first mt-6 text-[16px] sm:text-[18px] text-gray-700 max-w-lg mb-25 leading-snug">
+              Optimize & Grow We don’t stop at launch. <span className="text-[#FE641A] font-bold">We continuously monitor,
+              analyze, and refine campaigns</span> to maximize ROI and drive
               sustainable growth.
             </p>
           </div>
