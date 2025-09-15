@@ -317,7 +317,7 @@ export default function ResultsSection() {
         </Swiper>
       </section>
 
-      <div className="text-center text-gray-600 text-[12px] md:text-[14px] mt-16">
+      <div className="text-center text-gray-600 text-[12px] md:text-[14px] mt-6 md:mt-0">
           <p>Get a Free Video Shoot + Headshots at Your Office — Schedule Today</p>
         </div>
         {/* CTA Button */}
