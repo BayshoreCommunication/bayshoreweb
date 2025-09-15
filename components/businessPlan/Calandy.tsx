@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Calandy = () => {
   return (
-    <div className="flex justify-center items-center md:px-12 px-8 py-10 md:py-16">
+    <div id="calendly-section" className="flex justify-center items-center md:px-12 px-8 py-10 md:py-16">
       <div className="max-w-[1440px] w-full mx-auto overflow-hidden">
 
         {/* Header */}

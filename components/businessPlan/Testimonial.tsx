@@ -68,6 +68,17 @@ const testimonials = [
 ];
 
 export default function ResultsSection() {
+  // Function to scroll to Calendly section
+  const scrollToCalendly = () => {
+    const calendlySection = document.getElementById('calendly-section');
+    if (calendlySection) {
+      calendlySection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   // Animation variants
   const container = {
     hidden: { opacity: 0 },
@@ -311,7 +322,10 @@ export default function ResultsSection() {
         className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0 mb-10 md:mb-0"
         variants={item}
       >
-        <button className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center">
+        <button
+          onClick={scrollToCalendly}
+          className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
+        >
           <span>Schedule a Call Now</span>
           <span className="text-sm font-normal">
             Claim Your $1000 Coupon Today!
