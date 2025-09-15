@@ -11,7 +11,7 @@ const Calandy = () => {
 
         {/* Header */}
         <motion.h1
-          className="text-[30px] md:text-[36px] uppercase text-center my-16 md:my-0 font-bold"
+          className="text-[30px] md:text-[36px] uppercase text-center my-6 md:my-0 font-bold"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -23,11 +23,8 @@ const Calandy = () => {
         </motion.h1>
 
         {/* Calendly Widget */}
-        <motion.div
+        <div
           className="m-10 mb-16 w-full max-w-[800px] mx-auto rounded-xl h-[800px] overflow-hidden"
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
         >
           <InlineWidget
             url="https://calendly.com/bayshorepartners/45min"
@@ -46,7 +43,7 @@ const Calandy = () => {
               textColor: "4d5055",
             }}
           />
-        </motion.div>
+        </div>
       </div>
     </div>
   );
