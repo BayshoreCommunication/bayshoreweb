@@ -63,7 +63,7 @@ export default function Footer() {
 
         {/* Logo */}
         <motion.div
-          className="flex justify-center mb-6"
+          className="flex justify-center py-16"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
