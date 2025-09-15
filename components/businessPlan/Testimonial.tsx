@@ -32,31 +32,37 @@ const testimonials = [
     role: "Founder of Carter Injury Law",
     img: "/image/testimonial/person1.png",
     testimonial:
-      "Before partnering h Bayshore, we were struggling with our marketing. In just one year, Google impressions skyrocketed by 6,000%, website traffic tripled, and qualified leads reached a consistent monthly number. Their Meta Ads alone generated 220+ leads at only $35 each, creating a dependable pipeline of new cases. Bayshore didn’t just enhance our marketing- they built a complete growth system for our firm.",
+      "Before partnering h Bayshore, we were struggling with our marketing. In just one year, Google impressions skyrocketed by 6,000%, website traffic tripled, and qualified leads reached a consistent monthly number. Their Meta Ads alone generated 220+ leads at only $35 each, creating a dependable pipeline of new cases. Bayshore didn't just enhance our marketing- they built a complete growth system for our firm.",
     stat1: "220+ Leads",
     stat1desc: "Meta Ads alone generated 220+ leads at only $35 each",
     stat2: "Growth Marketing Service",
+    videoTestimonialText: "View Video Testimonial",
+    youtubeUrl: "https://www.youtube.com/watch?v=wjxj_eQzI1M",
   },
   {
     name: "Carlos Rosario",
     role: "Founder of Apex Advisor Group",
     img: "/image/testimonial/person2.png",
     testimonial:
-      "I’ve been working with Bayshore for over 2 years, and honestly, they’ve been a huge part of our growth. Their SEO has helped us show up where it matters most, bringing in steady traffic every month. Social media is no longer a headache; they’ve boosted our engagement and made our brand actually feel alive online. Plus, their design work gave us a fresh, professional look that our clients notice right away.",
+      "I've been working with Bayshore for over 2 years, and honestly, they've been a huge part of our growth. Their SEO has helped us show up where it matters most, bringing in steady traffic every month. Social media is no longer a headache; they've boosted our engagement and made our brand actually feel alive online. Plus, their design work gave us a fresh, professional look that our clients notice right away.",
     stat1: "186+ Leads",
     stat1desc: "Meta Ads alone generated 186+ leads at only $25 each",
     stat2: "Seo Marketing Service",
+    videoTestimonialText: "View Video Testimonial",
+    youtubeUrl: "https://www.youtube.com/watch?v=ohyUTzLiLbI",
   },
   {
-    name: "Hardam Tripathi, Esq.",
+    name: "Hardam Tripathi, Esq.",
     role: "Founder of Trip Law",
     img: "/image/testimonial/person3.png",
     testimonial:
-      "Bayshore has been our trusted partner for over 3 years, and the results speak for themselves. Our site now generates more than 12,000 clicks and has surpassed 550,000 impressions, providing us with continuous visibility and growth. Beyond SEO, their design, video editing, social media, and cybersecurity support have made a measurable difference in how we operate and present our brand. With Bayshore, we’ve built not just marketing results but long-term momentum.",
+      "Bayshore has been our trusted partner for over 3 years, and the results speak for themselves. Our site now generates more than 12,000 clicks and has surpassed 550,000 impressions, providing us with continuous visibility and growth. Beyond SEO, their design, video editing, social media, and cybersecurity support have made a measurable difference in how we operate and present our brand. With Bayshore, we've built not just marketing results but long-term momentum.",
     stat1: "12000+ Clicks",
     stat1desc:
       "Our site now generates more than 12,000 clicks and has surpassed 550,000 impressions",
     stat2: "Business Growth Service",
+    videoTestimonialText: "View Video Testimonial",
+    youtubeUrl: "https://www.youtube.com/watch?v=RVit6poGLRs&t=1s",
   },
   // ➕ Add more testimonials here
 ];
@@ -221,8 +227,13 @@ export default function ResultsSection() {
                   <p className="text-[15px] text-gray-700 text-left leading-relaxed mb-4">
                     {item.testimonial}
                   </p>
-                  <a href="#" className="text-[13px] text-orange-500 hover:text-orange-600 transition-colors underline">
-                    View Video Testimonial
+                  <a
+                    href={item.youtubeUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[13px] text-orange-500 hover:text-orange-600 transition-colors underline"
+                  >
+                    {item.videoTestimonialText}
                   </a>
                 </div>
 

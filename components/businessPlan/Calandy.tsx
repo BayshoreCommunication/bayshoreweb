@@ -11,7 +11,7 @@ const Calandy = () => {
 
         {/* Header */}
         <motion.h1
-          className="text-[30px] md:text-[36px] uppercase text-center mb-16 font-bold"
+          className="text-[30px] md:text-[36px] uppercase text-center my-16 md:my-0 font-bold"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
