@@ -58,6 +58,9 @@ export default function TrustedBy() {
     "/image/marquee/super.png",
     "/image/marquee/tiki.png",
     "/image/marquee/law.png",
+    "/image/marquee/tampa.png",
+    "/image/marquee/tmp.png",
+    "/image/marquee/carter.png",
 
 
   ];

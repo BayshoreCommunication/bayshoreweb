@@ -145,10 +145,10 @@ export default function Home() {
 
         {/* Stats Section */}
         <motion.div
-          className="w-full sm:w-[55%]  mx-auto mt-12 bg-gradient-to-r from-cyan-200/20 via-white to-orange-50 p-[1px] rounded-2xl shadow-lg text-black border border-white/10 my-[-30px]"
+          className="w-full sm:w-[55%]  mx-auto mt-12 bg-gradient-to-r from-cyan-200/20 via-white to-orange-50 p-[1px] rounded-2xl shadow-lg text-black   my-[-30px]"
           variants={item}
         >
-          <div className="bg-white/10 backdrop-blur-md border border-gray/50 rounded-xl flex w-full flex-row justify-around items-center py-16 px-4">
+          <div className="bg-white/10 backdrop-blur-md  rounded-xl flex w-full flex-row justify-around items-center py-16 px-4">
             <div className="text-center">
               <div className="flex items-center justify-center space-x-2">
                 <IoStarOutline className="text-[#FE641A]" />
