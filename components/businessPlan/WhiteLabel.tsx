@@ -36,7 +36,7 @@ const WhiteLabel = () => {
           </div>
 
           {/* Card 2 (highlighted) */}
-          <div className="flex flex-col items-center px-4 py-4 md:p-6 rounded-xl md:mt-[-200px] md:gap-12 gap-0">
+          <div className="flex flex-col items-center px-4 py-4 rounded-xl md:mt-[-200px] md:gap-12 gap-0">
             <div className="relative flex items-center justify-center rounded-full mb-4">
               <Image
                 src="/image/white-label/Frame.png"

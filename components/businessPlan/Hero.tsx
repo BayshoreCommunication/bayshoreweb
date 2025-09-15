@@ -125,8 +125,8 @@ export default function Home() {
             )}
           </div>
         </motion.div>
-        <div className="text-center text-gray-600 text-[12px] md:text-[14px] mt-16">
-          <p>Get a Free Video Shoot + Headshots at Your Office — Schedule Today</p>
+        <div className="text-center text-gray-800 text-[16px] font-semibold mt-16">
+          <p>Get a Free <span className="text-[#FE641A]">Video Shoot + Headshots</span> at Your Office — Schedule Today</p>
         </div>
         {/* CTA Button */}
         <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center  md:mt-[-30px] mt-[-10px]"><motion.div
@@ -135,12 +135,9 @@ export default function Home() {
         >
           <button
             onClick={scrollToCalendly}
-            className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
+            className="bg-[#FE641A] text-white rounded-full text-2xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
           >
             <span>Schedule a Call Now</span>
-            <span className="text-sm font-normal">
-              Claim Your $1000 Coupon Today!
-            </span>
 
           </button>
         </motion.div></div>

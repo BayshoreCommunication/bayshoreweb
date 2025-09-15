@@ -68,7 +68,7 @@ export default function TrustedBy() {
   return (
     <div className="w-full my-10 md:my-16 text-center relative overflow-hidden py-10 md:py-16">
       {/* Title */}
-      <h2 className="text-3xl md:text-[36px] font-bold mt-0 md:mt-4 mb-12 md:mb-20 relative z-20">
+      <h2 className="text-3xl md:text-[36px] font-bold mt-0 md:mt-4 mb-6 relative z-20">
         TRUSTED <span className="text-[#FE641A]">BY</span>
       </h2>
 

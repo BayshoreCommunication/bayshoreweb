@@ -21,8 +21,8 @@ const Calandy = () => {
           </span>
           <span className="px-2">With us today</span>
         </motion.h1>
-        <div className="text-center text-gray-600 text-[12px] md:text-[14px] mt-12">
-          <p>Get a Free Video Shoot + Headshots at Your Office — Schedule Today</p>
+        <div className="text-center text-gray-800 text-[16px] mt-12 font-semibold">
+          <p>Get a Free <span className="text-[#FE641A]">Video Shoot + Headshots</span> at Your Office — Schedule Today</p>
         </div>
         {/* Calendly Widget */}
         <div
