@@ -317,22 +317,25 @@ export default function ResultsSection() {
         </Swiper>
       </section>
 
-      {/* CTA Button */}
-      <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center md:mt-[-50px] mt-16"><motion.div
-        className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0 mb-10 md:mb-0"
-        variants={item}
-      >
-        <button
-          onClick={scrollToCalendly}
-          className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
+      <div className="text-center text-gray-600 text-[12px] md:text-[14px] mt-16">
+          <p>Get a Free Video Shoot + Headshots at Your Office — Schedule Today</p>
+        </div>
+        {/* CTA Button */}
+        <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center  md:mt-[-50px] mt-[-20px]"><motion.div
+          className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
+          variants={item}
         >
-          <span>Schedule a Call Now</span>
-          <span className="text-sm font-normal">
-            Claim Your $1000 Coupon Today!
-          </span>
+          <button
+            onClick={scrollToCalendly}
+            className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
+          >
+            <span>Schedule a Call Now</span>
+            <span className="text-sm font-normal">
+              Claim Your $1000 Coupon Today!
+            </span>
 
-        </button>
-      </motion.div></div>
+          </button>
+        </motion.div></div>
     </section>
   );
 }

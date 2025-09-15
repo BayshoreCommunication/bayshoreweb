@@ -25,7 +25,7 @@ const WhiteLabel = () => {
                 alt="icon"
                 width={445}
                 height={390}
-                className="w-[200px] sm:w-[250px] md:w-[300px] lg:w-auto h-auto"
+                className="w-[170px]  md:w-[280px]  h-auto"
               />
             </div>
             <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-lg leading-relaxed">
@@ -43,12 +43,12 @@ const WhiteLabel = () => {
                 alt="icon"
                 width={400}
                 height={400}
-                className="w-[200px] sm:w-[250px] md:w-[280px] lg:w-auto h-auto"
+                className="w-[170px] md:w-[280px]  h-auto"
               />
             </div>
             <p className="text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-lg leading-relaxed">
               Create & Execute Our team designs, develops, and launches
-              <span className="text-[#FE641A] font-bold"> impactful solutions—focused on performance</span> and results.
+              <span className="text-[#FE641A] font-bold"> impactful solutions focused on performance</span> and results.
             </p>
           </div>
 
@@ -60,7 +60,7 @@ const WhiteLabel = () => {
                 alt="icon"
                 width={745}
                 height={600}
-                className="w-[200px] sm:w-[250px] md:w-[320px] lg:w-auto h-auto"
+                className="w-[170px]  md:w-[280px]  h-auto"
               />
             </div>
             <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-lg leading-relaxed">
