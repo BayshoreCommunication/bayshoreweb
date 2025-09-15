@@ -70,7 +70,7 @@ export default function Home() {
         </motion.h1>
 
         {/* Video Frame */}
-        <motion.div className="mt-10 flex justify-center" variants={item}>
+        <motion.div className="pt-12 flex justify-center" variants={item}>
           <div className="bg-[#0C1D3D] rounded-3xl relative overflow-hidden w-full max-w-[1000px] h-[180px] sm:h-[400px] flex items-center justify-center">
             {!isPlaying ? (
               // Thumbnail with play button
@@ -113,23 +113,22 @@ export default function Home() {
         </motion.div>
 
         {/* CTA Button */}
-        <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center"><motion.div
+        <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center md:mt-[-20px] mt-0"><motion.div
           className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
           variants={item}
         >
-          <button className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000">
-            <div className="px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center">
+          <button className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center">
               <span>Schedule a Call Now</span>
               <span className="text-sm font-normal">
                 Claim Your $1000 Coupon Today!
               </span>
-            </div>
+           
           </button>
         </motion.div></div>
 
         {/* Google Review */}
         <motion.div
-          className="flex flex-col items-center space-y-3"
+          className="flex flex-col items-center md:mt-[-20px] mt-0"
           variants={item}
         >
           <div className="flex -space-x-3">

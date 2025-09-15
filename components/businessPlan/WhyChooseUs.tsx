@@ -50,7 +50,7 @@ export default function WhyChooseUs() {
         </motion.div>
 
         {/* Features Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6 gap-y-20">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-5 gap-6 gap-y-20 mt-20">
           {features.map((feature, index) => (
             <motion.div
               key={index}

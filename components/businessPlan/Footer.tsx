@@ -54,9 +54,11 @@ export default function Footer() {
           results, outcomes, or consequences arising from the use of our
           services.
           <br /><br />
-          Do you have questions? Are you wondering if this will work for you?
-          Email us at support@Bayshorewebdesignservices.com We will be happy to
-          discuss your goals and how our program may help you. Thank you.
+          <span className="">
+            Do you have questions? Are you wondering if this will work for you?
+            Email us at support@Bayshorewebdesignservices.com We will be happy to
+            discuss your goals and how our program may help you. Thank you.
+          </span>
         </motion.p>
 
         {/* Logo */}
@@ -66,14 +68,20 @@ export default function Footer() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          <Image
-            src="/image/footer/logo.png"
-            alt="Bayshore Logo"
-            width={250}
-            height={60}
-            priority
-            className="max-w-full h-auto"
-          />
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="cursor-pointer hover:scale-105 transition-transform duration-300"
+            aria-label="Go to top"
+          >
+            <Image
+              src="/image/footer/logo.png"
+              alt="Bayshore Logo"
+              width={250}
+              height={60}
+              priority
+              className="max-w-full h-auto"
+            />
+          </button>
         </motion.div>
 
         {/* Footer text */}

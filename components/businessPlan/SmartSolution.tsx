@@ -19,7 +19,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex justify-center px-8 py-10 md:py-16">
+    <div className="flex justify-center px-8 py-10 md:py-10">
       <motion.div
         className="max-w-[1440px] w-full 
         bg-gradient-to-r from-gray-600/20 via-white to-orange-600/10

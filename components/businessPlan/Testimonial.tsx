@@ -6,6 +6,7 @@ import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const slides = [
   {
@@ -61,10 +62,29 @@ const testimonials = [
 ];
 
 export default function ResultsSection() {
+  // Animation variants
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3 },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  }
+
   return (
-    <section className="px-8 sm:px-6 md:px-12 overflow-hidden py-0 md:py-16">
+    <section
+    // className="px-8 sm:px-6 md:px-12 overflow-hidden py-0"
+    // variants={container}
+    // initial="hidden"
+    // animate="show"
+    >
       {/* Heading */}
-      <div className="max-w-[1440px] mx-auto text-center py-6">
+      <div className="max-w-[1440px] mx-auto text-center py-6 py-10 md:py-12">
         <h2 className="text-center text-[36px] font-bold mt-0 md:mt-6">
           CLIENT{" "}
           <span className="border-2 border-[#FE641A] text-[#FE641A] px-2">
@@ -85,53 +105,94 @@ export default function ResultsSection() {
           className="testimonial-swiper"
         >
           <style jsx global>{`
+            /* Mobile: Small pagination, close to content */
             .testimonial-swiper {
-              margin-bottom: 3rem; /* 48px */
-              padding-bottom: 50px;
+              margin-bottom: 1rem; /* Mobile: 16px */
+              padding-bottom: 25px; /* Mobile: 25px - close to content */
             }
             
             .testimonial-swiper .swiper-pagination {
-              bottom: 10px;
+              bottom: 5px; /* Mobile: close to content */
             }
             
             .testimonial-swiper .swiper-pagination-bullet {
-              width: 12px;
-              height: 12px;
+              width: 8px; /* Mobile: small dots */
+              height: 8px;
               background-color: #d1d5db;
               border-radius: 50%;
               opacity: 0.5;
-              margin: 0 8px;
+              margin: 0 4px; /* Mobile: closer spacing */
               transition: all 0.3s ease;
             }
             
             .testimonial-swiper .swiper-pagination-bullet-active {
               background-color: #FE641A;
               opacity: 1;
-              transform: scale(1.2);
+              transform: scale(1.1); /* Mobile: smaller scale */
             }
 
             .custom-swiper {
-              padding-bottom: 50px;
+              padding-bottom: 20px; /* Mobile: 20px - minimal space for video carousel */
             }
             
             .custom-swiper .swiper-pagination {
-              bottom: 10px;
+              bottom: -5px; /* Mobile: overlapping with video content */
             }
             
             .custom-swiper .swiper-pagination-bullet {
-              width: 12px;
-              height: 12px;
+              width: 8px; /* Mobile: small dots */
+              height: 8px;
               background-color: #d1d5db;
               border-radius: 50%;
               opacity: 0.5;
-              margin: 0 8px;
+              margin: 0 4px; /* Mobile: closer spacing */
               transition: all 0.3s ease;
             }
             
             .custom-swiper .swiper-pagination-bullet-active {
               background-color: #FE641A;
               opacity: 1;
-              transform: scale(1.2);
+              transform: scale(1.1); /* Mobile: smaller scale */
+            }
+
+            /* Desktop: Normal pagination, comfortable spacing */
+            @media (min-width: 768px) {
+              .testimonial-swiper {
+                margin-bottom: 3rem; /* Desktop: 48px */
+                padding-bottom: 50px; /* Desktop: 50px */
+              }
+              
+              .testimonial-swiper .swiper-pagination {
+                bottom: 10px; /* Desktop: normal spacing */
+              }
+              
+              .testimonial-swiper .swiper-pagination-bullet {
+                width: 12px; /* Desktop: normal size */
+                height: 12px;
+                margin: 0 8px; /* Desktop: normal spacing */
+              }
+              
+              .testimonial-swiper .swiper-pagination-bullet-active {
+                transform: scale(1.2); /* Desktop: normal scale */
+              }
+
+              .custom-swiper {
+                padding-bottom: 50px; /* Desktop: 50px */
+              }
+              
+              .custom-swiper .swiper-pagination {
+                bottom: 10px; /* Desktop: normal spacing */
+              }
+              
+              .custom-swiper .swiper-pagination-bullet {
+                width: 12px; /* Desktop: normal size */
+                height: 12px;
+                margin: 0 8px; /* Desktop: normal spacing */
+              }
+              
+              .custom-swiper .swiper-pagination-bullet-active {
+                transform: scale(1.2); /* Desktop: normal scale */
+              }
             }
           `}</style>
 
@@ -188,7 +249,7 @@ export default function ResultsSection() {
       </div>
 
       {/* 🎥 Swiper Video Testimonials */}
-      <section className="max-w-[1440px] mx-auto py-8 sm:py-12">
+      <section className="max-w-[1440px] mx-auto h-[440px] md:h-auto">
         <Swiper
           modules={[Pagination]}
           spaceBetween={30}
@@ -231,6 +292,20 @@ export default function ResultsSection() {
           ))}
         </Swiper>
       </section>
+
+      {/* CTA Button */}
+      <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center md:mt-[-20px] mt-0"><motion.div
+        className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0 mb-10 md:mb-0"
+        variants={item}
+      >
+        <button className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center">
+          <span>Schedule a Call Now</span>
+          <span className="text-sm font-normal">
+            Claim Your $1000 Coupon Today!
+          </span>
+
+        </button>
+      </motion.div></div>
     </section>
   );
 }
