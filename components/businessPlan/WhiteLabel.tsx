@@ -63,7 +63,7 @@ const WhiteLabel = () => {
                 className="w-[170px]  md:w-[280px]  h-auto  mt-0"
               />
             </div>
-            <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-xl md:max-w-xl leading-relaxed">
+            <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-xl leading-relaxed">
               Optimize & Grow We don&apos;t stop at launch. <span className="text-[#FE641A] font-bold">We continuously monitor,
                 analyze, and refine campaigns</span> to maximize ROI and drive
               sustainable growth.
