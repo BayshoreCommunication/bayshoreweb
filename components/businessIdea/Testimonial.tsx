@@ -68,6 +68,17 @@ const testimonials = [
 ];
 
 export default function ResultsSection() {
+  // Function to scroll to Calendly section
+  const scrollToCalendly = () => {
+    const calendlySection = document.getElementById('calendly-section');
+    if (calendlySection) {
+      calendlySection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
   // Animation variants
   const container = {
     hidden: { opacity: 0 },
@@ -84,7 +95,7 @@ export default function ResultsSection() {
 
   return (
     <section
-    className="px-8 md:px-12"
+      className="px-8"
     // className="px-8 sm:px-6 md:px-12 overflow-hidden py-0"
     // variants={container}
     // initial="hidden"
@@ -261,7 +272,7 @@ export default function ResultsSection() {
       </div>
 
       {/* 🎥 Swiper Video Testimonials */}
-      <section className="max-w-[1440px] mx-auto h-[440px] md:h-auto">
+      <section className="max-w-[1440px] mx-auto h-auto">
         <Swiper
           modules={[Pagination]}
           spaceBetween={30}
@@ -272,12 +283,13 @@ export default function ResultsSection() {
           breakpoints={{
             0: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
           }}
           className="custom-swiper"
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="bg-white rounded-2xl shadow-md overflow-hidden cursor-pointer h-auto md:h-[450px]">
+              <div className="bg-white rounded-2xl shadow-md overflow-hidden cursor-pointer h-auto md:h-[500px]">
                 {/* Video */}
                 <div className="relative w-full h-[200px] sm:h-[250px] overflow-hidden">
                   <iframe
@@ -305,19 +317,25 @@ export default function ResultsSection() {
         </Swiper>
       </section>
 
-      {/* CTA Button */}
-      <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center md:mt-[-20px] mt-10"><motion.div
-        className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0 mb-10 md:mb-0"
-        variants={item}
-      >
-        <button className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center">
-          <span>Schedule a Call Now</span>
-          <span className="text-sm font-normal">
-            Claim Your $1000 Coupon Today!
-          </span>
+      <div className="text-center text-gray-600 text-[12px] md:text-[14px] mt-16">
+          <p>Get a Free Video Shoot + Headshots at Your Office — Schedule Today</p>
+        </div>
+        {/* CTA Button */}
+        <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center  md:mt-[-50px] mt-[-20px]"><motion.div
+          className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
+          variants={item}
+        >
+          <button
+            onClick={scrollToCalendly}
+            className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
+          >
+            <span>Schedule a Call Now</span>
+            <span className="text-sm font-normal">
+              Claim Your $1000 Coupon Today!
+            </span>
 
-        </button>
-      </motion.div></div>
+          </button>
+        </motion.div></div>
     </section>
   );
 }

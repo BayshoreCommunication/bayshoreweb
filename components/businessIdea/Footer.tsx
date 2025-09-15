@@ -20,11 +20,11 @@ export default function Footer() {
         >
           <div className="flex justify-center items-center space-x-2">
             <HiOutlineMail size={20} className="text-[#FE641A]" />
-            <span>support@Bayshorewebdesignservices.com</span>
+            <span>info@bayshorecommunication.com</span>
           </div>
           <div className="flex justify-center items-center space-x-2">
             <FiPhone size={20} className="text-[#FE641A]" />
-            <span>+18888408033</span>
+            <span>+1 (509) 592-1745</span>
           </div>
           <div className="flex justify-center items-center space-x-2">
             <FiInfo size={20} className="text-[#FE641A]" />
@@ -56,7 +56,7 @@ export default function Footer() {
           <br /><br />
           <span className="">
             Do you have questions? Are you wondering if this will work for you?
-            Email us at support@Bayshorewebdesignservices.com We will be happy to
+            Email us at info@bayshorecommunication.com We will be happy to
             discuss your goals and how our program may help you. Thank you.
           </span>
         </motion.p>

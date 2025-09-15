@@ -18,7 +18,7 @@ const WhiteLabel = () => {
         {/* Grid → 1 column on mobile, 3 columns on md+ */}
         <div className="grid grid-cols-1 md:grid-cols-3 text-center gap-y-6 md:gap-y-0">
           {/* Card 1 */}
-          <div className="flex flex-col items-center px-4">
+          <div className="flex flex-col items-center px-4 md:gap-12 gap-0">
             <div className="relative flex items-center justify-center rounded-full mb-4">
               <Image
                 src="/image/white-label/Frame3.png"
@@ -36,7 +36,7 @@ const WhiteLabel = () => {
           </div>
 
           {/* Card 2 (highlighted) */}
-          <div className="flex flex-col items-center px-4 py-4 md:p-6 rounded-xl md:mt-[-200px]">
+          <div className="flex flex-col items-center px-4 py-4 md:p-6 rounded-xl md:mt-[-200px] md:gap-12 gap-0">
             <div className="relative flex items-center justify-center rounded-full mb-4">
               <Image
                 src="/image/white-label/Frame.png"
@@ -53,14 +53,14 @@ const WhiteLabel = () => {
           </div>
 
           {/* Card 3 */}
-          <div className="flex flex-col items-center px-4">
+          <div className="flex flex-col items-center px-4 md:gap-12 gap-0">
             <div className="relative flex items-center justify-center rounded-full mb-4">
               <Image
                 src="/image/white-label/Frame3.png"
                 alt="icon"
                 width={745}
                 height={600}
-                className="w-[170px]  md:w-[280px]  h-auto"
+                className="w-[170px]  md:w-[280px]  h-auto md:mt-[-25px] mt-0"
               />
             </div>
             <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-lg leading-relaxed">

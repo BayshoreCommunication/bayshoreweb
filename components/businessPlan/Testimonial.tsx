@@ -321,7 +321,7 @@ export default function ResultsSection() {
           <p>Get a Free Video Shoot + Headshots at Your Office — Schedule Today</p>
         </div>
         {/* CTA Button */}
-        <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center  md:mt-[-50px] mt-[-20px]"><motion.div
+        <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center  md:mt-[-30px] mt-[-10px]"><motion.div
           className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
           variants={item}
         >
