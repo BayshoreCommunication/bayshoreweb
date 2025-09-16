@@ -61,7 +61,7 @@ const WhiteLabel = () => {
               />
             </div>
             <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-xl leading-relaxed">
-              Optimize & Grow - We don't stop at launch. We continuously monitor, analyze, and refine campaigns to maximize ROI and drive sustainable growth.
+              Optimize & Grow - We don&apos;t stop at launch. We continuously monitor, analyze, and refine campaigns to maximize ROI and drive sustainable growth.
             </p>
           </div>
         </div>
