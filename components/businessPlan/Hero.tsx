@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoId = "VIDEO_ID"; // Replace with your YouTube video ID
+  const videoId = "wjxj_eQzI1M"; // YouTube video ID
 
   // Function to scroll to Calendly section
   const scrollToCalendly = () => {
