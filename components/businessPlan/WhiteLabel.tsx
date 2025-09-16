@@ -29,9 +29,7 @@ const WhiteLabel = () => {
               />
             </div>
             <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-xl leading-relaxed">
-              We take time to deeply <span className="text-[#FE641A] font-bold">understand your business, industry, and
-                goals.</span> Then, we craft a tailored digital strategy that aligns with
-              your vision.
+              We immerse ourselves in your business, industry, and goals to gain a deep understanding. From there, we design a customized digital strategy that aligns with your vision.
             </p>
           </div>
 
@@ -47,8 +45,7 @@ const WhiteLabel = () => {
               />
             </div>
             <p className="text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-xl leading-relaxed">
-              Create & Execute Our team designs, develops, and launches
-              <span className="text-[#FE641A] font-bold"> impactful solutions focused on performance</span> and results.
+              Create & Execute - Our team strategizes, builds, and delivers powerful solutions engineered for performance and measurable results.
             </p>
           </div>
 
@@ -64,9 +61,7 @@ const WhiteLabel = () => {
               />
             </div>
             <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-xl leading-relaxed">
-              Optimize & Grow We don&apos;t stop at launch. <span className="text-[#FE641A] font-bold">We continuously monitor,
-                analyze, and refine campaigns</span> to maximize ROI and drive
-              sustainable growth.
+              Optimize & Grow - We don't stop at launch. We continuously monitor, analyze, and refine campaigns to maximize ROI and drive sustainable growth.
             </p>
           </div>
         </div>

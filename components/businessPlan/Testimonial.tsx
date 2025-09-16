@@ -11,12 +11,12 @@ import { motion } from "framer-motion";
 const slides = [
   {
     title: "Trip Law",
-    desc: "Since 2016, working with Trip Law, we've grown the practice from $60,000 to $2.3 million without spending a dime on ads. We consistently generate 20+ new client appointments per month, each with a $5,000 case value. Client acquisition is no longer Trip Law’s challenge—managing the caseload is.",
+    desc: "Since partnering with Trip Law in 2016, we’ve helped grow the practice from just $60,000 to over $2.3 million in revenue—all without spending a single dollar on advertising. We now consistently bring in 20+ high-value client appointments each month, averaging $5,000 per case. At this point, client acquisition isn’t the challenge anymore—it’s keeping up with the demand.",
     videoId: "RVit6poGLRs",
   },
   {
     title: "Apex Advisor",
-    desc: "Apex had a strong brand presence, but poor SEO analysis from another agency left them invisible on Google. Our video production team built a powerful social media presence, driving trust through informative video marketing. Meanwhile, Salam identified SEO errors, optimized the site, and ranked it in 25 days, leading to 9x growth in consumer appointments and XXXX site visits.",
+    desc: "Apex had a strong brand presence, but poor SEO analysis from another agency left them invisible on Google. Our video production team built a powerful social media presence, driving trust through informative video marketing. Meanwhile, We identified SEO errors, optimized the site, and ranked it in 25 days, leading to 9x growth in consumer appointments and XXXX site visits.",
     videoId: "ohyUTzLiLbI",
   },
   {
@@ -317,7 +317,7 @@ export default function ResultsSection() {
         </Swiper>
       </section>
 
-      <div className="text-center text-gray-800 text-[16px] mt-6 md:mt-0 font-semibold">
+      <div className="text-center text-gray-800 text-3xl md:text-[24px] mt-6 md:mt-0 font-semibold">
           <p>Get a Free <span className="text-[#FE641A]">Video Shoot + Headshots</span> at Your Office — Schedule Today</p>
         </div>
         {/* CTA Button */}

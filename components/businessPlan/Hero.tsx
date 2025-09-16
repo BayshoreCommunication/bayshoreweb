@@ -76,7 +76,7 @@ export default function Home() {
           className="text-[36px] lg:text-[54px] font-bold text-center leading-snug max-w-[1240px] mx-auto uppercase"
           variants={item}
         >
-          Stop Relying on Referrals Start Getting{" "}
+          Stop Relying on Referrals & Start Getting{" "}
           <span className="bg-[#FE641A] text-white px-3 rounded">
             Consistent
           </span>{" "}
@@ -85,7 +85,7 @@ export default function Home() {
 
         {/* Video Frame */}
         <motion.div className="pt-12 flex justify-center" variants={item}>
-          <div className="bg-[#0C1D3D] rounded-3xl relative overflow-hidden w-full max-w-[1000px] h-[180px] sm:h-[400px] flex items-center justify-center">
+          <div className=" rounded-3xl relative overflow-hidden w-full max-w-[1000px] h-[180px] sm:h-[400px] flex items-center justify-center">
             {!isPlaying ? (
               // Thumbnail with play button
               <div
@@ -95,10 +95,11 @@ export default function Home() {
                 <Image
                   src="/image/hero/thumbnail.png"
                   alt="Video Thumbnail"
-                  width={1000}
-                  height={400}
-                  className="w-full h-full object-cover rounded-3xl"
+                  width={1920}
+                  height={1280}
+                  className="w-full h-full object-contain rounded-3xl"
                 />
+
                 <div className="absolute inset-0 flex items-center justify-center">
                   <button className="z-20 w-20 h-20 flex items-center justify-center rounded-full bg-white/80 backdrop-blur-md shadow-lg hover:scale-105 transition">
                     <svg
@@ -125,7 +126,7 @@ export default function Home() {
             )}
           </div>
         </motion.div>
-        <div className="text-center text-gray-800 text-[16px] font-semibold mt-16">
+        <div className="text-center text-gray-800 text-3xl md:text-[24px] font-semibold mt-16">
           <p>Get a Free <span className="text-[#FE641A]">Video Shoot + Headshots</span> at Your Office — Schedule Today</p>
         </div>
         {/* CTA Button */}
