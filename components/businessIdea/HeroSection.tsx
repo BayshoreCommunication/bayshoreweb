@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { IoStarOutline } from "react-icons/io5";
+import { TfiMenuAlt } from "react-icons/tfi";
+import { FaPeopleLine } from "react-icons/fa6";
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -36,8 +39,33 @@ export default function Home() {
     },
   };
 
+  // Function to scroll to Calendly section
+  const scrollToCalendly = () => {
+    const calendlySection = document.getElementById('calendly-section');
+    if (calendlySection) {
+      calendlySection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  };
+
+  // Variants for staggered animation
+  const container = {
+    hidden: { opacity: 0 },
+    show: {
+      opacity: 1,
+      transition: { staggerChildren: 0.3 },
+    },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+  };
+
   return (
-    <div className="min-h-[70vh] bg-white overflow-hidden font-sans relative px-4 sm:px-6 xl:px-24 mt-6">
+    <div className="min-h-[70vh] bg-white  font-sans relative px-4 sm:px-6 xl:px-24 mt-6">
       <div className="max-w-[1440px] mx-auto relative">
         {/* Floating Emojis */}
         <motion.div
@@ -172,31 +200,16 @@ export default function Home() {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-[20px] xl:text-[36px] 2xl:text-[48px] font-semibold leading-snug mt-32  xl:mt-0">
-              We Help Lawyers Dominate Search Results, Grow Reputation, And{" "}
-              <span className="bg-primary text-white px-3 font-bold">
-                Generate Consistent Leads
-              </span>{" "}
-              Without Wasting Time On Outdated Marketing.
+            <h1 className="text-[20px] xl:text-[36px] 2xl:text-[48px] font-semibold leading-snug mt-32  xl:mt-0 uppercase">
+              Stop Relying on Referrals — Start Getting <span className="text-[#FE641A]">Consistent</span> Clients Online
             </h1>
             <p className="mt-4 text-gray-600 text-[14px] sm:text-[16px]">
               You’re One Step Away From Discovering How You Can Consistently
               Attract High-Value Clients Through Organic Marketing & SEO—Without
-              Relying on Ads.{" "}
-              <span className="text-primary font-semibold">GUARANTEED.</span>
+              Relying on Ads.{" "} <span className="text-[#FE641A]">GUARANTEED.</span>
             </p>
 
             <div className="flex flex-col  xl:flex-row items-center gap-4 mt-6">
-              <button
-                className="bg-primary hover:bg-orange-500 text-white px-6 py-3 rounded-full shadow-md w-full sm:w-[200px] text-[14px] sm:text-[16px]"
-                onClick={() =>
-                  document
-                    .getElementById("schedule")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-              >
-                Schedule Call
-              </button>
               <p className="text-gray-700 text-[14px] sm:text-[16px] max-w-sm text-center sm:text-left">
                 You don’t pay for effort—you pay for{" "}
                 <span className="font-semibold text-primary">
@@ -204,35 +217,40 @@ export default function Home() {
                 </span>
               </p>
             </div>
+            {/* CTA Button */}
+            <div className="w-full h-[100px] sm:h-[180px]"><motion.div
+              className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
+              variants={item}
+            >
+              <button
+                onClick={scrollToCalendly}
+                className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
+              >
+                <span className="text-2xl font-semibold">Schedule a Call Now</span>
 
-            <div className="flex flex-col md:flex-row items-center gap-2 sm:gap-4 mt-8 justify-start  md:mb-4">
-              <div className="flex flex-col items-start">
+              </button>
+            </motion.div></div>
+
+            {/* Google Review */}
+            <motion.div
+              className="md:mt-[-90px] mt-[-30px] md:block flex flex-col justify-center items-center"
+              variants={item}
+            >
+              <div className="flex -space-x-3">
                 <Image
-                  src="/images/home/Google.png"
-                  alt="Google"
-                  width={100}
+                  src="image/hero/group.png"
+                  alt="alt"
+                  width={275}
                   height={70}
+                  className="w-[200px] h-[50px] sm:w-[275px] sm:h-[70px] object-contain"
                 />
-                <div className="flex text-yellow-600 mt-1 ">
-                  <span className="animate-star">★</span>
-                  <span className="animate-star">★</span>
-                  <span className="animate-star">★</span>
-                  <span className="animate-star">★</span>
-                  <span className="animate-star">★</span>
-                </div>
               </div>
-              <div className="text-left">
-                <p className="font-semibold text-[14px] sm:text-[16px]">
-                  4.9 (484 Reviews)
-                </p>
-                <a
-                  href="#"
-                  className="text-primary underline text-xs sm:text-sm !hover:text-orange-600"
-                >
-                  View all Google Reviews here
-                </a>
-              </div>
-            </div>
+              <p className="text-xl sm:text-2xl text-gray-600">⭐⭐⭐⭐⭐ Google Review</p>
+            </motion.div>
+
+            
+
+
           </motion.div>
 
           {/* Right: Images + Counter */}
@@ -288,7 +306,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="ml-0 xl:ml-[80px] 2xl:ml-[5px] mt-[-150px] sm:mr-[-260px] sm:mb-[120px] xl:mt-[-50px] w-full sm:w-[640px] md:mb-[120px] md:mr-[-150px] lg:ml-[200px] lg:mt-[-120px] md:mt-[-100px] md:ml-[90px]  px-4 text-center mb-16 ">
+            <div className="ml-0 xl:ml-[80px] 2xl:ml-[5px] mt-[-150px] mr-[-100px] sm:mr-[-260px] sm:mb-[120px] xl:mt-[-50px] w-full sm:w-[640px] md:mb-[120px] md:mr-[-150px] lg:ml-[200px] lg:mt-[-120px] md:mt-[-100px] md:ml-[90px]  px-4 text-center mb-16 ">
               <Image
                 src="/images/homesection/left-2.png"
                 alt="Illustration"
@@ -298,8 +316,41 @@ export default function Home() {
               />
             </div>
           </motion.div>
+          
         </div>
+            {/* Stats Section */}
+            <motion.div
+              className="w-full sm:w-[75%] px-8  mx-auto mt-12 bg-gradient-to-r from-cyan-200/20 via-white to-orange-50 p-[1px] rounded-2xl shadow-lg text-black my-[-40px]"
+              variants={item}
+            >
+              <div className="bg-white/10 backdrop-blur-md  rounded-xl flex w-full flex-row justify-around items-center py-16 px-4">
+                <div className="text-center">
+                  <div className="flex items-center justify-center space-x-2">
+                    <IoStarOutline className="text-[#FE641A]" />
+                    <h3 className="text-[#FE641A] text-[20px] font-bold">60+</h3>
+                  </div>
+                  <p className="text-black/80 text-[10px] sm:text-[14px]">Current Clients</p>
+                </div>
 
+                <div className="text-center sm:border-l sm:border-r sm:border-white/10 sm:px-6">
+                  <div className="flex items-center justify-center space-x-2">
+                    <TfiMenuAlt className="text-[#FE641A]" />
+                    <h3 className="text-[#FE641A] text-[20px] font-bold">
+                      3,000+
+                    </h3>
+                  </div>
+                  <p className="text-black/80 text-[10px] sm:text-[14px]">Completed Projects</p>
+                </div>
+
+                <div className="text-center">
+                  <div className="flex items-center justify-center space-x-2">
+                    <FaPeopleLine className="text-[#FE641A]" />
+                    <h3 className="text-[#FE641A] text-[20px] font-bold">90+</h3>
+                  </div>
+                  <p className="text-black/80 text-[10px] sm:text-[14px]">Bayshore Team-mates</p>
+                </div>
+              </div>
+            </motion.div>
         <style jsx>{`
           @keyframes star-shine {
             0%,

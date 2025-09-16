@@ -72,7 +72,7 @@ export default function WhyChooseUs() {
                   className="w-20 h-20 object-contain"
                 />
               </div>
-              <p className="font-semibold text-gray-800 mt-20">
+              <p className="font-semibold text-gray-800 mt-20 text-[16px]">
                 {feature.title}
               </p>
             </motion.div>

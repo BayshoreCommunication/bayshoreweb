@@ -86,7 +86,7 @@ export default function Footer() {
 
         {/* Footer text */}
         <motion.p
-          className="text-sm md:text-[16px] font-bold mb-2"
+          className="text-xl md:text-[16px] font-bold mb-2"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
@@ -103,19 +103,19 @@ export default function Footer() {
         >
           <Link
             href="https://www.bayshorecommunication.com/terms-conditions"
-            className="text-sm md:text-[16px] text-[#FE641A] hover:underline"
+            className="text-lg md:text-[16px] text-[#FE641A] hover:underline"
           >
             Terms
           </Link>
           <Link
             href="https://www.bayshorecommunication.com/privacy-policy"
-            className="text-sm md:text-[16px] text-[#FE641A] hover:underline"
+            className="text-lg md:text-[16px] text-[#FE641A] hover:underline"
           >
             Privacy Policy
           </Link>
           <Link
             href="https://www.bayshorecommunication.com/disclaimer"
-            className="text-sm md:text-[16px] text-[#FE641A] hover:underline"
+            className="text-lg md:text-[16px] text-[#FE641A] hover:underline"
           >
             Disclaimer
           </Link>

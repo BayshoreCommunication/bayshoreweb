@@ -32,7 +32,7 @@ const testimonials = [
     role: "Founder of Carter Injury Law",
     img: "/image/testimonial/person1.png",
     testimonial:
-      "Before partnering h Bayshore, we were struggling with our marketing. In just one year, Google impressions skyrocketed by 6,000%, website traffic tripled, and qualified leads reached a consistent monthly number. Their Meta Ads alone generated 220+ leads at only $35 each, creating a dependable pipeline of new cases. Bayshore didn't just enhance our marketing- they built a complete growth system for our firm.",
+      "Before partnering Bayshore, we were struggling with our marketing. In just one year, Google impressions skyrocketed by 6,000%, website traffic tripled, and qualified leads reached a consistent monthly number. Their Meta Ads alone generated 220+ leads at only $35 each, creating a dependable pipeline of new cases. Bayshore didn't just enhance our marketing- they built a complete growth system for our firm.",
     stat1: "220+ Leads",
     stat1desc: "Meta Ads alone generated 220+ leads at only $35 each",
     stat2: "Growth Marketing Service",

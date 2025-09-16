@@ -1,17 +1,16 @@
 "use client";
 
-import Hero from '@/components/businessGrowth/HeroSection'
-import SmartSolution from '@/components/businessPlan/SmartSolution'
-import WhiteLabel from '@/components/businessPlan/WhiteLabel'
-import Testimonial from '@/components/businessPlan/Testimonial'
-import WhyChooseUs from '@/components/businessPlan/WhyChooseUs'
-import Blueprint from '@/components/businessPlan/Blueprint'
+import SmartSolution from '@/components/businessIdea/SmartSolution'
+import WhiteLabel from '@/components/businessIdea/WhiteLabel'
+import Testimonial from '@/components/businessIdea/Testimonial'
+import WhyChooseUs from '@/components/businessIdea/WhyChooseUs'
+import Blueprint from '@/components/businessIdea/Blueprint'
 import React from 'react'
-import Calandy from '@/components/businessPlan/Calandy'
-import BayshoreTeam from '@/components/businessPlan/BayshoreTeam'
-import Footer from '@/components/businessPlan/Footer'
-import Marque from '@/components/businessPlan/Marque';
-import HeroSection from '@/components/businessGrowth/HeroSection';
+import Calandy from '@/components/businessIdea/Calandy'
+import BayshoreTeam from '@/components/businessIdea/BayshoreTeam'
+import Footer from '@/components/businessIdea/Footer'
+import Marque from '@/components/businessIdea/Marque';
+import HeroSection from '@/components/businessIdea/HeroSection';
 
 
 const page = () => {

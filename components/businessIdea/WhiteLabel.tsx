@@ -18,7 +18,7 @@ const WhiteLabel = () => {
         {/* Grid → 1 column on mobile, 3 columns on md+ */}
         <div className="grid grid-cols-1 md:grid-cols-3 text-center gap-y-6 md:gap-y-0">
           {/* Card 1 */}
-          <div className="flex flex-col items-center px-4">
+          <div className="flex flex-col items-center px-4 md:gap-12 gap-0">
             <div className="relative flex items-center justify-center rounded-full mb-4">
               <Image
                 src="/image/white-label/Frame3.png"
@@ -28,7 +28,7 @@ const WhiteLabel = () => {
                 className="w-[170px]  md:w-[280px]  h-auto"
               />
             </div>
-            <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-lg leading-relaxed">
+            <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-xl leading-relaxed">
               We take time to deeply <span className="text-[#FE641A] font-bold">understand your business, industry, and
                 goals.</span> Then, we craft a tailored digital strategy that aligns with
               your vision.
@@ -36,7 +36,7 @@ const WhiteLabel = () => {
           </div>
 
           {/* Card 2 (highlighted) */}
-          <div className="flex flex-col items-center px-4 py-4 md:p-6 rounded-xl md:mt-[-200px]">
+          <div className="flex flex-col items-center px-4 py-4 rounded-xl md:mt-[-200px] md:gap-12 gap-0">
             <div className="relative flex items-center justify-center rounded-full mb-4">
               <Image
                 src="/image/white-label/Frame.png"
@@ -46,24 +46,24 @@ const WhiteLabel = () => {
                 className="w-[170px] md:w-[280px]  h-auto"
               />
             </div>
-            <p className="text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-lg leading-relaxed">
+            <p className="text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-xl leading-relaxed">
               Create & Execute Our team designs, develops, and launches
               <span className="text-[#FE641A] font-bold"> impactful solutions focused on performance</span> and results.
             </p>
           </div>
 
           {/* Card 3 */}
-          <div className="flex flex-col items-center px-4">
+          <div className="flex flex-col items-center px-4 md:gap-12 gap-0">
             <div className="relative flex items-center justify-center rounded-full mb-4">
               <Image
                 src="/image/white-label/Frame3.png"
                 alt="icon"
                 width={745}
                 height={600}
-                className="w-[170px]  md:w-[280px]  h-auto"
+                className="w-[170px]  md:w-[280px]  h-auto  mt-0"
               />
             </div>
-            <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-lg leading-relaxed">
+            <p className="md:order-first text-[14px] sm:text-[16px] md:text-[18px] text-gray-700 max-w-sm md:max-w-xl leading-relaxed">
               Optimize & Grow We don&apos;t stop at launch. <span className="text-[#FE641A] font-bold">We continuously monitor,
                 analyze, and refine campaigns</span> to maximize ROI and drive
               sustainable growth.
