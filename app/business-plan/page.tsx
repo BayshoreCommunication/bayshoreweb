@@ -16,7 +16,7 @@ import Marque from '@/components/businessPlan/Marque';
 const page = () => {
   return (
     <div>
-      <Hero />
+        <Hero />
       <Marque />
       <WhiteLabel />
       <SmartSolution />
@@ -26,7 +26,6 @@ const page = () => {
       <Calandy />
       <BayshoreTeam />
       <Footer />
-
     </div>
   )
 }

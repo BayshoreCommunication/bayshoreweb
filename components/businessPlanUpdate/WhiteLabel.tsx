@@ -21,7 +21,7 @@ const WhiteLabel = () => {
           <div className="flex flex-col items-center px-4 md:gap-12 gap-0">
             <div className="relative flex items-center justify-center rounded-full mb-4">
               <Image
-                src="/image/white-label/Frame-22.png"
+                src="/image/white-label/Frame2.png"
                 alt="icon"
                 width={445}
                 height={390}
@@ -37,7 +37,7 @@ const WhiteLabel = () => {
           <div className="flex flex-col items-center px-4 py-4 rounded-xl md:mt-[-200px] md:gap-12 gap-0">
             <div className="relative flex items-center justify-center rounded-full mb-4">
               <Image
-                src="/image/white-label/Frame-11.png"
+                src="/image/white-label/Frame1.png"
                 alt="icon"
                 width={400}
                 height={400}
@@ -53,7 +53,7 @@ const WhiteLabel = () => {
           <div className="flex flex-col items-center px-4 md:gap-12 gap-0">
             <div className="relative flex items-center justify-center rounded-full mb-4">
               <Image
-                src="/image/white-label/Frame-22.png"
+                src="/image/white-label/Frame3.png"
                 alt="icon"
                 width={745}
                 height={600}
@@ -71,6 +71,14 @@ const WhiteLabel = () => {
           Skip the stress. Skip the follow-ups. We handle your marketing with speed,
           <br className="hidden sm:block" /> precision, and results you can count on.
         </p>
+
+        <Image
+            src="/image/white-label/seoGraph.jpeg"
+            alt="icon"
+            width={1000}
+            height={800}
+            className="w-full  h-auto my-16 rounded-2xl"
+        />
       </div>
     </div>
   );
