@@ -39,7 +39,7 @@ export default function Footer() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          Results from Bayshore Communication Marketing Services are not guaranteed and may vary based on individual skills, effort, experience, and external factors. You are solely responsible for your business decisions, and Bayshore Communication is not liable for any outcomes resulting from the use of its services
+          The Bayshore Communication Marketing Services are designed to provide guidance and solutions, but you are solely responsible for your business decisions and actions. The evaluation and use of our marketing products and services should be based on your own due diligence. You agree that Bayshore Communication is not liable for any results, outcomes, or consequences arising from the use of our services
         </motion.p>
 
         {/* Logo */}
