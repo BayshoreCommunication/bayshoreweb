@@ -10,7 +10,7 @@ const WhiteLabel = () => {
           alt="Description"
           width={1000}
           height={800}
-          className="w-full h-auto mb-10 md:mb-12 "
+          className="max-w-6xl w-full h-auto mb-10 md:mb-12 mx-auto "
         />
       </div>
       {/* Header */}
