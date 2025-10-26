@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
           <div className="flex justify-center items-center space-x-2">
             <FiInfo size={20} className="text-[#FE641A]" />
-            <span>Monday to Friday 8:00 AM to 4:30 PM EST.</span>
+            <span>Monday to Friday 8:00 AM to 5:00 PM EST.</span>
           </div>
         </motion.div>
 
