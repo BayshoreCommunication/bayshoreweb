@@ -13,17 +13,31 @@ const WhiteLabel = () => {
           className="max-w-6xl w-full h-auto mb-10 md:mb-12 mx-auto "
         />
       </div>
-      {/* Header */}
-      <div className="flex flex-col justify-center items-center mb-20 md:mb-[400px]">
-        <h1 className="text-[24px] sm:text-[32px] md:text-[36px] font-bold text-center uppercase leading-tight">
-          Our 3-Step <span className="text-[#FE641A]">Success Recipe</span>
-        </h1>
-        <p className="text-[16px] sm:text-[18px] text-center mt-2 ">
-          Built for Agencies. Designed to Deliver.
-        </p>
-      </div>
 
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 py-8 md:py-16 text-base mt-[-50px] md:mt-[-200px]">
+        {/* CTA Button */}
+        <div className="flex justify-center items-center max-w-6xl w-full mx-auto py-10 mb-32">
+          <button
+            onClick={() => {
+              document
+                .getElementById("calendly-section")
+                ?.scrollIntoView({ behavior: "smooth" });
+            }}
+            className="bg-primary hover:bg-primary/90 text-white font-bold md:text-5xl text-3xl uppercase rounded-full px-8 py-4 shadow-md transition duration-300 mt-[-40px] md:mt-0"
+          >
+            Claim Your Free Shoots + Year Plan
+          </button>
+        </div>
+        {/* Header */}
+        <div className="flex flex-col justify-center items-center mb-20 md:mb-[200px]">
+          <h1 className="text-[24px] sm:text-[32px] md:text-[36px] font-bold text-center uppercase leading-tight">
+            Our 3-Step <span className="text-[#FE641A]">Success Recipe</span>
+          </h1>
+          <p className="text-[16px] sm:text-[18px] text-center mt-2 ">
+            Built for Agencies. Designed to Deliver.
+          </p>
+        </div>
+
         {/* Grid → 1 column on mobile, 3 columns on md+ */}
         <div className="grid grid-cols-1 md:grid-cols-3 text-center gap-y-6 md:gap-y-0">
           {/* Card 1 */}
@@ -82,7 +96,7 @@ const WhiteLabel = () => {
         </div>
 
         {/* Bottom Note */}
-        <p className="text-center mt-8 sm:mt-10 md:mt-12 text-gray-600 italic text-[16px] sm:text-lg md:text-xl lg:text-3xl font-bold px-4 mt-10 mt:mb-0">
+        <p className="text-center mt-8 sm:mt-10 md:mt-12 text-gray-600 italic text-[16px] sm:text-lg md:text-xl lg:text-3xl font-bold px-4 md:mb-0">
           Skip the stress. Skip the follow-ups. We handle your marketing with
           speed,
           <br className="hidden sm:block" /> precision, and results you can
