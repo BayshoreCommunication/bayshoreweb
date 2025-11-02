@@ -1,5 +1,3 @@
-"use client";
-
 import Hero from '@/components/partnerUp/Hero'
 import SmartSolution from '@/components/partnerUp/SmartSolution'
 import WhiteLabel from '@/components/partnerUp/WhiteLabel'
