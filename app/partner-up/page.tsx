@@ -14,20 +14,28 @@ import type { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Partner Up | Bayshore Communication ",
+    title: "Partner Up | Bayshore Communication",
     description:
       "Join forces with Bayshore Communication and explore partnership opportunities to grow your business together.",
     openGraph: {
       title: "Partner Up | Bayshore Communication",
       description:
         "Join forces with Bayshore Communication and explore partnership opportunities to grow your business together.",
-      images: "/opengraph-image.png", // ✅ static OG image URL
+      images: [
+        {
+          url: "https://www.bayshorecommunication.com/opengraph-image.jpg", // ✅ must be absolute
+          width: 1200,
+          height: 630,
+          alt: "Partner Up | Bayshore Communication",
+        },
+      ],
       url: "https://www.bayshorecommunication.com/partner-up",
       type: "website",
       siteName: "Bayshore Communication",
     },
   };
 }
+
 
 const page = () => {
   return (
