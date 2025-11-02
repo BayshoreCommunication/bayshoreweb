@@ -12,6 +12,24 @@ import BayshoreTeam from '@/components/partnerUp/BayshoreTeam'
 import Footer from '@/components/partnerUp/Footer'
 import Marque from '@/components/partnerUp/Marque';
 
+import type { Metadata } from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Partner Up | Bayshore Communication",
+    description:
+      "Join forces with Bayshore Communication and explore partnership opportunities to grow your business together.",
+    openGraph: {
+      title: "Partner Up | Bayshore Communication",
+      description:
+        "Join forces with Bayshore Communication and explore partnership opportunities to grow your business together.",
+      images: ["https://bayshore.nyc3.cdn.digitaloceanspaces.com/Email_Template/Testimonial%20Thumbnail%20%204%201.jpg"], // ✅ static OG image URL
+      url: "https://www.bayshorecommunication.com/partner-up",
+      type: "website",
+      siteName: "Bayshore Communication",
+    },
+  };
+}
 
 const page = () => {
   return (
