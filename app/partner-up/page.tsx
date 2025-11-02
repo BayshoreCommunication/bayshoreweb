@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: "Partner Up | Bayshore Communication",
       description:
         "Join forces with Bayshore Communication and explore partnership opportunities to grow your business together.",
-      images: ["/opengraph-image.png"], // ✅ static OG image URL
+      images: "/opengraph-image.png", // ✅ static OG image URL
       url: "https://www.bayshorecommunication.com/partner-up",
       type: "website",
       siteName: "Bayshore Communication",
