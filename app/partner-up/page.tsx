@@ -16,7 +16,7 @@ import type { Metadata } from "next";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: "Partner Up | Bayshore Communication",
+    title: "Partner Up | Bayshore Communication ",
     description:
       "Join forces with Bayshore Communication and explore partnership opportunities to grow your business together.",
     openGraph: {
