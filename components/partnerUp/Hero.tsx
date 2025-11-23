@@ -10,15 +10,14 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoId = "wjxj_eQzI1M"; // YouTube video ID
 
   // Function to scroll to Calendly section
   const scrollToCalendly = () => {
-    const calendlySection = document.getElementById('calendly-section');
+    const calendlySection = document.getElementById("calendly-section");
     if (calendlySection) {
       calendlySection.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -93,7 +92,7 @@ export default function Home() {
                 onClick={() => setIsPlaying(true)}
               >
                 <Image
-                  src="/image/hero/thumbnail.png"
+                  src="/image/hero/thumbnail.jpg"
                   alt="Video Thumbnail"
                   width={1920}
                   height={1280}
@@ -117,7 +116,7 @@ export default function Home() {
               // Video iframe
               <iframe
                 className="w-full h-full rounded-3xl"
-                src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
+                src={`https://www.youtube.com/embed/OFstMO3SbCw?autoplay=1&mute=0`}
                 title="Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -127,21 +126,28 @@ export default function Home() {
           </div>
         </motion.div>
         <div className="text-center text-gray-800 text-3xl md:text-[24px] font-semibold mt-16">
-          <p>Get a Free <span className="text-[#FE641A]">Video Shoot + 1-Year Growth Plan</span> at Your Office — Schedule Today</p>
+          <p>
+            Get a Free{" "}
+            <span className="text-[#FE641A]">
+              Video Shoot + 1-Year Growth Plan
+            </span>{" "}
+            at Your Office — Schedule Today
+          </p>
         </div>
         {/* CTA Button */}
-        <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center  md:mt-[-30px] mt-[-10px]"><motion.div
-          className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
-          variants={item}
-        >
-          <button
-            onClick={scrollToCalendly}
-            className="bg-[#FE641A] text-white rounded-full text-2xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
+        <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center  md:mt-[-30px] mt-[-10px]">
+          <motion.div
+            className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
+            variants={item}
           >
-            <span>Schedule a Call Now</span>
-
-          </button>
-        </motion.div></div>
+            <button
+              onClick={scrollToCalendly}
+              className="bg-[#FE641A] text-white rounded-full text-2xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
+            >
+              <span>Schedule a Call Now</span>
+            </button>
+          </motion.div>
+        </div>
 
         {/* Google Review */}
         <motion.div
@@ -157,7 +163,9 @@ export default function Home() {
               className="w-[200px] h-[50px] sm:w-[275px] sm:h-[70px] object-contain"
             />
           </div>
-          <p className="text-xl sm:text-2xl text-gray-600">⭐⭐⭐⭐⭐ Google Review</p>
+          <p className="text-xl sm:text-2xl text-gray-600">
+            ⭐⭐⭐⭐⭐ Google Review
+          </p>
         </motion.div>
 
         {/* Stats Section */}
@@ -171,17 +179,19 @@ export default function Home() {
                 <IoStarOutline className="text-[#FE641A]" />
                 <h3 className="text-[#FE641A] text-[20px] font-bold">60+</h3>
               </div>
-              <p className="text-black/80 text-[10px] sm:text-[14px]">Current Clients</p>
+              <p className="text-black/80 text-[10px] sm:text-[14px]">
+                Current Clients
+              </p>
             </div>
 
             <div className="text-center sm:border-l sm:border-r sm:border-white/10 sm:px-6">
               <div className="flex items-center justify-center space-x-2">
                 <TfiMenuAlt className="text-[#FE641A]" />
-                <h3 className="text-[#FE641A] text-[20px] font-bold">
-                  3,000+
-                </h3>
+                <h3 className="text-[#FE641A] text-[20px] font-bold">3,000+</h3>
               </div>
-              <p className="text-black/80 text-[10px] sm:text-[14px]">Completed Projects</p>
+              <p className="text-black/80 text-[10px] sm:text-[14px]">
+                Completed Projects
+              </p>
             </div>
 
             <div className="text-center">
@@ -189,7 +199,9 @@ export default function Home() {
                 <FaPeopleLine className="text-[#FE641A]" />
                 <h3 className="text-[#FE641A] text-[20px] font-bold">90+</h3>
               </div>
-              <p className="text-black/80 text-[10px] sm:text-[14px]">Bayshore Team-mates</p>
+              <p className="text-black/80 text-[10px] sm:text-[14px]">
+                Bayshore Team-mates
+              </p>
             </div>
           </div>
         </motion.div>
