@@ -29,6 +29,11 @@ const slides = [
     desc: "Despite having a brilliant idea, Catflix had trouble getting noticed online. To catapult their brand to the top of search results, our team created a high-performance website, optimized blogs for SEO, and built a content ranking plan. In just a few weeks, their blog entries started dominating industry terms, resulting in a spike in organic traffic and customer interaction.",
     videoId: "iqHA7By9OAI",
   },
+  {
+    title: "Tampa Motion",
+    desc: "Opening Tampa Motion from scratch showed me that standard marketing was not enough. Bayshore supported us through every step of the first six months, from building a clear, professional website to managing our social media with consistent content. On-site video work felt natural and professional. The team stayed involved and truly cared about our growth and I would recommend Bayshore to any business looking for a long-term marketing partner.",
+    videoId: "oxR0dFvDyeQ",
+  },
   
 ];
 
