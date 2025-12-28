@@ -261,7 +261,7 @@ const ClientLogos = () => {
       />
       <Image
         src="/assets/client-logo/Prestige.png"
-        alt="prestige"
+        alt="Prestige Logo"
         width={400}
         height={400}
         className="w-[12rem]"
