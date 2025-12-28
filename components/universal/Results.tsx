@@ -209,7 +209,7 @@ const ClientLogos = () => {
         className="w-[12rem]"
       />
       <Image
-        src="/assets/client-logo/Tampa-Motion.png"
+        src="/assets/client-logo/Tampa-Motion1.png"
         alt=""
         width={400}
         height={400}
