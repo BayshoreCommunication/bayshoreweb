@@ -166,13 +166,13 @@ const ClientLogos = () => {
         height={400}
         className="w-[12rem]"
       />
-       <Image
+       {/* <Image
         src="/assets/client-logo/sheba-logo.png"
         alt="butterfly"
         width={400}
         height={400}
         className="w-[12rem]"
-      /> 
+      />  */}
       <Image
         src="/assets/client-logo/carter-injury-law.png"
         alt=""
@@ -209,7 +209,7 @@ const ClientLogos = () => {
         className="w-[12rem]"
       />
       <Image
-        src="/assets/client-logo/tampa-motion.png"
+        src="/assets/client-logo/Tampa-Motion.png"
         alt=""
         width={400}
         height={400}
@@ -266,13 +266,7 @@ const ClientLogos = () => {
         height={400}
         className="w-[12rem]"
       />
-      <Image
-        src="/assets/client-logo/Tampa-Motion.png"
-        alt=""
-        width={400}
-        height={400}
-        className="w-[12rem]"
-      />
+      
       <Image
         src="/assets/client-logo/Tripathi-Vongsyprasom.png"
         alt=""
