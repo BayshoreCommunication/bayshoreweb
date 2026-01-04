@@ -3,10 +3,10 @@ export default function WhyDoingThis() {
     <section className="w-full px-8 py-8 md:py-16">
       <div className="max-w-[1200px] mx-auto text-center">
         {/* HEADING */}
-        <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
+        <h2 className="text-[20px] lg:text-[36px] xl:text-[38px] font-semibold text-gray-900">
           Why Are We <span className="text-[#f97316]">Doing</span> This?
         </h2>
-        <p className="mt-2 text-sm text-gray-500">
+        <p className="mt-2 text-[16px] text-gray-500">
           We flip the script on how you work with agencies.
         </p>
 
@@ -14,15 +14,15 @@ export default function WhyDoingThis() {
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* OLD WAY */}
           <div className="rounded-2xl p-8 text-left bg-gradient-to-br from-[#fff7f4] to-[#fffdfc] shadow-lg">
-            <span className="inline-block mb-4 rounded-full border border-red-300 px-4 py-1 text-xs text-red-500">
+            <span className="inline-block mb-4 rounded-full border border-red-300 px-4 py-1 text-[20px] text-red-500">
               The Old Way
             </span>
 
-            <h3 className="font-semibold text-lg mb-4">
+            <h3 className="font-semibold text-[30px] mb-4">
               The Typical Agency Model
             </h3>
 
-            <ul className="space-y-3 text-sm text-gray-700">
+            <ul className="space-y-3 text-[20px] text-gray-700">
               <li className="flex gap-3">
                 <span className="text-red-500">✕</span>
                 Pay upfront, hope for results
@@ -37,22 +37,22 @@ export default function WhyDoingThis() {
               </li>
               <li className="flex gap-3">
                 <span className="text-red-500">✕</span>
-                Often don’t understand your business
+                Often don&apos;t understand your business
               </li>
             </ul>
           </div>
 
           {/* OUR WAY */}
           <div className="rounded-2xl p-8 text-left bg-gradient-to-br from-[#f6fff7] to-[#fdfffd] shadow-lg">
-            <span className="inline-block mb-4 rounded-full border border-green-300 px-4 py-1 text-xs text-green-600">
+            <span className="inline-block mb-4 rounded-full border border-green-300 px-4 py-1 text-[20px] text-green-600">
               Our Way
             </span>
 
-            <h3 className="font-semibold text-lg mb-4">
+            <h3 className="font-semibold text-[30px] mb-4">
               The Typical Agency Model
             </h3>
 
-            <ul className="space-y-3 text-sm text-gray-700">
+            <ul className="space-y-3 text-[20px] text-gray-700">
               <li className="flex gap-3">
                 <span className="text-green-600">✔</span>
                 Experience our process risk-free
@@ -84,9 +84,9 @@ export default function WhyDoingThis() {
           </h4>
 
           <p className="text-sm text-gray-600 max-w-2xl mx-auto">
-            We're so confident in the quality of our work, we lead with free
-            value and let results speak for themselves. We're not after every
-            deal—we're after the right partnerships.
+            We&apos;re so confident in the quality of our work, we lead with free
+            value and let results speak for themselves. We&apos;re not after every
+            deal—we&apos;re after the right partnerships.
           </p>
         </div>
       </div>
