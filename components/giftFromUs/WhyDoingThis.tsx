@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function WhyDoingThis() {
   return (
     <section className="w-full px-8 py-8 md:py-16">
@@ -13,8 +15,8 @@ export default function WhyDoingThis() {
         {/* CARDS */}
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* OLD WAY */}
-          <div className="rounded-2xl p-8 text-left bg-gradient-to-br from-[#fff7f4] to-[#fffdfc] shadow-lg">
-            <span className="inline-block mb-4 rounded-full border border-red-300 px-4 py-1 text-[20px] text-red-500">
+          <div className="rounded-2xl p-8 text-left bg-gradient-to-br from-[#F5F5F5] to-[#FFF7F3] shadow-lg">
+            <span className="inline-block mb-4 rounded-full border border-red-300 px-4 py-1 text-[20px] text-[#EB3E30] bg-[#FFCECE]">
               The Old Way
             </span>
 
@@ -23,28 +25,60 @@ export default function WhyDoingThis() {
             </h3>
 
             <ul className="space-y-3 text-[20px] text-gray-700">
-              <li className="flex gap-3">
-                <span className="text-red-500">✕</span>
+              <li className="flex gap-3 items-center">
+                <span className="text-red-500">
+                  <Image
+                    src="/gift/doing/cross.png"
+                    alt="Check icon"
+                    width={1000}
+                    height={800}
+                    className="object-cover w-8"
+                  />
+                </span>
                 Pay upfront, hope for results
               </li>
-              <li className="flex gap-3">
-                <span className="text-red-500">✕</span>
+              <li className="flex gap-3 items-center">
+                <span className="text-red-500">
+                  <Image
+                    src="/gift/doing/cross.png"
+                    alt="Check icon"
+                    width={1000}
+                    height={800}
+                    className="object-cover w-8"
+                  />
+                </span>
                 Generic strategies from a playbook
               </li>
-              <li className="flex gap-3">
-                <span className="text-red-500">✕</span>
+              <li className="flex gap-3 items-center">
+                <span className="text-red-500">
+                  <Image
+                    src="/gift/doing/cross.png"
+                    alt="Check icon"
+                    width={1000}
+                    height={800}
+                    className="object-cover w-8"
+                  />
+                </span>
                 Pressure to commit long-term
               </li>
-              <li className="flex gap-3">
-                <span className="text-red-500">✕</span>
+              <li className="flex gap-3 items-center ">
+                <span className="text-red-500">
+                  <Image
+                    src="/gift/doing/cross.png"
+                    alt="Check icon"
+                    width={1000}
+                    height={800}
+                    className="object-cover w-8"
+                  />
+                </span>
                 Often don&apos;t understand your business
               </li>
             </ul>
           </div>
 
           {/* OUR WAY */}
-          <div className="rounded-2xl p-8 text-left bg-gradient-to-br from-[#f6fff7] to-[#fdfffd] shadow-lg">
-            <span className="inline-block mb-4 rounded-full border border-green-300 px-4 py-1 text-[20px] text-green-600">
+          <div className="rounded-3xl p-8 text-left bg-gradient-to-br from-[#F5F5F5] to-[#FFF7F3] shadow-lg">
+            <span className="inline-block mb-4 rounded-full border border-green-300 px-4 py-1 text-[20px] text-[#209910] bg-[#A8EDAF]">
               Our Way
             </span>
 
@@ -53,20 +87,52 @@ export default function WhyDoingThis() {
             </h3>
 
             <ul className="space-y-3 text-[20px] text-gray-700">
-              <li className="flex gap-3">
-                <span className="text-green-600">✔</span>
+              <li className="flex gap-3 items-center">
+                <span className="text-green-600">
+                  <Image
+                    src="/gift/doing/tick1.png"
+                    alt="Check icon"
+                    width={1000}
+                    height={800}
+                    className="object-cover w-8"
+                  />
+                </span>
                 Experience our process risk-free
               </li>
-              <li className="flex gap-3">
-                <span className="text-green-600">✔</span>
+              <li className="flex gap-3 items-center">
+                <span className="text-green-600">
+                  <Image
+                    src="/gift/doing/tick1.png"
+                    alt="Check icon"
+                    width={1000}
+                    height={800}
+                    className="object-cover w-8"
+                  />
+                </span>
                 See exactly where you stand
               </li>
-              <li className="flex gap-3">
-                <span className="text-green-600">✔</span>
+              <li className="flex gap-3 items-center">
+                <span className="text-green-600">
+                  <Image
+                    src="/gift/doing/tick1.png"
+                    alt="Check icon"
+                    width={1000}
+                    height={800}
+                    className="object-cover w-8"
+                  />
+                </span>
                 Get a custom strategy built for you
               </li>
-              <li className="flex gap-3">
-                <span className="text-green-600">✔</span>
+              <li className="flex gap-3 items-center">
+                <span className="text-green-600">
+                  <Image
+                    src="/gift/doing/tick1.png"
+                    alt="Check icon"
+                    width={1000}
+                    height={800}
+                    className="object-cover w-8"
+                  />
+                </span>
                 Decide for yourself, no pressure
               </li>
             </ul>
@@ -74,19 +140,27 @@ export default function WhyDoingThis() {
         </div>
 
         {/* BOTTOM ADVANTAGE CARD */}
-        <div className="mt-12 rounded-2xl bg-gradient-to-br from-[#fff9f5] to-[#ffffff] p-10 shadow-lg">
+        <div className="mt-12 rounded-3xl bg-gradient-to-br from-[#F5F5F5] to-[#FFF7F3] p-10 shadow-lg">
           <div className="flex justify-center mb-4">
-            <span className="text-green-600 text-2xl">🛡️</span>
+            <span className="text-green-600 text-2xl">
+              <Image
+                    src="/gift/doing/tick2.png"
+                    alt="Check icon"
+                    width={1000}
+                    height={800}
+                    className="object-cover w-16"
+                  />
+            </span>
           </div>
 
-          <h4 className="font-semibold text-lg mb-2">
+          <h4 className="font-semibold text-[30px] mb-2">
             This is our competitive advantage.
           </h4>
 
-          <p className="text-sm text-gray-600 max-w-2xl mx-auto">
-            We&apos;re so confident in the quality of our work, we lead with free
-            value and let results speak for themselves. We&apos;re not after every
-            deal—we&apos;re after the right partnerships.
+          <p className="text-[20px] text-gray-600 max-w-7xl mx-auto">
+            We&apos;re so confident in the quality of our work, we lead with
+            free value and let results speak for themselves. We&apos;re not
+            after every deal—we&apos;re after the right partnerships.
           </p>
         </div>
       </div>
