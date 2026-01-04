@@ -27,7 +27,7 @@ const items = [
 
 export default function WhatYouWillReceive() {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-8 md:py-16">
       <div className="max-w-[1640px] mx-auto px-8">
         {/* SECTION TITLE */}
         <h2 className="text-[20px] lg:text-[36px] xl:text-[38px] font-bold text-center mb-16">
