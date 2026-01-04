@@ -92,7 +92,7 @@ const ResultsSection = () => {
                   <AiOutlineSafetyCertificate size={24} color="#FE641A" />
 
                   <span>
-                    <strong>47,000+</strong> YouTube views
+                    <strong>220+</strong>  qualified leads generated
                   </span>
                 </li>
 
@@ -100,7 +100,7 @@ const ResultsSection = () => {
                   <AiOutlineSafetyCertificate size={24} color="#FE641A" />
 
                   <span>
-                    <strong>55,000+</strong> organic impressions in 90 days
+                    <strong>$350,000+</strong>   projected case value
                   </span>
                 </li>
 
@@ -108,7 +108,7 @@ const ResultsSection = () => {
                   <AiOutlineSafetyCertificate size={24} color="#FE641A" />
 
                   <span>
-                    Ranked <strong>#1</strong> for competitive immigration terms
+                    <strong>Page-one rankings</strong>  for high-value keywords
                   </span>
                 </li>
               </ul>

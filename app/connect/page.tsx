@@ -5,6 +5,9 @@ import ResultsSection from "@/components/connect/ResultsSection";
 import TopMarquee from "@/components/connect/TopMarquee";
 import Header from "@/components/giftFromUs/Header";
 import React from "react";
+import SystemBlendsSection from "@/components/connect/SystemBlendsSection";
+import StrategySessionSection from "@/components/connect/StrategySessionSection";
+import FooterCTA from "@/components/giftFromUs/FooterCTA";
 
 const page = () => {
   return (
@@ -15,6 +18,9 @@ const page = () => {
       <ConnectCountUpSection />
       <LegalGrowthEngineSection />
       <ResultsSection />
+      <SystemBlendsSection />
+      <StrategySessionSection />
+      <FooterCTA/>
     </>
   );
 };
