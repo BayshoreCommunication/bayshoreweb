@@ -8,7 +8,7 @@ export default function FooterCTA() {
 
       <div className="container mx-auto px-4 py-16 text-center">
         {/* Heading */}
-        <h2 className="text-[#f97316] text-lg md:text-[24px] font-semibold">
+        <h2 className="text-[#f97316] text-2xl md:text-[24px] font-semibold">
           No strings attached. No hidden fees. Just real growth — delivered at your office.
         </h2>
 
