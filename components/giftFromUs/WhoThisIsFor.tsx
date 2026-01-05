@@ -1,3 +1,4 @@
+"use client"
 import { Scale, Briefcase, Stethoscope, Building2 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -18,17 +19,18 @@ type CardProps = {
   title: string;
   text: string;
   dotPosition?: string;
+  className?: string;
 };
 
-const Card = ({ icon: Icon, title, text, dotPosition }: CardProps) => (
-  <div className="relative max-w-[420px] rounded-2xl bg-gradient-to-br from-white to-[#fff5ef] p-8 shadow-xl mx-auto flex flex-col items-center">
+const Card = ({ icon: Icon, title, text, dotPosition, className = "" }: CardProps) => (
+  <div  className={`relative md:max-w-[420px]  rounded-2xl bg-gradient-to-br from-white to-[#fff5ef] p-8 shadow-xl mx-auto flex flex-col items-center ${className}`}>
     {dotPosition && <Dot className={dotPosition} />}
 
     <div className="mb-4 text-[#f97316] flex justify-center items-center">
       <Icon size={48} />
     </div>
 
-    <h3 className="mb-2 text-[22px] font-semibold tracking-wide text-gray-900 text-center">
+    <h3 className="mb-2 text-[18px] md:text-[22px] font-semibold tracking-wide text-gray-900 text-center">
       {title}
     </h3>
 
@@ -37,6 +39,12 @@ const Card = ({ icon: Icon, title, text, dotPosition }: CardProps) => (
     </p>
   </div>
 );
+
+
+const handleScrollToCalendly = () => {
+    const section = document.getElementById("calendly");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
 
 /* ================= MAIN SECTION ================= */
 export default function WhoThisIsFor() {
@@ -71,7 +79,7 @@ export default function WhoThisIsFor() {
             This package is tailored for established businesses ready to level up.
           </p>
 
-          <button className="mt-6 rounded-md bg-[#f97316] px-6 py-3 text-white font-medium shadow hover:bg-orange-600 transition">
+          <button onClick={handleScrollToCalendly} className="mt-6 rounded-md bg-[#f97316] px-6 py-3 text-white font-medium shadow hover:bg-orange-600 transition">
             Schedule Call
           </button>
         </div>
@@ -103,8 +111,8 @@ export default function WhoThisIsFor() {
       </div>
 
       {/* ================= MOBILE ================= */}
-      <div className="lg:hidden max-w-md mx-auto text-center space-y-8">
-        <h2 className="text-[28px] font-semibold">
+      <div className="lg:hidden  mx-auto text-center space-y-8">
+        <h2 className="text-[24px] font-semibold">
           <span className="text-[#f97316]">Who</span> This Is For
         </h2>
 
@@ -116,27 +124,31 @@ export default function WhoThisIsFor() {
           icon={Scale}
           title="LAW FIRMS"
           text="Build client trust with professional presence and strategic positioning."
+          className="w-full "
         />
 
         <Card
           icon={Stethoscope}
           title="MEDICAL PRACTICES & MED SPAS"
           text="Establish expertise and attract quality patients seeking trusted care."
+          className="w-full"
         />
 
         <Card
           icon={Briefcase}
           title="LOCAL SERVICE BUSINESSES"
           text="Stand out from competitors with professional branding and local visibility."
+          className="w-full"
         />
 
         <Card
           icon={Building2}
           title="ESTABLISHED SMBS (NOT STARTUPS)"
           text="Optimize growth channels and capture untapped market opportunities."
+          className="w-full"
         />
 
-        <button className="w-full rounded-md bg-[#f97316] px-6 py-3 text-white font-medium">
+        <button onClick={handleScrollToCalendly}  className="w-full rounded-md bg-[#f97316] px-6 py-3 text-white font-medium">
           Schedule Call
         </button>
       </div>

@@ -53,11 +53,11 @@ export default function WhatYouWillReceive() {
               </div>
 
               {/* CONTENT */}
-              <div className="p-6">
-                <h3 className="text-[30px] font-semibold  mb-2">
+              <div className="p-8">
+                <h3 className="text-[24px] md:text-[30px] font-semibold  mb-2">
                   {item.title}
                 </h3>
-                <p className="text-gray-600 mb-4 text-[20px]">
+                <p className="text-gray-600 mb-4 text-[14px] md:text-[20px]">
                   {item.description}
                 </p>
 

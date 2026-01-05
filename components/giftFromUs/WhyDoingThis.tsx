@@ -20,11 +20,11 @@ export default function WhyDoingThis() {
               The Old Way
             </span>
 
-            <h3 className="font-semibold text-[30px] mb-4">
+            <h3 className="font-semibold text-[24px] md:text-[30px] mb-4">
               The Typical Agency Model
             </h3>
 
-            <ul className="space-y-3 text-[20px] text-gray-700">
+            <ul className="space-y-3 text-[14px] md:text-[20px] text-gray-700">
               <li className="flex gap-3 items-center">
                 <span className="text-red-500">
                   <Image
@@ -82,11 +82,11 @@ export default function WhyDoingThis() {
               Our Way
             </span>
 
-            <h3 className="font-semibold text-[30px] mb-4">
+            <h3 className="font-semibold text-[24px] md:text-[30px] mb-4">
               The Typical Agency Model
             </h3>
 
-            <ul className="space-y-3 text-[20px] text-gray-700">
+            <ul className="space-y-3 text-[14px] md:text-[20px] text-gray-700">
               <li className="flex gap-3 items-center">
                 <span className="text-green-600">
                   <Image
@@ -153,11 +153,11 @@ export default function WhyDoingThis() {
             </span>
           </div>
 
-          <h4 className="font-semibold text-[30px] mb-2">
+          <h4 className="font-semibold text-[18px] md:text-[30px] mb-2">
             This is our competitive advantage.
           </h4>
 
-          <p className="text-[20px] text-gray-600 max-w-7xl mx-auto">
+          <p className="text-[14px] md:text-[20px] text-gray-600 max-w-7xl mx-auto">
             We&apos;re so confident in the quality of our work, we lead with
             free value and let results speak for themselves. We&apos;re not
             after every deal—we&apos;re after the right partnerships.
