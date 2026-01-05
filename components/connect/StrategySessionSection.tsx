@@ -4,7 +4,7 @@ import { InlineWidget } from "react-calendly";
 
 export default function StrategySessionSection() {
   return (
-    <section className="w-full bg-white px-8 py-8 md:py-16">
+    <section id="calendly" className="w-full bg-white px-8 py-8 md:py-16">
       <div className="max-w-[1200px] mx-auto text-center">
         {/* Heading */}
         <h2 className="text-[32px] lg:text-[48px] font-bold text-black">
@@ -58,7 +58,7 @@ export default function StrategySessionSection() {
         {/* Calendly */}
         <div className="mt-12 mb-16 w-full max-w-[800px] mx-auto rounded-xl overflow-hidden h-[800px]">
           <InlineWidget
-            url="https://calendly.com/bayshorec/45min"
+            url="https://calendly.com/bayshorec/complimentary-growth-session-on-site"
             styles={{
               width: "100%",
               height: "100%",

@@ -29,7 +29,7 @@ const Calandy = () => {
           className="m-10 mb-16 w-full max-w-[800px] mx-auto rounded-xl h-[800px] overflow-hidden"
         >
           <InlineWidget
-            url="https://calendly.com/bayshorec/45min"
+            url="https://calendly.com/bayshorec/complimentary-growth-session-on-site"
             styles={{
               width: "100%",
               height: "100%",

@@ -5,6 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const ConnectHeroSection = () => {
+  const handleScrollToCalendly = () => {
+    const section = document.getElementById("calendly");
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div>
       {/* ================= HERO ================= */}
@@ -42,13 +46,13 @@ const ConnectHeroSection = () => {
                   platforms, and high-intent search moments.
                 </p>
 
-                <Link
-                  href="/contact"
+                <button
+                  onClick={handleScrollToCalendly}
                   className="group relative inline-flex items-center gap-2 px-14 py-6 rounded-full
              overflow-hidden bg-[#FE641A] text-white font-semibold w-fit mt-4 hover:scale-105 transition duration-300"
                 >
                   Schedule a Private Strategy Session
-                </Link>
+                </button>
               </div>
             </div>
           </div>
