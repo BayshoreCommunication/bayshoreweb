@@ -152,13 +152,13 @@ const ClientLogos = () => {
         height={400}
         className="w-[12rem]"
       />
-      <Image
+      {/* <Image
         src="/assets/client-logo/fitly-logo.png"
         alt="butterfly"
         width={400}
         height={400}
         className="w-[8rem] h-[5.5rem]"
-      />
+      /> */}
       <Image
         src="/assets/client-logo/letmates-logo.png"
         alt="butterfly"
@@ -166,13 +166,13 @@ const ClientLogos = () => {
         height={400}
         className="w-[12rem]"
       />
-      <Image
+       {/* <Image
         src="/assets/client-logo/sheba-logo.png"
         alt="butterfly"
         width={400}
         height={400}
         className="w-[12rem]"
-      />
+      />  */}
       <Image
         src="/assets/client-logo/carter-injury-law.png"
         alt=""
@@ -209,19 +209,72 @@ const ClientLogos = () => {
         className="w-[12rem]"
       />
       <Image
-        src="/assets/client-logo/tampa-motion.png"
+        src="/assets/client-logo/Tampa-Motion1.png"
+        alt=""
+        width={400}
+        height={400}
+        className="w-[12rem]"
+      />
+      {/* <Image
+        src="/assets/client-logo/uncle.jpg"
+        alt=""
+        width={400}
+        height={400}
+        className="w-[12rem]"
+      /> */}
+      <Image
+        src="/assets/client-logo/bully-projects.png"
+        alt=""
+        width={400}
+        height={400}
+        className="w-[12rem]"
+      />
+
+
+      <Image
+        src="/assets/client-logo/Golden-Wealth.png"
         alt=""
         width={400}
         height={400}
         className="w-[12rem]"
       />
       <Image
-        src="/assets/client-logo/uncle.jpg"
+        src="/assets/client-logo/Hess@2x.png"
         alt=""
         width={400}
         height={400}
         className="w-[12rem]"
       />
+      <Image
+        src="/assets/client-logo/MC-Culloch-Law.png"
+        alt=""
+        width={400}
+        height={400}
+        className="w-[12rem]"
+      />
+      <Image
+        src="/assets/client-logo/NOVASTRA-OFFICIAL.png"
+        alt=""
+        width={400}
+        height={400}
+        className="w-[12rem]"
+      />
+      <Image
+        src="/assets/client-logo/Prestige.png"
+        alt="Prestige Logo"
+        width={400}
+        height={400}
+        className="w-[12rem]"
+      />
+      
+      <Image
+        src="/assets/client-logo/Tripathi-Vongsyprasom.png"
+        alt=""
+        width={400}
+        height={400}
+        className="w-[12rem]"
+      />
+      
     </div>
   );
 };

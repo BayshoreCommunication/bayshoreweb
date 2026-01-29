@@ -10,13 +10,18 @@ import { motion } from "framer-motion";
 
 const slides = [
   {
+    title: "Carter Injury Law",
+    desc: "Carter Injury Law had a strong reputation locally but wasn’t fully visible online. Our team revamped their website, fixed key SEO issues, and strengthened their social presence with informative content. Within a month, traffic surged, client inquiries multiplied, and the firm began consistently booking high-value injury cases every week.",
+    videoId: "wjxj_eQzI1M",
+  },
+  {
     title: "Trip Law",
-    desc: "Since partnering with Trip Law in 2016, we’ve helped grow the practice from just $60,000 to over $2.3 million in revenue—all without spending a single dollar on advertising. We now consistently bring in 20+ high-value client appointments each month, averaging $5,000 per case. At this point, client acquisition isn’t the challenge anymore—it’s keeping up with the demand.",
+    desc: "Since partnering with Trip Law in 2016, we’ve helped grow the practice from just $60,000 to over $2.3 million in revenue all without spending a single dollar on advertising. We now consistently bring in 20+ high value client appointments each month, averaging $5,000 per case. At this point, client acquisition isn’t the challenge anymore it’s keeping up with the demand.",
     videoId: "RVit6poGLRs",
   },
   {
     title: "Apex Advisor",
-    desc: "Apex had a strong brand presence, but poor SEO analysis from another agency left them invisible on Google. Our video production team built a powerful social media presence, driving trust through informative video marketing. Meanwhile, We identified SEO errors, optimized the site, and ranked it in 25 days, leading to 9x growth in consumer appointments and XXXX site visits.",
+    desc: "Apex had a strong brand presence, but poor SEO analysis from another agency left them invisible on Google. Our video production team built a powerful social media presence, driving trust through informative video marketing. Meanwhile, We identified SEO errors, optimized the site, and ranked it in 25 days, leading to 9x growth in consumer appointments.",
     videoId: "ohyUTzLiLbI",
   },
   {
@@ -24,6 +29,12 @@ const slides = [
     desc: "Despite having a brilliant idea, Catflix had trouble getting noticed online. To catapult their brand to the top of search results, our team created a high-performance website, optimized blogs for SEO, and built a content ranking plan. In just a few weeks, their blog entries started dominating industry terms, resulting in a spike in organic traffic and customer interaction.",
     videoId: "iqHA7By9OAI",
   },
+  {
+    title: "Tampa Motion",
+    desc: "Opening Tampa Motion from scratch showed me that standard marketing was not enough. Bayshore supported us through every step of the first six months, from building a clear, professional website to managing our social media with consistent content. On-site video work felt natural and professional. The team stayed involved and truly cared about our growth and I would recommend Bayshore to any business looking for a long-term marketing partner.",
+    videoId: "oxR0dFvDyeQ",
+  },
+  
 ];
 
 const testimonials = [
