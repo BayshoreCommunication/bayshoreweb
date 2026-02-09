@@ -1,9 +1,8 @@
 import Image from "next/image";
-import React from "react";
-import SectionLayout from "../SectionLayout";
-import { IoCallOutline } from "react-icons/io5";
 import { GrLocation } from "react-icons/gr";
+import { IoCallOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
+import SectionLayout from "../SectionLayout";
 
 const CPFooter = () => {
   return (
@@ -56,7 +55,7 @@ const CPFooter = () => {
                   </span>
                 </div>
                 <p className="text-[16px] md:text-[18px] lg:text-[22px] text-white">
-                  1301 34th ST South, St. Petersburg FL 33711
+                  1211 Tech Blvd, Tampa, FL 33619
                 </p>
               </div>
 

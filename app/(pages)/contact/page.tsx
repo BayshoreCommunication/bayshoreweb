@@ -25,7 +25,7 @@ address = [
   {
     title: "Tampa Office",
     phone: "+1 (509) 592-1745",
-    address: "1301 34th ST South, St. Petersburg FL 33711",
+    address: "1211 Tech Blvd, Tampa, FL 33619",
     email: "neel@bayshorecommunication.org",
   },
   {
