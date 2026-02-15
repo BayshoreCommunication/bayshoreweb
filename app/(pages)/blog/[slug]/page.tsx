@@ -125,7 +125,7 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
           <div className="flex flex-col items-center justify-center min-h-[400px]">
             <h1 className="heading-primary text-center">Blog Not Found</h1>
             <p className="text-base text-center max-w-[622px] mx-auto mt-4">
-              The blog post you're looking for doesn't exist or has been removed.
+              The blog post you&apos;re looking for doesn&apos;t exist or has been removed.
             </p>
             <Link href="/blog" className="mt-6">
               <button className="text-gray-500 font-semibold text-small border border-gray-800 rounded-full p-5 hover:!bg-[#FE6F1F] hover:text-white hover:border-[#FE6F1F]">
