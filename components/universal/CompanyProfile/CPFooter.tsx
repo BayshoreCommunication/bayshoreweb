@@ -55,7 +55,7 @@ const CPFooter = () => {
                   </span>
                 </div>
                 <p className="text-[16px] md:text-[18px] lg:text-[22px] text-white">
-                  1211 Tech Blvd, Tampa, FL 33619
+                  1211 Tech Blvd Suite 120, Tampa, FL 33619, United States
                 </p>
               </div>
 
