@@ -1,14 +1,9 @@
 import Consultaion from "@/components/universal/Consultaion";
-import { HeroWithImage } from "@/components/universal/Hero";
-import HeroLeft from "@/components/universal/HeroLeft";
 import SectionLayout from "@/components/universal/SectionLayout";
+import GetAllBlogData from "@/lib/GetAllBlogData";
+import parser from "html-react-parser";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-import parser from "html-react-parser";
-import AboutUs from "@/components/universal/AboutUs";
-import GetAllBlogData from "@/lib/GetAllBlogData";
-import parse from "html-react-parser";
 
 interface BlogPost {
   slug: string;
@@ -95,9 +90,54 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
   const blogData = await GetAllBlogData();
 
   const parameter = params.slug;
+  
+  // Handle API error or no data
+  if (!blogData?.data || blogData.data.length === 0) {
+    return (
+      <>
+        <SectionLayout bg="">
+          <div className="flex flex-col items-center justify-center min-h-[400px]">
+            <h1 className="heading-primary text-center">Blog Not Found</h1>
+            <p className="text-base text-center max-w-[622px] mx-auto mt-4">
+              {blogData?.error || "Unable to load blog data. Please try again later."}
+            </p>
+            <Link href="/blog" className="mt-6">
+              <button className="text-gray-500 font-semibold text-small border border-gray-800 rounded-full p-5 hover:!bg-[#FE6F1F] hover:text-white hover:border-[#FE6F1F]">
+                Back to Blogs
+              </button>
+            </Link>
+          </div>
+        </SectionLayout>
+        <Consultaion />
+      </>
+    );
+  }
+
   const indvblog = blogData?.data?.filter(
     (elem: any) => elem.slug === parameter
   );
+
+  // Handle blog not found
+  if (!indvblog || indvblog.length === 0) {
+    return (
+      <>
+        <SectionLayout bg="">
+          <div className="flex flex-col items-center justify-center min-h-[400px]">
+            <h1 className="heading-primary text-center">Blog Not Found</h1>
+            <p className="text-base text-center max-w-[622px] mx-auto mt-4">
+              The blog post you're looking for doesn't exist or has been removed.
+            </p>
+            <Link href="/blog" className="mt-6">
+              <button className="text-gray-500 font-semibold text-small border border-gray-800 rounded-full p-5 hover:!bg-[#FE6F1F] hover:text-white hover:border-[#FE6F1F]">
+                Back to Blogs
+              </button>
+            </Link>
+          </div>
+        </SectionLayout>
+        <Consultaion />
+      </>
+    );
+  }
 
   const today = new Date();
   const dateToday = `${today.getDate()} / ${

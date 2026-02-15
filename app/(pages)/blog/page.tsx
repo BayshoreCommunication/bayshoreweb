@@ -1,15 +1,12 @@
+import Reveal from "@/components/motion/Reveal";
 import Consultaion from "@/components/universal/Consultaion";
 import { HeroWithImage } from "@/components/universal/Hero";
-import HeroLeft from "@/components/universal/HeroLeft";
 import SectionLayout from "@/components/universal/SectionLayout";
-import { Metadata } from "next";
-import Head from "next/head";
-import Link from "next/link";
-import Image from "next/image";
-import React from "react";
-import parser from "html-react-parser";
-import Reveal from "@/components/motion/Reveal";
 import GetAllBlogData from "@/lib/GetAllBlogData";
+import parser from "html-react-parser";
+import { Metadata } from "next";
+import Image from "next/image";
+import Link from "next/link";
 
 let hero: {
   heading: string;
@@ -44,6 +41,36 @@ export const metadata: Metadata = {
 
 const page = async () => {
   const blogData = await GetAllBlogData();
+
+  // Handle error or empty data
+  if (!blogData?.data || blogData.data.length === 0) {
+    return (
+      <>
+        <Reveal>
+          <HeroWithImage
+            heading={hero[0].heading}
+            description={hero[0].description}
+            imgLink="/assets/blog/blog-hero-img.svg"
+          />
+        </Reveal>
+
+        <SectionLayout bg="">
+          <div className="flex flex-col items-center justify-center min-h-[400px]">
+            <h2 className="heading-secondary text-center">
+              {blogData?.error ? "Unable to Load Blogs" : "No Blogs Available"}
+            </h2>
+            <p className="text-base !text-center max-w-[622px] mx-auto mt-4">
+              {blogData?.error || "There are no blog posts available at the moment. Please check back later."}
+            </p>
+          </div>
+        </SectionLayout>
+
+        <Reveal>
+          <Consultaion />
+        </Reveal>
+      </>
+    );
+  }
 
   return (
     <>

@@ -2,6 +2,7 @@
 const nextConfig = {
   env: {
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
+    NEXT_PUBLIC_BLOG_API_URL: process.env.NEXT_PUBLIC_BLOG_API_URL,
   },
 
   // Workaround for V8 invalid size error on Windows/Node 20 with Next 13.x
@@ -33,6 +34,11 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "res.cloudinary.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "backend-bayshore.vercel.app",
         port: "",
       },
       {
