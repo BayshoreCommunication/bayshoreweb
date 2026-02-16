@@ -1,6 +1,7 @@
 import Reveal from "@/components/motion/Reveal";
 import Consultaion from "@/components/universal/Consultaion";
 import { HeroWithImage } from "@/components/universal/Hero";
+import Pagination from "@/components/universal/Pagination";
 import SectionLayout from "@/components/universal/SectionLayout";
 import GetAllBlogData from "@/lib/GetAllBlogData";
 import parser from "html-react-parser";
@@ -39,8 +40,9 @@ export const metadata: Metadata = {
   // },
 };
 
-const page = async () => {
-  const blogData = await GetAllBlogData();
+const page = async ({ searchParams }: { searchParams: { page?: string } }) => {
+  const currentPage = Number(searchParams?.page) || 1;
+  const blogData = await GetAllBlogData({ page: currentPage, limit: 10 });
 
   // Handle error or empty data
   if (!blogData?.data || blogData.data.length === 0) {
@@ -111,6 +113,15 @@ const page = async () => {
               ))}
           </div>
         </div>
+
+        {/* Pagination */}
+        {blogData?.pagination && (
+          <Pagination
+            currentPage={blogData.pagination.currentPage}
+            totalPages={blogData.pagination.totalPages}
+            totalBlogs={blogData.pagination.totalBlogs}
+          />
+        )}
       </SectionLayout>
 
       {/* <SectionLayout bg="bg-[#F4F4F4]">

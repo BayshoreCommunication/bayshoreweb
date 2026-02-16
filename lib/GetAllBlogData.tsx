@@ -1,18 +1,31 @@
+interface BlogDataParams {
+  page?: number;
+  limit?: number;
+}
+
+interface PaginationMetadata {
+  currentPage: number;
+  totalPages: number;
+  totalBlogs: number;
+  limit: number;
+  hasNextPage: boolean;
+  hasPrevPage: boolean;
+}
+
 interface BlogData {
   data?: any[];
+  pagination?: PaginationMetadata;
   error?: string;
 }
 
-export default async function GetAllBlogData(): Promise<BlogData> {
+export default async function GetAllBlogData(params?: BlogDataParams): Promise<BlogData> {
+  const { page = 1, limit = 10 } = params || {};
   const apiUrl = process.env.NEXT_PUBLIC_BLOG_API_URL || 'https://backend-bayshore.vercel.app';
-  const endpoint = `${apiUrl}/site/blog`;
+  const endpoint = `${apiUrl}/site/blog?page=${page}&limit=${limit}`;
 
   try {
     const response = await fetch(endpoint, {
-      next: { 
-        revalidate: 300, // 5 minutes cache
-        tags: ['blog-data'] 
-      },
+      cache: 'no-store', // Disable caching since response is over 2MB
       headers: {
         'Content-Type': 'application/json',
       },
