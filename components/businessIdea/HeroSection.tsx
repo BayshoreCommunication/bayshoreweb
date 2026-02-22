@@ -1,11 +1,11 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { motion } from "framer-motion";
+import { FaPeopleLine } from "react-icons/fa6";
 import { IoStarOutline } from "react-icons/io5";
 import { TfiMenuAlt } from "react-icons/tfi";
-import { FaPeopleLine } from "react-icons/fa6";
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -219,12 +219,12 @@ export default function Home() {
             </div>
             {/* CTA Button */}
             <div className="w-full h-[100px] sm:h-[180px]"><motion.div
-              className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
+              className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5000ms] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
               variants={item}
             >
               <button
                 onClick={scrollToCalendly}
-                className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
+                className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-[5000ms] px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
               >
                 <span className="text-2xl font-semibold">Schedule a Call Now</span>
 

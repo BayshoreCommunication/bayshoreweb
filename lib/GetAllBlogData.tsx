@@ -19,9 +19,17 @@ interface BlogData {
 }
 
 export default async function GetAllBlogData(params?: BlogDataParams): Promise<BlogData> {
-  const { page = 1, limit = 10 } = params || {};
+  const { page, limit } = params || {};
   const apiUrl = process.env.NEXT_PUBLIC_BLOG_API_URL || 'https://backend-bayshore.vercel.app';
-  const endpoint = `${apiUrl}/site/blog?page=${page}&limit=${limit}`;
+  
+  let endpoint = `${apiUrl}/site/blog`;
+  const queryParams = [];
+  if (typeof page === "number") queryParams.push(`page=${page}`);
+  if (typeof limit === "number") queryParams.push(`limit=${limit}`);
+  
+  if (queryParams.length > 0) {
+    endpoint += `?${queryParams.join('&')}`;
+  }
 
   try {
     const response = await fetch(endpoint, {

@@ -1,12 +1,11 @@
 "use client";
 
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/pagination";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import { Autoplay, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 const slides = [
   {
@@ -354,12 +353,12 @@ export default function ResultsSection() {
         </div>
         {/* CTA Button */}
         <div className="w-full h-[100px] sm:h-[180px] flex justify-center items-center  md:mt-[-30px] mt-[-10px]"><motion.div
-          className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5s] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
+          className="mx-auto justify-center mt-4  border-[1px] border-[#FE641A] p-3 inline-block rounded-full transition-all duration-[5000ms] ease-out hover:border-[8px] hover:border-transparent hover:p-0"
           variants={item}
         >
           <button
             onClick={scrollToCalendly}
-            className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-5000 px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
+            className="bg-[#FE641A] text-white rounded-full text-xl font-semibold shadow-xl transition-all duration-[5000ms] px-8 py-4 sm:px-12 sm:py-6 flex flex-col items-center text-center"
           >
             <span className="text-2xl font-semibold">Schedule a Call Now</span>
 

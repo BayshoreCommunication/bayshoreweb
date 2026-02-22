@@ -22,6 +22,7 @@ hero = [
 ];
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.bayshorecommunication.com"),
   title: "Blog-Bayshore Communication",
   description:
     "Learn communication tips from our Bayshore experts. Read our blogs on web-mobile app design, content writing, social media marketing, video production, and more.",
@@ -41,8 +42,10 @@ export const metadata: Metadata = {
 };
 
 const page = async ({ searchParams }: { searchParams: { page?: string } }) => {
-  const currentPage = Number(searchParams?.page) || 1;
-  const blogData = await GetAllBlogData({ page: currentPage, limit: 10 });
+  const parsedPage = Number(searchParams?.page);
+  const currentPage = Number.isFinite(parsedPage) && parsedPage > 0 ? parsedPage : 1;
+  const blogsPerPage = 10;
+  const blogData = await GetAllBlogData({ page: currentPage, limit: blogsPerPage });
 
   // Handle error or empty data
   if (!blogData?.data || blogData.data.length === 0) {
@@ -101,12 +104,7 @@ const page = async ({ searchParams }: { searchParams: { page?: string } }) => {
         </Reveal>
         <div className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] grid-flow-row-dense">
-            {blogData?.data
-              ?.filter(
-                (blog: any) =>
-                  blog?.published === true && blog?.category[0] !== "Job Post"
-              )
-              ?.map((el: any, i: number) => (
+            {blogData?.data?.map((el: any, i: number) => (
                 <div key={i} className="h-fit">
                   <Blog el={el} i={i} />
                 </div>
@@ -161,8 +159,8 @@ const Blog = ({ el, i }: any) => {
         <div>
           <div className="relative mb-2">
             <Image
-              src={el.featuredImage.image.url}
-              alt="marketing"
+              src={el?.featuredImage?.image?.url || "/assets/blog/blog-hero-img.svg"}
+              alt={el?.title || "marketing"}
               width={800}
               height={800}
               className="w-full h-auto"
