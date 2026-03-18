@@ -9,7 +9,7 @@ import LawFirmMarketingFinalCTA from "./LawFirmMarketingFinalCTA";
 
 const LeftSide = () => {
   return (
-    <div className="max-w-[1040px] mx-auto px-4">
+    <div className="max-w-[940px] mx-auto px-4">
       <LawFirmMarketing />
       <LawFirmMarketingTwo />
       <LawFirmMarketingExtra />

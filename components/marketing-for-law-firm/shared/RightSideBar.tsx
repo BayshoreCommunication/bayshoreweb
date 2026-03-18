@@ -1,19 +1,33 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import GetAllBlogData from "@/lib/GetAllBlogData";
+import { services } from "@/components/unique/services/Service";
+import Form from "@/components/unique/contact/Form";
 
-export default async function RightSideBar() {
-  const blogData = await GetAllBlogData({ page: 1, limit: 10 });
+export default function RightSideBar() {
+  const [blogs, setBlogs] = useState<any[]>([]);
 
-  const blogs =
-    blogData?.data?.filter(
-      (blog: any) =>
-        blog?.published === true && blog?.category?.[0] !== "Job Post",
-    ) || [];
+  useEffect(() => {
+    const fetchBlogs = async () => {
+      const blogData = await GetAllBlogData({ page: 1, limit: 10 });
+
+      const filtered =
+        blogData?.data?.filter(
+          (blog: any) =>
+            blog?.published === true && blog?.category?.[0] !== "Job Post",
+        ) || [];
+
+      setBlogs(filtered);
+    };
+
+    fetchBlogs();
+  }, []);
 
   return (
-    <aside className="w-full max-w-[400px] space-y-8 pt-0 md:pt-16 mb-8">
+    <aside className="w-full max-w-[450px] space-y-8 pt-0 md:pt-16 mb-8">
       {/* Tampa Office */}
       <div className="bg-gray-100 rounded-lg p-6 text-center">
         <h3 className="text-2xl md:text-4xl font-bold mb-6">
@@ -81,6 +95,47 @@ export default async function RightSideBar() {
         </div>
       </div>
 
+      {/* 🛠 Our Services */}
+      <div className="bg-white rounded-lg p-6 shadow-md">
+        <h3 className="text-2xl md:text-4xl font-bold mb-6 text-left">
+          Our Services
+        </h3>
+
+        <div className="space-y-4">
+          {services.slice(0, 10).map((service: any, index: number) => (
+            <Link
+              key={index}
+              href={`/our-services/${service?.url
+                .replace(/\s+/g, "-")
+                .toLowerCase()}`}
+              className="flex gap-4 items-center group"
+            >
+              <Image
+                src={service?.heroImg}
+                alt={service?.title}
+                width={100}
+                height={80}
+                className="w-[90px] h-[70px] object-cover rounded"
+              />
+
+              <p className="text-xl md:text-2xl font-medium group-hover:text-primary transition line-clamp-2">
+                {service?.title}
+              </p>
+            </Link>
+          ))}
+        </div>
+
+        {/* View All */}
+        <div className="mt-6 text-center">
+          <Link
+            href="/our-services"
+            className="inline-block bg-primary text-white px-5 py-2 rounded-md font-semibold hover:bg-orange-700 transition"
+          >
+            View All Services →
+          </Link>
+        </div>
+      </div>
+
       {/* Asia Office */}
       <div className="bg-gray-100 rounded-lg p-6 text-center">
         <h3 className="text-2xl md:text-4xl font-bold mb-6">Our Asia Office</h3>
@@ -110,6 +165,17 @@ export default async function RightSideBar() {
         >
           GET DIRECTIONS
         </a>
+      </div>
+      {/* 📩 Contact Form (Top for conversion) */}
+      <div className="bg-white rounded-lg p-6 shadow-md sticky top-24">
+        <h3 className="text-2xl md:text-3xl font-bold mb-2 text-left">
+          Free Consultation
+        </h3>
+        <p className="text-sm text-gray-500 mb-4">
+          Get a free quote within 24 hours 🚀
+        </p>
+
+        <Form />
       </div>
     </aside>
   );
