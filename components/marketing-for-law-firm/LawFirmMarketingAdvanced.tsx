@@ -1,3 +1,5 @@
+import Consultaion from "../universal/Consultaion";
+
 export default function LawFirmMarketingAdvanced() {
   return (
     <div className="space-y-10 mb-6">
@@ -75,7 +77,10 @@ export default function LawFirmMarketingAdvanced() {
           study illustrates that trajectory: from $60,000 to $2.3 million in
           revenue, entirely through organic systems built over time.
         </p>
-
+        {/* CTA BUTTON  */}
+        <div className=" bg-[#F5F5F5] rounded-xl my-8">
+          <Consultaion />
+        </div>
         <h3 className="text-[18px] md:text-[24px] font-semibold">
           Why Patience Is a Strategic Advantage
         </h3>
@@ -212,9 +217,9 @@ export default function LawFirmMarketingAdvanced() {
         <p className="text-[14px] md:text-[18px] text-gray-800">
           The law firms that achieve the most significant growth with Bayshore
           Communication are the ones that commit to the long-term relationship
-          and allow the strategy to compound. The agency&rsquo;s best results do not
-          come in month three, they come in month 12, month 18, month 24. The
-          firms willing to trust a well-built organic strategy through the
+          and allow the strategy to compound. The agency&rsquo;s best results do
+          not come in month three, they come in month 12, month 18, month 24.
+          The firms willing to trust a well-built organic strategy through the
           growth curve end up with a market position that no ad spend from a
           competitor can displace quickly. That is what a real marketing agency
           for lawyers builds toward and it is why the best clients stay for
@@ -245,7 +250,10 @@ export default function LawFirmMarketingAdvanced() {
           an attorney converts far more efficiently than building awareness with
           an audience that may never need legal services.
         </p>
-
+        {/* CTA BUTTON  */}
+        <div className=" bg-[#F5F5F5] rounded-xl my-8">
+          <Consultaion />
+        </div>
         <h3 className="text-[18px] md:text-[24px] font-semibold">
           Why Mobile Optimization Is No Longer Optional
         </h3>

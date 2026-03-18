@@ -1,3 +1,5 @@
+import Consultaion from "../universal/Consultaion";
+
 export default function LawFirmMarketingFinalCTA() {
   return (
     <div className="space-y-10 mb-6">
@@ -70,9 +72,9 @@ export default function LawFirmMarketingFinalCTA() {
           to both. Bayshore Communication starts every new client relationship
           with a strategic assessment before recommending any services. That
           assessment identifies the highest-leverage opportunities specific to
-          the firm&rsquo;s market, practice areas, and competitive position and the
-          service plan that follows reflects those specific opportunities rather
-          than a preset menu.
+          the firm&rsquo;s market, practice areas, and competitive position and
+          the service plan that follows reflects those specific opportunities
+          rather than a preset menu.
         </p>
 
         <h3 className="text-[18px] md:text-[24px] font-semibold">
@@ -122,7 +124,10 @@ export default function LawFirmMarketingFinalCTA() {
           execution and full-service partnerships to companies that want
           everything handled.
         </p>
-
+        {/* CTA BUTTON  */}
+        <div className=" bg-[#F5F5F5] rounded-xl my-8">
+          <Consultaion />
+        </div>
         <h3 className="text-[18px] md:text-[24px] font-semibold">
           What a Genuine Marketing Audit Reveals
         </h3>

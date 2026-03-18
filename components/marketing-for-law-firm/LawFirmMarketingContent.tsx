@@ -1,3 +1,5 @@
+import Consultaion from "../universal/Consultaion";
+
 export default function LawFirmMarketingContent() {
   return (
     <div className="max-w-[1440px] mx-auto text-left px-4 pb-6 space-y-10">
@@ -8,9 +10,10 @@ export default function LawFirmMarketingContent() {
         </h2>
 
         <p className="text-[14px] md:text-[18px] text-gray-800">
-          In a crowded legal market, the firms that win aren&rsquo;t always the best
-          lawyers. They&rsquo;re the ones who are most visible and trustworthy, and
-          that&rsquo;s a marketing problem with a marketing solution.
+          In a crowded legal market, the firms that win aren&rsquo;t always the
+          best lawyers. They&rsquo;re the ones who are most visible and
+          trustworthy, and that&rsquo;s a marketing problem with a marketing
+          solution.
         </p>
 
         <h3 className="text-[18px] md:text-[24px] font-semibold">
@@ -23,8 +26,8 @@ export default function LawFirmMarketingContent() {
           firms competing for the same searches. Over time, law firms that set
           themselves apart from the competition by creating unique content,
           getting real reviews, and finding a unique niche in their market pull
-          ahead because their presence grows while everyone else&rsquo;s stays flat.
-          Bayshore Communication builds that differentiated presence
+          ahead because their presence grows while everyone else&rsquo;s stays
+          flat. Bayshore Communication builds that differentiated presence
           deliberately, starting with a clear understanding of what makes each
           firm different and worthy of trust.
         </p>
@@ -71,7 +74,10 @@ export default function LawFirmMarketingContent() {
           study portfolio that shows what that approach produces when executed
           over time.
         </p>
-
+        {/* CTA BUTTON  */}
+        <div className=" bg-[#F5F5F5] rounded-xl my-8">
+          <Consultaion />
+        </div>
         <h3 className="text-[18px] md:text-[24px] font-semibold">
           Why Long-Term Partnerships Produce the Best Results
         </h3>
@@ -81,10 +87,10 @@ export default function LawFirmMarketingContent() {
           authority accumulates over months. The best results from organic
           marketing come from putting in consistent, compounding effort over
           time, not from switching agencies every year and starting the strategy
-          over from scratch. Bayshore Communication&rsquo;s clients who commit to
-          long-term partnerships are the ones who achieve the most significant
-          growth. Clients stick with the agencies that get them the best
-          results, not because of a contract, but because the results keep
+          over from scratch. Bayshore Communication&rsquo;s clients who commit
+          to long-term partnerships are the ones who achieve the most
+          significant growth. Clients stick with the agencies that get them the
+          best results, not because of a contract, but because the results keep
           getting better.
         </p>
       </section>
@@ -230,6 +236,10 @@ export default function LawFirmMarketingContent() {
           on the role advertising should play within a broader organic-first
           strategy, not as a replacement for it.
         </p>
+        {/* CTA BUTTON  */}
+        <div className=" bg-[#F5F5F5] rounded-xl my-8">
+          <Consultaion />
+        </div>
       </section>
     </div>
   );

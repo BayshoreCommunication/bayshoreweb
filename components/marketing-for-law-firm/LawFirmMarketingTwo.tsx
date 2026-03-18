@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Count from "../Count";
 import SectionLayout from "../universal/SectionLayout";
+import Consultaion from "../universal/Consultaion";
 
 export default function LawFirmMarketingTwo() {
   return (
@@ -117,7 +118,10 @@ export default function LawFirmMarketingTwo() {
           else&apos;s network or Google&apos;s ad auction.
         </p>
       </section>
-
+      {/* CTA BUTTON  */}
+      <div className=" bg-[#F5F5F5] rounded-xl my-8">
+        <Consultaion />
+      </div>
       <section className="space-y-6">
         <h2 className="text-[18px] md:text-[24px] font-semibold">
           What to Expect From a Legal Marketing Agency That Specializes in Law
@@ -275,7 +279,10 @@ export default function LawFirmMarketingTwo() {
           the foundation everything else is built on.
         </p>
       </section>
-
+      {/* CTA BUTTON  */}
+      <div className=" bg-[#F5F5F5] rounded-xl my-8">
+        <Consultaion />
+      </div>
       <section className="space-y-6">
         <h2 className="text-[18px] md:text-[24px] font-semibold">
           Lawyer Website Marketing — What Turns a Site From a Brochure Into a

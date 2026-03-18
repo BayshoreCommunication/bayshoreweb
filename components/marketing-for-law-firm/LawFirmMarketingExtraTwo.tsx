@@ -1,3 +1,5 @@
+import Consultaion from "../universal/Consultaion";
+
 export default function LawFirmMarketingExtraTwo() {
   return (
     <div className="space-y-10 mb-6">
@@ -68,12 +70,12 @@ export default function LawFirmMarketingExtraTwo() {
         <p className="text-[14px] md:text-[18px] text-gray-800">
           Effective services begin with a clear growth strategy, not a service
           catalog. Before Bayshore Communication recommends a single tactic, the
-          team identifies the firm&rsquo;s primary practice areas, target geographic
-          markets, ideal client profile, and current competitive position. That
-          strategic foundation determines which services to prioritize and in
-          what sequence because the right services applied in the wrong order
-          produce far weaker results than the same services applied
-          strategically.
+          team identifies the firm&rsquo;s primary practice areas, target
+          geographic markets, ideal client profile, and current competitive
+          position. That strategic foundation determines which services to
+          prioritize and in what sequence because the right services applied in
+          the wrong order produce far weaker results than the same services
+          applied strategically.
         </p>
 
         <h3 className="text-[18px] md:text-[24px] font-semibold">
@@ -100,12 +102,15 @@ export default function LawFirmMarketingExtraTwo() {
         </h2>
 
         <p className="text-[14px] md:text-[18px] text-gray-800">
-          The lawyers who get the most cases through online marketing don&rsquo;t
-          always spend the most money. Instead, they use the most disciplined,
-          consistent, and strategically sound organic marketing strategy in
-          their field.
+          The lawyers who get the most cases through online marketing
+          don&rsquo;t always spend the most money. Instead, they use the most
+          disciplined, consistent, and strategically sound organic marketing
+          strategy in their field.
         </p>
-
+        {/* CTA BUTTON  */}
+        <div className=" bg-[#F5F5F5] rounded-xl my-8">
+          <Consultaion />
+        </div>
         <h3 className="text-[18px] md:text-[24px] font-semibold">
           What High-Performing Law Firm Online Marketing Looks Like
         </h3>
@@ -148,9 +153,9 @@ export default function LawFirmMarketingExtraTwo() {
 
         <p className="text-[14px] md:text-[18px] text-gray-800">
           There are certain ethical and legal limits on advertising that general
-          marketing agencies can&rsquo;t work around. Working with an agency that
-          knows these limits will protect your bar license while still helping
-          your business grow quickly.
+          marketing agencies can&rsquo;t work around. Working with an agency
+          that knows these limits will protect your bar license while still
+          helping your business grow quickly.
         </p>
 
         <h3 className="text-[18px] md:text-[24px] font-semibold">
@@ -202,15 +207,16 @@ export default function LawFirmMarketingExtraTwo() {
         </h3>
 
         <p className="text-[14px] md:text-[18px] text-gray-800">
-          Bayshore Communication&rsquo;s first 90 days with a new law firm client are
-          structured around building the strategic foundation the entire growth
-          system depends on. That means a comprehensive audit of the existing
-          website, current search rankings, local SEO position, and competitive
-          landscape. This means finding the keywords with the most potential
-          value in the company&rsquo;s practice areas and geographic markets. It also
-          means launching initial content and SEO improvements that begin
-          producing organic results within the first quarter. And it means
-          setting clear, measurable growth milestones the client can track.
+          Bayshore Communication&rsquo;s first 90 days with a new law firm
+          client are structured around building the strategic foundation the
+          entire growth system depends on. That means a comprehensive audit of
+          the existing website, current search rankings, local SEO position, and
+          competitive landscape. This means finding the keywords with the most
+          potential value in the company&rsquo;s practice areas and geographic
+          markets. It also means launching initial content and SEO improvements
+          that begin producing organic results within the first quarter. And it
+          means setting clear, measurable growth milestones the client can
+          track.
         </p>
 
         <h3 className="text-[18px] md:text-[24px] font-semibold">
@@ -228,6 +234,10 @@ export default function LawFirmMarketingExtraTwo() {
           transparently so clients see the progress being built beneath the
           surface.
         </p>
+        {/* CTA BUTTON  */}
+        <div className=" bg-[#F5F5F5] rounded-xl my-8">
+          <Consultaion />
+        </div>
       </section>
     </div>
   );

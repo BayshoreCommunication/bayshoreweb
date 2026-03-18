@@ -1,3 +1,5 @@
+import Consultaion from "../universal/Consultaion";
+
 export default function LawFirmMarketingExtra() {
   return (
     <div className="max-w-[1440px] mx-auto text-left px-4 pb-6 y-10 space-y-10">
@@ -45,13 +47,16 @@ export default function LawFirmMarketingExtra() {
 
         <p className="text-[14px] md:text-[18px] text-gray-800">
           A piece of content that earns backlinks keeps building authority.
-          Bayshore Communication&rsquo;s results with law firm clients, including
-          firms that have grown from startup revenue to seven figures without a
-          dollar in ads, demonstrate what organic online marketing produces when
-          it is built correctly from the start.
+          Bayshore Communication&rsquo;s results with law firm clients,
+          including firms that have grown from startup revenue to seven figures
+          without a dollar in ads, demonstrate what organic online marketing
+          produces when it is built correctly from the start.
         </p>
       </section>
-
+      {/* CTA BUTTON  */}
+      <div className=" bg-[#F5F5F5] rounded-xl my-8">
+        <Consultaion />
+      </div>
       <section className="space-y-6">
         <h2 className="text-[18px] md:text-[24px] font-semibold">
           Choosing the Right Digital Marketing Agency for Law Firms — What to
@@ -156,7 +161,7 @@ export default function LawFirmMarketingExtra() {
           Website optimization, conversion rate improvements that turn existing
           traffic into more consultations
         </p>
-
+          
         <h3 className="text-[18px] md:text-[24px] font-semibold">
           How Each Service Reinforces the Others
         </h3>
