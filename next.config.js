@@ -5,6 +5,8 @@ const nextConfig = {
     NEXT_PUBLIC_BLOG_API_URL: process.env.NEXT_PUBLIC_BLOG_API_URL,
   },
 
+  distDir: process.env.NEXT_DIST_DIR || ".next",
+
   // Workaround for V8 invalid size error on Windows/Node 20 with Next 13.x
   // Disable SWC minify to avoid build crash
   swcMinify: false,
