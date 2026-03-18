@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Consultaion from "../universal/Consultaion";
 
 export default function LawFirmMarketingExtraTwo() {
@@ -56,7 +57,13 @@ export default function LawFirmMarketingExtraTwo() {
         <h2 className="text-[16px] md:text-[20px] font-semibold">
           Legal Marketing Services That Scale With Your Firm as It Grows
         </h2>
-
+        <Image
+          src="assets/marketing-for-law-firm/services.png"
+          alt="Law Firm Marketing"
+          width={1000}
+          height={800}
+          className="w-full h-auto rounded-lg"
+        />
         <p className="text-[14px] md:text-[18px] text-gray-800">
           The best marketing services are adaptive strategies that evolve as
           your firm grows, your goals shift, and new opportunities in your

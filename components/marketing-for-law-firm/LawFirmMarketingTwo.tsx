@@ -178,7 +178,13 @@ export default function LawFirmMarketingTwo() {
           Marketing for Law Firms — Why Most Approaches Waste Money and How to
           Fix It
         </h2>
-
+        <Image
+          src="assets/marketing-for-law-firm/law.png"
+          alt="Law Firm Marketing"
+          width={1000}
+          height={800}
+          className="w-full h-auto rounded-lg"
+        />
         <p className="text-[14px] md:text-[18px] text-gray-800">
           Marketing for law firms fails most often not because the channels are
           wrong but because the strategy behind them is built for short-term

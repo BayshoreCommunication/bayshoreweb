@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Consultaion from "../universal/Consultaion";
 
 export default function LawFirmMarketingExtra() {
@@ -120,7 +121,13 @@ export default function LawFirmMarketingExtra() {
           Law Firm Marketing Services That Work Together as a Single Growth
           System
         </h2>
-
+        <Image
+          src="assets/marketing-for-law-firm/firm.png"
+          alt="Law Firm Marketing"
+          width={1000}
+          height={800}
+          className="w-full h-auto rounded-lg"
+        />
         <p className="text-[14px] md:text-[18px] text-gray-800">
           Individual marketing services produce individual results, but legal
           firm marketing services that work in coordination with each other
@@ -161,7 +168,7 @@ export default function LawFirmMarketingExtra() {
           Website optimization, conversion rate improvements that turn existing
           traffic into more consultations
         </p>
-          
+
         <h3 className="text-[16px] md:text-[20px] font-semibold">
           How Each Service Reinforces the Others
         </h3>

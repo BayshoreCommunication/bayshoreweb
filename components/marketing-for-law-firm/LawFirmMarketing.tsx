@@ -9,6 +9,13 @@ export default function LawFirmMarketing() {
     <div className="max-w-[1440px] mx-auto text-left px-4 py-10 space-y-10">
       {/* Intro */}
       <section className="space-y-6">
+        <Image
+          src="assets/marketing-for-law-firm/marketing.png"
+          alt="Law Firm Marketing"
+          width={1000}
+          height={800}
+          className="w-full h-auto rounded-lg"
+        />
         <h1 className="text-[18px] md:text-[24px] font-bold">
           Marketing For Law Firm
         </h1>

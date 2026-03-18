@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Consultaion from "../universal/Consultaion";
 
 export default function LawFirmMarketingAdvanced() {
@@ -233,7 +234,13 @@ export default function LawFirmMarketingAdvanced() {
           Digital Marketing for Attorneys — What the Most Effective Channels
           Have in Common
         </h2>
-
+        <Image
+          src="assets/marketing-for-law-firm/digital.png"
+          alt="Law Firm Marketing"
+          width={1000}
+          height={800}
+          className="w-full h-auto rounded-lg"
+        />
         <h3 className="text-[16px] md:text-[20px] font-semibold">
           High-Intent Channels Versus Awareness Channels
         </h3>
