@@ -4,7 +4,7 @@ export default function LawFirmMarketingExtra() {
   return (
     <div className="max-w-[1440px] mx-auto text-left px-4 pb-6 y-10 space-y-10">
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Online Marketing for Law Firms Builds Visibility That Converts to
           Cases
         </h2>
@@ -15,7 +15,7 @@ export default function LawFirmMarketingExtra() {
           built and the consultations being booked.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What Online Marketing Actually Needs to Produce
         </h3>
 
@@ -34,7 +34,7 @@ export default function LawFirmMarketingExtra() {
           is no, it gets replaced.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Organic Advantage Over Paid Online Marketing
         </h3>
 
@@ -58,7 +58,7 @@ export default function LawFirmMarketingExtra() {
         <Consultaion />
       </div>
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Choosing the Right Digital Marketing Agency for Law Firms — What to
           Look for
         </h2>
@@ -69,7 +69,7 @@ export default function LawFirmMarketingExtra() {
           pricing, portfolio design, and sales presentation polish.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Questions That Reveal an Agency&rsquo;s Real Capability
         </h3>
 
@@ -96,7 +96,7 @@ export default function LawFirmMarketingExtra() {
           Who specifically will manage our account, and how accessible are they?
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What Bayshore Communication&rsquo;s Answers Look Like
         </h3>
 
@@ -116,7 +116,7 @@ export default function LawFirmMarketingExtra() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Law Firm Marketing Services That Work Together as a Single Growth
           System
         </h2>
@@ -128,7 +128,7 @@ export default function LawFirmMarketingExtra() {
           performance of every other.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Core Services That Drive Law Firm Growth
         </h3>
 
@@ -162,7 +162,7 @@ export default function LawFirmMarketingExtra() {
           traffic into more consultations
         </p>
           
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           How Each Service Reinforces the Others
         </h3>
 

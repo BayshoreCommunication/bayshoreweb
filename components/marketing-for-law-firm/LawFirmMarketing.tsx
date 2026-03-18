@@ -9,7 +9,7 @@ export default function LawFirmMarketing() {
     <div className="max-w-[1440px] mx-auto text-left px-4 py-10 space-y-10">
       {/* Intro */}
       <section className="space-y-6">
-        <h1 className="text-[18px] md:text-[24px] font-semibold">
+        <h1 className="text-[18px] md:text-[24px] font-bold">
           Marketing For Law Firm
         </h1>
 
@@ -29,7 +29,7 @@ export default function LawFirmMarketing() {
 
       {/* System Section */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Law Firm Marketing That Builds a System, Not Just a Campaign
         </h2>
 
@@ -39,7 +39,7 @@ export default function LawFirmMarketing() {
           month without starting over.
         </p>
 
-        <h3 className="text-[18px] md:text-[22px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Difference Between a Campaign and a System
         </h3>
 
@@ -53,7 +53,7 @@ export default function LawFirmMarketing() {
           <Consultaion />
         </div>
 
-        <h3 className="text-[18px] md:text-[22px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What a Growth System Looks Like
         </h3>
 
@@ -68,7 +68,7 @@ export default function LawFirmMarketing() {
 
       {/* Legal Marketing */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Legal Marketing That Understands Client Behavior
         </h2>
 
@@ -77,7 +77,7 @@ export default function LawFirmMarketing() {
           driven by trust.
         </p>
 
-        <h3 className="text-[18px] md:text-[22px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           How Clients Choose Lawyers
         </h3>
 
@@ -86,7 +86,7 @@ export default function LawFirmMarketing() {
           calling.
         </p>
 
-        <h3 className="text-[18px] md:text-[22px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Why Generic Marketing Fails
         </h3>
 
@@ -98,7 +98,7 @@ export default function LawFirmMarketing() {
 
       {/* Authority */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Attorney Marketing That Positions You as the Best Choice
         </h2>
 
@@ -110,7 +110,7 @@ export default function LawFirmMarketing() {
 
       {/* Agency */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           What a Law Firm Marketing Agency Should Deliver
         </h2>
 
@@ -128,7 +128,7 @@ export default function LawFirmMarketing() {
       </div>
       {/* Final */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Marketing That Works While You Work
         </h2>
 

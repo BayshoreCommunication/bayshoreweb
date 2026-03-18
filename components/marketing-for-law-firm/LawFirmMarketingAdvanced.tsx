@@ -5,7 +5,7 @@ export default function LawFirmMarketingAdvanced() {
     <div className="space-y-10 mb-6">
       {/* ================= RIGHT COMPANY ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           What the Right Law Firm Marketing Company Does That Others Cannot
           Replicate
         </h2>
@@ -17,7 +17,7 @@ export default function LawFirmMarketingAdvanced() {
           that work for years, not just quarters.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Industry Depth as a Competitive Advantage
         </h3>
 
@@ -33,7 +33,7 @@ export default function LawFirmMarketingAdvanced() {
           principles.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Why Bayshore Communication Focuses Only on Law Firms
         </h3>
 
@@ -50,7 +50,7 @@ export default function LawFirmMarketingAdvanced() {
 
       {/* ================= LONG GAME ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Law Firm Online Marketing Is The Long Game That Produces the Biggest
           Returns
         </h2>
@@ -62,7 +62,7 @@ export default function LawFirmMarketingAdvanced() {
           markets without needing to outspend competitors.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What the Long Game Produces Over Time
         </h3>
 
@@ -81,7 +81,7 @@ export default function LawFirmMarketingAdvanced() {
         <div className=" bg-[#F5F5F5] rounded-xl my-8">
           <Consultaion />
         </div>
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Why Patience Is a Strategic Advantage
         </h3>
 
@@ -100,7 +100,7 @@ export default function LawFirmMarketingAdvanced() {
 
       {/* ================= TRUST ADS ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Lawyer Advertising That Builds Trust Instead of Eroding It
         </h2>
 
@@ -112,7 +112,7 @@ export default function LawFirmMarketingAdvanced() {
           search.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Trust Problem in Legal Advertising
         </h3>
 
@@ -128,7 +128,7 @@ export default function LawFirmMarketingAdvanced() {
           content assets designed specifically to generate that kind of trust.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Video as the Highest-Trust Lawyer Advertising Format
         </h3>
 
@@ -146,7 +146,7 @@ export default function LawFirmMarketingAdvanced() {
 
       {/* ================= TRAINING ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Lawyer Marketing Services That Train Your Team as Well as Execute the
           Strategy
         </h2>
@@ -157,7 +157,7 @@ export default function LawFirmMarketingAdvanced() {
           even when the relationship with the agency changes.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Why Training Matters in Legal Marketing
         </h3>
 
@@ -171,7 +171,7 @@ export default function LawFirmMarketingAdvanced() {
           delivers rather than a vendor looking to maintain dependency.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What a Trained Law Firm Team Is Able to Do
         </h3>
 
@@ -190,12 +190,12 @@ export default function LawFirmMarketingAdvanced() {
 
       {/* ================= AGENCY VS VENDOR ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           What Separates a Real Marketing Agency for Lawyers From a Vendor
           Selling Services
         </h2>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Accountability as the Defining Standard
         </h3>
 
@@ -210,7 +210,7 @@ export default function LawFirmMarketingAdvanced() {
           around producing the results that justify the relationship.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What Long-Term Agency Relationships Produce
         </h3>
 
@@ -229,12 +229,12 @@ export default function LawFirmMarketingAdvanced() {
 
       {/* ================= CHANNELS ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Digital Marketing for Attorneys — What the Most Effective Channels
           Have in Common
         </h2>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           High-Intent Channels Versus Awareness Channels
         </h3>
 
@@ -254,7 +254,7 @@ export default function LawFirmMarketingAdvanced() {
         <div className=" bg-[#F5F5F5] rounded-xl my-8">
           <Consultaion />
         </div>
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Why Mobile Optimization Is No Longer Optional
         </h3>
 

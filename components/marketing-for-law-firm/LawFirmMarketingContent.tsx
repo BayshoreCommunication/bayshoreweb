@@ -4,7 +4,7 @@ export default function LawFirmMarketingContent() {
   return (
     <div className="max-w-[1440px] mx-auto text-left px-4 pb-6 space-y-10">
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           How Law Firms Marketing Themselves Differently From Competitors Win
           More Clients
         </h2>
@@ -16,7 +16,7 @@ export default function LawFirmMarketingContent() {
           solution.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Standing Out in a Crowded Legal Market
         </h3>
 
@@ -32,7 +32,7 @@ export default function LawFirmMarketingContent() {
           firm different and worthy of trust.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What Differentiation Actually Looks Like Online
         </h3>
 
@@ -49,7 +49,7 @@ export default function LawFirmMarketingContent() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           How Legal Marketing Firms Compare — and What Makes One Worth Choosing
         </h2>
 
@@ -59,7 +59,7 @@ export default function LawFirmMarketingContent() {
           they show up clearly in client results over time.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Key Differentiators Worth Evaluating
         </h3>
 
@@ -78,7 +78,7 @@ export default function LawFirmMarketingContent() {
         <div className=" bg-[#F5F5F5] rounded-xl my-8">
           <Consultaion />
         </div>
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Why Long-Term Partnerships Produce the Best Results
         </h3>
 
@@ -96,7 +96,7 @@ export default function LawFirmMarketingContent() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Marketing for Lawyers — What Works, What Does Not, and Why the Gap
           Exists
         </h2>
@@ -109,7 +109,7 @@ export default function LawFirmMarketingContent() {
           results.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Why Legal Client Psychology Demands a Different Approach
         </h3>
 
@@ -124,7 +124,7 @@ export default function LawFirmMarketingContent() {
           specifically tailored to that emotional and informational setting.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Marketing Tactics That Consistently Work for Law Firms
         </h3>
 
@@ -149,7 +149,7 @@ export default function LawFirmMarketingContent() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Online Marketing for Lawyers Builds a Presence That Works Around the
           Clock
         </h2>
@@ -161,7 +161,7 @@ export default function LawFirmMarketingContent() {
           as it does at noon on a Monday.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What a 24/7 Client Acquisition System Looks Like
         </h3>
 
@@ -178,7 +178,7 @@ export default function LawFirmMarketingContent() {
           continuously.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           How Consistency Beats Intensity in Online Marketing
         </h3>
 
@@ -195,7 +195,7 @@ export default function LawFirmMarketingContent() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Law Firm Advertising — When to Use It and When to Build Something
           Better
         </h2>
@@ -206,7 +206,7 @@ export default function LawFirmMarketingContent() {
           on a budget that delivers diminishing returns over time.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Honest Case for Organic Over Paid Advertising
         </h3>
 
@@ -222,7 +222,7 @@ export default function LawFirmMarketingContent() {
           strategy, done well, produces more durable and cost-efficient growth.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           When Advertising Makes Strategic Sense
         </h3>
 

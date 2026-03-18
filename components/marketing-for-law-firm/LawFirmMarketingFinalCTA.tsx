@@ -5,7 +5,7 @@ export default function LawFirmMarketingFinalCTA() {
     <div className="space-y-10 mb-6">
       {/* ================= PAID ADS ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Paid Ads for Law Firms — What They Can and Cannot Do for Your Growth
         </h2>
 
@@ -16,7 +16,7 @@ export default function LawFirmMarketingFinalCTA() {
           long-term strategy.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           When Paid Ads Make Sense for a Law Firm
         </h3>
 
@@ -31,7 +31,7 @@ export default function LawFirmMarketingFinalCTA() {
           better use of the same budget over a 12-month period.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Organic Alternative That Outlasts Ads
         </h3>
 
@@ -50,7 +50,7 @@ export default function LawFirmMarketingFinalCTA() {
 
       {/* ================= SERVICES ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Attorney Marketing Services Built Around What Clients Actually Need
         </h2>
 
@@ -61,7 +61,7 @@ export default function LawFirmMarketingFinalCTA() {
           practice area, or growth stage.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Custom Strategy Over Standard Packages
         </h3>
 
@@ -77,7 +77,7 @@ export default function LawFirmMarketingFinalCTA() {
           rather than a preset menu.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Services That Move the Needle Most Consistently
         </h3>
 
@@ -96,7 +96,7 @@ export default function LawFirmMarketingFinalCTA() {
 
       {/* ================= CONSULTANT ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           What a Law Firm Marketing Consultant Actually Delivers and When to Use
           One
         </h2>
@@ -108,7 +108,7 @@ export default function LawFirmMarketingFinalCTA() {
           track record with firms facing challenges similar to yours.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           When Consulting Makes Sense vs. Full Agency Engagement
         </h3>
 
@@ -128,7 +128,7 @@ export default function LawFirmMarketingFinalCTA() {
         <div className=" bg-[#F5F5F5] rounded-xl my-8">
           <Consultaion />
         </div>
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What a Genuine Marketing Audit Reveals
         </h3>
 
@@ -147,7 +147,7 @@ export default function LawFirmMarketingFinalCTA() {
 
       {/* ================= CTA ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Ready to build a law firm marketing system that generates consistent
           client appointments without relying on ads?
         </h2>

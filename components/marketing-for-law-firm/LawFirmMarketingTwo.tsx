@@ -7,7 +7,7 @@ export default function LawFirmMarketingTwo() {
   return (
     <div className="max-w-[1440px] mx-auto text-left px-4 pb-6 space-y-10">
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Law Firm Digital Marketing That Covers Every Channel That Matters
         </h2>
 
@@ -18,7 +18,7 @@ export default function LawFirmMarketingTwo() {
           legal help.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Digital Channels That Drive Legal Client Acquisition
         </h3>
 
@@ -53,7 +53,7 @@ export default function LawFirmMarketingTwo() {
           with past clients
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Why Integration Multiplies Results
         </h3>
 
@@ -69,7 +69,7 @@ export default function LawFirmMarketingTwo() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Digital Marketing for Law Firms — What Separates Firms That Grow From
           Firms That Plateau
         </h2>
@@ -81,7 +81,7 @@ export default function LawFirmMarketingTwo() {
           competitors to close.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Compounding Advantage of Organic Digital Marketing
         </h3>
 
@@ -101,7 +101,7 @@ export default function LawFirmMarketingTwo() {
           clients.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What Plateau Looks Like and How to Break It
         </h3>
 
@@ -123,7 +123,7 @@ export default function LawFirmMarketingTwo() {
         <Consultaion />
       </div>
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           What to Expect From a Legal Marketing Agency That Specializes in Law
           Firms
         </h2>
@@ -135,7 +135,7 @@ export default function LawFirmMarketingTwo() {
           behalf of your firm.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Why It&apos;s Important to Specialize in the Legal Field
         </h3>
 
@@ -154,7 +154,7 @@ export default function LawFirmMarketingTwo() {
           does not, and what the bar prohibits.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What Exclusivity to the Legal Space Produces
         </h3>
 
@@ -174,7 +174,7 @@ export default function LawFirmMarketingTwo() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Marketing for Law Firms — Why Most Approaches Waste Money and How to
           Fix It
         </h2>
@@ -186,7 +186,7 @@ export default function LawFirmMarketingTwo() {
           fundamentally different approach from the ground up.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Most Common Marketing Mistakes Law Firms Make
         </h3>
 
@@ -217,7 +217,7 @@ export default function LawFirmMarketingTwo() {
           long-term strategy
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What a Fixed Strategy Actually Looks Like
         </h3>
 
@@ -233,7 +233,7 @@ export default function LawFirmMarketingTwo() {
       </section>
 
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Law Firm Web Marketing — Your Website Is Either Your Best Salesperson
           or Your Biggest Liability
         </h2>
@@ -245,7 +245,7 @@ export default function LawFirmMarketingTwo() {
           wasted.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What a High-Converting Law Firm Website Does
         </h3>
 
@@ -265,7 +265,7 @@ export default function LawFirmMarketingTwo() {
           consultations.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           How Web Marketing Connects to Every Other Channel
         </h3>
 
@@ -284,7 +284,7 @@ export default function LawFirmMarketingTwo() {
         <Consultaion />
       </div>
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Lawyer Website Marketing — What Turns a Site From a Brochure Into a
           Revenue Engine
         </h2>
@@ -296,7 +296,7 @@ export default function LawFirmMarketingTwo() {
           marketing budgets are silently wasted.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Elements That Make a Lawyer Website Convert
         </h3>
 
@@ -315,7 +315,7 @@ export default function LawFirmMarketingTwo() {
           architecture into every law firm website it works on.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Why Content Is the Engine Under the Hood
         </h3>
 

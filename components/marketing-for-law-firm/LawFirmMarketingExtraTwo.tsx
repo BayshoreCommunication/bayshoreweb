@@ -5,7 +5,7 @@ export default function LawFirmMarketingExtraTwo() {
     <div className="space-y-10 mb-6">
       {/* ================= LAWYERS & MARKETING ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Why Lawyers and Marketing Have a Complicated Relationship and How to
           Fix It
         </h2>
@@ -17,7 +17,7 @@ export default function LawFirmMarketingExtraTwo() {
           practice that consistently attracts the right clients.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Marketing Discomfort Most Attorneys Feel
         </h3>
 
@@ -34,7 +34,7 @@ export default function LawFirmMarketingExtraTwo() {
           in their intake numbers.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Marketing as Practice Development, Not Promotion
         </h3>
 
@@ -53,7 +53,7 @@ export default function LawFirmMarketingExtraTwo() {
 
       {/* ================= SERVICES SCALE ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Legal Marketing Services That Scale With Your Firm as It Grows
         </h2>
 
@@ -63,7 +63,7 @@ export default function LawFirmMarketingExtraTwo() {
           market emerge.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Starting With Strategy, Not Services
         </h3>
 
@@ -78,7 +78,7 @@ export default function LawFirmMarketingExtraTwo() {
           applied strategically.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           How Services Expand as Growth Goals Change
         </h3>
 
@@ -96,7 +96,7 @@ export default function LawFirmMarketingExtraTwo() {
 
       {/* ================= ONLINE MARKETING ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Online Marketing for Attorneys — What the Firms Getting the Most Cases
           Are Doing
         </h2>
@@ -111,7 +111,7 @@ export default function LawFirmMarketingExtraTwo() {
         <div className=" bg-[#F5F5F5] rounded-xl my-8">
           <Consultaion />
         </div>
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What High-Performing Law Firm Online Marketing Looks Like
         </h3>
 
@@ -128,7 +128,7 @@ export default function LawFirmMarketingExtraTwo() {
           for law firm clients as a coordinated system.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           The Apex Law Case Study Which Ranked in 25 Days
         </h3>
 
@@ -147,7 +147,7 @@ export default function LawFirmMarketingExtraTwo() {
 
       {/* ================= ADVERTISING RULES ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           Attorney Advertising — What the Rules Allow and What Actually Converts
         </h2>
 
@@ -158,7 +158,7 @@ export default function LawFirmMarketingExtraTwo() {
           helping your business grow quickly.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           Bar Compliance and Marketing Effectiveness Are Not Opposites
         </h3>
 
@@ -173,7 +173,7 @@ export default function LawFirmMarketingExtraTwo() {
           licensed attorney is bound by.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What Works in Lawyer Advertising
         </h3>
 
@@ -190,7 +190,7 @@ export default function LawFirmMarketingExtraTwo() {
 
       {/* ================= FIRST 90 DAYS ================= */}
       <section className="space-y-6">
-        <h2 className="text-[18px] md:text-[24px] font-semibold">
+        <h2 className="text-[16px] md:text-[20px] font-semibold">
           What a Law Firm Digital Marketing Agency Should Do in the First 90
           Days
         </h2>
@@ -202,7 +202,7 @@ export default function LawFirmMarketingExtraTwo() {
           checklist without any clear growth goals.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           What Bayshore Communication Does in the First 90 Days
         </h3>
 
@@ -219,7 +219,7 @@ export default function LawFirmMarketingExtraTwo() {
           track.
         </p>
 
-        <h3 className="text-[18px] md:text-[24px] font-semibold">
+        <h3 className="text-[16px] md:text-[20px] font-semibold">
           How to Evaluate Progress During the Early Phase
         </h3>
 
