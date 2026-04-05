@@ -12,6 +12,14 @@ interface FormValues {
   message: string;
 }
 
+const swalButtonConfig = {
+  buttonsStyling: false,
+  customClass: {
+    confirmButton:
+      "swal-confirm-button rounded-full px-6 py-3 text-base font-semibold text-white",
+  },
+};
+
 const Form = () => {
   const initialValues = {
     name: "",
@@ -47,7 +55,7 @@ const Form = () => {
       Swal.fire({
         text: firstError,
         icon: "warning",
-        confirmButtonColor: "#FE6F1F",
+        ...swalButtonConfig,
       });
       setIsSubmit(false);
       return;
@@ -71,7 +79,7 @@ const Form = () => {
           title: "Thank you!",
           text: "Your message has been sent successfully. We will get back to you soon.",
           icon: "success",
-          confirmButtonColor: "#FE6F1F",
+          ...swalButtonConfig,
         });
       }
     } catch (error) {
@@ -79,7 +87,7 @@ const Form = () => {
       Swal.fire({
         text: "We’re experiencing some technical issues. Please try again later or contact us directly.",
         icon: "error",
-        confirmButtonColor: "#FE6F1F",
+        ...swalButtonConfig,
       });
     } finally {
       setLoading(false);
@@ -100,7 +108,7 @@ const Form = () => {
       Swal.fire({
         text: firstError,
         icon: "warning",
-        confirmButtonColor: "#FE6F1F",
+        ...swalButtonConfig,
       });
       return;
     }
@@ -123,7 +131,7 @@ const Form = () => {
         title: "Thank you!",
         text: "Your message has been sent successfully. We will get back to you soon.",
         icon: "success",
-        confirmButtonColor: "#FE6F1F",
+        ...swalButtonConfig,
       });
 
       setContactInfo(initialValues);
@@ -136,7 +144,7 @@ const Form = () => {
       Swal.fire({
         text: "We’re experiencing some technical issues. Please try again later or contact us directly.",
         icon: "error",
-        confirmButtonColor: "#FE6F1F",
+        ...swalButtonConfig,
       });
     } finally {
       setLoading(false);

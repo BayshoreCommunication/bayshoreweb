@@ -381,6 +381,19 @@ body {
   font-size: 1.6rem;
 }
 
+.swal-confirm-button {
+  background-color: #fe6f1f !important;
+  border: 1px solid #fe6f1f !important;
+  color: #fff !important;
+  box-shadow: none !important;
+}
+
+.swal-confirm-button:hover,
+.swal-confirm-button:focus {
+  background-color: #e55f14 !important;
+  border-color: #e55f14 !important;
+}
+
 .active-tab {
   animation: fadeIn 1s forwards;
 }
