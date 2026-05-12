@@ -1,4 +1,9 @@
 import Consultaion from "@/components/universal/Consultaion";
+import {
+  getStaticBlogBySlug,
+  staticBlogComponents,
+  staticBlogs,
+} from "@/components/static-blogs";
 import SectionLayout from "@/components/universal/SectionLayout";
 import GetAllBlogData from "@/lib/GetAllBlogData";
 import GetBlogBySlug from "@/lib/GetBlogBySlug";
@@ -12,12 +17,23 @@ interface BlogPost {
   title: string;
   body: string;
   excerpt?: string;
+  image?: string;
+  imageAlt?: string;
+  imageCaption?: string;
+  imageDescription?: string;
+  imageFit?: string;
+  imageTitle?: string;
   createdAt?: string;
   published?: boolean;
   category?: string[];
   featuredImage?: {
     image?: {
       url?: string;
+      alt?: string;
+      alternativeText?: string;
+      caption?: string;
+      description?: string;
+      title?: string;
     };
   };
 }
@@ -27,6 +43,24 @@ const getDescription = (blog: BlogPost) => {
   if (plainText) return plainText.slice(0, 200);
   return (blog.excerpt || "No blog post available.").slice(0, 200);
 };
+
+const getBlogImage = (blog: BlogPost) =>
+  blog?.image ||
+  blog?.featuredImage?.image?.url ||
+  "/assets/blog/blog-hero-img.svg";
+
+const getBlogImageAlt = (blog: BlogPost) =>
+  blog?.imageAlt ||
+  blog?.featuredImage?.image?.alt ||
+  blog?.featuredImage?.image?.alternativeText ||
+  blog.title ||
+  "blog_image";
+
+const getBlogImageTitle = (blog: BlogPost) =>
+  blog?.imageTitle || blog?.featuredImage?.image?.title;
+
+const getBlogImageCaption = (blog: BlogPost) =>
+  blog?.imageCaption || blog?.featuredImage?.image?.caption;
 
 const formatDate = (date?: string) => {
   if (!date) return "";
@@ -42,8 +76,10 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const blogResult = await GetBlogBySlug(params.slug);
-  const blogDetails = blogResult?.data as BlogPost | undefined;
+  const staticBlog = getStaticBlogBySlug(params.slug) as BlogPost | undefined;
+  const blogDetails =
+    staticBlog ||
+    ((await GetBlogBySlug(params.slug))?.data as BlogPost | undefined);
 
   if (!blogDetails) {
     return {
@@ -65,18 +101,18 @@ export async function generateMetadata({
 
   return {
     metadataBase: new URL("https://www.bayshorecommunication.com"),
-    title: blogDetails.title,
+    title: (blogDetails as any).metaTitle || blogDetails.title,
     description: shortDescription,
     openGraph: {
       title: blogDetails.title,
       description: shortDescription,
-      images: blogDetails.featuredImage?.image?.url
+      images: getBlogImage(blogDetails)
         ? [
             {
-              url: blogDetails.featuredImage.image.url,
+              url: getBlogImage(blogDetails),
               width: 1200,
               height: 600,
-              alt: blogDetails.title,
+              alt: getBlogImageAlt(blogDetails),
             },
           ]
         : [],
@@ -88,7 +124,12 @@ export async function generateMetadata({
 }
 
 const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
-  const blogResult = await GetBlogBySlug(params.slug);
+  const staticBlog = getStaticBlogBySlug(params.slug) as BlogPost | undefined;
+  const StaticBlogComponent =
+    staticBlogComponents[params.slug as keyof typeof staticBlogComponents];
+  const blogResult = staticBlog
+    ? { data: staticBlog }
+    : await GetBlogBySlug(params.slug);
   const blog = blogResult?.data as BlogPost | undefined;
 
   if (!blog || blog?.published !== true) {
@@ -121,25 +162,41 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
             <div className="flex gap-x-10">
               <div className="flex-[3]">
                 <div>
-                  <Image
-                    src={
-                      blog?.featuredImage?.image?.url ||
-                      "/assets/blog/blog-hero-img.svg"
-                    }
-                    alt={blog.title || "blog_image"}
-                    width={2400}
-                    height={2400}
-                    className="w-full h-full"
-                  />
-                  <div className="flex gap-4 py-6">{formatDate(blog.createdAt)}</div>
-
                   <div>
-                    <h1 className="font-semibold text-[80px] leading-normal">
+                    <h1 className="font-semibold text-[42px] leading-tight md:text-[64px] lg:text-[80px]">
                       {blog.title}
                     </h1>
                   </div>
+                  <div className="flex gap-4 py-6">
+                    {formatDate(blog.createdAt)}
+                  </div>
+                  <figure>
+                    <Image
+                      src={getBlogImage(blog)}
+                      alt={getBlogImageAlt(blog)}
+                      title={getBlogImageTitle(blog)}
+                      width={2400}
+                      height={2400}
+                      className={`w-full aspect-[16/9] rounded-[8px] bg-[#f7f8fb] ${
+                        blog.imageFit === "contain"
+                          ? "object-contain"
+                          : "object-cover"
+                      }`}
+                    />
+                    {getBlogImageCaption(blog) && (
+                      <figcaption className="mt-3 text-sm text-gray-500">
+                        {getBlogImageCaption(blog)}
+                      </figcaption>
+                    )}
+                  </figure>
 
-                  <div className="externallink">{parser(blog.body)}</div>
+                  <div className="externallink mt-10">
+                    {StaticBlogComponent ? (
+                      <StaticBlogComponent />
+                    ) : (
+                      parser(blog.body)
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -161,12 +218,13 @@ export default IndividualBlog;
 
 const BlogNavigation = async () => {
   const blogData = await GetAllBlogData({ page: 1, limit: 10 });
+  const blogs = [...staticBlogs, ...(blogData?.data || [])];
   return (
     <>
-      {blogData?.data
+      {blogs
         ?.filter(
           (blog: any) =>
-            blog?.published === true && blog?.category?.[0] !== "Job Post"
+            blog?.published === true && blog?.category?.[0] !== "Job Post",
         )
         ?.map((elem: any, index: number) => (
           <div key={index}>
@@ -175,14 +233,11 @@ const BlogNavigation = async () => {
               href={`/blog/${elem.slug}`}
             >
               <Image
-                src={
-                  elem?.featuredImage?.image?.url ||
-                  "/assets/blog/blog-hero-img.svg"
-                }
-                alt={elem?.title || "blog_image"}
+                src={getBlogImage(elem)}
+                alt={getBlogImageAlt(elem)}
                 width={3109}
                 height={1752}
-                className="w-[100px] h-[80px]"
+                className="w-[100px] h-[80px] object-cover"
               />
               <p className="!text-xl">{elem.title}</p>
             </Link>

@@ -1,10 +1,10 @@
 import Reveal from "@/components/motion/Reveal";
+import { staticBlogs } from "@/components/static-blogs";
 import Consultaion from "@/components/universal/Consultaion";
 import { HeroWithImage } from "@/components/universal/Hero";
 import Pagination from "@/components/universal/Pagination";
 import SectionLayout from "@/components/universal/SectionLayout";
 import GetAllBlogData from "@/lib/GetAllBlogData";
-import parser from "html-react-parser";
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -46,9 +46,10 @@ const page = async ({ searchParams }: { searchParams: { page?: string } }) => {
   const currentPage = Number.isFinite(parsedPage) && parsedPage > 0 ? parsedPage : 1;
   const blogsPerPage = 10;
   const blogData = await GetAllBlogData({ page: currentPage, limit: blogsPerPage });
+  const blogs = currentPage === 1 ? [...staticBlogs, ...(blogData?.data || [])] : blogData?.data || [];
 
   // Handle error or empty data
-  if (!blogData?.data || blogData.data.length === 0) {
+  if (!blogs || blogs.length === 0) {
     return (
       <>
         <Reveal>
@@ -104,9 +105,9 @@ const page = async ({ searchParams }: { searchParams: { page?: string } }) => {
         </Reveal>
         <div className="mt-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-[4rem] grid-flow-row-dense">
-            {blogData?.data?.map((el: any, i: number) => (
+            {blogs.map((el: any, i: number) => (
                 <div key={i} className="h-fit">
-                  <Blog el={el} i={i} />
+                  <Blog el={el} />
                 </div>
               ))}
           </div>
@@ -144,7 +145,30 @@ const page = async ({ searchParams }: { searchParams: { page?: string } }) => {
 
 export default page;
 
-const Blog = ({ el, i }: any) => {
+const getBlogImage = (blog: any) =>
+  blog?.image || blog?.featuredImage?.image?.url || "/assets/blog/blog-hero-img.svg";
+
+const getBlogImageAlt = (blog: any) =>
+  blog?.imageAlt ||
+  blog?.featuredImage?.image?.alt ||
+  blog?.featuredImage?.image?.alternativeText ||
+  blog?.title ||
+  "marketing";
+
+const getBlogImageTitle = (blog: any) =>
+  blog?.imageTitle || blog?.featuredImage?.image?.title;
+
+const getBlogDescription = (blog: any) => {
+  if (blog?.excerpt) return blog.excerpt;
+  if (blog?.description) return blog.description;
+  return (blog?.body || "")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 190);
+};
+
+const Blog = ({ el }: any) => {
   const dateFormate = (date: any) => {
     const formattedDate = new Date(date).toLocaleDateString("en-US", {
       year: "numeric",
@@ -159,11 +183,14 @@ const Blog = ({ el, i }: any) => {
         <div>
           <div className="relative mb-2">
             <Image
-              src={el?.featuredImage?.image?.url || "/assets/blog/blog-hero-img.svg"}
-              alt={el?.title || "marketing"}
+              src={getBlogImage(el)}
+              alt={getBlogImageAlt(el)}
+              title={getBlogImageTitle(el)}
               width={800}
               height={800}
-              className="w-full h-auto"
+              className={`w-full aspect-[16/10] rounded-[8px] bg-[#f7f8fb] ${
+                el?.imageFit === "contain" ? "object-contain" : "object-cover"
+              }`}
             />
             {/* <Image
             src="/assets/blog/mike.png"
@@ -188,7 +215,7 @@ const Blog = ({ el, i }: any) => {
           Content Marketing
         </h5> */}
             <p className="text-small mt-4 text-cut text-cut-5">
-              {parser(el.body)}
+              {getBlogDescription(el)}
             </p>
           </div>
           <div className="center md:block">
