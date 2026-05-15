@@ -22,7 +22,9 @@ interface BlogPost {
   imageCaption?: string;
   imageDescription?: string;
   imageFit?: string;
+  imageHeight?: number;
   imageTitle?: string;
+  imageWidth?: number;
   createdAt?: string;
   published?: boolean;
   category?: string[];
@@ -175,12 +177,12 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                       src={getBlogImage(blog)}
                       alt={getBlogImageAlt(blog)}
                       title={getBlogImageTitle(blog)}
-                      width={2400}
-                      height={2400}
-                      className={`w-full aspect-[16/9] rounded-[8px] bg-[#f7f8fb] ${
+                      width={blog.imageWidth || 2400}
+                      height={blog.imageHeight || 2400}
+                      className={`w-full rounded-[8px] bg-[#f7f8fb] ${
                         blog.imageFit === "contain"
-                          ? "object-contain"
-                          : "object-cover"
+                          ? "h-auto object-contain"
+                          : "aspect-[16/9] object-cover"
                       }`}
                     />
                     {getBlogImageCaption(blog) && (

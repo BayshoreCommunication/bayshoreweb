@@ -158,6 +158,10 @@ const getBlogImageAlt = (blog: any) =>
 const getBlogImageTitle = (blog: any) =>
   blog?.imageTitle || blog?.featuredImage?.image?.title;
 
+const getBlogImageWidth = (blog: any) => blog?.imageWidth || 800;
+
+const getBlogImageHeight = (blog: any) => blog?.imageHeight || 800;
+
 const getBlogDescription = (blog: any) => {
   if (blog?.excerpt) return blog.excerpt;
   if (blog?.description) return blog.description;
@@ -186,10 +190,12 @@ const Blog = ({ el }: any) => {
               src={getBlogImage(el)}
               alt={getBlogImageAlt(el)}
               title={getBlogImageTitle(el)}
-              width={800}
-              height={800}
-              className={`w-full aspect-[16/10] rounded-[8px] bg-[#f7f8fb] ${
-                el?.imageFit === "contain" ? "object-contain" : "object-cover"
+              width={getBlogImageWidth(el)}
+              height={getBlogImageHeight(el)}
+              className={`w-full rounded-[8px] bg-[#f7f8fb] ${
+                el?.imageFit === "contain"
+                  ? "h-auto object-contain"
+                  : "aspect-[16/10] object-cover object-left-top"
               }`}
             />
             {/* <Image
