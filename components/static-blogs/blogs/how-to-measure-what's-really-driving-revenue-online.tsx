@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 const conversionTrackingImage =
-  "/assets/static-blogs/conversion-tracking-digital-marketing-analytics.jpg";
+  "/assets/static-blogs/conversion-tracking-digital-marketing-analytics.webp";
 
 const conversionTrackingImageMeta = {
   alt: "Digital marketer analyzing conversion tracking dashboards and online revenue performance metrics",
