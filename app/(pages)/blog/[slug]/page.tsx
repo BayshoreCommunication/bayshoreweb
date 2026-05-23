@@ -15,7 +15,9 @@ import Link from "next/link";
 interface BlogPost {
   slug: string;
   title: string;
-  body: string;
+  body?: string;
+  canonical?: string;
+  description?: string;
   excerpt?: string;
   image?: string;
   imageAlt?: string;
@@ -25,6 +27,8 @@ interface BlogPost {
   imageHeight?: number;
   imageTitle?: string;
   imageWidth?: number;
+  metaDescription?: string;
+  metaTitle?: string;
   createdAt?: string;
   published?: boolean;
   category?: string[];
@@ -41,6 +45,9 @@ interface BlogPost {
 }
 
 const getDescription = (blog: BlogPost) => {
+  const explicitDescription = blog.metaDescription || blog.description;
+  if (explicitDescription) return explicitDescription.slice(0, 200);
+
   const plainText = (blog.body || "").replace(/<[^>]+>/g, "").trim();
   if (plainText) return plainText.slice(0, 200);
   return (blog.excerpt || "No blog post available.").slice(0, 200);
@@ -100,13 +107,21 @@ export async function generateMetadata({
   }
 
   const shortDescription = getDescription(blogDetails);
+  const metadataTitle = blogDetails.metaTitle || blogDetails.title;
+  const canonicalPath = blogDetails.canonical || `/blog/${blogDetails.slug}`;
+  const canonicalUrl = canonicalPath.startsWith("http")
+    ? canonicalPath
+    : `https://www.bayshorecommunication.com${canonicalPath}`;
 
   return {
     metadataBase: new URL("https://www.bayshorecommunication.com"),
-    title: (blogDetails as any).metaTitle || blogDetails.title,
+    title: metadataTitle,
     description: shortDescription,
+    alternates: {
+      canonical: canonicalPath,
+    },
     openGraph: {
-      title: blogDetails.title,
+      title: metadataTitle,
       description: shortDescription,
       images: getBlogImage(blogDetails)
         ? [
@@ -118,7 +133,7 @@ export async function generateMetadata({
             },
           ]
         : [],
-      url: `https://www.bayshorecommunication.com/blog/${blogDetails.slug}`,
+      url: canonicalUrl,
       type: "article",
       siteName: "Bayshorecommunication",
     },
@@ -196,7 +211,7 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                     {StaticBlogComponent ? (
                       <StaticBlogComponent />
                     ) : (
-                      parser(blog.body)
+                      parser(blog.body || "")
                     )}
                   </div>
                 </div>
