@@ -166,11 +166,11 @@ export const CtaOptimizationBlog = () => {
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
           CTA Optimization | Conversion Strategy
         </p>
-        <p className="mt-4 max-w-3xl text-lg leading-8 text-[#d9e7f7]">
+        <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">
           A data-driven guide to CTA optimization for teams that want more
           visitors to become qualified leads.
         </p>
-        <div className="mt-6 flex flex-wrap gap-3 text-sm text-[#d9e7f7]">
+        <div className="mt-6 flex flex-wrap gap-3 !text-sm !text-[#d9e7f7]">
           <span className="rounded-full border border-white/20 px-4 py-2">
             Updated 2025
           </span>
@@ -210,10 +210,10 @@ export const CtaOptimizationBlog = () => {
                   key={stat.value}
                   className="rounded-[8px] bg-[#101d34] p-5 text-white"
                 >
-                  <p className="text-3xl font-bold text-[#8ed8ff]">
+                  <p className="!text-3xl !font-bold !text-[#8ed8ff]">
                     {stat.value}
                   </p>
-                  <p className="mt-3 text-sm leading-6 text-[#d9e7f7]">
+                  <p className="mt-3 !text-sm !leading-6 !text-[#d9e7f7]">
                     {stat.label}
                   </p>
                 </div>
@@ -292,7 +292,7 @@ export const CtaOptimizationBlog = () => {
             <h2 className="text-3xl font-bold">
               Ready to Turn Visitors Into Clients?
             </h2>
-            <p className="mt-4 max-w-3xl text-lg leading-8 text-[#d9e7f7]">
+            <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">
               Need help figuring out why people visit your website but do not
               convert? Talk with Bayshore Communication about conversion-focused
               design, content, and campaign strategy.

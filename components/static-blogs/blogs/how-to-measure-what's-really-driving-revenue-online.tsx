@@ -601,8 +601,8 @@ const NumberedSection = ({
 
 const StatBlock = ({ value, label }: { value: string; label: string }) => (
   <div className="rounded-[8px] bg-[#101d34] p-5 text-white">
-    <p className="text-3xl font-bold text-[#8ed8ff]">{value}</p>
-    <p className="mt-3 text-base leading-7 text-[#d9e7f7]">{label}</p>
+    <p className="!text-3xl !font-bold !text-[#8ed8ff]">{value}</p>
+    <p className="mt-3 !text-base !leading-7 !text-[#d9e7f7]">{label}</p>
   </div>
 );
 
@@ -655,7 +655,9 @@ const PdfCta = ({
 }) => (
   <section className="my-8 rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
     <h2 className="text-3xl font-bold leading-tight">{title}</h2>
-    <p className="mt-4 max-w-3xl text-lg leading-8 text-[#d9e7f7]">{text}</p>
+    <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">
+      {text}
+    </p>
     <Link
       href="/contact"
       className="mt-6 inline-flex rounded-full bg-[#FE6F1F] px-6 py-4 text-base font-semibold text-white"
