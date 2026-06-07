@@ -10,8 +10,12 @@ import EvergreenContentStrategyBlog, {
 import LocalBrandTrustSignalsBlog, {
   localBrandTrustSignalsBlog,
 } from "./blogs/local-brand-trust-signals";
+import FirstClickVsLastClickAttributionMarketingBlog, {
+  firstClickVsLastClickAttributionMarketingBlog,
+} from "./blogs/first-click-vs-last-click-attribution-marketing";
 
 export const staticBlogs = [
+  firstClickVsLastClickAttributionMarketingBlog,
   localBrandTrustSignalsBlog,
   evergreenContentStrategyBlog,
   conversionTrackingBasicsBlog,
@@ -22,6 +26,8 @@ export const getStaticBlogBySlug = (slug: string) =>
   staticBlogs.find((blog) => blog.slug === slug);
 
 export const staticBlogComponents = {
+  [firstClickVsLastClickAttributionMarketingBlog.slug]:
+    FirstClickVsLastClickAttributionMarketingBlog,
   [localBrandTrustSignalsBlog.slug]: LocalBrandTrustSignalsBlog,
   [evergreenContentStrategyBlog.slug]: EvergreenContentStrategyBlog,
   [conversionTrackingBasicsBlog.slug]: ConversionTrackingBasicsBlog,

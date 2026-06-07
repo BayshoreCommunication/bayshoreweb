@@ -1,0 +1,17 @@
+- error Failed to start server
+Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1904:16)
+    at listenInCluster (node:net:1961:12)
+    at Server.listen (node:net:2063:7)
+    at D:\Special\Projects\2025\bayshoreweb\node_modules\next\dist\server\lib\start-server.js:150:16
+    at new Promise (<anonymous>)
+    at startServer (D:\Special\Projects\2025\bayshoreweb\node_modules\next\dist\server\lib\start-server.js:135:11)
+    at setupFork (D:\Special\Projects\2025\bayshoreweb\node_modules\next\dist\cli\next-dev.js:353:75)
+    at runDevServer (D:\Special\Projects\2025\bayshoreweb\node_modules\next\dist\cli\next-dev.js:362:23)
+    at async nextDev (D:\Special\Projects\2025\bayshoreweb\node_modules\next\dist\cli\next-dev.js:471:9) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 3000
+}
