@@ -20,7 +20,7 @@ import { setCookie, hasCookie } from "cookies-next";
 import axios from "axios";
 import emailjs from "emailjs-com";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { AiOutlineRight } from "react-icons/ai";
 
 interface FormValues {
@@ -31,6 +31,15 @@ interface FormValues {
   address: string;
   zip: string;
 }
+
+const initialValues = {
+  first_name: "",
+  last_name: "",
+  email: "",
+  phone: "",
+  address: "",
+  zip: "",
+};
 
 const Page = () => {
   const carouselVideo = [
@@ -100,14 +109,6 @@ const Page = () => {
 
   //=============
 
-  const initialValues = {
-    first_name: "",
-    last_name: "",
-    email: "",
-    phone: "",
-    address: "",
-    zip: "",
-  };
   const form = useRef<HTMLFormElement>(null);
   const [loading, setLoading] = useState(false);
   const [contactInfo, setContactInfo] = useState(initialValues);
@@ -131,7 +132,25 @@ const Page = () => {
     setIsSubmit(true);
   };
 
-  const handlePostRequest = async () => {
+  const handleSubmitEmail = useCallback(async () => {
+    try {
+      if (form.current) {
+        const result = await emailjs.sendForm(
+          "service_o4z5ryj",
+          "template_220uure",
+          form.current,
+          "EVNtRahViRmUCuu7C"
+        );
+        console.log("Email sent successfully:", result.text);
+        setContactInfo(initialValues);
+        form.current.reset();
+      }
+    } catch (error) {
+      console.error("Email send failed:");
+    }
+  }, []);
+
+  const handlePostRequest = useCallback(async () => {
     try {
       setLoading(true);
       const response = await axios.post(
@@ -148,31 +167,13 @@ const Page = () => {
     } finally {
       setLoading(false);
     }
-  };
-
-  const handleSubmitEmail = async () => {
-    try {
-      if (form.current) {
-        const result = await emailjs.sendForm(
-          "service_o4z5ryj",
-          "template_220uure",
-          form.current,
-          "EVNtRahViRmUCuu7C"
-        );
-        console.log("Email sent successfully:", result.text);
-        setContactInfo(initialValues);
-        form.current.reset();
-      }
-    } catch (error) {
-      console.error("Email send failed:");
-    }
-  };
+  }, [contactInfo, handleSubmitEmail]);
 
   useEffect(() => {
     if (Object.keys(formErrors).length === 0 && isSubmit) {
       handlePostRequest();
     }
-  }, [formErrors]);
+  }, [formErrors, isSubmit, handlePostRequest]);
   // function handelScroll() {
   //   const vid = document.querySelector("#video");
   //   vid.scrollIntoView({

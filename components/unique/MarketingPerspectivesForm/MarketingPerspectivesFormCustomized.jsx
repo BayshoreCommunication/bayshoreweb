@@ -451,6 +451,7 @@ const MarketingPerspectivesFormCustomized = ({
     seoKeywordsTopics,
     additionalInformation,
     contactInformation,
+    setMarketingPerspectivesFormDataDetails,
   ]);
 
   return (

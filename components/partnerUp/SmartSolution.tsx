@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export default function Home() {
@@ -34,10 +35,12 @@ export default function Home() {
 
           {/* Left - Image */}
           <motion.div className="col-span-6 flex justify-center p-6" variants={item}>
-            <img
+            <Image
               src="/image/smart-solution/smart.png"
               alt="Smart Website Solutions"
-              className="rounded-xl shadow-md w-full max-w-3xl"
+              width={1400}
+              height={900}
+              className="h-auto w-full max-w-3xl rounded-xl shadow-md"
             />
           </motion.div>
 

@@ -90,7 +90,7 @@ export default function SeoServicesSection() {
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/70 md:text-[16px]">
               <p>
                 Search optimization in 2026 demands far more than keyword
-                placement on a page. Google's AI-assisted systems and
+                placement on a page. Google&apos;s AI-assisted systems and
                 voice-activated tools have changed how Wesley Chapel residents
                 find local businesses.
               </p>

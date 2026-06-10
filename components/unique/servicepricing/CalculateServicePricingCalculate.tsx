@@ -66,18 +66,14 @@ const CalculateServicePricingCalculate: React.FC<Props> = ({
     setPricingList(updatedPricingList);
   };
 
-  const calculateTotalPrice = () => {
+  useEffect(() => {
     const total = pricingList.reduce((acc: any, service: any) => {
       const price = parseFloat(service.estimatedTotalPrice) || 0;
       return acc + price;
     }, 0);
 
     setTotalPrice(total.toFixed(2));
-  };
-
-  useEffect(() => {
-    calculateTotalPrice();
-  }, [pricingList]);
+  }, [pricingList, setTotalPrice]);
 
   // Handler for input changes
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
