@@ -73,7 +73,7 @@ export default function Hero() {
               <br />
               Wesley Chapel,
               <br />
-              Florida Reach More
+              Florida. Reach More
               <br />
               Customers
               <br />
@@ -103,7 +103,7 @@ export default function Hero() {
 
               <a
                 href="tel:+15095921745"
-                className="flex h-16 h-[52px] items-center justify-center gap-3 rounded-lg border border-white/30 bg-white/5 px-8 text-[15px] font-medium text-white backdrop-blur-md transition hover:bg-white/10 md:text-[16px]"
+                className="flex  h-[52px] items-center justify-center gap-3 rounded-lg border border-white/30 bg-white/5 px-8 text-[15px] font-medium text-white backdrop-blur-md transition hover:bg-white/10 md:text-[16px]"
               >
                 <Phone size={18} />
                 +1 (509) 592-1745
