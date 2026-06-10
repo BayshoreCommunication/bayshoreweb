@@ -68,7 +68,7 @@ const testimonials = [
       "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
     name: "Sarah T.",
     role: "Retail Business Owner",
-    location: "Land O' Lakes, FL",
+    location: "Land O&apos; Lakes, FL",
     icon: Store,
     review:
       "Our website traffic increased steadily and our visibility across local searches improved dramatically. Bayshore helped us compete against much larger brands without increasing our advertising budget.",
@@ -108,7 +108,7 @@ export default function TestimonialsSection() {
 
           <div className="lg:pl-20">
             <p className="max-w-[560px] text-[18px] leading-9 text-black/70">
-              We're proud to help businesses in Wesley Chapel and surrounding
+              We&apos;re proud to help businesses in Wesley Chapel and surrounding
               areas grow their visibility, attract more customers, and achieve
               lasting results.
             </p>
@@ -305,7 +305,7 @@ export default function TestimonialsSection() {
                       </div>
 
                       <p className="mt-6 text-[16px] leading-8 text-black/80">
-                        "{item.review}"
+                        &ldquo;{item.review}&rdquo;
                       </p>
 
                       <div className="mt-8 border-t border-black/10 pt-6">

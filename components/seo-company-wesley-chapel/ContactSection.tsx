@@ -78,14 +78,14 @@ export default function ContactSection() {
               <MapPin size={18} />
 
               <span className="font-bold uppercase text-[#FF6F00]">
-                Let's Grow Together
+                Let&apos;s Grow Together
               </span>
 
               <div className="h-px w-12 bg-[#FF6F00]" />
             </div>
 
             <h2 className="text-[38px] font-bold leading-[1.08] text-black md:text-[52px]">
-              Let's Put Your
+              Let&apos;s Put Your
               <br />
               Wesley Chapel
               <br />
