@@ -133,7 +133,8 @@ const auditSteps = [
 
 const faqs = [
   {
-    question: "Can I compare attribution models without changing my live tracking?",
+    question:
+      "Can I compare attribution models without changing my live tracking?",
     answer:
       "Yes. Most platforms let you run model comparisons in a separate view. Your live attribution setup can stay untouched while you explore the differences between first-click, last-click, and multi-touch reporting.",
   },
@@ -165,10 +166,8 @@ const schemaData = {
       description:
         firstClickVsLastClickAttributionMarketingBlog.metaDescription,
       image: `https://www.bayshorecommunication.com${attributionImage}`,
-      datePublished:
-        firstClickVsLastClickAttributionMarketingBlog.createdAt,
-      dateModified:
-        firstClickVsLastClickAttributionMarketingBlog.updatedAt,
+      datePublished: firstClickVsLastClickAttributionMarketingBlog.createdAt,
+      dateModified: firstClickVsLastClickAttributionMarketingBlog.updatedAt,
       mainEntityOfPage:
         "https://www.bayshorecommunication.com/blog/first-click-vs-last-click-attribution-marketing",
       author: {
@@ -261,7 +260,7 @@ export const FirstClickVsLastClickAttributionMarketingBlog = () => {
       <div className="mt-8 space-y-8">
         <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
-            Key Points
+            <h2>Key Points</h2>
           </p>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {keyPoints.map((point) => (
@@ -289,16 +288,15 @@ export const FirstClickVsLastClickAttributionMarketingBlog = () => {
           title="Florida businesses misunderstand first-click attribution"
         >
           <p>
-            First-click attribution assigns 100% of the conversion credit to
-            the very first interaction a customer has with your brand. A Google
+            First-click attribution assigns 100% of the conversion credit to the
+            very first interaction a customer has with your brand. A Google
             search, a Facebook ad, or a blog post can all be the moment that
             opens the door.
           </p>
           <p>
-            Most Florida business owners never look this far back. They only
-            see the final sale. First-click attribution shows what built
-            awareness, and awareness is where growth actually starts. According
-            to{" "}
+            Most Florida business owners never look this far back. They only see
+            the final sale. First-click attribution shows what built awareness,
+            and awareness is where growth actually starts. According to{" "}
             <ExternalLink href="https://www.thinkwithgoogle.com/consumer-insights/consumer-journey/customer-journey-touchpoints-marketing/">
               Think with Google
             </ExternalLink>
@@ -346,8 +344,8 @@ export const FirstClickVsLastClickAttributionMarketingBlog = () => {
               HubSpot&apos;s marketing attribution guide
             </ExternalLink>{" "}
             explains why teams need attribution models that show how different
-            marketing interactions contribute across the funnel, not only at
-            the final click.
+            marketing interactions contribute across the funnel, not only at the
+            final click.
           </p>
           <blockquote>
             &quot;The biggest mistake marketers make is letting the default
@@ -454,10 +452,10 @@ export const FirstClickVsLastClickAttributionMarketingBlog = () => {
           title="Which attribution model works best for your Florida business?"
         >
           <p>
-            First-click works best with long sales cycles. Coaches,
-            consultants, and B2B service firms in Florida get the most value
-            here. Last-click works when customers make fast decisions, such as
-            local e-commerce or service businesses with a short purchase window.
+            First-click works best with long sales cycles. Coaches, consultants,
+            and B2B service firms in Florida get the most value here. Last-click
+            works when customers make fast decisions, such as local e-commerce
+            or service businesses with a short purchase window.
           </p>
           <p>
             Most Florida businesses aiming to grow find success using U-shaped
@@ -530,7 +528,9 @@ export const FirstClickVsLastClickAttributionMarketingBlog = () => {
           </div>
           <p className="mt-6 text-lg leading-8">
             Bayshore Communication&apos;s{" "}
-            <InlineLink href="/our-services/seo-service">SEO service</InlineLink>{" "}
+            <InlineLink href="/our-services/seo-service">
+              SEO service
+            </InlineLink>{" "}
             and{" "}
             <InlineLink href="/our-services/paid-advertising">
               paid advertising
@@ -575,16 +575,14 @@ export const FirstClickVsLastClickAttributionMarketingBlog = () => {
         </section>
 
         <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-          <h2 className="text-3xl font-bold leading-tight">
-            Final Thoughts
-          </h2>
+          <h2 className="text-3xl font-bold leading-tight">Final Thoughts</h2>
           <div className="mt-5 space-y-5 text-lg leading-8">
             <p>
               First-click and last-click attribution answer different marketing
               questions. First-click shows what creates awareness. Last-click
               shows what closes the conversion. Multi-touch attribution connects
-              the entire journey so a Florida business can make budget
-              decisions with clearer data.
+              the entire journey so a Florida business can make budget decisions
+              with clearer data.
             </p>
             <p>
               If your reports are still built around the default attribution
@@ -688,9 +686,7 @@ const PdfCta = ({
       {eyebrow}
     </p>
     <h2 className="mt-3 text-3xl font-bold leading-tight">{title}</h2>
-    <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">
-      {text}
-    </p>
+    <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">{text}</p>
     <Link
       href={href}
       className="mt-6 inline-flex rounded-full bg-[#FE6F1F] px-6 py-4 text-base font-semibold text-white"

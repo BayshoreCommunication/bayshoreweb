@@ -3,10 +3,29 @@ import { usePathname } from "next/navigation";
 import React from "react";
 import Script from "next/script";
 
+const PRODUCTION_URL = "https://www.bayshorecommunication.com";
+
+const getCanonicalBaseUrl = () => {
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL;
+
+  if (!appUrl) return PRODUCTION_URL;
+
+  try {
+    const parsedUrl = new URL(appUrl);
+    const isLocalUrl =
+      parsedUrl.hostname === "localhost" || parsedUrl.hostname === "127.0.0.1";
+
+    return isLocalUrl ? PRODUCTION_URL : parsedUrl.origin;
+  } catch {
+    return PRODUCTION_URL;
+  }
+};
+
 const Head = () => {
   const pathname = usePathname();
 
   const url = pathname === "/" ? "" : pathname;
+  const canonicalBaseUrl = getCanonicalBaseUrl();
 
   return (
     <>
@@ -19,7 +38,7 @@ const Head = () => {
            })(window,document,'script','dataLayer','GTM-NN7P643');
         `}
       </Script>
-      <link rel="canonical" href={process.env.NEXT_PUBLIC_APP_URL + url} />
+      <link rel="canonical" href={`${canonicalBaseUrl}${url}`} />
       <meta
         name="google-site-verification"
         content="4D7c8Md6e4LutBgarRA2BWlVkh_7gW1XdRGya8bW1-g"
