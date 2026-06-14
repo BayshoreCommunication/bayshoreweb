@@ -1,6 +1,9 @@
 import CtaOptimizationBlog, {
   howMinorCtaChangesBlog,
 } from "./blogs/how-minor-cta-changes";
+import HowMuchDoSeoServicesCostBlog, {
+  howMuchDoSeoServicesCostBlog,
+} from "./blogs/how-much-do-seo-services-cost";
 import ConversionTrackingBasicsBlog, {
   conversionTrackingBasicsBlog,
 } from "./blogs/how-to-measure-what's-really-driving-revenue-online";
@@ -15,6 +18,7 @@ import FirstClickVsLastClickAttributionMarketingBlog, {
 } from "./blogs/first-click-vs-last-click-attribution-marketing";
 
 export const staticBlogs = [
+  howMuchDoSeoServicesCostBlog,
   firstClickVsLastClickAttributionMarketingBlog,
   localBrandTrustSignalsBlog,
   evergreenContentStrategyBlog,
@@ -26,6 +30,7 @@ export const getStaticBlogBySlug = (slug: string) =>
   staticBlogs.find((blog) => blog.slug === slug);
 
 export const staticBlogComponents = {
+  [howMuchDoSeoServicesCostBlog.slug]: HowMuchDoSeoServicesCostBlog,
   [firstClickVsLastClickAttributionMarketingBlog.slug]:
     FirstClickVsLastClickAttributionMarketingBlog,
   [localBrandTrustSignalsBlog.slug]: LocalBrandTrustSignalsBlog,
