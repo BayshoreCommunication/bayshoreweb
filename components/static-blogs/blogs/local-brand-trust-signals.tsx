@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 
 const localTrustImage =
-  "/assets/static-blogs/local-brand-trust-signals-google-ranking-factors.webp";
+  "/assets/static-blogs/local-brand-trust-signals-google-ranking-factors.jpg";
 
 const localTrustImageMeta = {
   alt: "Local brand trust signals infographic showing Google ranking factors beyond reviews and ratings",
