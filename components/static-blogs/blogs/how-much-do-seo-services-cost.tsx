@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
@@ -178,32 +177,115 @@ const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.bayshorecommunication.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.bayshorecommunication.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How Much Do SEO Services Cost?",
+          "item": "https://www.bayshorecommunication.com/blog/how-much-do-seo-services-cost"
+        }
+      ]
+    },
+    {
       "@type": "BlogPosting",
-      headline: howMuchDoSeoServicesCostBlog.title,
-      description: howMuchDoSeoServicesCostBlog.metaDescription,
-      image: `https://www.bayshorecommunication.com${seoImage}`,
-      datePublished: howMuchDoSeoServicesCostBlog.createdAt,
-      dateModified: howMuchDoSeoServicesCostBlog.updatedAt,
-      mainEntityOfPage:
-        "https://www.bayshorecommunication.com/blog/how-much-do-seo-services-cost",
-      publisher: {
-        "@type": "Organization",
-        name: "Bayshore Communication",
-        url: "https://www.bayshorecommunication.com",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bayshorecommunication.com/blog/how-much-do-seo-services-cost"
       },
+      "headline": "How Much Do SEO Services Cost?",
+      "name": "SEO Services Cost: Proven Facts You Must Know in 2026",
+      "description": "Discover SEO services cost in 2026. Learn pricing ranges, key factors, and how to choose the right SEO package for your business.",
+      "url": "https://www.bayshorecommunication.com/blog/how-much-do-seo-services-cost",
+      "image": "https://www.bayshorecommunication.com/assets/static-blogs/seo-services-cost-guide-pricing-factors-results.webp",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.bayshorecommunication.com/blog"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "SEO Pricing",
+        "description": "An overview of SEO service costs, pricing structures, and factors that affect search engine optimization investments."
+      },
+      "keywords": [
+        "seo services cost",
+        "how much does seo cost",
+        "how much do seo services cost",
+        "seo pricing",
+        "seo agency pricing",
+        "monthly seo cost",
+        "seo packages pricing",
+        "local seo cost",
+        "technical seo pricing",
+        "enterprise seo cost",
+        "seo service rates"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Bayshore Communication"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
+        }
+      },
+      "datePublished": "2026-06-14",
+      "dateModified": "2026-06-14"
     },
     {
       "@type": "FAQPage",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why is there such a wide range of SEO prices amongst agencies?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SEO rates vary depending on scope, competitiveness, and quality of competence. Some providers also offer content and PR. Others send in reports. The platform, the niche, and the speed demands also influence the real workload."
+          }
         },
-      })),
-    },
-  ],
+        {
+          "@type": "Question",
+          "name": "Is it better to pay every month for search engine optimization services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Monthly retainers fit continual growth. SEO compounds over time. Hourly is good for advice, audits, or training. If you go with hourly, establish outcomes and restrictions to prevent runaway expenses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I do search engine optimization myself to save some money?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, you may start on your own with tools like Search Console, on-page adjustments, and local listings. But competitive rankings require consistent content, technical skill, and links. Time is the actual expense."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an amount of time to wait before seeing a return on investment from SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Many sites get first momentum after 3–6 months. A good ROI normally takes 6 to 12 months. Competitive niches require more time. Better tracking leads to a clearer, sooner view of ROI."
+          }
+        }
+      ]
+    }
+  ]
 };
 
 const InlineLink = ({
@@ -266,16 +348,7 @@ export const HowMuchDoSeoServicesCostBlog = () => {
             Pricing Guide
           </span>
         </div>
-        <div className="mt-6 flex justify-center">
-          <Image
-            src={seoImage}
-            alt={seoImageMeta.alt}
-            title={seoImageMeta.title}
-            width={800}
-            height={400}
-            className="rounded-[8px]"
-          />
-        </div>
+
       </section>
 
       <div className="mt-8 space-y-8">
