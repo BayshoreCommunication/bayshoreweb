@@ -21,39 +21,39 @@ import "swiper/css/pagination";
 const features = [
   {
     Icon: Award,
-    title: " Proven Track Record with Legal Clients",
+    title: "A Track Record Built on Measurable Deliveries",
     description:
-      "Bayshore Communication has worked directly with law firms and legal service providers, delivering measurable improvements in search rankings, organic traffic, and new client inquiries. Our portfolio includes personal injury firms, family law practices, immigration attorneys, and multi-area law offices.",
+      "We have served more than 70 clients, launched over 220 websites, and generated in excess of 500,000 leads across multiple industries. Every client engagement adds depth to the experience that shapes how we approach each new Tampa, Florida lawyer SEO strategy.",
   },
   {
     Icon: TrendingUp,
-    title: "Data-Driven Legal Marketing",
+    title: "Every Recommendation Backed by Real Evidence",
     description:
-      "Every recommendation we make is backed by keyword research, competitor analysis, technical audits, and performance analytics. We do not make assumptions or apply generic templates. Here, every decision is grounded in real data specific to your firm and the Tampa legal market.",
+      "Keyword selections, content priorities, technical actions, and link acquisition targets are all determined by verified research and current market data. There is no assumption-based planning in our process. Every decision traces to specific evidence about your law firm and your local market.",
   },
   {
     Icon: SearchCheck,
-    title: "Full-Spectrum SEO Coverage",
+    title: "One Team Covering Your Complete Search Presence",
     description:
-      "From technical SEO and on-page optimization to local search, legal content marketing, AI-era AEO and GEO strategies, we handle every dimension of your law firm's online presence under one cohesive strategy with one accountable team.",
+      "Technical SEO, local optimization, content development, AEO, and GEO are managed by one coordinated team under a single strategy. There are no disconnected vendors or conflicting priorities. One accountable team owns every dimension of your Tampa, Florida, search presence.",
   },
   {
     Icon: MapPinned,
-    title: "Deep Tampa Market Knowledge",
+    title: "Genuine Tampa Florida Market Understanding",
     description:
-"We understand how Tampa residents search for legal help, which practice areas are most competitive locally, how the local map pack behaves in legal categories, and how to position your firm effectively against the strongest established competitors in your market.",
+      "We understand how Hillsborough County residents search for law firms, which practice areas carry the heaviest local competition, how map pack behavior works in the Tampa, Florida, market, and where the realistic ranking opportunities exist for your law practice.",
   },
   {
     Icon: Layers3,
-    title: " Custom Strategies for Every Firm",
+    title: "No Templates, No Recycled Work",
     description:
-      "No two law firms have the same goals, client base, practice mix, or competitive landscape. Every SEO strategy we build is designed specifically around your firm's practice areas, market position, and growth objectives that are never copied from another client.",
+      "Every Tampa, Florida, lawyer SEO strategy we build is designed from first principles around your specific practice areas, your competitive environment, your target client profile, and your growth targets. No framework from another client is applied to your account.",
   },
   {
     Icon: ClipboardList,
-    title: "Transparent Reporting and Direct Communication",
+    title: "Full Visibility Into Every Action and Outcome",
     description:
-      "You receive regular, detailed reports showing exactly what is happening with your rankings, traffic, and leads.",
+      "Monthly reporting documents rankings, traffic changes, lead generation, and ROI with complete transparency. You receive plain-language context on what changed, why it changed, and what we are doing about it. There is no opacity in our client relationships.",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function WhyChooseBayshore() {
           {/* Left */}
           <div>
             <span className="text-xl font-bold uppercase tracking-wider text-[#FF6F00]">
-             WHY CHOOSE US
+              WHY CHOOSE US
             </span>
 
             <h2 className="mt-4 text-[38px] font-bold leading-[1.05] text-[#081B4B] md:text-[52px]">
@@ -92,13 +92,8 @@ export default function WhyChooseBayshore() {
 
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/75 md:text-[18px]">
               <p>
-                Bayshore Communication is not a generalist marketing agency that added SEO to its service list. We are a growth-focused digital agency that has worked with Tampa-area law firms and legal service providers.
+                Bayshore Communication was not built as a generalist agency with SEO as an add-on service. We are a dedicated growth partner with a measured, documented track record of improving search performance and driving real client acquisition for law firms across Florida since 2016.
               </p>
-
-              {/* <p>
-                Bayshore Communication was founded on the second principle and
-                has operated that way since 2016.
-              </p> */}
             </div>
 
             <button

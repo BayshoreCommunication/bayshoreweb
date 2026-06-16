@@ -3,58 +3,64 @@ import { CalendarDays } from "lucide-react";
 
 const services = [
   {
-    title: "SEO Audit",
+    title: "Website SEO Audit",
     image: "/seo-company-wesley-chapel/service-1.png",
     description:
-      "A thorough technical, on-page, and off-page analysis of your law firm's website. Every gap, error, and missed ranking opportunity is identified and mapped into a clear, prioritized action plan specific to your practice.",
+      "Every engagement begins with a detailed examination of your current digital standing. Technical health, content alignment, keyword positioning, local signal strength, and competitor positioning are all assessed to produce a clear, prioritized plan of action specific to the Tampa Florida lawyer SEO market.",
   },
   {
-    title: "Keyword Research",
+    title: "Keyword Intelligence and Strategy",
     image: "/seo-company-wesley-chapel/service-2.png",
     description:
-      "Deep legal keyword research that uncovers the precise search terms Tampa clients use when looking for attorneys in your practice areas. Every keyword is evaluated for search volume, competition, and actual hiring intent so that rankings translate into consultations.",
+      "We identify precisely how Tampa Florida clients phrase their searches when they are prepared to retain legal services. Intent level, geographic specificity, search volume, and ranking difficulty are all weighed to build a keyword framework that attracts active clients over casual browsers.",
   },
   {
-    title: "On-Page SEO",
+    title: "On-Page Optimization",
     image: "/seo-company-wesley-chapel/service-3.png",
     description:
-      "Practice area pages, meta tags, title tags, headings, internal links, and content structure are all optimized to perform well in search and convert visitors into consultation requests. Nothing is left unoptimized on your most important pages.",
+      "Each page of your website is an individual ranking asset. We optimize every title tag, meta description, heading hierarchy, URL pattern, internal link structure, and practice area content section to align with what Google requires to rank your Tampa Florida legal pages with full confidence.",
   },
   {
-    title: "Technical SEO",
+    title: "Technical Website Health",
     image: "/seo-company-wesley-chapel/service-4.png",
     description:
-      "Site speed, mobile optimization, structured data, XML sitemaps, crawl error resolution, and indexing fixes which are the technical foundation that every law firm's search rankings depend on, and the layer that many Tampa firms overlook entirely.",
+      "Search rankings are limited by technical barriers before content and links can contribute. We identify and resolve crawlability issues, slow load times, mobile performance gaps, indexing errors, and structural deficiencies that prevent your law firm's website from reaching its ceiling.",
   },
   {
-    title: "Off-Page SEO",
-    image: "/seo-company-wesley-chapel/service-5.png",
-    description:
-      "High-quality legal backlinks, brand mentions, authoritative legal directory listings, and strategic digital PR to build domain authority and the trust signals that search engines and potential clients both rely on",
-  },
-  {
-    title: "Local SEO",
-    image: "/seo-company-wesley-chapel/service-6.png",
-    description:
-      "Google Business Profile optimization, Tampa legal citations, and location-specific keyword targeting to secure your firm's position in the local map pack and neighborhood-level search results across Tampa Bay.",
-  },
-  {
-    title: "Law Firm Content Marketing",
+    title: "Authority Link Building",
     image: "/seo-company-wesley-chapel/service-7.png",
     description:
-      "Authoritative legal content includes practice area pages, FAQ articles, blog posts, and legal guides. It is written around real questions Tampa residents ask before hiring an attorney. The content ranks and converts, not merely exists.",
+      "External credibility is a primary ranking input. We acquire meaningful backlinks from credible legal, regional, and Florida-wide sources, building the off-page authority profile that sustains and elevates your Tampa, Florida, law firm search rankings over time.",
+  },
+  {
+    title: "Local Search Dominance",
+    image: "/seo-company-wesley-chapel/service-5.png",
+    description:
+      "Tampa, Florida local search requires a multi-signal presence strategy. We refine your Google Business Profile and build consistent citation records across legal directories. We also deploy location targeted practice area content that secures your law firm in the map pack and in neighborhood level search results.",
+  },
+  {
+    title: "Content That Ranks and Converts",
+    image: "/seo-company-wesley-chapel/service-6.png",
+    description:
+      "We produce content that earns its search placement by genuinely addressing what your legal audience is looking for. Each practice page, FAQ, and guide is built around verified Tampa Florida search behavior and designed to establish your law firm as the most credible local authority in its practice areas.",
   },
   {
     title: "Ask Engine Optimization (AEO)",
     image: "/seo-company-wesley-chapel/service-8.png",
     description:
-      "When Tampa residents ask questions about the law and require answers right away, your firm will be found by AI-driven tools such as ChatGPT, Perplexity, Grok, and Google AI Search with structured content that directly addresses the legal questions.",
+      "Consumers increasingly receive answers from AI before visiting any website. We structure your content so your Tampa, Florida, law firm is referenced as an authoritative source when platforms including ChatGPT, Perplexity, and Google AI Search respond to consumer legal questions in your market.",
   },
   {
     title: "Generative Engine Optimization (GEO)",
     image: "/seo-company-wesley-chapel/service-9.png",
     description:
-      "AI-friendly content, such as optimized for summarizing and assistance for conversational legal searches, so that your firm can be cited and recommended when potential clients have legal questions.",
+      "We optimize your digital presence for AI-generated summaries and conversational search responses. As Tampa, Florida clients use AI tools more frequently to locate law firms, your brand is present and recommended in the answers those tools deliver.",
+  },
+  {
+    title: "Performance Tracking and Monthly Reporting",
+    image: "/seo-company-wesley-chapel/service-1.png",
+    description:
+      "Every strategy decision is grounded in real data, and every outcome is tracked and shared transparently. Monthly reports document ranking movement, organic traffic trends, lead activity, and ROI relative to your Tampa, Florida, lawyer SEO investment.",
   },
 ];
 
@@ -70,12 +76,12 @@ export default function SeoServicesSection() {
             </span>
 
             <h2 className="mt-4 text-[36px] font-bold leading-[1.1] text-black md:text-[54px]">
-              Complete <span className="text-[#FF6F00]">SEO</span>
+              Complete <span className="text-[#FF6F00]">Lawyer SEO</span>
               <br />
-              Services for
+              Services in
               <br />
               <span className="text-[#FF6F00]">
-                Tampa Law Firms
+                Tampa Florida
               </span>
               <br />
               Crafted for the
@@ -87,15 +93,8 @@ export default function SeoServicesSection() {
 
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/70 md:text-[16px]">
               <p>
-                Legal search has changed dramatically. AI-powered platforms, voice search, and smarter algorithms mean your Tampa law firm needs more than traditional SEO to stay competitive and maintain consistent visibility. As a lawyer SEO agency tampa, Bayshore Communication covers every dimension of legal SEO from foundational rankings to AI-powered discovery.
+                The foundation of search has shifted. AI-powered platforms, voice queries, entity-based evaluation, and intent-driven algorithms now determine which Tampa, Florida, law firms earn visibility and which go unnoticed. As a Lawyer SEO Agency Tampa, Bayshore Communication delivers every capability your law firm needs to lead local search in 2026 and well beyond.
               </p>
-
-              {/* <p>
-                Bayshore Communication is the reliable SEO company in Wesley
-                Chapel, Florida, that understands this shift. We build
-                strategies that perform across traditional rankings, AI answers,
-                and every channel your next customer uses.
-              </p> */}
             </div>
 
             <button
@@ -146,7 +145,6 @@ export default function SeoServicesSection() {
                   hover:-translate-y-1
                   hover:shadow-[0_12px_30px_rgba(0,0,0,0.08)]
                   md:grid-cols-[minmax(0,1fr)_350px]
-                
                 "
               >
                 <div>
@@ -159,7 +157,7 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
+                <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
                   <Image
                     src={service.image}
                     alt={service.title}

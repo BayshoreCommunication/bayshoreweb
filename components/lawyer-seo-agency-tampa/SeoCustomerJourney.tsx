@@ -4,30 +4,30 @@ const seoSteps = [
   {
     number: "01",
     image: "/seo-company-wesley-chapel/seo-step-1.png",
-    title: "Search Visibility",
+    title: "From Search Entry to Your Website",
     description:
-      "Your law firm appears when Tampa residents search for terms like “personal injury lawyer Tampa” or “Tampa family law attorney,” instantly establishing credibility and trust with people who are ready to hire.",
+      "Optimization helps your law firm to get a good position among the first results a Tampa, Florida, searcher finds. That position gets the click and brings a visitor who has a need related to your legal services.",
   },
   {
     number: "02",
     image: "/seo-company-wesley-chapel/seo-step-2.png",
-    title: "Google Maps Prominence",
+    title: "From Your Website to Verified Trust",
     description:
-      "When your Google Business Profile is properly optimized, nearby clients find your office, read your reviews, and call directly to book a consultation with your firm. This is where a lawyer SEO agency tampa approach ensures you appear at the top in your neighborhood.",
+      "When people see your law firm on the page of search results, it tells them that you are legitimate. They think you are a reputable firm before they even read what you have to say. If you have a local presence, people are saying good things about you, and it is easy to understand what practice areas you cover, then people are more likely to want to retain your services. This is because a good first-page ranking and a solid local presence with reviews and clear information about your services make people trust you and want to engage with your firm. The local presence and the reviews and service information are key to turning that trust into a decision to engage with your firm.",
   },
   {
     number: "03",
     image: "/seo-company-wesley-chapel/seo-step-3.png",
-    title: "Right Clients, Not Just Any Traffic",
+    title: "From Interest to a Direct Inquiry",
     description:
-      "Legal SEO targets people who are actively looking for the specific type of legal representation your firm provides, not random visitors with no intent to retain an attorney.",
+      "A properly structured website removes every obstacle between interest and action, and strategic calls to action guide visitors to the next step. Mobile-enhanced pages keep things smooth on any device. They worked well everywhere. Load times keep visitors in Tampa, Florida, engaged.",
   },
   {
     number: "04",
     image: "/seo-company-wesley-chapel/seo-step-4.png",
-    title: "Consultations, Not Just Clicks",
+    title: "From a Single Sale to an Ongoing Relationship",
     description:
-      "A well-optimized law firm website converts search visibility into booked consultations, inbound phone calls, and contact form submissions from ready-to-hire clients throughout Tampa.",
+      "Clients who come through organic search are aware and deliberate. They convert at higher rates, spend more per transaction, and are more likely to return and recommend your Tampa, Florida, law firm to others in the community.",
   },
 ];
 
@@ -38,13 +38,12 @@ export default function SeoCustomerJourney() {
         {/* Header */}
         <div className="mx-auto max-w-[900px] text-center">
           <h2 className="text-[32px] font-bold leading-[1.1] text-[#081B4B] md:text-[48px]">
-            How SEO converts <span className="text-[#FF6F00]">Tampa legal</span>,
-             searches into{" "}
-            <span className="text-[#FF6F00]">paying clients</span>
+            How SEO Turns <span className="text-[#FF6F00]">Tampa Florida</span> Legal Searches Into{" "}
+            <span className="text-[#FF6F00]">Paying Clients</span>
           </h2>
 
           <p className="mx-auto mt-6 max-w-[900px] text-[15px] leading-7 text-black/70 md:text-[18px] md:leading-8">
-            When a potential client searches for a Tampa attorney, they are not casually browsing. They have a legal need and they are ready to make a decision. Lawyer SEO agency tampa connects your firm with those high-intent searchers at exactly the right moment in their decision process.
+            Search intent is the most powerful client acquisition signal available to law firms. When a Tampa, Florida resident types a query into Google, that action represents a conscious need, not passive curiosity. A dedicated Lawyer SEO Agency Tampa builds the direct pathway from that intent signal to your front door.
           </p>
         </div>
 

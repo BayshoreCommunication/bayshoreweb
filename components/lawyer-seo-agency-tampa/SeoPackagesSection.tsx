@@ -20,126 +20,93 @@ type PackageColumn = {
   cta: string;
 };
 
-type FeatureRow = {
-  title: string;
-  icon: typeof Store;
-  items: string[];
-  values: Record<PackageKey, string[]>;
-};
-
 const packageColumns: PackageColumn[] = [
   {
     key: "launch",
-    title: "LAUNCH",
-    subtitle: "Get Discovered",
+    title: "Starter Plan",
+    subtitle: "New law firms building their first local search presence",
     price: "$1,500",
     cta: "Contact Us to Get Started",
   },
   {
     key: "scale",
-    title: "SCALE",
-    subtitle: "Grow Your Presence",
+    title: "Growth Plan",
+    subtitle: "Growing law firms ready to dominate Tampa Florida search",
     price: "$3,500",
     cta: "Request Proposal",
     popular: true,
   },
   {
     key: "dominate",
-    title: "DOMINATE",
-    subtitle: "Market Leadership",
+    title: "Authority Plan",
+    subtitle: "Established law firms seeking market-leading authority",
     price: "$7,000",
     cta: "Request Proposal",
   },
 ];
 
-const featureRows: FeatureRow[] = [
+const featureRows = [
+  {
+    title: "Best For",
+    icon: Store,
+    values: {
+      launch: "New law firms building their first local search presence",
+      scale: "Growing law firms ready to dominate Tampa Florida search",
+      dominate: "Established law firms seeking market-leading authority",
+    },
+  },
   {
     title: "Google Business Profile",
     icon: Store,
-    items: [
-      "Setup & Core Optimization",
-      "Ongoing Management & Posts",
-      "Review Strategy & Responses",
-      "Full Authority & Reputation Control",
-    ],
     values: {
-      launch: ["Included", "Not Included", "Not Included", "Not Included"],
-      scale: ["Included", "Included", "Included", "Not Included"],
-      dominate: ["Included", "Included", "Included", "Included"],
+      launch: "Setup and Verification",
+      scale: "Active Review Management",
+      dominate: "Full Reputation Management",
     },
   },
   {
-    title: "On-Page & Technical SEO",
+    title: "On-Page SEO",
     icon: Settings,
-    items: [
-      "Priority Pages Optimized",
-      "Core Web Vitals & Speed Optimization",
-      "Schema Markup & Structured Data",
-      "Mobile & Crawlability Audit",
-    ],
     values: {
-      launch: ["Up to 5 Pages", "Included", "Basic", "Included"],
-      scale: ["Up to 15 Pages", "Included", "Advanced", "Included"],
-      dominate: ["Full Site", "Included", "Enterprise", "Included"],
+      launch: "Up to 5 Pages",
+      scale: "Up to 15 Pages",
+      dominate: "Full Site Coverage",
     },
   },
   {
-    title: "Content & Authority",
+    title: "Content Production",
     icon: FileText,
-    items: [
-      "Optimized Articles per Month",
-      "Location & Service Pages",
-      "FAQ & Voice Search Content",
-      "Digital PR Campaigns",
-    ],
     values: {
-      launch: ["Not Included", "Included", "Not Included", "Not Included"],
-      scale: ["2 Articles", "Included", "Included", "Not Included"],
-      dominate: ["4+ Articles", "Included", "Included", "Included"],
+      launch: "Not Included",
+      scale: "2 optimized articles/mo",
+      dominate: "4+ Premium Articles / mo",
     },
   },
   {
-    title: "AI & Future Search",
+    title: "AI Visibility (AEO / GEO)",
     icon: Sparkles,
-    items: [
-      "Ask Engine Optimization (AEO)",
-      "Generative Engine Optimization (GEO)",
-      "AI Overview & ChatGPT Visibility",
-      "Voice Search Optimization",
-    ],
     values: {
-      launch: ["Foundational", "Not Included", "Not Included", "Not Included"],
-      scale: ["Standard", "Included", "Included", "Included"],
-      dominate: ["Advanced", "Included", "Included", "Included"],
+      launch: "Basic Signals",
+      scale: "Standard Implementation",
+      dominate: "Advanced AI Search Coverage",
     },
   },
   {
     title: "Link Building",
     icon: Link2,
-    items: [
-      "Local Citation Building",
-      "Niche & Local Directory Links",
-      "High-Authority Backlink Campaigns",
-    ],
     values: {
-      launch: ["Included", "Not Included", "Not Included"],
-      scale: ["Included", "Included", "Not Included"],
-      dominate: ["Included", "Included", "Included"],
+      launch: "Core Citations",
+      scale: "Regional and Niche Links",
+      dominate: "Digital PR and Authority Links",
     },
   },
   {
-    title: "Reporting & Support",
+    title: "Account Support",
     icon: ChartColumnIncreasing,
-    items: [
-      "Monthly Performance Reports",
-      "Keyword Ranking Tracking",
-      "Account Support Level",
-      "Strategy Call Frequency",
-    ],
     values: {
-      launch: ["Included", "Included", "Standard Email", "Quarterly"],
-      scale: ["Included", "Included", "Priority Team", "Monthly"],
-      dominate: ["Included", "Included", "Dedicated Manager", "Bi-Weekly"],
+      launch: "Email Support",
+      scale: "Priority Response",
+      dominate: "Dedicated Senior Strategist",
     },
   },
 ];
@@ -208,10 +175,11 @@ function PackageFeatureCard({
   row,
   pkg,
 }: {
-  row: FeatureRow;
+  row: typeof featureRows[0];
   pkg: PackageColumn;
 }) {
   const Icon = row.icon;
+  const value = row.values[pkg.key];
 
   return (
     <div className="rounded-[18px] border border-black/5 bg-[#FCFCFC] p-4 transition-all duration-300 hover:-translate-y-0.5 hover:border-[#FF6F00]/25 hover:bg-[#FFF7F1] hover:shadow-[0_12px_30px_rgba(255,111,0,0.08)]">
@@ -225,26 +193,9 @@ function PackageFeatureCard({
             {row.title}
           </h4>
 
-          <ul className="mt-2 space-y-1.5">
-            {row.items.map((item, itemIndex) => {
-              const value = row.values[pkg.key][itemIndex];
-
-              return (
-                <li
-                  key={`${row.title}-${pkg.key}-${itemIndex}`}
-                  className="flex items-start gap-2 text-[12px] leading-5 text-[#081B4B]/72"
-                >
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#FF6F00]" />
-                  <span className="min-w-0 flex-1">{item}</span>
-                  <span
-                    className={`shrink-0 text-right font-medium ${getValueTone(value)}`}
-                  >
-                    {value}
-                  </span>
-                </li>
-              );
-            })}
-          </ul>
+          <p className={`mt-2 text-[13px] font-medium leading-5 ${getValueTone(value)}`}>
+            {value}
+          </p>
         </div>
       </div>
     </div>
@@ -261,17 +212,15 @@ export default function SeoPackagesSection() {
           </p>
 
           <h2 className="mx-auto mt-4 max-w-[1180px] text-[32px] font-bold leading-[1.08] text-[#081B4B] md:text-[50px]">
-            SEO Packages for Wesley Chapel Florida Businesses
+            SEO Packages for Tampa Florida Law Firms
           </h2>
 
           <p className="mx-auto mt-4 max-w-[960px] text-[15px] leading-7 text-black/60 md:text-[18px]">
-            Bayshore Communication offers three focused SEO packages for Wesley
-            Chapel Florida businesses at every growth stage. Whether you are
-            starting out or competing for market leadership, we have the right
-            package.
+            Bayshore Communication offers structured SEO plans designed to meet Tampa Florida law firms at every stage of their growth. All packages are built around your specific practice areas and adjusted as your firm and market evolve.
           </p>
         </div>
 
+        {/* Mobile View */}
         <div className="mt-10 space-y-8 lg:hidden">
           {packageColumns.map((pkg) => (
             <div key={`mobile-${pkg.key}`} className="space-y-4">
@@ -290,6 +239,7 @@ export default function SeoPackagesSection() {
           ))}
         </div>
 
+        {/* Desktop View */}
         <div className="mt-10 hidden overflow-x-auto pb-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden lg:block">
           <div className="min-w-[1180px] rounded-[28px] border border-black/5 bg-white shadow-[0_18px_60px_rgba(8,27,75,0.06)]">
             <div className="grid grid-cols-[320px_repeat(3,minmax(0,1fr))] items-start">
@@ -360,11 +310,11 @@ export default function SeoPackagesSection() {
                 return (
                   <div
                     key={row.title}
-                    className="grid grid-cols-[320px_repeat(3,minmax(0,1fr))] items-stretch transition-colors duration-300 hover:bg-[#FFF7F1]/35"
+                    className="grid grid-cols-[320px_repeat(3,minmax(0,1fr))] items-center transition-colors duration-300 hover:bg-[#FFF7F1]/35"
                   >
                     <div className="sticky left-0 z-20 border-r border-black/5 bg-white px-5 py-5 md:px-6 md:py-6">
-                      <div className="flex items-start gap-3">
-                        <div className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#FFF4EC] text-[#FF6F00]">
+                      <div className="flex items-center gap-3">
+                        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#FFF4EC] text-[#FF6F00]">
                           <Icon size={22} strokeWidth={2} />
                         </div>
 
@@ -372,33 +322,25 @@ export default function SeoPackagesSection() {
                           <h3 className="text-[16px] font-bold uppercase leading-[1.25] tracking-[0.02em] text-[#FF6F00] md:text-[17px]">
                             {row.title}
                           </h3>
-
-                          <ul className="mt-2 space-y-1 text-[13px] leading-5 text-[#081B4B]/72 md:text-[14px] md:leading-6">
-                            {row.items.map((item, itemIndex) => (
-                              <li key={`${row.title}-${itemIndex}`}>{item}</li>
-                            ))}
-                          </ul>
                         </div>
                       </div>
                     </div>
 
-                    {packageColumns.map((pkg) => (
-                      <div
-                        key={`${row.title}-${pkg.key}`}
-                        className="px-4 py-5 text-center md:px-6 md:py-6"
-                      >
-                        <div className="space-y-1.5">
-                          {row.values[pkg.key].map((value, valueIndex) => (
-                            <p
-                              key={`${row.title}-${pkg.key}-${valueIndex}`}
-                              className={`text-[14px] font-medium leading-6 md:text-[15px] ${getValueTone(value)}`}
-                            >
-                              {value}
-                            </p>
-                          ))}
+                    {packageColumns.map((pkg) => {
+                      const value = row.values[pkg.key];
+                      return (
+                        <div
+                          key={`${row.title}-${pkg.key}`}
+                          className="px-4 py-5 text-center md:px-6 md:py-6"
+                        >
+                          <p
+                            className={`text-[14px] font-medium leading-6 md:text-[15px] ${getValueTone(value)}`}
+                          >
+                            {value}
+                          </p>
                         </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 );
               })}
@@ -429,8 +371,7 @@ export default function SeoPackagesSection() {
         </div>
 
         <p className="mx-auto mt-4 max-w-[980px] text-center text-[13px] leading-6 text-black/55">
-          All packages are adjusted based on your Wesley Chapel industry,
-          competitive environment, and growth objectives.
+          All packages are adjusted based on your Tampa industry, competitive environment, and growth objectives. Contact Bayshore Communication for a proposal built specifically around your law firm's needs.
         </p>
       </div>
     </section>

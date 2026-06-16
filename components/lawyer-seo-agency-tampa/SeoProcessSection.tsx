@@ -16,65 +16,65 @@ const processSteps = [
   {
     number: "1",
     Icon: Target,
-    title: "Law Firm SEO Audit",
+    title: "Discovery and Law Firm Goal Alignment",
     description:
-      "We begin by analyzing your website's technical health, current keyword rankings, on-page structure, local presence, and competitive positioning. This gives us a clear baseline and identifies the highest-priority improvements before any optimization work begins.",
+      "We start by developing a thorough understanding of your law practice. Your practice areas, target client profile, current search standing, competitive environment in Tampa, Florida, and measurable growth targets all inform every strategic decision that follows.",
   },
   {
     number: "2",
     Icon: ChartNoAxesColumnIncreasing,
-    title: "Tampa Legal Market and Competitor Research",
+    title: "Tampa Competitive Landscape Mapping",
     description:
-      "We study your top Tampa competitors in detail. We assess their rankings, authority sources, and content strategies. We identify gaps your firm can strategically exploit. We  also map exactly how Tampa residents search for legal help in your practice areas.",
+      "We analyze other law firms' ranking for your target legal search terms. We check their keyword positions, content structures, backlink sources, and local signals to show gaps your firm can fill.",
   },
   {
     number: "3",
-    Icon: SquareActivity,
-    title: "Legal Keyword Strategy",
+    Icon: KeyRound,
+    title: "Targeted Legal Keyword Architecture",
     description:
-      "We build a comprehensive keyword map around high-intent, practice-area-specific Tampa search terms. Every keyword is selected because it connects your firm with clients who are ready to hire.",
+      "We build a complete keyword framework organized around client intent, legal practice areas, and Tampa, Florida geographic specificity. Every keyword selected connects your website with a client who is in an active decision-making state.",
   },
   {
     number: "4",
-    Icon: KeyRound,
-    title: "On-Page Optimization",
+    Icon: FileText,
+    title: "Website and On-Page Refinement",
     description:
-      "Each practice area page, service page and landing page is designed with search engine optimization and human visitors who are considering calling your firm in mind. Titles, headings, content, internal links and schema markup are all streamlined and optimized to their maximum capabilities.",
+      "Practice area pages, core landing pages, and the site architecture are set up to meet Google's standards. Local visitors' expectations on every on-page element are checked before content or link-building work starts.",
   },
   {
     number: "5",
-    Icon: FileText,
-    title: "Technical SEO",
+    Icon: Settings,
+    title: "Technical Remediation",
     description:
-      "We resolve site speed problems, mobile usability issues, crawl errors, duplicate content, broken links, and structural weaknesses that are preventing your law firm's website from reaching its full ranking potential in Tampa search results.",
+      "Every crawl barrier, indexing error, duplicate content issue, and structural weakness affecting your Tampa, Florida, website's search performance is identified and resolved. Load speed, mobile responsiveness, and schema implementation are all addressed in this phase.",
   },
   {
     number: "6",
-    Icon: Settings,
-    title: "Local SEO and Google Business Profile",
+    Icon: MapPin,
+    title: "Local Presence Build and Verification",
     description:
-      "We build and optimize your firm's complete local presence, including Google Business Profile, legal directory citations, local backlinks, and map pack positioning. This ensures you capture clients searching for attorneys in your specific area of Tampa.",
+      "Your Google Business Profile, local directories and legal citations, and location-specific content are developed, standardized, and strengthened. We ensure Google has every signal needed to rank your Tampa, Florida, law firm confidently in maps and local search.",
   },
   {
     number: "7",
-    Icon: MapPin,
-    title: "Legal Content Creation",
+    Icon: SquarePen,
+    title: "Authoritative Content Production",
     description:
-      "We produce authoritative, in-depth content that answers the real legal questions Tampa residents ask before hiring an attorney. Practice area pages, FAQ content, and blog articles are all written to rank in search and position your firm as the clear authority in your field.",
+      "We develop locally relevant, in-depth legal content that speaks directly to the questions and purchase considerations of Tampa, Florida, clients. Every piece is created to rank in search results and to position your firm as the recognized authority in its category.",
   },
   {
     number: "8",
-    Icon: SquarePen,
-    title: "Link Building and Legal Directory Strategy",
+    Icon: SquareActivity,
+    title: "Link and Authority Development",
     description:
-      "We build quality backlinks from respected legal directories, Tampa-area publications, and industry associations. We also use relevant local sources to strengthen authority and improve rankings over time.",
+      "Quality backlinks and brand references are earned from credible legal publications, Tampa-area sources, and Florida-wide websites. Each acquired link strengthens your domain authority and reinforces your standing as a reliable Tampa, Florida, law practice in Google's evaluation.",
   },
   {
     number: "9",
     Icon: SearchCheck,
-    title: " Reporting and Continuous Refinement",
+    title: "Monthly Performance Analysis and Strategy Refinement",
     description:
-      "Monthly reports with keyword rankings, organic traffic data, consultation leads, and ROI metrics are paired with ongoing strategy adjustments. We never set a strategy and leave it alone. We refine continuously to keep your results growing month after month.",
+      "Continuous improvement is built into every Tampa, Florida, lawyer SEO campaign we manage. Ranking data, traffic trends, client inquiries, and ROI are reviewed every month and used to refine the active strategy.",
   },
 ];
 
@@ -105,7 +105,9 @@ export default function SeoProcessSection() {
               SEO Process for
               <br />
               <span className="text-[#FF6F00]">
-                Tampa Law Firms
+                Tampa
+                <br />
+                Law Firms
               </span>
             </h2>
 
@@ -113,13 +115,8 @@ export default function SeoProcessSection() {
 
             <div className="mt-7 max-w-[380px] space-y-6 text-[16px] leading-8 text-[#081B4B]/75">
               <p>
-                Every successful law firm SEO campaign begins with a clear process. Bayshore Communication follows a structured, nine-step methodology built specifically for the Tampa legal market. This is designed to produce measurable results at every stage.
-
+                Predictable SEO results require a repeatable process. Bayshore Communication uses a nine-phase methodology for every Tampa, Florida, lawyer SEO engagement. Each phase builds value that compounds throughout the campaign.
               </p>
-
-              {/* <p>
-                No element is overlooked and every phase builds on the last.
-              </p> */}
             </div>
 
             <button

@@ -69,18 +69,21 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-6 max-w-[720px] text-[38px] font-extrabold leading-[1.05] sm:text-[52px] md:text-[64px]">
-              Lawyer SEO Agency
+              Lawyer SEO Agency in
               <br />
-              in Tampa,
+              Tampa Florida —
               <br />
-               <span className="text-[#FF6F00]">Get More Clients,</span>
+              Be the <span className="text-[#FF6F00]">first choice</span>
               <br />
-             Dominate Local Search
-              <br />
+              on Google
             </h1>
 
             <p className="mt-6 max-w-[700px] text-[16px] leading-[1.7] text-white/85 md:text-[18px]">
-             Bayshore Communication is a results-focused lawyer SEO agency tampa who are committed to helping their law firm get more qualified leads by improving their search ranking. We pair tried and true local search engine marketing with AI age optimization to make your practice visible to the right individuals at the right time.
+              Tampa, Florida, is one of the fastest-growing legal hubs in Hillsborough County.
+              The demand for legal representation as well as counsel grows with every new household and business.
+              Bayshore Communication is the faithful Lawyer SEO Agency Tampa that law firms
+              rely on to capture that demand. We design search strategies that place your law firm
+              at the top of Google at the exact moment your ideal client is ready to act.
             </p>
 
             {/* CTA */}

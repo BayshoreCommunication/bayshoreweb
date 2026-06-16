@@ -77,11 +77,10 @@ export default function TestimonialsSection() {
           </div>
 
           <div className="lg:pl-20">
-            <p className="max-w-[560px] text-[18px] leading-9 text-black/70">
-              We&apos;re proud to help businesses in Spring Hill and surrounding
-              areas grow their visibility, attract more customers, and achieve
-              lasting results.
-            </p>
+            <div className="flex items-center gap-2 max-w-[560px] text-[24px] font-bold text-[#FF6F00] lg:mt-6">
+              <span>★ ★ ★ ★ ★</span>
+              <span className="text-[#081B4B]">5 / 5</span>
+            </div>
 
             <Link
               href="/contact"

@@ -18,9 +18,9 @@ import WhyLosingCustomers from "@/components/lawyer-seo-agency-tampa/WhyLosingCu
 import React from "react";
 
 export const metadata = {
-  title: " Lawyer SEO Agency Tampa | Choose the Best SEO Team",
+  title: "Lawyer SEO Agency Tampa | Choose the Best SEO Team",
   description:
-    "Searching for a Lawyer SEO Agency in Tampa? Learn about our services and find the best SEO solution for your law practice.",
+    "Learn what to look for in a Lawyer SEO Agency in Tampa, from local SEO expertise to reporting, transparency, and ROI.",
 
   robots: {
     index: false,

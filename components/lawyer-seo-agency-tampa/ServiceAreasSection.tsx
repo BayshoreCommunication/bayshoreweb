@@ -1,71 +1,62 @@
 import {
   BriefcaseBusiness,
-  Home,
-  HeartPulse,
   Scale,
-  Store,
-  Dumbbell,
   MapPin,
+  ShieldAlert,
+  Users,
+  Building,
+  Gavel,
 } from "lucide-react";
 
 const businessTypes = [
   {
-    icon: Home,
-    title: "Home Services",
+    icon: ShieldAlert,
+    title: "Injury & Defense",
     items: [
-      "Personal Injury Law",
-      "Family Law",
-      "Criminal Defense",
-      "Immigration Law",
-      "Divorce Law",
-      "Estate Planning and Probate",
+      "Personal Injury Law (Car Accidents, Slip and Fall)",
+      "Criminal Defense and DUI Representation",
+      "Workers' Compensation and Disability Claims",
     ],
   },
   {
-    icon: HeartPulse,
-    title: "Healthcare",
-    items: ["Business and Corporate Law", "Employment Law", "Real Estate Law"],
-  },
-  {
-    icon: Scale,
-    title: "Professional Services",
+    icon: Users,
+    title: "Family & Civil Law",
     items: [
-      "Bankruptcy Law",
-      "Social Security Disability",
-      "Workers Compensation",
-      "Medical Malpractice",
+      "Family Law and Divorce Attorneys",
+      "Estate Planning, Wills, and Probate",
+      "Immigration and Naturalization Services",
     ],
   },
   {
-    icon: Store,
-    title: "Consumer Businesses",
+    icon: Building,
+    title: "Business & Real Estate",
     items: [
-      "Civil Litigation",
-      "Retail Stores",
-      "E-Commerce Brands",
-      "Auto Repair Shops",
+      "Business and Corporate Law for Enterprises",
+      "Real Estate Law and Closing Services",
+      "Employment and Labor Law Disputes",
     ],
   },
   {
-    icon: Dumbbell,
-    title: "Wellness & Fitness",
-    items: ["Downtown Tampa", "Westshore and Channelside"],
+    icon: Gavel,
+    title: "Financial & Liability",
+    items: [
+      "Bankruptcy Law and Debt Relief",
+      "Medical Malpractice and Professional Negligence",
+    ],
   },
 ];
 
 const communities = [
+  "Tampa (ZIP Codes 33602, 33603, 33604, 33605, 33606, 33607, 33609, 33611)",
   "South Tampa",
   "Ybor City",
-  "Zephyrhills",
+  "Westshore",
+  "Brandon",
+  "Riverview",
+  "Carrollwood",
+  "Temple Terrace",
   "Lutz",
-  "New Tampa",
-  "Odessa",
-  "Dade City",
-  "San Antonio",
-  "Spring Hill",
-  "Epperson",
-  "Mirada",
-  "Greater Pasco County",
+  "Land O Lakes",
 ];
 
 export default function ServiceAreasSection() {
@@ -75,16 +66,17 @@ export default function ServiceAreasSection() {
         {/* Header */}
         <div className="mx-auto max-w-[1100px] text-center">
           <h2 className="text-[38px] font-bold leading-[1.1] text-black md:text-[52px]">
-            Tampa Law Firm SEO{" "}
+            Serving Law Firms Across{" "}
             <span className="text-[#FF6F00]">
-              Practice Areas and Neighborhoods
-              
-              </span>{" "}
-              We Serve 
+              Tampa,
+              <br className="hidden md:block" />
+              Florida,
+            </span>{" "}
+            and Surrounding Areas
           </h2>
 
           <p className="mx-auto mt-8 max-w-[1000px] text-[16px] leading-8 text-black/70 md:text-[20px]">
-            Bayshore Communication provides lawyer SEO services for Tampa law firms across a wide range of practice areas. Whether your firm focuses on a single specialty or handles multiple areas of law, we build targeted strategies around the specific searches your ideal clients are performing.
+            Bayshore Communication delivers targeted, market-specific SEO services for Tampa Florida law firms across a broad range of practice areas. Whether your practice specializes in a single area or spans multiple practice categories, every strategy we build targets the precise searches your ideal clients are performing.
           </p>
         </div>
 
@@ -99,7 +91,6 @@ export default function ServiceAreasSection() {
               bg-white
               p-6
               shadow-[0_8px_30px_rgba(0,0,0,0.05)]
-
               md:p-10
             "
           >
@@ -107,7 +98,7 @@ export default function ServiceAreasSection() {
               <BriefcaseBusiness size={32} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Business Types We Serve
+                Practice Areas We Serve
               </h3>
             </div>
 
@@ -136,14 +127,11 @@ export default function ServiceAreasSection() {
                             bg-white
                             px-4
                             py-2
-
                             text-[14px]
                             font-medium
                             text-[#081B4B]
-
                             transition-all
                             duration-300
-
                             hover:border-[#FF6F00]
                             hover:bg-[#FFF8F3]
                             hover:text-[#FF6F00]
@@ -167,9 +155,7 @@ export default function ServiceAreasSection() {
               border-black/5
               bg-white
               p-6
-
               shadow-[0_8px_30px_rgba(0,0,0,0.05)]
-
               md:p-10
             "
           >
@@ -177,7 +163,7 @@ export default function ServiceAreasSection() {
               <MapPin size={30} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Communities We Cover
+                Tampa, Florida, and Surrounding Communities We Serve
               </h3>
             </div>
 
@@ -187,23 +173,17 @@ export default function ServiceAreasSection() {
                   key={community}
                   className="
                     group
-
                     flex
                     items-center
                     gap-3
-
                     rounded-[16px]
                     border
                     border-black/10
-
                     bg-white
-
                     px-5
                     py-4
-
                     transition-all
                     duration-300
-
                     hover:-translate-y-1
                     hover:border-[#FF6F00]
                     hover:bg-[#FFF8F3]

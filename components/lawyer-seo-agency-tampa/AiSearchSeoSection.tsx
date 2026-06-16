@@ -9,33 +9,33 @@ import {
 const aiSearchCards = [
   {
     Icon: FileCheck2,
-    // title: "Evaluate the Depth and Demonstrated Authority",
+    title: "Authority Over Keyword Density",
     description:
-      "Strict Credibility Standards: Modern search filters out thin content, highlighting only the most authoritative local law practices.",
+      "Google and AI platforms now evaluate the genuine credibility and depth of content. So, Tampa, Florida law firms that demonstrate topical authority through well-structured, expert-level content hold rankings that keyword-optimized pages alone cannot achieve.",
   },
   {
     Icon: Cpu,
-    // title: "AI Answer Summaries Are Replacing Traditional Rankings",
+    title: "AI Answer Boxes Precede Every Traditional Result",
     description:
-      "Direct Answer Visibility: Brief answers now appear first, which makes top placement essential for capturing new leads.",
+      "AI-generated summaries now appear above standard search listings. Appearing in those summaries requires structured, authoritative content built around the specific questions. Tampa, Florida, clients ask most frequently.",
   },
   {
     Icon: AudioLines,
-    // title: "Voice Search Is Now a Primary Discovery Method",
+    title: "Spoken Searches Require Conversational Content",
     description:
-      "Emphasis on Local Reputation: Instead of just keywords, emphasis is now on genuine reviews and transparency of site organization.",
+      "Voice and AI queries reflect how people actually speak, not how they type. Content structured around natural local questions earns discoverability in a format that continues to grow among Tampa, Florida, consumers.",
   },
   {
     Icon: MessageSquareText,
-    // title: "Review Quality Influences AI Ranking Signals",
+    title: "Reputation Data Feeds the Algorithm",
     description:
-      "Early Adopter Advantage: In the era of new search behavior, Early Adopter Advantage helps companies gain ground that will be lost by slower players every day.",
+      "Modern search systems integrate review quality, citation accuracy, and brand consistency as active ranking inputs. A verified, well-maintained local reputation is now inseparable from search performance.",
   },
   {
     Icon: Trophy,
-    // title: "Early Alignment Creates Durable Competitive Advantages",
+    title: "First Movers in Tampa Gain Compounding Advantages",
     description:
-      "Voice Search Reliability: Content that matches Siri and Alexa's conversational style helps you be suggested by these virtual assistants.",
+      "Law firms that align with AI search standards in 2026 establish authority positions that become progressively harder for slower-moving competitors in Hillsborough County to challenge or displace.",
   },
 ];
 
@@ -46,8 +46,8 @@ export default function AiSearchSeoSection() {
         {/* Heading */}
         <div className="mx-auto max-w-[900px] text-left md:text-center">
           <h2 className="text-[32px] font-bold leading-[1.15] text-[#081B4B] md:text-[42px]">
-            Why AI Search Is Changing Lawyer{" "}
-            <span className="text-[#FF6F00]">SEO Agency</span> in Tampa in 2026
+            Why AI Search Is Changing SEO For{" "}
+            <span className="text-[#FF6F00]">Tampa Florida</span> Law Firms In 2026
           </h2>
         </div>
 
@@ -109,7 +109,7 @@ export default function AiSearchSeoSection() {
 
                       <div className="min-w-0">
                         <h3 className="text-[22px] font-bold leading-[1.35] text-[#081B4B]">
-                          {/* {card.title} */}
+                          {card.title}
                         </h3>
                         <div className="mx-auto mt-4 h-[3px] w-12 bg-[#FF6F00] sm:mx-0" />
                       </div>
@@ -146,7 +146,7 @@ export default function AiSearchSeoSection() {
                     </div>
 
                     <h3 className="mt-6 text-[22px] font-bold leading-[1.35] text-[#081B4B]">
-                      {/* {card.title} */}
+                      {card.title}
                     </h3>
 
                     <div className="mt-5 h-[3px] w-12 bg-[#FF6F00] md:mx-auto" />

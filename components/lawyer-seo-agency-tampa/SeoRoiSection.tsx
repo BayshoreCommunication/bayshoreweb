@@ -11,39 +11,39 @@ import {
 const roiCards = [
   {
     icon: ChartNoAxesCombined,
-    title: "Higher Search Rankings",
+    title: "Page One Rankings on Your Most Valuable Search Terms",
     description:
-      "Consistent movement from page three and beyond to page one for high-intent Tampa legal search terms in your primary practice areas.",
+      "Law firms that once ranked on page three or further back move to prominent page one positions for the high-intent Tampa, Florida, search terms that bring in their most profitable clients.",
   },
   {
     icon: BadgeDollarSign,
-    title: "More Consultations",
+    title: "A Steady, Qualifying Pipeline of Inquiries",
     description:
-      "Steady increase in consultation requests and contact form submissions from clients actively searching for the specific legal services your firm provides.",
+      "Organic search delivers a growing and consistent flow of client contacts each month. That pipeline does not pause between budget cycles and does not stop when a campaign ends.",
   },
   {
     icon: ShieldCheck,
-    title: "More Inbound Calls",
+    title: "Phone Volume That Grows Month Over Month",
     description:
-      "Higher volume of inbound phone calls from ready-to-hire Tampa residents who found your firm through organic search and chose to call before contacting anyone else.",
+      "Inbound calls from Tampa, Florida, residents who found your law firm through organic search arrive with context and intent. These conversations close at higher rates than cold or interruption-based contacts.",
   },
   {
     icon: Handshake,
-    title: "Local Map Pack Wins",
+    title: "Secured Map Pack Presence",
     description:
-      "Greater exposure and visibility on Google Maps and local listings within Tampa and neighboring practice-area neighborhoods, all of which will lead clients to your door.",
+      "Local SEO investment earns consistent visibility in the Google three-pack, where the majority of local search clicks originate for Tampa, Florida law firm and practice area categories.",
   },
   {
     icon: PiggyBank,
-    title: "Compounding Growth Over Time",
+    title: "Established Community Authority",
     description:
-      "Unlike paying for ads, SEO can continue to generate results over time and build upon itself.They deliver stronger returns the longer the strategy remains active.",
+      "Consistent search visibility builds real brand recognition across Tampa, Florida, and Hillsborough County. Clients who see your law firm repeatedly in results develop trust before they ever arrive on your website.",
   },
   {
     icon: Users,
-    title: "Lower Cost Per Client",
+    title: "Improving Returns on a Sustained Investment",
     description:
-      "Organic search traffic converts at a higher rate than most paid channels, reducing your firm's long-term client acquisition costs while maintaining a consistent pipeline of new cases.",
+      "The cost of acquiring each new client through organic SEO decreases as domain authority builds. No other digital channel available to Tampa, Florida law firms delivers this kind of compounding efficiency over time.",
   },
 ];
 
@@ -94,7 +94,7 @@ export default function SeoRoiSection() {
           <div className="mx-auto mt-6 h-1 w-16 bg-[#FF6F00]" />
 
           <p className="mx-auto mt-8 max-w-[900px] text-[16px] leading-8 text-black/60 md:text-[20px]">
-            When lawyer SEO is done with precision, the results are measurable and they compound over time. Tampa law firms that invest in a well-executed legal SEO strategy consistently see growth in every metric that actually matters for their practice.
+            Verified, measurable outcomes are the standard Bayshore Communication holds itself to. Tampa, Florida, law firms that invest in a consistently executed SEO program see sustained improvement across every performance measure that connects directly to revenue growth.
           </p>
         </div>
 

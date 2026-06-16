@@ -7,12 +7,9 @@ import {
   ArrowRight,
   ArrowUpRight,
   Star,
-  Wrench,
-  Stethoscope,
-  Home,
   Scale,
-  Store,
-  Building2,
+  ShieldAlert,
+  Users,
 } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -26,34 +23,33 @@ const testimonials = [
   {
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
-    name: "Marcus T.",
-    role: "Personal Injury Law Firm",
-    location: "Tampa Florida",
-    icon: Wrench,
+    name: "Marcus Reynolds",
+    role: "Owner, Reynolds Law Group",
+    location: "Tampa, Florida",
+    icon: ShieldAlert,
     review:
-      "Bayshore Communication completely transformed how our firm appears in Tampa search results. We went from barely showing up to consistently ranking on page one for our most important practice areas. The team understood the legal industry from day one and never needed much hand-holding to understand what our clients search for.",
+      "Working with Bayshore Communication reshaped how our Tampa, Florida law firm appears in search. Within a few months, we went from barely visible to holding top positions for every service term that drives real revenue. The process was thorough and the results were tangible.",
   },
   {
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
-    name: "Diana R.",
-    role: "Family Law Attorney",
-    location: "Tampa Florida",
-    icon: Stethoscope,
+    name: "Diana Castillo",
+    role: "Owner, Castillo Family Law",
+    location: "Tampa, Florida",
+    icon: Users,
     review:
-      "Within four months of working with Bayshore, our consultation requests nearly doubled. Their SEO strategy for our Tampa family law practice was thoughtful, detailed, and it actually delivered results we could see and measure. We are still seeing growth every single month.",
+      "We had worked with other agencies without meaningful outcomes. Bayshore took a completely different approach. They understood the Tampa market specifically and built a strategy around it. Our inquiry volume has grown steadily every single month since we started.",
   },
   {
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
-    name: "Kevin M.",
-    role: "Criminal Defense Attorney",
-    location: "Tampa Florida",
-    icon: Home,
+    name: "Kevin Harmon",
+    role: "Owner, Harmon Criminal Defense",
+    location: "Tampa, Florida",
+    icon: Scale,
     review:
-      "What impressed me most was how clearly the team communicated what they were doing and why they were doing it. The monthly reports were easy to understand and the results were real. Our Google Business Profile alone now brings in several new clients every week.",
+      "Bayshore handled our technical issues, our Google Business Profile, and our content all at once. The monthly reports explain exactly what happened and what is planned next. Our Google presence now brings in new clients every single week without any ad spend.",
   },
-  
 ];
 
 export default function TestimonialsSection() {
@@ -73,16 +69,15 @@ export default function TestimonialsSection() {
             <h2 className="mt-6 text-[38px] font-bold leading-[1.1] text-black md:text-[52px]">
               What Our Tampa Law Firm
               <br />
-               <span className="text-[#FF6F00]">Clients Are Saying</span>
+              <span className="text-[#FF6F00]">Clients Are Saying</span>
             </h2>
           </div>
 
           <div className="lg:pl-20">
-            <p className="max-w-[560px] text-[18px] leading-9 text-black/70">
-              We&apos;re proud to help businesses in Tampa Law Firm and surrounding
-              areas grow their visibility, attract more customers, and achieve
-              lasting results.
-            </p>
+            <div className="flex items-center gap-2 max-w-[560px] text-[24px] font-bold text-[#FF6F00] lg:mt-6">
+              <span>★ ★ ★ ★ ★</span>
+              <span className="text-[#081B4B]">5 / 5</span>
+            </div>
 
             <Link
               href="/contact"
@@ -106,7 +101,7 @@ export default function TestimonialsSection() {
                 hover:shadow-[0_16px_35px_rgba(255,111,0,0.25)]
               "
             >
-              <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full" />
+              <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
 
               <span className="relative flex items-center gap-2">
                 Get Started Now

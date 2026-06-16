@@ -7,58 +7,24 @@ const faqs = [
   {
     id: "01",
     question:
-      "How long does it take to see results from lawyer SEO in Tampa?",
+      "Do you work with newer Tampa, Florida, law firms that are just starting their SEO?",
     answer:
-      "Most Tampa law firms begin to see measurable improvements in rankings and organic traffic within three to six months of consistent SEO work. The exact timeline depends on how competitive your practice area is locally, the current technical condition of your website, and how consistently the strategy is implemented.",
+      "We work with law firms at every growth stage. Newer practices benefit from building authority and technical foundations early. Every SEO strategy we build is matched to the specific circumstances and goals of the individual firm.",
   },
   {
     id: "02",
     question:
-      "Do I need SEO if I am already running Google Ads for my law firm?",
+      "What is the real difference between SEO and just running Google Ads for my Tampa, Florida, law firm?",
     answer:
-      "Paid ads stop producing results the moment your budget runs out. SEO builds unlimited search visibility that continues to generate consultation requests and phone calls long after the initial investment.",
+      "Google Ads deliver traffic only while you keep paying. SEO builds organic rankings that generate qualified traffic continuously without any per-click cost. Ads work for short-term results. SEO builds a long-term digital asset that grows in value over time.",
   },
   {
     id: "03",
     question:
-      "How do you measure SEO success for Tampa law firms?",
+      "Can SEO address multiple service categories for my law firm simultaneously?",
     answer:
-      "We track keyword rankings, organic traffic, consultation requests, phone calls, and Google Business Profile performance.",
+      "Yes. A properly structured SEO program builds dedicated, fully optimized pages for every practice area category your Tampa, Florida, law firm operates in. Each page is matched to the specific search queries, intent patterns, and competitive conditions relevant to that category.",
   },
-  {
-    id: "04",
-    question:
-      "Will I receive regular updates about my SEO campaign?",
-    answer:
-      "Yes. We provide detailed monthly reports and ongoing communication about rankings, traffic, and lead growth.",
-  },
-  {
-    id: "05",
-    question:
-      "What information do you need before starting law firm SEO services?",
-    answer:
-      "We review your website, practice areas, competitors, target locations, and current search visibility before building your strategy.",
-  },
-  //   {
-  //     id: "04",
-  //     question: "How long does it take to see SEO results in Wesley Chapel?",
-  //     answer:
-  //       "Most businesses begin seeing measurable improvements within 3–6 months. Competitive industries may require more time, but early wins often come through local search visibility and Google Business Profile optimization.",
-  //   },
-  //   {
-  //     id: "05",
-  //     question:
-  //       "Do you optimize for AI search platforms like ChatGPT and Google AI Overviews?",
-  //     answer:
-  //       "Yes. Our SEO strategies include Ask Engine Optimization (AEO) and Generative Engine Optimization (GEO) to improve visibility across AI-powered search experiences and answer engines.",
-  //   },
-  //   {
-  //     id: "06",
-  //     question:
-  //       "Can Bayshore Communication help improve my Google Business Profile?",
-  //     answer:
-  //       "Absolutely. We optimize your Google Business Profile, improve local citations, strengthen review strategies, and help increase visibility within Google Maps and local search results.",
-  //   },
 ];
 
 export default function SeoFaqSection() {
@@ -85,16 +51,11 @@ export default function SeoFaqSection() {
                 inline-flex
                 items-center
                 gap-2
-
                 rounded-full
                 border
                 border-black/10
-
-                
-
                 px-5
                 py-3
-
                 shadow-sm
               "
             >
@@ -104,14 +65,11 @@ export default function SeoFaqSection() {
             </div>
 
             <h2 className="mt-6 text-[38px] font-bold leading-[1.08] text-black md:text-[52px]">
-              Wesley Chapel Florida SEO
-              <br />
-              <span className="text-[#FF6F00]">Frequently Asked Questions</span>
+              Frequently <span className="text-[#FF6F00]">Asked Questions</span>
             </h2>
 
             <p className="mx-auto mt-6 max-w-[700px] text-[16px] leading-8 text-black/70 md:text-[20px]">
-              Get clear answers to the most common SEO questions from Wesley
-              Chapel business owners.
+              Get clear answers to the most common SEO questions from Tampa law firm owners.
             </p>
           </div>
 

@@ -103,7 +103,7 @@ export default function ServiceAreasSection() {
               <BriefcaseBusiness size={32} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Business Types We Serve
+                Business Categories We Serve
               </h3>
             </div>
 
@@ -173,7 +173,7 @@ export default function ServiceAreasSection() {
               <MapPin size={30} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Communities We Cover
+                Spring Hill, Florida, and Surrounding Communities We Serve
               </h3>
             </div>
 

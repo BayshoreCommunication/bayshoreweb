@@ -28,7 +28,7 @@ const cards = [
     icon: "/seo-company-wesley-chapel/card-icon-1.png",
     title: "The Local Map Pack Is Already Occupied",
     description:
-      "The top three listings on Google Maps get most of the clicks. Securing those listings on Google Maps requires a structured local SEO strategy built for the Spring Hill, Florida, market.",
+      "The top three listings on Google Maps get most of the clicks. Calls in a local search. To get these spots you need a clear plan for local SEO that is made for Spring Hill, Florida.\n\n* A good plan helps you get clicks and calls.\n\n* It is made for Spring Hill, Florida.\n\nYou need to focus on Google Maps listings. Securing those listings on Google Maps requires a structured local SEO strategy. It should be built for the Spring Hill, Florida, market.",
   },
 ];
 

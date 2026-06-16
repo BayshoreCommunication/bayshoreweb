@@ -190,7 +190,7 @@ export default function ContactSection() {
                 <div>
                   <Label
                     icon={<Tag size={17} />}
-                    text="Your Industry or Service Category"
+                    text="Primary Service Category"
                   />
 
                   <select name="industry" className={inputStyle} required>
@@ -210,7 +210,7 @@ export default function ContactSection() {
                 <div>
                   <Label
                     icon={<Megaphone size={17} />}
-                    text="How Did You Hear About Bayshore Communication"
+                    text="How did you hear about us"
                   />
 
                   <select name="source" className={inputStyle} required>
@@ -228,7 +228,7 @@ export default function ContactSection() {
                 <div>
                   <Label
                     icon={<MessageSquare size={17} />}
-                    text="Tell Us About Your Business and Growth Goals"
+                    text="Message / What do you need help with"
                   />
 
                   <textarea

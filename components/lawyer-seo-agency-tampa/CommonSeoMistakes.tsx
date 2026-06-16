@@ -3,39 +3,39 @@ import Image from "next/image";
 const mistakes = [
   {
     image: "/seo-company-wesley-chapel/mistake-1.png",
-    title: "Targeting the Wrong Keywords",
+    title: "Geographic Keyword Mismatch",
     description:
-      "A missing, incomplete, or unmonitored Google Business Profile means your firm does not appear in the local map pack. It can prevent your firm from appearing in the local map pack, where most Tampa clients first contact attorneys.",
+      "Broad, non-local keyword targeting produces rankings that mean nothing to Tampa Florida legal clients. High-intent local searches require content and page structure that speaks directly to the community and its surrounding Hillsborough County areas.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-2.png",
-    title: "Neglected Google Business Profile",
+    title: "Disorganized Business Listing Data",
     description:
-      "More than 60% of people searching for attorneys do it on their phones. A slow or hard-to-handle mobile site loses potential clients within the first few seconds of arrival, before they even see what your firm offers.",
-  },
-  {
-    image: "/seo-company-wesley-chapel/mistake-3.png",
-    title: "Poor Mobile Experience",
-    description:
-      "More than 60% of people searching for attorneys do it on their phones. A slow or hard-to-handle mobile site loses potential clients within the first few seconds of arrival, before they even see what your firm offers.",
+      "Conflicting directory listings with mismatched names, addresses, or phone numbers diminish local search rankings. Google uses citation consistency as an important signal. If your Tampa law firm shows up differently online, it’s less likely to get good placement.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-4.png",
-    title: "Thin or Generic Legal Content",
+    title: "Overlooked Page Speed",
     description:
-      "Legal content that is not written around what Tampa residents actually search for fails to rank and fails to convert. Generic practice area descriptions do not speak to the specific questions and concerns of local clients who are ready to hire.",
+      "Users leave slow-loading pages in seconds. Search engines record that behavior. Both the ranking penalty and the lost client are real, measurable costs for Tampa law firms that allow speed issues to persist without correction.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-5.png",
-    title: "No Structured Site Architecture",
+    title: "Content With No Local Relevance",
     description:
-      "Without proper internal linking and page structure, search engines cannot clearly identify your most important practice area pages. Those pages then fail to rank even when your firm has the expertise to back them up.",
+      "Web pages that contain no geographic context, no local keywords, and no community-specific information cannot match the intent behind Tampa, Florida, search queries. Ranking requires content that speaks the language of local consumer searches.",
+  },
+  {
+    image: "/seo-company-wesley-chapel/mistake-3.png",
+    title: "Weak Technical Website Foundation",
+    description:
+      "Errors in crawl pathways, missing canonical tags, duplicate page content, and absent schema markup prevent Google from fully evaluating your website. These silent structural problems cap your ranking potential regardless of content quality.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-6.png",
-    title: " Zero Local Authority Building",
+    title: "Stopping After an Initial SEO Setup",
     description:
-      "Without Tampa-specific backlinks and citations, Google lacks sufficient ranking authority signals. Established local competitors continue building authority, making it increasingly difficult for newer firms to compete.",
+      "Competitors who invest in ongoing SEO gain authority and ranking momentum every month. A law firm that stops optimization after an initial effort falls behind those who treat search visibility as a continuous growth investment.",
   },
 ];
 
@@ -55,7 +55,7 @@ export default function CommonSeoMistakes() {
 
           <div>
             <p className="text-[15px] leading-7 text-black/70 md:text-[16px]">
-              Many Tampa law firms invest heavily in their website and still fail to attract new clients because of avoidable SEO errors. Here is what is holding most of them back from the first-page rankings their practice deserves.
+              Many law firms in Tampa, Florida, invest in digital presence. They see little return because of foundational errors that go unnoticed for months or years. These mistakes quietly block rankings and client acquisition.
             </p>
           </div>
         </div>
@@ -185,7 +185,7 @@ export default function CommonSeoMistakes() {
             <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full " />
 
             <span className="relative flex items-center gap-2 text-[14px]">
-              Start Fixing Your Wesley Chapel SEO Today
+              Start Fixing Your Tampa Law Firm SEO Today
               <span>→</span>
             </span>
           </button>

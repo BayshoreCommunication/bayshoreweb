@@ -87,7 +87,9 @@ export default function ContactSection() {
             <h2 className="text-[38px] font-bold leading-[1.08] text-black md:text-[52px]">
               Let&apos;s Put Your
               <br />
-             Tampa Law
+              Tampa, Florida,
+              <br />
+              Law Firm
               <br />
               <span className="text-[#FF6F00]">
                 on the Map
@@ -97,7 +99,7 @@ export default function ContactSection() {
             </h2>
 
             <p className="mt-8 max-w-[440px] text-[17px] leading-8 text-black/70 md:text-[19px]">
-              Become the most trusted name in your neighborhood through dominant Tampa SEO
+              Every day without local SEO is a day your competitors grow stronger. Start building your search advantage in Tampa, Florida, now.
             </p>
 
             <div className="mt-12 space-y-5">
@@ -112,7 +114,7 @@ export default function ContactSection() {
                 },
                 {
                   icon: Users,
-                  text: "A Local Team That Understands Wesley Chapel",
+                  text: "A Local Team That Understands Tampa",
                 },
                 {
                   icon: ShieldCheck,
@@ -188,7 +190,7 @@ export default function ContactSection() {
                 <div>
                   <Label
                     icon={<Tag size={17} />}
-                    text="Your Industry or Service Category"
+                    text="Primary Service Category"
                   />
 
                   <select name="industry" className={inputStyle} required>
@@ -208,7 +210,7 @@ export default function ContactSection() {
                 <div>
                   <Label
                     icon={<Megaphone size={17} />}
-                    text="How Did You Hear About Bayshore Communication"
+                    text="How did you hear about us"
                   />
 
                   <select name="source" className={inputStyle} required>
@@ -226,7 +228,7 @@ export default function ContactSection() {
                 <div>
                   <Label
                     icon={<MessageSquare size={17} />}
-                    text="Tell Us About Your Business and Growth Goals"
+                    text="Message / What do you need help with"
                   />
 
                   <textarea
@@ -278,7 +280,7 @@ export default function ContactSection() {
                     disabled:opacity-70
                   "
                 >
-                  <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full" />
+                  <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
 
                   <span className="relative flex items-center justify-center gap-3">
                     <Send size={19} />
@@ -299,7 +301,7 @@ export default function ContactSection() {
             <div className="grid gap-5 rounded-b-[16px] border border-t-0 border-black/5 bg-white px-6 py-5 shadow-[0_18px_35px_rgba(0,0,0,0.07)] md:grid-cols-3 md:px-8">
               <TrustItem
                 icon={<ShieldCheck size={22} />}
-                text="Trusted by Local Businesses Across Pasco County"
+                text="Trusted by Local Businesses Across Hillsborough County"
               />
 
               <TrustItem
@@ -309,7 +311,7 @@ export default function ContactSection() {
 
               <TrustItem
                 icon={<MapPin size={22} />}
-                text="Focused on Tampa Law and Surrounding Areas"
+                text="Focused on Tampa and Surrounding Areas"
               />
             </div>
           </div>

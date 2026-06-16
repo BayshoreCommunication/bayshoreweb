@@ -5,24 +5,30 @@ const cards = [
   {
     number: "01",
     icon: "/seo-company-wesley-chapel/card-icon-1.png",
-    title: "Buried in Search Results",
+    title: "Your Law Firm Is Invisible Where Clients Are Looking",
     description:
-      "Your firm sits on page two or beyond, invisible to the clients actively searching for legal help in Tampa right now.",
+      "Over 90% of all search traffic goes to page one results. A law firm sitting on page two or below does not earn a second look from Tampa, Florida, consumers who are ready to engage legal services.",
   },
   {
     number: "02",
     icon: "/seo-company-wesley-chapel/card-icon-2.png",
-    title: "Competitors Capturing Your Clients",
+    title: "Your Competitor Gets the Call You Should Have Received",
     description:
-      "Law firms investing in lawyer SEO consistently appear first, taking the consultations that belong to your practice.",
+      "Search visibility is a zero-sum game at the local level. Every client who finds a competitor through Google is a client who bypassed your law firm entirely without ever knowing you existed.",
   },
   {
     number: "03",
     icon: "/seo-company-wesley-chapel/card-icon-3.png",
-    title:
-      "Slow and Unoptimized Website",
+    title: "A Website Alone Does Not Attract Clients",
     description:
-      "Technical weaknesses push your rankings further down and drive potential clients away before they even read a single word about your services.",
+      "A website without search optimization does not generate cases on its own. It requires deliberate technical signals, local authority, and aligned content before Google recommends it to any Tampa, Florida, consumer.",
+  },
+  {
+    number: "04",
+    icon: "/seo-company-wesley-chapel/card-icon-1.png",
+    title: "The Local Map Pack Is Already Occupied",
+    description:
+      "The top three listings on Google Maps get most of the clicks. Calls in a local search. To get these spots you need a clear plan for local SEO that is made for Tampa, Florida.\n\n* A good plan helps you get clicks and calls.\n\n* It is made for Tampa, Florida.\n\nYou need to focus on Google Maps listings. Securing those listings on Google Maps requires a structured local SEO strategy. It should be built for the Tampa, Florida, market.",
   },
 ];
 
@@ -33,11 +39,15 @@ export default function WhyLosingCustomers() {
         {/* Heading */}
         <div className="max-w-[820px]">
           <h2 className="text-[38px] font-bold leading-[1.05] text-black sm:text-[48px]">
-            Why Tampa Law Firms Are
+            Why Tampa Law Firms
             <br />
-            Losing Clients
-            <span className="text-[#FF6F00]"> Without SEO</span>
+            Are Losing Clients
+            <br />
+            <span className="text-[#FF6F00]">Without SEO</span>
           </h2>
+          <p className="mt-6 text-[16px] leading-8 text-black/70 md:text-[18px]">
+            New families, new residents, and new spending power arrive in Tampa, Florida, every month. When they need legal counsel or representation, their first move is a Google search. That search creates a moment of decision that happens thousands of times a day in this market. The law firms that appear on page one win that moment. Without an active SEO strategy, your Tampa, Florida, law firm surrenders that moment to a competitor on every single search. The gap does not stay the same. It widens every day. The other firm ranks, and you do not.
+          </p>
         </div>
 
         {/* Cards */}
@@ -89,7 +99,7 @@ export default function WhyLosingCustomers() {
               </h3>
 
               {/* Description */}
-              <p className="mt-6 text-[16px] leading-8 text-black/70">
+              <p className="mt-6 text-[16px] leading-8 text-black/70 whitespace-pre-line">
                 {card.description}
               </p>
 

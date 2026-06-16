@@ -76,14 +76,15 @@ export default function SeoAuditForm() {
                 
               "
             >
-              Get Your Free Tampa Law Firm{" "}
-              <span className="text-[#FF6F00]">SEO Audit Report</span>
+              Get Your Free{" "}
+              <span className="text-[#FF6F00]">Tampa Florida Lawyer</span> SEO
+              Audit Report
             </h2>
           </div>
 
           <div>
             <p className="max-w-[420px] text-[16px] leading-8 text-black/80 md:text-[18px] font-bold">
-              Stop losing consultations to higher-ranking law firms across Tampa
+              Find out exactly why Tampa, Florida, clients cannot find your law firm on Google, at no cost to you.
             </p>
           </div>
         </div>
@@ -153,7 +154,7 @@ export default function SeoAuditForm() {
             <input
               type="hidden"
               name="service"
-              value="Wesley Chapel SEO Audit"
+              value="Tampa Lawyer SEO Audit"
             />
 
             {/* Button */}
