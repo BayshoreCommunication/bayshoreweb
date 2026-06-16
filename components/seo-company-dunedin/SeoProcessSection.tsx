@@ -18,7 +18,7 @@ const processSteps = [
     Icon: Target,
     title: "Business Discovery and Objective Setting",
     description:
-      "Spending hours learning how your law firm makes money helps shape our approach. Before changing a single webpage element, we look closely at who buys from you. What others in your field do matters just as much. Your main objectives guide every decision made. Only after grasping these pieces does any work begin.",
+      "Spending hours learning how your company makes money helps shape our approach. Before changing a single webpage element, we look closely at who buys from you. What others in your field do matters just as much. Your main objectives guide every decision made. Only after grasping these pieces does any work begin.",
   },
   {
     number: "2",
@@ -30,16 +30,16 @@ const processSteps = [
   {
     number: "3",
     Icon: KeyRound,
-    title: "Tampa Florida Market Research",
+    title: "Dunedin Florida Market Research",
     description:
-      "We map how your ideal clients search, which competitors currently own the rankings you want, and where the most accessible opportunities exist for your law firm right now.",
+      "We map how your ideal customers search, which competitors currently own the rankings you want, and where the most accessible opportunities exist for your business right now.",
   },
   {
     number: "4",
     Icon: FileText,
     title: "Custom SEO Strategy Development",
     description:
-      "A customized SEO strategy takes shape around your unique services, local market conditions in Tampa, Florida, along with defined checkpoints and projected results. While goals are set early, adjustments follow real-world feedback instead of rigid timelines.",
+      "A customized SEO strategy takes shape around your unique services, local market conditions in Dunedin, Florida, along with defined checkpoints and projected results. While goals are set early, adjustments follow real-world feedback instead of rigid timelines.",
   },
   {
     number: "5",
@@ -60,7 +60,7 @@ const processSteps = [
     Icon: SearchCheck,
     title: "Reporting, Analysis, and Ongoing Refinement",
     description:
-      "We review performance data monthly, communicate findings clearly, and adjust the strategy to reflect new algorithm signals, competitor movements, and evolving search behavior in Tampa Florida.",
+      "We review performance data monthly, communicate findings clearly, and adjust the strategy to reflect new algorithm signals, competitor movements, and evolving search behavior in Dunedin Florida.",
   },
 ];
 
@@ -91,7 +91,7 @@ export default function SeoProcessSection() {
               SEO Process for
               <br />
               <span className="text-[#FF6F00]">
-                Tampa Florida
+                Dunedin Florida
                 <br />
                 Businesses
               </span>
@@ -101,7 +101,7 @@ export default function SeoProcessSection() {
 
             <div className="mt-7 max-w-[380px] space-y-6 text-[16px] leading-8 text-[#081B4B]/75">
               <p>
-                Bayshore Communication starts with a thorough look at your needs and gets right into a seven-step SEO process that fits Tampa, Florida’s unique landscape. Every stage pushes things forward, and you actually see progress as each piece falls into place. The approach gets smarter with every round because they fine-tune it based on what works in real life. Early wins guide the next moves, so there’s always something learned. That pace picks up since they’re always tweaking things along the way. The whole system runs on proof, nothing changes without real results backing it up.
+                Bayshore Communication starts with a thorough look at your needs and gets right into a seven-step SEO process that fits Dunedin, Florida’s unique landscape. Every stage pushes things forward, and you actually see progress as each piece falls into place. The approach gets smarter with every round because they fine-tune it based on what works in real life. Early wins guide the next moves, so there’s always something learned. That pace picks up since they’re always tweaking things along the way. The whole system runs on proof, nothing changes without real results backing it up.
               </p>
             </div>
 

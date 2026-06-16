@@ -39,9 +39,9 @@ const features = [
   },
   {
     Icon: MapPinned,
-    title: "Genuine Spring Hill Florida Market Expertise",
+    title: "Genuine Dunedin Florida Market Expertise",
     description:
-      "We know which ZIP codes generate the highest search volume in Hernando County, which business categories face the steepest local competition, and how seasonal patterns affect search behavior here.",
+      "We know which ZIP codes generate the highest search volume in Pinellas County, which business categories face the steepest local competition, and how seasonal patterns affect search behavior here.",
   },
   {
     Icon: SearchCheck,
@@ -85,7 +85,7 @@ export default function WhyChooseBayshore() {
           {/* Left */}
           <div>
             <span className="text-xl font-bold uppercase tracking-wider text-[#FF6F00]">
-              Why Spring Hill Florida Businesses
+              Why Dunedin Florida Businesses
             </span>
 
             <h2 className="mt-4 text-[38px] font-bold leading-[1.05] text-[#081B4B] md:text-[52px]">
@@ -98,7 +98,7 @@ export default function WhyChooseBayshore() {
 
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/75 md:text-[18px]">
               <p>
-                Bayshore Communication is not a general marketing shop that added SEO to a list of unrelated services. We are a dedicated digital growth seo company spring hill with a proven track record of producing measurable outcomes for businesses across Spring Hill Florida since 2016.
+                Bayshore Communication is not a general marketing shop that added SEO to a list of unrelated services. We are a dedicated digital growth seo company dunedin with a proven track record of producing measurable outcomes for businesses across Dunedin Florida since 2016.
               </p>
             </div>
 

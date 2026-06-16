@@ -7,9 +7,9 @@ const faqs = [
   {
     id: "01",
     question:
-      "How soon will my Spring Hill, Florida, business start seeing results from SEO?",
+      "How soon will my Dunedin, Florida, business start seeing results from SEO?",
     answer:
-      "Typically, Spring Hill, Florida companies starting an active campaign will see some degree of movement in keyword rankings and organic traffic within the first three to six months. The more time an SEO campaign is left to run without interruption, the more powerful and profitable the results will be.",
+      "Typically, Dunedin, Florida companies starting an active campaign will see some degree of movement in keyword rankings and organic traffic within the first three to six months. The more time an SEO campaign is left to run without interruption, the more powerful and profitable the results will be.",
   },
   {
     id: "02",
@@ -28,9 +28,9 @@ const faqs = [
   {
     id: "04",
     question:
-      "How do you identify the right keywords for my specific Spring Hill, Florida, business?",
+      "How do you identify the right keywords for my specific Dunedin, Florida, business?",
     answer:
-      "We analyze the search behavior of Spring Hill, Florida industry consumers through keyword research and competitor analysis. We evaluate monthly search volume level of the keywords, competition level as well as the buying or hiring intent of the keyword. Our emphasis is on the keywords that are searched for by ready to buy or hire clients, not just to browse.",
+      "We analyze the search behavior of Dunedin, Florida industry consumers through keyword research and competitor analysis. We evaluate monthly search volume level of the keywords, competition level as well as the buying or hiring intent of the keyword. Our emphasis is on the keywords that are searched for by ready to buy or hire clients, not just to browse.",
   },
 ];
 
@@ -75,13 +75,13 @@ export default function SeoFaqSection() {
             </div>
 
             <h2 className="mt-6 text-[38px] font-bold leading-[1.08] text-black md:text-[52px]">
-              Spring Hill Florida SEO
+              Dunedin Florida SEO
               <br />
               <span className="text-[#FF6F00]">Frequently Asked Questions</span>
             </h2>
 
             <p className="mx-auto mt-6 max-w-[700px] text-[16px] leading-8 text-black/70 md:text-[20px]">
-              Get clear answers to the most common SEO questions from Spring Hill
+              Get clear answers to the most common SEO questions from Dunedin
               business owners.
             </p>
           </div>

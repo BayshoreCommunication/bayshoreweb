@@ -89,17 +89,17 @@ export default function ContactSection() {
               <br />
               Tampa, Florida,
               <br />
-              Law Firm
+              Business on the Map
               <br />
               <span className="text-[#FF6F00]">
-                on the Map
-                <br />
-                Contact Us Today
+                — Contact Us Today
               </span>
             </h2>
 
             <p className="mt-8 max-w-[440px] text-[17px] leading-8 text-black/70 md:text-[19px]">
-              Every day without local SEO is a day your competitors grow stronger. Start building your search advantage in Tampa, Florida, now.
+              Capture Every Click and Secure Your Position as a Tampa Leader.
+              <br />
+              Call +1 (509) 592-1745 | www.bayshorecommunication.com
             </p>
 
             <div className="mt-12 space-y-5">
@@ -253,7 +253,7 @@ export default function ContactSection() {
                       focus:ring-2
                       focus:ring-[#FF6F00]/15
                     "
-                    placeholder="Share a little about your business and what you want to achieve..."
+                    placeholder="Share a little about your law firm and what you want to achieve..."
                   />
                 </div>
 
@@ -280,7 +280,7 @@ export default function ContactSection() {
                     disabled:opacity-70
                   "
                 >
-                  <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
+                  <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full" />
 
                   <span className="relative flex items-center justify-center gap-3">
                     <Send size={19} />

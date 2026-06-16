@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/seo-company-wesley-chapel/hero-bg.png"
-          alt="SEO Company Wesley Chapel"
+          alt="Lawyer SEO Agency Tampa"
           fill
           priority
           className="object-cover object-center"
@@ -69,21 +69,12 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-6 max-w-[720px] text-[38px] font-extrabold leading-[1.05] sm:text-[52px] md:text-[64px]">
-              Lawyer SEO Agency 
-              <br />
-              in Tampa Florida 
-              <br />
-              Be the <span className="text-[#FF6F00]">first choice</span>
-              <br />
-              on Google
+              Lawyer SEO Agency in Tampa Florida:{" "}
+              <span className="text-[#FF6F00]">Higher Visibility, Better Leads, Increased Revenue</span>
             </h1>
 
             <p className="mt-6 max-w-[700px] text-[16px] leading-[1.7] text-white/85 md:text-[18px]">
-              Tampa, Florida, is one of the fastest-growing legal hubs in Hillsborough County.
-              The demand for legal representation as well as counsel grows with every new household and business.
-              Bayshore Communication is the faithful Lawyer SEO Agency Tampa that law firms
-              rely on to capture that demand. We design search strategies that place your law firm
-              at the top of Google at the exact moment your ideal client is ready to act.
+              Thousands of Tampa, Florida, legal clients are on Google searching for exactly what your law firm offers. The only question is whether they are finding you or finding your competitors instead. Bayshore Communication is the performance-focused lawyer seo agency tampa that changes that equation permanently. We have delivered measurable organic growth for businesses across Tampa. Our strategies are built on verified data, deep local market expertise, and dedicated execution.
             </p>
 
             {/* CTA */}
@@ -140,8 +131,7 @@ export default function Hero() {
                 p-8
                 backdrop-blur-[24px]
                 shadow-[0_20px_80px_rgba(0,0,0,0.45)]
-                md:p-16
-                md:px-16
+                md:p-12
               "
             >
               {/* Glow */}
@@ -149,11 +139,11 @@ export default function Hero() {
 
               <div className="relative z-10">
                 <h2 className="text-[46px] font-extrabold leading-none text-[#FF6F00] sm:text-[54px] md:text-[60px]">
-                  <Counter to={500} suffix="K+" />
+                  <Counter to={93} suffix="%" />
                 </h2>
 
                 <p className="mt-3 text-[16px] font-medium text-white/80 md:text-[18px]">
-                  Total leads generated since 2010
+                  Of All Searches Begin on Google
                 </p>
               </div>
 
@@ -162,35 +152,23 @@ export default function Hero() {
               <div className="relative z-10 grid grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-[40px] font-extrabold leading-none text-[#FF6F00] md:text-[48px]">
-                    <Counter to={70} suffix="+" />
+                    <Counter to={91} suffix="%" />
                   </h3>
 
                   <p className="mt-3 text-sm text-white/80 md:text-base">
-                    Clients served
+                    Of Clicks Go to Page One Results
                   </p>
                 </div>
 
                 <div className="border-l border-white/20 pl-6">
                   <h3 className="text-[40px] font-extrabold leading-none text-[#FF6F00] md:text-[48px]">
-                    <Counter to={200} suffix="%+" />
+                    <Counter to={500} suffix="K+" />
                   </h3>
 
                   <p className="mt-3 text-sm text-white/80 md:text-base">
-                    Revenue growth
+                    Leads Generated for Clients Since 2016
                   </p>
                 </div>
-              </div>
-
-              <div className="relative z-10 my-8 h-px bg-white/20" />
-
-              <div className="relative z-10">
-                <h3 className="text-[46px] font-extrabold leading-none text-[#FF6F00] sm:text-[54px] md:text-[60px]">
-                  <Counter to={220} suffix="+" />
-                </h3>
-
-                <p className="mt-3 text-[16px] font-medium text-white/80 md:text-[18px]">
-                  Websites launched since founding
-                </p>
               </div>
             </div>
           </div>

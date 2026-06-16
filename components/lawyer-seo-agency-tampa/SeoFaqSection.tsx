@@ -7,23 +7,30 @@ const faqs = [
   {
     id: "01",
     question:
-      "Do you work with newer Tampa, Florida, law firms that are just starting their SEO?",
+      "How soon will my Tampa, Florida, business start seeing results from SEO?",
     answer:
-      "We work with law firms at every growth stage. Newer practices benefit from building authority and technical foundations early. Every SEO strategy we build is matched to the specific circumstances and goals of the individual firm.",
+      "Typically, Tampa, Florida companies starting an active campaign will see some degree of movement in keyword rankings and organic traffic within the first three to six months. The more time an SEO campaign is left to run without interruption, the more powerful and profitable the results will be.",
   },
   {
     id: "02",
     question:
-      "What is the real difference between SEO and just running Google Ads for my Tampa, Florida, law firm?",
+      "How will I measure whether my SEO investment is producing returns?",
     answer:
-      "Google Ads deliver traffic only while you keep paying. SEO builds organic rankings that generate qualified traffic continuously without any per-click cost. Ads work for short-term results. SEO builds a long-term digital asset that grows in value over time.",
+      "Bayshore Communication delivers monthly keyword ranking, traffic, Google Business Profile insights, call and form generation reports. The report discusses what the results mean and the efforts being made to increase results.",
   },
   {
     id: "03",
     question:
-      "Can SEO address multiple service categories for my law firm simultaneously?",
+      "How does Bayshore Communication protect my rankings when Google updates its algorithm?",
     answer:
-      "Yes. A properly structured SEO program builds dedicated, fully optimized pages for every practice area category your Tampa, Florida, law firm operates in. Each page is matched to the specific search queries, intent patterns, and competitive conditions relevant to that category.",
+      "Bayshore Communication keeps track of Google algorithm changes during each of our campaigns. Our approach is to develop powerful content, establish genuine authority and get the local data right rather than to game the system. When significant algorithm changes happen we reassess and refine our approach accordingly.",
+  },
+  {
+    id: "04",
+    question:
+      "How do you identify the right keywords for my specific Tampa, Florida, business?",
+    answer:
+      "We analyze the search behavior of Tampa, Florida industry consumers through keyword research and competitor analysis. We evaluate monthly search volume level of the keywords, competition level as well as the buying or hiring intent of the keyword. Our emphasis is on the keywords that are searched for by ready to buy or hire clients, not just to browse.",
   },
 ];
 
@@ -51,11 +58,14 @@ export default function SeoFaqSection() {
                 inline-flex
                 items-center
                 gap-2
+
                 rounded-full
                 border
                 border-black/10
+
                 px-5
                 py-3
+
                 shadow-sm
               "
             >
@@ -65,11 +75,14 @@ export default function SeoFaqSection() {
             </div>
 
             <h2 className="mt-6 text-[38px] font-bold leading-[1.08] text-black md:text-[52px]">
-              Frequently <span className="text-[#FF6F00]">Asked Questions</span>
+              Tampa Florida SEO
+              <br />
+              <span className="text-[#FF6F00]">Frequently Asked Questions</span>
             </h2>
 
             <p className="mx-auto mt-6 max-w-[700px] text-[16px] leading-8 text-black/70 md:text-[20px]">
-              Get clear answers to the most common SEO questions from Tampa law firm owners.
+              Get clear answers to the most common SEO questions from Tampa
+              business owners.
             </p>
           </div>
 

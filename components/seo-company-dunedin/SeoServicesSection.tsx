@@ -6,13 +6,13 @@ const services = [
     title: "Local SEO",
     image: "/seo-company-wesley-chapel/service-5.png",
     description:
-      "Optimized profiles begin with precise categorization, followed by verified details and carefully chosen location-based terms. Through trusted platforms specific to Tampa, citations are established then maintained over time. Positioning within map rankings improves when each component aligns with regional visibility standards.",
+      "Optimized profiles begin with precise categorization, followed by verified details and carefully chosen location-based terms. Through trusted platforms specific to Dunedin, citations are established then maintained over time. Positioning within map rankings improves when each component aligns with regional visibility standards.",
   },
   {
     title: "On-Page SEO",
     image: "/seo-company-wesley-chapel/service-3.png",
     description:
-      "Every service page gets rebuilt from the beginning shaped by how people in Tampa Florida search for things. Our service pages are made to fit the way people in Tampa Florida look for stuff. Instead of guessing, we shape headlines, subheads, and titles around real queries. Content flows follow what matters now, not outdated tricks. Pages connect through smart internal paths that boost visibility where it counts. Even small details like meta descriptions reflect live user behavior. Authority shifts naturally to key sections without forced tactics. What shows up in results feels clear because the structure supports intent.",
+      "Every service page gets rebuilt from the beginning shaped by how people in Dunedin Florida search for things. Our service pages are made to fit the way people in Dunedin Florida look for stuff. Instead of guessing, we shape headlines, subheads, and titles around real queries. Content flows follow what matters now, not outdated tricks. Pages connect through smart internal paths that boost visibility where it counts. Even small details like meta descriptions reflect live user behavior. Authority shifts naturally to key sections without forced tactics. What shows up in results feels clear because the structure supports intent.",
   },
   {
     title: "Technical SEO",
@@ -30,25 +30,25 @@ const services = [
     title: "Content Strategy and SEO Copywriting",
     image: "/seo-company-wesley-chapel/service-6.png",
     description:
-      "We research the exact questions Tampa, Florida, legal clients ask before making a purchase decision and build content that answers those questions with authority. Service pages, location landing pages, and supporting blog content are all written to satisfy search intent and encourage conversion. Every content piece is reviewed against current AI-era quality standards before publication.",
+      "We research the exact questions Dunedin, Florida, consumers ask before making a purchase decision and build content that answers those questions with authority. Service pages, location landing pages, and supporting blog content are all written to satisfy search intent and encourage conversion. Every content piece is reviewed against current AI-era quality standards before publication.",
   },
   {
     title: "E-Commerce SEO",
     image: "/seo-company-wesley-chapel/service-2.png",
     description:
-      "We optimize product listings, category page structures, and crawl pathways for Tampa, Florida businesses that sell online. Transactional keyword targeting connects your product pages with buyers who are ready to purchase right now. Indexation management ensures your entire catalog remains accessible and competitive across all relevant search queries.",
+      "We optimize product listings, category page structures, and crawl pathways for Dunedin, Florida businesses that sell online. Transactional keyword targeting connects your product pages with buyers who are ready to purchase right now. Indexation management ensures your entire catalog remains accessible and competitive across all relevant search queries.",
   },
   {
     title: "Ask Engine Optimization (AEO)",
     image: "/seo-company-wesley-chapel/service-8.png",
     description:
-      "We structure your website content to answer the specific questions. Tampa, Florida, legal clients ask on AI-powered platforms, including ChatGPT, Perplexity, and Google AI Overviews. AEO positions your law firm as the authoritative answer when a potential client asks for a local recommendation and expects an immediate, reliable response. This channel is growing rapidly and early optimization creates a significant competitive advantage.",
+      "We structure your website content to answer the specific questions. Dunedin, Florida, consumers ask on AI-powered platforms, including ChatGPT, Perplexity, and Google AI Overviews. AEO positions your business as the authoritative answer when a potential customer asks for a local recommendation and expects an immediate, reliable response. This channel is growing rapidly and early optimization creates a significant competitive advantage.",
   },
   {
     title: "Generative Engine Optimization (GEO)",
     image: "/seo-company-wesley-chapel/service-9.png",
     description:
-      "We format your content for citation and recommendation in AI-generated summaries and search results. As more Tampa, Florida, legal clients use generative tools to research local law firms, GEO ensures your name appears as a trusted recommendation. This emerging discipline extends your visibility well beyond traditional organic search results.",
+      "We format your content for citation and recommendation in AI-generated summaries and search results. As more Dunedin, Florida, consumers use generative tools to research local businesses, GEO ensures your name appears as a trusted recommendation. This emerging discipline extends your visibility well beyond traditional organic search results.",
   },
   {
     title: "SEO Reporting and Analytics",
@@ -75,7 +75,7 @@ export default function SeoServicesSection() {
               Services in
               <br />
               <span className="text-[#FF6F00]">
-                Tampa Florida
+                Dunedin Florida
               </span>
               <br />
               Crafted for the
@@ -87,7 +87,7 @@ export default function SeoServicesSection() {
 
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/70 md:text-[16px]">
               <p>
-                Internet search behaviour in 2026 is quite different from a few years back. Search behavior has changed a lot. Now we have computers that can think for themselves. They decide what search results are the most important. People are also using their voices to ask for things.. When you search for something the internet can even create new information just for you. All of this means that search behavior and the way we compete with each other on the internet is very different now. As a leading lawyer seo agency tampa, Bayshore Communication, delivers a full suite of services designed to satisfy every dimension of modern search visibility for Tampa, Florida businesses.
+                Internet search behaviour in 2026 is quite different from a few years back. Search behavior has changed a lot. Now we have computers that can think for themselves. They decide what search results are the most important. People are also using their voices to ask for things.. When you search for something the internet can even create new information just for you. All of this means that search behavior and the way we compete with each other on the internet is very different now. As a leading seo company dunedin, Bayshore Communication, delivers a full suite of services designed to satisfy every dimension of modern search visibility for Dunedin, Florida businesses.
               </p>
             </div>
 

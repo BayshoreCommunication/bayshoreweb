@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/seo-company-wesley-chapel/hero-bg.png"
-          alt="SEO Company Spring Hill"
+          alt="SEO Company Dunedin"
           fill
           priority
           className="object-cover object-center"
@@ -69,12 +69,12 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-6 max-w-[720px] text-[38px] font-extrabold leading-[1.05] sm:text-[52px] md:text-[64px]">
-              SEO Company in Spring Hill Florida:{" "}
+              SEO Company in Dunedin Florida:{" "}
               <span className="text-[#FF6F00]">Higher Visibility, Better Leads, Increased Revenue</span>
             </h1>
 
             <p className="mt-6 max-w-[700px] text-[16px] leading-[1.7] text-white/85 md:text-[18px]">
-              Thousands of Spring Hill, Florida, consumers are on Google searching for exactly what your business offers. The only question is whether they are finding you or finding your competitors instead. Bayshore Communication is the performance-focused seo company spring hill that changes that equation permanently. We have delivered measurable organic growth for businesses across Spring Hill. Our strategies are built on verified data, deep local market expertise, and dedicated execution.
+              Thousands of Dunedin, Florida, consumers are on Google searching for exactly what your business offers. The only question is whether they are finding you or finding your competitors instead. Bayshore Communication is the performance-focused seo company dunedin that changes that equation permanently. We have delivered measurable organic growth for businesses across Dunedin. Our strategies are built on verified data, deep local market expertise, and dedicated execution.
             </p>
 
             {/* CTA */}

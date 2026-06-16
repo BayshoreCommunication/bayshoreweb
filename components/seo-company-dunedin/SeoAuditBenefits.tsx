@@ -5,7 +5,7 @@ const benefits = [
     image: "/seo-company-wesley-chapel/analysis-icon.png",
     title: "In-Depth Analysis",
     description:
-      "Get a comprehensive review of your website SEO performance and key ranking factors specific to Tampa.",
+      "Get a comprehensive review of your website SEO performance and key ranking factors specific to Dunedin.",
   },
   {
     image: "/seo-company-wesley-chapel/opportunities-icon.png",
@@ -17,7 +17,7 @@ const benefits = [
     image: "/seo-company-wesley-chapel/insights-icon.png",
     title: "Actionable Insights",
     description:
-      "Receive a clear, prioritized roadmap with actionable SEO recommendations to improve your Tampa rankings.",
+      "Receive a clear, prioritized roadmap with actionable SEO recommendations to improve your Dunedin rankings.",
   },
 ];
 

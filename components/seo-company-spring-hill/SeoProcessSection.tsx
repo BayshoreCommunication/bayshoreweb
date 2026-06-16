@@ -16,65 +16,51 @@ const processSteps = [
   {
     number: "1",
     Icon: Target,
-    title: "Discovery and Business Goal Alignment",
+    title: "Business Discovery and Objective Setting",
     description:
-      "We start by developing a thorough understanding of your business. Your service areas, customer profile, current search standing, competitive environment in Spring Hill, Florida, and measurable growth targets all inform every strategic decision that follows.",
+      "Spending hours learning how your company makes money helps shape our approach. Before changing a single webpage element, we look closely at who buys from you. What others in your field do matters just as much. Your main objectives guide every decision made. Only after grasping these pieces does any work begin.",
   },
   {
     number: "2",
     Icon: ChartNoAxesColumnIncreasing,
-    title: "Spring Hill Competitive Landscape Mapping",
+    title: "Full SEO Audit and Gap Analysis",
     description:
-      "We analyze the business's ranking for your target search terms. However, we check their keyword positions, content structures, backlink sources, and local signals to show gaps your business can fill.",
+      "Starting with your site’s performance, we check how well it operates under today’s standards. Keyword positions are reviewed to see where gains can be made. Content gets assessed not just for clarity but also usefulness. Local visibility is examined through location-based signals. The strength of incoming links shapes part of the insight. From these findings emerges a customized set of upgrades aimed at maximum impact.",
   },
   {
     number: "3",
     Icon: KeyRound,
-    title: "Targeted Keyword Architecture",
+    title: "Spring Hill Florida Market Research",
     description:
-      "We build a complete keyword framework organized around buyer intent, service category, and Spring Hill, Florida geographic specificity. Every keyword selected connects your website with a consumer who is in an active decision-making state.",
+      "We map how your ideal customers search, which competitors currently own the rankings you want, and where the most accessible opportunities exist for your business right now.",
   },
   {
     number: "4",
     Icon: FileText,
-    title: "Website and On-Page Refinement",
+    title: "Custom SEO Strategy Development",
     description:
-      "Service pages, core landing pages, and the site architecture are set up to meet Google's standards. Local visitors' expectations on every on-page element are checked before content or link-building work starts.",
+      "A customized SEO strategy takes shape around your unique services, local market conditions in Spring Hill, Florida, along with defined checkpoints and projected results. While goals are set early, adjustments follow real-world feedback instead of rigid timelines.",
   },
   {
     number: "5",
     Icon: Settings,
-    title: "Technical Remediation",
+    title: "On-Page and Technical Implementation",
     description:
-      "Every crawl barrier, indexing error, duplicate content issue, and structural weakness affecting your Spring Hill, Florida, website's search performance is identified and resolved. Load speed, mobile responsiveness, and schema implementation are all addressed in this phase.",
+      "Optimizations that gain approval go live site-wide, reshaping content where needed. Structural issues get resolved through targeted adjustments. Technical flaws are corrected systematically. Local information receives timely revisions. Each change integrates smoothly into existing frameworks.",
   },
   {
     number: "6",
-    Icon: MapPin,
-    title: "Local Presence Build and Verification",
+    Icon: SquarePen,
+    title: "Content Production and Authority Building",
     description:
-      "Your Google Business Profile, local directory citations, and location-specific content are developed, standardized, and strengthened. We ensure Google has every signal needed to rank your Spring Hill, Florida, business confidently in maps and local search.",
+      "Month by month, our focused content builds visibility while a steady outreach effort strengthens domain authority. A deliberate approach to backlinks widens the range of keywords you rank for over time.",
   },
   {
     number: "7",
-    Icon: SquarePen,
-    title: "Authoritative Content Production",
-    description:
-      "We develop locally relevant, in-depth content that speaks directly to the questions and purchase considerations of Spring Hill, Florida, consumers. Every piece is created to rank in search results and to position your business as the recognized authority in its category.",
-  },
-  {
-    number: "8",
-    Icon: SquareActivity,
-    title: "Link and Authority Development",
-    description:
-      "Quality backlinks and brand references are earned from credible Hernando County and Florida-wide sources. Each acquired link strengthens your domain authority and reinforces your standing as a reliable Spring Hill, Florida, business in Google's evaluation.",
-  },
-  {
-    number: "9",
     Icon: SearchCheck,
-    title: "Monthly Performance Analysis and Strategy Refinement",
+    title: "Reporting, Analysis, and Ongoing Refinement",
     description:
-      "Continuous improvement is built into every Spring Hill, Florida, engagement we manage. Ranking data, traffic trends, lead volume, and ROI are reviewed every month and used to refine the active strategy.",
+      "We review performance data monthly, communicate findings clearly, and adjust the strategy to reflect new algorithm signals, competitor movements, and evolving search behavior in Spring Hill Florida.",
   },
 ];
 
@@ -105,9 +91,9 @@ export default function SeoProcessSection() {
               SEO Process for
               <br />
               <span className="text-[#FF6F00]">
-                Spring Hill
+                Spring Hill Florida
                 <br />
-                Florida Businesses
+                Businesses
               </span>
             </h2>
 
@@ -115,7 +101,7 @@ export default function SeoProcessSection() {
 
             <div className="mt-7 max-w-[380px] space-y-6 text-[16px] leading-8 text-[#081B4B]/75">
               <p>
-                Predictable SEO results require a repeatable process. Bayshore Communication uses a nine-phase methodology for every Spring Hill, Florida, engagement. Each phase builds value that compounds throughout the campaign.
+                Bayshore Communication starts with a thorough look at your needs and gets right into a seven-step SEO process that fits Spring Hill, Florida’s unique landscape. Every stage pushes things forward, and you actually see progress as each piece falls into place. The approach gets smarter with every round because they fine-tune it based on what works in real life. Early wins guide the next moves, so there’s always something learned. That pace picks up since they’re always tweaking things along the way. The whole system runs on proof, nothing changes without real results backing it up.
               </p>
             </div>
 

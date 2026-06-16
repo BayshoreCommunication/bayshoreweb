@@ -1,53 +1,24 @@
-import {
-  BriefcaseBusiness,
-  Scale,
-  MapPin,
-  ShieldAlert,
-  Users,
-  Building,
-  Gavel,
-} from "lucide-react";
+import { BriefcaseBusiness, MapPin } from "lucide-react";
 
-const businessTypes = [
-  {
-    icon: ShieldAlert,
-    title: "Injury & Defense",
-    items: [
-      "Personal Injury Law (Car Accidents, Slip and Fall)",
-      "Criminal Defense and DUI Representation",
-      "Workers' Compensation and Disability Claims",
-    ],
-  },
-  {
-    icon: Users,
-    title: "Family & Civil Law",
-    items: [
-      "Family Law and Divorce Attorneys",
-      "Estate Planning, Wills, and Probate",
-      "Immigration and Naturalization Services",
-    ],
-  },
-  {
-    icon: Building,
-    title: "Business & Real Estate",
-    items: [
-      "Business and Corporate Law for Enterprises",
-      "Real Estate Law and Closing Services",
-      "Employment and Labor Law Disputes",
-    ],
-  },
-  {
-    icon: Gavel,
-    title: "Financial & Liability",
-    items: [
-      "Bankruptcy Law and Debt Relief",
-      "Medical Malpractice and Professional Negligence",
-    ],
-  },
+const industries = [
+  "Home Services and Contracting",
+  "Medical and Healthcare Practices",
+  "Real Estate Agencies",
+  "Hospitality and Tourism",
+  "Professional Consulting",
+  "Retail and E-commerce",
+  "Health and Wellness Centers",
+  "Pet Services and Veterinary Care",
+  "Automotive Sales and Repair",
+  "Legal and Financial Services",
+  "Education and Training",
+  "Nonprofit Organizations",
+  "Beauty and Salon Services",
+  "Event Planning and Venues",
 ];
 
 const communities = [
-  "Tampa (ZIP Codes 33602, 33603, 33604, 33605, 33606, 33607, 33609, 33611)",
+  "Tampa",
   "South Tampa",
   "Ybor City",
   "Westshore",
@@ -57,6 +28,11 @@ const communities = [
   "Temple Terrace",
   "Lutz",
   "Land O Lakes",
+  "Hyde Park",
+  "Tampa Heights",
+  "New Tampa",
+  "Citrus Park",
+  "Town 'n' Country"
 ];
 
 export default function ServiceAreasSection() {
@@ -66,7 +42,7 @@ export default function ServiceAreasSection() {
         {/* Header */}
         <div className="mx-auto max-w-[1100px] text-center">
           <h2 className="text-[38px] font-bold leading-[1.1] text-black md:text-[52px]">
-            Serving Law Firms Across{" "}
+            Serving Businesses Across{" "}
             <span className="text-[#FF6F00]">
               Tampa,
               <br className="hidden md:block" />
@@ -76,12 +52,12 @@ export default function ServiceAreasSection() {
           </h2>
 
           <p className="mx-auto mt-8 max-w-[1000px] text-[16px] leading-8 text-black/70 md:text-[20px]">
-            Bayshore Communication delivers targeted, market-specific SEO services for Tampa Florida law firms across a broad range of practice areas. Whether your practice specializes in a single area or spans multiple practice categories, every strategy we build targets the precise searches your ideal clients are performing.
+            Bayshore Communication proudly serves businesses throughout Tampa, Florida, and the wider Hillsborough County region. As a dedicated lawyer seo agency tampa every geo-targeted campaign we build is shaped around where your customers are located and how they search for businesses like yours.
           </p>
         </div>
 
         {/* Content */}
-        <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-[1.7fr_1fr]">
+        <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-[1fr_1fr]">
           {/* Left Card */}
           <div
             className="
@@ -98,52 +74,34 @@ export default function ServiceAreasSection() {
               <BriefcaseBusiness size={32} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Practice Areas We Serve
+                Industries We Serve
               </h3>
             </div>
 
-            <div className="mt-10 grid gap-10 md:grid-cols-2">
-              {businessTypes.map((category, index) => {
-                const Icon = category.icon;
-
-                return (
-                  <div key={index}>
-                    <div className="flex items-center gap-3">
-                      <Icon size={22} className="text-[#FF6F00]" />
-
-                      <h4 className="text-[18px] font-bold text-[#081B4B] md:text-[22px]">
-                        {category.title}
-                      </h4>
-                    </div>
-
-                    <div className="mt-5 flex flex-wrap gap-3">
-                      {category.items.map((item) => (
-                        <span
-                          key={item}
-                          className="
-                            rounded-full
-                            border
-                            border-black/10
-                            bg-white
-                            px-4
-                            py-2
-                            text-[14px]
-                            font-medium
-                            text-[#081B4B]
-                            transition-all
-                            duration-300
-                            hover:border-[#FF6F00]
-                            hover:bg-[#FFF8F3]
-                            hover:text-[#FF6F00]
-                          "
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                );
-              })}
+            <div className="mt-10 flex flex-wrap gap-3">
+              {industries.map((item) => (
+                <span
+                  key={item}
+                  className="
+                    rounded-full
+                    border
+                    border-black/10
+                    bg-white
+                    px-4
+                    py-3
+                    text-[14px]
+                    font-medium
+                    text-[#081B4B]
+                    transition-all
+                    duration-300
+                    hover:border-[#FF6F00]
+                    hover:bg-[#FFF8F3]
+                    hover:text-[#FF6F00]
+                  "
+                >
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
 
@@ -162,8 +120,8 @@ export default function ServiceAreasSection() {
             <div className="flex items-center gap-4">
               <MapPin size={30} className="text-[#FF6F00]" />
 
-              <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Tampa, Florida, and Surrounding Communities We Serve
+              <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[30px] lg:text-[32px] xl:text-[38px]">
+                Tampa Neighborhoods and Surrounding Areas We Serve
               </h3>
             </div>
 

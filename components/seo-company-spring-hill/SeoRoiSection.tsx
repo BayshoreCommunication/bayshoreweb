@@ -2,63 +2,56 @@ import {
   ChartNoAxesCombined,
   BadgeDollarSign,
   ShieldCheck,
-  Handshake,
-  PiggyBank,
   Users,
   BarChart3,
   Target,
+  MapPinned,
 } from "lucide-react";
 
-const roiCards = [
+const resultCards = [
   {
     icon: Target,
-    title: "Active Buyer Targeting",
+    title: "First-Page Keyword Rankings",
     description:
-      "Reach Spring Hill, Florida, buyers at the precise moment they are prepared to make a purchase decision.",
-  },
-  {
-    icon: ChartNoAxesCombined,
-    title: "Continuous Lead Generation",
-    description:
-      "Build a search presence that generates customer inquiries continuously rather than only during paid campaign windows.",
-  },
-  {
-    icon: BadgeDollarSign,
-    title: "Compounding Efficiency",
-    description:
-      "Drive down your per-customer acquisition cost as organic authority and rankings accumulate over time.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Appreciating Digital Asset",
-    description:
-      "Create a digital asset whose value appreciates year after year with consistent investment.",
-  },
-  {
-    icon: Handshake,
-    title: "Verified Market Credibility",
-    description:
-      "Develop the kind of verified market credibility in Spring Hill, Florida, that advertising budgets alone cannot produce.",
-  },
-  {
-    icon: PiggyBank,
-    title: "Organic Channel Advantage",
-    description:
-      "Outperform local competitors who remain entirely dependent on paid channels for every customer they acquire.",
+      "Clients move from buried positions to page-one visibility for the highest-value local search terms in their industries within measurable timeframes.",
   },
   {
     icon: Users,
-    title: "Scalable Pipeline Growth",
+    title: "Rising Volume of Qualified Inquiries",
     description:
-      "Scale your customer pipeline without scaling your marketing spend in proportion.",
+      "Businesses see a consistent month-over-month increase in phone calls, form submissions, and appointment bookings from Spring Hill Florida consumers who found them through organic search.",
+  },
+  {
+    icon: MapPinned,
+    title: "Stronger Local Map Pack Presence",
+    description:
+      "Google Business Profile optimization produces improved map pack visibility that generates direct calls and direction requests from nearby buyers.",
+  },
+  {
+    icon: ChartNoAxesCombined,
+    title: "Documented Organic Traffic Growth",
+    description:
+      "Monthly reporting captures clear, measurable increases in website visitors from the Spring Hill Florida and Hernando County geographic areas.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Sustainable Growth Without Ad Dependency",
+    description:
+      "SEO-driven results do not vanish when a campaign pauses. Rankings built through ethical optimization continue producing returns month after month.",
+  },
+  {
+    icon: BadgeDollarSign,
+    title: "Reduced Cost Per Acquired Customer",
+    description:
+      "Organic search consistently delivers a lower cost per acquisition than paid channels, improving the overall profitability of customer growth over time.",
   },
 ];
 
 export default function SeoRoiSection() {
   return (
-    <section className="bg-white py-6 md:py-0 md:mb-16">
+    <section className="bg-white py-16 md:py-24">
       <div className="mx-auto max-w-[1620px] px-8 md:px-8">
-        {/* Header */}
+        {/* Part 1: Real Results */}
         <div className="text-center">
           <div
             className="
@@ -87,27 +80,27 @@ export default function SeoRoiSection() {
               <BarChart3 size={18} className="text-white" />
             </div>
 
-            <span className="font-bold text-[#081B4B]">THE ROI OF SEO</span>
+            <span className="font-bold text-[#081B4B]">VERIFIED PERFORMANCE</span>
           </div>
 
           <h2 className="mx-auto mt-8 max-w-[1100px] text-[38px] font-bold leading-[1.1] text-[#081B4B] md:text-[52px]">
-            The ROI of SEO for
+            Real Results for Real
             <br />
             <span className="text-[#FF6F00]">
-              Spring Hill, Florida Businesses
+              Spring Hill Florida Businesses
             </span>
           </h2>
 
           <div className="mx-auto mt-6 h-1 w-16 bg-[#FF6F00]" />
 
           <p className="mx-auto mt-8 max-w-[900px] text-[16px] leading-8 text-black/60 md:text-[20px]">
-            SEO delivers measurable returns that compound over time and create lasting business value.
+            Bayshore Communication measures success through verified, documented outcomes that reflect real business growth. Our track record across Spring Hill Florida shows what disciplined, data-driven SEO produces over time.
           </p>
         </div>
 
-        {/* Cards */}
+        {/* Results Cards Grid */}
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-          {roiCards.map((item, index) => {
+          {resultCards.map((item, index) => {
             const Icon = item.icon;
 
             return (
@@ -121,12 +114,9 @@ export default function SeoRoiSection() {
                   bg-white
                   p-6
                   md:p-8
-
                   shadow-[0_8px_30px_rgba(0,0,0,0.05)]
-
                   transition-all
                   duration-300
-
                   hover:-translate-y-1
                   hover:shadow-[0_15px_35px_rgba(0,0,0,0.08)]
                 "
@@ -143,10 +133,8 @@ export default function SeoRoiSection() {
                       justify-center
                       rounded-full
                       bg-[#FFF4EC]
-
                       transition-all
                       duration-500
-
                       group-hover:scale-110
                     "
                   >
@@ -162,13 +150,13 @@ export default function SeoRoiSection() {
 
                   {/* Content */}
                   <div>
-                    <h3 className="text-[22px] font-bold leading-[1.3] text-[#081B4B]">
+                    <h3 className="text-[20px] font-bold leading-[1.3] text-[#081B4B]">
                       {item.title}
                     </h3>
 
                     <div className="mt-4 h-[3px] w-12 bg-[#FF6F00]" />
 
-                    <p className="mt-5 text-[15px] leading-8 text-black/65">
+                    <p className="mt-5 text-[15px] leading-7 text-black/65">
                       {item.description}
                     </p>
                   </div>
@@ -176,6 +164,49 @@ export default function SeoRoiSection() {
               </div>
             );
           })}
+        </div>
+
+        {/* Stats Banner */}
+        <div className="mt-12 text-center max-w-[950px] mx-auto bg-[#FFF4EC] rounded-2xl p-6 border border-[#FF6F00]/10">
+          <p className="text-[15px] leading-8 text-black/75 md:text-[16px] font-medium">
+            More than 500,000 leads have been generated for us by our clients ever since our inception back in 2016. In addition to that, our team has designed over 220 websites which are both speedy as well as SEO-friendly. All the figures mentioned above have been verified via data.
+          </p>
+        </div>
+
+        {/* Part 2: ROI of SEO */}
+        <div className="mt-20 border-t border-black/10 pt-16">
+          <div className="grid gap-8 lg:grid-cols-[1fr_minmax(0,1.2fr)] items-start">
+            <div>
+              <span className="text-xl font-bold uppercase tracking-wider text-[#FF6F00]">
+                THE ROI OF SEO
+              </span>
+              <h2 className="mt-4 text-[32px] font-bold leading-[1.15] text-[#081B4B] md:text-[42px]">
+                The ROI of SEO for Spring Hill Florida Businesses
+              </h2>
+              <p className="mt-6 text-[15px] leading-8 text-black/70 md:text-[17px]">
+                SEO is one of the strongest return-on-investment channels available to Spring Hill, Florida businesses of any size. Unlike channels that require continuous spending to maintain results, SEO builds an owned digital asset that appreciates in value the longer it remains active.
+              </p>
+            </div>
+
+            <div className="space-y-4 rounded-2xl bg-[#FFF8F3] p-8 md:p-10 border border-[#FF6F00]/10">
+              {[
+                "Superior placement in map results to trigger a surge in direct phone inquiries",
+                "Steady streams of qualified visitors without the burden of constant ad fees",
+                "Sustainable digital equity that increases in worth as your brand authority climbs",
+                "Accelerated lead generation through top tier rankings that outperform traditional media",
+                "Enhanced credibility that converts casual browsers into loyal neighborhood clients",
+              ].map((text, idx) => (
+                <div key={idx} className="flex items-start gap-4">
+                  <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FF6F00] text-white text-[12px] font-bold">
+                    ✓
+                  </span>
+                  <p className="text-[15px] md:text-[16px] leading-relaxed text-[#081B4B] font-semibold">
+                    {text}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

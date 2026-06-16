@@ -19,7 +19,7 @@ const resultCards = [
     icon: Users,
     title: "Rising Volume of Qualified Inquiries",
     description:
-      "Businesses see a consistent month-over-month increase in phone calls, form submissions, and appointment bookings from Tampa Florida clients who found them through organic search.",
+      "Businesses see a consistent month-over-month increase in phone calls, form submissions, and appointment bookings from Dunedin Florida consumers who found them through organic search.",
   },
   {
     icon: MapPinned,
@@ -31,7 +31,7 @@ const resultCards = [
     icon: ChartNoAxesCombined,
     title: "Documented Organic Traffic Growth",
     description:
-      "Monthly reporting captures clear, measurable increases in website visitors from the Tampa Florida and Hillsborough County geographic areas.",
+      "Monthly reporting captures clear, measurable increases in website visitors from the Dunedin Florida and Pinellas County geographic areas.",
   },
   {
     icon: ShieldCheck,
@@ -87,14 +87,14 @@ export default function SeoRoiSection() {
             Real Results for Real
             <br />
             <span className="text-[#FF6F00]">
-              Tampa Florida Businesses
+              Dunedin Florida Businesses
             </span>
           </h2>
 
           <div className="mx-auto mt-6 h-1 w-16 bg-[#FF6F00]" />
 
           <p className="mx-auto mt-8 max-w-[900px] text-[16px] leading-8 text-black/60 md:text-[20px]">
-            Bayshore Communication measures success through verified, documented outcomes that reflect real business growth. Our track record across Tampa Florida shows what disciplined, data-driven SEO produces over time.
+            Bayshore Communication measures success through verified, documented outcomes that reflect real business growth. Our track record across Dunedin Florida shows what disciplined, data-driven SEO produces over time.
           </p>
         </div>
 
@@ -181,10 +181,10 @@ export default function SeoRoiSection() {
                 THE ROI OF SEO
               </span>
               <h2 className="mt-4 text-[32px] font-bold leading-[1.15] text-[#081B4B] md:text-[42px]">
-                The ROI of SEO for Tampa Florida Businesses
+                The ROI of SEO for Dunedin Florida Businesses
               </h2>
               <p className="mt-6 text-[15px] leading-8 text-black/70 md:text-[17px]">
-                SEO is one of the strongest return-on-investment channels available to Tampa, Florida businesses of any size. Unlike channels that require continuous spending to maintain results, SEO builds an owned digital asset that appreciates in value the longer it remains active.
+                SEO is one of the strongest return-on-investment channels available to Dunedin, Florida businesses of any size. Unlike channels that require continuous spending to maintain results, SEO builds an owned digital asset that appreciates in value the longer it remains active.
               </p>
             </div>
 

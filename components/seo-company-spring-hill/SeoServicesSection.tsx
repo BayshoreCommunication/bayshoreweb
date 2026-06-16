@@ -3,64 +3,58 @@ import { CalendarDays } from "lucide-react";
 
 const services = [
   {
-    title: "Website SEO Audit",
-    image: "/seo-company-wesley-chapel/service-1.png",
-    description:
-      "Every engagement begins with a detailed examination of your current digital standing. Technical health, content alignment, keyword positioning, local signal strength, and competitor positioning are all assessed to produce a clear, prioritized plan of action specific to the Spring Hill Florida market.",
-  },
-  {
-    title: "Keyword Intelligence and Strategy",
-    image: "/seo-company-wesley-chapel/service-2.png",
-    description:
-      "We identify precisely how Spring Hill Florida customers phrase their searches when they are prepared to spend. Intent level, geographic specificity, search volume, and ranking difficulty are all weighed to build a keyword framework that attracts buyers over browsers.",
-  },
-  {
-    title: "On-Page Optimization",
-    image: "/seo-company-wesley-chapel/service-3.png",
-    description:
-      "Each page of your website is an individual ranking asset. We optimize every title tag, meta description, heading hierarchy, URL pattern, internal link structure, and content section to align with what Google requires to rank your Spring Hill Florida pages with full confidence.",
-  },
-  {
-    title: "Technical Website Health",
-    image: "/seo-company-wesley-chapel/service-4.png",
-    description:
-      "Search rankings are limited by technical barriers before content and links can contribute. We identify and resolve crawlability issues, slow load times, mobile performance gaps, indexing errors, and structural deficiencies that prevent your website from reaching its ceiling.",
-  },
-  {
-    title: "Authority Link Building",
-    image: "/seo-company-wesley-chapel/service-7.png",
-    description:
-      "External credibility is a primary ranking input. We acquire meaningful backlinks from credible regional, industry-specific, and Florida-wide sources, building the off-page authority profile that sustains and elevates your Spring Hill, Florida, search rankings over time.",
-  },
-  {
-    title: "Local Search Dominance",
+    title: "Local SEO",
     image: "/seo-company-wesley-chapel/service-5.png",
     description:
-      "Spring Hill, Florida local search requires a multi-signal presence strategy. We refine your Google Business Profile and build consistent citation records across directories. We also deploy location targeted content that secures your business in the map pack and in neighbourhood level search results.",
+      "Optimized profiles begin with precise categorization, followed by verified details and carefully chosen location-based terms. Through trusted platforms specific to Spring Hill, citations are established then maintained over time. Positioning within map rankings improves when each component aligns with regional visibility standards.",
   },
   {
-    title: "Content That Ranks and Converts",
+    title: "On-Page SEO",
+    image: "/seo-company-wesley-chapel/service-3.png",
+    description:
+      "Every service page gets rebuilt from the beginning shaped by how people in Spring Hill Florida search for things. Our service pages are made to fit the way people in Spring Hill Florida look for stuff. Instead of guessing, we shape headlines, subheads, and titles around real queries. Content flows follow what matters now, not outdated tricks. Pages connect through smart internal paths that boost visibility where it counts. Even small details like meta descriptions reflect live user behavior. Authority shifts naturally to key sections without forced tactics. What shows up in results feels clear because the structure supports intent.",
+  },
+  {
+    title: "Technical SEO",
+    image: "/seo-company-wesley-chapel/service-4.png",
+    description:
+      "Starting with how easily bots can navigate your site, we check loading times, key performance signals, mobile experience, organized content markup, plus indexing problems. Because fixing each problem matters, corrections happen carefully to match what today’s search systems expect technically. When the base is solid, everything else in the plan works better down the line.",
+  },
+  {
+    title: "Off-Page SEO and Link Building",
+    image: "/seo-company-wesley-chapel/service-7.png",
+    description:
+      "Not every connection earns a spot. Outreach shapes the backbone of our approach, targeting trusted neighborhood outlets first. Links come from places like trade listings or city-focused platforms, never chosen at random. Each one gets studied - does it fit, does it hold weight, will it last. Only then does it become part of the plan.",
+  },
+  {
+    title: "Content Strategy and SEO Copywriting",
     image: "/seo-company-wesley-chapel/service-6.png",
     description:
-      "We produce content that earns its search placement by genuinely addressing what your audience is looking for. Each article, service page, and guide is built around verified Spring Hill Florida search behavior and designed to establish your business as the most credible local source in its category.",
+      "We research the exact questions Spring Hill, Florida, consumers ask before making a purchase decision and build content that answers those questions with authority. Service pages, location landing pages, and supporting blog content are all written to satisfy search intent and encourage conversion. Every content piece is reviewed against current AI-era quality standards before publication.",
+  },
+  {
+    title: "E-Commerce SEO",
+    image: "/seo-company-wesley-chapel/service-2.png",
+    description:
+      "We optimize product listings, category page structures, and crawl pathways for Spring Hill, Florida businesses that sell online. Transactional keyword targeting connects your product pages with buyers who are ready to purchase right now. Indexation management ensures your entire catalog remains accessible and competitive across all relevant search queries.",
   },
   {
     title: "Ask Engine Optimization (AEO)",
     image: "/seo-company-wesley-chapel/service-8.png",
     description:
-      "Consumers increasingly receive answers from AI before visiting any website. We structure your content so your Spring Hill, Florida, business is referenced as an authoritative source when platforms including ChatGPT, Perplexity, and Google AI Search respond to consumer questions in your market.",
+      "We structure your website content to answer the specific questions. Spring Hill, Florida, consumers ask on AI-powered platforms, including ChatGPT, Perplexity, and Google AI Overviews. AEO positions your business as the authoritative answer when a potential customer asks for a local recommendation and expects an immediate, reliable response. This channel is growing rapidly and early optimization creates a significant competitive advantage.",
   },
   {
     title: "Generative Engine Optimization (GEO)",
     image: "/seo-company-wesley-chapel/service-9.png",
     description:
-      "We optimize your digital presence for AI-generated summaries and conversational search responses. As Spring Hill, Florida consumers use AI tools more frequently to locate local businesses, your brand is present and recommended in the answers those tools deliver.",
+      "We format your content for citation and recommendation in AI-generated summaries and search results. As more Spring Hill, Florida, consumers use generative tools to research local businesses, GEO ensures your name appears as a trusted recommendation. This emerging discipline extends your visibility well beyond traditional organic search results.",
   },
   {
-    title: "Performance Tracking and Monthly Reporting",
+    title: "SEO Reporting and Analytics",
     image: "/seo-company-wesley-chapel/service-1.png",
     description:
-      "Every strategy decision is grounded in real data, and every outcome is tracked and shared transparently. Monthly reports document ranking movement, organic traffic trends, lead activity, and ROI relative to your Spring Hill, Florida, SEO investment.",
+      "Monthly performance updates follow a clear format, showing shifts in keyword rankings alongside changes in organic visit numbers. Because local search visibility affects outcomes, those measurements appear with equal weight. Conversion patterns emerge through careful tracking rather than assumptions. A straightforward explanation follows each dataset, outlining recent developments together with their implications. Insight into upcoming actions comes included, not withheld. Clarity around results links directly to budget allocation. Every financial commitment receives matching accountability in reported progress.",
   },
 ];
 
@@ -93,7 +87,7 @@ export default function SeoServicesSection() {
 
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/70 md:text-[16px]">
               <p>
-                The foundation of search has shifted. AI-powered platforms, voice queries, entity-based evaluation, and intent-driven algorithms now determine which Spring Hill, Florida, businesses earn visibility and which go unnoticed. As a full-service SEO company Spring Hill Bayshore Communication delivers every capability your business needs to lead local search in 2026 and well beyond.
+                Internet search behaviour in 2026 is quite different from a few years back. Search behavior has changed a lot. Now we have computers that can think for themselves. They decide what search results are the most important. People are also using their voices to ask for things.. When you search for something the internet can even create new information just for you. All of this means that search behavior and the way we compete with each other on the internet is very different now. As a leading seo company spring hill, Bayshore Communication, delivers a full suite of services designed to satisfy every dimension of modern search visibility for Spring Hill, Florida businesses.
               </p>
             </div>
 

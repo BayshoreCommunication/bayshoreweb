@@ -19,9 +19,8 @@ import WhyLosingCustomers from "@/components/seo-company-spring-hill/WhyLosingCu
 import React from "react";
 
 export const metadata = {
-  title: "SEO Company Spring Hill | Choose the Best SEO Team",
-  description:
-    "Learn what to look for in a SEO company in Spring Hill, from local SEO expertise to reporting, transparency, and ROI.",
+  title: "SEO Company Spring Hill | Reviews, Pricing & Results",
+  description: "Explore how an SEO company in Spring Hill, Florida, can improve rankings, traffic, leads & long-term growth in your business.",
 
   robots: {
     index: false,

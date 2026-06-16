@@ -18,21 +18,21 @@ const industries = [
 ];
 
 const communities = [
-  "Spring Hill",
-  "Brooksville",
-  "Weeki Wachee",
-  "Bayonet Point",
-  "Hudson",
+  "Downtown Dunedin",
+  "Dunedin Isles",
+  "Fairway Estate",
+  "Mease, Dunedin",
+  "Clearwater",
+  "Safety Harbor",
+  "Palm Harbor",
+  "Tarpon Springs",
+  "Oldsmar",
   "New Port Richey",
-  "Wesley Chapel",
-  "Land O Lakes",
-  "Lutz",
-  "Zephyrhills",
-  "Hernando Beach",
-  "Ridge Manor",
-  "Masaryktown",
-  "High Point",
-  "Spring Lake"
+  "Largo",
+  "Tampa",
+  "St. Petersburg",
+  "Spring Hill",
+  "Pinellas Park",
 ];
 
 export default function ServiceAreasSection() {
@@ -44,7 +44,7 @@ export default function ServiceAreasSection() {
           <h2 className="text-[38px] font-bold leading-[1.1] text-black md:text-[52px]">
             Serving Businesses Across{" "}
             <span className="text-[#FF6F00]">
-              Spring Hill,
+              Dunedin,
               <br className="hidden md:block" />
               Florida,
             </span>{" "}
@@ -52,7 +52,7 @@ export default function ServiceAreasSection() {
           </h2>
 
           <p className="mx-auto mt-8 max-w-[1000px] text-[16px] leading-8 text-black/70 md:text-[20px]">
-            Bayshore Communication proudly serves businesses throughout Spring Hill, Florida, and the wider Hernando County region. As a dedicated seo company spring hill every geo-targeted campaign we build is shaped around where your customers are located and how they search for businesses like yours.
+            Bayshore Communication proudly serves businesses throughout Dunedin, Florida, and the wider Pinellas County region. As a dedicated seo company dunedin every geo-targeted campaign we build is shaped around where your customers are located and how they search for businesses like yours.
           </p>
         </div>
 
@@ -121,7 +121,7 @@ export default function ServiceAreasSection() {
               <MapPin size={30} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[30px] lg:text-[32px] xl:text-[38px]">
-                Spring Hill Neighborhoods and Surrounding Areas We Serve
+                Dunedin Neighborhoods and Surrounding Areas We Serve
               </h3>
             </div>
 

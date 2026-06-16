@@ -4,30 +4,37 @@ const seoSteps = [
   {
     number: "01",
     image: "/seo-company-wesley-chapel/seo-step-1.png",
-    title: "From Search Entry to Your Website",
+    title: "Visibility at the Moment of Decision",
     description:
-      "Optimization helps your business to get a good position among the first results a Spring Hill, Florida, searcher finds. That position gets the click and brings a visitor who has a need related to your services.",
+      "When people in Spring Hill, Florida search for the services you provide your business shows up. People see your name. This happens when people are already looking to do something so they are more likely to call you or visit your business.",
   },
   {
     number: "02",
     image: "/seo-company-wesley-chapel/seo-step-2.png",
-    title: "From Your Website to Verified Trust",
+    title: "Google Maps Prominence That Generates Calls",
     description:
-      "When people see your business on the page of search results, it tells them that you are legitimate. They think you are a company before they even read what you have to say. If you have a local presence, people are saying good things about you, and it is easy to understand what you do, then people are more likely to want to do business with you. This is because a good first-page ranking and a solid local presence with reviews and clear information about your services make people trust you and want to engage with your business. The local presence and the reviews and service information are key to turning that trust into a decision to engage with your business.",
+      "If you have a Google Business Profile that’s complete and up to date, people in your area can see your business address, hours, reviews and phone number without having to go to your website. This helps people in Spring Hill, Florida find your business on Google Maps.",
   },
   {
     number: "03",
     image: "/seo-company-wesley-chapel/seo-step-3.png",
-    title: "From Interest to a Direct Inquiry",
+    title: "Traffic With Real Purchasing Intent",
     description:
-      "A properly structured website removes every obstacle between interest and action, and strategic calls to action guide visitors to the next step. Mobile-enhanced pages keep things smooth on any device. They worked well everywhere. Load times keep visitors in Spring Hill, Florida, engaged.",
+      "SEO helps your business get noticed by people in Spring Hill, Florida who are actually looking for what you sell. This means you do not get a lot of people visiting your website who’re not really interested in buying something from you.",
   },
   {
     number: "04",
     image: "/seo-company-wesley-chapel/seo-step-4.png",
-    title: "From a Single Sale to an Ongoing Relationship",
+    title: "Steady Flow of Inbound Inquiries",
     description:
-      "Customers who come through organic search are aware and deliberate. They convert at higher rates, spend more per transaction, and are more likely to return and recommend your Spring Hill, Florida, business to others in the community.",
+      "If your website is easy to use and has the information, people who visit your website are more likely to call you, ask for an appointment or send you a message. These are people who’re ready to spend money now.",
+  },
+  {
+    number: "05",
+    image: "/seo-company-wesley-chapel/seo-step-1.png",
+    title: "Authority That Builds Month After Month",
+    description:
+      "If you keep working on your SEO your website becomes well known and you show up in search results for more keywords. This helps you get customers without having to spend a lot of money on advertising. Over time this helps your business get a stream of new customers in Spring Hill, Florida.",
   },
 ];
 
@@ -43,7 +50,7 @@ export default function SeoCustomerJourney() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-[900px] text-[15px] leading-7 text-black/70 md:text-[18px] md:leading-8">
-            Search intent is the most powerful purchase signal available to local businesses. When a Spring Hill, Florida resident types a query into Google, that action represents a conscious need, not passive curiosity. A dedicated SEO company Spring Hill builds the direct pathway from that intent signal to your front door.
+            Ready to make a purchase, someone in Spring Hill, Florida begins looking online. Spotting what they want shifts them into buyer mode fast. A local business becomes visible exactly when that search happens. Timing matters here. With help from an experienced seo company spring hill visibility grows just as decisions are being made.
           </p>
         </div>
 

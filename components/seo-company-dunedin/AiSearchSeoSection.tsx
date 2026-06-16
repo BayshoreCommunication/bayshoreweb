@@ -11,7 +11,7 @@ const aiSearchCards = [
     Icon: FileCheck2,
     title: "Content Credibility Is Now Non-Negotiable",
     description:
-      "Today, trust in what is written matters more than ever. With algorithms deciding visibility, material shown to people in Tampa, Florida, must demonstrate real knowledge. Accuracy shapes outcomes behind the scenes. What appears online first has already passed silent checks. Only content grounded in fact earns space on results pages. Authority now quietly determines reach.",
+      "Today, trust in what is written matters more than ever. With algorithms deciding visibility, material shown to people in Dunedin, Florida, must demonstrate real knowledge. Accuracy shapes outcomes behind the scenes. What appears online first has already passed silent checks. Only content grounded in fact earns space on results pages. Authority now quietly determines reach.",
   },
   {
     Icon: Cpu,
@@ -23,7 +23,7 @@ const aiSearchCards = [
     Icon: AudioLines,
     title: "Review Quality Influences AI Rankings",
     description:
-      "Weight given to page experience grows. Speed at load time matters more now within the ranking framework used for Tampa firms. Visual steadiness during user interaction counts under the new evaluation logic. Mobile access ease factors into results through algorithmic assessment methods. How smoothly a site performs shapes visibility outcomes across local listings.",
+      "Weight given to page experience grows. Speed at load time matters more now within the ranking framework used for Dunedin firms. Visual steadiness during user interaction counts under the new evaluation logic. Mobile access ease factors into results through algorithmic assessment methods. How smoothly a site performs shapes visibility outcomes across local listings.",
   },
   {
     Icon: MessageSquareText,
@@ -35,13 +35,13 @@ const aiSearchCards = [
     Icon: Trophy,
     title: "Schema Markup for AI Comprehension",
     description:
-      "Structured data helps AI-powered search engines comprehend your law firm, its physical address, and its customers, which improves your chances of getting rich result rankings.",
+      "Structured data helps AI-powered search engines comprehend your business, its physical address, and its customers, which improves your chances of getting rich result rankings.",
   },
   {
     Icon: Cpu,
     title: "First-Mover Advantage Is Still Available",
     description:
-      "Tampa, Florida businesses that align their SEO strategy with AI search requirements now will capture organic territory that becomes significantly harder to claim over time.",
+      "Dunedin, Florida businesses that align their SEO strategy with AI search requirements now will capture organic territory that becomes significantly harder to claim over time.",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function AiSearchSeoSection() {
         <div className="mx-auto max-w-[900px] text-left md:text-center">
           <h2 className="text-[32px] font-bold leading-[1.15] text-[#081B4B] md:text-[42px]">
             Why AI Search Is Changing SEO for{" "}
-            <span className="text-[#FF6F00]">Tampa Florida</span> Businesses in 2026
+            <span className="text-[#FF6F00]">Dunedin Florida</span> Businesses in 2026
           </h2>
         </div>
 

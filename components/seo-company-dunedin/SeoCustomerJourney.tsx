@@ -6,21 +6,21 @@ const seoSteps = [
     image: "/seo-company-wesley-chapel/seo-step-1.png",
     title: "Visibility at the Moment of Decision",
     description:
-      "When people in Tampa, Florida search for the services you provide your law firm shows up. People see your name. This happens when people are already looking to do something so they are more likely to call you or visit your law firm.",
+      "When people in Dunedin, Florida search for the services you provide your business shows up. People see your name. This happens when people are already looking to do something so they are more likely to call you or visit your business.",
   },
   {
     number: "02",
     image: "/seo-company-wesley-chapel/seo-step-2.png",
     title: "Google Maps Prominence That Generates Calls",
     description:
-      "If you have a Google Business Profile that’s complete and up to date, people in your area can see your law firm address, hours, reviews and phone number without having to go to your website. This helps people in Tampa, Florida find your law firm on Google Maps.",
+      "If you have a Google Business Profile that’s complete and up to date, people in your area can see your business address, hours, reviews and phone number without having to go to your website. This helps people in Dunedin, Florida find your business on Google Maps.",
   },
   {
     number: "03",
     image: "/seo-company-wesley-chapel/seo-step-3.png",
     title: "Traffic With Real Purchasing Intent",
     description:
-      "SEO helps your law firm get noticed by people in Tampa, Florida who are actually looking for what you sell. This means you do not get a lot of people visiting your website who’re not really interested in buying something from you.",
+      "SEO helps your business get noticed by people in Dunedin, Florida who are actually looking for what you sell. This means you do not get a lot of people visiting your website who’re not really interested in buying something from you.",
   },
   {
     number: "04",
@@ -34,7 +34,7 @@ const seoSteps = [
     image: "/seo-company-wesley-chapel/seo-step-1.png",
     title: "Authority That Builds Month After Month",
     description:
-      "If you keep working on your SEO your website becomes well known and you show up in search results for more keywords. This helps you get customers without having to spend a lot of money on advertising. Over time this helps your law firm get a stream of new clients in Tampa, Florida.",
+      "If you keep working on your SEO your website becomes well known and you show up in search results for more keywords. This helps you get customers without having to spend a lot of money on advertising. Over time this helps your business get a stream of new customers in Dunedin, Florida.",
   },
 ];
 
@@ -45,12 +45,12 @@ export default function SeoCustomerJourney() {
         {/* Header */}
         <div className="mx-auto max-w-[900px] text-center">
           <h2 className="text-[32px] font-bold leading-[1.1] text-[#081B4B] md:text-[48px]">
-            How SEO Turns <span className="text-[#FF6F00]">Tampa Florida</span> Searches Into{" "}
-            <span className="text-[#FF6F00]">Paying Clients</span>
+            How SEO Turns <span className="text-[#FF6F00]">Dunedin Florida</span> Searches Into{" "}
+            <span className="text-[#FF6F00]">Paying Customers</span>
           </h2>
 
           <p className="mx-auto mt-6 max-w-[900px] text-[15px] leading-7 text-black/70 md:text-[18px] md:leading-8">
-            Ready to make a purchase, someone in Tampa, Florida begins looking online. Spotting what they want shifts them into buyer mode fast. A local law firm becomes visible exactly when that search happens. Timing matters here. With help from an experienced lawyer seo agency tampa visibility grows just as decisions are being made.
+            Ready to make a purchase, someone in Dunedin, Florida begins looking online. Spotting what they want shifts them into buyer mode fast. A local business becomes visible exactly when that search happens. Timing matters here. With help from an experienced seo company dunedin visibility grows just as decisions are being made.
           </p>
         </div>
 

@@ -52,7 +52,7 @@ const testimonials = [
     location: "Tampa Bay, Florida",
     icon: Scale,
     review:
-      "Bayshore Communication understood our Spring Hill, Florida, market from the very beginning. Their local SEO strategy helped us dominate search results in our industry and service area. The team built our rankings steadily without shortcuts, and the results have been lasting and consistent. I highly recommend them to any business that is serious about growing its online presence.",
+      "Bayshore Communication understood our Dunedin, Florida, market from the very beginning. Their local SEO strategy helped us dominate search results in our industry and service area. The team built our rankings steadily without shortcuts, and the results have been lasting and consistent. I highly recommend them to any business that is serious about growing its online presence.",
   },
   {
     image:
@@ -81,7 +81,7 @@ export default function TestimonialsSection() {
             </div>
 
             <h2 className="mt-6 text-[38px] font-bold leading-[1.1] text-black md:text-[52px]">
-              What Our Spring Hill
+              What Our Dunedin
               <br />
               Florida <span className="text-[#FF6F00]">Clients Are Saying</span>
             </h2>

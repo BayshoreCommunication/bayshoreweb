@@ -230,11 +230,11 @@ export default function SeoPackagesSection() {
           </p>
 
           <h2 className="mx-auto mt-4 max-w-[1180px] text-[32px] font-bold leading-[1.08] text-[#081B4B] md:text-[50px]">
-            SEO Packages for Spring Hill Florida Businesses
+            SEO Packages for Dunedin Florida Businesses
           </h2>
 
           <p className="mx-auto mt-4 max-w-[960px] text-[15px] leading-7 text-black/60 md:text-[18px]">
-            Bayshore Communication provides three SEO investment plans for businesses in Spring Hill, Florida. Each plan is tailored to your specific service area, business category, and target customer. These plans cater to businesses at different stages of growth and competition.
+            Bayshore Communication provides three SEO investment plans for businesses in Dunedin, Florida. Each plan is tailored to your specific service area, business category, and target customer. These plans cater to businesses at different stages of growth and competition.
           </p>
         </div>
 
@@ -389,7 +389,7 @@ export default function SeoPackagesSection() {
         </div>
 
         <p className="mx-auto mt-4 max-w-[980px] text-center text-[13px] leading-6 text-black/55">
-          Reach out to Bayshore Communication for custom package pricing built around your Spring Hill, Florida, business goals and timeline.
+          Reach out to Bayshore Communication for custom package pricing built around your Dunedin, Florida, business goals and timeline.
         </p>
       </div>
     </section>

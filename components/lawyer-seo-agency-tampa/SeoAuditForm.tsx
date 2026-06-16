@@ -77,14 +77,14 @@ export default function SeoAuditForm() {
               "
             >
               Get Your Free{" "}
-              <span className="text-[#FF6F00]">Tampa Florida Lawyer</span> SEO
+              <span className="text-[#FF6F00]">Tampa Florida</span> SEO
               Audit Report
             </h2>
           </div>
 
           <div>
             <p className="max-w-[420px] text-[16px] leading-8 text-black/80 md:text-[18px] font-bold">
-              Find out exactly why Tampa, Florida, clients cannot find your law firm on Google, at no cost to you.
+              Could your Tampa, Florida, company show up higher on Google? Grab a no-cost SEO review now. See exactly how you rank right now, spot hidden tech issues.
             </p>
           </div>
         </div>
@@ -154,7 +154,7 @@ export default function SeoAuditForm() {
             <input
               type="hidden"
               name="service"
-              value="Tampa Lawyer SEO Audit"
+              value="Tampa SEO Audit"
             />
 
             {/* Button */}

@@ -21,39 +21,45 @@ import "swiper/css/pagination";
 const features = [
   {
     Icon: Award,
-    title: "A Track Record Built on Measurable Deliveries",
+    title: "Verified Client Track Record",
     description:
-      "We have served more than 70 clients, launched over 220 websites, and generated in excess of 500,000 leads across multiple industries. Every client engagement adds depth to the experience that shapes how we approach each new Tampa, Florida lawyer SEO strategy.",
-  },
-  {
-    Icon: TrendingUp,
-    title: "Every Recommendation Backed by Real Evidence",
-    description:
-      "Keyword selections, content priorities, technical actions, and link acquisition targets are all determined by verified research and current market data. There is no assumption-based planning in our process. Every decision traces to specific evidence about your law firm and your local market.",
-  },
-  {
-    Icon: SearchCheck,
-    title: "One Team Covering Your Complete Search Presence",
-    description:
-      "Technical SEO, local optimization, content development, AEO, and GEO are managed by one coordinated team under a single strategy. There are no disconnected vendors or conflicting priorities. One accountable team owns every dimension of your Tampa, Florida, search presence.",
-  },
-  {
-    Icon: MapPinned,
-    title: "Genuine Tampa Florida Market Understanding",
-    description:
-      "We understand how Hillsborough County residents search for law firms, which practice areas carry the heaviest local competition, how map pack behavior works in the Tampa, Florida, market, and where the realistic ranking opportunities exist for your law practice.",
-  },
-  {
-    Icon: Layers3,
-    title: "No Templates, No Recycled Work",
-    description:
-      "Every Tampa, Florida, lawyer SEO strategy we build is designed from first principles around your specific practice areas, your competitive environment, your target client profile, and your growth targets. No framework from another client is applied to your account.",
+      "We have served over 70 businesses across diverse industries with documented improvements in organic rankings, traffic volume, and inbound lead generation.",
   },
   {
     Icon: ClipboardList,
-    title: "Full Visibility Into Every Action and Outcome",
+    title: "Research-Backed Strategy Development",
     description:
-      "Monthly reporting documents rankings, traffic changes, lead generation, and ROI with complete transparency. You receive plain-language context on what changed, why it changed, and what we are doing about it. There is no opacity in our client relationships.",
+      "Every decision we make is grounded in keyword data, competitive analysis, technical audits, and live campaign performance rather than guesswork or generic templates.",
+  },
+  {
+    Icon: Layers3,
+    title: "Full-Service SEO Under One Team",
+    description:
+      "Technical work, content production, local optimization, link building, and AI-era AEO and GEO are all managed by a single coordinated team with one accountability structure.",
+  },
+  {
+    Icon: MapPinned,
+    title: "Genuine Tampa Florida Market Expertise",
+    description:
+      "We know which ZIP codes generate the highest search volume in Hillsborough County, which business categories face the steepest local competition, and how seasonal patterns affect search behavior here.",
+  },
+  {
+    Icon: SearchCheck,
+    title: "Strategies Built for Your Business Alone",
+    description:
+      "We do not apply a formula or repurpose a strategy from another client. Every campaign begins with a fresh analysis of your specific goals and market position.",
+  },
+  {
+    Icon: ClipboardList,
+    title: "No Hidden Fees or Vague Activity Reports",
+    description:
+      "Monthly reports detail which rankings changed, which traffic went up, and what actions our team took. Your invoice and reporting have no surprises.",
+  },
+  {
+    Icon: TrendingUp,
+    title: "Flexible Pricing That Delivers Real ROI",
+    description:
+      "Our package structures are designed to produce measurable returns at every budget level, not to lock businesses into spending more than their growth stage requires.",
   },
 ];
 
@@ -79,11 +85,11 @@ export default function WhyChooseBayshore() {
           {/* Left */}
           <div>
             <span className="text-xl font-bold uppercase tracking-wider text-[#FF6F00]">
-              WHY CHOOSE US
+              Why Tampa Florida Businesses
             </span>
 
             <h2 className="mt-4 text-[38px] font-bold leading-[1.05] text-[#081B4B] md:text-[52px]">
-              Why Tampa Law Firms Choose <span className="text-[#FF6F00]">Bayshore</span>
+              Choose <span className="text-[#FF6F00]">Bayshore</span>
               <br />
               Communication
             </h2>
@@ -92,7 +98,7 @@ export default function WhyChooseBayshore() {
 
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/75 md:text-[18px]">
               <p>
-                Bayshore Communication was not built as a generalist agency with SEO as an add-on service. We are a dedicated growth partner with a measured, documented track record of improving search performance and driving real client acquisition for law firms across Florida since 2016.
+                Bayshore Communication is not a general marketing shop that added SEO to a list of unrelated services. We are a dedicated digital growth lawyer seo agency tampa with a proven track record of producing measurable outcomes for businesses across Tampa Florida since 2016.
               </p>
             </div>
 

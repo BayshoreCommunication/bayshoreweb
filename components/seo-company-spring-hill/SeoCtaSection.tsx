@@ -19,12 +19,11 @@ export default function SeoCtaSection() {
           {/* Content */}
           <div className="relative z-10 flex min-h-[320px] flex-col items-center justify-center px-6 py-12 text-center md:min-h-[420px]">
             <h2 className="max-w-[1200px] text-[38px] font-bold leading-[1.15] text-white md:text-[52px]">
-              Your Search for the Right Spring Hill Florida SEO Company Ends
-              Here
+              Your Search for the Right SEO Company in Spring Hill Florida Ends Here
             </h2>
 
             <p className="mt-5 max-w-[760px] text-[15px] leading-7 text-white/90 md:text-[18px] md:leading-8">
-              From Invisible to Unmissable in Spring Hill Search Results
+              Everything we build is created from scratch around your business, your customers, and your specific competitive environment.
             </p>
 
             <button

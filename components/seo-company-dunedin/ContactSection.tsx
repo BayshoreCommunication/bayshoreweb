@@ -87,7 +87,7 @@ export default function ContactSection() {
             <h2 className="text-[38px] font-bold leading-[1.08] text-black md:text-[52px]">
               Let&apos;s Put Your
               <br />
-              Spring Hill, Florida,
+              Dunedin, Florida,
               <br />
               Business on the Map
               <br />
@@ -97,7 +97,7 @@ export default function ContactSection() {
             </h2>
 
             <p className="mt-8 max-w-[440px] text-[17px] leading-8 text-black/70 md:text-[19px]">
-              Capture Every Click and Secure Your Position as a Spring Hill Leader.
+              Capture Every Click and Secure Your Position as a Dunedin Leader.
               <br />
               Call +1 (509) 592-1745 | www.bayshorecommunication.com
             </p>
@@ -114,7 +114,7 @@ export default function ContactSection() {
                 },
                 {
                   icon: Users,
-                  text: "A Local Team That Understands Spring Hill",
+                  text: "A Local Team That Understands Dunedin",
                 },
                 {
                   icon: ShieldCheck,
@@ -301,7 +301,7 @@ export default function ContactSection() {
             <div className="grid gap-5 rounded-b-[16px] border border-t-0 border-black/5 bg-white px-6 py-5 shadow-[0_18px_35px_rgba(0,0,0,0.07)] md:grid-cols-3 md:px-8">
               <TrustItem
                 icon={<ShieldCheck size={22} />}
-                text="Trusted by Local Businesses Across Hernando County"
+                text="Trusted by Local Businesses Across Pinellas County"
               />
 
               <TrustItem
@@ -311,7 +311,7 @@ export default function ContactSection() {
 
               <TrustItem
                 icon={<MapPin size={22} />}
-                text="Focused on Spring Hill and Surrounding Areas"
+                text="Focused on Dunedin and Surrounding Areas"
               />
             </div>
           </div>

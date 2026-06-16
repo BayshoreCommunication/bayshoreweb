@@ -5,13 +5,13 @@ const mistakes = [
     image: "/seo-company-wesley-chapel/mistake-1.png",
     title: "Using Non-Local Keyword Targets",
     description:
-      "Targeting wide, generic terms without geographic intent fails to reach Tampa Florida clients who are actively searching for local providers.",
+      "Targeting wide, generic terms without geographic intent fails to reach Dunedin Florida consumers who are actively searching for local providers.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-2.png",
     title: "Incomplete Google Business Profile",
     description:
-      "Missing categories, absent business descriptions, and unverified listings remove your law firm from the local map pack entirely.",
+      "Missing categories, absent business descriptions, and unverified listings remove your business from the local map pack entirely.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-4.png",
@@ -23,7 +23,7 @@ const mistakes = [
     image: "/seo-company-wesley-chapel/mistake-5.png",
     title: "Content That Does Not Reflect Local Intent",
     description:
-      "Generic service descriptions that do not reflect the actual questions Tampa, Florida, legal clients typing into Google will not rank or produce inquiries.",
+      "Generic service descriptions that do not reflect the actual questions Dunedin, Florida, consumers typing into Google will not rank or produce inquiries.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-3.png",
@@ -60,14 +60,14 @@ export default function CommonSeoMistakes() {
           <div>
             <h2 className="max-w-[780px] text-[34px] font-bold leading-[1.05] text-black md:text-[52px]">
               Common <span className="text-[#FF6F00]">SEO</span> Mistakes{" "}
-              <span className="text-[#FF6F00]">Tampa Florida</span>{" "}
+              <span className="text-[#FF6F00]">Dunedin Florida</span>{" "}
               Businesses Make
             </h2>
           </div>
 
           <div>
             <p className="text-[15px] leading-7 text-black/70 md:text-[16px]">
-              A significant number of Tampa Florida businesses spend money on website design and digital presence without seeing any meaningful growth in search rankings. The problem is rarely the business itself. It is the presence of avoidable SEO errors that quietly prevent any page from performing.
+              A significant number of Dunedin Florida businesses spend money on website design and digital presence without seeing any meaningful growth in search rankings. The problem is rarely the business itself. It is the presence of avoidable SEO errors that quietly prevent any page from performing.
             </p>
           </div>
         </div>
@@ -197,7 +197,7 @@ export default function CommonSeoMistakes() {
             <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full " />
 
             <span className="relative flex items-center gap-2 text-[14px]">
-              Start Fixing Your Tampa Business SEO Today
+              Start Fixing Your Dunedin Business SEO Today
               <span>→</span>
             </span>
           </button>

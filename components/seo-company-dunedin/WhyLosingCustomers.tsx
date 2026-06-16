@@ -7,7 +7,7 @@ const cards = [
     icon: "/seo-company-wesley-chapel/card-icon-1.png",
     title: "No Page-One Presence",
     description:
-      "When your website is not on the page of Google most people searching in Spring Hill, Florida will never even know that your business exists.",
+      "When your website is not on the page of Google most people searching in Dunedin, Florida will never even know that your business exists.",
   },
   {
     number: "02",
@@ -46,14 +46,14 @@ export default function WhyLosingCustomers() {
         {/* Heading */}
         <div className="max-w-[820px]">
           <h2 className="text-[38px] font-bold leading-[1.05] text-black sm:text-[48px]">
-            Why Spring Hill Florida
+            Why Dunedin Florida
             <br />
             Businesses Are Losing Customers
             <br />
             <span className="text-[#FF6F00]">Without SEO</span>
           </h2>
           <p className="mt-6 text-[16px] leading-8 text-black/70 md:text-[18px]">
-            In Spring Hill, people usually type their queries directly into the search bar first. They almost uniformly ignore everything beyond the first page of results, a blink-and-you-miss-it reality where visibility instantly morphs into viability. Not being there means immediate abandonment to the next option; after all, one wonders why they would dig deeper when everything else demands their attention. Studies, and again more studies, consistently point to the same unyielding statistic over seventy-five percent of all journeys end right there, never to continue. That absence from Google’s curated top tier is a quiet hemorrhage of potential revenue, a persistent trickle draining your bottom line every single day without a sound.
+            In Dunedin, people usually type their queries directly into the search bar first. They almost uniformly ignore everything beyond the first page of results, a blink-and-you-miss-it reality where visibility instantly morphs into viability. Not being there means immediate abandonment to the next option; after all, one wonders why they would dig deeper when everything else demands their attention. Studies, and again more studies, consistently point to the same unyielding statistic over seventy-five percent of all journeys end right there, never to continue. That absence from Google’s curated top tier is a quiet hemorrhage of potential revenue, a persistent trickle draining your bottom line every single day without a sound.
           </p>
         </div>
 

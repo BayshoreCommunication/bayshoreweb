@@ -7,9 +7,13 @@ import {
   ArrowRight,
   ArrowUpRight,
   Star,
+  Wrench,
+  Stethoscope,
+  Home,
   Scale,
-  ShieldAlert,
-  Users,
+  Store,
+  Building2,
+  BriefcaseBusiness,
 } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -23,32 +27,42 @@ const testimonials = [
   {
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
-    name: "Marcus Reynolds",
-    role: "Owner, Reynolds Law Group",
-    location: "Tampa, Florida",
-    icon: ShieldAlert,
+    name: "Chris",
+    role: "Owner, Catflix Legal",
+    location: "Tampa Bay, Florida",
+    icon: Store,
     review:
-      "Working with Bayshore Communication reshaped how our Tampa, Florida law firm appears in search. Within a few months, we went from barely visible to holding top positions for every service term that drives real revenue. The process was thorough and the results were tangible.",
+      "Bayshore Communication completely transformed our online visibility across the Tampa Bay area. We reached page one for our most important keywords within a few months of starting the campaign. The team was professional, responsive, and genuinely invested in our results from day one. Our organic inquiries have increased dramatically and continue to grow with every passing month.",
   },
   {
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
-    name: "Diana Castillo",
-    role: "Owner, Castillo Family Law",
-    location: "Tampa, Florida",
-    icon: Users,
+    name: "Robert Johnson",
+    role: "Owner, Robert Johnson Law Group",
+    location: "Florida",
+    icon: BriefcaseBusiness,
     review:
-      "We had worked with other agencies without meaningful outcomes. Bayshore took a completely different approach. They understood the Tampa market specifically and built a strategy around it. Our inquiry volume has grown steadily every single month since we started.",
+      "We had worked with other agencies before, but nobody delivered results like the Bayshore team. Our organic traffic grew steadily, and we saw a real, measurable increase in qualified client inquiries every month. The monthly reporting kept us fully informed at every step of the entire engagement. We now rank on page one for the most competitive search terms in our local market.",
   },
   {
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
-    name: "Kevin Harmon",
-    role: "Owner, Harmon Criminal Defense",
-    location: "Tampa, Florida",
+    name: "Managing Partner",
+    role: "Carter Injury Law",
+    location: "Tampa Bay, Florida",
     icon: Scale,
     review:
-      "Bayshore handled our technical issues, our Google Business Profile, and our content all at once. The monthly reports explain exactly what happened and what is planned next. Our Google presence now brings in new clients every single week without any ad spend.",
+      "Bayshore Communication understood our Tampa, Florida, market from the very beginning. Their local SEO strategy helped us dominate search results in our industry and service area. The team built our rankings steadily without shortcuts, and the results have been lasting and consistent. I highly recommend them to any business that is serious about growing its online presence.",
+  },
+  {
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
+    name: "Owner",
+    role: "Apex Law Group",
+    location: "Tampa Bay, Florida",
+    icon: BriefcaseBusiness,
+    review:
+      "The Bayshore team treated our business as if it were their own top priority throughout. The results are entirely verifiable, and we can see the impact clearly in our revenue data. Our qualified leads more than doubled within the first six months of working together. They understood the competitive market and built a strategy that delivered real, measurable outcomes from day one.",
   },
 ];
 
@@ -67,9 +81,9 @@ export default function TestimonialsSection() {
             </div>
 
             <h2 className="mt-6 text-[38px] font-bold leading-[1.1] text-black md:text-[52px]">
-              What Our Tampa Law Firm
+              What Our Tampa
               <br />
-              <span className="text-[#FF6F00]">Clients Are Saying</span>
+              Florida <span className="text-[#FF6F00]">Clients Are Saying</span>
             </h2>
           </div>
 

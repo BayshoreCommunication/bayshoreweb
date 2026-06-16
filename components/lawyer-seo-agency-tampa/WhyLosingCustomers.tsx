@@ -5,30 +5,37 @@ const cards = [
   {
     number: "01",
     icon: "/seo-company-wesley-chapel/card-icon-1.png",
-    title: "Your Law Firm Is Invisible Where Clients Are Looking",
+    title: "No Page-One Presence",
     description:
-      "Over 90% of all search traffic goes to page one results. A law firm sitting on page two or below does not earn a second look from Tampa, Florida, consumers who are ready to engage legal services.",
+      "When your website is not on the page of Google most people searching in Tampa, Florida will never even know that your law firm exists.",
   },
   {
     number: "02",
     icon: "/seo-company-wesley-chapel/card-icon-2.png",
-    title: "Your Competitor Gets the Call You Should Have Received",
+    title: "Competitor Dominance in Local Results",
     description:
-      "Search visibility is a zero-sum game at the local level. Every client who finds a competitor through Google is a client who bypassed your law firm entirely without ever knowing you existed.",
+      "Your competitors get all the phone calls, visits to their website and people walking into their store that could have been yours if you were ranked higher.",
   },
   {
     number: "03",
     icon: "/seo-company-wesley-chapel/card-icon-3.png",
-    title: "A Website Alone Does Not Attract Clients",
+    title: "Unresolved Website Performance Issues",
     description:
-      "A website without search optimization does not generate cases on its own. It requires deliberate technical signals, local authority, and aligned content before Google recommends it to any Tampa, Florida, consumer.",
+      "If your website is slow or has a lot of errors Google thinks your website is not good and your ranking gets worse every week.",
   },
   {
     number: "04",
     icon: "/seo-company-wesley-chapel/card-icon-1.png",
-    title: "The Local Map Pack Is Already Occupied",
+    title: "Missing From the Google Local Map Pack",
     description:
-      "The top three listings on Google Maps get most of the clicks. Calls in a local search. To get these spots you need a clear plan for local SEO that is made for Tampa, Florida.\n\n* A good plan helps you get clicks and calls.\n\n* It is made for Tampa, Florida.\n\nYou need to focus on Google Maps listings. Securing those listings on Google Maps requires a structured local SEO strategy. It should be built for the Tampa, Florida, market.",
+      "If you do not have a Google Business Profile your law firm will not be on the Google map, which is where people look the most when they search for something.",
+  },
+  {
+    number: "05",
+    icon: "/seo-company-wesley-chapel/card-icon-2.png",
+    title: "Fading Organic Reach Each Month",
+    description:
+      "Every month your website will be seen by people if you do not keep working on it while your competitors who keep doing search engine optimization get stronger and stronger.",
   },
 ];
 
@@ -39,14 +46,14 @@ export default function WhyLosingCustomers() {
         {/* Heading */}
         <div className="max-w-[820px]">
           <h2 className="text-[38px] font-bold leading-[1.05] text-black sm:text-[48px]">
-            Why Tampa Law Firms
+            Why Tampa Florida
             <br />
-            Are Losing Clients
+            Businesses Are Losing Clients
             <br />
             <span className="text-[#FF6F00]">Without SEO</span>
           </h2>
           <p className="mt-6 text-[16px] leading-8 text-black/70 md:text-[18px]">
-            New families, new residents, and new spending power arrive in Tampa, Florida, every month. When they need legal counsel or representation, their first move is a Google search. That search creates a moment of decision that happens thousands of times a day in this market. The law firms that appear on page one win that moment. Without an active SEO strategy, your Tampa, Florida, law firm surrenders that moment to a competitor on every single search. The gap does not stay the same. It widens every day. The other firm ranks, and you do not.
+            In Tampa, people usually type their queries directly into the search bar first. They almost uniformly ignore everything beyond the first page of results, a blink-and-you-miss-it reality where visibility instantly morphs into viability. Not being there means immediate abandonment to the next option; after all, one wonders why they would dig deeper when everything else demands their attention. Studies, and again more studies, consistently point to the same unyielding statistic over seventy-five percent of all journeys end right there, never to continue. That absence from Google’s curated top tier is a quiet hemorrhage of potential revenue, a persistent trickle draining your bottom line every single day without a sound.
           </p>
         </div>
 
@@ -99,7 +106,7 @@ export default function WhyLosingCustomers() {
               </h3>
 
               {/* Description */}
-              <p className="mt-6 text-[16px] leading-8 text-black/70 whitespace-pre-line">
+              <p className="mt-6 text-[16px] leading-8 text-black/70">
                 {card.description}
               </p>
 
