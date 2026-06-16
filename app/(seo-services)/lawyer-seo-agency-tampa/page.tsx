@@ -1,0 +1,66 @@
+import AiSearchSeoSection from "@/components/lawyer-seo-agency-tampa/AiSearchSeoSection";
+import CommonSeoMistakes from "@/components/lawyer-seo-agency-tampa/CommonSeoMistakes";
+import ContactSection from "@/components/lawyer-seo-agency-tampa/ContactSection";
+import Hero from "@/components/lawyer-seo-agency-tampa/Hero";
+import SeoAuditBenefits from "@/components/lawyer-seo-agency-tampa/SeoAuditBenefits";
+import SeoAuditForm from "@/components/lawyer-seo-agency-tampa/SeoAuditForm";
+import SeoCtaSection from "@/components/lawyer-seo-agency-tampa/SeoCtaSection";
+import SeoCustomerJourney from "@/components/lawyer-seo-agency-tampa/SeoCustomerJourney";
+import SeoFaqSection from "@/components/lawyer-seo-agency-tampa/SeoFaqSection";
+import SeoPackagesSection from "@/components/lawyer-seo-agency-tampa/SeoPackagesSection";
+import SeoProcessSection from "@/components/lawyer-seo-agency-tampa/SeoProcessSection";
+import SeoRoiSection from "@/components/lawyer-seo-agency-tampa/SeoRoiSection";
+import SeoServicesSection from "@/components/lawyer-seo-agency-tampa/SeoServicesSection";
+import ServiceAreasSection from "@/components/lawyer-seo-agency-tampa/ServiceAreasSection";
+import TestimonialsSection from "@/components/lawyer-seo-agency-tampa/TestimonialsSection";
+import WhyChooseBayshore from "@/components/lawyer-seo-agency-tampa/WhyChooseBayshore";
+import WhyLosingCustomers from "@/components/lawyer-seo-agency-tampa/WhyLosingCustomers";
+import React from "react";
+
+export const metadata = {
+  title: " Lawyer SEO Agency Tampa | Choose the Best SEO Team",
+  description:
+    "Searching for a Lawyer SEO Agency in Tampa? Learn about our services and find the best SEO solution for your law practice.",
+
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
+
+  alternates: {
+    canonical: "/lawyer-seo-agency-tampa",
+    languages: {
+      "en-US": "/en-USA",
+    },
+  },
+};
+const page = () => {
+  return (
+    <div>
+      <Hero />
+      <SeoAuditForm />
+      <SeoAuditBenefits />
+      <WhyLosingCustomers />
+      <SeoCustomerJourney />
+      <CommonSeoMistakes />
+      <SeoCtaSection />
+      <SeoServicesSection />
+      <AiSearchSeoSection />
+      <SeoProcessSection />
+      <WhyChooseBayshore />
+      <SeoRoiSection />
+      <SeoPackagesSection />
+      <ServiceAreasSection />
+      <TestimonialsSection />
+      <SeoFaqSection />
+      <ContactSection />
+    </div>
+  );
+};
+
+export default page;
