@@ -27,8 +27,8 @@ const testimonials = [
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
     name: "Thomas B.",
-    role: "Plumbing & HVAC Services",
-    location: "Wesley Chapel, FL",
+    role: "Plumbing and HVAC Services",
+    location: "Wesley Chapel, Florida",
     icon: Wrench,
     review:
       "Two years of attempting to manage our own SEO produced nothing beyond page three. Bayshore Communication rebuilt our entire local search foundation. Within three months we had page-one rankings for the exact terms our customers type when they are ready to book. Our phone now rings more consistently than at any point since we opened.",
@@ -38,20 +38,20 @@ const testimonials = [
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
     name: "Dr. Amara K.",
     role: "Dental Practice Owner",
-    location: "Pasco County, FL",
+    location: "Pasco County, Florida",
     icon: Stethoscope,
     review:
-      "What set Bayshore apart was that they took time to learn our practice before building a single strategy. The SEO campaign they built was clearly designed around our patient base and competitive landscape. Six months later our organic patient inquiries have more than doubled and reporting is always transparent.",
+      "What set Bayshore apart was that they took time to learn our practice before building a single strategy. The SEO campaign they built was clearly designed around our Wesley Chapel patient base and our competitive landscape specifically. Six months later our organic new patient inquiries have more than doubled, and the reporting is always clear and honest.",
   },
   {
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
     name: "Daniel F.",
     role: "Real Estate Brokerage",
-    location: "Wesley Chapel, FL",
+    location: "Wesley Chapel, Florida",
     icon: Home,
     review:
-      "We had worked with two other agencies before. They focused on rankings for terms that never produced business. Bayshore focused on outcomes. Our Google Business Profile alone generates inquiries every week without spending a dollar on paid advertising.",
+      "I had worked with two other agencies that produced rankings for terms my clients never searched for. Bayshore Communication focused on business outcomes from the first conversation. My Google Business Profile alone generates consistent new inquiries every single week without a single dollar of paid advertising behind it.",
   },
   {
     image:
@@ -135,7 +135,7 @@ export default function TestimonialsSection() {
                 hover:shadow-[0_16px_35px_rgba(255,111,0,0.25)]
               "
             >
-              <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full" />
+              <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
 
               <span className="relative flex items-center gap-2">
                 Get Started Now

@@ -13,59 +13,57 @@ const businessTypes = [
     icon: Home,
     title: "Home Services",
     items: [
-      "HVAC",
-      "Plumbing",
-      "Electrical",
-      "Roofing",
-      "General Contractors",
-      "Home Builders",
+      "HVAC, Plumbing, Electrical and Roofing",
+      "General Contractors and Home Builders",
     ],
   },
   {
     icon: HeartPulse,
     title: "Healthcare",
-    items: ["Medical Practices", "Dental Offices", "Orthodontic Clinics"],
+    items: [
+      "Medical Practices and Healthcare Providers",
+      "Dental and Orthodontic Offices",
+    ],
   },
   {
     icon: Scale,
     title: "Professional Services",
     items: [
-      "Law Firms",
-      "Financial Advisors",
-      "Accounting Firms",
-      "Insurance Agencies",
+      "Law Firms and Legal Practices",
+      "Financial Advisors and Accounting Firms",
+      "Real Estate Agents and Brokerages",
+      "Insurance Brokers and Agencies",
     ],
   },
   {
     icon: Store,
     title: "Consumer Businesses",
     items: [
-      "Restaurants",
-      "Retail Stores",
-      "E-Commerce Brands",
-      "Auto Repair Shops",
+      "Restaurants and Food Service Businesses",
+      "Retail Shops and E-Commerce Brands",
+      "Auto Repair Shops and Dealerships",
     ],
   },
   {
     icon: Dumbbell,
     title: "Wellness & Fitness",
-    items: ["Fitness Studios", "Wellness Providers"],
+    items: ["Fitness Studios and Wellness Providers"],
   },
 ];
 
 const communities = [
-  "Wesley Chapel",
+  "Wesley Chapel (Wiregrass, Seven Oaks, Meadow Pointe)",
   "Land O' Lakes",
   "Zephyrhills",
   "Lutz",
   "New Tampa",
   "Odessa",
   "Dade City",
-  "San Antonio",
+  "San Antonio, Pasco County",
   "Spring Hill",
-  "Epperson",
-  "Mirada",
+  "Epperson and Mirada Communities",
   "Greater Pasco County",
+  "North Hillsborough County",
 ];
 
 export default function ServiceAreasSection() {

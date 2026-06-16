@@ -6,7 +6,7 @@ const seoSteps = [
     image: "/seo-company-wesley-chapel/seo-step-1.png",
     title: "First-Position Visibility in Local Search",
     description:
-      "When Wesley Chapel customers search for your category, your business name and reviews appear first. That placement earns attention before any competitor.",
+      "When Wesley Chapel customers search for your category, your business name and reviews appear first. That placement earns attention before any competitor. That placement earns attention before any competitor's headline is even read.",
   },
   {
     number: "02",
@@ -27,7 +27,7 @@ const seoSteps = [
     image: "/seo-company-wesley-chapel/seo-step-4.png",
     title: "Search Presence That Converts Into Revenue",
     description:
-      "Visibility alone does not pay bills. Optimized rankings and user experience convert visitors into customers ready to act.",
+      "Visibility alone does not pay bills. Bayshore Communication optimizes both your search rankings and the on-site experience your visitors encounter. The result is a steady flow of Wesley Chapel customers who arrive ready to act.",
   },
 ];
 
@@ -44,9 +44,12 @@ export default function SeoCustomerJourney() {
           </h2>
 
           <p className="mx-auto mt-6 max-w-[900px] text-[15px] leading-7 text-black/70 md:text-[18px] md:leading-8">
-            A person who searches Google for a local service has already crossed
-            an important threshold. They have a need and they are prepared to
-            act on it now.
+            A person that has gone to Google to look for a local service has reached
+            an important threshold. They have a need and they are already willing
+            to do something about it now. What they have not yet determined is
+            which Wesley Chapel business will earn that call or visit. The right
+            SEO company Wesley Chapel positions your business as the first answer
+            to that open question.
           </p>
         </div>
 

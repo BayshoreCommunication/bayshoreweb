@@ -24,6 +24,13 @@ const cards = [
     description:
       "Local customers associate Google prominence with business credibility. A business at the top of Wesley Chapel's results earns trust before a single word is exchanged.",
   },
+  {
+    number: "04",
+    icon: "/seo-company-wesley-chapel/card-icon-1.png",
+    title: "Waiting Costs More Than Starting",
+    description:
+      "Competitors are accumulating backlinks, domain authority, and content volume every month. The longer you delay SEO services for your Wesley Chapel-based business the further you fall behind.",
+  },
 ];
 
 export default function WhyLosingCustomers() {
@@ -39,6 +46,16 @@ export default function WhyLosingCustomers() {
             <br />
             <span className="text-[#FF6F00]">Without SEO</span>
           </h2>
+          <p className="mt-6 text-[16px] leading-8 text-black/70 md:text-[18px]">
+            When was the last time you checked your actual business appearance on
+            Google in Wesley Chapel? If you have not tested recently you may be
+            taken aback with the results. Wesley Chapel is one of the fastest
+            growing commercial corridors in Pasco County. Competition in this
+            market is becoming increasingly stiff by the month and by the quarter,
+            new businesses are entering the market. It&apos;s not just that the
+            businesses that are getting ahead are better at what they do. They
+            are more visible at the moment their customers are searching.
+          </p>
         </div>
 
         {/* Cards */}

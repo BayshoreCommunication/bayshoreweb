@@ -430,7 +430,9 @@ export default function SeoPackagesSection() {
 
         <p className="mx-auto mt-4 max-w-[980px] text-center text-[13px] leading-6 text-black/55">
           All packages are adjusted based on your Wesley Chapel industry,
-          competitive environment, and growth objectives.
+          competitive environment, and growth objectives. Contact Bayshore
+          Communication for a proposal built specifically around your business
+          needs.
         </p>
       </div>
     </section>

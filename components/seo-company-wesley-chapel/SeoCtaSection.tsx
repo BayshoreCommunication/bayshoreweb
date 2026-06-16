@@ -19,7 +19,7 @@ export default function SeoCtaSection() {
           {/* Content */}
           <div className="relative z-10 flex min-h-[320px] flex-col items-center justify-center px-6 py-12 text-center md:min-h-[420px]">
             <h2 className="max-w-[1200px] text-[38px] font-bold leading-[1.15] text-white md:text-[52px]">
-              Your Search For The Right Wesley Chapel Florida SEO Company Ends
+              Your Search for the Right Wesley Chapel Florida SEO Company Ends
               Here
             </h2>
 

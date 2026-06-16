@@ -23,37 +23,37 @@ const features = [
     Icon: Award,
     title: "Nine Years of Consistent Performance",
     description:
-      "Since 2016, Bayshore Communication has served over 70 clients and launched more than 220 websites. Longevity in digital marketing is itself a performance indicator.",
+      "Since 2016, Bayshore Communication has served over 70 clients and launched more than 220 websites. Longevity in digital marketing is itself a performance indicator. Agencies that fail to deliver results do not retain clients across a decade of business relationships.",
   },
   {
     Icon: TrendingUp,
     title: "More Than 500,000 Leads Generated",
     description:
-      "Our leads represent real phone calls, inquiry submissions, and customer visits across our entire portfolio. It reflects campaigns built to connect you with ready-to-buy customers.",
+      "Our leads represent real phone calls, inquiry submissions, and customer visits across our entire portfolio. This is not a vanity metric produced by low-intent traffic. It reflects campaigns built specifically to connect businesses with customers who are ready to spend money.",
   },
   {
     Icon: SearchCheck,
     title: "Research-First Strategy for Every Engagement",
     description:
-      "No Wesley Chapel client receives a strategy recycled from another client or market. Every campaign begins with original research, analysis, and technical assessment.",
+      "No Wesley Chapel client receives a strategy recycled from another client or another market. Every campaign begins with original keyword research, competitive analysis, and technical assessment. Each is specific to that business and its Wesley Chapel market.",
   },
   {
     Icon: MapPinned,
     title: "Wesley Chapel Market Familiarity",
     description:
-      "We understand the neighborhoods, search patterns, and competitive dynamics of the Wesley Chapel market. That familiarity produces more accurate targeting.",
+      "We understand the neighborhoods, search patterns, and competitive dynamics of the Wesley Chapel market. That familiarity produces more accurate targeting than any remote agency can achieve from outside the local market.",
   },
   {
     Icon: Layers3,
     title: "Complete SEO Scope Under One Team",
     description:
-      "Technical SEO, content, local search, and AI optimization are all managed by our team. No gaps between departments and no inconsistencies from disconnected vendors.",
+      "Technical SEO, content, local search, and AI optimization are all managed by one Bayshore Communications team. There are no gaps between departments and no inconsistencies created by disconnected specialists.",
   },
   {
     Icon: ClipboardList,
     title: "Monthly Reporting Built for Business Owners",
     description:
-      "Our reports are written for business owners, not SEO specialists. You get a clear account of what changed and what comes next. No confusion about your investment.",
+      "Our reports are written for business owners, not SEO specialists. You receive a clear account of what changed and what comes next. There is no discrepancy and no confusion about what your investment is producing.",
   },
 ];
 
@@ -92,9 +92,8 @@ export default function WhyChooseBayshore() {
 
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/75 md:text-[18px]">
               <p>
-                Choosing an SEO company in Wesley Chapel, Florida, comes down to
-                one question. Does the agency bill you or genuinely grow your
-                business?
+                Choosing an SEO company Wesley Chapel comes down to one question.
+                Does the agency bill you or genuinely grow your business?
               </p>
 
               <p>

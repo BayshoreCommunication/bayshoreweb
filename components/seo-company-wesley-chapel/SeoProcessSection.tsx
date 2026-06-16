@@ -67,14 +67,14 @@ const processSteps = [
     Icon: SquarePen,
     title: "Content Production and Authority Development",
     description:
-      "We publish content for real Wesley Chapel search queries and acquire backlinks from local and industry sources. These parallel efforts build topical authority and domain strength concurrently.",
+      "We publish content for real Wesley Chapel search queries and acquire backlinks from local and industry sources. The two parallel things that you are doing are creating topical authority and domain strength at the same time.",
   },
   {
     number: "9",
     Icon: SearchCheck,
-    title: "Measurement, Analysis, and Ongoing Iteration",
+    title: "Measurement, Analysis, Ongoing Iteration",
     description:
-      "We monitor rankings, traffic, and leads monthly to find the next best opportunity in your campaign. Your Wesley Chapel SEO strategy evolves continuously based on real performance evidence.",
+      "We track rankings, traffic and leads on a monthly basis and identify the next best opportunity in your campaign. Your Wesley Chapel SEO strategy is continually refined using proof of performance.",
   },
 ];
 

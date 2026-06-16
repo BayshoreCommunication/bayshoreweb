@@ -5,7 +5,7 @@ const mistakes = [
     image: "/seo-company-wesley-chapel/mistake-1.png",
     title: "Targeting Geography-Free Keywords",
     description:
-      "Competing for broad national terms produces no local revenue. Effective local SEO requires keywords that reflect how Wesley Chapel customers actually search.",
+      "Competing for broad national terms produces no local revenue. Effective local SEO requires keywords that reflect how Wesley Chapel customers actually search. Terms without geographic and intent specificity rarely connect your business with the customers who can actually become clients.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-2.png",
@@ -14,28 +14,28 @@ const mistakes = [
       "Most local mobile searches result in a map pack click rather than an organic listing click. A profile with missing photos, hours, and descriptions forfeits map pack positions to competitors daily.",
   },
   {
-    image: "/seo-company-wesley-chapel/mistake-3.png",
-    title: "Internal Site Architecture That Misleads Search Engines",
-    description:
-      "When Google cannot determine which pages are most important, none earn the rankings they deserve. A logical internal linking structure directs authority toward the pages customers need.",
-  },
-  {
     image: "/seo-company-wesley-chapel/mistake-4.png",
     title: "Site Speed and Mobile Performance Ignored",
     description:
-      "Google's ranking algorithm evaluates page experience signals directly. Slow loading pages reduce rankings and conversions.",
+      "Google's ranking algorithm evaluates page experience signals directly. Slow loading rates of a Wesley Chapel business website will lose customers and the ranking at the same time. More than 60% of local searches are made on a mobile device, which means mobile performance is a must-have ranking factor.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-5.png",
     title: "Service Pages Without Location or Intent Context",
     description:
-      "Generic service descriptions without geographic signals do not appear in local search results. Pages must match local intent.",
+      "Generic service descriptions without geographic signals do not appear in local search results. Wesley Chapel customers search with specific intent. Pages that miss their location and need will never rank.",
+  },
+  {
+    image: "/seo-company-wesley-chapel/mistake-3.png",
+    title: "Internal Site Architecture That Misleads Search Engines",
+    description:
+      "When Google cannot determine which pages are most important, none earn the rankings they deserve. A logical internal linking structure directs authority toward the pages Wesley Chapel customers need.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-6.png",
-    title: "Backlink Quantity Mistaken For Backlink Quality",
+    title: "Backlink Quantity Mistaken for Backlink Quality",
     description:
-      "A few relevant trusted local links carry more ranking weight than dozens of low-quality links from unrelated websites.",
+      "The volume of links is not a substitute for relevance and authority. A few relevant, trusted local links carry more ranking weight than dozens of low-quality links from unrelated websites.",
   },
 ];
 

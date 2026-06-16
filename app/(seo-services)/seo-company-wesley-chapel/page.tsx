@@ -18,7 +18,7 @@ import WhyLosingCustomers from "@/components/seo-company-wesley-chapel/WhyLosing
 import React from "react";
 
 export const metadata = {
-  title: "SEO Company Wesley Chapel| Find The Best SEO Agency for You",
+  title: "SEO Company Wesley Chapel | Find The Best SEO Agency for You",
   description:
     "Looking for an SEO Company in Wesley Chapel? Review our service offerings and get a partner that matches your requirements.",
 

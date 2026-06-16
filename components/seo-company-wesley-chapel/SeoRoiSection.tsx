@@ -6,14 +6,21 @@ import {
   PiggyBank,
   Users,
   BarChart3,
+  Target,
 } from "lucide-react";
 
 const roiCards = [
   {
+    icon: Target,
+    title: "Position Your Business for Active Buyers",
+    description:
+      "Position your business in front of Wesley Chapel customers who are actively prepared to purchase or hire right now.",
+  },
+  {
     icon: ChartNoAxesCombined,
     title: "Grow Your Monthly Inbound Inquiries",
     description:
-      "Increase your inbound inquiry volume without proportionally increasing your marketing spend.",
+      "Grow your monthly inbound inquiry volume without proportionally increasing your marketing spend.",
   },
   {
     icon: BadgeDollarSign,

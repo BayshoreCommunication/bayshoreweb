@@ -18,13 +18,13 @@ const services = [
     title: "On-Page Optimization",
     image: "/seo-company-wesley-chapel/service-3.png",
     description:
-      "Every title, meta description, heading, image attribute, and internal link on your priority pages is fully optimized. We give every Wesley Chapel visitor a clear reason to choose your business.",
+      "All titles, meta descriptions, headings, image attributes and internal links, for priority pages, are optimized. We provide a clear \"Why Wesley Chapel\" message for all Wesley Chapel visitors.",
   },
   {
     title: "Technical SEO",
     image: "/seo-company-wesley-chapel/service-4.png",
     description:
-      "We address crawlability, page speed, Core Web Vitals, structured data, mobile rendering, and duplicate content. These are the technical foundations every Wesley Chapel search ranking depends on.",
+      "We will cover crawlability, page speed, Core Web Vitals, structured data, mobile rendering and duplicate content. These are the technical elements on which all the search rankings of Wesley Chapel rely.",
   },
   {
     title: "Local SEO and Map Pack Optimization",
@@ -55,6 +55,18 @@ const services = [
     image: "/seo-company-wesley-chapel/service-9.png",
     description:
       "We optimize your content for how generative AI systems summarize and recommend local businesses. When a Wesley Chapel resident asks an AI assistant for local business recommendations, your business should be mentioned.",
+  },
+  {
+    title: "Google Business Profile Management",
+    image: "/seo-company-wesley-chapel/service-5.png",
+    description:
+      "We actively manage your Google Business Profile with regular posts, photo updates, and review response strategies. Consistent management outperforms any one-time setup. A consistently maintained profile outperforms a one-time optimized profile in every local ranking metric over time.",
+  },
+  {
+    title: "Performance Tracking and Monthly Reporting",
+    image: "/seo-company-wesley-chapel/service-1.png",
+    description:
+      "We translate ranking data, traffic, conversions, and Google Business Profile activity into plain-language insights every month. Every report includes a clear strategy recommendation so you always know what your campaign is producing.",
   },
 ];
 

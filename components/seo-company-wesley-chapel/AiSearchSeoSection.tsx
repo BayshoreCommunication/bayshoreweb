@@ -9,27 +9,27 @@ import {
 const aiSearchCards = [
   {
     Icon: FileCheck2,
-    title: "Evaluate the Depth and Demonstrated Authority",
+    title: "Expertise Now Outranks Optimization Alone",
     description:
-      "A Wesley Chapel business with thorough, well-structured service pages outranks a competitor with keyword-stuffed, thin pages regardless of link volume.",
+      "AI-assisted ranking systems evaluate the depth and demonstrated authority of your content. A thorough and organized service page on a website that is part of a Wesley Chapel business will defeat a website that has a ton of links but is thin and stuffed with keywords.",
   },
   {
     Icon: Cpu,
-    title: "AI Answer Summaries Are Replacing Traditional Rankings",
+    title: "AI Answer Summaries are replacing traditional rankings",
     description:
-      "A growing share of local searches resolve within AI-generated summaries. Appearing in those summaries requires structured content that most Wesley Chapel businesses have not yet built.",
+      "A significant number of local searches are being answered in AI summaries. Structured content is not yet developed by most Wesley Chapel businesses, so it is not included in these summaries.",
   },
   {
     Icon: AudioLines,
     title: "Voice Search Is Now a Primary Discovery Method",
     description:
-      "Conversational queries about local services are common on smartphones and smart speakers. FAQ content is the best route to capturing those voice searches.",
+      "Conversational Queries for Local Services are a primary discovery method on smartphones and smart speakers: When users are looking for local services, they often use a voice search query. The best way to take that voice search traffic is by using FAQ content.",
   },
   {
     Icon: MessageSquareText,
-    title: "Review Quality Influences AI Ranking Signals",
+    title: "Influence on AI Ranking Signals through Review Quality",
     description:
-      "AI ranking systems weight review volume and sentiment more heavily than before. Wesley Chapel businesses with managed review profiles hold a clear advantage.",
+      "AI ranking signals now give more weight to review volume and sentiment. Businesses that have managed review accounts at Wesley Chapel enjoy a definite edge.",
   },
   {
     Icon: Trophy,

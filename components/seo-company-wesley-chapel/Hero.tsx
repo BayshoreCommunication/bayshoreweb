@@ -73,21 +73,24 @@ export default function Hero() {
               <br />
               Wesley Chapel,
               <br />
-              Florida. Reach More
+              Florida—Get More
               <br />
-              Customers
+              Customers <span className="text-[#FF6F00]">without</span>
               <br />
-              <span className="text-[#FF6F00]">Without</span> Paid Ads
+              Spending Money on
+              <br />
+              Advertisement
             </h1>
 
             <p className="mt-6 max-w-[700px] text-[16px] leading-[1.7] text-white/85 md:text-[18px]">
-              Wesley Chapel is no longer a quiet suburb on the edge of Tampa
-              Bay. It is a high-growth commercial market where new businesses
-              open every week and local competition intensifies every month.
-              Without a strong local search presence, those customers find your
-              competitors before they ever reach you. Bayshore Communication is
-              a client-oriented SEO company in Wesley Chapel, Florida, that
-              turns your website into a reliable lead source.
+              Wesley Chapel is no longer the sleepy suburb on Tampa Bay&apos;s
+              outskirts. There&apos;s a lot more to it than just those stats,
+              it&apos;s a high growth commercial market with new businesses
+              opening every week and local competition growing every month. Without
+              local search presence, customers found competitors; they never
+              reached you. Bayshore Communication is an SEO company Wesley Chapel
+              that makes your website a lead source, and we place your business
+              at the top of Google.
             </p>
 
             {/* CTA */}
