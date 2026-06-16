@@ -69,9 +69,9 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-6 max-w-[720px] text-[38px] font-extrabold leading-[1.05] sm:text-[52px] md:text-[64px]">
-              Lawyer SEO Agency in
+              Lawyer SEO Agency 
               <br />
-              Tampa Florida —
+              in Tampa Florida 
               <br />
               Be the <span className="text-[#FF6F00]">first choice</span>
               <br />
