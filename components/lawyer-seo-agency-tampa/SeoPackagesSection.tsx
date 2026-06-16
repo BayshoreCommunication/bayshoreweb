@@ -371,7 +371,7 @@ export default function SeoPackagesSection() {
         </div>
 
         <p className="mx-auto mt-4 max-w-[980px] text-center text-[13px] leading-6 text-black/55">
-          All packages are adjusted based on your Tampa industry, competitive environment, and growth objectives. Contact Bayshore Communication for a proposal built specifically around your law firm's needs.
+          All packages are adjusted based on your Tampa industry, competitive environment, and growth objectives. Contact Bayshore Communication for a proposal built specifically around your law firm&apos;s needs.
         </p>
       </div>
     </section>
