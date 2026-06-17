@@ -80,7 +80,7 @@ export default function Hero() {
 
             <div className="mt-6 max-w-[700px] text-[16px] leading-[1.7] text-white/85 md:text-[18px] space-y-4">
               <p>
-                Watching a competitor with weaker services rank above your business in Largo search results is truly frustrating. The customers you deserve are out there searching daily, and most of them are landing on someone else's website. It is purely a search visibility problem.
+                Watching a competitor with weaker services rank above your business in Largo search results is truly frustrating. The customers you deserve are out there searching daily, and most of them are landing on someone else&apos;s website. It is purely a search visibility problem.
               </p>
               <p>
                 Bayshore Communication is a trusted seo company largo fl that turns that visibility gap into a competitive advantage.

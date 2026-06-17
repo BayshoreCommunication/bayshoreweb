@@ -96,7 +96,7 @@ export default function WhyChooseBayshore() {
               </p>
 
               <p>
-                Bayshore Communication earns its clients' trust through specific and verifiable reasons that matter to a business owner.
+                Bayshore Communication earns its clients&apos; trust through specific and verifiable reasons that matter to a business owner.
               </p>
             </div>
 
