@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/seo-company-wesley-chapel/hero-bg.png"
-          alt="SEO Company Wesley Chapel"
+          alt="SEO Services for Dentists in Tampa"
           fill
           priority
           className="object-cover object-center"
@@ -69,29 +69,23 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-6 max-w-[720px] text-[38px] font-extrabold leading-[1.05] sm:text-[52px] md:text-[64px]">
-              SEO Company in
+              SEO Services for
               <br />
-              Wesley Chapel,
+              Dentists in Tampa
               <br />
-              Florida Get More
+              Get More Patients,
               <br />
-              Customers <span className="text-[#FF6F00]">without</span>
-              <br />
-              Spending Money on
-              <br />
-              Advertisement
+              Grow Your Practice
             </h1>
 
-            <p className="mt-6 max-w-[700px] text-[16px] leading-[1.7] text-white/85 md:text-[18px]">
-              Wesley Chapel is no longer the sleepy suburb on Tampa Bay&apos;s
-              outskirts. There&apos;s a lot more to it than just those stats,
-              it&apos;s a high growth commercial market with new businesses
-              opening every week and local competition growing every month. Without
-              local search presence, customers found competitors; they never
-              reached you. Bayshore Communication is an SEO company Wesley Chapel
-              that makes your website a lead source, and we place your business
-              at the top of Google.
-            </p>
+            <div className="mt-6 max-w-[700px] text-[16px] leading-[1.7] text-white/85 md:text-[18px] space-y-4">
+              <p>
+                Tampa dental practices face fierce competition every single day. Patients search online before they ever pick up the phone. If your practice does not appear in results, a competitor earns that patient. SEO services for dentists in Tampa bridge that critical gap directly.
+              </p>
+              <p>
+                Bayshore Communication helps Tampa dental practices rank higher and grow faster.
+              </p>
+            </div>
 
             {/* CTA */}
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
