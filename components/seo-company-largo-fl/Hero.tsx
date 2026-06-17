@@ -157,7 +157,7 @@ export default function Hero() {
                 </h2>
 
                 <p className="mt-3 text-[16px] font-medium text-white/80 md:text-[18px]">
-                  Total leads generated since 2010
+                  Total leads generated since 2016
                 </p>
               </div>
 

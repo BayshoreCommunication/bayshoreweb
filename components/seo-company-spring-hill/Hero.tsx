@@ -131,7 +131,8 @@ export default function Hero() {
                 p-8
                 backdrop-blur-[24px]
                 shadow-[0_20px_80px_rgba(0,0,0,0.45)]
-                md:p-12
+                md:p-16
+                md:px-16
               "
             >
               {/* Glow */}
@@ -139,11 +140,11 @@ export default function Hero() {
 
               <div className="relative z-10">
                 <h2 className="text-[46px] font-extrabold leading-none text-[#FF6F00] sm:text-[54px] md:text-[60px]">
-                  <Counter to={93} suffix="%" />
+                  <Counter to={500} suffix="K+" />
                 </h2>
 
                 <p className="mt-3 text-[16px] font-medium text-white/80 md:text-[18px]">
-                  Of All Searches Begin on Google
+                  Total leads generated since 2016
                 </p>
               </div>
 
@@ -152,23 +153,35 @@ export default function Hero() {
               <div className="relative z-10 grid grid-cols-2 gap-6">
                 <div>
                   <h3 className="text-[40px] font-extrabold leading-none text-[#FF6F00] md:text-[48px]">
-                    <Counter to={91} suffix="%" />
+                    <Counter to={70} suffix="+" />
                   </h3>
 
                   <p className="mt-3 text-sm text-white/80 md:text-base">
-                    Of Clicks Go to Page One Results
+                    Clients served
                   </p>
                 </div>
 
                 <div className="border-l border-white/20 pl-6">
                   <h3 className="text-[40px] font-extrabold leading-none text-[#FF6F00] md:text-[48px]">
-                    <Counter to={500} suffix="K+" />
+                    <Counter to={200} suffix="%+" />
                   </h3>
 
                   <p className="mt-3 text-sm text-white/80 md:text-base">
-                    Leads Generated for Clients Since 2016
+                    Revenue growth
                   </p>
                 </div>
+              </div>
+
+              <div className="relative z-10 my-8 h-px bg-white/20" />
+
+              <div className="relative z-10">
+                <h3 className="text-[46px] font-extrabold leading-none text-[#FF6F00] sm:text-[54px] md:text-[60px]">
+                  <Counter to={220} suffix="+" />
+                </h3>
+
+                <p className="mt-3 text-[16px] font-medium text-white/80 md:text-[18px]">
+                  Websites launched since founding
+                </p>
               </div>
             </div>
           </div>
