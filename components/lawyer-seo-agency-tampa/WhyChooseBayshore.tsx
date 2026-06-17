@@ -69,7 +69,7 @@ export default function WhyChooseBayshore() {
       {/* Background */}
       <div className="absolute inset-x-0 top-0 h-[660px] md:h-[760px]">
         <Image
-          src="/seo-company-wesley-chapel/why-choose-bg.png"
+          src="/seo-company-wesley-chapel/choose-bg.png"
           alt=""
           fill
           priority
