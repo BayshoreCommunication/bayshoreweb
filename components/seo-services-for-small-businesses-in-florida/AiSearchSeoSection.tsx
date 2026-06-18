@@ -37,12 +37,12 @@ const aiSearchCards = [
     description:
       "SEO optimized content for AI tools (like ChatGPT, Perplexity, Google's AI Overviews) gives synthesized and zero click answers to potential customers.",
   },
-  {
-    Icon: AudioLines,
-    title: "Voice search keeps growing",
-    description:
-      "Once a week more than half of consumers now use voice search to find local Florida businesses.",
-  },
+  // {
+  //   Icon: AudioLines,
+  //   title: "Voice search keeps growing",
+  //   description:
+  //     "Once a week more than half of consumers now use voice search to find local Florida businesses.",
+  // },
 ];
 
 export default function AiSearchSeoSection() {
