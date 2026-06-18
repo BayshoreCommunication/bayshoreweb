@@ -23,13 +23,13 @@ export const metadata = {
   description:
     "Worried about ranking in Google? Bayshore's local SEO services for small business in Naples, Florida get you into Google's 3-pack.",
 
-  robots: {
-    index: true,
-    follow: true,
+    robots: {
+    index: false,
+    follow: false,
     googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
+      index: false,
+      follow: false,
+      noimageindex: true,
     },
   },
 

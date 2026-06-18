@@ -23,13 +23,13 @@ export const metadata = {
   description:
     "Want to attract more clients? Contact Bayshore to get local SEO services for lawyers in Florida to put your firm in Map Pack and AI Overviews.",
 
-  robots: {
-    index: true,
-    follow: true,
+   robots: {
+    index: false,
+    follow: false,
     googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
+      index: false,
+      follow: false,
+      noimageindex: true,
     },
   },
 

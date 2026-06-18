@@ -22,6 +22,16 @@ export const metadata = {
   description:
     "Get more calls for your florida small business with Bayshore's SEO services and rank your business on Google, ChatGPT, and Gemini.",
 
+     robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+    },
+  },
+
   alternates: {
     canonical: "/seo-services-for-small-businesses-in-florida",
     languages: {
