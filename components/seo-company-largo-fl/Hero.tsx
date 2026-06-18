@@ -169,7 +169,7 @@ export default function Hero() {
                     <Counter to={70} suffix="+" />
                   </h3>
 
-                  <p className="mt-3 text-sm text-white/80 md:text-base">
+                  <p className="mt-3 text-[16px] md:text-[18px] text-white/80 ">
                     Clients served
                   </p>
                 </div>
@@ -179,7 +179,7 @@ export default function Hero() {
                     <Counter to={200} suffix="%+" />
                   </h3>
 
-                  <p className="mt-3 text-sm text-white/80 md:text-base">
+                  <p className="mt-3  text-white/80 text-[16px] md:text-[18px]">
                     Revenue growth
                   </p>
                 </div>
