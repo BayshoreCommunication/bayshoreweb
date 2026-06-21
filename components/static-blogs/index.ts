@@ -16,8 +16,12 @@ import LocalBrandTrustSignalsBlog, {
 import FirstClickVsLastClickAttributionMarketingBlog, {
   firstClickVsLastClickAttributionMarketingBlog,
 } from "./blogs/first-click-vs-last-click-attribution-marketing";
+import FormOptimizationBlog, {
+  smallFieldTweaksBlog,
+} from "./blogs/small-field-tweaks-that-reduce-drop-off-instantly";
 
 export const staticBlogs = [
+  smallFieldTweaksBlog,
   howMuchDoSeoServicesCostBlog,
   firstClickVsLastClickAttributionMarketingBlog,
   localBrandTrustSignalsBlog,
@@ -37,4 +41,5 @@ export const staticBlogComponents = {
   [evergreenContentStrategyBlog.slug]: EvergreenContentStrategyBlog,
   [conversionTrackingBasicsBlog.slug]: ConversionTrackingBasicsBlog,
   [howMinorCtaChangesBlog.slug]: CtaOptimizationBlog,
+  [smallFieldTweaksBlog.slug]: FormOptimizationBlog,
 };
