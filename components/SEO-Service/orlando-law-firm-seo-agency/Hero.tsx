@@ -50,7 +50,7 @@ export default function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/seo-company-wesley-chapel/hero-bg.png"
-          alt="Real Estate SEO Services in Florida"
+          alt="Orlando Law Firm SEO Agency"
           fill
           priority
           className="object-cover object-center"
@@ -65,24 +65,23 @@ export default function Hero() {
           {/* Left Content */}
           <div>
             <span className="inline-flex h-14 items-center rounded-full border border-[#FF6F00] px-6  md:text-xl  font-bold tracking-wide text-[#FF6F00] md:h-16 md:px-8">
-              Rank Higher, Get More Leads, Close More Deals
+              Bayshore Communication
             </span>
 
             <h1 className="mt-6 max-w-[720px] text-[38px] font-extrabold leading-[1.05] sm:text-[52px] md:text-[64px]">
-              Real Estate SEO
+              SEO Agency For
               <br />
-              Services in
+              Law Firms In
               <br />
-              <span className="text-[#FF6F00]">Florida</span>
+              <span className="text-[#FF6F00]">Orlando</span>
             </h1>
 
+            <p className="mt-4 text-[18px] md:text-[22px] font-bold text-[#FF6F00] leading-snug">
+              Get More Clients, Lead Orlando Legal Search
+            </p>
+
             <p className="mt-6 max-w-[700px] text-[16px] leading-[1.7] text-white/85 md:text-[18px]">
-              Every day your Florida real estate website sits off page one and
-              someone else closes the deal. Bayshore Communication&apos;s real
-              estate SEO services in Florida are built to target active local
-              buyers searching on page one. We research what Florida buyers and
-              sellers type into Google. We target those searches with proven
-              strategies and build the site authority that earns top positions.
+              Without the right marketing strategy, many Orlando law firms miss opportunities to assist active clients in need. Bayshore Communication is a leading Orlando law firm SEO agency that closes that gap and connects your practice to local legal searches. Our strategies are built to make stronger visibility in Google&apos;s AI Overviews and map results.
             </p>
 
             {/* CTA */}
@@ -91,7 +90,7 @@ export default function Hero() {
                 <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
 
                 <span className="relative flex h-full items-center justify-center gap-3 text-[15px] md:text-[16px]">
-                  Get Your Free Florida Real Estate SEO Audit Report
+                  Request Your SEO Proposal
                   <ArrowRight size={18} />
                 </span>
               </button>
@@ -109,17 +108,17 @@ export default function Hero() {
             <div className="mt-12 grid grid-cols-1 gap-4 text-[15px] font-semibold sm:grid-cols-2 lg:flex lg:gap-8">
               <div className="flex items-center gap-3">
                 <Trophy className="h-6 w-6 text-[#FF6F00]" />
-                <span>Rank Higher</span>
+                <span>Proven Results</span>
               </div>
 
               <div className="flex items-center gap-3">
                 <ShieldCheck className="h-6 w-6 text-[#FF6F00]" />
-                <span>Get More Leads</span>
+                <span>White Hat SEO</span>
               </div>
 
               <div className="flex items-center gap-3">
                 <MapPinned className="h-6 w-6 text-[#FF6F00]" />
-                <span>Close More Deals</span>
+                <span>Local SEO Expert</span>
               </div>
             </div>
           </div>
