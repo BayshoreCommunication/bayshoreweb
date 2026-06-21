@@ -1,0 +1,234 @@
+import Image from "next/image";
+import {
+  ArrowRight,
+  ChartNoAxesColumnIncreasing,
+  KeyRound,
+  MapPin,
+  SearchCheck,
+  Settings,
+  SquareActivity,
+  SquarePen,
+} from "lucide-react";
+
+const processSteps = [
+  {
+    number: "1",
+    Icon: ChartNoAxesColumnIncreasing,
+    title: "Brandon Market and Competitor Analysis",
+    description:
+      "Research identifies target keywords of ranked competitors, their content strategy and gaps to take advantage of in campaign. Industry specific research covers legal directories, Healthgrades, Zillow and other vertical platforms relevant to the business.",
+  },
+  {
+    number: "2",
+    Icon: SquareActivity,
+    title: "Auditing Technical Site",
+    description:
+      "Full inspection of sites identifies mobile usability issues, slow page speeds, indexation errors, duplicate content and broken links. These are fixed because technical problems block content or link work.",
+  },
+  {
+    number: "3",
+    Icon: KeyRound,
+    title: "Keyword Mapping and Content Architecture",
+    description:
+      "Target keywords are mapped to specific pages. New pages are identified for Brandon service areas, specialties and high intent queries not currently covered.",
+  },
+  {
+    number: "4",
+    Icon: Settings,
+    title: "Optimizing On Page",
+    description:
+      "Title tags, headers, content depth, internal linking and schema markup optimization for existing web pages. New pages are built to same standard. Brandon location signals are built throughout without forcing unnatural phrasing.",
+  },
+  {
+    number: "5",
+    Icon: SquarePen,
+    title: "Content Production",
+    description:
+      "SEO optimized content is produced for service pages, blog posts and location pages. Medical, legal, financial and industry specific content goes through accuracy review. All content is written for Brandon audience, covering local concerns, regulations and search behaviors.",
+  },
+  {
+    number: "6",
+    Icon: MapPin,
+    title: "Link Acquisition and Local Citations",
+    description:
+      "Outreach targets Tampa Bay area publications, Brandon business directories and niche specific sites relevant to client's industry. Local citations are audited and corrected across all major platforms.",
+  },
+  {
+    number: "7",
+    Icon: SearchCheck,
+    title: "Report of Evaluation",
+    description:
+      "Each month brings review of organic traffic, conversions and ranked keyword. Underperforming pages get revised. New keyword opportunities are identified as rankings improve and search behavior data grows.",
+  },
+];
+
+export default function SeoProcessSection() {
+  return (
+    <section className="relative bg-[#FBFBFB] py-16 md:py-32">
+      {/* Background Pattern */}
+      <div className="pointer-events-none absolute bottom-0 left-0 h-[420px] w-[420px] md:h-[600px] md:w-[600px]">
+        <Image
+          src="/seo-company-wesley-chapel/process-pattern.png"
+          alt=""
+          fill
+          className="object-contain object-left-bottom opacity-60"
+        />
+      </div>
+
+      <div className="relative z-10 mx-auto max-w-[1620px] px-8 md:px-8">
+        <div className="grid items-start gap-10 lg:grid-cols-[460px_minmax(0,1fr)] xl:grid-cols-[500px_minmax(0,1fr)] lg:gap-12">
+          {/* Left Content */}
+          <div className="h-fit lg:sticky lg:top-24">
+            <span className="text-xl font-bold uppercase tracking-wider text-[#FF6F00]">
+              Our Process
+            </span>
+
+            <h2 className="mt-4 text-[38px] font-bold leading-[1.08] text-[#081B4B] md:text-[48px]">
+              Our Proven
+              <br />
+              SEO Process for
+              <br />
+              <span className="text-[#FF6F00]">
+                Brandon
+                <br />
+                Florida Businesses
+              </span>
+            </h2>
+
+            <div className="mt-7 h-[2px] w-14 bg-[#FF6F00]" />
+
+            <div className="mt-7 max-w-[380px] space-y-6 text-[16px] leading-8 text-[#081B4B]/75">
+              <p>
+                Every Brandon campaign starts with research. Our Brandon SEO company makes sure process runs in defined phases so clients know everything and results.
+              </p>
+            </div>
+
+            <button
+              className="
+                group
+                relative
+                mt-10
+                flex
+                h-[52px]
+                items-center
+                justify-center
+                overflow-hidden
+                rounded-md
+                bg-[#FF6F00]
+                px-8
+                font-semibold
+                text-white
+              "
+            >
+              <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full" />
+
+              <span className="relative flex items-center gap-3">
+                Start Your Campaign
+                <ArrowRight size={18} />
+              </span>
+            </button>
+          </div>
+
+          {/* Right Timeline */}
+          <div className="relative">
+            <div className="relative">
+              {/* Desktop Line */}
+              <div className="absolute left-5 top-0 hidden h-full w-[2px] bg-[#FF6F00]/20 lg:block" />
+
+              <div className="space-y-4">
+                {processSteps.map((step) => {
+                  const Icon = step.Icon;
+
+                  return (
+                    <div
+                      key={step.number}
+                      className="relative flex gap-4 lg:gap-5"
+                    >
+                      {/* Number */}
+                      <div className="relative z-10 flex shrink-0 flex-col items-center">
+                        <div
+                          className="
+                            flex
+                            h-10
+                            w-10
+                            items-center
+                            justify-center
+                            rounded-full
+                            bg-[#FF6F00]
+                            
+                            font-bold
+                            text-white
+                            shadow-[0_4px_12px_rgba(255,111,0,0.28)]
+                          "
+                        >
+                          {step.number}
+                        </div>
+                      </div>
+
+                      {/* Card */}
+                      <div
+                        className="
+                          group
+                          flex-1
+                          rounded-[10px]
+                          border
+                          border-black/5
+                          bg-white
+                          p-6
+                          shadow-[0_4px_18px_rgba(0,0,0,0.05)]
+                          transition-all
+                          duration-300
+                          hover:-translate-y-1
+                          hover:shadow-[0_12px_30px_rgba(0,0,0,0.08)]
+                          md:px-10
+                          md:py-8
+                        "
+                      >
+                        <div className="flex flex-col gap-4 md:flex-row md:items-center md:gap-6">
+                          <div
+                            className="
+                              flex
+                              h-[64px]
+                              w-[64px]
+                              shrink-0
+                              items-center
+                              justify-center
+                              rounded-full
+                              bg-[#FFF4EC]
+                            "
+                          >
+                            <Icon
+                              size={36}
+                              strokeWidth={1.8}
+                              className="
+                                text-[#FF6F00]
+                                transition-all
+                                duration-500
+                                group-hover:scale-110
+                                group-hover:rotate-3
+                              "
+                            />
+                          </div>
+
+                          <div>
+                            <h3 className="text-[18px] font-bold leading-tight text-[#081B4B] md:text-[20px]">
+                              {step.title}
+                            </h3>
+
+                            <p className="mt-2 text-[14px] leading-6 text-[#081B4B]/70 md:text-[15px]">
+                              {step.description}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
