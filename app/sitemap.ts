@@ -1,3 +1,8 @@
+import { services } from "@/components/unique/services/Service";
+import { serviceCategories } from "@/config/data";
+import { staticBlogs } from "@/components/static-blogs";
+import GetAllBlogData from "@/lib/GetAllBlogData";
+
 type Sitemap = Array<{
   url: string;
   lastModified?: string | Date;
@@ -5,50 +10,148 @@ type Sitemap = Array<{
   priority?: number;
 }>;
 
-export default function Sitemap(): Sitemap {
-  const pages = [
-    "https://www.bayshorecommunication.com",
-    "https://www.bayshorecommunication.com/about-us",
-    "https://www.bayshorecommunication.com/our-services",
-    "https://www.bayshorecommunication.com/growth-plan",
-    "https://www.bayshorecommunication.com/case-studies",
-    "https://www.bayshorecommunication.com/blog",
-    "https://www.bayshorecommunication.com/contact",
-    "https://www.bayshorecommunication.com/career",
-    "https://www.bayshorecommunication.com/refer-client",
-    "https://www.bayshorecommunication.com/faq",
-    "https://www.bayshorecommunication.com/privacy-policy",
-    "https://www.bayshorecommunication.com/terms-conditions",
-    "https://www.bayshorecommunication.com/our-services/website-design",
-    "https://www.bayshorecommunication.com/our-services/mobile-app",
-    "https://www.bayshorecommunication.com/our-services/seo-service",
-    "https://www.bayshorecommunication.com/our-services/ui-ux-design",
-    "https://www.bayshorecommunication.com/our-services/paid-advertising",
-    "https://www.bayshorecommunication.com/our-services/social-media-marketing",
-    "https://www.bayshorecommunication.com/our-services/email-marketing",
-    "https://www.bayshorecommunication.com/our-services/marketing-automation",
-    "https://www.bayshorecommunication.com/our-services/content-marketing",
-    "https://www.bayshorecommunication.com/our-services/content-writing",
-    "https://www.bayshorecommunication.com/our-services/digital-pr",
-    "https://www.bayshorecommunication.com/our-services/graphic-design",
-    "https://www.bayshorecommunication.com/our-services/motion-graphic",
-    "https://www.bayshorecommunication.com/our-services/video-production",
-    "https://www.bayshorecommunication.com/our-services/influencer-marketing",
-    "https://www.bayshorecommunication.com/our-services/digital-marketing",
-    "https://www.bayshorecommunication.com/our-services/web-design",
-    "https://www.bayshorecommunication.com/our-services/seo",
-    "https://www.bayshorecommunication.com/case-studies/catflix-digital-marketing-case-study",
-    "https://www.bayshorecommunication.com/case-studies/immigration-lawyer-digital-marketing-case-study",
-    "https://www.bayshorecommunication.com/blog/how_google_maps_can_help_your_business",
-    "https://www.bayshorecommunication.com/blog/marketing-to-millennials-reaching-the-digital-native-generation",
-    "https://www.bayshorecommunication.com/blog/why_is_an_seo_friendly_website_important_for_business",
-    "https://www.bayshorecommunication.com/blog/growth-tactics-for-small-business-local-seo",
+export default async function Sitemap(): Promise<Sitemap> {
+  const baseUrl = "https://www.bayshorecommunication.com";
+
+  // 1. Static Pages
+  const staticPages = [
+    "",
+    "/about-us",
+    "/blog",
+    "/career",
+    "/case-studies",
+    "/company-profile",
+    "/contact",
+    "/corporate-photoshoot",
+    "/customize-plan",
+    "/faq",
+    "/growth-plan",
+    "/industries-we-serve",
+    "/marketing-perspectives-form",
+    "/our-services",
+    "/privacy-policy",
+    "/refer-client",
+    "/terms-conditions",
+    "/printing-package",
+    "/printing-package/services",
+    "/business-growth",
+    "/business-idea",
+    "/connect",
+    "/giftfromus",
+    "/marketing-for-law-firm",
+    "/marketing-solutions",
+    "/partner-up",
+    "/strategy-session",
+    
+    // SEO Services Pages
+    "/brandon-seo-company",
+    "/law-firm-seo-fort-myers",
+    "/lawyer-seo-agency-tampa",
+    "/local-seo-for-lawyers-florida",
+    "/local-seo-services-for-small-business-naples-florida",
+    "/orlando-law-firm-seo-agency",
+    "/plant-city-seo-company",
+    "/real-estate-seo-services-in-florida",
+    "/seo-company-dunedin",
+    "/seo-company-largo-fl",
+    "/seo-company-spring-hill",
+    "/seo-company-wesley-chapel",
+    "/seo-services-for-dentists-in-tampa",
+    "/seo-services-for-small-businesses-in-florida",
   ];
 
-  const sitemap: Sitemap = pages.map((url) => ({
-    url,
-    // lastModified: new Date(),
+  const staticPageUrls: Sitemap = staticPages.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: route === "" ? 1.0 : 0.8,
   }));
 
-  return sitemap;
+  // 2. Services (Dynamic)
+  const serviceUrls: Sitemap = (services || [])
+    .map((service) => service.url)
+    .filter(Boolean)
+    .map((slug) => ({
+      url: `${baseUrl}/our-services/${slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    }));
+
+  // 3. Printing Packages (Dynamic)
+  const printingPackageUrls: Sitemap = [];
+  try {
+    for (const categoryKey in serviceCategories) {
+      const items = (serviceCategories as any)[categoryKey];
+      if (Array.isArray(items)) {
+        for (const item of items) {
+          if (item && typeof item === "object" && "slug" in item && typeof item.slug === "string") {
+            printingPackageUrls.push({
+              url: `${baseUrl}/printing-package/services/${item.slug}`,
+              lastModified: new Date(),
+              changeFrequency: "weekly",
+              priority: 0.6,
+            });
+          }
+        }
+      }
+    }
+  } catch (error) {
+    console.error("Failed to parse serviceCategories for sitemap:", error);
+  }
+
+  // 4. Case Studies
+  const caseStudySlugs = [
+    "bayshore-communication-case-study-of-apex-advisors",
+    "catflix-digital-marketing-case-study",
+    "immigration-lawyer-digital-marketing-case-study",
+  ];
+  const caseStudyUrls: Sitemap = caseStudySlugs.map((slug) => ({
+    url: `${baseUrl}/case-studies/${slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.6,
+  }));
+
+  // 5. Blogs (Static & Dynamic API)
+  const staticBlogUrls: Sitemap = (staticBlogs || []).map((blog) => ({
+    url: `${baseUrl}/blog/${blog.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.7,
+  }));
+
+  let apiBlogUrls: Sitemap = [];
+  try {
+    const blogData = await GetAllBlogData({ limit: 100 });
+    apiBlogUrls = (blogData?.data || [])
+      .filter((blog: any) => blog?.published === true && blog?.slug)
+      .map((blog: any) => ({
+        url: `${baseUrl}/blog/${blog.slug}`,
+        lastModified: blog.updatedAt ? new Date(blog.updatedAt) : new Date(),
+        changeFrequency: "weekly",
+        priority: 0.7,
+      }));
+  } catch (error) {
+    console.error("Failed to fetch blog data for sitemap:", error);
+  }
+
+  // Combine all sitemap entries
+  const allEntries = [
+    ...staticPageUrls,
+    ...serviceUrls,
+    ...printingPackageUrls,
+    ...caseStudyUrls,
+    ...staticBlogUrls,
+    ...apiBlogUrls,
+  ];
+
+  // Remove potential duplicates
+  const uniqueUrlsMap = new Map<string, typeof allEntries[0]>();
+  for (const entry of allEntries) {
+    uniqueUrlsMap.set(entry.url, entry);
+  }
+
+  return Array.from(uniqueUrlsMap.values());
 }
+
