@@ -174,9 +174,9 @@ export const ConversionTrackingBasicsBlog = () => {
         </header>
 
         <section className="py-8">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
+          <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Key Takeaways
-          </p>
+          </h2>
           <ul className="mt-5 space-y-3">
             {keyTakeaways.map((item) => (
               <li key={item} className="flex gap-3 text-lg leading-8">
@@ -530,7 +530,7 @@ export const ConversionTrackingBasicsBlog = () => {
                 key={faq.question}
                 className="border-b border-[#dce6f2] pb-5"
               >
-                <h3 className="text-xl font-bold">Q&nbsp; {faq.question}</h3>
+                <h2 className="text-xl font-bold">Q&nbsp; {faq.question}</h2>
                 <p className="mt-2 text-lg leading-8">{faq.answer}</p>
               </div>
             ))}

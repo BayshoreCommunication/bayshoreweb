@@ -175,52 +175,50 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
     <>
       <SectionLayout bg="">
         <div className="h-[100%] service-style">
-          <div className="container">
-            <div className="flex gap-x-10">
-              <div className="flex-[3]">
+          <div className="flex flex-col md:flex-row gap-y-10 md:gap-x-10">
+            <div className="flex-[3]">
+              <div>
                 <div>
-                  <div>
-                    <h1 className="font-semibold text-[42px] leading-tight md:text-[64px] lg:text-[80px]">
-                      {blog.title}
-                    </h1>
-                  </div>
-                  <div className="flex gap-4 py-6">
-                    {formatDate(blog.createdAt)}
-                  </div>
-                  <figure>
-                    <Image
-                      src={getBlogImage(blog)}
-                      alt={getBlogImageAlt(blog)}
-                      title={getBlogImageTitle(blog)}
-                      width={blog.imageWidth || 2400}
-                      height={blog.imageHeight || 2400}
-                      className={`w-full rounded-[8px] bg-[#f7f8fb] ${
-                        blog.imageFit === "contain"
-                          ? "h-auto object-contain"
-                          : "aspect-[16/9] object-cover"
-                      }`}
-                    />
-                    {getBlogImageCaption(blog) && (
-                      <figcaption className="mt-3 text-sm text-gray-500">
-                        {getBlogImageCaption(blog)}
-                      </figcaption>
-                    )}
-                  </figure>
+                  <h1 className="font-semibold text-[28px] sm:text-[36px] md:text-[54px] lg:text-[72px] xl:text-[80px] leading-tight">
+                    {blog.title}
+                  </h1>
+                </div>
+                <div className="flex gap-4 py-6">
+                  {formatDate(blog.createdAt)}
+                </div>
+                <figure>
+                  <Image
+                    src={getBlogImage(blog)}
+                    alt={getBlogImageAlt(blog)}
+                    title={getBlogImageTitle(blog)}
+                    width={blog.imageWidth || 2400}
+                    height={blog.imageHeight || 2400}
+                    className={`w-full rounded-[8px] bg-[#f7f8fb] ${
+                      blog.imageFit === "contain"
+                        ? "h-auto object-contain"
+                        : "aspect-[16/9] object-cover"
+                    }`}
+                  />
+                  {getBlogImageCaption(blog) && (
+                    <figcaption className="mt-3 text-sm text-gray-500">
+                      {getBlogImageCaption(blog)}
+                    </figcaption>
+                  )}
+                </figure>
 
-                  <div className="externallink mt-10">
-                    {StaticBlogComponent ? (
-                      <StaticBlogComponent />
-                    ) : (
-                      parser(blog.body || "")
-                    )}
-                  </div>
+                <div className="externallink mt-10">
+                  {StaticBlogComponent ? (
+                    <StaticBlogComponent />
+                  ) : (
+                    parser(blog.body || "")
+                  )}
                 </div>
               </div>
+            </div>
 
-              <div className="flex-1 hidden sm:block">
-                <div className="sticky top-24">
-                  <BlogNavigation />
-                </div>
+            <div className="flex-1 hidden md:block">
+              <div className="sticky top-24">
+                <BlogNavigation />
               </div>
             </div>
           </div>

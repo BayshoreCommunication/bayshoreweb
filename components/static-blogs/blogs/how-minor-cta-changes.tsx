@@ -339,22 +339,24 @@ export const CtaOptimizationBlog = () => {
               Mobile layouts need thumb-friendly targets, compact forms, and
               clear spacing.
             </p>
-            <div className="mt-6 overflow-hidden rounded-[8px] border border-[#dce6f2]">
-              <div className="grid grid-cols-3 bg-[#101d34] text-sm font-semibold text-white">
-                <div className="p-4">Factor</div>
-                <div className="p-4">Desktop Approach</div>
-                <div className="p-4">Mobile Approach</div>
-              </div>
-              {deviceRows.map(([factor, desktop, mobile]) => (
-                <div
-                  key={factor}
-                  className="grid grid-cols-3 border-t border-[#dce6f2] text-sm"
-                >
-                  <div className="p-4 font-semibold">{factor}</div>
-                  <div className="p-4">{desktop}</div>
-                  <div className="p-4">{mobile}</div>
+            <div className="mt-6 overflow-x-auto">
+              <div className="min-w-[600px] overflow-hidden rounded-[8px] border border-[#dce6f2]">
+                <div className="grid grid-cols-3 bg-[#101d34] text-sm font-semibold text-white">
+                  <div className="p-4">Factor</div>
+                  <div className="p-4">Desktop Approach</div>
+                  <div className="p-4">Mobile Approach</div>
                 </div>
-              ))}
+                {deviceRows.map(([factor, desktop, mobile]) => (
+                  <div
+                    key={factor}
+                    className="grid grid-cols-3 border-t border-[#dce6f2] text-sm"
+                  >
+                    <div className="p-4 font-semibold">{factor}</div>
+                    <div className="p-4">{desktop}</div>
+                    <div className="p-4">{mobile}</div>
+                  </div>
+                ))}
+              </div>
             </div>
           </section>
 
@@ -421,12 +423,12 @@ export const CtaOptimizationBlog = () => {
           </section>
 
           <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#0077B3]">
+            <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#0077B3]">
               Frequently Asked Questions
-            </p>
-            <h2 className="mt-3 text-3xl font-bold">
-              People Also Ask About CTA Optimization
             </h2>
+            {/* <h2 className="mt-3 text-3xl font-bold">
+              People Also Ask About CTA Optimization
+            </h2> */}
             <div className="mt-6 space-y-5">
               {faqs.map((faq) => (
                 <div

@@ -245,24 +245,30 @@ export async function generateMetadata({
   params: { service: string };
 }) {
   const parameter = params?.service;
-  const individualService = services?.filter((elem) => elem?.url === parameter);
-  //console.log(individualService.map((elem, index) => elem.metaDescription)[0]);
+  const service = services?.find((elem) => elem?.url === parameter);
+  
+  if (!service) {
+    return {
+      title: "Service Not Found",
+    };
+  }
+
+  const title = service.topHeroLeftTitle || service.title || "Our Service";
+  const description = service.metaDescription || "";
+
   return {
-    title: `${individualService?.map((elem, index) => elem?.topHeroLeftTitle)}`,
-    description: `${
-      individualService?.map((elem, index) => elem?.metaDescription)[0]
-    }`,
+    title: `${title} | Bayshore Communication`,
+    description,
+    alternates: {
+      canonical: `/our-services/${parameter}`,
+    },
     openGraph: {
-      title: `${individualService?.map(
-        (elem, index) => elem?.topHeroLeftTitle
-      )}`,
-      description: `${
-        individualService?.map((elem, index) => elem?.metaDescription)[0]
-      }`,
-      images: individualService[0]?.heroImg,
-      url: `https://www.carterinjurylaw.com/our-services/${individualService[0]?.url}`,
+      title: `${title} | Bayshore Communication`,
+      description,
+      images: service.heroImg ? [service.heroImg] : [],
+      url: `https://www.bayshorecommunication.com/our-services/${parameter}`,
       type: "article",
-      site_name: "https://www.bayshorecommunication.com/",
+      siteName: "Bayshore Communication",
     },
   };
 }

@@ -8,6 +8,36 @@ import Image from "next/image";
 import {} from "@/config/data";
 import { getServiceBySlug } from "@/components/printing&package/lib/serviceData";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const currentProduct = getServiceBySlug(slug);
+
+  if (!currentProduct) {
+    return {
+      title: "Service Not Found",
+    };
+  }
+
+  return {
+    title: `${currentProduct.title} | Bayshore Communication`,
+    description: currentProduct.description,
+    alternates: {
+      canonical: `/printing-package/services/${slug}`,
+    },
+    openGraph: {
+      title: `${currentProduct.title} | Bayshore Communication`,
+      description: currentProduct.description,
+      images: currentProduct.image ? [currentProduct.image] : [],
+      url: `https://www.bayshorecommunication.com/printing-package/services/${slug}`,
+      type: "website",
+    },
+  };
+}
+
 export default async function ProductPage({
   params,
 }: {

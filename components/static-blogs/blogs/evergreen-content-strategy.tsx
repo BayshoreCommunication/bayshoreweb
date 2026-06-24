@@ -285,9 +285,9 @@ export const EvergreenContentStrategyBlog = () => {
         </section>
 
         <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
+          <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Key Takeaways
-          </p>
+          </h2>
           <div className="mt-6 grid gap-4 md:grid-cols-2">
             {takeaways.map((item) => (
               <div

@@ -551,9 +551,9 @@ export const LocalBrandTrustSignalsBlog = () => {
         </section>
 
         <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#0077B3]">
+          <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#0077B3]">
             Frequently Asked Questions
-          </p>
+          </h2>
           <h2 className="mt-3 text-3xl font-bold">
             Local Brand Trust Signals FAQ
           </h2>
