@@ -276,13 +276,13 @@ export const HowExpertiseBasedContentBuildsTrustBlog = () => {
             Buyers decide who the expert is long before they make contact. That decision happens during the research stage on search engines like Google, when they are reading articles and before your phone ever rings.
           </p>
           <p>
-            Expertise-based content works because it solves real problems first. It answers specific questions, respects the buyer's intelligence, and never begs for a sale.
+            Expertise-based content works because it solves real problems first. It answers specific questions, respects the buyer&apos;s intelligence, and never begs for a sale.
           </p>
           <p>
             Consider a small business owner in Orlando who needs a marketing partner. They search &quot;how to get more local customers in Florida&quot; and find a genuinely useful article on local SEO and content funnels. The brand that wrote it now holds enormous sway. A paid ad from a competitor is unlikely to change that preference.
           </p>
           <p>
-            According to <ExternalLink href="https://www.hubspot.com/">HubSpot's 2025 State of Marketing Report</ExternalLink>, businesses publishing consistent expert content close leads at six times the rate of brands relying primarily on paid ads. That is not a marginal gain; it is a structural advantage.
+            According to <ExternalLink href="https://www.hubspot.com/">HubSpot&apos;s 2025 State of Marketing Report</ExternalLink>, businesses publishing consistent expert content close leads at six times the rate of brands relying primarily on paid ads. That is not a marginal gain; it is a structural advantage.
           </p>
           <blockquote>
             The Florida buyer is increasingly sophisticated. They check reviews, read blog posts, and evaluate how a brand speaks before reaching out. What you publish tells them everything about how you operate.
@@ -297,7 +297,7 @@ export const HowExpertiseBasedContentBuildsTrustBlog = () => {
             Thought leadership is not about sounding impressive. It is about becoming the first name people think of when they need a solution.
           </p>
           <p>
-            In Florida's competitive B2B and B2C markets, that top-of-mind position must be earned, not bought. Businesses across Tampa Bay, South Florida, and the Space Coast invest in complete content ecosystems rather than single posts. Bayshore Communication provides <InlineLink href="/our-services/seo-service">SEO</InlineLink> and <InlineLink href="/our-services/content-marketing">content marketing</InlineLink> services that support this approach.
+            In Florida&apos;s competitive B2B and B2C markets, that top-of-mind position must be earned, not bought. Businesses across Tampa Bay, South Florida, and the Space Coast invest in complete content ecosystems rather than single posts. Bayshore Communication provides <InlineLink href="/our-services/seo-service">SEO</InlineLink> and <InlineLink href="/our-services/content-marketing">content marketing</InlineLink> services that support this approach.
           </p>
           <h3>What does a robust content ecosystem look like?</h3>
           <ul>
@@ -365,7 +365,7 @@ export const HowExpertiseBasedContentBuildsTrustBlog = () => {
               <strong>Identify Client Questions:</strong> Map the top three to five questions your best clients ask before hiring, and answer them with genuine depth.
             </li>
             <li>
-              <strong>Invest in Digital PR:</strong> Being featured in publications like the Tampa Bay Business Journal or Florida Business Observer builds credibility faster than ads. Bayshore Communication's <InlineLink href="/our-services/digital-pr">Digital PR service</InlineLink> is designed specifically for this trust acceleration.
+              <strong>Invest in Digital PR:</strong> Being featured in publications like the Tampa Bay Business Journal or Florida Business Observer builds credibility faster than ads. Bayshore Communication&apos;s <InlineLink href="/our-services/digital-pr">Digital PR service</InlineLink> is designed specifically for this trust acceleration.
             </li>
             <li>
               <strong>Measure Revenue Metrics:</strong> Focus on time spent on page, return visitor rates, and organic lead acquisition rather than vanity impressions.
@@ -381,7 +381,7 @@ export const HowExpertiseBasedContentBuildsTrustBlog = () => {
             </cite>
           </blockquote>
           <p>
-            Bayshore Communication's integrated content, SEO, and Digital PR approach is among the most complete authority-building systems available. If you are ready to build a compounding brand legacy, start with your <InlineLink href="/growth-plan">tailored growth plan</InlineLink>.
+            Bayshore Communication&apos;s integrated content, SEO, and Digital PR approach is among the most complete authority-building systems available. If you are ready to build a compounding brand legacy, start with your <InlineLink href="/growth-plan">tailored growth plan</InlineLink>.
           </p>
         </NumberedSection>
 
@@ -411,7 +411,7 @@ export const HowExpertiseBasedContentBuildsTrustBlog = () => {
           </h2>
           <div className="mt-5 space-y-5 text-lg leading-8">
             <p>
-              Choosing to create content that ranks for years is a long-term investment in your brand's future. It changes the conversation from &quot;how do I buy clicks today?&quot; to &quot;how do I earn trust tomorrow?&quot;
+              Choosing to create content that ranks for years is a long-term investment in your brand&apos;s future. It changes the conversation from &quot;how do I buy clicks today?&quot; to &quot;how do I earn trust tomorrow?&quot;
             </p>
             <p>
               By focusing on expertise-driven content strategy, original insight, and professional PR campaigns, your business can step off the paid advertising treadmill and enjoy sustainable organic growth.
