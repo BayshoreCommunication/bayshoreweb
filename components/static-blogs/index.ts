@@ -19,8 +19,12 @@ import FirstClickVsLastClickAttributionMarketingBlog, {
 import FormOptimizationBlog, {
   smallFieldTweaksBlog,
 } from "./blogs/small-field-tweaks-that-reduce-drop-off-instantly";
+import HowExpertiseBasedContentBuildsTrustBlog, {
+  howExpertiseBasedContentBuildsTrustBlog,
+} from "./blogs/how-expertise-based-content-builds-trust-faster-than-ads";
 
 export const staticBlogs = [
+  howExpertiseBasedContentBuildsTrustBlog,
   smallFieldTweaksBlog,
   howMuchDoSeoServicesCostBlog,
   firstClickVsLastClickAttributionMarketingBlog,
@@ -28,7 +32,7 @@ export const staticBlogs = [
   evergreenContentStrategyBlog,
   conversionTrackingBasicsBlog,
   howMinorCtaChangesBlog,
-];
+].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
 export const getStaticBlogBySlug = (slug: string) =>
   staticBlogs.find((blog) => blog.slug === slug);
@@ -42,4 +46,7 @@ export const staticBlogComponents = {
   [conversionTrackingBasicsBlog.slug]: ConversionTrackingBasicsBlog,
   [howMinorCtaChangesBlog.slug]: CtaOptimizationBlog,
   [smallFieldTweaksBlog.slug]: FormOptimizationBlog,
+  [howExpertiseBasedContentBuildsTrustBlog.slug]:
+    HowExpertiseBasedContentBuildsTrustBlog,
 };
+
