@@ -1,52 +1,54 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["real-estate-seo-services-in-florida"];
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 
 const services = [
   {
     title: "Local SEO for Florida Real Estate Markets",
-    image: "/seo-company-wesley-chapel/service-1.png",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
       "City, neighborhood, and county level optimization ensures you rank where your specific buyers are actually searching.",
   },
   {
     title: "Google Business Profile Optimization and Management",
-    image: "/seo-company-wesley-chapel/service-2.png",
+    image: images.seoServicesSection.keywordResearchImage.src,
     description:
       "We claim, optimize, and actively manage your GBP to strengthen map pack placement and local call volume.",
   },
   {
     title: "AI Overview and Generative Search Visibility",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "We structure your content and authority signals to earn placement inside Google AI Overviews, ChatGPT, and Perplexity answers.",
   },
   {
     title: "Florida Real Estate Content Creation",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "We produce local market specific content, hyper targeted blogs, listing videos that build regional expert authority and turns readers into leads.",
   },
   {
     title: "Technical SEO Audit and Ongoing Correction",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "We continuously audit to resolve indexation bottlenecks and monitor website efficiency, mobile usability, crawl health, structured data to meet Google's performance thresholds.",
   },
   {
     title: "IDX and Listing Page Optimization",
-    image: "/seo-company-wesley-chapel/service-6.png",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
       "Property search and listing pages are optimized to drive organic traffic rather than relying entirely on paid portal leads.",
   },
   {
     title: "Editorial Link Building for Domain Authority",
-    image: "/seo-company-wesley-chapel/service-7.png",
+    image: images.seoServicesSection.offPageSeoImage.src,
     description:
       "We secure backlinks from Florida publications, local media, and credible real estate resources to build ranking power.",
   },
   {
     title: "Real Estate Schema Markup",
-    image: "/seo-company-wesley-chapel/service-8.png",
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "LocalBusiness, FAQ, and property specific schema tell Google and AI tools exactly what your business offers and where you operate.",
   },
@@ -148,18 +150,41 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
+                <div className="w-full">
+                  <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
+                    {(() => {
+                      const imgData = Object.values(images.seoServicesSection).find(
+                        (item) => item.src === service.image
+                      );
+                      if (!imgData) return null;
+                      return (
+                        <Image
+                          src={imgData.src}
+                          alt={imgData.alt}
+                          title={imgData.title}
+                          fill
+                          className="
+                            object-cover
+                            transition-transform
+                            duration-700
+                            group-hover:scale-105
+                          "
+                        />
+                      );
+                    })()}
+                  </div>
+                  {(() => {
+                    const imgData = Object.values(images.seoServicesSection).find(
+                      (item) => item.src === service.image
+                    );
+                    if (!imgData) return null;
+                    return (
+                      <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                        {imgData.caption && <p>{imgData.caption}</p>}
+                        {imgData.description && <p>{imgData.description}</p>}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))}

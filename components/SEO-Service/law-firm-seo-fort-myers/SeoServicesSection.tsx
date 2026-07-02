@@ -1,52 +1,54 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["law-firm-seo-fort-myers"];
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 
 const services = [
   {
     title: "Local Keyword Research and Competitive Analysis",
-    image: "/seo-company-wesley-chapel/service-1.png",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
       "We identify the exact terms Fort Myers residents use when searching for legal services. We map those terms against your competitors to surface rankable opportunities.",
   },
   {
     title: "On-Page SEO and Website Optimization",
-    image: "/seo-company-wesley-chapel/service-2.png",
+    image: images.seoServicesSection.keywordResearchImage.src,
     description:
       "Each title tag gets refined, just like meta descriptions, because clarity matters most. Headings take shape slowly, built to support how people search. We also align your schema markup with the exact signals Google uses to evaluate legal websites.",
   },
   {
     title: "Google Business Profile Management",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "We optimize your profile with accurate categories and practice area descriptions. Geo-tagged images, review responses, and weekly posts maintain freshness signals.",
   },
   {
     title: "Legal Content Development",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "We produce service pages designed to rank for law firm SEO Fort Myers queries. Content satisfies both search algorithms and the expectations of prospective clients.",
   },
   {
     title: "Citation Building and NAP Consistency",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "We build and maintain your firm's listings across legal directories and local platforms. Consistent name, address, and phone data strengthens your local search authority.",
   },
   {
     title: "Link Building and Domain Authority",
-    image: "/seo-company-wesley-chapel/service-6.png",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
       "We get backlinks from legal directories, Southwest Florida publications and Southwest Florida bar resources. This will help increase domain authority for ranking on competitive keywords.",
   },
   {
     title: "Technical SEO Audit and Remediation",
-    image: "/seo-company-wesley-chapel/service-7.png",
+    image: images.seoServicesSection.offPageSeoImage.src,
     description:
       "We search for slow load times, mobile issues and broken links and fix them. During this phase, structured data is also fixed and duplicate content is removed.",
   },
   {
     title: "Monthly Reporting and Performance Tracking",
-    image: "/seo-company-wesley-chapel/service-8.png",
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "You receive a monthly report covering rankings, traffic, and lead attribution. A forward-looking plan for the following month is included in every report.",
   },
@@ -150,18 +152,41 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
+                <div className="w-full">
+                  <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
+                    {(() => {
+                      const imgData = Object.values(images.seoServicesSection).find(
+                        (item) => item.src === service.image
+                      );
+                      if (!imgData) return null;
+                      return (
+                        <Image
+                          src={imgData.src}
+                          alt={imgData.alt}
+                          title={imgData.title}
+                          fill
+                          className="
+                            object-cover
+                            transition-transform
+                            duration-700
+                            group-hover:scale-105
+                          "
+                        />
+                      );
+                    })()}
+                  </div>
+                  {(() => {
+                    const imgData = Object.values(images.seoServicesSection).find(
+                      (item) => item.src === service.image
+                    );
+                    if (!imgData) return null;
+                    return (
+                      <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                        {imgData.caption && <p>{imgData.caption}</p>}
+                        {imgData.description && <p>{imgData.description}</p>}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))}

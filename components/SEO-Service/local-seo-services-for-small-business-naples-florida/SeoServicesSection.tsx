@@ -1,64 +1,66 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["local-seo-services-for-small-business-naples-florida"];
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 
 const services = [
   {
     title: "Google Business Profile (GBP) Optimization",
-    image: "/seo-company-wesley-chapel/service-1.png",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
       "We fully optimize your GBP with the right categories, service descriptions, photos, Q&A responses and weekly posts. An optimized GBP generates 200+ monthly customer interactions on average.",
   },
   {
     title: "Local Keyword Research and Strategy",
-    image: "/seo-company-wesley-chapel/service-2.png",
+    image: images.seoServicesSection.keywordResearchImage.src,
     description:
       "We identify every search term your Naples Florida customers use to find businesses like yours. Each keyword targets local intent, buyer readiness and competition in Naples.",
   },
   {
     title: "On-Page Local SEO Optimization",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "We optimize your website pages with Naples-specific keywords, local schema markup and clear service signals. Search engines clearly recognize your business and what you offer in Naples, Florida.",
   },
   {
     title: "Local Citation Building and NAP Management",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "We build and manage your business listings across the top 50+ directories, maps platforms and data aggregators. Consistent NAP data boosts your Naples local search authority and trust.",
   },
   {
     title: "Review Generation and Reputation Management",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "We implement a consistent five-star review generating system from your satisfied Naples customers. Strong reviews directly influence both your local search rankings and your customer conversion rates.",
   },
   {
     title: "Localized Content Creation",
-    image: "/seo-company-wesley-chapel/service-6.png",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
       "We create service pages, Naples neighborhood pages and locally relevant content targeting exact customer queries. Each piece is written to capture Naples Florida search traffic and convert visitors into leads.",
   },
   {
     title: "Local Link Building",
-    image: "/seo-company-wesley-chapel/service-7.png",
+    image: images.seoServicesSection.offPageSeoImage.src,
     description:
       "We earn high-quality backlinks from Naples Chamber of commerce, local business directories and community websites. These local authority links push your business higher in Naples map and organic search results.",
   },
   {
     title: "AI and GEO Optimization (Generative Engine Optimization)",
-    image: "/seo-company-wesley-chapel/service-8.png",
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "We optimize your business to appear in AI-generated answers on ChatGPT, Google Gemini and Perplexity. More than half of consumers now use AI tools for local business recommendations and we make sure they find you.",
   },
   {
     title: "Google Maps and Local Pack Ranking Strategy",
-    image: "/seo-company-wesley-chapel/service-9.png",
+    image: images.seoServicesSection.generativeEngineOptimizationImage.src,
     description:
       "We implement proven strategies to place your business in Google's top 3 map pack results to get you more traffic and more customer actions from Naples Florida searches.",
   },
   {
     title: "Local SEO Analytics and Monthly Reporting",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "You receive clear, plain-language monthly reports showing your keyword rankings, GBP interactions, website traffic, calls and conversions. Every metric connects directly to measurable growth for your Naples Florida business.",
   },
@@ -163,18 +165,41 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
+                <div className="w-full">
+                  <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
+                    {(() => {
+                      const imgData = Object.values(images.seoServicesSection).find(
+                        (item) => item.src === service.image
+                      );
+                      if (!imgData) return null;
+                      return (
+                        <Image
+                          src={imgData.src}
+                          alt={imgData.alt}
+                          title={imgData.title}
+                          fill
+                          className="
+                            object-cover
+                            transition-transform
+                            duration-700
+                            group-hover:scale-105
+                          "
+                        />
+                      );
+                    })()}
+                  </div>
+                  {(() => {
+                    const imgData = Object.values(images.seoServicesSection).find(
+                      (item) => item.src === service.image
+                    );
+                    if (!imgData) return null;
+                    return (
+                      <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                        {imgData.caption && <p>{imgData.caption}</p>}
+                        {imgData.description && <p>{imgData.description}</p>}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))}

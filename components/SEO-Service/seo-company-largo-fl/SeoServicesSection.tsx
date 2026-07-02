@@ -1,76 +1,78 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["seo-company-largo-fl"];
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 
 const services = [
   {
     title: "SEO Audit",
-    image: "/seo-company-wesley-chapel/service-1.png",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
       "Every element of your website is evaluated against what search engines currently reward and what they currently penalize. The findings are organized into a ranked action plan so the most impactful improvements happen at the right time.",
   },
   {
     title: "Keyword Research",
-    image: "/seo-company-wesley-chapel/service-2.png",
+    image: images.seoServicesSection.keywordResearchImage.src,
     description:
       "We go beyond monthly search volume to understand the purchasing intent sitting behind every term we select for your campaign. Why each keyword is a valuable part of your strategy is because they're keywords that bring people who are willing to spend money to your business.",
   },
   {
     title: "On-Page SEO",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "The titles, headings, metadescriptions, internal link paths and image metadata are all optimized with accuracy. Each page on your site is a purposeful ranking asset instead of a bunch of text and pictures.",
   },
   {
     title: "Technical SEO",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "Crawlability, rendering, page speed, mobile responsive, schema implementation and index coverage are all analyzed and fixed. Sites that are easy to process are rewarded by search engines and we ensure that your site fulfills all current technical needs.",
   },
   {
     title: "Off-Page SEO",
-    image: "/seo-company-wesley-chapel/service-7.png",
+    image: images.seoServicesSection.offPageSeoImage.src,
     description:
       "We earn backlinks from sources that carry genuine topical and geographic relevance to your Largo business and market. Each link strengthens the domain-level trust signals that determine how confidently search engines rank your pages.",
   },
   {
     title: "Local SEO",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "Your Google Business Profile, Largo-area directory listings, and location-optimized content are all developed with purpose. The objective is map pack visibility and neighborhood-level organic rankings for the searches that bring real revenue.",
   },
   {
     title: "E-Commerce SEO",
-    image: "/seo-company-wesley-chapel/service-6.png",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
       "Structured data, faceted navigation and category hierarchies, plus optimized product listings, will all generate traffic with intent to buy. We treat every product page as an individual ranking and conversion opportunity within your overall site architecture.",
   },
   {
     title: "Ask Engine Optimization (AEO)",
-    image: "/seo-company-wesley-chapel/service-8.png",
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "AI assistants and answer engines now field millions of local service queries that never result in a traditional search click. AEO positions your content as the authoritative source these platforms draw from when generating their direct responses.",
   },
   {
     title: "Generative Engine Optimization (GEO)",
-    image: "/seo-company-wesley-chapel/service-9.png",
+    image: images.seoServicesSection.generativeEngineOptimizationImage.src,
     description:
       "Large language models now recommend businesses by name inside conversational AI responses and AI-generated overviews. GEO ensures your brand is structured, cited, and semantically aligned to earn those mentions across major AI platforms.",
   },
   {
     title: "Shopify SEO",
-    image: "/seo-company-wesley-chapel/service-6.png",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
       "Shopify carries platform-specific constraints around URL structures, duplicate content, and metadata that require specialized handling. We resolve those constraints and build a keyword and content architecture that drives qualified traffic to your store.",
   },
   {
     title: "YouTube SEO",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "Video content is increasingly surfaced in standard Google results as well as within YouTube's own discovery algorithm. We optimize every metadata element and build keyword-informed content structures that grow channel visibility steadily.",
   },
   {
     title: "Amazon SEO",
-    image: "/seo-company-wesley-chapel/service-2.png",
+    image: images.seoServicesSection.keywordResearchImage.src,
     description:
       "Amazon search operates through its own proprietary ranking algorithm with distinct signals that differ entirely from Google. We optimize listing content, backend terms, and conversion-supporting elements to improve your product's visibility and sales rate.",
   },
@@ -176,18 +178,41 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
+                <div className="w-full">
+                  <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
+                    {(() => {
+                      const imgData = Object.values(images.seoServicesSection).find(
+                        (item) => item.src === service.image
+                      );
+                      if (!imgData) return null;
+                      return (
+                        <Image
+                          src={imgData.src}
+                          alt={imgData.alt}
+                          title={imgData.title}
+                          fill
+                          className="
+                            object-cover
+                            transition-transform
+                            duration-700
+                            group-hover:scale-105
+                          "
+                        />
+                      );
+                    })()}
+                  </div>
+                  {(() => {
+                    const imgData = Object.values(images.seoServicesSection).find(
+                      (item) => item.src === service.image
+                    );
+                    if (!imgData) return null;
+                    return (
+                      <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                        {imgData.caption && <p>{imgData.caption}</p>}
+                        {imgData.description && <p>{imgData.description}</p>}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))}

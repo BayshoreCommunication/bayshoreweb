@@ -1,64 +1,66 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["seo-services-for-small-businesses-in-florida"];
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 
 const services = [
   {
     title: "Local SEO",
-    image: "/seo-company-wesley-chapel/service-1.png",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
       "We optimize your Google Business Profile, citations and local signals for Florida searches.",
   },
   {
     title: "On Page SEO",
-    image: "/seo-company-wesley-chapel/service-2.png",
+    image: images.seoServicesSection.keywordResearchImage.src,
     description:
       "We optimize website's content, title tags, meta descriptions, headings, internal links to rank for target keywords. We improve overall structure for better user experience.",
   },
   {
     title: "Technical SEO",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "Our technical team for SEO fixes content crawl problems. We improve Core Web Vitals and ensure Google indexes every key page.",
   },
   {
     title: "Content Marketing",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "We create authoritative and helpful content that attracts Florida customers at every stage.",
   },
   {
     title: "Authoritative Link Building",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "We build high quality backlinks from trusted Florida-based websites that are relevant to industry.",
   },
   {
     title: "Google Business Profile Management",
-    image: "/seo-company-wesley-chapel/service-6.png",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
       "Our team manages and optimizes your profile to maximize visibility in the local map pack.",
   },
   {
     title: "Review Management",
-    image: "/seo-company-wesley-chapel/service-7.png",
+    image: images.seoServicesSection.offPageSeoImage.src,
     description:
       "Our SEO strategy establishes 5 star reputation that converts online searchers into paying customers.",
   },
   {
     title: "AI Search Optimization (AEO)",
-    image: "/seo-company-wesley-chapel/service-8.png",
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "Our structured content lets ChatGPT, Perplexity and Google's AI recommend your business.",
   },
   {
     title: "Schema Markup",
-    image: "/seo-company-wesley-chapel/service-9.png",
+    image: images.seoServicesSection.generativeEngineOptimizationImage.src,
     description:
       "We add structured data so google search engines and AI tools fully understand your business.",
   },
   {
     title: "Reputation & Citation Cleanup",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "We correct inconsistent listings across 50+ directories to rebuild trust and rankings.",
   },
@@ -159,18 +161,41 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
+                <div className="w-full">
+                  <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
+                    {(() => {
+                      const imgData = Object.values(images.seoServicesSection).find(
+                        (item) => item.src === service.image
+                      );
+                      if (!imgData) return null;
+                      return (
+                        <Image
+                          src={imgData.src}
+                          alt={imgData.alt}
+                          title={imgData.title}
+                          fill
+                          className="
+                            object-cover
+                            transition-transform
+                            duration-700
+                            group-hover:scale-105
+                          "
+                        />
+                      );
+                    })()}
+                  </div>
+                  {(() => {
+                    const imgData = Object.values(images.seoServicesSection).find(
+                      (item) => item.src === service.image
+                    );
+                    if (!imgData) return null;
+                    return (
+                      <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                        {imgData.caption && <p>{imgData.caption}</p>}
+                        {imgData.description && <p>{imgData.description}</p>}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))}

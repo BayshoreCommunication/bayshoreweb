@@ -1,37 +1,39 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["seo-company-dunedin"];
 import Image from "next/image";
 
 const seoSteps = [
   {
     number: "01",
-    image: "/seo-company-wesley-chapel/seo-step-1.png",
+    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
     title: "Visibility at the Moment of Decision",
     description:
       "When people in Dunedin, Florida search for the services you provide your business shows up. People see your name. This happens when people are already looking to do something so they are more likely to call you or visit your business.",
   },
   {
     number: "02",
-    image: "/seo-company-wesley-chapel/seo-step-2.png",
+    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
     title: "Google Maps Prominence That Generates Calls",
     description:
       "If you have a Google Business Profile that’s complete and up to date, people in your area can see your business address, hours, reviews and phone number without having to go to your website. This helps people in Dunedin, Florida find your business on Google Maps.",
   },
   {
     number: "03",
-    image: "/seo-company-wesley-chapel/seo-step-3.png",
+    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
     title: "Traffic With Real Purchasing Intent",
     description:
       "SEO helps your business get noticed by people in Dunedin, Florida who are actually looking for what you sell. This means you do not get a lot of people visiting your website who’re not really interested in buying something from you.",
   },
   {
     number: "04",
-    image: "/seo-company-wesley-chapel/seo-step-4.png",
+    image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
     title: "Steady Flow of Inbound Inquiries",
     description:
       "If your website is easy to use and has the information, people who visit your website are more likely to call you, ask for an appointment or send you a message. These are people who’re ready to spend money now.",
   },
   {
     number: "05",
-    image: "/seo-company-wesley-chapel/seo-step-1.png",
+    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
     title: "Authority That Builds Month After Month",
     description:
       "If you keep working on your SEO your website becomes well known and you show up in search results for more keywords. This helps you get customers without having to spend a lot of money on advertising. Over time this helps your business get a stream of new customers in Dunedin, Florida.",
@@ -100,21 +102,29 @@ export default function SeoCustomerJourney() {
                   hover:rounded-[24px]
                 "
               >
-                <Image
-                  src={step.image}
-                  alt={step.title}
-                  fill
-                  className="
-                    object-cover
-                    transition-transform
-                    duration-700
-                    group-hover:scale-110
-                    object-top
-                    rounded-[20px]
-                    md:rounded-[24px]
-                    
-                  "
-                />
+                {(() => {
+                  const imgData = Object.values(images.seoCustomerJourneySection).find(
+                    (item) => item.src === step.image
+                  );
+                  if (!imgData) return null;
+                  return (
+                    <Image
+                      src={imgData.src}
+                      alt={imgData.alt}
+                      title={imgData.title}
+                      fill
+                      className="
+                        object-cover
+                        transition-transform
+                        duration-700
+                        group-hover:scale-110
+                        object-top
+                        rounded-[20px]
+                        md:rounded-[24px]
+                      "
+                    />
+                  );
+                })()}
               </div>
 
               {/* Content */}
@@ -153,6 +163,18 @@ export default function SeoCustomerJourney() {
                 <p className="mt-5 text-[15px] leading-7 text-black/70 md:text-[16px] md:leading-8">
                   {step.description}
                 </p>
+                {(() => {
+                  const imgData = Object.values(images.seoCustomerJourneySection).find(
+                    (item) => item.src === step.image
+                  );
+                  if (!imgData) return null;
+                  return (
+                    <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                      {imgData.caption && <p>{imgData.caption}</p>}
+                      {imgData.description && <p>{imgData.description}</p>}
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           ))}

@@ -1,58 +1,60 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["seo-company-spring-hill"];
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 
 const services = [
   {
     title: "Local SEO",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "Optimized profiles begin with precise categorization, followed by verified details and carefully chosen location-based terms. Through trusted platforms specific to Spring Hill, citations are established then maintained over time. Positioning within map rankings improves when each component aligns with regional visibility standards.",
   },
   {
     title: "On-Page SEO",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "Every service page gets rebuilt from the beginning shaped by how people in Spring Hill Florida search for things. Our service pages are made to fit the way people in Spring Hill Florida look for stuff. Instead of guessing, we shape headlines, subheads, and titles around real queries. Content flows follow what matters now, not outdated tricks. Pages connect through smart internal paths that boost visibility where it counts. Even small details like meta descriptions reflect live user behavior. Authority shifts naturally to key sections without forced tactics. What shows up in results feels clear because the structure supports intent.",
   },
   {
     title: "Technical SEO",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "Starting with how easily bots can navigate your site, we check loading times, key performance signals, mobile experience, organized content markup, plus indexing problems. Because fixing each problem matters, corrections happen carefully to match what today’s search systems expect technically. When the base is solid, everything else in the plan works better down the line.",
   },
   {
     title: "Off-Page SEO and Link Building",
-    image: "/seo-company-wesley-chapel/service-7.png",
+    image: images.seoServicesSection.offPageSeoImage.src,
     description:
       "Not every connection earns a spot. Outreach shapes the backbone of our approach, targeting trusted neighborhood outlets first. Links come from places like trade listings or city-focused platforms, never chosen at random. Each one gets studied - does it fit, does it hold weight, will it last. Only then does it become part of the plan.",
   },
   {
     title: "Content Strategy and SEO Copywriting",
-    image: "/seo-company-wesley-chapel/service-6.png",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
       "We research the exact questions Spring Hill, Florida, consumers ask before making a purchase decision and build content that answers those questions with authority. Service pages, location landing pages, and supporting blog content are all written to satisfy search intent and encourage conversion. Every content piece is reviewed against current AI-era quality standards before publication.",
   },
   {
     title: "E-Commerce SEO",
-    image: "/seo-company-wesley-chapel/service-2.png",
+    image: images.seoServicesSection.keywordResearchImage.src,
     description:
       "We optimize product listings, category page structures, and crawl pathways for Spring Hill, Florida businesses that sell online. Transactional keyword targeting connects your product pages with buyers who are ready to purchase right now. Indexation management ensures your entire catalog remains accessible and competitive across all relevant search queries.",
   },
   {
     title: "Ask Engine Optimization (AEO)",
-    image: "/seo-company-wesley-chapel/service-8.png",
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "We structure your website content to answer the specific questions. Spring Hill, Florida, consumers ask on AI-powered platforms, including ChatGPT, Perplexity, and Google AI Overviews. AEO positions your business as the authoritative answer when a potential customer asks for a local recommendation and expects an immediate, reliable response. This channel is growing rapidly and early optimization creates a significant competitive advantage.",
   },
   {
     title: "Generative Engine Optimization (GEO)",
-    image: "/seo-company-wesley-chapel/service-9.png",
+    image: images.seoServicesSection.generativeEngineOptimizationImage.src,
     description:
       "We format your content for citation and recommendation in AI-generated summaries and search results. As more Spring Hill, Florida, consumers use generative tools to research local businesses, GEO ensures your name appears as a trusted recommendation. This emerging discipline extends your visibility well beyond traditional organic search results.",
   },
   {
     title: "SEO Reporting and Analytics",
-    image: "/seo-company-wesley-chapel/service-1.png",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
       "Monthly performance updates follow a clear format, showing shifts in keyword rankings alongside changes in organic visit numbers. Because local search visibility affects outcomes, those measurements appear with equal weight. Conversion patterns emerge through careful tracking rather than assumptions. A straightforward explanation follows each dataset, outlining recent developments together with their implications. Insight into upcoming actions comes included, not withheld. Clarity around results links directly to budget allocation. Every financial commitment receives matching accountability in reported progress.",
   },
@@ -152,18 +154,41 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
+                <div className="w-full">
+                  <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
+                    {(() => {
+                      const imgData = Object.values(images.seoServicesSection).find(
+                        (item) => item.src === service.image
+                      );
+                      if (!imgData) return null;
+                      return (
+                        <Image
+                          src={imgData.src}
+                          alt={imgData.alt}
+                          title={imgData.title}
+                          fill
+                          className="
+                            object-cover
+                            transition-transform
+                            duration-700
+                            group-hover:scale-105
+                          "
+                        />
+                      );
+                    })()}
+                  </div>
+                  {(() => {
+                    const imgData = Object.values(images.seoServicesSection).find(
+                      (item) => item.src === service.image
+                    );
+                    if (!imgData) return null;
+                    return (
+                      <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                        {imgData.caption && <p>{imgData.caption}</p>}
+                        {imgData.description && <p>{imgData.description}</p>}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))}

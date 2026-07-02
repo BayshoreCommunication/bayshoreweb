@@ -1,40 +1,42 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["seo-services-for-dentists-in-tampa"];
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 
 const services = [
   {
     title: "Local SEO and Google Business Profile Optimization",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "We take care of your entire Google Business Profile from initial setup and optimization through to active daily management. Our local map pack strategy focuses heavily on specific Tampa neighborhoods and the surrounding Hillsborough County area to put your practice on the map.",
   },
   {
     title: "Keyword Research and On-Page Optimization",
-    image: "/seo-company-wesley-chapel/service-2.png",
+    image: images.seoServicesSection.keywordResearchImage.src,
     description:
       "We dig deep into local data to find out what Tampa patients are saying when they&apos;re prepared to make an appointment. After reviewing each service page, location listing, and related material across your site, corrections are applied where needed. Title tags, meta descriptions, headers, and internal linking get tuned so they align smoothly.",
   },
   {
     title: "Technical SEO",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "Our team will work to clear your site of crawl issues and broken links and enhance your website structure. We ensure your website follows Core Web Vitals requirements to load immediately on both desktop and mobile devices. We also apply structured data and schema markup to canvas you in AI search and rich snippets.",
   },
   {
     title: "Content Strategy and Authority Building",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "We produce content for patients from a wide variety of dental and cosmetic procedures to implants all the way to orthodontics. By publishing regular blog posts, we build your topical authority and capture people searching for answers. This content is intentionally designed to rank well in traditional search engines as well as newer AI search overviews.",
   },
   {
     title: "Link Building and Digital PR",
-    image: "/seo-company-wesley-chapel/service-7.png",
+    image: images.seoServicesSection.offPageSeoImage.src,
     description:
       "Backlinks arrive through established Tampa businesses, alongside support from well-regarded dental sites. Progress builds slowly, domain strength rises as a result. Rankings hold more firmly under such conditions, maintained across extended periods.",
   },
   {
     title: "Review Management and Reputation SEO",
-    image: "/seo-company-wesley-chapel/service-8.png",
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "We put systems in place to help you collect more genuine positive reviews from your patients. We also actively monitor your online reputation and provide timely responses that build trust with potential patients while boosting your local search authority.",
   },
@@ -140,18 +142,41 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
+                <div className="w-full">
+                  <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
+                    {(() => {
+                      const imgData = Object.values(images.seoServicesSection).find(
+                        (item) => item.src === service.image
+                      );
+                      if (!imgData) return null;
+                      return (
+                        <Image
+                          src={imgData.src}
+                          alt={imgData.alt}
+                          title={imgData.title}
+                          fill
+                          className="
+                            object-cover
+                            transition-transform
+                            duration-700
+                            group-hover:scale-105
+                          "
+                        />
+                      );
+                    })()}
+                  </div>
+                  {(() => {
+                    const imgData = Object.values(images.seoServicesSection).find(
+                      (item) => item.src === service.image
+                    );
+                    if (!imgData) return null;
+                    return (
+                      <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                        {imgData.caption && <p>{imgData.caption}</p>}
+                        {imgData.description && <p>{imgData.description}</p>}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))}

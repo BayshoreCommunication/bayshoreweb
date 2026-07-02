@@ -1,30 +1,32 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["seo-services-for-dentists-in-tampa"];
 import Image from "next/image";
 
 const seoSteps = [
   {
     number: "01",
-    image: "/seo-company-wesley-chapel/seo-step-1.png",
+    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
     title: "High-Intent Keyword Targeting",
     description:
       "High-intent keyword targeting that captures patients who are ready to book right away. Your practice appears at the top of local results with strong reviews and clear information.",
   },
   {
     number: "02",
-    image: "/seo-company-wesley-chapel/seo-step-2.png",
+    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
     title: "Local Map Pack Optimization",
     description:
       "Local map pack optimization that places your practice above competitors for nearby searches. A patient in Hyde Park types 'dentist near me' and your practice is the first result they see.",
   },
   {
     number: "03",
-    image: "/seo-company-wesley-chapel/seo-step-3.png",
+    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
     title: "Patient-Focused Content",
     description:
       "Questions patients ask shape the words on each page. These answers guide visitors closer to making appointments. Pages work quietly but directly, offering clarity instead of pressure. Booking becomes a natural choice when confusion fades.",
   },
   {
     number: "04",
-    image: "/seo-company-wesley-chapel/seo-step-4.png",
+    image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
     title: "Mobile-First Performance",
     description:
       "Pages built for mobile devices load quickly, cutting down on visitor drop-offs while boosting phone inquiries. A streamlined experience keeps attention, steering behavior toward calling instead of leaving.",
@@ -97,21 +99,29 @@ export default function SeoCustomerJourney() {
                   hover:rounded-[24px]
                 "
               >
-                <Image
-                  src={step.image}
-                  alt={step.title}
-                  fill
-                  className="
-                    object-cover
-                    transition-transform
-                    duration-700
-                    group-hover:scale-110
-                    object-top
-                    rounded-[20px]
-                    md:rounded-[24px]
-                    
-                  "
-                />
+                {(() => {
+                  const imgData = Object.values(images.seoCustomerJourneySection).find(
+                    (item) => item.src === step.image
+                  );
+                  if (!imgData) return null;
+                  return (
+                    <Image
+                      src={imgData.src}
+                      alt={imgData.alt}
+                      title={imgData.title}
+                      fill
+                      className="
+                        object-cover
+                        transition-transform
+                        duration-700
+                        group-hover:scale-110
+                        object-top
+                        rounded-[20px]
+                        md:rounded-[24px]
+                      "
+                    />
+                  );
+                })()}
               </div>
 
               {/* Content */}
@@ -150,6 +160,18 @@ export default function SeoCustomerJourney() {
                 <p className="mt-5 text-[15px] leading-7 text-black/70 md:text-[16px] md:leading-8">
                   {step.description}
                 </p>
+                {(() => {
+                  const imgData = Object.values(images.seoCustomerJourneySection).find(
+                    (item) => item.src === step.image
+                  );
+                  if (!imgData) return null;
+                  return (
+                    <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                      {imgData.caption && <p>{imgData.caption}</p>}
+                      {imgData.description && <p>{imgData.description}</p>}
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           ))}

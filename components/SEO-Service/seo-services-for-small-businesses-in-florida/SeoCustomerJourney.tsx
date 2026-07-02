@@ -1,16 +1,18 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["seo-services-for-small-businesses-in-florida"];
 import Image from "next/image";
 
 const seoSteps = [
   {
     number: "01",
-    image: "/seo-company-wesley-chapel/seo-step-1.png",
+    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
     title: "SEO ranks your business in Google 3-pack",
     description:
       "Your business appears in 3 pack above organic results whenever customers search for local services. Listed businesses in 3 pack generate more traffic and customer actions.",
   },
   {
     number: "02",
-    image: "/seo-company-wesley-chapel/seo-step-2.png",
+    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
     title:
       "SEO helps optimize your business category and keyword relevance",
     description:
@@ -18,7 +20,7 @@ const seoSteps = [
   },
   {
     number: "03",
-    image: "/seo-company-wesley-chapel/seo-step-3.png",
+    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
     title:
       "SEO ensures complete & accurate Google Business Profile and drives revenue",
     description:
@@ -26,7 +28,7 @@ const seoSteps = [
   },
   {
     number: "04",
-    image: "/seo-company-wesley-chapel/seo-step-4.png",
+    image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
     title:
       "Search-engine-optimized keywords match buyer intent and increase traffic",
     description:
@@ -34,14 +36,14 @@ const seoSteps = [
   },
   {
     number: "05",
-    image: "/seo-company-wesley-chapel/seo-step-1.png",
+    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
     title: "Automated review collection systems produce more conversions",
     description:
       "Earning 50+ reviews generates more sales from search traffic. With SEO strategies, you collect Google reviews and respond professionally to build more trust among customers.",
   },
   {
     number: "06",
-    image: "/seo-company-wesley-chapel/seo-step-2.png",
+    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
     title:
       "Optimized websites with fast speed mobile performance converts clicks into sales",
     description:
@@ -49,7 +51,7 @@ const seoSteps = [
   },
   {
     number: "07",
-    image: "/seo-company-wesley-chapel/seo-step-3.png",
+    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
     title:
       "SEO strategies help your business appear in AI-generated answers for targeted queries",
     description:
@@ -127,21 +129,29 @@ export default function SeoCustomerJourney() {
                   hover:rounded-[24px]
                 "
               >
-                <Image
-                  src={step.image}
-                  alt={step.title}
-                  fill
-                  className="
-                    object-cover
-                    transition-transform
-                    duration-700
-                    group-hover:scale-110
-                    object-top
-                    rounded-[20px]
-                    md:rounded-[24px]
-                    
-                  "
-                />
+                {(() => {
+                  const imgData = Object.values(images.seoCustomerJourneySection).find(
+                    (item) => item.src === step.image
+                  );
+                  if (!imgData) return null;
+                  return (
+                    <Image
+                      src={imgData.src}
+                      alt={imgData.alt}
+                      title={imgData.title}
+                      fill
+                      className="
+                        object-cover
+                        transition-transform
+                        duration-700
+                        group-hover:scale-110
+                        object-top
+                        rounded-[20px]
+                        md:rounded-[24px]
+                      "
+                    />
+                  );
+                })()}
               </div>
 
               {/* Content */}
@@ -180,6 +190,18 @@ export default function SeoCustomerJourney() {
                 <p className="mt-5 text-[15px] leading-7 text-black/70 md:text-[16px] md:leading-8">
                   {step.description}
                 </p>
+                {(() => {
+                  const imgData = Object.values(images.seoCustomerJourneySection).find(
+                    (item) => item.src === step.image
+                  );
+                  if (!imgData) return null;
+                  return (
+                    <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                      {imgData.caption && <p>{imgData.caption}</p>}
+                      {imgData.description && <p>{imgData.description}</p>}
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           ))}

@@ -1,30 +1,32 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["seo-company-wesley-chapel"];
 import Image from "next/image";
 
 const seoSteps = [
   {
     number: "01",
-    image: "/seo-company-wesley-chapel/seo-step-1.png",
+    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
     title: "First-Position Visibility in Local Search",
     description:
       "When Wesley Chapel customers search for your category, your business name and reviews appear first. That placement earns attention before any competitor. That placement earns attention before any competitor's headline is even read.",
   },
   {
     number: "02",
-    image: "/seo-company-wesley-chapel/seo-step-2.png",
+    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
     title: "Map Pack Placement That Produces Direct Calls",
     description:
       "Google's local map results display above every organic listing on mobile searches. Securing one of those map pack positions means your number is visible before customers reach any competitor link.",
   },
   {
     number: "03",
-    image: "/seo-company-wesley-chapel/seo-step-3.png",
+    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
     title: "Traffic That Arrives With Genuine Purchase Intent",
     description:
       "A person searching for a Wesley Chapel service provider has an immediate need. They are actively comparing businesses. SEO delivers that ready-to-act traffic to your door.",
   },
   {
     number: "04",
-    image: "/seo-company-wesley-chapel/seo-step-4.png",
+    image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
     title: "Search Presence That Converts Into Revenue",
     description:
       "Visibility alone does not pay bills. Bayshore Communication optimizes both your search rankings and the on-site experience your visitors encounter. The result is a steady flow of Wesley Chapel customers who arrive ready to act.",
@@ -99,21 +101,29 @@ export default function SeoCustomerJourney() {
                   hover:rounded-[24px]
                 "
               >
-                <Image
-                  src={step.image}
-                  alt={step.title}
-                  fill
-                  className="
-                    object-cover
-                    transition-transform
-                    duration-700
-                    group-hover:scale-110
-                    object-top
-                    rounded-[20px]
-                    md:rounded-[24px]
-                    
-                  "
-                />
+                {(() => {
+                  const imgData = Object.values(images.seoCustomerJourneySection).find(
+                    (item) => item.src === step.image
+                  );
+                  if (!imgData) return null;
+                  return (
+                    <Image
+                      src={imgData.src}
+                      alt={imgData.alt}
+                      title={imgData.title}
+                      fill
+                      className="
+                        object-cover
+                        transition-transform
+                        duration-700
+                        group-hover:scale-110
+                        object-top
+                        rounded-[20px]
+                        md:rounded-[24px]
+                      "
+                    />
+                  );
+                })()}
               </div>
 
               {/* Content */}
@@ -152,6 +162,18 @@ export default function SeoCustomerJourney() {
                 <p className="mt-5 text-[15px] leading-7 text-black/70 md:text-[16px] md:leading-8">
                   {step.description}
                 </p>
+                {(() => {
+                  const imgData = Object.values(images.seoCustomerJourneySection).find(
+                    (item) => item.src === step.image
+                  );
+                  if (!imgData) return null;
+                  return (
+                    <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                      {imgData.caption && <p>{imgData.caption}</p>}
+                      {imgData.description && <p>{imgData.description}</p>}
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           ))}

@@ -1,3 +1,5 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["local-seo-services-for-small-business-naples-florida"];
 import Image from "next/image";
 
 const mistakes = [
@@ -64,13 +66,22 @@ export default function CommonSeoMistakes() {
         {/* Main Image */}
         <div className="mt-10 overflow-hidden rounded-[24px] ">
           <Image
-            src="/seo-company-wesley-chapel/common-seo-mistakes-banner.png"
-            alt="Common SEO Mistakes"
+            src={images.commonSeoMistakesSection.commonSeoMistakesBanner.src}
+            alt={images.commonSeoMistakesSection.commonSeoMistakesBanner.alt}
+            title={images.commonSeoMistakesSection.commonSeoMistakesBanner.title}
             width={800}
             height={800}
             className="h-auto w-full object-cover"
           />
-        </div>
+        
+        <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+          {images.commonSeoMistakesSection.commonSeoMistakesBanner.caption && (
+            <p>{images.commonSeoMistakesSection.commonSeoMistakesBanner.caption}</p>
+          )}
+          {images.commonSeoMistakesSection.commonSeoMistakesBanner.description && (
+            <p>{images.commonSeoMistakesSection.commonSeoMistakesBanner.description}</p>
+          )}
+        </div></div>
 
         {/* Cards */}
         <div className="mt-10 overflow-hidden rounded-[24px] border border-black/5 bg-white">

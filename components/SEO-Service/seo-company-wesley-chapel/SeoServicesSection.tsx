@@ -1,70 +1,72 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["seo-company-wesley-chapel"];
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 
 const services = [
   {
     title: "SEO Website Audit",
-    image: "/seo-company-wesley-chapel/service-1.png",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
       "We review every technical, structural, and content factor influencing your current Wesley Chapel search performance. Each issue is categorized by impact and prioritized to produce measurable value from the first month.",
   },
   {
     title: "Keyword Research and Search Intent Analysis",
-    image: "/seo-company-wesley-chapel/service-2.png",
+    image: images.seoServicesSection.keywordResearchImage.src,
     description:
       "We map the searches your Wesley Chapel customers perform throughout their buying process. High-intent local terms are identified and assigned to dedicated pages built to rank and convert.",
   },
   {
     title: "On-Page Optimization",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "All titles, meta descriptions, headings, image attributes and internal links, for priority pages, are optimized. We provide a clear \"Why Wesley Chapel\" message for all Wesley Chapel visitors.",
   },
   {
     title: "Technical SEO",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "We will cover crawlability, page speed, Core Web Vitals, structured data, mobile rendering and duplicate content. These are the technical elements on which all the search rankings of Wesley Chapel rely.",
   },
   {
     title: "Local SEO and Map Pack Optimization",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "We optimize your Google Business Profile and build consistent citations across Wesley Chapel directories. Geographic keyword targeting and review strategies improve your map pack position over time.",
   },
   {
     title: "Content Development and Authority Building",
-    image: "/seo-company-wesley-chapel/service-6.png",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
       "We produce Wesley Chapel service pages, location pages, and FAQ articles. Every piece answers real questions your customers ask before they decide to buy. Every piece earns search visibility and positions your business as the authoritative local choice in your category.",
   },
   {
     title: "Off-Page SEO and Link Acquisition",
-    image: "/seo-company-wesley-chapel/service-7.png",
+    image: images.seoServicesSection.offPageSeoImage.src,
     description:
       "We secure backlinks from Pasco County publications, local business associations, and authoritative industry sources. Each link strengthens your domain credibility and reinforces your competitive position in Wesley Chapel organic search results.",
   },
   {
     title: "Ask Engine Optimization (AEO)",
-    image: "/seo-company-wesley-chapel/service-8.png",
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "We structure your content to become the source AI platforms reference. When Wesley Chapel residents ask questions on ChatGPT, Perplexity, or Google AI Overviews, your business is cited. Appearing as the cited source in AI-generated answers is the new most-visible position in search.",
   },
   {
     title: "Generative Engine Optimization (GEO)",
-    image: "/seo-company-wesley-chapel/service-9.png",
+    image: images.seoServicesSection.generativeEngineOptimizationImage.src,
     description:
       "We optimize your content for how generative AI systems summarize and recommend local businesses. When a Wesley Chapel resident asks an AI assistant for local business recommendations, your business should be mentioned.",
   },
   {
     title: "Google Business Profile Management",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "We actively manage your Google Business Profile with regular posts, photo updates, and review response strategies. Consistent management outperforms any one-time setup. A consistently maintained profile outperforms a one-time optimized profile in every local ranking metric over time.",
   },
   {
     title: "Performance Tracking and Monthly Reporting",
-    image: "/seo-company-wesley-chapel/service-1.png",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
       "We translate ranking data, traffic, conversions, and Google Business Profile activity into plain-language insights every month. Every report includes a clear strategy recommendation so you always know what your campaign is producing.",
   },
@@ -176,18 +178,41 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
+                <div className="w-full">
+                  <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
+                    {(() => {
+                      const imgData = Object.values(images.seoServicesSection).find(
+                        (item) => item.src === service.image
+                      );
+                      if (!imgData) return null;
+                      return (
+                        <Image
+                          src={imgData.src}
+                          alt={imgData.alt}
+                          title={imgData.title}
+                          fill
+                          className="
+                            object-cover
+                            transition-transform
+                            duration-700
+                            group-hover:scale-105
+                          "
+                        />
+                      );
+                    })()}
+                  </div>
+                  {(() => {
+                    const imgData = Object.values(images.seoServicesSection).find(
+                      (item) => item.src === service.image
+                    );
+                    if (!imgData) return null;
+                    return (
+                      <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                        {imgData.caption && <p>{imgData.caption}</p>}
+                        {imgData.description && <p>{imgData.description}</p>}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))}

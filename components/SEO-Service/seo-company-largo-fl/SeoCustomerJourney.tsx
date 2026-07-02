@@ -1,30 +1,32 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["seo-company-largo-fl"];
 import Image from "next/image";
 
 const seoSteps = [
   {
     number: "01",
-    image: "/seo-company-wesley-chapel/seo-step-1.png",
+    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
     title: "Organic Search Presence",
     description:
       "Your pages appear when Largo residents search for the category of service your business provides. Appearing consistently in those results builds familiarity and authority before any direct interaction occurs.",
   },
   {
     number: "02",
-    image: "/seo-company-wesley-chapel/seo-step-2.png",
+    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
     title: "Map Pack Placement",
     description:
       "A well-maintained Google Business Profile earns your business a position in the three listings above all organic results. Those positions receive the highest click volume from buyers who have already decided they are ready to act.",
   },
   {
     number: "03",
-    image: "/seo-company-wesley-chapel/seo-step-3.png",
+    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
     title: "Intent-Matched Traffic",
     description:
       "The location-aware keywords narrow down the audience that visits your site so that people who visit your site already want what you have to offer. This specificity is the one thing that makes organic traffic that converts from traffic that just increases your numbers.",
   },
   {
     number: "04",
-    image: "/seo-company-wesley-chapel/seo-step-4.png",
+    image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
     title: "Lead Generation",
     description:
       "Properly structured pages with clear next steps turn organic visitors into inbound calls and contact requests. The distance between a first Google search and a paying customer shrinks considerably with the right SEO foundation.",
@@ -99,21 +101,29 @@ export default function SeoCustomerJourney() {
                   hover:rounded-[24px]
                 "
               >
-                <Image
-                  src={step.image}
-                  alt={step.title}
-                  fill
-                  className="
-                    object-cover
-                    transition-transform
-                    duration-700
-                    group-hover:scale-110
-                    object-top
-                    rounded-[20px]
-                    md:rounded-[24px]
-                    
-                  "
-                />
+                {(() => {
+                  const imgData = Object.values(images.seoCustomerJourneySection).find(
+                    (item) => item.src === step.image
+                  );
+                  if (!imgData) return null;
+                  return (
+                    <Image
+                      src={imgData.src}
+                      alt={imgData.alt}
+                      title={imgData.title}
+                      fill
+                      className="
+                        object-cover
+                        transition-transform
+                        duration-700
+                        group-hover:scale-110
+                        object-top
+                        rounded-[20px]
+                        md:rounded-[24px]
+                      "
+                    />
+                  );
+                })()}
               </div>
 
               {/* Content */}
@@ -152,6 +162,18 @@ export default function SeoCustomerJourney() {
                 <p className="mt-5 text-[15px] leading-7 text-black/70 md:text-[16px] md:leading-8">
                   {step.description}
                 </p>
+                {(() => {
+                  const imgData = Object.values(images.seoCustomerJourneySection).find(
+                    (item) => item.src === step.image
+                  );
+                  if (!imgData) return null;
+                  return (
+                    <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                      {imgData.caption && <p>{imgData.caption}</p>}
+                      {imgData.description && <p>{imgData.description}</p>}
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           ))}

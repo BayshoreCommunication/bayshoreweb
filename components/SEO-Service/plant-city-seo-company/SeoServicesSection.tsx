@@ -1,52 +1,54 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["plant-city-seo-company"];
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 
 const services = [
   {
     title: "Local SEO for Plant City Businesses",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "Local SEO covers Google Business Profile optimization, citation building, and review management for Plant City businesses competing inside Hillsborough County. SEO helps direct revenue from strong local search rankings.",
   },
   {
     title: "On Page SEO and Content Optimization",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "Service pages on Plant City business websites need specific keyword targeting, proper heading structure, and metadata for matching real clients' search phrases.",
   },
   {
     title: "Technical SEO Audits and Site Health Repairs",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "Any service providing site in Plant City with crawl issues, duplicate content, or broken schema earns weaker rankings. Technical audit documents each issue and ranks fixes based on impact to ranking performance.",
   },
   {
     title: "Link Building and Local Authority Development",
-    image: "/seo-company-wesley-chapel/service-7.png",
+    image: images.seoServicesSection.offPageSeoImage.src,
     description:
       "Earning backlinks from Florida based publications, Hillsborough County business associations and industry specific directories. This builds domain authority to keep first page rankings stable.",
   },
   {
     title: "AI Search and Generative Engine Optimization",
-    image: "/seo-company-wesley-chapel/service-8.png",
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "Google AI Overviews, ChatGPT search and Perplexity pull answers from structured, authoritative local content. Creating Content to appear in those AI generated responses.",
   },
   {
     title: "Content Strategy and SEO Copywriting",
-    image: "/seo-company-wesley-chapel/service-6.png",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
       "Blog posts, FAQ pages and service guides built around real search queries drive consistent traffic for Plant City law firms, financial advisors, travel businesses, and weight loss clinics.",
   },
   {
     title: "E-commerce and Retail SEO",
-    image: "/seo-company-wesley-chapel/service-9.png",
+    image: images.seoServicesSection.generativeEngineOptimizationImage.src,
     description:
       "Product page optimization, category structure and schema markup help Plant City retail businesses compete against large national chains in product search results.",
   },
   {
     title: "Google Business Profile Management",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "Medical practices, law offices and tax firms with actively managed Google Business Profiles earn more calls, more appointment requests and more direction clicks.",
   },
@@ -148,18 +150,41 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
+                <div className="w-full">
+                  <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
+                    {(() => {
+                      const imgData = Object.values(images.seoServicesSection).find(
+                        (item) => item.src === service.image
+                      );
+                      if (!imgData) return null;
+                      return (
+                        <Image
+                          src={imgData.src}
+                          alt={imgData.alt}
+                          title={imgData.title}
+                          fill
+                          className="
+                            object-cover
+                            transition-transform
+                            duration-700
+                            group-hover:scale-105
+                          "
+                        />
+                      );
+                    })()}
+                  </div>
+                  {(() => {
+                    const imgData = Object.values(images.seoServicesSection).find(
+                      (item) => item.src === service.image
+                    );
+                    if (!imgData) return null;
+                    return (
+                      <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                        {imgData.caption && <p>{imgData.caption}</p>}
+                        {imgData.description && <p>{imgData.description}</p>}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))}

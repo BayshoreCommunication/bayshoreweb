@@ -1,44 +1,46 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["local-seo-for-lawyers-florida"];
 import Image from "next/image";
 
 const seoSteps = [
   {
     number: "01",
-    image: "/seo-company-wesley-chapel/seo-step-1.png",
+    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
     title: "Google Map Pack Dominance",
     description:
       "Significantly increases clicks and calls from potential clients when firms appear in Google Maps' top 3 positions.",
   },
   {
     number: "02",
-    image: "/seo-company-wesley-chapel/seo-step-2.png",
+    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
     title: "High-Intent \"Near Me\" Searches",
     description:
       "As maximum clients in Florida prefer local attorneys, optimizing \"near me\" queries increases visibility in AI search.",
   },
   {
     number: "03",
-    image: "/seo-company-wesley-chapel/seo-step-3.png",
+    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
     title: "Optimized Google Business Profile (GBP)",
     description:
       "Optimized and verified GBP builds trust, google visibility and continuous incoming leads for law firms in Florida.",
   },
   {
     number: "04",
-    image: "/seo-company-wesley-chapel/seo-step-4.png",
+    image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
     title: "Consistent Local Citations & Directories",
     description:
       "NAP or consistent name, address and phone number across platforms like Yelp, BBB establish credibility of law firms in google and AI search engines.",
   },
   {
     number: "05",
-    image: "/seo-company-wesley-chapel/seo-step-1.png",
+    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
     title: "Localized Content & Keywords",
     description:
       "Search relevance for Florida's local demographics enhances through publishing city specific content.",
   },
   {
     number: "06",
-    image: "/seo-company-wesley-chapel/seo-step-2.png",
+    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
     title: "Reputation Management",
     description:
       "Collecting positive reviews and having high ratings in google impact potential clients to choose specific law firms.",
@@ -165,6 +167,18 @@ export default function SeoCustomerJourney() {
                 <p className="mt-5 text-[15px] leading-7 text-black/70 md:text-[16px] md:leading-8">
                   {step.description}
                 </p>
+                {(() => {
+                  const imgData = Object.values(images.seoCustomerJourneySection).find(
+                    (item) => item.src === step.image
+                  );
+                  if (!imgData) return null;
+                  return (
+                    <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                      {imgData.caption && <p>{imgData.caption}</p>}
+                      {imgData.description && <p>{imgData.description}</p>}
+                    </div>
+                  );
+                })()}
               </div>
             </div>
           ))}

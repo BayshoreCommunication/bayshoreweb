@@ -1,52 +1,54 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["brandon-seo-company"];
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 
 const services = [
   {
     title: "Local SEO for Brandon Florida",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "Optimizes Google Business Profile, NAP consistency, local citations, review strategy, nearby signals and map pack rankings to capture Brandon residents’ hight intent local queries.",
   },
   {
     title: "On Page Search Engine Optimization",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "Check header format, title tags, meta descriptions, internal linking and keyword alignment on each page of the website. Brandon specific search terms are integrated into content naturally.",
   },
   {
     title: "Technical SEO Audits and Fixes",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "Review and correction for site loading speed, indexation, Google standardized metrics, web crawlability, mobile response time and structured data.",
   },
   {
     title: "Content Strategy and SEO Copywriting",
-    image: "/seo-company-wesley-chapel/service-6.png",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
       "Service pages, location pages and blog content are written around exact queries Brandon customers type. Medical, legal, financial and industry specific content is created to rank and convert.",
   },
   {
     title: "Link Building and Digital PR",
-    image: "/seo-company-wesley-chapel/service-7.png",
+    image: images.seoServicesSection.offPageSeoImage.src,
     description:
       "Earning backlinks from Tampa Bay media, Brandon area business directories, industry publications and authoritative sites builds domain authority for sustained long term rankings.",
   },
   {
     title: "E-Commerce SEO for Brandon Retailers",
-    image: "/seo-company-wesley-chapel/service-1.png",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
       "Product page optimization, category architecture, schema markup and shopping feed management for Brandon retail businesses competing in both local and national organic search.",
   },
   {
     title: "AI Search and Answer Engine Optimization",
-    image: "/seo-company-wesley-chapel/service-8.png",
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "Content structured for Google's AI Overviews, Perplexity and ChatGPT citations. Brandon businesses' appearance in AI generated answers capture searchers more than clicking traditional results.",
   },
   {
     title: "SEO Reporting and Analytics",
-    image: "/seo-company-wesley-chapel/service-2.png",
+    image: images.seoServicesSection.keywordResearchImage.src,
     description:
       "Monthly reports tracking keyword rankings, organic traffic, lead conversions and Google Business Profile metrics for every Brandon campaign.",
   },
@@ -152,18 +154,41 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
+                <div className="w-full">
+                  <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
+                    {(() => {
+                      const imgData = Object.values(images.seoServicesSection).find(
+                        (item) => item.src === service.image
+                      );
+                      if (!imgData) return null;
+                      return (
+                        <Image
+                          src={imgData.src}
+                          alt={imgData.alt}
+                          title={imgData.title}
+                          fill
+                          className="
+                            object-cover
+                            transition-transform
+                            duration-700
+                            group-hover:scale-105
+                          "
+                        />
+                      );
+                    })()}
+                  </div>
+                  {(() => {
+                    const imgData = Object.values(images.seoServicesSection).find(
+                      (item) => item.src === service.image
+                    );
+                    if (!imgData) return null;
+                    return (
+                      <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                        {imgData.caption && <p>{imgData.caption}</p>}
+                        {imgData.description && <p>{imgData.description}</p>}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))}

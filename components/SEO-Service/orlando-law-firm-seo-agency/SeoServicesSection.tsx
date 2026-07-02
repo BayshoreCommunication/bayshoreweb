@@ -1,64 +1,66 @@
+import seoImages from "@/lib/seo-service-images.json";
+const images = seoImages["orlando-law-firm-seo-agency"];
 import Image from "next/image";
 import { CalendarDays } from "lucide-react";
 
 const services = [
   {
     title: "Legal Keyword Research and Search Intent Mapping",
-    image: "/seo-company-wesley-chapel/service-2.png",
+    image: images.seoServicesSection.keywordResearchImage.src,
     description:
       "Identifying Orlando residents' search patterns through keyword research to separate high intent case generating terms from informational queries.",
   },
   {
     title: "Practice Area Page Optimization",
-    image: "/seo-company-wesley-chapel/service-3.png",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
       "Each page gets written around Florida specific legal context, Orange County court procedures and exact scenarios your target clients are searching for.",
   },
   {
     title: "Google Business Profile Management",
-    image: "/seo-company-wesley-chapel/service-5.png",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
       "Your GBP listing gets fully built out with accurate practice area categories and service areas across Orange, Seminole, Osceola and Lake Counties. Ongoing management through regular posts, photo updates, and review responses.",
   },
   {
     title: "AI Overview Optimization for Legal Queries",
-    image: "/seo-company-wesley-chapel/service-8.png",
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "Getting your firm cited in Google's AI Overviews summaries for appearing on a large share of legal searches.",
   },
   {
     title: "Legal Schema Markup and Structured Data Implementation",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "Attorney schema, local business schema, review markup, and FAQ structured data make your law firm reliable to Google for recommendations.",
   },
   {
     title: "Florida Bar Compliant Content Strategy",
-    image: "/seo-company-wesley-chapel/service-6.png",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
       "Every content piece produced is reviewed against Florida Bar advertising rules. You get authorized content and convert clients without creating compliance exposure for your practice.",
   },
   {
     title: "Technical SEO Audit and Site Health Management",
-    image: "/seo-company-wesley-chapel/service-4.png",
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "A full technical audit covers Core Web Vitals, mobile performance, page speed and site architecture, with ranking issue fixes.",
   },
   {
     title: "Orlando Legal Citation Building and Directory Management",
-    image: "/seo-company-wesley-chapel/service-7.png",
+    image: images.seoServicesSection.offPageSeoImage.src,
     description:
       "Consistent citations across Martindale Hubbell, Justia, Florida specific legal directories, Avvo, FindLaw signal geographic authority to Google for Orlando searches.",
   },
   {
     title: "Competitor Gap Analysis",
-    image: "/seo-company-wesley-chapel/service-9.png",
+    image: images.seoServicesSection.generativeEngineOptimizationImage.src,
     description:
       "A full competitor gap analysis map helps outrank competitors through analyzing Orlando's legal search results with specific content, links and technical advantages.",
   },
   {
     title: "Monthly Reporting of Case Inquiries and Rankings",
-    image: "/seo-company-wesley-chapel/service-1.png",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
       "Monthly reports cover organic traffic by practice area, GBP call volume, contact form submissions, and ranking movement to measure performance compared to client intake.",
   },
@@ -164,18 +166,41 @@ export default function SeoServicesSection() {
                   </p>
                 </div>
 
-                <div className="relative  w-full h-[250px]  overflow-hidden rounded-[16px]">
-                  <Image
-                    src={service.image}
-                    alt={service.title}
-                    fill
-                    className="
-                      object-cover
-                      transition-transform
-                      duration-700
-                      group-hover:scale-105
-                    "
-                  />
+                <div className="w-full">
+                  <div className="relative w-full h-[250px] overflow-hidden rounded-[16px]">
+                    {(() => {
+                      const imgData = Object.values(images.seoServicesSection).find(
+                        (item) => item.src === service.image
+                      );
+                      if (!imgData) return null;
+                      return (
+                        <Image
+                          src={imgData.src}
+                          alt={imgData.alt}
+                          title={imgData.title}
+                          fill
+                          className="
+                            object-cover
+                            transition-transform
+                            duration-700
+                            group-hover:scale-105
+                          "
+                        />
+                      );
+                    })()}
+                  </div>
+                  {(() => {
+                    const imgData = Object.values(images.seoServicesSection).find(
+                      (item) => item.src === service.image
+                    );
+                    if (!imgData) return null;
+                    return (
+                      <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                        {imgData.caption && <p>{imgData.caption}</p>}
+                        {imgData.description && <p>{imgData.description}</p>}
+                      </div>
+                    );
+                  })()}
                 </div>
               </div>
             ))}
