@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SeoCtaSection() {
   return (
@@ -27,9 +28,9 @@ export default function SeoCtaSection() {
               Stop Settling for Generic Results. Your Practice Deserves a Fort
               Myers Specialist.
             </p>
-
-            <button
-              className="
+            <Link href="#contact">
+              <button
+                className="
                 group
                 relative
                 mt-8
@@ -50,6 +51,7 @@ export default function SeoCtaSection() {
 
               <span className="relative">Get My Custom SEO Proposal</span>
             </button>
+            </Link>
           </div>
         </div>
       </div>

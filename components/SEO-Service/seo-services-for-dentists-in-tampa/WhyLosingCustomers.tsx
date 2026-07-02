@@ -113,26 +113,7 @@ export default function WhyLosingCustomers() {
                 {card.description}
               </p>
 
-              {/* Link */}
-              <Link
-                href="#"
-                className="
-                  mt-10
-                  inline-flex
-                  items-center
-                  gap-2
-
-                  font-semibold
-                  text-[#FF6F00]
-
-                  transition-all
-                  duration-300
-
-                  hover:gap-3
-                "
-              >
-                Learn more →
-              </Link>
+              
             </div>
           ))}
         </div>

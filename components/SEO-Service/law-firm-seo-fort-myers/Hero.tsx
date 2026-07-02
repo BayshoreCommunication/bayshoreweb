@@ -11,6 +11,7 @@ import {
   ShieldCheck,
   MapPinned,
 } from "lucide-react";
+import Link from "next/link";
 
 function Counter({ to, suffix = "" }: { to: number; suffix?: string }) {
   const count = useMotionValue(0);
@@ -95,11 +96,12 @@ export default function Hero() {
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <button className="group relative h-[52px] overflow-hidden rounded-lg bg-[#FF6F00] px-8 font-semibold text-white">
                 <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
-
+                <Link href="#contact">
                 <span className="relative flex h-full items-center justify-center gap-3 text-[15px] md:text-[16px]">
                   Request Your SEO Proposal
                   <ArrowRight size={18} />
                 </span>
+                </Link>
               </button>
 
               <a

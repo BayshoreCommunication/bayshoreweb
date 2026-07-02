@@ -11,6 +11,7 @@ import {
   SquarePen,
   Target,
 } from "lucide-react";
+import Link from "next/link";
 
 const processSteps = [
   {
@@ -104,7 +105,7 @@ export default function SeoProcessSection() {
                 No element is overlooked and every phase builds on the last.
               </p>
             </div>
-
+            <Link href="#contact">
             <button
               className="
                 group
@@ -129,6 +130,7 @@ export default function SeoProcessSection() {
                 <ArrowRight size={18} />
               </span>
             </button>
+            </Link>
           </div>
 
           {/* Right Timeline */}

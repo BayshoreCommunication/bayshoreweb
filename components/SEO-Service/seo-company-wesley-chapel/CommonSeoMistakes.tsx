@@ -172,38 +172,7 @@ export default function CommonSeoMistakes() {
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="mt-10 flex justify-center">
-          <button
-            className="
-              group
-              relative
-              overflow-hidden
-
-              h-[52px]
-
-              rounded-md
-
-              bg-[#FF6F00]
-
-              px-8
-              md:px-12
-
-              text-[14px]
-
-              font-semibold
-              text-white
-            "
-          >
-            <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full " />
-
-            <span className="relative flex items-center gap-2 text-[14px]">
-              Start Fixing Your Wesley Chapel SEO Today
-              <span>→</span>
-            </span>
-          </button>
         </div>
-      </div>
     </section>
   );
 }

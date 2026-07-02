@@ -184,8 +184,9 @@ export default function ContactSection() {
 
                 <Field
                   icon={<BriefcaseBusiness size={17} />}
-                  label="Business Name"
+                  label="Business Website"
                   name="business"
+                  placeholder="Enter Your Business Website"
                 />
 
                 <div>

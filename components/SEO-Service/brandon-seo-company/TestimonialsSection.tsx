@@ -79,7 +79,7 @@ export default function TestimonialsSection() {
     <section className="overflow-hidden pt-12 pb-4 md:pt-24 md:pb-6">
       <div className="mx-auto max-w-[1620px] px-8 md:px-8">
         {/* Header */}
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-start">
+        <div className="grid gap-10 lg:grid-cols-2 lg:items-end">
           <div>
             <div className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-5 py-3 shadow-sm">
               <ArrowUpRight size={16} className="text-[#FF6F00]" />
@@ -100,35 +100,7 @@ export default function TestimonialsSection() {
               We&apos;re proud to help businesses in Brandon, Tampa, and across Florida grow their visibility, attract more customers, and achieve lasting results.
             </p>
 
-            <Link
-              href="/contact"
-              className="
-                group
-                relative
-                mt-8
-                inline-flex
-                h-[52px]
-                items-center
-                justify-center
-                overflow-hidden
-                rounded-md
-                bg-[#FF6F00]
-                px-8
-                font-semibold
-                text-white
-                transition-all
-                duration-300
-                hover:-translate-y-0.5
-                hover:shadow-[0_16px_35px_rgba(255,111,0,0.25)]
-              "
-            >
-              <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
-
-              <span className="relative flex items-center gap-2">
-                Get Started Now
-                <ArrowRight size={18} />
-              </span>
-            </Link>
+            
           </div>
         </div>
 

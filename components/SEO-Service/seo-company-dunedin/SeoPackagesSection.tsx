@@ -26,14 +26,14 @@ const packageColumns: PackageColumn[] = [
     title: "Kickstart Plan",
     subtitle: "New or small local businesses building their first online footprint",
     price: "$1,000",
-    cta: "Contact Us to Get Started",
+    cta: "Contact Us To Get Started",
   },
   {
     key: "scale",
     title: "Growth Plan",
     subtitle: "Established businesses ready to grow search market share aggressively",
     price: "$2,500",
-    cta: "Request Proposal",
+    cta: "Contact Us To Get Started",
     popular: true,
   },
   {
@@ -41,7 +41,7 @@ const packageColumns: PackageColumn[] = [
     title: "Dominate Plan",
     subtitle: "Competitive industries requiring full-market search domination",
     price: "$5,000",
-    cta: "Request Proposal",
+    cta: "Contact Us To Get Started",
   },
 ];
 
@@ -176,7 +176,7 @@ function PackagePricingCard({ pkg }: { pkg: PackageColumn }) {
       </div>
 
       <Link
-        href="/contact"
+        href="#contact"
         className="group relative mt-4 inline-flex h-[48px] w-full items-center justify-center overflow-hidden rounded-full bg-[#FF6F00] px-5 text-[14px] font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"
       >
         <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
@@ -307,7 +307,7 @@ export default function SeoPackagesSection() {
                     </div>
 
                     <Link
-                      href="/contact"
+                      href="#contact"
                       className="group relative mt-4 inline-flex h-[48px] items-center justify-center overflow-hidden rounded-full bg-[#FF6F00] px-6 text-[14px] font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"
                     >
                       <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
@@ -373,7 +373,7 @@ export default function SeoPackagesSection() {
                   className="flex justify-center px-4 py-6 transition-all duration-300 hover:bg-[#FFF7F1]/35"
                 >
                   <Link
-                    href="/contact"
+                    href="#contact"
                     className="group relative inline-flex h-[48px] items-center justify-center overflow-hidden rounded-full bg-[#FF6F00] px-6 text-[14px] font-semibold text-white transition-transform duration-300 hover:-translate-y-0.5"
                   >
                     <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />

@@ -99,29 +99,7 @@ export default function WhyChooseBayshore() {
               </p>
             </div>
 
-            <button
-              className="
-                group
-                relative
-                mt-10
-                flex
-                h-[52px]
-                items-center
-                overflow-hidden
-                rounded-md
-                bg-[#FF6F00]
-                px-8
-                font-semibold
-                text-white
-              "
-            >
-              <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
-
-              <span className="relative flex items-center gap-3">
-                Start Growing Your Practice
-                <ArrowRight size={18} />
-              </span>
-            </button>
+            
           </div>
         </div>
 
