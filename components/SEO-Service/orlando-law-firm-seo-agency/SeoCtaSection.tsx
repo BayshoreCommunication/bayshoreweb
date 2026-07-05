@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function SeoCtaSection() {
@@ -26,6 +27,9 @@ export default function SeoCtaSection() {
               Bayshore Communication works exclusively with law firms and legal practices. We build an SEO strategy that drives case inquiries rather than just traffic numbers. When you work with us, you get an Orlando law firm SEO agency that already speaks the language of legal marketing and knows market rules to rank in Google Maps and be cited in AI summaries.
             </p>
 
+            <Link href="#contact">
+
+
             <button
               className="
                 group
@@ -48,6 +52,9 @@ export default function SeoCtaSection() {
 
               <span className="relative">Get My Custom SEO Proposal</span>
             </button>
+
+
+            </Link>
           </div>
         </div>
       </div>

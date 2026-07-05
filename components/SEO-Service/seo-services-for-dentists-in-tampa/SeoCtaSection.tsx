@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function SeoCtaSection() {
@@ -26,6 +27,9 @@ export default function SeoCtaSection() {
               Bayshore Communication delivers the local expertise, transparent process, and proven results your Tampa dental practice has been searching for.
             </p>
 
+            <Link href="#contact">
+
+
             <button
               className="
                 group
@@ -48,6 +52,9 @@ export default function SeoCtaSection() {
 
               <span className="relative">Get My Custom SEO Proposal</span>
             </button>
+
+
+            </Link>
           </div>
         </div>
       </div>

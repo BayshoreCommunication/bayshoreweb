@@ -126,7 +126,7 @@ export default function SeoProcessSection() {
               <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full" />
 
               <span className="relative flex items-center gap-3">
-                Start Your Campaign
+                Start Your SEO Campaign
                 <ArrowRight size={18} />
               </span>
             </button>

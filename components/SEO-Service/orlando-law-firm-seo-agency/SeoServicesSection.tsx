@@ -105,7 +105,7 @@ export default function SeoServicesSection() {
               </p>
             </div>
 
-            <button
+            {/* <button
               className="
                 group
                 relative
@@ -128,7 +128,7 @@ export default function SeoServicesSection() {
                 <CalendarDays size={18} />
                 SCHEDULE A FREE CASE REVIEW
               </span>
-            </button>
+            </button> */}
           </div>
 
           {/* Right Services */}

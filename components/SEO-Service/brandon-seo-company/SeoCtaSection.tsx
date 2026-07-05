@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function SeoCtaSection() {
@@ -26,6 +27,9 @@ export default function SeoCtaSection() {
               Bayshore Communications works across medical, legal, tax, real estate, travel, IT, retail, financial verticals and all kinds of small and big businesses. Our cross industry experience makes us reliable Brandon SEO company in competitive local market. Working with us lets you get proven approach applied to your specific situation to drive revenue with high Google visibility and AI search tool appearance.
             </p>
 
+            <Link href="#contact">
+
+
             <button
               className="
                 group
@@ -48,6 +52,9 @@ export default function SeoCtaSection() {
 
               <span className="relative">Get My Custom SEO Proposal</span>
             </button>
+
+
+            </Link>
           </div>
         </div>
       </div>

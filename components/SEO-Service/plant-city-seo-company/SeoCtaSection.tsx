@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 
 export default function SeoCtaSection() {
@@ -26,6 +27,9 @@ export default function SeoCtaSection() {
               Bayshore Communication has built SEO strategies for businesses across medical, law, tax, real estate, travel, retail and more services. At our Plant City SEO company we understand Hillsborough County search behavior, local buyer psychology and technical standards. We bring all of that to every campaign and results show up in rankings, traffic and revenue.
             </p>
 
+            <Link href="#contact">
+
+
             <button
               className="
                 group
@@ -48,6 +52,9 @@ export default function SeoCtaSection() {
 
               <span className="relative">Get My Custom SEO Proposal</span>
             </button>
+
+
+            </Link>
           </div>
         </div>
       </div>

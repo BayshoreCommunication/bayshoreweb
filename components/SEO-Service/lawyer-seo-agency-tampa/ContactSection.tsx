@@ -50,7 +50,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-[#FBFBFB] py-8 md:py-8">
+    <section className="relative overflow-hidden bg-[#FBFBFB] py-8 md:py-8" id="contact">
       <div
         className="
           pointer-events-none
