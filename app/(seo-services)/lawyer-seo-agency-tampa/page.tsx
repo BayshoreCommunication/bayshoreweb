@@ -22,12 +22,12 @@ export const metadata = {
   description: "Explore how a Lawyer SEO Agency in Tampa, Florida, can improve rankings, traffic, leads & long-term growth in your law firm.",
 
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
 

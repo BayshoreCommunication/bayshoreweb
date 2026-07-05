@@ -24,12 +24,12 @@ export const metadata = {
     "Compare the best law firm SEO strategies in Fort Myers. Learn what drives rankings, leads, and long-term growth for attorneys.",
 
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
 
