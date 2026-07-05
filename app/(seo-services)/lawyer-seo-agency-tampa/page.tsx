@@ -43,7 +43,7 @@ const page = () => {
     <div>
       <Hero />
       <SeoAuditForm />
-      <SeoAuditBenefits />
+      {/* <SeoAuditBenefits /> */}
       <WhyLosingCustomers />
       <SeoCustomerJourney />
       <CommonSeoMistakes />
@@ -53,9 +53,9 @@ const page = () => {
       <SeoProcessSection />
       <WhyChooseBayshore />
       <SeoRoiSection />
-      <SeoPackagesSection />
+      {/* <SeoPackagesSection /> */}
       <ServiceAreasSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
       <SeoFaqSection />
       <ContactSection />
     </div>
