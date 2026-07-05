@@ -2,7 +2,7 @@
   "brandon-seo-company": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/brandon-seo-company/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
         "alt": "Common SEO Mistakes Banner for Brandon",
         "title": "Common SEO Mistakes Banner for Brandon",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -11,28 +11,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/brandon-seo-company/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.png",
         "alt": "Technical Audit Step Image for Brandon",
         "title": "Technical Audit Step Image for Brandon",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/brandon-seo-company/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.png",
         "alt": "On-Page Optimization Step Image for Brandon",
         "title": "On-Page Optimization Step Image for Brandon",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/brandon-seo-company/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.png",
         "alt": "Off-Page Strategy Step Image for Brandon",
         "title": "Off-Page Strategy Step Image for Brandon",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/brandon-seo-company/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.png",
         "alt": "Analytics and Reporting Step Image for Brandon",
         "title": "Analytics and Reporting Step Image for Brandon",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -41,63 +41,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/brandon-seo-company/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.png",
         "alt": "SEO Website Audit Image for Brandon",
         "title": "SEO Website Audit Image for Brandon",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/brandon-seo-company/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.png",
         "alt": "Keyword Research Image for Brandon",
         "title": "Keyword Research Image for Brandon",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/brandon-seo-company/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.png",
         "alt": "On-Page Optimization Image for Brandon",
         "title": "On-Page Optimization Image for Brandon",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/brandon-seo-company/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.png",
         "alt": "Technical SEO Image for Brandon",
         "title": "Technical SEO Image for Brandon",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/brandon-seo-company/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.png",
         "alt": "Local SEO Map Pack Image for Brandon",
         "title": "Local SEO Map Pack Image for Brandon",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/brandon-seo-company/service-6.png",
+        "src": "/seo-company-wesley-chapel/service-6.png",
         "alt": "Content Development Image for Brandon",
         "title": "Content Development Image for Brandon",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/brandon-seo-company/service-7.png",
+        "src": "/seo-company-wesley-chapel/service-7.png",
         "alt": "Off-Page SEO Image for Brandon",
         "title": "Off-Page SEO Image for Brandon",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/brandon-seo-company/service-8.png",
+        "src": "/seo-company-wesley-chapel/service-8.png",
         "alt": "Ask Engine Optimization Image for Brandon",
         "title": "Ask Engine Optimization Image for Brandon",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/brandon-seo-company/service-9.png",
+        "src": "/seo-company-wesley-chapel/service-9.png",
         "alt": "Generative Engine Optimization Image for Brandon",
         "title": "Generative Engine Optimization Image for Brandon",
         "description": "Generative Engine Optimization (GEO) service card illustration",
@@ -207,113 +207,120 @@
   "lawyer-seo-agency-tampa": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/lawyer-seo-agency-tampa/common-seo-mistakes-banner.png",
-        "alt": "Common SEO Mistakes Banner for Lawyer Seo Agency Tampa",
-        "title": "Common SEO Mistakes Banner for Lawyer Seo Agency Tampa",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
+        "src": "/lawyer-seo-agency-tampa/common-seo-mistakes-tampa-florida-businesses.webp",
+        "alt": "SEO audit highlighting common website optimization mistakes affecting Tampa, Florida businesses, including slow speed and missing SEO elements.",
+        "title": "Common SEO Mistakes Tampa Florida Businesses Make",
+        "description": "Professional SEO audit illustration identifying the most common website optimization mistakes made by Tampa, Florida businesses. The visual highlights missing SEO elements, incomplete Google Business Profile optimization, slow page speed, poor mobile usability, weak content, and technical issues that reduce search visibility, website traffic, and customer acquisition.",
+        "caption": "Fixing common SEO mistakes helps Tampa businesses improve search rankings, website performance, and attract more qualified local customers."
       }
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/lawyer-seo-agency-tampa/seo-step-1.png",
-        "alt": "Technical Audit Step Image for Lawyer Seo Agency Tampa",
-        "title": "Technical Audit Step Image for Lawyer Seo Agency Tampa",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
+        "src": "/lawyer-seo-agency-tampa/visibility-at-the-moment-of-decision-local-seo.webp",
+        "alt": "Smartphone displaying a Google search result for a personal injury law firm in Tampa, highlighting local search visibility, business profile, map listing, and contact options.",
+        "title": "Visibility at the Moment of Decision with Local SEO",
+        "description": "A mobile-first illustration of a Google search results page showcasing a personal injury law firm's local listing in Tampa, Florida. The image emphasizes the importance of appearing prominently when potential clients search for legal services, featuring a Google Business Profile, map placement, reviews, click-to-call, website, and directions. It represents the power of Local SEO, Google Business Profile optimization, and high-intent search visibility for law firms.",
+        "caption": "Be visible when it matters most. Optimized local search rankings and Google Business Profile visibility help your law firm connect with high-intent clients at the exact moment they're ready to choose legal representation."
       },
       "onPageOptimizationStepImage": {
-        "src": "/lawyer-seo-agency-tampa/seo-step-2.png",
-        "alt": "On-Page Optimization Step Image for Lawyer Seo Agency Tampa",
-        "title": "On-Page Optimization Step Image for Lawyer Seo Agency Tampa",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
+        "src": "/lawyer-seo-agency-tampa/google-maps-prominence-local-seo-law-firms.webp",
+        "alt": "Google Business Profile and Google Maps listing showing a law firm with top local rankings, reviews, and prominent map visibility.",
+        "title": "Google Maps Prominence That Generates Calls",
+        "description": "Professional illustration showcasing a law firm's optimized Google Business Profile and prominent Google Maps placement. The visual highlights strong local rankings, positive client reviews, accurate business information, and enhanced map visibility that drive more phone calls, website visits, and qualified local client inquiries.",
+        "caption": "Greater Google Maps prominence helps law firms increase local visibility, earn client trust, and generate more calls from high-intent prospects."
       },
       "offPageStrategyStepImage": {
-        "src": "/lawyer-seo-agency-tampa/seo-step-3.png",
-        "alt": "Off-Page Strategy Step Image for Lawyer Seo Agency Tampa",
-        "title": "Off-Page Strategy Step Image for Lawyer Seo Agency Tampa",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
+        "src": "/lawyer-seo-agency-tampa/seo-analytics-reporting-dashboard-mobile.webp",
+        "alt": "Mobile SEO analytics dashboard showing website traffic, organic search, landing pages, audience insights, and conversion tracking for a law firm.",
+        "title": "SEO Analytics and Performance Reporting Dashboard",
+        "description": "A professional mobile SEO analytics dashboard displaying website traffic trends, organic search performance, traffic sources, top landing pages, audience metrics, and conversion data. Designed for law firms, the visual highlights real-time SEO reporting, lead generation insights, and performance tracking that help measure marketing ROI and improve online visibility.",
+        "caption": "Track your SEO success with real-time analytics, traffic insights, and conversion reporting to measure growth, optimize strategy, and generate more qualified leads."
       },
       "analyticsReportingStepImage": {
-        "src": "/lawyer-seo-agency-tampa/seo-step-4.png",
-        "alt": "Analytics and Reporting Step Image for Lawyer Seo Agency Tampa",
-        "title": "Analytics and Reporting Step Image for Lawyer Seo Agency Tampa",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
+        "src": "/lawyer-seo-agency-tampa/law-firm-website-lead-generation-consultations.webp",
+        "alt": "Professional law firm website with consultation form, live chat, and contact options designed to generate qualified client inquiries.",
+        "title": "Law Firm Website That Generates Qualified Client Leads",
+        "description": "Professional illustration showcasing a high-converting law firm website with a free consultation form, live chat, click-to-call features, and clear calls to action. The visual demonstrates how a conversion-focused website builds trust, improves user experience, and creates a steady flow of qualified inbound client inquiries through organic search.",
+        "caption": "A conversion-focused law firm website helps turn website visitors into qualified leads through consultation forms, live chat, and clear calls to action."
+      },
+      "authorityStepImage": {
+        "src": "/lawyer-seo-agency-tampa/visibility-at-the-moment-of-decision-local-seo.webp",
+        "alt": "Smartphone displaying a Google search result for a personal injury law firm in Tampa, highlighting local search visibility, business profile, map listing, and contact options.",
+        "title": "Visibility at the Moment of Decision with Local SEO",
+        "description": "A mobile-first illustration of a Google search results page showcasing a personal injury law firm's local listing in Tampa, Florida. The image emphasizes the importance of appearing prominently when potential clients search for legal services, featuring a Google Business Profile, map placement, reviews, click-to-call, website, and directions. It represents the power of Local SEO, Google Business Profile optimization, and high-intent search visibility for law firms.",
+        "caption": "Be visible when it matters most. Optimized local search rankings and Google Business Profile visibility help your law firm connect with high-intent clients at the exact moment they're ready to choose legal representation."
       }
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/lawyer-seo-agency-tampa/service-1.png",
-        "alt": "SEO Website Audit Image for Lawyer Seo Agency Tampa",
-        "title": "SEO Website Audit Image for Lawyer Seo Agency Tampa",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
+        "src": "/lawyer-seo-agency-tampa/seo-reporting-analytics-performance-dashboard.webp",
+        "alt": "SEO reporting dashboard displaying keyword rankings, organic traffic, local visibility, conversions, and website performance analytics.",
+        "title": "SEO Reporting and Analytics Performance Dashboard",
+        "description": "Professional SEO reporting and analytics dashboard showcasing key performance metrics, including keyword rankings, organic traffic growth, local visibility, conversions, and overall website performance. The visual demonstrates how data-driven reporting helps businesses measure SEO success, identify growth opportunities, and make informed optimization decisions.",
+        "caption": "Comprehensive SEO reporting and analytics provide actionable insights into rankings, traffic, conversions, and overall search performance to support continuous business growth."
       },
       "keywordResearchImage": {
-        "src": "/lawyer-seo-agency-tampa/service-2.png",
-        "alt": "Keyword Research Image for Lawyer Seo Agency Tampa",
-        "title": "Keyword Research Image for Lawyer Seo Agency Tampa",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
+        "src": "/lawyer-seo-agency-tampa/ecommerce-seo-optimization-online-store.webp",
+        "alt": "E-commerce SEO dashboard showing product optimization, keyword research, search visibility, and online store performance analytics.",
+        "title": "E-Commerce SEO Optimization for Online Stores",
+        "description": "Professional e-commerce SEO illustration showcasing product page optimization, keyword research, search performance, and analytics for an online store. The visual demonstrates how strategic SEO improves product visibility, increases organic traffic, enhances shopping experiences, and drives more online sales and conversions",
+        "caption": "E-commerce SEO helps online stores improve product visibility, attract qualified shoppers, and increase organic sales through better search rankings."
       },
       "onPageOptimizationImage": {
-        "src": "/lawyer-seo-agency-tampa/service-3.png",
-        "alt": "On-Page Optimization Image for Lawyer Seo Agency Tampa",
-        "title": "On-Page Optimization Image for Lawyer Seo Agency Tampa",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
+        "src": "/lawyer-seo-agency-tampa/on-page-seo-optimization-law-firms.webp",
+        "alt": "On-page SEO optimization dashboard for a law firm showing page title, meta description, H1 heading, internal links, and content optimization.",
+        "title": "On Page SEO Optimization for Law Firms",
+        "description": "Professional on-page SEO optimization dashboard illustrating essential website optimization elements for a law firm, including page titles, H1 headings, meta descriptions, internal linking, focus keywords, content structure, and SEO scoring. The visual demonstrates how on-page SEO improves search rankings, click-through rates, user experience, and organic lead generation.",
+        "caption": "On-page SEO optimization helps law firms improve search visibility, increase organic traffic, and convert more visitors into qualified client leads."
       },
       "technicalSeoImage": {
-        "src": "/lawyer-seo-agency-tampa/service-4.png",
-        "alt": "Technical SEO Image for Lawyer Seo Agency Tampa",
-        "title": "Technical SEO Image for Lawyer Seo Agency Tampa",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
+        "src": "/lawyer-seo-agency-tampa/technical-seo-services-website-audit.webp",
+        "alt": "Technical SEO dashboard displaying website health, crawlability, Core Web Vitals, page speed, indexing, and security metrics.",
+        "title": "Technical SEO Services and Website Audit",
+        "description": "Professional technical SEO dashboard illustrating a comprehensive website audit, including site health, crawlability, indexing status, Core Web Vitals, page speed, mobile usability, structured data, HTTPS security, and XML sitemaps. The visual demonstrates how technical SEO improves website performance, search visibility, and long-term organic growth.",
+        "caption": "Technical SEO services help identify and resolve website issues, improving search rankings, user experience, and overall website performance."
       },
       "localSeoMapPackImage": {
-        "src": "/lawyer-seo-agency-tampa/service-5.png",
-        "alt": "Local SEO Map Pack Image for Lawyer Seo Agency Tampa",
-        "title": "Local SEO Map Pack Image for Lawyer Seo Agency Tampa",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
+        "src": "/lawyer-seo-agency-tampa/local-seo-services-google-business-profile.webp",
+        "alt": "Local SEO dashboard showing an optimized Google Business Profile, verified business details, citations, map rankings, and location-based SEO.",
+        "title": "Local SEO Services and Google Business Profile Optimization",
+        "description": "Professional Local SEO illustration showcasing Google Business Profile optimization, verified business information, location-based keywords, trusted citations, and Google Maps rankings. The visual demonstrates how a comprehensive local SEO strategy improves online visibility, strengthens local search performance, and helps businesses attract more qualified customers.",
+        "caption": "Local SEO and Google Business Profile optimization help businesses improve map rankings, increase local visibility, and attract more qualified customers."
       },
       "contentDevelopmentImage": {
-        "src": "/lawyer-seo-agency-tampa/service-6.png",
-        "alt": "Content Development Image for Lawyer Seo Agency Tampa",
-        "title": "Content Development Image for Lawyer Seo Agency Tampa",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
+        "src": "/lawyer-seo-agency-tampa/content-strategy-seo-copywriting-services.webp",
+        "alt": "Content strategy and SEO copywriting workflow showing keyword research, audience insights, content planning, and optimized content creation.",
+        "title": "Content Strategy and SEO Copywriting Services",
+        "description": "Professional illustration showcasing a strategic content marketing workflow, including keyword research, audience analysis, content planning, SEO copywriting, and performance optimization. The visual demonstrates how high-quality, search-optimized content improves organic rankings, engages users, and generates qualified business leads.",
+        "caption": " Strategic SEO copywriting and content planning help businesses improve search visibility, engage their target audience, and drive sustainable organic growth."
       },
       "offPageSeoImage": {
-        "src": "/lawyer-seo-agency-tampa/service-7.png",
-        "alt": "Off-Page SEO Image for Lawyer Seo Agency Tampa",
-        "title": "Off-Page SEO Image for Lawyer Seo Agency Tampa",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
+        "src": "/lawyer-seo-agency-tampa/off-page-seo-link-building-law-firms.webp",
+        "alt": "Off-page SEO and link building strategy showing quality backlinks from trusted websites, legal directories, and local organizations for a law firm.",
+        "title": "Off-Page SEO and Link Building for Law Firms",
+        "description": "Professional illustration showcasing an off-page SEO and link building strategy for a law firm. The visual highlights backlinks from trusted news websites, business directories, industry blogs, local organizations, chambers of commerce, and legal resource sites that strengthen domain authority, improve search rankings, and drive qualified organic traffic.",
+        "caption": "Strategic off-page SEO and quality link building help law firms build authority, improve search rankings, and attract more qualified clients through trusted online sources."
       },
       "askEngineOptimizationImage": {
-        "src": "/lawyer-seo-agency-tampa/service-8.png",
-        "alt": "Ask Engine Optimization Image for Lawyer Seo Agency Tampa",
-        "title": "Ask Engine Optimization Image for Lawyer Seo Agency Tampa",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
+        "src": "/lawyer-seo-agency-tampa/ask-engine-optimization-aeo-law-firms.webp",
+        "alt": "Ask Engine Optimization dashboard showing a law firm's visibility across ChatGPT, Perplexity, and Google AI Overviews.",
+        "title": "Ask Engine Optimization (AEO) for Law Firms",
+        "description": "Professional Ask Engine Optimization (AEO) illustration demonstrating how a law firm can improve visibility across AI-powered search platforms, including ChatGPT, Perplexity, and Google AI Overviews. The visual highlights authoritative content, trusted legal expertise, and AI-ready optimization strategies that increase brand visibility, credibility, and qualified client inquiries.",
+        "caption": "Ask Engine Optimization helps law firms become trusted answers across AI search platforms, increasing visibility, authority, and qualified client leads."
       },
       "generativeEngineOptimizationImage": {
-        "src": "/lawyer-seo-agency-tampa/service-9.png",
-        "alt": "Generative Engine Optimization Image for Lawyer Seo Agency Tampa",
-        "title": "Generative Engine Optimization Image for Lawyer Seo Agency Tampa",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
+        "src": "/lawyer-seo-agency-tampa/generative-engine-optimization-geo-law-firms.webp",
+        "alt": "Generative Engine Optimization dashboard showing a law firm's visibility across ChatGPT, Perplexity, and Google AI Overviews.",
+        "title": "Generative Engine Optimization (GEO) for Law Firms",
+        "description": "Professional Generative Engine Optimization (GEO) illustration demonstrating how a law firm can optimize its content for AI-powered search platforms, including ChatGPT, Perplexity, and Google AI Overviews. The visual highlights AI-ready content, citation optimization, trusted recommendations, and enhanced visibility beyond traditional search results to generate more qualified client inquiries.",
+        "caption": "Generative Engine Optimization helps law firms become trusted sources in AI-generated answers, increasing visibility, credibility, and qualified client leads."
       }
     }
   },
   "local-seo-for-lawyers-florida": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/local-seo-for-lawyers-florida/common-seo-mistakes-banner.png",
+        "src": "/local-seo-for-lawyers-florida/ask-engine-optimization-aeo-law-firms.webp",
         "alt": "Common SEO Mistakes Banner for Local Seo For Lawyers Florida",
         "title": "Common SEO Mistakes Banner for Local Seo For Lawyers Florida",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -322,28 +329,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/local-seo-for-lawyers-florida/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.png",
         "alt": "Technical Audit Step Image for Local Seo For Lawyers Florida",
         "title": "Technical Audit Step Image for Local Seo For Lawyers Florida",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/local-seo-for-lawyers-florida/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.png",
         "alt": "On-Page Optimization Step Image for Local Seo For Lawyers Florida",
         "title": "On-Page Optimization Step Image for Local Seo For Lawyers Florida",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/local-seo-for-lawyers-florida/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.png",
         "alt": "Off-Page Strategy Step Image for Local Seo For Lawyers Florida",
         "title": "Off-Page Strategy Step Image for Local Seo For Lawyers Florida",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/local-seo-for-lawyers-florida/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.png",
         "alt": "Analytics and Reporting Step Image for Local Seo For Lawyers Florida",
         "title": "Analytics and Reporting Step Image for Local Seo For Lawyers Florida",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -352,63 +359,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/local-seo-for-lawyers-florida/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.png",
         "alt": "SEO Website Audit Image for Local Seo For Lawyers Florida",
         "title": "SEO Website Audit Image for Local Seo For Lawyers Florida",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/local-seo-for-lawyers-florida/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.png",
         "alt": "Keyword Research Image for Local Seo For Lawyers Florida",
         "title": "Keyword Research Image for Local Seo For Lawyers Florida",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/local-seo-for-lawyers-florida/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.png",
         "alt": "On-Page Optimization Image for Local Seo For Lawyers Florida",
         "title": "On-Page Optimization Image for Local Seo For Lawyers Florida",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/local-seo-for-lawyers-florida/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.png",
         "alt": "Technical SEO Image for Local Seo For Lawyers Florida",
         "title": "Technical SEO Image for Local Seo For Lawyers Florida",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/local-seo-for-lawyers-florida/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.png",
         "alt": "Local SEO Map Pack Image for Local Seo For Lawyers Florida",
         "title": "Local SEO Map Pack Image for Local Seo For Lawyers Florida",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/local-seo-for-lawyers-florida/service-6.png",
+        "src": "/seo-company-wesley-chapel/service-6.png",
         "alt": "Content Development Image for Local Seo For Lawyers Florida",
         "title": "Content Development Image for Local Seo For Lawyers Florida",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/local-seo-for-lawyers-florida/service-7.png",
+        "src": "/seo-company-wesley-chapel/service-7.png",
         "alt": "Off-Page SEO Image for Local Seo For Lawyers Florida",
         "title": "Off-Page SEO Image for Local Seo For Lawyers Florida",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/local-seo-for-lawyers-florida/service-8.png",
+        "src": "/seo-company-wesley-chapel/service-8.png",
         "alt": "Ask Engine Optimization Image for Local Seo For Lawyers Florida",
         "title": "Ask Engine Optimization Image for Local Seo For Lawyers Florida",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/local-seo-for-lawyers-florida/service-9.png",
+        "src": "/seo-company-wesley-chapel/service-9.png",
         "alt": "Generative Engine Optimization Image for Local Seo For Lawyers Florida",
         "title": "Generative Engine Optimization Image for Local Seo For Lawyers Florida",
         "description": "Generative Engine Optimization (GEO) service card illustration",
@@ -419,7 +426,7 @@
   "local-seo-services-for-small-business-naples-florida": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/local-seo-services-for-small-business-naples-florida/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
         "alt": "Common SEO Mistakes Banner for Local Small Business Naples Florida",
         "title": "Common SEO Mistakes Banner for Local Small Business Naples Florida",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -428,28 +435,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.png",
         "alt": "Technical Audit Step Image for Local Small Business Naples Florida",
         "title": "Technical Audit Step Image for Local Small Business Naples Florida",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.png",
         "alt": "On-Page Optimization Step Image for Local Small Business Naples Florida",
         "title": "On-Page Optimization Step Image for Local Small Business Naples Florida",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.png",
         "alt": "Off-Page Strategy Step Image for Local Small Business Naples Florida",
         "title": "Off-Page Strategy Step Image for Local Small Business Naples Florida",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.png",
         "alt": "Analytics and Reporting Step Image for Local Small Business Naples Florida",
         "title": "Analytics and Reporting Step Image for Local Small Business Naples Florida",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -458,63 +465,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.png",
         "alt": "SEO Website Audit Image for Local Small Business Naples Florida",
         "title": "SEO Website Audit Image for Local Small Business Naples Florida",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.png",
         "alt": "Keyword Research Image for Local Small Business Naples Florida",
         "title": "Keyword Research Image for Local Small Business Naples Florida",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.png",
         "alt": "On-Page Optimization Image for Local Small Business Naples Florida",
         "title": "On-Page Optimization Image for Local Small Business Naples Florida",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.png",
         "alt": "Technical SEO Image for Local Small Business Naples Florida",
         "title": "Technical SEO Image for Local Small Business Naples Florida",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.png",
         "alt": "Local SEO Map Pack Image for Local Small Business Naples Florida",
         "title": "Local SEO Map Pack Image for Local Small Business Naples Florida",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/service-6.png",
+        "src": "/seo-company-wesley-chapel/service-6.png",
         "alt": "Content Development Image for Local Small Business Naples Florida",
         "title": "Content Development Image for Local Small Business Naples Florida",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/service-7.png",
+        "src": "/seo-company-wesley-chapel/service-7.png",
         "alt": "Off-Page SEO Image for Local Small Business Naples Florida",
         "title": "Off-Page SEO Image for Local Small Business Naples Florida",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/service-8.png",
+        "src": "/seo-company-wesley-chapel/service-8.png",
         "alt": "Ask Engine Optimization Image for Local Small Business Naples Florida",
         "title": "Ask Engine Optimization Image for Local Small Business Naples Florida",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/local-seo-services-for-small-business-naples-florida/service-9.png",
+        "src": "/seo-company-wesley-chapel/service-9.png",
         "alt": "Generative Engine Optimization Image for Local Small Business Naples Florida",
         "title": "Generative Engine Optimization Image for Local Small Business Naples Florida",
         "description": "Generative Engine Optimization (GEO) service card illustration",
@@ -525,7 +532,7 @@
   "orlando-law-firm-seo-agency": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/orlando-law-firm-seo-agency/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
         "alt": "Common SEO Mistakes Banner for Orlando Law Firm Seo Agency",
         "title": "Common SEO Mistakes Banner for Orlando Law Firm Seo Agency",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -534,28 +541,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/orlando-law-firm-seo-agency/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.png",
         "alt": "Technical Audit Step Image for Orlando Law Firm Seo Agency",
         "title": "Technical Audit Step Image for Orlando Law Firm Seo Agency",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/orlando-law-firm-seo-agency/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.png",
         "alt": "On-Page Optimization Step Image for Orlando Law Firm Seo Agency",
         "title": "On-Page Optimization Step Image for Orlando Law Firm Seo Agency",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/orlando-law-firm-seo-agency/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.png",
         "alt": "Off-Page Strategy Step Image for Orlando Law Firm Seo Agency",
         "title": "Off-Page Strategy Step Image for Orlando Law Firm Seo Agency",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/orlando-law-firm-seo-agency/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.png",
         "alt": "Analytics and Reporting Step Image for Orlando Law Firm Seo Agency",
         "title": "Analytics and Reporting Step Image for Orlando Law Firm Seo Agency",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -564,63 +571,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/orlando-law-firm-seo-agency/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.png",
         "alt": "SEO Website Audit Image for Orlando Law Firm Seo Agency",
         "title": "SEO Website Audit Image for Orlando Law Firm Seo Agency",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/orlando-law-firm-seo-agency/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.png",
         "alt": "Keyword Research Image for Orlando Law Firm Seo Agency",
         "title": "Keyword Research Image for Orlando Law Firm Seo Agency",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/orlando-law-firm-seo-agency/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.png",
         "alt": "On-Page Optimization Image for Orlando Law Firm Seo Agency",
         "title": "On-Page Optimization Image for Orlando Law Firm Seo Agency",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/orlando-law-firm-seo-agency/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.png",
         "alt": "Technical SEO Image for Orlando Law Firm Seo Agency",
         "title": "Technical SEO Image for Orlando Law Firm Seo Agency",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/orlando-law-firm-seo-agency/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.png",
         "alt": "Local SEO Map Pack Image for Orlando Law Firm Seo Agency",
         "title": "Local SEO Map Pack Image for Orlando Law Firm Seo Agency",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/orlando-law-firm-seo-agency/service-6.png",
+        "src": "/seo-company-wesley-chapel/service-6.png",
         "alt": "Content Development Image for Orlando Law Firm Seo Agency",
         "title": "Content Development Image for Orlando Law Firm Seo Agency",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/orlando-law-firm-seo-agency/service-7.png",
+        "src": "/seo-company-wesley-chapel/service-7.png",
         "alt": "Off-Page SEO Image for Orlando Law Firm Seo Agency",
         "title": "Off-Page SEO Image for Orlando Law Firm Seo Agency",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/orlando-law-firm-seo-agency/service-8.png",
+        "src": "/seo-company-wesley-chapel/service-8.png",
         "alt": "Ask Engine Optimization Image for Orlando Law Firm Seo Agency",
         "title": "Ask Engine Optimization Image for Orlando Law Firm Seo Agency",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/orlando-law-firm-seo-agency/service-9.png",
+        "src": "/seo-company-wesley-chapel/service-9.png",
         "alt": "Generative Engine Optimization Image for Orlando Law Firm Seo Agency",
         "title": "Generative Engine Optimization Image for Orlando Law Firm Seo Agency",
         "description": "Generative Engine Optimization (GEO) service card illustration",
@@ -631,7 +638,7 @@
   "plant-city-seo-company": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/plant-city-seo-company/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
         "alt": "Common SEO Mistakes Banner for Plant City",
         "title": "Common SEO Mistakes Banner for Plant City",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -640,28 +647,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/plant-city-seo-company/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.png",
         "alt": "Technical Audit Step Image for Plant City",
         "title": "Technical Audit Step Image for Plant City",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/plant-city-seo-company/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.png",
         "alt": "On-Page Optimization Step Image for Plant City",
         "title": "On-Page Optimization Step Image for Plant City",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/plant-city-seo-company/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.png",
         "alt": "Off-Page Strategy Step Image for Plant City",
         "title": "Off-Page Strategy Step Image for Plant City",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/plant-city-seo-company/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.png",
         "alt": "Analytics and Reporting Step Image for Plant City",
         "title": "Analytics and Reporting Step Image for Plant City",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -670,63 +677,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/plant-city-seo-company/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.png",
         "alt": "SEO Website Audit Image for Plant City",
         "title": "SEO Website Audit Image for Plant City",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/plant-city-seo-company/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.png",
         "alt": "Keyword Research Image for Plant City",
         "title": "Keyword Research Image for Plant City",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/plant-city-seo-company/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.png",
         "alt": "On-Page Optimization Image for Plant City",
         "title": "On-Page Optimization Image for Plant City",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/plant-city-seo-company/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.png",
         "alt": "Technical SEO Image for Plant City",
         "title": "Technical SEO Image for Plant City",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/plant-city-seo-company/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.png",
         "alt": "Local SEO Map Pack Image for Plant City",
         "title": "Local SEO Map Pack Image for Plant City",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/plant-city-seo-company/service-6.png",
+        "src": "/seo-company-wesley-chapel/service-6.png",
         "alt": "Content Development Image for Plant City",
         "title": "Content Development Image for Plant City",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/plant-city-seo-company/service-7.png",
+        "src": "/seo-company-wesley-chapel/service-7.png",
         "alt": "Off-Page SEO Image for Plant City",
         "title": "Off-Page SEO Image for Plant City",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/plant-city-seo-company/service-8.png",
+        "src": "/seo-company-wesley-chapel/service-8.png",
         "alt": "Ask Engine Optimization Image for Plant City",
         "title": "Ask Engine Optimization Image for Plant City",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/plant-city-seo-company/service-9.png",
+        "src": "/seo-company-wesley-chapel/service-9.png",
         "alt": "Generative Engine Optimization Image for Plant City",
         "title": "Generative Engine Optimization Image for Plant City",
         "description": "Generative Engine Optimization (GEO) service card illustration",
@@ -737,7 +744,7 @@
   "real-estate-seo-services-in-florida": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/real-estate-seo-services-in-florida/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
         "alt": "Common SEO Mistakes Banner for Real Estate Florida",
         "title": "Common SEO Mistakes Banner for Real Estate Florida",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -746,28 +753,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/real-estate-seo-services-in-florida/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.png",
         "alt": "Technical Audit Step Image for Real Estate Florida",
         "title": "Technical Audit Step Image for Real Estate Florida",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/real-estate-seo-services-in-florida/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.png",
         "alt": "On-Page Optimization Step Image for Real Estate Florida",
         "title": "On-Page Optimization Step Image for Real Estate Florida",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/real-estate-seo-services-in-florida/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.png",
         "alt": "Off-Page Strategy Step Image for Real Estate Florida",
         "title": "Off-Page Strategy Step Image for Real Estate Florida",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/real-estate-seo-services-in-florida/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.png",
         "alt": "Analytics and Reporting Step Image for Real Estate Florida",
         "title": "Analytics and Reporting Step Image for Real Estate Florida",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -776,63 +783,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/real-estate-seo-services-in-florida/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.png",
         "alt": "SEO Website Audit Image for Real Estate Florida",
         "title": "SEO Website Audit Image for Real Estate Florida",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/real-estate-seo-services-in-florida/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.png",
         "alt": "Keyword Research Image for Real Estate Florida",
         "title": "Keyword Research Image for Real Estate Florida",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/real-estate-seo-services-in-florida/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.png",
         "alt": "On-Page Optimization Image for Real Estate Florida",
         "title": "On-Page Optimization Image for Real Estate Florida",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/real-estate-seo-services-in-florida/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.png",
         "alt": "Technical SEO Image for Real Estate Florida",
         "title": "Technical SEO Image for Real Estate Florida",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/real-estate-seo-services-in-florida/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.png",
         "alt": "Local SEO Map Pack Image for Real Estate Florida",
         "title": "Local SEO Map Pack Image for Real Estate Florida",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/real-estate-seo-services-in-florida/service-6.png",
+        "src": "/seo-company-wesley-chapel/service-6.png",
         "alt": "Content Development Image for Real Estate Florida",
         "title": "Content Development Image for Real Estate Florida",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/real-estate-seo-services-in-florida/service-7.png",
+        "src": "/seo-company-wesley-chapel/service-7.png",
         "alt": "Off-Page SEO Image for Real Estate Florida",
         "title": "Off-Page SEO Image for Real Estate Florida",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/real-estate-seo-services-in-florida/service-8.png",
+        "src": "/seo-company-wesley-chapel/service-8.png",
         "alt": "Ask Engine Optimization Image for Real Estate Florida",
         "title": "Ask Engine Optimization Image for Real Estate Florida",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/real-estate-seo-services-in-florida/service-9.png",
+        "src": "/seo-company-wesley-chapel/service-9.png",
         "alt": "Generative Engine Optimization Image for Real Estate Florida",
         "title": "Generative Engine Optimization Image for Real Estate Florida",
         "description": "Generative Engine Optimization (GEO) service card illustration",
@@ -843,7 +850,7 @@
   "seo-company-dunedin": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-dunedin/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
         "alt": "Common SEO Mistakes Banner for Dunedin",
         "title": "Common SEO Mistakes Banner for Dunedin",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -852,28 +859,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-dunedin/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.png",
         "alt": "Technical Audit Step Image for Dunedin",
         "title": "Technical Audit Step Image for Dunedin",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-company-dunedin/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.png",
         "alt": "On-Page Optimization Step Image for Dunedin",
         "title": "On-Page Optimization Step Image for Dunedin",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-company-dunedin/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.png",
         "alt": "Off-Page Strategy Step Image for Dunedin",
         "title": "Off-Page Strategy Step Image for Dunedin",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-company-dunedin/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.png",
         "alt": "Analytics and Reporting Step Image for Dunedin",
         "title": "Analytics and Reporting Step Image for Dunedin",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -882,63 +889,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/seo-company-dunedin/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.png",
         "alt": "SEO Website Audit Image for Dunedin",
         "title": "SEO Website Audit Image for Dunedin",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/seo-company-dunedin/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.png",
         "alt": "Keyword Research Image for Dunedin",
         "title": "Keyword Research Image for Dunedin",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/seo-company-dunedin/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.png",
         "alt": "On-Page Optimization Image for Dunedin",
         "title": "On-Page Optimization Image for Dunedin",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/seo-company-dunedin/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.png",
         "alt": "Technical SEO Image for Dunedin",
         "title": "Technical SEO Image for Dunedin",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/seo-company-dunedin/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.png",
         "alt": "Local SEO Map Pack Image for Dunedin",
         "title": "Local SEO Map Pack Image for Dunedin",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/seo-company-dunedin/service-6.png",
+        "src": "/seo-company-wesley-chapel/service-6.png",
         "alt": "Content Development Image for Dunedin",
         "title": "Content Development Image for Dunedin",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/seo-company-dunedin/service-7.png",
+        "src": "/seo-company-wesley-chapel/service-7.png",
         "alt": "Off-Page SEO Image for Dunedin",
         "title": "Off-Page SEO Image for Dunedin",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-company-dunedin/service-8.png",
+        "src": "/seo-company-wesley-chapel/service-8.png",
         "alt": "Ask Engine Optimization Image for Dunedin",
         "title": "Ask Engine Optimization Image for Dunedin",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/seo-company-dunedin/service-9.png",
+        "src": "/seo-company-wesley-chapel/service-9.png",
         "alt": "Generative Engine Optimization Image for Dunedin",
         "title": "Generative Engine Optimization Image for Dunedin",
         "description": "Generative Engine Optimization (GEO) service card illustration",
@@ -949,7 +956,7 @@
   "seo-company-largo-fl": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-largo-fl/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
         "alt": "Common SEO Mistakes Banner for Largo Fl",
         "title": "Common SEO Mistakes Banner for Largo Fl",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -958,28 +965,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-largo-fl/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.png",
         "alt": "Technical Audit Step Image for Largo Fl",
         "title": "Technical Audit Step Image for Largo Fl",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-company-largo-fl/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.png",
         "alt": "On-Page Optimization Step Image for Largo Fl",
         "title": "On-Page Optimization Step Image for Largo Fl",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-company-largo-fl/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.png",
         "alt": "Off-Page Strategy Step Image for Largo Fl",
         "title": "Off-Page Strategy Step Image for Largo Fl",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-company-largo-fl/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.png",
         "alt": "Analytics and Reporting Step Image for Largo Fl",
         "title": "Analytics and Reporting Step Image for Largo Fl",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -988,63 +995,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/seo-company-largo-fl/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.png",
         "alt": "SEO Website Audit Image for Largo Fl",
         "title": "SEO Website Audit Image for Largo Fl",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/seo-company-largo-fl/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.png",
         "alt": "Keyword Research Image for Largo Fl",
         "title": "Keyword Research Image for Largo Fl",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/seo-company-largo-fl/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.png",
         "alt": "On-Page Optimization Image for Largo Fl",
         "title": "On-Page Optimization Image for Largo Fl",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/seo-company-largo-fl/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.png",
         "alt": "Technical SEO Image for Largo Fl",
         "title": "Technical SEO Image for Largo Fl",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/seo-company-largo-fl/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.png",
         "alt": "Local SEO Map Pack Image for Largo Fl",
         "title": "Local SEO Map Pack Image for Largo Fl",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/seo-company-largo-fl/service-6.png",
+        "src": "/seo-company-wesley-chapel/service-6.png",
         "alt": "Content Development Image for Largo Fl",
         "title": "Content Development Image for Largo Fl",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/seo-company-largo-fl/service-7.png",
+        "src": "/seo-company-wesley-chapel/service-7.png",
         "alt": "Off-Page SEO Image for Largo Fl",
         "title": "Off-Page SEO Image for Largo Fl",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-company-largo-fl/service-8.png",
+        "src": "/seo-company-wesley-chapel/service-8.png",
         "alt": "Ask Engine Optimization Image for Largo Fl",
         "title": "Ask Engine Optimization Image for Largo Fl",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/seo-company-largo-fl/service-9.png",
+        "src": "/seo-company-wesley-chapel/service-9.png",
         "alt": "Generative Engine Optimization Image for Largo Fl",
         "title": "Generative Engine Optimization Image for Largo Fl",
         "description": "Generative Engine Optimization (GEO) service card illustration",
@@ -1055,7 +1062,7 @@
   "seo-company-spring-hill": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-spring-hill/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
         "alt": "Common SEO Mistakes Banner for Spring Hill",
         "title": "Common SEO Mistakes Banner for Spring Hill",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -1064,28 +1071,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-spring-hill/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.png",
         "alt": "Technical Audit Step Image for Spring Hill",
         "title": "Technical Audit Step Image for Spring Hill",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-company-spring-hill/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.png",
         "alt": "On-Page Optimization Step Image for Spring Hill",
         "title": "On-Page Optimization Step Image for Spring Hill",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-company-spring-hill/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.png",
         "alt": "Off-Page Strategy Step Image for Spring Hill",
         "title": "Off-Page Strategy Step Image for Spring Hill",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-company-spring-hill/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.png",
         "alt": "Analytics and Reporting Step Image for Spring Hill",
         "title": "Analytics and Reporting Step Image for Spring Hill",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -1094,63 +1101,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/seo-company-spring-hill/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.png",
         "alt": "SEO Website Audit Image for Spring Hill",
         "title": "SEO Website Audit Image for Spring Hill",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/seo-company-spring-hill/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.png",
         "alt": "Keyword Research Image for Spring Hill",
         "title": "Keyword Research Image for Spring Hill",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/seo-company-spring-hill/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.png",
         "alt": "On-Page Optimization Image for Spring Hill",
         "title": "On-Page Optimization Image for Spring Hill",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/seo-company-spring-hill/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.png",
         "alt": "Technical SEO Image for Spring Hill",
         "title": "Technical SEO Image for Spring Hill",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/seo-company-spring-hill/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.png",
         "alt": "Local SEO Map Pack Image for Spring Hill",
         "title": "Local SEO Map Pack Image for Spring Hill",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/seo-company-spring-hill/service-6.png",
+        "src": "/seo-company-wesley-chapel/service-6.png",
         "alt": "Content Development Image for Spring Hill",
         "title": "Content Development Image for Spring Hill",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/seo-company-spring-hill/service-7.png",
+        "src": "/seo-company-wesley-chapel/service-7.png",
         "alt": "Off-Page SEO Image for Spring Hill",
         "title": "Off-Page SEO Image for Spring Hill",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-company-spring-hill/service-8.png",
+        "src": "/seo-company-wesley-chapel/service-8.png",
         "alt": "Ask Engine Optimization Image for Spring Hill",
         "title": "Ask Engine Optimization Image for Spring Hill",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/seo-company-spring-hill/service-9.png",
+        "src": "/seo-company-wesley-chapel/service-9.png",
         "alt": "Generative Engine Optimization Image for Spring Hill",
         "title": "Generative Engine Optimization Image for Spring Hill",
         "description": "Generative Engine Optimization (GEO) service card illustration",
@@ -1267,7 +1274,7 @@
   "seo-services-for-dentists-in-tampa": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-services-for-dentists-in-tampa/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
         "alt": "Common SEO Mistakes Banner for Dentists In Tampa",
         "title": "Common SEO Mistakes Banner for Dentists In Tampa",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -1276,28 +1283,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-services-for-dentists-in-tampa/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.png",
         "alt": "Technical Audit Step Image for Dentists In Tampa",
         "title": "Technical Audit Step Image for Dentists In Tampa",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-services-for-dentists-in-tampa/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.png",
         "alt": "On-Page Optimization Step Image for Dentists In Tampa",
         "title": "On-Page Optimization Step Image for Dentists In Tampa",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-services-for-dentists-in-tampa/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.png",
         "alt": "Off-Page Strategy Step Image for Dentists In Tampa",
         "title": "Off-Page Strategy Step Image for Dentists In Tampa",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-services-for-dentists-in-tampa/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.png",
         "alt": "Analytics and Reporting Step Image for Dentists In Tampa",
         "title": "Analytics and Reporting Step Image for Dentists In Tampa",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -1306,63 +1313,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/seo-services-for-dentists-in-tampa/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.png",
         "alt": "SEO Website Audit Image for Dentists In Tampa",
         "title": "SEO Website Audit Image for Dentists In Tampa",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/seo-services-for-dentists-in-tampa/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.png",
         "alt": "Keyword Research Image for Dentists In Tampa",
         "title": "Keyword Research Image for Dentists In Tampa",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/seo-services-for-dentists-in-tampa/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.png",
         "alt": "On-Page Optimization Image for Dentists In Tampa",
         "title": "On-Page Optimization Image for Dentists In Tampa",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/seo-services-for-dentists-in-tampa/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.png",
         "alt": "Technical SEO Image for Dentists In Tampa",
         "title": "Technical SEO Image for Dentists In Tampa",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/seo-services-for-dentists-in-tampa/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.png",
         "alt": "Local SEO Map Pack Image for Dentists In Tampa",
         "title": "Local SEO Map Pack Image for Dentists In Tampa",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/seo-services-for-dentists-in-tampa/service-6.png",
+        "src": "/seo-company-wesley-chapel/service-6.png",
         "alt": "Content Development Image for Dentists In Tampa",
         "title": "Content Development Image for Dentists In Tampa",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/seo-services-for-dentists-in-tampa/service-7.png",
+        "src": "/seo-company-wesley-chapel/service-7.png",
         "alt": "Off-Page SEO Image for Dentists In Tampa",
         "title": "Off-Page SEO Image for Dentists In Tampa",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-services-for-dentists-in-tampa/service-8.png",
+        "src": "/seo-company-wesley-chapel/service-8.png",
         "alt": "Ask Engine Optimization Image for Dentists In Tampa",
         "title": "Ask Engine Optimization Image for Dentists In Tampa",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/seo-services-for-dentists-in-tampa/service-9.png",
+        "src": "/seo-company-wesley-chapel/service-9.png",
         "alt": "Generative Engine Optimization Image for Dentists In Tampa",
         "title": "Generative Engine Optimization Image for Dentists In Tampa",
         "description": "Generative Engine Optimization (GEO) service card illustration",
@@ -1373,7 +1380,7 @@
   "seo-services-for-small-businesses-in-florida": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-services-for-small-businesses-in-florida/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
         "alt": "Common SEO Mistakes Banner for Small Businesses In Florida",
         "title": "Common SEO Mistakes Banner for Small Businesses In Florida",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -1382,28 +1389,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.png",
         "alt": "Technical Audit Step Image for Small Businesses In Florida",
         "title": "Technical Audit Step Image for Small Businesses In Florida",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.png",
         "alt": "On-Page Optimization Step Image for Small Businesses In Florida",
         "title": "On-Page Optimization Step Image for Small Businesses In Florida",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.png",
         "alt": "Off-Page Strategy Step Image for Small Businesses In Florida",
         "title": "Off-Page Strategy Step Image for Small Businesses In Florida",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.png",
         "alt": "Analytics and Reporting Step Image for Small Businesses In Florida",
         "title": "Analytics and Reporting Step Image for Small Businesses In Florida",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -1412,63 +1419,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.png",
         "alt": "SEO Website Audit Image for Small Businesses In Florida",
         "title": "SEO Website Audit Image for Small Businesses In Florida",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.png",
         "alt": "Keyword Research Image for Small Businesses In Florida",
         "title": "Keyword Research Image for Small Businesses In Florida",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.png",
         "alt": "On-Page Optimization Image for Small Businesses In Florida",
         "title": "On-Page Optimization Image for Small Businesses In Florida",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.png",
         "alt": "Technical SEO Image for Small Businesses In Florida",
         "title": "Technical SEO Image for Small Businesses In Florida",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.png",
         "alt": "Local SEO Map Pack Image for Small Businesses In Florida",
         "title": "Local SEO Map Pack Image for Small Businesses In Florida",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/service-6.png",
+        "src": "/seo-company-wesley-chapel/service-6.png",
         "alt": "Content Development Image for Small Businesses In Florida",
         "title": "Content Development Image for Small Businesses In Florida",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/service-7.png",
+        "src": "/seo-company-wesley-chapel/service-7.png",
         "alt": "Off-Page SEO Image for Small Businesses In Florida",
         "title": "Off-Page SEO Image for Small Businesses In Florida",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/service-8.png",
+        "src": "/seo-company-wesley-chapel/service-8.png",
         "alt": "Ask Engine Optimization Image for Small Businesses In Florida",
         "title": "Ask Engine Optimization Image for Small Businesses In Florida",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/seo-services-for-small-businesses-in-florida/service-9.png",
+        "src": "/seo-company-wesley-chapel/service-9.png",
         "alt": "Generative Engine Optimization Image for Small Businesses In Florida",
         "title": "Generative Engine Optimization Image for Small Businesses In Florida",
         "description": "Generative Engine Optimization (GEO) service card illustration",

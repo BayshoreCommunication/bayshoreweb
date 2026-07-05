@@ -33,7 +33,7 @@ const seoSteps = [
   },
   {
     number: "05",
-    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
+    image: images.seoCustomerJourneySection.authorityStepImage.src,
     title: "Authority That Builds Month After Month",
     description:
       "If you keep working on your SEO your website becomes well known and you show up in search results for more keywords. This helps you get customers without having to spend a lot of money on advertising. Over time this helps your law firm get a stream of new clients in Tampa, Florida.",
