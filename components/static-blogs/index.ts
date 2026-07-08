@@ -22,6 +22,9 @@ import FormOptimizationBlog, {
 import HowExpertiseBasedContentBuildsTrustBlog, {
   howExpertiseBasedContentBuildsTrustBlog,
 } from "./blogs/how-expertise-based-content-builds-trust-faster-than-ads";
+import HowMuchDoesItCostToDevelopAWebsiteBlog, {
+  howMuchDoesItCostToDevelopAWebsiteBlog,
+} from "./blogs/How Much Does It Cost to Develop a Website";
 
 export const staticBlogs = [
   howExpertiseBasedContentBuildsTrustBlog,
@@ -32,6 +35,7 @@ export const staticBlogs = [
   evergreenContentStrategyBlog,
   conversionTrackingBasicsBlog,
   howMinorCtaChangesBlog,
+  howMuchDoesItCostToDevelopAWebsiteBlog,
 ].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
 export const getStaticBlogBySlug = (slug: string) =>
@@ -48,5 +52,8 @@ export const staticBlogComponents = {
   [smallFieldTweaksBlog.slug]: FormOptimizationBlog,
   [howExpertiseBasedContentBuildsTrustBlog.slug]:
     HowExpertiseBasedContentBuildsTrustBlog,
+  [howMuchDoesItCostToDevelopAWebsiteBlog.slug]:
+    HowMuchDoesItCostToDevelopAWebsiteBlog,
 };
+
 
