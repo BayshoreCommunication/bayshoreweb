@@ -18,7 +18,7 @@ import WhyLosingCustomers from "@/components/SEO-Service/seo-services-for-dentis
 import React from "react";
 
 export const metadata = {
-  title: "SEO Services for Dentists in Tampa| Fill Your Schedule",
+  title: "SEO Services for Dentists in Tampa | Fill Your Schedule",
   description:
     "Connect with patients searching for dental care through targeted SEO services in Tampa. Increase appointment requests and strengthen your local presence.",
 

@@ -22,7 +22,7 @@ import React from "react";
 export const metadata = {
   title: "Brandon SEO Company For Local Businesses",
   description:
-    "Bayshore is a Brandon SEO company that helps businesses rank higher on Google Search, Maps, and AI search to generate more traffic, leads, and customers.",
+    "Bayshore is a Brandon SEO company that helps businesses rank higher on Google Search,Maps and AI search to generate more traffic,leads and customers.",
 
   robots: {
     index: false,

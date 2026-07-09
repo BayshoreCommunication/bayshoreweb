@@ -20,7 +20,7 @@ import React from "react";
 
 export const metadata = {
   title: "SEO Company Spring Hill | Grow Your Business with SEO",
-  description: "Increase your online visibility with a professional SEO company in Spring Hill. Drive qualified traffic, generate leads, and grow your business.",
+  description: "Increase your online visibility with a professional SEO company in Spring Hill. Drive qualified traffic,generate leads and grow your business.",
 
   robots: {
     index: false,

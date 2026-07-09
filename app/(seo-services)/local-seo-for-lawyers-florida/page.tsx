@@ -21,7 +21,7 @@ import React from "react";
 export const metadata = {
   title: "Local SEO Services for Lawyers in Florida",
   description:
-    "Attract more qualified clients with Bayshore's local SEO for lawyers in Florida. Rank higher in Google Search, Maps, and AI search to grow your law firm.",
+    "Attract more qualified clients with Bayshore's local SEO for lawyers in Florida. Rank higher in Google Search,Maps and AI search to grow your law firm.",
 
    robots: {
     index: false,

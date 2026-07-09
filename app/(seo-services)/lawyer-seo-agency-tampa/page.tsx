@@ -19,7 +19,7 @@ import React from "react";
 
 export const metadata = {
   title: "Lawyer SEO Agency Tampa | Drive More Cases & Qualified Leads",
-  description: "Grow your law firm with a trusted lawyer SEO agency in Tampa.Improve rankings, attract qualified leads, and generate more client consultations.",
+  description: "Grow your law firm with a trusted lawyer SEO agency in Tampa. Improve rankings,attract qualified leads and generate more client consultations.",
 
   robots: {
     index: true,

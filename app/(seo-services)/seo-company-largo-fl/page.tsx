@@ -20,9 +20,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/seo-company-largo-fl/Wh
 import React from "react";
 
 export const metadata = {
-  title: "SEO Company Largo FL| Local SEO That Gets Results",
+  title: "SEO Company Largo FL | Local SEO That Gets Results",
   description:
-    "Build a stronger online presence with professional SEO services in Largo, FL. Reach your ideal audience and generate consistent business opportunities.",
+    "Build a stronger online presence with professional SEO services in Largo,FL. Reach your ideal audience and generate consistent business opportunities.",
 
   robots: {
     index: false,

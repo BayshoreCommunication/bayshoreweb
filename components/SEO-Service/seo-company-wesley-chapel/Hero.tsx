@@ -90,7 +90,7 @@ export default function Hero() {
               opening every week and local competition growing every month. Without
               local search presence, customers found competitors; they never
               reached you. Bayshore Communication is an SEO company Wesley Chapel
-              that makes your website a lead source, and we place your business
+              that makes your website a lead source and we place your business
               at the top of Google.
             </p>
 

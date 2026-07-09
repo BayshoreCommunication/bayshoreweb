@@ -20,7 +20,7 @@ import React from "react";
 export const metadata = {
   title: "SEO Services for Small Businesses in Florida",
   description:
-    "Bayshore helps Florida small businesses increase traffic, calls, and sales with SEO services that improve visibility on Google Search, Maps, and AI search.",
+    "Bayshore helps Florida small businesses increase traffic,calls and sales with SEO services that improve visibility on Google Search,Maps and AI search.",
 
      robots: {
     index: false,

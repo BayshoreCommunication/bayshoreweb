@@ -19,9 +19,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/law-firm-seo-fort-myers
 import React from "react";
 
 export const metadata = {
-  title: "Law Firm SEO Fort Myers| SEO That Wins More Clients",
+  title: "Law Firm SEO Fort Myers | SEO That Wins More Clients",
   description:
-    "Help your firm rank higher in Fort Myers with legal SEO strategies designed to increase visibility, build credibility, and attract more potential clients.",
+    "Help your firm rank higher in Fort Myers with legal SEO strategies designed to increase visibility, build credibility and attract more potential clients.",
 
   robots: {
     index: true,

@@ -19,9 +19,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/local-seo-services-for-
 import React from "react";
 
 export const metadata = {
-  title: "Local SEO Services for Small Businesses in Naples, Florida",
+  title: "Local SEO Services for Small Businesses in Naples,Florida",
   description:
-    "Grow your Naples business with local SEO services from Bayshore. Improve your Google Maps rankings, attract nearby customers, and generate more qualified leads.",
+    "Grow your Naples business with local SEO services from Bayshore. Improve your Google Maps rankings,attract nearby customers and generate more qualified leads.",
 
     robots: {
     index: false,

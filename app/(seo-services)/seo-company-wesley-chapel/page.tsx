@@ -18,9 +18,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/seo-company-wesley-chap
 import React from "react";
 
 export const metadata = {
-  title: "SEO Company Wesley Chapel| Find Results-Guided SEO Services",
+  title: "SEO Company Wesley Chapel | Find Results-Guided SEO Services",
   description:
-    "Partner with a trusted SEO company in Wesley Chapel to boost rankings, increase organic traffic, & generate more qualified leads for your business.",
+    "Partner with a trusted SEO company in Wesley Chapel to boost rankings,increase organic traffic & generate more qualified leads for your business.",
 
   robots: {
     index: false,
