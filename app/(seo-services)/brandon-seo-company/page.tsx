@@ -20,9 +20,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/brandon-seo-company/Why
 import React from "react";
 
 export const metadata = {
-  title: "Get Growing Your Business Leads With Brandon SEO Company",
+  title: "Brandon SEO Company For Local Businesses",
   description:
-    "Worried about capturing target customers? Bayshore's Brandon SEO company helps you reach your target clients and ranks you on Google, ChatGPT and Gemini.",
+    "Bayshore is a Brandon SEO company that helps businesses rank higher on Google Search, Maps, and AI search to generate more traffic, leads, and customers.",
 
   robots: {
     index: false,

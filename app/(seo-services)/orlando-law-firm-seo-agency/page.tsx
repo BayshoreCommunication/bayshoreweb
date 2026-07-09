@@ -19,9 +19,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/orlando-law-firm-seo-ag
 import React from "react";
 
 export const metadata = {
-  title: "Rank #1 in Maps & AI With Orlando Law Firm SEO Agency",
+  title: "Orlando Law Firm SEO Agency | Get More Case Inquiries",
   description:
-    "Get more clients and cases with Bayshore Communication. Our Orlando law firm SEO agency fills your Map Pack and AI Overviews with case inquiries.",
+    "Grow your Orlando law firm with SEO that improves your visibility in AI and Google Search and Maps. Get more qualified leads and case inquiries with Bayshore.",
 
   robots: {
     index: false,

@@ -19,9 +19,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/local-seo-for-lawyers-f
 import React from "react";
 
 export const metadata = {
-  title: "Win More Cases With Local SEO Service for Florida Lawyers",
+  title: "Local SEO Services for Lawyers in Florida",
   description:
-    "Want to attract more clients? Contact Bayshore to get local SEO services for lawyers in Florida to put your firm in Map Pack and AI Overviews.",
+    "Attract more qualified clients with Bayshore's local SEO for lawyers in Florida. Rank higher in Google Search, Maps, and AI search to grow your law firm.",
 
    robots: {
     index: false,

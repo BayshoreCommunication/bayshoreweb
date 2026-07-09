@@ -20,9 +20,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/plant-city-seo-company/
 import React from "react";
 
 export const metadata = {
-  title: "Get More Traffic With Plant City SEO Company",
+  title: "Plant City SEO Company | More Traffic, More Local Leads",
   description:
-    "Want more sales for your business? Bayshore Communication is a Plant City SEO company that puts your business on page one of Google and AI search.",
+    "Bayshore helps Plant City businesses improve their Google rankings, attract local customers, and grow with SEO built for search engines and AI platforms.",
 
   robots: {
     index: false,

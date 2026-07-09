@@ -18,9 +18,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/real-estate-seo-service
 import React from "react";
 
 export const metadata = {
-  title: "Close More Deals With Florida Real Estate SEO Services",
+  title: "Real Estate SEO Services in Florida | Generate More Leads",
   description:
-    "Want to rank higher and get more leads? Reach out Bayshore today for real estate SEO services in Florida to put your listings on Google and AI search.",
+    "Bayshore provides real estate SEO services in Florida to help agents and brokerages rank higher on Google and attract more qualified buyers and sellers.",
 
   robots: {
     index: false,

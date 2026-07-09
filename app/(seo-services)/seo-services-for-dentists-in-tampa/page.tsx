@@ -18,9 +18,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/seo-services-for-dentis
 import React from "react";
 
 export const metadata = {
-  title: "SEO Services for Dentists in Tampa| See Our SEO Solutions",
+  title: "SEO Services for Dentists in Tampa| Fill Your Schedule",
   description:
-    "Learn how Tampa dental practices use SEO to rank higher, increase website traffic, and generate qualified patient leads.",
+    "Connect with patients searching for dental care through targeted SEO services in Tampa. Increase appointment requests and strengthen your local presence.",
 
   robots: {
     index: false,

@@ -19,9 +19,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/seo-company-dunedin/Why
 import React from "react";
 
 export const metadata = {
-  title: "SEO Company Dunedin | Reviews, Pricing & Results",
+  title: "SEO Company Dunedin | Expert Local SEO Services",
   description:
-    "Explore how an SEO company in Dunedin, Florida, can improve rankings, traffic, leads & long-term growth in your business.",
+    "Expand your online reach with strategic SEO services in Dunedin. Capture more local searches and convert visitors into loyal customers.",
 
   robots: {
     index: false,

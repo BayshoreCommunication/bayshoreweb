@@ -18,9 +18,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/seo-services-for-small-
 import React from "react";
 
 export const metadata = {
-  title: "Get More Buyers For Florida Small Business With SEO Services",
+  title: "SEO Services for Small Businesses in Florida",
   description:
-    "Get more calls for your florida small business with Bayshore's SEO services and rank your business on Google, ChatGPT, and Gemini.",
+    "Bayshore helps Florida small businesses increase traffic, calls, and sales with SEO services that improve visibility on Google Search, Maps, and AI search.",
 
      robots: {
     index: false,

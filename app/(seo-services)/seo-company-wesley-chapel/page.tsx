@@ -18,9 +18,9 @@ import WhyLosingCustomers from "@/components/SEO-Service/seo-company-wesley-chap
 import React from "react";
 
 export const metadata = {
-  title: "SEO Company Wesley Chapel | Find The Best SEO Agency for You",
+  title: "SEO Company Wesley Chapel| Find Results-Guided SEO Services",
   description:
-    "Looking for an SEO Company in Wesley Chapel? Review our service offerings and get a partner that matches your requirements.",
+    "Partner with a trusted SEO company in Wesley Chapel to boost rankings, increase organic traffic, & generate more qualified leads for your business.",
 
   robots: {
     index: false,
