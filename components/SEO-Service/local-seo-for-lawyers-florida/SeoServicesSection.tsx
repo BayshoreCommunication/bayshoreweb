@@ -6,79 +6,79 @@ import { CalendarDays } from "lucide-react";
 const services = [
   {
     title: "Local SEO Audit",
-    image: images.seoServicesSection.seoWebsiteAuditImage.src,
+    image: images.seoServicesSection.localSeoAuditImage.src,
     description:
       "Our local SEO audit evaluates your law firm's online visibility, GBP accuracy, NAP consistency and competitor rankings before launching local optimization campaigns effectively.",
   },
   {
     title: "Legal Keyword Research",
-    image: images.seoServicesSection.keywordResearchImage.src,
+    image: images.seoServicesSection.legalKeywordResearchImage.src,
     description:
       "We conduct legal keyword research to identify geo-specific terms that potential clients use in local searches. Our approach enhances law firms' visibility in Google Maps and AI search results.",
   },
   {
     title: "Local On Page SEO Optimization",
-    image: images.seoServicesSection.onPageOptimizationImage.src,
+    image: images.seoServicesSection.localOnPageSeoImage.src,
     description:
       "We optimize keywords, meta tags and schema markup across your law firm's website. Our on page SEO strategies ensure every site page is user-friendly and visible in local search engines.",
   },
   {
     title: "Legal Content Marketing",
-    image: images.seoServicesSection.technicalSeoImage.src,
+    image: images.seoServicesSection.legalContentMarketingImage.src,
     description:
       "We develop customized content and optimize local SEO through practice-area pages, city landing pages, blogs and AI-driven insights for optimal search rankings.",
   },
   {
     title: "Local Off-Page SEO & Link Building",
-    image: images.seoServicesSection.localSeoMapPackImage.src,
+    image: images.seoServicesSection.localOffPageSeoImage.src,
     description:
       "Our effective off-page strategies strengthen law firms' authority through high quality backlinks from legal directories, local news and relevant Florida sites.",
   },
   {
     title: "Local SEO & GBP Management",
-    image: images.seoServicesSection.contentDevelopmentImage.src,
+    image: images.seoServicesSection.localSeoGbpManagementImage.src,
     description:
       "We enhance AI visibility for Florida law firms through optimizing Google Business Profiles and managing local citations. We implement effective review strategies to increase client searches in google.",
   },
   {
     title: "Technical SEO",
-    image: images.seoServicesSection.offPageSeoImage.src,
+    image: images.seoServicesSection.technicalSeoImage.src,
     description:
       "We combine technical SEO to improve global site performance with local SEO. This approach increases geographic visibility through map packs and consistent NAP for targeted traffic and client engagement.",
   },
   {
     title: "Legal Directory & Citation Management",
-    image: images.seoServicesSection.askEngineOptimizationImage.src,
+    image: images.seoServicesSection.legalDirectoryCitationImage.src,
     description:
       "We consistently list across Avvo, FindLaw, Justia, Martindale-Hubbell and all major Florida-specific legal directories to enhance local authority signals in Florida markets.",
   },
   {
     title: "Ask Engine Optimization (AEO)",
-    image: images.seoServicesSection.generativeEngineOptimizationImage.src,
+    image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
       "We combine AEO with local SEO to enhance visibility across platforms like ChatGPT, AI overview, Grok, Gemini. We improve client engagement through optimized content for voice search, \"near me\" queries and geographic relevance.",
   },
   {
     title: "Generative Engine Optimization (GEO)",
-    image: images.seoServicesSection.localSeoMapPackImage.src,
+    image: images.seoServicesSection.generativeEngineOptimizationImage.src,
     description:
       "We optimize law firm content to boost AI citation credibility, improve search rankings and attract qualified clients. We increase consultations through our optimized local and GEO strategies.",
   },
   {
     title: "Optimization of Conversion Rate",
-    image: images.seoServicesSection.seoWebsiteAuditImage.src,
+    image: images.seoServicesSection.conversionRateOptimizationImage.src,
     description:
       "Our SEO strategies for CRO increase consultation requests through enhancing user engagement and identifying friction points. We apply A/B testing to improve conversion rates and local SEO.",
   },
   {
     title: "Transparent Reporting",
-    image: images.seoServicesSection.keywordResearchImage.src,
+    image: images.seoServicesSection.transparentReportingImage.src,
     description:
       "Our team provides detailed monthly reports on rankings, traffic, leads and competitor analysis. We ensure transparency and measurable results for law firm long term growth.",
   },
   {
     title: "Ongoing Strategy and Updation",
-    image: images.seoServicesSection.onPageOptimizationImage.src,
+    image: images.seoServicesSection.ongoingStrategyImage.src,
     description:
       "Our ongoing SEO ensures adaptability to algorithm changes and competitor actions. We maintain visibility and improve rankings in a local competitive legal market.",
   },

@@ -5,42 +5,42 @@ import Image from "next/image";
 const seoSteps = [
   {
     number: "01",
-    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
+    image: images.seoCustomerJourneySection.googleMapPackDominanceImage.src,
     title: "Google Map Pack Dominance",
     description:
       "Significantly increases clicks and calls from potential clients when firms appear in Google Maps' top 3 positions.",
   },
   {
     number: "02",
-    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
+    image: images.seoCustomerJourneySection.highIntentNearMeSearchesImage.src,
     title: "High-Intent \"Near Me\" Searches",
     description:
       "As maximum clients in Florida prefer local attorneys, optimizing \"near me\" queries increases visibility in AI search.",
   },
   {
     number: "03",
-    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
+    image: images.seoCustomerJourneySection.optimizedGbpImage.src,
     title: "Optimized Google Business Profile (GBP)",
     description:
       "Optimized and verified GBP builds trust, google visibility and continuous incoming leads for law firms in Florida.",
   },
   {
     number: "04",
-    image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
+    image: images.seoCustomerJourneySection.consistentLocalCitationsImage.src,
     title: "Consistent Local Citations & Directories",
     description:
       "NAP or consistent name, address and phone number across platforms like Yelp, BBB establish credibility of law firms in google and AI search engines.",
   },
   {
     number: "05",
-    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
+    image: images.seoCustomerJourneySection.localizedContentKeywordsImage.src,
     title: "Localized Content & Keywords",
     description:
       "Search relevance for Florida's local demographics enhances through publishing city specific content.",
   },
   {
     number: "06",
-    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
+    image: images.seoCustomerJourneySection.reputationManagementImage.src,
     title: "Reputation Management",
     description:
       "Collecting positive reviews and having high ratings in google impact potential clients to choose specific law firms.",

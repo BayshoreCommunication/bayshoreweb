@@ -320,113 +320,162 @@
   "local-seo-for-lawyers-florida": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/local-seo-for-lawyers-florida/ask-engine-optimization-aeo-law-firms.webp",
-        "alt": "Common SEO Mistakes Banner for Local Seo For Lawyers Florida",
-        "title": "Common SEO Mistakes Banner for Local Seo For Lawyers Florida",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
+        "src": "/local-seo-for-lawyers-florida/common-local-seo-mistakes-for-florida-law-firms.webp",
+        "alt": "Infographic showing common local SEO mistakes including poor citations, weak content, inconsistent NAP, and review management.",
+        "title": "Common Local SEO Mistakes Florida Law Firms Make",
+        "description": "Educational infographic highlighting the most common Local SEO mistakes made by Florida law firms, including inconsistent business information, poor Google Business Profile optimization, missing citations, weak local content, and neglected online reviews.",
+        "caption": "Avoid common Local SEO mistakes to improve rankings, credibility, and client acquisition."
       }
     },
     "seoCustomerJourneySection": {
-      "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
-        "alt": "Technical Audit Step Image for Local Seo For Lawyers Florida",
-        "title": "Technical Audit Step Image for Local Seo For Lawyers Florida",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
+      "googleMapPackDominanceImage": {
+        "src": "/local-seo-for-lawyers-florida/google-map-pack-dominance-for-local-law-firm-seo.webp",
+        "alt": "Google Map Pack results displaying top-ranked law firms, local business listings, and map visibility for local SEO success.",
+        "title": "Google Map Pack Dominance for Local Law Firm SEO",
+        "description": "Illustration of Google Map Pack rankings featuring top local law firms, map listings, ratings, and business profiles. Demonstrates how Map Pack optimization increases local visibility, website traffic, phone calls, and qualified client inquiries.",
+        "caption": "Rank in Google's Map Pack to increase local visibility, calls, and qualified client leads."
       },
-      "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
-        "alt": "On-Page Optimization Step Image for Local Seo For Lawyers Florida",
-        "title": "On-Page Optimization Step Image for Local Seo For Lawyers Florida",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
+      "highIntentNearMeSearchesImage": {
+        "src": "/local-seo-for-lawyers-florida/high-intent-near-me-searches-for-law-firm-seo.webp",
+        "alt": "Mobile search results showing high-intent near me legal searches, Google Maps listings, and local SEO visibility.",
+        "title": "High-Intent Near Me Searches for Local Law Firm SEO",
+        "description": "Illustration of mobile search results highlighting \"near me\" legal queries, Google Maps visibility, search trends, and AI-powered local search optimization. Shows how location-based SEO attracts ready-to-convert clients.",
+        "caption": "Optimize for \"near me\" searches to capture local clients actively looking for legal services."
       },
-      "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
-        "alt": "Off-Page Strategy Step Image for Local Seo For Lawyers Florida",
-        "title": "Off-Page Strategy Step Image for Local Seo For Lawyers Florida",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
+      "optimizedGbpImage": {
+        "src": "/local-seo-for-lawyers-florida/optimized-google-business-profile-for-law-firms.webp",
+        "alt": "Optimized Google Business Profile displaying reviews, profile strength, calls, searches, and business information for law firms.",
+        "title": "Optimized Google Business Profile for Local SEO Success",
+        "description": "Professional Google Business Profile interface highlighting profile completeness, customer reviews, business information, search performance, and engagement metrics. Shows how a fully optimized GBP increases local visibility and client trust.",
+        "caption": "A complete Google Business Profile improves local rankings, customer trust, and lead generation."
       },
-      "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
-        "alt": "Analytics and Reporting Step Image for Local Seo For Lawyers Florida",
-        "title": "Analytics and Reporting Step Image for Local Seo For Lawyers Florida",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
+      "consistentLocalCitationsImage": {
+        "src": "/local-seo-for-lawyers-florida/consistent-local-citations-and-business-directories.webp",
+        "alt": "Business citation network showing Google, Yelp, Bing, BBB, Facebook, and directory consistency for local SEO.",
+        "title": "Consistent Local Citations and Business Directories",
+        "description": "Professional illustration of consistent business listings across Google, Bing, Yelp, BBB, Facebook, and other trusted directories. Highlights the importance of accurate NAP information for improving local rankings, trust, and online authority.",
+        "caption": "Accurate citations across trusted directories strengthen local SEO and business credibility."
+      },
+      "localizedContentKeywordsImage": {
+        "src": "/local-seo-for-lawyers-florida/localized-content-keyword-strategy-law-firms.webp",
+        "alt": "Localized content strategy map showing city-specific pages and keyword targeting to improve local SEO for law firms.",
+        "title": "Localized Content and Keyword Strategy for Law Firms",
+        "description": "Illustration of a localized content strategy featuring city-specific landing pages and location-based keywords across multiple service areas. Demonstrates how geo-targeted content improves local rankings, organic traffic, and client acquisition for law firms.",
+        "caption": "Location-focused content helps law firms rank in multiple cities and attract nearby clients."
+      },
+      "reputationManagementImage": {
+        "src": "/local-seo-for-lawyers-florida/online-reputation-management-for-law-firm-growth.webp",
+        "alt": "Online reputation dashboard displaying Google reviews, ratings, customer feedback, and review growth for law firms.",
+        "title": "Online Reputation Management for Law Firm Success",
+        "description": "Professional reputation management dashboard featuring customer reviews, star ratings, review growth, and client feedback analytics. Demonstrates how positive online reputation strengthens trust, improves local SEO, and increases client conversions.",
+        "caption": "Strong online reviews and reputation management help law firms earn trust and win more clients."
       }
     },
     "seoServicesSection": {
-      "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
-        "alt": "SEO Website Audit Image for Local Seo For Lawyers Florida",
-        "title": "SEO Website Audit Image for Local Seo For Lawyers Florida",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
+      "localSeoAuditImage": {
+        "src": "/local-seo-for-lawyers-florida/local-seo-audit-checklist-for-law-firm-growth.webp",
+        "alt": "Local SEO audit checklist highlighting online visibility, Google Business Profile accuracy, NAP consistency, and competitor analysis.",
+        "title": "Local SEO Audit Checklist for Law Firm Success",
+        "description": "Local SEO audit checklist illustrating essential ranking factors including online visibility, Google Business Profile optimization, citation accuracy, NAP consistency, and competitor benchmarking to improve local search performance.",
+        "caption": "A complete Local SEO audit uncovers issues and opportunities to improve local search rankings."
       },
-      "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
-        "alt": "Keyword Research Image for Local Seo For Lawyers Florida",
-        "title": "Keyword Research Image for Local Seo For Lawyers Florida",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
+      "legalKeywordResearchImage": {
+        "src": "/local-seo-for-lawyers-florida/legal-keyword-research-for-local-law-firm-seo.webp",
+        "alt": "Legal keyword research dashboard showing search volume, keyword difficulty, CPC, and local SEO opportunities for law firms.",
+        "title": "Legal Keyword Research for Local Law Firm SEO Success",
+        "description": "Keyword research dashboard displaying legal search volume, keyword difficulty, CPC, traffic potential, and local search intent. Demonstrates how strategic keyword research helps law firms target high-value searches and improve organic rankings.",
+        "caption": "Target high-intent legal keywords to improve search rankings and attract qualified local clients."
       },
-      "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
-        "alt": "On-Page Optimization Image for Local Seo For Lawyers Florida",
-        "title": "On-Page Optimization Image for Local Seo For Lawyers Florida",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
+      "localOnPageSeoImage": {
+        "src": "/local-seo-for-lawyers-florida/local-on-page-seo-optimization-law-firm-pages.webp",
+        "alt": "On-page SEO dashboard displaying optimized pages, meta tags, schema markup, and keyword performance for law firms.",
+        "title": "Local On-Page SEO Optimization for Law Firm Websites",
+        "description": "Comprehensive on-page SEO dashboard showcasing optimized pages, metadata improvements, structured data, keyword targeting, and performance metrics. Highlights best practices for improving local rankings and user engagement.",
+        "caption": "Optimize every page with better content, metadata, schema, and local keyword targeting."
+      },
+      "legalContentMarketingImage": {
+        "src": "/local-seo-for-lawyers-florida/legal-content-marketing-for-local-seo-growth.webp",
+        "alt": "Legal content marketing dashboard featuring blogs, practice area pages, city pages, and SEO performance metrics.",
+        "title": "Legal Content Marketing for Local SEO and Authority",
+        "description": "Content marketing dashboard highlighting practice area pages, city landing pages, legal blogs, AI-driven insights, and SEO performance. Demonstrates how authoritative content builds trust, increases visibility, and generates qualified legal leads.",
+        "caption": "Strategic legal content builds authority, earns trust, and drives sustainable organic traffic."
+      },
+      "localOffPageSeoImage": {
+        "src": "/local-seo-for-lawyers-florida/local-off-page-seo-link-building-law-firms.webp",
+        "alt": "Local off-page SEO illustration showing backlink sources, authority websites, and directory links for law firm SEO growth.",
+        "title": "Local Off-Page SEO and Link Building for Law Firms",
+        "description": "Illustration of an off-page SEO strategy featuring authoritative backlinks, legal directories, local citations, and trusted websites connected to a law firm. Demonstrates how quality links strengthen domain authority and improve local search visibility.",
+        "caption": "Build authority with quality backlinks, legal directories, and trusted local citations."
+      },
+      "localSeoGbpManagementImage": {
+        "src": "/local-seo-for-lawyers-florida/local-seo-google-business-profile-management.webp",
+        "alt": "Google Business Profile management dashboard showing reviews, searches, calls, directions, and local SEO performance.",
+        "title": "Local SEO and Google Business Profile Management",
+        "description": "Professional Google Business Profile dashboard displaying customer reviews, search visibility, calls, direction requests, and profile optimization. Shows how GBP management drives local traffic and qualified leads for law firms.",
+        "caption": "An optimized Google Business Profile increases visibility, calls, reviews, and local client inquiries."
       },
       "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
-        "alt": "Technical SEO Image for Local Seo For Lawyers Florida",
-        "title": "Technical SEO Image for Local Seo For Lawyers Florida",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
+        "src": "/local-seo-for-lawyers-florida/technical-seo-performance-dashboard-law-firms.webp",
+        "alt": "Technical SEO dashboard showing Core Web Vitals, page speed, crawl status, and site performance metrics for law firms.",
+        "title": "Technical SEO Dashboard for Law Firm Website Growth",
+        "description": "Professional visualization of a technical SEO dashboard highlighting Core Web Vitals, page speed, indexing status, mobile usability, and crawl health. Demonstrates how technical optimization improves rankings, website performance, and user experience for law firms.",
+        "caption": "Technical SEO improvements help law firms achieve faster websites, stronger rankings, and better user experience."
       },
-      "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
-        "alt": "Local SEO Map Pack Image for Local Seo For Lawyers Florida",
-        "title": "Local SEO Map Pack Image for Local Seo For Lawyers Florida",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
+      "legalDirectoryCitationImage": {
+        "src": "/local-seo-for-lawyers-florida/legal-directory-citation-management-for-law-firms.webp",
+        "alt": "Citation management dashboard showing legal directories, NAP consistency, active listings, and local SEO performance.",
+        "title": "Legal Directory and Citation Management for Local SEO",
+        "description": "Professional citation management dashboard highlighting legal directories, active citations, NAP consistency, business listings, and local SEO reporting. Illustrates how accurate citations strengthen trust and improve local search visibility.",
+        "caption": "Consistent business citations improve local rankings, trust, and online visibility."
       },
-      "contentDevelopmentImage": {
-        "src": "/seo-company-wesley-chapel/service-6.png",
-        "alt": "Content Development Image for Local Seo For Lawyers Florida",
-        "title": "Content Development Image for Local Seo For Lawyers Florida",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
-      },
-      "offPageSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-7.png",
-        "alt": "Off-Page SEO Image for Local Seo For Lawyers Florida",
-        "title": "Off-Page SEO Image for Local Seo For Lawyers Florida",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
+      "legalDirectoryCitationAlternativeImage": {
+        "src": "/local-seo-for-lawyers-florida/law-firm-local-directory-listing-management-seo.webp",
+        "alt": "Law firm citation dashboard displaying directory listings, business consistency, local citations, and profile management.",
+        "title": "Law Firm Local Directory Listing Management Dashboard",
+        "description": "Visualization of local directory management featuring legal listings, citation status, business profile consistency, and directory performance. Shows how maintaining accurate listings enhances credibility and supports long-term local SEO growth.",
+        "caption": "Manage legal directory listings to strengthen local authority and improve search visibility."
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-8.png",
-        "alt": "Ask Engine Optimization Image for Local Seo For Lawyers Florida",
-        "title": "Ask Engine Optimization Image for Local Seo For Lawyers Florida",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
+        "src": "/local-seo-for-lawyers-florida/ask-engine-optimization-aeo-for-law-firm-websites.webp",
+        "alt": "Ask Engine Optimization dashboard showing AI search visibility, voice search, featured answers, and content optimization metrics.",
+        "title": "Ask Engine Optimization for Law Firm Website Growth",
+        "description": "Professional AEO dashboard illustrating AI search visibility, voice search performance, featured answers, structured content, and optimization metrics. Demonstrates how Ask Engine Optimization helps law firms appear in AI-powered search results and answer engines.",
+        "caption": "Optimize your content for AI answer engines to improve visibility and attract more qualified clients."
       },
       "generativeEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-9.png",
-        "alt": "Generative Engine Optimization Image for Local Seo For Lawyers Florida",
-        "title": "Generative Engine Optimization Image for Local Seo For Lawyers Florida",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
+        "src": "/local-seo-for-lawyers-florida/generative-engine-optimization-geo-for-law-firms.webp",
+        "alt": "Generative Engine Optimization dashboard showing AI visibility, citations, search performance, and local SEO metrics for law firms.",
+        "title": "Generative Engine Optimization for Modern Law Firms",
+        "description": "Advanced GEO dashboard highlighting AI citation visibility, ChatGPT, Gemini, Google AI Overviews, search performance, and optimized legal content. Shows how Generative Engine Optimization helps law firms gain visibility across AI-powered search platforms.",
+        "caption": "Increase AI search visibility with GEO strategies that build authority, trust, and qualified leads."
+      },
+      "conversionRateOptimizationImage": {
+        "src": "/local-seo-for-lawyers-florida/conversion-rate-optimization-for-law-firm-websites.webp",
+        "alt": "Conversion rate optimization dashboard displaying user engagement, funnels, A/B testing, and website performance metrics.",
+        "title": "Conversion Rate Optimization for Law Firm Websites",
+        "description": "Interactive dashboard showcasing conversion funnels, A/B testing, engagement analytics, and user behavior insights. Demonstrates how optimizing website performance increases consultation requests, lead generation, and client conversions.",
+        "caption": "Improve user experience and convert more website visitors into qualified legal consultations."
+      },
+      "transparentReportingImage": {
+        "src": "/local-seo-for-lawyers-florida/technical-seo-performance-dashboard-law-firms.webp",
+        "alt": "Technical SEO dashboard showing Core Web Vitals, page speed, crawl status, and site performance metrics for law firms.",
+        "title": "Technical SEO Dashboard for Law Firm Website Growth",
+        "description": "Professional visualization of a technical SEO dashboard highlighting Core Web Vitals, page speed, indexing status, mobile usability, and crawl health. Demonstrates how technical optimization improves rankings, website performance, and user experience for law firms.",
+        "caption": "Technical SEO improvements help law firms achieve faster websites, stronger rankings, and better user experience."
+      },
+      "ongoingStrategyImage": {
+        "src": "/local-seo-for-lawyers-florida/ongoing-local-seo-strategy-and-optimization-plan.webp",
+        "alt": "Ongoing SEO strategy diagram highlighting competitor monitoring, performance reporting, optimization, and algorithm updates.",
+        "title": "Ongoing Local SEO Strategy and Continuous Optimization",
+        "description": "Strategic workflow illustrating continuous SEO improvements through competitor analysis, algorithm adaptation, performance reporting, and ongoing optimization. Highlights the importance of maintaining long-term local search visibility and business growth.",
+        "caption": "Consistent SEO improvements help businesses maintain rankings and adapt to search algorithm changes."
       }
     }
   },
   "local-seo-services-for-small-business-naples-florida": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
+        "src": "/local-seo-for-lawyers-florida/common-seo-mistakes-banner.webp",
         "alt": "Common SEO Mistakes Banner for Local Small Business Naples Florida",
         "title": "Common SEO Mistakes Banner for Local Small Business Naples Florida",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -435,28 +484,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
+        "src": "/local-seo-for-lawyers-florida/seo-step-1.webp",
         "alt": "Technical Audit Step Image for Local Small Business Naples Florida",
         "title": "Technical Audit Step Image for Local Small Business Naples Florida",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
+        "src": "/local-seo-for-lawyers-florida/seo-step-2.webp",
         "alt": "On-Page Optimization Step Image for Local Small Business Naples Florida",
         "title": "On-Page Optimization Step Image for Local Small Business Naples Florida",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
+        "src": "/local-seo-for-lawyers-florida/seo-step-3.webp",
         "alt": "Off-Page Strategy Step Image for Local Small Business Naples Florida",
         "title": "Off-Page Strategy Step Image for Local Small Business Naples Florida",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
+        "src": "/local-seo-for-lawyers-florida/seo-step-4.webp",
         "alt": "Analytics and Reporting Step Image for Local Small Business Naples Florida",
         "title": "Analytics and Reporting Step Image for Local Small Business Naples Florida",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -465,63 +514,63 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
+        "src": "/local-seo-for-lawyers-florida/service-1.webp",
         "alt": "SEO Website Audit Image for Local Small Business Naples Florida",
         "title": "SEO Website Audit Image for Local Small Business Naples Florida",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
+        "src": "/local-seo-for-lawyers-florida/service-2.webp",
         "alt": "Keyword Research Image for Local Small Business Naples Florida",
         "title": "Keyword Research Image for Local Small Business Naples Florida",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
+        "src": "/local-seo-for-lawyers-florida/service-3.webp",
         "alt": "On-Page Optimization Image for Local Small Business Naples Florida",
         "title": "On-Page Optimization Image for Local Small Business Naples Florida",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
+        "src": "/local-seo-for-lawyers-florida/service-4.webp",
         "alt": "Technical SEO Image for Local Small Business Naples Florida",
         "title": "Technical SEO Image for Local Small Business Naples Florida",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
+        "src": "/local-seo-for-lawyers-florida/service-5.webp",
         "alt": "Local SEO Map Pack Image for Local Small Business Naples Florida",
         "title": "Local SEO Map Pack Image for Local Small Business Naples Florida",
         "description": "Local SEO Map Pack service card illustration",
         "caption": "Local SEO & Map Pack"
       },
       "contentDevelopmentImage": {
-        "src": "/seo-company-wesley-chapel/service-6.png",
+        "src": "/local-seo-for-lawyers-florida/service-6.webp",
         "alt": "Content Development Image for Local Small Business Naples Florida",
         "title": "Content Development Image for Local Small Business Naples Florida",
         "description": "Content Development service card illustration",
         "caption": "Content Development"
       },
       "offPageSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-7.png",
+        "src": "/local-seo-for-lawyers-florida/service-7.webp",
         "alt": "Off-Page SEO Image for Local Small Business Naples Florida",
         "title": "Off-Page SEO Image for Local Small Business Naples Florida",
         "description": "Off-Page SEO service card illustration",
         "caption": "Off-Page SEO"
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-8.png",
+        "src": "/local-seo-for-lawyers-florida/service-8.webp",
         "alt": "Ask Engine Optimization Image for Local Small Business Naples Florida",
         "title": "Ask Engine Optimization Image for Local Small Business Naples Florida",
         "description": "Ask Engine Optimization (AEO) service card illustration",
         "caption": "Ask Engine Optimization (AEO)"
       },
       "generativeEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-9.png",
+        "src": "/local-seo-for-lawyers-florida/service-9.webp",
         "alt": "Generative Engine Optimization Image for Local Small Business Naples Florida",
         "title": "Generative Engine Optimization Image for Local Small Business Naples Florida",
         "description": "Generative Engine Optimization (GEO) service card illustration",
@@ -532,7 +581,7 @@
   "orlando-law-firm-seo-agency": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.webp",
         "alt": "Common SEO Mistakes Banner for Orlando Law Firm Seo Agency",
         "title": "Common SEO Mistakes Banner for Orlando Law Firm Seo Agency",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -541,7 +590,7 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.webp",
         "alt": "Technical Audit Step Image for Orlando Law Firm Seo Agency",
         "title": "Technical Audit Step Image for Orlando Law Firm Seo Agency",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
