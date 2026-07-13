@@ -1217,113 +1217,127 @@
   "seo-company-wesley-chapel": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
-        "alt": "Common SEO Mistakes Banner for Wesley Chapel",
-        "title": "Common SEO Mistakes Banner for Wesley Chapel",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
+        "src": "/seo-company-wesley-chapel/common-local-seo-mistakes-that-hurt-search-rankings.webp",
+        "alt": "Infographic showing common SEO mistakes including poor content, weak keywords, bad backlinks, and website speed.",
+        "title": "Common SEO Mistakes That Reduce Search Engine Rankings",
+        "description": "Educational infographic highlighting the most common SEO mistakes that prevent websites from ranking, including poor keyword research, low-quality content, weak backlinks, and slow page speed.",
+        "caption": "Avoid common SEO mistakes that reduce rankings, traffic, and business growth."
       }
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
-        "alt": "Technical Audit Step Image for Wesley Chapel",
-        "title": "Technical Audit Step Image for Wesley Chapel",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
+        "src": "/seo-company-wesley-chapel/first-position-local-search-ranking-wesley-chapel.webp",
+        "alt": "Google local search ranking showing a business in the first position with improved visibility, reviews, and customer trust.",
+        "title": "First Position in Google Local Search Results and Visibility",
+        "description": "Illustration of a business achieving the first position in Google local search results, highlighting improved online visibility, customer trust, reviews, and higher conversion opportunities through effective Local SEO strategies.",
+        "caption": "Rank higher in Google local search and attract more qualified customers with proven Local SEO strategies."
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
-        "alt": "On-Page Optimization Step Image for Wesley Chapel",
-        "title": "On-Page Optimization Step Image for Wesley Chapel",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
+        "src": "/seo-company-wesley-chapel/google-map-pack-ranking-generates-more-business-calls.webp",
+        "alt": "Google Business Profile ranking dashboard showing increased phone calls generated from higher Google Map Pack visibility.",
+        "title": "Google Map Pack Rankings That Generate More Customer Calls",
+        "description": "Visual representation of Google Business Profile performance demonstrating how improved Map Pack rankings increase phone calls, customer inquiries, and qualified local leads for service-based businesses.",
+        "caption": "Better Map Pack visibility means more phone calls, qualified leads, and local customers."
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
-        "alt": "Off-Page Strategy Step Image for Wesley Chapel",
-        "title": "Off-Page Strategy Step Image for Wesley Chapel",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
+        "src": "/seo-company-wesley-chapel/high-purchase-intent-local-seo-traffic-conversions.webp",
+        "alt": "Google search results highlighting businesses attracting high purchase intent traffic that converts into qualified leads.",
+        "title": "High Purchase Intent Traffic Through Local SEO Strategy",
+        "description": "Illustration showing how Local SEO attracts visitors with strong buying intent by targeting commercial keywords, optimizing search visibility, and converting searches into qualified business inquiries.",
+        "caption": "Reach customers actively searching for your services and ready to take action."
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
-        "alt": "Analytics and Reporting Step Image for Wesley Chapel",
-        "title": "Analytics and Reporting Step Image for Wesley Chapel",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
+        "src": "/seo-company-wesley-chapel/search-visibility-growth-drives-business-revenue-seo.webp",
+        "alt": "SEO performance dashboard showing increased conversions, revenue growth, and measurable business results from organic search.",
+        "title": "SEO Performance Growth That Converts Into More Revenue",
+        "description": "Analytics dashboard illustrating how improved search visibility leads to higher conversions, increased revenue, and measurable business growth through strategic SEO and digital marketing campaigns.",
+        "caption": "Measure SEO success with real growth in traffic, leads, conversions, and business revenue."
       }
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
-        "alt": "SEO Website Audit Image for Wesley Chapel",
-        "title": "SEO Website Audit Image for Wesley Chapel",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
+        "src": "/seo-company-wesley-chapel/comprehensive-seo-website-audit-and-performance-review.webp",
+        "alt": "SEO website audit dashboard showing technical SEO, content quality, page speed, crawl issues, and optimization scores.",
+        "title": "Comprehensive SEO Website Audit and Performance Review",
+        "description": "Comprehensive SEO audit dashboard evaluating technical SEO, content quality, site structure, mobile usability, page speed, and crawl issues to identify opportunities that improve search performance and user experience.",
+        "caption": "Identify technical and content issues with a complete SEO audit that improves website performance."
       },
       "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
-        "alt": "Keyword Research Image for Wesley Chapel",
-        "title": "Keyword Research Image for Wesley Chapel",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
+        "src": "/seo-company-wesley-chapel/keyword-research-and-search-intent-analysis-for-seo.webp",
+        "alt": "SEO keyword research dashboard showing search volume, keyword difficulty, trends, and search intent analysis.",
+        "title": "Keyword Research and Search Intent Analysis for Better SEO",
+        "description": "Visual showing comprehensive keyword research with search volume, keyword difficulty, search intent, and trend analysis to identify high-value opportunities that improve rankings and drive qualified organic traffic.",
+        "caption": "Target the right keywords with search intent analysis to attract qualified visitors and increase conversions."
       },
       "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
-        "alt": "On-Page Optimization Image for Wesley Chapel",
-        "title": "On-Page Optimization Image for Wesley Chapel",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
+        "src": "/seo-company-wesley-chapel/on-page-seo-optimization-for-higher-search-rankings.webp",
+        "alt": "On-page SEO dashboard highlighting content optimization, meta tags, internal linking, and image optimization.",
+        "title": "On-Page SEO Optimization for Higher Search Rankings",
+        "description": "Illustration showing essential on-page SEO elements including optimized content, meta titles, descriptions, internal links, and image optimization that improve search rankings, user experience, and organic visibility.",
+        "caption": "Optimize every page with better content, metadata, internal links, and images for stronger rankings."
       },
       "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
-        "alt": "Technical SEO Image for Wesley Chapel",
-        "title": "Technical SEO Image for Wesley Chapel",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
+        "src": "/seo-company-wesley-chapel/technical-seo-optimization-for-crawlability-and-indexing.webp",
+        "alt": "Technical SEO illustration showing crawlability, indexability, site speed, mobile optimization, and HTTPS security.",
+        "title": "Technical SEO Optimization for Better Crawlability and Indexing",
+        "description": "Illustration highlighting technical SEO best practices including crawlability, indexability, mobile responsiveness, HTTPS security, and page speed optimization to improve search engine accessibility and rankings.",
+        "caption": "Build a strong technical SEO foundation that helps search engines crawl, index, and rank your website effectively."
       },
       "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
-        "alt": "Local SEO Map Pack Image for Wesley Chapel",
-        "title": "Local SEO Map Pack Image for Wesley Chapel",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
+        "src": "/seo-company-wesley-chapel/local-seo-map-pack-optimization-for-business-growth.webp",
+        "alt": "Google Maps showing a business ranked in the top local results with increased visibility and customer engagement.",
+        "title": "Local SEO and Google Map Pack Optimization Strategy",
+        "description": "Illustration demonstrating Local SEO and Google Map Pack optimization that helps businesses rank higher in local searches, improve online visibility, generate more calls, and attract nearby customers.",
+        "caption": "Improve your Google Map rankings and attract more nearby customers searching for your services."
       },
       "contentDevelopmentImage": {
-        "src": "/seo-company-wesley-chapel/service-6.png",
-        "alt": "Content Development Image for Wesley Chapel",
-        "title": "Content Development Image for Wesley Chapel",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
+        "src": "/seo-company-wesley-chapel/seo-content-development-and-authority-building-strategy.webp",
+        "alt": "SEO content strategy featuring service pages, location pages, and FAQ articles that build search authority and rankings.",
+        "title": "SEO Content Development and Authority Building Strategy",
+        "description": "Illustration showing how strategic service pages, location pages, FAQs, and authoritative content improve search rankings, establish trust, and increase long-term organic visibility.",
+        "caption": "Build authority with strategic content that earns trust and improves organic search rankings."
       },
       "offPageSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-7.png",
-        "alt": "Off-Page SEO Image for Wesley Chapel",
-        "title": "Off-Page SEO Image for Wesley Chapel",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
+        "src": "/seo-company-wesley-chapel/off-page-seo-link-acquisition-and-authority-building.webp",
+        "alt": "Diagram illustrating off-page SEO through trusted backlinks, local citations, authority websites, and business mentions.",
+        "title": "Off-Page SEO Link Acquisition and Authority Building",
+        "description": "Illustration explaining off-page SEO using high-quality backlinks, local citations, business directories, news mentions, and authority websites to improve domain authority, search rankings, and online credibility.",
+        "caption": "Earn trusted backlinks and citations that strengthen your authority and improve search engine rankings."
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-8.png",
-        "alt": "Ask Engine Optimization Image for Wesley Chapel",
-        "title": "Ask Engine Optimization Image for Wesley Chapel",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
+        "src": "/seo-company-wesley-chapel/ask-engine-optimization-for-ai-search-visibility-aeo.webp",
+        "alt": "AI-generated search answer highlighting trusted content optimized for Answer Engine Optimization and search visibility.",
+        "title": "Ask Engine Optimization for AI Search Visibility Results",
+        "description": "Illustration showing Answer Engine Optimization (AEO), where trusted and structured content helps businesses appear in AI-generated search results, increasing visibility, credibility, and customer engagement.",
+        "caption": "Optimize your content for AI-powered search engines and trusted answer experiences."
       },
       "generativeEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-9.png",
-        "alt": "Generative Engine Optimization Image for Wesley Chapel",
-        "title": "Generative Engine Optimization Image for Wesley Chapel",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
+        "src": "/seo-company-wesley-chapel/generative-engine-optimization-for-ai-search-results.webp",
+        "alt": "AI assistant recommending a local business through Generative Engine Optimization with trusted and authoritative content.",
+        "title": "Generative Engine Optimization for AI Search Results",
+        "description": "Illustration demonstrating Generative Engine Optimization (GEO), helping businesses become trusted sources that AI assistants recommend in conversational and generative search experiences.",
+        "caption": "Increase your visibility by becoming a trusted source for AI-generated search recommendations."
+      },
+      "googleBusinessProfileManagementImage": {
+        "src": "/seo-company-wesley-chapel/google-business-profile-management-for-local-growth.webp",
+        "alt": "Google Business Profile dashboard showing reviews, posts, updates, and profile optimization for better local visibility.",
+        "title": "Google Business Profile Management for Local Business Growth",
+        "description": "Illustration of a fully optimized Google Business Profile featuring customer reviews, regular posts, photo updates, and profile management that improves local search visibility, trust, and customer engagement.",
+        "caption": "Keep your Google Business Profile active to increase local visibility, trust, and customer inquiries."
+      },
+      "performanceTrackingReportingImage": {
+        "src": "/seo-company-wesley-chapel/seo-performance-tracking-and-monthly-reporting-dashboard.webp",
+        "alt": "SEO reporting dashboard displaying keyword rankings, website traffic, conversions, and Google Business Profile performance.",
+        "title": "SEO Performance Tracking and Monthly Reporting Dashboard",
+        "description": "Analytics dashboard displaying website traffic, keyword rankings, Google Business Profile metrics, conversions, and monthly SEO performance reports to measure campaign success and guide future optimization strategies.",
+        "caption": "Track SEO performance with detailed reports covering rankings, traffic, leads, and business growth."
       }
     }
   },
   "seo-services-for-dentists-in-tampa": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.webp",
         "alt": "Common SEO Mistakes Banner for Dentists In Tampa",
         "title": "Common SEO Mistakes Banner for Dentists In Tampa",
         "description": "Common SEO Mistakes Section main banner illustration",

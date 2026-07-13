@@ -60,13 +60,13 @@ const services = [
   },
   {
     title: "Google Business Profile Management",
-    image: images.seoServicesSection.localSeoMapPackImage.src,
+    image: images.seoServicesSection.googleBusinessProfileManagementImage.src,
     description:
       "We actively manage your Google Business Profile with regular posts, photo updates, and review response strategies. Consistent management outperforms any one-time setup. A consistently maintained profile outperforms a one-time optimized profile in every local ranking metric over time.",
   },
   {
     title: "Performance Tracking and Monthly Reporting",
-    image: images.seoServicesSection.seoWebsiteAuditImage.src,
+    image: images.seoServicesSection.performanceTrackingReportingImage.src,
     description:
       "We translate ranking data, traffic, conversions, and Google Business Profile activity into plain-language insights every month. Every report includes a clear strategy recommendation so you always know what your campaign is producing.",
   },

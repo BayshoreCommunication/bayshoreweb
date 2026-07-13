@@ -23,12 +23,12 @@ export const metadata = {
     "Partner with a trusted SEO company in Wesley Chapel to boost rankings,increase organic traffic & generate more qualified leads for your business.",
 
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
 
