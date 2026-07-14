@@ -123,6 +123,137 @@ const faqs = [
   },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.bayshorecommunication.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.bayshorecommunication.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Small Field Tweaks That Reduce Drop-Off Instantly",
+          "item": "https://www.bayshorecommunication.com/blog/small-field-tweaks-that-reduce-drop-off-instantly"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bayshorecommunication.com/blog/small-field-tweaks-that-reduce-drop-off-instantly"
+      },
+      "headline": "Form Optimization: Small Field Tweaks That Reduce Drop-Off Instantly",
+      "name": "Form Optimization Tips That Cut Drop-Off Fast",
+      "description": "Learn which small form field tweaks instantly reduce drop-off and boost conversions for Florida businesses in 2026.",
+      "url": "https://www.bayshorecommunication.com/blog/small-field-tweaks-that-reduce-drop-off-instantly",
+      "image": "https://www.bayshorecommunication.com/assets/static-blogs/form-optimization-small-tweaks-more-conversions.webp",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.bayshorecommunication.com/blog"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Form Optimization",
+        "description": "An overview of website form optimization techniques that improve user experience, reduce form abandonment, and increase lead generation through better form design."
+      },
+      "keywords": [
+        "form optimization",
+        "reduce form abandonment",
+        "form conversion optimization",
+        "website form optimization",
+        "lead generation forms",
+        "contact form optimization",
+        "form UX",
+        "improve form conversions",
+        "inline form validation",
+        "form field optimization",
+        "conversion rate optimization"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Bayshore Communication"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
+        }
+      },
+      "datePublished": "2026-06-21",
+      "dateModified": "2026-06-21"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best color for a submit button to get higher conversions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "High contrast colors like orange or green typically outperform gray or white buttons. The color should stand out clearly from your page background"
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use CAPTCHA on my Florida business contact form?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Common CAPTCHAs hurt conversions noticeably. Instead, you can try Google reCAPTCHA v3. User flow remains uninterrupted due to its silent background presence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does adding a phone number field reduce form completions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Asking for a phone number upfront can reduce completions by up to 37%. Move it to a follow up step or make it optional at the start."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if my form is hurting my SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A high bounce rate on form pages combined with low “time on page” signals poor UX. Google factors these behavioral signals into your rankings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What tools help track form drop-off at the field level?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Microsoft Clarity, Hotjar, and FullStory all offer “field level drop off” heatmaps. They show just where users stop filling out your form."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a standalone landing page better for forms than an embedded page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standalone landing pages with no navigation typically convert 30% higher than forms embedded in pages with rival calls to action."
+          }
+        }
+      ]
+    }
+  ]
+};
+
 const InlineLink = ({
   href,
   children,
@@ -155,6 +286,12 @@ const ExternalLink = ({
 export const FormOptimizationBlog = () => {
   return (
     <article className="bg-[#f7f8fb] text-[#162033]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaData).replace(/</g, "\\u003c"),
+        }}
+      />
       <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
           Conversion Rate Optimization | UI/UX Design

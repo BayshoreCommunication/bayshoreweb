@@ -147,6 +147,121 @@ const faqs = [
   },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.bayshorecommunication.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.bayshorecommunication.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How Minor CTA Changes Can Double Click-Through Rates",
+          "item": "https://www.bayshorecommunication.com/blog/how-minor-cta-changes"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bayshorecommunication.com/blog/how-minor-cta-changes"
+      },
+      "headline": "Button Psychology: How Minor CTA Changes Can Double Click-Through Rates",
+      "name": "How to Optimize CTA Buttons To Double CTRs",
+      "description": "Boost conversion rates with our data-driven guide to CTA optimization. Learn the psychology, placement strategies, and mobile tips to turn visitors into leads.",
+      "url": "https://www.bayshorecommunication.com/blog/how-minor-cta-changes",
+      "image": "https://www.bayshorecommunication.com/assets/static-blogs/cta-optimization-dashboard-digital-marketing-analysis.webp",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.bayshorecommunication.com/blog"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "CTA Optimization",
+        "description": "An overview of call-to-action optimization techniques, button psychology, visual hierarchy, and conversion rate optimization strategies that improve click-through rates."
+      },
+      "keywords": [
+        "CTA optimization",
+        "button psychology",
+        "call to action optimization",
+        "improve click through rate",
+        "CTA button design",
+        "conversion rate optimization",
+        "button copy optimization",
+        "CTA placement",
+        "website conversions",
+        "landing page CTA",
+        "CTA best practices"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Bayshore Communication"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
+        }
+      },
+      "datePublished": "2026-05-11",
+      "dateModified": "2026-05-11"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Should I use multiple CTA buttons on one page?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use one primary CTA. Secondary buttons can support lower-priority actions, but they should look distinct from the main CTA."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best color for a CTA button?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no universal best color. The best color is the one that contrasts clearly with your page and stands out to the user."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I make my CTA accessible?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use high color contrast, make the target large enough for mobile taps, and ensure the button works with keyboard navigation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does button size affect conversion rates?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. A button should be large enough to notice and tap, but not so large that it disrupts the page layout."
+          }
+        }
+      ]
+    }
+  ]
+};
+
 const InlineLink = ({
   href,
   children,
@@ -162,6 +277,12 @@ const InlineLink = ({
 export const CtaOptimizationBlog = () => {
   return (
     <article className="bg-[#f7f8fb] text-[#162033]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaData).replace(/</g, "\\u003c"),
+        }}
+      />
       <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
           CTA Optimization | Conversion Strategy
@@ -210,10 +331,10 @@ export const CtaOptimizationBlog = () => {
                   key={stat.value}
                   className="rounded-[8px] bg-[#101d34] p-5 text-white"
                 >
-                  <p className="!text-3xl !font-bold !text-[#8ed8ff]">
+                  <p className="!text-4xl !font-bold !text-[#8ed8ff]">
                     {stat.value}
                   </p>
-                  <p className="mt-3 !text-sm !leading-6 !text-[#d9e7f7]">
+                  <p className="mt-3 !text-lg !leading-7 !text-[#d9e7f7]">
                     {stat.label}
                   </p>
                 </div>
@@ -341,7 +462,7 @@ export const CtaOptimizationBlog = () => {
             </p>
             <div className="mt-6 overflow-x-auto">
               <div className="min-w-[600px] overflow-hidden rounded-[8px] border border-[#dce6f2]">
-                <div className="grid grid-cols-3 bg-[#101d34] text-sm font-semibold text-white">
+                <div className="grid grid-cols-3 bg-[#101d34] text-base font-semibold text-white">
                   <div className="p-4">Factor</div>
                   <div className="p-4">Desktop Approach</div>
                   <div className="p-4">Mobile Approach</div>
@@ -349,7 +470,7 @@ export const CtaOptimizationBlog = () => {
                 {deviceRows.map(([factor, desktop, mobile]) => (
                   <div
                     key={factor}
-                    className="grid grid-cols-3 border-t border-[#dce6f2] text-sm"
+                    className="grid grid-cols-3 border-t border-[#dce6f2] text-base"
                   >
                     <div className="p-4 font-semibold">{factor}</div>
                     <div className="p-4">{desktop}</div>

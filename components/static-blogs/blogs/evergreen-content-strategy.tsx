@@ -173,32 +173,123 @@ const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.bayshorecommunication.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.bayshorecommunication.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Evergreen Content Strategy",
+          "item": "https://www.bayshorecommunication.com/blog/evergreen-content-strategy"
+        }
+      ]
+    },
+    {
       "@type": "BlogPosting",
-      headline: evergreenContentStrategyBlog.title,
-      description: evergreenContentStrategyBlog.metaDescription,
-      image: `https://www.bayshorecommunication.com${evergreenImage}`,
-      datePublished: evergreenContentStrategyBlog.createdAt,
-      dateModified: evergreenContentStrategyBlog.updatedAt,
-      mainEntityOfPage:
-        "https://www.bayshorecommunication.com/blog/evergreen-content-strategy",
-      publisher: {
-        "@type": "Organization",
-        name: "Bayshore Communication",
-        url: "https://www.bayshorecommunication.com",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bayshorecommunication.com/blog/evergreen-content-strategy"
       },
+      "headline": "Evergreen Content Strategy: Creating Blogs That Rank for Years, Not Weeks",
+      "name": "Evergreen Content Strategy, Do Blogs Really Rank Years?",
+      "description": "Analyze how long evergreen blogs stay visible in search results, and what factors influence their ranking lifespan.",
+      "url": "https://www.bayshorecommunication.com/blog/evergreen-content-strategy",
+      "image": "https://www.bayshorecommunication.com/assets/static-blogs/evergreen-content-strategy-blog-marketing.webp",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.bayshorecommunication.com/blog"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Evergreen Content",
+        "description": "A content strategy focused on creating timeless, high-value articles that continue to generate organic traffic and SEO value over time."
+      },
+      "keywords": [
+        "evergreen content",
+        "evergreen content strategy",
+        "seo evergreen content",
+        "timeless content seo",
+        "content marketing strategy",
+        "long term seo strategy",
+        "content marketing evergreen",
+        "seo content planning",
+        "organic traffic growth",
+        "blog content strategy",
+        "evergreen blog posts"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Bayshore Communication"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
+        }
+      },
+      "datePublished": "2026-05-23",
+      "dateModified": "2026-05-23"
     },
     {
       "@type": "FAQPage",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the best format for evergreen content?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "How-to guides, encyclopedic definitions, curated resource lists, comparison pieces, implementation guides, and pillar pages are usually the strongest formats because they answer recurring questions in a structure that is easy to read and crawl."
+          }
         },
-      })),
-    },
-  ],
+        {
+          "@type": "Question",
+          "name": "How often should I update evergreen posts?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Review high-traffic evergreen posts at least once a year. For fast-moving industries like technology, finance, healthcare, or digital marketing, a six-month refresh cycle is safer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does evergreen content help with backlinks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Useful evergreen resources naturally attract backlinks because writers, researchers, and customers can cite them as durable references instead of short-lived news posts."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a news site have an evergreen strategy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. News sites can create evergreen hub pages that explain the background, definitions, timelines, and recurring context behind stories that keep coming back into public attention."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if a topic is evergreen?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ask whether people will still care about the answer two years from now. If the question stays relevant and the core answer does not change completely, the topic is likely evergreen."
+          }
+        }
+      ]
+    }
+  ]
 };
 
 const InlineLink = ({

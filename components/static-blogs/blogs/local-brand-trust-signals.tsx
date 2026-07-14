@@ -153,6 +153,129 @@ const faqs = [
   },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.bayshorecommunication.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.bayshorecommunication.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Local Brand Trust Signals",
+          "item": "https://www.bayshorecommunication.com/blog/local-brand-trust-signals"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bayshorecommunication.com/blog/local-brand-trust-signals"
+      },
+      "headline": "Local Brand Trust Signals: What Google Looks for Beyond Reviews and Ratings",
+      "name": "Local Brand Trust Signals: What Google Checks Beyond Reviews",
+      "description": "Go beyond reviews. Discover the local brand trust signals Google uses to rank businesses, including NAP consistency, behavioral data, and schema markup.",
+      "url": "https://www.bayshorecommunication.com/blog/local-brand-trust-signals",
+      "image": "https://www.bayshorecommunication.com/assets/static-blogs/local-brand-trust-signals-google-ranking-factors.jpg",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.bayshorecommunication.com/blog"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Local SEO Trust Signals",
+        "description": "A breakdown of trust signals such as reviews, citations, backlinks, and engagement that influence local search rankings and brand authority."
+      },
+      "keywords": [
+        "local brand trust signals",
+        "local SEO trust signals",
+        "brand trust factors",
+        "local SEO ranking factors",
+        "online reputation signals",
+        "google reviews SEO",
+        "local citations SEO",
+        "local business credibility",
+        "trust signals marketing",
+        "local search ranking signals",
+        "seo trust building"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Bayshore Communication"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
+        }
+      },
+      "datePublished": "2026-05-25",
+      "dateModified": "2026-05-25"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Google rank local businesses only by reviews and proximity?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Google uses relevance, distance, and prominence. Prominence includes backlinks, brand mentions, Google Business Profile engagement, behavioral signals, and reviews."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I update my Google Business Profile?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Update it at least once a week with fresh photos, posts, Q&A management, service changes, and review responses. A stale profile sends weaker credibility signals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the fastest local trust signal to fix?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NAP consistency. Audit your business name, address, and phone number across Google, Yelp, Facebook, Apple Maps, and key directories, then correct every mismatch."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do unlinked brand mentions help local SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Brand mentions can help Google associate your business with a place, category, and topic, even when the mention does not include a hyperlink."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a lower-rated business outrank a higher-rated competitor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Absolutely. Review velocity, profile engagement, behavioral signals, local backlinks, and structured data alignment can outweigh a small star-rating advantage."
+          }
+        }
+      ]
+    }
+  ]
+};
+
 const InlineLink = ({
   href,
   children,
@@ -185,6 +308,12 @@ const ExternalLink = ({
 export const LocalBrandTrustSignalsBlog = () => {
   return (
     <article className="bg-[#f7f8fb] text-[#162033]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaData).replace(/</g, "\\u003c"),
+        }}
+      />
       <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
         <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
           Local SEO | Google Ranking Factors

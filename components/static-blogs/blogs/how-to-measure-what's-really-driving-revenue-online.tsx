@@ -116,6 +116,129 @@ const faqs = [
   },
 ];
 
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.bayshorecommunication.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.bayshorecommunication.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How to Measure What’s Really Driving Revenue Online",
+          "item": "https://www.bayshorecommunication.com/blog/how-to-measure-what's-really-driving-revenue-online"
+        }
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bayshorecommunication.com/blog/how-to-measure-what's-really-driving-revenue-online"
+      },
+      "headline": "Conversion Tracking Basics: How to Measure What's Really Driving Revenue Online",
+      "name": "Conversion Tracking Basics - What Drives Revenue Online",
+      "description": "Conversion Tracking Basics shows how to measure what's really driving revenue online using GA4, attribution models, and data-driven insights.",
+      "url": "https://www.bayshorecommunication.com/blog/how-to-measure-what's-really-driving-revenue-online",
+      "image": "https://www.bayshorecommunication.com/assets/static-blogs/conversion-tracking-digital-marketing-analytics.webp",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.bayshorecommunication.com/blog"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Revenue Attribution",
+        "description": "A framework for tracking, analyzing, and understanding which marketing channels and touchpoints contribute to online revenue generation."
+      },
+      "keywords": [
+        "revenue attribution",
+        "marketing attribution revenue",
+        "how to track online revenue",
+        "digital marketing analytics",
+        "conversion tracking",
+        "multi touch attribution",
+        "ROI measurement marketing",
+        "customer journey analytics",
+        "ecommerce analytics",
+        "marketing performance tracking",
+        "data driven marketing"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Bayshore Communication"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
+        }
+      },
+      "datePublished": "2026-05-15",
+      "dateModified": "2026-05-15"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is conversion tracking in simple terms?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is the process of measuring valuable actions like sales, leads, and sign-ups."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best first conversion to track?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Track the action that most closely represents revenue for your business."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need UTM parameters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. UTMs help identify which campaign or source brought the traffic."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is GA4 enough for conversion tracking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "GA4 is the base layer, but many teams also use Google Tag Manager, ad platform tags, and CRM data for a fuller view."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does attribution matter so much?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Because customers usually interact with more than one channel before they convert. Attribution helps assign credit fairly."
+          }
+        }
+      ]
+    }
+  ]
+};
+
 const InlineLink = ({
   href,
   children,
@@ -148,6 +271,12 @@ const ExternalLink = ({
 export const ConversionTrackingBasicsBlog = () => {
   return (
     <article className="w-full bg-[#f7f8fb] text-[#162033]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(schemaData).replace(/</g, "\\u003c"),
+        }}
+      />
       <div className="w-full rounded-[8px] bg-white p-6 shadow-sm md:p-10">
         <header className="border-b border-[#dce6f2] pb-8">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#0077B3]">

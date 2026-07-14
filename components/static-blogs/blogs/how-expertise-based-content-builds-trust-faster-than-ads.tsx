@@ -121,32 +121,115 @@ const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.bayshorecommunication.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.bayshorecommunication.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "How Expertise-Based Content Builds Trust Faster Than Ads",
+          "item": "https://www.bayshorecommunication.com/blog/how-expertise-based-content-builds-trust-faster-than-ads"
+        }
+      ]
+    },
+    {
       "@type": "BlogPosting",
-      headline: howExpertiseBasedContentBuildsTrustBlog.title,
-      description: howExpertiseBasedContentBuildsTrustBlog.metaDescription,
-      image: `https://www.bayshorecommunication.com${authorityMarketingImage}`,
-      datePublished: howExpertiseBasedContentBuildsTrustBlog.createdAt,
-      dateModified: howExpertiseBasedContentBuildsTrustBlog.updatedAt,
-      mainEntityOfPage:
-        "https://www.bayshorecommunication.com/blog/how-expertise-based-content-builds-trust-faster-than-ads",
-      publisher: {
-        "@type": "Organization",
-        name: "Bayshore Communication",
-        url: "https://www.bayshorecommunication.com",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bayshorecommunication.com/blog/how-expertise-based-content-builds-trust-faster-than-ads"
       },
+      "headline": "Authority Marketing: How Expertise-Based Content Builds Trust Faster Than Ads",
+      "name": "Stop Wasting Ad Cash and Try Authority Marketing Today",
+      "description": "Your competitors hope you never discover this. This authority marketing loophole builds buyer trust 3x faster than ads and steals high-value leads overnight.",
+      "url": "https://www.bayshorecommunication.com/blog/how-expertise-based-content-builds-trust-faster-than-ads",
+      "image": "https://www.bayshorecommunication.com/assets/static-blogs/authority-marketing-expertise-content-builds-trust.webp",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.bayshorecommunication.com/blog"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Authority Marketing",
+        "description": "An overview of how expertise-based content, thought leadership, and educational marketing build brand trust, authority, and long-term business growth."
+      },
+      "keywords": [
+        "authority marketing",
+        "expertise based content",
+        "thought leadership",
+        "content marketing strategy",
+        "build trust with content",
+        "content authority",
+        "educational content marketing",
+        "brand authority",
+        "trust based marketing",
+        "content vs paid ads",
+        "expert content strategy"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Bayshore Communication"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
+        }
+      },
+      "datePublished": "2026-06-28",
+      "dateModified": "2026-06-28"
     },
     {
       "@type": "FAQPage",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between content marketing and authority marketing?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Content marketing is the method. Authority marketing is the outcome. Content marketing produces assets. Authority marketing uses those assets to position a brand as the recognized expert in its field."
+          }
         },
-      })),
-    },
-  ],
+        {
+          "@type": "Question",
+          "name": "How does authority marketing adapt to Google’s AI Overviews?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Optimize for AI retrieval rather than human clicks. Promotional language doesn't work well with AI engines; they prefer to digest objective, data-dense, highly structured content. When your brand gives direct, definitive answers to complex industry questions, it becomes the cited source inside AI summaries and wins the trust of buyers in the first stage of research."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can expert content eventually replace paid advertising?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The goal is not replacement overnight. It is reducing ad dependence while increasing organic trust, lead quality, and long-term conversion rates."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you measure the ROI of thought leadership without ad clicks?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Expert content creates an attribution gap because prospects research anonymously before returning via direct or branded search. To capture this hidden ROI, look past standard software and add a mandatory, open-ended 'How did you hear about us?' field to your contact forms. This provides unarguable proof of revenue pipeline value straight from the buyer."
+          }
+        }
+      ]
+    }
+  ]
 };
 
 const InlineLink = ({

@@ -161,38 +161,115 @@ const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.bayshorecommunication.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.bayshorecommunication.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "First Click vs Last Click Attribution Marketing",
+          "item": "https://www.bayshorecommunication.com/blog/first-click-vs-last-click-attribution-marketing"
+        }
+      ]
+    },
+    {
       "@type": "BlogPosting",
-      headline: firstClickVsLastClickAttributionMarketingBlog.title,
-      description:
-        firstClickVsLastClickAttributionMarketingBlog.metaDescription,
-      image: `https://www.bayshorecommunication.com${attributionImage}`,
-      datePublished: firstClickVsLastClickAttributionMarketingBlog.createdAt,
-      dateModified: firstClickVsLastClickAttributionMarketingBlog.updatedAt,
-      mainEntityOfPage:
-        "https://www.bayshorecommunication.com/blog/first-click-vs-last-click-attribution-marketing",
-      author: {
-        "@type": "Organization",
-        name: "Bayshore Communication",
-        url: "https://www.bayshorecommunication.com",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bayshorecommunication.com/blog/first-click-vs-last-click-attribution-marketing"
       },
-      publisher: {
-        "@type": "Organization",
-        name: "Bayshore Communication",
-        url: "https://www.bayshorecommunication.com",
+      "headline": "First-Click vs. Last-Click Attribution: Understanding Where Your Marketing Really Works",
+      "name": "First-Click vs. Last-Click Attribution Guide",
+      "description": "Learn how first-click and last-click attribution models affect your Florida marketing budget. Find out which model drives real growth.",
+      "url": "https://www.bayshorecommunication.com/blog/first-click-vs-last-click-attribution-marketing",
+      "image": "https://www.bayshorecommunication.com/assets/static-blogs/first-click-vs-last-click-attribution-marketing.webp",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.bayshorecommunication.com/blog"
       },
+      "about": {
+        "@type": "Thing",
+        "name": "Marketing Attribution",
+        "description": "An overview of first-click attribution, last-click attribution, conversion tracking, and customer journey measurement in digital marketing."
+      },
+      "keywords": [
+        "first click attribution",
+        "last click attribution",
+        "first click vs last click attribution",
+        "marketing attribution",
+        "attribution marketing",
+        "conversion attribution",
+        "customer journey attribution",
+        "marketing attribution models",
+        "digital marketing analytics",
+        "multi touch attribution",
+        "attribution model comparison"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Bayshore Communication"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
+        }
+      },
+      "datePublished": "2026-06-07",
+      "dateModified": "2026-06-07"
     },
     {
       "@type": "FAQPage",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Can I compare attribution models without changing my live tracking?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Most platforms let you run model comparisons in a separate view. Your live attribution setup can stay untouched while you explore the differences between first-click, last-click, and multi-touch reporting."
+          }
         },
-      })),
-    },
-  ],
+        {
+          "@type": "Question",
+          "name": "How does the wrong attribution model affect my ROAS on paid ads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Last-click can inflate paid ad ROAS by claiming credit from earlier awareness channels. Your actual return on ad spend may be lower than what reports show when SEO, content, or social media started the journey."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does attribution modeling work for businesses with offline conversions?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, when the data is connected properly. Offline actions such as store purchases, call-in orders, and CRM status changes can become part of the attribution picture when matched with online touchpoints."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is data-driven attribution better than rule-based models?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Data-driven attribution is usually more accurate than fixed rule-based models because it updates as customer behavior changes. Rule-based models are still useful for quick comparisons and simpler journeys."
+          }
+        }
+      ]
+    }
+  ]
 };
 
 const InlineLink = ({
