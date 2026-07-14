@@ -571,8 +571,8 @@ const ProTip = ({ title, text }: { title: string; text: string }) => (
 
 const StatBlock = ({ value, label }: { value: string; label: string }) => (
   <div className="rounded-[8px] bg-[#101d34] p-5 text-white">
-    <p className="!text-3xl !font-bold !text-[#8ed8ff]">{value}</p>
-    <p className="mt-3 !text-base !leading-7 !text-[#d9e7f7]">{label}</p>
+    <p className="!text-4xl !font-bold !text-[#8ed8ff]">{value}</p>
+    <p className="mt-3 !text-lg !leading-7 !text-[#d9e7f7]">{label}</p>
   </div>
 );
 
@@ -586,7 +586,7 @@ const DataTable = ({
   <div className="mt-5 overflow-x-auto rounded-[8px] border border-[#dce6f2]">
     <div className="min-w-[760px]">
       <div
-        className="grid bg-[#101d34] text-sm font-semibold text-white"
+        className="grid bg-[#101d34] text-base font-semibold text-white"
         style={{
           gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
         }}
@@ -600,7 +600,7 @@ const DataTable = ({
       {rows.map((row) => (
         <div
           key={row.join("-")}
-          className="grid border-t border-[#dce6f2] bg-white text-sm"
+          className="grid border-t border-[#dce6f2] bg-white text-base"
           style={{
             gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
           }}
