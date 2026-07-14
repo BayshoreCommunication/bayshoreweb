@@ -25,6 +25,9 @@ import HowExpertiseBasedContentBuildsTrustBlog, {
 import HowMuchDoesItCostToDevelopAWebsiteBlog, {
   howMuchDoesItCostToDevelopAWebsiteBlog,
 } from "./blogs/How Much Does It Cost to Develop a Website";
+import DifferenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog, {
+  differenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog,
+} from "./blogs/Difference Between Website Design and Website Development";
 
 export const staticBlogs = [
   howExpertiseBasedContentBuildsTrustBlog,
@@ -36,6 +39,7 @@ export const staticBlogs = [
   conversionTrackingBasicsBlog,
   howMinorCtaChangesBlog,
   howMuchDoesItCostToDevelopAWebsiteBlog,
+  differenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog,
 ].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
 export const getStaticBlogBySlug = (slug: string) =>
@@ -54,6 +58,8 @@ export const staticBlogComponents = {
     HowExpertiseBasedContentBuildsTrustBlog,
   [howMuchDoesItCostToDevelopAWebsiteBlog.slug]:
     HowMuchDoesItCostToDevelopAWebsiteBlog,
+  [differenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog.slug]:
+    DifferenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog,
 };
 
 
