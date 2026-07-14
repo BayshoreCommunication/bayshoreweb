@@ -33,10 +33,10 @@ export default function ContactSection() {
 
     try {
       await emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_izrihar",
+        "template_vag37jr",
         formRef.current,
-        "YOUR_PUBLIC_KEY",
+        "IoN_BpNkuMImSvFFK",
       );
 
       setSuccess(true);
@@ -149,7 +149,38 @@ export default function ContactSection() {
                 md:p-10
               "
             >
-              <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
+              {success ? (
+                <div className="flex flex-col items-center justify-center py-12 text-center">
+                  <div className="relative mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#FF6F00]/10 text-[#FF6F00]">
+                    <span className="absolute inset-0 rounded-full bg-[#FF6F00]/5 animate-ping" />
+                    <svg
+                      className="h-10 w-10 text-[#FF6F00]"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth="2.5"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </div>
+                  <h3 className="text-2xl font-bold text-black mb-3">Proposal Request Sent!</h3>
+                  <p className="text-[15px] text-black/70 max-w-[360px] leading-relaxed mb-6">
+                    Thank you! We have received your growth goals. A Bayshore SEO specialist will contact you with a custom strategy within 24 hours.
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => setSuccess(false)}
+                    className="text-sm font-semibold text-[#FF6F00] hover:underline"
+                  >
+                    Submit another request
+                  </button>
+                </div>
+              ) : (
+                <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
                 <div className="grid gap-5 md:grid-cols-2">
                   <Field
                     icon={<User size={17} />}
@@ -288,12 +319,9 @@ export default function ContactSection() {
                   </span>
                 </button>
 
-                {success && (
-                  <p className="text-center font-medium text-green-600">
-                    Message sent successfully.
-                  </p>
-                )}
+                
               </form>
+              )}
             </div>
 
             {/* Trust Bar */}

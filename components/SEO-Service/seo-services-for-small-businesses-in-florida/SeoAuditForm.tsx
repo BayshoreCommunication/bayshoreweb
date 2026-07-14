@@ -7,7 +7,7 @@ export default function SeoAuditForm() {
   const formRef = useRef<HTMLFormElement>(null);
 
   const [loading, setLoading] = useState(false);
-  const [message, setMessage] = useState("");
+  const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -16,20 +16,19 @@ export default function SeoAuditForm() {
 
     try {
       setLoading(true);
-      setMessage("");
 
       await emailjs.sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_izrihar",
+        "template_f86dvnw",
         formRef.current,
-        "YOUR_PUBLIC_KEY",
+        "IoN_BpNkuMImSvFFK",
       );
 
-      setMessage("SEO Audit Request Submitted Successfully!");
+      setSuccess(true);
       formRef.current.reset();
     } catch (error) {
       console.error(error);
-      setMessage("Something went wrong. Please try again.");
+      alert("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -114,7 +113,38 @@ export default function SeoAuditForm() {
             md:py-12
           "
         >
-          <form ref={formRef} onSubmit={handleSubmit} className="space-y-7">
+          {success ? (
+            <div className="flex flex-col items-center justify-center py-12 text-center">
+              <div className="relative mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#FF6F00]/10 text-[#FF6F00]">
+                <span className="absolute inset-0 rounded-full bg-[#FF6F00]/5 animate-ping" />
+                <svg
+                  className="h-10 w-10 text-[#FF6F00]"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="2.5"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-2xl font-bold text-black mb-3">SEO Audit Requested!</h3>
+              <p className="text-[16px] text-black/70 max-w-[420px] leading-relaxed mb-6">
+                Success! Our SEO team is scanning your website. Your free comprehensive audit report will be generated and delivered to your inbox within 24 hours.
+              </p>
+              <button
+                type="button"
+                onClick={() => setSuccess(false)}
+                className="text-sm font-semibold text-[#FF6F00] hover:underline"
+              >
+                Request another audit
+              </button>
+            </div>
+          ) : (
+            <form ref={formRef} onSubmit={handleSubmit} className="space-y-7">
             {/* Names */}
             <div className="grid gap-4 md:grid-cols-2 md:gap-5">
               <input
@@ -194,12 +224,9 @@ export default function SeoAuditForm() {
             </div>
 
             {/* Message */}
-            {message && (
-              <div className="text-center">
-                <p className="text-sm font-medium text-black/70">{message}</p>
-              </div>
-            )}
+            
           </form>
+          )}
         </div>
       </div>
     </section>
