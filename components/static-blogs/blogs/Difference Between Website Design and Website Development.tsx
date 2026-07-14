@@ -322,7 +322,7 @@ export const DifferenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog = () => {
           <p>
             Global revenue for web development services has already surpassed{" "}
             <ExternalLink href="https://colorlib.com/wp/web-development-statistics/">
-              $89 billion in Colorlib's projections of 2026
+              $89 billion in Colorlib&apos;s projections of 2026
             </ExternalLink>
             , with an annual rate of growth at 8.2%. Job opportunities for web
             developers are expected to increase by 16% per year until 2032
@@ -360,7 +360,7 @@ export const DifferenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog = () => {
             <ExternalLink href="https://colorlib.com/wp/web-development-statistics/">
               JavaScript stays on top among coders
             </ExternalLink>
-            . Around 65.6% used it by 2026. Then there's TypeScript, a Microsoft
+            . Around 65.6% used it by 2026. Then there&apos;s TypeScript, a Microsoft
             creation, jumping from just 12% to nearly 2 in every 5 developers
             within half a decade.
           </p>
@@ -395,7 +395,7 @@ export const DifferenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog = () => {
             Jacksonville all have dense local business ecosystems where your
             website is often the first impression. According to{" "}
             <ExternalLink href="https://www.coursera.org/articles/web-designer-vs-web-developer">
-              Coursera's 2026 web designer vs developer comparison
+              Coursera&apos;s 2026 web designer vs developer comparison
             </ExternalLink>
             , web designers earn a median of $85,000 and developers $100,000.
             These are separate specializations for a reason.
