@@ -193,7 +193,7 @@ const schemaData = {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.bayshorecommunication.com"
+          "item": "https://www.bayshorecommunication.com/"
         },
         {
           "@type": "ListItem",
@@ -215,42 +215,87 @@ const schemaData = {
         "@type": "WebPage",
         "@id": "https://www.bayshorecommunication.com/blog/how-much-does-it-cost-to-develop-a-website"
       },
-      headline: howMuchDoesItCostToDevelopAWebsiteBlog.title,
-      description: howMuchDoesItCostToDevelopAWebsiteBlog.metaDescription,
-      image: `https://www.bayshorecommunication.com${costImage}`,
-      datePublished: howMuchDoesItCostToDevelopAWebsiteBlog.createdAt,
-      dateModified: howMuchDoesItCostToDevelopAWebsiteBlog.updatedAt,
-      url: "https://www.bayshorecommunication.com/blog/how-much-does-it-cost-to-develop-a-website",
-      isPartOf: {
+      "headline": "How Much Does It Cost to Develop a Website?",
+      "name": "Real Cost to Develop a Website in 2026 Revealed",
+      "description": "Florida businesses are overpaying by 40% or buying cheap sites that fail. See the real 2026 web design pricing guide before signing a contract.",
+      "url": "https://www.bayshorecommunication.com/blog/how-much-does-it-cost-to-develop-a-website",
+      "image": "https://www.bayshorecommunication.com/assets/static-blogs/website-development-cost-guide.webp",
+      "isPartOf": {
         "@type": "Blog",
         "@id": "https://www.bayshorecommunication.com/blog"
       },
-      publisher: {
+      "about": {
+        "@type": "Thing",
+        "name": "Website Development Cost",
+        "description": "A guide to website development pricing, including cost factors, website types, design, development, maintenance, and budgeting considerations."
+      },
+      "keywords": [
+        "website development cost",
+        "how much does it cost to develop a website",
+        "website design cost",
+        "website development pricing",
+        "business website cost",
+        "ecommerce website cost",
+        "custom website development",
+        "website development budget",
+        "web design pricing",
+        "cost to build a website",
+        "website maintenance cost"
+      ],
+      "author": {
         "@type": "Organization",
-        name: "Bayshore Communication",
-        url: "https://www.bayshorecommunication.com",
-        logo: {
+        "name": "Bayshore Communication"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com/",
+        "logo": {
           "@type": "ImageObject",
-          url: "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
+          "url": "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
         }
       },
-      author: {
-        "@type": "Organization",
-        name: "Bayshore Communication"
-      }
+      "datePublished": "2026-07-08",
+      "dateModified": "2026-07-08"
     },
     {
       "@type": "FAQPage",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need a privacy policy for my Florida business website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Online shops in Florida have to follow tight rules when gathering details such as emails or phone numbers from customers."
+          }
         },
-      })),
-    },
-  ],
+        {
+          "@type": "Question",
+          "name": "Is it okay to use my current domain while rebuilding my website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The simple answer is yes, and moving your domain to a new platform allows for an ongoing sense of brand and continuity with already attained search engine rankings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does local SEO architecture change the cost of a website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Building a site with local landing pages for different Florida cities requires extra technical setup and unique content which can add a few hundred dollars to the initial project scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will a new website launch drop my Google rankings?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A temporary fluctuation can happen during a migration but proper launch protocols and redirect strategies will preserve your SEO value and protect your traffic."
+          }
+        }
+      ]
+    }
+  ]
 };
 
 const InlineLink = ({

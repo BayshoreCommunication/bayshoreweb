@@ -133,35 +133,115 @@ const schemaData = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.bayshorecommunication.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.bayshorecommunication.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Website Design vs Website Development: Differences",
+          "item": "https://www.bayshorecommunication.com/blog/website-design-vs-website-development-differences"
+        }
+      ]
+    },
+    {
       "@type": "BlogPosting",
-      headline: differenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog.title,
-      description:
-        differenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog.metaDescription,
-      image: `https://www.bayshorecommunication.com${blogImage}`,
-      datePublished:
-        differenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog.createdAt,
-      dateModified:
-        differenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog.updatedAt,
-      mainEntityOfPage:
-        "https://www.bayshorecommunication.com/blog/website-design-vs-website-development-differences",
-      publisher: {
-        "@type": "Organization",
-        name: "Bayshore Communication",
-        url: "https://www.bayshorecommunication.com",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.bayshorecommunication.com/blog/website-design-vs-website-development-differences"
       },
+      "headline": "Difference Between Website Design and Website Development",
+      "name": "Web Design vs Web Development: Differences You Didn’t Know",
+      "description": "Do not waste your marketing budget on a broken website. Discover why Florida brands need both specialties to actually make money online.",
+      "url": "https://www.bayshorecommunication.com/blog/website-design-vs-website-development-differences",
+      "image": "https://www.bayshorecommunication.com/assets/static-blogs/website-design-vs-website-development-differences.webp",
+      "isPartOf": {
+        "@type": "Blog",
+        "@id": "https://www.bayshorecommunication.com/blog"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "Website Design and Development",
+        "description": "An overview of the differences between website design and website development, including user experience, visual design, coding, functionality, and how they work together to build successful websites."
+      },
+      "keywords": [
+        "website design vs website development",
+        "web design vs web development",
+        "difference between website design and website development",
+        "website design",
+        "website development",
+        "web designer vs web developer",
+        "UI UX design",
+        "frontend development",
+        "backend development",
+        "website development process",
+        "business website design"
+      ],
+      "author": {
+        "@type": "Organization",
+        "name": "Bayshore Communication"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
+        }
+      },
+      "datePublished": "2026-07-14",
+      "dateModified": "2026-07-14"
     },
     {
       "@type": "FAQPage",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Who gets my website contents after the project is finished?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You do. Upon final payment, a reputable Florida agency will give you full ownership of your Figma design files and your live deployment code. Always get this in writing before you sign a contract."
+          }
         },
-      })),
-    },
-  ],
+        {
+          "@type": "Question",
+          "name": "Will my website need maintenance after launch?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Maintaining a website means applying security fixes on schedule, refreshing plugins now and then, while tuning the database so speed stays high."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I change website contents without writing code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Since most websites now use a platform such as WordPress or Webflow, you can easily change your text and blog posts without coding."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I need to buy my domain and web hosting?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is best practice for your business to purchase and own your domain registration directly. Your web partner can then recommend a high-performance hosting platform and handle the technical setup for you."
+          }
+        }
+      ]
+    }
+  ]
 };
 
 const InlineLink = ({
