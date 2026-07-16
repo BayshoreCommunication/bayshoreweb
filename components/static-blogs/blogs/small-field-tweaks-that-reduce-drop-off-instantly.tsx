@@ -632,7 +632,7 @@ const DataTable = ({
   return (
     <div className="mt-6 overflow-x-auto rounded-[8px] border border-[#dce6f2]">
       <div className="min-w-[720px]">
-        <div className={`grid ${gridClass} bg-[#101d34] text-base font-semibold text-white`}>
+        <div className={`grid ${gridClass} bg-[#101d34] text-base font-semibold !text-white`}>
           {columns.map((column) => (
             <div key={column} className="p-4">
               {column}

@@ -462,7 +462,7 @@ export const CtaOptimizationBlog = () => {
             </p>
             <div className="mt-6 overflow-x-auto">
               <div className="min-w-[600px] overflow-hidden rounded-[8px] border border-[#dce6f2]">
-                <div className="grid grid-cols-3 bg-[#101d34] text-base font-semibold text-white">
+                <div className="grid grid-cols-3 bg-[#101d34] text-base font-semibold !text-white">
                   <div className="p-4">Factor</div>
                   <div className="p-4">Desktop Approach</div>
                   <div className="p-4">Mobile Approach</div>

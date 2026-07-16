@@ -744,7 +744,7 @@ const DataTable = ({
 }) => (
   <div className="mt-5 overflow-hidden rounded-[8px] border border-[#dce6f2]">
     <div
-      className="grid bg-[#101d34] text-base font-semibold text-white"
+      className="grid bg-[#101d34] text-base font-semibold !text-white"
       style={{
         gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
       }}
