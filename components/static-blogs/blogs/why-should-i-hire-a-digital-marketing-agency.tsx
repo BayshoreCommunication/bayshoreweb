@@ -488,7 +488,7 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
             Agencies keep you in that game.
           </p>
           <p className="text-justify">
-            Bayshore Communication's analytics workflows give clients a monthly
+            Bayshore Communication&apos;s analytics workflows give clients a monthly
             view of exactly what is working and what to cut. Explore their{" "}
             <InlineLink href="/our-services">growth marketing services</InlineLink>{" "}
             to see how they structure performance reporting.
