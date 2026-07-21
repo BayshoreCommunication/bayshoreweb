@@ -30,6 +30,7 @@ interface BlogPost {
   metaDescription?: string;
   metaTitle?: string;
   createdAt?: string;
+  updatedAt?: string;
   published?: boolean;
   category?: string[];
   featuredImage?: {
@@ -183,8 +184,16 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                     {blog.title}
                   </h1>
                 </div>
-                <div className="flex gap-4 py-6">
-                  {formatDate(blog.createdAt)}
+                <div className="flex flex-wrap gap-x-4 gap-y-2 py-6 text-sm text-gray-500 font-medium">
+                  {blog.createdAt && (
+                    <span>Published: {formatDate(blog.createdAt)}</span>
+                  )}
+                  {blog.updatedAt && blog.updatedAt !== blog.createdAt && (
+                    <span>|</span>
+                  )}
+                  {blog.updatedAt && blog.updatedAt !== blog.createdAt && (
+                    <span>Updated: {formatDate(blog.updatedAt)}</span>
+                  )}
                 </div>
                 <figure>
                   <Image

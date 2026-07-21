@@ -28,6 +28,9 @@ import HowMuchDoesItCostToDevelopAWebsiteBlog, {
 import DifferenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog, {
   differenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog,
 } from "./blogs/Difference Between Website Design and Website Development";
+import WhyShouldIHireADigitalMarketingAgencyBlog, {
+  whyShouldIHireADigitalMarketingAgencyBlog,
+} from "./blogs/why-should-i-hire-a-digital-marketing-agency";
 
 export const staticBlogs = [
   howExpertiseBasedContentBuildsTrustBlog,
@@ -40,6 +43,7 @@ export const staticBlogs = [
   howMinorCtaChangesBlog,
   howMuchDoesItCostToDevelopAWebsiteBlog,
   differenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog,
+  whyShouldIHireADigitalMarketingAgencyBlog,
 ].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
 export const getStaticBlogBySlug = (slug: string) =>
@@ -60,6 +64,8 @@ export const staticBlogComponents = {
     HowMuchDoesItCostToDevelopAWebsiteBlog,
   [differenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog.slug]:
     DifferenceBetweenWebsiteDesignAndWebsiteDevelopmentBlog,
+  [whyShouldIHireADigitalMarketingAgencyBlog.slug]:
+    WhyShouldIHireADigitalMarketingAgencyBlog,
 };
 
 
