@@ -184,7 +184,7 @@ export default function SeoRoiSection() {
                 The ROI of SEO for Spring Hill Florida Businesses
               </h2>
               <p className="mt-6 text-[15px] leading-8 text-black/70 md:text-[17px]">
-                SEO is one of the strongest return-on-investment channels available to Spring Hill, Florida businesses of any size. Unlike channels that require continuous spending to maintain results, SEO builds an owned digital asset that appreciates in value the longer it remains active.
+                {/* SEO is one of the strongest return-on-investment channels available to Spring Hill, Florida businesses of any size. Unlike channels that require continuous spending to maintain results, SEO builds an owned digital asset that appreciates in value the longer it remains active. */}
               </p>
             </div>
 

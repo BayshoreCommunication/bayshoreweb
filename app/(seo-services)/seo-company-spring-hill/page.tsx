@@ -54,7 +54,7 @@ const page = () => {
       <SeoProcessSection />
       <WhyChooseBayshore />
       <SeoRoiSection />
-      <SeoPackagesSection />
+      {/* <SeoPackagesSection /> */}
       <ServiceAreasSection />
       <TestimonialsSection />
       <SeoFaqSection />
