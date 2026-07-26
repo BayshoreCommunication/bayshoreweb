@@ -32,7 +32,7 @@ const services = [
     title: "Local SEO and Map Pack Optimization",
     image: images.seoServicesSection.localSeoMapPackImage.src,
     description:
-      "We optimize your Google Business Profile and build consistent citations across Wesley Chapel directories. Geographic keyword targeting and review strategies improve your map pack position over time.",
+      "We maximize your Google Business Profile and create regular citations onto Wesley Chapel directories. Geographic keyword targeting and review strategies improve your map pack position over time.",
   },
   {
     title: "Content Development and Authority Building",
@@ -103,17 +103,11 @@ export default function SeoServicesSection() {
 
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/70 md:text-[16px]">
               <p>
-                Search optimization in 2026 demands far more than keyword
-                placement on a page. Google&apos;s AI-assisted systems and
-                voice-activated tools have changed how Wesley Chapel residents
-                find local businesses.
+                In 2026, search optimization is more than just about stuffing keywords in a web page. With the advent of Google&apos;s AI-powered systems and voice search capabilities, the way Wesley Chapel residents locate local businesses has been transformed.
               </p>
 
               <p>
-                Bayshore Communication is the reliable SEO company in Wesley
-                Chapel, Florida, that understands this shift. We build
-                strategies that perform across traditional rankings, AI answers,
-                and every channel your next customer uses.
+                Bayshore Communication is a dependable SEO company Wesley Chapel who understands the change. We develop strategies that work on traditional ranking, AI answers, and on every channel your next customer uses.
               </p>
             </div>
 
