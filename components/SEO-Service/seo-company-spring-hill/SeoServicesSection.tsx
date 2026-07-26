@@ -56,7 +56,7 @@ const services = [
     title: "Generative Engine Optimization (GEO)",
     image: images.seoServicesSection.generativeEngineOptimizationImage.src,
     description:
-      "We format your content for citation and recommendation in AI-generated summaries and search results. As Spring Hill, Florida consumers use AI tools more frequently to locate local businesses, your brand is present and recommended in the answers those tools deliver.",
+      "We optimize your digital presence for AI-generated summaries and conversational search responses. As Spring Hill, Florida consumers use AI tools more frequently to locate local businesses, your brand is present and recommended in the answers those tools deliver.",
   },
   {
     title: "Performance Tracking and Monthly Reporting",
