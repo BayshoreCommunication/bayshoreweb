@@ -97,9 +97,7 @@ export default function ContactSection() {
             </h2>
 
             <p className="mt-8 max-w-[440px] text-[17px] leading-8 text-black/70 md:text-[19px]">
-              Capture Every Click and Secure Your Position as a Spring Hill Leader.
-              <br />
-              Call +1 (509) 592-1745 | www.bayshorecommunication.com
+              Every day without local SEO is a day your competitors grow stronger. Start building your search advantage in Spring Hill, Florida, now.
             </p>
 
             <div className="mt-12 space-y-5">

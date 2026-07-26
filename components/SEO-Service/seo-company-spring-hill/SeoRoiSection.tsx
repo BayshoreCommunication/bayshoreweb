@@ -11,39 +11,39 @@ import {
 const resultCards = [
   {
     icon: Target,
-    title: "First-Page Keyword Rankings",
+    title: "Page One Rankings on Your Most Valuable Search Terms",
     description:
-      "Clients move from buried positions to page-one visibility for the highest-value local search terms in their industries within measurable timeframes.",
+      "Businesses that once ranked on page three or further back move to prominent page one positions for the high-intent Spring Hill, Florida, search terms that bring in their most profitable customers.",
   },
   {
     icon: Users,
-    title: "Rising Volume of Qualified Inquiries",
+    title: "A Steady, Qualifying Pipeline of Inquiries",
     description:
-      "Businesses see a consistent month-over-month increase in phone calls, form submissions, and appointment bookings from Spring Hill Florida consumers who found them through organic search.",
+      "Organic search delivers a growing and consistent flow of customer contacts each month. That pipeline does not pause between budget cycles and does not stop when a campaign ends.",
   },
   {
     icon: MapPinned,
-    title: "Stronger Local Map Pack Presence",
+    title: "Secured Map Pack Presence",
     description:
-      "Google Business Profile optimization produces improved map pack visibility that generates direct calls and direction requests from nearby buyers.",
+      "Local SEO investment earns consistent visibility in the Google three-pack, where the majority of local search clicks originate for Spring Hill, Florida service and product categories.",
   },
   {
     icon: ChartNoAxesCombined,
-    title: "Documented Organic Traffic Growth",
+    title: "Phone Volume That Grows Month Over Month",
     description:
-      "Monthly reporting captures clear, measurable increases in website visitors from the Spring Hill Florida and Hernando County geographic areas.",
+      "Inbound calls from Spring Hill, Florida, residents who found your business through organic search arrive with context and intent. These conversations close at higher rates than cold or interruption-based contacts.",
   },
   {
     icon: ShieldCheck,
-    title: "Sustainable Growth Without Ad Dependency",
+    title: "Established Community Authority",
     description:
-      "SEO-driven results do not vanish when a campaign pauses. Rankings built through ethical optimization continue producing returns month after month.",
+      "Consistent search visibility builds real brand recognition across Spring Hill, Florida, and Hernando County. Customers who see your business repeatedly in results develop trust before they ever arrive on your website.",
   },
   {
     icon: BadgeDollarSign,
-    title: "Reduced Cost Per Acquired Customer",
+    title: "Improving Returns on a Sustained Investment",
     description:
-      "Organic search consistently delivers a lower cost per acquisition than paid channels, improving the overall profitability of customer growth over time.",
+      "The cost of acquiring each new customer through organic SEO decreases as domain authority builds. No other digital channel available to Spring Hill, Florida businesses delivers this kind of compounding efficiency over time.",
   },
 ];
 
@@ -94,7 +94,7 @@ export default function SeoRoiSection() {
           <div className="mx-auto mt-6 h-1 w-16 bg-[#FF6F00]" />
 
           <p className="mx-auto mt-8 max-w-[900px] text-[16px] leading-8 text-black/60 md:text-[20px]">
-            Bayshore Communication measures success through verified, documented outcomes that reflect real business growth. Our track record across Spring Hill Florida shows what disciplined, data-driven SEO produces over time.
+            Verified, measurable outcomes are the standard Bayshore Communication holds itself to. Spring Hill, Florida, businesses that invest in a consistently executed SEO program see sustained improvement across every performance measure that connects directly to revenue growth.
           </p>
         </div>
 
@@ -190,11 +190,13 @@ export default function SeoRoiSection() {
 
             <div className="space-y-4 rounded-2xl bg-[#FFF8F3] p-8 md:p-10 border border-[#FF6F00]/10">
               {[
-                "Superior placement in map results to trigger a surge in direct phone inquiries",
-                "Steady streams of qualified visitors without the burden of constant ad fees",
-                "Sustainable digital equity that increases in worth as your brand authority climbs",
-                "Accelerated lead generation through top tier rankings that outperform traditional media",
-                "Enhanced credibility that converts casual browsers into loyal neighborhood clients",
+                "Reach Spring Hill, Florida, buyers at the precise moment they are prepared to make a purchase decision.",
+                "Build a search presence that generates customer inquiries continuously rather than only during paid campaign windows.",
+                "Drive down your per-customer acquisition cost as organic authority and rankings accumulate over time.",
+                "Create a digital asset whose value appreciates year after year with consistent investment.",
+                "Develop the kind of verified market credibility in Spring Hill, Florida, that advertising budgets alone cannot produce.",
+                "Outperform local competitors who remain entirely dependent on paid channels for every customer they acquire.",
+                "Scale your customer pipeline without scaling your marketing spend in proportion.",
               ].map((text, idx) => (
                 <div key={idx} className="flex items-start gap-4">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FF6F00] text-white text-[12px] font-bold">

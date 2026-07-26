@@ -83,7 +83,7 @@ export default function SeoAuditForm() {
 
           <div>
             <p className="max-w-[420px] text-[16px] leading-8 text-black/80 md:text-[18px] font-bold">
-              Could your Spring Hill, Florida, company show up higher on Google? Grab a no-cost SEO review now. See exactly how you rank right now, spot hidden tech issues.
+              Find out exactly why Spring Hill, Florida, customers cannot find your business on Google, at no cost to you.
             </p>
           </div>
         </div>

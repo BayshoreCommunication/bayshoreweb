@@ -8,40 +8,34 @@ import {
 
 const aiSearchCards = [
   {
-    Icon: FileCheck2,
-    title: "Content Credibility Is Now Non-Negotiable",
+    Icon: Trophy,
+    title: "Authority Over Keyword Density",
     description:
-      "Today, trust in what is written matters more than ever. With algorithms deciding visibility, material shown to people in Spring Hill, Florida, must demonstrate real knowledge. Accuracy shapes outcomes behind the scenes. What appears online first has already passed silent checks. Only content grounded in fact earns space on results pages. Authority now quietly determines reach.",
+      "Google and AI platforms now evaluate the genuine credibility and depth of content. So, Spring Hill, Florida businesses that demonstrate topical authority through well-structured, expert-level content hold rankings that keyword-optimized pages alone cannot achieve.",
   },
   {
     Icon: Cpu,
-    title: "Structured Answers Win Featured Placements",
+    title: "AI Answer Boxes Precede Every Traditional Result",
     description:
-      "When answers follow a clear structure, visibility in AI-powered highlights increases noticeably. Those who organize responses around distinct questions tend to occupy prominent spots within automated previews. Clarity shapes placement, especially when information aligns directly with user queries. Positioning improves not through volume but through precision and form. What appears at the top often reflects careful formatting rather than general content depth.",
+      "AI-generated summaries now appear above standard search listings. Appearing in those summaries requires structured, authoritative content built around the specific questions. Spring Hill, Florida, consumers ask most frequently.",
   },
   {
     Icon: AudioLines,
-    title: "Review Quality Influences AI Rankings",
+    title: "Spoken Searches Require Conversational Content",
     description:
-      "Weight given to page experience grows. Speed at load time matters more now within the ranking framework used for Spring Hill firms. Visual steadiness during user interaction counts under the new evaluation logic. Mobile access ease factors into results through algorithmic assessment methods. How smoothly a site performs shapes visibility outcomes across local listings.",
+      "Voice and AI queries reflect how people actually speak, not how they type. Content structured around natural local questions earns discoverability in a format that continues to grow among Spring Hill, Florida, consumers.",
+  },
+  {
+    Icon: FileCheck2,
+    title: "Reputation Data Feeds the Algorithm",
+    description:
+      "Modern search systems integrate review quality, citation accuracy, and brand consistency as active ranking inputs. A verified, well-maintained local reputation is now inseparable from search performance.",
   },
   {
     Icon: MessageSquareText,
-    title: "Page Experience Metrics Carry More Weight",
+    title: "First Movers in Spring Hill Gain Compounding Advantages",
     description:
-      "What a business offers becomes clear to artificial intelligence through schema markup. Because of structured information, location details are interpreted more accurately by automated search platforms. Eligibility shifts when machines grasp context without ambiguity.",
-  },
-  {
-    Icon: Trophy,
-    title: "Schema Markup for AI Comprehension",
-    description:
-      "Structured data helps AI-powered search engines comprehend your business, its physical address, and its customers, which improves your chances of getting rich result rankings.",
-  },
-  {
-    Icon: Cpu,
-    title: "First-Mover Advantage Is Still Available",
-    description:
-      "Spring Hill, Florida businesses that align their SEO strategy with AI search requirements now will capture organic territory that becomes significantly harder to claim over time.",
+      "Businesses that align with AI search standards in 2026 establish authority positions that become progressively harder for slower-moving competitors in Hernando County to challenge or displace.",
   },
 ];
 

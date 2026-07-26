@@ -70,12 +70,12 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-6 max-w-[720px] text-[38px] font-extrabold leading-[1.05] sm:text-[52px] md:text-[64px]">
-              SEO Company in Spring Hill Florida:{" "}
-              <span className="text-[#FF6F00]">Higher Visibility, Better Leads, Increased Revenue</span>
+              SEO Company in Spring Hill Florida —{" "}
+              <span className="text-[#FF6F00]">Be the first choice on Google</span>
             </h1>
 
             <p className="mt-6 max-w-[700px] text-[16px] leading-[1.7] text-white/85 md:text-[18px]">
-              Thousands of Spring Hill, Florida, consumers are on Google searching for exactly what your business offers. The only question is whether they are finding you or finding your competitors instead. Bayshore Communication is the performance-focused seo company spring hill that changes that equation permanently. We have delivered measurable organic growth for businesses across Spring Hill. Our strategies are built on verified data, deep local market expertise, and dedicated execution.
+              Spring Hill, Florida, is one of the fastest-growing communities in Hernando County. The demand for local products as well as services grows with every new household. Bayshore Communication is the faithful SEO company Spring Hill that local businesses rely on to capture that demand. We design search strategies that place your business at the top of Google at the exact moment your ideal customer is ready to act.
             </p>
 
             {/* CTA */}

@@ -19,8 +19,8 @@ import WhyLosingCustomers from "@/components/SEO-Service/seo-company-spring-hill
 import React from "react";
 
 export const metadata = {
-  title: "SEO Company Spring Hill | Grow Your Business with SEO",
-  description: "Increase your online visibility with a professional SEO company in Spring Hill. Drive qualified traffic,generate leads and grow your business.",
+  title: "SEO Company Spring Hill | Choose the Best SEO Team",
+  description: "Learn what to look for in a SEO company in Spring Hill, from local SEO expertise to reporting, transparency, and ROI.",
 
   robots: {
     index: true,
@@ -54,9 +54,9 @@ const page = () => {
       <SeoProcessSection />
       <WhyChooseBayshore />
       <SeoRoiSection />
-      {/* <SeoPackagesSection /> */}
+      <SeoPackagesSection />
       <ServiceAreasSection />
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
       <SeoFaqSection />
       <ContactSection />
     </div>

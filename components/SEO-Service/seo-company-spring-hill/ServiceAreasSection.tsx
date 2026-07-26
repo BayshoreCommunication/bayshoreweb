@@ -1,24 +1,21 @@
 import { BriefcaseBusiness, MapPin } from "lucide-react";
 
 const industries = [
-  "Home Services and Contracting",
-  "Medical and Healthcare Practices",
-  "Real Estate Agencies",
-  "Hospitality and Tourism",
-  "Professional Consulting",
-  "Retail and E-commerce",
-  "Health and Wellness Centers",
-  "Pet Services and Veterinary Care",
-  "Automotive Sales and Repair",
-  "Legal and Financial Services",
-  "Education and Training",
-  "Nonprofit Organizations",
-  "Beauty and Salon Services",
-  "Event Planning and Venues",
+  "Home Services (HVAC, Plumbing, Roofing, Electrical)",
+  "Medical, Dental, and Healthcare Practices",
+  "Legal Services and Law Firms",
+  "Real Estate Agencies and Independent Brokers",
+  "Restaurants, Cafes, and Food Service Businesses",
+  "Retail Stores and E-Commerce Businesses",
+  "Auto Repair, Sales, and Dealerships",
+  "Health, Beauty, and Personal Wellness",
+  "Financial, Accounting, and Insurance Services",
+  "Education, Childcare, and Tutoring Centers",
+  "Construction, Remodeling, and Landscaping",
 ];
 
 const communities = [
-  "Spring Hill",
+  "Spring Hill (ZIP Codes 34606, 34607, 34608, 34609, 34610)",
   "Brooksville",
   "Weeki Wachee",
   "Bayonet Point",
@@ -28,11 +25,6 @@ const communities = [
   "Land O Lakes",
   "Lutz",
   "Zephyrhills",
-  "Hernando Beach",
-  "Ridge Manor",
-  "Masaryktown",
-  "High Point",
-  "Spring Lake"
 ];
 
 export default function ServiceAreasSection() {
@@ -52,7 +44,7 @@ export default function ServiceAreasSection() {
           </h2>
 
           <p className="mx-auto mt-8 max-w-[1000px] text-[16px] leading-8 text-black/70 md:text-[20px]">
-            Bayshore Communication proudly serves businesses throughout Spring Hill, Florida, and the wider Hernando County region. As a dedicated seo company spring hill every geo-targeted campaign we build is shaped around where your customers are located and how they search for businesses like yours.
+            Bayshore Communication delivers targeted, market-specific SEO services for Spring Hill Florida businesses across a broad range of industries. Whether your business specializes in a single area or spans multiple service categories, every strategy we build targets the precise searches your ideal customers are performing.
           </p>
         </div>
 
@@ -74,7 +66,7 @@ export default function ServiceAreasSection() {
               <BriefcaseBusiness size={32} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Industries We Serve
+                Business Categories We Serve
               </h3>
             </div>
 
@@ -121,7 +113,7 @@ export default function ServiceAreasSection() {
               <MapPin size={30} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[30px] lg:text-[32px] xl:text-[38px]">
-                Spring Hill Neighborhoods and Surrounding Areas We Serve
+                Spring Hill, Florida, and Surrounding Communities We Serve
               </h3>
             </div>
 

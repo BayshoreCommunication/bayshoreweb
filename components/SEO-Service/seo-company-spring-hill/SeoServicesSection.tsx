@@ -5,58 +5,64 @@ import { CalendarDays } from "lucide-react";
 
 const services = [
   {
-    title: "Local SEO",
-    image: images.seoServicesSection.localSeoMapPackImage.src,
+    title: "Website SEO Audit",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
-      "Optimized profiles begin with precise categorization, followed by verified details and carefully chosen location-based terms. Through trusted platforms specific to Spring Hill, citations are established then maintained over time. Positioning within map rankings improves when each component aligns with regional visibility standards.",
+      "Every engagement begins with a detailed examination of your current digital standing. Technical health, content alignment, keyword positioning, local signal strength, and competitor positioning are all assessed to produce a clear, prioritized plan of action specific to the Spring Hill Florida market.",
   },
   {
-    title: "On-Page SEO",
-    image: images.seoServicesSection.onPageOptimizationImage.src,
-    description:
-      "Every service page gets rebuilt from the beginning shaped by how people in Spring Hill Florida search for things. Our service pages are made to fit the way people in Spring Hill Florida look for stuff. Instead of guessing, we shape headlines, subheads, and titles around real queries. Content flows follow what matters now, not outdated tricks. Pages connect through smart internal paths that boost visibility where it counts. Even small details like meta descriptions reflect live user behavior. Authority shifts naturally to key sections without forced tactics. What shows up in results feels clear because the structure supports intent.",
-  },
-  {
-    title: "Technical SEO",
-    image: images.seoServicesSection.technicalSeoImage.src,
-    description:
-      "Starting with how easily bots can navigate your site, we check loading times, key performance signals, mobile experience, organized content markup, plus indexing problems. Because fixing each problem matters, corrections happen carefully to match what today’s search systems expect technically. When the base is solid, everything else in the plan works better down the line.",
-  },
-  {
-    title: "Off-Page SEO and Link Building",
-    image: images.seoServicesSection.offPageSeoImage.src,
-    description:
-      "Not every connection earns a spot. Outreach shapes the backbone of our approach, targeting trusted neighborhood outlets first. Links come from places like trade listings or city-focused platforms, never chosen at random. Each one gets studied - does it fit, does it hold weight, will it last. Only then does it become part of the plan.",
-  },
-  {
-    title: "Content Strategy and SEO Copywriting",
-    image: images.seoServicesSection.contentDevelopmentImage.src,
-    description:
-      "We research the exact questions Spring Hill, Florida, consumers ask before making a purchase decision and build content that answers those questions with authority. Service pages, location landing pages, and supporting blog content are all written to satisfy search intent and encourage conversion. Every content piece is reviewed against current AI-era quality standards before publication.",
-  },
-  {
-    title: "E-Commerce SEO",
+    title: "Keyword Intelligence and Strategy",
     image: images.seoServicesSection.keywordResearchImage.src,
     description:
-      "We optimize product listings, category page structures, and crawl pathways for Spring Hill, Florida businesses that sell online. Transactional keyword targeting connects your product pages with buyers who are ready to purchase right now. Indexation management ensures your entire catalog remains accessible and competitive across all relevant search queries.",
+      "We identify precisely how Spring Hill Florida customers phrase their searches when they are prepared to spend. Intent level, geographic specificity, search volume, and ranking difficulty are all weighed to build a keyword framework that attracts buyers over browsers.",
+  },
+  {
+    title: "On-Page Optimization",
+    image: images.seoServicesSection.onPageOptimizationImage.src,
+    description:
+      "Each page of your website is an individual ranking asset. We optimize every title tag, meta description, heading hierarchy, URL pattern, internal link structure, and content section to align with what Google requires to rank your Spring Hill Florida pages with full confidence.",
+  },
+  {
+    title: "Technical Website Health",
+    image: images.seoServicesSection.technicalSeoImage.src,
+    description:
+      "Search rankings are limited by technical barriers before content and links can contribute. We identify and resolve crawlability issues, slow load times, mobile performance gaps, indexing errors, and structural deficiencies that prevent your website from reaching its ceiling.",
+  },
+  {
+    title: "Authority Link Building",
+    image: images.seoServicesSection.offPageSeoImage.src,
+    description:
+      "External credibility is a primary ranking input. We acquire meaningful backlinks from credible regional, industry-specific, and Florida-wide sources, building the off-page authority profile that sustains and elevates your Spring Hill, Florida, search rankings over time.",
+  },
+  {
+    title: "Local Search Dominance",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
+    description:
+      "Spring Hill, Florida local search requires a multi-signal presence strategy. We refine your Google Business Profile and build consistent citation records across directories. We also deploy location targeted content that secures your business in the map pack and in neighbourhood level search results.",
+  },
+  {
+    title: "Content That Ranks and Converts",
+    image: images.seoServicesSection.contentDevelopmentImage.src,
+    description:
+      "We produce content that earns its search placement by genuinely addressing what your audience is looking for. Each article, service page, and guide is built around verified Spring Hill Florida search behavior and designed to establish your business as the most credible local source in its category.",
   },
   {
     title: "Ask Engine Optimization (AEO)",
     image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
-      "We structure your website content to answer the specific questions. Spring Hill, Florida, consumers ask on AI-powered platforms, including ChatGPT, Perplexity, and Google AI Overviews. AEO positions your business as the authoritative answer when a potential customer asks for a local recommendation and expects an immediate, reliable response. This channel is growing rapidly and early optimization creates a significant competitive advantage.",
+      "Consumers increasingly receive answers from AI before visiting any website. We structure your content so your Spring Hill, Florida, business is referenced as an authoritative source when platforms including ChatGPT, Perplexity, and Google AI Search respond to consumer questions in your market.",
   },
   {
     title: "Generative Engine Optimization (GEO)",
     image: images.seoServicesSection.generativeEngineOptimizationImage.src,
     description:
-      "We format your content for citation and recommendation in AI-generated summaries and search results. As more Spring Hill, Florida, consumers use generative tools to research local businesses, GEO ensures your name appears as a trusted recommendation. This emerging discipline extends your visibility well beyond traditional organic search results.",
+      "We format your content for citation and recommendation in AI-generated summaries and search results. As Spring Hill, Florida consumers use AI tools more frequently to locate local businesses, your brand is present and recommended in the answers those tools deliver.",
   },
   {
-    title: "SEO Reporting and Analytics",
-    image: images.seoServicesSection.seoWebsiteAuditImage.src,
+    title: "Performance Tracking and Monthly Reporting",
+    image: images.seoServicesSection.performanceTrackingReportingImage.src,
     description:
-      "Monthly performance updates follow a clear format, showing shifts in keyword rankings alongside changes in organic visit numbers. Because local search visibility affects outcomes, those measurements appear with equal weight. Conversion patterns emerge through careful tracking rather than assumptions. A straightforward explanation follows each dataset, outlining recent developments together with their implications. Insight into upcoming actions comes included, not withheld. Clarity around results links directly to budget allocation. Every financial commitment receives matching accountability in reported progress.",
+      "Every strategy decision is grounded in real data, and every outcome is tracked and shared transparently. Monthly reports document ranking movement, organic traffic trends, lead activity, and ROI relative to your Spring Hill, Florida, SEO investment.",
   },
 ];
 

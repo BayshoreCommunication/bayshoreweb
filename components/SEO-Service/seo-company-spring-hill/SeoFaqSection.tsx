@@ -7,30 +7,23 @@ const faqs = [
   {
     id: "01",
     question:
-      "How soon will my Spring Hill, Florida, business start seeing results from SEO?",
+      "Do you work with newer Spring Hill, Florida, businesses that are just starting their SEO?",
     answer:
-      "Typically, Spring Hill, Florida companies starting an active campaign will see some degree of movement in keyword rankings and organic traffic within the first three to six months. The more time an SEO campaign is left to run without interruption, the more powerful and profitable the results will be.",
+      "We work with businesses at every growth stage. Newer businesses benefit from building authority and technical foundations early. Every SEO strategy we build is matched to the specific circumstances and goals of the individual business.",
   },
   {
     id: "02",
     question:
-      "How will I measure whether my SEO investment is producing returns?",
+      "What is the real difference between SEO and just running Google Ads for my Spring Hill, Florida, business?",
     answer:
-      "Bayshore Communication delivers monthly keyword ranking, traffic, Google Business Profile insights, call and form generation reports. The report discusses what the results mean and the efforts being made to increase results.",
+      "Google Ads deliver traffic only while you keep paying. SEO builds organic rankings that generate qualified traffic continuously without any per-click cost. Ads work for short-term results. SEO builds a long-term digital asset that grows in value over time.",
   },
   {
     id: "03",
     question:
-      "How does Bayshore Communication protect my rankings when Google updates its algorithm?",
+      "Can SEO address multiple service categories for my business simultaneously?",
     answer:
-      "Bayshore Communication keeps track of Google algorithm changes during each of our campaigns. Our approach is to develop powerful content, establish genuine authority and get the local data right rather than to game the system. When significant algorithm changes happen we reassess and refine our approach accordingly.",
-  },
-  {
-    id: "04",
-    question:
-      "How do you identify the right keywords for my specific Spring Hill, Florida, business?",
-    answer:
-      "We analyze the search behavior of Spring Hill, Florida industry consumers through keyword research and competitor analysis. We evaluate monthly search volume level of the keywords, competition level as well as the buying or hiring intent of the keyword. Our emphasis is on the keywords that are searched for by ready to buy or hire clients, not just to browse.",
+      "Yes. A properly structured SEO program builds dedicated, fully optimized pages for every service category your Spring Hill, Florida, business operates in. Each page is matched to the specific search queries, intent patterns, and competitive conditions relevant to that category.",
   },
 ];
 

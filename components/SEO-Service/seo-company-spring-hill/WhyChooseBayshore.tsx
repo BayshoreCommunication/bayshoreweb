@@ -21,45 +21,39 @@ import "swiper/css/pagination";
 const features = [
   {
     Icon: Award,
-    title: "Verified Client Track Record",
+    title: "A Track Record Built on Measurable Deliveries",
     description:
-      "We have served over 70 businesses across diverse industries with documented improvements in organic rankings, traffic volume, and inbound lead generation.",
+      "We have served more than 70 clients, launched over 220 websites, and generated in excess of 500,000 leads across multiple industries. Every client engagement adds depth to the experience that shapes how we approach each new Spring Hill, Florida SEO strategy.",
   },
   {
     Icon: ClipboardList,
-    title: "Research-Backed Strategy Development",
+    title: "Every Recommendation Backed by Real Evidence",
     description:
-      "Every decision we make is grounded in keyword data, competitive analysis, technical audits, and live campaign performance rather than guesswork or generic templates.",
+      "Keyword selections, content priorities, technical actions, and link acquisition targets are all determined by verified research and current market data. There is no assumption-based planning in our process. Every decision traces to specific evidence about your business and your local market.",
   },
   {
     Icon: Layers3,
-    title: "Full-Service SEO Under One Team",
+    title: "One Team Covering Your Complete Search Presence",
     description:
-      "Technical work, content production, local optimization, link building, and AI-era AEO and GEO are all managed by a single coordinated team with one accountability structure.",
+      "Technical SEO, local optimization, content development, AEO, and GEO are managed by one coordinated team under a single strategy. There are no disconnected vendors or conflicting priorities. One accountable team owns every dimension of your Spring Hill, Florida, search presence.",
   },
   {
     Icon: MapPinned,
-    title: "Genuine Spring Hill Florida Market Expertise",
+    title: "Genuine Spring Hill Florida Market Understanding",
     description:
-      "We know which ZIP codes generate the highest search volume in Hernando County, which business categories face the steepest local competition, and how seasonal patterns affect search behavior here.",
+      "We understand how Hernando County residents search for businesses, which service categories carry the heaviest local competition, how map pack behavior works in the Spring Hill, Florida, market, and where the realistic ranking opportunities exist for your business category.",
   },
   {
     Icon: SearchCheck,
-    title: "Strategies Built for Your Business Alone",
+    title: "No Templates, No Recycled Work",
     description:
-      "We do not apply a formula or repurpose a strategy from another client. Every campaign begins with a fresh analysis of your specific goals and market position.",
+      "Every Spring Hill, Florida, SEO strategy we build is designed from first principles around your specific services, your competitive environment, your customer profile, and your growth targets. No framework from another client is applied to your account.",
   },
   {
     Icon: ClipboardList,
-    title: "No Hidden Fees or Vague Activity Reports",
+    title: "Full Visibility Into Every Action and Outcome",
     description:
-      "Monthly reports detail which rankings changed, which traffic went up, and what actions our team took. Your invoice and reporting have no surprises.",
-  },
-  {
-    Icon: TrendingUp,
-    title: "Flexible Pricing That Delivers Real ROI",
-    description:
-      "Our package structures are designed to produce measurable returns at every budget level, not to lock businesses into spending more than their growth stage requires.",
+      "Monthly reporting documents rankings, traffic changes, lead generation, and ROI with complete transparency. You receive plain-language context on what changed, why it changed, and what we are doing about it. There is no opacity in our client relationships.",
   },
 ];
 
@@ -98,7 +92,7 @@ export default function WhyChooseBayshore() {
 
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/75 md:text-[18px]">
               <p>
-                Bayshore Communication is not a general marketing shop that added SEO to a list of unrelated services. We are a dedicated digital growth seo company spring hill with a proven track record of producing measurable outcomes for businesses across Spring Hill Florida since 2016.
+                Bayshore Communication was not built as a generalist agency with SEO as an add-on service. We are a dedicated growth partner with a measured, documented track record of improving search performance and driving real customer acquisition for businesses across Florida since 2016.
               </p>
             </div>
 

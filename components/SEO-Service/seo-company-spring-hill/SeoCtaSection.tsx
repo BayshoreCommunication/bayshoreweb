@@ -24,7 +24,7 @@ export default function SeoCtaSection() {
             </h2>
 
             <p className="mt-5 max-w-[760px] text-[15px] leading-7 text-white/90 md:text-[18px] md:leading-8">
-              Everything we build is created from scratch around your business, your customers, and your specific competitive environment.
+              From Invisible to Unmissable in Spring Hill Search Results
             </p>
 
             <Link href="#contact">

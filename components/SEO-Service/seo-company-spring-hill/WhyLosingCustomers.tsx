@@ -5,37 +5,30 @@ const cards = [
   {
     number: "01",
     icon: "/seo-company-wesley-chapel/card-icon-1.png",
-    title: "No Page-One Presence",
+    title: "Your Business Is Invisible Where Buyers Are Looking",
     description:
-      "When your website is not on the page of Google most people searching in Spring Hill, Florida will never even know that your business exists.",
+      "Over 90% of all search traffic goes to page one results. A business sitting on page two or below does not earn a second look from Spring Hill, Florida, consumers who are ready to spend.",
   },
   {
     number: "02",
     icon: "/seo-company-wesley-chapel/card-icon-2.png",
-    title: "Competitor Dominance in Local Results",
+    title: "Your Competitor Gets the Call You Should Have Received",
     description:
-      "Your competitors get all the phone calls, visits to their website and people walking into their store that could have been yours if you were ranked higher.",
+      "Search visibility is a zero-sum game at the local level. Every customer who finds a competitor through Google is a customer who bypassed your business entirely without ever knowing you existed.",
   },
   {
     number: "03",
     icon: "/seo-company-wesley-chapel/card-icon-3.png",
-    title: "Unresolved Website Performance Issues",
+    title: "A Website Alone Does Not Attract Customers",
     description:
-      "If your website is slow or has a lot of errors Google thinks your website is not good and your ranking gets worse every week.",
+      "A website without search optimization does not generate business on its own. It requires deliberate technical signals, local authority, and aligned content before Google recommends it to any Spring Hill, Florida, consumer.",
   },
   {
     number: "04",
     icon: "/seo-company-wesley-chapel/card-icon-1.png",
-    title: "Missing From the Google Local Map Pack",
+    title: "The Local Map Pack Is Already Occupied",
     description:
-      "If you do not have a Google Business Profile your business will not be on the Google map, which is where people look the most when they search for something.",
-  },
-  {
-    number: "05",
-    icon: "/seo-company-wesley-chapel/card-icon-2.png",
-    title: "Fading Organic Reach Each Month",
-    description:
-      "Every month your website will be seen by people if you do not keep working on it while your competitors who keep doing search engine optimization get stronger and stronger.",
+      "The top three listings on Google Maps get most of the clicks and calls in a local search. Securing those listings on Google Maps requires a structured local SEO strategy built for the Spring Hill, Florida, market.",
   },
 ];
 
@@ -53,7 +46,7 @@ export default function WhyLosingCustomers() {
             <span className="text-[#FF6F00]">Without SEO</span>
           </h2>
           <p className="mt-6 text-[16px] leading-8 text-black/70 md:text-[18px]">
-            In Spring Hill, people usually type their queries directly into the search bar first. They almost uniformly ignore everything beyond the first page of results, a blink-and-you-miss-it reality where visibility instantly morphs into viability. Not being there means immediate abandonment to the next option; after all, one wonders why they would dig deeper when everything else demands their attention. Studies, and again more studies, consistently point to the same unyielding statistic over seventy-five percent of all journeys end right there, never to continue. That absence from Google’s curated top tier is a quiet hemorrhage of potential revenue, a persistent trickle draining your bottom line every single day without a sound.
+            New families, new residents, and new spending power arrive in Spring Hill, Florida, every month. When they need a product or a local service, their first move is a Google search. That search creates a moment of decision that happens thousands of times a day in this market. The businesses that appear on page one win that moment. Without an active SEO strategy, your Spring Hill, Florida, business surrenders that moment to a competitor on every single search. The gap does not stay the same. It widens every day. The other business ranks, and you do not.
           </p>
         </div>
 
