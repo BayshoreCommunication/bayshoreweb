@@ -1111,106 +1111,113 @@
   "seo-company-spring-hill": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
-        "alt": "Common SEO Mistakes Banner for Spring Hill",
-        "title": "Common SEO Mistakes Banner for Spring Hill",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
+        "src": "/seo-company-spring-hill/common-seo-mistakes-hurting-local-business-growth.webp",
+        "alt": "Illustration showing common SEO mistakes like poor content, weak backlinks, slow speed, and missing local optimization.",
+        "title": "Common SEO Mistakes Hurting Local Rankings",
+        "description": "Discover the most common SEO mistakes that prevent local businesses from ranking higher and attracting more customers through organic search.",
+        "caption": "Avoid common SEO mistakes to improve rankings and attract local customers."
       }
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
-        "alt": "Technical Audit Step Image for Spring Hill",
-        "title": "Technical Audit Step Image for Spring Hill",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
+        "src": "/seo-company-spring-hill/local-search-visibility-at-the-moment-of-decision.webp",
+        "alt": "Mobile local search showing Google Maps business profile helping customers choose nearby services at decision time.",
+        "title": "Local Search Visibility at the Moment of Decision",
+        "description": "Appear when customers are ready to choose a business with optimized Google Maps visibility, reviews, and trusted local search presence.",
+        "caption": "Be visible exactly when customers are ready to contact your business."
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
-        "alt": "On-Page Optimization Step Image for Spring Hill",
-        "title": "On-Page Optimization Step Image for Spring Hill",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
+        "src": "/seo-company-spring-hill/google-maps-optimization-for-local-business-growth.webp",
+        "alt": "Optimized Google Business Profile increasing local map visibility, calls, reviews, and customer engagement.",
+        "title": "Google Maps Optimization for Local Businesses",
+        "description": "Improve Google Maps visibility with optimized business profiles, accurate information, local SEO, and review strategies that generate more calls.",
+        "caption": "Rank higher on Google Maps and attract more nearby customers."
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
-        "alt": "Off-Page Strategy Step Image for Spring Hill",
-        "title": "Off-Page Strategy Step Image for Spring Hill",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
+        "src": "/seo-company-spring-hill/local-search-traffic-with-high-purchase-intent.webp",
+        "alt": "Local search dashboard displaying website visitors, qualified leads, and conversions generated from high-intent searches.",
+        "title": "Local Search Traffic with High Purchase Intent",
+        "description": "Attract customers ready to buy through Local SEO strategies focused on qualified traffic, conversions, and measurable business growth.",
+        "caption": "Reach buyers actively searching for your products and services."
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
-        "alt": "Analytics and Reporting Step Image for Spring Hill",
-        "title": "Analytics and Reporting Step Image for Spring Hill",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
+        "src": "/seo-company-spring-hill/seo-generating-qualified-leads-and-business-growth.webp",
+        "alt": "SEO-generated inbound leads through calls, forms, appointments, and messages that convert into qualified customers.",
+        "title": "SEO Generating Qualified Leads and Business Growth",
+        "description": "SEO attracts qualified visitors who become phone calls, contact forms, appointments, and long-term customers through optimized websites.",
+        "caption": "Turn organic traffic into qualified leads and consistent business growth."
+      },
+      "monthlySeoGrowthRoadmapImage": {
+        "src": "/seo-company-spring-hill/monthly-seo-growth-roadmap-for-business-success.webp",
+        "alt": "SEO growth timeline showing rankings, traffic, visibility, and customer growth achieved through consistent optimization.",
+        "title": "Monthly SEO Growth Roadmap for Business Success",
+        "description": "A visual roadmap demonstrating how consistent SEO efforts improve keyword rankings, traffic, visibility, and customer acquisition over several months.",
+        "caption": "Sustainable SEO builds authority, traffic, and long-term business growth."
       }
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
-        "alt": "SEO Website Audit Image for Spring Hill",
-        "title": "SEO Website Audit Image for Spring Hill",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
+        "src": "/seo-company-spring-hill/seo-reporting-and-performance-analytics-dashboard.webp",
+        "alt": "SEO analytics dashboard displaying keyword rankings, traffic, conversions, ROI, and performance insights over time.",
+        "title": "SEO Reporting and Performance Analytics Dashboard",
+        "description": "Comprehensive SEO reporting tracks rankings, traffic, conversions, ROI, and actionable insights to measure campaign performance effectively.",
+        "caption": "Data-driven SEO reports reveal growth opportunities and measurable results."
       },
       "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
-        "alt": "Keyword Research Image for Spring Hill",
-        "title": "Keyword Research Image for Spring Hill",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
+        "src": "/seo-company-spring-hill/ecommerce-seo-strategy-for-online-store-growth.webp",
+        "alt": "E-commerce SEO dashboard and optimized product page improving organic traffic, rankings, and online sales performance.",
+        "title": "E-Commerce SEO Strategy for Online Store Growth",
+        "description": "Improve your online store with e-commerce SEO, optimized product pages, analytics, and keyword strategies that increase traffic and revenue.",
+        "caption": "E-commerce SEO turns product pages into consistent revenue generators."
       },
       "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
-        "alt": "On-Page Optimization Image for Spring Hill",
-        "title": "On-Page Optimization Image for Spring Hill",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
+        "src": "/seo-company-spring-hill/on-page-seo-content-optimization-for-rankings.webp",
+        "alt": "On-page SEO showing optimized content, internal links, user-focused structure, and improved search visibility.",
+        "title": "On-Page SEO Content Optimization for Rankings",
+        "description": "On-page SEO enhances page structure, keyword relevance, internal linking, and user experience to improve rankings and conversions.",
+        "caption": "Well-optimized pages deliver better rankings and user experience."
       },
       "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
-        "alt": "Technical SEO Image for Spring Hill",
-        "title": "Technical SEO Image for Spring Hill",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
+        "src": "/seo-company-spring-hill/technical-seo-audit-and-website-performance.webp",
+        "alt": "Technical SEO dashboard showing Core Web Vitals, crawl status, indexing, page speed, and site health improvements.",
+        "title": "Technical SEO Audit and Website Performance",
+        "description": "Technical SEO improves crawling, indexing, Core Web Vitals, page speed, and website health to achieve stronger search engine rankings.",
+        "caption": "Strong technical SEO creates a faster, healthier, and more visible website."
       },
       "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
-        "alt": "Local SEO Map Pack Image for Spring Hill",
-        "title": "Local SEO Map Pack Image for Spring Hill",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
+        "src": "/seo-company-spring-hill/local-seo-strategy-for-better-map-rankings.webp",
+        "alt": "Local SEO process illustrating profile optimization, citations, verification, and ranking improvements in map results.",
+        "title": "Local SEO Strategy for Better Map Rankings",
+        "description": "A proven Local SEO process that improves business visibility through optimized listings, citations, location signals, and ongoing maintenance.",
+        "caption": "Strong Local SEO helps your business dominate local search results."
       },
       "contentDevelopmentImage": {
-        "src": "/seo-company-wesley-chapel/service-6.png",
-        "alt": "Content Development Image for Spring Hill",
-        "title": "Content Development Image for Spring Hill",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
+        "src": "/seo-company-spring-hill/content-strategy-and-seo-copywriting-services.webp",
+        "alt": "SEO copywriting strategy with optimized content planning, keyword research, and structured pages for higher search rankings.",
+        "title": "Content Strategy and SEO Copywriting Services",
+        "description": "Effective SEO copywriting combines keyword research, search intent, and strategic content planning to increase organic traffic and conversions.",
+        "caption": "Quality content and smart SEO strategy drive lasting search visibility."
       },
       "offPageSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-7.png",
-        "alt": "Off-Page SEO Image for Spring Hill",
-        "title": "Off-Page SEO Image for Spring Hill",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
+        "src": "/seo-company-spring-hill/off-page-seo-and-authority-link-building-services.webp",
+        "alt": "Link building strategy connecting authoritative websites to improve domain authority, rankings, and organic visibility.",
+        "title": "Off-Page SEO and Link Building Services",
+        "description": "Off-page SEO builds authority through quality backlinks, outreach, trusted citations, and partnerships that strengthen search engine rankings.",
+        "caption": "Quality backlinks strengthen authority and improve search performance."
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-8.png",
-        "alt": "Ask Engine Optimization Image for Spring Hill",
-        "title": "Ask Engine Optimization Image for Spring Hill",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
+        "src": "/seo-company-spring-hill/ask-engine-optimization-aeo-for-local-businesses.webp",
+        "alt": "AI Answer Engine Optimization helping local businesses become trusted answers in AI search and conversational platforms.",
+        "title": "Ask Engine Optimization for Local Business Growth",
+        "description": "Learn how Ask Engine Optimization (AEO) helps businesses appear in AI-generated answers, improving visibility, trust, and customer acquisition through conversational search.",
+        "caption": "Become the trusted answer in AI search and attract more qualified customers."
       },
       "generativeEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-9.png",
-        "alt": "Generative Engine Optimization Image for Spring Hill",
-        "title": "Generative Engine Optimization Image for Spring Hill",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
+        "src": "/seo-company-spring-hill/generative-engine-optimization-geo-services.webp",
+        "alt": "Generative Engine Optimization helping content appear in ChatGPT, Google AI Overview, and AI-generated search results.",
+        "title": "Generative Engine Optimization for AI Search",
+        "description": "GEO optimizes your content for AI search platforms like ChatGPT, Google AI Overview, and Perplexity to increase visibility and brand authority.",
+        "caption": "Get discovered in AI-generated search results with GEO optimization."
       }
     }
   },

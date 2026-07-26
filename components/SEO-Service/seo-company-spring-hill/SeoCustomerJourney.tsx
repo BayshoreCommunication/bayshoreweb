@@ -33,7 +33,7 @@ const seoSteps = [
   },
   {
     number: "05",
-    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
+    image: images.seoCustomerJourneySection.monthlySeoGrowthRoadmapImage.src,
     title: "Authority That Builds Month After Month",
     description:
       "If you keep working on your SEO your website becomes well known and you show up in search results for more keywords. This helps you get customers without having to spend a lot of money on advertising. Over time this helps your business get a stream of new customers in Spring Hill, Florida.",
