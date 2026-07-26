@@ -31,13 +31,6 @@ const seoSteps = [
     description:
       "Customers who come through organic search are aware and deliberate. They convert at higher rates, spend more per transaction, and are more likely to return and recommend your Spring Hill, Florida, business to others in the community.",
   },
-  {
-    number: "05",
-    image: images.seoCustomerJourneySection.monthlySeoGrowthRoadmapImage.src,
-    title: "Authority That Builds Month After Month",
-    description:
-      "If you keep working on your SEO your website becomes well known and you show up in search results for more keywords. This helps you get customers without having to spend a lot of money on advertising. Over time this helps your business get a stream of new customers in Spring Hill, Florida.",
-  },
 ];
 
 export default function SeoCustomerJourney() {
