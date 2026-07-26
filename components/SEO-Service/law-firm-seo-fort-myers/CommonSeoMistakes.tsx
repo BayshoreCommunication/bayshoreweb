@@ -19,7 +19,7 @@ const mistakes = [
     image: "/seo-company-wesley-chapel/mistake-4.png",
     title: "Thin Practice Area Pages",
     description:
-      "Short, generic pages signal low expertise to Google. For Fort Myers, standing out means creating meaningful pages tied to the area. Pages built around local context help gain ground in search results here.",
+      "Short, generic pages signal low expertise to Google. For Fort Myers, standing out means creating meaningful pages tied to the area. Pages built around local context help gain ground in search results here. What matters most is depth connected to place.Visibility grows when content reflects real community details.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-5.png",
