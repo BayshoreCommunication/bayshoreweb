@@ -12,31 +12,31 @@ import {
 const roiCards = [
   {
     icon: Target,
-    title: "Lower Acquisition Cost Over Time",
+    title: "",
     description:
-      "Organic acquisition cost falls consistently as rankings improve over time. The longer SEO is active, the more cost-effective each lead becomes.",
+      "Organic acquisition cost falls consistently as rankings improve over time.",
   },
   {
     icon: ChartNoAxesCombined,
-    title: "Clients Arrive Ready to Act",
+    title: "",
     description:
-      "Organic visitors arrive with a specific legal need and readiness to act. These are not passive browsers but individuals seeking legal representation.",
+      "Organic visitors arrive with a specific legal need and readiness to act",
   },
   {
     icon: BadgeDollarSign,
-    title: "Growing Search Authority",
+    title: "",
     description:
-      "Each content piece, citation, and backlink adds to growing search authority. Your digital presence compounds in value over time.",
+      "Each content piece, citation, and backlink adds to growing search authority.",
   },
   {
     icon: ShieldCheck,
-    title: "Free Up Paid Advertising Budget",
+    title: "",
     description:
-      "Paid channels freed up can be used as margin or reinvested. SEO reduces reliance on costly pay-per-click campaigns.",
+      "Paid channels freed up can be used as margin or reinvested.",
   },
   {
     icon: Handshake,
-    title: "Trust Through Organic Prominence",
+    title: "",
     description:
       "Prospective customers trust that your website will be found at the top of the pages when they enter keywords into a search engine.",
   },

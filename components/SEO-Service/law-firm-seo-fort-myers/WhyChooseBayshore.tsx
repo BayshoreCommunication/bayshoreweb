@@ -21,39 +21,45 @@ import "swiper/css/pagination";
 const features = [
   {
     Icon: Award,
-    title: "Founded in 2016: 10 Years of Digital Marketing",
+    title: "Founded in 2016",
     description:
-      "10 years of digital marketing in fierce competition. Longevity in digital marketing is itself a performance indicator. Agencies that fail to deliver results do not retain clients across a decade.",
+      "10 years of digital marketing in fierce competition.",
   },
   {
     Icon: TrendingUp,
     title: "220-Plus Websites Launched",
     description:
-      "A proven track record building SEO campaigns for legal clients. Each website launch represents a commitment to performance and measurable growth.",
+      "A proven track record building SEO campaigns for legal clients.",
   },
   {
     Icon: SearchCheck,
     title: "500,000-Plus Leads Generated",
     description:
-      "Measurable results across legal, healthcare, and financial services sectors. These leads represent real consultations and client engagements.",
+      "Measurable results across legal, healthcare, and financial services sectors.",
   },
   {
     Icon: MapPinned,
     title: "Legal SEO Specialists",
     description:
-      "Our team has specific expertise in law firm SEO and bar advertising compliance. We understand the unique requirements of legal marketing.",
+      "Our team has specific expertise in law firm SEO and bar advertising compliance.",
   },
   {
     Icon: Layers3,
     title: "Transparent Monthly Reporting",
     description:
-      "Every report covers rankings, traffic, leads, and next steps rationale. You always know exactly what your investment is producing.",
+      "Every report covers rankings, traffic, leads, and next steps rationale.",
   },
   {
     Icon: ClipboardList,
     title: "No Long-Term Contracts",
     description:
-      "We earn continued business through performance, not contractual obligation. Fort Myers Market Knowledge: We understand Lee County legal search behavior and client geography.",
+      "We earn continued business through performance, not contractual obligation.",
+  },
+  {
+    Icon: ClipboardList,
+    title: "Fort Myers Market Knowledge",
+    description:
+      "We understand Lee County legal search behavior and client geography.",
   },
 ];
 

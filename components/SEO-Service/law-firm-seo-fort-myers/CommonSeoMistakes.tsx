@@ -25,19 +25,19 @@ const mistakes = [
     image: "/seo-company-wesley-chapel/mistake-5.png",
     title: "Unresolved Technical Errors",
     description:
-      "Slow loading times or broken links hurt a page's standing with search engines, regardless of how good the material might be. Mobile performance issues and missing schema markup compound the problem.",
+      "Strong positioning comes from specificity rooted in location. Slow loading times or broken links hurt a page’s standing with search engines, regardless of how good the material might be. Problems like these stay hidden yet still damage visibility online.  Mobile performance issues and missing schema markup compound the problem.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-3.png",
     title: "No Link-Building Program",
     description:
-      "Domain authority is a primary ranking factor for legal websites. Left behind often are companies missing a clear plan for links, while others move ahead with purpose.",
+      "Domain authority is a primary ranking factor for legal websites. Left behind often are companies missing a clear plan for links, while others move ahead with purpose. A defined approach pulls ahead where none exists.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-6.png",
     title: "Inconsistent Effort",
     description:
-      "SEO demands ongoing work, not isolated attempts. Over time, visibility fades when updates pause. New material must appear at predictable intervals. Routine maintenance keeps rankings stable.",
+      "SSEO demands ongoing work, not isolated attempts. Over time, visibility fades when updates pause. New material must appear at predictable intervals. Links require constant verification. Technical issues need correction soon after discovery. Routine maintenance keeps rankings stable.",
   },
 ];
 

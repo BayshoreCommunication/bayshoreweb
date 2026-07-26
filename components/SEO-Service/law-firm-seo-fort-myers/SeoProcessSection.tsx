@@ -26,35 +26,35 @@ const processSteps = [
     Icon: ChartNoAxesColumnIncreasing,
     title: "Comprehensive SEO Audit",
     description:
-      "A full review of your site's SEO begins with checking rankings, keywords, and online listings. Because every business differs, results shape a plan built around what shows up.",
+      "A full review of your site’s SEO begins with checking rankings, keywords, and online listings. Because every business differs, results shape a plan built around what shows up. What you see comes straight from real data",
   },
   {
     number: "3",
     Icon: SquareActivity,
     title: "Strategy Development",
     description:
-      "Starting with clear goals for Fort Myers, the roadmap focuses on key rankings first. A list of targeted keywords shapes what comes next. Content ideas follow, based on search demand and relevance.",
+      "Starting with clear goals for Fort Myers, the roadmap focuses on key rankings first. A list of targeted keywords shapes what comes next. Content ideas follow, based on search demand and relevance. Technical improvements appear where site performance lags. Link efforts align with authority needs over time. Each step connects directly to measurable outcomes.",
   },
   {
     number: "4",
     Icon: KeyRound,
     title: "Technical Remediation",
     description:
-      "Fixing critical technical problems comes first, only then does content development start. Speed of the page matters early on. It gets improved along with how well it works on phones.",
+      "Fixing critical technical problems comes first, only then does content development start. Speed of the page matters early on. It gets improved along with how well it works on phones. Structured data appears next in the process, followed by connections between site pages. Each piece fits into place before any writing happens.",
   },
   {
     number: "5",
     Icon: FileText,
     title: "Content Development and Publishing",
     description:
-      "We produce optimized practice area pages and location-specific content. Each piece targets defined keywords and meets current search quality standards.",
+      "We produce optimized practice area pages and location-specific content.Each piece targets defined keywords and meets current search quality standards.",
   },
   {
     number: "6",
     Icon: Settings,
     title: "Google Business Profile and Citation Work",
     description:
-      "We optimize your profile and begin structured citation building. This phase is critical for improving map pack visibility across Fort Myers.",
+      "We optimize your profile and begin structured citation building.This phase is critical for improving map pack visibility across Fort Myers.",
   },
 ];
 
