@@ -24,12 +24,12 @@ export const metadata = {
     "Expand your online reach with strategic SEO services in Dunedin. Capture more local searches and convert visitors into loyal customers.",
 
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
 

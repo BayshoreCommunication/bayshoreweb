@@ -23,12 +23,12 @@ export const metadata = {
   description: "Increase your online visibility with a professional SEO company in Spring Hill. Drive qualified traffic,generate leads and grow your business.",
 
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
 

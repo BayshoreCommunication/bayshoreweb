@@ -899,113 +899,120 @@
   "seo-company-dunedin": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
-        "alt": "Common SEO Mistakes Banner for Dunedin",
-        "title": "Common SEO Mistakes Banner for Dunedin",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
+        "src": "/seo-company-dunedin/common-seo-mistakes-that-hurt-search-rankings.webp",
+        "alt": "Illustration showing common SEO mistakes including slow websites, poor content, missing meta tags, and weak backlinks.",
+        "title": "Common SEO Mistakes That Hurt Website Rankings",
+        "description": "Discover the most common SEO mistakes that reduce search visibility, including poor backlinks, slow website speed, thin content, missing metadata, and weak local SEO optimization.",
+        "caption": "Avoid these SEO mistakes to improve rankings, user experience, and organic traffic."
       }
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
-        "alt": "Technical Audit Step Image for Dunedin",
-        "title": "Technical Audit Step Image for Dunedin",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
+        "src": "/seo-company-dunedin/local-search-visibility-at-customer-decision-time.webp",
+        "alt": "Google search result highlighting a local business appearing when customers search for nearby services with buying intent.",
+        "title": "Local Search Visibility at the Customer Decision Stage",
+        "description": "Appear at the exact moment customers search for nearby services with high purchase intent. Strong local SEO increases visibility, trust, calls, and conversions when buying decisions are made.",
+        "caption": "Be the business customers find first when they are ready to choose and buy."
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
-        "alt": "On-Page Optimization Step Image for Dunedin",
-        "title": "On-Page Optimization Step Image for Dunedin",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
+        "src": "/seo-company-dunedin/google-maps-prominence-for-local-business-growth.webp",
+        "alt": "Google Maps business profile highlighting ratings, reviews, location, and local visibility that generate customer calls.",
+        "title": "Google Maps Prominence for More Local Customers",
+        "description": "Improve Google Maps prominence through optimized business profiles, strong reviews, accurate information, and local SEO strategies that generate more calls, visits, and qualified leads.",
+        "caption": "Rank higher on Google Maps and attract more local customers with stronger visibility."
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
-        "alt": "Off-Page Strategy Step Image for Dunedin",
-        "title": "Off-Page Strategy Step Image for Dunedin",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
+        "src": "/seo-company-dunedin/real-purchasing-intent-seo-traffic-performance.webp",
+        "alt": "SEO analytics dashboard displaying purchasing intent traffic, conversions, revenue growth, and high-value customer insights.",
+        "title": "SEO That Drives Real Purchasing Intent Traffic",
+        "description": "Track high-intent organic traffic, conversion rates, revenue, and customer behavior to measure how SEO attracts visitors who are ready to purchase your products or services.",
+        "caption": "Focus on SEO that attracts buyers instead of just increasing website visitors."
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
-        "alt": "Analytics and Reporting Step Image for Dunedin",
-        "title": "Analytics and Reporting Step Image for Dunedin",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
+        "src": "/seo-company-dunedin/steady-flow-of-qualified-inbound-business-leads.webp",
+        "alt": "Illustration showing phone calls, messages, appointments, and qualified inbound inquiries generated through SEO.",
+        "title": "Generate Qualified Inbound Leads Through SEO",
+        "description": "A strong SEO strategy attracts customers actively searching for your services, generating qualified phone calls, appointment requests, contact forms, and consistent business inquiries.",
+        "caption": "SEO brings real customers who are ready to contact your business."
+      },
+      "monthlySeoGrowthRoadmapImage": {
+        "src": "/seo-company-dunedin/seo-growth-strategy-authority-and-results-chart.webp",
+        "alt": "SEO growth chart showing search visibility, keyword rankings, authority building, and business growth over time.",
+        "title": "SEO Growth Strategy That Builds Long-Term Authority",
+        "description": "A visual representation of sustainable SEO growth through keyword optimization, authority building, quality content, and consistent improvements that generate long-term business results.",
+        "caption": "Strong SEO strategies create lasting authority, higher rankings, and sustainable business growth."
       }
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
-        "alt": "SEO Website Audit Image for Dunedin",
-        "title": "SEO Website Audit Image for Dunedin",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
+        "src": "/seo-company-dunedin/seo-performance-dashboard-with-keyword-analytics.webp",
+        "alt": "SEO dashboard displaying keyword rankings, organic traffic, conversions, local visibility, and ROI performance metrics.",
+        "title": "SEO Performance Dashboard for Business Analytics",
+        "description": "Monitor SEO success using a comprehensive dashboard that tracks keyword rankings, organic traffic, conversions, local visibility, and return on investment with actionable insights.",
+        "caption": "Measure SEO success with real-time keyword, traffic, and conversion insights."
       },
       "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
-        "alt": "Keyword Research Image for Dunedin",
-        "title": "Keyword Research Image for Dunedin",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
+        "src": "/seo-company-dunedin/ecommerce-seo-strategy-for-online-store-growth.webp",
+        "alt": "E-commerce SEO workflow showing product optimization, category structure, indexing, and buyer-focused search visibility.",
+        "title": "E-commerce SEO Strategy for Higher Online Sales",
+        "description": "Optimize your online store with a complete e-commerce SEO strategy that improves product visibility, category organization, technical indexing, and search performance to drive qualified buyers.",
+        "caption": "Optimize products, categories, and technical SEO to increase online sales and organic traffic."
       },
       "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
-        "alt": "On-Page Optimization Image for Dunedin",
-        "title": "On-Page Optimization Image for Dunedin",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
+        "src": "/seo-company-dunedin/on-page-seo-optimization-for-better-rankings.webp",
+        "alt": "On-page SEO interface showing heading structure, metadata, internal links, and optimization score for webpages.",
+        "title": "On-Page SEO Optimization for Better Search Rankings",
+        "description": "Optimize every webpage with structured headings, keyword-focused content, metadata, internal linking, and technical improvements that help search engines understand your pages.",
+        "caption": "Well-optimized pages improve rankings, user experience, and search visibility."
       },
       "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
-        "alt": "Technical SEO Image for Dunedin",
-        "title": "Technical SEO Image for Dunedin",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
+        "src": "/seo-company-dunedin/technical-seo-foundation-for-search-performance.webp",
+        "alt": "Technical SEO illustration highlighting crawling, indexing, schema markup, mobile optimization, and website speed.",
+        "title": "Technical SEO Foundation for Better Search Visibility",
+        "description": "Improve website performance with technical SEO including crawlability, indexing, structured data, mobile optimization, and faster page speed for higher search rankings.",
+        "caption": "Strong technical SEO creates a faster, healthier, and more searchable website."
       },
       "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
-        "alt": "Local SEO Map Pack Image for Dunedin",
-        "title": "Local SEO Map Pack Image for Dunedin",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
+        "src": "/seo-company-dunedin/local-seo-strategy-for-google-maps-rankings.webp",
+        "alt": "Local SEO map showing Google Business Profile, reviews, citations, and Google Maps ranking improvements.",
+        "title": "Local SEO Strategy for Better Google Maps Rankings",
+        "description": "Strengthen local search performance by optimizing Google Business Profile, earning quality reviews, building local citations, and improving map rankings for nearby customers.",
+        "caption": "Grow local visibility with optimized business listings, reviews, and map rankings."
       },
       "contentDevelopmentImage": {
-        "src": "/seo-company-wesley-chapel/service-6.png",
-        "alt": "Content Development Image for Dunedin",
-        "title": "Content Development Image for Dunedin",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
+        "src": "/seo-company-dunedin/seo-content-strategy-and-copywriting-optimization.webp",
+        "alt": "SEO content editor displaying optimized headings, quality score, EEAT signals, readability, and search intent analysis.",
+        "title": "SEO Content Strategy and Copywriting Services",
+        "description": "Create search-optimized content that satisfies user intent, improves EEAT signals, increases readability, and helps businesses rank higher in organic search results.",
+        "caption": "Write content that ranks, builds trust, and answers customer questions effectively."
       },
       "offPageSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-7.png",
-        "alt": "Off-Page SEO Image for Dunedin",
-        "title": "Off-Page SEO Image for Dunedin",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
+        "src": "/seo-company-dunedin/off-page-seo-link-building-authority-strategy.webp",
+        "alt": "Off-page SEO illustration showing authority backlinks, trusted directories, business listings, and quality link building.",
+        "title": "Off-Page SEO and Authority Link Building Strategy",
+        "description": "Build long-term website authority through ethical link building, trusted business citations, local directories, and industry partnerships that improve search engine credibility.",
+        "caption": "Earn trusted backlinks that strengthen authority and improve search rankings."
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-8.png",
-        "alt": "Ask Engine Optimization Image for Dunedin",
-        "title": "Ask Engine Optimization Image for Dunedin",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
+        "src": "/seo-company-dunedin/ask-engine-optimization-aeo-strategy-guide.webp",
+        "alt": "Ask Engine Optimization strategy diagram showing AI-friendly content, authority signals, local relevance, and trusted AI platforms.",
+        "title": "Ask Engine Optimization Strategy for AI Search",
+        "description": "Learn how Ask Engine Optimization (AEO) helps businesses appear in AI-generated answers by creating trustworthy, question-focused content, improving authority signals, and optimizing for AI search experiences.",
+        "caption": "Build content that answers real questions and increases visibility in AI-powered search engines."
       },
       "generativeEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-9.png",
-        "alt": "Generative Engine Optimization Image for Dunedin",
-        "title": "Generative Engine Optimization Image for Dunedin",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
+        "src": "/seo-company-dunedin/generative-engine-optimization-for-ai-search.webp",
+        "alt": "Generative Engine Optimization diagram showing ChatGPT, Google AI, Perplexity, authority signals, and AI search visibility.",
+        "title": "Generative Engine Optimization for AI Search Results",
+        "description": "Increase visibility in AI-powered search engines with Generative Engine Optimization (GEO). Build authoritative content that earns citations and recommendations from ChatGPT, Google AI, and Perplexity.",
+        "caption": "Become the trusted business recommended by AI-powered search experiences."
       }
     }
   },
   "seo-company-largo-fl": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
+        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.webp",
         "alt": "Common SEO Mistakes Banner for Largo Fl",
         "title": "Common SEO Mistakes Banner for Largo Fl",
         "description": "Common SEO Mistakes Section main banner illustration",
@@ -1014,28 +1021,28 @@
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
+        "src": "/seo-company-wesley-chapel/seo-step-1.webp",
         "alt": "Technical Audit Step Image for Largo Fl",
         "title": "Technical Audit Step Image for Largo Fl",
         "description": "Customer Journey Step 1 (Technical Audit) banner",
         "caption": "Step 1: Technical Audit"
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
+        "src": "/seo-company-wesley-chapel/seo-step-2.webp",
         "alt": "On-Page Optimization Step Image for Largo Fl",
         "title": "On-Page Optimization Step Image for Largo Fl",
         "description": "Customer Journey Step 2 (On-Page Optimization) banner",
         "caption": "Step 2: On-Page Optimization"
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
+        "src": "/seo-company-wesley-chapel/seo-step-3.webp",
         "alt": "Off-Page Strategy Step Image for Largo Fl",
         "title": "Off-Page Strategy Step Image for Largo Fl",
         "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
         "caption": "Step 3: Off-Page Strategy"
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
+        "src": "/seo-company-wesley-chapel/seo-step-4.webp",
         "alt": "Analytics and Reporting Step Image for Largo Fl",
         "title": "Analytics and Reporting Step Image for Largo Fl",
         "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
@@ -1044,35 +1051,35 @@
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
+        "src": "/seo-company-wesley-chapel/service-1.webp",
         "alt": "SEO Website Audit Image for Largo Fl",
         "title": "SEO Website Audit Image for Largo Fl",
         "description": "SEO Website Audit service card illustration",
         "caption": "SEO Website Audit"
       },
       "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
+        "src": "/seo-company-wesley-chapel/service-2.webp",
         "alt": "Keyword Research Image for Largo Fl",
         "title": "Keyword Research Image for Largo Fl",
         "description": "Keyword Research service card illustration",
         "caption": "Keyword Research"
       },
       "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
+        "src": "/seo-company-wesley-chapel/service-3.webp",
         "alt": "On-Page Optimization Image for Largo Fl",
         "title": "On-Page Optimization Image for Largo Fl",
         "description": "On-Page Optimization service card illustration",
         "caption": "On-Page Optimization"
       },
       "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
+        "src": "/seo-company-wesley-chapel/service-4.webp",
         "alt": "Technical SEO Image for Largo Fl",
         "title": "Technical SEO Image for Largo Fl",
         "description": "Technical SEO service card illustration",
         "caption": "Technical SEO"
       },
       "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
+        "src": "/seo-company-wesley-chapel/service-5.webp",
         "alt": "Local SEO Map Pack Image for Largo Fl",
         "title": "Local SEO Map Pack Image for Largo Fl",
         "description": "Local SEO Map Pack service card illustration",
