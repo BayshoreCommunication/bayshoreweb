@@ -15,6 +15,7 @@ import ServiceAreasSection from "@/components/SEO-Service/seo-company-wesley-cha
 import TestimonialsSection from "@/components/SEO-Service/seo-company-wesley-chapel/TestimonialsSection";
 import WhyChooseBayshore from "@/components/SEO-Service/seo-company-wesley-chapel/WhyChooseBayshore";
 import WhyLosingCustomers from "@/components/SEO-Service/seo-company-wesley-chapel/WhyLosingCustomers";
+import RealResults from "@/components/SEO-Service/seo-company-wesley-chapel/RealResults";
 import React from "react";
 
 export const metadata = {
@@ -52,7 +53,9 @@ const page = () => {
       <SeoServicesSection />
       <AiSearchSeoSection />
       <SeoProcessSection />
+      
       <WhyChooseBayshore />
+      <RealResults />
       <SeoRoiSection />
       {/* <SeoPackagesSection /> */}
       <ServiceAreasSection />
