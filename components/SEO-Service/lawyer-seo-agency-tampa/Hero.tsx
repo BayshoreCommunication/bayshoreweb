@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-
 import Image from "next/image";
 import { motion, animate, useMotionValue, useTransform } from "framer-motion";
 import { useEffect } from "react";
@@ -56,8 +55,6 @@ export default function Hero() {
           priority
           className="object-cover object-center"
         />
-
-        {/* <div className="absolute inset-0 bg-[#020B2D]/70" /> */}
       </div>
 
       {/* Content */}
@@ -70,28 +67,22 @@ export default function Hero() {
             </span>
 
             <h1 className="mt-6 max-w-[720px] text-[38px] font-extrabold leading-[1.05] sm:text-[52px] md:text-[64px]">
-              Lawyer SEO Agency in Tampa Florida:{" "}
-              <span className="text-[#FF6F00]">Higher Visibility, Better Leads, Increased Revenue</span>
+              Lawyer SEO Agency inTampa — <span className="text-[#FF6F00]">Get More Clients, Dominate Local Search</span>
             </h1>
 
             <p className="mt-6 max-w-[700px] text-[16px] leading-[1.7] text-white/85 md:text-[18px]">
-              Thousands of Tampa, Florida, legal clients are on Google searching for exactly what your law firm offers. The only question is whether they are finding you or finding your competitors instead. Bayshore Communication is the performance-focused lawyer seo agency tampa that changes that equation permanently. We have delivered measurable organic growth for businesses across Tampa. Our strategies are built on verified data, deep local market expertise, and dedicated execution.
+              Bayshore Communication is a results-focused lawyer SEO agency tampa who are committed to helping their law firm get more qualified leads by improving their search ranking. We pair tried and true local search engine marketing with AI age optimization to make your practice visible to the right individuals at the right time.
             </p>
 
             {/* CTA */}
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <button className="group relative h-[52px] overflow-hidden rounded-lg bg-[#FF6F00] px-8 font-semibold text-white">
                 <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
-
                 <Link href="#contact">
-
-
-                <span className="relative flex h-full items-center justify-center gap-3 text-[15px] md:text-[16px]">
-                  Request Your SEO Proposal
-                  <ArrowRight size={18} />
-                </span>
-
-
+                  <span className="relative flex h-full items-center justify-center gap-3 text-[15px] md:text-[16px]">
+                    Request Your SEO Proposal
+                    <ArrowRight size={18} />
+                  </span>
                 </Link>
               </button>
 

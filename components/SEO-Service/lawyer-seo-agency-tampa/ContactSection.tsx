@@ -87,9 +87,9 @@ export default function ContactSection() {
             <h2 className="text-[38px] font-bold leading-[1.08] text-black md:text-[52px]">
               Let&apos;s Put Your
               <br />
-              Tampa, Florida,
+              Tampa Law Firm
               <br />
-              Business on the Map
+              on the Map
               <br />
               <span className="text-[#FF6F00]">
                 — Contact Us Today
@@ -97,7 +97,7 @@ export default function ContactSection() {
             </h2>
 
             <p className="mt-8 max-w-[440px] text-[17px] leading-8 text-black/70 md:text-[19px]">
-              Capture Every Click and Secure Your Position as a Tampa Leader.
+              Become the most trusted name in your neighborhood through dominant Tampa SEO
               <br />
               Call +1 (509) 592-1745 | www.bayshorecommunication.com
             </p>
@@ -214,27 +214,26 @@ export default function ContactSection() {
 
                 <Field
                   icon={<BriefcaseBusiness size={17} />}
-                  label="Business Website"
-                  name="business"
-                  placeholder="Enter Your Business Website"
+                  label="Law Firm Name"
+                  name="law_firm_name"
+                  placeholder="Enter Your Law Firm Name"
                 />
 
                 <div>
                   <Label
                     icon={<Tag size={17} />}
-                    text="Primary Service Category"
+                    text="Primary Practice Area"
                   />
 
                   <select name="industry" className={inputStyle} required>
-                    <option value="">Select your industry or service</option>
-
-                    <option>Home Services</option>
-                    <option>Healthcare</option>
-                    <option>Legal Services</option>
-                    <option>Real Estate</option>
-                    <option>Retail Business</option>
-                    <option>Fitness & Wellness</option>
-                    <option>Restaurant</option>
+                    <option value="">Select your practice area</option>
+                    <option>Personal Injury Law</option>
+                    <option>Family Law</option>
+                    <option>Criminal Defense</option>
+                    <option>Immigration Law</option>
+                    <option>Divorce Law</option>
+                    <option>Estate Planning and Probate</option>
+                    <option>Business and Corporate Law</option>
                     <option>Other</option>
                   </select>
                 </div>
@@ -247,7 +246,6 @@ export default function ContactSection() {
 
                   <select name="source" className={inputStyle} required>
                     <option value="">Select an option</option>
-
                     <option>Google Search</option>
                     <option>Facebook</option>
                     <option>LinkedIn</option>
@@ -320,8 +318,6 @@ export default function ContactSection() {
                     {loading ? "Sending..." : "Send My SEO Proposal Request"}
                   </span>
                 </button>
-
-                
               </form>
               )}
             </div>
@@ -330,7 +326,7 @@ export default function ContactSection() {
             <div className="grid gap-5 rounded-b-[16px] border border-t-0 border-black/5 bg-white px-6 py-5 shadow-[0_18px_35px_rgba(0,0,0,0.07)] md:grid-cols-3 md:px-8">
               <TrustItem
                 icon={<ShieldCheck size={22} />}
-                text="Trusted by Local Businesses Across Hillsborough County"
+                text="Trusted by Law Firms Across Hillsborough County"
               />
 
               <TrustItem

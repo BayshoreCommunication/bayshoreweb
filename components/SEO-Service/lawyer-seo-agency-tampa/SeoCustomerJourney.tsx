@@ -6,37 +6,30 @@ const seoSteps = [
   {
     number: "01",
     image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
-    title: "Visibility at the Moment of Decision",
+    title: "Search Visibility",
     description:
-      "When people in Tampa, Florida search for the services you provide your law firm shows up. People see your name. This happens when people are already looking to do something so they are more likely to call you or visit your law firm.",
+      "Your law firm appears when Tampa residents search for terms like “personal injury lawyer Tampa” or “Tampa family law attorney,” instantly establishing credibility and trust with people who are ready to hire.",
   },
   {
     number: "02",
     image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
-    title: "Google Maps Prominence That Generates Calls",
+    title: "Google Maps Prominence",
     description:
-      "If you have a Google Business Profile that’s complete and up to date, people in your area can see your law firm address, hours, reviews and phone number without having to go to your website. This helps people in Tampa, Florida find your law firm on Google Maps.",
+      "When your Google Business Profile is properly optimized, nearby clients find your office, read your reviews, and call directly to book a consultation with your firm. This is where a lawyer SEO agency tampa approach ensures you appear at the top in your neighborhood.",
   },
   {
     number: "03",
     image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
-    title: "Traffic With Real Purchasing Intent",
+    title: "Right Clients, Not Just Any Traffic",
     description:
-      "SEO helps your law firm get noticed by people in Tampa, Florida who are actually looking for what you sell. This means you do not get a lot of people visiting your website who’re not really interested in buying something from you.",
+      "Legal SEO targets people who are actively looking for the specific type of legal representation your firm provides, not random visitors with no intent to retain an attorney.",
   },
   {
     number: "04",
     image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
-    title: "Steady Flow of Inbound Inquiries",
+    title: "Consultations, Not Just Clicks",
     description:
-      "If your website is easy to use and has the information, people who visit your website are more likely to call you, ask for an appointment or send you a message. These are people who’re ready to spend money now.",
-  },
-  {
-    number: "05",
-    image: images.seoCustomerJourneySection.authorityStepImage.src,
-    title: "Authority That Builds Month After Month",
-    description:
-      "If you keep working on your SEO your website becomes well known and you show up in search results for more keywords. This helps you get customers without having to spend a lot of money on advertising. Over time this helps your law firm get a stream of new clients in Tampa, Florida.",
+      "A well-optimized law firm website converts search visibility into booked consultations, inbound phone calls, and contact form submissions from ready-to-hire clients throughout Tampa.",
   },
 ];
 
@@ -47,12 +40,12 @@ export default function SeoCustomerJourney() {
         {/* Header */}
         <div className="mx-auto max-w-[900px] text-center">
           <h2 className="text-[32px] font-bold leading-[1.1] text-[#081B4B] md:text-[48px]">
-            How SEO Turns <span className="text-[#FF6F00]">Tampa Florida</span> Searches Into{" "}
-            <span className="text-[#FF6F00]">Paying Clients</span>
+            How SEO converts <span className="text-[#FF6F00]">Tampa</span> legal searches into{" "}
+            <span className="text-[#FF6F00]">paying clients</span>
           </h2>
 
           <p className="mx-auto mt-6 max-w-[900px] text-[15px] leading-7 text-black/70 md:text-[18px] md:leading-8">
-            Ready to make a purchase, someone in Tampa, Florida begins looking online. Spotting what they want shifts them into buyer mode fast. A local law firm becomes visible exactly when that search happens. Timing matters here. With help from an experienced lawyer seo agency tampa visibility grows just as decisions are being made.
+            When a potential client searches for a Tampa attorney, they are not casually browsing. They have a legal need and they are ready to make a decision. Lawyer SEO agency tampa connects your firm with those high-intent searchers at exactly the right moment in their decision process.
           </p>
         </div>
 

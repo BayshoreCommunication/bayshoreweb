@@ -5,51 +5,39 @@ import Image from "next/image";
 const mistakes = [
   {
     image: "/seo-company-wesley-chapel/mistake-1.png",
-    title: "Using Non-Local Keyword Targets",
+    title: "Targeting the Wrong Keywords",
     description:
-      "Targeting wide, generic terms without geographic intent fails to reach Tampa Florida clients who are actively searching for local providers.",
+      "Broad terms like \"attorney\" or \"law firm\" do not bring in local clients. Without precise, location-specific legal keywords like \"Tampa personal injury lawyer\" or \"family attorney Tampa FL,\" your firm misses the high-intent searches that matter most.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-2.png",
-    title: "Incomplete Google Business Profile",
+    title: "Neglected Google Business Profile",
     description:
-      "Missing categories, absent business descriptions, and unverified listings remove your law firm from the local map pack entirely.",
+      "A missing, incomplete, or unmonitored Google Business Profile means your firm does not appear in the local map pack. It can prevent your firm from appearing in the local map pack, where most Tampa clients first contact attorneys.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-4.png",
-    title: "Poor Performance on Mobile Devices",
+    title: "Poor Mobile Experience",
     description:
-      "Most people use their phones to search for things. If a website is slow or hard to use on a phone people will leave the site before they even look at what the business has to offer. Devices, like phones, are what people use to do more than 60% of local searches. A bad mobile experience is when a website is slow or confusing on a phone. This makes people leave before they engage with the business.",
+      "More than 60% of people searching for attorneys do it on their phones. A slow or hard-to-handle mobile site loses potential clients within the first few seconds of arrival, before they even see what your firm offers.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-5.png",
-    title: "Content That Does Not Reflect Local Intent",
+    title: "Thin or Generic Legal Content",
     description:
-      "Generic service descriptions that do not reflect the actual questions Tampa, Florida, legal clients typing into Google will not rank or produce inquiries.",
+      "Legal content that is not written around what Tampa residents actually search for fails to rank and fails to convert. Generic practice area descriptions do not speak to the specific questions and concerns of local clients who are ready to hire.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-3.png",
-    title: "Fragmented Site Structure",
+    title: "No Structured Site Architecture",
     description:
-      "When service pages lack clear internal connections and logical organization, search engines cannot determine their relevance, and those pages fail to rank.",
+      "Without proper internal linking and page structure, search engines cannot clearly identify your most important practice area pages. Those pages then fail to rank even when your firm has the expertise to back them up.",
   },
   {
     image: "/seo-company-wesley-chapel/mistake-6.png",
-    title: "Duplicate Content Across Multiple Pages",
+    title: "Zero Local Authority Building",
     description:
-      "Having the content on multiple pages of your website can really confuse search engines. They do not know which page of your website to rank. This can also weaken the authority of every page of your website that has this repeated content. Your website has repeated content. This is not good for search engines. Search engines get confused when they see the content on multiple pages of your website. This is why repeated content across your website is a problem.",
-  },
-  {
-    image: "/seo-company-wesley-chapel/mistake-1.png",
-    title: "Mismatched Business Data Across Directories",
-    description:
-      "Inconsistent business name, address, and phone information across the web undermines your local credibility signals and reduces your map pack eligibility.",
-  },
-  {
-    image: "/seo-company-wesley-chapel/mistake-2.png",
-    title: "No Ongoing Link Authority Strategy",
-    description:
-      "Businesses that do not build quality backlinks over time fall further behind competitors who are actively growing their domain authority each month.",
+      "Without Tampa-specific backlinks and citations, Google lacks sufficient ranking authority signals. Established local competitors continue building authority, making it increasingly difficult for newer firms to compete.",
   },
 ];
 
@@ -62,14 +50,14 @@ export default function CommonSeoMistakes() {
           <div>
             <h2 className="max-w-[780px] text-[34px] font-bold leading-[1.05] text-black md:text-[52px]">
               Common <span className="text-[#FF6F00]">SEO</span> Mistakes{" "}
-              <span className="text-[#FF6F00]">Tampa Florida</span>{" "}
-              Businesses Make
+              <span className="text-[#FF6F00]">Tampa Law Firms</span>{" "}
+              Make
             </h2>
           </div>
 
           <div>
             <p className="text-[15px] leading-7 text-black/70 md:text-[16px]">
-              A significant number of Tampa Florida businesses spend money on website design and digital presence without seeing any meaningful growth in search rankings. The problem is rarely the business itself. It is the presence of avoidable SEO errors that quietly prevent any page from performing.
+              Many Tampa law firms invest heavily in their website and still fail to attract new clients because of avoidable SEO errors. Here is what is holding most of them back from the first-page rankings their practice deserves.
             </p>
           </div>
         </div>
@@ -85,14 +73,15 @@ export default function CommonSeoMistakes() {
             className="h-auto w-full object-cover"
           />
         
-        <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
-          {images.commonSeoMistakesSection.commonSeoMistakesBanner.caption && (
-            <p>{images.commonSeoMistakesSection.commonSeoMistakesBanner.caption}</p>
-          )}
-          {images.commonSeoMistakesSection.commonSeoMistakesBanner.description && (
-            <p>{images.commonSeoMistakesSection.commonSeoMistakesBanner.description}</p>
-          )}
-        </div></div>
+          <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+            {images.commonSeoMistakesSection.commonSeoMistakesBanner.caption && (
+              <p>{images.commonSeoMistakesSection.commonSeoMistakesBanner.caption}</p>
+            )}
+            {images.commonSeoMistakesSection.commonSeoMistakesBanner.description && (
+              <p>{images.commonSeoMistakesSection.commonSeoMistakesBanner.description}</p>
+            )}
+          </div>
+        </div>
 
         {/* Cards */}
         <div className="mt-10 overflow-hidden rounded-[24px] border border-black/5 bg-white">
@@ -181,8 +170,7 @@ export default function CommonSeoMistakes() {
             ))}
           </div>
         </div>
-
-        </div>
+      </div>
     </section>
   );
 }

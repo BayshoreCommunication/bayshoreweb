@@ -75,15 +75,13 @@ export default function SeoAuditForm() {
                 
               "
             >
-              Get Your Free{" "}
-              <span className="text-[#FF6F00]">Tampa Florida</span> SEO
-              Audit Report
+              Get Your Free <span className="text-[#FF6F00]">Tampa Law Firm</span> SEO Audit Report
             </h2>
           </div>
 
           <div>
             <p className="max-w-[420px] text-[16px] leading-8 text-black/80 md:text-[18px] font-bold">
-              Could your Tampa, Florida, company show up higher on Google? Grab a no-cost SEO review now. See exactly how you rank right now, spot hidden tech issues.
+              Stop losing consultations to higher-ranking law firms across Tampa
             </p>
           </div>
         </div>
@@ -222,8 +220,6 @@ export default function SeoAuditForm() {
               </button>
             </div>
 
-            {/* Message */}
-            
           </form>
           )}
         </div>

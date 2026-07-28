@@ -1,62 +1,73 @@
 import seoImages from "@/lib/seo-service-images.json";
 const images = seoImages["lawyer-seo-agency-tampa"];
 import Image from "next/image";
-import { CalendarDays } from "lucide-react";
 
 const services = [
   {
-    title: "Local SEO",
-    image: images.seoServicesSection.localSeoMapPackImage.src,
+    title: "SEO Audit",
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
-      "Optimized profiles begin with precise categorization, followed by verified details and carefully chosen location-based terms. Through trusted platforms specific to Tampa, citations are established then maintained over time. Positioning within map rankings improves when each component aligns with regional visibility standards.",
+      "A thorough technical, on-page, and off-page analysis of your law firm's website. Every gap, error, and missed ranking opportunity is identified and mapped into a clear, prioritized action plan specific to your practice.",
+  },
+  {
+    title: "Keyword Research",
+    image: images.seoServicesSection.keywordResearchImage.src,
+    description:
+      "Deep legal keyword research that uncovers the precise search terms Tampa clients use when looking for attorneys in your practice areas. Every keyword is evaluated for search volume, competition, and actual hiring intent so that rankings translate into consultations.",
   },
   {
     title: "On-Page SEO",
     image: images.seoServicesSection.onPageOptimizationImage.src,
     description:
-      "Every service page gets rebuilt from the beginning shaped by how people in Tampa Florida search for things. Our service pages are made to fit the way people in Tampa Florida look for stuff. Instead of guessing, we shape headlines, subheads, and titles around real queries. Content flows follow what matters now, not outdated tricks. Pages connect through smart internal paths that boost visibility where it counts. Even small details like meta descriptions reflect live user behavior. Authority shifts naturally to key sections without forced tactics. What shows up in results feels clear because the structure supports intent.",
+      "Practice area pages, meta tags, title tags, headings, internal links, and content structure are all optimized to perform well in search and convert visitors into consultation requests. Nothing is left unoptimized on your most important pages.",
   },
   {
     title: "Technical SEO",
     image: images.seoServicesSection.technicalSeoImage.src,
     description:
-      "Starting with how easily bots can navigate your site, we check loading times, key performance signals, mobile experience, organized content markup, plus indexing problems. Because fixing each problem matters, corrections happen carefully to match what today’s search systems expect technically. When the base is solid, everything else in the plan works better down the line.",
+      "Site speed, mobile optimization, structured data, XML sitemaps, crawl error resolution, and indexing fixes which are the technical foundation that every law firm's search rankings depend on, and the layer that many Tampa firms overlook entirely.",
   },
   {
-    title: "Off-Page SEO and Link Building",
+    title: "Off-Page SEO",
     image: images.seoServicesSection.offPageSeoImage.src,
     description:
-      "Not every connection earns a spot. Outreach shapes the backbone of our approach, targeting trusted neighborhood outlets first. Links come from places like trade listings or city-focused platforms, never chosen at random. Each one gets studied - does it fit, does it hold weight, will it last. Only then does it become part of the plan.",
+      "High-quality legal backlinks, brand mentions, authoritative legal directory listings, and strategic digital PR to build domain authority and the trust signals that search engines and potential clients both rely on.",
   },
   {
-    title: "Content Strategy and SEO Copywriting",
+    title: "Local SEO",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
+    description:
+      "Google Business Profile optimization, Tampa legal citations, and location-specific keyword targeting to secure your firm's position in the local map pack and neighborhood-level search results across Tampa Bay.",
+  },
+  {
+    title: "Law Firm Content Marketing",
     image: images.seoServicesSection.contentDevelopmentImage.src,
     description:
-      "We research the exact questions Tampa, Florida, legal clients ask before making a purchase decision and build content that answers those questions with authority. Service pages, location landing pages, and supporting blog content are all written to satisfy search intent and encourage conversion. Every content piece is reviewed against current AI-era quality standards before publication.",
-  },
-  {
-    title: "E-Commerce SEO",
-    image: images.seoServicesSection.keywordResearchImage.src,
-    description:
-      "We optimize product listings, category page structures, and crawl pathways for Tampa, Florida businesses that sell online. Transactional keyword targeting connects your product pages with buyers who are ready to purchase right now. Indexation management ensures your entire catalog remains accessible and competitive across all relevant search queries.",
+      "Authoritative legal content includes practice area pages, FAQ articles, blog posts, and legal guides. It is written around real questions Tampa residents ask before hiring an attorney. The content ranks and converts, not merely exists.",
   },
   {
     title: "Ask Engine Optimization (AEO)",
     image: images.seoServicesSection.askEngineOptimizationImage.src,
     description:
-      "We structure your website content to answer the specific questions. Tampa, Florida, legal clients ask on AI-powered platforms, including ChatGPT, Perplexity, and Google AI Overviews. AEO positions your law firm as the authoritative answer when a potential client asks for a local recommendation and expects an immediate, reliable response. This channel is growing rapidly and early optimization creates a significant competitive advantage.",
+      "When Tampa residents ask questions about the law and require answers right away, your firm will be found by AI-driven tools such as ChatGPT, Perplexity, Grok, and Google AI Search with structured content that directly addresses the legal questions.",
   },
   {
     title: "Generative Engine Optimization (GEO)",
     image: images.seoServicesSection.generativeEngineOptimizationImage.src,
     description:
-      "We format your content for citation and recommendation in AI-generated summaries and search results. As more Tampa, Florida, legal clients use generative tools to research local law firms, GEO ensures your name appears as a trusted recommendation. This emerging discipline extends your visibility well beyond traditional organic search results.",
+      "AI-friendly content, such as optimized for summarizing and assistance for conversational legal searches, so that your firm can be cited and recommended when potential clients have legal questions.",
   },
   {
-    title: "SEO Reporting and Analytics",
+    title: "Reputation Management",
+    image: images.seoServicesSection.localSeoMapPackImage.src,
+    description:
+      "Review generation strategies, response management, and online reputation monitoring to build the trust signals that Tampa legal clients rely on before they ever pick up the phone to call an attorney.",
+  },
+  {
+    title: "Analytics and Reporting",
     image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
-      "Monthly performance updates follow a clear format, showing shifts in keyword rankings alongside changes in organic visit numbers. Because local search visibility affects outcomes, those measurements appear with equal weight. Conversion patterns emerge through careful tracking rather than assumptions. A straightforward explanation follows each dataset, outlining recent developments together with their implications. Insight into upcoming actions comes included, not withheld. Clarity around results links directly to budget allocation. Every financial commitment receives matching accountability in reported progress.",
+      "Clear, detailed monthly reporting on keyword rankings, organic traffic, consultation leads, and overall ROI is provided. Your firm always knows exactly what the legal SEO investment is producing and where the next opportunity lies.",
   },
 ];
 
@@ -74,10 +85,10 @@ export default function SeoServicesSection() {
             <h2 className="mt-4 text-[36px] font-bold leading-[1.1] text-black md:text-[54px]">
               Complete <span className="text-[#FF6F00]">SEO</span>
               <br />
-              Services in
+              Services for
               <br />
               <span className="text-[#FF6F00]">
-                Tampa Florida
+                Tampa Law Firms
               </span>
               <br />
               Crafted for the
@@ -89,34 +100,9 @@ export default function SeoServicesSection() {
 
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/70 md:text-[16px]">
               <p>
-                Internet search behaviour in 2026 is quite different from a few years back. Search behavior has changed a lot. Now we have computers that can think for themselves. They decide what search results are the most important. People are also using their voices to ask for things.. When you search for something the internet can even create new information just for you. All of this means that search behavior and the way we compete with each other on the internet is very different now. As a leading lawyer seo agency tampa, Bayshore Communication, delivers a full suite of services designed to satisfy every dimension of modern search visibility for Tampa, Florida businesses.
+                Legal search has changed dramatically. AI-powered platforms, voice search, and smarter algorithms mean your Tampa law firm needs more than traditional SEO to stay competitive and maintain consistent visibility. As a lawyer SEO agency tampa, Bayshore Communication covers every dimension of legal SEO from foundational rankings to AI-powered discovery.
               </p>
             </div>
-
-            {/* <button
-              className="
-                group
-                relative
-                mt-10
-                flex
-                h-[52px]
-                items-center
-                gap-3
-                overflow-hidden
-                rounded-md
-                bg-[#FF6F00]
-                px-6
-                font-semibold
-                text-white
-              "
-            >
-              <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 ease-out group-hover:translate-x-full" />
-
-              <span className="relative flex items-center gap-3">
-                <CalendarDays size={18} />
-                SCHEDULE A FREE CASE REVIEW
-              </span>
-            </button> */}
           </div>
 
           {/* Right Services */}
@@ -141,7 +127,6 @@ export default function SeoServicesSection() {
                   hover:-translate-y-1
                   hover:shadow-[0_12px_30px_rgba(0,0,0,0.08)]
                   md:grid-cols-[minmax(0,1fr)_350px]
-                
                 "
               >
                 <div>

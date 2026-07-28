@@ -1,19 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import {
   ArrowLeft,
   ArrowRight,
   ArrowUpRight,
   Star,
-  Wrench,
-  Stethoscope,
-  Home,
   Scale,
-  Store,
+  ShieldCheck,
   Building2,
-  BriefcaseBusiness,
 } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,42 +22,32 @@ const testimonials = [
   {
     image:
       "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
-    name: "Chris",
-    role: "Owner, Catflix Legal",
-    location: "Tampa Bay, Florida",
-    icon: Store,
+    name: "Marcus T.",
+    role: "Personal Injury Law Firm",
+    location: "Tampa Florida",
+    icon: Scale,
     review:
-      "Bayshore Communication completely transformed our online visibility across the Tampa Bay area. We reached page one for our most important keywords within a few months of starting the campaign. The team was professional, responsive, and genuinely invested in our results from day one. Our organic inquiries have increased dramatically and continue to grow with every passing month.",
+      "Bayshore Communication completely transformed how our firm appears in Tampa search results. We went from barely showing up to consistently ranking on page one for our most important practice areas. The team understood the legal industry from day one and never needed much hand-holding to understand what our clients search for.",
   },
   {
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
-    name: "Robert Johnson",
-    role: "Owner, Robert Johnson Law Group",
-    location: "Florida",
-    icon: BriefcaseBusiness,
+    name: "Diana R.",
+    role: "Family Law Attorney",
+    location: "Tampa Florida",
+    icon: ShieldCheck,
     review:
-      "We had worked with other agencies before, but nobody delivered results like the Bayshore team. Our organic traffic grew steadily, and we saw a real, measurable increase in qualified client inquiries every month. The monthly reporting kept us fully informed at every step of the entire engagement. We now rank on page one for the most competitive search terms in our local market.",
+      "Within four months of working with Bayshore, our consultation requests nearly doubled. Their SEO strategy for our Tampa family law practice was thoughtful, detailed, and it actually delivered results we could see and measure. We are still seeing growth every single month.",
   },
   {
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
-    name: "Managing Partner",
-    role: "Carter Injury Law",
-    location: "Tampa Bay, Florida",
-    icon: Scale,
+    name: "Kevin M.",
+    role: "Criminal Defense Attorney",
+    location: "Tampa Florida",
+    icon: Building2,
     review:
-      "Bayshore Communication understood our Tampa, Florida, market from the very beginning. Their local SEO strategy helped us dominate search results in our industry and service area. The team built our rankings steadily without shortcuts, and the results have been lasting and consistent. I highly recommend them to any business that is serious about growing its online presence.",
-  },
-  {
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&crop=faces&w=900&h=650&q=90",
-    name: "Owner",
-    role: "Apex Law Group",
-    location: "Tampa Bay, Florida",
-    icon: BriefcaseBusiness,
-    review:
-      "The Bayshore team treated our business as if it were their own top priority throughout. The results are entirely verifiable, and we can see the impact clearly in our revenue data. Our qualified leads more than doubled within the first six months of working together. They understood the competitive market and built a strategy that delivered real, measurable outcomes from day one.",
+      "What impressed me most was how clearly the team communicated what they were doing and why they were doing it. The monthly reports were easy to understand and the results were real. Our Google Business Profile alone now brings in several new clients every week.",
   },
 ];
 
@@ -83,7 +68,7 @@ export default function TestimonialsSection() {
             <h2 className="mt-6 text-[38px] font-bold leading-[1.1] text-black md:text-[52px]">
               What Our Tampa
               <br />
-              Florida <span className="text-[#FF6F00]">Clients Are Saying</span>
+              Law Firm <span className="text-[#FF6F00]">Clients Are Saying</span>
             </h2>
           </div>
 
@@ -92,8 +77,6 @@ export default function TestimonialsSection() {
               <span>★ ★ ★ ★ ★</span>
               <span className="text-[#081B4B]">5 / 5</span>
             </div>
-
-            
           </div>
         </div>
 
@@ -271,8 +254,8 @@ export default function TestimonialsSection() {
                               justify-center
 
                               rounded-full
-                              bg-[#FF6F00]
-                              text-white
+                              bg-[#FFF4EC]
+                              text-[#FF6F00]
                             "
                           >
                             <Icon size={24} />

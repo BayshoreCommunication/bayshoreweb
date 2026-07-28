@@ -1,38 +1,38 @@
 import { BriefcaseBusiness, MapPin } from "lucide-react";
 
 const industries = [
-  "Home Services and Contracting",
-  "Medical and Healthcare Practices",
-  "Real Estate Agencies",
-  "Hospitality and Tourism",
-  "Professional Consulting",
-  "Retail and E-commerce",
-  "Health and Wellness Centers",
-  "Pet Services and Veterinary Care",
-  "Automotive Sales and Repair",
-  "Legal and Financial Services",
-  "Education and Training",
-  "Nonprofit Organizations",
-  "Beauty and Salon Services",
-  "Event Planning and Venues",
+  "Personal Injury Law",
+  "Family Law",
+  "Criminal Defense",
+  "Immigration Law",
+  "Divorce Law",
+  "Estate Planning and Probate",
+  "Business and Corporate Law",
+  "Employment Law",
+  "Real Estate Law",
+  "Bankruptcy Law",
+  "Social Security Disability",
+  "Workers Compensation",
+  "Medical Malpractice",
+  "Civil Litigation",
 ];
 
 const communities = [
-  "Tampa",
+  "Downtown Tampa",
+  "Westshore and Channelside",
   "South Tampa",
   "Ybor City",
-  "Westshore",
+  "Seminole Heights",
+  "New Tampa",
+  "Carrollwood",
   "Brandon",
   "Riverview",
-  "Carrollwood",
   "Temple Terrace",
+  "Wesley Chapel",
   "Lutz",
   "Land O Lakes",
-  "Hyde Park",
-  "Tampa Heights",
-  "New Tampa",
-  "Citrus Park",
-  "Town 'n' Country"
+  "St. Petersburg",
+  "Clearwater",
 ];
 
 export default function ServiceAreasSection() {
@@ -42,17 +42,16 @@ export default function ServiceAreasSection() {
         {/* Header */}
         <div className="mx-auto max-w-[1100px] text-center">
           <h2 className="text-[38px] font-bold leading-[1.1] text-black md:text-[52px]">
-            Serving Businesses Across{" "}
+            Tampa Law Firm SEO
+            <br className="hidden md:block" />
+            {" "}—{" "}
             <span className="text-[#FF6F00]">
-              Tampa,
-              <br className="hidden md:block" />
-              Florida,
-            </span>{" "}
-            and Surrounding Areas
+              Practice Areas and Neighborhoods We Serve
+            </span>
           </h2>
 
           <p className="mx-auto mt-8 max-w-[1000px] text-[16px] leading-8 text-black/70 md:text-[20px]">
-            Bayshore Communication proudly serves businesses throughout Tampa, Florida, and the wider Hillsborough County region. As a dedicated lawyer seo agency tampa every geo-targeted campaign we build is shaped around where your customers are located and how they search for businesses like yours.
+            Bayshore Communication provides lawyer SEO services for Tampa law firms across a wide range of practice areas. Whether your firm focuses on a single specialty or handles multiple areas of law, we build targeted strategies around the specific searches your ideal clients are performing.
           </p>
         </div>
 
@@ -74,7 +73,7 @@ export default function ServiceAreasSection() {
               <BriefcaseBusiness size={32} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Industries We Serve
+                Practice Areas We Serve
               </h3>
             </div>
 

@@ -8,60 +8,74 @@ import {
   MapPin,
   SearchCheck,
   Settings,
-  SquareActivity,
   SquarePen,
   Target,
+  Link2,
 } from "lucide-react";
 
 const processSteps = [
   {
     number: "1",
     Icon: Target,
-    title: "Business Discovery and Objective Setting",
+    title: "Step 1   Law Firm SEO Audit",
     description:
-      "Spending hours learning how your law firm makes money helps shape our approach. Before changing a single webpage element, we look closely at who buys from you. What others in your field do matters just as much. Your main objectives guide every decision made. Only after grasping these pieces does any work begin.",
+      "We begin by analyzing your website's technical health, current keyword rankings, on-page structure, local presence, and competitive positioning. This gives us a clear baseline and identifies the highest-priority improvements before any optimization work begins.",
   },
   {
     number: "2",
     Icon: ChartNoAxesColumnIncreasing,
-    title: "Full SEO Audit and Gap Analysis",
+    title: "Step 2   Tampa Legal Market and Competitor Research",
     description:
-      "Starting with your site’s performance, we check how well it operates under today’s standards. Keyword positions are reviewed to see where gains can be made. Content gets assessed not just for clarity but also usefulness. Local visibility is examined through location-based signals. The strength of incoming links shapes part of the insight. From these findings emerges a customized set of upgrades aimed at maximum impact.",
+      "We study your top Tampa competitors in detail. We assess their rankings, authority sources, and content strategies. We identify gaps your firm can strategically exploit. We  also map exactly how Tampa residents search for legal help in your practice areas.",
   },
   {
     number: "3",
     Icon: KeyRound,
-    title: "Tampa Florida Market Research",
+    title: "Step 3   Legal Keyword Strategy",
     description:
-      "We map how your ideal clients search, which competitors currently own the rankings you want, and where the most accessible opportunities exist for your law firm right now.",
+      "We build a comprehensive keyword map around high-intent, practice-area-specific Tampa search terms. Every keyword is selected because it connects your firm with clients who are ready to hire.",
   },
   {
     number: "4",
     Icon: FileText,
-    title: "Custom SEO Strategy Development",
+    title: "Step 4   On-Page Optimization",
     description:
-      "A customized SEO strategy takes shape around your unique services, local market conditions in Tampa, Florida, along with defined checkpoints and projected results. While goals are set early, adjustments follow real-world feedback instead of rigid timelines.",
+      "Each practice area page, service page and landing page is designed with search engine optimization and human visitors who are considering calling your firm in mind. Titles, headings, content, internal links and schema markup are all streamlined and optimized to their maximum capabilities.",
   },
   {
     number: "5",
     Icon: Settings,
-    title: "On-Page and Technical Implementation",
+    title: "Step 5   Technical SEO",
     description:
-      "Optimizations that gain approval go live site-wide, reshaping content where needed. Structural issues get resolved through targeted adjustments. Technical flaws are corrected systematically. Local information receives timely revisions. Each change integrates smoothly into existing frameworks.",
+      "We resolve site speed problems, mobile usability issues, crawl errors, duplicate content, broken links, and structural weaknesses that are preventing your law firm's website from reaching its full ranking potential in Tampa search results.",
   },
   {
     number: "6",
-    Icon: SquarePen,
-    title: "Content Production and Authority Building",
+    Icon: MapPin,
+    title: "Step 6   Local SEO and Google Business Profile",
     description:
-      "Month by month, our focused content builds visibility while a steady outreach effort strengthens domain authority. A deliberate approach to backlinks widens the range of keywords you rank for over time.",
+      "We build and optimize your firm's complete local presence, including Google Business Profile, legal directory citations, local backlinks, and map pack positioning. This ensures you capture clients searching for attorneys in your specific area of Tampa.",
   },
   {
     number: "7",
-    Icon: SearchCheck,
-    title: "Reporting, Analysis, and Ongoing Refinement",
+    Icon: SquarePen,
+    title: "Step 7   Legal Content Creation",
     description:
-      "We review performance data monthly, communicate findings clearly, and adjust the strategy to reflect new algorithm signals, competitor movements, and evolving search behavior in Tampa Florida.",
+      "We produce authoritative, in-depth content that answers the real legal questions Tampa residents ask before hiring an attorney. Practice area pages, FAQ content, and blog articles are all written to rank in search and position your firm as the clear authority in your field.",
+  },
+  {
+    number: "8",
+    Icon: Link2,
+    title: "Step 8   Link Building and Legal Directory Strategy",
+    description:
+      "We build quality backlinks from respected legal directories, Tampa-area publications, and industry associations. We also use relevant local sources to strengthen authority and improve rankings over time.",
+  },
+  {
+    number: "9",
+    Icon: SearchCheck,
+    title: "Step 9   Reporting and Continuous Refinement",
+    description:
+      "Monthly reports with keyword rankings, organic traffic data, consultation leads, and ROI metrics are paired with ongoing strategy adjustments. We never set a strategy and leave it alone. We refine continuously to keep your results growing month after month.",
   },
 ];
 
@@ -92,9 +106,7 @@ export default function SeoProcessSection() {
               SEO Process for
               <br />
               <span className="text-[#FF6F00]">
-                Tampa Florida
-                <br />
-                Businesses
+                Tampa Law Firms
               </span>
             </h2>
 
@@ -102,35 +114,35 @@ export default function SeoProcessSection() {
 
             <div className="mt-7 max-w-[380px] space-y-6 text-[16px] leading-8 text-[#081B4B]/75">
               <p>
-                Bayshore Communication starts with a thorough look at your needs and gets right into a seven-step SEO process that fits Tampa, Florida’s unique landscape. Every stage pushes things forward, and you actually see progress as each piece falls into place. The approach gets smarter with every round because they fine-tune it based on what works in real life. Early wins guide the next moves, so there’s always something learned. That pace picks up since they’re always tweaking things along the way. The whole system runs on proof, nothing changes without real results backing it up.
+                Every successful law firm SEO campaign begins with a clear process. Bayshore Communication follows a structured, nine-step methodology built specifically for the Tampa legal market. This is designed to produce measurable results at every stage.
               </p>
             </div>
 
             <Link href="#contact">
-            <button
-              className="
-                group
-                relative
-                mt-10
-                flex
-                h-[52px]
-                items-center
-                justify-center
-                overflow-hidden
-                rounded-md
-                bg-[#FF6F00]
-                px-8
-                font-semibold
-                text-white
-              "
-            >
-              <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full" />
+              <button
+                className="
+                  group
+                  relative
+                  mt-10
+                  flex
+                  h-[52px]
+                  items-center
+                  justify-center
+                  overflow-hidden
+                  rounded-md
+                  bg-[#FF6F00]
+                  px-8
+                  font-semibold
+                  text-white
+                "
+              >
+                <span className="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full" />
 
-              <span className="relative flex items-center gap-3">
-                Start Your SEO Campaign
-                <ArrowRight size={18} />
-              </span>
-            </button>
+                <span className="relative flex items-center gap-3">
+                  Start Your SEO Campaign
+                  <ArrowRight size={18} />
+                </span>
+              </button>
             </Link>
           </div>
 

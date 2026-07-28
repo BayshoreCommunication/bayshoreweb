@@ -6,44 +6,45 @@ import {
   BarChart3,
   Target,
   MapPinned,
+  PhoneCall,
 } from "lucide-react";
 
 const resultCards = [
   {
     icon: Target,
-    title: "First-Page Keyword Rankings",
+    title: "Higher Search Rankings",
     description:
-      "Clients move from buried positions to page-one visibility for the highest-value local search terms in their industries within measurable timeframes.",
+      "Consistent movement from page three and beyond to page one for high-intent Tampa legal search terms in your primary practice areas.",
   },
   {
     icon: Users,
-    title: "Rising Volume of Qualified Inquiries",
+    title: "More Consultations",
     description:
-      "Businesses see a consistent month-over-month increase in phone calls, form submissions, and appointment bookings from Tampa Florida clients who found them through organic search.",
+      "Steady increase in consultation requests and contact form submissions from clients actively searching for the specific legal services your firm provides.",
+  },
+  {
+    icon: PhoneCall,
+    title: "More Inbound Calls",
+    description:
+      "Higher volume of inbound phone calls from ready-to-hire Tampa residents who found your firm through organic search and chose to call before contacting anyone else.",
   },
   {
     icon: MapPinned,
-    title: "Stronger Local Map Pack Presence",
+    title: "Local Map Pack Wins",
     description:
-      "Google Business Profile optimization produces improved map pack visibility that generates direct calls and direction requests from nearby buyers.",
+      "Greater exposure and visibility on Google Maps and local listings within Tampa and neighboring practice-area neighborhoods, all of which will lead clients to your door.",
   },
   {
     icon: ChartNoAxesCombined,
-    title: "Documented Organic Traffic Growth",
+    title: "Compounding Growth Over Time",
     description:
-      "Monthly reporting captures clear, measurable increases in website visitors from the Tampa Florida and Hillsborough County geographic areas.",
-  },
-  {
-    icon: ShieldCheck,
-    title: "Sustainable Growth Without Ad Dependency",
-    description:
-      "SEO-driven results do not vanish when a campaign pauses. Rankings built through ethical optimization continue producing returns month after month.",
+      "Unlike paying for ads, SEO can continue to generate results over time and build upon itself.They deliver stronger returns the longer the strategy remains active.",
   },
   {
     icon: BadgeDollarSign,
-    title: "Reduced Cost Per Acquired Customer",
+    title: "Lower Cost Per Client",
     description:
-      "Organic search consistently delivers a lower cost per acquisition than paid channels, improving the overall profitability of customer growth over time.",
+      "Organic search traffic converts at a higher rate than most paid channels, reducing your firm's long-term client acquisition costs while maintaining a consistent pipeline of new cases.",
   },
 ];
 
@@ -87,14 +88,14 @@ export default function SeoRoiSection() {
             Real Results for Real
             <br />
             <span className="text-[#FF6F00]">
-              Tampa Florida Businesses
+              Tampa Law Firms
             </span>
           </h2>
 
           <div className="mx-auto mt-6 h-1 w-16 bg-[#FF6F00]" />
 
           <p className="mx-auto mt-8 max-w-[900px] text-[16px] leading-8 text-black/60 md:text-[20px]">
-            Bayshore Communication measures success through verified, documented outcomes that reflect real business growth. Our track record across Tampa Florida shows what disciplined, data-driven SEO produces over time.
+            When lawyer SEO is done with precision, the results are measurable and they compound over time. Tampa law firms that invest in a well-executed legal SEO strategy consistently see growth in every metric that actually matters for their practice.
           </p>
         </div>
 
@@ -166,13 +167,6 @@ export default function SeoRoiSection() {
           })}
         </div>
 
-        {/* Stats Banner */}
-        <div className="mt-12 text-center max-w-[950px] mx-auto bg-[#FFF4EC] rounded-2xl p-6 border border-[#FF6F00]/10">
-          <p className="text-[15px] leading-8 text-black/75 md:text-[16px] font-medium">
-            More than 500,000 leads have been generated for us by our clients ever since our inception back in 2016. In addition to that, our team has designed over 220 websites which are both speedy as well as SEO-friendly. All the figures mentioned above have been verified via data.
-          </p>
-        </div>
-
         {/* Part 2: ROI of SEO */}
         <div className="mt-20 border-t border-black/10 pt-16">
           <div className="grid gap-8 lg:grid-cols-[1fr_minmax(0,1.2fr)] items-start">
@@ -181,20 +175,22 @@ export default function SeoRoiSection() {
                 THE ROI OF SEO
               </span>
               <h2 className="mt-4 text-[32px] font-bold leading-[1.15] text-[#081B4B] md:text-[42px]">
-                The ROI of SEO for Tampa Florida Businesses
+                The ROI of SEO for Tampa Law Firms
               </h2>
               <p className="mt-6 text-[15px] leading-8 text-black/70 md:text-[17px]">
-                SEO is one of the strongest return-on-investment channels available to Tampa, Florida businesses of any size. Unlike channels that require continuous spending to maintain results, SEO builds an owned digital asset that appreciates in value the longer it remains active.
+                Unlike paying for ads, SEO can continue to generate results over time and build upon itself. They deliver stronger returns the longer the strategy remains active.
               </p>
             </div>
 
             <div className="space-y-4 rounded-2xl bg-[#FFF8F3] p-8 md:p-10 border border-[#FF6F00]/10">
               {[
-                "Superior placement in map results to trigger a surge in direct phone inquiries",
-                "Steady streams of qualified visitors without the burden of constant ad fees",
-                "Sustainable digital equity that increases in worth as your brand authority climbs",
-                "Accelerated lead generation through top tier rankings that outperform traditional media",
-                "Enhanced credibility that converts casual browsers into loyal neighborhood clients",
+                "Attract Tampa residents who have immediate legal needs and a clear intent to hire.",
+                "Boost your volume of phone calls and consultation requests from qualified local prospects.",
+                "Reduce reliance on expensive paid ads while lowering your overall cost per lead.",
+                "Build a long-term search presence that strengthens and grows more effective over time.",
+                "Build professional credibility in the Tampa market that paid advertisements cannot match.",
+                "Turn web visitors into paying clients more efficiently than other marketing channels.",
+                "Create a reliable pipeline of new cases that scales with your firm every year.",
               ].map((text, idx) => (
                 <div key={idx} className="flex items-start gap-4">
                   <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FF6F00] text-white text-[12px] font-bold">

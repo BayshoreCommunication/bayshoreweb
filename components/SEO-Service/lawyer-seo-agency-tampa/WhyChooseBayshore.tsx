@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import {
-  ArrowRight,
   Award,
   ClipboardList,
   Layers3,
@@ -21,45 +20,39 @@ import "swiper/css/pagination";
 const features = [
   {
     Icon: Award,
-    title: "Verified Client Track Record",
+    title: "01  Proven Track Record with Legal Clients",
     description:
-      "We have served over 70 businesses across diverse industries with documented improvements in organic rankings, traffic volume, and inbound lead generation.",
+      "Bayshore Communication has worked directly with law firms and legal service providers, delivering measurable improvements in search rankings, organic traffic, and new client inquiries. Our portfolio includes personal injury firms, family law practices, immigration attorneys, and multi-area law offices.",
   },
   {
     Icon: ClipboardList,
-    title: "Research-Backed Strategy Development",
+    title: "02  Data-Driven Legal Marketing",
     description:
-      "Every decision we make is grounded in keyword data, competitive analysis, technical audits, and live campaign performance rather than guesswork or generic templates.",
+      "Every recommendation we make is backed by keyword research, competitor analysis, technical audits, and performance analytics. We do not make assumptions or apply generic templates. Here, every decision is grounded in real data specific to your firm and the Tampa legal market.",
   },
   {
     Icon: Layers3,
-    title: "Full-Service SEO Under One Team",
+    title: "03  Full-Spectrum SEO Coverage",
     description:
-      "Technical work, content production, local optimization, link building, and AI-era AEO and GEO are all managed by a single coordinated team with one accountability structure.",
+      "From technical SEO and on-page optimization to local search, legal content marketing, AI-era AEO and GEO strategies, we handle every dimension of your law firm's online presence under one cohesive strategy with one accountable team.",
   },
   {
     Icon: MapPinned,
-    title: "Genuine Tampa Florida Market Expertise",
+    title: "04  Deep Tampa Market Knowledge",
     description:
-      "We know which ZIP codes generate the highest search volume in Hillsborough County, which business categories face the steepest local competition, and how seasonal patterns affect search behavior here.",
+      "We understand how Tampa residents search for legal help, which practice areas are most competitive locally, how the local map pack behaves in legal categories, and how to position your firm effectively against the strongest established competitors in your market.",
   },
   {
     Icon: SearchCheck,
-    title: "Strategies Built for Your Business Alone",
+    title: "05  Custom Strategies for Every Firm",
     description:
-      "We do not apply a formula or repurpose a strategy from another client. Every campaign begins with a fresh analysis of your specific goals and market position.",
+      "No two law firms have the same goals, client base, practice mix, or competitive landscape. Every SEO strategy we build is designed specifically around your firm's practice areas, market position, and growth objectives that are never copied from another client.",
   },
   {
     Icon: ClipboardList,
-    title: "No Hidden Fees or Vague Activity Reports",
+    title: "06  Transparent Reporting and Direct Communication",
     description:
-      "Monthly reports detail which rankings changed, which traffic went up, and what actions our team took. Your invoice and reporting have no surprises.",
-  },
-  {
-    Icon: TrendingUp,
-    title: "Flexible Pricing That Delivers Real ROI",
-    description:
-      "Our package structures are designed to produce measurable returns at every budget level, not to lock businesses into spending more than their growth stage requires.",
+      "You receive regular, detailed reports showing exactly what is happening with your rankings, traffic, and leads.",
   },
 ];
 
@@ -85,7 +78,7 @@ export default function WhyChooseBayshore() {
           {/* Left */}
           <div>
             <span className="text-xl font-bold uppercase tracking-wider text-[#FF6F00]">
-              Why Tampa Florida Businesses
+              Why Tampa Law Firms
             </span>
 
             <h2 className="mt-4 text-[38px] font-bold leading-[1.05] text-[#081B4B] md:text-[52px]">
@@ -98,11 +91,9 @@ export default function WhyChooseBayshore() {
 
             <div className="mt-8 space-y-6 text-[15px] leading-8 text-black/75 md:text-[18px]">
               <p>
-                Bayshore Communication is not a general marketing shop that added SEO to a list of unrelated services. We are a dedicated digital growth lawyer seo agency tampa with a proven track record of producing measurable outcomes for businesses across Tampa Florida since 2016.
+                Bayshore Communication is not a generalist marketing agency that added SEO to its service list. We are a growth-focused digital agency that has worked with Tampa-area law firms and legal service providers.
               </p>
             </div>
-
-            
           </div>
         </div>
 

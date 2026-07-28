@@ -1,41 +1,33 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const cards = [
   {
     number: "01",
     icon: "/seo-company-wesley-chapel/card-icon-1.png",
-    title: "No Page-One Presence",
+    title: "Buried in Search Results",
     description:
-      "When your website is not on the page of Google most people searching in Tampa, Florida will never even know that your law firm exists.",
+      "Your firm sits on page two or beyond, invisible to the clients actively searching for legal help in Tampa right now.",
   },
   {
     number: "02",
     icon: "/seo-company-wesley-chapel/card-icon-2.png",
-    title: "Competitor Dominance in Local Results",
+    title: "Competitors Capturing Your Clients",
     description:
-      "Your competitors get all the phone calls, visits to their website and people walking into their store that could have been yours if you were ranked higher.",
+      "Law firms investing in lawyer SEO consistently appear first, taking the consultations that belong to your practice.",
   },
   {
     number: "03",
     icon: "/seo-company-wesley-chapel/card-icon-3.png",
-    title: "Unresolved Website Performance Issues",
+    title: "Slow and Unoptimized Website",
     description:
-      "If your website is slow or has a lot of errors Google thinks your website is not good and your ranking gets worse every week.",
+      "Technical weaknesses push your rankings further down and drive potential clients away before they even read a single word about your services.",
   },
   {
     number: "04",
     icon: "/seo-company-wesley-chapel/card-icon-1.png",
-    title: "Missing From the Google Local Map Pack",
+    title: "No Local Map Presence",
     description:
-      "If you do not have a Google Business Profile your law firm will not be on the Google map, which is where people look the most when they search for something.",
-  },
-  {
-    number: "05",
-    icon: "/seo-company-wesley-chapel/card-icon-2.png",
-    title: "Fading Organic Reach Each Month",
-    description:
-      "Every month your website will be seen by people if you do not keep working on it while your competitors who keep doing search engine optimization get stronger and stronger.",
+      "Without a proper Google Business Profile strategy, your firm misses out on the highest-visibility real estate in local legal search.",
   },
 ];
 
@@ -46,19 +38,24 @@ export default function WhyLosingCustomers() {
         {/* Heading */}
         <div className="max-w-[820px]">
           <h2 className="text-[38px] font-bold leading-[1.05] text-black sm:text-[48px]">
-            Why Tampa Florida
+            Why Tampa Law Firms
             <br />
-            Businesses Are Losing Clients
+            Are Losing Clients
             <br />
             <span className="text-[#FF6F00]">Without SEO</span>
           </h2>
-          <p className="mt-6 text-[16px] leading-8 text-black/70 md:text-[18px]">
-            In Tampa, people usually type their queries directly into the search bar first. They almost uniformly ignore everything beyond the first page of results, a blink-and-you-miss-it reality where visibility instantly morphs into viability. Not being there means immediate abandonment to the next option; after all, one wonders why they would dig deeper when everything else demands their attention. Studies, and again more studies, consistently point to the same unyielding statistic over seventy-five percent of all journeys end right there, never to continue. That absence from Google’s curated top tier is a quiet hemorrhage of potential revenue, a persistent trickle draining your bottom line every single day without a sound.
-          </p>
+          <div className="mt-6 space-y-4 text-[16px] leading-8 text-black/70 md:text-[18px]">
+            <p>
+              In Florida, Tampa is one of the most competitive legal markets. When someone needs a personal injury attorney, a family law firm, or a criminal defense lawyer, their first move is almost always a Google search. If your firm does not appear on that first page, you simply do not exist to that potential client.
+            </p>
+            <p>
+              With AI-powered search changing how people find legal help in 2026, the gap between visible and invisible law firms is widening.
+            </p>
+          </div>
         </div>
 
         {/* Cards */}
-        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {cards.map((card) => (
             <div
               key={card.number}
@@ -109,8 +106,6 @@ export default function WhyLosingCustomers() {
               <p className="mt-6 text-[16px] leading-8 text-black/70">
                 {card.description}
               </p>
-
-              
             </div>
           ))}
         </div>

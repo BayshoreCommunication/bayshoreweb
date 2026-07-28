@@ -23,114 +23,87 @@ type PackageColumn = {
 const packageColumns: PackageColumn[] = [
   {
     key: "launch",
-    title: "Kickstart Plan",
-    subtitle: "New or small local law firms building their first online footprint",
-    price: "$1,000",
-    cta: "Contact Us To Get Started",
+    title: "Starter Package",
+    subtitle: "Built for firms starting their local search presence",
+    price: "$1,500",
+    cta: "Request Proposal",
   },
   {
     key: "scale",
-    title: "Growth Plan",
-    subtitle: "Established businesses ready to grow search market share aggressively",
-    price: "$2,500",
-    cta: "Contact Us To Get Started",
+    title: "Growth Package",
+    subtitle: "Designed for firms expanding practice area reach",
+    price: "$3,500",
+    cta: "Request Proposal",
     popular: true,
   },
   {
     key: "dominate",
-    title: "Dominate Plan",
-    subtitle: "Competitive industries requiring full-market search domination",
-    price: "$5,000",
-    cta: "Contact Us To Get Started",
+    title: "Authority Package",
+    subtitle: "Built for market leaders aiming to dominate Tampa search",
+    price: "$7,000",
+    cta: "Request Proposal",
   },
 ];
 
 const featureRows = [
   {
-    title: "Best For",
-    icon: Store,
-    values: {
-      launch: "New or small local law firms building their first online footprint",
-      scale: "Established businesses ready to grow search market share aggressively",
-      dominate: "Competitive industries requiring full-market search domination",
-    },
-  },
-  {
     title: "Google Business Profile",
     icon: Store,
     values: {
-      launch: "Initial Setup and Optimization",
-      scale: "Active Review Management",
-      dominate: "Complete Reputation Program",
+      launch: "Setup & Optimization",
+      scale: "Review & Update Management",
+      dominate: "Full Reputation Management",
     },
   },
   {
-    title: "On-Page Optimization",
+    title: "On-Page SEO",
     icon: Settings,
     values: {
-      launch: "Up to 5 Core Pages",
-      scale: "Up to 15 Service Pages",
-      dominate: "Entire Website Coverage",
+      launch: "Up to 5 Pages",
+      scale: "Up to 15 Pages",
+      dominate: "Unlimited Website-Wide",
     },
   },
   {
     title: "Content Production",
     icon: FileText,
     values: {
-      launch: "Not Included",
-      scale: "2 Targeted Articles per Month",
-      dominate: "4 or More Premium Articles per Month",
+      launch: "N/A",
+      scale: "2 Authoritative Articles /mo",
+      dominate: "4+ Premium Articles /mo",
     },
   },
   {
-    title: "Technical SEO",
-    icon: Settings,
-    values: {
-      launch: "Core Audit and Fixes",
-      scale: "Full Technical Implementation",
-      dominate: "Advanced Technical Program",
-    },
-  },
-  {
-    title: "Authority Building",
-    icon: Link2,
-    values: {
-      launch: "Local Citation Program",
-      scale: "Directory and Niche Links",
-      dominate: "Digital PR and Premium Links",
-    },
-  },
-  {
-    title: "AI Search Optimization",
+    title: "AI Optimization (AEO/GEO)",
     icon: Sparkles,
     values: {
-      launch: "Foundational AEO Setup",
-      scale: "Standard AEO and GEO",
-      dominate: "Advanced ChatGPT, Perplexity, Grok",
+      launch: "Foundational",
+      scale: "Standard",
+      dominate: "Advanced ChatGPT/Grok/Perplexity",
     },
   },
   {
-    title: "Monthly Reporting",
-    icon: ChartColumnIncreasing,
+    title: "Backlink Strategy",
+    icon: Link2,
     values: {
-      launch: "Standard Performance Report",
-      scale: "Detailed Campaign Dashboard",
-      dominate: "Executive Summary with Strategy Review",
+      launch: "Citation Building",
+      scale: "Legal Directory Links",
+      dominate: "Digital PR & High-Authority Links",
     },
   },
   {
-    title: "Support Level",
+    title: "Support",
     icon: ChartColumnIncreasing,
     values: {
-      launch: "Email Support",
-      scale: "Priority Response",
-      dominate: "Dedicated Account Manager",
+      launch: "Standard",
+      scale: "Priority Email",
+      dominate: "Dedicated Senior Account Manager",
     },
   },
 ];
 
 const getValueTone = (value: string) => {
-  if (value === "Not Included") return "text-black/35";
+  if (value === "N/A") return "text-black/35";
   return "text-[#081B4B]";
 };
 
@@ -230,11 +203,11 @@ export default function SeoPackagesSection() {
           </p>
 
           <h2 className="mx-auto mt-4 max-w-[1180px] text-[32px] font-bold leading-[1.08] text-[#081B4B] md:text-[50px]">
-            SEO Packages for Tampa Florida Businesses
+            SEO Packages for Tampa Law Firms
           </h2>
 
           <p className="mx-auto mt-4 max-w-[960px] text-[15px] leading-7 text-black/60 md:text-[18px]">
-            Bayshore Communication provides three SEO investment plans for businesses in Tampa, Florida. Each plan is tailored to your specific service area, business category, and target customer. These plans cater to businesses at different stages of growth and competition.
+            Bayshore Communication offers structured law firm SEO packages designed to meet Tampa legal practices at every stage of their growth. All packages are built around your specific practice areas and adjusted as your firm's needs evolve.
           </p>
         </div>
 
@@ -389,7 +362,7 @@ export default function SeoPackagesSection() {
         </div>
 
         <p className="mx-auto mt-4 max-w-[980px] text-center text-[13px] leading-6 text-black/55">
-          Reach out to Bayshore Communication for custom package pricing built around your Tampa, Florida, business goals and timeline.
+          Contact Bayshore Communication for custom package pricing tailored to your firm's practice areas and growth goals.
         </p>
       </div>
     </section>
