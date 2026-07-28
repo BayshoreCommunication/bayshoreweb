@@ -207,7 +207,7 @@ export default function SeoPackagesSection() {
           </h2>
 
           <p className="mx-auto mt-4 max-w-[960px] text-[15px] leading-7 text-black/60 md:text-[18px]">
-            Bayshore Communication offers structured law firm SEO packages designed to meet Tampa legal practices at every stage of their growth. All packages are built around your specific practice areas and adjusted as your firm's needs evolve.
+            Bayshore Communication offers structured law firm SEO packages designed to meet Tampa legal practices at every stage of their growth. All packages are built around your specific practice areas and adjusted as your firm&apos;s needs evolve.
           </p>
         </div>
 
@@ -362,7 +362,7 @@ export default function SeoPackagesSection() {
         </div>
 
         <p className="mx-auto mt-4 max-w-[980px] text-center text-[13px] leading-6 text-black/55">
-          Contact Bayshore Communication for custom package pricing tailored to your firm's practice areas and growth goals.
+          Contact Bayshore Communication for custom package pricing tailored to your firm&apos;s practice areas and growth goals.
         </p>
       </div>
     </section>
