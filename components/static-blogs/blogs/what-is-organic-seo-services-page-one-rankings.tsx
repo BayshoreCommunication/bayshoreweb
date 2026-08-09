@@ -319,7 +319,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
         </p>
         <p className="mt-4 max-w-4xl text-lg font-medium leading-relaxed text-[#d9e7f7] md:text-xl md:leading-8">
           Organic SEO is really just the honest and hard work you put in to earn
-          your spot on Google. You aren't renting a billboard or paying for an
+          your spot on Google. You aren&apos;t renting a billboard or paying for an
           ad that disappears tomorrow.
         </p>
         <div className="mt-6 flex flex-wrap gap-3 text-sm md:text-base text-[#d9e7f7]">
@@ -340,13 +340,13 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           <div className="space-y-6 text-lg md:text-xl leading-8 md:leading-9">
             <p>
               Organic SEO is really just the honest and hard work you put in to
-              earn your spot on Google. You aren't renting a billboard or
-              paying for an ad that disappears tomorrow. You'd rather build
+              earn your spot on Google. You aren&apos;t renting a billboard or
+              paying for an ad that disappears tomorrow. You&apos;d rather build
               upon your domain through quality content creation, technical
               optimization, and backlinks. Keyword research and optimization,
               technical SEO, content marketing, local citations, and backlink
               building are all elements of organic SEO. Most importantly, your
-              investment isn't gone after you finish paying for the campaign
+              investment isn&apos;t gone after you finish paying for the campaign
               as it is with other forms of SEO.
             </p>
           </div>
@@ -375,9 +375,9 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
               than paid search, social, and direct visits combined, according
               to{" "}
               <ExternalLink href="https://www.brightedge.com/">
-                BrightEdge's 2026 enterprise search research
+                BrightEdge&apos;s 2026 enterprise search research
               </ExternalLink>
-              . That's not a leftover statistic from the pre-AI internet. If
+              . That&apos;s not a leftover statistic from the pre-AI internet. If
               over half your potential folks are coming through the front door
               of unpaid search and you are just standing on the porch doing
               nothing, well, you are giving away the biggest street corner on
@@ -391,7 +391,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           title="What Exactly Fits Within &quot;Organic SEO Services&quot;?"
         >
           <p>
-            SEO isn't just one single chore. It’s 4 different jobs working in
+            SEO isn&apos;t just one single chore. It&apos;s 4 different jobs working in
             harmony. Truth is, a lot of agencies quietly skip one or two of
             them.
           </p>
@@ -405,7 +405,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
                 Technical SEO is all about making sure Google can actually read
                 your place without tripping over its own feet. We are talking
                 page speed, how it looks on a phone, structured data and how the
-                whole place is built. If the search engines can’t crawl your
+                whole place is built. If the search engines can&apos;t crawl your
                 site cleanly, nothing else you do matters one bit.
               </p>
             </div>
@@ -419,7 +419,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
                 titles, the headers, the main stories, natural links and placing
                 keywords so they feel like a friendly conversation instead of a
                 stuffed holiday turkey. Most business folks think this is where
-                SEO starts and ends. Truth is, it’s step two, not step one.
+                SEO starts and ends. Truth is, it&apos;s step two, not step one.
               </p>
             </div>
 
@@ -478,7 +478,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
             Bayshore Communication develops an organic strategy focusing on all
             four areas since the neglect of any one of them leads to mediocre
             results that are simply not worth the investment. Having a site full
-            of relevant content but with technical issues won’t get it ranked on
+            of relevant content but with technical issues won&apos;t get it ranked on
             the first page. A technically sound website with no local
             optimization will fail to attract the customers in the area to it,
             while a similar site with some reviews and being claimed on Google
@@ -491,7 +491,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           title="Organic SEO Takes Longer Than Paid Ads, But Why ?"
         >
           <p className="text-xl md:text-2xl font-bold text-[#0077B3] leading-relaxed">
-            Because it's not renting attention but earning authority. After your
+            Because it&apos;s not renting attention but earning authority. After your
             budget is gone, the ads are gone. Organic traffic, when gained, lasts
             for years after the initial cost.
           </p>
@@ -514,7 +514,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
             and that ratio actually improves after year two as the compounding
             effect kicks in, per{" "}
             <ExternalLink href="https://www.searchenginejournal.com/">
-              Search Engine Journal's ROI analysis
+              Search Engine Journal&apos;s ROI analysis
             </ExternalLink>
             . Conversely, the ROI of the paid search channels resets for every
             spend cycle.
@@ -550,10 +550,10 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
             rate, and the top three results combined take over half of all clicks
             on the page, according to{" "}
             <ExternalLink href="https://backlinko.com/">
-              Backlinko's 2025 click-through study
+              Backlinko&apos;s 2025 click-through study
             </ExternalLink>
-            . Rank on page two, and functionally, you don't exist. This is
-            exactly why Bayshore Communication's SEO team treats keyword
+            . Rank on page two, and functionally, you don&apos;t exist. This is
+            exactly why Bayshore Communication&apos;s SEO team treats keyword
             difficulty and current ranking position as the starting line for
             every client engagement, not an afterthought tacked onto month three.
           </p>
@@ -565,21 +565,21 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
         >
           <p>
             Enormously, and the data on this is getting harder to ignore. 46% of
-            all Google searches have local intent. Meaning, someone isn’t simply
+            all Google searches have local intent. Meaning, someone isn&apos;t simply
             browsing but actually searching for a personal injury lawyer near
             them (and probably considering hiring one soon) when they type
-            "personal injury lawyer near me" into Google in Tampa, for example.
+            &quot;personal injury lawyer near me&quot; into Google in Tampa, for example.
           </p>
           <p>
-            Mobile "near me" searches have grown 900% over the past two years, and
+            Mobile &quot;near me&quot; searches have grown 900% over the past two years, and
             76% of people who run a local mobile search visit a business within
             24 hours, according to{" "}
             <ExternalLink href="https://www.google.com/">
-              Google's local search behavior data
+              Google&apos;s local search behavior data
             </ExternalLink>
-            . That's not top-of-funnel awareness. That's a buyer standing at the
+            . That&apos;s not top-of-funnel awareness. That&apos;s a buyer standing at the
             decision point, phone in hand, choosing between whoever shows up
-            first and whoever doesn't show up at all.
+            first and whoever doesn&apos;t show up at all.
           </p>
 
           <div className="my-8 grid gap-6 sm:grid-cols-3">
@@ -593,10 +593,10 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           </div>
 
           <p className="mt-6">
-            Florida makes this sharper than most states. You've got dense metro
+            Florida makes this sharper than most states. You&apos;ve got dense metro
             competition in Tampa, Orlando, and Miami, plus a huge volume of
-            service businesses fighting over the same "near me" searches. A law
-            firm in South Tampa isn't just competing citywide. It's competing
+            service businesses fighting over the same &quot;near me&quot; searches. A law
+            firm in South Tampa isn&apos;t just competing citywide. It&apos;s competing
             block by block against three other firms running the exact same
             Google Business Profile play.
           </p>
@@ -613,7 +613,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           </blockquote>
 
           <p>
-            Bayshore Communication's{" "}
+            Bayshore Communication&apos;s{" "}
             <InlineLink href="/our-services/seo-service">
               local SEO services
             </InlineLink>{" "}
@@ -628,8 +628,8 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           title="What Does Bayshore Communication's Data Actually Show?"
         >
           <p>
-            Here's where a lot of SEO advice stops being useful and starts being
-            generic. So let's get specific about what shows up across real client
+            Here&apos;s where a lot of SEO advice stops being useful and starts being
+            generic. So let&apos;s get specific about what shows up across real client
             accounts instead of textbook theory.
           </p>
           <p>
@@ -637,7 +637,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
             Florida law firms, medical practices, and service businesses, the
             pattern is consistent. Clients who commit to organic SEO for at least
             six consecutive months see ranking movement that clients running
-            three-month "test" campaigns almost never see. SEO isn’t slow because
+            three-month &quot;test&quot; campaigns almost never see. SEO isn&apos;t slow because
             agencies are lazy, SEO is slow because Google wants to see multiple
             recurring signals before granting trust to a domain.
           </p>
@@ -674,9 +674,9 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           </div>
 
           <p className="mt-6">
-            The businesses that struggle most aren't the ones in tough
-            industries. They're the ones treating SEO like a light switch, on for
-            a quarter, off when a quarterly report doesn't show explosive
+            The businesses that struggle most aren&apos;t the ones in tough
+            industries. They&apos;re the ones treating SEO like a light switch, on for
+            a quarter, off when a quarterly report doesn&apos;t show explosive
             growth, then on again eight months later after rankings have decayed
             back to where they started.
           </p>
@@ -687,7 +687,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           title="Organic SEO is Still Worth It Even With AI Overviews Everywhere"
         >
           <p>
-            Organic SEO is becoming less sustainable due to Google's zero-click
+            Organic SEO is becoming less sustainable due to Google&apos;s zero-click
             searches, however it is still valuable because of increased traffic
             to websites through the rich snippets and featured content. It
             appears that AI Overviews have increased the number of zero-click
@@ -696,7 +696,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
             clicking on a link to a site.
           </p>
           <p>
-            That sounds like bad news for organic SEO. It isn't, not entirely.
+            That sounds like bad news for organic SEO. It isn&apos;t, not entirely.
             Being the source an AI Overview cites requires the exact same
             foundation organic SEO has always required, structured, authoritative
             content that directly answers a question. Sites with strong existing
@@ -717,14 +717,14 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           <p>
             According to{" "}
             <ExternalLink href="https://www.brightedge.com/">
-              BrightEdge's 2026 research
+              BrightEdge&apos;s 2026 research
             </ExternalLink>{" "}
             on enterprise search performance, organic and paid search combined
             still account for 68% of all trackable website traffic, underscoring
             that unpaid search remains the dominant discovery channel even as the
             results page itself keeps changing shape. The format of the answer
             is evolving. The requirement to actually earn authority underneath
-            it hasn't gone anywhere.
+            it hasn&apos;t gone anywhere.
           </p>
         </NumberedSection>
 
@@ -733,7 +733,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           title="How Do You Know an Organic SEO Strategy Is Actually Working?"
         >
           <p>
-            Rankings alone are a vanity metric if nobody's converting. The true
+            Rankings alone are a vanity metric if nobody&apos;s converting. The true
             metrics to focus on are increases in organic traffic, improvements in
             rankings for commercial keywords, conversion rates from organic
             search, and visibility in local packs for your key service areas.
@@ -780,13 +780,13 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
             96.55% of all published web pages receive zero organic traffic from
             Google, according to{" "}
             <ExternalLink href="https://ahrefs.com/">
-              Ahrefs' most recent crawl data
+              Ahrefs&apos; most recent crawl data
             </ExternalLink>
             . That statistic should stop any Florida business owner cold. The
             vast majority of the content that’s published online is invisible to
             the majority of the people who are interacting with the websites. It
-            isn’t because they’re intentionally buried by Google but they haven't
-            received the signals indicating that they're worth being seen or
+            isn&apos;t because they’re intentionally buried by Google but they haven&apos;t
+            received the signals indicating that they&apos;re worth being seen or
             found.
           </p>
 
@@ -804,7 +804,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
             For a Florida business trying to decide whether to build organic
             authority in-house or bring in a partner, the{" "}
             <InlineLink href="/case-studies">case studies</InlineLink> on
-            Bayshore Communication's site walk through exactly how that ranking
+            Bayshore Communication&apos;s site walk through exactly how that ranking
             movement plays out across different industries, from immigration law
             to hospitality.
           </p>
