@@ -156,7 +156,7 @@ const schemaData = {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.bayshorecommunication.com",
+          "item": "https://www.bayshorecommunication.com/",
         },
         {
           "@type": "ListItem",
@@ -198,18 +198,20 @@ const schemaData = {
         "@type": "Thing",
         "name": "Organic SEO Services",
         "description":
-          "A comprehensive guide on organic search engine optimization, technical SEO, content marketing, local search, and page-one rankings.",
+          "An overview of organic SEO services, including technical SEO, keyword research, content optimization, link building, and other strategies used to improve unpaid search rankings and long-term visibility.",
       },
       "keywords": [
-        "organic seo services",
-        "organic seo",
+        "organic SEO services",
+        "what are organic SEO services",
+        "organic SEO",
+        "SEO services",
         "page one rankings",
-        "search engine optimization",
-        "local seo florida",
-        "technical seo",
-        "on page seo",
-        "off page seo",
-        "bayshore communication",
+        "how to rank on page one",
+        "Google page one rankings",
+        "organic search rankings",
+        "SEO strategy",
+        "SEO company",
+        "search engine optimization services",
       ],
       "author": {
         "@type": "Organization",
@@ -218,7 +220,7 @@ const schemaData = {
       "publisher": {
         "@type": "Organization",
         "name": "Bayshore Communication",
-        "url": "https://www.bayshorecommunication.com",
+        "url": "https://www.bayshorecommunication.com/",
         "logo": {
           "@type": "ImageObject",
           "url":
