@@ -475,106 +475,113 @@
   "local-seo-services-for-small-business-naples-florida": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/local-seo-for-lawyers-florida/common-seo-mistakes-banner.webp",
-        "alt": "Common SEO Mistakes Banner for Local Small Business Naples Florida",
-        "title": "Common SEO Mistakes Banner for Local Small Business Naples Florida",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
+        "src": "/local-seo-services-for-small-business-naples-florida/common-seo-mistakes-naples-florida-small-businesses.webp",
+        "alt": "Infographic highlighting common local SEO mistakes made by Naples, Florida small businesses including incomplete GBP profiles, lack of local keywords, and missing review strategies.",
+        "title": "Common SEO Mistakes Naples Florida Small Businesses Make",
+        "description": "Educational infographic revealing common local SEO pitfalls limiting small business growth in Naples, Florida, such as unoptimized Google Business Profiles, non-local keyword selection, inconsistent NAP citations, and unmanaged online reviews.",
+        "caption": "Avoiding common SEO mistakes empowers Naples small businesses to rank higher in local map packs and attract more qualified buyers."
       }
     },
     "seoCustomerJourneySection": {
-      "technicalAuditStepImage": {
-        "src": "/local-seo-for-lawyers-florida/seo-step-1.webp",
-        "alt": "Technical Audit Step Image for Local Small Business Naples Florida",
-        "title": "Technical Audit Step Image for Local Small Business Naples Florida",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
+      "gbpTopLocalSearchImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/gbp-optimization-top-local-search-naples-florida.webp",
+        "alt": "Google Business Profile local map search result displaying a top-ranked Naples small business with ratings, business hours, and instant call options.",
+        "title": "GBP Optimization Places You in Top Naples Local Search Results",
+        "description": "Professional visualization of Google Business Profile optimization driving top 3 Map Pack rankings for local searches in Naples, Florida. Demonstrates how optimized GBP listings generate immediate phone calls and customer actions.",
+        "caption": "Ranking in the top 3 of Google local search places your Naples business directly in front of ready-to-buy customers."
       },
-      "onPageOptimizationStepImage": {
-        "src": "/local-seo-for-lawyers-florida/seo-step-2.webp",
-        "alt": "On-Page Optimization Step Image for Local Small Business Naples Florida",
-        "title": "On-Page Optimization Step Image for Local Small Business Naples Florida",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
+      "targetedLocalKeywordsImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/targeted-local-keywords-attract-buyers-naples-florida.webp",
+        "alt": "Local keyword research dashboard showing search volume, keyword difficulty, and high-intent local queries for Naples businesses.",
+        "title": "Targeted Local Keywords Attract Ready-to-Buy Customers in Naples",
+        "description": "Visual report highlighting geo-targeted local search queries that connect buyer intent directly with Naples small businesses, driving qualified website visits and phone inquiries.",
+        "caption": "Targeting local transactional keywords connects your business with high-intent Naples searchers."
       },
-      "offPageStrategyStepImage": {
-        "src": "/local-seo-for-lawyers-florida/seo-step-3.webp",
-        "alt": "Off-Page Strategy Step Image for Local Small Business Naples Florida",
-        "title": "Off-Page Strategy Step Image for Local Small Business Naples Florida",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
+      "consistentNapCitationsTrustImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/consistent-nap-citations-builds-google-trust-naples-florida.webp",
+        "alt": "Local citation network audit illustrating consistent NAP (Name, Address, Phone) information across major Naples business directories.",
+        "title": "Consistent NAP Directory Citations Build Search Authority",
+        "description": "Illustration of consistent NAP data distribution across top directories, mapping apps, and local search platforms, solidifying trust signals with Google and boosting Naples local search authority.",
+        "caption": "Accurate directory listings across the web build search engine trust and elevate your local rankings."
       },
-      "analyticsReportingStepImage": {
-        "src": "/local-seo-for-lawyers-florida/seo-step-4.webp",
-        "alt": "Analytics and Reporting Step Image for Local Small Business Naples Florida",
-        "title": "Analytics and Reporting Step Image for Local Small Business Naples Florida",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
+      "localizedContentSearchIntentImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/localized-content-aligns-search-intent-naples-florida.webp",
+        "alt": "Localized content strategy layout displaying Naples neighborhood landing pages, service topics, and search intent alignment.",
+        "title": "Localized Content Aligns Pages to Search Intent in Naples",
+        "description": "Content strategy diagram showcasing dedicated service pages and neighborhood targeting for Naples, Florida, created to convert local search traffic into active customer leads.",
+        "caption": "Geo-targeted content captures Naples search intent and turns website visitors into paying customers."
       }
     },
     "seoServicesSection": {
-      "seoWebsiteAuditImage": {
-        "src": "/local-seo-for-lawyers-florida/service-1.webp",
-        "alt": "SEO Website Audit Image for Local Small Business Naples Florida",
-        "title": "SEO Website Audit Image for Local Small Business Naples Florida",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
+      "gbpOptimizationServiceImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/google-business-profile-gbp-optimization-naples-florida.webp",
+        "alt": "Google Business Profile management dashboard showing profile score, photo updates, posts, and Naples local map insights.",
+        "title": "Google Business Profile (GBP) Optimization for Naples Businesses",
+        "description": "Comprehensive Google Business Profile optimization including category selection, service area settings, high-resolution geo-tagged photos, regular posts, and active Q&A management for Naples small businesses.",
+        "caption": "Maximizing your Google Business Profile performance drives consistent phone calls and customer visits."
       },
-      "keywordResearchImage": {
-        "src": "/local-seo-for-lawyers-florida/service-2.webp",
-        "alt": "Keyword Research Image for Local Small Business Naples Florida",
-        "title": "Keyword Research Image for Local Small Business Naples Florida",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
+      "localKeywordResearchServiceImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/local-keyword-research-strategy-naples-florida.webp",
+        "alt": "Keyword research and search intent dashboard analyzing high-value search terms for small businesses in Naples, Florida.",
+        "title": "Local Keyword Research and Strategy for Naples Markets",
+        "description": "In-depth local search query analysis identifying primary keywords, long-tail transactional phrases, and competitor keyword gaps across Naples and surrounding Collier County communities.",
+        "caption": "In-depth keyword research ensures your content targets exact search terms used by Naples customers."
       },
-      "onPageOptimizationImage": {
-        "src": "/local-seo-for-lawyers-florida/service-3.webp",
-        "alt": "On-Page Optimization Image for Local Small Business Naples Florida",
-        "title": "On-Page Optimization Image for Local Small Business Naples Florida",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
+      "onPageLocalSeoServiceImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/on-page-local-seo-optimization-naples-florida.webp",
+        "alt": "On-page SEO optimization interface showing metadata, header tags, schema code, and localized content structure.",
+        "title": "On-Page Local SEO Optimization for Small Business Websites",
+        "description": "Strategic on-page optimization refining title tags, meta descriptions, H1-H3 heading tags, localized content, internal link structures, and LocalBusiness schema markup for Naples websites.",
+        "caption": "Optimizing website code and content establishes clear local search relevance for Google algorithms."
       },
-      "technicalSeoImage": {
-        "src": "/local-seo-for-lawyers-florida/service-4.webp",
-        "alt": "Technical SEO Image for Local Small Business Naples Florida",
-        "title": "Technical SEO Image for Local Small Business Naples Florida",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
+      "citationBuildingNapServiceImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/local-citation-building-nap-management-naples-florida.webp",
+        "alt": "Directory citation manager interface displaying NAP consistency across 50+ local search platforms and directory listings.",
+        "title": "Local Citation Building and NAP Management Services",
+        "description": "Proactive local directory submission and citation cleanup ensuring accurate Name, Address, and Phone details across Apple Maps, Bing Places, Yelp, YellowPages, and local Naples business portals.",
+        "caption": "Consistent citation data eliminates algorithmic confusion and solidifies local map rankings."
       },
-      "localSeoMapPackImage": {
-        "src": "/local-seo-for-lawyers-florida/service-5.webp",
-        "alt": "Local SEO Map Pack Image for Local Small Business Naples Florida",
-        "title": "Local SEO Map Pack Image for Local Small Business Naples Florida",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
+      "reviewGenerationReputationServiceImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/review-generation-reputation-management-naples-florida.webp",
+        "alt": "Online review management platform showing automated review requests, 5-star customer ratings, and response management.",
+        "title": "Review Generation and Reputation Management",
+        "description": "Automated review acquisition system collecting authentic 5-star Google reviews from satisfied Naples clients, building social proof and boosting Google Map Pack ranking factors.",
+        "caption": "Generating steady 5-star customer reviews strengthens online trust and increases lead conversion rates."
       },
-      "contentDevelopmentImage": {
-        "src": "/local-seo-for-lawyers-florida/service-6.webp",
-        "alt": "Content Development Image for Local Small Business Naples Florida",
-        "title": "Content Development Image for Local Small Business Naples Florida",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
+      "localizedContentCreationServiceImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/localized-content-creation-services-naples-florida.webp",
+        "alt": "SEO content editor demonstrating localized service page creation, blog writing, and Naples neighborhood targeting.",
+        "title": "Localized Content Creation for Naples Small Businesses",
+        "description": "High-quality, search-optimized content writing crafting dedicated service area pages, local guides, and informative blog posts tailored to Naples residents and business owners.",
+        "caption": "Custom localized content establishes local market authority and captures organic search traffic."
       },
-      "offPageSeoImage": {
-        "src": "/local-seo-for-lawyers-florida/service-7.webp",
-        "alt": "Off-Page SEO Image for Local Small Business Naples Florida",
-        "title": "Off-Page SEO Image for Local Small Business Naples Florida",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
+      "localLinkBuildingServiceImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/local-link-building-services-naples-florida.webp",
+        "alt": "Backlink analysis dashboard displaying high domain authority local backlinks from Naples chambers and business directories.",
+        "title": "Local Link Building Services in Naples, Florida",
+        "description": "Ethical link building campaigns securing authoritative local backlinks from Naples community websites, local news outlets, business associations, and relevant industry publications.",
+        "caption": "Acquiring authoritative local backlinks increases domain trust and pushes rankings above local competitors."
       },
-      "askEngineOptimizationImage": {
-        "src": "/local-seo-for-lawyers-florida/service-8.webp",
-        "alt": "Ask Engine Optimization Image for Local Small Business Naples Florida",
-        "title": "Ask Engine Optimization Image for Local Small Business Naples Florida",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
+      "aiGeoOptimizationServiceImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/ai-and-geo-optimization-naples-florida.webp",
+        "alt": "AI search engine response dashboard showing brand mentions on ChatGPT, Perplexity, and Google AI Overviews for Naples queries.",
+        "title": "AI and GEO (Generative Engine Optimization) Services",
+        "description": "Advanced AEO & GEO optimization structuring website data, entity relationships, and direct answer formats so AI tools like ChatGPT, Gemini, and Perplexity recommend your Naples business.",
+        "caption": "Position your business to be recommended by next-generation AI-powered search engines."
       },
-      "generativeEngineOptimizationImage": {
-        "src": "/local-seo-for-lawyers-florida/service-9.webp",
-        "alt": "Generative Engine Optimization Image for Local Small Business Naples Florida",
-        "title": "Generative Engine Optimization Image for Local Small Business Naples Florida",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
+      "googleMapsLocalPackServiceImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/google-maps-local-pack-ranking-naples-florida.webp",
+        "alt": "Google Maps 3-Pack result screen highlighting a top Naples small business listing with map pin and directions.",
+        "title": "Google Maps and Local Pack Ranking Strategy",
+        "description": "Targeted Local Map Pack optimization tactics designed to vault your Naples business into Google's top 3 map results, driving maximum call volume and direct website visits.",
+        "caption": "Dominating the Google 3-Pack Map Pack maximizes phone calls and customer inquiries for your business."
+      },
+      "localSeoAnalyticsReportingServiceImage": {
+        "src": "/local-seo-services-for-small-business-naples-florida/local-seo-analytics-monthly-reporting-naples-florida.webp",
+        "alt": "Local SEO performance reporting dashboard illustrating keyword ranking progress, call volume, and conversion growth.",
+        "title": "Local SEO Analytics and Transparent Monthly Reporting",
+        "description": "Detailed monthly performance tracking reports detailing keyword rankings, Google Business Profile calls, website visitors, and lead conversions for transparent ROI evaluation.",
+        "caption": "Clear monthly analytics track your local search growth, phone calls, and revenue return on investment."
       }
     }
   },

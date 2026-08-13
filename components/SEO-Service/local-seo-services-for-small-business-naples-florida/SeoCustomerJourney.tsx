@@ -5,28 +5,28 @@ import Image from "next/image";
 const seoSteps = [
   {
     number: "01",
-    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
+    image: images.seoCustomerJourneySection.gbpTopLocalSearchImage,
     title: "GBP Optimization Places You in the Top Local Search",
     description:
       "Actively SEO optimized Google Business Profile ranks in top 3 local results on Google search and Maps. Your Naples Florida business gets seen first by customers ready to buy.",
   },
   {
     number: "02",
-    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
+    image: images.seoCustomerJourneySection.targetedLocalKeywordsImage,
     title: "Targeted Local Keywords Attract Buyer Customers",
     description:
       "Specific local keywords like 'property damage attorney near me' connect high-intent queries directly to your Naples Florida business, driving calls and inquiries.",
   },
   {
     number: "03",
-    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
+    image: images.seoCustomerJourneySection.consistentNapCitationsTrustImage,
     title: "Consistent NAP Citations Build Google's Trust",
     description:
       "Accurate business information across directories such as websites, Yelp and others strengthens your local search authority and positions you above Naples competitors.",
   },
   {
     number: "04",
-    image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
+    image: images.seoCustomerJourneySection.localizedContentSearchIntentImage,
     title: "Localized Content Aligns Pages to Search Intent",
     description:
       "Dedicated service pages for Naples neighborhoods capture more traffic from geo-targeted customers. Every page is built to convert Naples Florida visitors into paying customers.",
@@ -97,29 +97,21 @@ export default function SeoCustomerJourney() {
                   hover:rounded-[24px]
                 "
               >
-                {(() => {
-                  const imgData = Object.values(images.seoCustomerJourneySection).find(
-                    (item) => item.src === step.image
-                  );
-                  if (!imgData) return null;
-                  return (
-                    <Image
-                      src={imgData.src}
-                      alt={imgData.alt}
-                      title={imgData.title}
-                      fill
-                      className="
-                        object-cover
-                        transition-transform
-                        duration-700
-                        group-hover:scale-110
-                        object-top
-                        rounded-[20px]
-                        md:rounded-[24px]
-                      "
-                    />
-                  );
-                })()}
+                <Image
+                  src={step.image.src}
+                  alt={step.image.alt}
+                  title={step.image.title}
+                  fill
+                  className="
+                    object-cover
+                    transition-transform
+                    duration-700
+                    group-hover:scale-110
+                    object-top
+                    rounded-[20px]
+                    md:rounded-[24px]
+                  "
+                />
               </div>
 
               {/* Content */}
@@ -158,18 +150,11 @@ export default function SeoCustomerJourney() {
                 <p className="mt-5 text-[15px] leading-7 text-black/70 md:text-[16px] md:leading-8">
                   {step.description}
                 </p>
-                {(() => {
-                  const imgData = Object.values(images.seoCustomerJourneySection).find(
-                    (item) => item.src === step.image
-                  );
-                  if (!imgData) return null;
-                  return (
-                    <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
-                      {imgData.caption && <p>{imgData.caption}</p>}
-                      {imgData.description && <p>{imgData.description}</p>}
-                    </div>
-                  );
-                })()}
+
+                <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                  {step.image.caption && <p>{step.image.caption}</p>}
+                  {step.image.description && <p>{step.image.description}</p>}
+                </div>
               </div>
             </div>
           ))}
