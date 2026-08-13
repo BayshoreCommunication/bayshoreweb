@@ -800,106 +800,113 @@
   "real-estate-seo-services-in-florida": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
-        "alt": "Common SEO Mistakes Banner for Real Estate Florida",
-        "title": "Common SEO Mistakes Banner for Real Estate Florida",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
+        "src": "/real-estate-seo-services-in-florida/common-seo-mistakes-florida-real-estate-businesses.webp",
+        "alt": "Infographic showing common SEO mistakes made by Florida real estate businesses including non-targeted keywords, duplicate MLS descriptions, and slow mobile websites.",
+        "title": "Common SEO Mistakes Florida Real Estate Businesses Make",
+        "description": "Educational infographic highlighting real estate SEO mistakes in Florida, such as statewide targeting instead of neighborhood landing pages, ignored AI overviews, duplicate MLS content, and unoptimized Google Business Profiles.",
+        "caption": "Avoiding common real estate SEO mistakes helps Florida brokerages and agents rank higher in local search and win more buyer and seller leads."
       }
     },
     "seoCustomerJourneySection": {
-      "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
-        "alt": "Technical Audit Step Image for Real Estate Florida",
-        "title": "Technical Audit Step Image for Real Estate Florida",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
+      "highIntentBuyerSellerTrafficImage": {
+        "src": "/real-estate-seo-services-in-florida/high-intent-buyer-and-seller-traffic-florida.webp",
+        "alt": "High-intent buyer and seller search traffic dashboard for Florida real estate agencies.",
+        "title": "High Intent Buyer and Seller Traffic Strategy Florida",
+        "description": "SEO targeting high-intent buyer and seller search queries across Florida markets like Sarasota, Tampa, and Miami.",
+        "caption": "Capture motivated Florida buyers and sellers actively searching for properties."
       },
-      "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
-        "alt": "On-Page Optimization Step Image for Real Estate Florida",
-        "title": "On-Page Optimization Step Image for Real Estate Florida",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
+      "neighborhoodCommunityPagesImage": {
+        "src": "/real-estate-seo-services-in-florida/neighborhood-community-landing-pages-florida.webp",
+        "alt": "Neighborhood and community landing page optimization for Florida real estate websites.",
+        "title": "Florida Neighborhood & Community Landing Pages",
+        "description": "Hyper-local community landing pages that rank quickly and generate qualified buyer leads across Florida cities.",
+        "caption": "Hyper-local neighborhood guides attract high-quality Florida property leads."
       },
-      "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
-        "alt": "Off-Page Strategy Step Image for Real Estate Florida",
-        "title": "Off-Page Strategy Step Image for Real Estate Florida",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
+      "idxPageOptimizationJourneyImage": {
+        "src": "/real-estate-seo-services-in-florida/idx-page-optimization-real-estate-florida.webp",
+        "alt": "IDX listing page SEO optimization for Florida property search portals.",
+        "title": "IDX Search & Listing Page Optimization Florida",
+        "description": "Optimized IDX search pages converting web visitors into active leads for Florida agents and brokerages.",
+        "caption": "Turn anonymous IDX website traffic into registered real estate inquiries."
       },
-      "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
-        "alt": "Analytics and Reporting Step Image for Real Estate Florida",
-        "title": "Analytics and Reporting Step Image for Real Estate Florida",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
+      "prePurchaseContentBuyersImage": {
+        "src": "/real-estate-seo-services-in-florida/pre-purchase-content-early-stage-buyers-florida.webp",
+        "alt": "Pre-purchase real estate content guide for early-stage Florida buyers.",
+        "title": "Pre-Purchase Content for Early Stage Florida Buyers",
+        "description": "Educational content covering Florida flood zones, HOA regulations, property taxes, and school districts.",
+        "caption": "Engage home buyers early in their decision process with authoritative Florida market content."
+      },
+      "googleMapPackRankingsJourneyImage": {
+        "src": "/real-estate-seo-services-in-florida/google-local-map-pack-rankings-real-estate-florida.webp",
+        "alt": "Google Maps 3-Pack local ranking strategy for Florida real estate brokers.",
+        "title": "Google Local Map Pack Rankings Real Estate Florida",
+        "description": "Top 3 local map pack positioning driving direct phone calls and consultation requests for Florida realtors.",
+        "caption": "Dominate local Google Maps results to capture nearby Florida real estate searches."
+      },
+      "leadVolumeGrowthImage": {
+        "src": "/real-estate-seo-services-in-florida/lead-volume-growth-month-over-month-florida.webp",
+        "alt": "Analytics chart showing compounding organic lead volume growth for Florida real estate agencies.",
+        "title": "Compounding Lead Volume Growth Month Over Month",
+        "description": "Sustainable organic real estate lead generation that grows continuously month over month without paid ad reliance.",
+        "caption": "Build a long-term inbound lead generation engine for your Florida real estate firm."
       }
     },
     "seoServicesSection": {
-      "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
-        "alt": "SEO Website Audit Image for Real Estate Florida",
-        "title": "SEO Website Audit Image for Real Estate Florida",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
+      "localSeoRealEstateServiceImage": {
+        "src": "/real-estate-seo-services-in-florida/local-seo-services-florida-real-estate-markets.webp",
+        "alt": "Local SEO strategy diagram for Florida city, county, and neighborhood real estate markets.",
+        "title": "Local SEO for Florida Real Estate Markets",
+        "description": "City, neighborhood, and county level search engine optimization for Florida real estate companies.",
+        "caption": "Target buyers and sellers exactly where they search in Florida local markets."
       },
-      "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
-        "alt": "Keyword Research Image for Real Estate Florida",
-        "title": "Keyword Research Image for Real Estate Florida",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
+      "gbpOptimizationServiceImage": {
+        "src": "/real-estate-seo-services-in-florida/google-business-profile-optimization-management-real-estate.webp",
+        "alt": "Google Business Profile optimization and local listing management for Florida real estate brokers.",
+        "title": "Google Business Profile Optimization and Management",
+        "description": "Complete GBP setup, review acquisition, Q&A, and local map pack optimization for Florida brokerages.",
+        "caption": "Maximize your brokerage's Google Maps visibility and phone inquiry volume."
       },
-      "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
-        "alt": "On-Page Optimization Image for Real Estate Florida",
-        "title": "On-Page Optimization Image for Real Estate Florida",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
+      "aiOverviewGenerativeSearchServiceImage": {
+        "src": "/real-estate-seo-services-in-florida/ai-overview-generative-search-visibility-real-estate.webp",
+        "alt": "AI search visibility strategy for Florida real estate on ChatGPT, Gemini, and Google AI Overviews.",
+        "title": "AI Overview & Generative Search Visibility Real Estate",
+        "description": "Content structuring and GEO optimization to get cited in AI-generated answers and search summaries.",
+        "caption": "Position your real estate brand inside AI answers like ChatGPT and Google AI Overviews."
       },
-      "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
-        "alt": "Technical SEO Image for Real Estate Florida",
-        "title": "Technical SEO Image for Real Estate Florida",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
+      "contentCreationServiceImage": {
+        "src": "/real-estate-seo-services-in-florida/florida-real-estate-content-creation-services.webp",
+        "alt": "Florida real estate content creation including market reports and neighborhood guides.",
+        "title": "Florida Real Estate Content Creation Services",
+        "description": "High-converting market updates, neighborhood guides, and buyer resources for Florida real estate sites.",
+        "caption": "Publish expert Florida market content that attracts, engages, and converts clients."
       },
-      "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
-        "alt": "Local SEO Map Pack Image for Real Estate Florida",
-        "title": "Local SEO Map Pack Image for Real Estate Florida",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
+      "technicalSeoAuditServiceImage": {
+        "src": "/real-estate-seo-services-in-florida/technical-seo-audit-ongoing-correction-real-estate.webp",
+        "alt": "Technical SEO audit dashboard monitoring crawl health, site speed, and indexation for real estate websites.",
+        "title": "Technical SEO Audit and Ongoing Correction",
+        "description": "Continuous technical SEO audits fixing indexation bottlenecks, schema errors, and site performance issues.",
+        "caption": "Maintain peak website speed, crawl efficiency, and Core Web Vitals performance."
       },
-      "contentDevelopmentImage": {
-        "src": "/seo-company-wesley-chapel/service-6.png",
-        "alt": "Content Development Image for Real Estate Florida",
-        "title": "Content Development Image for Real Estate Florida",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
+      "idxListingPageOptimizationServiceImage": {
+        "src": "/real-estate-seo-services-in-florida/idx-listing-page-optimization-florida.webp",
+        "alt": "IDX listing page optimization interface for Florida property search portals.",
+        "title": "IDX & Listing Page Optimization Florida",
+        "description": "On-page optimization for MLS search pages to capture long-tail organic real estate search traffic.",
+        "caption": "Turn property listing pages into high-ranking organic traffic drivers."
       },
-      "offPageSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-7.png",
-        "alt": "Off-Page SEO Image for Real Estate Florida",
-        "title": "Off-Page SEO Image for Real Estate Florida",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
+      "editorialLinkBuildingServiceImage": {
+        "src": "/real-estate-seo-services-in-florida/editorial-link-building-domain-authority-real-estate.webp",
+        "alt": "Editorial link building and media placement network for Florida real estate domain authority.",
+        "title": "Editorial Link Building for Real Estate Domain Authority",
+        "description": "Authority backlinks earned from Florida news outlets, business publications, and industry blogs.",
+        "caption": "Build strong domain authority with high-quality Florida editorial backlinks."
       },
-      "askEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-8.png",
-        "alt": "Ask Engine Optimization Image for Real Estate Florida",
-        "title": "Ask Engine Optimization Image for Real Estate Florida",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
-      },
-      "generativeEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-9.png",
-        "alt": "Generative Engine Optimization Image for Real Estate Florida",
-        "title": "Generative Engine Optimization Image for Real Estate Florida",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
+      "realEstateSchemaMarkupServiceImage": {
+        "src": "/real-estate-seo-services-in-florida/real-estate-schema-markup-structured-data-florida.webp",
+        "alt": "Real estate schema markup and structured data code visualization for search engines.",
+        "title": "Real Estate Schema Markup & Structured Data",
+        "description": "Implementation of LocalBusiness, RealEstateAgent, SingleFamilyResidence, and FAQ schema tags.",
+        "caption": "Structure your website data so search engines and AI tools clearly understand your listings."
       }
     }
   },

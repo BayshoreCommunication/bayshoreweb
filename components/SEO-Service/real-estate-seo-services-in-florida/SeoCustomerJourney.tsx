@@ -5,42 +5,42 @@ import Image from "next/image";
 const seoSteps = [
   {
     number: "01",
-    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
+    image: images.seoCustomerJourneySection.highIntentBuyerSellerTrafficImage,
     title: "High Intent Buyer and Seller Traffic",
     description:
       'SEO work on target searches like "waterfront homes in Sarasota" or "sell my house fast in Tampa" from people who are ready to move.',
   },
   {
     number: "02",
-    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
+    image: images.seoCustomerJourneySection.neighborhoodCommunityPagesImage,
     title: "Neighborhood & Community Landing Pages",
     description:
       "Community specific landing pages in Florida will rank faster and produce better leads than generic state wide pages.",
   },
   {
     number: "03",
-    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
+    image: images.seoCustomerJourneySection.idxPageOptimizationJourneyImage,
     title: "IDX Page Optimization",
     description:
       "Optimized property search pages convert anonymous visitors into registered leads your agents can follow up with.",
   },
   {
     number: "04",
-    image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
+    image: images.seoCustomerJourneySection.prePurchaseContentBuyersImage,
     title: "Pre Purchase Content for Early Stage Buyers",
     description:
       "Content covering Florida flood zones, HOA rules, and school districts reaches buyers months before they contact anyone.",
   },
   {
     number: "05",
-    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
+    image: images.seoCustomerJourneySection.googleMapPackRankingsJourneyImage,
     title: "Google Local Map Pack Rankings",
     description:
       "Placing in the top three local results drives direct calls and form submissions at zero per click cost.",
   },
   {
     number: "06",
-    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
+    image: images.seoCustomerJourneySection.leadVolumeGrowthImage,
     title: "Lead Volume That Grows Month Over Month",
     description:
       "Every month of SEO work compounds the last, building a lead channel that keeps performing without ad spend behind it.",
@@ -112,29 +112,21 @@ export default function SeoCustomerJourney() {
                   hover:rounded-[24px]
                 "
               >
-                {(() => {
-                  const imgData = Object.values(images.seoCustomerJourneySection).find(
-                    (item) => item.src === step.image
-                  );
-                  if (!imgData) return null;
-                  return (
-                    <Image
-                      src={imgData.src}
-                      alt={imgData.alt}
-                      title={imgData.title}
-                      fill
-                      className="
-                        object-cover
-                        transition-transform
-                        duration-700
-                        group-hover:scale-110
-                        object-top
-                        rounded-[20px]
-                        md:rounded-[24px]
-                      "
-                    />
-                  );
-                })()}
+                <Image
+                  src={step.image.src}
+                  alt={step.image.alt}
+                  title={step.image.title}
+                  fill
+                  className="
+                    object-cover
+                    transition-transform
+                    duration-700
+                    group-hover:scale-110
+                    object-top
+                    rounded-[20px]
+                    md:rounded-[24px]
+                  "
+                />
               </div>
 
               {/* Content */}
@@ -173,18 +165,11 @@ export default function SeoCustomerJourney() {
                 <p className="mt-5 text-[15px] leading-7 text-black/70 md:text-[16px] md:leading-8">
                   {step.description}
                 </p>
-                {(() => {
-                  const imgData = Object.values(images.seoCustomerJourneySection).find(
-                    (item) => item.src === step.image
-                  );
-                  if (!imgData) return null;
-                  return (
-                    <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
-                      {imgData.caption && <p>{imgData.caption}</p>}
-                      {imgData.description && <p>{imgData.description}</p>}
-                    </div>
-                  );
-                })()}
+
+                <div style={{ position: 'absolute', width: '1px', height: '1px', padding: '0', margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: '0' }}>
+                  {step.image.caption && <p>{step.image.caption}</p>}
+                  {step.image.description && <p>{step.image.description}</p>}
+                </div>
               </div>
             </div>
           ))}
