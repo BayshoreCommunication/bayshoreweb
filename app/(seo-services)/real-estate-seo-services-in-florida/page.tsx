@@ -23,12 +23,12 @@ export const metadata = {
     "Bayshore provides real estate SEO services in Florida to help agents and brokerages rank higher on Google and attract more qualified buyers and sellers.",
 
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
 

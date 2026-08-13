@@ -23,12 +23,12 @@ export const metadata = {
     "Bayshore helps Florida small businesses increase traffic,calls and sales with SEO services that improve visibility on Google Search,Maps and AI search.",
 
      robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
 

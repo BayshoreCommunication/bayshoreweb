@@ -24,12 +24,12 @@ export const metadata = {
     "Grow your Naples business with local SEO services from Bayshore. Improve your Google Maps rankings,attract nearby customers and generate more qualified leads.",
 
     robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
 
