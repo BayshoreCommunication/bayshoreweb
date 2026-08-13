@@ -5,14 +5,14 @@ import Image from "next/image";
 const seoSteps = [
   {
     number: "01",
-    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
+    image: images.seoCustomerJourneySection.google3PackRankingImage.src,
     title: "SEO ranks your business in Google 3-pack",
     description:
       "Your business appears in 3 pack above organic results whenever customers search for local services. Listed businesses in 3 pack generate more traffic and customer actions.",
   },
   {
     number: "02",
-    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
+    image: images.seoCustomerJourneySection.categoryKeywordRelevanceImage.src,
     title:
       "SEO helps optimize your business category and keyword relevance",
     description:
@@ -20,7 +20,7 @@ const seoSteps = [
   },
   {
     number: "03",
-    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
+    image: images.seoCustomerJourneySection.gbpOptimizationRevenueImage.src,
     title:
       "SEO ensures complete & accurate Google Business Profile and drives revenue",
     description:
@@ -28,7 +28,7 @@ const seoSteps = [
   },
   {
     number: "04",
-    image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
+    image: images.seoCustomerJourneySection.buyerIntentKeywordsImage.src,
     title:
       "Search-engine-optimized keywords match buyer intent and increase traffic",
     description:
@@ -36,14 +36,14 @@ const seoSteps = [
   },
   {
     number: "05",
-    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
+    image: images.seoCustomerJourneySection.automatedReviewCollectionImage.src,
     title: "Automated review collection systems produce more conversions",
     description:
       "Earning 50+ reviews generates more sales from search traffic. With SEO strategies, you collect Google reviews and respond professionally to build more trust among customers.",
   },
   {
     number: "06",
-    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
+    image: images.seoCustomerJourneySection.mobilePerformanceConversionsImage.src,
     title:
       "Optimized websites with fast speed mobile performance converts clicks into sales",
     description:
@@ -51,7 +51,7 @@ const seoSteps = [
   },
   {
     number: "07",
-    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
+    image: images.seoCustomerJourneySection.aiSearchOptimizationJourneyImage.src,
     title:
       "SEO strategies help your business appear in AI-generated answers for targeted queries",
     description:

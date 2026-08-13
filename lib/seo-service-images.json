@@ -1464,106 +1464,134 @@
   "seo-services-for-small-businesses-in-florida": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
-        "alt": "Common SEO Mistakes Banner for Small Businesses In Florida",
-        "title": "Common SEO Mistakes Banner for Small Businesses In Florida",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
+        "src": "/seo-services-for-small-businesses-in-florida/common-seo-mistakes-florida-small-businesses.webp",
+        "alt": "Infographic showing common SEO mistakes made by Florida small businesses including poor local targeting, unoptimized Google Business Profiles, and lack of AI search strategies.",
+        "title": "Common SEO Mistakes Florida Small Businesses Make",
+        "description": "Comprehensive visual breakdown of the most common SEO mistakes limiting Florida small business growth, including generic location targeting, inconsistent NAP directory listings, targeting non-converting national keywords, neglecting Google Business Profile optimization, and missing AI search opportunities across ChatGPT and Gemini.",
+        "caption": "Identifying and fixing critical SEO mistakes helps Florida small businesses increase local search rankings, gain organic traffic, and convert more local leads into paying customers."
       }
     },
     "seoCustomerJourneySection": {
-      "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
-        "alt": "Technical Audit Step Image for Small Businesses In Florida",
-        "title": "Technical Audit Step Image for Small Businesses In Florida",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
+      "google3PackRankingImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/seo-ranks-small-business-in-google-3-pack-florida.webp",
+        "alt": "Google 3-Pack search results showing a top-ranked Florida small business with reviews, business hours, and phone call action button.",
+        "title": "SEO Ranks Your Florida Small Business in Google 3-Pack",
+        "description": "Professional visualization of Google 3-Pack map rankings for local search queries in Florida. Demonstrates how local SEO optimization positions small businesses above standard organic results, driving phone calls, website clicks, and foot traffic.",
+        "caption": "Ranking in the Google 3-Pack connects your Florida small business with ready-to-buy customers actively searching for your services."
       },
-      "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
-        "alt": "On-Page Optimization Step Image for Small Businesses In Florida",
-        "title": "On-Page Optimization Step Image for Small Businesses In Florida",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
+      "categoryKeywordRelevanceImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/optimize-business-category-keyword-relevance-florida.webp",
+        "alt": "Dashboard showing business category optimization and high-intent keyword relevance analysis for local Florida SEO.",
+        "title": "Optimize Business Category and Keyword Relevance",
+        "description": "Detailed SEO dashboard illustrating business category alignment and primary keyword relevance optimization for Florida small businesses, ensuring algorithms match customer intent with relevant local services.",
+        "caption": "Proper business category and keyword relevance ensure your business appears in high-intent customer searches."
       },
-      "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
-        "alt": "Off-Page Strategy Step Image for Small Businesses In Florida",
-        "title": "Off-Page Strategy Step Image for Small Businesses In Florida",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
+      "gbpOptimizationRevenueImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/accurate-google-business-profile-drives-revenue-florida.webp",
+        "alt": "Fully optimized Google Business Profile for a Florida business showcasing photos, reviews, services, and conversion tracking.",
+        "title": "Accurate Google Business Profile Drives Small Business Revenue",
+        "description": "Illustration of a fully optimized Google Business Profile featuring consistent business information, customer review management, high-resolution imagery, and structured call-to-action buttons that convert searchers into revenue.",
+        "caption": "An accurate and active Google Business Profile builds immediate customer trust and turns local searchers into paying clients."
       },
-      "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
-        "alt": "Analytics and Reporting Step Image for Small Businesses In Florida",
-        "title": "Analytics and Reporting Step Image for Small Businesses In Florida",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
+      "buyerIntentKeywordsImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/seo-keywords-match-buyer-intent-florida.webp",
+        "alt": "Keyword research dashboard highlighting high-intent local search queries matching buyer intent in Florida markets.",
+        "title": "SEO Keywords Match High Buyer Intent in Florida",
+        "description": "Visual report highlighting local transactional keyword targeting that connects Florida small businesses with customers at the exact moment of decision, increasing conversion rates and return on SEO investment.",
+        "caption": "Targeting geo-specific keywords with high buyer intent drives qualified leads and maximizes ROI for small businesses."
+      },
+      "automatedReviewCollectionImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/automated-review-collection-boosts-conversions-florida.webp",
+        "alt": "Automated review request system dashboard displaying customer feedback, Google 5-star reviews, and conversion metrics.",
+        "title": "Automated Review Collection Boosts Local Conversions",
+        "description": "Interactive workflow dashboard showing automated review generation systems that continuously collect 5-star Google reviews, strengthen brand reputation, and send positive ranking signals to search engines.",
+        "caption": "Automated review collection builds social proof and significantly increases customer conversion rates across search results."
+      },
+      "mobilePerformanceConversionsImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/fast-mobile-website-performance-converts-sales-florida.webp",
+        "alt": "Mobile website speed performance audit score showing fast load times, Core Web Vitals pass, and seamless user experience.",
+        "title": "Fast Mobile Website Performance Converts Clicks Into Sales",
+        "description": "Mobile page performance showcase highlighting rapid load times, Core Web Vitals optimization, and responsive design that prevents bounce rates and converts mobile search traffic into phone calls and sales.",
+        "caption": "Lightning-fast mobile website speed provides a superior user experience that converts website visitors into paying clients."
+      },
+      "aiSearchOptimizationJourneyImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/ai-generated-answers-search-optimization-florida.webp",
+        "alt": "Interface illustrating AI search engine responses from ChatGPT and Perplexity citing a top Florida small business.",
+        "title": "Appear in AI-Generated Answers for High-Intent Queries",
+        "description": "Advanced AI search visualization demonstrating how optimized structured data and authoritative content allow next-generation search platforms like ChatGPT, Gemini, and Google AI Overviews to recommend your Florida business.",
+        "caption": "Optimizing for AI search platforms ensures your small business stays visible across next-generation answer engines."
       }
     },
     "seoServicesSection": {
-      "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
-        "alt": "SEO Website Audit Image for Small Businesses In Florida",
-        "title": "SEO Website Audit Image for Small Businesses In Florida",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
+      "localSeoServiceImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/local-seo-services-florida-small-businesses.webp",
+        "alt": "Local SEO strategy dashboard showing map rankings, local citations, geo-targeted keyword performance, and local search visibility for Florida small businesses.",
+        "title": "Local SEO Services for Florida Small Businesses",
+        "description": "Comprehensive Local SEO strategy suite optimizing Google Business Profile, local NAP directory listings, and location-based keywords across Florida cities to capture near-me searches and local Map Pack positions.",
+        "caption": "Dominating local search results helps Florida small businesses outrank competitors and capture high-intent local customers."
       },
-      "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
-        "alt": "Keyword Research Image for Small Businesses In Florida",
-        "title": "Keyword Research Image for Small Businesses In Florida",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
+      "onPageSeoServiceImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/on-page-seo-optimization-florida-small-businesses.webp",
+        "alt": "On-page SEO optimization interface showing title tag optimization, meta description formatting, H1-H3 structure, and internal link architecture.",
+        "title": "On-Page SEO Optimization for Small Business Websites",
+        "description": "Targeted on-page website optimization refining title tags, meta descriptions, header tags, keyword placement, image alt attributes, and internal linking to maximize search engine indexing and relevance.",
+        "caption": "Strategic on-page SEO ensures search engines and users clearly understand your core service offerings."
       },
-      "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
-        "alt": "On-Page Optimization Image for Small Businesses In Florida",
-        "title": "On-Page Optimization Image for Small Businesses In Florida",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
+      "technicalSeoServiceImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/technical-seo-audit-optimization-florida.webp",
+        "alt": "Technical SEO audit dashboard analyzing Core Web Vitals, XML sitemaps, site crawlability, page speed, and indexing health.",
+        "title": "Technical SEO Audit and Performance Optimization",
+        "description": "In-depth technical SEO diagnostics resolving site speed bottlenecks, mobile responsiveness issues, broken links, crawl errors, XML sitemaps, and SSL security to maintain optimal website health.",
+        "caption": "A robust technical SEO foundation guarantees fast site loading speeds, smooth indexation, and flawless mobile performance."
       },
-      "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
-        "alt": "Technical SEO Image for Small Businesses In Florida",
-        "title": "Technical SEO Image for Small Businesses In Florida",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
+      "contentMarketingServiceImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/seo-content-marketing-strategy-florida.webp",
+        "alt": "Content marketing workflow showing keyword-focused blog posts, service landing pages, and topical authority clusters for Florida businesses.",
+        "title": "SEO Content Marketing Strategy and Copywriting",
+        "description": "High-impact SEO content creation building comprehensive service pages, informative local blog posts, and topical clusters designed to engage Florida audiences and satisfy search engine quality guidelines.",
+        "caption": "Authoritative SEO content builds industry credibility, answers buyer questions, and turns readers into customers."
       },
-      "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
-        "alt": "Local SEO Map Pack Image for Small Businesses In Florida",
-        "title": "Local SEO Map Pack Image for Small Businesses In Florida",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
+      "linkBuildingServiceImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/authoritative-link-building-services-florida.webp",
+        "alt": "Backlink profile analytics showing high domain authority link building from Florida news sites, business directories, and niche blogs.",
+        "title": "Authoritative Link Building Services in Florida",
+        "description": "Strategic off-page SEO building high-quality backlinks from trusted Florida business directories, news publications, and industry blogs to boost overall domain authority and organic rankings.",
+        "caption": "Earning authoritative backlinks strengthens your domain authority and drives sustainable search engine rankings."
       },
-      "contentDevelopmentImage": {
-        "src": "/seo-company-wesley-chapel/service-6.png",
-        "alt": "Content Development Image for Small Businesses In Florida",
-        "title": "Content Development Image for Small Businesses In Florida",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
+      "gbpManagementServiceImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/google-business-profile-management-florida.webp",
+        "alt": "Google Business Profile management interface illustrating profile optimization, posts, photos, review responses, and local map insights.",
+        "title": "Google Business Profile Management for Local Growth",
+        "description": "Full-service Google Business Profile management including regular updates, product/service additions, geo-tagged photos, Q&A management, and review responses to maintain top Google Maps placement.",
+        "caption": "Proactive Google Business Profile management keeps your listing active, highly ranked, and attractive to prospective clients."
       },
-      "offPageSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-7.png",
-        "alt": "Off-Page SEO Image for Small Businesses In Florida",
-        "title": "Off-Page SEO Image for Small Businesses In Florida",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
+      "reviewManagementServiceImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/online-review-reputation-management-florida.webp",
+        "alt": "Online review management dashboard displaying 5-star Google review growth, sentiment analysis, and customer feedback strategies.",
+        "title": "Online Review and Reputation Management Services",
+        "description": "Systematic review generation and monitoring solution collecting genuine customer reviews on Google and local platforms, boosting reputation signals and conversion rates.",
+        "caption": "A 5-star online reputation builds trust instantly, encouraging searchers to choose your Florida business over competitors."
       },
-      "askEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-8.png",
-        "alt": "Ask Engine Optimization Image for Small Businesses In Florida",
-        "title": "Ask Engine Optimization Image for Small Businesses In Florida",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
+      "aiSearchOptimizationServiceImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/ai-search-optimization-aeo-florida.webp",
+        "alt": "Ask Engine Optimization (AEO) dashboard showing brand mention analytics across ChatGPT, Perplexity, Claude, and Google AI Overviews.",
+        "title": "AI Search Optimization (AEO) for Florida Businesses",
+        "description": "Next-generation Ask Engine Optimization (AEO) structuring site content into direct answers, entity relationships, and conversational data models for high visibility on ChatGPT, Gemini, and AI Overviews.",
+        "caption": "Position your Florida small business as the primary recommended answer on leading AI search platforms."
       },
-      "generativeEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-9.png",
-        "alt": "Generative Engine Optimization Image for Small Businesses In Florida",
-        "title": "Generative Engine Optimization Image for Small Businesses In Florida",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
+      "schemaMarkupServiceImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/schema-markup-structured-data-florida.webp",
+        "alt": "Schema markup validation tool demonstrating JSON-LD structured data implementation for LocalBusiness, FAQ, and Service schemas.",
+        "title": "Schema Markup and Structured Data Implementation",
+        "description": "Advanced JSON-LD schema markup integration providing search engines with rich snippets, business address details, reviews, services, and FAQ structured data for enhanced SERP visibility.",
+        "caption": "Structured schema markup provides search engines with explicit data to generate rich snippets and improve CTR."
+      },
+      "citationCleanupServiceImage": {
+        "src": "/seo-services-for-small-businesses-in-florida/reputation-citation-cleanup-services-florida.webp",
+        "alt": "Directory citation cleanup audit showing NAP consistency across major directories, search engines, and mapping apps.",
+        "title": "Reputation & Directory Citation Cleanup Services",
+        "description": "Comprehensive citation audit and cleanup service correcting inconsistent Name, Address, and Phone (NAP) details across 50+ online directories, strengthening local search trust signals.",
+        "caption": "Consistent directory citations eliminate algorithmic confusion and solidify your local search rankings."
       }
     }
   }

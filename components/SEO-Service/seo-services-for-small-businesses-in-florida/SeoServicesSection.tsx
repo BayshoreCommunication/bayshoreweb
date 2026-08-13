@@ -6,61 +6,61 @@ import { CalendarDays } from "lucide-react";
 const services = [
   {
     title: "Local SEO",
-    image: images.seoServicesSection.seoWebsiteAuditImage.src,
+    image: images.seoServicesSection.localSeoServiceImage.src,
     description:
       "We optimize your Google Business Profile, citations and local signals for Florida searches.",
   },
   {
     title: "On Page SEO",
-    image: images.seoServicesSection.keywordResearchImage.src,
+    image: images.seoServicesSection.onPageSeoServiceImage.src,
     description:
       "We optimize website's content, title tags, meta descriptions, headings, internal links to rank for target keywords. We improve overall structure for better user experience.",
   },
   {
     title: "Technical SEO",
-    image: images.seoServicesSection.onPageOptimizationImage.src,
+    image: images.seoServicesSection.technicalSeoServiceImage.src,
     description:
       "Our technical team for SEO fixes content crawl problems. We improve Core Web Vitals and ensure Google indexes every key page.",
   },
   {
     title: "Content Marketing",
-    image: images.seoServicesSection.technicalSeoImage.src,
+    image: images.seoServicesSection.contentMarketingServiceImage.src,
     description:
       "We create authoritative and helpful content that attracts Florida customers at every stage.",
   },
   {
     title: "Authoritative Link Building",
-    image: images.seoServicesSection.localSeoMapPackImage.src,
+    image: images.seoServicesSection.linkBuildingServiceImage.src,
     description:
       "We build high quality backlinks from trusted Florida-based websites that are relevant to industry.",
   },
   {
     title: "Google Business Profile Management",
-    image: images.seoServicesSection.contentDevelopmentImage.src,
+    image: images.seoServicesSection.gbpManagementServiceImage.src,
     description:
       "Our team manages and optimizes your profile to maximize visibility in the local map pack.",
   },
   {
     title: "Review Management",
-    image: images.seoServicesSection.offPageSeoImage.src,
+    image: images.seoServicesSection.reviewManagementServiceImage.src,
     description:
       "Our SEO strategy establishes 5 star reputation that converts online searchers into paying customers.",
   },
   {
     title: "AI Search Optimization (AEO)",
-    image: images.seoServicesSection.askEngineOptimizationImage.src,
+    image: images.seoServicesSection.aiSearchOptimizationServiceImage.src,
     description:
       "Our structured content lets ChatGPT, Perplexity and Google's AI recommend your business.",
   },
   {
     title: "Schema Markup",
-    image: images.seoServicesSection.generativeEngineOptimizationImage.src,
+    image: images.seoServicesSection.schemaMarkupServiceImage.src,
     description:
       "We add structured data so google search engines and AI tools fully understand your business.",
   },
   {
     title: "Reputation & Citation Cleanup",
-    image: images.seoServicesSection.localSeoMapPackImage.src,
+    image: images.seoServicesSection.citationCleanupServiceImage.src,
     description:
       "We correct inconsistent listings across 50+ directories to rebuild trust and rankings.",
   },
