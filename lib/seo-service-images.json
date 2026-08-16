@@ -588,106 +588,127 @@
   "orlando-law-firm-seo-agency": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.webp",
-        "alt": "Common SEO Mistakes Banner for Orlando Law Firm Seo Agency",
-        "title": "Common SEO Mistakes Banner for Orlando Law Firm Seo Agency",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
+        "src": "/orlando-law-firm-seo-agency/common-seo-mistakes-orlando-law-firms-must-avoid.webp",
+        "alt": "Infographic highlighting common SEO mistakes Orlando law firms must avoid including missing local legal content and unoptimized profiles.",
+        "title": "Common SEO Mistakes Orlando Law Firms Must Avoid",
+        "description": "Educational banner breakdown of top SEO errors made by Orlando attorneys and legal practices, such as generic practice descriptions, slow site speed, and lack of legal schema.",
+        "caption": "Avoid critical law firm SEO mistakes to increase local search rankings and sign more clients."
       }
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.webp",
-        "alt": "Technical Audit Step Image for Orlando Law Firm Seo Agency",
-        "title": "Technical Audit Step Image for Orlando Law Firm Seo Agency",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
+        "src": "/orlando-law-firm-seo-agency/ranking-for-high-intent-orlando-legal-keywords.webp",
+        "alt": "Search results displaying high-intent Orlando legal keyword rankings for top law firms.",
+        "title": "Ranking for High-Intent Orlando Legal Keywords",
+        "description": "Targeting local, high-intent phrases used by accident victims and legal clients searching for representation in Orlando.",
+        "caption": "Capture high-intent legal search traffic across Orange County."
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
-        "alt": "On-Page Optimization Step Image for Orlando Law Firm Seo Agency",
-        "title": "On-Page Optimization Step Image for Orlando Law Firm Seo Agency",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
+        "src": "/orlando-law-firm-seo-agency/local-legal-content-builds-trust-before-contact.webp",
+        "alt": "Local legal content strategy building trust with potential law firm clients in Orlando.",
+        "title": "Local Legal Content Builds Trust Before First Contact",
+        "description": "Explaining Florida statutes, local court procedures, and case scenarios to pre-sell attorney expertise.",
+        "caption": "Build authority and trust with Orlando prospective clients before the initial consultation."
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
-        "alt": "Off-Page Strategy Step Image for Orlando Law Firm Seo Agency",
-        "title": "Off-Page Strategy Step Image for Orlando Law Firm Seo Agency",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
+        "src": "/orlando-law-firm-seo-agency/google-ai-overviews-structured-legal-data-hub.webp",
+        "alt": "Diagram showing structured legal data integration with Google AI Overviews for law firms.",
+        "title": "Google AI Overviews Structured Legal Data Hub Orlando",
+        "description": "Structuring legal Q&A content so Google AI Overviews cite your law firm in conversational search answers.",
+        "caption": "Get cited in AI-generated legal overviews for competitive Orlando search queries."
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
-        "alt": "Analytics and Reporting Step Image for Orlando Law Firm Seo Agency",
-        "title": "Analytics and Reporting Step Image for Orlando Law Firm Seo Agency",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
+        "src": "/orlando-law-firm-seo-agency/florida-legal-directory-nap-citations-authority.webp",
+        "alt": "Florida legal directory NAP citations and authority building interface.",
+        "title": "Florida Legal Directory NAP Citations & Authority Orlando",
+        "description": "Building consistent NAP citations across Florida Bar, FindLaw, Justia, and Avvo directories.",
+        "caption": "Establish strong geographic relevance with authoritative Florida legal directory listings."
+      },
+      "practiceAreaAuthorityStepImage": {
+        "src": "/orlando-law-firm-seo-agency/practice-area-authority-drives-legal-case-growth.webp",
+        "alt": "Practice area authority chart showing legal case volume growth for specialized niches in Orlando.",
+        "title": "Practice Area Authority Drives Legal Case Growth Orlando",
+        "description": "Optimizing dedicated practice area pages for specific legal niches to outperform generic competitor pages.",
+        "caption": "Drive high-converting case inquiries through specialized legal niche pages."
+      },
+      "reviewAcquisitionStepImage": {
+        "src": "/orlando-law-firm-seo-agency/legal-client-review-acquisition-strategy-funnel.webp",
+        "alt": "Legal client review acquisition strategy funnel diagram for Orlando attorneys.",
+        "title": "Legal Client Review Acquisition Strategy Funnel Orlando",
+        "description": "Structured review generation process converting satisfied legal clients into trusted Google reviews.",
+        "caption": "Turn positive client outcomes into glowing 5-star reviews that boost local pack rankings."
       }
     },
     "seoServicesSection": {
       "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
-        "alt": "SEO Website Audit Image for Orlando Law Firm Seo Agency",
-        "title": "SEO Website Audit Image for Orlando Law Firm Seo Agency",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
+        "src": "/orlando-law-firm-seo-agency/law-firm-seo-monthly-reporting-kpi-dashboard.webp",
+        "alt": "Law firm SEO monthly reporting KPI dashboard tracking case inquiries and rankings in Orlando.",
+        "title": "Law Firm SEO Monthly Reporting & KPI Dashboard Orlando",
+        "description": "Detailed monthly analytics covering organic traffic, Google Business Profile phone calls, and case form submissions.",
+        "caption": "Measure return on investment with clear monthly law firm SEO reports."
       },
       "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
-        "alt": "Keyword Research Image for Orlando Law Firm Seo Agency",
-        "title": "Keyword Research Image for Orlando Law Firm Seo Agency",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
+        "src": "/orlando-law-firm-seo-agency/legal-keyword-research-search-intent-mapping.webp",
+        "alt": "Legal keyword research and search intent mapping interface for Orlando law firms.",
+        "title": "Legal Keyword Research & Search Intent Mapping Orlando",
+        "description": "Mapping search intent to separate commercial case-generating keywords from general legal questions.",
+        "caption": "Target keywords that bring high-value case leads to your Orlando practice."
       },
       "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
-        "alt": "On-Page Optimization Image for Orlando Law Firm Seo Agency",
-        "title": "On-Page Optimization Image for Orlando Law Firm Seo Agency",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
+        "src": "/orlando-law-firm-seo-agency/practice-area-page-optimization-for-law-firms.webp",
+        "alt": "Practice area page optimization framework for Orlando law firms.",
+        "title": "Practice Area Page Optimization for Law Firms Orlando",
+        "description": "Writing and tuning practice pages around Orange County court procedures and Florida statutes.",
+        "caption": "Optimize practice area pages for search engines and prospective clients."
       },
       "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
-        "alt": "Technical SEO Image for Orlando Law Firm Seo Agency",
-        "title": "Technical SEO Image for Orlando Law Firm Seo Agency",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
+        "src": "/orlando-law-firm-seo-agency/legal-schema-markup-structured-data-security.webp",
+        "alt": "Legal schema markup and structured data security interface.",
+        "title": "Legal Schema Markup & Structured Data Implementation Orlando",
+        "description": "Implementing Attorney, LegalService, LocalBusiness, and FAQ schema markup for rich search results.",
+        "caption": "Help search engines understand your firm's expertise with structured legal data."
       },
       "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
-        "alt": "Local SEO Map Pack Image for Orlando Law Firm Seo Agency",
-        "title": "Local SEO Map Pack Image for Orlando Law Firm Seo Agency",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
+        "src": "/orlando-law-firm-seo-agency/google-business-profile-management-law-firms.webp",
+        "alt": "Google Business Profile management interface for Orlando law firms.",
+        "title": "Google Business Profile Management Law Firms Orlando",
+        "description": "Optimizing GBP listings across Orange, Seminole, Osceola, and Lake Counties for top map pack rankings.",
+        "caption": "Dominate local Google Maps 3-Pack listings for Orlando legal searches."
       },
       "contentDevelopmentImage": {
-        "src": "/seo-company-wesley-chapel/service-6.png",
-        "alt": "Content Development Image for Orlando Law Firm Seo Agency",
-        "title": "Content Development Image for Orlando Law Firm Seo Agency",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
+        "src": "/orlando-law-firm-seo-agency/florida-bar-compliant-legal-content-strategy.webp",
+        "alt": "Florida Bar compliant legal content strategy guide for Orlando law practices.",
+        "title": "Florida Bar Compliant Legal Content Strategy Orlando",
+        "description": "Creating search-optimized legal content fully compliant with Florida Bar advertising rules.",
+        "caption": "Publish authoritative legal content without compliance risks."
       },
       "offPageSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-7.png",
-        "alt": "Off-Page SEO Image for Orlando Law Firm Seo Agency",
-        "title": "Off-Page SEO Image for Orlando Law Firm Seo Agency",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
+        "src": "/orlando-law-firm-seo-agency/orlando-legal-citation-building-directory-seo.webp",
+        "alt": "Orlando legal citation building and directory SEO network.",
+        "title": "Orlando Legal Citation Building & Directory SEO",
+        "description": "Building high-authority legal citations across Martindale-Hubbell, Justia, Avvo, and FindLaw.",
+        "caption": "Strengthen domain authority with trusted legal directory citations."
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-8.png",
-        "alt": "Ask Engine Optimization Image for Orlando Law Firm Seo Agency",
-        "title": "Ask Engine Optimization Image for Orlando Law Firm Seo Agency",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
+        "src": "/orlando-law-firm-seo-agency/ai-overview-optimization-for-legal-search-robot.webp",
+        "alt": "AI overview optimization for legal search queries visualization.",
+        "title": "AI Overview Optimization for Legal Search Queries Orlando",
+        "description": "Positioning your firm to be cited in AI search overviews and direct answer engines.",
+        "caption": "Capture voice and AI search queries across conversational legal search."
       },
       "generativeEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-9.png",
-        "alt": "Generative Engine Optimization Image for Orlando Law Firm Seo Agency",
-        "title": "Generative Engine Optimization Image for Orlando Law Firm Seo Agency",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
+        "src": "/orlando-law-firm-seo-agency/legal-seo-competitor-gap-analysis-puzzle-board.webp",
+        "alt": "Legal SEO competitor gap analysis puzzle board diagram for Orlando law firms.",
+        "title": "Legal SEO Competitor Gap Analysis Orlando",
+        "description": "Analyzing competitor search strategies, backlink profiles, and content gaps in Orlando.",
+        "caption": "Identify search gaps and outrank competing law firms in Orange County."
+      },
+      "siteHealthImage": {
+        "src": "/orlando-law-firm-seo-agency/technical-seo-audit-mobile-site-health-guide.webp",
+        "alt": "Technical SEO audit and mobile site health guide dashboard for law firms.",
+        "title": "Technical SEO audit and mobile site health guide for Orlando law firms.",
+        "description": "Audit and resolution of Core Web Vitals, mobile speed, crawl errors, and site health issues.",
+        "caption": "Maintain peak technical performance and site health for seamless user experience."
       }
     }
   },

@@ -19,20 +19,41 @@ import WhyLosingCustomers from "@/components/SEO-Service/orlando-law-firm-seo-ag
 import React from "react";
 
 export const metadata = {
-  title: "Orlando Law Firm SEO Agency | Get More Case Inquiries",
+  title: "Orlando Law Firm SEO Agency | Get More High-Value Case Inquiries",
   description:
-    "Grow your Orlando law firm with SEO that improves your visibility in AI and Google Search and Maps. Get more qualified leads and case inquiries with Bayshore.",
-
+    "Grow your Orlando law firm with targeted legal SEO strategies. Dominate Google Search, Map Pack 3-Pack, and AI Overviews to sign more qualified clients.",
+  keywords: [
+    "Orlando law firm SEO agency",
+    "lawyer SEO Orlando FL",
+    "attorney search engine optimization Orlando",
+    "legal marketing agency Orlando",
+    "Google Maps SEO for law firms Orlando",
+    "personal injury lawyer SEO Orlando",
+  ],
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
-
+  openGraph: {
+    title: "Orlando Law Firm SEO Agency | Get More High-Value Case Inquiries",
+    description:
+      "Grow your Orlando law firm with targeted legal SEO strategies. Dominate Google Search, Map Pack 3-Pack, and AI Overviews to sign more qualified clients.",
+    url: "https://bayshorecommunication.com/orlando-law-firm-seo-agency",
+    siteName: "Bayshore Communication",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Orlando Law Firm SEO Agency | Get More High-Value Case Inquiries",
+    description:
+      "Grow your Orlando law firm with targeted legal SEO strategies. Dominate Google Search, Map Pack 3-Pack, and AI Overviews to sign more qualified clients.",
+  },
   alternates: {
     canonical: "/orlando-law-firm-seo-agency",
     languages: {

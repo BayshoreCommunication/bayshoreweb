@@ -42,7 +42,7 @@ const services = [
   },
   {
     title: "Technical SEO Audit and Site Health Management",
-    image: images.seoServicesSection.technicalSeoImage.src,
+    image: images.seoServicesSection.siteHealthImage.src,
     description:
       "A full technical audit covers Core Web Vitals, mobile performance, page speed and site architecture, with ranking issue fixes.",
   },

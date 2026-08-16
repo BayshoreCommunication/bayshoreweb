@@ -33,14 +33,14 @@ const seoSteps = [
   },
   {
     number: "05",
-    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
+    image: images.seoCustomerJourneySection.practiceAreaAuthorityStepImage.src,
     title: "Practice area page authority drives case volume for specific legal niches",
     description:
       "Separate page optimized for specific niche outperforms a general criminal defense page every time.",
   },
   {
     number: "06",
-    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
+    image: images.seoCustomerJourneySection.reviewAcquisitionStepImage.src,
     title: "Review acquisition strategy to convert clicks to consultation",
     description:
       "With SEO structured approach for collecting Google reviews from satisfied clients convert more searchers into consultations.",
