@@ -18,20 +18,41 @@ import WhyLosingCustomers from "@/components/SEO-Service/seo-services-for-dentis
 import React from "react";
 
 export const metadata = {
-  title: "SEO Services for Dentists in Tampa | Fill Your Schedule",
+  title: "SEO Services for Dentists in Tampa | Fill Your Schedule & Grow Revenue",
   description:
-    "Connect with patients searching for dental care through targeted SEO services in Tampa. Increase appointment requests and strengthen your local presence.",
-
+    "Drive more patient inquiries with expert dental SEO services in Tampa, FL. Rank #1 on Google Maps, build patient trust, and fill your appointment schedule.",
+  keywords: [
+    "SEO services for dentists in Tampa",
+    "dental SEO Tampa FL",
+    "dentist local SEO Tampa",
+    "Google Maps optimization for dentists Tampa",
+    "dental practice marketing Tampa",
+    "cosmetic dentistry SEO Tampa",
+  ],
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
-
+  openGraph: {
+    title: "SEO Services for Dentists in Tampa | Fill Your Schedule & Grow Revenue",
+    description:
+      "Drive more patient inquiries with expert dental SEO services in Tampa, FL. Rank #1 on Google Maps, build patient trust, and fill your appointment schedule.",
+    url: "https://bayshorecommunication.com/seo-services-for-dentists-in-tampa",
+    siteName: "Bayshore Communication",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SEO Services for Dentists in Tampa | Fill Your Schedule & Grow Revenue",
+    description:
+      "Drive more patient inquiries with expert dental SEO services in Tampa, FL. Rank #1 on Google Maps, build patient trust, and fill your appointment schedule.",
+  },
   alternates: {
     canonical: "/seo-services-for-dentists-in-tampa",
     languages: {

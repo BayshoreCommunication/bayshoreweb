@@ -24,7 +24,7 @@ const services = [
   },
   {
     title: "Content Strategy and Authority Building",
-    image: images.seoServicesSection.onPageOptimizationImage.src,
+    image: images.seoServicesSection.contentStrategyImage.src,
     description:
       "We produce content for patients from a wide variety of dental and cosmetic procedures to implants all the way to orthodontics. By publishing regular blog posts, we build your topical authority and capture people searching for answers. This content is intentionally designed to rank well in traditional search engines as well as newer AI search overviews.",
   },
@@ -36,7 +36,7 @@ const services = [
   },
   {
     title: "Review Management and Reputation SEO",
-    image: images.seoServicesSection.askEngineOptimizationImage.src,
+    image: images.seoServicesSection.reviewManagementImage.src,
     description:
       "We put systems in place to help you collect more genuine positive reviews from your patients. We also actively monitor your online reputation and provide timely responses that build trust with potential patients while boosting your local search authority.",
   },

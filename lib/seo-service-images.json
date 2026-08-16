@@ -1400,106 +1400,85 @@
   "seo-services-for-dentists-in-tampa": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.webp",
-        "alt": "Common SEO Mistakes Banner for Dentists In Tampa",
-        "title": "Common SEO Mistakes Banner for Dentists In Tampa",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
+        "src": "/seo-services-for-dentists-in-tampa/common-seo-mistakes-tampa-dental-practices-mindmap.webp",
+        "alt": "Mindmap diagram showing common SEO mistakes made by Tampa dental practices including non-localized keywords and weak Google Business Profile optimization.",
+        "title": "Common SEO Mistakes Tampa Dental Practices Make",
+        "description": "Comprehensive infographic illustrating the top SEO errors committed by dental clinics in Tampa, such as unoptimized local search listings, duplicate dental service descriptions, and lack of review management.",
+        "caption": "Avoid common dental SEO mistakes to attract more patients and rank higher in Tampa local search."
       }
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
-        "alt": "Technical Audit Step Image for Dentists In Tampa",
-        "title": "Technical Audit Step Image for Dentists In Tampa",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
+        "src": "/seo-services-for-dentists-in-tampa/high-intent-dental-keyword-targeting-search-ui.webp",
+        "alt": "Search interface showing high-intent dental keyword targeting for Tampa dental practices.",
+        "title": "High-Intent Dental Keyword Targeting Search UI Tampa",
+        "description": "Targeting local dental keywords like emergency dentist Tampa, teeth whitening Hyde Park, and dental implants Hillsborough County.",
+        "caption": "Reach patients actively looking to book dental procedures in Tampa."
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
-        "alt": "On-Page Optimization Step Image for Dentists In Tampa",
-        "title": "On-Page Optimization Step Image for Dentists In Tampa",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
+        "src": "/seo-services-for-dentists-in-tampa/local-map-pack-optimization-dental-clinic-pins.webp",
+        "alt": "Google Map Pack displaying top local dental clinic pins and rankings in Tampa FL.",
+        "title": "Local Map Pack Optimization Dental Clinic Pins Tampa",
+        "description": "Optimizing Google Business Profile pins and local citations to place Tampa dental clinics in top Google Map 3-Pack spots.",
+        "caption": "Position your dental clinic at the top of local Google Maps searches."
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
-        "alt": "Off-Page Strategy Step Image for Dentists In Tampa",
-        "title": "Off-Page Strategy Step Image for Dentists In Tampa",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
+        "src": "/seo-services-for-dentists-in-tampa/patient-focused-content-structure-dental-landing.webp",
+        "alt": "Patient-focused dental landing page content structure diagram.",
+        "title": "Patient-Focused Content Structure Dental Landing Page Tampa",
+        "description": "Structuring educational dental treatment pages that build patient trust and simplify the online appointment booking journey.",
+        "caption": "Convert informative dental search traffic into scheduled patient consultations."
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
-        "alt": "Analytics and Reporting Step Image for Dentists In Tampa",
-        "title": "Analytics and Reporting Step Image for Dentists In Tampa",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
+        "src": "/seo-services-for-dentists-in-tampa/Mobile-First Performance.webp",
+        "alt": "Mobile interface showing high performance and fast loading speed for a Tampa dental practice website.",
+        "title": "Mobile-First Performance Dental Website Tampa",
+        "description": "Ensuring sub-second mobile page speed and seamless user experience so patient phone calls happen effortlessly.",
+        "caption": "Deliver instant mobile page loads to maximize patient appointment inquiries."
       }
     },
     "seoServicesSection": {
-      "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
-        "alt": "SEO Website Audit Image for Dentists In Tampa",
-        "title": "SEO Website Audit Image for Dentists In Tampa",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
+      "localSeoMapPackImage": {
+        "src": "/seo-services-for-dentists-in-tampa/Local SEO and Google Business Profile Optimization.webp",
+        "alt": "Local SEO and Google Business Profile optimization overview for Tampa dental practices.",
+        "title": "Local SEO & Google Business Profile Optimization Dentists Tampa",
+        "description": "Complete Google Business Profile setup, category optimization, and local map pack growth for Tampa dentists.",
+        "caption": "Dominate Tampa neighborhood searches with optimized local listings."
       },
       "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
-        "alt": "Keyword Research Image for Dentists In Tampa",
-        "title": "Keyword Research Image for Dentists In Tampa",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
-      },
-      "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
-        "alt": "On-Page Optimization Image for Dentists In Tampa",
-        "title": "On-Page Optimization Image for Dentists In Tampa",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
+        "src": "/seo-services-for-dentists-in-tampa/dental-keyword-research-on-page-optimization-ui.webp",
+        "alt": "Dental keyword research dashboard and on-page optimization user interface.",
+        "title": "Dental Keyword Research & On-Page Optimization UI Tampa",
+        "description": "In-depth local keyword analysis targeting high-value dental treatments and procedural search queries.",
+        "caption": "Align website content with patient search intent across Tampa, Florida."
       },
       "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
-        "alt": "Technical SEO Image for Dentists In Tampa",
-        "title": "Technical SEO Image for Dentists In Tampa",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
+        "src": "/seo-services-for-dentists-in-tampa/Technical SEO.webp",
+        "alt": "Technical SEO audit dashboard displaying Core Web Vitals, site speed, and schema markup for dental practices.",
+        "title": "Technical SEO for Dental Websites Tampa",
+        "description": "Optimizing crawlability, site speed, structured schema tags, and mobile readiness for dental websites.",
+        "caption": "Build a flawless technical framework search engines love."
       },
-      "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
-        "alt": "Local SEO Map Pack Image for Dentists In Tampa",
-        "title": "Local SEO Map Pack Image for Dentists In Tampa",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
-      },
-      "contentDevelopmentImage": {
-        "src": "/seo-company-wesley-chapel/service-6.png",
-        "alt": "Content Development Image for Dentists In Tampa",
-        "title": "Content Development Image for Dentists In Tampa",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
+      "contentStrategyImage": {
+        "src": "/seo-services-for-dentists-in-tampa/dental-content-strategy-and-authority-building.webp",
+        "alt": "Dental content strategy and authority building workflow for cosmetic and restorative dentistry.",
+        "title": "Dental Content Strategy & Authority Building Tampa",
+        "description": "Creating patient education guides, treatment overviews, and blog posts that build topical authority in Tampa.",
+        "caption": "Establish your practice as the trusted dental authority in your community."
       },
       "offPageSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-7.png",
-        "alt": "Off-Page SEO Image for Dentists In Tampa",
-        "title": "Off-Page SEO Image for Dentists In Tampa",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
+        "src": "/seo-services-for-dentists-in-tampa/dental-backlink-overview-link-building-analysis.webp",
+        "alt": "Dental backlink overview and local link building analysis chart.",
+        "title": "Dental Link Building & Digital PR Analysis Tampa",
+        "description": "Earning high-quality backlinks from Florida medical directories, news outlets, and local business organizations.",
+        "caption": "Build long-term domain authority with ethical, local link-building campaigns."
       },
-      "askEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-8.png",
-        "alt": "Ask Engine Optimization Image for Dentists In Tampa",
-        "title": "Ask Engine Optimization Image for Dentists In Tampa",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
-      },
-      "generativeEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-9.png",
-        "alt": "Generative Engine Optimization Image for Dentists In Tampa",
-        "title": "Generative Engine Optimization Image for Dentists In Tampa",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
+      "reviewManagementImage": {
+        "src": "/seo-services-for-dentists-in-tampa/review-management-and-reputation-seo-for-dentists.webp",
+        "alt": "Review management and online reputation SEO dashboard for dentists.",
+        "title": "Review Management & Reputation SEO for Dentists Tampa",
+        "description": "Automating patient review generation, monitoring online reputation, and building patient trust on Google Maps.",
+        "caption": "Turn happy patients into glowing 5-star reviews that boost local search rankings."
       }
     }
   },
