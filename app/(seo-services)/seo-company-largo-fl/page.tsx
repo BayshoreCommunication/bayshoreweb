@@ -20,20 +20,41 @@ import WhyLosingCustomers from "@/components/SEO-Service/seo-company-largo-fl/Wh
 import React from "react";
 
 export const metadata = {
-  title: "SEO Company Largo FL | Local SEO That Gets Results",
+  title: "SEO Company Largo FL | Expert Local SEO Services & AI Search Optimization",
   description:
-    "Build a stronger online presence with professional SEO services in Largo,FL. Reach your ideal audience and generate consistent business opportunities.",
-
+    "Partner with a premier SEO company in Largo, FL. Boost Google Maps 3-Pack rankings, drive organic search traffic, and capture high-intent local buyers.",
+  keywords: [
+    "SEO company Largo FL",
+    "Largo FL SEO services",
+    "local SEO Largo Florida",
+    "Google Maps optimization Largo",
+    "digital marketing agency Largo FL",
+    "search engine optimization Pinellas County",
+  ],
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
-
+  openGraph: {
+    title: "SEO Company Largo FL | Expert Local SEO Services",
+    description:
+      "Drive consistent organic growth in Largo, FL with custom SEO strategies, Google Maps optimization, and AI search readiness.",
+    url: "https://bayshorecommunication.com/seo-company-largo-fl",
+    siteName: "Bayshore Communication",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SEO Company Largo FL | Expert Local SEO Services",
+    description:
+      "Drive consistent organic growth in Largo, FL with custom SEO strategies, Google Maps optimization, and AI search readiness.",
+  },
   alternates: {
     canonical: "/seo-company-largo-fl",
     languages: {

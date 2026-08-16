@@ -42,7 +42,7 @@ const services = [
   },
   {
     title: "E-Commerce SEO",
-    image: images.seoServicesSection.contentDevelopmentImage.src,
+    image: images.seoServicesSection.eCommerceSeoImage.src,
     description:
       "Structured data, faceted navigation and category hierarchies, plus optimized product listings, will all generate traffic with intent to buy. We treat every product page as an individual ranking and conversion opportunity within your overall site architecture.",
   },
@@ -60,19 +60,19 @@ const services = [
   },
   {
     title: "Shopify SEO",
-    image: images.seoServicesSection.contentDevelopmentImage.src,
+    image: images.seoServicesSection.shopifySeoImage.src,
     description:
       "Shopify carries platform-specific constraints around URL structures, duplicate content, and metadata that require specialized handling. We resolve those constraints and build a keyword and content architecture that drives qualified traffic to your store.",
   },
   {
     title: "YouTube SEO",
-    image: images.seoServicesSection.onPageOptimizationImage.src,
+    image: images.seoServicesSection.youtubeSeoImage.src,
     description:
       "Video content is increasingly surfaced in standard Google results as well as within YouTube's own discovery algorithm. We optimize every metadata element and build keyword-informed content structures that grow channel visibility steadily.",
   },
   {
     title: "Amazon SEO",
-    image: images.seoServicesSection.keywordResearchImage.src,
+    image: images.seoServicesSection.amazonSeoImage.src,
     description:
       "Amazon search operates through its own proprietary ranking algorithm with distinct signals that differ entirely from Google. We optimize listing content, backend terms, and conversion-supporting elements to improve your product's visibility and sales rate.",
   },
