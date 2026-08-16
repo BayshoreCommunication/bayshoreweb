@@ -126,6 +126,119 @@
       }
     }
   },
+  "plant-city-seo-company": {
+    "commonSeoMistakesSection": {
+      "commonSeoMistakesBanner": {
+        "src": "/plant-city-seo-company/common-local-seo-mistakes-businesses-avoid.webp",
+        "alt": "Common Local SEO Mistakes Businesses in Plant City FL Avoid Diagram",
+        "title": "Common Local SEO Mistakes Businesses in Plant City FL Avoid",
+        "description": "Educational banner diagram detailing common local SEO mistakes committed by Plant City businesses, including broad state-level targeting, duplicate service content, missing technical audits, and low-authority directory listings.",
+        "caption": "Eliminate common local SEO mistakes to build higher search visibility and generate qualified leads in Plant City."
+      }
+    },
+    "seoCustomerJourneySection": {
+      "technicalAuditStepImage": {
+        "src": "/plant-city-seo-company/near-me-local-search-walk-in-traffic-growth.webp",
+        "alt": "Near me local search walk-in traffic growth chart for Plant City businesses.",
+        "title": "Near Me Local Search & Walk-In Traffic Growth Plant City FL",
+        "description": "Optimizing local search presence for Plant City residents searching for immediate nearby services.",
+        "caption": "Capture high-intent near-me local search queries across Plant City."
+      },
+      "onPageOptimizationStepImage": {
+        "src": "/plant-city-seo-company/dedicated-service-practice-pages-seo-layout.webp",
+        "alt": "Dedicated service and practice area pages SEO layout diagram for Plant City businesses.",
+        "title": "Dedicated Service Practice Pages SEO Layout Plant City FL",
+        "description": "Creating standalone, optimized service pages for specific industries and practice areas in Hillsborough County.",
+        "caption": "Rank dedicated service pages for specific local search intent."
+      },
+      "offPageStrategyStepImage": {
+        "src": "/plant-city-seo-company/google-business-profile-management-local-seo.webp",
+        "alt": "Google Business Profile management interface for local SEO rankings in Plant City.",
+        "title": "Google Business Profile Management Local SEO Plant City FL",
+        "description": "Optimizing Google Business Profile hours, photos, review responses, and Map Pack positioning.",
+        "caption": "Dominate local Google Map 3-Pack rankings in Plant City."
+      },
+      "analyticsReportingStepImage": {
+        "src": "/plant-city-seo-company/faq-content-featured-snippets-google-rankings.webp",
+        "alt": "FAQ content and featured snippets Google search rankings interface for Plant City.",
+        "title": "FAQ Content & Featured Snippets Google Rankings Plant City FL",
+        "description": "Structuring Q&A content to capture position-zero featured snippets and AI overview citations.",
+        "caption": "Earn top-of-page featured snippets with clear, structured FAQ content."
+      },
+      "practiceAreaAuthorityStepImage": {
+        "src": "/plant-city-seo-company/medical-schema-markup-rich-snippets-clinic.webp",
+        "alt": "Medical schema markup and rich snippets dashboard for Plant City healthcare clinics.",
+        "title": "Medical & Legal Schema Markup Rich Snippets Plant City FL",
+        "description": "Implementing structured data schema markup for medical practices, clinics, law offices, and local businesses.",
+        "caption": "Enhance search engine understanding with specialized structured data markup."
+      },
+      "reviewAcquisitionStepImage": {
+        "src": "/plant-city-seo-company/neighborhood-real-estate-landing-page-funnel.webp",
+        "alt": "Neighborhood real estate landing page funnel diagram for Plant City FL.",
+        "title": "Neighborhood Real Estate Landing Page Funnel Plant City FL",
+        "description": "Targeting hyper-local zip codes and neighborhood landing pages to attract prospective buyers and sellers.",
+        "caption": "Attract local neighborhood search traffic with targeted geo-specific landing pages."
+      }
+    },
+    "seoServicesSection": {
+      "localSeoMapPackImage": {
+        "src": "/plant-city-seo-company/local-seo-plant-city-map-pack-pin-optimization.webp",
+        "alt": "Local SEO Plant City Map Pack pin optimization map interface.",
+        "title": "Local SEO Plant City Map Pack Pin Optimization",
+        "description": "Complete local SEO strategy covering Google Map Pack optimization, local citations, and review management in Plant City.",
+        "caption": "Put your Plant City business on top of local Google Map search results."
+      },
+      "onPageOptimizationImage": {
+        "src": "/plant-city-seo-company/on-page-seo-and-content-optimization-workflow.webp",
+        "alt": "On-page SEO and content optimization workflow diagram for Plant City businesses.",
+        "title": "On-Page SEO & Content Optimization Workflow Plant City FL",
+        "description": "Optimizing titles, meta tags, internal links, headers, and keyword placement for local Plant City search queries.",
+        "caption": "Optimize on-page elements to maximize local search relevance and organic rankings."
+      },
+      "technicalSeoImage": {
+        "src": "/plant-city-seo-company/technical-seo-audits-site-health-repairs-ui.webp",
+        "alt": "Technical SEO audits and site health repairs UI dashboard for Plant City websites.",
+        "title": "Technical SEO Audits & Site Health Repairs Plant City FL",
+        "description": "Fixing site speed, crawl errors, indexing bottlenecks, and mobile performance for seamless user experience.",
+        "caption": "Maintain a flawless technical foundation for search engine indexing and speed."
+      },
+      "offPageSeoImage": {
+        "src": "/plant-city-seo-company/link-building-local-authority-development-chain.webp",
+        "alt": "Link building local authority development chain illustration for Plant City FL.",
+        "title": "Link Building & Local Authority Development Plant City FL",
+        "description": "Earning trusted backlinks from Hillsborough County business associations, news portals, and local directories.",
+        "caption": "Strengthen domain authority with reputable local link-building campaigns."
+      },
+      "askEngineOptimizationImage": {
+        "src": "/plant-city-seo-company/ai-search-generative-engine-optimization-bar.webp",
+        "alt": "AI search generative engine optimization bar visualization for conversational queries.",
+        "title": "AI Search & Generative Engine Optimization Plant City FL",
+        "description": "Positioning your business content to be cited in Google AI Overviews, ChatGPT, Gemini, and voice search.",
+        "caption": "Capture voice and AI search queries across modern answer engines."
+      },
+      "contentDevelopmentImage": {
+        "src": "/plant-city-seo-company/strategic-seo-copywriting-content-marketing.webp",
+        "alt": "Strategic SEO copywriting and content marketing guide for Plant City companies.",
+        "title": "Strategic SEO Copywriting & Content Marketing Plant City FL",
+        "description": "Publishing authoritative service guides, blog posts, and landing page copy written for Plant City customers.",
+        "caption": "Publish engaging content that ranks high and converts local searchers into clients."
+      },
+      "generativeEngineOptimizationImage": {
+        "src": "/plant-city-seo-company/ecommerce-retail-seo-mobile-shopping-growth.webp",
+        "alt": "E-commerce retail SEO mobile shopping growth dashboard for Plant City stores.",
+        "title": "E-Commerce & Retail SEO Mobile Shopping Growth Plant City FL",
+        "description": "Optimizing online product catalogs, category structures, and product schema to compete in local and national retail search.",
+        "caption": "Drive organic retail buyers directly to your product pages and online store."
+      },
+      "seoWebsiteAuditImage": {
+        "src": "/plant-city-seo-company/optimized-google-business-profile-conversion.webp",
+        "alt": "Optimized Google Business Profile conversion dashboard for Plant City businesses.",
+        "title": "Google Business Profile Conversion Optimization Plant City FL",
+        "description": "Ongoing management of Google Business Profile posts, photo updates, customer Q&A, and review generation.",
+        "caption": "Turn Google Business Profile views into phone calls and appointment bookings."
+      }
+    }
+  },
   "law-firm-seo-fort-myers": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
@@ -730,112 +843,6 @@
         "title": "Technical SEO audit and mobile site health guide for Orlando law firms.",
         "description": "Audit and resolution of Core Web Vitals, mobile speed, crawl errors, and site health issues.",
         "caption": "Maintain peak technical performance and site health for seamless user experience."
-      }
-    }
-  },
-  "plant-city-seo-company": {
-    "commonSeoMistakesSection": {
-      "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
-        "alt": "Common SEO Mistakes Banner for Plant City",
-        "title": "Common SEO Mistakes Banner for Plant City",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
-      }
-    },
-    "seoCustomerJourneySection": {
-      "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
-        "alt": "Technical Audit Step Image for Plant City",
-        "title": "Technical Audit Step Image for Plant City",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
-      },
-      "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
-        "alt": "On-Page Optimization Step Image for Plant City",
-        "title": "On-Page Optimization Step Image for Plant City",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
-      },
-      "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
-        "alt": "Off-Page Strategy Step Image for Plant City",
-        "title": "Off-Page Strategy Step Image for Plant City",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
-      },
-      "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
-        "alt": "Analytics and Reporting Step Image for Plant City",
-        "title": "Analytics and Reporting Step Image for Plant City",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
-      }
-    },
-    "seoServicesSection": {
-      "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
-        "alt": "SEO Website Audit Image for Plant City",
-        "title": "SEO Website Audit Image for Plant City",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
-      },
-      "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
-        "alt": "Keyword Research Image for Plant City",
-        "title": "Keyword Research Image for Plant City",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
-      },
-      "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
-        "alt": "On-Page Optimization Image for Plant City",
-        "title": "On-Page Optimization Image for Plant City",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
-      },
-      "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
-        "alt": "Technical SEO Image for Plant City",
-        "title": "Technical SEO Image for Plant City",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
-      },
-      "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
-        "alt": "Local SEO Map Pack Image for Plant City",
-        "title": "Local SEO Map Pack Image for Plant City",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
-      },
-      "contentDevelopmentImage": {
-        "src": "/seo-company-wesley-chapel/service-6.png",
-        "alt": "Content Development Image for Plant City",
-        "title": "Content Development Image for Plant City",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
-      },
-      "offPageSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-7.png",
-        "alt": "Off-Page SEO Image for Plant City",
-        "title": "Off-Page SEO Image for Plant City",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
-      },
-      "askEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-8.png",
-        "alt": "Ask Engine Optimization Image for Plant City",
-        "title": "Ask Engine Optimization Image for Plant City",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
-      },
-      "generativeEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-9.png",
-        "alt": "Generative Engine Optimization Image for Plant City",
-        "title": "Generative Engine Optimization Image for Plant City",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
       }
     }
   },

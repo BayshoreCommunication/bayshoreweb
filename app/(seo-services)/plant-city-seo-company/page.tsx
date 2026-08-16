@@ -20,20 +20,40 @@ import WhyLosingCustomers from "@/components/SEO-Service/plant-city-seo-company/
 import React from "react";
 
 export const metadata = {
-  title: "Plant City SEO Company | More Traffic,More Local Leads",
+  title: "Plant City SEO Company | Drive Local Search & Business Growth",
   description:
-    "Bayshore helps Plant City businesses improve their Google rankings,attract local customers and grow with SEO built for search engines and AI platforms.",
-
+    "Grow your Plant City business with targeted local SEO services. Dominate Google Map 3-Pack, boost organic traffic, and win more local customers in Hillsborough County.",
+  keywords: [
+    "Plant City SEO company",
+    "local SEO Plant City FL",
+    "digital marketing agency Plant City",
+    "Google Maps SEO Plant City",
+    "search engine optimization Plant City Florida",
+  ],
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
-
+  openGraph: {
+    title: "Plant City SEO Company | Drive Local Search & Business Growth",
+    description:
+      "Grow your Plant City business with targeted local SEO services. Dominate Google Map 3-Pack, boost organic traffic, and win more local customers in Hillsborough County.",
+    url: "https://bayshorecommunication.com/plant-city-seo-company",
+    siteName: "Bayshore Communication",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Plant City SEO Company | Drive Local Search & Business Growth",
+    description:
+      "Grow your Plant City business with targeted local SEO services. Dominate Google Map 3-Pack, boost organic traffic, and win more local customers in Hillsborough County.",
+  },
   alternates: {
     canonical: "/plant-city-seo-company",
     languages: {

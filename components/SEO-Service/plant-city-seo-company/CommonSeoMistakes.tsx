@@ -1,5 +1,9 @@
 import seoImages from "@/lib/seo-service-images.json";
-const images = seoImages["plant-city-seo-company"];
+const images = seoImages["plant-city-seo-company"] as unknown as {
+  commonSeoMistakesSection: any;
+  seoCustomerJourneySection: Record<string, { src: string; alt: string; title: string; description: string; caption: string }>;
+  seoServicesSection: Record<string, { src: string; alt: string; title: string; description: string; caption: string }>;
+};
 import Image from "next/image";
 
 const mistakes = [
