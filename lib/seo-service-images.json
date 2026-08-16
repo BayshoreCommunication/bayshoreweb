@@ -2,106 +2,127 @@
   "brandon-seo-company": {
     "commonSeoMistakesSection": {
       "commonSeoMistakesBanner": {
-        "src": "/seo-company-wesley-chapel/common-seo-mistakes-banner.png",
-        "alt": "Common SEO Mistakes Banner for Brandon",
-        "title": "Common SEO Mistakes Banner for Brandon",
-        "description": "Common SEO Mistakes Section main banner illustration",
-        "caption": "Common SEO Mistakes Illustration"
+        "src": "/brandon-seo-company/common-local-seo-mistakes-businesses-avoid.webp",
+        "alt": "Common Local SEO Mistakes Businesses in Brandon FL Must Avoid Illustration",
+        "title": "Common Local SEO Mistakes Businesses in Brandon FL Must Avoid",
+        "description": "Educational banner diagram showing common local SEO mistakes committed by Brandon Florida businesses, such as non-targeted keywords, incomplete Google Business Profiles, slow page speed, and lack of reviews.",
+        "caption": "Avoid common local SEO mistakes to build higher search rankings and attract qualified Brandon customers."
       }
     },
     "seoCustomerJourneySection": {
       "technicalAuditStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-1.png",
-        "alt": "Technical Audit Step Image for Brandon",
-        "title": "Technical Audit Step Image for Brandon",
-        "description": "Customer Journey Step 1 (Technical Audit) banner",
-        "caption": "Step 1: Technical Audit"
+        "src": "/brandon-seo-company/keyword-intent-matching-local-search-funnel.webp",
+        "alt": "Keyword intent matching local search funnel interface for Brandon businesses.",
+        "title": "Keyword Intent Matching Local Search Funnel Brandon FL",
+        "description": "Targeting commercial search queries used by Brandon FL residents actively seeking local products and services.",
+        "caption": "Match local search intent to connect with ready-to-buy Brandon customers."
       },
       "onPageOptimizationStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-2.png",
-        "alt": "On-Page Optimization Step Image for Brandon",
-        "title": "On-Page Optimization Step Image for Brandon",
-        "description": "Customer Journey Step 2 (On-Page Optimization) banner",
-        "caption": "Step 2: On-Page Optimization"
+        "src": "/brandon-seo-company/google-business-profile-local-map-visibility.webp",
+        "alt": "Google Business Profile local map pack visibility dashboard for Brandon FL.",
+        "title": "Google Business Profile Local Map Visibility Brandon FL",
+        "description": "Optimizing Google Business Profile setup, category listings, and review signals for top Map Pack positions.",
+        "caption": "Position your Brandon business at the top of local Google Map 3-Pack results."
       },
       "offPageStrategyStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-3.png",
-        "alt": "Off-Page Strategy Step Image for Brandon",
-        "title": "Off-Page Strategy Step Image for Brandon",
-        "description": "Customer Journey Step 3 (Off-Page Strategy) banner",
-        "caption": "Step 3: Off-Page Strategy"
+        "src": "/brandon-seo-company/service-page-optimization-local-search-rocket.webp",
+        "alt": "Service page optimization for local search visibility in Brandon Florida.",
+        "title": "Service Page Optimization Local Search Visibility Brandon FL",
+        "description": "Creating dedicated, optimized landing pages for each service offered in Brandon and Hillsborough County.",
+        "caption": "Rank dedicated service pages for high-value local search queries."
       },
       "analyticsReportingStepImage": {
-        "src": "/seo-company-wesley-chapel/seo-step-4.png",
-        "alt": "Analytics and Reporting Step Image for Brandon",
-        "title": "Analytics and Reporting Step Image for Brandon",
-        "description": "Customer Journey Step 4 (Analytics and Reporting) banner",
-        "caption": "Step 4: Analytics and Reporting"
+        "src": "/brandon-seo-company/online-review-signals-and-reputation-growth.webp",
+        "alt": "Online review signals and reputation growth strategy dashboard for Brandon FL.",
+        "title": "Online Review Signals & Reputation Growth Brandon FL",
+        "description": "Automating patient, client, and customer review requests to build strong local reputation signals.",
+        "caption": "Generate consistent positive reviews to strengthen local search authority."
+      },
+      "buyerIntentQaStepImage": {
+        "src": "/brandon-seo-company/buyer-intent-qa-content-strategy-boardroom.webp",
+        "alt": "Buyer intent Q&A content strategy boardroom meeting diagram.",
+        "title": "Buyer Intent Q&A Content Strategy Brandon FL",
+        "description": "Developing targeted blog posts and FAQ content that answer exact questions Brandon buyers ask.",
+        "caption": "Answer customer questions directly to establish local topical authority."
+      },
+      "mobileSearchCaptureStepImage": {
+        "src": "/brandon-seo-company/mobile-search-capture-local-discovery-opt.webp",
+        "alt": "Mobile search capture and local discovery optimization interface.",
+        "title": "Mobile Search Capture Local Discovery Optimization Brandon FL",
+        "description": "Optimizing mobile user experience and click-to-call paths for nearby mobile searchers.",
+        "caption": "Capture mobile searchers instantly with fast-loading, mobile-friendly landing pages."
+      },
+      "schemaMarkupStepImage": {
+        "src": "/brandon-seo-company/schema-markup-structured-data-rich-results.webp",
+        "alt": "Schema markup structured data rich results code visualization for search engines.",
+        "title": "Schema Markup & Structured Data Rich Results Brandon FL",
+        "description": "Implementing LocalBusiness, Service, Review, and FAQ schema markup for enhanced search visibility.",
+        "caption": "Structure website data so Google and AI search tools display rich snippets."
+      },
+      "conversionLandingPageStepImage": {
+        "src": "/brandon-seo-company/conversion-focused-landing-page-layout-ui.webp",
+        "alt": "Conversion focused landing page layout UI designed to generate business leads in Brandon.",
+        "title": "Conversion-Focused Landing Page Layout UI Brandon FL",
+        "description": "Designing high-converting web pages structured to turn visitors into phone calls, appointments, and form submissions.",
+        "caption": "Turn organic search traffic into consistent inbound leads for your Brandon business."
       }
     },
     "seoServicesSection": {
-      "seoWebsiteAuditImage": {
-        "src": "/seo-company-wesley-chapel/service-1.png",
-        "alt": "SEO Website Audit Image for Brandon",
-        "title": "SEO Website Audit Image for Brandon",
-        "description": "SEO Website Audit service card illustration",
-        "caption": "SEO Website Audit"
-      },
-      "keywordResearchImage": {
-        "src": "/seo-company-wesley-chapel/service-2.png",
-        "alt": "Keyword Research Image for Brandon",
-        "title": "Keyword Research Image for Brandon",
-        "description": "Keyword Research service card illustration",
-        "caption": "Keyword Research"
+      "localSeoMapPackImage": {
+        "src": "/brandon-seo-company/local-seo-map-pack-ranking-optimization-hub.webp",
+        "alt": "Local SEO map pack ranking optimization hub for Brandon Florida businesses.",
+        "title": "Local SEO Map Pack Ranking Optimization Hub Brandon FL",
+        "description": "Comprehensive local SEO strategy focusing on Google Business Profile, citations, reviews, and neighborhood signals in Brandon.",
+        "caption": "Dominate local Google Maps search results in Brandon and surrounding areas."
       },
       "onPageOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-3.png",
-        "alt": "On-Page Optimization Image for Brandon",
-        "title": "On-Page Optimization Image for Brandon",
-        "description": "On-Page Optimization service card illustration",
-        "caption": "On-Page Optimization"
+        "src": "/brandon-seo-company/on-page-search-engine-optimization-speed.webp",
+        "alt": "On-page search engine optimization and website speed optimization diagram.",
+        "title": "On-Page Search Engine Optimization Brandon FL",
+        "description": "Optimizing titles, meta descriptions, headings, internal links, and content structure for Brandon search intent.",
+        "caption": "Tune on-page elements to signal strong topical authority and local relevance."
       },
       "technicalSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-4.png",
-        "alt": "Technical SEO Image for Brandon",
-        "title": "Technical SEO Image for Brandon",
-        "description": "Technical SEO service card illustration",
-        "caption": "Technical SEO"
-      },
-      "localSeoMapPackImage": {
-        "src": "/seo-company-wesley-chapel/service-5.png",
-        "alt": "Local SEO Map Pack Image for Brandon",
-        "title": "Local SEO Map Pack Image for Brandon",
-        "description": "Local SEO Map Pack service card illustration",
-        "caption": "Local SEO & Map Pack"
+        "src": "/brandon-seo-company/technical-seo-audit-core-web-vitals-monitor.webp",
+        "alt": "Technical SEO audit and Core Web Vitals monitor interface for Brandon websites.",
+        "title": "Technical SEO Audit & Core Web Vitals Monitor Brandon FL",
+        "description": "Resolving technical issues, crawl errors, indexing bottlenecks, and site speed to maintain peak search performance.",
+        "caption": "Ensure a robust technical foundation that search engines reward with top rankings."
       },
       "contentDevelopmentImage": {
-        "src": "/seo-company-wesley-chapel/service-6.png",
-        "alt": "Content Development Image for Brandon",
-        "title": "Content Development Image for Brandon",
-        "description": "Content Development service card illustration",
-        "caption": "Content Development"
+        "src": "/brandon-seo-company/seo-content-strategy-and-copywriting-growth.webp",
+        "alt": "SEO content strategy and copywriting growth illustration for Brandon local services.",
+        "title": "SEO Content Strategy & Copywriting Growth Brandon FL",
+        "description": "Publishing expert, keyword-informed content tailored to Brandon residents' search queries and buying behavior.",
+        "caption": "Publish authoritative content that attracts, engages, and converts local customers."
       },
       "offPageSeoImage": {
-        "src": "/seo-company-wesley-chapel/service-7.png",
-        "alt": "Off-Page SEO Image for Brandon",
-        "title": "Off-Page SEO Image for Brandon",
-        "description": "Off-Page SEO service card illustration",
-        "caption": "Off-Page SEO"
+        "src": "/brandon-seo-company/digital-pr-authority-link-building-network.webp",
+        "alt": "Digital PR authority link building network for Brandon domain authority growth.",
+        "title": "Digital PR Authority Link Building Network Brandon FL",
+        "description": "Earning high-quality backlinks from Tampa Bay news outlets, Brandon business directories, and industry sites.",
+        "caption": "Build long-term domain authority with ethical local link-building campaigns."
+      },
+      "eCommerceSeoImage": {
+        "src": "/brandon-seo-company/ecommerce-seo-analytics-mobile-dashboard-ui.webp",
+        "alt": "E-commerce SEO analytics mobile dashboard UI for Brandon retail stores.",
+        "title": "E-Commerce SEO Analytics Mobile Dashboard Brandon FL",
+        "description": "Optimizing online storefronts, product pages, category hierarchies, and shopping feeds for higher organic sales.",
+        "caption": "Drive qualified buyers to your e-commerce product listings and store pages."
       },
       "askEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-8.png",
-        "alt": "Ask Engine Optimization Image for Brandon",
-        "title": "Ask Engine Optimization Image for Brandon",
-        "description": "Ask Engine Optimization (AEO) service card illustration",
-        "caption": "Ask Engine Optimization (AEO)"
+        "src": "/brandon-seo-company/ai-search-and-answer-engine-optimization-bot.webp",
+        "alt": "AI search and answer engine optimization bot for conversational voice and AI queries.",
+        "title": "AI Search & Answer Engine Optimization Brandon FL",
+        "description": "Structuring content to get cited in Google AI Overviews, ChatGPT, Gemini, and conversational answer engines.",
+        "caption": "Position your brand as the recommended answer in AI search engines."
       },
-      "generativeEngineOptimizationImage": {
-        "src": "/seo-company-wesley-chapel/service-9.png",
-        "alt": "Generative Engine Optimization Image for Brandon",
-        "title": "Generative Engine Optimization Image for Brandon",
-        "description": "Generative Engine Optimization (GEO) service card illustration",
-        "caption": "Generative Engine Optimization (GEO)"
+      "seoWebsiteAuditImage": {
+        "src": "/brandon-seo-company/ecommerce-seo-metrics-ranking-growth-report.webp",
+        "alt": "SEO metrics ranking growth report dashboard tracking Brandon campaign performance.",
+        "title": "SEO Reporting & Performance Analytics Dashboard Brandon FL",
+        "description": "Transparent monthly reporting tracking organic traffic, keyword rankings, GBP calls, and return on investment.",
+        "caption": "Track campaign success with detailed monthly SEO performance metrics."
       }
     }
   },

@@ -36,7 +36,7 @@ const services = [
   },
   {
     title: "E-Commerce SEO for Brandon Retailers",
-    image: images.seoServicesSection.seoWebsiteAuditImage.src,
+    image: images.seoServicesSection.eCommerceSeoImage.src,
     description:
       "Product page optimization, category architecture, schema markup and shopping feed management for Brandon retail businesses competing in both local and national organic search.",
   },
@@ -48,7 +48,7 @@ const services = [
   },
   {
     title: "SEO Reporting and Analytics",
-    image: images.seoServicesSection.keywordResearchImage.src,
+    image: images.seoServicesSection.seoWebsiteAuditImage.src,
     description:
       "Monthly reports tracking keyword rankings, organic traffic, lead conversions and Google Business Profile metrics for every Brandon campaign.",
   },

@@ -33,28 +33,28 @@ const seoSteps = [
   },
   {
     number: "05",
-    image: images.seoCustomerJourneySection.technicalAuditStepImage.src,
+    image: images.seoCustomerJourneySection.buyerIntentQaStepImage.src,
     title: "Content with exact answers to buyer questions",
     description:
       "Blog posts and FAQ content targeting Brandon specific concerns build topical authority and capture researchers.",
   },
   {
     number: "06",
-    image: images.seoCustomerJourneySection.onPageOptimizationStepImage.src,
+    image: images.seoCustomerJourneySection.mobileSearchCaptureStepImage.src,
     title: "Mobile search capture",
     description:
       "Sites optimized for mobile speed and UX convert over 60% of local searchers into leads faster.",
   },
   {
     number: "07",
-    image: images.seoCustomerJourneySection.offPageStrategyStepImage.src,
+    image: images.seoCustomerJourneySection.schemaMarkupStepImage.src,
     title: "Schema markup for rich results",
     description:
       "Structured data tells Google exactly about your business services and improves click through rates on Brandon search results.",
   },
   {
     number: "08",
-    image: images.seoCustomerJourneySection.analyticsReportingStepImage.src,
+    image: images.seoCustomerJourneySection.conversionLandingPageStepImage.src,
     title: "Conversion focused landing pages",
     description:
       "Search engine optimization helps boost rankings with pages designed to convert Brandon visitors into form fills, calls or appointments.",

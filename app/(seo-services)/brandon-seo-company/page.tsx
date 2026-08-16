@@ -20,20 +20,40 @@ import WhyLosingCustomers from "@/components/SEO-Service/brandon-seo-company/Why
 import React from "react";
 
 export const metadata = {
-  title: "Brandon SEO Company For Local Businesses",
+  title: "Brandon SEO Company | Results-Driven Local SEO Services",
   description:
-    "Bayshore is a Brandon SEO company that helps businesses rank higher on Google Search,Maps and AI search to generate more traffic,leads and customers.",
-
+    "Partner with a top Brandon SEO company. Dominate Google Map 3-Pack, boost local search rankings, and generate more qualified leads in Brandon, FL.",
+  keywords: [
+    "Brandon SEO company",
+    "local SEO services Brandon FL",
+    "Brandon digital marketing agency",
+    "Google Maps optimization Brandon",
+    "search engine optimization Brandon Florida",
+  ],
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
     googleBot: {
-      index: false,
-      follow: false,
-      noimageindex: true,
+      index: true,
+      follow: true,
+      noimageindex: false,
     },
   },
-
+  openGraph: {
+    title: "Brandon SEO Company | Results-Driven Local SEO Services",
+    description:
+      "Partner with a top Brandon SEO company. Dominate Google Map 3-Pack, boost local search rankings, and generate more qualified leads in Brandon, FL.",
+    url: "https://bayshorecommunication.com/brandon-seo-company",
+    siteName: "Bayshore Communication",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Brandon SEO Company | Results-Driven Local SEO Services",
+    description:
+      "Partner with a top Brandon SEO company. Dominate Google Map 3-Pack, boost local search rankings, and generate more qualified leads in Brandon, FL.",
+  },
   alternates: {
     canonical: "/brandon-seo-company",
     languages: {
