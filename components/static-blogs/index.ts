@@ -37,6 +37,9 @@ import LocalVsOrganicSeoDifferencesBlog, {
 import WhatIsOrganicSeoServicesPageOneRankingsBlog, {
   whatIsOrganicSeoServicesPageOneRankingsBlog,
 } from "./blogs/what-is-organic-seo-services-page-one-rankings";
+import HowMuchDoesKeywordResearchCostIn2026Blog, {
+  howMuchDoesKeywordResearchCostIn2026Blog,
+} from "./blogs/how-much-does-keyword-research-cost-in-2026";
 
 export const staticBlogs = [
   howExpertiseBasedContentBuildsTrustBlog,
@@ -52,6 +55,7 @@ export const staticBlogs = [
   whyShouldIHireADigitalMarketingAgencyBlog,
   localVsOrganicSeoDifferencesBlog,
   whatIsOrganicSeoServicesPageOneRankingsBlog,
+  howMuchDoesKeywordResearchCostIn2026Blog,
 ].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
 export const getStaticBlogBySlug = (slug: string) =>
@@ -77,6 +81,9 @@ export const staticBlogComponents = {
   [localVsOrganicSeoDifferencesBlog.slug]: LocalVsOrganicSeoDifferencesBlog,
   [whatIsOrganicSeoServicesPageOneRankingsBlog.slug]:
     WhatIsOrganicSeoServicesPageOneRankingsBlog,
+  [howMuchDoesKeywordResearchCostIn2026Blog.slug]:
+    HowMuchDoesKeywordResearchCostIn2026Blog,
 };
+
 
 
