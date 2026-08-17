@@ -150,7 +150,7 @@ const schemaData = {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.bayshorecommunication.com",
+          "item": "https://www.bayshorecommunication.com/",
         },
         {
           "@type": "ListItem",
@@ -190,18 +190,20 @@ const schemaData = {
         "@type": "Thing",
         "name": "Keyword Research Pricing",
         "description":
-          "An analysis of keyword research pricing, freelance vs agency costs, Florida search intent factors, and budget planning for 2026.",
+          "An overview of keyword research costs, pricing models, research scope, keyword difficulty, search intent, competitor analysis, and factors that influence professional keyword research pricing.",
       },
       "keywords": [
         "keyword research cost",
         "how much does keyword research cost",
+        "keyword research pricing",
+        "keyword research services cost",
+        "SEO keyword research cost",
+        "keyword research service",
         "keyword research pricing 2026",
-        "seo keyword research cost",
-        "florida local seo pricing",
-        "freelance vs agency keyword research",
-        "keyword difficulty scoring",
-        "intent mapping pricing",
-        "digital marketing keyword cost",
+        "SEO keyword research services",
+        "keyword analysis cost",
+        "professional keyword research",
+        "keyword research agency",
       ],
       "author": {
         "@type": "Organization",
@@ -210,7 +212,7 @@ const schemaData = {
       "publisher": {
         "@type": "Organization",
         "name": "Bayshore Communication",
-        "url": "https://www.bayshorecommunication.com",
+        "url": "https://www.bayshorecommunication.com/",
         "logo": {
           "@type": "ImageObject",
           "url":
