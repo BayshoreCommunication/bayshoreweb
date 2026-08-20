@@ -1,30 +1,40 @@
 import { BriefcaseBusiness, MapPin } from "lucide-react";
 
 const industries = [
-  "Home Services (HVAC, Plumbing, Roofing, Electrical)",
-  "Medical, Dental, and Healthcare Practices",
-  "Legal Services and Law Firms",
-  "Real Estate Agencies and Independent Brokers",
-  "Restaurants, Cafes, and Food Service Businesses",
-  "Retail Stores and E-Commerce Businesses",
-  "Auto Repair, Sales, and Dealerships",
-  "Health, Beauty, and Personal Wellness",
-  "Financial, Accounting, and Insurance Services",
-  "Education, Childcare, and Tutoring Centers",
-  "Construction, Remodeling, and Landscaping",
+  "Legal & Compliance",
+  "Dental Clinics",
+  "Chiropractic Centers",
+  "Real Estate Agencies",
+  "Small Businesses",
+  "Local Businesses",
 ];
 
-const communities = [
-  "Spring Hill (ZIP Codes 34606, 34607, 34608, 34609, 34610)",
-  "Brooksville",
-  "Weeki Wachee",
-  "Bayonet Point",
-  "Hudson",
-  "New Port Richey",
+const floridaCities = [
+  "Clearwater",
+  "Tampa",
+  "Orlando",
+  "Polk County",
+  "Brandon",
+  "Plant City",
   "Wesley Chapel",
-  "Land O Lakes",
-  "Lutz",
-  "Zephyrhills",
+  "Spring Hill",
+  "Fort Lauderdale",
+  "St. Petersburg",
+  "Palm Harbor",
+  "Dunedin",
+  "Pinellas Park",
+  "Tallahassee",
+  "West Palm Beach",
+  "Pembroke Pines",
+  "Hollywood",
+  "Gainesville",
+  "Pompano Beach",
+  "Lakeland",
+  "North Port/Sarasota",
+  "Temple Terrace",
+  "Town ‘n’ Country",
+  "Oldsmar",
+  "Largo",
 ];
 
 export default function ServiceAreasSection() {
@@ -42,14 +52,10 @@ export default function ServiceAreasSection() {
             </span>{" "}
             and Surrounding Areas
           </h2>
-
-          <p className="mx-auto mt-8 max-w-[1000px] text-[16px] leading-8 text-black/70 md:text-[20px]">
-            Bayshore Communication delivers targeted, market-specific SEO services for Spring Hill Florida businesses across a broad range of industries. Whether your business specializes in a single area or spans multiple service categories, every strategy we build targets the precise searches your ideal customers are performing.
-          </p>
         </div>
 
-        {/* Content */}
-        <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-[1fr_1fr]">
+        {/* Content Grid */}
+        <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-[1fr_1.2fr]">
           {/* Left Card */}
           <div
             className="
@@ -66,7 +72,7 @@ export default function ServiceAreasSection() {
               <BriefcaseBusiness size={32} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Business Categories We Serve
+                Industries We Work With
               </h3>
             </div>
 
@@ -79,9 +85,9 @@ export default function ServiceAreasSection() {
                     border
                     border-black/10
                     bg-white
-                    px-4
+                    px-5
                     py-3
-                    text-[14px]
+                    text-[15px]
                     font-medium
                     text-[#081B4B]
                     transition-all
@@ -112,37 +118,38 @@ export default function ServiceAreasSection() {
             <div className="flex items-center gap-4">
               <MapPin size={30} className="text-[#FF6F00]" />
 
-              <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[30px] lg:text-[32px] xl:text-[38px]">
-                Spring Hill, Florida, and Surrounding Communities We Serve
+              <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
+                Statewide Florida Coverage
               </h3>
             </div>
 
-            <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {communities.map((community) => (
+            <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
+              {floridaCities.map((city) => (
                 <div
-                  key={community}
+                  key={city}
                   className="
                     group
                     flex
                     items-center
-                    gap-3
+                    gap-2.5
                     rounded-[16px]
                     border
                     border-black/10
                     bg-white
-                    px-5
-                    py-4
+                    px-4
+                    py-3
                     transition-all
                     duration-300
-                    hover:-translate-y-1
+                    hover:-translate-y-0.5
                     hover:border-[#FF6F00]
                     hover:bg-[#FFF8F3]
-                    hover:shadow-[0_12px_30px_rgba(255,111,0,0.12)]
+                    hover:shadow-[0_8px_20px_rgba(255,111,0,0.12)]
                   "
                 >
                   <MapPin
-                    size={18}
+                    size={16}
                     className="
+                      shrink-0
                       text-[#FF6F00]
                       transition-transform
                       duration-300
@@ -150,8 +157,8 @@ export default function ServiceAreasSection() {
                     "
                   />
 
-                  <span className="font-medium text-[#081B4B]">
-                    {community}
+                  <span className="text-[14px] font-medium text-[#081B4B]">
+                    {city}
                   </span>
                 </div>
               ))}

@@ -1,104 +1,40 @@
-import {
-  BriefcaseBusiness,
-  Home,
-  HeartPulse,
-  Scale,
-  Store,
-  Dumbbell,
-  MapPin,
-} from "lucide-react";
+import { BriefcaseBusiness, MapPin } from "lucide-react";
 
-const businessTypes = [
-  {
-    icon: HeartPulse,
-    title: "Healthcare & Wellness",
-    items: [
-      "Healthcare & Medical Practices",
-      "Fitness & Weight Loss Clinics",
-    ],
-  },
-  {
-    icon: Scale,
-    title: "Professional Services",
-    items: [
-      "Legal Services & Law Firms",
-      "Accountants & Tax Professionals (CPA)",
-      "Bookkeepers & Payroll Services",
-      "Financial Services",
-    ],
-  },
-  {
-    icon: Home,
-    title: "Real Estate & Property",
-    items: [
-      "Real Estate & Property Management",
-    ],
-  },
-  {
-    icon: BriefcaseBusiness,
-    title: "B2B & Franchise",
-    items: [
-      "IT, Web Design & Digital Agencies (B2B)",
-      "Franchise Locations (Multi-Location SEO)",
-    ],
-  },
-  {
-    icon: Store,
-    title: "Retail & Consumer",
-    items: [
-      "Retail & E-commerce with Physical Presence",
-      "Travel and Hospitality Businesses",
-    ],
-  },
-];
-
-const communities = [
-  "Ybor City",
-  "Channelside",
-  "Hyde Park",
-  "South Tampa",
-  "Seminole Heights",
-  "Tampa Heights",
-  "Rocky Point",
-  "West Tampa",
-  "East Tampa",
-  "New Tampa",
-  "Harbour Island",
-  "Downtown Tampa",
-  "Davis Islands",
-  "Ballast Point",
-  "Bayshore Beautiful",
-  "Beach Park",
-  "Palma Ceia",
-  "Westchase",
-  "Carrollwood",
-  "University Square",
-  "FishHawk Ranch",
-  "Tampa Palms",
-  "Greater Tampa Bay Area & Surrounding Communities",
+const industries = [
+  "Legal & Compliance",
+  "Dental Clinics",
+  "Chiropractic Centers",
+  "Real Estate Agencies",
+  "Small Businesses",
+  "Local Businesses",
 ];
 
 const floridaCities = [
-  "Miami",
-  "Ft. Lauderdale",
-  "Tallahassee",
-  "Orlando",
-  "Jacksonville",
+  "Clearwater",
   "Tampa",
-  "Ft. Myers",
-  "Sarasota",
-  "Naples",
-  "Pensacola",
-  "Palm Beach, West",
-  "Gainesville",
-  "Cape Coral",
-  "Port St. Lucie",
-  "Kissimmee",
-  "Boca Raton",
-  "Lakeland",
-  "Ocala",
-  "Daytona Beach",
+  "Orlando",
+  "Polk County",
+  "Brandon",
+  "Plant City",
+  "Wesley Chapel",
+  "Spring Hill",
+  "Fort Lauderdale",
   "St. Petersburg",
+  "Palm Harbor",
+  "Dunedin",
+  "Pinellas Park",
+  "Tallahassee",
+  "West Palm Beach",
+  "Pembroke Pines",
+  "Hollywood",
+  "Gainesville",
+  "Pompano Beach",
+  "Lakeland",
+  "North Port/Sarasota",
+  "Temple Terrace",
+  "Town ‘n’ Country",
+  "Oldsmar",
+  "Largo",
 ];
 
 export default function ServiceAreasSection() {
@@ -116,17 +52,10 @@ export default function ServiceAreasSection() {
             </span>{" "}
             and Surrounding Areas
           </h2>
-
-          <p className="mx-auto mt-8 max-w-[1000px] text-[16px] leading-8 text-black/70 md:text-[20px]">
-            Bayshore Communication serves businesses throughout Plant City,
-            Florida, and the wider Hillsborough County and Tampa Bay region.
-            Our strategies are built around the communities where your customers
-            live and search.
-          </p>
         </div>
 
         {/* Content Grid */}
-        <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-[1.7fr_1fr]">
+        <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-[1fr_1.2fr]">
           {/* Left Card */}
           <div
             className="
@@ -143,52 +72,34 @@ export default function ServiceAreasSection() {
               <BriefcaseBusiness size={32} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Industries We Serve
+                Industries We Work With
               </h3>
             </div>
 
-            <div className="mt-10 grid gap-10 md:grid-cols-2">
-              {businessTypes.map((category, index) => {
-                const Icon = category.icon;
-
-                return (
-                  <div key={index}>
-                    <div className="flex items-center gap-3">
-                      <Icon size={22} className="text-[#FF6F00]" />
-
-                      <h4 className="text-[18px] font-bold text-[#081B4B] md:text-[22px]">
-                        {category.title}
-                      </h4>
-                    </div>
-
-                    <div className="mt-5 flex flex-wrap gap-3">
-                      {category.items.map((item) => (
-                        <span
-                          key={item}
-                          className="
-                            rounded-full
-                            border
-                            border-black/10
-                            bg-white
-                            px-4
-                            py-2
-                            text-[14px]
-                            font-medium
-                            text-[#081B4B]
-                            transition-all
-                            duration-300
-                            hover:border-[#FF6F00]
-                            hover:bg-[#FFF8F3]
-                            hover:text-[#FF6F00]
-                          "
-                        >
-                          {item}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                );
-              })}
+            <div className="mt-10 flex flex-wrap gap-3">
+              {industries.map((item) => (
+                <span
+                  key={item}
+                  className="
+                    rounded-full
+                    border
+                    border-black/10
+                    bg-white
+                    px-5
+                    py-3
+                    text-[15px]
+                    font-medium
+                    text-[#081B4B]
+                    transition-all
+                    duration-300
+                    hover:border-[#FF6F00]
+                    hover:bg-[#FFF8F3]
+                    hover:text-[#FF6F00]
+                  "
+                >
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
 
@@ -208,36 +119,37 @@ export default function ServiceAreasSection() {
               <MapPin size={30} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Tampa Neighborhoods & Areas We Serve
+                Statewide Florida Coverage
               </h3>
             </div>
 
-            <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {communities.map((community) => (
+            <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
+              {floridaCities.map((city) => (
                 <div
-                  key={community}
+                  key={city}
                   className="
                     group
                     flex
                     items-center
-                    gap-3
+                    gap-2.5
                     rounded-[16px]
                     border
                     border-black/10
                     bg-white
-                    px-5
-                    py-4
+                    px-4
+                    py-3
                     transition-all
                     duration-300
-                    hover:-translate-y-1
+                    hover:-translate-y-0.5
                     hover:border-[#FF6F00]
                     hover:bg-[#FFF8F3]
-                    hover:shadow-[0_12px_30px_rgba(255,111,0,0.12)]
+                    hover:shadow-[0_8px_20px_rgba(255,111,0,0.12)]
                   "
                 >
                   <MapPin
-                    size={18}
+                    size={16}
                     className="
+                      shrink-0
                       text-[#FF6F00]
                       transition-transform
                       duration-300
@@ -245,58 +157,10 @@ export default function ServiceAreasSection() {
                     "
                   />
 
-                  <span className="font-medium text-[#081B4B]">
-                    {community}
+                  <span className="text-[14px] font-medium text-[#081B4B]">
+                    {city}
                   </span>
                 </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Bottom Card for Statewide Florida Coverage */}
-          <div
-            className="
-              lg:col-span-3
-              rounded-[28px]
-              border
-              border-black/5
-              bg-[#FBFBFB]
-              p-6
-              shadow-[0_8px_30px_rgba(0,0,0,0.03)]
-              md:p-10
-            "
-          >
-            <div className="flex items-center gap-4">
-              <MapPin size={30} className="text-[#FF6F00]" />
-
-              <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Statewide Florida Coverage
-              </h3>
-            </div>
-
-            <div className="mt-10 flex flex-wrap gap-3">
-              {floridaCities.map((city) => (
-                <span
-                  key={city}
-                  className="
-                    rounded-full
-                    border
-                    border-black/10
-                    bg-white
-                    px-4
-                    py-2
-                    text-[14px]
-                    font-medium
-                    text-[#081B4B]
-                    transition-all
-                    duration-300
-                    hover:border-[#FF6F00]
-                    hover:bg-[#FFF8F3]
-                    hover:text-[#FF6F00]
-                  "
-                >
-                  {city}
-                </span>
               ))}
             </div>
           </div>
@@ -305,4 +169,4 @@ export default function ServiceAreasSection() {
     </section>
   );
 }
-
+  

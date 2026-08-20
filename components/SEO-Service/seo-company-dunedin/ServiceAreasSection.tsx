@@ -1,38 +1,40 @@
 import { BriefcaseBusiness, MapPin } from "lucide-react";
 
 const industries = [
-  "Home Services and Contracting",
-  "Medical and Healthcare Practices",
+  "Legal & Compliance",
+  "Dental Clinics",
+  "Chiropractic Centers",
   "Real Estate Agencies",
-  "Hospitality and Tourism",
-  "Professional Consulting",
-  "Retail and E-commerce",
-  "Health and Wellness Centers",
-  "Pet Services and Veterinary Care",
-  "Automotive Sales and Repair",
-  "Legal and Financial Services",
-  "Education and Training",
-  "Nonprofit Organizations",
-  "Beauty and Salon Services",
-  "Event Planning and Venues",
+  "Small Businesses",
+  "Local Businesses",
 ];
 
-const communities = [
-  "Downtown Dunedin",
-  "Dunedin Isles",
-  "Fairway Estate",
-  "Mease, Dunedin",
+const floridaCities = [
   "Clearwater",
-  "Safety Harbor",
-  "Palm Harbor",
-  "Tarpon Springs",
-  "Oldsmar",
-  "New Port Richey",
-  "Largo",
   "Tampa",
-  "St. Petersburg",
+  "Orlando",
+  "Polk County",
+  "Brandon",
+  "Plant City",
+  "Wesley Chapel",
   "Spring Hill",
+  "Fort Lauderdale",
+  "St. Petersburg",
+  "Palm Harbor",
+  "Dunedin",
   "Pinellas Park",
+  "Tallahassee",
+  "West Palm Beach",
+  "Pembroke Pines",
+  "Hollywood",
+  "Gainesville",
+  "Pompano Beach",
+  "Lakeland",
+  "North Port/Sarasota",
+  "Temple Terrace",
+  "Town ‘n’ Country",
+  "Oldsmar",
+  "Largo",
 ];
 
 export default function ServiceAreasSection() {
@@ -50,14 +52,10 @@ export default function ServiceAreasSection() {
             </span>{" "}
             and Surrounding Areas
           </h2>
-
-          <p className="mx-auto mt-8 max-w-[1000px] text-[16px] leading-8 text-black/70 md:text-[20px]">
-            Bayshore Communication proudly serves businesses throughout Dunedin, Florida, and the wider Pinellas County region. As a dedicated seo company dunedin every geo-targeted campaign we build is shaped around where your customers are located and how they search for businesses like yours.
-          </p>
         </div>
 
-        {/* Content */}
-        <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-[1fr_1fr]">
+        {/* Content Grid */}
+        <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-[1fr_1.2fr]">
           {/* Left Card */}
           <div
             className="
@@ -74,7 +72,7 @@ export default function ServiceAreasSection() {
               <BriefcaseBusiness size={32} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Industries We Serve
+                Industries We Work With
               </h3>
             </div>
 
@@ -87,9 +85,9 @@ export default function ServiceAreasSection() {
                     border
                     border-black/10
                     bg-white
-                    px-4
+                    px-5
                     py-3
-                    text-[14px]
+                    text-[15px]
                     font-medium
                     text-[#081B4B]
                     transition-all
@@ -120,37 +118,38 @@ export default function ServiceAreasSection() {
             <div className="flex items-center gap-4">
               <MapPin size={30} className="text-[#FF6F00]" />
 
-              <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[30px] lg:text-[32px] xl:text-[38px]">
-                Dunedin Neighborhoods and Surrounding Areas We Serve
+              <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
+                Statewide Florida Coverage
               </h3>
             </div>
 
-            <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {communities.map((community) => (
+            <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
+              {floridaCities.map((city) => (
                 <div
-                  key={community}
+                  key={city}
                   className="
                     group
                     flex
                     items-center
-                    gap-3
+                    gap-2.5
                     rounded-[16px]
                     border
                     border-black/10
                     bg-white
-                    px-5
-                    py-4
+                    px-4
+                    py-3
                     transition-all
                     duration-300
-                    hover:-translate-y-1
+                    hover:-translate-y-0.5
                     hover:border-[#FF6F00]
                     hover:bg-[#FFF8F3]
-                    hover:shadow-[0_12px_30px_rgba(255,111,0,0.12)]
+                    hover:shadow-[0_8px_20px_rgba(255,111,0,0.12)]
                   "
                 >
                   <MapPin
-                    size={18}
+                    size={16}
                     className="
+                      shrink-0
                       text-[#FF6F00]
                       transition-transform
                       duration-300
@@ -158,8 +157,8 @@ export default function ServiceAreasSection() {
                     "
                   />
 
-                  <span className="font-medium text-[#081B4B]">
-                    {community}
+                  <span className="text-[14px] font-medium text-[#081B4B]">
+                    {city}
                   </span>
                 </div>
               ))}
