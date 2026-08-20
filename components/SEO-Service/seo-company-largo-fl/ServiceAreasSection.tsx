@@ -1,13 +1,13 @@
 import Link from "next/link";
 import { BriefcaseBusiness, MapPin } from "lucide-react";
 
-const industries = [
-  "Legal & Compliance",
-  "Dental Clinics",
-  "Chiropractic Centers",
-  "Real Estate Agencies",
-  "Small Businesses",
-  "Local Businesses",
+const industries: { name: string; href?: string }[] = [
+  { name: "Legal & Compliance", href: "/local-seo-for-lawyers-florida" },
+  { name: "Dental Clinics", href: "/seo-services-for-dentists-in-tampa" },
+  { name: "Chiropractic Centers" },
+  { name: "Real Estate Agencies", href: "/real-estate-seo-services-in-florida" },
+  { name: "Small Businesses", href: "/seo-services-for-small-businesses-in-florida" },
+  { name: "Local Businesses" },
 ];
 
 const floridaCities: { name: string; href?: string }[] = [
@@ -75,29 +75,54 @@ export default function ServiceAreasSection() {
             </div>
 
             <div className="mt-10 flex flex-wrap gap-3">
-              {industries.map((item) => (
-                <span
-                  key={item}
-                  className="
-                    rounded-full
-                    border
-                    border-black/10
-                    bg-white
-                    px-5
-                    py-3
-                    text-[15px]
-                    font-medium
-                    text-[#081B4B]
-                    transition-all
-                    duration-300
-                    hover:border-[#FF6F00]
-                    hover:bg-[#FFF8F3]
-                    hover:text-[#FF6F00]
-                  "
-                >
-                  {item}
-                </span>
-              ))}
+              {industries.map((item) =>
+                item.href ? (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="
+                      rounded-full
+                      border
+                      border-black/10
+                      bg-white
+                      px-5
+                      py-3
+                      text-[15px]
+                      font-medium
+                      text-[#081B4B]
+                      transition-all
+                      duration-300
+                      hover:border-[#FF6F00]
+                      hover:bg-[#FFF8F3]
+                      hover:text-[#FF6F00]
+                    "
+                  >
+                    {item.name}
+                  </Link>
+                ) : (
+                  <span
+                    key={item.name}
+                    className="
+                      rounded-full
+                      border
+                      border-black/10
+                      bg-white
+                      px-5
+                      py-3
+                      text-[15px]
+                      font-medium
+                      text-[#081B4B]
+                      transition-all
+                      duration-300
+                      hover:border-[#FF6F00]
+                      hover:bg-[#FFF8F3]
+                      hover:text-[#FF6F00]
+                    "
+                  >
+                    {item.name}
+                  </span>
+                )
+              )}
             </div>
           </div>
 
