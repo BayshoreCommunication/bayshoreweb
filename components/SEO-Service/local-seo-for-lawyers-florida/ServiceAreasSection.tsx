@@ -44,7 +44,7 @@ export default function ServiceAreasSection() {
         {/* Header */}
         <div className="mx-auto max-w-[1100px] text-center">
           <h2 className="text-[38px] font-bold leading-[1.1] text-black md:text-[52px]">
-            Cities and Practice Areas{" "}
+            Industries and Cities{" "}
             <span className="text-[#FF6F00]">We Serve</span>
           </h2>
         </div>
