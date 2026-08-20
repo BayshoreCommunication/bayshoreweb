@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { BriefcaseBusiness, MapPin } from "lucide-react";
 
 const industries = [
@@ -9,32 +10,34 @@ const industries = [
   "Local Businesses",
 ];
 
-const floridaCities = [
-  "Clearwater",
-  "Tampa",
-  "Orlando",
-  "Polk County",
-  "Brandon",
-  "Plant City",
-  "Wesley Chapel",
-  "Spring Hill",
-  "Fort Lauderdale",
-  "St. Petersburg",
-  "Palm Harbor",
-  "Dunedin",
-  "Pinellas Park",
-  "Tallahassee",
-  "West Palm Beach",
-  "Pembroke Pines",
-  "Hollywood",
-  "Gainesville",
-  "Pompano Beach",
-  "Lakeland",
-  "North Port/Sarasota",
-  "Temple Terrace",
-  "Town ‘n’ Country",
-  "Oldsmar",
-  "Largo",
+const floridaCities: { name: string; href?: string }[] = [
+  { name: "Clearwater" },
+  { name: "Tampa", href: "/lawyer-seo-agency-tampa" },
+  { name: "Orlando", href: "/orlando-law-firm-seo-agency" },
+  { name: "Polk County" },
+  { name: "Brandon", href: "/brandon-seo-company" },
+  { name: "Plant City", href: "/plant-city-seo-company" },
+  { name: "Wesley Chapel", href: "/seo-company-wesley-chapel" },
+  { name: "Spring Hill", href: "/seo-company-spring-hill" },
+  { name: "Fort Lauderdale" },
+  { name: "St. Petersburg" },
+  { name: "Palm Harbor" },
+  { name: "Dunedin", href: "/seo-company-dunedin" },
+  { name: "Pinellas Park" },
+  { name: "Tallahassee" },
+  { name: "West Palm Beach" },
+  { name: "Pembroke Pines" },
+  { name: "Hollywood" },
+  { name: "Gainesville" },
+  { name: "Pompano Beach" },
+  { name: "Lakeland" },
+  { name: "North Port/Sarasota" },
+  { name: "Temple Terrace" },
+  { name: "Town ‘n’ Country" },
+  { name: "Oldsmar" },
+  { name: "Largo", href: "/seo-company-largo-fl" },
+  { name: "Fort Myers", href: "/law-firm-seo-fort-myers" },
+  { name: "Naples", href: "/local-seo-services-for-small-business-naples-florida" },
 ];
 
 export default function ServiceAreasSection() {
@@ -119,44 +122,84 @@ export default function ServiceAreasSection() {
             </div>
 
             <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
-              {floridaCities.map((city) => (
-                <div
-                  key={city}
-                  className="
-                    group
-                    flex
-                    items-center
-                    gap-2.5
-                    rounded-[16px]
-                    border
-                    border-black/10
-                    bg-white
-                    px-4
-                    py-3
-                    transition-all
-                    duration-300
-                    hover:-translate-y-0.5
-                    hover:border-[#FF6F00]
-                    hover:bg-[#FFF8F3]
-                    hover:shadow-[0_8px_20px_rgba(255,111,0,0.12)]
-                  "
-                >
-                  <MapPin
-                    size={16}
+              {floridaCities.map((city) =>
+                city.href ? (
+                  <Link
+                    key={city.name}
+                    href={city.href}
                     className="
-                      shrink-0
-                      text-[#FF6F00]
-                      transition-transform
+                      group
+                      flex
+                      items-center
+                      gap-2.5
+                      rounded-[16px]
+                      border
+                      border-black/10
+                      bg-white
+                      px-4
+                      py-3
+                      transition-all
                       duration-300
-                      group-hover:scale-110
+                      hover:-translate-y-0.5
+                      hover:border-[#FF6F00]
+                      hover:bg-[#FFF8F3]
+                      hover:shadow-[0_8px_20px_rgba(255,111,0,0.12)]
                     "
-                  />
+                  >
+                    <MapPin
+                      size={16}
+                      className="
+                        shrink-0
+                        text-[#FF6F00]
+                        transition-transform
+                        duration-300
+                        group-hover:scale-110
+                      "
+                    />
 
-                  <span className="text-[14px] font-medium text-[#081B4B]">
-                    {city}
-                  </span>
-                </div>
-              ))}
+                    <span className="text-[14px] font-medium text-[#081B4B] transition-colors group-hover:text-[#FF6F00]">
+                      {city.name}
+                    </span>
+                  </Link>
+                ) : (
+                  <div
+                    key={city.name}
+                    className="
+                      group
+                      flex
+                      items-center
+                      gap-2.5
+                      rounded-[16px]
+                      border
+                      border-black/10
+                      bg-white
+                      px-4
+                      py-3
+                      transition-all
+                      duration-300
+                      hover:-translate-y-0.5
+                      hover:border-[#FF6F00]
+                      hover:bg-[#FFF8F3]
+                      hover:shadow-[0_8px_20px_rgba(255,111,0,0.12)]
+                    "
+                  >
+                    <MapPin
+                      size={16}
+                      className="
+                        shrink-0
+                        text-[#FF6F00]
+                        transition-transform
+                        duration-300
+                        group-hover:scale-110
+                      "
+                    />
+
+                    <span className="text-[14px] font-medium text-[#081B4B]">
+                      {city.name}
+                    </span>
+                  </div>
+                )
+              )}
             </div>
           </div>
         </div>
