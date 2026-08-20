@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowLeft,
@@ -234,21 +233,6 @@ export default function TestimonialsSection() {
                       hover:shadow-[0_20px_60px_rgba(255,111,0,0.15)]
                     "
                   >
-                    {/* Image */}
-                    <div className="relative h-[260px] overflow-hidden md:h-[320px]">
-                      <Image
-                        src={item.image}
-                        alt={item.name}
-                        fill
-                        className="
-                          object-cover
-                          object-top
-                          transition-transform
-                          duration-700
-                          group-hover:scale-105
-                        "
-                      />
-                    </div>
 
                     {/* Content */}
                     <div className="p-8">

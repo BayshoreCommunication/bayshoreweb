@@ -79,7 +79,7 @@ const page = () => {
       <SeoRoiSection />
       {/* <SeoPackagesSection /> */}
       <ServiceAreasSection />
-      {/* <TestimonialsSection /> */}
+      <TestimonialsSection />
       <SeoFaqSection />
       <ContactSection />
     </div>
