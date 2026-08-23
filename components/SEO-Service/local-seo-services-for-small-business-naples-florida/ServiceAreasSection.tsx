@@ -224,6 +224,17 @@ const getInternalRoute = (name: any, defaultRoute: string = "/seo-services-for-s
 };
 
 export default function ServiceAreasSection() {
+  const currentPath = "/local-seo-services-for-small-business-naples-florida";
+  const linkedRoutes = new Set<string>();
+
+  const getUniqueLink = (itemName: any): string | null => {
+    const route = getInternalRoute(itemName);
+    if (!route || route === currentPath || linkedRoutes.has(route)) {
+      return null;
+    }
+    linkedRoutes.add(route);
+    return route;
+  };
   return (
     <section className="bg-white py-16 md:py-32">
       <div className="mx-auto max-w-[1620px] px-8 md:px-8">
@@ -285,27 +296,26 @@ export default function ServiceAreasSection() {
                     </div>
 
                     <div className="mt-5 flex flex-wrap gap-3">
-                      {category.items.map((item) => (
-                        <Link key={item} href={getInternalRoute(item)} className="
-                            rounded-full
-                            border
-                            border-black/10
-                            bg-white
-                            px-4
-                            py-2
-
-                            text-[14px]
-                            font-medium
-                            text-[#081B4B]
-
-                            transition-all
-                            duration-300
-
-                            hover:border-[#FF6F00]
-                            hover:bg-[#FFF8F3]
-                            hover:text-[#FF6F00]
-                          ">{item}</Link>
-                      ))}
+                      {category.items.map((item) => {
+                const linkUrl = getUniqueLink(item);
+                const itemName = typeof item === "string" ? item : (item as any).name;
+                return linkUrl ? (
+                  <Link
+                    key={itemName}
+                    href={linkUrl}
+                    className="rounded-full border border-black/10 bg-white px-4 py-2 text-[14px] font-medium text-[#081B4B] transition-all duration-300 hover:border-[#FF6F00] hover:bg-[#FFF8F3] hover:text-[#FF6F00]"
+                  >
+                    {itemName}
+                  </Link>
+                ) : (
+                  <span
+                    key={itemName}
+                    className="rounded-full border border-black/10 bg-white px-4 py-2 text-[14px] font-medium text-[#081B4B] transition-all duration-300 hover:border-[#FF6F00] hover:bg-[#FFF8F3] hover:text-[#FF6F00]"
+                  >
+                    {itemName}
+                  </span>
+                );
+              })}
                     </div>
                   </div>
                 );
@@ -336,44 +346,28 @@ export default function ServiceAreasSection() {
             </div>
 
             <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {communities.map((community, index) => (
-                <Link key={getSeoLocationName(community, index)} href={getInternalRoute(community)} className="
-                    group
-
-                    flex
-                    items-center
-                    gap-3
-
-                    rounded-[16px]
-                    border
-                    border-black/10
-
-                    bg-white
-
-                    px-5
-                    py-4
-
-                    transition-all
-                    duration-300
-
-                    hover:-translate-y-1
-                    hover:border-[#FF6F00]
-                    hover:bg-[#FFF8F3]
-                    hover:shadow-[0_12px_30px_rgba(255,111,0,0.12)]
-                  ">
-                  <MapPin
-                    size={18}
-                    className="
-                      text-[#FF6F00]
-                      transition-transform
-                      duration-300
-                      group-hover:scale-110
-                    "
-                  />
-
-                  <span className="font-medium text-[#081B4B]">{getSeoLocationName(community, index)}</span>
-                </Link>
-              ))}
+              {communities.map((community, index) => {
+                const text = getSeoLocationName(community, index);
+                const linkUrl = getUniqueLink(community);
+                return linkUrl ? (
+                  <Link
+                    key={text}
+                    href={linkUrl}
+                    className="group flex items-center gap-3 rounded-[16px] border border-black/10 bg-white px-5 py-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#FF6F00] hover:bg-[#FFF8F3] hover:shadow-[0_12px_30px_rgba(255,111,0,0.12)]"
+                  >
+                    <MapPin size={18} className="text-[#FF6F00] transition-transform duration-300 group-hover:scale-110" />
+                    <span className="font-medium text-[#081B4B]">{text}</span>
+                  </Link>
+                ) : (
+                  <div
+                    key={text}
+                    className="group flex items-center gap-3 rounded-[16px] border border-black/10 bg-white px-5 py-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#FF6F00] hover:bg-[#FFF8F3] hover:shadow-[0_12px_30px_rgba(255,111,0,0.12)]"
+                  >
+                    <MapPin size={18} className="text-[#FF6F00] transition-transform duration-300 group-hover:scale-110" />
+                    <span className="font-medium text-[#081B4B]">{text}</span>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

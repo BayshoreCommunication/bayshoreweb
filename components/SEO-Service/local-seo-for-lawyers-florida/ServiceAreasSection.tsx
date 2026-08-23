@@ -291,6 +291,17 @@ const getInternalRoute = (name: any, defaultRoute: string = "/seo-services-for-s
 };
 
 export default function ServiceAreasSection() {
+  const currentPath = "/local-seo-for-lawyers-florida";
+  const linkedRoutes = new Set<string>();
+
+  const getUniqueLink = (itemName: any): string | null => {
+    const route = getInternalRoute(itemName);
+    if (!route || route === currentPath || linkedRoutes.has(route)) {
+      return null;
+    }
+    linkedRoutes.add(route);
+    return route;
+  };
   return (
     <section className="bg-white py-16 md:py-32">
       <div className="mx-auto max-w-[1620px] px-8 md:px-8">
@@ -346,27 +357,26 @@ export default function ServiceAreasSection() {
                     </div>
 
                     <div className="mt-5 flex flex-wrap gap-3">
-                      {category.items.map((item) => (
-                        <Link key={item} href={getInternalRoute(item)} className="
-                            rounded-full
-                            border
-                            border-black/10
-                            bg-white
-                            px-4
-                            py-2
-
-                            text-[13px]
-                            font-medium
-                            text-[#081B4B]
-
-                            transition-all
-                            duration-300
-
-                            hover:border-[#FF6F00]
-                            hover:bg-[#FFF8F3]
-                            hover:text-[#FF6F00]
-                          ">{item}</Link>
-                      ))}
+                      {category.items.map((item) => {
+                const linkUrl = getUniqueLink(item);
+                const itemName = typeof item === "string" ? item : (item as any).name;
+                return linkUrl ? (
+                  <Link
+                    key={itemName}
+                    href={linkUrl}
+                    className="rounded-full border border-black/10 bg-white px-4 py-2 text-[14px] font-medium text-[#081B4B] transition-all duration-300 hover:border-[#FF6F00] hover:bg-[#FFF8F3] hover:text-[#FF6F00]"
+                  >
+                    {itemName}
+                  </Link>
+                ) : (
+                  <span
+                    key={itemName}
+                    className="rounded-full border border-black/10 bg-white px-4 py-2 text-[14px] font-medium text-[#081B4B] transition-all duration-300 hover:border-[#FF6F00] hover:bg-[#FFF8F3] hover:text-[#FF6F00]"
+                  >
+                    {itemName}
+                  </span>
+                );
+              })}
                     </div>
                   </div>
                 );
