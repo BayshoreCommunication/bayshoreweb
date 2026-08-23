@@ -1,44 +1,193 @@
 import Link from "next/link";
 import { BriefcaseBusiness, MapPin } from "lucide-react";
 
-const industries: { name: string; href?: string }[] = [
-  { name: "Legal & Compliance", href: "/local-seo-for-lawyers-florida" },
-  { name: "Dental Clinics", href: "/seo-services-for-dentists-in-tampa" },
-  { name: "Chiropractic Centers" },
-  { name: "Real Estate Agencies", href: "/real-estate-seo-services-in-florida" },
-  { name: "Small Businesses", href: "/seo-services-for-small-businesses-in-florida" },
-  { name: "Local Businesses" },
+const industries = [
+  "Home Services and Contracting",
+  "Medical and Healthcare Practices",
+  "Real Estate Agencies",
+  "Hospitality and Tourism",
+  "Professional Consulting",
+  "Retail and E-commerce",
+  "Health and Wellness Centers",
+  "Pet Services and Veterinary Care",
+  "Automotive Sales and Repair",
+  "Legal and Financial Services",
+  "Education and Training",
+  "Nonprofit Organizations",
+  "Beauty and Salon Services",
+  "Event Planning and Venues",
 ];
 
-const floridaCities: { name: string; href?: string }[] = [
-  { name: "Clearwater" },
-  { name: "Tampa", href: "/lawyer-seo-agency-tampa" },
-  { name: "Orlando", href: "/orlando-law-firm-seo-agency" },
-  { name: "Polk County" },
-  { name: "Brandon", href: "/brandon-seo-company" },
-  { name: "Plant City", href: "/plant-city-seo-company" },
-  { name: "Wesley Chapel", href: "/seo-company-wesley-chapel" },
-  { name: "Spring Hill", href: "/seo-company-spring-hill" },
-  { name: "Fort Lauderdale" },
-  { name: "St. Petersburg" },
-  { name: "Palm Harbor" },
-  { name: "Dunedin", href: "/seo-company-dunedin" },
-  { name: "Pinellas Park" },
-  { name: "Tallahassee" },
-  { name: "West Palm Beach" },
-  { name: "Pembroke Pines" },
-  { name: "Hollywood" },
-  { name: "Gainesville" },
-  { name: "Pompano Beach" },
-  { name: "Lakeland" },
-  { name: "North Port/Sarasota" },
-  { name: "Temple Terrace" },
-  { name: "Town ‘n’ Country" },
-  { name: "Oldsmar" },
-  { name: "Largo", href: "/seo-company-largo-fl" },
-  { name: "Fort Myers", href: "/law-firm-seo-fort-myers" },
-  { name: "Naples", href: "/local-seo-services-for-small-business-naples-florida" },
+const communities = [
+  "Downtown Dunedin",
+  "Dunedin Isles",
+  "Fairway Estate",
+  "Mease, Dunedin",
+  "Clearwater",
+  "Safety Harbor",
+  "Palm Harbor",
+  "Tarpon Springs",
+  "Oldsmar",
+  "New Port Richey",
+  "Largo",
+  "Tampa",
+  "St. Petersburg",
+  "Spring Hill",
+  "Pinellas Park",
 ];
+
+
+
+
+
+
+
+
+const seoKeywords = [
+  { prefix: "", suffix: " SEO Company" },
+  { prefix: "", suffix: " SEO Agency" },
+  { prefix: "", suffix: " SEO Services" },
+  { prefix: "", suffix: " SEO Firm" },
+  { prefix: "", suffix: " Search Engine Optimization" },
+  { prefix: "", suffix: " SEO Marketing Agency" },
+  { prefix: "", suffix: " Local SEO Agency" },
+  { prefix: "", suffix: " Local SEO Company" },
+  { prefix: "", suffix: " Organic SEO Agency" },
+  { prefix: "", suffix: " Professional SEO Agency" },
+  { prefix: "SEO Services in ", suffix: "" },
+  { prefix: "Search Engine Optimization in ", suffix: "" },
+];
+
+const getSeoLocationName = (location: string, index: number) => {
+  const kw = seoKeywords[index % seoKeywords.length];
+  return `${kw.prefix}${location}${kw.suffix}`;
+};
+
+
+
+const internalRouteMap: Record<string, string> = {
+  // Cities / Locations
+  "brandon": "/brandon-seo-company",
+  "plant city": "/plant-city-seo-company",
+  "dunedin": "/seo-company-dunedin",
+  "largo": "/seo-company-largo-fl",
+  "spring hill": "/seo-company-spring-hill",
+  "wesley chapel": "/seo-company-wesley-chapel",
+  "orlando": "/orlando-law-firm-seo-agency",
+  "fort myers": "/law-firm-seo-fort-myers",
+  "naples": "/local-seo-services-for-small-business-naples-florida",
+  "tampa": "/lawyer-seo-agency-tampa",
+  "clearwater": "/seo-company-largo-fl",
+  "st. petersburg": "/seo-company-dunedin",
+  "st petersburg": "/seo-company-dunedin",
+  "palm harbor": "/seo-company-dunedin",
+  "pinellas park": "/seo-company-largo-fl",
+  "riverview": "/brandon-seo-company",
+  "fishhawk ranch": "/brandon-seo-company",
+  "lutz": "/seo-company-wesley-chapel",
+  "land o lakes": "/seo-company-wesley-chapel",
+  "miami": "/local-seo-for-lawyers-florida",
+  "jacksonville": "/seo-services-for-small-businesses-in-florida",
+  "fort lauderdale": "/local-seo-for-lawyers-florida",
+  "west palm beach": "/real-estate-seo-services-in-florida",
+  "boca raton": "/local-seo-for-lawyers-florida",
+  "tallahassee": "/local-seo-for-lawyers-florida",
+  "gainesville": "/seo-services-for-small-businesses-in-florida",
+  "pensacola": "/seo-services-for-small-businesses-in-florida",
+  "daytona beach": "/real-estate-seo-services-in-florida",
+  "cape coral": "/law-firm-seo-fort-myers",
+  "port st. lucie": "/seo-services-for-small-businesses-in-florida",
+  "kissimmee": "/orlando-law-firm-seo-agency",
+  "lakeland": "/plant-city-seo-company",
+  "ocala": "/seo-services-for-small-businesses-in-florida",
+  "polk county": "/plant-city-seo-company",
+  "ybor city": "/lawyer-seo-agency-tampa",
+  "channelside": "/lawyer-seo-agency-tampa",
+  "hyde park": "/lawyer-seo-agency-tampa",
+  "south tampa": "/lawyer-seo-agency-tampa",
+  "seminole heights": "/lawyer-seo-agency-tampa",
+  "tampa heights": "/lawyer-seo-agency-tampa",
+  "west tampa": "/lawyer-seo-agency-tampa",
+  "east tampa": "/lawyer-seo-agency-tampa",
+  "new tampa": "/lawyer-seo-agency-tampa",
+  "harbour island": "/lawyer-seo-agency-tampa",
+  "davis islands": "/lawyer-seo-agency-tampa",
+  "ballast point": "/lawyer-seo-agency-tampa",
+  "bayshore beautiful": "/lawyer-seo-agency-tampa",
+  "beach park": "/lawyer-seo-agency-tampa",
+  "palma ceia": "/lawyer-seo-agency-tampa",
+  "westchase": "/seo-company-wesley-chapel",
+  "carrollwood": "/seo-company-wesley-chapel",
+  "university square": "/seo-company-wesley-chapel",
+  "tampa palms": "/seo-company-wesley-chapel",
+  "rocky point": "/lawyer-seo-agency-tampa",
+
+  // Industries / Practice Areas
+  "legal": "/local-seo-for-lawyers-florida",
+  "law": "/local-seo-for-lawyers-florida",
+  "lawyers": "/local-seo-for-lawyers-florida",
+  "attorney": "/local-seo-for-lawyers-florida",
+  "legal & compliance": "/local-seo-for-lawyers-florida",
+  "legal services & law firms": "/local-seo-for-lawyers-florida",
+  "legal & professional services": "/local-seo-for-lawyers-florida",
+  "personal injury law": "/lawyer-seo-agency-tampa",
+  "family law": "/lawyer-seo-agency-tampa",
+  "criminal defense": "/lawyer-seo-agency-tampa",
+  "immigration law": "/local-seo-for-lawyers-florida",
+  "divorce law": "/lawyer-seo-agency-tampa",
+  "estate planning and probate": "/law-firm-seo-fort-myers",
+  "business and corporate law": "/orlando-law-firm-seo-agency",
+  "employment law": "/local-seo-for-lawyers-florida",
+  "real estate law": "/real-estate-seo-services-in-florida",
+  "bankruptcy law": "/lawyer-seo-agency-tampa",
+  "civil litigation": "/lawyer-seo-agency-tampa",
+  "medical malpractice": "/lawyer-seo-agency-tampa",
+  "social security disability": "/local-seo-for-lawyers-florida",
+  "workers compensation": "/lawyer-seo-agency-tampa",
+
+  "dental": "/seo-services-for-dentists-in-tampa",
+  "dental clinics": "/seo-services-for-dentists-in-tampa",
+  "healthcare & medical practices": "/seo-services-for-dentists-in-tampa",
+  "chiropractic centers": "/seo-services-for-dentists-in-tampa",
+  "fitness & weight loss clinics": "/seo-services-for-dentists-in-tampa",
+
+  "real estate": "/real-estate-seo-services-in-florida",
+  "real estate agencies": "/real-estate-seo-services-in-florida",
+  "real estate & property management": "/real-estate-seo-services-in-florida",
+  "real estate & property": "/real-estate-seo-services-in-florida",
+  "property & hospitality": "/real-estate-seo-services-in-florida",
+
+  "small business": "/seo-services-for-small-businesses-in-florida",
+  "small businesses": "/seo-services-for-small-businesses-in-florida",
+  "local business": "/seo-services-for-small-businesses-in-florida",
+  "local businesses": "/seo-services-for-small-businesses-in-florida",
+  "retail & e-commerce with physical presence": "/seo-services-for-small-businesses-in-florida",
+  "retail & consumer": "/seo-services-for-small-businesses-in-florida",
+  "retail & hospitality": "/seo-services-for-small-businesses-in-florida",
+  "b2b & franchise": "/seo-services-for-small-businesses-in-florida",
+  "b2b & technology": "/seo-services-for-small-businesses-in-florida",
+  "b2b & consumer brands": "/seo-services-for-small-businesses-in-florida",
+  "travel and hospitality businesses": "/seo-services-for-small-businesses-in-florida",
+  "accountants & tax professionals (cpa firms)": "/seo-services-for-small-businesses-in-florida",
+  "bookkeepers & payroll services": "/seo-services-for-small-businesses-in-florida",
+  "financial services": "/seo-services-for-small-businesses-in-florida",
+  "it, web design & digital agencies (b2b)": "/seo-services-for-small-businesses-in-florida",
+  "franchise locations (multi-location seo)": "/seo-services-for-small-businesses-in-florida",
+};
+
+const getInternalRoute = (name: any, defaultRoute: string = "/seo-services-for-small-businesses-in-florida"): string => {
+  if (!name) return defaultRoute;
+  const str = typeof name === "string" ? name : (name.name || String(name));
+  const lower = str.toLowerCase().trim();
+  if (internalRouteMap[lower]) return internalRouteMap[lower];
+
+  for (const key of Object.keys(internalRouteMap)) {
+    if (lower.includes(key) || key.includes(lower)) {
+      return internalRouteMap[key];
+    }
+  }
+  return defaultRoute;
+};
 
 export default function ServiceAreasSection() {
   return (
@@ -47,13 +196,22 @@ export default function ServiceAreasSection() {
         {/* Header */}
         <div className="mx-auto max-w-[1100px] text-center">
           <h2 className="text-[38px] font-bold leading-[1.1] text-black md:text-[52px]">
-            Industries and Cities{" "}
-            <span className="text-[#FF6F00]">We Serve</span>
+            Serving Businesses Across{" "}
+            <span className="text-[#FF6F00]">
+              Dunedin,
+              <br className="hidden md:block" />
+              Florida,
+            </span>{" "}
+            and Surrounding Areas
           </h2>
+
+          <p className="mx-auto mt-8 max-w-[1000px] text-[16px] leading-8 text-black/70 md:text-[20px]">
+            Bayshore Communication proudly serves businesses throughout Dunedin, Florida, and the wider Pinellas County region. As a dedicated seo company dunedin every geo-targeted campaign we build is shaped around where your customers are located and how they search for businesses like yours.
+          </p>
         </div>
 
-        {/* Content Grid */}
-        <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-[1fr_1.2fr]">
+        {/* Content */}
+        <div className="mt-12 grid gap-8 lg:mt-20 lg:grid-cols-[1fr_1fr]">
           {/* Left Card */}
           <div
             className="
@@ -70,59 +228,29 @@ export default function ServiceAreasSection() {
               <BriefcaseBusiness size={32} className="text-[#FF6F00]" />
 
               <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Industries We Work With
+                Industries We Serve
               </h3>
             </div>
 
             <div className="mt-10 flex flex-wrap gap-3">
-              {industries.map((item) =>
-                item.href ? (
-                  <Link
-                    key={item.name}
-                    href={item.href}
-                    className="
-                      rounded-full
-                      border
-                      border-black/10
-                      bg-white
-                      px-5
-                      py-3
-                      text-[15px]
-                      font-medium
-                      text-[#081B4B]
-                      transition-all
-                      duration-300
-                      hover:border-[#FF6F00]
-                      hover:bg-[#FFF8F3]
-                      hover:text-[#FF6F00]
-                    "
-                  >
-                    {item.name}
-                  </Link>
-                ) : (
-                  <span
-                    key={item.name}
-                    className="
-                      rounded-full
-                      border
-                      border-black/10
-                      bg-white
-                      px-5
-                      py-3
-                      text-[15px]
-                      font-medium
-                      text-[#081B4B]
-                      transition-all
-                      duration-300
-                      hover:border-[#FF6F00]
-                      hover:bg-[#FFF8F3]
-                      hover:text-[#FF6F00]
-                    "
-                  >
-                    {item.name}
-                  </span>
-                )
-              )}
+              {industries.map((item) => (
+                <Link key={item} href={getInternalRoute(item)} className="
+                    rounded-full
+                    border
+                    border-black/10
+                    bg-white
+                    px-4
+                    py-3
+                    text-[14px]
+                    font-medium
+                    text-[#081B4B]
+                    transition-all
+                    duration-300
+                    hover:border-[#FF6F00]
+                    hover:bg-[#FFF8F3]
+                    hover:text-[#FF6F00]
+                  ">{item}</Link>
+              ))}
             </div>
           </div>
 
@@ -141,90 +269,44 @@ export default function ServiceAreasSection() {
             <div className="flex items-center gap-4">
               <MapPin size={30} className="text-[#FF6F00]" />
 
-              <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[38px]">
-                Statewide Florida Coverage
+              <h3 className="text-[24px] font-bold text-[#081B4B] md:text-[30px] lg:text-[32px] xl:text-[38px]">
+                Dunedin Neighborhoods and Surrounding Areas We Serve
               </h3>
             </div>
 
-            <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-3">
-              {floridaCities.map((city) =>
-                city.href ? (
-                  <Link
-                    key={city.name}
-                    href={city.href}
+            <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2">
+              {communities.map((community, index) => (
+                <Link key={getSeoLocationName(community, index)} href={getInternalRoute(community)} className="
+                    group
+                    flex
+                    items-center
+                    gap-3
+                    rounded-[16px]
+                    border
+                    border-black/10
+                    bg-white
+                    px-5
+                    py-4
+                    transition-all
+                    duration-300
+                    hover:-translate-y-1
+                    hover:border-[#FF6F00]
+                    hover:bg-[#FFF8F3]
+                    hover:shadow-[0_12px_30px_rgba(255,111,0,0.12)]
+                  ">
+                  <MapPin
+                    size={18}
                     className="
-                      group
-                      flex
-                      items-center
-                      gap-2.5
-                      rounded-[16px]
-                      border
-                      border-black/10
-                      bg-white
-                      px-4
-                      py-3
-                      transition-all
+                      text-[#FF6F00]
+                      transition-transform
                       duration-300
-                      hover:-translate-y-0.5
-                      hover:border-[#FF6F00]
-                      hover:bg-[#FFF8F3]
-                      hover:shadow-[0_8px_20px_rgba(255,111,0,0.12)]
+                      group-hover:scale-110
                     "
-                  >
-                    <MapPin
-                      size={16}
-                      className="
-                        shrink-0
-                        text-[#FF6F00]
-                        transition-transform
-                        duration-300
-                        group-hover:scale-110
-                      "
-                    />
+                  />
 
-                    <span className="text-[14px] font-medium text-[#081B4B] transition-colors group-hover:text-[#FF6F00]">
-                      {city.name}
-                    </span>
-                  </Link>
-                ) : (
-                  <div
-                    key={city.name}
-                    className="
-                      group
-                      flex
-                      items-center
-                      gap-2.5
-                      rounded-[16px]
-                      border
-                      border-black/10
-                      bg-white
-                      px-4
-                      py-3
-                      transition-all
-                      duration-300
-                      hover:-translate-y-0.5
-                      hover:border-[#FF6F00]
-                      hover:bg-[#FFF8F3]
-                      hover:shadow-[0_8px_20px_rgba(255,111,0,0.12)]
-                    "
-                  >
-                    <MapPin
-                      size={16}
-                      className="
-                        shrink-0
-                        text-[#FF6F00]
-                        transition-transform
-                        duration-300
-                        group-hover:scale-110
-                      "
-                    />
-
-                    <span className="text-[14px] font-medium text-[#081B4B]">
-                      {city.name}
-                    </span>
-                  </div>
-                )
-              )}
+                  <span className="font-medium text-[#081B4B]">{getSeoLocationName(community, index)}</span>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
