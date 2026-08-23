@@ -66,8 +66,8 @@ const getSeoLocationName = (location: string, index: number) => {
 
 
 
-const internalRouteMap: Record<string, string> = {
-  // Exact Location Routes
+const strictRouteMap: Record<string, string> = {
+  // 100% Accurate Location Matches ONLY
   "wesley chapel": "/seo-company-wesley-chapel",
   "spring hill": "/seo-company-spring-hill",
   "brandon": "/brandon-seo-company",
@@ -79,142 +79,50 @@ const internalRouteMap: Record<string, string> = {
   "naples": "/local-seo-services-for-small-business-naples-florida",
   "tampa": "/lawyer-seo-agency-tampa",
 
-  // Neighboring / Sub-area matches
-  "clearwater": "/seo-company-largo-fl",
-  "st. petersburg": "/seo-company-dunedin",
-  "st petersburg": "/seo-company-dunedin",
-  "palm harbor": "/seo-company-dunedin",
-  "pinellas park": "/seo-company-largo-fl",
-  "riverview": "/brandon-seo-company",
-  "fishhawk ranch": "/brandon-seo-company",
-  "valrico": "/brandon-seo-company",
-  "lutz": "/seo-company-wesley-chapel",
-  "land o lakes": "/seo-company-wesley-chapel",
-  "westchase": "/seo-company-wesley-chapel",
-  "carrollwood": "/seo-company-wesley-chapel",
-
-  // Statewide Florida cities
-  "miami": "/local-seo-for-lawyers-florida",
-  "jacksonville": "/seo-services-for-small-businesses-in-florida",
-  "fort lauderdale": "/local-seo-for-lawyers-florida",
-  "west palm beach": "/real-estate-seo-services-in-florida",
-  "boca raton": "/local-seo-for-lawyers-florida",
-  "tallahassee": "/local-seo-for-lawyers-florida",
-  "gainesville": "/seo-services-for-small-businesses-in-florida",
-  "pensacola": "/seo-services-for-small-businesses-in-florida",
-  "daytona beach": "/real-estate-seo-services-in-florida",
-  "cape coral": "/law-firm-seo-fort-myers",
-  "port st. lucie": "/seo-services-for-small-businesses-in-florida",
-  "kissimmee": "/orlando-law-firm-seo-agency",
-  "lakeland": "/plant-city-seo-company",
-  "ocala": "/seo-services-for-small-businesses-in-florida",
-  "polk county": "/plant-city-seo-company",
-
-  // Tampa Sub-neighborhoods
-  "downtown tampa": "/lawyer-seo-agency-tampa",
-  "ybor city": "/lawyer-seo-agency-tampa",
-  "channelside": "/lawyer-seo-agency-tampa",
-  "hyde park": "/lawyer-seo-agency-tampa",
-  "south tampa": "/lawyer-seo-agency-tampa",
-  "seminole heights": "/lawyer-seo-agency-tampa",
-  "tampa heights": "/lawyer-seo-agency-tampa",
-  "west tampa": "/lawyer-seo-agency-tampa",
-  "east tampa": "/lawyer-seo-agency-tampa",
-  "new tampa": "/lawyer-seo-agency-tampa",
-  "harbour island": "/lawyer-seo-agency-tampa",
-  "davis islands": "/lawyer-seo-agency-tampa",
-  "ballast point": "/lawyer-seo-agency-tampa",
-  "bayshore beautiful": "/lawyer-seo-agency-tampa",
-  "beach park": "/lawyer-seo-agency-tampa",
-  "palma ceia": "/lawyer-seo-agency-tampa",
-  "university square": "/seo-services-for-dentists-in-tampa",
-  "tampa palms": "/seo-services-for-dentists-in-tampa",
-  "rocky point": "/lawyer-seo-agency-tampa",
-
-  // Industries / Practice Areas
-  "legal": "/local-seo-for-lawyers-florida",
-  "law": "/local-seo-for-lawyers-florida",
-  "lawyers": "/local-seo-for-lawyers-florida",
-  "attorney": "/local-seo-for-lawyers-florida",
-  "legal & compliance": "/local-seo-for-lawyers-florida",
-  "legal services & law firms": "/local-seo-for-lawyers-florida",
-  "legal & professional services": "/local-seo-for-lawyers-florida",
-  "practice areas & industries": "/local-seo-for-lawyers-florida",
-  "personal injury law": "/lawyer-seo-agency-tampa",
-  "personal injury attorneys": "/lawyer-seo-agency-tampa",
-  "family law": "/lawyer-seo-agency-tampa",
-  "criminal defense": "/lawyer-seo-agency-tampa",
-  "criminal defense lawyers": "/lawyer-seo-agency-tampa",
-  "immigration law": "/local-seo-for-lawyers-florida",
-  "immigration & family law firms": "/local-seo-for-lawyers-florida",
-  "property damage & estate attorneys": "/law-firm-seo-fort-myers",
-  "divorce law": "/lawyer-seo-agency-tampa",
-  "estate planning and probate": "/law-firm-seo-fort-myers",
-  "business and corporate law": "/orlando-law-firm-seo-agency",
-  "employment law": "/local-seo-for-lawyers-florida",
-  "real estate law": "/real-estate-seo-services-in-florida",
-  "bankruptcy law": "/lawyer-seo-agency-tampa",
-  "civil litigation": "/lawyer-seo-agency-tampa",
-  "medical malpractice": "/lawyer-seo-agency-tampa",
-  "social security disability": "/local-seo-for-lawyers-florida",
-  "workers compensation": "/lawyer-seo-agency-tampa",
-
-  "dental": "/seo-services-for-dentists-in-tampa",
+  // 100% Accurate Industry Matches ONLY
   "dental clinics": "/seo-services-for-dentists-in-tampa",
   "dental and orthodontic offices": "/seo-services-for-dentists-in-tampa",
-  "healthcare & medical practices": "/seo-services-for-dentists-in-tampa",
-  "medical practices and healthcare providers": "/seo-services-for-dentists-in-tampa",
-  "chiropractic centers": "/seo-services-for-dentists-in-tampa",
-  "fitness & weight loss clinics": "/seo-services-for-dentists-in-tampa",
-  "fitness studios and wellness providers": "/seo-services-for-dentists-in-tampa",
-  "weight loss clinics": "/seo-services-for-dentists-in-tampa",
+  "dental": "/seo-services-for-dentists-in-tampa",
 
-  "real estate": "/real-estate-seo-services-in-florida",
   "real estate agencies": "/real-estate-seo-services-in-florida",
-  "real estate agents and brokerages": "/real-estate-seo-services-in-florida",
-  "property management companies": "/real-estate-seo-services-in-florida",
   "real estate & property management": "/real-estate-seo-services-in-florida",
+  "real estate agents and brokerages": "/real-estate-seo-services-in-florida",
+  "real estate law": "/real-estate-seo-services-in-florida",
   "real estate & property": "/real-estate-seo-services-in-florida",
-  "property & hospitality": "/real-estate-seo-services-in-florida",
+  "real estate": "/real-estate-seo-services-in-florida",
 
-  "small business": "/seo-services-for-small-businesses-in-florida",
   "small businesses": "/seo-services-for-small-businesses-in-florida",
-  "local business": "/seo-services-for-small-businesses-in-florida",
+  "small business": "/seo-services-for-small-businesses-in-florida",
   "local businesses": "/seo-services-for-small-businesses-in-florida",
-  "retail & e-commerce with physical presence": "/seo-services-for-small-businesses-in-florida",
-  "retail shops with storefronts": "/seo-services-for-small-businesses-in-florida",
-  "e-commerce brands with physical locations": "/seo-services-for-small-businesses-in-florida",
-  "retail & consumer": "/seo-services-for-small-businesses-in-florida",
-  "retail & hospitality": "/seo-services-for-small-businesses-in-florida",
-  "b2b & franchise": "/seo-services-for-small-businesses-in-florida",
-  "b2b & technology": "/seo-services-for-small-businesses-in-florida",
-  "it & technology companies (b2b)": "/seo-services-for-small-businesses-in-florida",
-  "b2b & consumer brands": "/seo-services-for-small-businesses-in-florida",
-  "travel and hospitality businesses": "/seo-services-for-small-businesses-in-florida",
-  "hotels & vacation rentals": "/seo-services-for-small-businesses-in-florida",
-  "tour operators & travel agencies": "/seo-services-for-small-businesses-in-florida",
-  "cpa firms & tax professionals": "/seo-services-for-small-businesses-in-florida",
-  "accountants & tax professionals (cpa firms)": "/seo-services-for-small-businesses-in-florida",
-  "bookkeepers & payroll services": "/seo-services-for-small-businesses-in-florida",
-  "financial services": "/seo-services-for-small-businesses-in-florida",
-  "financial advisors & planners": "/seo-services-for-small-businesses-in-florida",
-  "insurance brokers & agencies": "/seo-services-for-small-businesses-in-florida",
-  "it, web design & digital agencies (b2b)": "/seo-services-for-small-businesses-in-florida",
-  "franchise locations (multi-location seo)": "/seo-services-for-small-businesses-in-florida",
+
+  "legal services & law firms": "/local-seo-for-lawyers-florida",
+  "legal services": "/local-seo-for-lawyers-florida",
+  "law firms": "/local-seo-for-lawyers-florida",
+  "lawyers": "/local-seo-for-lawyers-florida",
+  "legal & compliance": "/local-seo-for-lawyers-florida",
+  "personal injury attorneys": "/lawyer-seo-agency-tampa",
+  "criminal defense lawyers": "/lawyer-seo-agency-tampa",
+  "immigration & family law firms": "/local-seo-for-lawyers-florida",
+  "property damage & estate attorneys": "/law-firm-seo-fort-myers",
 };
 
-const getInternalRoute = (name: any, defaultRoute: string = "/seo-services-for-small-businesses-in-florida"): string => {
-  if (!name) return defaultRoute;
+const getInternalRoute = (name: any): string | undefined => {
+  if (!name) return undefined;
   const str = typeof name === "string" ? name : (name.name || String(name));
   const lower = str.toLowerCase().trim();
-  if (internalRouteMap[lower]) return internalRouteMap[lower];
 
-  for (const key of Object.keys(internalRouteMap)) {
-    if (lower.includes(key) || key.includes(lower)) {
-      return internalRouteMap[key];
+  // 1. Direct exact key match
+  if (strictRouteMap[lower]) return strictRouteMap[lower];
+
+  // 2. Check key phrase inclusion
+  for (const key of Object.keys(strictRouteMap)) {
+    if (lower.includes(key)) {
+      return strictRouteMap[key];
     }
   }
-  return defaultRoute;
+
+  // Return undefined for items without 100% accurate match
+  return undefined;
 };
 
 export default function ServiceAreasSection() {
@@ -223,7 +131,7 @@ export default function ServiceAreasSection() {
 
   const getUniqueLink = (itemName: any): string | null => {
     const route = getInternalRoute(itemName);
-    if (!route || route === currentPath || linkedRoutes.has(route)) {
+    if (!route || linkedRoutes.has(route)) {
       return null;
     }
     linkedRoutes.add(route);
