@@ -139,7 +139,7 @@ const schemaData = {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.bayshorecommunication.com",
+          "item": "https://www.bayshorecommunication.com/",
         },
         {
           "@type": "ListItem",
@@ -179,17 +179,26 @@ const schemaData = {
         "@type": "Thing",
         "name": "Law Firm Website Design Cost",
         "description":
-          "A detailed guide explaining the pricing, key cost drivers, Florida Bar compliance rules, and conversion optimization for law firm website design.",
+          "An overview of the cost of designing and developing a law firm website, including design, development, content, SEO, functionality, hosting, maintenance, and other factors that affect website pricing.",
       },
       "keywords": [
+        "how much does it cost to design a law firm website",
         "law firm website design cost",
-        "how much does a law firm website cost",
-        "florida law firm website design",
+        "law firm website cost",
+        "lawyer website design cost",
         "attorney website design cost",
-        "legal website design pricing",
-        "lawyer website development cost",
-        "florida bar advertising compliance website",
-        "law firm web design agency",
+        "legal website design cost",
+        "law firm web design",
+        "lawyer website design",
+        "attorney website design",
+        "law firm website development",
+        "legal website development",
+        "law firm website pricing",
+        "legal website cost",
+        "law firm SEO",
+        "law firm marketing",
+        "legal marketing",
+        "law firm digital marketing",
       ],
       "author": {
         "@type": "Organization",
@@ -198,7 +207,7 @@ const schemaData = {
       "publisher": {
         "@type": "Organization",
         "name": "Bayshore Communication",
-        "url": "https://www.bayshorecommunication.com",
+        "url": "https://www.bayshorecommunication.com/",
         "logo": {
           "@type": "ImageObject",
           "url":
