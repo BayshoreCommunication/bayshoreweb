@@ -43,6 +43,9 @@ import HowMuchDoesKeywordResearchCostIn2026Blog, {
 import HowMuchDoesItCostToDesignLawFirmWebsiteBlog, {
   howMuchDoesItCostToDesignLawFirmWebsiteBlog,
 } from "./blogs/how-much-does-it-cost-to-design-law-firm-website";
+import WhatIsWebMarketingAndWhyIsItImportantBlog, {
+  whatIsWebMarketingAndWhyIsItImportantBlog,
+} from "./blogs/what-is-web-marketing-and-why-is-it-important";
 
 export const staticBlogs = [
   howExpertiseBasedContentBuildsTrustBlog,
@@ -60,6 +63,7 @@ export const staticBlogs = [
   whatIsOrganicSeoServicesPageOneRankingsBlog,
   howMuchDoesKeywordResearchCostIn2026Blog,
   howMuchDoesItCostToDesignLawFirmWebsiteBlog,
+  whatIsWebMarketingAndWhyIsItImportantBlog,
 ].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
 export const getStaticBlogBySlug = (slug: string) =>
@@ -89,7 +93,10 @@ export const staticBlogComponents = {
     HowMuchDoesKeywordResearchCostIn2026Blog,
   [howMuchDoesItCostToDesignLawFirmWebsiteBlog.slug]:
     HowMuchDoesItCostToDesignLawFirmWebsiteBlog,
+  [whatIsWebMarketingAndWhyIsItImportantBlog.slug]:
+    WhatIsWebMarketingAndWhyIsItImportantBlog,
 };
+
 
 
 
