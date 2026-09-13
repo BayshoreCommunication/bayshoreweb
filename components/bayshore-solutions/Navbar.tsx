@@ -23,10 +23,10 @@ export interface NavItem {
 
 export const DEFAULT_NAV_ITEMS: NavItem[] = [
   { title: "Home", link: "/bayshore-solutions" },
-  { title: "Solutions", link: "/solutions" },
-  { title: "How It Works", link: "/how-it-works" },
-  { title: "Our Talent", link: "/our-talent" },
-  { title: "About", link: "/about" },
+  { title: "Solutions", link: "/bayshore-solutions/solutions" },
+  { title: "How It Works", link: "/bayshore-solutions#how-it-works" },
+  { title: "Our Talent", link: "/bayshore-solutions#our-talent" },
+  { title: "About", link: "/bayshore-solutions#about" },
 ];
 
 export interface NavbarProps {
@@ -150,7 +150,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* CTA Button matching screenshots */}
             <Link
-              href="/contact"
+              href="/bayshore-solutions/get-started"
               className={`text-link group px-6 py-2.5 lg:px-7 lg:py-3 rounded-full font-bold transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg transform active:scale-95 ${
                 theme === "dark"
                   ? "bg-[#FF5500] !text-white hover:bg-[#e04a00] focus:ring-2 focus:ring-[#FF5500]/50"
@@ -293,7 +293,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
 
             <Link
-              href="/contact"
+              href="/bayshore-solutions/get-started"
               onClick={toggleDrawer}
               className={`text-link w-full py-3.5 rounded-full font-bold text-center flex items-center justify-center gap-2 shadow-md ${
                 theme === "dark"

@@ -441,7 +441,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
         {!showAll && (
           <div className="flex justify-center">
             <Link
-              href="/solutions"
+              href="/bayshore-solutions/solutions"
               className={`px-8 py-3.5 rounded-full font-bold text-sm sm:text-base border transition-all duration-300 flex items-center gap-3 shadow-sm hover:shadow-md transform active:scale-98 ${
                 theme === "dark"
                   ? "border-slate-700 text-white hover:bg-white hover:text-[#07192C]"

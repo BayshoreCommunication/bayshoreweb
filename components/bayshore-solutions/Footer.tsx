@@ -85,7 +85,7 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li>
                 <Link
-                  href="/solutions"
+                  href="/bayshore-solutions/solutions"
                   className={`transition-colors ${
                     theme === "dark"
                       ? "!text-white hover:!text-[#FF5500]"
@@ -97,7 +97,7 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li>
                 <Link
-                  href="#how-it-works"
+                  href="/bayshore-solutions#how-it-works"
                   className={`transition-colors ${
                     theme === "dark"
                       ? "!text-white hover:!text-[#FF5500]"
@@ -109,7 +109,7 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li>
                 <Link
-                  href="/talent"
+                  href="/bayshore-solutions#our-talent"
                   className={`transition-colors ${
                     theme === "dark"
                       ? "!text-white hover:!text-[#FF5500]"
@@ -121,7 +121,7 @@ export const Footer: React.FC<FooterProps> = ({
               </li>
               <li>
                 <Link
-                  href="/about"
+                  href="/bayshore-solutions#about"
                   className={`transition-colors ${
                     theme === "dark"
                       ? "!text-white hover:!text-[#FF5500]"
