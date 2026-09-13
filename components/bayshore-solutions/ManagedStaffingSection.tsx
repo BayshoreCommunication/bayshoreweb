@@ -40,6 +40,7 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
 
   return (
     <section
+      id="about"
       className={`relative w-full max-w-full min-h-[640px] sm:min-h-[700px] lg:min-h-[740px] flex items-center overflow-hidden transition-colors duration-300 py-16 sm:py-20 lg:py-24 ${
         theme === "dark"
           ? "bg-[#07192C] text-white"

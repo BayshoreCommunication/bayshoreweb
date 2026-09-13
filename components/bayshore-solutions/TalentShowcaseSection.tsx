@@ -142,6 +142,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
 
   return (
     <section
+      id="our-talent"
       className={`py-16 sm:py-20 lg:py-24 w-full max-w-full overflow-hidden transition-colors duration-300 ${
         theme === "dark" ? "bg-[#07192C] text-white" : "bg-[#F5F7FA] text-[#0C1827]"
       }`}
