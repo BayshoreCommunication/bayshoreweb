@@ -24,19 +24,19 @@ import "~slick-carousel/slick/slick-theme.css"; */
 
 /* Text */
 .text-link {
-  @apply text-[1.6rem] md:text-[1.3rem] lg:text-[1.4rem] text-[#343];
+  @apply text-[1.6rem] md:text-[1.3rem] lg:text-[1.4rem];
 }
 
 .text-small {
-  @apply text-[1.5rem] sm:text-[1.4rem] lg:text-[1.4rem] text-[#343] leading-[1.4] text-center md:text-justify;
+  @apply text-[1.5rem] sm:text-[1.4rem] lg:text-[1.4rem] leading-[1.4] text-center md:text-justify;
 }
 
 .text-xsmall {
-  @apply text-[1.3rem] text-[#343] leading-[1.4] text-center md:text-justify;
+  @apply text-[1.3rem] leading-[1.4] text-center md:text-justify;
 }
 
 .text-base {
-  @apply text-[1.6rem] sm:text-[1.8rem] md:text-[1.6rem] leading-[143%] text-center md:text-justify text-[#343];
+  @apply text-[1.6rem] sm:text-[1.8rem] md:text-[1.6rem] leading-[143%] text-center md:text-justify;
 }
 
 .info-text {
