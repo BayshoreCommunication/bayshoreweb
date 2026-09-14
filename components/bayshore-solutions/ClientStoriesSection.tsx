@@ -42,7 +42,7 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
     id: "cs-1",
     videoUrl: "https://www.youtube.com/watch?v=wjxj_eQzI1M",
     quote: '"BayShore Communication has been a game changer for Carter Injury Law in scaling our online presence."',
-    authorName: "Lindsey Carter",
+    authorName: "David Carter",
     authorTitle: "Owner & Managing Attorney",
     companyName: "CARTER INJURY LAW",
     companyLogo: "/assets/client-logo/carter-injury-law.png",
