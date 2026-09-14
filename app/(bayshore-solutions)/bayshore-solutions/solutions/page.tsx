@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Navbar from "@/components/bayshore-solutions/Navbar";
+import { SolutionsBreadcrumb } from "@/components/bayshore-solutions/SolutionsBreadcrumb";
 import { SolutionsSection } from "@/components/bayshore-solutions/SolutionsSection";
 import { Footer } from "@/components/bayshore-solutions/Footer";
 
@@ -19,6 +20,9 @@ export default function BayshoreSolutionsGridPage() {
         defaultTheme={currentTheme}
         onThemeChange={(theme) => setCurrentTheme(theme)}
       />
+
+      {/* Solutions Breadcrumb Banner */}
+      <SolutionsBreadcrumb theme={currentTheme} />
 
       {/* Solutions Section displaying all 18 Solution Cards Grid */}
       <SolutionsSection theme={currentTheme} showAll={true} />

@@ -9,3 +9,4 @@ export * from "./ClientStoriesSection";
 export * from "./FaqSection";
 export * from "./Footer";
 export * from "./MultiStepHiringForm";
+export * from "./SolutionsBreadcrumb";

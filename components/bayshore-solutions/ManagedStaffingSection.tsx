@@ -47,9 +47,9 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
           : "bg-[#F5F7FA] text-[#0C1827]"
       }`}
     >
-      {/* BACKGROUND IMAGE & BLUR FADE LAYERS (Desktop Only) */}
+      {/* BACKGROUND IMAGE & GRADIENT BLEND LAYERS (Desktop Only) */}
       <div className="hidden lg:block absolute inset-0 pointer-events-none z-0 overflow-hidden">
-        {/* Right Side Image Area (Positioned without zoom distortion) */}
+        {/* Right Side Image Area */}
         <div className="absolute right-0 top-0 bottom-0 w-full lg:w-[62%] xl:w-[58%] h-full z-0">
           {!imgError ? (
             <div className="relative w-full h-full">
@@ -63,9 +63,9 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
                 }`}
                 onError={() => setImgError(true)}
               />
-              {/* Left Edge Gradient Fade over Image to merge smoothly with Left Content Area */}
+              {/* Smooth Left Edge Color Fade over Image */}
               <div
-                className={`absolute inset-y-0 left-0 w-52 xl:w-72 pointer-events-none backdrop-blur-[6px] transition-colors duration-300 ${
+                className={`absolute inset-y-0 left-0 w-72 xl:w-96 pointer-events-none transition-colors duration-300 ${
                   theme === "dark"
                     ? "bg-gradient-to-r from-[#07192C] via-[#07192C]/80 to-transparent"
                     : "bg-gradient-to-r from-[#F5F7FA] via-[#F5F7FA]/80 to-transparent"
@@ -90,12 +90,12 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
           }`}
         />
 
-        {/* Dedicated Middle Backdrop Blur Overlay Band */}
+        {/* Smooth Seamless Middle Transition Fade Overlay */}
         <div
-          className={`absolute inset-y-0 left-[38%] xl:left-[42%] w-[24%] pointer-events-none z-[2] backdrop-blur-[6px] ${
+          className={`absolute inset-y-0 left-[40%] xl:left-[44%] w-[20%] pointer-events-none z-[2] transition-colors duration-300 ${
             theme === "dark"
-              ? "bg-gradient-to-r from-transparent via-[#07192C]/60 to-transparent"
-              : "bg-gradient-to-r from-transparent via-[#F5F7FA]/75 to-transparent"
+              ? "bg-gradient-to-r from-[#07192C] via-[#07192C]/40 to-transparent"
+              : "bg-gradient-to-r from-[#F5F7FA] via-[#F5F7FA]/40 to-transparent"
           }`}
         />
       </div>
