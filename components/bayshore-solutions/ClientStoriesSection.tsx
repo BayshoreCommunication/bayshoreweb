@@ -50,7 +50,7 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
   {
     id: "cs-2",
     videoUrl: "https://www.youtube.com/watch?v=RVit6poGLRs",
-    quote: '"Working with Bayshore transformed our digital strategy and brought measurable growth to our practice. "',
+    quote: '"Working with Bayshore transformed our digital strategy and brought measurable growth to our practice."',
     authorName: "Hardam Tripathi",
     authorTitle: "Founder & Immigration Attorney",
     companyName: "TRIP LAW FIRM",
