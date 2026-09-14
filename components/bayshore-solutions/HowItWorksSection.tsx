@@ -172,7 +172,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             {titleTag}
           </span>
           <h2
-            className={`text-3xl sm:text-5xl lg:text-[54px] xl:text-[60px] font-extrabold tracking-tight leading-[1.18] mb-6 sm:mb-7 lg:whitespace-nowrap ${
+            className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[54px] xl:text-[60px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.18] mb-4 sm:mb-6 text-left !text-left ${
               theme === "dark" ? "!text-white" : "!text-black"
             }`}
           >
@@ -182,7 +182,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             </span>
           </h2>
           <p
-            className={`text-lg sm:text-xl lg:text-[22px] font-semibold ${
+            className={`text-lg sm:text-xl lg:text-[22px] font-semibold text-left !text-left w-full max-w-3xl ${
               theme === "dark" ? "!text-slate-200" : "!text-black opacity-90"
             }`}
           >

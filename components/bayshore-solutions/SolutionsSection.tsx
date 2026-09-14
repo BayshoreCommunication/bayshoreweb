@@ -306,15 +306,15 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
         {/* Section Header Top Area */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 sm:mb-16">
           {/* Left Header Titles */}
-          <div className="max-w-4xl xl:max-w-5xl">
+          <div className="max-w-4xl xl:max-w-5xl text-left !text-left items-start">
             <span
-              className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em] mb-3 ${
+              className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em] mb-3 text-left !text-left ${
                 theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
               }`}
             >
               OUR SOLUTIONS
             </span>
-            <h2 className={`text-3xl sm:text-4xl lg:text-[46px] xl:text-[54px] font-extrabold tracking-tight leading-tight mb-6 sm:mb-8 lg:whitespace-nowrap ${
+            <h2 className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[46px] xl:text-[54px] font-extrabold tracking-tight leading-[1.12] sm:leading-tight mb-4 sm:mb-6 text-left !text-left ${
               theme === "dark" ? "!text-white" : "!text-[#0C1827]"
             }`}>
               Specialized Talent for{" "}
@@ -323,7 +323,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
               </span>
             </h2>
             <p
-              className={`text-base sm:text-lg lg:text-[20px] leading-relaxed font-medium ${
+              className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed font-medium text-left !text-left w-full ${
                 theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
               }`}
             >
@@ -366,12 +366,12 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
           </div>
         </div>
 
-        {/* 6 or 18 Solution Cards Responsive Grid (6 columns on lg screens) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5 xl:gap-6 mb-12 sm:mb-16">
+        {/* 6 or 18 Solution Cards Responsive Grid (2 columns on mobile, 6 columns on lg screens) */}
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-5 xl:gap-6 mb-12 sm:mb-16">
           {displaySolutions.map((card) => (
             <div
               key={card.id}
-              className={`rounded-[28px] p-6 sm:p-7 flex flex-col justify-between h-full transition-all duration-300 transform hover:-translate-y-1.5 ${
+              className={`rounded-2xl sm:rounded-[28px] p-4 sm:p-7 flex flex-col justify-between h-full transition-all duration-300 transform hover:-translate-y-1.5 ${
                 theme === "dark"
                   ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-slate-700 shadow-lg shadow-black/30 !text-white"
                   : "bg-[#F3F6FA] border border-slate-200/60 hover:border-slate-300 shadow-sm hover:shadow-md !text-[#0C1827]"

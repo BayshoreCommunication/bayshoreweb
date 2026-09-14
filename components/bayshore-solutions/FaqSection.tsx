@@ -87,7 +87,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
               {titleTag}
             </span>
             <h2
-              className={`text-3xl sm:text-5xl lg:text-[54px] xl:text-[60px] font-extrabold tracking-tight leading-[1.2] mb-6 sm:mb-7 ${
+              className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[54px] xl:text-[60px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.2] mb-4 sm:mb-6 text-left !text-left ${
                 theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}
             >
@@ -97,7 +97,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
               </span>
             </h2>
             <p
-              className={`text-base sm:text-lg lg:text-[20px] font-medium leading-relaxed text-left ${
+              className={`text-lg sm:text-xl lg:text-[22px] font-medium leading-relaxed text-left !text-left w-full ${
                 theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
               }`}
             >

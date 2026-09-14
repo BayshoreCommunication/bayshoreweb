@@ -157,7 +157,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
           >
             MEET THE TALENT
           </span>
-          <h2 className={`text-3xl sm:text-4xl lg:text-[46px] xl:text-[54px] font-extrabold tracking-tight leading-[1.25] mb-6 sm:mb-8 lg:whitespace-nowrap ${
+          <h2 className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[46px] xl:text-[54px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.25] mb-4 sm:mb-6 text-left !text-left ${
             theme === "dark" ? "!text-white" : "!text-[#0C1827]"
           }`}>
             Real Talent. Ready for{" "}
@@ -166,7 +166,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
             </span>
           </h2>
           <p
-            className={`text-base sm:text-lg lg:text-[20px] leading-relaxed font-medium max-w-3xl text-left ${
+            className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed font-medium max-w-3xl text-left !text-left w-full ${
               theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
             }`}
           >
@@ -334,7 +334,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
               </span>
 
               <h2
-                className={`text-3xl sm:text-4xl lg:text-[46px] xl:text-[52px] font-extrabold tracking-tight leading-tight mb-6 sm:mb-7 lg:whitespace-nowrap ${
+                className={`text-[36px] xs:text-[40px] sm:text-4xl lg:text-[46px] xl:text-[52px] font-extrabold tracking-tight leading-tight mb-6 sm:mb-7 lg:whitespace-nowrap ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}
               >
@@ -345,7 +345,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
               </h2>
 
               <p
-                className={`text-base sm:text-lg lg:text-[19px] font-medium leading-relaxed mb-8 max-w-xl text-left ${
+                className={`text-lg sm:text-xl lg:text-[19px] font-medium leading-relaxed mb-8 max-w-xl text-left !text-left w-full ${
                   theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                 }`}
               >

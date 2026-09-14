@@ -206,7 +206,7 @@ export const Footer: React.FC<FooterProps> = ({
 
               {/* YouTube */}
               <a
-                href="https://youtube.com"
+                href="https://www.youtube.com/@bayshorecommunication"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"

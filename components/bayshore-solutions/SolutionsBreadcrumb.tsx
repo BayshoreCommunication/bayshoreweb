@@ -101,10 +101,10 @@ export const SolutionsBreadcrumb: React.FC<SolutionsBreadcrumbProps> = ({
 
       {/* FOREGROUND CONTENT CONTAINER */}
       <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px] relative z-10 w-full py-12 sm:py-16">
-        <div className="w-full lg:w-[52%] xl:w-[48%] flex flex-col justify-center">
+        <div className="w-full lg:w-[52%] xl:w-[48%] flex flex-col justify-center items-start text-left">
           {/* Main Title with Serif Styling matching design */}
           <h1
-            className={`text-4xl sm:text-5xl lg:text-[64px] font-serif font-bold tracking-tight leading-[1.1] mb-4 sm:mb-6 ${
+            className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[64px] font-serif font-bold tracking-tight leading-[1.1] mb-4 sm:mb-6 text-left !text-left ${
               theme === "dark" ? "!text-white" : "!text-[#0C1827]"
             }`}
           >
@@ -113,7 +113,7 @@ export const SolutionsBreadcrumb: React.FC<SolutionsBreadcrumbProps> = ({
 
           {/* Subtitle Paragraph */}
           <p
-            className={`text-base sm:text-lg lg:text-[19px] leading-relaxed mb-8 font-medium max-w-xl ${
+            className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-8 font-medium max-w-xl text-left !text-left w-full ${
               theme === "dark" ? "!text-slate-300" : "!text-[#475569]"
             }`}
           >

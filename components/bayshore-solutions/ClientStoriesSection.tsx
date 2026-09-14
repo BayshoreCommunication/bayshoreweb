@@ -93,12 +93,12 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
               {titleTag}
             </span>
             <h2
-              className={`text-3xl sm:text-4xl lg:text-[44px] xl:text-[48px] font-extrabold tracking-tight leading-[1.28] sm:leading-[1.24] mb-6 sm:mb-8 ${
+              className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[44px] xl:text-[48px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.24] mb-4 sm:mb-6 text-left !text-left ${
                 theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}
             >
-              <span className="block whitespace-nowrap mb-2.5 sm:mb-3">Don&apos;t Take Our Word for It.</span>
-              <span className="block whitespace-nowrap">
+              <span className="block mb-2 sm:mb-2.5">Don&apos;t Take Our Word for It.</span>
+              <span className="block">
                 Hear It From{" "}
                 <span className={theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}>
                   {headlineHighlight}
@@ -106,7 +106,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
               </span>
             </h2>
             <p
-              className={`text-base sm:text-lg lg:text-[19px] font-medium leading-relaxed max-w-3xl xl:max-w-4xl ${
+              className={`text-lg sm:text-xl lg:text-[22px] font-medium leading-relaxed text-left !text-left w-full max-w-3xl xl:max-w-4xl ${
                 theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
               }`}
             >

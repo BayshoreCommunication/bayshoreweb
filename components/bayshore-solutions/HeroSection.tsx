@@ -199,7 +199,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </span>
 
             {/* Headline with enlarged typography on mobile & desktop */}
-            <h1 className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[72px] xl:text-[82px] font-extrabold tracking-tight leading-[1.08] sm:leading-[1.04] mb-6 ${
+            <h1 className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[72px] xl:text-[82px] font-extrabold tracking-tight leading-[1.08] sm:leading-[1.04] mb-6 text-left !text-left ${
               theme === "dark" ? "!text-white" : "!text-[#0C1827]"
             }`}>
               Great Talent
@@ -211,7 +211,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Subtitle Paragraph */}
             <p
-              className={`text-lg sm:text-xl lg:text-[20px] xl:text-[21px] max-w-2xl leading-relaxed mb-8 sm:mb-10 font-medium ${
+              className={`text-lg sm:text-xl lg:text-[20px] xl:text-[21px] max-w-2xl leading-relaxed mb-8 sm:mb-10 font-medium text-left !text-left w-full ${
                 theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
               }`}
             >
