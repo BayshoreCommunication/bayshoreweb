@@ -16,8 +16,18 @@ const nextConfig = {
   // },
   images: {
     unoptimized: true,
-    domains: ["cdn-icons-png.flaticon.com"],
+    domains: ["cdn-icons-png.flaticon.com", "img.youtube.com", "i.ytimg.com"],
     remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "img.youtube.com",
+        port: "",
+      },
+      {
+        protocol: "https",
+        hostname: "i.ytimg.com",
+        port: "",
+      },
       {
         protocol: "https",
         hostname: "picsum.photos",

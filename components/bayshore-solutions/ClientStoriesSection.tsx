@@ -2,17 +2,18 @@
 
 import React, { useState, useRef } from "react";
 import Image from "next/image";
-import { FiPlay, FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import { TbScale } from "react-icons/tb";
+import { FiPlay, FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
 
 export interface ClientStoryItem {
   id: string;
-  thumbnailPath: string;
+  thumbnailPath?: string;
+  videoUrl?: string;
+  youtubeUrl?: string;
   quote: string;
   authorName: string;
   authorTitle: string;
   companyName?: string;
-  videoUrl?: string;
+  companyLogo?: string;
 }
 
 export interface ClientStoriesSectionProps {
@@ -25,30 +26,44 @@ export interface ClientStoriesSectionProps {
   onPlayVideo?: (story: ClientStoryItem) => void;
 }
 
+export function getYouTubeId(url?: string): string {
+  if (!url) return "";
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
+  return match ? match[1] : (url.length === 11 ? url : "");
+}
+
+export function getYouTubeThumbnail(urlOrId?: string): string {
+  const videoId = getYouTubeId(urlOrId);
+  return videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : "";
+}
+
 export const DEFAULT_STORIES: ClientStoryItem[] = [
   {
     id: "cs-1",
-    thumbnailPath: "/assets/bayshore-solutions/home/right.png",
-    quote: '"Our virtual assistant has been a game changer for our firm."',
+    videoUrl: "https://www.youtube.com/watch?v=wjxj_eQzI1M",
+    quote: '"BayShore Communication has been a game changer for Carter Injury Law in scaling our online presence."',
     authorName: "Lindsey Carter",
-    authorTitle: "Owner/Attorney",
-    companyName: "LOPEZ LAW GROUP",
+    authorTitle: "Owner & Managing Attorney",
+    companyName: "CARTER INJURY LAW",
+    companyLogo: "/assets/client-logo/carter-injury-law.png",
   },
   {
     id: "cs-2",
-    thumbnailPath: "/assets/bayshore-solutions/talent/talent-1.png",
-    quote: '"Our virtual assistant has been a game changer for our firm."',
-    authorName: "Lindsey Carter",
-    authorTitle: "Owner/Attorney",
-    companyName: "LOPEZ LAW GROUP",
+    videoUrl: "https://www.youtube.com/watch?v=RVit6poGLRs",
+    quote: '"Working with Bayshore transformed our digital strategy and brought measurable growth to our practice."',
+    authorName: "Hardam Tripathi",
+    authorTitle: "Founder & Immigration Attorney",
+    companyName: "TRIP LAW FIRM",
+    companyLogo: "/assets/client-logo/trip-law.svg",
   },
   {
     id: "cs-3",
-    thumbnailPath: "/assets/bayshore-solutions/talent/talent-4.png",
-    quote: '"Our virtual assistant has been a game changer for our firm."',
-    authorName: "Lindsey Carter",
-    authorTitle: "Owner/Attorney",
-    companyName: "LOPEZ LAW GROUP",
+    videoUrl: "https://www.youtube.com/watch?v=ohyUTzLiLbI",
+    quote: '"Bayshore is the ultimate choice for business development and digital marketing execution."',
+    authorName: "Carlos Rosario",
+    authorTitle: "Tax Professional & Consultant",
+    companyName: "APEX ADVISOR GROUP",
+    companyLogo: "/assets/client-logo/apex.svg",
   },
 ];
 
@@ -61,7 +76,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
   stories = DEFAULT_STORIES,
   onPlayVideo,
 }) => {
-  const [activeStory, setActiveStory] = useState<ClientStoryItem | null>(null);
+  const [playingStoryId, setPlayingStoryId] = useState<string | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const handleScroll = (direction: "left" | "right") => {
@@ -165,85 +180,120 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 overflow-x-auto scrollbar-none py-2 px-1 scroll-smooth"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {stories.map((story) => (
-            <div
-              key={story.id}
-              className={`rounded-[28px] sm:rounded-[32px] overflow-hidden flex flex-col justify-between transition-all duration-300 transform hover:-translate-y-1.5 shadow-sm hover:shadow-md ${
-                theme === "dark"
-                  ? "bg-[#0B1A2D] border-0 border-none !text-white shadow-xl shadow-black/40"
-                  : "bg-white border border-slate-200/90 !text-[#0C1827]"
-              }`}
-            >
-              <div>
-                {/* Photo Thumbnail with Play Button Overlay */}
-                <div className="relative w-full h-[220px] sm:h-[240px] bg-slate-200 dark:bg-slate-800 overflow-hidden group">
-                  <Image
-                    src={story.thumbnailPath}
-                    alt={story.authorName}
-                    fill
-                    className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  />
-                  {/* Dark Vignette Overlay */}
-                  <div className="absolute inset-0 bg-black/25 transition-opacity group-hover:bg-black/35" />
+          {stories.map((story) => {
+            const videoUrl = story.videoUrl || story.youtubeUrl;
+            const videoId = getYouTubeId(videoUrl);
+            const thumbnailSrc =
+              story.thumbnailPath && !story.thumbnailPath.includes("right.png") && !story.thumbnailPath.includes("talent")
+                ? story.thumbnailPath
+                : getYouTubeThumbnail(videoUrl || videoId);
 
-                  {/* Play Button Icon Overlay */}
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setActiveStory(story);
-                      if (onPlayVideo) onPlayVideo(story);
-                    }}
-                    aria-label={`Play Video for ${story.authorName}`}
-                    className="absolute inset-0 m-auto w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#07192C]/85 hover:bg-[#FE6F1F] text-white flex items-center justify-center shadow-lg transition-all duration-300 transform group-hover:scale-110 active:scale-95"
-                  >
-                    <FiPlay className="text-2xl sm:text-3xl ml-1 fill-current" />
-                  </button>
-                </div>
+            const isPlaying = playingStoryId === story.id;
 
-                {/* Card Quote Body */}
-                <div className="p-6 sm:p-7">
-                  <p
-                    className={`text-lg sm:text-[21px] font-extrabold leading-relaxed sm:leading-[1.75] mb-6 font-sans ${
-                      theme === "dark" ? "!text-white" : "!text-[#0C1827]"
-                    }`}
-                  >
-                    {story.quote}
-                  </p>
-
-                  {/* Footer: Author Info & Company Logo Image */}
-                  <div className="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-800">
-                    <div>
-                      <h3
-                        className={`text-lg sm:text-xl xl:text-[22px] font-extrabold tracking-tight mb-1 ${
-                          theme === "dark" ? "!text-white" : "!text-[#0C1827]"
-                        }`}
+            return (
+              <div
+                key={story.id}
+                className={`rounded-[28px] sm:rounded-[32px] overflow-hidden flex flex-col justify-between transition-all duration-300 transform hover:-translate-y-1.5 shadow-sm hover:shadow-md ${
+                  theme === "dark"
+                    ? "bg-[#0B1A2D] border-0 border-none !text-white shadow-xl shadow-black/40"
+                    : "bg-white border border-slate-200/90 !text-[#0C1827]"
+                }`}
+              >
+                <div>
+                  {/* Video Box: Inline iframe when playing, or Thumbnail with Play Button */}
+                  <div className="relative w-full h-[220px] sm:h-[240px] bg-slate-900 overflow-hidden group">
+                    {isPlaying && videoId ? (
+                      <div className="relative w-full h-full">
+                        <iframe
+                          src={`https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`}
+                          title={story.authorName || "Client Video"}
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowFullScreen
+                          className="w-full h-full border-0"
+                        />
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setPlayingStoryId(null);
+                          }}
+                          aria-label="Close Video"
+                          className="absolute top-3 right-3 z-10 w-8 h-8 rounded-full bg-black/80 hover:bg-[#FE6F1F] text-white flex items-center justify-center transition-colors shadow-lg"
+                        >
+                          <FiX size={18} />
+                        </button>
+                      </div>
+                    ) : (
+                      <div
+                        onClick={() => {
+                          setPlayingStoryId(story.id);
+                          if (onPlayVideo) onPlayVideo(story);
+                        }}
+                        className="relative w-full h-full cursor-pointer"
                       >
-                        {story.authorName}
-                      </h3>
-                      <p
-                        className={`text-sm sm:text-base font-bold ${
-                          theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
-                        }`}
-                      >
-                        {story.authorTitle}
-                      </p>
-                    </div>
+                        {/* YouTube Thumbnail Image */}
+                        <Image
+                          src={thumbnailSrc || "/assets/bayshore-solutions/home/right.png"}
+                          alt={story.authorName}
+                          fill
+                          className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                        />
+                        {/* Dark Overlay */}
+                        <div className="absolute inset-0 bg-black/25 transition-opacity group-hover:bg-black/35" />
 
-                    {/* Client Company Logo Image (lopez.png) */}
-                    <div className="relative h-10 w-28 sm:h-12 sm:w-36 shrink-0 flex items-center justify-end">
-                      <Image
-                        src="/assets/bayshore-solutions/home/lopez.png"
-                        alt={story.companyName || "Lopez Law Group"}
-                        width={150}
-                        height={50}
-                        className="object-contain max-h-full w-auto"
-                      />
+                        {/* Play Button Icon Overlay */}
+                        <div className="absolute inset-0 m-auto w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#07192C]/85 group-hover:bg-[#FE6F1F] text-white flex items-center justify-center shadow-lg transition-all duration-300 transform group-hover:scale-110 active:scale-95">
+                          <FiPlay className="text-2xl sm:text-3xl ml-1 fill-current" />
+                        </div>
+                      </div>
+                    )}
+                  </div>
+
+                  {/* Card Quote Body */}
+                  <div className="p-6 sm:p-7">
+                    <p
+                      className={`text-xl sm:text-2xl font-bold leading-relaxed sm:leading-[1.75] mb-6 font-sans ${
+                        theme === "dark" ? "!text-white" : "!text-[#0C1827]"
+                      }`}
+                    >
+                      {story.quote}
+                    </p>
+
+                    {/* Footer: Author Info on Left & Website Logo on Right */}
+                    <div className="flex items-center justify-between pt-4 border-t border-slate-100 dark:border-slate-800">
+                      {/* Left: Author Name and Title */}
+                      <div>
+                        <h3
+                          className={`text-lg sm:text-xl xl:text-[22px] font-extrabold tracking-tight mb-1 ${
+                            theme === "dark" ? "!text-white" : "!text-[#0C1827]"
+                          }`}
+                        >
+                          {story.authorName}
+                        </h3>
+                        <p
+                          className={`text-sm sm:text-base font-bold ${
+                            theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
+                          }`}
+                        >
+                          {story.authorTitle}
+                        </p>
+                      </div>
+
+                      {/* Right: Website / Client Logo Image */}
+                      <div className="relative h-10 w-28 sm:h-12 sm:w-36 shrink-0 flex items-center justify-end">
+                        <Image
+                          src={story.companyLogo || "/assets/bayshore-solutions/home/lopez.png"}
+                          alt={story.companyName || "Client Logo"}
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
