@@ -120,8 +120,9 @@ export const SolutionsBreadcrumb: React.FC<SolutionsBreadcrumbProps> = ({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
-            className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-8 font-medium max-w-xl text-left !text-left w-full font-instrument ${
-              theme === "dark" ? "!text-slate-300" : "!text-[#475569]"
+            style={{ lineHeight: 1.55 }}
+            className={`text-xl md:text-2xl mb-8 font-normal text-left !text-left w-full max-w-xl lg:max-w-2xl font-instrument ${
+              theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
             }`}
           >
             {subtitle}
