@@ -90,7 +90,7 @@ const Page = () => {
       {/* Boost */}
 
       <Boost
-        heading="Need a Boost for You Business? Get Your FREE Quote Today!"
+        heading="Need a Boost for Your Business? Get Your FREE Quote Today!"
         btnText="Send Us a proposal"
       />
 

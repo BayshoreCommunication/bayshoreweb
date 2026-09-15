@@ -131,8 +131,9 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.12, ease: "easeOut" }}
-            className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-8 sm:mb-10 font-medium text-left !text-left w-full max-w-xl lg:max-w-2xl xl:max-w-3xl font-instrument ${
-              theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
+            style={{ lineHeight: 1.55 }}
+            className={`text-xl md:text-2xl mb-8 sm:mb-10 font-normal text-left !text-left w-full max-w-xl lg:max-w-2xl xl:max-w-3xl font-instrument ${
+              theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
             }`}
           >
             {subtitle}
@@ -174,16 +175,16 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
                 className="flex items-center gap-3"
               >
                 <div
-                  className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full shrink-0 flex items-center justify-center border shadow-xs ${
+                  className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full shrink-0 flex items-center justify-center border shadow-xs ${
                     theme === "dark"
                       ? "bg-slate-800/90 border-slate-700 text-[#FF5500]"
                       : "bg-white border-slate-200/90 text-[#0C1827]"
                   }`}
                 >
-                  <FiShield className="text-base sm:text-lg" />
+                  <FiShield className="text-lg sm:text-xl" />
                 </div>
                 <span
-                  className={`text-base sm:text-lg font-bold tracking-tight ${
+                  className={`text-xl sm:text-2xl font-bold tracking-tight leading-tight font-instrument ${
                     theme === "dark" ? "!text-slate-100" : "!text-[#0C1827]"
                   }`}
                 >
@@ -200,21 +201,21 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.7, delay: 0.35, type: "spring", stiffness: 85 }}
             whileHover={{ scale: 1.02, y: -4 }}
-            className={`rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 max-w-xl transition-all duration-300 backdrop-blur-md font-instrument ${
+            className={`rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 w-full max-w-2xl lg:max-w-3xl transition-all duration-300 backdrop-blur-md font-instrument ${
               theme === "dark"
                 ? "bg-[#0B1A2D]/95 border border-slate-800/90 shadow-xl text-white"
                 : "bg-white border border-slate-200/80 shadow-xs text-[#0C1827]"
             }`}
           >
             <p
-              className={`text-base sm:text-lg lg:text-[19px] font-extrabold leading-snug mb-3 font-instrument ${
+              className={`text-xl sm:text-3xl font-bold leading-relaxed tracking-normal text-left mb-3 font-instrument ${
                 theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}
             >
               {quoteText}
             </p>
             <p
-              className={`text-sm sm:text-base font-semibold font-instrument ${
+              className={`text-xl sm:text-2xl font-semibold text-left font-instrument ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#64748B]"
               }`}
             >

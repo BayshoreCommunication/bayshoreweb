@@ -190,8 +190,9 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
             </span>
           </h2>
           <p
-            className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed font-medium max-w-3xl text-left !text-left w-full font-instrument ${
-              theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
+            style={{ lineHeight: 1.55 }}
+            className={`text-xl md:text-2xl font-normal max-w-3xl text-left !text-left w-full font-instrument ${
+              theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
             }`}
           >
             Explore the types of pre-vetted virtual professionals we can match to your business.
@@ -398,8 +399,9 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
               </h2>
 
               <p
-                className={`text-lg sm:text-xl lg:text-[19px] font-medium leading-relaxed mb-8 max-w-xl text-left !text-left w-full font-instrument ${
-                  theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
+                style={{ lineHeight: 1.55 }}
+                className={`text-xl md:text-2xl font-normal mb-8 max-w-xl text-left !text-left w-full font-instrument ${
+                  theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
                 }`}
               >
                 See how businesses are using Bayshore virtual talent to support their teams, handle day-to-day work, and grow without the overhead of traditional hiring.

@@ -230,8 +230,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
               className="flex items-center gap-2 mb-4"
             >
-              <span className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em] font-playfair ${
-                theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
+              <span className={`inline-block text-base sm:text-xl uppercase tracking-[0.2em] font-instrument ${
+                theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}>
                 VIRTUAL TALENT. REAL IMPACT.
               </span>
@@ -270,8 +270,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               initial={{ opacity: 0, y: 25 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.35, ease: "easeOut" }}
-              className={`text-lg sm:text-xl lg:text-[20px] xl:text-[21px] max-w-2xl leading-relaxed mb-8 sm:mb-10 font-medium text-left !text-left w-full font-instrument ${
-                theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
+              style={{ lineHeight: 1.55 }}
+              className={`text-xl md:text-2xl max-w-3xl mb-8 sm:mb-10 font-normal text-left !text-left w-full font-instrument ${
+                theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
               }`}
             >
               Pre-vetted virtual professionals for law firms, healthcare providers, real estate teams, and growing businesses. Save time, reduce costs, and focus on what matters most.
@@ -299,7 +300,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 >
                   <FiUser className="text-[26px] sm:text-[34px] transition-transform duration-300 group-hover:scale-125" />
                 </motion.div>
-                <span className={`text-sm sm:text-base xl:text-lg font-bold leading-tight font-playfair ${
+                <span className={`text-xl sm:text-2xl  leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}>
                   Skilled &<br />
@@ -327,7 +328,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 >
                   <FiTrendingUp className="text-[26px] sm:text-[34px] transition-transform duration-300 group-hover:scale-125" />
                 </motion.div>
-                <span className={`text-sm sm:text-base xl:text-lg font-bold leading-tight font-playfair ${
+                <span className={`text-xl sm:text-2xl  leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}>
                   Flexible<br />
@@ -355,7 +356,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 >
                   <FiShield className="text-[26px] sm:text-[34px] transition-transform duration-300 group-hover:scale-125" />
                 </motion.div>
-                <span className={`text-sm sm:text-base xl:text-lg font-bold leading-tight font-playfair ${
+                <span className={`text-xl sm:text-2xl  leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}>
                   No Long-Term<br />
@@ -392,7 +393,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Card Header */}
               <div className="mb-7 sm:mb-9">
                 <span
-                  className={`block text-xs sm:text-sm font-extrabold uppercase tracking-[0.18em] mb-2 font-playfair ${
+                  className={`blocktext-xl sm:text-2xl  leading-tight font-instrument mb-3 ${
                     theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                   }`}
                 >
@@ -404,7 +405,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   Tell Us Who You Need.
                 </h2>
                 <p
-                  className={`text-sm sm:text-base leading-relaxed font-medium font-instrument ${
+                  className={`text-xl sm:text-2xl  leading-tight font-instrument ${
                     theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
                   }`}
                 >
@@ -541,7 +542,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
                   {/* Form Footer Disclaimer */}
                   <p
-                    className={`text-center text-sm sm:text-base mt-2 font-medium ${
+                    className={`text-center text-xl sm:text-2xl  leading-tight font-instrument ${
                       theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                     }`}
                   >

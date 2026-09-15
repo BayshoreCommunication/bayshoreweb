@@ -330,8 +330,9 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
               </span>
             </h2>
             <p
-              className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed font-medium text-left !text-left w-full font-instrument ${
-                theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
+              style={{ lineHeight: 1.55 }}
+              className={`text-xl md:text-2xl font-normal text-left !text-left w-full font-instrument ${
+                theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
               }`}
             >
               From client intake to bookkeeping, we provide trained, industry-ready
@@ -403,7 +404,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
 
                 {/* Card Title */}
                 <h3
-                  className={`text-xl sm:text-2xl font-extrabold tracking-tight mb-5 font-playfair ${
+                  className={`text-2xl sm:text-3xl font-extrabold tracking-tight mb-5 font-playfair ${
                     theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                   }`}
                 >
@@ -415,7 +416,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                   {card.features.map((feature, featureIdx) => (
                     <li
                       key={featureIdx}
-                      className={`text-sm sm:text-base font-semibold leading-snug flex items-start gap-2.5 ${
+                      className={`text-lg sm:text-xl leading-snug flex items-start gap-2.5 ${
                         theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                       }`}
                     >

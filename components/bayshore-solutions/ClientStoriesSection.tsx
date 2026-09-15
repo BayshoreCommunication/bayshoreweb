@@ -147,8 +147,9 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
               </span>
             </h2>
             <p
-              className={`text-lg sm:text-xl lg:text-[22px] font-medium leading-relaxed text-left !text-left w-full max-w-3xl xl:max-w-4xl font-instrument ${
-                theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
+              style={{ lineHeight: 1.55 }}
+              className={`text-xl md:text-2xl font-normal text-left !text-left w-full max-w-3xl xl:max-w-4xl font-instrument ${
+                theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
               }`}
             >
               {subtitle}

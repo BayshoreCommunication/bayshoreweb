@@ -125,11 +125,11 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.6, delay: idx * 0.1, type: "spring", stiffness: 100, damping: 14 }}
                   whileHover={{ y: -4, scale: 1.03 }}
-                  className="flex flex-col items-start text-left w-full transition-transform duration-300"
+                  className="flex flex-col items-center text-center sm:items-start sm:text-left w-full transition-transform duration-300"
                 >
                   {/* Big Counter Value (Fixed height for exact horizontal baseline alignment across all columns) */}
                   <div
-                    className={`h-[48px] sm:h-[52px] lg:h-[56px] xl:h-[62px] flex items-baseline justify-start text-3xl xs:text-4xl sm:text-4xl lg:text-[40px] xl:text-[48px] 2xl:text-[54px] font-bold tracking-tight leading-none mb-1.5 sm:mb-2 font-playfair ${
+                    className={`h-[52px] sm:h-[52px] lg:h-[56px] xl:h-[62px] flex items-baseline justify-center sm:justify-start text-[38px] xs:text-[44px] sm:text-4xl lg:text-[40px] xl:text-[48px] 2xl:text-[54px] font-bold tracking-tight leading-none mb-1.5 sm:mb-2 font-playfair ${
                       theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                     }`}
                   >
@@ -139,8 +139,8 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
                   </div>
                   {/* Metric Label */}
                   <span
-                    className={`text-xs sm:text-sm lg:text-xs xl:text-sm 2xl:text-base font-bold leading-snug max-w-[130px] xs:max-w-[150px] sm:max-w-[160px] xl:max-w-[180px] font-instrument ${
-                      theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
+                    className={`text-sm xs:text-base sm:text-sm lg:text-xs xl:text-sm 2xl:text-base font-normal leading-snug max-w-[160px] sm:max-w-[160px] xl:max-w-[180px] font-instrument ${
+                      theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
                     }`}
                   >
                     {item.label}

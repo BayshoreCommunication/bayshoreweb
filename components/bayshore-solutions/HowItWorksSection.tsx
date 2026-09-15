@@ -189,8 +189,9 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             </span>
           </h2>
           <p
-            className={`text-lg sm:text-xl lg:text-[22px] font-semibold text-left !text-left w-full max-w-3xl font-instrument ${
-              theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
+            style={{ lineHeight: 1.55 }}
+            className={`text-xl md:text-2xl font-normal text-left !text-left w-full max-w-3xl font-instrument ${
+              theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
             }`}
           >
             {subtitle}
@@ -279,8 +280,9 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                       {item.title}
                     </h3>
                     <p
-                      className={`text-sm sm:text-base lg:text-[15px] leading-relaxed font-semibold max-w-[240px] font-instrument ${
-                        theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
+                      style={{ lineHeight: 1.55 }}
+                      className={`text-sm sm:text-base lg:text-[15px] font-normal max-w-[240px] font-instrument ${
+                        theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
                       }`}
                     >
                       {item.description}

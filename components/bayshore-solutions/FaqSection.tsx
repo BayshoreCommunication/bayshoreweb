@@ -104,8 +104,9 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
               </span>
             </h2>
             <p
-              className={`text-lg sm:text-xl lg:text-[22px] font-medium leading-relaxed text-left !text-left w-full font-instrument ${
-                theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
+              style={{ lineHeight: 1.55 }}
+              className={`text-xl md:text-2xl font-normal text-left !text-left w-full font-instrument ${
+                theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
               }`}
             >
               {subtitle}
@@ -177,10 +178,11 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                         animate={{ opacity: 1, height: "auto", marginTop: 14 }}
                         exit={{ opacity: 0, height: 0, marginTop: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
-                        className={`pt-3.5 border-t text-lg sm:text-xl leading-relaxed font-medium font-instrument overflow-hidden ${
+                        style={{ lineHeight: 1.65 }}
+                        className={`pt-3.5 border-t text-lg sm:text-xl font-normal font-instrument overflow-hidden ${
                           theme === "dark"
                             ? "border-slate-800 text-slate-300"
-                            : "border-slate-100 text-[#556070]"
+                            : "border-slate-100 !text-[#0C1827]"
                         }`}
                       >
                         {faq.answer}

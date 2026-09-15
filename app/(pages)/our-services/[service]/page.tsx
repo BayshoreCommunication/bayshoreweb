@@ -148,7 +148,7 @@ const Page = async ({ params }: { params: { service: string } }) => {
               <div className="container">
                 <div>
                   <BoostService
-                    heading=" Need a boost for you business? Get your FREE Quote Today!"
+                    heading=" Need a boost for your business? Get your FREE Quote Today!"
                     btnText="Send us a proposal"
                   />
                 </div>
