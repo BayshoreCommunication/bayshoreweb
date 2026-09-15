@@ -168,7 +168,7 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
         <div className="w-8 hidden sm:block" />
 
         {/* Center Progress Tabs matching reference image 1:1 */}
-        <div className="flex items-center gap-6 text-sm font-semibold mx-auto sm:mx-0">
+        <div className="flex items-center justify-center gap-6 text-[13px] sm:text-[14px] font-semibold mx-auto">
           <button
             type="button"
             onClick={() => setStep(1)}

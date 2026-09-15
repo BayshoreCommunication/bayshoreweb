@@ -9,12 +9,12 @@ module.exports = withMT({
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      primary: "#FE6F1F",
-      headingPrimary: "#241836",
-      footerColor: "#F4F4F4",
-    },
     extend: {
+      colors: {
+        primary: "#FE6F1F",
+        headingPrimary: "#241836",
+        footerColor: "#F4F4F4",
+      },
       fontFamily: {
         playfair: ["'Playfair Display'", "Georgia", "serif"],
         instrument: ["'Instrument Sans'", "sans-serif"],
