@@ -278,13 +278,13 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: 20 }}
                   transition={{ duration: 0.3 }}
-                  className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full"
+                  className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 w-full"
                 >
                   {/* Full Name */}
                   <div className="flex flex-col gap-2">
                     <label
                       htmlFor="fullName"
-                      className={`text-[11px] font-extrabold uppercase tracking-[0.14em] ${
+                      className={`text-xs font-extrabold uppercase tracking-[0.14em] ${
                         theme === "dark" ? "text-slate-300" : "text-[#556070]"
                       }`}
                     >
@@ -300,10 +300,10 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                       onChange={(e) =>
                         setFormData({ ...formData, fullName: e.target.value })
                       }
-                      className={`w-full px-5 py-4 rounded-lg text-sm sm:text-base font-medium border transition-all outline-none ${
+                      className={`w-full !px-6 !py-4.5 sm:!py-5 !min-h-[54px] rounded-xl sm:rounded-2xl !text-base sm:!text-lg font-semibold border transition-all outline-none focus:ring-2 ${
                         theme === "dark"
-                          ? "bg-[#0B1A2D] border-slate-800 text-white placeholder-slate-500 focus:border-[#FF5500]"
-                          : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:border-[#07192C]"
+                          ? "bg-[#0B1A2D] border-slate-700/80 text-white placeholder-slate-500 focus:border-[#FF5500] focus:ring-[#FF5500]/30"
+                          : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:bg-white focus:border-[#07192C] focus:ring-[#07192C]/20"
                       }`}
                     />
                   </div>
@@ -312,7 +312,7 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                   <div className="flex flex-col gap-2">
                     <label
                       htmlFor="workEmail"
-                      className={`text-[11px] font-extrabold uppercase tracking-[0.14em] ${
+                      className={`text-xs font-extrabold uppercase tracking-[0.14em] ${
                         theme === "dark" ? "text-slate-300" : "text-[#556070]"
                       }`}
                     >
@@ -328,10 +328,10 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                       onChange={(e) =>
                         setFormData({ ...formData, workEmail: e.target.value })
                       }
-                      className={`w-full px-5 py-4 rounded-lg text-sm sm:text-base font-medium border transition-all outline-none ${
+                      className={`w-full !px-6 !py-4.5 sm:!py-5 !min-h-[54px] rounded-xl sm:rounded-2xl !text-base sm:!text-lg font-semibold border transition-all outline-none focus:ring-2 ${
                         theme === "dark"
-                          ? "bg-[#0B1A2D] border-slate-800 text-white placeholder-slate-500 focus:border-[#FF5500]"
-                          : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:border-[#07192C]"
+                          ? "bg-[#0B1A2D] border-slate-700/80 text-white placeholder-slate-500 focus:border-[#FF5500] focus:ring-[#FF5500]/30"
+                          : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:bg-white focus:border-[#07192C] focus:ring-[#07192C]/20"
                       }`}
                     />
                   </div>
@@ -340,7 +340,7 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                   <div className="flex flex-col gap-2">
                     <label
                       htmlFor="companyName"
-                      className={`text-[11px] font-extrabold uppercase tracking-[0.14em] ${
+                      className={`text-xs font-extrabold uppercase tracking-[0.14em] ${
                         theme === "dark" ? "text-slate-300" : "text-[#556070]"
                       }`}
                     >
@@ -356,10 +356,10 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                       onChange={(e) =>
                         setFormData({ ...formData, companyName: e.target.value })
                       }
-                      className={`w-full px-5 py-4 rounded-lg text-sm sm:text-base font-medium border transition-all outline-none ${
+                      className={`w-full !px-6 !py-4.5 sm:!py-5 !min-h-[54px] rounded-xl sm:rounded-2xl !text-base sm:!text-lg font-semibold border transition-all outline-none focus:ring-2 ${
                         theme === "dark"
-                          ? "bg-[#0B1A2D] border-slate-800 text-white placeholder-slate-500 focus:border-[#FF5500]"
-                          : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:border-[#07192C]"
+                          ? "bg-[#0B1A2D] border-slate-700/80 text-white placeholder-slate-500 focus:border-[#FF5500] focus:ring-[#FF5500]/30"
+                          : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:bg-white focus:border-[#07192C] focus:ring-[#07192C]/20"
                       }`}
                     />
                   </div>
@@ -368,7 +368,7 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                   <div className="flex flex-col gap-2">
                     <label
                       htmlFor="phoneNumber"
-                      className={`text-[11px] font-extrabold uppercase tracking-[0.14em] ${
+                      className={`text-xs font-extrabold uppercase tracking-[0.14em] ${
                         theme === "dark" ? "text-slate-300" : "text-[#556070]"
                       }`}
                     >
@@ -384,10 +384,10 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                       onChange={(e) =>
                         setFormData({ ...formData, phoneNumber: e.target.value })
                       }
-                      className={`w-full px-5 py-4 rounded-lg text-sm sm:text-base font-medium border transition-all outline-none ${
+                      className={`w-full !px-6 !py-4.5 sm:!py-5 !min-h-[54px] rounded-xl sm:rounded-2xl !text-base sm:!text-lg font-semibold border transition-all outline-none focus:ring-2 ${
                         theme === "dark"
-                          ? "bg-[#0B1A2D] border-slate-800 text-white placeholder-slate-500 focus:border-[#FF5500]"
-                          : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:border-[#07192C]"
+                          ? "bg-[#0B1A2D] border-slate-700/80 text-white placeholder-slate-500 focus:border-[#FF5500] focus:ring-[#FF5500]/30"
+                          : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:bg-white focus:border-[#07192C] focus:ring-[#07192C]/20"
                       }`}
                     />
                   </div>
@@ -398,20 +398,20 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                       whileHover={{ scale: 1.01 }}
                       whileTap={{ scale: 0.99 }}
                       type="submit"
-                      className={`w-full py-4 rounded-full font-bold text-base sm:text-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-md ${
+                      className={`w-full !py-5 sm:!py-5.5 !min-h-[58px] rounded-full font-extrabold !text-lg sm:!text-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg ${
                         theme === "dark"
                           ? "bg-[#FF5500] text-white hover:bg-[#e04a00]"
                           : "bg-[#07192C] text-white hover:bg-[#000e1e]"
                       }`}
                     >
                       <span>Continue to Step 2</span>
-                      <FiArrowRight size={20} />
+                      <FiArrowRight size={22} />
                     </motion.button>
                   </div>
                 </motion.div>
               )}
 
-              {/* STEP 2 INPUT FIELDS (Matching User Design Screenshot 1:1) */}
+              {/* STEP 2 INPUT FIELDS */}
               {step === 2 && (
                 <motion.div
                   key="step2"
@@ -419,13 +419,13 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
                   transition={{ duration: 0.3 }}
-                  className="flex flex-col gap-5 w-full"
+                  className="flex flex-col gap-5 sm:gap-6 w-full"
                 >
                   {/* 1. Exact Job Title */}
                   <div className="flex flex-col gap-2">
                     <label
                       htmlFor="jobTitle"
-                      className={`text-[11px] font-extrabold uppercase tracking-[0.14em] ${
+                      className={`text-xs font-extrabold uppercase tracking-[0.14em] ${
                         theme === "dark" ? "text-slate-300" : "text-[#556070]"
                       }`}
                     >
@@ -441,27 +441,27 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                       onChange={(e) =>
                         setFormData({ ...formData, jobTitle: e.target.value })
                       }
-                      className={`w-full px-5 py-4 rounded-lg text-sm sm:text-base font-medium border transition-all outline-none ${
+                      className={`w-full !px-6 !py-4.5 sm:!py-5 !min-h-[54px] rounded-xl sm:rounded-2xl !text-base sm:!text-lg font-semibold border transition-all outline-none focus:ring-2 ${
                         theme === "dark"
-                          ? "bg-[#0B1A2D] border-slate-800 text-white placeholder-slate-500 focus:border-[#FF5500]"
-                          : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:border-[#07192C]"
+                          ? "bg-[#0B1A2D] border-slate-700/80 text-white placeholder-slate-500 focus:border-[#FF5500] focus:ring-[#FF5500]/30"
+                          : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:bg-white focus:border-[#07192C] focus:ring-[#07192C]/20"
                       }`}
                     />
                   </div>
 
                   {/* 2 & 3. Experience Level + Hours/Week Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
                     {/* Experience Level */}
                     <div className="flex flex-col gap-2">
                       <label
                         htmlFor="experienceLevel"
-                        className={`text-[11px] font-extrabold uppercase tracking-[0.14em] ${
+                        className={`text-xs font-extrabold uppercase tracking-[0.14em] ${
                           theme === "dark" ? "text-slate-300" : "text-[#556070]"
                         }`}
                       >
                         EXPERIENCE LEVEL
                       </label>
-                      <div className="relative">
+                      <div className="relative flex items-center">
                         <select
                           name="experienceLevel"
                           id="experienceLevel"
@@ -473,11 +473,11 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                               experienceLevel: e.target.value,
                             })
                           }
-                          className={`w-full px-5 py-4 rounded-lg text-sm sm:text-base font-medium border appearance-none transition-all outline-none ${
+                          className={`w-full !px-6 !pr-12 !py-4.5 sm:!py-5 !min-h-[54px] rounded-xl sm:rounded-2xl !text-base sm:!text-lg font-semibold border appearance-none transition-all outline-none focus:ring-2 ${
                             theme === "dark"
-                              ? "bg-[#0B1A2D] border-slate-800 text-white focus:border-[#FF5500]"
-                              : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] focus:border-[#07192C]"
-                          } ${!formData.experienceLevel ? "text-slate-500" : ""}`}
+                              ? "bg-[#0B1A2D] border-slate-700/80 text-white focus:border-[#FF5500] focus:ring-[#FF5500]/30"
+                              : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] focus:bg-white focus:border-[#07192C] focus:ring-[#07192C]/20"
+                          } ${!formData.experienceLevel ? (theme === "dark" ? "text-slate-400" : "text-slate-500") : ""}`}
                         >
                           <option value="" disabled hidden>
                             Select experience level
@@ -497,8 +497,8 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                           ))}
                         </select>
                         <FiChevronDown
-                          className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"
-                          size={18}
+                          className="absolute right-5 text-slate-400 pointer-events-none z-10 shrink-0"
+                          size={20}
                         />
                       </div>
                     </div>
@@ -507,16 +507,16 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                     <div className="flex flex-col gap-2">
                       <label
                         htmlFor="hoursPerWeek"
-                        className={`text-[11px] font-extrabold uppercase tracking-[0.14em] ${
+                        className={`text-xs font-extrabold uppercase tracking-[0.14em] ${
                           theme === "dark" ? "text-slate-300" : "text-[#556070]"
                         }`}
                       >
                         HOURS/WEEK
                       </label>
-                      <div className="relative">
+                      <div className="relative flex items-center">
                         <FiClock
-                          className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"
-                          size={18}
+                          className="absolute left-5 text-slate-400 pointer-events-none z-10 shrink-0"
+                          size={20}
                         />
                         <input
                           type="text"
@@ -531,32 +531,32 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                               hoursPerWeek: e.target.value,
                             })
                           }
-                          className={`w-full pl-12 pr-5 py-4 rounded-lg text-sm sm:text-base font-medium border transition-all outline-none ${
+                          className={`w-full !pl-16 !pr-6 !py-4.5 sm:!py-5 !min-h-[54px] rounded-xl sm:rounded-2xl !text-base sm:!text-lg font-semibold border transition-all outline-none focus:ring-2 ${
                             theme === "dark"
-                              ? "bg-[#0B1A2D] border-slate-800 text-white placeholder-slate-500 focus:border-[#FF5500]"
-                              : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:border-[#07192C]"
+                              ? "bg-[#0B1A2D] border-slate-700/80 text-white placeholder-slate-500 focus:border-[#FF5500] focus:ring-[#FF5500]/30"
+                              : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] placeholder-slate-400 focus:bg-white focus:border-[#07192C] focus:ring-[#07192C]/20"
                           }`}
                         />
                       </div>
                     </div>
                   </div>
 
-                  {/* 4 & 5. Preferred Date & Time Grid matching screenshot */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {/* 4 & 5. Preferred Date & Time Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
                     {/* Interview Date */}
                     <div className="flex flex-col gap-2">
                       <label
                         htmlFor="interviewDate"
-                        className={`text-[11px] font-extrabold uppercase tracking-[0.14em] ${
+                        className={`text-xs font-extrabold uppercase tracking-[0.14em] ${
                           theme === "dark" ? "text-slate-300" : "text-[#556070]"
                         }`}
                       >
                         PREFERRED DATE
                       </label>
-                      <div className="relative">
+                      <div className="relative flex items-center">
                         <FiClock
-                          className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none z-10"
-                          size={18}
+                          className="absolute left-5 text-slate-400 pointer-events-none z-10 shrink-0"
+                          size={20}
                         />
                         <input
                           type="date"
@@ -570,15 +570,11 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                               interviewDate: e.target.value,
                             })
                           }
-                          className={`w-full pl-12 pr-10 py-4 rounded-lg text-sm sm:text-base font-medium border transition-all outline-none ${
+                          className={`w-full !pl-16 !pr-6 !py-4.5 sm:!py-5 !min-h-[54px] rounded-xl sm:rounded-2xl !text-base sm:!text-lg font-semibold border transition-all outline-none focus:ring-2 ${
                             theme === "dark"
-                              ? "bg-[#0B1A2D] border-slate-800 text-white focus:border-[#FF5500]"
-                              : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] focus:border-[#07192C]"
-                          } ${!formData.interviewDate ? "text-slate-500" : ""}`}
-                        />
-                        <FiChevronDown
-                          className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"
-                          size={18}
+                              ? "bg-[#0B1A2D] border-slate-700/80 text-white focus:border-[#FF5500] focus:ring-[#FF5500]/30"
+                              : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] focus:bg-white focus:border-[#07192C] focus:ring-[#07192C]/20"
+                          } ${!formData.interviewDate ? (theme === "dark" ? "text-slate-400" : "text-slate-500") : ""}`}
                         />
                       </div>
                     </div>
@@ -587,16 +583,16 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                     <div className="flex flex-col gap-2">
                       <label
                         htmlFor="interviewTime"
-                        className={`text-[11px] font-extrabold uppercase tracking-[0.14em] ${
+                        className={`text-xs font-extrabold uppercase tracking-[0.14em] ${
                           theme === "dark" ? "text-slate-300" : "text-[#556070]"
                         }`}
                       >
                         PREFERRED TIME
                       </label>
-                      <div className="relative">
+                      <div className="relative flex items-center">
                         <FiClock
-                          className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none z-10"
-                          size={18}
+                          className="absolute left-5 text-slate-400 pointer-events-none z-10 shrink-0"
+                          size={20}
                         />
                         <select
                           name="interviewTime"
@@ -609,11 +605,11 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                               interviewTime: e.target.value,
                             })
                           }
-                          className={`w-full pl-12 pr-10 py-4 rounded-lg text-sm sm:text-base font-medium border appearance-none transition-all outline-none ${
+                          className={`w-full !pl-16 !pr-12 !py-4.5 sm:!py-5 !min-h-[54px] rounded-xl sm:rounded-2xl !text-base sm:!text-lg font-semibold border appearance-none transition-all outline-none focus:ring-2 ${
                             theme === "dark"
-                              ? "bg-[#0B1A2D] border-slate-800 text-white focus:border-[#FF5500]"
-                              : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] focus:border-[#07192C]"
-                          } ${!formData.interviewTime ? "text-slate-500" : ""}`}
+                              ? "bg-[#0B1A2D] border-slate-700/80 text-white focus:border-[#FF5500] focus:ring-[#FF5500]/30"
+                              : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] focus:bg-white focus:border-[#07192C] focus:ring-[#07192C]/20"
+                          } ${!formData.interviewTime ? (theme === "dark" ? "text-slate-400" : "text-slate-500") : ""}`}
                         >
                           <option value="" disabled hidden>
                             Select a time
@@ -633,8 +629,8 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                           ))}
                         </select>
                         <FiChevronDown
-                          className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"
-                          size={18}
+                          className="absolute right-5 text-slate-400 pointer-events-none z-10 shrink-0"
+                          size={20}
                         />
                       </div>
                     </div>
@@ -644,16 +640,16 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                   <div className="flex flex-col gap-2">
                     <label
                       htmlFor="timezone"
-                      className={`text-[11px] font-extrabold uppercase tracking-[0.14em] ${
+                      className={`text-xs font-extrabold uppercase tracking-[0.14em] ${
                         theme === "dark" ? "text-slate-300" : "text-[#556070]"
                       }`}
                     >
                       YOUR TIMEZONE
                     </label>
-                    <div className="relative">
+                    <div className="relative flex items-center">
                       <FiGlobe
-                        className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none z-10"
-                        size={18}
+                        className="absolute left-5 text-slate-400 pointer-events-none z-10 shrink-0"
+                        size={20}
                       />
                       <select
                         name="timezone"
@@ -663,10 +659,10 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                         onChange={(e) =>
                           setFormData({ ...formData, timezone: e.target.value })
                         }
-                        className={`w-full pl-12 pr-10 py-4 rounded-lg text-sm sm:text-base font-medium border appearance-none transition-all outline-none ${
+                        className={`w-full !pl-16 !pr-12 !py-4.5 sm:!py-5 !min-h-[54px] rounded-xl sm:rounded-2xl !text-base sm:!text-lg font-semibold border appearance-none transition-all outline-none focus:ring-2 ${
                           theme === "dark"
-                            ? "bg-[#0B1A2D] border-slate-800 text-white focus:border-[#FF5500]"
-                            : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] focus:border-[#07192C]"
+                            ? "bg-[#0B1A2D] border-slate-700/80 text-white focus:border-[#FF5500] focus:ring-[#FF5500]/30"
+                            : "bg-[#FAFAFC] border-slate-200 text-[#0C1827] focus:bg-white focus:border-[#07192C] focus:ring-[#07192C]/20"
                         }`}
                       >
                         {timezoneOptions.map((tz) => (
@@ -684,24 +680,24 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                         ))}
                       </select>
                       <FiChevronDown
-                        className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-400 pointer-events-none"
-                        size={18}
+                        className="absolute right-5 text-slate-400 pointer-events-none z-10 shrink-0"
+                        size={20}
                       />
                     </div>
                   </div>
 
                   {/* Submit Action Button */}
-                  <div className="flex flex-col sm:flex-row items-center gap-3 pt-3">
+                  <div className="flex flex-col sm:flex-row items-center gap-4 pt-3">
                     <button
                       type="button"
                       onClick={handlePrev}
-                      className={`w-full sm:w-auto px-6 py-4 rounded-full font-bold text-sm transition-all border ${
+                      className={`w-full sm:w-auto !px-8 !py-4.5 sm:!py-5 !min-h-[54px] rounded-full font-bold !text-base sm:!text-lg transition-all border shadow-xs flex items-center justify-center gap-2 ${
                         theme === "dark"
-                          ? "border-slate-800 text-slate-300 hover:bg-slate-800 hover:text-white"
+                          ? "border-slate-700 text-slate-300 hover:bg-slate-800 hover:text-white"
                           : "border-slate-300 text-[#556070] hover:bg-slate-100 hover:text-[#0C1827]"
                       }`}
                     >
-                      <FiArrowLeft size={16} className="inline mr-1" />
+                      <FiArrowLeft size={20} />
                       <span>Back</span>
                     </button>
 
@@ -709,14 +705,14 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                       whileHover={{ scale: 1.01 }}
                       whileTap={{ scale: 0.99 }}
                       type="submit"
-                      className={`w-full sm:flex-1 py-4 rounded-full font-extrabold text-base sm:text-lg transition-all duration-300 flex items-center justify-center gap-2 shadow-md ${
+                      className={`w-full sm:flex-1 !py-5 sm:!py-5.5 !min-h-[58px] rounded-full font-extrabold !text-lg sm:!text-xl transition-all duration-300 flex items-center justify-center gap-3 shadow-lg ${
                         theme === "dark"
                           ? "bg-[#FF5500] text-white hover:bg-[#e04a00]"
                           : "bg-[#FE6F1F] text-white hover:bg-[#d44e00]"
                       }`}
                     >
                       <span>Find Talent</span>
-                      <FiArrowRight size={20} />
+                      <FiArrowRight size={22} />
                     </motion.button>
                   </div>
 
