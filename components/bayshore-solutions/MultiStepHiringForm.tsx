@@ -2,13 +2,17 @@
 
 import React, { useState, useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import {
   FiChevronLeft,
   FiChevronRight,
   FiGlobe,
   FiCheckCircle,
   FiX,
+  FiPhone,
+  FiUsers,
+  FiClock,
+  FiCalendar,
+  FiBriefcase,
 } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -16,8 +20,14 @@ export interface HiringFormData {
   email: string;
   firstName: string;
   lastName: string;
-  companyName?: string;
   phoneNumber?: string;
+  teamSize?: string;
+  hiringType?: string;
+  hiringTimeline?: string;
+  businessYears?: string;
+  rolesToHire?: string;
+  websiteUrl?: string;
+  companyName?: string;
   jobTitle?: string;
   selectedDate: string;
   selectedTime: string;
@@ -49,16 +59,27 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
   const initialFirstName = initialData?.firstName || (nameParts.length > 0 ? nameParts[0] : "");
   const initialLastName =
     initialData?.lastName || (nameParts.length > 1 ? nameParts.slice(1).join(" ") : "");
+  const initialEmail = initialData?.email || initialData?.workEmail || "";
+
+  // Auto-expand if initial data is pre-filled from Hero form
+  const shouldAutoExpand = Boolean(initialEmail && initialFirstName && initialLastName);
 
   const [step, setStep] = useState<1 | 2>(defaultStep);
+  const [isExpanded, setIsExpanded] = useState<boolean>(shouldAutoExpand);
   const [submitted, setSubmitted] = useState(false);
 
   const [formData, setFormData] = useState<HiringFormData>(() => ({
-    email: initialData?.email || initialData?.workEmail || "",
+    email: initialEmail,
     firstName: initialFirstName,
     lastName: initialLastName,
-    companyName: initialData?.companyName || "",
     phoneNumber: initialData?.phoneNumber || "",
+    teamSize: initialData?.teamSize || "",
+    hiringType: initialData?.hiringType || "",
+    hiringTimeline: initialData?.hiringTimeline || "",
+    businessYears: initialData?.businessYears || "",
+    rolesToHire: initialData?.rolesToHire || "",
+    websiteUrl: initialData?.websiteUrl || "",
+    companyName: initialData?.companyName || "",
     jobTitle: initialData?.jobTitle || "",
     selectedDate: initialData?.selectedDate || "2026-09-15",
     selectedTime: initialData?.selectedTime || "",
@@ -92,7 +113,37 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
     "05:00 PM",
   ];
 
-  const validateStep1 = () => {
+  // Dropdown options matching Globaltize reference 1:1
+  const teamSizeOptions = [
+    "Just Me",
+    "2-5 Employees",
+    "5-50 Employees",
+    "50+ Employees",
+  ];
+
+  const hiringTypeOptions = [
+    "💼 Full-Time (40hrs/Week)",
+    "🗓️ Part-Time (10 to 30hrs/Week)",
+    "🛠️ One-Time Project",
+    "❌ Not Looking to Hire Currently",
+  ];
+
+  const timelineOptions = [
+    "Immediately",
+    "Within 30 days",
+    "30 - 60 days",
+    "Not Hiring Yet, Just Exploring",
+  ];
+
+  const operatingYearsOptions = [
+    "New Business (Startup)",
+    "< 1 Year",
+    "2-5 Years",
+    "5-10 Years",
+    "10 Years +",
+  ];
+
+  const validateInitial3 = () => {
     const newErrors: { [key: string]: string } = {};
     if (!formData.email.trim()) {
       newErrors.email = "Email is required";
@@ -108,21 +159,69 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
     return newErrors;
   };
 
+  const validateAllStep1 = () => {
+    const initialErrs = validateInitial3();
+    const newErrors: { [key: string]: string } = { ...initialErrs };
+
+    if (isExpanded) {
+      if (!formData.phoneNumber?.trim()) {
+        newErrors.phoneNumber = "Phone number is required";
+      }
+      if (!formData.teamSize?.trim()) {
+        newErrors.teamSize = "This field is required";
+      }
+      if (!formData.hiringType?.trim()) {
+        newErrors.hiringType = "This field is required";
+      }
+      if (!formData.hiringTimeline?.trim()) {
+        newErrors.hiringTimeline = "This field is required";
+      }
+      if (!formData.businessYears?.trim()) {
+        newErrors.businessYears = "This field is required";
+      }
+      if (!formData.rolesToHire?.trim()) {
+        newErrors.rolesToHire = "This field is required";
+      }
+      if (!formData.websiteUrl?.trim()) {
+        newErrors.websiteUrl = "Website URL is required";
+      }
+    }
+    return newErrors;
+  };
+
   const handleStep1Submit = (e: React.FormEvent) => {
     e.preventDefault();
-    const validationErrors = validateStep1();
-    if (Object.keys(validationErrors).length > 0) {
-      setErrors(validationErrors);
+
+    // First validate the initial 3 fields
+    const initialErrs = validateInitial3();
+    if (Object.keys(initialErrs).length > 0) {
+      setErrors(initialErrs);
       return;
     }
+
+    // If not expanded yet, expand the extended qualification form
+    if (!isExpanded) {
+      setErrors({});
+      setIsExpanded(true);
+      return;
+    }
+
+    // If already expanded, validate all extended fields before proceeding to calendar (Step 2)
+    const allErrs = validateAllStep1();
+    if (Object.keys(allErrs).length > 0) {
+      setErrors(allErrs);
+      return;
+    }
+
     setErrors({});
     setStep(2);
   };
 
   const handleTimeSlotClick = (timeStr: string) => {
-    const validationErrors = validateStep1();
+    const validationErrors = validateAllStep1();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
+      if (!isExpanded) setIsExpanded(true);
       setShowLockAlert(true);
       setTimeout(() => setShowLockAlert(false), 3000);
       return;
@@ -133,7 +232,7 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
 
   const handleFinalSubmit = (e?: React.FormEvent) => {
     if (e) e.preventDefault();
-    const validationErrors = validateStep1();
+    const validationErrors = validateAllStep1();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       setStep(1);
@@ -152,7 +251,7 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
 
   return (
     <div
-      className={`relative w-full max-w-[960px] mx-auto rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-2xl border transition-colors duration-300 font-instrument ${
+      className={`relative w-full max-w-[980px] mx-auto rounded-[24px] sm:rounded-[32px] overflow-hidden shadow-2xl border transition-colors duration-300 font-instrument ${
         theme === "dark"
           ? "bg-[#07192C] text-white border-slate-800 shadow-black/80"
           : "bg-white text-[#0C1827] border-slate-200/90 shadow-2xl shadow-slate-900/15"
@@ -195,9 +294,12 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
           <button
             type="button"
             onClick={() => {
-              const errs = validateStep1();
+              const errs = validateAllStep1();
               if (Object.keys(errs).length === 0) setStep(2);
-              else setShowLockAlert(true);
+              else {
+                if (!isExpanded) setIsExpanded(true);
+                setShowLockAlert(true);
+              }
             }}
             className={`flex items-center gap-2 transition-colors ${
               step === 2
@@ -286,10 +388,10 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
           </motion.div>
         ) : (
           /* 2-COLUMN GRID CONTAINER MATCHING REFERENCE IMAGE 1:1 */
-          <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[540px]">
-            {/* LEFT COLUMN: LOGO, STRATEGY SESSION DESCRIPTION & STEP 1 FORM */}
+          <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[580px]">
+            {/* LEFT COLUMN: LOGO, STRATEGY SESSION DESCRIPTION & EXTENDABLE STEP 1 FORM */}
             <div
-              className={`lg:col-span-6 p-6 sm:p-8 lg:p-10 flex flex-col justify-between border-r ${
+              className={`lg:col-span-6 p-6 sm:p-8 lg:p-10 flex flex-col justify-between border-r max-h-[680px] overflow-y-auto ${
                 theme === "dark" ? "border-slate-800/80" : "border-slate-100"
               }`}
             >
@@ -308,7 +410,7 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
 
                 {/* Title */}
                 <h2
-                  className={`text-2xl sm:text-3xl lg:text-[32px] font-bold tracking-tight mb-3 font-playfair ${
+                  className={`text-2xl sm:text-3xl lg:text-[30px] font-bold tracking-tight mb-3 font-playfair ${
                     theme === "dark" ? "text-white" : "text-[#07192C]"
                   }`}
                 >
@@ -317,7 +419,7 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
 
                 {/* Description Paragraph */}
                 <p
-                  className={`text-sm sm:text-base leading-relaxed mb-4 font-normal ${
+                  className={`text-xs sm:text-sm leading-relaxed mb-4 font-normal ${
                     theme === "dark" ? "text-slate-300" : "text-[#475569]"
                   }`}
                 >
@@ -337,7 +439,7 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                   exact requirements.
                 </p>
 
-                {/* STEP 1 INPUT FORM */}
+                {/* STEP 1 INPUT FORM (INITIAL 3 FIELDS + DYNAMIC EXTENDED FIELDS) */}
                 <form
                   ref={formRef}
                   id={formId}
@@ -452,6 +554,308 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                     </div>
                   </div>
 
+                  {/* DYNAMICALLY REVEALED EXTENDED QUALIFICATION FIELDS */}
+                  <AnimatePresence>
+                    {isExpanded && (
+                      <motion.div
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: "auto" }}
+                        exit={{ opacity: 0, height: 0 }}
+                        transition={{ duration: 0.35, ease: "easeInOut" }}
+                        className="flex flex-col gap-4 overflow-hidden pt-1"
+                      >
+                        {/* 1. Phone Number */}
+                        <div className="flex flex-col gap-1.5">
+                          <label
+                            htmlFor="phoneNumber"
+                            className={`text-xs font-bold ${
+                              theme === "dark" ? "text-slate-200" : "text-[#0C1827]"
+                            }`}
+                          >
+                            Phone Number <span className="text-red-500">*</span>
+                          </label>
+                          <div className="relative flex items-center">
+                            <span className="absolute left-3.5 text-slate-400 flex items-center gap-1 text-xs font-bold">
+                              🇧🇩 +880
+                            </span>
+                            <input
+                              type="tel"
+                              name="phoneNumber"
+                              id="phoneNumber"
+                              placeholder="Phone Number *"
+                              value={formData.phoneNumber}
+                              onChange={(e) => {
+                                setFormData({ ...formData, phoneNumber: e.target.value });
+                                if (errors.phoneNumber)
+                                  setErrors((prev) => ({ ...prev, phoneNumber: "" }));
+                              }}
+                              className={`w-full pl-24 pr-4 py-3 rounded-xl text-sm font-medium border transition-all outline-none ${
+                                errors.phoneNumber
+                                  ? "border-red-500 bg-red-500/5 focus:ring-2 focus:ring-red-500/30"
+                                  : theme === "dark"
+                                  ? "bg-[#0B1A2D] border-slate-700 text-white focus:border-[#FF5500]"
+                                  : "bg-white border-slate-300 text-[#0C1827] focus:border-[#07192C]"
+                              }`}
+                            />
+                          </div>
+                          {errors.phoneNumber && (
+                            <span className="text-red-500 text-xs font-semibold">
+                              {errors.phoneNumber}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* 2. Team Size Dropdown */}
+                        <div className="flex flex-col gap-1.5">
+                          <label
+                            htmlFor="teamSize"
+                            className={`text-xs font-bold ${
+                              theme === "dark" ? "text-slate-200" : "text-[#0C1827]"
+                            }`}
+                          >
+                            How big is your team size right now? <span className="text-red-500">*</span>
+                          </label>
+                          <select
+                            name="teamSize"
+                            id="teamSize"
+                            value={formData.teamSize}
+                            onChange={(e) => {
+                              setFormData({ ...formData, teamSize: e.target.value });
+                              if (errors.teamSize)
+                                setErrors((prev) => ({ ...prev, teamSize: "" }));
+                            }}
+                            className={`w-full px-4 py-3 rounded-xl text-sm font-medium border transition-all outline-none ${
+                              errors.teamSize
+                                ? "border-red-500 bg-red-500/5"
+                                : theme === "dark"
+                                ? "bg-[#0B1A2D] border-slate-700 text-white focus:border-[#FF5500]"
+                                : "bg-white border-slate-300 text-[#0C1827] focus:border-[#07192C]"
+                            }`}
+                          >
+                            <option value="" disabled>
+                              Select
+                            </option>
+                            {teamSizeOptions.map((opt, i) => (
+                              <option key={i} value={opt} className="text-[#0C1827]">
+                                {opt}
+                              </option>
+                            ))}
+                          </select>
+                          {errors.teamSize && (
+                            <span className="text-red-500 text-xs font-semibold">
+                              {errors.teamSize}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* 3. Full-Time or Part-Time Interest Dropdown */}
+                        <div className="flex flex-col gap-1.5">
+                          <label
+                            htmlFor="hiringType"
+                            className={`text-xs font-bold ${
+                              theme === "dark" ? "text-slate-200" : "text-[#0C1827]"
+                            }`}
+                          >
+                            Are you interested in hiring someone Full-Time or Part-Time?{" "}
+                            <span className="text-red-500">*</span>
+                          </label>
+                          <select
+                            name="hiringType"
+                            id="hiringType"
+                            value={formData.hiringType}
+                            onChange={(e) => {
+                              setFormData({ ...formData, hiringType: e.target.value });
+                              if (errors.hiringType)
+                                setErrors((prev) => ({ ...prev, hiringType: "" }));
+                            }}
+                            className={`w-full px-4 py-3 rounded-xl text-sm font-medium border transition-all outline-none ${
+                              errors.hiringType
+                                ? "border-red-500 bg-red-500/5"
+                                : theme === "dark"
+                                ? "bg-[#0B1A2D] border-slate-700 text-white focus:border-[#FF5500]"
+                                : "bg-white border-slate-300 text-[#0C1827] focus:border-[#07192C]"
+                            }`}
+                          >
+                            <option value="" disabled>
+                              Select
+                            </option>
+                            {hiringTypeOptions.map((opt, i) => (
+                              <option key={i} value={opt} className="text-[#0C1827]">
+                                {opt}
+                              </option>
+                            ))}
+                          </select>
+                          {errors.hiringType && (
+                            <span className="text-red-500 text-xs font-semibold">
+                              {errors.hiringType}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* 4. Timeline Looking to Hire Dropdown */}
+                        <div className="flex flex-col gap-1.5">
+                          <label
+                            htmlFor="hiringTimeline"
+                            className={`text-xs font-bold ${
+                              theme === "dark" ? "text-slate-200" : "text-[#0C1827]"
+                            }`}
+                          >
+                            When are you ideally looking to make a hire?{" "}
+                            <span className="text-red-500">*</span>
+                          </label>
+                          <select
+                            name="hiringTimeline"
+                            id="hiringTimeline"
+                            value={formData.hiringTimeline}
+                            onChange={(e) => {
+                              setFormData({ ...formData, hiringTimeline: e.target.value });
+                              if (errors.hiringTimeline)
+                                setErrors((prev) => ({ ...prev, hiringTimeline: "" }));
+                            }}
+                            className={`w-full px-4 py-3 rounded-xl text-sm font-medium border transition-all outline-none ${
+                              errors.hiringTimeline
+                                ? "border-red-500 bg-red-500/5"
+                                : theme === "dark"
+                                ? "bg-[#0B1A2D] border-slate-700 text-white focus:border-[#FF5500]"
+                                : "bg-white border-slate-300 text-[#0C1827] focus:border-[#07192C]"
+                            }`}
+                          >
+                            <option value="" disabled>
+                              Select
+                            </option>
+                            {timelineOptions.map((opt, i) => (
+                              <option key={i} value={opt} className="text-[#0C1827]">
+                                {opt}
+                              </option>
+                            ))}
+                          </select>
+                          {errors.hiringTimeline && (
+                            <span className="text-red-500 text-xs font-semibold">
+                              {errors.hiringTimeline}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* 5. Business Operating Years Dropdown */}
+                        <div className="flex flex-col gap-1.5">
+                          <label
+                            htmlFor="businessYears"
+                            className={`text-xs font-bold ${
+                              theme === "dark" ? "text-slate-200" : "text-[#0C1827]"
+                            }`}
+                          >
+                            How many years has your business been operating?{" "}
+                            <span className="text-red-500">*</span>
+                          </label>
+                          <select
+                            name="businessYears"
+                            id="businessYears"
+                            value={formData.businessYears}
+                            onChange={(e) => {
+                              setFormData({ ...formData, businessYears: e.target.value });
+                              if (errors.businessYears)
+                                setErrors((prev) => ({ ...prev, businessYears: "" }));
+                            }}
+                            className={`w-full px-4 py-3 rounded-xl text-sm font-medium border transition-all outline-none ${
+                              errors.businessYears
+                                ? "border-red-500 bg-red-500/5"
+                                : theme === "dark"
+                                ? "bg-[#0B1A2D] border-slate-700 text-white focus:border-[#FF5500]"
+                                : "bg-white border-slate-300 text-[#0C1827] focus:border-[#07192C]"
+                            }`}
+                          >
+                            <option value="" disabled>
+                              Select
+                            </option>
+                            {operatingYearsOptions.map((opt, i) => (
+                              <option key={i} value={opt} className="text-[#0C1827]">
+                                {opt}
+                              </option>
+                            ))}
+                          </select>
+                          {errors.businessYears && (
+                            <span className="text-red-500 text-xs font-semibold">
+                              {errors.businessYears}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* 6. Roles to Hire Textarea */}
+                        <div className="flex flex-col gap-1.5">
+                          <label
+                            htmlFor="rolesToHire"
+                            className={`text-xs font-bold ${
+                              theme === "dark" ? "text-slate-200" : "text-[#0C1827]"
+                            }`}
+                          >
+                            Please list all roles you&apos;d like to hire for (our team will customize
+                            your call based on this info). <span className="text-red-500">*</span>
+                          </label>
+                          <textarea
+                            name="rolesToHire"
+                            id="rolesToHire"
+                            rows={3}
+                            placeholder="e.g. Executive Assistant, Lead Developer, Customer Support..."
+                            value={formData.rolesToHire}
+                            onChange={(e) => {
+                              setFormData({ ...formData, rolesToHire: e.target.value });
+                              if (errors.rolesToHire)
+                                setErrors((prev) => ({ ...prev, rolesToHire: "" }));
+                            }}
+                            className={`w-full px-4 py-3 rounded-xl text-sm font-medium border transition-all outline-none ${
+                              errors.rolesToHire
+                                ? "border-red-500 bg-red-500/5 focus:ring-2 focus:ring-red-500/30"
+                                : theme === "dark"
+                                ? "bg-[#0B1A2D] border-slate-700 text-white focus:border-[#FF5500]"
+                                : "bg-white border-slate-300 text-[#0C1827] focus:border-[#07192C]"
+                            }`}
+                          />
+                          {errors.rolesToHire && (
+                            <span className="text-red-500 text-xs font-semibold">
+                              {errors.rolesToHire}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* 7. Business Website */}
+                        <div className="flex flex-col gap-1.5">
+                          <label
+                            htmlFor="websiteUrl"
+                            className={`text-xs font-bold ${
+                              theme === "dark" ? "text-slate-200" : "text-[#0C1827]"
+                            }`}
+                          >
+                            Please provide your business website: <span className="text-red-500">*</span>
+                          </label>
+                          <input
+                            type="url"
+                            name="websiteUrl"
+                            id="websiteUrl"
+                            placeholder="e.g. google.com"
+                            value={formData.websiteUrl}
+                            onChange={(e) => {
+                              setFormData({ ...formData, websiteUrl: e.target.value });
+                              if (errors.websiteUrl)
+                                setErrors((prev) => ({ ...prev, websiteUrl: "" }));
+                            }}
+                            className={`w-full px-4 py-3 rounded-xl text-sm font-medium border transition-all outline-none ${
+                              errors.websiteUrl
+                                ? "border-red-500 bg-red-500/5 focus:ring-2 focus:ring-red-500/30"
+                                : theme === "dark"
+                                ? "bg-[#0B1A2D] border-slate-700 text-white focus:border-[#FF5500]"
+                                : "bg-white border-slate-300 text-[#0C1827] focus:border-[#07192C]"
+                            }`}
+                          />
+                          {errors.websiteUrl && (
+                            <span className="text-red-500 text-xs font-semibold">
+                              {errors.websiteUrl}
+                            </span>
+                          )}
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
                   {/* Terms Consent Disclaimer */}
                   <p
                     className={`text-xs leading-relaxed font-normal mt-1 ${
@@ -473,7 +877,7 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
                         : "bg-[#07192C] text-white hover:bg-[#000e1e]"
                     }`}
                   >
-                    <span>Continue</span>
+                    <span>{isExpanded ? "Proceed to Calendar" : "Continue"}</span>
                     <FiChevronRight size={18} />
                   </button>
                 </form>
