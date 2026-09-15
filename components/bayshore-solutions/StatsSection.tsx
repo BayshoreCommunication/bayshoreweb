@@ -139,7 +139,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
                   </div>
                   {/* Metric Label */}
                   <span
-                    className={`text-xl md:text-2xl font-normal leading-snug font-instrument ${
+                    className={`text-xl md:text-2xl font-bold leading-snug font-instrument ${
                       theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
                     }`}
                   >
