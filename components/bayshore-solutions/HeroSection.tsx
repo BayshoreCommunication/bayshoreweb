@@ -2,8 +2,9 @@
 
 import React, { useState, useRef } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { FiUser, FiTrendingUp, FiShield, FiArrowRight, FiCheckCircle } from "react-icons/fi";
+import { MultiStepHiringForm } from "./MultiStepHiringForm";
 
 export const DUMMY_HERO_IMAGES = {
   leftBg: "/assets/bayshore-solutions/world-map-bg.png",
@@ -40,16 +41,50 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     phoneNumber: "",
   });
 
+  const [errors, setErrors] = useState<{ [key in keyof HeroFormData]?: string }>({});
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [leftImgError, setLeftImgError] = useState(false);
   const [rightImgError, setRightImgError] = useState(false);
 
+  const validateForm = (): { [key in keyof HeroFormData]?: string } => {
+    const newErrors: { [key in keyof HeroFormData]?: string } = {};
+    if (!formData.fullName.trim()) {
+      newErrors.fullName = "Full name is required";
+    }
+    if (!formData.workEmail.trim()) {
+      newErrors.workEmail = "Work email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.workEmail)) {
+      newErrors.workEmail = "Please enter a valid email address";
+    }
+    if (!formData.companyName.trim()) {
+      newErrors.companyName = "Company name is required";
+    }
+    if (!formData.phoneNumber.trim()) {
+      newErrors.phoneNumber = "Phone number is required";
+    }
+    return newErrors;
+  };
+
+  const handleChange = (field: keyof HeroFormData, value: string) => {
+    setFormData((prev) => ({ ...prev, [field]: value }));
+    if (errors[field]) {
+      setErrors((prev) => ({ ...prev, [field]: undefined }));
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const validationErrors = validateForm();
+    if (Object.keys(validationErrors).length > 0) {
+      setErrors(validationErrors);
+      return;
+    }
+    setErrors({});
     if (onSubmitForm) {
       onSubmitForm(formData, e);
     }
-    setSubmitted(true);
+    setIsModalOpen(true);
   };
 
   const badgeVariants = {
@@ -438,87 +473,112 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   ref={formRef}
                   id={formId}
                   onSubmit={handleSubmit}
+                  noValidate
                   className="flex flex-col gap-5 sm:gap-6 font-instrument"
                 >
                   {/* Full Name Input */}
-                  <motion.div whileFocus={{ scale: 1.01 }}>
-                    <input
-                      type="text"
-                      name="fullName"
-                      id="fullName"
-                      required
-                      placeholder="Full Name"
-                      value={formData.fullName}
-                      onChange={(e) =>
-                        setFormData({ ...formData, fullName: e.target.value })
-                      }
-                      className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-base sm:text-lg font-medium border transition-all outline-none focus:ring-2 focus:ring-[#FE6F1F]/40 ${
-                        theme === "dark"
-                          ? "bg-slate-900/80 border-slate-700 text-white placeholder-slate-500 focus:border-[#FF5500]"
-                          : "bg-[#FAFAFC] border-slate-200/90 text-[#0C1827] placeholder-slate-400 focus:bg-white focus:border-[#07192C]"
-                      }`}
-                    />
-                  </motion.div>
+                  <div className="flex flex-col text-left">
+                    <motion.div whileFocus={{ scale: 1.01 }}>
+                      <input
+                        type="text"
+                        name="fullName"
+                        id="fullName"
+                        placeholder="Full Name"
+                        value={formData.fullName}
+                        onChange={(e) => handleChange("fullName", e.target.value)}
+                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-base sm:text-lg font-medium border transition-all outline-none focus:ring-2 ${
+                          errors.fullName
+                            ? "border-red-500 bg-red-500/5 focus:ring-red-500/30 focus:border-red-500"
+                            : theme === "dark"
+                            ? "bg-slate-900/80 border-slate-700 text-white placeholder-slate-500 focus:ring-[#FE6F1F]/40 focus:border-[#FF5500]"
+                            : "bg-[#FAFAFC] border-slate-200/90 text-[#0C1827] placeholder-slate-400 focus:ring-[#FE6F1F]/40 focus:bg-white focus:border-[#07192C]"
+                        }`}
+                      />
+                    </motion.div>
+                    {errors.fullName && (
+                      <span className="text-red-500 text-xs sm:text-sm font-semibold mt-1.5 ml-2">
+                        {errors.fullName}
+                      </span>
+                    )}
+                  </div>
 
                   {/* Work Email Input */}
-                  <motion.div whileFocus={{ scale: 1.01 }}>
-                    <input
-                      type="email"
-                      name="workEmail"
-                      id="workEmail"
-                      required
-                      placeholder="Work Email"
-                      value={formData.workEmail}
-                      onChange={(e) =>
-                        setFormData({ ...formData, workEmail: e.target.value })
-                      }
-                      className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-base sm:text-lg font-medium border transition-all outline-none focus:ring-2 focus:ring-[#FE6F1F]/40 ${
-                        theme === "dark"
-                          ? "bg-slate-900/80 border-slate-700 text-white placeholder-slate-500 focus:border-[#FF5500]"
-                          : "bg-[#FAFAFC] border-slate-200/90 text-[#0C1827] placeholder-slate-400 focus:bg-white focus:border-[#07192C]"
-                      }`}
-                    />
-                  </motion.div>
+                  <div className="flex flex-col text-left">
+                    <motion.div whileFocus={{ scale: 1.01 }}>
+                      <input
+                        type="email"
+                        name="workEmail"
+                        id="workEmail"
+                        placeholder="Work Email"
+                        value={formData.workEmail}
+                        onChange={(e) => handleChange("workEmail", e.target.value)}
+                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-base sm:text-lg font-medium border transition-all outline-none focus:ring-2 ${
+                          errors.workEmail
+                            ? "border-red-500 bg-red-500/5 focus:ring-red-500/30 focus:border-red-500"
+                            : theme === "dark"
+                            ? "bg-slate-900/80 border-slate-700 text-white placeholder-slate-500 focus:ring-[#FE6F1F]/40 focus:border-[#FF5500]"
+                            : "bg-[#FAFAFC] border-slate-200/90 text-[#0C1827] placeholder-slate-400 focus:ring-[#FE6F1F]/40 focus:bg-white focus:border-[#07192C]"
+                        }`}
+                      />
+                    </motion.div>
+                    {errors.workEmail && (
+                      <span className="text-red-500 text-xs sm:text-sm font-semibold mt-1.5 ml-2">
+                        {errors.workEmail}
+                      </span>
+                    )}
+                  </div>
 
                   {/* Company Name Input */}
-                  <motion.div whileFocus={{ scale: 1.01 }}>
-                    <input
-                      type="text"
-                      name="companyName"
-                      id="companyName"
-                      required
-                      placeholder="Company Name"
-                      value={formData.companyName}
-                      onChange={(e) =>
-                        setFormData({ ...formData, companyName: e.target.value })
-                      }
-                      className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-base sm:text-lg font-medium border transition-all outline-none focus:ring-2 focus:ring-[#FE6F1F]/40 ${
-                        theme === "dark"
-                          ? "bg-slate-900/80 border-slate-700 text-white placeholder-slate-500 focus:border-[#FF5500]"
-                          : "bg-[#FAFAFC] border-slate-200/90 text-[#0C1827] placeholder-slate-400 focus:bg-white focus:border-[#07192C]"
-                      }`}
-                    />
-                  </motion.div>
+                  <div className="flex flex-col text-left">
+                    <motion.div whileFocus={{ scale: 1.01 }}>
+                      <input
+                        type="text"
+                        name="companyName"
+                        id="companyName"
+                        placeholder="Company Name"
+                        value={formData.companyName}
+                        onChange={(e) => handleChange("companyName", e.target.value)}
+                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-base sm:text-lg font-medium border transition-all outline-none focus:ring-2 ${
+                          errors.companyName
+                            ? "border-red-500 bg-red-500/5 focus:ring-red-500/30 focus:border-red-500"
+                            : theme === "dark"
+                            ? "bg-slate-900/80 border-slate-700 text-white placeholder-slate-500 focus:ring-[#FE6F1F]/40 focus:border-[#FF5500]"
+                            : "bg-[#FAFAFC] border-slate-200/90 text-[#0C1827] placeholder-slate-400 focus:ring-[#FE6F1F]/40 focus:bg-white focus:border-[#07192C]"
+                        }`}
+                      />
+                    </motion.div>
+                    {errors.companyName && (
+                      <span className="text-red-500 text-xs sm:text-sm font-semibold mt-1.5 ml-2">
+                        {errors.companyName}
+                      </span>
+                    )}
+                  </div>
 
                   {/* Phone Number Input */}
-                  <motion.div whileFocus={{ scale: 1.01 }}>
-                    <input
-                      type="tel"
-                      name="phoneNumber"
-                      id="phoneNumber"
-                      required
-                      placeholder="Phone Number"
-                      value={formData.phoneNumber}
-                      onChange={(e) =>
-                        setFormData({ ...formData, phoneNumber: e.target.value })
-                      }
-                      className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-base sm:text-lg font-medium border transition-all outline-none focus:ring-2 focus:ring-[#FE6F1F]/40 ${
-                        theme === "dark"
-                          ? "bg-slate-900/80 border-slate-700 text-white placeholder-slate-500 focus:border-[#FF5500]"
-                          : "bg-[#FAFAFC] border-slate-200/90 text-[#0C1827] placeholder-slate-400 focus:bg-white focus:border-[#07192C]"
-                      }`}
-                    />
-                  </motion.div>
+                  <div className="flex flex-col text-left">
+                    <motion.div whileFocus={{ scale: 1.01 }}>
+                      <input
+                        type="tel"
+                        name="phoneNumber"
+                        id="phoneNumber"
+                        placeholder="Phone Number"
+                        value={formData.phoneNumber}
+                        onChange={(e) => handleChange("phoneNumber", e.target.value)}
+                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-base sm:text-lg font-medium border transition-all outline-none focus:ring-2 ${
+                          errors.phoneNumber
+                            ? "border-red-500 bg-red-500/5 focus:ring-red-500/30 focus:border-red-500"
+                            : theme === "dark"
+                            ? "bg-slate-900/80 border-slate-700 text-white placeholder-slate-500 focus:ring-[#FE6F1F]/40 focus:border-[#FF5500]"
+                            : "bg-[#FAFAFC] border-slate-200/90 text-[#0C1827] placeholder-slate-400 focus:ring-[#FE6F1F]/40 focus:bg-white focus:border-[#07192C]"
+                        }`}
+                      />
+                    </motion.div>
+                    {errors.phoneNumber && (
+                      <span className="text-red-500 text-xs sm:text-sm font-semibold mt-1.5 ml-2">
+                        {errors.phoneNumber}
+                      </span>
+                    )}
+                  </div>
 
                   {/* Submit CTA Button */}
                   <motion.button
@@ -554,6 +614,35 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </motion.div>
         </div>
       </div>
+
+      {/* Get Started MultiStep Form Modal Popup */}
+      <AnimatePresence>
+        {isModalOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/80 backdrop-blur-md p-4 sm:p-6 overflow-y-auto"
+            onClick={() => setIsModalOpen(false)}
+          >
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              transition={{ type: "spring", stiffness: 100, damping: 15 }}
+              onClick={(e) => e.stopPropagation()}
+              className="w-full max-w-[860px] my-auto relative"
+            >
+              <MultiStepHiringForm
+                theme={theme}
+                defaultStep={2}
+                initialData={formData}
+                onClose={() => setIsModalOpen(false)}
+              />
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };

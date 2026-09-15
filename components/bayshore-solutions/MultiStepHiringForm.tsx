@@ -9,6 +9,7 @@ import {
   FiArrowRight,
   FiArrowLeft,
   FiCheckCircle,
+  FiX,
 } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -31,31 +32,35 @@ export interface MultiStepHiringFormProps {
   theme?: "light" | "dark";
   formId?: string;
   defaultStep?: 1 | 2;
+  initialData?: Partial<HiringFormData>;
   onSubmitForm?: (data: HiringFormData, e?: React.FormEvent<HTMLFormElement>) => void;
+  onClose?: () => void;
 }
 
 export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
   theme = "dark",
   formId = "bayshore-multistep-form",
   defaultStep = 2,
+  initialData,
   onSubmitForm,
+  onClose,
 }) => {
   const formRef = useRef<HTMLFormElement>(null);
   const [step, setStep] = useState<1 | 2>(defaultStep);
   const [submitted, setSubmitted] = useState(false);
 
-  const [formData, setFormData] = useState<HiringFormData>({
-    fullName: "",
-    workEmail: "",
-    companyName: "",
-    phoneNumber: "",
-    jobTitle: "",
-    experienceLevel: "",
-    hoursPerWeek: "40",
-    interviewDate: "",
-    interviewTime: "",
-    timezone: "America/New_York (EST)",
-  });
+  const [formData, setFormData] = useState<HiringFormData>(() => ({
+    fullName: initialData?.fullName || "",
+    workEmail: initialData?.workEmail || "",
+    companyName: initialData?.companyName || "",
+    phoneNumber: initialData?.phoneNumber || "",
+    jobTitle: initialData?.jobTitle || "",
+    experienceLevel: initialData?.experienceLevel || "",
+    hoursPerWeek: initialData?.hoursPerWeek || "40",
+    interviewDate: initialData?.interviewDate || "",
+    interviewTime: initialData?.interviewTime || "",
+    timezone: initialData?.timezone || "America/New_York (EST)",
+  }));
 
   const supportOptions = [
     "Virtual Assistant / Admin Support",
@@ -145,6 +150,20 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
             : "bg-white text-[#0C1827] border-slate-200 shadow-xl shadow-slate-900/10"
         }`}
       >
+        {onClose && (
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="Close form modal"
+            className={`absolute top-5 right-5 sm:top-6 sm:right-6 z-30 p-2.5 rounded-full transition-colors ${
+              theme === "dark"
+                ? "bg-slate-800/80 text-slate-300 hover:text-white hover:bg-slate-700"
+                : "bg-slate-100 text-slate-600 hover:text-[#0C1827] hover:bg-slate-200"
+            }`}
+          >
+            <FiX size={20} />
+          </button>
+        )}
         <AnimatePresence mode="wait">
           {submitted ? (
             /* THANK YOU / SUCCESS STATE */
