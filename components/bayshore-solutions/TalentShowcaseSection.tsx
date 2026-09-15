@@ -3,6 +3,7 @@
 import React, { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import {
   FiChevronLeft,
   FiChevronRight,
@@ -130,6 +131,23 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
       ? talents
       : talents.filter((t) => t.category === selectedCategory);
 
+  // Automatic 3-second auto-loop slider
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      if (scrollContainerRef.current) {
+        const container = scrollContainerRef.current;
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        if (container.scrollLeft >= maxScroll - 10) {
+          container.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          container.scrollBy({ left: 320, behavior: "smooth" });
+        }
+      }
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [filteredTalents]);
+
   const handleScroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
       const scrollAmount = 340;
@@ -149,15 +167,21 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
     >
       <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px]">
         {/* Section Header Area */}
-        <div className="text-left max-w-5xl xl:max-w-6xl mb-12 sm:mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="text-left max-w-5xl xl:max-w-6xl mb-12 sm:mb-16"
+        >
           <span
-            className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] mb-4 sm:mb-5 ${
+            className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] mb-4 sm:mb-5 font-playfair ${
               theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
             }`}
           >
             MEET THE TALENT
           </span>
-          <h2 className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[46px] xl:text-[54px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.25] mb-4 sm:mb-6 text-left !text-left ${
+          <h2 className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[46px] xl:text-[54px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.25] mb-4 sm:mb-6 text-left !text-left font-playfair ${
             theme === "dark" ? "!text-white" : "!text-[#0C1827]"
           }`}>
             Real Talent. Ready for{" "}
@@ -166,16 +190,22 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
             </span>
           </h2>
           <p
-            className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed font-medium max-w-3xl text-left !text-left w-full ${
+            className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed font-medium max-w-3xl text-left !text-left w-full font-instrument ${
               theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
             }`}
           >
             Explore the types of pre-vetted virtual professionals we can match to your business.
           </p>
-        </div>
+        </motion.div>
 
         {/* Industry Filter Pills */}
-        <div className="flex items-center justify-start flex-wrap gap-2.5 sm:gap-3.5 mb-10 sm:mb-14">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-30px" }}
+          transition={{ duration: 0.5, delay: 0.15 }}
+          className="flex items-center justify-start flex-wrap gap-2.5 sm:gap-3.5 mb-10 sm:mb-14 font-instrument"
+        >
           {CATEGORIES.map((cat) => {
             const isActive = selectedCategory === cat;
             return (
@@ -183,7 +213,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                 key={cat}
                 type="button"
                 onClick={() => setSelectedCategory(cat)}
-                className={`px-6 py-3 sm:px-7 sm:py-3.5 rounded-full font-extrabold text-sm sm:text-base transition-all duration-300 border shadow-xs ${
+                className={`relative px-6 py-3 sm:px-7 sm:py-3.5 rounded-full font-extrabold text-sm sm:text-base transition-all duration-300 border shadow-xs ${
                   isActive
                     ? theme === "dark"
                       ? "bg-[#FF5500] !text-white border-[#FF5500] shadow-md"
@@ -193,41 +223,58 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                     : "bg-white !text-[#0C1827] border-slate-200 hover:border-slate-300 hover:bg-slate-50"
                 }`}
               >
-                {cat}
+                {isActive && (
+                  <motion.div
+                    layoutId="activeCategoryTab"
+                    className="absolute inset-0 rounded-full bg-inherit z-0"
+                    transition={{ type: "spring", stiffness: 350, damping: 25 }}
+                  />
+                )}
+                <span className="relative z-10">{cat}</span>
               </button>
             );
           })}
-        </div>
+        </motion.div>
 
         {/* Talent Cards Carousel Wrapper with Navigation Controls */}
-        <div className="relative group px-1 sm:px-3 mb-14 sm:mb-18">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="relative group px-1 sm:px-3 mb-14 sm:mb-18"
+        >
           {/* Left Arrow Button */}
-          <button
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             type="button"
             onClick={() => handleScroll("left")}
             aria-label="Scroll Left"
-            className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 sm:-translate-x-5 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full flex items-center justify-center border shadow-lg transition-all duration-300 ${
+            className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 sm:-translate-x-5 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full flex items-center justify-center border shadow-lg transition-colors ${
               theme === "dark"
                 ? "bg-[#0B1A2D] !text-white border-slate-700 hover:bg-[#FF5500]"
                 : "bg-white !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
             }`}
           >
             <FiChevronLeft size={22} />
-          </button>
+          </motion.button>
 
           {/* Right Arrow Button */}
-          <button
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             type="button"
             onClick={() => handleScroll("right")}
             aria-label="Scroll Right"
-            className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 sm:translate-x-5 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full flex items-center justify-center border shadow-lg transition-all duration-300 ${
+            className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 sm:translate-x-5 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full flex items-center justify-center border shadow-lg transition-colors ${
               theme === "dark"
                 ? "bg-[#0B1A2D] !text-white border-slate-700 hover:bg-[#FF5500]"
                 : "bg-white !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
             }`}
           >
             <FiChevronRight size={22} />
-          </button>
+          </motion.button>
 
           {/* Horizontal Scrollable Cards List */}
           <div
@@ -236,9 +283,11 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {filteredTalents.map((person) => (
-              <div
+              <motion.div
                 key={person.id}
-                className={`min-w-[260px] sm:min-w-[290px] max-w-[310px] rounded-[24px] sm:rounded-[28px] overflow-hidden flex flex-col justify-between transition-all duration-300 transform hover:-translate-y-1.5 ${
+                whileHover={{ y: -6, scale: 1.02 }}
+                transition={{ duration: 0.3 }}
+                className={`min-w-[260px] sm:min-w-[290px] max-w-[310px] rounded-[24px] sm:rounded-[28px] overflow-hidden flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
                   theme === "dark"
                     ? "bg-[#0B1A2D] border-none shadow-lg shadow-black/40 !text-white"
                     : "bg-white border-none shadow-sm hover:shadow-md !text-[#0C1827]"
@@ -251,27 +300,27 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                       src={person.imagePath}
                       alt={person.name}
                       fill
-                      className="object-cover object-top transition-transform duration-500 hover:scale-105"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-108"
                     />
                   </div>
 
                   {/* Card Info Area */}
                   <div className="p-6 sm:p-7">
-                    <h3 className={`text-2xl sm:text-[25px] font-extrabold tracking-tight mb-1  ${
+                    <h3 className={`text-2xl sm:text-[25px] font-extrabold tracking-tight mb-1 font-playfair ${
                       theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                     }`}>
                       {person.name}
                     </h3>
                     <p
-                      className={`text-base sm:text-lg font-semibold mb-4 ${
+                      className={`text-base sm:text-lg font-semibold mb-4 font-instrument ${
                         theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
                       }`}
                     >
                       {person.role}
                     </p>
 
-                    {/* Meta Badges - Clean Borderless Layout */}
-                    <div className={`flex flex-col gap-2.5 pt-2 text-sm sm:text-base font-bold ${
+                    {/* Meta Badges */}
+                    <div className={`flex flex-col gap-2.5 pt-2 text-sm sm:text-base font-bold font-instrument ${
                       theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
                     }`}>
                       <div className="flex items-center gap-2">
@@ -291,13 +340,17 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* Bottom CTA Banner ("BUILD A STRONGER TEAM") */}
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           className={`relative rounded-[32px] sm:rounded-[40px] p-8 sm:p-12 lg:p-14 overflow-hidden transition-all duration-300 ${
             theme === "dark"
               ? "bg-[#0B1A2D] border border-slate-800 text-white shadow-2xl shadow-black/50"
@@ -314,10 +367,10 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                 className="object-contain object-center"
               />
               {/* Orange Hotspot Glow Nodes */}
-              <div className="absolute top-[38%] left-[28%] w-3 h-3 bg-[#FE6F1F] rounded-full shadow-[0_0_12px_#FE6F1F]" />
-              <div className="absolute top-[48%] left-[45%] w-2.5 h-2.5 bg-[#FE6F1F] rounded-full shadow-[0_0_10px_#FE6F1F]" />
-              <div className="absolute top-[40%] left-[58%] w-3 h-3 bg-[#FE6F1F] rounded-full shadow-[0_0_12px_#FE6F1F]" />
-              <div className="absolute top-[65%] left-[72%] w-3 h-3 bg-[#FE6F1F] rounded-full shadow-[0_0_12px_#FE6F1F]" />
+              <div className="absolute top-[38%] left-[28%] w-3 h-3 bg-[#FE6F1F] rounded-full shadow-[0_0_12px_#FE6F1F] animate-pulse" />
+              <div className="absolute top-[48%] left-[45%] w-2.5 h-2.5 bg-[#FE6F1F] rounded-full shadow-[0_0_10px_#FE6F1F] animate-pulse" />
+              <div className="absolute top-[40%] left-[58%] w-3 h-3 bg-[#FE6F1F] rounded-full shadow-[0_0_12px_#FE6F1F] animate-pulse" />
+              <div className="absolute top-[65%] left-[72%] w-3 h-3 bg-[#FE6F1F] rounded-full shadow-[0_0_12px_#FE6F1F] animate-pulse" />
             </div>
           </div>
 
@@ -326,7 +379,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
             {/* Left Info Column */}
             <div className="max-w-2xl xl:max-w-3xl flex-1">
               <span
-                className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.22em] mb-4 ${
+                className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.22em] mb-4 font-playfair ${
                   theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
                 }`}
               >
@@ -334,7 +387,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
               </span>
 
               <h2
-                className={`text-[36px] xs:text-[40px] sm:text-4xl lg:text-[46px] xl:text-[52px] font-extrabold tracking-tight leading-tight mb-6 sm:mb-7 lg:whitespace-nowrap ${
+                className={`text-[36px] xs:text-[40px] sm:text-4xl lg:text-[46px] xl:text-[52px] font-extrabold tracking-tight leading-tight mb-6 sm:mb-7 lg:whitespace-nowrap font-playfair ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}
               >
@@ -345,17 +398,19 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
               </h2>
 
               <p
-                className={`text-lg sm:text-xl lg:text-[19px] font-medium leading-relaxed mb-8 max-w-xl text-left !text-left w-full ${
+                className={`text-lg sm:text-xl lg:text-[19px] font-medium leading-relaxed mb-8 max-w-xl text-left !text-left w-full font-instrument ${
                   theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                 }`}
               >
                 See how businesses are using Bayshore virtual talent to support their teams, handle day-to-day work, and grow without the overhead of traditional hiring.
               </p>
 
-              <button
+              <motion.button
+                whileHover={{ scale: 1.03, y: -2 }}
+                whileTap={{ scale: 0.97 }}
                 type="button"
                 onClick={onFindTalentForRoleClick}
-                className={`px-9 py-4.5 sm:px-10 sm:py-5 rounded-full font-extrabold text-base sm:text-lg lg:text-xl shrink-0 transition-all duration-300 flex items-center gap-3 shadow-md hover:shadow-lg transform active:scale-98 !text-white ${
+                className={`px-9 py-4.5 sm:px-10 sm:py-5 rounded-full font-extrabold text-base sm:text-lg lg:text-xl shrink-0 transition-all duration-300 flex items-center gap-3 shadow-md hover:shadow-xl !text-white font-instrument ${
                   theme === "dark"
                     ? "bg-[#FF5500] hover:bg-[#e04a00]"
                     : "bg-[#07192C] hover:bg-[#000e1e]"
@@ -363,35 +418,37 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
               >
                 <span className="!text-white">Get Started Today</span>
                 <FiArrowRight size={22} className="!text-white" />
-              </button>
+              </motion.button>
             </div>
 
             {/* Right Floating Cards Column */}
-            <div className="flex flex-col gap-4 sm:gap-5 shrink-0 w-full sm:w-auto self-center lg:self-auto">
-              {/* Top Floating Card ("Great Teams Build Greater Business") */}
-              <div
+            <div className="flex flex-col gap-4 sm:gap-5 shrink-0 w-full sm:w-auto self-center lg:self-auto font-instrument">
+              {/* Top Floating Card */}
+              <motion.div
+                whileHover={{ scale: 1.03, y: -3 }}
                 className={`rounded-2xl p-6 sm:p-7 shadow-md sm:w-[300px] border transition-all ${
                   theme === "dark"
                     ? "bg-[#07192C] border-slate-800 text-white"
                     : "bg-white border-slate-100 text-[#0C1827]"
                 }`}
               >
-                <h3 className="text-xl sm:text-2xl font-extrabold leading-snug tracking-tight">
+                <h3 className="text-xl sm:text-2xl font-extrabold leading-snug tracking-tight font-playfair">
                   Great Teams <br />
                   Build Greater <br />
                   Business
                 </h3>
-              </div>
+              </motion.div>
 
-              {/* Bottom Floating Card (5 Feature Bullet Items) */}
-              <div
+              {/* Bottom Floating Card */}
+              <motion.div
+                whileHover={{ scale: 1.03, y: -3 }}
                 className={`rounded-2xl p-6 sm:p-7 shadow-md sm:w-[300px] border transition-all ${
                   theme === "dark"
                     ? "bg-[#07192C] border-slate-800 text-white"
                     : "bg-white border-slate-100 text-[#0C1827]"
                 }`}
               >
-                <ul className="flex flex-col gap-3">
+                <ul className="flex flex-col gap-3 font-instrument">
                   {[
                     "GLOBAL TALENT",
                     "REAL SUPPORT",
@@ -409,10 +466,10 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                     </li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export interface BreadcrumbItem {
   label: string;
@@ -103,25 +104,37 @@ export const SolutionsBreadcrumb: React.FC<SolutionsBreadcrumbProps> = ({
       <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px] relative z-10 w-full py-12 sm:py-16">
         <div className="w-full lg:w-[52%] xl:w-[48%] flex flex-col justify-center items-start text-left">
           {/* Main Title with Serif Styling matching design */}
-          <h1
-            className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[64px] font-serif font-bold tracking-tight leading-[1.1] mb-4 sm:mb-6 text-left !text-left ${
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[64px] font-playfair font-bold tracking-tight leading-[1.1] mb-4 sm:mb-6 text-left !text-left ${
               theme === "dark" ? "!text-white" : "!text-[#0C1827]"
             }`}
           >
             {title}
-          </h1>
+          </motion.h1>
 
           {/* Subtitle Paragraph */}
-          <p
-            className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-8 font-medium max-w-xl text-left !text-left w-full ${
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
+            className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-8 font-medium max-w-xl text-left !text-left w-full font-instrument ${
               theme === "dark" ? "!text-slate-300" : "!text-[#475569]"
             }`}
           >
             {subtitle}
-          </p>
+          </motion.p>
 
           {/* Breadcrumb Navigation Bar */}
-          <nav aria-label="Breadcrumb" className="flex items-center gap-3">
+          <motion.nav
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+            aria-label="Breadcrumb"
+            className="flex items-center gap-3 font-instrument"
+          >
             {breadcrumbItems.map((item, index) => {
               const isLast = index === breadcrumbItems.length - 1;
 
@@ -155,7 +168,7 @@ export const SolutionsBreadcrumb: React.FC<SolutionsBreadcrumbProps> = ({
                 </React.Fragment>
               );
             })}
-          </nav>
+          </motion.nav>
         </div>
       </div>
     </section>

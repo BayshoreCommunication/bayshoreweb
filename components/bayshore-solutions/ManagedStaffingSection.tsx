@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FiShield } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export interface ManagedStaffingSectionProps {
   theme?: "light" | "dark";
@@ -104,8 +105,12 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
       <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px] relative z-10 w-full">
         <div className="w-full lg:w-[54%] xl:w-[50%] flex flex-col justify-center pr-0 lg:pr-6">
           {/* Main Headline */}
-          <h2
-            className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[52px] xl:text-[60px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.2] mb-4 sm:mb-6 text-left !text-left ${
+          <motion.h2
+            initial={{ opacity: 0, y: 40, filter: "blur(6px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[52px] xl:text-[60px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.2] mb-4 sm:mb-6 text-left !text-left font-playfair ${
               theme === "dark" ? "!text-white" : "!text-[#0C1827]"
             }`}
           >
@@ -118,19 +123,29 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
                 {headlineHighlight}
               </span>
             </span>
-          </h2>
+          </motion.h2>
 
           {/* Subtitle Paragraph */}
-          <p
-            className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-8 sm:mb-10 font-medium text-left !text-left w-full max-w-xl lg:max-w-2xl xl:max-w-3xl ${
+          <motion.p
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.12, ease: "easeOut" }}
+            className={`text-lg sm:text-xl lg:text-[22px] leading-relaxed mb-8 sm:mb-10 font-medium text-left !text-left w-full max-w-xl lg:max-w-2xl xl:max-w-3xl font-instrument ${
               theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
             }`}
           >
             {subtitle}
-          </p>
+          </motion.p>
 
-          {/* Mobile Image Card (Shown on mobile for clean contrast & visual appeal) */}
-          <div className="w-full h-[280px] sm:h-[340px] rounded-2xl sm:rounded-3xl relative mb-8 overflow-hidden lg:hidden shadow-lg border border-slate-200/60 dark:border-slate-800">
+          {/* Mobile Image Card */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.92 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.15, type: "spring" }}
+            className="w-full h-[280px] sm:h-[340px] rounded-2xl sm:rounded-3xl relative mb-8 overflow-hidden lg:hidden shadow-lg border border-slate-200/60 dark:border-slate-800"
+          >
             <Image
               src={bgImage}
               alt="Managed Staffing Professional"
@@ -138,12 +153,26 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
               className="object-cover object-right"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
-          </div>
+          </motion.div>
 
           {/* 8 Feature Items Grid (2 Columns) */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 mb-10 sm:mb-12">
+          <motion.div
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+            className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-6 mb-10 sm:mb-12 font-instrument"
+          >
             {features.map((feature, idx) => (
-              <div key={idx} className="flex items-center gap-3">
+              <motion.div
+                key={idx}
+                initial={{ opacity: 0, x: -25, scale: 0.95 }}
+                whileInView={{ opacity: 1, x: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: 0.15 + idx * 0.06, type: "spring", stiffness: 100 }}
+                whileHover={{ x: 5 }}
+                className="flex items-center gap-3"
+              >
                 <div
                   className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full shrink-0 flex items-center justify-center border shadow-xs ${
                     theme === "dark"
@@ -155,38 +184,43 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
                 </div>
                 <span
                   className={`text-base sm:text-lg font-bold tracking-tight ${
-                    theme === "dark" ? "!text-slate-100" : "!text-[#1E293B]"
+                    theme === "dark" ? "!text-slate-100" : "!text-[#0C1827]"
                   }`}
                 >
                   {feature}
                 </span>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           {/* Bottom Testimonial Quote Callout Box */}
-          <div
-            className={`rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 max-w-xl transition-all duration-300 backdrop-blur-md ${
+          <motion.div
+            initial={{ opacity: 0, y: 30, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.7, delay: 0.35, type: "spring", stiffness: 85 }}
+            whileHover={{ scale: 1.02, y: -4 }}
+            className={`rounded-[24px] sm:rounded-[28px] p-6 sm:p-8 max-w-xl transition-all duration-300 backdrop-blur-md font-instrument ${
               theme === "dark"
                 ? "bg-[#0B1A2D]/95 border border-slate-800/90 shadow-xl text-white"
                 : "bg-white border border-slate-200/80 shadow-xs text-[#0C1827]"
             }`}
           >
             <p
-              className={`text-base sm:text-lg lg:text-[19px] font-extrabold leading-snug mb-3  ${
+              className={`text-base sm:text-lg lg:text-[19px] font-extrabold leading-snug mb-3 font-instrument ${
                 theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}
             >
               {quoteText}
             </p>
             <p
-              className={`text-sm sm:text-base font-semibold ${
+              className={`text-sm sm:text-base font-semibold font-instrument ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#64748B]"
               }`}
             >
               {quoteAuthor}
             </p>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

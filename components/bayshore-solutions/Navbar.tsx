@@ -8,6 +8,7 @@ import { GrFormClose } from "react-icons/gr";
 import { FiSun, FiMoon, FiArrowRight } from "react-icons/fi";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
+import { motion } from "framer-motion";
 
 // Configurable dummy logo paths as requested by user.
 // You can pass custom paths via props or change these default paths.
@@ -74,7 +75,10 @@ export const Navbar: React.FC<NavbarProps> = ({
   const currentLogoPath = theme === "dark" ? logoDarkPath : logoLightPath;
 
   return (
-    <header
+    <motion.header
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
       className={`fixed top-0 left-0 right-0 z-50 w-full max-w-full transition-all duration-300 border-none ${
         theme === "dark"
           ? scrolled
@@ -107,7 +111,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </Link>
 
           {/* Desktop Navigation Links */}
-          <nav className="hidden md:flex items-center gap-6 lg:gap-10">
+          <nav className="hidden md:flex items-center gap-6 lg:gap-10 font-instrument">
             {navItems.map((item: NavItem) => {
               const isActive = activeTab === item.title;
               return (
@@ -133,9 +137,11 @@ export const Navbar: React.FC<NavbarProps> = ({
           </nav>
 
           {/* Right Section: Light/Dark Theme Switcher & Find Talent Button */}
-          <div className="hidden md:flex items-center gap-4">
+          <div className="hidden md:flex items-center gap-4 font-instrument">
             {/* Theme Toggle Button */}
-            <button
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
               onClick={toggleTheme}
               aria-label="Toggle Light/Dark Theme"
               title={`Switch to ${theme === "dark" ? "Light" : "Dark"} Mode`}
@@ -146,23 +152,25 @@ export const Navbar: React.FC<NavbarProps> = ({
               }`}
             >
               {theme === "dark" ? <FiSun size={19} /> : <FiMoon size={19} />}
-            </button>
+            </motion.button>
 
             {/* CTA Button matching screenshots */}
-            <Link
-              href="/bayshore-solutions/get-started"
-              className={`text-link group px-6 py-2.5 lg:px-7 lg:py-3 rounded-full font-bold transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg transform active:scale-95 ${
-                theme === "dark"
-                  ? "bg-[#FF5500] !text-white hover:bg-[#e04a00] focus:ring-2 focus:ring-[#FF5500]/50"
-                  : "bg-[#07192C] !text-white hover:bg-[#0f2844] focus:ring-2 focus:ring-[#07192C]/50"
-              }`}
-            >
-              <span>Find Talent</span>
-              <FiArrowRight
-                className="transition-transform duration-300 group-hover:translate-x-1"
-                size={17}
-              />
-            </Link>
+            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+              <Link
+                href="/bayshore-solutions/get-started"
+                className={`text-link group px-6 py-2.5 lg:px-7 lg:py-3 rounded-full font-bold transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg ${
+                  theme === "dark"
+                    ? "bg-[#FF5500] !text-white hover:bg-[#e04a00] focus:ring-2 focus:ring-[#FF5500]/50"
+                    : "bg-[#07192C] !text-white hover:bg-[#0f2844] focus:ring-2 focus:ring-[#07192C]/50"
+                }`}
+              >
+                <span>Find Talent</span>
+                <FiArrowRight
+                  className="transition-transform duration-300 group-hover:translate-x-1"
+                  size={17}
+                />
+              </Link>
+            </motion.div>
           </div>
 
           {/* Mobile Navigation Controls */}
@@ -307,7 +315,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
         </div>
       </Drawer>
-    </header>
+    </motion.header>
   );
 };
 

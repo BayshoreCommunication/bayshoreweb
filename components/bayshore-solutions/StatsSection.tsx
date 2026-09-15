@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export interface StatItemData {
   value: number;
@@ -117,10 +118,18 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
           <div className="lg:col-span-6 xl:col-span-6 w-full">
             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-y-8 gap-x-4 sm:gap-8 items-start">
               {stats.map((item, idx) => (
-                <div key={idx} className="flex flex-col items-center text-center sm:items-start sm:text-left w-full">
+                <motion.div
+                  key={idx}
+                  initial={{ opacity: 0, y: 40, scale: 0.88, rotateX: 10 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.7, delay: idx * 0.12, type: "spring", stiffness: 100, damping: 12 }}
+                  whileHover={{ y: -6, scale: 1.05 }}
+                  className="flex flex-col items-center text-center sm:items-start sm:text-left w-full transition-transform duration-300"
+                >
                   {/* Big Counter Value */}
                   <div
-                    className={`text-4xl xs:text-5xl sm:text-5xl lg:text-[52px] xl:text-[58px] font-bold tracking-tight leading-none mb-2.5 sm:mb-3 ${
+                    className={`text-4xl xs:text-5xl sm:text-5xl lg:text-[52px] xl:text-[58px] font-bold tracking-tight leading-none mb-2.5 sm:mb-3 font-playfair ${
                       theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                     }`}
                   >
@@ -130,19 +139,25 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
                   </div>
                   {/* Metric Label (Center aligned & enlarged on mobile) */}
                   <span
-                    className={`text-base sm:text-base lg:text-lg xl:text-xl font-bold leading-snug max-w-[160px] sm:max-w-[170px] ${
-                      theme === "dark" ? "!text-slate-100" : "!text-[#3B4758]"
+                    className={`text-base sm:text-base lg:text-lg xl:text-xl font-bold leading-snug max-w-[160px] sm:max-w-[170px] font-instrument ${
+                      theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
                     }`}
                   >
                     {item.label}
                   </span>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
 
           {/* Right Column: World Map Graphic + Brand Tagline (Mobile Responsive) */}
-          <div className="lg:col-span-6 xl:col-span-6 flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-6 sm:gap-8 pt-4 sm:pt-6 lg:pt-0">
+          <motion.div
+            initial={{ opacity: 0, x: 50, filter: "blur(6px)" }}
+            whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            viewport={{ once: true, margin: "-40px" }}
+            transition={{ duration: 0.8, delay: 0.2, type: "spring", stiffness: 85, damping: 15 }}
+            className="lg:col-span-6 xl:col-span-6 flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-6 sm:gap-8 pt-4 sm:pt-6 lg:pt-0"
+          >
             {/* World Map Image Graphic */}
             <div className="relative w-full max-w-[280px] sm:w-[320px] lg:w-[380px] xl:w-[420px] h-[130px] sm:h-[160px] lg:h-[180px] shrink-0 md:ml-32">
               {!imgError ? (
@@ -188,7 +203,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
             </div>
 
             {/* Right Side Tagline Text */}
-            <div className="flex flex-col gap-1.5 sm:gap-2 text-center sm:text-left shrink-0">
+            <div className="flex flex-col gap-1.5 sm:gap-2 text-center sm:text-left shrink-0 font-playfair">
               <span
                 className={`text-xl xs:text-2xl sm:text-2xl lg:text-2xl xl:text-[28px] font-extrabold leading-snug ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
@@ -212,7 +227,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
               </span>
             </div>
 
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

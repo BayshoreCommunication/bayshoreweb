@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import {
   FiFileText,
   FiHeadphones,
@@ -79,7 +80,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
     <section
       id="how-it-works"
       className={`relative w-full max-w-full py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-300 ${
-        theme === "dark" ? "bg-[#07192C] text-white" : "bg-[#F8F9FA] text-black"
+        theme === "dark" ? "bg-[#07192C] text-white" : "bg-[#F8F9FA] text-[#0C1827]"
       }`}
     >
       {/* Background Dotted World Map Image with Overlay */}
@@ -123,7 +124,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   cx="3"
                   cy="3"
                   r="1.8"
-                  fill={theme === "dark" ? "#FFFFFF" : "#000000"}
+                  fill={theme === "dark" ? "#FFFFFF" : "#0C1827"}
                   opacity="0.3"
                 />
               </pattern>
@@ -163,17 +164,23 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
 
       <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px] relative z-10">
         {/* Section Header Area */}
-        <div className="text-left max-w-5xl mb-12 sm:mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="text-left max-w-5xl mb-12 sm:mb-16"
+        >
           <span
-            className={`inline-block text-sm sm:text-base font-extrabold uppercase tracking-[0.2em] mb-3 ${
-              theme === "dark" ? "!text-slate-300" : "!text-black"
+            className={`inline-block text-sm sm:text-base font-extrabold uppercase tracking-[0.2em] mb-3 font-playfair ${
+              theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
             }`}
           >
             {titleTag}
           </span>
           <h2
-            className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[54px] xl:text-[60px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.18] mb-4 sm:mb-6 text-left !text-left ${
-              theme === "dark" ? "!text-white" : "!text-black"
+            className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[54px] xl:text-[60px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.18] mb-4 sm:mb-6 text-left !text-left font-playfair ${
+              theme === "dark" ? "!text-white" : "!text-[#0C1827]"
             }`}
           >
             {headlineMain}{" "}
@@ -182,13 +189,13 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             </span>
           </h2>
           <p
-            className={`text-lg sm:text-xl lg:text-[22px] font-semibold text-left !text-left w-full max-w-3xl ${
-              theme === "dark" ? "!text-slate-200" : "!text-black opacity-90"
+            className={`text-lg sm:text-xl lg:text-[22px] font-semibold text-left !text-left w-full max-w-3xl font-instrument ${
+              theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
             }`}
           >
             {subtitle}
           </p>
-        </div>
+        </motion.div>
 
         {/* 5 Steps Process Container with Organic Wave Layout */}
         <div className="relative mb-16 sm:mb-20 min-h-[380px]">
@@ -225,13 +232,18 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   : "lg:pt-[35px]";
 
               return (
-                <div
+                <motion.div
                   key={idx}
-                  className={`flex flex-col items-center text-center transition-all duration-300 ${desktopPaddingTop}`}
+                  initial={{ opacity: 0, y: 50, scale: 0.88, rotate: idx % 2 === 0 ? -3 : 3 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1, rotate: 0 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.7, delay: idx * 0.12, type: "spring", stiffness: 95, damping: 14 }}
+                  whileHover={{ y: -10, scale: 1.06 }}
+                  className={`flex flex-col items-center text-center transition-all duration-300 group cursor-pointer ${desktopPaddingTop}`}
                 >
                   {/* Step Number Label */}
                   <span
-                    className={`text-xl sm:text-2xl font-extrabold mb-3 tracking-tight ${
+                    className={`text-xl sm:text-2xl font-extrabold mb-3 tracking-tight font-playfair ${
                       theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"
                     }`}
                   >
@@ -240,10 +252,10 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
 
                   {/* Icon Circle Container */}
                   <div
-                    className={`w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mb-6 border-2 transition-transform duration-300 hover:scale-105 shadow-md relative z-10 ${
+                    className={`w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mb-6 border-2 transition-all duration-300 shadow-md group-hover:shadow-xl relative z-10 ${
                       theme === "dark"
-                        ? "bg-[#0B1A2D] border-slate-700 text-white shadow-black/40"
-                        : "bg-white border-slate-200 text-black shadow-slate-200/60"
+                        ? "bg-[#0B1A2D] border-slate-700 text-white group-hover:bg-[#FF5500] shadow-black/40"
+                        : "bg-white border-slate-200 text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white shadow-slate-200/60"
                     }`}
                   >
                     {/* Inner Circle Glow */}
@@ -252,40 +264,45 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                         theme === "dark" ? "bg-[#FF5500]/10" : "bg-[#FE6F1F]/5"
                       }`}
                     />
-                    <div className={theme === "dark" ? "text-[#FF5500]" : "text-black"}>
+                    <div className={`transition-colors duration-300 ${theme === "dark" ? "text-[#FF5500] group-hover:text-white" : "text-[#0C1827] group-hover:text-white"}`}>
                       {item.icon}
                     </div>
                   </div>
 
-                  {/* Step Title & Description (Enlarged & Pure Black for Crisp Contrast) */}
+                  {/* Step Title & Description */}
                   <div className="flex flex-col items-center">
                     <h3
-                      className={`text-xl sm:text-[22px] lg:text-[24px] font-extrabold tracking-tight mb-2  max-w-[220px] leading-snug ${
-                        theme === "dark" ? "!text-white" : "!text-black"
+                      className={`text-xl sm:text-[22px] lg:text-[24px] font-extrabold tracking-tight mb-2 max-w-[220px] leading-snug font-playfair ${
+                        theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                       }`}
                     >
                       {item.title}
                     </h3>
                     <p
-                      className={`text-sm sm:text-base lg:text-[15px] leading-relaxed font-semibold max-w-[240px] ${
-                        theme === "dark" ? "!text-slate-200" : "!text-black opacity-85"
+                      className={`text-sm sm:text-base lg:text-[15px] leading-relaxed font-semibold max-w-[240px] font-instrument ${
+                        theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                       }`}
                     >
                       {item.description}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               );
             })}
           </div>
         </div>
 
         {/* Bottom CTA Callout Box */}
-        <div
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-40px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          whileHover={{ y: -4 }}
           className={`rounded-[28px] sm:rounded-[36px] p-6 sm:px-10 sm:py-9 flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-300 ${
             theme === "dark"
               ? "bg-[#0B1A2D] border-none !text-white shadow-xl shadow-black/30"
-              : "bg-white border border-slate-200/90 !text-black shadow-md"
+              : "bg-white border border-slate-200/90 !text-[#0C1827] shadow-md"
           }`}
         >
           {/* Left Info with Shield Check Icon */}
@@ -294,22 +311,22 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
               className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full shrink-0 flex items-center justify-center border shadow-xs ${
                 theme === "dark"
                   ? "bg-slate-800 border-slate-700 !text-white"
-                  : "bg-[#F8F9FA] border-slate-200 !text-black"
+                  : "bg-[#F8F9FA] border-slate-200 !text-[#0C1827]"
               }`}
             >
-              <FiShield className={`text-2xl sm:text-3xl ${theme === "dark" ? "!text-white" : "!text-black"}`} />
+              <FiShield className={`text-2xl sm:text-3xl ${theme === "dark" ? "!text-white" : "!text-[#0C1827]"}`} />
             </div>
             <div>
               <h3
-                className={`text-xl sm:text-2xl lg:text-[26px] font-extrabold tracking-tight mb-1  ${
-                  theme === "dark" ? "!text-white" : "!text-black"
+                className={`text-xl sm:text-2xl lg:text-[26px] font-extrabold tracking-tight mb-1 font-playfair ${
+                  theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}
               >
                 Your success is built on real support.
               </h3>
               <p
-                className={`text-base sm:text-lg font-semibold ${
-                  theme === "dark" ? "!text-slate-200" : "!text-black opacity-85"
+                className={`text-base sm:text-lg font-semibold font-instrument ${
+                  theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                 }`}
               >
                 We don&apos;t just place talent—we&apos;re with you for the long term.
@@ -318,10 +335,12 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
           </div>
 
           {/* Right Action Button */}
-          <button
+          <motion.button
+            whileHover={{ scale: 1.03, y: -2 }}
+            whileTap={{ scale: 0.97 }}
             type="button"
             onClick={onFindTalentClick}
-            className={`px-9 py-4.5 sm:px-10 sm:py-5 rounded-full font-extrabold text-base sm:text-lg shrink-0 transition-all duration-300 flex items-center gap-3 shadow-md hover:shadow-lg transform active:scale-98 !text-white ${
+            className={`px-9 py-4.5 sm:px-10 sm:py-5 rounded-full font-extrabold text-base sm:text-lg shrink-0 transition-all duration-300 flex items-center gap-3 shadow-md hover:shadow-xl !text-white ${
               theme === "dark"
                 ? "bg-[#FF5500] hover:bg-[#e04a00]"
                 : "bg-[#07192C] hover:bg-[#000e1e]"
@@ -329,8 +348,8 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
           >
             <span className="!text-white">Find Talent for My Role</span>
             <FiArrowRight size={22} className="!text-white" />
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   );

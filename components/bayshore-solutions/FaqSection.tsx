@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { FiArrowRight, FiChevronDown, FiMail } from "react-icons/fi";
+import { motion, AnimatePresence } from "framer-motion";
 
 export interface FaqItem {
   id: string;
@@ -76,18 +77,24 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
     >
       <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px]">
         {/* Section Header Top Area */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 sm:mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 25 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 sm:mb-16"
+        >
           {/* Left Titles & Subtitle */}
           <div className="max-w-3xl">
             <span
-              className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] mb-4 sm:mb-5 ${
+              className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] mb-4 sm:mb-5 font-playfair ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
               }`}
             >
               {titleTag}
             </span>
             <h2
-              className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[54px] xl:text-[60px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.2] mb-4 sm:mb-6 text-left !text-left ${
+              className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[54px] xl:text-[60px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.2] mb-4 sm:mb-6 text-left !text-left font-playfair ${
                 theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}
             >
@@ -97,7 +104,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
               </span>
             </h2>
             <p
-              className={`text-lg sm:text-xl lg:text-[22px] font-medium leading-relaxed text-left !text-left w-full ${
+              className={`text-lg sm:text-xl lg:text-[22px] font-medium leading-relaxed text-left !text-left w-full font-instrument ${
                 theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
               }`}
             >
@@ -108,7 +115,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
           {/* Right Header Accent Graphic */}
           <div className="flex items-center gap-5 shrink-0 self-start lg:self-end">
             <div
-              className={`border-l-2 pl-4 flex flex-col font-extrabold text-lg sm:text-xl tracking-wider uppercase leading-tight ${
+              className={`border-l-2 pl-4 flex flex-col font-extrabold text-lg sm:text-xl tracking-wider uppercase leading-tight font-playfair ${
                 theme === "dark"
                   ? "border-[#FF5500] !text-white"
                   : "border-[#FE6F1F] !text-[#0C1827]"
@@ -120,19 +127,24 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
               </span>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* FAQ Grid & Right Contact Card Layout */}
         <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-8 xl:gap-10">
           {/* FAQ Accordion Items (2 Columns) */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 flex-1 w-full">
-            {faqs.map((faq) => {
+            {faqs.map((faq, idx) => {
               const isOpen = expandedId === faq.id;
               return (
-                <div
+                <motion.div
                   key={faq.id}
+                  initial={{ opacity: 0, y: 35, scale: 0.94 }}
+                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  viewport={{ once: true, margin: "-40px" }}
+                  transition={{ duration: 0.5, delay: idx * 0.08, type: "spring", stiffness: 100, damping: 14 }}
+                  whileHover={{ y: -4, scale: 1.01 }}
                   onClick={() => toggleFaq(faq.id)}
-                  className={`rounded-2xl p-5 sm:p-6 transition-all duration-300 cursor-pointer border shadow-xs hover:shadow-md ${
+                  className={`rounded-2xl p-5 sm:p-6 transition-all duration-300 cursor-pointer border shadow-xs hover:shadow-lg ${
                     theme === "dark"
                       ? isOpen
                         ? "bg-[#0B1A2D] border-slate-700 text-white"
@@ -143,66 +155,80 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                   }`}
                 >
                   <div className="flex items-center justify-between gap-4">
-                    <h3 className="text-xl sm:text-2xl font-bold tracking-tight leading-snug">
+                    <h3 className="text-xl sm:text-2xl font-bold tracking-tight leading-snug font-playfair">
                       {faq.question}
                     </h3>
-                    <span
-                      className={`shrink-0 transition-transform duration-300 ${
-                        isOpen ? "rotate-90 text-[#FE6F1F] dark:text-[#FF5500]" : "text-slate-400"
+                    <motion.span
+                      animate={{ rotate: isOpen ? 90 : 0 }}
+                      transition={{ duration: 0.2 }}
+                      className={`shrink-0 ${
+                        isOpen ? "text-[#FE6F1F] dark:text-[#FF5500]" : "text-slate-400"
                       }`}
                     >
                       <FiArrowRight size={18} />
-                    </span>
+                    </motion.span>
                   </div>
 
                   {/* Expandable Answer */}
-                  {isOpen && (
-                    <p
-                      className={`mt-3.5 pt-3.5 border-t text-lg sm:text-xl leading-relaxed font-medium ${
-                        theme === "dark"
-                          ? "border-slate-800 text-slate-300"
-                          : "border-slate-100 text-[#556070]"
-                      }`}
-                    >
-                      {faq.answer}
-                    </p>
-                  )}
-                </div>
+                  <AnimatePresence>
+                    {isOpen && (
+                      <motion.p
+                        initial={{ opacity: 0, height: 0, marginTop: 0 }}
+                        animate={{ opacity: 1, height: "auto", marginTop: 14 }}
+                        exit={{ opacity: 0, height: 0, marginTop: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className={`pt-3.5 border-t text-lg sm:text-xl leading-relaxed font-medium font-instrument overflow-hidden ${
+                          theme === "dark"
+                            ? "border-slate-800 text-slate-300"
+                            : "border-slate-100 text-[#556070]"
+                        }`}
+                      >
+                        {faq.answer}
+                      </motion.p>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
               );
             })}
           </div>
 
           {/* Right Contact Card ("STILL HAVE A QUESTION?") */}
-          <div
+          <motion.div
+            initial={{ opacity: 0, x: 25 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
             className={`w-full lg:w-[320px] xl:w-[340px] shrink-0 rounded-[28px] p-7 sm:p-8 border-2 border-[#0066FF] flex flex-col justify-between items-start text-left shadow-xl transition-all duration-300 ${
               theme === "dark" ? "bg-[#0B1A2D] text-white" : "bg-[#07192C] text-white"
             }`}
           >
             <div>
-              <span className="inline-block text-[11px] font-extrabold uppercase tracking-[0.22em] text-slate-300 mb-3">
+              <span className="inline-block text-[11px] font-extrabold uppercase tracking-[0.22em] text-slate-300 mb-3 font-playfair">
                 STILL HAVE A QUESTION?
               </span>
 
-              <h3 className="text-2xl sm:text-[26px] font-extrabold leading-snug tracking-tight mb-3 text-white">
+              <h3 className="text-2xl sm:text-[26px] font-extrabold leading-snug tracking-tight mb-3 text-white font-playfair">
                 Tell Us What <br />
                 You&apos;re{" "}
                 <span className="text-[#FF5500]">Looking For.</span>
               </h3>
 
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 font-medium text-left">
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 font-medium text-left font-instrument">
                 Our team is here to help. Share a few details and we&apos;ll get back to you quickly.
               </p>
             </div>
 
             <div className="w-full">
-              <button
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
                 type="button"
                 onClick={onContactClick}
-                className="w-full py-3.5 px-6 bg-white hover:bg-slate-100 text-[#07192C] font-extrabold text-sm sm:text-base rounded-full flex items-center justify-center gap-2.5 transition-all shadow-md mb-4 transform active:scale-98"
+                className="w-full py-3.5 px-6 bg-white hover:bg-slate-100 text-[#07192C] font-extrabold text-sm sm:text-base rounded-full flex items-center justify-center gap-2.5 transition-all shadow-md mb-4"
               >
                 <FiMail size={18} />
                 <span>Email Us</span>
-              </button>
+              </motion.button>
 
               <a
                 href="mailto:hello@bayshorevirtual.com"
@@ -212,7 +238,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                 <span>hello@bayshorevirtual.com</span>
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@
 
 import React, { useState, useRef } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { FiPlay, FiChevronLeft, FiChevronRight, FiX } from "react-icons/fi";
 
 export interface ClientStoryItem {
@@ -79,6 +80,25 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
   const [playingStoryId, setPlayingStoryId] = useState<string | null>(null);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
+  // Automatic 3-second auto-loop slider (pauses if video is playing)
+  React.useEffect(() => {
+    if (playingStoryId) return;
+
+    const interval = setInterval(() => {
+      if (scrollContainerRef.current) {
+        const container = scrollContainerRef.current;
+        const maxScroll = container.scrollWidth - container.clientWidth;
+        if (container.scrollLeft >= maxScroll - 10) {
+          container.scrollTo({ left: 0, behavior: "smooth" });
+        } else {
+          container.scrollBy({ left: 380, behavior: "smooth" });
+        }
+      }
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [playingStoryId, stories]);
+
   const handleScroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
       const scrollAmount = 380;
@@ -97,18 +117,24 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
     >
       <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px]">
         {/* Section Header Top Area */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 sm:mb-16">
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 sm:mb-16"
+        >
           {/* Left Titles & Subtitle */}
           <div className="flex-1 max-w-full lg:max-w-4xl xl:max-w-5xl">
             <span
-              className={`inline-block text-sm sm:text-base font-extrabold uppercase tracking-[0.25em] mb-4 sm:mb-5 ${
+              className={`inline-block text-sm sm:text-base font-extrabold uppercase tracking-[0.25em] mb-4 sm:mb-5 font-playfair ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
               }`}
             >
               {titleTag}
             </span>
             <h2
-              className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[44px] xl:text-[48px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.24] mb-4 sm:mb-6 text-left !text-left ${
+              className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[44px] xl:text-[48px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.24] mb-4 sm:mb-6 text-left !text-left font-playfair ${
                 theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}
             >
@@ -121,7 +147,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
               </span>
             </h2>
             <p
-              className={`text-lg sm:text-xl lg:text-[22px] font-medium leading-relaxed text-left !text-left w-full max-w-3xl xl:max-w-4xl ${
+              className={`text-lg sm:text-xl lg:text-[22px] font-medium leading-relaxed text-left !text-left w-full max-w-3xl xl:max-w-4xl font-instrument ${
                 theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
               }`}
             >
@@ -133,7 +159,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
           <div className="flex items-center gap-6 sm:gap-8 shrink-0 self-start lg:self-end">
             {/* Dark Vertical Line & Tagline */}
             <div
-              className={`border-l-4 pl-4 flex flex-col font-extrabold text-lg sm:text-xl xl:text-2xl tracking-wider uppercase leading-snug sm:leading-normal ${
+              className={`border-l-4 pl-4 flex flex-col font-extrabold text-lg sm:text-xl xl:text-2xl tracking-wider uppercase leading-snug sm:leading-normal font-playfair ${
                 theme === "dark"
                   ? "border-[#FF5500] !text-white"
                   : "border-[#0C1827]"
@@ -172,7 +198,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Client Video Testimonial Cards Grid / Carousel */}
         <div
@@ -180,7 +206,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 overflow-x-auto scrollbar-none py-2 px-1 scroll-smooth"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {stories.map((story) => {
+          {stories.map((story, idx) => {
             const videoUrl = story.videoUrl || story.youtubeUrl;
             const videoId = getYouTubeId(videoUrl);
             const thumbnailSrc =
@@ -191,9 +217,14 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
             const isPlaying = playingStoryId === story.id;
 
             return (
-              <div
+              <motion.div
                 key={story.id}
-                className={`rounded-[28px] sm:rounded-[32px] overflow-hidden flex flex-col justify-between transition-all duration-300 transform hover:-translate-y-1.5 shadow-sm hover:shadow-md ${
+                initial={{ opacity: 0, y: 50, scale: 0.92, rotateY: 8 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1, rotateY: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.7, delay: idx * 0.12, type: "spring", stiffness: 90, damping: 14 }}
+                whileHover={{ y: -12, scale: 1.03 }}
+                className={`rounded-[28px] sm:rounded-[32px] overflow-hidden flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-2xl cursor-pointer ${
                   theme === "dark"
                     ? "bg-[#0B1A2D] border-0 border-none !text-white shadow-xl shadow-black/40"
                     : "bg-white border border-slate-200/90 !text-[#0C1827]"
@@ -201,7 +232,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
               >
                 <div>
                   {/* Video Box: Inline iframe when playing, or Thumbnail with Play Button */}
-                  <div className="relative w-full h-[220px] sm:h-[240px] bg-slate-900 overflow-hidden group">
+                  <div className="relative w-full h-[220px] sm:h-[240px] bg-slate-900 overflow-hidden">
                     {isPlaying && videoId ? (
                       <div className="relative w-full h-full">
                         <iframe
@@ -236,15 +267,19 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
                           src={thumbnailSrc || "/assets/bayshore-solutions/home/right.png"}
                           alt={story.authorName}
                           fill
-                          className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                          className="object-cover object-center transition-transform duration-500 group-hover:scale-108"
                         />
                         {/* Dark Overlay */}
-                        <div className="absolute inset-0 bg-black/25 transition-opacity group-hover:bg-black/35" />
+                        <div className="absolute inset-0 bg-black/25 transition-opacity group-hover:bg-black/40" />
 
-                        {/* Play Button Icon Overlay */}
-                        <div className="absolute inset-0 m-auto w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#07192C]/85 group-hover:bg-[#FE6F1F] text-white flex items-center justify-center shadow-lg transition-all duration-300 transform group-hover:scale-110 active:scale-95">
+                        {/* Play Button Icon Overlay with Pulse Physics */}
+                        <motion.div
+                          whileHover={{ scale: 1.15 }}
+                          whileTap={{ scale: 0.9 }}
+                          className="absolute inset-0 m-auto w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#07192C]/85 group-hover:bg-[#FE6F1F] text-white flex items-center justify-center shadow-xl transition-all duration-300"
+                        >
                           <FiPlay className="text-2xl sm:text-3xl ml-1 fill-current" />
-                        </div>
+                        </motion.div>
                       </div>
                     )}
                   </div>
@@ -252,7 +287,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
                   {/* Card Quote Body */}
                   <div className="p-6 sm:p-7">
                     <p
-                      className={`text-xl sm:text-2xl font-bold leading-relaxed sm:leading-[1.75] mb-6 font-sans ${
+                      className={`text-xl sm:text-2xl font-bold leading-relaxed sm:leading-[1.75] mb-6 font-instrument ${
                         theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                       }`}
                     >
@@ -264,14 +299,14 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
                       {/* Left: Author Name and Title */}
                       <div>
                         <h3
-                          className={`text-lg sm:text-xl xl:text-[22px] font-extrabold tracking-tight mb-1 ${
+                          className={`text-lg sm:text-xl xl:text-[22px] font-extrabold tracking-tight mb-1 font-playfair ${
                             theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                           }`}
                         >
                           {story.authorName}
                         </h3>
                         <p
-                          className={`text-sm sm:text-base font-bold ${
+                          className={`text-sm sm:text-base font-bold font-instrument ${
                             theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
                           }`}
                         >
@@ -285,13 +320,13 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
                           src={story.companyLogo || "/assets/bayshore-solutions/home/lopez.png"}
                           alt={story.companyName || "Client Logo"}
                           fill
-                          className="object-contain"
+                          className="object-contain transition-transform duration-300 group-hover:scale-105"
                         />
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
