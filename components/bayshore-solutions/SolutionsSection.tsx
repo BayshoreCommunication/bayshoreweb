@@ -315,7 +315,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
           {/* Left Header Titles */}
           <div className="max-w-4xl xl:max-w-5xl  !text-left items-start">
             <span
-              className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.2em] mb-3 text-left !text-left font-playfair ${
+              className={`inline-block text-xl sm:text-2xl font-bold uppercase tracking-[0.2em] mb-3 text-left !text-left font-playfair ${
                 theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
               }`}
             >

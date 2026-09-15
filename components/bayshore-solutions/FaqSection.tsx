@@ -87,7 +87,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
           {/* Left Titles & Subtitle */}
           <div className="max-w-3xl">
             <span
-              className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] mb-4 sm:mb-5 font-playfair ${
+              className={`inline-block text-xl sm:text-2xl font-bold uppercase tracking-[0.25em] mb-4 sm:mb-5 font-playfair ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
               }`}
             >

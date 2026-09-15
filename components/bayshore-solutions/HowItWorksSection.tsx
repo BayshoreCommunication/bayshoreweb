@@ -172,7 +172,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
           className="text-left max-w-5xl mb-12 sm:mb-16"
         >
           <span
-            className={`inline-block text-sm sm:text-base font-extrabold uppercase tracking-[0.2em] mb-3 font-playfair ${
+            className={`inline-block text-xl sm:text-2xl font-bold uppercase tracking-[0.2em] mb-3 font-playfair ${
               theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
             }`}
           >

@@ -175,7 +175,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
           className="text-left max-w-5xl xl:max-w-6xl mb-12 sm:mb-16"
         >
           <span
-            className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.25em] mb-4 sm:mb-5 font-playfair ${
+            className={`inline-block text-xl sm:text-2xl font-bold uppercase tracking-[0.25em] mb-4 sm:mb-5 font-playfair ${
               theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
             }`}
           >

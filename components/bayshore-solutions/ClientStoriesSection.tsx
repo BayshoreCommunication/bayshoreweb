@@ -127,7 +127,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
           {/* Left Titles & Subtitle */}
           <div className="flex-1 max-w-full lg:max-w-4xl xl:max-w-5xl">
             <span
-              className={`inline-block text-sm sm:text-base font-extrabold uppercase tracking-[0.25em] mb-4 sm:mb-5 font-playfair ${
+              className={`inline-block text-xl sm:text-2xl font-bold uppercase tracking-[0.25em] mb-4 sm:mb-5 font-playfair ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
               }`}
             >
