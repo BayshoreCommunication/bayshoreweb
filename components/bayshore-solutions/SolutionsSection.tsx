@@ -445,7 +445,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                     : "bg-[#07192C] text-white hover:bg-[#000e1e]"
                 }`}
               >
-                <span>Find Talent</span>
+                <span>Hire Now</span>
                 <FiArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
               </motion.button>
             </motion.div>
