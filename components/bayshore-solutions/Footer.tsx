@@ -224,11 +224,11 @@ export const Footer: React.FC<FooterProps> = ({
         />
 
         {/* Bottom Copyright & Policy Links Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-5 text-sm sm:text-base font-medium font-instrument">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 text-sm sm:text-base font-medium font-instrument text-left">
           <p className={theme === "dark" ? "!text-slate-300" : "!text-[#556070]"}>
             © {currentYear} Bayshore Virtual Solutions. All rights reserved.
           </p>
-          <div className="flex items-center gap-7 font-semibold">
+          <div className="flex flex-wrap items-center justify-start gap-4 sm:gap-7 font-semibold">
             <Link
               href="/privacy-policy"
               className={`transition-colors duration-200 ${
