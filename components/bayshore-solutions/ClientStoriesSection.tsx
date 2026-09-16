@@ -57,7 +57,7 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
     videoUrl: "https://www.youtube.com/shorts/XUWlBNDCvdQ",
     quote: '"The #1 reason attorneys don’t outsource? Fear of data leaks. "',
     authorName: "Cynthia Waisman",
-    authorTitle: "Founder & Immigration Attorney",
+    authorTitle: "Founding Attorney",
     companyName: "TRIP LAW FIRM",
     companyLogo: "/assets/client-logo/cynthia.png",
   },
