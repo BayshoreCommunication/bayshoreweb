@@ -650,7 +650,7 @@ body {
   animation: marquee 30s linear infinite;
 }
 
-/* Override Chrome / Edge / Safari Browser Webkit Autofill Background & Text Colors */
+/* Complete WebKit Autofill Reset - Make autofilled inputs 100% indistinguishable from normal inputs */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -666,18 +666,21 @@ select:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 1000px #FAFAFC inset !important;
   box-shadow: 0 0 0 1000px #FAFAFC inset !important;
   -webkit-text-fill-color: #0C1827 !important;
+  color: #0C1827 !important;
   caret-color: #0C1827 !important;
-  transition: background-color 50000s ease-in-out 0s;
+  font-weight: 500 !important;
+  transition: background-color 999999s ease-in-out 0s !important;
 }
 
-/* White background variant for white inputs */
-input.bg-white:-webkit-autofill,
-input.bg-white:-webkit-autofill:hover,
-input.bg-white:-webkit-autofill:focus,
-input.bg-white:-webkit-autofill:active {
+input:focus:-webkit-autofill,
+input:focus:-webkit-autofill:hover,
+input:focus:-webkit-autofill:focus,
+input:focus:-webkit-autofill:active,
+textarea:focus:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px #FFFFFF inset !important;
   box-shadow: 0 0 0 1000px #FFFFFF inset !important;
   -webkit-text-fill-color: #0C1827 !important;
+  color: #0C1827 !important;
 }
 
 /* Dark mode webkit autofill overrides */
@@ -696,6 +699,8 @@ input.bg-white:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 1000px #0F172A inset !important;
   box-shadow: 0 0 0 1000px #0F172A inset !important;
   -webkit-text-fill-color: #FFFFFF !important;
+  color: #FFFFFF !important;
   caret-color: #FFFFFF !important;
-  transition: background-color 50000s ease-in-out 0s;
+  font-weight: 500 !important;
+  transition: background-color 999999s ease-in-out 0s !important;
 }
