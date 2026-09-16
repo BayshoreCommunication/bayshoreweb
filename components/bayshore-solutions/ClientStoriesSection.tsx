@@ -29,7 +29,7 @@ export interface ClientStoriesSectionProps {
 
 export function getYouTubeId(url?: string): string {
   if (!url) return "";
-  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
+  const match = url.match(/(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|shorts\/|watch\?v=|watch\?.+&v=))([\w-]{11})/);
   return match ? match[1] : (url.length === 11 ? url : "");
 }
 
@@ -40,8 +40,9 @@ export function getYouTubeThumbnail(urlOrId?: string): string {
 
 export const DEFAULT_STORIES: ClientStoryItem[] = [
   {
+    // https://www.youtube.com/watch?v=wjxj_eQzI1M
     id: "cs-1",
-    videoUrl: "https://www.youtube.com/watch?v=wjxj_eQzI1M",
+    videoUrl: "https://www.youtube.com/shorts/XUWlBNDCvdQ",
     quote: '"BayShore Communication has been a game changer for Carter Injury Law in scaling our online presence."',
     authorName: "David Carter",
     authorTitle: "Owner & Managing Attorney",
