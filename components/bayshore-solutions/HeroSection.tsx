@@ -356,13 +356,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <motion.div
                   animate={{ y: [0, -5, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-                  className={`w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full flex items-center justify-center p-4 mb-3 transition-all duration-300 shadow-lg group-hover:shadow-2xl relative ${
+                  className={`w-16 h-16 sm:w-20 sm:h-20 lg:w-22 lg:h-22 rounded-full flex items-center justify-center p-4 mb-3 transition-all duration-300 shadow-lg group-hover:shadow-2xl relative ${
                     theme === "dark"
                       ? "bg-slate-800 !text-[#FF5500] group-hover:bg-[#FF5500] group-hover:!text-white border border-slate-700"
                       : "bg-[#F3F5F8] !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white border border-slate-200/50"
                   }`}
                 >
-                  <FiUser className="text-3xl sm:text-4xl lg:text-[64px] transition-transform duration-300 group-hover:scale-110" />
+                  <FiUser className="text-[28px] sm:text-[35px] transition-transform duration-300 group-hover:scale-110" />
                 </motion.div>
                 <span className={`text-xl sm:text-2xl leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
@@ -384,13 +384,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <motion.div
                   animate={{ y: [0, -5, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
-                  className={`w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full flex items-center justify-center p-4 mb-3 transition-all duration-300 shadow-lg group-hover:shadow-2xl relative ${
+                  className={`w-16 h-16 sm:w-20 sm:h-20 lg:w-22 lg:h-22 rounded-full flex items-center justify-center p-4 mb-3 transition-all duration-300 shadow-lg group-hover:shadow-2xl relative ${
                     theme === "dark"
                       ? "bg-slate-800 !text-[#FF5500] group-hover:bg-[#FF5500] group-hover:!text-white border border-slate-700"
                       : "bg-[#F3F5F8] !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white border border-slate-200/50"
                   }`}
                 >
-                  <FiTrendingUp className="text-3xl sm:text-4xl lg:text-[64px] transition-transform duration-300 group-hover:scale-110" />
+                  <FiTrendingUp className="text-[28px] sm:text-[35px] transition-transform duration-300 group-hover:scale-110" />
                 </motion.div>
                 <span className={`text-xl sm:text-2xl leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
@@ -412,13 +412,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <motion.div
                   animate={{ y: [0, -5, 0] }}
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
-                  className={`w-20 h-20 sm:w-24 sm:h-24 lg:w-28 lg:h-28 rounded-full flex items-center justify-center p-4 mb-3 transition-all duration-300 shadow-lg group-hover:shadow-2xl relative ${
+                  className={`w-16 h-16 sm:w-20 sm:h-20 lg:w-22 lg:h-22 rounded-full flex items-center justify-center p-4 mb-3 transition-all duration-300 shadow-lg group-hover:shadow-2xl relative ${
                     theme === "dark"
                       ? "bg-slate-800 !text-[#FF5500] group-hover:bg-[#FF5500] group-hover:!text-white border border-slate-700"
                       : "bg-[#F3F5F8] !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white border border-slate-200/50"
                   }`}
                 >
-                  <FiShield className="text-3xl sm:text-4xl lg:text-[64px] transition-transform duration-300 group-hover:scale-110" />
+                  <FiShield className="text-[28px] sm:text-[35px] transition-transform duration-300 group-hover:scale-110" />
                 </motion.div>
                 <span className={`text-xl sm:text-2xl leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
