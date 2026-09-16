@@ -134,16 +134,13 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
               {titleTag}
             </span>
             <h2
-              className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[44px] xl:text-[48px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.24] mb-4 sm:mb-6 text-left !text-left font-playfair ${
+              className={`text-[36px] xs:text-[40px] sm:text-[48px] lg:text-[42px] xl:text-[46px] font-extrabold tracking-tight leading-[1.18] sm:leading-[1.2] mb-4 sm:mb-6 text-left !text-left font-playfair ${
                 theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}
             >
-              <span className="block mb-2 sm:mb-2.5">Don&apos;t Take Our Word for It.</span>
-              <span className="block">
-                Hear It From{" "}
-                <span className={theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}>
-                  {headlineHighlight}
-                </span>
+              Don&apos;t Take Our Word for It. Hear It From{" "}
+              <span className={theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}>
+                {headlineHighlight}
               </span>
             </h2>
             <p
@@ -204,7 +201,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
         {/* Client Video Testimonial Cards Grid / Carousel */}
         <div
           ref={scrollContainerRef}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 overflow-x-auto scrollbar-none py-2 px-1 scroll-smooth"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 overflow-x-auto scrollbar-none py-6 sm:py-8 px-2 -my-4 scroll-smooth"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {stories.map((story, idx) => {
@@ -220,11 +217,11 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
             return (
               <motion.div
                 key={story.id}
-                initial={{ opacity: 0, y: 50, scale: 0.92, rotateY: 8 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1, rotateY: 0 }}
+                initial={{ opacity: 0, y: 30, scale: 0.95 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.7, delay: idx * 0.12, type: "spring", stiffness: 90, damping: 14 }}
-                whileHover={{ y: -12, scale: 1.03 }}
+                transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
+                whileHover={{ y: -6, scale: 1.02 }}
                 className={`rounded-[28px] sm:rounded-[32px] overflow-hidden flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-2xl cursor-pointer ${
                   theme === "dark"
                     ? "bg-[#0B1A2D] border-0 border-none !text-white shadow-xl shadow-black/40"
