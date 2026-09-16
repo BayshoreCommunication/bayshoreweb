@@ -258,7 +258,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                 >
                   {/* Step Number Label */}
                   <span
-                    className={`text-lg sm:text-2xl font-extrabold mb-2 tracking-tight font-playfair ${
+                    className={`text-2xl sm:text-3xl lg:text-[36px] xl:text-[40px] font-extrabold mb-2.5 tracking-tight font-playfair ${
                       theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"
                     }`}
                   >
