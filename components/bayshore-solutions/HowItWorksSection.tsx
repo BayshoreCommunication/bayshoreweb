@@ -198,9 +198,9 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
           </p>
         </motion.div>
 
-        {/* 5 Steps Process Container with Organic Wave Layout */}
-        <div className="relative mb-16 sm:mb-20 min-h-[380px]">
-          {/* Curved Dashed SVG Connecting Line threading through Icon Circles */}
+        {/* 5 Steps Process Container with Smooth Rounded Dotted Wave Layout */}
+        <div className="relative mb-16 sm:mb-20 min-h-[400px]">
+          {/* Smooth Curved Dotted SVG Connecting Line Threading Directly Through Center of Icon Circles */}
           <div className="hidden lg:block absolute left-0 right-0 top-0 w-full h-[380px] pointer-events-none z-0">
             <svg
               className="w-full h-full"
@@ -209,13 +209,23 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
               preserveAspectRatio="none"
             >
               <path
-                d="M 100 135 C 180 175, 240 195, 300 190 C 380 185, 440 135, 500 125 C 570 115, 640 70, 700 75 C 770 80, 840 110, 900 115"
+                d="M 100 130 C 180 160, 220 185, 300 185 C 380 185, 420 155, 500 135 C 580 115, 620 75, 700 75 C 780 75, 840 95, 900 115"
                 stroke={theme === "dark" ? "#FF5500" : "#FE6F1F"}
-                strokeWidth="2.5"
-                strokeDasharray="6 6"
-                opacity="0.9"
+                strokeWidth="3.5"
+                strokeDasharray="0.1 11"
+                strokeLinecap="round"
+                opacity="0.85"
               />
             </svg>
+          </div>
+
+          {/* Soft Dotted Line Ambient Glows Aligned with Icon Centers */}
+          <div className="hidden lg:block absolute inset-0 pointer-events-none z-0 overflow-hidden max-w-[1350px] mx-auto">
+            <div className="absolute top-[130px] left-[10%] -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-[#FE6F1F]/20 rounded-full blur-md" />
+            <div className="absolute top-[185px] left-[30%] -translate-x-1/2 -translate-y-1/2 w-18 h-18 bg-[#FE6F1F]/25 rounded-full blur-lg" />
+            <div className="absolute top-[135px] left-[50%] -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-[#FE6F1F]/20 rounded-full blur-md" />
+            <div className="absolute top-[75px] left-[70%] -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-[#FE6F1F]/30 rounded-full blur-lg" />
+            <div className="absolute top-[115px] left-[90%] -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-[#FE6F1F]/20 rounded-full blur-md" />
           </div>
 
           {/* 5 Steps Columns */}
@@ -227,10 +237,10 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   : idx === 1
                   ? "lg:pt-[110px]"
                   : idx === 2
-                  ? "lg:pt-[45px]"
+                  ? "lg:pt-[60px]"
                   : idx === 3
                   ? "lg:pt-[0px]"
-                  : "lg:pt-[35px]";
+                  : "lg:pt-[40px]";
 
               const isLastOddItem = idx === steps.length - 1 && steps.length % 2 !== 0;
 
