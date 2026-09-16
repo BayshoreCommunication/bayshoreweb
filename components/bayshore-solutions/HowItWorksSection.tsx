@@ -305,16 +305,16 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           whileHover={{ y: -4 }}
-          className={`rounded-[28px] sm:rounded-[36px] p-6 sm:px-10 sm:py-9 flex flex-col md:flex-row items-center justify-between gap-6 transition-all duration-300 ${
+          className={`rounded-[28px] sm:rounded-[36px] p-6 sm:px-10 sm:py-9 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left transition-all duration-300 ${
             theme === "dark"
               ? "bg-[#0B1A2D] border-none !text-white shadow-xl shadow-black/30"
               : "bg-white border border-slate-200/90 !text-[#0C1827] shadow-md"
           }`}
         >
-          {/* Left Info with Shield Check Icon */}
-          <div className="flex items-center gap-5 sm:gap-6">
+          {/* Left/Center Info with Shield Check Icon */}
+          <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-4 sm:gap-6">
             <div
-              className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full shrink-0 flex items-center justify-center border shadow-xs ${
+              className={`w-13 h-13 sm:w-16 sm:h-16 rounded-full shrink-0 flex items-center justify-center border shadow-xs ${
                 theme === "dark"
                   ? "bg-slate-800 border-slate-700 !text-white"
                   : "bg-[#F8F9FA] border-slate-200 !text-[#0C1827]"
@@ -322,16 +322,16 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             >
               <FiShield className={`text-2xl sm:text-3xl ${theme === "dark" ? "!text-white" : "!text-[#0C1827]"}`} />
             </div>
-            <div>
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <h3
-                className={`text-xl sm:text-2xl lg:text-[26px] font-extrabold tracking-tight mb-1 font-playfair ${
+                className={`text-lg sm:text-2xl lg:text-[26px] font-extrabold tracking-tight mb-1 font-playfair ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}
               >
                 Your success is built on real support.
               </h3>
               <p
-                className={`text-base sm:text-lg font-semibold font-instrument ${
+                className={`text-sm sm:text-lg font-semibold font-instrument ${
                   theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                 }`}
               >
@@ -346,14 +346,14 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             whileTap={{ scale: 0.97 }}
             type="button"
             onClick={onFindTalentClick}
-            className={`px-9 py-4.5 sm:px-10 sm:py-5 rounded-full font-extrabold text-base sm:text-lg shrink-0 transition-all duration-300 flex items-center gap-3 shadow-md hover:shadow-xl !text-white ${
+            className={`px-7 py-3.5 sm:px-8 sm:py-4 rounded-full font-extrabold text-sm sm:text-base shrink-0 transition-all duration-300 flex items-center justify-center gap-2.5 shadow-md hover:shadow-xl !text-white ${
               theme === "dark"
                 ? "bg-[#FF5500] hover:bg-[#e04a00]"
                 : "bg-[#07192C] hover:bg-[#000e1e]"
             }`}
           >
             <span className="!text-white">Find Talent for My Role</span>
-            <FiArrowRight size={22} className="!text-white" />
+            <FiArrowRight size={18} className="!text-white" />
           </motion.button>
         </motion.div>
       </div>
