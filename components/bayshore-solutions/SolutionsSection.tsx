@@ -414,7 +414,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
       `}</style>
 
         {/* Infinite Marquee Solution Cards Slider (Slowly moves right to left, pauses on hover) */}
-        <div className="relative w-full overflow-hidden mb-12 sm:mb-16 -my-4 py-2">
+        <div className="relative w-full overflow-hidden mb-12 sm:mb-16 py-6 sm:py-8">
           {/* Subtle Side Fade Accents */}
           <div
             className={`absolute left-0 top-0 bottom-0 w-6 sm:w-10 z-20 pointer-events-none opacity-40 transition-colors duration-300 ${
