@@ -41,31 +41,34 @@ export function getYouTubeThumbnail(urlOrId?: string): string {
 export const DEFAULT_STORIES: ClientStoryItem[] = [
   {
     // https://www.youtube.com/watch?v=wjxj_eQzI1M
+    //https://www.youtube.com/shorts/RU117mqJ12I
     id: "cs-1",
-    videoUrl: "https://www.youtube.com/shorts/XUWlBNDCvdQ",
-    quote: '"BayShore Communication has been a game changer for Carter Injury Law in scaling our online presence."',
+    videoUrl: "https://www.youtube.com/shorts/RU117mqJ12I",
+    quote: '"I was scared to hire an overseas VA."',
     authorName: "David Carter",
     authorTitle: "Owner & Managing Attorney",
     companyName: "CARTER INJURY LAW",
     companyLogo: "/assets/client-logo/carter-injury-law.png",
   },
   {
+    //https://www.youtube.com/shorts/XUWlBNDCvdQ
+    //https://www.youtube.com/watch?v=RVit6poGLRs
     id: "cs-2",
-    videoUrl: "https://www.youtube.com/watch?v=RVit6poGLRs",
-    quote: '"Working with Bayshore transformed our digital strategy and brought measurable growth to our practice. "',
-    authorName: "Hardam Tripathi",
+    videoUrl: "https://www.youtube.com/shorts/XUWlBNDCvdQ",
+    quote: '"The #1 reason attorneys don’t outsource? Fear of data leaks. "',
+    authorName: "Cynthia Waisman",
     authorTitle: "Founder & Immigration Attorney",
     companyName: "TRIP LAW FIRM",
-    companyLogo: "/assets/client-logo/trip-law.svg",
+    companyLogo: "/assets/client-logo/cynthia.png",
   },
   {
-    id: "cs-3",
-    videoUrl: "https://www.youtube.com/watch?v=ohyUTzLiLbI",
-    quote: '"Bayshore is the ultimate choice for business development and digital marketing execution."',
-    authorName: "Carlos Rosario",
-    authorTitle: "Tax Professional & Consultant",
-    companyName: "APEX ADVISOR GROUP",
-    companyLogo: "/assets/client-logo/apex.svg",
+    id: "cs-2",
+    videoUrl: "https://www.youtube.com/shorts/XUWlBNDCvdQ",
+    quote: '"The #1 reason attorneys don’t outsource? Fear of data leaks. "',
+    authorName: "Cynthia Waisman",
+    authorTitle: "Founder & Immigration Attorney",
+    companyName: "TRIP LAW FIRM",
+    companyLogo: "/assets/client-logo/cynthia.png",
   },
 ];
 

@@ -145,7 +145,7 @@ export const Footer: React.FC<FooterProps> = ({
                 theme === "dark" ? "text-slate-300" : "text-[#556070]"
               }`}
             >
-              A sister company of <span className="font-bold text-[#FF5500]">Bayshore Communication</span>, providing managed virtual staffing solutions for modern businesses.
+              A sister company of <span className="font-bold text-[#FF5500]">Bayshore Communication</span>, <br/> providing managed virtual staffing solutions for <br/>modern businesses.
             </p>
           </motion.div>
 
@@ -158,13 +158,13 @@ export const Footer: React.FC<FooterProps> = ({
             className="lg:col-span-3 flex flex-col items-start text-left"
           >
             <h4
-              className={`text-lg sm:text-xl font-bold mb-4 tracking-tight font-playfair ${
+              className={`text-2xl sm:text-[26px] font-extrabold mb-5 tracking-tight font-playfair ${
                 theme === "dark" ? "text-white" : "text-[#0C1827]"
               }`}
             >
               Solutions
             </h4>
-            <ul className="flex flex-col gap-2.5 text-base font-semibold w-full">
+            <ul className="flex flex-col gap-3 text-base sm:text-lg font-semibold w-full">
               {solutionLinks.map((item) => (
                 <li key={item.title} className="w-full">
                   <Link
@@ -183,10 +183,10 @@ export const Footer: React.FC<FooterProps> = ({
               <li className="pt-1">
                 <Link
                   href="/bayshore-solutions/solutions"
-                  className="inline-flex items-center gap-1.5 text-sm font-bold text-[#FF5500] hover:underline group"
+                  className="inline-flex items-center gap-1.5 text-sm sm:text-base font-bold text-[#FF5500] hover:underline group"
                 >
                   <span>Explore all 20+ roles</span>
-                  <FiArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-1" />
+                  <FiArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-1" />
                 </Link>
               </li>
             </ul>
@@ -201,13 +201,13 @@ export const Footer: React.FC<FooterProps> = ({
             className="lg:col-span-2 flex flex-col items-start text-left"
           >
             <h4
-              className={`text-lg sm:text-xl font-bold mb-4 tracking-tight font-playfair ${
+              className={`text-2xl sm:text-[26px] font-extrabold mb-5 tracking-tight font-playfair ${
                 theme === "dark" ? "text-white" : "text-[#0C1827]"
               }`}
             >
               Company
             </h4>
-            <ul className="flex flex-col gap-2.5 text-base font-semibold w-full">
+            <ul className="flex flex-col gap-3 text-base sm:text-lg font-semibold w-full">
               {companyLinks.map((item) => (
                 <li key={item.title} className="w-full">
                   <Link
@@ -235,7 +235,7 @@ export const Footer: React.FC<FooterProps> = ({
             className="lg:col-span-3 flex flex-col items-start text-left"
           >
             <h4
-              className={`text-lg sm:text-xl font-bold mb-4 tracking-tight font-playfair ${
+              className={`text-2xl sm:text-[26px] font-extrabold mb-5 tracking-tight font-playfair ${
                 theme === "dark" ? "text-white" : "text-[#0C1827]"
               }`}
             >
