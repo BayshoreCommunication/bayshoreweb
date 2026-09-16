@@ -275,9 +275,9 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   </div>
 
                   {/* Step Title & Description */}
-                  <div className="flex flex-col items-center px-1">
+                  <div className="flex flex-col items-center text-center px-1 w-full">
                     <h3
-                      className={`text-base sm:text-[22px] lg:text-[24px] font-extrabold tracking-tight mb-1.5 max-w-[170px] sm:max-w-[220px] leading-snug font-playfair ${
+                      className={`text-base sm:text-[22px] lg:text-[24px] font-extrabold tracking-tight mb-1.5 max-w-[170px] sm:max-w-[220px] leading-snug text-center !text-center font-playfair ${
                         theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                       }`}
                     >
@@ -285,7 +285,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                     </h3>
                     <p
                       style={{ lineHeight: 1.5 }}
-                      className={`text-xs sm:text-base lg:text-[15px] font-normal max-w-[180px] sm:max-w-[240px] font-instrument ${
+                      className={`text-xs sm:text-base lg:text-[15px] font-normal max-w-[180px] sm:max-w-[240px] text-center !text-center font-instrument ${
                         theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
                       }`}
                     >
