@@ -62,13 +62,13 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
     companyLogo: "/assets/client-logo/cynthia.png",
   },
   {
-    id: "cs-2",
-    videoUrl: "https://www.youtube.com/shorts/XUWlBNDCvdQ",
-    quote: '"The #1 reason attorneys don’t outsource? Fear of data leaks. "',
-    authorName: "Cynthia Waisman",
+    id: "cs-3",
+    videoUrl: "https://www.youtube.com/shorts/1IWElq9Bi1Q",
+    quote: '"If you are watching this, your law firm needs help! "',
+    authorName: "Hardam Tripathi",
     authorTitle: "Founder & Immigration Attorney",
     companyName: "TRIP LAW FIRM",
-    companyLogo: "/assets/client-logo/cynthia.png",
+    companyLogo: "/assets/client-logo/trip-law.svg",
   },
 ];
 
