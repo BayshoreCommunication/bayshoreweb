@@ -131,22 +131,9 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
       ? talents
       : talents.filter((t) => t.category === selectedCategory);
 
-  // Automatic 3-second auto-loop slider
-  React.useEffect(() => {
-    const interval = setInterval(() => {
-      if (scrollContainerRef.current) {
-        const container = scrollContainerRef.current;
-        const maxScroll = container.scrollWidth - container.clientWidth;
-        if (container.scrollLeft >= maxScroll - 10) {
-          container.scrollTo({ left: 0, behavior: "smooth" });
-        } else {
-          container.scrollBy({ left: 320, behavior: "smooth" });
-        }
-      }
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, [filteredTalents]);
+  // Guarantee enough cards to fill 200%+ of widescreen view for a seamless 100% infinite marquee loop
+  const repeatCount = Math.max(6, Math.ceil(18 / (filteredTalents.length || 1)));
+  const marqueeTalents = Array.from({ length: repeatCount }).flatMap(() => filteredTalents);
 
   const handleScroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
@@ -250,7 +237,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
         .talent-marquee-track {
           display: flex;
           width: max-content;
-          animation: talentMarquee 35s linear infinite;
+          animation: talentMarquee 45s linear infinite;
         }
         .talent-marquee-track:hover {
           animation-play-state: paused;
@@ -309,11 +296,10 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
 
           <div
             ref={scrollContainerRef}
-            className="overflow-x-auto scrollbar-none scroll-smooth"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+            className="overflow-x-hidden scroll-smooth w-full"
           >
             <div className="talent-marquee-track flex items-stretch gap-5 sm:gap-6">
-            {[...filteredTalents, ...filteredTalents].map((person, idx) => (
+              {marqueeTalents.map((person, idx) => (
               <motion.div
                 key={`${person.id}-${idx}`}
                 whileHover={{ y: -8, scale: 1.03 }}

@@ -298,6 +298,10 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
   const displaySolutions =
     solutions || (showAll ? ALL_SOLUTIONS : DEFAULT_SOLUTIONS);
 
+  // Guarantee enough cards to fill 200%+ of widescreen view for a seamless 100% infinite marquee loop
+  const repeatCount = Math.max(6, Math.ceil(18 / (displaySolutions.length || 1)));
+  const marqueeSolutions = Array.from({ length: repeatCount }).flatMap(() => displaySolutions);
+
   const handleScroll = (direction: "left" | "right") => {
     if (scrollContainerRef.current) {
       const scrollAmount = 340;
@@ -400,7 +404,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
         .solutions-marquee-track {
           display: flex;
           width: max-content;
-          animation: solutionsMarquee 38s linear infinite;
+          animation: solutionsMarquee 45s linear infinite;
         }
         .solutions-marquee-track:hover {
           animation-play-state: paused;
@@ -459,12 +463,10 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
 
           <div
             ref={scrollContainerRef}
-            className="overflow-x-auto scrollbar-none scroll-smooth"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+            className="overflow-x-hidden scroll-smooth w-full"
           >
-
-          <div className="solutions-marquee-track flex items-stretch gap-4 sm:gap-6">
-            {[...displaySolutions, ...displaySolutions].map((card, idx) => (
+            <div className="solutions-marquee-track flex items-stretch gap-4 sm:gap-6">
+              {marqueeSolutions.map((card, idx) => (
               <motion.div
                 key={`${card.id}-${idx}`}
                 whileHover={{ y: -8, scale: 1.03 }}
