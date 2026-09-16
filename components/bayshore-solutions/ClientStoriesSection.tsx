@@ -221,8 +221,8 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
                 whileInView={{ opacity: 1, y: 0, scale: 1 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
-                whileHover={{ y: -6, scale: 1.02 }}
-                className={`rounded-[28px] sm:rounded-[32px] overflow-hidden flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-2xl cursor-pointer ${
+                whileHover={{ y: -4, scale: 1.01 }}
+                className={`rounded-[28px] sm:rounded-[32px] overflow-hidden flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-lg cursor-pointer ${
                   theme === "dark"
                     ? "bg-[#0B1A2D] border-0 border-none !text-white shadow-xl shadow-black/40"
                     : "bg-white border border-slate-200/90 !text-[#0C1827]"

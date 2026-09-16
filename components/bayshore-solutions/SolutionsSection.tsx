@@ -439,12 +439,12 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
               {marqueeSolutions.map((card, idx) => (
               <motion.div
                 key={`${card.id}-${idx}`}
-                whileHover={{ y: -8, scale: 1.03 }}
+                whileHover={{ y: -4, scale: 1.01 }}
                 transition={{ duration: 0.3 }}
-                className={`w-[245px] xs:w-[265px] sm:w-[295px] shrink-0 rounded-2xl sm:rounded-[28px] p-5 sm:p-7 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-2xl cursor-pointer ${
+                className={`w-[245px] xs:w-[265px] sm:w-[295px] shrink-0 rounded-2xl sm:rounded-[28px] p-5 sm:p-7 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-lg cursor-pointer ${
                   theme === "dark"
-                    ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/80 shadow-lg shadow-black/30 !text-white"
-                    : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/80 shadow-sm hover:shadow-xl !text-[#0C1827]"
+                    ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/50 shadow-lg shadow-black/30 !text-white"
+                    : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/50 shadow-sm hover:shadow-lg !text-[#0C1827]"
                 }`}
               >
                 <div>

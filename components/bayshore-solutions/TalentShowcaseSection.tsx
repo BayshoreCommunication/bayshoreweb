@@ -272,23 +272,25 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
               {marqueeTalents.map((person, idx) => (
               <motion.div
                 key={`${person.id}-${idx}`}
-                whileHover={{ y: -8, scale: 1.03 }}
+                whileHover={{ y: -4, scale: 1.01 }}
                 transition={{ duration: 0.3 }}
-                className={`w-[260px] sm:w-[290px] shrink-0 rounded-[24px] sm:rounded-[28px] overflow-hidden flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
+                className={`w-[260px] sm:w-[290px] shrink-0 rounded-[24px] sm:rounded-[28px] overflow-hidden flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-lg cursor-pointer ${
                   theme === "dark"
                     ? "bg-[#0B1A2D] border-none shadow-lg shadow-black/40 !text-white"
-                    : "bg-white border-none shadow-sm hover:shadow-md !text-[#0C1827]"
+                    : "bg-white border-none shadow-sm hover:shadow-lg !text-[#0C1827]"
                 }`}
               >
                 <div>
                   {/* Photo Container */}
-                  <div className="relative w-full h-[220px] sm:h-[240px] bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                  <div className="relative w-full h-[220px] sm:h-[240px] bg-slate-100 dark:bg-slate-800 transition-colors duration-500 group-hover:bg-[#FFF0E6] dark:group-hover:bg-[#2A1810] overflow-hidden">
                     <Image
                       src={person.imagePath}
                       alt={person.name}
                       fill
-                      className="object-cover object-top transition-transform duration-500 group-hover:scale-108"
+                      className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                     />
+                    {/* Light Warm Orange Background Overlay on Hover */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#FE6F1F]/25 via-[#FE6F1F]/15 to-[#FE6F1F]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none mix-blend-multiply" />
                   </div>
 
                   {/* Card Info Area */}
