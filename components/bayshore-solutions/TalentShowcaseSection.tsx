@@ -235,7 +235,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
         .talent-marquee-track {
           display: flex;
           width: max-content;
-          animation: talentMarquee 85s linear infinite;
+          animation: talentMarquee 115s linear infinite;
           padding-top: 20px;
           padding-bottom: 24px;
           padding-left: 8px;
@@ -303,30 +303,26 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                       {person.name}
                     </h3>
                     <p
-                      className={`text-base sm:text-lg font-semibold mb-4 font-instrument ${
-                        theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
+                      className={`text-base font-semibold mb-4 ${
+                        theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
                       }`}
                     >
                       {person.role}
                     </p>
 
-                    {/* Meta Badges */}
-                    <div
-                      className={`flex flex-col gap-2.5 pt-2 text-sm sm:text-base font-bold font-instrument ${
-                        theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
-                      }`}
-                    >
+                    {/* Metadata tags */}
+                    <div className="space-y-2 text-sm font-semibold">
                       <div className="flex items-center gap-2">
-                        <span className="w-6 h-6 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-[#FE6F1F] dark:text-[#FF5500]">
+                        <span className={theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}>
                           {person.categoryIcon}
                         </span>
-                        <span>{person.categoryLabel}</span>
+                        <span className={theme === "dark" ? "!text-slate-200" : "!text-[#0C1827]"}>
+                          {person.categoryLabel}
+                        </span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <span className="w-6 h-6 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-[#FE6F1F] dark:text-[#FF5500]">
-                          <FiClock className="text-base" />
-                        </span>
-                        <span>
+                        <FiClock className={theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"} />
+                        <span className={theme === "dark" ? "!text-slate-200" : "!text-[#0C1827]"}>
                           {person.experience} | {person.hoursType}
                         </span>
                       </div>
@@ -351,14 +347,14 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
               : "bg-white border border-slate-200/80 text-[#0C1827] shadow-xl shadow-slate-200/40"
           }`}
         >
-          {/* Dotted World Map Background Overlay with Orange Hotspot Glows */}
-          <div className="absolute inset-0 pointer-events-none flex items-center justify-center opacity-40 dark:opacity-20 z-0">
-            <div className="relative w-full max-w-[1200px] h-[450px]">
+          {/* Dotted World Map Background Overlay with Orange Hotspot Glows - Fitted inside padding */}
+          <div className="absolute inset-4 sm:inset-8 md:inset-10 lg:inset-12 pointer-events-none flex items-center justify-center opacity-40 dark:opacity-20 z-0">
+            <div className="relative w-full h-full max-w-[1000px] max-h-[360px]">
               <Image
                 src="/assets/bayshore-solutions/home/world-map-banner.png"
                 alt="World Map Background"
                 fill
-                className="object-contain object-center"
+                className="object-contain object-center scale-95 sm:scale-90"
               />
               {/* Orange Hotspot Glow Nodes */}
               <div className="absolute top-[38%] left-[28%] w-3 h-3 bg-[#FE6F1F] rounded-full shadow-[0_0_12px_#FE6F1F] animate-pulse" />
