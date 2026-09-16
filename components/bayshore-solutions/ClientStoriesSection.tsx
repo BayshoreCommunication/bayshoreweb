@@ -41,8 +41,8 @@ export function getYouTubeThumbnail(urlOrId?: string): string {
 export const DEFAULT_STORIES: ClientStoryItem[] = [
   {
     id: "cs-1",
-    videoUrl: "https://www.youtube.com/watch?v=wjxj_eQzI1M",
-    quote: '"BayShore Communication has been a game changer for Carter Injury Law in scaling our online presence."',
+    videoUrl: "https://www.youtube.com/watch?v=BnKdjNi94lc",
+    quote: '"Scared to hire an overseas VA for your firm?"',
     authorName: "David Carter",
     authorTitle: "Owner & Managing Attorney",
     companyName: "CARTER INJURY LAW",
@@ -50,8 +50,8 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
   },
   {
     id: "cs-2",
-    videoUrl: "https://www.youtube.com/watch?v=RVit6poGLRs",
-    quote: '"Working with Bayshore transformed our digital strategy and brought measurable growth to our practice."',
+    videoUrl: "https://www.youtube.com/watch?v=cAix3uYkvtY",
+    quote: '"On the fence about hiring an overseas VA?"',
     authorName: "Hardam Tripathi",
     authorTitle: "Founder & Immigration Attorney",
     companyName: "TRIP LAW FIRM",
@@ -59,12 +59,12 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
   },
   {
     id: "cs-3",
-    videoUrl: "https://www.youtube.com/watch?v=ohyUTzLiLbI",
-    quote: '"Bayshore is the ultimate choice for business development and digital marketing execution."',
-    authorName: "Carlos Rosario",
-    authorTitle: "Tax Professional & Consultant",
-    companyName: "APEX ADVISOR GROUP",
-    companyLogo: "/assets/client-logo/apex.svg",
+    videoUrl: "https://www.youtube.com/watch?v=nbmpQD7Lzis",
+    quote: '"Worried about data security when hiring a VA?"',
+    authorName: "Cynthia Waisman",
+    authorTitle: "Founding Attorney",
+    companyName: "cynthiawaismanlaw.com",
+    companyLogo: "/assets/client-logo/cynthia.png",
   },
 ];
 
