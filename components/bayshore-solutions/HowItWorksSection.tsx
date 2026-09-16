@@ -198,9 +198,9 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
           </p>
         </motion.div>
 
-        {/* 5 Steps Process Container with Curved Wave Layout */}
-        <div className="relative mb-16 sm:mb-20 min-h-[420px]">
-          {/* Curved Dashed SVG Connecting Line Threading Directly Through Center of Icon Circles */}
+        {/* 5 Steps Process Container with Organic Wave Layout */}
+        <div className="relative mb-16 sm:mb-20 min-h-[380px]">
+          {/* Curved Dashed SVG Connecting Line threading through Icon Circles */}
           <div className="hidden lg:block absolute left-0 right-0 top-0 w-full h-[380px] pointer-events-none z-0">
             <svg
               className="w-full h-full"
@@ -209,27 +209,13 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
               preserveAspectRatio="none"
             >
               <path
-                d="M 100 140 C 180 185, 220 200, 300 200 C 380 200, 420 150, 500 140 C 580 130, 620 80, 700 80 C 780 80, 840 105, 900 120"
+                d="M 100 135 C 180 175, 240 195, 300 190 C 380 185, 440 135, 500 125 C 570 115, 640 70, 700 75 C 770 80, 840 110, 900 115"
                 stroke={theme === "dark" ? "#FF5500" : "#FE6F1F"}
                 strokeWidth="2.5"
-                strokeDasharray="7 7"
+                strokeDasharray="6 6"
                 opacity="0.9"
               />
             </svg>
-          </div>
-
-          {/* Dotted Line Node Ambient Glows Aligned with Icon Centers */}
-          <div className="hidden lg:block absolute inset-0 pointer-events-none z-0 overflow-hidden max-w-[1350px] mx-auto">
-            {/* Hotspot 1 (Step 1 Center) */}
-            <div className="absolute top-[140px] left-[10%] -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-[#FE6F1F]/20 rounded-full blur-md" />
-            {/* Hotspot 2 (Step 2 Center) */}
-            <div className="absolute top-[200px] left-[30%] -translate-x-1/2 -translate-y-1/2 w-18 h-18 bg-[#FE6F1F]/25 rounded-full blur-lg" />
-            {/* Hotspot 3 (Step 3 Center) */}
-            <div className="absolute top-[140px] left-[50%] -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-[#FE6F1F]/20 rounded-full blur-md" />
-            {/* Hotspot 4 (Step 4 Center) */}
-            <div className="absolute top-[80px] left-[70%] -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-[#FE6F1F]/30 rounded-full blur-lg" />
-            {/* Hotspot 5 (Step 5 Center) */}
-            <div className="absolute top-[120px] left-[90%] -translate-x-1/2 -translate-y-1/2 w-16 h-16 bg-[#FE6F1F]/20 rounded-full blur-md" />
           </div>
 
           {/* 5 Steps Columns */}
@@ -237,32 +223,32 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             {steps.map((item, idx) => {
               const desktopPaddingTop =
                 idx === 0
-                  ? "lg:pt-[60px]"
+                  ? "lg:pt-[55px]"
                   : idx === 1
-                  ? "lg:pt-[120px]"
+                  ? "lg:pt-[110px]"
                   : idx === 2
-                  ? "lg:pt-[60px]"
+                  ? "lg:pt-[45px]"
                   : idx === 3
                   ? "lg:pt-[0px]"
-                  : "lg:pt-[40px]";
+                  : "lg:pt-[35px]";
 
               const isLastOddItem = idx === steps.length - 1 && steps.length % 2 !== 0;
 
               return (
                 <motion.div
                   key={idx}
-                  initial={{ opacity: 0, y: 30, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
-                  whileHover={{ y: -6, scale: 1.03 }}
+                  whileHover={{ y: -4 }}
                   className={`flex flex-col items-center text-center transition-all duration-300 group cursor-pointer ${desktopPaddingTop} ${
                     isLastOddItem ? "col-span-2 lg:col-span-1 max-w-[260px] mx-auto mt-2 lg:mt-0" : ""
                   }`}
                 >
                   {/* Step Number Label */}
                   <span
-                    className={`text-base sm:text-xl font-extrabold mb-2.5 tracking-tight font-playfair ${
+                    className={`text-lg sm:text-2xl font-extrabold mb-2 tracking-tight font-playfair ${
                       theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"
                     }`}
                   >
@@ -271,7 +257,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
 
                   {/* Icon Circle Container */}
                   <div
-                    className={`w-16 h-16 sm:w-20 sm:h-20 lg:w-22 lg:h-22 rounded-full flex items-center justify-center mb-4 sm:mb-5 border-2 transition-all duration-300 shadow-md group-hover:shadow-xl relative z-10 ${
+                    className={`w-16 h-16 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mb-4 sm:mb-6 border-2 transition-all duration-300 shadow-md group-hover:shadow-xl relative z-10 ${
                       theme === "dark"
                         ? "bg-[#0B1A2D] border-slate-700 text-white group-hover:bg-[#FF5500] shadow-black/40"
                         : "bg-white border-slate-200 text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white shadow-slate-200/60"
@@ -289,9 +275,9 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   </div>
 
                   {/* Step Title & Description */}
-                  <div className="flex flex-col items-center text-center px-1 w-full">
+                  <div className="flex flex-col items-center px-1">
                     <h3
-                      className={`text-base sm:text-lg lg:text-[21px] font-extrabold tracking-tight mb-2 max-w-[170px] sm:max-w-[210px] leading-snug font-playfair flex items-center justify-center text-center ${
+                      className={`text-base sm:text-[22px] lg:text-[24px] font-extrabold tracking-tight mb-1.5 max-w-[170px] sm:max-w-[220px] leading-snug font-playfair ${
                         theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                       }`}
                     >
@@ -299,7 +285,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                     </h3>
                     <p
                       style={{ lineHeight: 1.5 }}
-                      className={`text-xs sm:text-sm lg:text-[15px] font-normal max-w-[180px] sm:max-w-[230px] text-center font-instrument ${
+                      className={`text-xs sm:text-base lg:text-[15px] font-normal max-w-[180px] sm:max-w-[240px] font-instrument ${
                         theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
                       }`}
                     >
