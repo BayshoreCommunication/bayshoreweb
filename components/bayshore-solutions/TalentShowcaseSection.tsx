@@ -235,7 +235,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
         .talent-marquee-track {
           display: flex;
           width: max-content;
-          animation: talentMarquee 45s linear infinite;
+          animation: talentMarquee 85s linear infinite;
         }
         .talent-marquee-track:hover {
           animation-play-state: paused;
@@ -243,7 +243,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
       `}</style>
 
         {/* Talent Cards Infinite Marquee Slider (Slowly moves right to left, pauses on hover) */}
-        <div className="relative w-full overflow-hidden mb-14 sm:mb-18 py-2">
+        <div className="relative w-full overflow-hidden mb-14 sm:mb-18 py-8 sm:py-10">
           {/* Left & Right Subtle Fade Overlays */}
           <div
             className={`absolute left-0 top-0 bottom-0 w-12 sm:w-24 z-20 pointer-events-none transition-colors duration-300 ${

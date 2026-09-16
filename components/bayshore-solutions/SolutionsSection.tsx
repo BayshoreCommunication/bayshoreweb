@@ -402,7 +402,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
         .solutions-marquee-track {
           display: flex;
           width: max-content;
-          animation: solutionsMarquee 45s linear infinite;
+          animation: solutionsMarquee 85s linear infinite;
         }
         .solutions-marquee-track:hover {
           animation-play-state: paused;
@@ -410,7 +410,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
       `}</style>
 
         {/* Infinite Marquee Solution Cards Slider (Slowly moves right to left, pauses on hover) */}
-        <div className="relative w-full overflow-hidden mb-12 sm:mb-16 py-4">
+        <div className="relative w-full overflow-hidden mb-12 sm:mb-16 py-8 sm:py-10">
           {/* Left & Right Subtle Fade Overlays */}
           <div
             className={`absolute left-0 top-0 bottom-0 w-12 sm:w-24 z-20 pointer-events-none transition-colors duration-300 ${
