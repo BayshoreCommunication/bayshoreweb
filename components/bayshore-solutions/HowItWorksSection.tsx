@@ -219,7 +219,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
           </div>
 
           {/* 5 Steps Columns */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-4 relative z-10 items-start">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 sm:gap-6 lg:gap-4 relative z-10 items-start">
             {steps.map((item, idx) => {
               const desktopPaddingTop =
                 idx === 0
@@ -232,6 +232,8 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   ? "lg:pt-[0px]"
                   : "lg:pt-[35px]";
 
+              const isLastOddItem = idx === steps.length - 1 && steps.length % 2 !== 0;
+
               return (
                 <motion.div
                   key={idx}
@@ -239,12 +241,14 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   whileInView={{ opacity: 1, y: 0, scale: 1, rotate: 0 }}
                   viewport={{ once: true, margin: "-40px" }}
                   transition={{ duration: 0.7, delay: idx * 0.12, type: "spring", stiffness: 95, damping: 14 }}
-                  whileHover={{ y: -10, scale: 1.06 }}
-                  className={`flex flex-col items-center text-center transition-all duration-300 group cursor-pointer ${desktopPaddingTop}`}
+                  whileHover={{ y: -8, scale: 1.05 }}
+                  className={`flex flex-col items-center text-center transition-all duration-300 group cursor-pointer ${desktopPaddingTop} ${
+                    isLastOddItem ? "col-span-2 lg:col-span-1 max-w-[260px] mx-auto mt-2 lg:mt-0" : ""
+                  }`}
                 >
                   {/* Step Number Label */}
                   <span
-                    className={`text-xl sm:text-2xl font-extrabold mb-3 tracking-tight font-playfair ${
+                    className={`text-lg sm:text-2xl font-extrabold mb-2 tracking-tight font-playfair ${
                       theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"
                     }`}
                   >
@@ -253,7 +257,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
 
                   {/* Icon Circle Container */}
                   <div
-                    className={`w-20 h-20 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mb-6 border-2 transition-all duration-300 shadow-md group-hover:shadow-xl relative z-10 ${
+                    className={`w-16 h-16 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mb-4 sm:mb-6 border-2 transition-all duration-300 shadow-md group-hover:shadow-xl relative z-10 ${
                       theme === "dark"
                         ? "bg-[#0B1A2D] border-slate-700 text-white group-hover:bg-[#FF5500] shadow-black/40"
                         : "bg-white border-slate-200 text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white shadow-slate-200/60"
@@ -271,17 +275,17 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   </div>
 
                   {/* Step Title & Description */}
-                  <div className="flex flex-col items-center">
+                  <div className="flex flex-col items-center px-1">
                     <h3
-                      className={`text-xl sm:text-[22px] lg:text-[24px] font-extrabold tracking-tight mb-2 max-w-[220px] leading-snug font-playfair ${
+                      className={`text-base sm:text-[22px] lg:text-[24px] font-extrabold tracking-tight mb-1.5 max-w-[170px] sm:max-w-[220px] leading-snug font-playfair ${
                         theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                       }`}
                     >
                       {item.title}
                     </h3>
                     <p
-                      style={{ lineHeight: 1.55 }}
-                      className={`text-sm sm:text-base lg:text-[15px] font-normal max-w-[240px] font-instrument ${
+                      style={{ lineHeight: 1.5 }}
+                      className={`text-xs sm:text-base lg:text-[15px] font-normal max-w-[180px] sm:max-w-[240px] font-instrument ${
                         theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
                       }`}
                     >
