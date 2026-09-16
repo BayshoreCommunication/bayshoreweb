@@ -66,17 +66,17 @@ export const Footer: React.FC<FooterProps> = ({
     >
       <div className="container mx-auto max-w-[1550px] px-6 sm:px-8 md:px-[30px] pt-12 pb-8">
         {/* Main Footer Layout: 3 Columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-0 items-start pb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-0 items-start pb-12 w-full text-left !text-left">
           {/* Column 1: Brand Navbar Logo & Description */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-30px" }}
             transition={{ duration: 0.4, ease: "easeOut" }}
-            className="lg:col-span-5 flex flex-col items-start text-left lg:pr-12"
+            className="lg:col-span-5 flex flex-col items-start text-left !text-left lg:pr-12 w-full"
           >
-            <Link href={logoHref} className="inline-block mb-5 focus:outline-none">
-              <div className="relative h-[52px] w-[230px] sm:w-[260px] flex items-center">
+            <Link href={logoHref} className="inline-block mb-5 focus:outline-none text-left">
+              <div className="relative h-[52px] w-[230px] sm:w-[260px] flex items-center justify-start">
                 <Image
                   src={currentLogoPath}
                   alt="Bayshore Virtual Solutions Logo"
@@ -88,7 +88,7 @@ export const Footer: React.FC<FooterProps> = ({
               </div>
             </Link>
             <p
-              className={`text-base sm:text-lg leading-relaxed max-w-lg font-medium font-instrument ${
+              className={`text-base sm:text-lg leading-relaxed max-w-lg font-medium font-instrument text-left !text-left ${
                 theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
               }`}
             >
@@ -102,20 +102,20 @@ export const Footer: React.FC<FooterProps> = ({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-30px" }}
             transition={{ duration: 0.4, delay: 0.1, ease: "easeOut" }}
-            className="lg:col-span-4 flex flex-col items-start text-left lg:border-l lg:border-slate-200 dark:lg:border-slate-800 lg:pl-12"
+            className="lg:col-span-4 flex flex-col items-start text-left !text-left lg:border-l lg:border-slate-200 dark:lg:border-slate-800 lg:pl-12 w-full"
           >
             <h4
-              className={`text-xl sm:text-2xl font-bold mb-5 tracking-tight font-playfair ${
+              className={`text-xl sm:text-2xl font-bold mb-5 tracking-tight font-playfair text-left !text-left ${
                 theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}
             >
               Important Links
             </h4>
-            <ul className="flex flex-col gap-3 text-base sm:text-lg font-semibold w-full font-instrument">
-              <li>
+            <ul className="flex flex-col items-start text-left !text-left gap-3 text-base sm:text-lg font-semibold w-full font-instrument">
+              <li className="w-full text-left !text-left">
                 <Link
                   href="/bayshore-solutions"
-                  className={`transition-colors duration-200 ${
+                  className={`inline-block text-left transition-colors duration-200 ${
                     theme === "dark"
                       ? "!text-slate-200 hover:!text-[#FF5500]"
                       : "!text-[#556070] hover:!text-[#FE6F1F]"
@@ -124,10 +124,10 @@ export const Footer: React.FC<FooterProps> = ({
                   Home
                 </Link>
               </li>
-              <li>
+              <li className="w-full text-left !text-left">
                 <Link
                   href="/bayshore-solutions/solutions"
-                  className={`transition-colors duration-200 ${
+                  className={`inline-block text-left transition-colors duration-200 ${
                     theme === "dark"
                       ? "!text-slate-200 hover:!text-[#FF5500]"
                       : "!text-[#556070] hover:!text-[#FE6F1F]"
@@ -136,10 +136,10 @@ export const Footer: React.FC<FooterProps> = ({
                   Solutions
                 </Link>
               </li>
-              <li>
+              <li className="w-full text-left !text-left">
                 <Link
                   href="/bayshore-solutions#how-it-works"
-                  className={`transition-colors duration-200 ${
+                  className={`inline-block text-left transition-colors duration-200 ${
                     theme === "dark"
                       ? "!text-slate-200 hover:!text-[#FF5500]"
                       : "!text-[#556070] hover:!text-[#FE6F1F]"
@@ -148,10 +148,10 @@ export const Footer: React.FC<FooterProps> = ({
                   How It Works
                 </Link>
               </li>
-              <li>
+              <li className="w-full text-left !text-left">
                 <Link
                   href="/bayshore-solutions#our-talent"
-                  className={`transition-colors duration-200 ${
+                  className={`inline-block text-left transition-colors duration-200 ${
                     theme === "dark"
                       ? "!text-slate-200 hover:!text-[#FF5500]"
                       : "!text-[#556070] hover:!text-[#FE6F1F]"
@@ -160,10 +160,10 @@ export const Footer: React.FC<FooterProps> = ({
                   Our Talent
                 </Link>
               </li>
-              <li>
+              <li className="w-full text-left !text-left">
                 <Link
                   href="/bayshore-solutions#about"
-                  className={`transition-colors duration-200 ${
+                  className={`inline-block text-left transition-colors duration-200 ${
                     theme === "dark"
                       ? "!text-slate-200 hover:!text-[#FF5500]"
                       : "!text-[#556070] hover:!text-[#FE6F1F]"
@@ -181,16 +181,16 @@ export const Footer: React.FC<FooterProps> = ({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-30px" }}
             transition={{ duration: 0.4, delay: 0.2, ease: "easeOut" }}
-            className="lg:col-span-3 flex flex-col items-start text-left lg:border-l lg:border-slate-200 dark:lg:border-slate-800 lg:pl-12"
+            className="lg:col-span-3 flex flex-col items-start text-left !text-left lg:border-l lg:border-slate-200 dark:lg:border-slate-800 lg:pl-12 w-full"
           >
             <h4
-              className={`text-xl sm:text-2xl font-bold mb-5 tracking-tight font-playfair ${
+              className={`text-xl sm:text-2xl font-bold mb-5 tracking-tight font-playfair text-left !text-left ${
                 theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}
             >
               Social Links
             </h4>
-            <div className="flex items-center gap-3.5 flex-wrap">
+            <div className="flex items-center justify-start gap-3.5 flex-wrap w-full">
               {socialLinks.map((item) => {
                 const Icon = item.icon;
                 return (
@@ -224,11 +224,11 @@ export const Footer: React.FC<FooterProps> = ({
         />
 
         {/* Bottom Copyright & Policy Links Bar */}
-        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 text-sm sm:text-base font-medium font-instrument text-left">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-5 text-sm sm:text-base font-medium font-instrument">
           <p className={theme === "dark" ? "!text-slate-300" : "!text-[#556070]"}>
             © {currentYear} Bayshore Virtual Solutions. All rights reserved.
           </p>
-          <div className="flex flex-wrap items-center justify-start gap-4 sm:gap-7 font-semibold">
+          <div className="flex items-center gap-7 font-semibold">
             <Link
               href="/privacy-policy"
               className={`transition-colors duration-200 ${

@@ -64,9 +64,9 @@ quickLinks = [
 
 const Col = ({ text, links }: any) => {
   return (
-    <div className="flex-1 w-full text-start md:translate-x-[20%] lg:translate-x-[30%]">
-      <h4 className="mb-6 md:mb-10 heading-four text-start">{text}</h4>
-      <ul className="flex flex-col gap-4">
+    <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
+      <h4 className="mb-10 heading-four text-center md:text-start ">{text}</h4>
+      <ul className="flex flex-col gap-4 ">
         {links.map((el: any, i: number) => {
           if (text === "Service") {
             if (i < links.length / 2) {
@@ -130,9 +130,9 @@ const Footer = () => {
   return (
     <footer>
       <SectionLayout bg="bg-[#F4F4F4]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-start text-start gap-[3rem] md:gap-8 w-full">
-          <div className="w-full text-start">
-            <div className="flex justify-start md:block">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-items-center gap-[3rem] md:gap-8">
+          <div className="">
+            <div className="center md:block">
               <Image
                 src="/assets/bayshore-logo.svg"
                 alt="bayshore-logo"
@@ -142,22 +142,42 @@ const Footer = () => {
                 priority
               />
             </div>
-            <p className="text-small leading-[1.3] text-start px-0">
+            <p className="text-small  leading-[1.3] px-[2vw]  sm:px-0 ">
               {text}
             </p>
           </div>
           <Col text="Service" links={service} />
           <Col text="More Service" links={service} />
           <Col text="Quick links" links={quickLinks} />
+
+          {/* <div className="flex-1 md:translate-x-[20%] lg:translate-x-[30%] ">
+            <h4 className="mb-10 heading-four text-center md:text-start ">
+              By subscribing we inform about
+            </h4>
+            <div className="flex flex-col items-center gap-y-4">
+              <input
+                className="bg-[#eae7e7] py-[0.8rem] px-2 rounded-xl text-[1.3rem] placeholder-center focus:outline-none w-full"
+                type="text"
+                placeholder="Enter your email"
+              />
+              <button
+                type="submit"
+                className="btn text-small !py-3 flex items-center gap-8 w-max"
+              >
+                <span>Get a Proposal</span>
+              </button>
+            </div>
+          </div> */}
+          {/*  */}
         </div>
         <div className="w-full mt-6 h-[1px] bg-[#DBDBDB]"></div>
-        <div className="flex flex-col sm:flex-row justify-start sm:justify-between items-start sm:items-center text-start gap-4">
-          <p className="text-small mt-4 sm:mt-8">
+        <div className="flex flex-wrap justify-center md:justify-between items-center   ">
+          <p className="text-small mt-8 ">
             Copyright <span>© {new Date().getFullYear()}</span> All Rights
             Reserved by Bayshore Communication.
           </p>
-          <div className="flex flex-col items-start sm:items-center gap-6 pl-0 md:pl-8">
-            <div className="flex items-center justify-start gap-4 mt-2 sm:mt-8">
+          <div className=" flex flex-col items-center  gap-6 pl-8 ">
+            <div className="center mt-8 gap-4 ">
               <Link
                 href={"https://www.facebook.com/bayshorecommunication"}
                 target="_blank"
