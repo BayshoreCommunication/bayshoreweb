@@ -403,6 +403,10 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
           display: flex;
           width: max-content;
           animation: solutionsMarquee 85s linear infinite;
+          padding-top: 20px;
+          padding-bottom: 24px;
+          padding-left: 8px;
+          padding-right: 8px;
         }
         .solutions-marquee-track:hover {
           animation-play-state: paused;
@@ -410,17 +414,17 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
       `}</style>
 
         {/* Infinite Marquee Solution Cards Slider (Slowly moves right to left, pauses on hover) */}
-        <div className="relative w-full overflow-hidden mb-12 sm:mb-16 py-8 sm:py-10">
-          {/* Left & Right Subtle Fade Overlays */}
+        <div className="relative w-full overflow-hidden mb-12 sm:mb-16 -my-4 py-2">
+          {/* Subtle Side Fade Accents */}
           <div
-            className={`absolute left-0 top-0 bottom-0 w-12 sm:w-24 z-20 pointer-events-none transition-colors duration-300 ${
+            className={`absolute left-0 top-0 bottom-0 w-6 sm:w-10 z-20 pointer-events-none opacity-40 transition-colors duration-300 ${
               theme === "dark"
                 ? "bg-gradient-to-r from-[#07192C] to-transparent"
                 : "bg-gradient-to-r from-white to-transparent"
             }`}
           />
           <div
-            className={`absolute right-0 top-0 bottom-0 w-12 sm:w-24 z-20 pointer-events-none transition-colors duration-300 ${
+            className={`absolute right-0 top-0 bottom-0 w-6 sm:w-10 z-20 pointer-events-none opacity-40 transition-colors duration-300 ${
               theme === "dark"
                 ? "bg-gradient-to-l from-[#07192C] to-transparent"
                 : "bg-gradient-to-l from-white to-transparent"
