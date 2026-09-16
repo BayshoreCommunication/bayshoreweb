@@ -46,7 +46,7 @@ export const DEFAULT_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "legal",
     title: "Legal Support",
-    icon: <TbScale className="text-3xl sm:text-5xl" />,
+    icon: <TbScale className="text-3xl sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -108,6 +108,10 @@ export const DEFAULT_SOLUTIONS: SolutionCardItem[] = [
     ],
     link: "/solutions/finance",
   },
+];
+
+export const ALL_SOLUTIONS: SolutionCardItem[] = [
+  ...DEFAULT_SOLUTIONS,
   {
     id: "technology",
     title: "Technology",
@@ -121,10 +125,6 @@ export const DEFAULT_SOLUTIONS: SolutionCardItem[] = [
     ],
     link: "/solutions/technology",
   },
-];
-
-export const ALL_SOLUTIONS: SolutionCardItem[] = [
-  ...DEFAULT_SOLUTIONS,
   {
     id: "engineering",
     title: "Engineering",
@@ -189,19 +189,6 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
       "Calendar Management",
     ],
     link: "/solutions/operations",
-  },
-  {
-    id: "technology-dev",
-    title: "Technology",
-    icon: <FiTerminal className="text-2xl sm:text-3xl" />,
-    features: [
-      "Client intake & Follow-Up",
-      "Document Preparation",
-      "Case Management",
-      "Legal Research",
-      "Calendar Management",
-    ],
-    link: "/solutions/technology-dev",
   },
   {
     id: "sales-business",
@@ -269,6 +256,45 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
     link: "/solutions/sports",
   },
   {
+    id: "creative-design",
+    title: "Creative & Design",
+    icon: <FiLayers className="text-2xl sm:text-3xl" />,
+    features: [
+      "Client intake & Follow-Up",
+      "Document Preparation",
+      "Case Management",
+      "Legal Research",
+      "Calendar Management",
+    ],
+    link: "/solutions/creative-design",
+  },
+  {
+    id: "data-analytics",
+    title: "Data Analytics",
+    icon: <FiTrendingUp className="text-2xl sm:text-3xl" />,
+    features: [
+      "Client intake & Follow-Up",
+      "Document Preparation",
+      "Case Management",
+      "Legal Research",
+      "Calendar Management",
+    ],
+    link: "/solutions/data-analytics",
+  },
+  {
+    id: "virtual-assistant",
+    title: "Virtual Assistant",
+    icon: <FiUsers className="text-2xl sm:text-3xl" />,
+    features: [
+      "Client intake & Follow-Up",
+      "Document Preparation",
+      "Case Management",
+      "Legal Research",
+      "Calendar Management",
+    ],
+    link: "/solutions/virtual-assistant",
+  },
+  {
     id: "and-more",
     title: "And More",
     icon: <FiLayers className="text-2xl sm:text-3xl" />,
@@ -328,7 +354,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
           className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 sm:mb-16"
         >
           {/* Left Header Titles */}
-          <div className="max-w-4xl xl:max-w-5xl  !text-left items-start">
+          <div className="max-w-8xl xl:max-w-8xl  !text-left items-start">
             <span
               className={`inline-block text-xl sm:text-2xl font-bold uppercase tracking-[0.2em] mb-3 text-left !text-left font-playfair ${
                 theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
@@ -390,22 +416,22 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
         </motion.div>
 
         {/* Solution Cards Responsive Grid (No Marquee) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 sm:gap-5 mb-12 sm:mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 mb-12 sm:mb-16">
           {displaySolutions.map((card) => (
             <motion.div
               key={card.id}
-              whileHover={{ y: -4, scale: 1.01 }}
+              whileHover={{ y: -5, scale: 1.015 }}
               transition={{ duration: 0.3 }}
-              className={`w-full rounded-2xl sm:rounded-[24px] p-5 sm:p-6 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-lg cursor-pointer ${
+              className={`w-full rounded-2xl sm:rounded-[24px] p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
                 theme === "dark"
                   ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/50 shadow-lg shadow-black/30 !text-white"
-                  : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/50 shadow-sm hover:shadow-lg !text-[#0C1827]"
+                  : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/50 shadow-sm hover:shadow-xl !text-[#0C1827]"
               }`}
             >
               <div>
                 {/* Icon Container with hover pulse */}
                 <div
-                  className={`w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-4 sm:mb-5 shadow-sm transition-all duration-300 group-hover:scale-110 ${
+                  className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-5 sm:mb-6 shadow-sm transition-all duration-300 group-hover:scale-110 text-3xl sm:text-4xl [&>svg]:w-7 [&>svg]:h-7 sm:[&>svg]:w-8 sm:[&>svg]:h-8 ${
                     theme === "dark"
                       ? "bg-slate-800 border border-slate-700 !text-white group-hover:bg-[#FF5500]"
                       : "bg-white border border-slate-100 !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white"
@@ -416,7 +442,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
 
                 {/* Card Title */}
                 <h3
-                  className={`text-lg sm:text-xl font-extrabold tracking-tight mb-3 sm:mb-4 font-playfair ${
+                  className={`text-xl sm:text-[22px] lg:text-2xl font-extrabold tracking-tight mb-3.5 sm:mb-4 font-playfair ${
                     theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                   }`}
                 >
@@ -424,16 +450,16 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                 </h3>
 
                 {/* Features Bullet List */}
-                <ul className="flex flex-col gap-2 mb-5 sm:mb-6 font-instrument">
+                <ul className="flex flex-col gap-2.5 mb-6 sm:mb-7 font-instrument">
                   {card.features.map((feature, featureIdx) => (
                     <li
                       key={featureIdx}
-                      className={`text-xs sm:text-sm leading-snug flex items-start gap-1.5 ${
+                      className={`text-sm sm:text-[15px] lg:text-base leading-snug flex items-start gap-2 ${
                         theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                       }`}
                     >
                       <span
-                        className={`font-extrabold text-xs select-none mt-0.5 ${
+                        className={`font-extrabold text-sm select-none mt-0.5 ${
                           theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"
                         }`}
                       >
@@ -451,14 +477,14 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                 whileTap={{ scale: 0.98 }}
                 type="button"
                 onClick={() => onFindTalentClick && onFindTalentClick(card.id)}
-                className={`w-full py-2.5 sm:py-3 px-3 rounded-full font-bold text-xs sm:text-sm transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md font-instrument ${
+                className={`w-full py-3 sm:py-3.5 px-4 rounded-full font-bold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md font-instrument ${
                   theme === "dark"
                     ? "bg-[#FF5500] text-white hover:bg-[#e04a00]"
                     : "bg-[#07192C] text-white hover:bg-[#000e1e]"
                 }`}
               >
                 <span>Find Talent</span>
-                <FiArrowRight size={15} className="transition-transform duration-300 group-hover:translate-x-1" />
+                <FiArrowRight size={17} className="transition-transform duration-300 group-hover:translate-x-1" />
               </motion.button>
             </motion.div>
           ))}

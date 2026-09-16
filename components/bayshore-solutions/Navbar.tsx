@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrFormClose } from "react-icons/gr";
 import { FiSun, FiMoon, FiArrowRight } from "react-icons/fi";
@@ -47,18 +48,112 @@ export const Navbar: React.FC<NavbarProps> = ({
   defaultTheme = "light",
   onThemeChange,
 }) => {
+  const pathname = usePathname();
+
+  const getInitialActiveTab = (): string => {
+    if (!pathname) return "Home";
+    if (pathname.startsWith("/bayshore-solutions/solutions")) {
+      return "Solutions";
+    }
+    if (pathname === "/bayshore-solutions" || pathname === "/bayshore-solutions/") {
+      return "Home";
+    }
+    const matched = navItems.find(
+      (item) => item.link === pathname || (!item.link.includes("#") && pathname.startsWith(item.link))
+    );
+    return matched ? matched.title : "";
+  };
+
   const [theme, setTheme] = useState<"light" | "dark">(defaultTheme);
-  const [activeTab, setActiveTab] = useState<string>("");
+  const [activeTab, setActiveTab] = useState<string>(getInitialActiveTab);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isClickScrolling = useRef(false);
 
+  // Sync activeTab when pathname changes or on mount with hash
+  useEffect(() => {
+    if (!pathname) return;
+
+    if (pathname.startsWith("/bayshore-solutions/solutions")) {
+      setActiveTab("Solutions");
+      return;
+    }
+
+    if (pathname === "/bayshore-solutions" || pathname === "/bayshore-solutions/") {
+      const hash = window.location.hash;
+      if (hash === "#how-it-works") {
+        setActiveTab("How It Works");
+      } else if (hash === "#our-talent") {
+        setActiveTab("Our Talent");
+      } else if (hash === "#about") {
+        setActiveTab("About");
+      } else if (window.scrollY < 300) {
+        setActiveTab("Home");
+      }
+      return;
+    }
+
+    const matched = navItems.find(
+      (item) => item.link === pathname || (!item.link.includes("#") && pathname.startsWith(item.link))
+    );
+    if (matched) {
+      setActiveTab(matched.title);
+    } else {
+      setActiveTab("");
+    }
+  }, [pathname, navItems]);
+
+  // Listen to hash changes in URL
+  useEffect(() => {
+    const handleHashChange = () => {
+      if (pathname === "/bayshore-solutions" || pathname === "/bayshore-solutions/") {
+        const hash = window.location.hash;
+        if (hash === "#how-it-works") setActiveTab("How It Works");
+        else if (hash === "#our-talent") setActiveTab("Our Talent");
+        else if (hash === "#about") setActiveTab("About");
+        else if (!hash || hash === "#") setActiveTab("Home");
+      }
+    };
+
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, [pathname]);
+
+  // Scroll detection: toggle background & scroll spy for home page sections
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
+
+      // Only perform scroll spy on the home landing page
+      if (pathname === "/bayshore-solutions" || pathname === "/bayshore-solutions/") {
+        if (isClickScrolling.current) return;
+
+        if (window.scrollY < 300) {
+          setActiveTab("Home");
+          return;
+        }
+
+        const howItWorksEl = document.getElementById("how-it-works");
+        const aboutEl = document.getElementById("about");
+        const talentEl = document.getElementById("our-talent");
+
+        const scrollPosition = window.scrollY + 200;
+
+        if (talentEl && scrollPosition >= talentEl.offsetTop) {
+          setActiveTab("Our Talent");
+        } else if (aboutEl && scrollPosition >= aboutEl.offsetTop) {
+          setActiveTab("About");
+        } else if (howItWorksEl && scrollPosition >= howItWorksEl.offsetTop) {
+          setActiveTab("How It Works");
+        } else {
+          setActiveTab("Home");
+        }
+      }
     };
-    window.addEventListener("scroll", handleScroll);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
 
   const toggleTheme = () => {
     const nextTheme = theme === "light" ? "dark" : "light";
@@ -70,6 +165,53 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const toggleDrawer = () => {
     setIsDrawerOpen((prev) => !prev);
+  };
+
+  const handleNavClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    item: NavItem
+  ) => {
+    setActiveTab(item.title);
+    if (isDrawerOpen) setIsDrawerOpen(false);
+
+    // If clicking Home while on the home page, smoothly scroll to top
+    if (
+      (pathname === "/bayshore-solutions" || pathname === "/bayshore-solutions/") &&
+      (item.link === "/bayshore-solutions" || item.title === "Home")
+    ) {
+      e.preventDefault();
+      isClickScrolling.current = true;
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      window.history.pushState(null, "", "/bayshore-solutions");
+      setTimeout(() => {
+        isClickScrolling.current = false;
+      }, 800);
+      return;
+    }
+
+    // If on the home page and clicking a hash link on the same page
+    if (
+      (pathname === "/bayshore-solutions" || pathname === "/bayshore-solutions/") &&
+      item.link.includes("#")
+    ) {
+      const hash = item.link.split("#")[1];
+      const el = document.getElementById(hash);
+      if (el) {
+        e.preventDefault();
+        isClickScrolling.current = true;
+        const navHeight = 90;
+        const elementPosition = el.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - navHeight;
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+        window.history.pushState(null, "", `#${hash}`);
+        setTimeout(() => {
+          isClickScrolling.current = false;
+        }, 800);
+      }
+    }
   };
 
   const currentLogoPath = theme === "dark" ? logoDarkPath : logoLightPath;
@@ -118,7 +260,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 <Link
                   key={item.title}
                   href={item.link}
-                  onClick={() => setActiveTab(item.title)}
+                  onClick={(e) => handleNavClick(e, item)}
                   className={`text-link group relative py-2 font-semibold transition-colors duration-200 focus:outline-none ${
                     theme === "dark"
                       ? isActive
@@ -130,7 +272,11 @@ export const Navbar: React.FC<NavbarProps> = ({
                   }`}
                 >
                   {item.title}
-                  <span className="absolute bottom-0 left-0 h-[2.5px] bg-[#FF5500] rounded-full w-0 group-hover:w-full transition-all duration-300 ease-out" />
+                  <span
+                    className={`absolute bottom-0 left-0 h-[2.5px] bg-[#FF5500] rounded-full transition-all duration-300 ease-out ${
+                      isActive ? "w-full" : "w-0 group-hover:w-full"
+                    }`}
+                  />
                 </Link>
               );
             })}
@@ -157,7 +303,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* CTA Button matching screenshots */}
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Link
-                href=""
+                href="/bayshore-solutions/get-started"
                 className={`text-link group px-6 py-2.5 lg:px-7 lg:py-3 rounded-full font-bold transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg ${
                   theme === "dark"
                     ? "bg-[#FF5500] !text-white hover:bg-[#e04a00] focus:ring-2 focus:ring-[#FF5500]/50"
@@ -254,13 +400,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <li key={item.title}>
                     <Link
                       href={item.link}
-                      onClick={() => {
-                        setActiveTab(item.title);
-                        toggleDrawer();
-                      }}
+                      onClick={(e) => handleNavClick(e, item)}
                       className={`text-link block py-3 px-4 rounded-xl font-semibold transition-colors ${
                         isActive
-                          ? "bg-[#FF5500]/10 !text-[#FF5500]"
+                          ? "bg-[#FF5500]/10 !text-[#FF5500] font-bold"
                           : theme === "dark"
                           ? "!text-white hover:!text-[#FF5500] hover:bg-slate-800"
                           : "!text-[#07192C] hover:!text-[#FF5500] hover:bg-slate-100"

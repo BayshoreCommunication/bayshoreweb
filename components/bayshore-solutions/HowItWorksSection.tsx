@@ -79,7 +79,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
   return (
     <section
       id="how-it-works"
-      className={`relative w-full max-w-full py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-300 ${
+      className={`scroll-mt-20 md:scroll-mt-24 relative w-full max-w-full py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-300 ${
         theme === "dark" ? "bg-[#07192C] text-white" : "bg-[#F8F9FA] text-[#0C1827]"
       }`}
     >
