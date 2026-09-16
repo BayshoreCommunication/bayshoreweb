@@ -129,7 +129,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
                 >
                   {/* Big Counter Value (Fixed height for exact horizontal baseline alignment across all columns) */}
                   <div
-                    className={`h-[52px] sm:h-[52px] lg:h-[56px] xl:h-[62px] flex items-baseline justify-center sm:justify-start text-[38px] xs:text-[44px] sm:text-4xl lg:text-[40px] xl:text-[48px] 2xl:text-[54px] font-bold tracking-tight leading-none mb-1.5 sm:mb-2 font-playfair ${
+                    className={`h-[52px] sm:h-[52px] lg:h-[56px] xl:h-[62px] flex items-baseline justify-center sm:justify-start text-[38px] xs:text-[44px] sm:text-4xl lg:text-[40px] xl:text-[48px] 2xl:text-[54px] font-bold tracking-tight leading-none mb-1.5 sm:mb-2 font-instrument ${
                       theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                     }`}
                   >
