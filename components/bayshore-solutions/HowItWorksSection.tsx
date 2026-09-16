@@ -169,7 +169,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-left max-w-5xl mb-12 sm:mb-16"
+          className="text-left max-w-7xl mb-12 sm:mb-16"
         >
           <span
             className={`inline-block text-xl sm:text-2xl font-bold uppercase tracking-[0.2em] mb-3 font-playfair ${
@@ -179,7 +179,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             {titleTag}
           </span>
           <h2
-            className={`text-[42px] xs:text-[46px] sm:text-6xl lg:text-[54px] xl:text-[60px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.18] mb-4 sm:mb-6 text-left !text-left font-playfair ${
+            className={`text-[36px] xs:text-[42px] sm:text-5xl lg:text-[46px] xl:text-[54px] font-extrabold tracking-tight leading-[1.12] sm:leading-[1.18] mb-4 sm:mb-6 text-left !text-left font-playfair lg:whitespace-nowrap ${
               theme === "dark" ? "!text-white" : "!text-[#0C1827]"
             }`}
           >
