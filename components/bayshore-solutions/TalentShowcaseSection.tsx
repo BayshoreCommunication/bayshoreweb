@@ -5,8 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
-  FiChevronLeft,
-  FiChevronRight,
   FiUserCheck,
   FiClock,
   FiArrowRight,
@@ -245,39 +243,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
       `}</style>
 
         {/* Talent Cards Infinite Marquee Slider (Slowly moves right to left, pauses on hover) */}
-        <div className="relative w-full overflow-hidden mb-14 sm:mb-18 py-2 group">
-          {/* Left Navigation Arrow */}
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            type="button"
-            onClick={() => handleScroll("left")}
-            aria-label="Scroll Left"
-            className={`absolute left-1 sm:left-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border shadow-lg transition-all ${
-              theme === "dark"
-                ? "bg-[#0B1A2D]/90 !text-white border-slate-700 hover:bg-[#FF5500] hover:border-[#FF5500]"
-                : "bg-white/95 !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
-            }`}
-          >
-            <FiChevronLeft size={22} />
-          </motion.button>
-
-          {/* Right Navigation Arrow */}
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            type="button"
-            onClick={() => handleScroll("right")}
-            aria-label="Scroll Right"
-            className={`absolute right-1 sm:right-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border shadow-lg transition-all ${
-              theme === "dark"
-                ? "bg-[#0B1A2D]/90 !text-white border-slate-700 hover:bg-[#FF5500] hover:border-[#FF5500]"
-                : "bg-white/95 !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
-            }`}
-          >
-            <FiChevronRight size={22} />
-          </motion.button>
-
+        <div className="relative w-full overflow-hidden mb-14 sm:mb-18 py-2">
           {/* Left & Right Subtle Fade Overlays */}
           <div
             className={`absolute left-0 top-0 bottom-0 w-12 sm:w-24 z-20 pointer-events-none transition-colors duration-300 ${
