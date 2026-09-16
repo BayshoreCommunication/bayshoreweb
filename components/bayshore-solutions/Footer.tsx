@@ -13,11 +13,9 @@ import { FaXTwitter } from "react-icons/fa6";
 import {
   FiArrowRight,
   FiArrowUp,
-  FiArrowUpRight,
   FiMail,
   FiCheck,
   FiCopy,
-  FiGlobe,
 } from "react-icons/fi";
 import { motion } from "framer-motion";
 
@@ -38,13 +36,12 @@ export const Footer: React.FC<FooterProps> = ({
   const currentLogoPath = theme === "dark" ? logoDarkPath : logoLightPath;
 
   const [copiedEmail, setCopiedEmail] = useState(false);
-
   const contactEmail = "hello@bayshorevirtual.com";
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(contactEmail);
     setCopiedEmail(true);
-    setTimeout(() => setCopiedEmail(false), 2500);
+    setTimeout(() => setCopiedEmail(false), 2200);
   };
 
   const scrollToTop = () => {
@@ -56,69 +53,73 @@ export const Footer: React.FC<FooterProps> = ({
       name: "LinkedIn",
       icon: FaLinkedinIn,
       href: "https://linkedin.com/company/bayshore-communication",
-      hoverBg: "hover:bg-[#0A66C2] hover:border-[#0A66C2]",
+      hoverBg: "hover:bg-[#0A66C2] hover:border-[#0A66C2] hover:text-white",
     },
     {
       name: "Facebook",
       icon: FaFacebookF,
       href: "https://facebook.com/bayshorecommunication",
-      hoverBg: "hover:bg-[#1877F2] hover:border-[#1877F2]",
+      hoverBg: "hover:bg-[#1877F2] hover:border-[#1877F2] hover:text-white",
     },
     {
       name: "Instagram",
       icon: FaInstagram,
       href: "https://instagram.com/bayshorecommunication",
-      hoverBg: "hover:bg-[#E4405F] hover:border-[#E4405F]",
+      hoverBg: "hover:bg-[#E4405F] hover:border-[#E4405F] hover:text-white",
     },
     {
       name: "X (Twitter)",
       icon: FaXTwitter,
       href: "https://x.com/BayshoreCom",
-      hoverBg: "hover:bg-black hover:border-black dark:hover:bg-slate-700 dark:hover:border-slate-700",
+      hoverBg: "hover:bg-black hover:border-black dark:hover:bg-slate-700 dark:hover:border-slate-700 hover:text-white",
     },
     {
       name: "YouTube",
       icon: FaYoutube,
       href: "https://www.youtube.com/@bayshorecommunication",
-      hoverBg: "hover:bg-[#FF0000] hover:border-[#FF0000]",
+      hoverBg: "hover:bg-[#FF0000] hover:border-[#FF0000] hover:text-white",
     },
   ];
 
   const solutionLinks = [
     { title: "Legal Support", link: "/bayshore-solutions/solutions" },
-    { title: "Healthcare & Medical", link: "/bayshore-solutions/solutions" },
-    { title: "Marketing & Growth", link: "/bayshore-solutions/solutions" },
-    { title: "Real Estate Staffing", link: "/bayshore-solutions/solutions" },
+    { title: "Healthcare", link: "/bayshore-solutions/solutions" },
+    { title: "Marketing", link: "/bayshore-solutions/solutions" },
+    { title: "Real Estate", link: "/bayshore-solutions/solutions" },
     { title: "Finance & Admin", link: "/bayshore-solutions/solutions" },
-    { title: "Technology & Dev", link: "/bayshore-solutions/solutions" },
+    { title: "Technology", link: "/bayshore-solutions/solutions" },
   ];
 
-  const quickLinks = [
+  const companyLinks = [
     { title: "Home", link: "/bayshore-solutions" },
     { title: "Solutions Grid", link: "/bayshore-solutions/solutions" },
     { title: "How It Works", link: "/bayshore-solutions#how-it-works" },
     { title: "Our Talent Showcase", link: "/bayshore-solutions#our-talent" },
     { title: "About Managed Staffing", link: "/bayshore-solutions#about" },
-    { title: "Get Started / Contact", link: "/bayshore-solutions/get-started" },
+    { title: "Get Started", link: "/bayshore-solutions/get-started" },
   ];
 
   return (
     <footer
       className={`relative w-full max-w-full overflow-hidden border-t transition-colors duration-300 font-instrument ${
         theme === "dark"
-          ? "bg-[#05111F] text-white border-slate-800/80"
+          ? "bg-[#061423] text-white border-slate-800/80"
           : "bg-[#F7F9FC] text-[#0C1827] border-slate-200/90"
       }`}
     >
+      {/* Creative Top Accent Gradient Line */}
+      <div className="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#FF5500] to-transparent" />
+
       {/* Decorative ambient background glows */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FF5500]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2" />
       <div className="absolute bottom-0 right-10 w-96 h-96 bg-[#0066FF]/5 rounded-full blur-3xl pointer-events-none translate-y-1/2" />
 
-      <div className="container mx-auto max-w-[1550px] px-6 sm:px-8 md:px-[30px] pt-12 lg:pt-14 pb-10 relative z-10">
-        {/* Main Footer Content Grid: 4 Dynamic Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 w-full text-left">
+      <div className="container mx-auto max-w-[1550px] px-6 sm:px-8 md:px-[30px] pt-14 lg:pt-16 pb-10 relative z-10">
+        
+        {/* Main Footer Layout: 4 Well-Balanced Dynamic Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 w-full text-left">
           
-          {/* Column 1: Brand Logo, Description & Interactive Copy Email Card (4 cols) */}
+          {/* Column 1: Brand Info & Live Status Badge (4 cols) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -140,14 +141,12 @@ export const Footer: React.FC<FooterProps> = ({
             </Link>
 
             <p
-              className={`text-base leading-relaxed mb-6 font-medium max-w-2xl width-full ${
+              className={`text-base leading-relaxed mb-5 font-medium ${
                 theme === "dark" ? "text-slate-300" : "text-[#556070]"
               }`}
             >
-              A sister company of <span className="font-bold text-[#FF5500]">Bayshore Communication</span>, providing pre-vetted, industry-ready virtual staffing solutions for modern high-growth businesses.
+              A sister company of <span className="font-bold text-[#FF5500]">Bayshore Communication</span>, providing managed virtual staffing solutions for modern businesses.
             </p>
-
-         
           </motion.div>
 
           {/* Column 2: Solutions Links (3 cols) */}
@@ -170,10 +169,10 @@ export const Footer: React.FC<FooterProps> = ({
                 <li key={item.title} className="w-full">
                   <Link
                     href={item.link}
-                    className={`group inline-flex items-center gap-1.5 transition-all duration-200 ${
+                    className={`group inline-flex items-center gap-2 transition-all duration-200 ${
                       theme === "dark"
-                        ? "text-slate-300 hover:text-[#FF5500] hover:translate-x-1"
-                        : "text-[#556070] hover:text-[#FF5500] hover:translate-x-1"
+                        ? "text-slate-300 hover:text-[#FF5500] hover:translate-x-1.5"
+                        : "text-[#556070] hover:text-[#FF5500] hover:translate-x-1.5"
                     }`}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
@@ -193,7 +192,7 @@ export const Footer: React.FC<FooterProps> = ({
             </ul>
           </motion.div>
 
-          {/* Column 3: Quick Company Links (2 cols) */}
+          {/* Column 3: Company Links (2 cols) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -209,14 +208,14 @@ export const Footer: React.FC<FooterProps> = ({
               Company
             </h4>
             <ul className="flex flex-col gap-2.5 text-base font-semibold w-full">
-              {quickLinks.map((item) => (
+              {companyLinks.map((item) => (
                 <li key={item.title} className="w-full">
                   <Link
                     href={item.link}
-                    className={`group inline-flex items-center gap-1.5 transition-all duration-200 ${
+                    className={`group inline-flex items-center gap-2 transition-all duration-200 ${
                       theme === "dark"
-                        ? "text-slate-300 hover:text-[#FF5500] hover:translate-x-1"
-                        : "text-[#556070] hover:text-[#FF5500] hover:translate-x-1"
+                        ? "text-slate-300 hover:text-[#FF5500] hover:translate-x-1.5"
+                        : "text-[#556070] hover:text-[#FF5500] hover:translate-x-1.5"
                     }`}
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
@@ -227,7 +226,7 @@ export const Footer: React.FC<FooterProps> = ({
             </ul>
           </motion.div>
 
-          {/* Column 4: Social Links & Global Presence (3 cols) */}
+          {/* Column 4: Social Links & Direct Inquiries Email Card (3 cols) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -243,8 +242,8 @@ export const Footer: React.FC<FooterProps> = ({
               Connect With Us
             </h4>
             
-            {/* Interactive Social Links with Brand Color Hovers */}
-            <div className="flex items-center justify-start gap-2.5 flex-wrap w-full mb-6">
+            {/* Interactive Social Buttons with Brand Color Transitions */}
+            <div className="flex items-center justify-start gap-2.5 flex-wrap w-full mb-5">
               {socialLinks.map((item) => {
                 const Icon = item.icon;
                 return (
@@ -259,8 +258,8 @@ export const Footer: React.FC<FooterProps> = ({
                     title={item.name}
                     className={`w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center transition-all duration-300 shadow-sm border ${
                       theme === "dark"
-                        ? `bg-[#0B1A2D] border-slate-700 text-slate-300 ${item.hoverBg} hover:text-white`
-                        : `bg-white border-slate-200 text-[#556070] ${item.hoverBg} hover:text-white`
+                        ? `bg-[#0B1A2D] border-slate-700 text-slate-300 ${item.hoverBg}`
+                        : `bg-white border-slate-200 text-[#556070] ${item.hoverBg}`
                     }`}
                   >
                     <Icon size={17} />
@@ -269,34 +268,56 @@ export const Footer: React.FC<FooterProps> = ({
               })}
             </div>
 
-            {/* Global Presence Badge */}
+            {/* Interactive Click-to-Copy Email Card (Right Side) */}
             <div
-              className={`w-full p-4 rounded-2xl border flex items-center gap-3 transition-colors ${
+              onClick={handleCopyEmail}
+              title="Click to copy email address"
+              className={`group flex items-center gap-3 px-4 py-2.5 rounded-xl border transition-all duration-300 cursor-pointer shadow-sm w-full ${
                 theme === "dark"
-                  ? "bg-[#0B1A2D] border-slate-700/70 text-slate-300"
-                  : "bg-white border-slate-200 text-[#556070]"
+                  ? "bg-[#0B1A2D] border-slate-700/80 hover:border-[#FF5500] hover:bg-slate-800"
+                  : "bg-white border-slate-200 hover:border-[#FF5500] hover:bg-slate-50"
               }`}
             >
-              <div className="w-9 h-9 rounded-full bg-blue-500/10 text-blue-500 flex items-center justify-center shrink-0">
-                <FiGlobe size={18} />
+              <div
+                className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors shrink-0 ${
+                  copiedEmail
+                    ? "bg-emerald-500 text-white"
+                    : theme === "dark"
+                    ? "bg-slate-800 text-[#FF5500] group-hover:bg-[#FF5500] group-hover:text-white"
+                    : "bg-orange-50 text-[#FF5500] group-hover:bg-[#FF5500] group-hover:text-white"
+                }`}
+              >
+                {copiedEmail ? <FiCheck size={16} /> : <FiMail size={16} />}
               </div>
-              <div className="text-xs">
-                <p className="font-bold text-slate-800 dark:text-white">Global Operations</p>
-                <p className="text-slate-400">Serving clients across USA, UK, Canada & worldwide.</p>
+              <div className="flex flex-col truncate">
+                <span className="text-xs font-semibold text-slate-400">Direct Inquiries</span>
+                <span
+                  className={`text-sm font-bold truncate transition-colors ${
+                    copiedEmail
+                      ? "text-emerald-500"
+                      : theme === "dark"
+                      ? "text-white group-hover:text-[#FF5500]"
+                      : "text-[#0C1827] group-hover:text-[#FF5500]"
+                  }`}
+                >
+                  {contactEmail}
+                </span>
               </div>
+              <span className="ml-auto text-xs font-medium px-2 py-0.5 rounded bg-slate-200/50 dark:bg-slate-800 text-slate-400 group-hover:text-[#FF5500] shrink-0">
+                {copiedEmail ? "Copied!" : <FiCopy size={13} />}
+              </span>
             </div>
           </motion.div>
         </div>
 
-        {/* Bottom Horizontal Divider */}
+        {/* Bottom Copyright, Policies & Interactive "Back to Top" Bar */}
         <div
-          className={`w-full h-[1px] mb-6 ${
-            theme === "dark" ? "bg-slate-800" : "bg-slate-200/90"
+          className={`w-full border-t pt-7 sm:pt-8 flex flex-col md:flex-row items-center justify-between gap-5 text-sm font-medium transition-colors ${
+            theme === "dark"
+              ? "border-slate-800 text-slate-400"
+              : "border-slate-300 text-[#556070]"
           }`}
-        />
-
-        {/* Bottom Copyright, Policies & Interactive "Back to Top" Button */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-5 text-sm font-medium">
+        >
           <p className={theme === "dark" ? "text-slate-400" : "text-[#556070]"}>
             © {currentYear} Bayshore Virtual Solutions. All rights reserved.
           </p>

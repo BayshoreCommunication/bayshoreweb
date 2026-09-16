@@ -85,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     } else {
       setTheme(defaultTheme);
     }
-  }, [defaultTheme]);
+  }, [defaultTheme, onThemeChange]);
 
   const [activeTab, setActiveTab] = useState<string>(getInitialActiveTab);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
