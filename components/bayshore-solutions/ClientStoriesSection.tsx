@@ -237,13 +237,6 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
                       isShorts ? "h-[380px] sm:h-[420px] lg:h-[450px]" : "h-[240px] sm:h-[270px]"
                     }`}
                   >
-                    {/* Shorts Badge Accent */}
-                    {isShorts && (
-                      <div className="absolute top-3.5 left-3.5 z-10 px-3 py-1 rounded-full bg-red-600/90 text-white text-xs font-extrabold flex items-center gap-1.5 shadow-md backdrop-blur-xs font-instrument tracking-wider">
-                        <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
-                        <span>SHORTS</span>
-                      </div>
-                    )}
 
                     {isPlaying && videoId ? (
                       <div className="relative w-full h-full">
