@@ -36,31 +36,31 @@ export const DEFAULT_STEPS: HowItWorksStep[] = [
     stepNumber: "01",
     title: "Tell Us What You Need",
     description: "Share your requirements and goals—only takes a minute.",
-    icon: <FiFileText className="text-2xl sm:text-3xl" />,
+    icon: <FiFileText className="text-3xl sm:text-4xl lg:text-[40px]" />,
   },
   {
     stepNumber: "02",
     title: "We Find the Right Match",
     description: "We source and vet candidates based on your industry and specific needs.",
-    icon: <FiHeadphones className="text-2xl sm:text-3xl" />,
+    icon: <FiHeadphones className="text-3xl sm:text-4xl lg:text-[40px]" />,
   },
   {
     stepNumber: "03",
     title: "Meet Your Candidates",
     description: "Interview top candidates and find the best fit for your team.",
-    icon: <FiUsers className="text-2xl sm:text-3xl" />,
+    icon: <FiUsers className="text-3xl sm:text-4xl lg:text-[40px]" />,
   },
   {
     stepNumber: "04",
     title: "You Onboard",
     description: "We handle the setup, training and integration with your tools.",
-    icon: <FiCheckCircle className="text-2xl sm:text-3xl" />,
+    icon: <FiCheckCircle className="text-3xl sm:text-4xl lg:text-[40px]" />,
   },
   {
     stepNumber: "05",
     title: "We Manage the Rest",
     description: "Ongoing support, performance mentoring and easy replacements when you need it.",
-    icon: <TbRocket className="text-2xl sm:text-3xl" />,
+    icon: <TbRocket className="text-3xl sm:text-4xl lg:text-[40px]" />,
   },
 ];
 
@@ -267,7 +267,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
 
                   {/* Icon Circle Container */}
                   <div
-                    className={`w-16 h-16 sm:w-24 sm:h-24 rounded-full flex items-center justify-center mb-4 sm:mb-6 border-2 transition-all duration-300 shadow-md group-hover:shadow-xl relative z-10 ${
+                    className={`w-20 h-20 sm:w-26 sm:h-26 lg:w-28 lg:h-28 rounded-full flex items-center justify-center mb-6 sm:mb-8 lg:mb-10 border-2 transition-all duration-300 shadow-md group-hover:shadow-xl relative z-10 ${
                       theme === "dark"
                         ? "bg-[#0B1A2D] border-slate-700 text-white group-hover:bg-[#FF5500] shadow-black/40"
                         : "bg-white border-slate-200 text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white shadow-slate-200/60"
