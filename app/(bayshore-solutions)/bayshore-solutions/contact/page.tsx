@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "@/components/bayshore-solutions/Navbar";
 import { MultiStepHiringForm } from "@/components/bayshore-solutions/MultiStepHiringForm";
 import { Footer } from "@/components/bayshore-solutions/Footer";
@@ -8,9 +8,19 @@ import { Footer } from "@/components/bayshore-solutions/Footer";
 export default function BayshoreContactPage() {
   const [currentTheme, setCurrentTheme] = useState<"light" | "dark">("dark");
 
+  // Prevent background page from scrolling
+  useEffect(() => {
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.documentElement.style.overflow = "";
+      document.body.style.overflow = "";
+    };
+  }, []);
+
   return (
     <div
-      className={`min-h-screen w-full max-w-full overflow-x-hidden transition-colors duration-300 font-sans pt-[100px] pb-16 md:pt-[120px] md:pb-24 flex flex-col justify-between ${
+      className={`h-screen w-full max-w-full overflow-hidden transition-colors duration-300 font-sans pt-[75px] pb-4 flex flex-col justify-between ${
         currentTheme === "dark" ? "bg-[#05111F] text-white dark" : "bg-[#F4F6F9] text-[#07192C]"
       }`}
     >
@@ -21,7 +31,7 @@ export default function BayshoreContactPage() {
       />
 
       {/* Main Container displaying 2-Step Hiring Request Form */}
-      <main className="container mx-auto max-w-[1650px] px-4 sm:px-6 md:px-[30px] my-auto">
+      <main className="container mx-auto max-w-[1650px] px-4 sm:px-6 md:px-[30px] my-auto flex-1 flex items-center justify-center overflow-hidden">
         <MultiStepHiringForm theme={currentTheme} />
       </main>
 
@@ -30,3 +40,4 @@ export default function BayshoreContactPage() {
     </div>
   );
 }
+
