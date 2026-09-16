@@ -237,58 +237,88 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
           })}
         </motion.div>
 
-        {/* Talent Cards Carousel Wrapper with Navigation Controls */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="relative group px-1 sm:px-3 mb-14 sm:mb-18"
-        >
-          {/* Left Arrow Button */}
+      {/* Infinite Marquee CSS Animation */}
+      <style jsx global>{`
+        @keyframes talentMarquee {
+          0% {
+            transform: translateX(0%);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .talent-marquee-track {
+          display: flex;
+          width: max-content;
+          animation: talentMarquee 35s linear infinite;
+        }
+        .talent-marquee-track:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
+
+        {/* Talent Cards Infinite Marquee Slider (Slowly moves right to left, pauses on hover) */}
+        <div className="relative w-full overflow-hidden mb-14 sm:mb-18 py-2 group">
+          {/* Left Navigation Arrow */}
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             type="button"
             onClick={() => handleScroll("left")}
             aria-label="Scroll Left"
-            className={`absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 sm:-translate-x-5 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full flex items-center justify-center border shadow-lg transition-colors ${
+            className={`absolute left-1 sm:left-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border shadow-lg transition-all ${
               theme === "dark"
-                ? "bg-[#0B1A2D] !text-white border-slate-700 hover:bg-[#FF5500]"
-                : "bg-white !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
+                ? "bg-[#0B1A2D]/90 !text-white border-slate-700 hover:bg-[#FF5500] hover:border-[#FF5500]"
+                : "bg-white/95 !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
             }`}
           >
             <FiChevronLeft size={22} />
           </motion.button>
 
-          {/* Right Arrow Button */}
+          {/* Right Navigation Arrow */}
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             type="button"
             onClick={() => handleScroll("right")}
             aria-label="Scroll Right"
-            className={`absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 sm:translate-x-5 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full flex items-center justify-center border shadow-lg transition-colors ${
+            className={`absolute right-1 sm:right-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border shadow-lg transition-all ${
               theme === "dark"
-                ? "bg-[#0B1A2D] !text-white border-slate-700 hover:bg-[#FF5500]"
-                : "bg-white !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
+                ? "bg-[#0B1A2D]/90 !text-white border-slate-700 hover:bg-[#FF5500] hover:border-[#FF5500]"
+                : "bg-white/95 !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
             }`}
           >
             <FiChevronRight size={22} />
           </motion.button>
 
-          {/* Horizontal Scrollable Cards List */}
+          {/* Left & Right Subtle Fade Overlays */}
+          <div
+            className={`absolute left-0 top-0 bottom-0 w-12 sm:w-24 z-20 pointer-events-none transition-colors duration-300 ${
+              theme === "dark"
+                ? "bg-gradient-to-r from-[#07192C] to-transparent"
+                : "bg-gradient-to-r from-[#F5F7FA] to-transparent"
+            }`}
+          />
+          <div
+            className={`absolute right-0 top-0 bottom-0 w-12 sm:w-24 z-20 pointer-events-none transition-colors duration-300 ${
+              theme === "dark"
+                ? "bg-gradient-to-l from-[#07192C] to-transparent"
+                : "bg-gradient-to-l from-[#F5F7FA] to-transparent"
+            }`}
+          />
+
           <div
             ref={scrollContainerRef}
-            className="flex items-stretch gap-5 sm:gap-6 overflow-x-auto scrollbar-none py-2 px-1 scroll-smooth"
+            className="overflow-x-auto scrollbar-none scroll-smooth"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
-            {filteredTalents.map((person) => (
+            <div className="talent-marquee-track flex items-stretch gap-5 sm:gap-6">
+            {[...filteredTalents, ...filteredTalents].map((person, idx) => (
               <motion.div
-                key={person.id}
-                whileHover={{ y: -6, scale: 1.02 }}
+                key={`${person.id}-${idx}`}
+                whileHover={{ y: -8, scale: 1.03 }}
                 transition={{ duration: 0.3 }}
-                className={`min-w-[260px] sm:min-w-[290px] max-w-[310px] rounded-[24px] sm:rounded-[28px] overflow-hidden flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
+                className={`w-[260px] sm:w-[290px] shrink-0 rounded-[24px] sm:rounded-[28px] overflow-hidden flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
                   theme === "dark"
                     ? "bg-[#0B1A2D] border-none shadow-lg shadow-black/40 !text-white"
                     : "bg-white border-none shadow-sm hover:shadow-md !text-[#0C1827]"
@@ -307,9 +337,11 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
 
                   {/* Card Info Area */}
                   <div className="p-6 sm:p-7">
-                    <h3 className={`text-2xl sm:text-[25px] font-extrabold tracking-tight mb-1 font-playfair ${
-                      theme === "dark" ? "!text-white" : "!text-[#0C1827]"
-                    }`}>
+                    <h3
+                      className={`text-2xl sm:text-[25px] font-extrabold tracking-tight mb-1 font-playfair ${
+                        theme === "dark" ? "!text-white" : "!text-[#0C1827]"
+                      }`}
+                    >
                       {person.name}
                     </h3>
                     <p
@@ -321,9 +353,11 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                     </p>
 
                     {/* Meta Badges */}
-                    <div className={`flex flex-col gap-2.5 pt-2 text-sm sm:text-base font-bold font-instrument ${
-                      theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
-                    }`}>
+                    <div
+                      className={`flex flex-col gap-2.5 pt-2 text-sm sm:text-base font-bold font-instrument ${
+                        theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
+                      }`}
+                    >
                       <div className="flex items-center gap-2">
                         <span className="w-6 h-6 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center text-[#FE6F1F] dark:text-[#FF5500]">
                           {person.categoryIcon}
@@ -344,7 +378,8 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </div>
+      </div>
 
         {/* Bottom CTA Banner ("BUILD A STRONGER TEAM") */}
         <motion.div

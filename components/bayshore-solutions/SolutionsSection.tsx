@@ -1,10 +1,12 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import {
+  FiChevronLeft,
+  FiChevronRight,
   FiShield,
   FiTrendingUp,
   FiHome,
@@ -291,9 +293,20 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
   onFindTalentClick,
 }) => {
   const [graphicError, setGraphicError] = useState(false);
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const displaySolutions =
     solutions || (showAll ? ALL_SOLUTIONS : DEFAULT_SOLUTIONS);
+
+  const handleScroll = (direction: "left" | "right") => {
+    if (scrollContainerRef.current) {
+      const scrollAmount = 340;
+      scrollContainerRef.current.scrollBy({
+        left: direction === "left" ? -scrollAmount : scrollAmount,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
     <section
@@ -395,22 +408,60 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
       `}</style>
 
         {/* Infinite Marquee Solution Cards Slider (Slowly moves right to left, pauses on hover) */}
-        <div className="relative w-full overflow-hidden mb-12 sm:mb-16 py-4">
+        <div className="relative w-full overflow-hidden mb-12 sm:mb-16 py-4 group">
+          {/* Left Navigation Arrow */}
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            type="button"
+            onClick={() => handleScroll("left")}
+            aria-label="Scroll Left"
+            className={`absolute left-1 sm:left-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border shadow-lg transition-all ${
+              theme === "dark"
+                ? "bg-[#0B1A2D]/90 !text-white border-slate-700 hover:bg-[#FF5500] hover:border-[#FF5500]"
+                : "bg-white/95 !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
+            }`}
+          >
+            <FiChevronLeft size={22} />
+          </motion.button>
+
+          {/* Right Navigation Arrow */}
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            type="button"
+            onClick={() => handleScroll("right")}
+            aria-label="Scroll Right"
+            className={`absolute right-1 sm:right-3 top-1/2 -translate-y-1/2 z-30 w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border shadow-lg transition-all ${
+              theme === "dark"
+                ? "bg-[#0B1A2D]/90 !text-white border-slate-700 hover:bg-[#FF5500] hover:border-[#FF5500]"
+                : "bg-white/95 !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
+            }`}
+          >
+            <FiChevronRight size={22} />
+          </motion.button>
+
           {/* Left & Right Subtle Fade Overlays */}
           <div
-            className={`absolute left-0 top-0 bottom-0 w-10 sm:w-20 z-20 pointer-events-none transition-colors duration-300 ${
+            className={`absolute left-0 top-0 bottom-0 w-12 sm:w-24 z-20 pointer-events-none transition-colors duration-300 ${
               theme === "dark"
                 ? "bg-gradient-to-r from-[#07192C] to-transparent"
                 : "bg-gradient-to-r from-white to-transparent"
             }`}
           />
           <div
-            className={`absolute right-0 top-0 bottom-0 w-10 sm:w-20 z-20 pointer-events-none transition-colors duration-300 ${
+            className={`absolute right-0 top-0 bottom-0 w-12 sm:w-24 z-20 pointer-events-none transition-colors duration-300 ${
               theme === "dark"
                 ? "bg-gradient-to-l from-[#07192C] to-transparent"
                 : "bg-gradient-to-l from-white to-transparent"
             }`}
           />
+
+          <div
+            ref={scrollContainerRef}
+            className="overflow-x-auto scrollbar-none scroll-smooth"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
 
           <div className="solutions-marquee-track flex items-stretch gap-4 sm:gap-6">
             {[...displaySolutions, ...displaySolutions].map((card, idx) => (
@@ -486,6 +537,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
             ))}
           </div>
         </div>
+      </div>
 
         {/* Bottom "View All Solutions" Button (Shown only when not showAll) */}
         {!showAll && (
