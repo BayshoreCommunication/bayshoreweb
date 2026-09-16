@@ -48,7 +48,7 @@ export const DEFAULT_TALENTS: TalentProfile[] = [
     categoryIcon: <FiCode className="text-base" />,
     experience: "5+ Years",
     hoursType: "US Hours",
-    imagePath: "/assets/bayshore-solutions/home/Abrar.jpg",
+    imagePath: "/assets/bayshore-solutions/home/Abrar.png",
   },
   {
     id: "t2",
@@ -59,7 +59,7 @@ export const DEFAULT_TALENTS: TalentProfile[] = [
     categoryIcon: <FiCode className="text-base" />,
     experience: "4+ Years",
     hoursType: "US Hours",
-    imagePath: "/assets/bayshore-solutions/home/arfin.jpg",
+    imagePath: "/assets/bayshore-solutions/home/arfin.png",
   },
   {
     id: "t3",
@@ -81,7 +81,7 @@ export const DEFAULT_TALENTS: TalentProfile[] = [
     categoryIcon: <FiShield className="text-base" />,
     experience: "6+ Years",
     hoursType: "US Hours",
-    imagePath: "/assets/bayshore-solutions/home/Hossain.jpg",
+    imagePath: "/assets/bayshore-solutions/home/Hossain.png",
   },
   {
     id: "t5",
@@ -92,7 +92,7 @@ export const DEFAULT_TALENTS: TalentProfile[] = [
     categoryIcon: <FiBarChart2 className="text-base" />,
     experience: "5+ Years",
     hoursType: "US Hours",
-    imagePath: "/assets/bayshore-solutions/home/minhazur.jpg",
+    imagePath: "/assets/bayshore-solutions/home/minhazur.png",
   },
   {
     id: "t6",

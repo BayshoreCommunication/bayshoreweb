@@ -374,82 +374,117 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
           </div>
         </motion.div>
 
-        {/* 6 or 18 Solution Cards Responsive Grid (2 columns on mobile, 6 columns on lg screens) */}
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-5 xl:gap-6 mb-12 sm:mb-16">
-          {displaySolutions.map((card, idx) => (
-            <motion.div
-              key={card.id}
-              initial={{ opacity: 0, y: 45, scale: 0.92, rotateX: 8 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.6, delay: idx * 0.08, type: "spring", stiffness: 90, damping: 14 }}
-              whileHover={{ y: -12, scale: 1.04 }}
-              className={`rounded-2xl sm:rounded-[28px] p-4 sm:p-7 flex flex-col justify-between h-full transition-all duration-300 group shadow-sm hover:shadow-2xl cursor-pointer ${
-                theme === "dark"
-                  ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/80 shadow-lg shadow-black/30 !text-white"
-                  : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/80 shadow-sm hover:shadow-xl !text-[#0C1827]"
-              }`}
-            >
-              <div>
-                {/* Icon Container with hover pulse */}
-                <div
-                  className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-6 shadow-sm transition-all duration-300 group-hover:scale-115 group-hover:rotate-3 ${
-                    theme === "dark"
-                      ? "bg-slate-800 border border-slate-700 !text-white group-hover:bg-[#FF5500]"
-                      : "bg-white border border-slate-100 !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white"
-                  }`}
-                >
-                  {card.icon}
-                </div>
+      {/* Infinite Marquee CSS Animation */}
+      <style jsx global>{`
+        @keyframes solutionsMarquee {
+          0% {
+            transform: translateX(0%);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .solutions-marquee-track {
+          display: flex;
+          width: max-content;
+          animation: solutionsMarquee 38s linear infinite;
+        }
+        .solutions-marquee-track:hover {
+          animation-play-state: paused;
+        }
+      `}</style>
 
-                {/* Card Title */}
-                <h3
-                  className={`text-2xl sm:text-3xl font-extrabold tracking-tight mb-5 font-playfair ${
-                    theme === "dark" ? "!text-white" : "!text-[#0C1827]"
-                  }`}
-                >
-                  {card.title}
-                </h3>
+        {/* Infinite Marquee Solution Cards Slider (Slowly moves right to left, pauses on hover) */}
+        <div className="relative w-full overflow-hidden mb-12 sm:mb-16 py-4">
+          {/* Left & Right Subtle Fade Overlays */}
+          <div
+            className={`absolute left-0 top-0 bottom-0 w-10 sm:w-20 z-20 pointer-events-none transition-colors duration-300 ${
+              theme === "dark"
+                ? "bg-gradient-to-r from-[#07192C] to-transparent"
+                : "bg-gradient-to-r from-white to-transparent"
+            }`}
+          />
+          <div
+            className={`absolute right-0 top-0 bottom-0 w-10 sm:w-20 z-20 pointer-events-none transition-colors duration-300 ${
+              theme === "dark"
+                ? "bg-gradient-to-l from-[#07192C] to-transparent"
+                : "bg-gradient-to-l from-white to-transparent"
+            }`}
+          />
 
-                {/* Features Bullet List */}
-                <ul className="flex flex-col gap-2.5 mb-8 font-instrument">
-                  {card.features.map((feature, featureIdx) => (
-                    <li
-                      key={featureIdx}
-                      className={`text-lg sm:text-xl leading-snug flex items-start gap-2.5 ${
-                        theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
-                      }`}
-                    >
-                      <span
-                        className={`font-extrabold text-base select-none ${
-                          theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"
-                        }`}
-                      >
-                        •
-                      </span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Card Action CTA Button */}
-              <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                type="button"
-                onClick={() => onFindTalentClick && onFindTalentClick(card.id)}
-                className={`w-full py-3.5 px-4 rounded-full font-bold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md font-instrument ${
+          <div className="solutions-marquee-track flex items-stretch gap-4 sm:gap-6">
+            {[...displaySolutions, ...displaySolutions].map((card, idx) => (
+              <motion.div
+                key={`${card.id}-${idx}`}
+                whileHover={{ y: -8, scale: 1.03 }}
+                transition={{ duration: 0.3 }}
+                className={`w-[245px] xs:w-[265px] sm:w-[295px] shrink-0 rounded-2xl sm:rounded-[28px] p-5 sm:p-7 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-2xl cursor-pointer ${
                   theme === "dark"
-                    ? "bg-[#FF5500] text-white hover:bg-[#e04a00]"
-                    : "bg-[#07192C] text-white hover:bg-[#000e1e]"
+                    ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/80 shadow-lg shadow-black/30 !text-white"
+                    : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/80 shadow-sm hover:shadow-xl !text-[#0C1827]"
                 }`}
               >
-                <span>Hire Now</span>
-                <FiArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
-              </motion.button>
-            </motion.div>
-          ))}
+                <div>
+                  {/* Icon Container with hover pulse */}
+                  <div
+                    className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-5 sm:mb-6 shadow-sm transition-all duration-300 group-hover:scale-115 group-hover:rotate-3 ${
+                      theme === "dark"
+                        ? "bg-slate-800 border border-slate-700 !text-white group-hover:bg-[#FF5500]"
+                        : "bg-white border border-slate-100 !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white"
+                    }`}
+                  >
+                    {card.icon}
+                  </div>
+
+                  {/* Card Title */}
+                  <h3
+                    className={`text-xl sm:text-2xl font-extrabold tracking-tight mb-4 sm:mb-5 font-playfair ${
+                      theme === "dark" ? "!text-white" : "!text-[#0C1827]"
+                    }`}
+                  >
+                    {card.title}
+                  </h3>
+
+                  {/* Features Bullet List */}
+                  <ul className="flex flex-col gap-2.5 mb-6 sm:mb-8 font-instrument">
+                    {card.features.map((feature, featureIdx) => (
+                      <li
+                        key={featureIdx}
+                        className={`text-sm sm:text-base leading-snug flex items-start gap-2 ${
+                          theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
+                        }`}
+                      >
+                        <span
+                          className={`font-extrabold text-xs sm:text-sm select-none mt-0.5 ${
+                            theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"
+                          }`}
+                        >
+                          •
+                        </span>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Card Action CTA Button */}
+                <motion.button
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  type="button"
+                  onClick={() => onFindTalentClick && onFindTalentClick(card.id)}
+                  className={`w-full py-3 sm:py-3.5 px-4 rounded-full font-bold text-xs sm:text-base transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md font-instrument ${
+                    theme === "dark"
+                      ? "bg-[#FF5500] text-white hover:bg-[#e04a00]"
+                      : "bg-[#07192C] text-white hover:bg-[#000e1e]"
+                  }`}
+                >
+                  <span>Hire Now</span>
+                  <FiArrowRight size={16} className="transition-transform duration-300 group-hover:translate-x-1" />
+                </motion.button>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         {/* Bottom "View All Solutions" Button (Shown only when not showAll) */}

@@ -362,9 +362,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                       : "bg-[#F3F5F8] !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white border border-slate-200/50"
                   }`}
                 >
-                  <FiUser className="text-[26px] sm:text-[34px] transition-transform duration-300 group-hover:scale-125" />
+                  <FiUser className="text-[26px] sm:text-[34px] transition-transform duration-300 p-3 group-hover:scale-125" />
                 </motion.div>
-                <span className={`text-xl sm:text-2xl  leading-tight font-instrument ${
+                <span className={`text-xl sm:text-2xl  leading-tight font-instrument  ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}>
                   Skilled &<br />
@@ -390,7 +390,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                       : "bg-[#F3F5F8] !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white border border-slate-200/50"
                   }`}
                 >
-                  <FiTrendingUp className="text-[26px] sm:text-[34px] transition-transform duration-300 group-hover:scale-125" />
+                  <FiTrendingUp className="text-[26px] sm:text-[34px] transition-transform duration-300 group-hover:scale-125  p-3 " />
                 </motion.div>
                 <span className={`text-xl sm:text-2xl  leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
@@ -418,7 +418,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                       : "bg-[#F3F5F8] !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white border border-slate-200/50"
                   }`}
                 >
-                  <FiShield className="text-[26px] sm:text-[34px] transition-transform duration-300 group-hover:scale-125" />
+                  <FiShield className="text-[26px] sm:text-[34px] transition-transform duration-300 group-hover:scale-125  p-3 " />
                 </motion.div>
                 <span className={`text-xl sm:text-2xl  leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"

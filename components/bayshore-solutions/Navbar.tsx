@@ -157,7 +157,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* CTA Button matching screenshots */}
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Link
-                href="/bayshore-solutions/get-started"
+                href=""
                 className={`text-link group px-6 py-2.5 lg:px-7 lg:py-3 rounded-full font-bold transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg ${
                   theme === "dark"
                     ? "bg-[#FF5500] !text-white hover:bg-[#e04a00] focus:ring-2 focus:ring-[#FF5500]/50"
