@@ -208,6 +208,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
           {stories.map((story, idx) => {
             const videoUrl = story.videoUrl || story.youtubeUrl;
             const videoId = getYouTubeId(videoUrl);
+            const isShorts = videoUrl ? videoUrl.includes("/shorts/") : false;
             const thumbnailSrc =
               story.thumbnailPath && !story.thumbnailPath.includes("right.png") && !story.thumbnailPath.includes("talent")
                 ? story.thumbnailPath
@@ -230,8 +231,20 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
                 }`}
               >
                 <div>
-                  {/* Video Box: Inline iframe when playing, or Thumbnail with Play Button */}
-                  <div className="relative w-full h-[220px] sm:h-[240px] bg-slate-900 overflow-hidden">
+                  {/* Video Box: Vertical 9:16 aspect ratio when Shorts, or Standard ratio when Landscape */}
+                  <div
+                    className={`relative w-full bg-slate-950 overflow-hidden transition-all duration-300 ${
+                      isShorts ? "h-[380px] sm:h-[420px] lg:h-[450px]" : "h-[240px] sm:h-[270px]"
+                    }`}
+                  >
+                    {/* Shorts Badge Accent */}
+                    {isShorts && (
+                      <div className="absolute top-3.5 left-3.5 z-10 px-3 py-1 rounded-full bg-red-600/90 text-white text-xs font-extrabold flex items-center gap-1.5 shadow-md backdrop-blur-xs font-instrument tracking-wider">
+                        <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
+                        <span>SHORTS</span>
+                      </div>
+                    )}
+
                     {isPlaying && videoId ? (
                       <div className="relative w-full h-full">
                         <iframe
@@ -266,7 +279,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
                           src={thumbnailSrc || "/assets/bayshore-solutions/home/right.png"}
                           alt={story.authorName}
                           fill
-                          className="object-cover object-center transition-transform duration-500 group-hover:scale-108"
+                          className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                         />
                         {/* Dark Overlay */}
                         <div className="absolute inset-0 bg-black/25 transition-opacity group-hover:bg-black/40" />
