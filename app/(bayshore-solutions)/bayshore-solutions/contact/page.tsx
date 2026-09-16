@@ -6,7 +6,29 @@ import { MultiStepHiringForm } from "@/components/bayshore-solutions/MultiStepHi
 import { Footer } from "@/components/bayshore-solutions/Footer";
 
 export default function BayshoreContactPage() {
-  const [currentTheme, setCurrentTheme] = useState<"light" | "dark">("dark");
+  const [currentTheme, setCurrentTheme] = useState<"light" | "dark">(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("bayshore_theme") as "light" | "dark" | null;
+      if (saved === "light" || saved === "dark") return saved;
+    }
+    return "dark";
+  });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("bayshore_theme") as "light" | "dark" | null;
+      if (saved === "light" || saved === "dark") {
+        setCurrentTheme(saved);
+      }
+    }
+  }, []);
+
+  const handleThemeChange = (theme: "light" | "dark") => {
+    setCurrentTheme(theme);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("bayshore_theme", theme);
+    }
+  };
 
   // Prevent background page from scrolling
   useEffect(() => {
@@ -27,7 +49,7 @@ export default function BayshoreContactPage() {
       {/* Navbar Component */}
       <Navbar
         defaultTheme={currentTheme}
-        onThemeChange={(theme) => setCurrentTheme(theme)}
+        onThemeChange={handleThemeChange}
       />
 
       {/* Main Container displaying 2-Step Hiring Request Form */}

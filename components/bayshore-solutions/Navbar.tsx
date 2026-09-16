@@ -64,7 +64,29 @@ export const Navbar: React.FC<NavbarProps> = ({
     return matched ? matched.title : "";
   };
 
-  const [theme, setTheme] = useState<"light" | "dark">(defaultTheme);
+  const [theme, setTheme] = useState<"light" | "dark">(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("bayshore_theme") as "light" | "dark" | null;
+      if (saved === "light" || saved === "dark") return saved;
+    }
+    return defaultTheme;
+  });
+
+  // Sync theme when defaultTheme prop changes
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("bayshore_theme") as "light" | "dark" | null;
+      if (saved === "light" || saved === "dark") {
+        setTheme(saved);
+        if (onThemeChange) onThemeChange(saved);
+      } else {
+        setTheme(defaultTheme);
+      }
+    } else {
+      setTheme(defaultTheme);
+    }
+  }, [defaultTheme]);
+
   const [activeTab, setActiveTab] = useState<string>(getInitialActiveTab);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -158,6 +180,9 @@ export const Navbar: React.FC<NavbarProps> = ({
   const toggleTheme = () => {
     const nextTheme = theme === "light" ? "dark" : "light";
     setTheme(nextTheme);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("bayshore_theme", nextTheme);
+    }
     if (onThemeChange) {
       onThemeChange(nextTheme);
     }

@@ -1,13 +1,35 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "@/components/bayshore-solutions/Navbar";
 import { SolutionsBreadcrumb } from "@/components/bayshore-solutions/SolutionsBreadcrumb";
 import { SolutionsSection } from "@/components/bayshore-solutions/SolutionsSection";
 import { Footer } from "@/components/bayshore-solutions/Footer";
 
 export default function BayshoreSolutionsGridPage() {
-  const [currentTheme, setCurrentTheme] = useState<"light" | "dark">("light");
+  const [currentTheme, setCurrentTheme] = useState<"light" | "dark">(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("bayshore_theme") as "light" | "dark" | null;
+      if (saved === "light" || saved === "dark") return saved;
+    }
+    return "light";
+  });
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const saved = localStorage.getItem("bayshore_theme") as "light" | "dark" | null;
+      if (saved === "light" || saved === "dark") {
+        setCurrentTheme(saved);
+      }
+    }
+  }, []);
+
+  const handleThemeChange = (theme: "light" | "dark") => {
+    setCurrentTheme(theme);
+    if (typeof window !== "undefined") {
+      localStorage.setItem("bayshore_theme", theme);
+    }
+  };
 
   return (
     <div
@@ -18,7 +40,7 @@ export default function BayshoreSolutionsGridPage() {
       {/* Navbar Component */}
       <Navbar
         defaultTheme={currentTheme}
-        onThemeChange={(theme) => setCurrentTheme(theme)}
+        onThemeChange={handleThemeChange}
       />
 
       {/* Solutions Breadcrumb Banner */}

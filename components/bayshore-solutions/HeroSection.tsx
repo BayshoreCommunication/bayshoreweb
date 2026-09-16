@@ -463,7 +463,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 >
                   GET STARTED TODAY
                 </span>
-                <h2 className={`text-3xl sm:text-[38px] xl:text-[44px] font-extrabold tracking-tight leading-tight mb-3 font-playfair ${
+                <h2 className={`text-3xl sm:text-[38px] font-extrabold tracking-tight leading-tight mb-3 font-playfair ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}>
                   Tell Us Who You Need.
@@ -515,7 +515,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                         placeholder="Full Name"
                         value={formData.fullName}
                         onChange={(e) => handleChange("fullName", e.target.value)}
-                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-lg sm:text-xl lg:text-[17px] font-medium border transition-all outline-none focus:ring-2 ${
+                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-lg sm:text-xl lg:text-[16px] font-medium border transition-all outline-none focus:ring-2 ${
                           errors.fullName
                             ? "border-red-500 bg-red-500/5 focus:ring-red-500/30 focus:border-red-500"
                             : theme === "dark"
@@ -541,7 +541,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                         placeholder="Work Email"
                         value={formData.workEmail}
                         onChange={(e) => handleChange("workEmail", e.target.value)}
-                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-lg sm:text-xl lg:text-[17px] font-medium border transition-all outline-none focus:ring-2 ${
+                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-lg sm:text-xl lg:text-[16px] font-medium border transition-all outline-none focus:ring-2 ${
                           errors.workEmail
                             ? "border-red-500 bg-red-500/5 focus:ring-red-500/30 focus:border-red-500"
                             : theme === "dark"
@@ -567,7 +567,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                         placeholder="Company Name"
                         value={formData.companyName}
                         onChange={(e) => handleChange("companyName", e.target.value)}
-                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-lg sm:text-xl lg:text-[17px] font-medium border transition-all outline-none focus:ring-2 ${
+                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-lg sm:text-xl lg:text-[16px] font-medium border transition-all outline-none focus:ring-2 ${
                           errors.companyName
                             ? "border-red-500 bg-red-500/5 focus:ring-red-500/30 focus:border-red-500"
                             : theme === "dark"
@@ -593,7 +593,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                         placeholder="Phone Number"
                         value={formData.phoneNumber}
                         onChange={(e) => handleChange("phoneNumber", e.target.value)}
-                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-lg sm:text-xl lg:text-[17px] font-medium border transition-all outline-none focus:ring-2 ${
+                        className={`w-full px-6 py-5 sm:px-7 sm:py-6 rounded-lg sm:rounded-2xl text-lg sm:text-xl lg:text-[16px] font-medium border transition-all outline-none focus:ring-2 ${
                           errors.phoneNumber
                             ? "border-red-500 bg-red-500/5 focus:ring-red-500/30 focus:border-red-500"
                             : theme === "dark"
