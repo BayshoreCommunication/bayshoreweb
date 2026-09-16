@@ -141,7 +141,7 @@ export const Footer: React.FC<FooterProps> = ({
             </Link>
 
             <p
-              className={`text-base leading-relaxed mb-5 font-medium ${
+              className={`text-[16px] sm:text-[18px] leading-relaxed mb-5 font-medium !text-left ${
                 theme === "dark" ? "text-slate-300" : "text-[#556070]"
               }`}
             >
@@ -158,32 +158,32 @@ export const Footer: React.FC<FooterProps> = ({
             className="lg:col-span-3 flex flex-col items-start text-left"
           >
             <h4
-              className={`text-2xl sm:text-[26px] font-extrabold mb-5 tracking-tight font-playfair ${
+              className={`text-[28px] sm:text-[32px] md:text-[34px] font-extrabold mb-5 tracking-tight font-playfair ${
                 theme === "dark" ? "text-white" : "text-[#0C1827]"
               }`}
             >
               Solutions
             </h4>
-            <ul className="flex flex-col gap-3 text-base sm:text-lg font-semibold w-full">
+            <ul className="flex flex-col items-start gap-3 text-[16px] sm:text-[18px] font-semibold w-full !text-left">
               {solutionLinks.map((item) => (
-                <li key={item.title} className="w-full">
+                <li key={item.title} className="w-full !text-left">
                   <Link
                     href={item.link}
-                    className={`group inline-flex items-center gap-2 transition-all duration-200 ${
+                    className={`group flex items-center justify-start gap-2 transition-all duration-200 ${
                       theme === "dark"
                         ? "text-slate-300 hover:text-[#FF5500] hover:translate-x-1.5"
                         : "text-[#556070] hover:text-[#FF5500] hover:translate-x-1.5"
                     }`}
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity duration-200 shrink-0" />
                     <span>{item.title}</span>
                   </Link>
                 </li>
               ))}
-              <li className="pt-1">
+              <li className="pt-1 !text-left w-full">
                 <Link
                   href="/bayshore-solutions/solutions"
-                  className="inline-flex items-center gap-1.5 text-sm sm:text-base font-bold text-[#FF5500] hover:underline group"
+                  className="flex items-center justify-start gap-1.5 text-sm sm:text-base font-bold text-[#FF5500] hover:underline group"
                 >
                   <span>Explore all 20+ roles</span>
                   <FiArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-1" />
@@ -201,24 +201,24 @@ export const Footer: React.FC<FooterProps> = ({
             className="lg:col-span-2 flex flex-col items-start text-left"
           >
             <h4
-              className={`text-2xl sm:text-[26px] font-extrabold mb-5 tracking-tight font-playfair ${
+              className={`text-[28px] sm:text-[32px] md:text-[34px] font-extrabold mb-5 tracking-tight font-playfair ${
                 theme === "dark" ? "text-white" : "text-[#0C1827]"
               }`}
             >
               Company
             </h4>
-            <ul className="flex flex-col gap-3 text-base sm:text-lg font-semibold w-full">
+            <ul className="flex flex-col items-start gap-3 text-[16px] sm:text-[18px] font-semibold w-full !text-left">
               {companyLinks.map((item) => (
-                <li key={item.title} className="w-full">
+                <li key={item.title} className="w-full !text-left">
                   <Link
                     href={item.link}
-                    className={`group inline-flex items-center gap-2 transition-all duration-200 ${
+                    className={`group flex items-center justify-start gap-2 transition-all duration-200 ${
                       theme === "dark"
                         ? "text-slate-300 hover:text-[#FF5500] hover:translate-x-1.5"
                         : "text-[#556070] hover:text-[#FF5500] hover:translate-x-1.5"
                     }`}
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity duration-200 shrink-0" />
                     <span>{item.title}</span>
                   </Link>
                 </li>
@@ -235,7 +235,7 @@ export const Footer: React.FC<FooterProps> = ({
             className="lg:col-span-3 flex flex-col items-start text-left"
           >
             <h4
-              className={`text-2xl sm:text-[26px] font-extrabold mb-5 tracking-tight font-playfair ${
+              className={`text-[28px] sm:text-[32px] md:text-[34px] font-extrabold mb-5 tracking-tight font-playfair ${
                 theme === "dark" ? "text-white" : "text-[#0C1827]"
               }`}
             >
