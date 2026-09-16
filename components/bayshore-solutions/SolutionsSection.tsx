@@ -415,80 +415,206 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
           </div>
         </motion.div>
 
-        {/* Solution Cards Responsive Grid (No Marquee) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 mb-12 sm:mb-16">
-          {displaySolutions.map((card) => (
-            <motion.div
-              key={card.id}
-              whileHover={{ y: -5, scale: 1.015 }}
-              transition={{ duration: 0.3 }}
-              className={`w-full rounded-2xl sm:rounded-[24px] p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
-                theme === "dark"
-                  ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/50 shadow-lg shadow-black/30 !text-white"
-                  : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/50 shadow-sm hover:shadow-xl !text-[#0C1827]"
-              }`}
-            >
-              <div>
-                {/* Icon Container with hover pulse */}
-                <div
-                  className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-5 sm:mb-6 shadow-sm transition-all duration-300 group-hover:scale-110 text-3xl sm:text-4xl [&>svg]:w-7 [&>svg]:h-7 sm:[&>svg]:w-8 sm:[&>svg]:h-8 ${
-                    theme === "dark"
-                      ? "bg-slate-800 border border-slate-700 !text-white group-hover:bg-[#FF5500]"
-                      : "bg-white border border-slate-100 !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white"
-                  }`}
-                >
-                  {card.icon}
-                </div>
+        {!showAll ? (
+          <>
+            {/* Infinite Marquee CSS Animation */}
+            <style jsx global>{`
+              @keyframes solutionsMarquee {
+                0% {
+                  transform: translateX(0%);
+                }
+                100% {
+                  transform: translateX(-50%);
+                }
+              }
+              .solutions-marquee-track {
+                display: flex;
+                width: max-content;
+                animation: solutionsMarquee 85s linear infinite;
+                padding-top: 20px;
+                padding-bottom: 24px;
+                padding-left: 8px;
+                padding-right: 8px;
+              }
+              .solutions-marquee-track:hover {
+                animation-play-state: paused;
+              }
+            `}</style>
 
-                {/* Card Title */}
-                <h3
-                  className={`text-xl sm:text-[22px] lg:text-2xl font-extrabold tracking-tight mb-3.5 sm:mb-4 font-playfair ${
-                    theme === "dark" ? "!text-white" : "!text-[#0C1827]"
-                  }`}
-                >
-                  {card.title}
-                </h3>
+            {/* Infinite Marquee Solution Cards Slider */}
+            <div className="relative w-full overflow-hidden mb-12 sm:mb-16 py-6 sm:py-8">
+              {/* Subtle Side Fade Accents */}
+              <div
+                className={`absolute left-0 top-0 bottom-0 w-6 sm:w-10 z-20 pointer-events-none opacity-40 transition-colors duration-300 ${
+                  theme === "dark"
+                    ? "bg-gradient-to-r from-[#07192C] to-transparent"
+                    : "bg-gradient-to-r from-white to-transparent"
+                }`}
+              />
+              <div
+                className={`absolute right-0 top-0 bottom-0 w-6 sm:w-10 z-20 pointer-events-none opacity-40 transition-colors duration-300 ${
+                  theme === "dark"
+                    ? "bg-gradient-to-l from-[#07192C] to-transparent"
+                    : "bg-gradient-to-l from-white to-transparent"
+                }`}
+              />
 
-                {/* Features Bullet List */}
-                <ul className="flex flex-col gap-2.5 mb-6 sm:mb-7 font-instrument">
-                  {card.features.map((feature, featureIdx) => (
-                    <li
-                      key={featureIdx}
-                      className={`text-sm sm:text-[15px] lg:text-base leading-snug flex items-start gap-2 ${
-                        theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
+              <div
+                ref={scrollContainerRef}
+                className="overflow-x-hidden scroll-smooth w-full"
+              >
+                <div className="solutions-marquee-track flex items-stretch gap-4 sm:gap-6">
+                  {marqueeSolutions.map((card, idx) => (
+                    <motion.div
+                      key={`${card.id}-${idx}`}
+                      whileHover={{ y: -4, scale: 1.01 }}
+                      transition={{ duration: 0.3 }}
+                      className={`w-[245px] xs:w-[265px] sm:w-[295px] shrink-0 rounded-2xl sm:rounded-[28px] p-5 sm:p-7 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-lg cursor-pointer ${
+                        theme === "dark"
+                          ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/50 shadow-lg shadow-black/30 !text-white"
+                          : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/50 shadow-sm hover:shadow-lg !text-[#0C1827]"
                       }`}
                     >
-                      <span
-                        className={`font-extrabold text-sm select-none mt-0.5 ${
-                          theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"
+                      <div>
+                        {/* Icon Container with hover pulse */}
+                        <div
+                          className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-5 sm:mb-6 shadow-sm transition-all duration-300 group-hover:scale-110 text-3xl sm:text-4xl [&>svg]:w-7 [&>svg]:h-7 sm:[&>svg]:w-8 sm:[&>svg]:h-8 ${
+                            theme === "dark"
+                              ? "bg-slate-800 border border-slate-700 !text-white group-hover:bg-[#FF5500]"
+                              : "bg-white border border-slate-100 !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white"
+                          }`}
+                        >
+                          {card.icon}
+                        </div>
+
+                        {/* Card Title */}
+                        <h3
+                          className={`text-xl sm:text-[22px] lg:text-2xl font-extrabold tracking-tight mb-3.5 sm:mb-4 font-playfair ${
+                            theme === "dark" ? "!text-white" : "!text-[#0C1827]"
+                          }`}
+                        >
+                          {card.title}
+                        </h3>
+
+                        {/* Features Bullet List */}
+                        <ul className="flex flex-col gap-2.5 mb-6 sm:mb-7 font-instrument">
+                          {card.features.map((feature, featureIdx) => (
+                            <li
+                              key={featureIdx}
+                              className={`text-sm sm:text-[15px] lg:text-base leading-snug flex items-start gap-2 ${
+                                theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
+                              }`}
+                            >
+                              <span
+                                className={`font-extrabold text-sm select-none mt-0.5 ${
+                                  theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"
+                                }`}
+                              >
+                                •
+                              </span>
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Card Action CTA Button */}
+                      <motion.button
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                        type="button"
+                        onClick={() => onFindTalentClick && onFindTalentClick(card.id)}
+                        className={`w-full py-3 sm:py-3.5 px-4 rounded-full font-bold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md font-instrument ${
+                          theme === "dark"
+                            ? "bg-[#FF5500] text-white hover:bg-[#e04a00]"
+                            : "bg-[#07192C] text-white hover:bg-[#000e1e]"
                         }`}
                       >
-                        •
-                      </span>
-                      <span>{feature}</span>
-                    </li>
+                        <span>Find Talent</span>
+                        <FiArrowRight size={17} className="transition-transform duration-300 group-hover:translate-x-1" />
+                      </motion.button>
+                    </motion.div>
                   ))}
-                </ul>
+                </div>
               </div>
-
-              {/* Card Action CTA Button */}
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                type="button"
-                onClick={() => onFindTalentClick && onFindTalentClick(card.id)}
-                className={`w-full py-3 sm:py-3.5 px-4 rounded-full font-bold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md font-instrument ${
+            </div>
+          </>
+        ) : (
+          /* Solution Cards Responsive Grid (for Solutions Page showAll=true) */
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 sm:gap-5 mb-12 sm:mb-16">
+            {displaySolutions.map((card) => (
+              <motion.div
+                key={card.id}
+                whileHover={{ y: -5, scale: 1.015 }}
+                transition={{ duration: 0.3 }}
+                className={`w-full rounded-2xl sm:rounded-[24px] p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
                   theme === "dark"
-                    ? "bg-[#FF5500] text-white hover:bg-[#e04a00]"
-                    : "bg-[#07192C] text-white hover:bg-[#000e1e]"
+                    ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/50 shadow-lg shadow-black/30 !text-white"
+                    : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/50 shadow-sm hover:shadow-xl !text-[#0C1827]"
                 }`}
               >
-                <span>Find Talent</span>
-                <FiArrowRight size={17} className="transition-transform duration-300 group-hover:translate-x-1" />
-              </motion.button>
-            </motion.div>
-          ))}
-        </div>
+                <div>
+                  {/* Icon Container with hover pulse */}
+                  <div
+                    className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-5 sm:mb-6 shadow-sm transition-all duration-300 group-hover:scale-110 text-3xl sm:text-4xl [&>svg]:w-7 [&>svg]:h-7 sm:[&>svg]:w-8 sm:[&>svg]:h-8 ${
+                      theme === "dark"
+                        ? "bg-slate-800 border border-slate-700 !text-white group-hover:bg-[#FF5500]"
+                        : "bg-white border border-slate-100 !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white"
+                    }`}
+                  >
+                    {card.icon}
+                  </div>
+
+                  {/* Card Title */}
+                  <h3
+                    className={`text-xl sm:text-[22px] lg:text-2xl font-extrabold tracking-tight mb-3.5 sm:mb-4 font-playfair ${
+                      theme === "dark" ? "!text-white" : "!text-[#0C1827]"
+                    }`}
+                  >
+                    {card.title}
+                  </h3>
+
+                  {/* Features Bullet List */}
+                  <ul className="flex flex-col gap-2.5 mb-6 sm:mb-7 font-instrument">
+                    {card.features.map((feature, featureIdx) => (
+                      <li
+                        key={featureIdx}
+                        className={`text-sm sm:text-[15px] lg:text-base leading-snug flex items-start gap-2 ${
+                          theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
+                        }`}
+                      >
+                        <span
+                          className={`font-extrabold text-sm select-none mt-0.5 ${
+                            theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"
+                          }`}
+                        >
+                          •
+                        </span>
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Card Action CTA Button */}
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  type="button"
+                  onClick={() => onFindTalentClick && onFindTalentClick(card.id)}
+                  className={`w-full py-3 sm:py-3.5 px-4 rounded-full font-bold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-2 shadow-sm hover:shadow-md font-instrument ${
+                    theme === "dark"
+                      ? "bg-[#FF5500] text-white hover:bg-[#e04a00]"
+                      : "bg-[#07192C] text-white hover:bg-[#000e1e]"
+                  }`}
+                >
+                  <span>Find Talent</span>
+                  <FiArrowRight size={17} className="transition-transform duration-300 group-hover:translate-x-1" />
+                </motion.button>
+              </motion.div>
+            ))}
+          </div>
+        )}
 
         {/* Bottom "View All Solutions" Button (Shown only when not showAll) */}
         {!showAll && (
