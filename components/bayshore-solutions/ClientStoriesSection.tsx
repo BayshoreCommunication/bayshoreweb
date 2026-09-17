@@ -62,7 +62,7 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
     videoUrl: "https://www.youtube.com/watch?v=J6_QZi5nXDI",
     quote: '"Worried about data security when hiring a VA?"',
     authorName: "Cynthia Waisman",
-    authorTitle: "Tax Professional & Consultant",
+    authorTitle: "Founder | Estate & Immigration Law Attorney",
     companyName: "APEX ADVISOR GROUP",
     companyLogo: "/assets/client-logo/cynthia.png",
   },
