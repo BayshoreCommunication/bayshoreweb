@@ -64,7 +64,7 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
     authorName: "Cynthia Waisman",
     authorTitle: "Tax Professional & Consultant",
     companyName: "APEX ADVISOR GROUP",
-    companyLogo: "/assets/client-logo/apex.svg",
+    companyLogo: "/assets/client-logo/cynthia.png",
   },
 ];
 
