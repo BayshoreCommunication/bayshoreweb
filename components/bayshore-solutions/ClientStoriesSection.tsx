@@ -40,10 +40,9 @@ export function getYouTubeThumbnail(urlOrId?: string): string {
 
 export const DEFAULT_STORIES: ClientStoryItem[] = [
   {
-    // https://www.youtube.com/watch?v=wjxj_eQzI1M
     id: "cs-1",
     videoUrl: "https://www.youtube.com/watch?v=Q9tYmdgygaE",
-    quote: '"BayShore Communication has been a game changer for Carter Injury Law in scaling our online presence."',
+    quote: '"Scared to hire an overseas VA for your firm?"',
     authorName: "David Carter",
     authorTitle: "Owner & Managing Attorney",
     companyName: "CARTER INJURY LAW",
@@ -51,8 +50,8 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
   },
   {
     id: "cs-2",
-    videoUrl: "https://www.youtube.com/watch?v=RVit6poGLRs",
-    quote: '"Working with Bayshore transformed our digital strategy and brought measurable growth to our practice. "',
+    videoUrl: "https://www.youtube.com/watch?v=cAix3uYkvtY",
+    quote: '"On the fence about hiring an overseas VA?"',
     authorName: "Hardam Tripathi",
     authorTitle: "Founder & Immigration Attorney",
     companyName: "TRIP LAW FIRM",
