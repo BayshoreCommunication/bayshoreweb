@@ -42,7 +42,7 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
   {
     // https://www.youtube.com/watch?v=wjxj_eQzI1M
     id: "cs-1",
-    videoUrl: "https://www.youtube.com/shorts/XUWlBNDCvdQ",
+    videoUrl: "https://www.youtube.com/watch?v=Q9tYmdgygaE",
     quote: '"BayShore Communication has been a game changer for Carter Injury Law in scaling our online presence."',
     authorName: "David Carter",
     authorTitle: "Owner & Managing Attorney",
@@ -60,9 +60,9 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
   },
   {
     id: "cs-3",
-    videoUrl: "https://www.youtube.com/watch?v=ohyUTzLiLbI",
-    quote: '"Bayshore is the ultimate choice for business development and digital marketing execution."',
-    authorName: "Carlos Rosario",
+    videoUrl: "https://www.youtube.com/watch?v=J6_QZi5nXDI",
+    quote: '"Worried about data security when hiring a VA?"',
+    authorName: "Cynthia Waisman",
     authorTitle: "Tax Professional & Consultant",
     companyName: "APEX ADVISOR GROUP",
     companyLogo: "/assets/client-logo/apex.svg",

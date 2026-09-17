@@ -361,7 +361,7 @@ export const Footer: React.FC<FooterProps> = ({
             whileTap={{ scale: 0.95 }}
             onClick={scrollToTop}
             aria-label="Scroll back to top"
-            className={`group flex items-center gap-2 px-4 py-2 rounded-full border text-xs font-bold transition-all duration-300 shadow-sm cursor-pointer ${
+            className={`group flex items-center gap-2 px-4 py-2 rounded-full border text-[16px  ]font-bold transition-all duration-300 shadow-sm cursor-pointer ${
               theme === "dark"
                 ? "bg-[#0B1A2D] border-slate-700 text-slate-300 hover:border-[#FF5500] hover:text-[#FF5500]"
                 : "bg-white border-slate-200 text-[#556070] hover:border-[#FF5500] hover:text-[#FF5500]"
@@ -369,7 +369,7 @@ export const Footer: React.FC<FooterProps> = ({
           >
             <span>Back to top</span>
             <FiArrowUp
-              size={14}
+              size={16}
               className="transition-transform duration-300 group-hover:-translate-y-0.5"
             />
           </motion.button>
