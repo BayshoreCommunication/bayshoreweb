@@ -49,6 +49,9 @@ import WhatIsWebMarketingAndWhyIsItImportantBlog, {
 import HowLongDoesItTakeToDesignAWebsiteBlog, {
   howLongDoesItTakeToDesignAWebsiteBlog,
 } from "./blogs/how-long-does-it-take-to-design-a-website";
+import DentalWebsiteDesignCostBlog, {
+  dentalWebsiteDesignCostBlog,
+} from "./blogs/dental-website-design-cost";
 
 export const staticBlogs = [
   howExpertiseBasedContentBuildsTrustBlog,
@@ -68,6 +71,7 @@ export const staticBlogs = [
   howMuchDoesItCostToDesignLawFirmWebsiteBlog,
   whatIsWebMarketingAndWhyIsItImportantBlog,
   howLongDoesItTakeToDesignAWebsiteBlog,
+  dentalWebsiteDesignCostBlog,
 ].sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
 
 export const getStaticBlogBySlug = (slug: string) =>
@@ -101,6 +105,7 @@ export const staticBlogComponents = {
     WhatIsWebMarketingAndWhyIsItImportantBlog,
   [howLongDoesItTakeToDesignAWebsiteBlog.slug]:
     HowLongDoesItTakeToDesignAWebsiteBlog,
+  [dentalWebsiteDesignCostBlog.slug]: DentalWebsiteDesignCostBlog,
 };
 
 
