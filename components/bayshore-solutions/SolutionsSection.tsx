@@ -16,13 +16,13 @@ import {
   FiDollarSign,
   FiHeadphones,
   FiActivity,
-  FiTerminal,
   FiBriefcase,
   FiUsers,
   FiBookOpen,
   FiHeart,
   FiAward,
   FiLayers,
+  FiCheck,
 } from "react-icons/fi";
 import { TbScale } from "react-icons/tb";
 
@@ -322,7 +322,6 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
   const displaySolutions =
     solutions || (showAll ? ALL_SOLUTIONS : DEFAULT_SOLUTIONS);
 
-  // Guarantee enough cards to fill 200%+ of widescreen view for a seamless 100% infinite marquee loop
   const repeatCount = Math.max(6, Math.ceil(18 / (displaySolutions.length || 1)));
   const marqueeSolutions = Array.from({ length: repeatCount }).flatMap(() => displaySolutions);
 
@@ -354,7 +353,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
           className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 sm:mb-16"
         >
           {/* Left Header Titles */}
-          <div className="max-w-8xl xl:max-w-8xl  !text-left items-start">
+          <div className="max-w-8xl xl:max-w-8xl !text-left items-start">
             <span
               className={`inline-block text-xl sm:text-2xl font-bold uppercase tracking-[0.2em] mb-3 text-left !text-left font-playfair ${
                 theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
@@ -616,24 +615,140 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
           </div>
         )}
 
-        {/* Bottom "View All Solutions" Button (Shown only when not showAll) */}
-        {!showAll && (
-          <div className="flex justify-center font-instrument">
-            <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
-              <Link
-                href="/bayshore-solutions/solutions"
-                className={`px-8 py-3.5 rounded-full font-bold text-sm sm:text-base border transition-all duration-300 flex items-center gap-3 shadow-sm hover:shadow-md ${
-                  theme === "dark"
-                    ? "border-slate-700 text-white hover:bg-white hover:text-[#07192C]"
-                    : "border-[#07192C] text-[#07192C] hover:bg-[#07192C] hover:text-white"
+        {/* Bottom Call To Action (CTA) Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className={`relative overflow-hidden rounded-3xl p-8 sm:p-10 lg:p-12 border shadow-xl transition-colors duration-300 ${
+            theme === "dark"
+              ? "bg-gradient-to-br from-[#0B1A2D] via-[#0D223A] to-[#0B1A2D] border-slate-700/80 shadow-black/40 text-white"
+              : "bg-gradient-to-br from-white via-[#F8FAFD] to-white border-slate-200/90 shadow-slate-200/60 text-[#0C1827]"
+          }`}
+        >
+          {/* Subtle Accent Glow / Highlights */}
+          <div className="absolute top-0 right-0 w-80 h-80 bg-[#FF5500]/10 rounded-full blur-3xl pointer-events-none -translate-y-1/2 translate-x-1/3" />
+          <div className="absolute bottom-0 left-0 w-80 h-80 bg-blue-500/5 rounded-full blur-3xl pointer-events-none translate-y-1/2 -translate-x-1/3" />
+          <div className="absolute top-0 left-0 right-0 h-[2.5px] bg-gradient-to-r from-transparent via-[#FF5500] to-transparent" />
+
+          <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12">
+            {/* Left Content Area */}
+            <div className="flex-1 text-center lg:text-left">
+              {/* Badge */}
+             
+
+              {/* Title */}
+              <h3
+                className={`text-[24px] sm:text-[18px] lg:text-[32px] font-extrabold tracking-tight mb-3 font-playfair leading-snug ${
+                  theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}
               >
-                <span>View All Solutions</span>
-                <FiArrowRight size={18} />
-              </Link>
-            </motion.div>
+                {!showAll
+                  ? "Need a specialized role or a custom-built virtual team?"
+                  : "Can't find the exact role your business needs?"}
+              </h3>
+
+              {/* Subtitle */}
+        
+
+              {/* Highlights Pill Badges */}
+              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-2.5 sm:gap-3 text-xs sm:text-sm font-semibold font-instrument">
+                <span
+                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full border ${
+                    theme === "dark"
+                      ? "bg-slate-800/80 border-slate-700 text-slate-300"
+                      : "bg-[#F3F6FA] border-slate-200 text-[#0C1827]"
+                  }`}
+                >
+                  <FiCheck className="text-[#FF5500] text-[20px] shrink-0" />
+                  <span>48-Hour Matching</span>
+                </span>
+                <span
+                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full border ${
+                    theme === "dark"
+                      ? "bg-slate-800/80 border-slate-700 text-slate-300"
+                      : "bg-[#F3F6FA] border-slate-200 text-[#0C1827]"
+                  }`}
+                >
+                  <FiCheck className="text-[#FF5500] text-[20px] shrink-0" />
+                  <span>Top 1% Pre-Vetted</span>
+                </span>
+                <span
+                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full border ${
+                    theme === "dark"
+                      ? "bg-slate-800/80 border-slate-700 text-slate-300"
+                      : "bg-[#F3F6FA] border-slate-200 text-[#0C1827]"
+                  }`}
+                >
+                  <FiCheck className="text-[#FF5500] text-[20px] shrink-0" />
+                  <span>Dedicated Management</span>
+                </span>
+                <span
+                  className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full border ${
+                    theme === "dark"
+                      ? "bg-slate-800/80 border-slate-700 text-slate-300"
+                      : "bg-[#F3F6FA] border-slate-200 text-[#0C1827]"
+                  }`}
+                >
+                  <FiCheck className="text-[#FF5500] text-[20px] shrink-0" />
+                  <span>Zero Overhead</span>
+                </span>
+              </div>
+            </div>
+
+            {/* Right Action Buttons */}
+            <div className="flex flex-col sm:flex-row items-center gap-3.5 sm:gap-4 w-full sm:w-auto shrink-0 font-instrument">
+              {!showAll ? (
+                <>
+                  {/* View All Solutions Button (Outline Pill) */}
+                  <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
+                    <Link
+                      href="/bayshore-solutions/solutions"
+                      className={`group w-full sm:w-auto px-7 py-3.5 sm:px-8 sm:py-3.5 rounded-full font-bold text-sm sm:text-base border-2 transition-all duration-300 flex items-center justify-center gap-2.5 shadow-sm hover:shadow-md whitespace-nowrap ${
+                        theme === "dark"
+                          ? "border-slate-700 bg-slate-800/80 !text-white hover:border-[#FF5500] hover:!text-[#FF5500]"
+                          : "border-[#07192C] bg-white !text-[#07192C] hover:bg-[#07192C] hover:!text-white"
+                      }`}
+                    >
+                      <span>View All Solutions</span>
+                      <FiArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
+                    </Link>
+                  </motion.div>
+
+                  {/* Find Talent for My Role Button (Solid Pill - Matching Card Button) */}
+                  <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
+                    <Link
+                      href="/bayshore-solutions/get-started"
+                      className={`group w-full sm:w-auto px-7 py-3.5 sm:px-8 sm:py-3.5 rounded-full font-bold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-2.5 shadow-md hover:shadow-xl whitespace-nowrap ${
+                        theme === "dark"
+                          ? "bg-[#FF5500] !text-white hover:bg-[#e04a00]"
+                          : "bg-[#07192C] !text-white hover:bg-[#000e1e]"
+                      }`}
+                    >
+                      <span>Find Talent for My Role</span>
+                      <FiArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
+                    </Link>
+                  </motion.div>
+                </>
+              ) : (
+                <motion.div whileHover={{ scale: 1.03, y: -2 }} whileTap={{ scale: 0.97 }} className="w-full sm:w-auto">
+                  <Link
+                    href="/bayshore-solutions/get-started"
+                    className={`group w-full sm:w-auto px-8 py-3.5 sm:py-4 rounded-full font-bold text-sm sm:text-base transition-all duration-300 flex items-center justify-center gap-2.5 shadow-md hover:shadow-xl whitespace-nowrap ${
+                      theme === "dark"
+                        ? "bg-[#FF5500] !text-white hover:bg-[#e04a00]"
+                        : "bg-[#07192C] !text-white hover:bg-[#000e1e]"
+                    }`}
+                  >
+                    <span>Hire Custom Talent Now</span>
+                    <FiArrowRight size={18} className="transition-transform duration-300 group-hover:translate-x-1" />
+                  </Link>
+                </motion.div>
+              )}
+            </div>
           </div>
-        )}
+        </motion.div>
       </div>
     </section>
   );

@@ -5,13 +5,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   FiFileText,
-  FiHeadphones,
   FiUsers,
   FiCheckCircle,
   FiShield,
   FiArrowRight,
 } from "react-icons/fi";
-import { TbRocket } from "react-icons/tb";
+import { TbRocket, TbUserSearch } from "react-icons/tb";
 
 export interface HowItWorksStep {
   stepNumber: string;
@@ -42,7 +41,7 @@ export const DEFAULT_STEPS: HowItWorksStep[] = [
     stepNumber: "02",
     title: "We Find the Right Match",
     description: "We source and vet candidates based on your industry and specific needs.",
-    icon: <FiHeadphones className="text-3xl sm:text-4xl lg:text-[40px]" />,
+    icon: <TbUserSearch className="text-3xl sm:text-4xl lg:text-[40px]" />,
   },
   {
     stepNumber: "03",
