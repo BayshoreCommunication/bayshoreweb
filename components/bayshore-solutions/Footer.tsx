@@ -117,9 +117,9 @@ export const Footer: React.FC<FooterProps> = ({
       <div className="container mx-auto max-w-[1550px] px-6 sm:px-8 md:px-[30px] pt-14 lg:pt-16 pb-10 relative z-10">
         
         {/* Main Footer Layout: 4 Well-Balanced Dynamic Columns */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-14 w-full text-left">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 w-full text-left items-start">
           
-          {/* Column 1: Brand Info & Live Status Badge (4 cols) */}
+          {/* Column 1: Brand Info & Description (4 cols) */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -128,25 +128,27 @@ export const Footer: React.FC<FooterProps> = ({
             className="lg:col-span-4 flex flex-col items-start text-left pr-0 lg:pr-6"
           >
             <Link href={logoHref} className="inline-block mb-4 focus:outline-none group">
-              <div className="relative h-[52px] w-[230px] sm:w-[260px] flex items-center justify-start">
+              <div className="relative h-[48px] w-[210px] sm:w-[240px] flex items-center">
                 <Image
                   src={currentLogoPath}
                   alt="Bayshore Virtual Solutions Logo"
-                  width={260}
-                  height={60}
+                  width={240}
+                  height={55}
                   priority
-                  className="object-contain h-auto max-h-[48px] w-auto transition-transform duration-300 group-hover:scale-105"
+                  className="object-contain h-auto max-h-[44px] w-auto transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
             </Link>
 
-            <p
-              className={`text-[16px] sm:text-[18px] leading-relaxed mb-5 font-medium !text-left ${
+            <div className="text-left w-full max-w-lg">
+              <p
+              className={`text-base sm:text-[17px]  mb-5 font-medium text-left  ${
                 theme === "dark" ? "text-slate-300" : "text-[#556070]"
               }`}
             >
-              A sister company of <span className="font-bold text-[#FF5500]">Bayshore Communication</span>, <br/> providing managed virtual staffing solutions for <br/>modern businesses.
+              A sister company of <span className="font-bold text-[#FF5500]">Bayshore Communication</span>, providing managed virtual staffing solutions for modern businesses.
             </p>
+            </div>
           </motion.div>
 
           {/* Column 2: Solutions Links (3 cols) */}
@@ -158,32 +160,32 @@ export const Footer: React.FC<FooterProps> = ({
             className="lg:col-span-3 flex flex-col items-start text-left"
           >
             <h4
-              className={`text-[28px] sm:text-[32px] md:text-[34px] font-extrabold mb-5 tracking-tight font-playfair ${
+              className={`text-2xl sm:text-[25px] font-extrabold mb-6 tracking-tight font-playfair ${
                 theme === "dark" ? "text-white" : "text-[#0C1827]"
               }`}
             >
               Solutions
             </h4>
-            <ul className="flex flex-col items-start gap-3 text-[16px] sm:text-[18px] font-semibold w-full !text-left">
+            <ul className="flex flex-col items-start gap-3 sm:gap-3.5 text-base sm:text-[14px] font-semibold w-full text-left">
               {solutionLinks.map((item) => (
-                <li key={item.title} className="w-full !text-left">
+                <li key={item.title} className="w-full text-left">
                   <Link
                     href={item.link}
-                    className={`group flex items-center justify-start gap-2 transition-all duration-200 ${
+                    className={`group inline-flex items-center gap-2 transition-all duration-200 ${
                       theme === "dark"
-                        ? "text-slate-300 hover:text-[#FF5500] hover:translate-x-1.5"
-                        : "text-[#556070] hover:text-[#FF5500] hover:translate-x-1.5"
+                        ? "text-slate-300 hover:text-[#FF5500]"
+                        : "text-[#556070] hover:text-[#FF5500]"
                     }`}
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity duration-200 shrink-0" />
-                    <span>{item.title}</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] opacity-0 -ml-3.5 group-hover:opacity-100 group-hover:ml-0 transition-all duration-200 shrink-0" />
+                    <span className="transition-transform duration-200 group-hover:translate-x-0.5">{item.title}</span>
                   </Link>
                 </li>
               ))}
-              <li className="pt-1 !text-left w-full">
+              <li className="pt-2 text-left w-full">
                 <Link
                   href="/bayshore-solutions/solutions"
-                  className="flex items-center justify-start gap-1.5 text-sm sm:text-base font-bold text-[#FF5500] hover:underline group"
+                  className="inline-flex items-center gap-1.5 text-sm sm:text-base font-bold text-[#FF5500] hover:underline group"
                 >
                   <span>Explore all 20+ roles</span>
                   <FiArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-1" />
@@ -201,25 +203,25 @@ export const Footer: React.FC<FooterProps> = ({
             className="lg:col-span-2 flex flex-col items-start text-left"
           >
             <h4
-              className={`text-[28px] sm:text-[32px] md:text-[34px] font-extrabold mb-5 tracking-tight font-playfair ${
+              className={`text-2xl sm:text-[25px] font-extrabold mb-6 tracking-tight font-playfair ${
                 theme === "dark" ? "text-white" : "text-[#0C1827]"
               }`}
             >
               Company
             </h4>
-            <ul className="flex flex-col items-start gap-3 text-[16px] sm:text-[18px] font-semibold w-full !text-left">
+            <ul className="flex flex-col items-start gap-3 sm:gap-3.5 text-base sm:text-[14px] font-semibold w-full text-left">
               {companyLinks.map((item) => (
-                <li key={item.title} className="w-full !text-left">
+                <li key={item.title} className="w-full text-left">
                   <Link
                     href={item.link}
-                    className={`group flex items-center justify-start gap-2 transition-all duration-200 ${
+                    className={`group inline-flex items-center gap-2 transition-all duration-200 ${
                       theme === "dark"
-                        ? "text-slate-300 hover:text-[#FF5500] hover:translate-x-1.5"
-                        : "text-[#556070] hover:text-[#FF5500] hover:translate-x-1.5"
+                        ? "text-slate-300 hover:text-[#FF5500]"
+                        : "text-[#556070] hover:text-[#FF5500]"
                     }`}
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] opacity-0 group-hover:opacity-100 transition-opacity duration-200 shrink-0" />
-                    <span>{item.title}</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#FF5500] opacity-0 -ml-3.5 group-hover:opacity-100 group-hover:ml-0 transition-all duration-200 shrink-0" />
+                    <span className="transition-transform duration-200 group-hover:translate-x-0.5">{item.title}</span>
                   </Link>
                 </li>
               ))}
@@ -235,44 +237,44 @@ export const Footer: React.FC<FooterProps> = ({
             className="lg:col-span-3 flex flex-col items-start text-left"
           >
             <h4
-              className={`text-[28px] sm:text-[32px] md:text-[34px] font-extrabold mb-5 tracking-tight font-playfair ${
+              className={`text-2xl sm:text-[25px] font-extrabold mb-6 tracking-tight font-playfair ${
                 theme === "dark" ? "text-white" : "text-[#0C1827]"
               }`}
             >
               Connect With Us
             </h4>
             
-            {/* Interactive Social Buttons with Brand Color Transitions */}
-            <div className="flex items-center justify-start gap-2.5 flex-wrap w-full mb-5">
+            {/* Interactive Social Buttons */}
+            <div className="flex items-center justify-start gap-2.5 flex-wrap w-full mb-6">
               {socialLinks.map((item) => {
                 const Icon = item.icon;
                 return (
                   <motion.a
                     key={item.name}
-                    whileHover={{ scale: 1.1, y: -2 }}
+                    whileHover={{ scale: 1.08, y: -2 }}
                     whileTap={{ scale: 0.95 }}
                     href={item.href}
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={item.name}
                     title={item.name}
-                    className={`w-10 h-10 sm:w-11 sm:h-11 rounded-xl flex items-center justify-center transition-all duration-300 shadow-sm border ${
+                    className={`w-10 h-10 rounded-xl flex items-center justify-center transition-all duration-300 shadow-sm border ${
                       theme === "dark"
                         ? `bg-[#0B1A2D] border-slate-700 text-slate-300 ${item.hoverBg}`
                         : `bg-white border-slate-200 text-[#556070] ${item.hoverBg}`
                     }`}
                   >
-                    <Icon size={17} />
+                    <Icon size={16} />
                   </motion.a>
                 );
               })}
             </div>
 
-            {/* Interactive Click-to-Copy Email Card (Right Side) */}
+            {/* Interactive Click-to-Copy Email Card */}
             <div
               onClick={handleCopyEmail}
               title="Click to copy email address"
-              className={`group flex items-center gap-3 px-4 py-2.5 rounded-xl border transition-all duration-300 cursor-pointer shadow-sm w-full ${
+              className={`group flex items-center gap-3 px-3.5 py-2.5 rounded-xl border transition-all duration-300 cursor-pointer shadow-sm w-full ${
                 theme === "dark"
                   ? "bg-[#0B1A2D] border-slate-700/80 hover:border-[#FF5500] hover:bg-slate-800"
                   : "bg-white border-slate-200 hover:border-[#FF5500] hover:bg-slate-50"
@@ -287,12 +289,12 @@ export const Footer: React.FC<FooterProps> = ({
                     : "bg-orange-50 text-[#FF5500] group-hover:bg-[#FF5500] group-hover:text-white"
                 }`}
               >
-                {copiedEmail ? <FiCheck size={16} /> : <FiMail size={16} />}
+                {copiedEmail ? <FiCheck size={15} /> : <FiMail size={15} />}
               </div>
               <div className="flex flex-col truncate">
-                <span className="text-xs font-semibold text-slate-400">Direct Inquiries</span>
+                <span className="text-[11px] font-semibold text-slate-400">Direct Inquiries</span>
                 <span
-                  className={`text-sm font-bold truncate transition-colors ${
+                  className={`text-xs sm:text-sm font-bold truncate transition-colors ${
                     copiedEmail
                       ? "text-emerald-500"
                       : theme === "dark"
@@ -303,8 +305,8 @@ export const Footer: React.FC<FooterProps> = ({
                   {contactEmail}
                 </span>
               </div>
-              <span className="ml-auto text-xs font-medium px-2 py-0.5 rounded bg-slate-200/50 dark:bg-slate-800 text-slate-400 group-hover:text-[#FF5500] shrink-0">
-                {copiedEmail ? "Copied!" : <FiCopy size={13} />}
+              <span className="ml-auto text-[11px] font-medium px-2 py-0.5 rounded bg-slate-200/50 dark:bg-slate-800 text-slate-400 group-hover:text-[#FF5500] shrink-0">
+                {copiedEmail ? "Copied!" : <FiCopy size={12} />}
               </span>
             </div>
           </motion.div>
@@ -312,17 +314,17 @@ export const Footer: React.FC<FooterProps> = ({
 
         {/* Bottom Copyright, Policies & Interactive "Back to Top" Bar */}
         <div
-          className={`w-full border-t pt-7 sm:pt-8 flex flex-col md:flex-row items-center justify-between gap-5 text-sm font-medium transition-colors ${
+          className={`w-full border-t pt-6 sm:pt-7 flex flex-col md:flex-row items-center justify-between gap-4 text-lg sm:text-xl font-medium transition-colors ${
             theme === "dark"
               ? "border-slate-800 text-slate-400"
-              : "border-slate-300 text-[#556070]"
+              : "border-slate-200 text-[#556070]"
           }`}
         >
           <p className={theme === "dark" ? "text-slate-400" : "text-[#556070]"}>
             © {currentYear} Bayshore Virtual Solutions. All rights reserved.
           </p>
 
-          <div className="flex items-center gap-6 font-semibold flex-wrap justify-center">
+          <div className="flex items-center gap-5 sm:gap-6 font-semibold flex-wrap justify-center text-lg sm:text-xl">
             <Link
               href="/privacy-policy"
               className={`transition-colors duration-200 ${
@@ -361,7 +363,7 @@ export const Footer: React.FC<FooterProps> = ({
             whileTap={{ scale: 0.95 }}
             onClick={scrollToTop}
             aria-label="Scroll back to top"
-            className={`group flex items-center gap-2 px-4 py-2 rounded-full border text-[16px  ]font-bold transition-all duration-300 shadow-sm cursor-pointer ${
+            className={`group flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full border text-lg sm:text-xl font-bold transition-all duration-300 shadow-xs cursor-pointer ${
               theme === "dark"
                 ? "bg-[#0B1A2D] border-slate-700 text-slate-300 hover:border-[#FF5500] hover:text-[#FF5500]"
                 : "bg-white border-slate-200 text-[#556070] hover:border-[#FF5500] hover:text-[#FF5500]"
@@ -369,7 +371,7 @@ export const Footer: React.FC<FooterProps> = ({
           >
             <span>Back to top</span>
             <FiArrowUp
-              size={16}
+              size={15}
               className="transition-transform duration-300 group-hover:-translate-y-0.5"
             />
           </motion.button>

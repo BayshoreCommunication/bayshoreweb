@@ -156,7 +156,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                   }`}
                 >
                   <div className="flex items-center justify-between gap-4">
-                    <h3 className="text-xl sm:text-2xl font-bold tracking-tight leading-snug font-playfair">
+                    <h3 className="text-xl sm:text-2xl font-bold tracking-tight leading-snug font-instrument">
                       {faq.question}
                     </h3>
                     <motion.span

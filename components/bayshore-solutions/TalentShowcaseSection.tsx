@@ -23,10 +23,9 @@ export interface TalentProfile {
   name: string;
   role: string;
   category: "Legal" | "Healthcare" | "Marketing" | "Real Estate" | "Tech" | "Finance" | "Admin";
-  categoryLabel: string;
+  industry: string;
+  joinedYear: string;
   categoryIcon: React.ReactNode;
-  experience: string;
-  hoursType: string;
   imagePath: string;
 }
 
@@ -39,69 +38,63 @@ export interface TalentShowcaseSectionProps {
 export const DEFAULT_TALENTS: TalentProfile[] = [
   {
     id: "t1",
-    name: "Abrar",
-    role: "Full Stack Developer",
-    category: "Tech",
-    categoryLabel: "Tech",
-    categoryIcon: <FiCode className="text-base" />,
-    experience: "5+ Years",
-    hoursType: "US Hours",
+    name: "S. M. Faisal Abrar",
+    role: "Director of Litigation / Case Management",
+    category: "Legal",
+    industry: "U.S. Immigration Law Firm, U.S. Real Estate Law",
+    joinedYear: "Joined August 2023",
+    categoryIcon: <TbScale className="text-base" />,
     imagePath: "/assets/bayshore-solutions/home/Abrar.png",
   },
   {
     id: "t2",
-    name: "Arfin",
-    role: "UI/UX & Web Specialist",
-    category: "Tech",
-    categoryLabel: "Tech",
-    categoryIcon: <FiCode className="text-base" />,
-    experience: "4+ Years",
-    hoursType: "US Hours",
-    imagePath: "/assets/bayshore-solutions/home/arfin.png",
-  },
-  {
-    id: "t3",
-    name: "Fahim",
-    role: "Legal Assistant",
+    name: "Sakawat Hossain",
+    role: "Director of Legal Operations",
     category: "Legal",
-    categoryLabel: "Legal",
+    industry: "CRM Management, Lead Generation, Legal Strategy",
+    joinedYear: "Joined June 2023",
     categoryIcon: <TbScale className="text-base" />,
-    experience: "4+ Years",
-    hoursType: "US Hours",
-    imagePath: "/assets/bayshore-solutions/home/Fahim.png",
-  },
-  {
-    id: "t4",
-    name: "Hossain",
-    role: "Medical Billing Specialist",
-    category: "Healthcare",
-    categoryLabel: "Healthcare",
-    categoryIcon: <FiShield className="text-base" />,
-    experience: "6+ Years",
-    hoursType: "US Hours",
     imagePath: "/assets/bayshore-solutions/home/Hossain.png",
   },
   {
-    id: "t5",
-    name: "Minhazur",
-    role: "Financial Analyst & Ops",
-    category: "Finance",
-    categoryLabel: "Finance",
-    categoryIcon: <FiBarChart2 className="text-base" />,
-    experience: "5+ Years",
-    hoursType: "US Hours",
+    id: "t3",
+    name: "Md Alamin Arefen",
+    role: "Client Communication Executive & Senior Paralegal",
+    category: "Legal",
+    industry: "US Immigration Law & US Real Estate Law",
+    joinedYear: "Joined September 2025",
+    categoryIcon: <TbScale className="text-base" />,
+    imagePath: "/assets/bayshore-solutions/home/arfin.png",
+  },
+  {
+    id: "t4",
+    name: "Rafiul Islam Tamim",
+    role: "Business Development Executive",
+    category: "Admin",
+    industry: "CRM, Client Acquisition, Sales & Market Research",
+    joinedYear: "Joined June 2026",
+    categoryIcon: <FiBriefcase className="text-base" />,
     imagePath: "/assets/bayshore-solutions/home/minhazur.png",
   },
   {
-    id: "t6",
-    name: "Yuvir",
-    role: "Digital Marketing Specialist",
-    category: "Marketing",
-    categoryLabel: "Marketing",
-    categoryIcon: <FiTrendingUp className="text-base" />,
-    experience: "4+ Years",
-    hoursType: "US Hours",
+    id: "t5",
+    name: "Khandokar Yuvair Hasan",
+    role: "Client Communication Exec, CRM & Operations",
+    category: "Legal",
+    industry: "U.S. Personal Injury Law",
+    joinedYear: "Joined August 2026",
+    categoryIcon: <TbScale className="text-base" />,
     imagePath: "/assets/bayshore-solutions/home/Yuvir.png",
+  },
+  {
+    id: "t6",
+    name: "MD. Fahimur Rahman Fahim",
+    role: "Client Communication Executive",
+    category: "Admin",
+    industry: "Client Relationship Management",
+    joinedYear: "Joined September 2026",
+    categoryIcon: <FiUserCheck className="text-base" />,
+    imagePath: "/assets/bayshore-solutions/home/Fahim.png",
   },
 ];
 
@@ -274,7 +267,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                 key={`${person.id}-${idx}`}
                 whileHover={{ y: -4, scale: 1.01 }}
                 transition={{ duration: 0.3 }}
-                className={`w-[260px] sm:w-[290px] shrink-0 rounded-[24px] sm:rounded-[28px] overflow-hidden flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-lg cursor-pointer ${
+                className={`w-[270px] sm:w-[300px] shrink-0 rounded-[24px] sm:rounded-[28px] overflow-hidden flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-lg cursor-pointer ${
                   theme === "dark"
                     ? "bg-[#0B1A2D] border-none shadow-lg shadow-black/40 !text-white"
                     : "bg-white border-none shadow-sm hover:shadow-lg !text-[#0C1827]"
@@ -296,34 +289,35 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                   {/* Card Info Area */}
                   <div className="p-6 sm:p-7">
                     <h3
-                      className={`text-2xl sm:text-[25px] font-extrabold tracking-tight mb-1 font-playfair ${
+                      className={`text-xl sm:text-[22px] font-extrabold tracking-tight mb-1 font-playfair line-clamp-1 ${
                         theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                       }`}
+                      title={person.name}
                     >
                       {person.name}
                     </h3>
                     <p
-                      className={`text-base font-semibold mb-4 ${
+                      className={`text-sm sm:text-base font-semibold mb-4 min-h-[44px] line-clamp-2 ${
                         theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
                       }`}
                     >
                       {person.role}
                     </p>
 
-                    {/* Metadata tags */}
-                    <div className="space-y-2 text-sm font-semibold">
-                      <div className="flex items-center gap-2">
-                        <span className={theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}>
+                    {/* Metadata tags: Industry & Joined Year */}
+                    <div className="space-y-2 text-xs sm:text-sm font-semibold pt-3 border-t border-slate-100 dark:border-slate-800/80">
+                      <div className="flex items-start gap-2">
+                        <span className={`mt-0.5 shrink-0 ${theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}`}>
                           {person.categoryIcon}
                         </span>
-                        <span className={theme === "dark" ? "!text-slate-200" : "!text-[#0C1827]"}>
-                          {person.categoryLabel}
+                        <span className={`line-clamp-2 ${theme === "dark" ? "!text-slate-200" : "!text-[#0C1827]"}`}>
+                          {person.industry}
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <FiClock className={theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"} />
+                        <FiClock className={`shrink-0 ${theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}`} />
                         <span className={theme === "dark" ? "!text-slate-200" : "!text-[#0C1827]"}>
-                          {person.experience} | {person.hoursType}
+                          {person.joinedYear}
                         </span>
                       </div>
                     </div>
