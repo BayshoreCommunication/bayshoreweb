@@ -25,10 +25,11 @@ export interface NavItem {
 
 export const DEFAULT_NAV_ITEMS: NavItem[] = [
   { title: "Home", link: "/bayshore-solutions" },
+  { title: "About", link: "/bayshore-solutions#about" },
   { title: "Solutions", link: "/bayshore-solutions/solutions" },
   { title: "How It Works", link: "/bayshore-solutions#how-it-works" },
   { title: "Our Talent", link: "/bayshore-solutions#our-talent" },
-  { title: "About", link: "/bayshore-solutions#about" },
+  { title: "Secure Data", link: "/bayshore-solutions#secure-data" }
 ];
 
 export interface NavbarProps {

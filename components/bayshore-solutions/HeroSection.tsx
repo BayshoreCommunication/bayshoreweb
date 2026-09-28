@@ -294,10 +294,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               transition={{ duration: 0.6, delay: 0.1, type: "spring" }}
               className="flex items-center gap-2 mb-4"
             >
-              <span className={`inline-block text-base sm:text-xl uppercase tracking-[0.2em] font-instrument ${
+              <span className={`inline-flex items-center text-base sm:text-xl uppercase tracking-[0.2em] font-instrument ${
                 theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}>
-                VIRTUAL TALENT. REAL IMPACT.
+                VIRTUAL TALENT
+                <span className="text-[#FE6F1F] dark:text-[#FF5500] text-xl sm:text-3xl font-black mx-1 inline-block leading-none">.</span>
+                REAL IMPACT
+                <span className="text-[#FE6F1F] dark:text-[#FF5500] text-xl sm:text-3xl font-black ml-1 inline-block leading-none">.</span>
               </span>
               <motion.span
                 animate={{ scale: [1, 1.5, 1], opacity: [0.6, 1, 0.6] }}
@@ -423,8 +426,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 <span className={`text-xl sm:text-2xl leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}>
-                  No Long-Term<br />
-                  Commitments
+                   Flexible <br />
+                  Agreements
                 </span>
               </motion.div>
             </div>
