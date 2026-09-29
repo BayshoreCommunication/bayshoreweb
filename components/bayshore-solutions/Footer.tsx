@@ -114,7 +114,7 @@ export const Footer: React.FC<FooterProps> = ({
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#FF5500]/5 rounded-full blur-3xl pointer-events-none -translate-y-1/2" />
       <div className="absolute bottom-0 right-10 w-96 h-96 bg-[#0066FF]/5 rounded-full blur-3xl pointer-events-none translate-y-1/2" />
 
-      <div className="container mx-auto max-w-[1550px] px-6 sm:px-8 md:px-[30px] pt-14 lg:pt-16 pb-10 relative z-10">
+      <div className=" mx-auto max-w-[1550px] px-10 md:px-[30px] pt-14 lg:pt-16 pb-10 relative z-10">
         
         {/* Main Footer Layout: 4 Well-Balanced Dynamic Columns */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 pb-12 w-full text-left items-start">
@@ -142,7 +142,7 @@ export const Footer: React.FC<FooterProps> = ({
 
             <div className="text-left w-full max-w-lg">
               <p
-              className={`text-base sm:text-[17px]  mb-5 font-medium text-left  ${
+              className={`text-[14px] md:text-[16px] mb-5 font-medium text-left leading-relaxed ${
                 theme === "dark" ? "text-slate-300" : "text-[#556070]"
               }`}
             >
@@ -166,7 +166,7 @@ export const Footer: React.FC<FooterProps> = ({
             >
               Solutions
             </h4>
-            <ul className="flex flex-col items-start gap-3 sm:gap-3.5 text-base sm:text-[14px] font-semibold w-full text-left">
+            <ul className="flex flex-col items-start gap-3 sm:gap-3.5 text-[14px] md:text-[16px] font-semibold w-full text-left">
               {solutionLinks.map((item) => (
                 <li key={item.title} className="w-full text-left">
                   <Link
@@ -209,7 +209,7 @@ export const Footer: React.FC<FooterProps> = ({
             >
               Company
             </h4>
-            <ul className="flex flex-col items-start gap-3 sm:gap-3.5 text-base sm:text-[14px] font-semibold w-full text-left">
+            <ul className="flex flex-col items-start gap-3 sm:gap-3.5 text-[14px] md:text-[16px] font-semibold w-full text-left">
               {companyLinks.map((item) => (
                 <li key={item.title} className="w-full text-left">
                   <Link
@@ -314,7 +314,7 @@ export const Footer: React.FC<FooterProps> = ({
 
         {/* Bottom Copyright, Policies & Interactive "Back to Top" Bar */}
         <div
-          className={`w-full border-t pt-6 sm:pt-7 flex flex-col md:flex-row items-center justify-between gap-4 text-lg sm:text-xl font-medium transition-colors ${
+          className={`w-full border-t pt-6 sm:pt-7 flex flex-col md:flex-row items-center justify-between gap-4 text-[14px] md:text-[16px] font-medium transition-colors ${
             theme === "dark"
               ? "border-slate-800 text-slate-400"
               : "border-slate-200 text-[#556070]"
@@ -324,7 +324,7 @@ export const Footer: React.FC<FooterProps> = ({
             © {currentYear} Bayshore Virtual Solutions. All rights reserved.
           </p>
 
-          <div className="flex items-center gap-5 sm:gap-6 font-semibold flex-wrap justify-center text-lg sm:text-xl">
+          <div className="flex items-center gap-5 sm:gap-6 font-semibold flex-wrap justify-center text-[14px] md:text-[16px]">
             <Link
               href="/privacy-policy"
               className={`transition-colors duration-200 ${
@@ -363,7 +363,7 @@ export const Footer: React.FC<FooterProps> = ({
             whileTap={{ scale: 0.95 }}
             onClick={scrollToTop}
             aria-label="Scroll back to top"
-            className={`group flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full border text-lg sm:text-xl font-bold transition-all duration-300 shadow-xs cursor-pointer ${
+            className={`group flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full border text-[14px] md:text-[16px] font-bold transition-all duration-300 shadow-xs cursor-pointer ${
               theme === "dark"
                 ? "bg-[#0B1A2D] border-slate-700 text-slate-300 hover:border-[#FF5500] hover:text-[#FF5500]"
                 : "bg-white border-slate-200 text-[#556070] hover:border-[#FF5500] hover:text-[#FF5500]"

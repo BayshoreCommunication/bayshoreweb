@@ -26,7 +26,7 @@ export interface NavItem {
 export const DEFAULT_NAV_ITEMS: NavItem[] = [
   { title: "Home", link: "/bayshore-solutions" },
   { title: "About", link: "/bayshore-solutions#about" },
-  { title: "Solutions", link: "/bayshore-solutions/solutions" },
+  { title: "Solutions", link: "/bayshore-solutions#solutions" },
   { title: "How It Works", link: "/bayshore-solutions#how-it-works" },
   { title: "Our Talent", link: "/bayshore-solutions#our-talent" },
   { title: "Secure Data", link: "/bayshore-solutions#secure-data" }
@@ -258,7 +258,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       }`}
     >
       {/* Container following main project width constraint */}
-      <div className="container mx-auto max-w-[1650px] px-4 md:px-[30px]">
+      <div className=" mx-auto max-w-[1650px] px-10 md:px-[30px]">
         <div className="flex items-center justify-between h-[80px] md:h-[90px]">
           {/* Logo Section */}
           <Link

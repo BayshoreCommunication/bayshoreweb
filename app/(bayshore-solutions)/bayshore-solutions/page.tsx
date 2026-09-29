@@ -56,14 +56,16 @@ export default function BayshoreSolutionsPage() {
       {/* Bayshore Solutions Impact & Counter Stats Banner */}
       <StatsSection theme={currentTheme} />
 
+       {/* Bayshore Solutions Managed Staffing Operation Section */}
+      <ManagedStaffingSection theme={currentTheme} />
+
       {/* Bayshore Solutions Cards Grid Section */}
       <SolutionsSection theme={currentTheme} />
 
       {/* Bayshore Solutions How It Works Process Flow Section */}
       <HowItWorksSection theme={currentTheme} />
 
-      {/* Bayshore Solutions Managed Staffing Operation Section */}
-      <ManagedStaffingSection theme={currentTheme} />
+     
 
       {/* Bayshore Solutions Client Stories Video Testimonials Section */}
       <ClientStoriesSection theme={currentTheme} />

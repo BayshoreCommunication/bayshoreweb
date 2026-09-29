@@ -161,7 +161,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
         <div className="absolute top-[45%] left-[85%] w-2.5 h-2.5 bg-[#FE6F1F] rounded-full opacity-90" />
       </div>
 
-      <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px] relative z-10">
+      <div className=" mx-auto max-w-[1650px] px-10 md:px-[30px] relative z-10">
         {/* Section Header Area */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -189,7 +189,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
           </h2>
           <p
             style={{ lineHeight: 1.55 }}
-            className={`text-xl md:text-2xl font-normal text-left !text-left w-full max-w-3xl font-instrument ${
+            className={`text-[14px] md:text-[16px] font-normal text-left !text-left w-full max-w-3xl font-instrument ${
               theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
             }`}
           >
@@ -294,7 +294,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                     </h3>
                     <p
                       style={{ lineHeight: 1.5 }}
-                      className={`text-xs sm:text-base lg:text-[15px] font-normal max-w-[180px] sm:max-w-[240px] text-center !text-center font-instrument ${
+                      className={`text-[14px] md:text-[16px]  max-w-[180px] sm:max-w-[240px] text-center !text-center font-instrument ${
                         theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
                       }`}
                     >
@@ -333,14 +333,14 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             </div>
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <h3
-                className={`text-lg sm:text-2xl lg:text-[26px] font-extrabold tracking-tight mb-1 font-playfair ${
+                className={`text-lg sm:text-2xl lg:text-[26px] font-extrabold tracking-tight mb-6 font-playfair ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}
               >
                 Your success is built on real support.
               </h3>
               <p
-                className={`text-sm sm:text-lg font-semibold font-instrument ${
+                className={`text-[14px] md:text-[16px] font-medium font-instrument ${
                   theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                 }`}
               >
@@ -355,7 +355,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             whileTap={{ scale: 0.97 }}
             type="button"
             onClick={onFindTalentClick}
-            className={`px-7 py-3.5 sm:px-8 sm:py-4 rounded-full font-extrabold text-sm sm:text-base shrink-0 transition-all duration-300 flex items-center justify-center gap-2.5 shadow-md hover:shadow-xl !text-white ${
+            className={`px-7 py-3.5 sm:px-8 sm:py-4 rounded-full font-extrabold text-[12px] md:text-[14px] shrink-0 transition-all duration-300 flex items-center justify-center gap-2.5 shadow-md hover:shadow-xl !text-white ${
               theme === "dark"
                 ? "bg-[#FF5500] hover:bg-[#e04a00]"
                 : "bg-[#07192C] hover:bg-[#000e1e]"

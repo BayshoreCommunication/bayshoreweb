@@ -72,7 +72,7 @@ export const SecureDataSection: React.FC<SecureDataSectionProps> = ({
           : "bg-white text-[#0C1827]"
       }`}
     >
-      <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px]">
+      <div className=" mx-auto max-w-[1650px] px-10 md:px-[30px]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
           {/* Left Column: Headings, 4 Features Grid & CTA */}
           <motion.div
@@ -113,7 +113,7 @@ export const SecureDataSection: React.FC<SecureDataSectionProps> = ({
             {/* Subtitle Description */}
             <p
               style={{ lineHeight: 1.6 }}
-              className={`text-xl md:text-2xl font-normal max-w-3xl mb-8 sm:mb-10 font-instrument ${
+              className={`text-[14px] md:text-[16px] font-normal max-w-3xl mb-8 sm:mb-10 font-instrument ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
               }`}
             >
@@ -150,7 +150,7 @@ export const SecureDataSection: React.FC<SecureDataSectionProps> = ({
                     </h3>
                   </div>
                   <p
-                    className={`text-xs sm:text-sm leading-snug font-medium ${
+                    className={`text-[14px] md:text-[16px] leading-relaxed font-medium ${
                       theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
                     }`}
                   >

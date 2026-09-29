@@ -278,7 +278,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       </div>
 
       {/* Main Content Area */}
-      <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px] relative z-10 py-8 lg:py-8 w-full">
+      <div className="mx-auto max-w-[1650px] px-10 md:px-[30px] relative z-10 py-8 lg:py-8 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-10 items-center w-full">
           {/* Left Column: Headline, Description & 3 Circular Feature Badges */}
           <motion.div
@@ -338,7 +338,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.35, ease: "easeOut" }}
               style={{ lineHeight: 1.55 }}
-              className={`text-xl md:text-2xl max-w-3xl mb-8 sm:mb-10 font-normal text-left !text-left w-full font-instrument ${
+              className={`text-[14px] md:text-[16px] max-w-3xl mb-8 sm:mb-10 font-normal text-left !text-left w-full font-instrument ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
               }`}
             >
@@ -367,7 +367,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 >
                   <FiUser className="text-[28px] sm:text-[35px] transition-transform duration-300 group-hover:scale-110" />
                 </motion.div>
-                <span className={`text-xl sm:text-2xl leading-tight font-instrument ${
+                <span className={`text-[14px] md:text-[16px] font-semibold leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}>
                   Skilled &<br />
@@ -395,7 +395,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 >
                   <FiTrendingUp className="text-[28px] sm:text-[35px] transition-transform duration-300 group-hover:scale-110" />
                 </motion.div>
-                <span className={`text-xl sm:text-2xl leading-tight font-instrument ${
+                <span className={`text-[14px] md:text-[16px] font-semibold leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}>
                   Flexible<br />
@@ -423,7 +423,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                 >
                   <FiShield className="text-[28px] sm:text-[35px] transition-transform duration-300 group-hover:scale-110" />
                 </motion.div>
-                <span className={`text-xl sm:text-2xl leading-tight font-instrument ${
+                <span className={`text-[14px] md:text-[16px] font-semibold leading-tight font-instrument ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}>
                    Flexible <br />
@@ -460,7 +460,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
               {/* Card Header */}
               <div className="mb-7 sm:mb-9">
                 <span
-                  className={`blocktext-xl sm:text-2xl  leading-tight font-instrument mb-3 ${
+                  className={`block text-xs sm:text-sm font-bold uppercase tracking-wider leading-tight font-instrument mb-3 ${
                     theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                   }`}
                 >
@@ -472,7 +472,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
                   Tell Us Who You Need.
                 </h2>
                 <p
-                  className={`text-xl sm:text-2xl  leading-tight font-instrument ${
+                  className={`text-[14px] md:text-[16px] leading-relaxed font-instrument ${
                     theme === "dark" ? "!text-slate-100" : "!text-[#556070]"
                   }`}
                 >
@@ -634,7 +634,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
                   {/* Form Footer Disclaimer */}
                   <p
-                    className={`text-center text-xl sm:text-2xl  leading-tight font-instrument ${
+                    className={`text-center text-[14px] md:text-[16px] leading-tight font-instrument ${
                       theme === "dark" ? "!text-slate-200" : "!text-[#556070]"
                     }`}
                   >

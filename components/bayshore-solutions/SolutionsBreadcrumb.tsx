@@ -101,7 +101,7 @@ export const SolutionsBreadcrumb: React.FC<SolutionsBreadcrumbProps> = ({
       </div>
 
       {/* FOREGROUND CONTENT CONTAINER */}
-      <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px] relative z-10 w-full py-12 sm:py-16">
+      <div className="mx-auto max-w-[1650px] px-10 md:px-[30px] relative z-10 w-full py-12 sm:py-16">
         <div className="w-full lg:w-[52%] xl:w-[48%] flex flex-col justify-center items-start text-left">
           {/* Main Title with Serif Styling matching design */}
           <motion.h1
@@ -121,7 +121,7 @@ export const SolutionsBreadcrumb: React.FC<SolutionsBreadcrumbProps> = ({
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1, ease: "easeOut" }}
             style={{ lineHeight: 1.55 }}
-            className={`text-xl md:text-2xl mb-8 font-normal text-left !text-left w-full max-w-xl lg:max-w-2xl font-instrument ${
+            className={`text-[14px] md:text-[16px] mb-8 font-normal text-left !text-left w-full max-w-xl lg:max-w-2xl font-instrument ${
               theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
             }`}
           >

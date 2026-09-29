@@ -112,7 +112,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
           : "bg-[#F7F7F7] text-[#0C1827]"
       }`}
     >
-      <div className="container mx-auto max-w-[1650px] px-4 sm:px-6 md:px-8 xl:px-10">
+      <div className=" mx-auto max-w-[1650px] px-10 md:px-[30px]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 xl:gap-10 items-center">
           {/* Left Column: 4 Animated Counter Metrics */}
           <div className="lg:col-span-7 xl:col-span-7 w-full">
@@ -139,7 +139,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
                   </div>
                   {/* Metric Label */}
                   <span
-                    className={`text-xl md:text-2xl font-bold leading-snug font-instrument ${
+                    className={`text-[14px] md:text-[16px] font-semibold leading-snug font-instrument ${
                       theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
                     }`}
                   >

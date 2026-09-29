@@ -143,7 +143,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
         theme === "dark" ? "bg-[#07192C] text-white" : "bg-[#F5F7FA] text-[#0C1827]"
       }`}
     >
-      <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px]">
+      <div className=" mx-auto max-w-[1650px] px-10 md:px-[30px]">
         {/* Section Header Area */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -169,7 +169,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
           </h2>
           <p
             style={{ lineHeight: 1.55 }}
-            className={`text-xl md:text-2xl font-normal max-w-3xl text-left !text-left w-full font-instrument ${
+            className={`text-[14px] md:text-[16px] font-normal max-w-3xl text-left !text-left w-full font-instrument ${
               theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
             }`}
           >
@@ -192,7 +192,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                 key={cat}
                 type="button"
                 onClick={() => setSelectedCategory(cat)}
-                className={`relative px-6 py-3 sm:px-7 sm:py-3.5 rounded-full font-extrabold text-sm sm:text-base transition-all duration-300 border shadow-xs ${
+                className={`relative px-6 py-3 sm:px-7 sm:py-3.5 rounded-full  text-[12px] md:text-[14px] transition-all duration-300 border shadow-xs ${
                   isActive
                     ? theme === "dark"
                       ? "bg-[#FF5500] !text-white border-[#FF5500] shadow-md"
@@ -297,7 +297,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                       {person.name}
                     </h3>
                     <p
-                      className={`text-sm sm:text-base font-semibold mb-4 min-h-[44px] line-clamp-2 ${
+                      className={` text-[12px] md:text-[14px] font-semibold mb-4 min-h-[48px] line-clamp-2 leading-snug ${
                         theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
                       }`}
                     >
@@ -305,18 +305,18 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                     </p>
 
                     {/* Metadata tags: Industry & Joined Year */}
-                    <div className="space-y-2 text-xs sm:text-sm font-semibold pt-3 border-t border-slate-100 dark:border-slate-800/80">
+                    <div className="space-y-2.5 text-[12px] md:text-[14px] font-medium pt-3.5 border-t border-slate-100 dark:border-slate-800/80">
                       <div className="flex items-start gap-2">
-                        <span className={`mt-0.5 shrink-0 ${theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}`}>
+                        <span className={`mt-0.5 shrink-0 text-base ${theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}`}>
                           {person.categoryIcon}
                         </span>
-                        <span className={`line-clamp-2 ${theme === "dark" ? "!text-slate-200" : "!text-[#0C1827]"}`}>
+                        <span className={`line-clamp-2 leading-snug ${theme === "dark" ? "!text-slate-200" : "!text-[#0C1827]"}`}>
                           {person.industry}
                         </span>
                       </div>
                       <div className="flex items-center gap-2">
-                        <FiClock className={`shrink-0 ${theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}`} />
-                        <span className={theme === "dark" ? "!text-slate-200" : "!text-[#0C1827]"}>
+                        <FiClock className={`shrink-0 text-base ${theme === "dark" ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}`} />
+                        <span className={`leading-snug ${theme === "dark" ? "!text-slate-200" : "!text-[#0C1827]"}`}>
                           {person.joinedYear}
                         </span>
                       </div>
@@ -383,7 +383,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
 
               <p
                 style={{ lineHeight: 1.55 }}
-                className={`text-xl md:text-2xl font-normal mb-8 max-w-xl text-left !text-left w-full font-instrument ${
+                className={`text-[14px] md:text-[16px] font-normal mb-8 max-w-xl text-left !text-left w-full font-instrument ${
                   theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
                 }`}
               >
@@ -445,7 +445,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                       <span className="text-[#FE6F1F] dark:text-[#FF5500] font-bold text-base">
                         <FiCheck className="stroke-[3]" />
                       </span>
-                      <span className="text-xs sm:text-sm font-extrabold uppercase tracking-wider">
+                      <span className="text-[14px] md:text-[16px] font-extrabold uppercase tracking-wider">
                         {item}
                       </span>
                     </li>

@@ -102,7 +102,7 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
       </div>
 
       {/* FOREGROUND CONTENT CONTAINER */}
-      <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px] relative z-10 w-full">
+      <div className=" mx-auto max-w-[1650px] px-10 md:px-[30px] relative z-10 w-full">
         <div className="w-full lg:w-[54%] xl:w-[50%] flex flex-col justify-center pr-0 lg:pr-6">
           {/* Main Headline */}
           <motion.h2
@@ -132,7 +132,7 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.12, ease: "easeOut" }}
             style={{ lineHeight: 1.55 }}
-            className={`text-xl md:text-2xl mb-8 sm:mb-10 font-normal text-left !text-left w-full max-w-xl lg:max-w-2xl xl:max-w-3xl font-instrument ${
+            className={`text-[14px] md:text-[16px] mb-8 sm:mb-10 font-normal text-left !text-left w-full max-w-xl lg:max-w-2xl xl:max-w-3xl font-instrument ${
               theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
             }`}
           >
@@ -175,16 +175,16 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
                 className="flex items-center gap-3"
               >
                 <div
-                  className={`w-8 h-8 sm:w-9 sm:h-9 rounded-full shrink-0 flex items-center justify-center border shadow-xs ${
+                  className={`w-6 h-6 sm:w-7 sm:h-7 rounded-full shrink-0 flex items-center justify-center border shadow-xs ${
                     theme === "dark"
                       ? "bg-slate-800/90 border-slate-700 text-[#FF5500]"
                       : "bg-white border-slate-200/90 text-[#0C1827]"
                   }`}
                 >
-                  <FiShield className="text-lg sm:text-xl" />
+                  <FiShield className="text-xs sm:text-sm" />
                 </div>
                 <span
-                  className={`text-xl sm:text-2xl font-bold tracking-tight leading-tight font-instrument ${
+                  className={`text-[14px] md:text-[16px] font-bold tracking-tight leading-tight font-instrument ${
                     theme === "dark" ? "!text-slate-100" : "!text-[#0C1827]"
                   }`}
                 >
@@ -208,14 +208,14 @@ export const ManagedStaffingSection: React.FC<ManagedStaffingSectionProps> = ({
             }`}
           >
             <p
-              className={`text-xl sm:text-3xl font-bold leading-relaxed tracking-normal text-left mb-3 font-instrument ${
+              className={`text-[14px] md:text-[16px] font-bold leading-relaxed text-left mb-2.5 font-instrument ${
                 theme === "dark" ? "!text-white" : "!text-[#0C1827]"
               }`}
             >
               {quoteText}
             </p>
             <p
-              className={`text-xl sm:text-2xl font-semibold text-left font-instrument ${
+              className={`text-[13px] md:text-[14px] font-semibold text-left font-instrument ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#64748B]"
               }`}
             >

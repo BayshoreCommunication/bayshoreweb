@@ -53,7 +53,7 @@ export default function BayshoreGetStartedPage() {
       />
 
       {/* Main Container displaying 2-Step Hiring Request Form */}
-      <main className="container mx-auto max-w-[1650px] px-4 sm:px-6 md:px-[30px] my-auto flex-1 flex items-center justify-center overflow-hidden">
+      <main className="mx-auto max-w-[1650px] px-10 md:px-[30px] my-auto flex-1 flex items-center justify-center overflow-hidden">
         <MultiStepHiringForm theme={currentTheme} />
       </main>
 

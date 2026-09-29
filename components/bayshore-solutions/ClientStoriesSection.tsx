@@ -115,7 +115,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
         theme === "dark" ? "bg-[#07192C] text-white" : "bg-[#F8F9FA] text-[#0C1827]"
       }`}
     >
-      <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px]">
+      <div className="mx-auto max-w-[1650px] px-10 md:px-[30px]">
         {/* Section Header Top Area */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -145,7 +145,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
             </h2>
             <p
               style={{ lineHeight: 1.55 }}
-              className={`text-xl md:text-2xl font-normal text-left !text-left w-full max-w-3xl xl:max-w-4xl font-instrument ${
+              className={`text-[14px] md:text-[16px] font-normal text-left !text-left w-full max-w-3xl xl:max-w-4xl font-instrument ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
               }`}
             >
@@ -291,7 +291,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
                   {/* Card Quote Body */}
                   <div className="p-6 sm:p-7">
                     <p
-                      className={`text-xl sm:text-2xl font-bold leading-relaxed sm:leading-[1.75] mb-6 font-instrument ${
+                      className={`text-[14px] md:text-[16px] font-semibold leading-relaxed mb-6 font-instrument ${
                         theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                       }`}
                     >

@@ -75,7 +75,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
         theme === "dark" ? "bg-[#07192C] text-white" : "bg-[#F8F9FA] text-[#0C1827]"
       }`}
     >
-      <div className="container mx-auto max-w-[1650px] px-6 sm:px-8 md:px-[30px]">
+      <div className=" mx-auto max-w-[1650px] px-10 md:px-[30px]">
         {/* Section Header Top Area */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
@@ -105,7 +105,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
             </h2>
             <p
               style={{ lineHeight: 1.55 }}
-              className={`text-xl md:text-2xl font-normal text-left !text-left w-full font-instrument ${
+              className={`text-[14px] md:text-[16px] font-normal text-left !text-left w-full font-instrument ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
               }`}
             >
@@ -179,7 +179,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                         exit={{ opacity: 0, height: 0, marginTop: 0 }}
                         transition={{ duration: 0.3, ease: "easeInOut" }}
                         style={{ lineHeight: 1.65 }}
-                        className={`pt-3.5 border-t text-lg sm:text-xl font-normal font-instrument overflow-hidden ${
+                        className={`pt-3.5 border-t text-[14px] md:text-[16px] font-normal font-instrument overflow-hidden ${
                           theme === "dark"
                             ? "border-slate-800 text-slate-300"
                             : "border-slate-100 !text-[#0C1827]"
@@ -215,7 +215,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                 <span className="text-[#FF5500]">Looking For.</span>
               </h3>
 
-              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-6 font-medium text-left font-instrument">
+              <p className="text-[14px] md:text-[16px] text-slate-300 leading-relaxed mb-6 font-medium text-left font-instrument">
                 Our team is here to help. Share a few details and we&apos;ll get back to you quickly.
               </p>
             </div>
