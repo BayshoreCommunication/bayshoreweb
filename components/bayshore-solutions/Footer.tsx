@@ -182,15 +182,7 @@ export const Footer: React.FC<FooterProps> = ({
                   </Link>
                 </li>
               ))}
-              <li className="pt-2 text-left w-full">
-                <Link
-                  href="/bayshore-solutions/solutions"
-                  className="inline-flex items-center gap-1.5 text-sm sm:text-base font-bold text-[#FF5500] hover:underline group"
-                >
-                  <span>Explore all 20+ roles</span>
-                  <FiArrowRight size={15} className="transition-transform duration-200 group-hover:translate-x-1" />
-                </Link>
-              </li>
+       
             </ul>
           </motion.div>
 
@@ -272,43 +264,43 @@ export const Footer: React.FC<FooterProps> = ({
 
             {/* Interactive Click-to-Copy Email Card */}
             <div
-              onClick={handleCopyEmail}
-              title="Click to copy email address"
-              className={`group flex items-center gap-3 px-3.5 py-2.5 rounded-xl border transition-all duration-300 cursor-pointer shadow-sm w-full ${
-                theme === "dark"
-                  ? "bg-[#0B1A2D] border-slate-700/80 hover:border-[#FF5500] hover:bg-slate-800"
-                  : "bg-white border-slate-200 hover:border-[#FF5500] hover:bg-slate-50"
-              }`}
-            >
-              <div
-                className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors shrink-0 ${
-                  copiedEmail
-                    ? "bg-emerald-500 text-white"
-                    : theme === "dark"
-                    ? "bg-slate-800 text-[#FF5500] group-hover:bg-[#FF5500] group-hover:text-white"
-                    : "bg-orange-50 text-[#FF5500] group-hover:bg-[#FF5500] group-hover:text-white"
-                }`}
-              >
-                {copiedEmail ? <FiCheck size={15} /> : <FiMail size={15} />}
-              </div>
-              <div className="flex flex-col truncate">
-                <span className="text-[11px] font-semibold text-slate-400">Direct Inquiries</span>
-                <span
-                  className={`text-xs sm:text-sm font-bold truncate transition-colors ${
-                    copiedEmail
-                      ? "text-emerald-500"
-                      : theme === "dark"
-                      ? "text-white group-hover:text-[#FF5500]"
-                      : "text-[#0C1827] group-hover:text-[#FF5500]"
-                  }`}
-                >
-                  {contactEmail}
-                </span>
-              </div>
-              <span className="ml-auto text-[11px] font-medium px-2 py-0.5 rounded bg-slate-200/50 dark:bg-slate-800 text-slate-400 group-hover:text-[#FF5500] shrink-0">
-                {copiedEmail ? "Copied!" : <FiCopy size={12} />}
-              </span>
-            </div>
+  onClick={handleCopyEmail}
+  title="Click to copy email address"
+  className={`group flex items-center gap-3 px-3.5 py-2.5 rounded-xl border transition-all duration-300 cursor-pointer shadow-sm w-full ${
+    theme === "dark"
+      ? "bg-[#0B1A2D] border-slate-700/80 hover:border-[#FF5500] hover:bg-slate-800"
+      : "bg-white border-slate-200 hover:border-[#FF5500] hover:bg-slate-50"
+  }`}
+>
+  <div
+    className={`w-16 h-16 rounded-lg flex items-center justify-center transition-colors shrink-0 ${
+      copiedEmail
+        ? "bg-orange-100 dark:bg-orange-950/50 text-[#FF5500]"
+        : theme === "dark"
+        ? "bg-slate-800 text-[#FF5500] group-hover:bg-[#FF5500] group-hover:text-white"
+        : "bg-orange-50 text-[#FF5500] group-hover:bg-[#FF5500] group-hover:text-white"
+    }`}
+  >
+    {copiedEmail ? <FiCheck size={18} className="text-[#FF5500]" /> : <FiMail size={20} />}
+  </div>
+  <div className="flex flex-col truncate">
+    <span className="text-[12px] font-semibold text-slate-400">Direct Inquiries</span>
+    <span
+      className={`text-[12px] md:text-[14px] font-semibold transition-colors ${
+        copiedEmail
+          ? "text-[#FF5500]"
+          : theme === "dark"
+          ? "text-white group-hover:text-[#FF5500]"
+          : "text-[#0C1827] group-hover:text-[#FF5500]"
+      }`}
+    >
+      {contactEmail}
+    </span>
+  </div>
+  <span className="ml-auto text-[12px] font-medium px-2 py-0.5 rounded bg-slate-200/50 dark:bg-slate-800 text-slate-400 group-hover:text-[#FF5500] shrink-0">
+    {copiedEmail ? "Copied!" : <FiCopy size={12} />}
+  </span>
+</div>
           </motion.div>
         </div>
 
@@ -357,24 +349,7 @@ export const Footer: React.FC<FooterProps> = ({
             </Link>
           </div>
 
-          {/* Interactive "Back to Top" Pill Button */}
-          <motion.button
-            whileHover={{ scale: 1.05, y: -2 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={scrollToTop}
-            aria-label="Scroll back to top"
-            className={`group flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 rounded-full border text-[14px] md:text-[16px] font-bold transition-all duration-300 shadow-xs cursor-pointer ${
-              theme === "dark"
-                ? "bg-[#0B1A2D] border-slate-700 text-slate-300 hover:border-[#FF5500] hover:text-[#FF5500]"
-                : "bg-white border-slate-200 text-[#556070] hover:border-[#FF5500] hover:text-[#FF5500]"
-            }`}
-          >
-            <span>Back to top</span>
-            <FiArrowUp
-              size={15}
-              className="transition-transform duration-300 group-hover:-translate-y-0.5"
-            />
-          </motion.button>
+   
         </div>
 
       </div>
