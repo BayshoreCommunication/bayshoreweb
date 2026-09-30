@@ -203,7 +203,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
             </div>
 
             {/* Single Line Brand Tagline separated by Orange Dots */}
-            <div className="flex flex-wrap items-center justify-center gap-x-2 xs:gap-x-3 gap-y-1.5 text-center font-playfair font-extrabold text-[14px] md:text-[24px] leading-snug w-full">
+            <div className="flex flex-wrap items-center justify-center gap-x-2 xs:gap-x-3 gap-y-1.5 text-center font-playfair font-bold text-[14px] md:text-[18px] leading-snug w-full">
               <span className={theme === "dark" ? "!text-white" : "!text-[#0C1827]"}>
                 {taglineTitle}
               </span>

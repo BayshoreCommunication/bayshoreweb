@@ -442,10 +442,10 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
                     "A STRONGER BUSINESS",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-center gap-3">
-                      <span className="text-[#FE6F1F] dark:text-[#FF5500] font-bold text-base">
+                      <span className="text-[#FE6F1F] dark:text-[#FF5500] font-bold text-lg">
                         <FiCheck className="stroke-[3]" />
                       </span>
-                      <span className="text-[14px] md:text-[16px] font-extrabold uppercase tracking-wider">
+                      <span className="text-[14px] font-extrabold uppercase tracking-wider">
                         {item}
                       </span>
                     </li>
