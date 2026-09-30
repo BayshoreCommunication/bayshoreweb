@@ -155,7 +155,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                       : "bg-white border-slate-200/90 text-[#0C1827] hover:border-slate-300"
                   }`}
                 >
-                  <div className="flex items-center justify-between gap-4">
+                  <div className="flex items-center justify-between gap-4 ">
                     <h3 className="text-[16px] md:text-[18px] font-semibold tracking-tight leading-snug font-instrument">
                       {faq.question}
                     </h3>
