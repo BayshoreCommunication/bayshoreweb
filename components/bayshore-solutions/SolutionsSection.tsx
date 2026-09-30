@@ -581,7 +581,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                 key={card.id}
                 whileHover={{ y: -5, scale: 1.015 }}
                 transition={{ duration: 0.3 }}
-                className={`w-full min-h-[400px] sm:min-h-[415px] rounded-2xl p-5 xs:p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
+                className={`w-full min-h-[400px] sm:min-h-[415px] rounded-2xl py-8 px-5 sm:py-9 sm:px-6 md:p-8 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
                   theme === "dark"
                     ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/50 shadow-lg shadow-black/30 !text-white"
                     : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/50 shadow-sm hover:shadow-xl !text-[#0C1827]"
