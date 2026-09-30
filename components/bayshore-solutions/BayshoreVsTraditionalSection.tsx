@@ -118,7 +118,7 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5 }}
-                className="rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 lg:p-8 bg-[#F97316] text-white shadow-xl shadow-[#064E58]/15 z-20 flex flex-col justify-between"
+                className="rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 lg:p-8 bg-[#07192C] text-white shadow-xl shadow-[#064E58]/15 z-20 flex flex-col justify-between"
               >
                 {/* Header Title */}
                 <div className="min-h-[60px] flex items-center justify-center text-center border-b border-white/15 pb-4 mb-2">
