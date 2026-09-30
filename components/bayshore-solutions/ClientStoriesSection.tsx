@@ -157,7 +157,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
           <div className="flex items-center gap-6 sm:gap-8 shrink-0 self-start lg:self-end">
             {/* Dark Vertical Line & Tagline */}
             <div
-              className={`border-l-4 pl-4 flex flex-col font-extrabold text-lg sm:text-xl xl:text-2xl tracking-wider uppercase leading-snug sm:leading-normal font-playfair ${
+              className={`border-l-4 pl-4 flex flex-col font-extrabold text-xl xs:text-2xl sm:text-xl xl:text-2xl tracking-wider uppercase leading-snug sm:leading-normal font-playfair ${
                 theme === "dark"
                   ? "border-[#FF5500] !text-white"
                   : "border-[#0C1827]"
@@ -168,8 +168,8 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
               <span>REAL RESULTS.</span>
             </div>
 
-            {/* Navigation Arrows */}
-            <div className="flex items-center gap-3">
+            {/* Navigation Arrows (Hidden on Mobile) */}
+            <div className="hidden sm:flex items-center gap-3">
               <button
                 type="button"
                 onClick={() => handleScroll("left")}
