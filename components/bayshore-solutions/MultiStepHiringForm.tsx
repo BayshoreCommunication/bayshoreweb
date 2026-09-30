@@ -290,7 +290,7 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
 
   return (
     <div
-      className={`relative w-full max-w-[1040px] mx-auto rounded-[24px] sm:rounded-[24px] overflow-hidden shadow-2xl border transition-colors duration-300 font-instrument p-8 ${
+      className={`relative w-full max-w-[1040px] mx-auto rounded-[24px] sm:rounded-[24px] overflow-hidden shadow-2xl border transition-colors duration-300 font-instrument my-2 sm:my-6 ${
         theme === "dark"
           ? "bayshore-theme-dark bg-[#07192C] text-white border-slate-800 shadow-black/80"
           : "bayshore-theme-light bg-white text-[#0C1827] border-slate-200/90 shadow-2xl shadow-slate-900/10"
@@ -490,7 +490,13 @@ export const MultiStepHiringForm: React.FC<MultiStepHiringFormProps> = ({
           </motion.div>
         ) : (
           /* 2-COLUMN GRID CONTAINER WITH PERFECTED SPACING & THEME CONTRAST */
-          <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[500px] max-h-[76vh] lg:max-h-[700px] h-[70vh]">
+          <div
+            className={`grid grid-cols-1 lg:grid-cols-12 ${
+              isModalMode
+                ? "min-h-[500px] max-h-[76vh] lg:max-h-[700px] h-[70vh]"
+                : "min-h-[580px] lg:min-h-[640px]"
+            }`}
+          >
             {/* LEFT COLUMN: LOGO, STRATEGY SESSION DESCRIPTION & EXTENDABLE FORM */}
             <div
               className={`lg:col-span-6 p-5 sm:p-7 xl:p-8 border-r overflow-y-auto overscroll-contain bayshore-form-scroll transition-colors duration-300 ${

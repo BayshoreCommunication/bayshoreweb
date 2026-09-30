@@ -78,10 +78,17 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
               isDark ? "text-white" : "text-[#0C1827]"
             }`}
           >
-            {headlineMain}{"\u00A0"}
-            {/* <span className="text-[#F97316]">
-              {headlineHighlight}
-            </span> */}
+            {headlineMain.includes("Cost-Effective") ? (
+              <>
+                {headlineMain.split("Cost-Effective")[0]}
+                <span className={isDark ? "text-[#FF5500]" : "text-[#FE6F1F]"}>
+                  Cost-Effective
+                </span>
+                {headlineMain.split("Cost-Effective")[1]}
+              </>
+            ) : (
+              headlineMain
+            )}
           </h2>
           <p
             style={{ lineHeight: 1.6 }}

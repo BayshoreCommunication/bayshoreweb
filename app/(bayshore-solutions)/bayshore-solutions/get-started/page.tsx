@@ -30,19 +30,9 @@ export default function BayshoreGetStartedPage() {
     }
   };
 
-  // Prevent background page from scrolling
-  useEffect(() => {
-    document.documentElement.style.overflow = "hidden";
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.documentElement.style.overflow = "";
-      document.body.style.overflow = "";
-    };
-  }, []);
-
   return (
     <div
-      className={`h-screen w-full max-w-full overflow-hidden transition-colors duration-300 font-sans pt-[75px] pb-4 flex flex-col justify-between ${
+      className={`min-h-screen w-full flex flex-col justify-between transition-colors duration-300 font-sans ${
         currentTheme === "dark" ? "bg-[#05111F] text-white dark" : "bg-[#F4F6F9] text-[#07192C]"
       }`}
     >
@@ -53,7 +43,7 @@ export default function BayshoreGetStartedPage() {
       />
 
       {/* Main Container displaying 2-Step Hiring Request Form */}
-      <main className="mx-auto max-w-[1650px] px-10 md:px-[30px] my-auto flex-1 flex items-center justify-center overflow-hidden">
+      <main className="w-full flex-1 flex items-center justify-center pt-36 sm:pt-40 md:pt-44 pb-24 sm:pb-28 md:pb-32 px-4 sm:px-6 lg:px-8">
         <MultiStepHiringForm theme={currentTheme} />
       </main>
 
