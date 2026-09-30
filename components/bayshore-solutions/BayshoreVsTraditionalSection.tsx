@@ -2,17 +2,6 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  FiDollarSign,
-  FiHeart,
-  FiTv,
-  FiHome,
-  FiSlash,
-  FiUsers,
-  FiTrendingUp,
-  FiCheck,
-} from "react-icons/fi";
-import { TbCoins, TbBuildingSkyscraper, TbDeviceDesktop } from "react-icons/tb";
 
 export interface BayshoreVsTraditionalSectionProps {
   theme?: "light" | "dark";
@@ -29,9 +18,40 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
   headlineMain = "Why Bayshore Is the Cost-Effective Way to Hire",
   headlineHighlight = "Get Skilled Support Without the Full-Time Hiring Cost.",
   subtitle = "Get the same high-quality support without the heavy overhead. Bayshore Virtual Solutions gives you skilled, dedicated professionals from Bangladesh at a fraction of the cost of traditional hiring.",
-  onGetStartedClick,
 }) => {
   const isDark = theme === "dark";
+
+  const rowsData = [
+    {
+      label: "Cost",
+      bayshoreValue: "$3 / hour",
+      bayshoreSub: "Affordable & Predictable",
+      bayshoreHighlight: true,
+      traditionalValue: "$45,000 - $60,000",
+      traditionalSub: "Annual Salary",
+    },
+    {
+      label: "Benefits",
+      bayshoreValue: "No Benefits",
+      bayshoreSub: "You Don't Pay Extra",
+      traditionalValue: "$10,000+",
+      traditionalSub: "Benefits (Health, PTO, etc.)",
+    },
+    {
+      label: "Equipment & Tools",
+      bayshoreValue: "No Overhead",
+      bayshoreSub: "No Equipment, No Office Costs",
+      traditionalValue: "$5,000+",
+      traditionalSub: "Equipment & Software",
+    },
+    {
+      label: "Office Space",
+      bayshoreValue: "Skilled Support",
+      bayshoreSub: "On-Demand, Scalable",
+      traditionalValue: "$5,000+",
+      traditionalSub: "Office Space & Overhead",
+    },
+  ];
 
   return (
     <section
@@ -43,7 +63,7 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
       {/* Background ambient lighting */}
       <div className="absolute inset-0 pointer-events-none overflow-hidden">
         <div
-          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full blur-3xl opacity-15 ${
+          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full blur-3xl opacity-15 ${
             isDark ? "bg-[#FF5500]" : "bg-orange-300"
           }`}
         />
@@ -85,323 +105,124 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
           </p>
         </motion.div>
 
-        {/* 3-Column / 3-Card Comparison Layout (Bayshore VA in Middle as requested) */}
-        <div className="relative w-full max-w-[1440px] mx-auto">
-          {/* Main Grid: Left Features Labels, Middle Bayshore VA, Right Full-Time Hire */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8 items-center">
-            
+        {/* Reference Image Layout Comparison Grid */}
+        <div className="relative w-full max-w-[1400px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-0 items-stretch">
+
             {/* 1. Left Feature Labels Column (Desktop: 3 cols) */}
-            <div className="hidden md:flex md:col-span-3 flex-col gap-6 py-8 pr-2">
-              {/* Cost Row Label */}
-              <div className="flex items-center gap-3.5 h-[84px] p-3">
-                <div className="w-12 h-12 rounded-full bg-orange-500/10 text-[#FE6F1F] dark:text-[#FF5500] flex items-center justify-center text-xl shrink-0">
-                  <TbCoins size={24} />
+            <div className="hidden md:flex md:col-span-3 flex-col pt-[88px] pb-6 pr-6">
+              {rowsData.map((row, idx) => (
+                <div
+                  key={idx}
+                  className="flex items-center h-[96px] py-3 text-[#0C1827] dark:text-slate-200 font-extrabold text-base lg:text-lg font-playfair"
+                >
+                  <span>{row.label}</span>
                 </div>
-                <span className="font-extrabold text-lg tracking-tight font-playfair">
-                  Cost
-                </span>
-              </div>
-
-              {/* Benefits Row Label */}
-              <div className="flex items-center gap-3.5 h-[84px] p-3">
-                <div className="w-12 h-12 rounded-full bg-orange-500/10 text-[#FE6F1F] dark:text-[#FF5500] flex items-center justify-center text-xl shrink-0">
-                  <FiHeart size={22} />
-                </div>
-                <span className="font-extrabold text-lg tracking-tight font-playfair">
-                  Benefits
-                </span>
-              </div>
-
-              {/* Equipment & Tools Row Label */}
-              <div className="flex items-center gap-3.5 h-[84px] p-3">
-                <div className="w-12 h-12 rounded-full bg-orange-500/10 text-[#FE6F1F] dark:text-[#FF5500] flex items-center justify-center text-xl shrink-0">
-                  <TbDeviceDesktop size={24} />
-                </div>
-                <span className="font-extrabold text-lg tracking-tight font-playfair">
-                  Equipment & Tools
-                </span>
-              </div>
-
-              {/* Office Space Row Label */}
-              <div className="flex items-center gap-3.5 h-[84px] p-3">
-                <div className="w-12 h-12 rounded-full bg-orange-500/10 text-[#FE6F1F] dark:text-[#FF5500] flex items-center justify-center text-xl shrink-0">
-                  <TbBuildingSkyscraper size={24} />
-                </div>
-                <span className="font-extrabold text-lg tracking-tight font-playfair">
-                  Office Space
-                </span>
-              </div>
+              ))}
             </div>
 
-            {/* 2. MIDDLE COLUMN: Bayshore VA (Featured Primary Card) */}
-            <motion.div
-              initial={{ opacity: 0, y: 30, scale: 0.96 }}
-              whileInView={{ opacity: 1, y: 0, scale: 1 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.6 }}
-              className="md:col-span-5 lg:col-span-5 relative rounded-3xl p-6 xs:p-8 sm:p-9 border-2 transition-all duration-300 shadow-2xl z-20 bg-gradient-to-b from-[#0B1A2D] via-[#07192C] to-[#0A1E34] border-[#FF5500] text-white shadow-[#FF5500]/15"
-            >
-              {/* Top Highlight Badge */}
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 rounded-full bg-gradient-to-r from-[#FF5500] to-[#FE6F1F] text-white text-xs font-extrabold tracking-wider uppercase shadow-md whitespace-nowrap">
-                ★ Best Value & Support
-              </div>
+            {/* Container wrapper for Middle + Right cards with seam VS badge */}
+            <div className="md:col-span-9 grid grid-cols-1 md:grid-cols-12 relative items-stretch gap-4 md:gap-0">
+              
+              {/* 2. MIDDLE COLUMN: Bayshore VA (Dark Featured Card) */}
+              <motion.div
+                initial={{ opacity: 0, y: 30, scale: 0.97 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.6 }}
+                className="md:col-span-6 relative rounded-3xl p-6 xs:p-8 md:p-8 lg:p-10 bg-[#07192C] text-white border-2 border-[#FF5500] shadow-2xl z-20 flex flex-col justify-between"
+              >
+                {/* Header Logo / Title */}
+                <div className="h-[64px] flex flex-col justify-center text-center mb-6 border-b border-slate-800/80 pb-4">
+                  <h3 className="text-2xl xs:text-3xl font-black tracking-tight font-playfair text-white flex items-center justify-center gap-2">
+                    <span className="text-[#FF5500]">Bayshore</span> VA
+                  </h3>
+                </div>
 
-              {/* Header */}
-              <div className="text-center mb-7 pt-2">
-                <h3 className="text-2xl xs:text-3xl font-extrabold font-playfair tracking-tight text-white mb-1">
-                  Bayshore VA
-                </h3>
-                <p className="text-xs xs:text-sm text-slate-300 font-instrument font-medium">
-                  Managed, Vetted & Ready-to-Work
-                </p>
-              </div>
-
-              {/* Items List */}
-              <div className="flex flex-col gap-4">
-                {/* 1. Cost Item */}
-                <div className="rounded-2xl p-4 bg-[#0F263E]/90 border border-slate-800 flex items-center gap-4 min-h-[84px] transition-all hover:border-[#FF5500]/50">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FF5500] to-amber-500 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
-                    <FiDollarSign size={22} className="stroke-[3]" />
-                  </div>
-                  <div>
-                    <div className="flex items-baseline gap-1.5">
-                      <span className="text-xl xs:text-2xl font-extrabold text-[#FF5500] font-instrument">
-                        $3 / hour
+                {/* Rows Content */}
+                <div className="flex flex-col">
+                  {rowsData.map((row, idx) => (
+                    <div
+                      key={idx}
+                      className="flex flex-col items-center justify-center text-center h-[96px] py-3 border-b border-slate-800/50 last:border-0 font-instrument"
+                    >
+                      {/* Mobile Row Label */}
+                      <span className="md:hidden text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+                        {row.label}
+                      </span>
+                      <span
+                        className={`text-lg xs:text-xl lg:text-2xl font-extrabold ${
+                          row.bayshoreHighlight
+                            ? "text-[#FF5500] font-black text-xl xs:text-2xl lg:text-[26px]"
+                            : "text-white"
+                        }`}
+                      >
+                        {row.bayshoreValue}
+                      </span>
+                      <span className="text-xs xs:text-sm text-slate-300 mt-0.5">
+                        {row.bayshoreSub}
                       </span>
                     </div>
-                    <p className="text-xs xs:text-sm text-slate-300 font-instrument">
-                      Affordable & Predictable
-                    </p>
-                  </div>
+                  ))}
                 </div>
+              </motion.div>
 
-                {/* 2. Benefits Item */}
-                <div className="rounded-2xl p-4 bg-[#0F263E]/90 border border-slate-800 flex items-center gap-4 min-h-[84px] transition-all hover:border-[#FF5500]/50">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FF5500] to-amber-500 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
-                    <FiSlash size={22} className="stroke-[3]" />
-                  </div>
-                  <div>
-                    <h4 className="text-base xs:text-lg font-extrabold text-white font-instrument">
-                      No Benefits
-                    </h4>
-                    <p className="text-xs xs:text-sm text-slate-300 font-instrument">
-                      You Don&apos;t Pay Extra
-                    </p>
-                  </div>
-                </div>
-
-                {/* 3. Equipment & Tools Item */}
-                <div className="rounded-2xl p-4 bg-[#0F263E]/90 border border-slate-800 flex items-center gap-4 min-h-[84px] transition-all hover:border-[#FF5500]/50">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FF5500] to-amber-500 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
-                    <FiUsers size={22} className="stroke-[2.5]" />
-                  </div>
-                  <div>
-                    <h4 className="text-base xs:text-lg font-extrabold text-white font-instrument">
-                      No Overhead
-                    </h4>
-                    <p className="text-xs xs:text-sm text-slate-300 font-instrument">
-                      No Equipment, No Office Costs
-                    </p>
-                  </div>
-                </div>
-
-                {/* 4. Office Space Item */}
-                <div className="rounded-2xl p-4 bg-[#0F263E]/90 border border-slate-800 flex items-center gap-4 min-h-[84px] transition-all hover:border-[#FF5500]/50">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FF5500] to-amber-500 text-white flex items-center justify-center text-xl shrink-0 shadow-md">
-                    <FiTrendingUp size={22} className="stroke-[2.5]" />
-                  </div>
-                  <div>
-                    <h4 className="text-base xs:text-lg font-extrabold text-white font-instrument">
-                      Skilled Support
-                    </h4>
-                    <p className="text-xs xs:text-sm text-slate-300 font-instrument">
-                      On-Demand, Scalable
-                    </p>
-                  </div>
+              {/* Seamless Overlapping VS Badge Divider between Middle & Right Cards */}
+              <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none">
+                <div className="w-13 h-13 lg:w-14 lg:h-14 rounded-full bg-[#07192C] border-2 border-[#FF5500] text-white font-black text-sm lg:text-base flex items-center justify-center shadow-xl">
+                  VS
                 </div>
               </div>
-            </motion.div>
 
-            {/* Floating VS Badge Divider */}
-            <div className="md:hidden flex items-center justify-center my-2">
-              <div className="w-12 h-12 rounded-full bg-[#FF5500] text-white font-black text-sm flex items-center justify-center shadow-lg border-2 border-white dark:border-[#07192C]">
-                VS
+              {/* Mobile VS Badge */}
+              <div className="md:hidden flex items-center justify-center my-1">
+                <div className="w-11 h-11 rounded-full bg-[#FF5500] text-white font-black text-xs flex items-center justify-center shadow-lg border-2 border-white dark:border-[#07192C]">
+                  VS
+                </div>
               </div>
+
+              {/* 3. RIGHT COLUMN: Full-Time Hire (White / Light Card) */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-40px" }}
+                transition={{ duration: 0.6, delay: 0.15 }}
+                className={`md:col-span-6 rounded-3xl p-6 xs:p-8 md:p-8 lg:p-10 border transition-all duration-300 shadow-md flex flex-col justify-between md:-ml-2 z-10 ${
+                  isDark
+                    ? "bg-[#0B1A2D] border-slate-800 text-white"
+                    : "bg-white border-slate-200/90 text-[#0C1827]"
+                }`}
+              >
+                {/* Header */}
+                <div className="h-[64px] flex flex-col justify-center text-center mb-6 border-b border-slate-200 dark:border-slate-800/80 pb-4">
+                  <h3 className="text-2xl xs:text-3xl font-extrabold tracking-tight font-playfair">
+                    Full-Time Hire
+                  </h3>
+                </div>
+
+                {/* Rows Content */}
+                <div className="flex flex-col">
+                  {rowsData.map((row, idx) => (
+                    <div
+                      key={idx}
+                      className="flex flex-col items-center justify-center text-center h-[96px] py-3 border-b border-slate-100 dark:border-slate-800/50 last:border-0 font-instrument"
+                    >
+                      {/* Mobile Row Label */}
+                      <span className="md:hidden text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+                        {row.label}
+                      </span>
+                      <span className="text-lg xs:text-xl lg:text-2xl font-bold">
+                        {row.traditionalValue}
+                      </span>
+                      <span className="text-xs xs:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
+                        {row.traditionalSub}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </motion.div>
+
             </div>
-
-            {/* 3. RIGHT COLUMN: Full-Time Hire (Traditional Card) */}
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, margin: "-40px" }}
-              transition={{ duration: 0.6, delay: 0.15 }}
-              className={`md:col-span-4 lg:col-span-4 rounded-3xl p-6 xs:p-7 border transition-all duration-300 shadow-md relative ${
-                isDark
-                  ? "bg-[#0B1A2D]/80 border-slate-800 text-white"
-                  : "bg-white border-slate-200/90 text-[#0C1827]"
-              }`}
-            >
-              {/* Header */}
-              <div className="text-center mb-7 pt-2">
-                <h3
-                  className={`text-xl xs:text-2xl font-extrabold font-playfair tracking-tight mb-1 ${
-                    isDark ? "text-white" : "text-[#0C1827]"
-                  }`}
-                >
-                  Full-Time Hire
-                </h3>
-                <p
-                  className={`text-xs xs:text-sm font-instrument font-medium ${
-                    isDark ? "text-slate-400" : "text-slate-500"
-                  }`}
-                >
-                  Traditional In-House Employee
-                </p>
-              </div>
-
-              {/* Items List */}
-              <div className="flex flex-col gap-4">
-                {/* 1. Cost Item */}
-                <div
-                  className={`rounded-2xl p-4 border flex items-center gap-4 min-h-[84px] ${
-                    isDark
-                      ? "bg-[#07192C]/70 border-slate-800/80"
-                      : "bg-slate-50/80 border-slate-200/70"
-                  }`}
-                >
-                  <div
-                    className={`w-11 h-11 rounded-full flex items-center justify-center text-lg shrink-0 ${
-                      isDark
-                        ? "bg-slate-800 text-slate-300"
-                        : "bg-slate-200/80 text-slate-700"
-                    }`}
-                  >
-                    <FiDollarSign size={20} />
-                  </div>
-                  <div>
-                    <h4
-                      className={`text-base xs:text-lg font-bold font-instrument ${
-                        isDark ? "text-white" : "text-[#0C1827]"
-                      }`}
-                    >
-                      $45,000 - $60,000
-                    </h4>
-                    <p
-                      className={`text-xs xs:text-sm font-instrument ${
-                        isDark ? "text-slate-400" : "text-slate-500"
-                      }`}
-                    >
-                      Annual Salary
-                    </p>
-                  </div>
-                </div>
-
-                {/* 2. Benefits Item */}
-                <div
-                  className={`rounded-2xl p-4 border flex items-center gap-4 min-h-[84px] ${
-                    isDark
-                      ? "bg-[#07192C]/70 border-slate-800/80"
-                      : "bg-slate-50/80 border-slate-200/70"
-                  }`}
-                >
-                  <div
-                    className={`w-11 h-11 rounded-full flex items-center justify-center text-lg shrink-0 ${
-                      isDark
-                        ? "bg-slate-800 text-slate-300"
-                        : "bg-slate-200/80 text-slate-700"
-                    }`}
-                  >
-                    <FiHeart size={18} />
-                  </div>
-                  <div>
-                    <h4
-                      className={`text-base xs:text-lg font-bold font-instrument ${
-                        isDark ? "text-white" : "text-[#0C1827]"
-                      }`}
-                    >
-                      $10,000+
-                    </h4>
-                    <p
-                      className={`text-xs xs:text-sm font-instrument ${
-                        isDark ? "text-slate-400" : "text-slate-500"
-                      }`}
-                    >
-                      Benefits (Health, PTO, etc.)
-                    </p>
-                  </div>
-                </div>
-
-                {/* 3. Equipment & Tools Item */}
-                <div
-                  className={`rounded-2xl p-4 border flex items-center gap-4 min-h-[84px] ${
-                    isDark
-                      ? "bg-[#07192C]/70 border-slate-800/80"
-                      : "bg-slate-50/80 border-slate-200/70"
-                  }`}
-                >
-                  <div
-                    className={`w-11 h-11 rounded-full flex items-center justify-center text-lg shrink-0 ${
-                      isDark
-                        ? "bg-slate-800 text-slate-300"
-                        : "bg-slate-200/80 text-slate-700"
-                    }`}
-                  >
-                    <FiTv size={18} />
-                  </div>
-                  <div>
-                    <h4
-                      className={`text-base xs:text-lg font-bold font-instrument ${
-                        isDark ? "text-white" : "text-[#0C1827]"
-                      }`}
-                    >
-                      $5,000+
-                    </h4>
-                    <p
-                      className={`text-xs xs:text-sm font-instrument ${
-                        isDark ? "text-slate-400" : "text-slate-500"
-                      }`}
-                    >
-                      Equipment & Software
-                    </p>
-                  </div>
-                </div>
-
-                {/* 4. Office Space Item */}
-                <div
-                  className={`rounded-2xl p-4 border flex items-center gap-4 min-h-[84px] ${
-                    isDark
-                      ? "bg-[#07192C]/70 border-slate-800/80"
-                      : "bg-slate-50/80 border-slate-200/70"
-                  }`}
-                >
-                  <div
-                    className={`w-11 h-11 rounded-full flex items-center justify-center text-lg shrink-0 ${
-                      isDark
-                        ? "bg-slate-800 text-slate-300"
-                        : "bg-slate-200/80 text-slate-700"
-                    }`}
-                  >
-                    <FiHome size={18} />
-                  </div>
-                  <div>
-                    <h4
-                      className={`text-base xs:text-lg font-bold font-instrument ${
-                        isDark ? "text-white" : "text-[#0C1827]"
-                      }`}
-                    >
-                      $5,000+
-                    </h4>
-                    <p
-                      className={`text-xs xs:text-sm font-instrument ${
-                        isDark ? "text-slate-400" : "text-slate-500"
-                      }`}
-                    >
-                      Office Space & Overhead
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </motion.div>
 
           </div>
         </div>
@@ -411,3 +232,4 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
 };
 
 export default BayshoreVsTraditionalSection;
+
