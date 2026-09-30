@@ -507,7 +507,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                       key={`${card.id}-${idx}`}
                       whileHover={{ y: -4, scale: 1.01 }}
                       transition={{ duration: 0.3 }}
-                      className={`solutions-marquee-card w-[240px] xs:w-[260px] md:w-[calc((100cqw-80px)/6)] shrink-0 rounded-2xl p-5 md:p-8 lg:p-10 flex flex-col justify-between transition-all duration-300 group/card shadow-sm hover:shadow-lg cursor-pointer ${
+                      className={`solutions-marquee-card w-[250px] xs:w-[270px] md:w-[calc((100cqw-80px)/6)] shrink-0 rounded-2xl py-12 px-5 sm:py-10 sm:px-6 md:p-8 lg:p-10 flex flex-col justify-between transition-all duration-300 group/card shadow-sm hover:shadow-lg cursor-pointer ${
                         theme === "dark"
                           ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/50 shadow-lg shadow-black/30 !text-white"
                           : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/50 shadow-sm hover:shadow-lg !text-[#0C1827]"
@@ -516,7 +516,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                       <div>
                         {/* Icon Container */}
                         <div
-                          className={`w-[48px] h-[48px] xs:w-[54px] xs:h-[54px] md:w-[58px] md:h-[58px] lg:w-[68px] lg:h-[68px] rounded-full flex items-center justify-center mb-5 md:mb-6 shadow-sm transition-all duration-300 group-hover/card:scale-110 text-2xl xs:text-3xl [&>svg]:w-6 [&>svg]:h-6 xs:[&>svg]:w-7 xs:[&>svg]:h-7 md:[&>svg]:w-8 md:[&>svg]:h-8 lg:[&>svg]:w-9 lg:[&>svg]:h-9 ${  
+                          className={`w-[54px] h-[54px] xs:w-[62px] xs:h-[62px] md:w-[64px] md:h-[64px] lg:w-[70px] lg:h-[70px] rounded-full flex items-center justify-center mb-5 md:mb-6 shadow-sm transition-all duration-300 group-hover/card:scale-110 text-2xl xs:text-3xl [&>svg]:w-7 [&>svg]:h-7 xs:[&>svg]:w-8 xs:[&>svg]:h-8 md:[&>svg]:w-9 md:[&>svg]:h-9 lg:[&>svg]:w-10 lg:[&>svg]:h-10 ${  
                             theme === "dark"
                               ? "bg-slate-800 border border-slate-700 !text-white group-hover/card:bg-[#FF5500]"
                               : "bg-white border border-slate-100 !text-[#0C1827] group-hover/card:bg-[#07192C] group-hover/card:!text-white"
@@ -581,7 +581,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                 key={card.id}
                 whileHover={{ y: -5, scale: 1.015 }}
                 transition={{ duration: 0.3 }}
-                className={`w-full min-h-[400px] sm:min-h-[415px] rounded-2xl py-8 px-5 sm:py-9 sm:px-6 md:p-8 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
+                className={`w-full min-h-[415px] sm:min-h-[415px] rounded-2xl py-12 px-5 sm:py-9 sm:px-6 md:p-8 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
                   theme === "dark"
                     ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/50 shadow-lg shadow-black/30 !text-white"
                     : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/50 shadow-sm hover:shadow-xl !text-[#0C1827]"
@@ -590,7 +590,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                 <div>
                   {/* Icon Container */}
                   <div
-                    className={`w-12 h-12 xs:w-14 xs:h-14 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-4 sm:mb-5 shadow-sm transition-all duration-300 group-hover:scale-110 text-2xl sm:text-3xl [&>svg]:w-6 [&>svg]:h-6 xs:[&>svg]:w-7 xs:[&>svg]:h-7 ${
+                    className={`w-14 h-14 xs:w-16 xs:h-16 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mb-4 sm:mb-5 shadow-sm transition-all duration-300 group-hover:scale-110 text-2xl sm:text-3xl [&>svg]:w-7 [&>svg]:h-7 xs:[&>svg]:w-8 xs:[&>svg]:h-8 ${
                       theme === "dark"
                         ? "bg-slate-800 border border-slate-700 !text-white group-hover:bg-[#FF5500]"
                         : "bg-white border border-slate-100 !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white"
