@@ -48,7 +48,7 @@ export const DEFAULT_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "legal",
     title: "Legal Support",
-    icon: <TbScale className="text-3xl sm:text-4xl" />,
+    icon: <TbScale className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -61,7 +61,7 @@ export const DEFAULT_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "healthcare",
     title: "Healthcare",
-    icon: <FiShield className="text-2xl sm:text-3xl" />,
+    icon: <FiShield className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Medical Billing & Coding",
       "Document Preparation",
@@ -74,7 +74,7 @@ export const DEFAULT_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "marketing",
     title: "Marketing",
-    icon: <FiTrendingUp className="text-2xl sm:text-3xl" />,
+    icon: <FiTrendingUp className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -87,7 +87,7 @@ export const DEFAULT_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "realestate",
     title: "Real Estate",
-    icon: <FiHome className="text-2xl sm:text-3xl" />,
+    icon: <FiHome className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -100,7 +100,7 @@ export const DEFAULT_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "finance",
     title: "Finance & Admin",
-    icon: <FiBarChart2 className="text-2xl sm:text-3xl" />,
+    icon: <FiBarChart2 className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -113,7 +113,7 @@ export const DEFAULT_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "technology",
     title: "Technology",
-    icon: <FiCode className="text-2xl sm:text-3xl" />,
+    icon: <FiCode className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -130,7 +130,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "engineering",
     title: "Engineering",
-    icon: <FiCpu className="text-2xl sm:text-3xl" />,
+    icon: <FiCpu className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -143,7 +143,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "ecommerce",
     title: "eCommerce",
-    icon: <FiShoppingBag className="text-2xl sm:text-3xl" />,
+    icon: <FiShoppingBag className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Medical Billing & Coding",
       "Document Preparation",
@@ -156,7 +156,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "finance-detail",
     title: "Finance",
-    icon: <FiDollarSign className="text-2xl sm:text-3xl" />,
+    icon: <FiDollarSign className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -169,7 +169,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "customer-support",
     title: "Customer Support",
-    icon: <FiHeadphones className="text-2xl sm:text-3xl" />,
+    icon: <FiHeadphones className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -182,7 +182,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "operations",
     title: "Operations",
-    icon: <FiActivity className="text-2xl sm:text-3xl" />,
+    icon: <FiActivity className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -195,7 +195,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "sales-business",
     title: "Sales & Business",
-    icon: <FiBriefcase className="text-2xl sm:text-3xl" />,
+    icon: <FiBriefcase className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -208,7 +208,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "hr",
     title: "Human Resource",
-    icon: <FiUsers className="text-2xl sm:text-3xl" />,
+    icon: <FiUsers className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Medical Billing & Coding",
       "Document Preparation",
@@ -221,7 +221,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "education",
     title: "Education",
-    icon: <FiBookOpen className="text-2xl sm:text-3xl" />,
+    icon: <FiBookOpen className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -234,7 +234,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "fitness",
     title: "Fitness",
-    icon: <FiHeart className="text-2xl sm:text-3xl" />,
+    icon: <FiHeart className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -247,7 +247,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "sports",
     title: "Sports",
-    icon: <FiAward className="text-2xl sm:text-3xl" />,
+    icon: <FiAward className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -260,7 +260,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "creative-design",
     title: "Creative & Design",
-    icon: <FiLayers className="text-2xl sm:text-3xl" />,
+    icon: <FiLayers className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -273,7 +273,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "data-analytics",
     title: "Data Analytics",
-    icon: <FiTrendingUp className="text-2xl sm:text-3xl" />,
+    icon: <FiTrendingUp className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -286,7 +286,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "virtual-assistant",
     title: "Virtual Assistant",
-    icon: <FiUsers className="text-2xl sm:text-3xl" />,
+    icon: <FiUsers className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
@@ -299,7 +299,7 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
   {
     id: "and-more",
     title: "And More",
-    icon: <FiLayers className="text-2xl sm:text-3xl" />,
+    icon: <FiLayers className="text-3xl xs:text-[32px] sm:text-4xl" />,
     features: [
       "Client intake & Follow-Up",
       "Document Preparation",
