@@ -8,6 +8,7 @@ import { SolutionsSection } from "@/components/bayshore-solutions/SolutionsSecti
 import { HowItWorksSection } from "@/components/bayshore-solutions/HowItWorksSection";
 import { ManagedStaffingSection } from "@/components/bayshore-solutions/ManagedStaffingSection";
 import { TalentShowcaseSection } from "@/components/bayshore-solutions/TalentShowcaseSection";
+import { BayshoreVsTraditionalSection } from "@/components/bayshore-solutions/BayshoreVsTraditionalSection";
 import { SecureDataSection } from "@/components/bayshore-solutions/SecureDataSection";
 import { ClientStoriesSection } from "@/components/bayshore-solutions/ClientStoriesSection";
 import { FaqSection } from "@/components/bayshore-solutions/FaqSection";
@@ -72,6 +73,9 @@ export default function BayshoreSolutionsPage() {
 
       {/* Bayshore Solutions Meet The Talent Showcase Carousel Section */}
       <TalentShowcaseSection theme={currentTheme} />
+
+      {/* Bayshore vs. Traditional Hiring Comparison Section */}
+      <BayshoreVsTraditionalSection theme={currentTheme} />
 
       {/* Bayshore Solutions Secure Data Environment Section */}
       <SecureDataSection theme={currentTheme} />

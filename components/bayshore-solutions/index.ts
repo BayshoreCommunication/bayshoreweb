@@ -11,3 +11,5 @@ export * from "./Footer";
 export * from "./MultiStepHiringForm";
 export * from "./SolutionsBreadcrumb";
 export * from "./SecureDataSection";
+export * from "./BayshoreVsTraditionalSection";
+
