@@ -140,10 +140,10 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
                       <span className="md:hidden inline-block bg-[#F97316]/15 text-[#F97316] border border-[#F97316]/30 px-4 py-1.5 rounded-full text-[13px] xs:text-[14px] font-black uppercase tracking-wider mb-2">
                         {row.label}
                       </span>
-                      <span className="text-[28px] xs:text-[32px] sm:text-2xl lg:text-[28px] font-black leading-tight text-white">
+                      <span className="text-[28px] xs:text-[32px] md:text-[28px]  font-black leading-tight text-white">
                         {row.bayshoreValue}
                       </span>
-                      <span className="text-base xs:text-[17px] sm:text-base text-slate-300 font-medium mt-1">
+                      <span className="text-[16px] xs:text-[17px] md:text-[18px]  text-slate-200 font-medium mt-1.5">
                         {row.bayshoreSub}
                       </span>
                     </div>
@@ -197,10 +197,10 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
                       <span className="md:hidden inline-block bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 px-4 py-1.5 rounded-full text-[13px] xs:text-[14px] font-black uppercase tracking-wider mb-2">
                         {row.label}
                       </span>
-                      <span className="text-[28px] xs:text-[32px] sm:text-2xl lg:text-[28px] font-bold leading-tight">
+                      <span className="text-[28px] xs:text-[32px] md:text-[28px] lg:text-[32px] font-bold leading-tight">
                         {row.traditionalValue}
                       </span>
-                      <span className="text-base xs:text-[17px] sm:text-base text-slate-500 dark:text-slate-400 font-normal mt-1">
+                      <span className="text-[16px] xs:text-[17px] md:text-[18px] lg:text-[20px] text-[#4A6068] dark:text-slate-300 font-medium mt-1.5">
                         {row.traditionalSub}
                       </span>
                     </div>
