@@ -79,9 +79,9 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
             }`}
           >
             {headlineMain}{"\u00A0"}
-            <span className="text-[#F97316]">
+            {/* <span className="text-[#F97316]">
               {headlineHighlight}
-            </span>
+            </span> */}
           </h2>
           <p
             style={{ lineHeight: 1.6 }}
