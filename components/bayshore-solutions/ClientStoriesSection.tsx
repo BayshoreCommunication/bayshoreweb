@@ -153,8 +153,8 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
             </p>
           </div>
 
-          {/* Right Side Accent Text & Navigation Arrows */}
-          <div className="flex items-center gap-6 sm:gap-8 shrink-0 self-start lg:self-end">
+          {/* Right Side Accent Text */}
+          <div className="flex items-center shrink-0 self-start lg:self-end">
             {/* Dark Vertical Line & Tagline */}
             <div
               className={`border-l-4 pl-4 flex flex-col font-extrabold text-xl xs:text-2xl sm:text-xl xl:text-2xl tracking-wider uppercase leading-snug sm:leading-normal font-playfair ${
@@ -166,34 +166,6 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
               <span>REAL PEOPLE.</span>
               <span>REAL BUSINESSES.</span>
               <span>REAL RESULTS.</span>
-            </div>
-
-            {/* Navigation Arrows (Hidden on Mobile) */}
-            <div className="hidden sm:flex items-center gap-3">
-              <button
-                type="button"
-                onClick={() => handleScroll("left")}
-                aria-label="Scroll Left"
-                className={`w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border shadow-sm transition-all duration-300 ${
-                  theme === "dark"
-                    ? "bg-[#0B1A2D] !text-white border-slate-700 hover:bg-[#FF5500]"
-                    : "bg-white !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
-                }`}
-              >
-                <FiChevronLeft size={20} />
-              </button>
-              <button
-                type="button"
-                onClick={() => handleScroll("right")}
-                aria-label="Scroll Right"
-                className={`w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center border shadow-sm transition-all duration-300 ${
-                  theme === "dark"
-                    ? "bg-[#0B1A2D] !text-white border-slate-700 hover:bg-[#FF5500]"
-                    : "bg-white !text-[#0C1827] border-slate-200 hover:bg-[#07192C] hover:!text-white"
-                }`}
-              >
-                <FiChevronRight size={20} />
-              </button>
             </div>
           </div>
         </motion.div>
