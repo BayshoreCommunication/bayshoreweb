@@ -314,7 +314,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           whileHover={{ y: -4 }}
-          className={`rounded-[28px] sm:rounded-[36px] p-6 sm:px-10 sm:py-9 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left transition-all duration-300 ${
+          className={`rounded-[16px] md:rounded-[24px] p-8 md:px-10 md:py-12 lg:px-16 lg:py-20 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left transition-all duration-300 ${
             theme === "dark"
               ? "bg-[#0B1A2D] border-none !text-white shadow-xl shadow-black/30"
               : "bg-white border border-slate-200/90 !text-[#0C1827] shadow-md"
@@ -322,18 +322,18 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
         >
           {/* Left/Center Info with Shield Check Icon */}
           <div className="flex flex-col md:flex-row items-center text-center md:text-left gap-4 sm:gap-6">
-            <div
-              className={`w-13 h-13 sm:w-16 sm:h-16 rounded-full shrink-0 flex items-center justify-center border shadow-xs ${
-                theme === "dark"
-                  ? "bg-slate-800 border-slate-700 !text-white"
-                  : "bg-[#F8F9FA] border-slate-200 !text-[#0C1827]"
+              <div
+              className={`w-20 h-20 md:w-[88px] md:h-[88px] rounded-full shrink-0 flex items-center justify-center border shadow-xs transition-all ${
+              theme === "dark"
+              ? "bg-slate-800 border-slate-700 text-white"
+              : "bg-[#F8F9FA] border-slate-200 text-[#0C1827]"
               }`}
-            >
-              <FiShield className={`text-2xl sm:text-3xl ${theme === "dark" ? "!text-white" : "!text-[#0C1827]"}`} />
-            </div>
+              >
+                <FiShield className="text-[40px] md:text-[46px]" />
+              </div>
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
               <h3
-                className={`text-lg sm:text-2xl lg:text-[26px] font-extrabold tracking-tight mb-6 font-playfair ${
+                className={`text-[24px] lg:text-[36px] font-bold  mb-2  ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}
               >

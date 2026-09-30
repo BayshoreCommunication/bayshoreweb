@@ -363,7 +363,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
             {/* Left Info Column */}
             <div className="max-w-2xl xl:max-w-3xl flex-1">
               <span
-                className={`inline-block text-xs sm:text-sm font-extrabold uppercase tracking-[0.22em] mb-4 font-playfair ${
+                className={`inline-block text-[12px] md:text-[14px] font-extrabold uppercase tracking-[0.22em] mb-4 font-playfair ${
                   theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
                 }`}
               >
@@ -371,7 +371,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
               </span>
 
               <h2
-                className={`text-[36px] xs:text-[40px] sm:text-4xl lg:text-[46px] xl:text-[52px] font-extrabold tracking-tight leading-tight mb-6 sm:mb-7 lg:whitespace-nowrap font-playfair ${
+                className={`text-[36px] xs:text-[40px] sm:text-4xl lg:text-[46px] xl:text-[52px] font-extrabold tracking-tight leading-tight my-6 mt:mt-8 pb-4 md:pb-5 lg:whitespace-nowrap font-playfair ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}
               >
@@ -383,7 +383,7 @@ export const TalentShowcaseSection: React.FC<TalentShowcaseSectionProps> = ({
 
               <p
                 style={{ lineHeight: 1.55 }}
-                className={`text-[14px] md:text-[16px] font-normal mb-8 max-w-xl text-left !text-left w-full font-instrument ${
+                className={`text-[14px] md:text-[16px] font-normal mb-8  text-left !text-left w-full font-instrument ${
                   theme === "dark" ? "!text-slate-300" : "!text-[#0C1827]"
                 }`}
               >

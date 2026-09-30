@@ -113,7 +113,7 @@ export const SecureDataSection: React.FC<SecureDataSectionProps> = ({
             {/* Subtitle Description */}
             <p
               style={{ lineHeight: 1.6 }}
-              className={`text-[14px] md:text-[16px] font-normal max-w-3xl mb-8 sm:mb-10 font-instrument ${
+              className={`text-[14px] md:text-[16px] font-normal  mb-8 sm:mb-10 font-instrument ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
               }`}
             >
@@ -131,16 +131,16 @@ export const SecureDataSection: React.FC<SecureDataSectionProps> = ({
                   key={item.id}
                   whileHover={{ y: -4, scale: 1.02 }}
                   transition={{ duration: 0.3 }}
-                  className={`rounded-2xl p-5 flex flex-col justify-between border transition-all duration-300 shadow-xs hover:shadow-lg cursor-pointer ${
+                  className={`rounded-[16px] md:rounded-[20px] p-4 md:p-6 lg:p-8 flex flex-col justify-start border transition-all duration-300 shadow-xs hover:shadow-lg cursor-pointer ${
                     theme === "dark"
                       ? "bg-[#0B1A2D] border-slate-800/90 text-white hover:border-[#FF5500]/40 shadow-black/40"
                       : "bg-[#F8FAFC] border-slate-200/90 text-[#0C1827] hover:border-[#FE6F1F]/40 shadow-slate-200/50"
                   }`}
                 >
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-orange-50 dark:bg-slate-800 text-[#FE6F1F] dark:text-[#FF5500] flex items-center justify-center mb-3.5 shadow-xs shrink-0">
-                      {item.icon}
-                    </div>
+                   <div className=" text-[#FE6F1F] dark:text-[#FF5500] flex items-start justify-start mb-3.5 md:mb-5 lg:mb-6 shadow-xs shrink-0 [&>svg]:text-[24px] md:[&>svg]:text-[30px]">
+  {item.icon}
+</div>
                     <h3
                       className={`text-lg sm:text-[19px] font-extrabold tracking-tight mb-2 font-playfair ${
                         theme === "dark" ? "!text-white" : "!text-[#0C1827]"

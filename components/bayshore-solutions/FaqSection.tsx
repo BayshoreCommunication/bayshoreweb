@@ -85,9 +85,9 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
           className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 sm:mb-16"
         >
           {/* Left Titles & Subtitle */}
-          <div className="max-w-3xl">
+          <div className="">
             <span
-              className={`inline-block text-xl sm:text-2xl font-bold uppercase tracking-[0.25em] mb-4 sm:mb-5 font-playfair ${
+              className={`inline-block text-xl sm:text-2xl font-bold uppercase tracking-[0.25em] mb-4 sm:mb-5 ${
                 theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
               }`}
             >
@@ -114,9 +114,9 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
           </div>
 
           {/* Right Header Accent Graphic */}
-          <div className="flex items-center gap-5 shrink-0 self-start lg:self-end">
+          <div className="flex items-center gap-5 shrink-0 self-start lg:self-center">
             <div
-              className={`border-l-2 pl-4 flex flex-col font-extrabold text-lg sm:text-xl tracking-wider uppercase leading-tight font-playfair ${
+              className={`border-l-2 pl-4 flex flex-col font-extrabold text-[20px] md:text-[28px] tracking-wider uppercase leading-tight font-playfair ${
                 theme === "dark"
                   ? "border-[#FF5500] !text-white"
                   : "border-[#FE6F1F] !text-[#0C1827]"
@@ -156,7 +156,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                   }`}
                 >
                   <div className="flex items-center justify-between gap-4">
-                    <h3 className="text-xl sm:text-2xl font-bold tracking-tight leading-snug font-instrument">
+                    <h3 className="text-[16px] md:text-[18px] font-semibold tracking-tight leading-snug font-instrument">
                       {faq.question}
                     </h3>
                     <motion.span
