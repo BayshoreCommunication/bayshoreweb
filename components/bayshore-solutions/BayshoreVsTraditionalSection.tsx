@@ -61,40 +61,40 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
     >
       <div className="relative mx-auto max-w-[1280px] px-4 xs:px-6 md:px-8 z-10">
         {/* Section Header Area (Left-Aligned as requested) */}
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-left max-w-4xl mr-auto ml-0 mb-12 sm:mb-16"
-        >
-          <span
-            className={`inline-block text-sm sm:text-base font-bold uppercase tracking-[0.2em] mb-3 font-playfair !text-[#F97316]`}
-          >
-            {titleTag}
-          </span>
-          <h2
-            className={`text-[32px] xs:text-[38px] sm:text-4xl lg:text-[46px] font-black tracking-tight leading-[1.18] mb-4 font-playfair ${
-              isDark ? "!text-white" : "!text-[#0C1827]"
-            }`}
-          >
-            {headlineMain}{" "}
-            <span className="!text-[#F97316]">
-              {headlineHighlight}
-            </span>
-          </h2>
-          <p
-            style={{ lineHeight: 1.6 }}
-            className={`text-[15px] sm:text-[17px] font-normal max-w-3xl font-instrument ${
-              isDark ? "!text-slate-300" : "!text-[#4A6068]"
-            }`}
-          >
-            {subtitle}
-          </p>
-        </motion.div>
+     <motion.div
+  initial={{ opacity: 0, y: 25 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true, margin: "-50px" }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  className="text-center mx-auto mb-12 sm:mb-16 flex flex-col items-center"
+>
+  <span
+    className={`inline-block text-sm sm:text-base font-bold uppercase tracking-[0.2em] mb-3 font-playfair text-[#F97316]`}
+  >
+    {titleTag}
+  </span>
+  <h2
+    className={`text-[32px] xs:text-[38px] sm:text-4xl lg:text-[46px] font-black !leading-[1.3] mb-4 font-playfair ${
+      isDark ? "text-white" : "text-[#0C1827]"
+    }`}
+  >
+    {headlineMain}{"\u00A0"}
+    <span className="text-[#F97316]">
+      {headlineHighlight}
+    </span>
+  </h2>
+  <p
+    style={{ lineHeight: 1.6 }}
+    className={`text-[15px] sm:text-[17px] font-normal font-instrument ${
+      isDark ? "text-slate-300" : "text-[#4A6068]"
+    }`}
+  >
+    {subtitle}
+  </p>
+</motion.div>
 
         {/* Compact Reference Layout Comparison Container */}
-        <div className="relative w-full max-w-[1060px] mx-auto">
+        <div className="relative w-full mx-auto max-w-[1280px] ">
           <div className="grid grid-cols-1 md:grid-cols-12 items-stretch gap-6 md:gap-4 lg:gap-6">
 
             {/* Left Labels Column (Desktop: 3 cols) */}
