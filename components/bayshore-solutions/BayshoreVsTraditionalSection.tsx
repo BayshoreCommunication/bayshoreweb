@@ -26,7 +26,6 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
       label: "Cost",
       bayshoreValue: "$3 / hour",
       bayshoreSub: "Affordable & Predictable",
-      bayshoreHighlight: true,
       traditionalValue: "$45,000 - $60,000",
       traditionalSub: "Annual Salary",
     },
@@ -56,86 +55,75 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
   return (
     <section
       id="comparison"
-      className={`relative w-full max-w-full py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-300 ${
-        isDark ? "bg-[#07192C] text-white" : "bg-[#F5F7FA] text-[#0C1827]"
+      className={`relative w-full py-16 sm:py-20 lg:py-24 overflow-hidden transition-colors duration-300 ${
+        isDark ? "bg-[#07192C] text-white" : "bg-[#F0F8FA] text-[#0C1827]"
       }`}
     >
-      {/* Background ambient lighting */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        <div
-          className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full blur-3xl opacity-15 ${
-            isDark ? "bg-[#FF5500]" : "bg-orange-300"
-          }`}
-        />
-      </div>
-
-      <div className="relative mx-auto max-w-[1650px] px-4 xs:px-6 md:px-[30px] z-10">
-        {/* Section Header Area */}
+      <div className="relative mx-auto max-w-[1280px] px-4 xs:px-6 md:px-8 z-10">
+        {/* Section Header Area (Left-Aligned as requested) */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="text-left max-w-4xl mb-12 sm:mb-16"
+          className="text-left max-w-4xl mr-auto ml-0 mb-12 sm:mb-16"
         >
           <span
-            className={`inline-block text-xl sm:text-2xl font-bold uppercase tracking-[0.25em] mb-4 sm:mb-5 font-playfair ${
-              isDark ? "!text-slate-300" : "!text-[#556070]"
-            }`}
+            className={`inline-block text-sm sm:text-base font-bold uppercase tracking-[0.2em] mb-3 font-playfair !text-[#F97316]`}
           >
             {titleTag}
           </span>
           <h2
-            className={`text-[36px] xs:text-[42px] sm:text-5xl lg:text-[46px] xl:text-[54px] font-extrabold tracking-tight leading-[1.14] sm:leading-[1.18] mb-4 sm:mb-6 font-playfair ${
+            className={`text-[32px] xs:text-[38px] sm:text-4xl lg:text-[46px] font-black tracking-tight leading-[1.18] mb-4 font-playfair ${
               isDark ? "!text-white" : "!text-[#0C1827]"
             }`}
           >
             {headlineMain}{" "}
-            <span className={isDark ? "!text-[#FF5500]" : "!text-[#FE6F1F]"}>
+            <span className="!text-[#F97316]">
               {headlineHighlight}
             </span>
           </h2>
           <p
-            style={{ lineHeight: 1.55 }}
-            className={`text-[14px] md:text-[16px] font-normal text-left w-full max-w-3xl font-instrument ${
-              isDark ? "!text-slate-300" : "!text-[#0C1827]"
+            style={{ lineHeight: 1.6 }}
+            className={`text-[15px] sm:text-[17px] font-normal max-w-3xl font-instrument ${
+              isDark ? "!text-slate-300" : "!text-[#4A6068]"
             }`}
           >
             {subtitle}
           </p>
         </motion.div>
 
-        {/* Reference Image Layout Comparison Grid */}
-        <div className="relative w-full max-w-[1400px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-0 items-stretch">
+        {/* Compact Reference Layout Comparison Container */}
+        <div className="relative w-full max-w-[1060px] mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-12 items-stretch gap-6 md:gap-4 lg:gap-6">
 
-            {/* 1. Left Feature Labels Column (Desktop: 3 cols) */}
-            <div className="hidden md:flex md:col-span-3 flex-col pt-[88px] pb-6 pr-6">
+            {/* Left Labels Column (Desktop: 3 cols) */}
+            <div className="hidden md:flex md:col-span-3 flex-col pt-[84px] pb-4 pr-4 justify-between">
               {rowsData.map((row, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center h-[96px] py-3 text-[#0C1827] dark:text-slate-200 font-extrabold text-base lg:text-lg font-playfair"
+                  className="flex items-center min-h-[96px] lg:min-h-[108px] text-[#0C1827] dark:text-slate-100 font-extrabold text-lg lg:text-xl font-playfair tracking-tight"
                 >
                   <span>{row.label}</span>
                 </div>
               ))}
             </div>
 
-            {/* Container wrapper for Middle + Right cards with seam VS badge */}
-            <div className="md:col-span-9 grid grid-cols-1 md:grid-cols-12 relative items-stretch gap-4 md:gap-0">
-              
-              {/* 2. MIDDLE COLUMN: Bayshore VA (Dark Featured Card) */}
+            {/* Cards Area (Desktop: 9 cols with 2 Cards + Center VS Badge) */}
+            <div className="md:col-span-9 grid grid-cols-1 md:grid-cols-2 relative items-stretch gap-6 md:gap-5 lg:gap-6">
+
+              {/* CARD 1: Bayshore VA (Dark Teal Card) */}
               <motion.div
-                initial={{ opacity: 0, y: 30, scale: 0.97 }}
-                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.6 }}
-                className="md:col-span-6 relative rounded-3xl p-6 xs:p-8 md:p-8 lg:p-10 bg-[#07192C] text-white border-2 border-[#FF5500] shadow-2xl z-20 flex flex-col justify-between"
+                transition={{ duration: 0.5 }}
+                className="rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 lg:p-8 bg-[#F97316] text-white shadow-xl shadow-[#064E58]/15 z-20 flex flex-col justify-between"
               >
-                {/* Header Logo / Title */}
-                <div className="h-[64px] flex flex-col justify-center text-center mb-6 border-b border-slate-800/80 pb-4">
-                  <h3 className="text-2xl xs:text-3xl font-black tracking-tight font-playfair text-white flex items-center justify-center gap-2">
-                    <span className="text-[#FF5500]">Bayshore</span> VA
+                {/* Header Title */}
+                <div className="min-h-[60px] flex items-center justify-center text-center border-b border-white/15 pb-4 mb-2">
+                  <h3 className="text-2xl sm:text-3xl lg:text-[32px] font-black tracking-tight font-playfair text-white">
+                    Bayshore VA
                   </h3>
                 </div>
 
@@ -144,22 +132,18 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
                   {rowsData.map((row, idx) => (
                     <div
                       key={idx}
-                      className="flex flex-col items-center justify-center text-center h-[96px] py-3 border-b border-slate-800/50 last:border-0 font-instrument"
+                      className="flex flex-col items-center justify-center text-center min-h-[96px] lg:min-h-[108px] py-2 border-b border-white/10 last:border-0 font-instrument"
                     >
                       {/* Mobile Row Label */}
-                      <span className="md:hidden text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+                      <span className="md:hidden text-xs font-bold text-teal-200/80 uppercase tracking-wider mb-1">
                         {row.label}
                       </span>
-                      <span
-                        className={`text-lg xs:text-xl lg:text-2xl font-extrabold ${
-                          row.bayshoreHighlight
-                            ? "text-[#FF5500] font-black text-xl xs:text-2xl lg:text-[26px]"
-                            : "text-white"
-                        }`}
-                      >
+                      <span className={`text-xl sm:text-2xl lg:text-[26px] font-black leading-tight ${
+                        idx === 0 ? "text-[#ffffff]" : "text-white"
+                      }`}>
                         {row.bayshoreValue}
                       </span>
-                      <span className="text-xs xs:text-sm text-slate-300 mt-0.5">
+                      <span className="text-sm lg:text-base text-teal-100/90 font-medium mt-1">
                         {row.bayshoreSub}
                       </span>
                     </div>
@@ -167,35 +151,35 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
                 </div>
               </motion.div>
 
-              {/* Seamless Overlapping VS Badge Divider between Middle & Right Cards */}
+              {/* Center Floating VS Badge (Desktop seam overlay with brand orange border) */}
               <div className="hidden md:flex absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-30 pointer-events-none">
-                <div className="w-13 h-13 lg:w-14 lg:h-14 rounded-full bg-[#07192C] border-2 border-[#FF5500] text-white font-black text-sm lg:text-base flex items-center justify-center shadow-xl">
+                <div className="w-14 h-14 lg:w-16 lg:h-16 rounded-full bg-[#064E58] border-[3px] border-[#F97316] text-white font-black text-base lg:text-lg flex items-center justify-center shadow-xl">
                   VS
                 </div>
               </div>
 
               {/* Mobile VS Badge */}
-              <div className="md:hidden flex items-center justify-center my-1">
-                <div className="w-11 h-11 rounded-full bg-[#FF5500] text-white font-black text-xs flex items-center justify-center shadow-lg border-2 border-white dark:border-[#07192C]">
+              <div className="md:hidden flex items-center justify-center -my-2 z-30">
+                <div className="w-12 h-12 rounded-full bg-[#064E58] text-white font-black text-sm flex items-center justify-center shadow-lg border-[3px] border-[#F97316]">
                   VS
                 </div>
               </div>
 
-              {/* 3. RIGHT COLUMN: Full-Time Hire (White / Light Card) */}
+              {/* CARD 2: Full-Time Hire (White / Light Card) */}
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
-                transition={{ duration: 0.6, delay: 0.15 }}
-                className={`md:col-span-6 rounded-3xl p-6 xs:p-8 md:p-8 lg:p-10 border transition-all duration-300 shadow-md flex flex-col justify-between md:-ml-2 z-10 ${
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className={`rounded-[24px] sm:rounded-[28px] p-6 sm:p-7 lg:p-8 transition-all duration-300 shadow-md shadow-slate-200/70 dark:shadow-none border z-10 flex flex-col justify-between ${
                   isDark
                     ? "bg-[#0B1A2D] border-slate-800 text-white"
                     : "bg-white border-slate-200/90 text-[#0C1827]"
                 }`}
               >
-                {/* Header */}
-                <div className="h-[64px] flex flex-col justify-center text-center mb-6 border-b border-slate-200 dark:border-slate-800/80 pb-4">
-                  <h3 className="text-2xl xs:text-3xl font-extrabold tracking-tight font-playfair">
+                {/* Header Title */}
+                <div className="min-h-[60px] flex items-center justify-center text-center border-b border-slate-100 dark:border-slate-800 pb-4 mb-2">
+                  <h3 className="text-2xl sm:text-3xl lg:text-[32px] font-black tracking-tight font-playfair">
                     Full-Time Hire
                   </h3>
                 </div>
@@ -205,16 +189,16 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
                   {rowsData.map((row, idx) => (
                     <div
                       key={idx}
-                      className="flex flex-col items-center justify-center text-center h-[96px] py-3 border-b border-slate-100 dark:border-slate-800/50 last:border-0 font-instrument"
+                      className="flex flex-col items-center justify-center text-center min-h-[96px] lg:min-h-[108px] py-2 border-b border-slate-100 dark:border-slate-800/60 last:border-0 font-instrument"
                     >
                       {/* Mobile Row Label */}
-                      <span className="md:hidden text-xs font-semibold text-slate-400 uppercase tracking-wider mb-1">
+                      <span className="md:hidden text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">
                         {row.label}
                       </span>
-                      <span className="text-lg xs:text-xl lg:text-2xl font-bold">
+                      <span className="text-xl sm:text-2xl lg:text-[26px] font-bold leading-tight">
                         {row.traditionalValue}
                       </span>
-                      <span className="text-xs xs:text-sm text-slate-500 dark:text-slate-400 mt-0.5">
+                      <span className="text-sm lg:text-base text-slate-500 dark:text-slate-400 font-normal mt-1">
                         {row.traditionalSub}
                       </span>
                     </div>
@@ -232,4 +216,6 @@ export const BayshoreVsTraditionalSection: React.FC<BayshoreVsTraditionalSection
 };
 
 export default BayshoreVsTraditionalSection;
+
+
 
