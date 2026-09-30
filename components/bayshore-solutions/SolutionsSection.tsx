@@ -516,7 +516,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                       <div>
                         {/* Icon Container */}
                         <div
-                          className={`w-[35px] h-[35px] md:w-[45px] md:h-[45px] lg:w-[65px] lg:h-[65px] rounded-full flex items-center justify-center mb-4 md:mb-6 shadow-sm transition-all duration-300 group-hover/card:scale-110 text-xl sm:text-2xl [&>svg]:w-10 [&>svg]:h-10 sm:[&>svg]:w-16 sm:[&>svg]:h-16 ${  
+                          className={`w-[48px] h-[48px] xs:w-[54px] xs:h-[54px] md:w-[58px] md:h-[58px] lg:w-[68px] lg:h-[68px] rounded-full flex items-center justify-center mb-5 md:mb-6 shadow-sm transition-all duration-300 group-hover/card:scale-110 text-2xl xs:text-3xl [&>svg]:w-6 [&>svg]:h-6 xs:[&>svg]:w-7 xs:[&>svg]:h-7 md:[&>svg]:w-8 md:[&>svg]:h-8 lg:[&>svg]:w-9 lg:[&>svg]:h-9 ${  
                             theme === "dark"
                               ? "bg-slate-800 border border-slate-700 !text-white group-hover/card:bg-[#FF5500]"
                               : "bg-white border border-slate-100 !text-[#0C1827] group-hover/card:bg-[#07192C] group-hover/card:!text-white"
@@ -527,7 +527,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
 
                         {/* Card Title */}
                         <h3
-                          className={`text-[16px] md:text-[20px] font-bold tracking-tight mb-4 md:mb-6  ${
+                          className={`text-[18px] xs:text-[20px] md:text-[22px] font-extrabold tracking-tight mb-4 md:mb-6  ${
                             theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                           }`}
                         >
@@ -535,11 +535,11 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                         </h3>
 
                         {/* Features Bullet List */}
-                        <ul className="flex flex-col gap-4 mb-6 md:mb-10 ">
+                        <ul className="flex flex-col gap-3.5 xs:gap-4 mb-6 md:mb-10 ">
                           {card.features.map((feature, featureIdx) => (
                             <li
                               key={featureIdx}
-                              className={`text-[12px] md:text-[14px] leading-snug flex items-start gap-2 ${
+                              className={`text-[13px] xs:text-[14px] md:text-[15px] leading-snug flex items-start gap-2 ${
                                 theme === "dark" ? "!text-slate-200" : "!text-[#4B5563]"
                               }`}
                             >
@@ -558,14 +558,14 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                         whileTap={{ scale: 0.98 }}
                         type="button"
                         onClick={() => onFindTalentClick && onFindTalentClick(card.id)}
-                        className={`w-full py-3.5 px-3 rounded-full font-semibold text-[12px] md:text-[14px] transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md  ${
+                        className={`w-full py-3.5 px-4 rounded-full font-bold text-[13px] xs:text-[14px] md:text-[15px] transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md  ${
                           theme === "dark"
                             ? "bg-[#FF5500] text-white hover:bg-[#e04a00]"
                             : "bg-[#07192C] text-white hover:bg-[#000e1e]"
                         }`}
                       >
                         <span>{card.id === "legal" ? "Hire Now" : "Find Talent"}</span>
-                        <FiArrowRight size={14} className="transition-transform duration-300 group-hover/card:translate-x-1" />
+                        <FiArrowRight size={15} className="transition-transform duration-300 group-hover/card:translate-x-1" />
                       </motion.button>
                     </motion.div>
                   ))}
@@ -581,7 +581,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                 key={card.id}
                 whileHover={{ y: -5, scale: 1.015 }}
                 transition={{ duration: 0.3 }}
-                className={`w-full min-h-[400px] sm:min-h-[415px] rounded-2xl p-4 sm:p-5 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
+                className={`w-full min-h-[400px] sm:min-h-[415px] rounded-2xl p-5 xs:p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 group shadow-sm hover:shadow-xl cursor-pointer ${
                   theme === "dark"
                     ? "bg-[#0B1A2D] border border-slate-800/90 hover:border-[#FF5500]/50 shadow-lg shadow-black/30 !text-white"
                     : "bg-[#F3F6FA] border border-slate-200/60 hover:border-[#FE6F1F]/50 shadow-sm hover:shadow-xl !text-[#0C1827]"
@@ -590,7 +590,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                 <div>
                   {/* Icon Container */}
                   <div
-                    className={`w-11 h-11 sm:w-12 sm:h-12 rounded-full flex items-center justify-center mb-3.5 sm:mb-4 shadow-sm transition-all duration-300 group-hover:scale-110 text-xl sm:text-2xl [&>svg]:w-5 [&>svg]:h-5 sm:[&>svg]:w-6 sm:[&>svg]:h-6 ${
+                    className={`w-12 h-12 xs:w-14 xs:h-14 sm:w-14 sm:h-14 rounded-full flex items-center justify-center mb-4 sm:mb-5 shadow-sm transition-all duration-300 group-hover:scale-110 text-2xl sm:text-3xl [&>svg]:w-6 [&>svg]:h-6 xs:[&>svg]:w-7 xs:[&>svg]:h-7 ${
                       theme === "dark"
                         ? "bg-slate-800 border border-slate-700 !text-white group-hover:bg-[#FF5500]"
                         : "bg-white border border-slate-100 !text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white"
@@ -601,7 +601,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
 
                   {/* Card Title */}
                   <h3
-                    className={`text-base sm:text-lg font-bold tracking-tight mb-2.5 sm:mb-3  ${
+                    className={`text-lg xs:text-xl font-extrabold tracking-tight mb-3 sm:mb-4  ${
                       theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                     }`}
                   >
@@ -609,11 +609,11 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                   </h3>
 
                   {/* Features Bullet List */}
-                  <ul className="flex flex-col gap-2 mb-5 ">
+                  <ul className="flex flex-col gap-2.5 mb-5 ">
                     {card.features.map((feature, featureIdx) => (
                       <li
                         key={featureIdx}
-                        className={`text-xs sm:text-[13px] leading-snug flex items-start gap-2 ${
+                        className={`text-[13px] xs:text-[14px] leading-snug flex items-start gap-2 ${
                           theme === "dark" ? "!text-slate-200" : "!text-[#4B5563]"
                         }`}
                       >
@@ -632,7 +632,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                   whileTap={{ scale: 0.98 }}
                   type="button"
                   onClick={() => onFindTalentClick && onFindTalentClick(card.id)}
-                  className={`w-full py-2.5 px-3 rounded-full font-semibold text-xs sm:text-[13px] transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md  ${
+                  className={`w-full py-3 px-3.5 rounded-full font-bold text-[13px] xs:text-[14px] transition-all duration-300 flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md  ${
                     theme === "dark"
                       ? "bg-[#FF5500] text-white hover:bg-[#e04a00]"
                       : "bg-[#07192C] text-white hover:bg-[#000e1e]"

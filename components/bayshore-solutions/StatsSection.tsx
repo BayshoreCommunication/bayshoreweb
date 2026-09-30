@@ -112,7 +112,7 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
           : "bg-[#F7F7F7] text-[#0C1827]"
       }`}
     >
-      <div className=" mx-auto max-w-[1650px] px-10 md:px-[30px]">
+      <div className="mx-auto max-w-[1650px] px-4 xs:px-6 md:px-[30px]">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-6 xl:gap-10 items-center">
           {/* Left Column: 4 Animated Counter Metrics */}
           <div className="lg:col-span-7 xl:col-span-7 w-full">
@@ -150,22 +150,22 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
             </div>
           </div>
 
-          {/* Right Column: World Map Graphic + Brand Tagline (Mobile & Laptop Responsive) */}
+          {/* Right Column: Full Width World Map Graphic + Single-Line Tagline with Orange Dots */}
           <motion.div
-            initial={{ opacity: 0, x: 40, filter: "blur(4px)" }}
-            whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+            initial={{ opacity: 0, y: 30, filter: "blur(4px)" }}
+            whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             viewport={{ once: true, margin: "-40px" }}
             transition={{ duration: 0.7, delay: 0.15, type: "spring", stiffness: 85, damping: 15 }}
-            className="lg:col-span-5 xl:col-span-5 flex flex-col sm:flex-row lg:flex-row items-center justify-center lg:justify-end gap-5 sm:gap-6 lg:gap-4 xl:gap-8 pt-4 sm:pt-6 lg:pt-0"
+            className="lg:col-span-5 xl:col-span-5 flex flex-col items-center justify-center gap-4 sm:gap-6 pt-6 lg:pt-0 w-full"
           >
-            {/* World Map Image Graphic */}
-            <div className="relative w-full max-w-[260px] sm:w-[260px] md:w-[280px] lg:w-[240px] xl:w-[320px] 2xl:w-[380px] h-[120px] sm:h-[140px] lg:h-[130px] xl:h-[160px] shrink-0">
+            {/* Full Width World Map Image Graphic */}
+            <div className="relative w-full h-[150px] xs:h-[180px] sm:h-[220px] lg:h-[180px] xl:h-[220px] 2xl:h-[250px]">
               {!imgError ? (
                 <Image
                   src={mapImagePath}
                   alt="Global Talent Map"
                   fill
-                  className="object-contain object-center sm:object-left lg:object-center"
+                  className="object-contain object-center"
                   onError={() => setImgError(true)}
                 />
               ) : (
@@ -202,27 +202,17 @@ export const StatsSection: React.FC<StatsSectionProps> = ({
               )}
             </div>
 
-            {/* Right Side Tagline Text */}
-            <div className="flex flex-col gap-1 sm:gap-1.5 lg:gap-1 xl:gap-2 text-center sm:text-left shrink-0 font-playfair">
-              <span
-                className={`text-lg xs:text-xl sm:text-xl lg:text-lg xl:text-2xl 2xl:text-[26px] font-extrabold leading-snug ${
-                  theme === "dark" ? "!text-white" : "!text-[#0C1827]"
-                }`}
-              >
+            {/* Single Line Brand Tagline separated by Orange Dots */}
+            <div className="flex flex-wrap items-center justify-center gap-x-2 xs:gap-x-3 gap-y-1.5 text-center font-playfair font-extrabold text-[14px] md:text-[24px] leading-snug w-full">
+              <span className={theme === "dark" ? "!text-white" : "!text-[#0C1827]"}>
                 {taglineTitle}
               </span>
-              <span
-                className={`text-lg xs:text-xl sm:text-xl lg:text-lg xl:text-2xl 2xl:text-[26px] font-extrabold leading-snug ${
-                  theme === "dark" ? "!text-white" : "!text-[#0C1827]"
-                }`}
-              >
+              <span className="w-2 h-2 xs:w-2.5 xs:h-2.5 rounded-full bg-[#FF5500] shrink-0 inline-block" />
+              <span className={theme === "dark" ? "!text-white" : "!text-[#0C1827]"}>
                 {taglineSubtitle}
               </span>
-              <span
-                className={`text-lg xs:text-xl sm:text-xl lg:text-lg xl:text-2xl 2xl:text-[26px] font-extrabold leading-snug ${
-                  theme === "dark" ? "!text-white" : "!text-[#0C1827]"
-                }`}
-              >
+              <span className="w-2 h-2 xs:w-2.5 xs:h-2.5 rounded-full bg-[#FF5500] shrink-0 inline-block" />
+              <span className={theme === "dark" ? "!text-white" : "!text-[#0C1827]"}>
                 {taglineHighlight}
               </span>
             </div>
