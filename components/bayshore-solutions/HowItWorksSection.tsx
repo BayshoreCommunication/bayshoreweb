@@ -35,31 +35,31 @@ export const DEFAULT_STEPS: HowItWorksStep[] = [
     stepNumber: "01",
     title: "Tell Us What You Need",
     description: "Share your requirements and goals—only takes a minute.",
-    icon: <FiFileText className="text-3xl sm:text-4xl lg:text-[40px]" />,
+    icon: <FiFileText className="text-4xl xs:text-[42px] sm:text-4xl lg:text-[44px]" />,
   },
   {
     stepNumber: "02",
     title: "We Find the Right Match",
     description: "We source and vet candidates based on your industry and specific needs.",
-    icon: <TbUserSearch className="text-3xl sm:text-4xl lg:text-[40px]" />,
+    icon: <TbUserSearch className="text-4xl xs:text-[42px] sm:text-4xl lg:text-[44px]" />,
   },
   {
     stepNumber: "03",
     title: "Meet Your Candidates",
     description: "Interview top candidates and find the best fit for your team.",
-    icon: <FiUsers className="text-3xl sm:text-4xl lg:text-[40px]" />,
+    icon: <FiUsers className="text-4xl xs:text-[42px] sm:text-4xl lg:text-[44px]" />,
   },
   {
     stepNumber: "04",
     title: "You Onboard",
     description: "We handle the setup, training and integration with your tools.",
-    icon: <FiCheckCircle className="text-3xl sm:text-4xl lg:text-[40px]" />,
+    icon: <FiCheckCircle className="text-4xl xs:text-[42px] sm:text-4xl lg:text-[44px]" />,
   },
   {
     stepNumber: "05",
     title: "We Manage the Rest",
     description: "Ongoing support, performance mentoring and easy replacements when you need it.",
-    icon: <TbRocket className="text-3xl sm:text-4xl lg:text-[40px]" />,
+    icon: <TbRocket className="text-4xl xs:text-[42px] sm:text-4xl lg:text-[44px]" />,
   },
 ];
 
@@ -278,7 +278,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                         theme === "dark" ? "bg-[#FF5500]/10" : "bg-[#FE6F1F]/5"
                       }`}
                     />
-                    <div className={`transition-colors duration-300 ${theme === "dark" ? "text-[#FF5500] group-hover:text-white" : "text-[#0C1827] group-hover:text-white"}`}>
+                    <div className={`transition-colors duration-300 [&_svg]:!w-9 [&_svg]:!h-9 xs:[&_svg]:!w-10 xs:[&_svg]:!h-10 text-4xl xs:text-[42px] ${theme === "dark" ? "text-[#FF5500] group-hover:text-white" : "text-[#0C1827] group-hover:text-white"}`}>
                       {item.icon}
                     </div>
                   </div>

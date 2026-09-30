@@ -652,7 +652,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className={`relative overflow-hidden rounded-3xl p-8 sm:p-10 lg:p-12 border shadow-xl transition-colors duration-300 ${
+          className={`relative overflow-hidden rounded-3xl py-14 px-6 xs:py-16 xs:px-7 sm:p-10 lg:p-12 border shadow-xl transition-colors duration-300 ${
             theme === "dark"
               ? "bg-gradient-to-br from-[#0B1A2D] via-[#0D223A] to-[#0B1A2D] border-slate-700/80 shadow-black/40 text-white"
               : "bg-gradient-to-br from-white via-[#F8FAFD] to-white border-slate-200/90 shadow-slate-200/60 text-[#0C1827]"
@@ -671,7 +671,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
 
               {/* Title */}
               <h3
-                className={`text-[24px] sm:text-[18px] lg:text-[32px] font-extrabold tracking-tight mb-3 font-playfair leading-snug ${
+                className={`text-[24px] sm:text-[18px] lg:text-[32px] font-extrabold tracking-tight mb-5 sm:mb-4 font-playfair leading-snug ${
                   theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}
               >
