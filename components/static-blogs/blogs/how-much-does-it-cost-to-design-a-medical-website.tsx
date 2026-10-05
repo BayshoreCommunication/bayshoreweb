@@ -147,7 +147,7 @@ const budgetQuestions = [
 
 const faqs = [
   {
-    question: "How Much Does It Cost To Design A Medical Website?",
+    question: "How Much Does It Cost To Design A Medical Website? ",
     answer:
       "Medical website costs vary widely across the U.S. Simple sites can cost several thousand dollars. Complex platforms exceed $40,000. Features impact the cost. Integrations alter pricing. Security measures change the total.",
   },

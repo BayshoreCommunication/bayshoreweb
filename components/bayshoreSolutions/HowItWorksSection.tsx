@@ -240,7 +240,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
           className="w-full mx-auto mb-12 sm:mb-16 text-center"
         >
           {/* Small Label */}
-          <span
+          {/* <span
             className={`
               inline-block
               text-sm
@@ -259,21 +259,17 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             `}
           >
             {titleTag}
-          </span>
+          </span> */}
 
           {/* Main Title */}
           <h2
             className={`
               w-full
               mx-auto
-              text-center
               !text-center
               font-inter
-              text-[36px]
-              xs:text-[42px]
-              sm:text-5xl
-              lg:text-[52px]
-              xl:text-[58px]
+              text-[28px]
+              md:text-[46px]
               font-extrabold
               tracking-[-0.025em]
               leading-[1.1]
@@ -286,24 +282,17 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             `}
           >
             {headlineMain}{" "}
-            <span
-              className={
-                theme === "dark"
-                  ? "!text-[#FF5500]"
-                  : "!text-[#FE6F1F]"
-              }
-            >
+            <span className="!text-primary">
               {headlineHighlight}
             </span>
           </h2>
 
           {/* Subtitle */}
-          <p
+          {/* <p
             className={`
               w-full
               max-w-3xl
               mx-auto
-              text-center
               !text-center
               font-inter
               text-[15px]
@@ -318,7 +307,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             `}
           >
             {subtitle}
-          </p>
+          </p> */}
         </motion.div>
 
         {/* =======================================================
@@ -337,11 +326,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
             >
               <path
                 d="M 100 152 C 170 192, 230 232, 300 232 C 370 232, 430 195, 500 162 C 570 128, 630 82, 700 82 C 770 82, 830 98, 900 122"
-                stroke={
-                  theme === "dark"
-                    ? "#FF5500"
-                    : "#FE6F1F"
-                }
+                stroke="#FE6F1F"
                 strokeWidth="3.5"
                 strokeDasharray="0.1 12"
                 strokeLinecap="round"
@@ -434,10 +419,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                       lg:mb-7
                       tracking-tight
                       font-inter
-                      ${theme === "dark"
-                        ? "!text-[#FF5500]"
-                        : "!text-[#FE6F1F]"
-                      }
+                      !text-primary
                     `}
                   >
                     {item.stepNumber}
@@ -467,7 +449,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                       relative
                       z-10
                       ${theme === "dark"
-                        ? "bg-[#0B1A2D] border-slate-700 text-white group-hover:bg-[#FF5500] shadow-black/40"
+                        ? "bg-[#0B1A2D] border-slate-700 text-white group-hover:bg-primary shadow-black/40"
                         : "bg-white border-slate-200 text-[#0C1827] group-hover:bg-[#07192C] group-hover:!text-white shadow-slate-200/60"
                       }
                     `}
@@ -479,8 +461,8 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                         inset-0
                         rounded-full
                         ${theme === "dark"
-                          ? "bg-[#FF5500]/10"
-                          : "bg-[#FE6F1F]/5"
+                          ? "bg-primary/10"
+                          : "bg-primary/5"
                         }
                       `}
                     />
@@ -496,7 +478,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                         text-4xl
                         xs:text-[42px]
                         ${theme === "dark"
-                          ? "text-[#FF5500] group-hover:text-white"
+                          ? "text-primary group-hover:text-white"
                           : "text-[#0C1827] group-hover:text-white"
                         }
                       `}

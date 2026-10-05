@@ -18,6 +18,7 @@ export default function BayshoreSolutionsPage() {
         >
             {/* Bayshore Solutions Navbar Component */}
             <Navbar />
+            
             {/* Body */}
             <HeroSection />
             <WhyBayshoreSection />

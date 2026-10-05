@@ -52,7 +52,7 @@ export default function WhyBayshoreSection() {
                 {/* Section Header */}
                 <div className="text-center mb-[50px] lg:mb-[60px]">
                     <h2 className="font-extrabold text-[#0B192C]" style={{ fontSize: '38px', lineHeight: '1.2' }}>
-                        Why Bayshore Virtual <span className="text-[#FF5500]">Solutions</span>
+                        Why Bayshore Virtual <span className="text-primary">Solutions</span>
                     </h2>
                 </div>
 
@@ -83,7 +83,7 @@ export default function WhyBayshoreSection() {
                                 </p>
                                 <Link
                                     href={item.link}
-                                    className="inline-flex items-center justify-center sm:justify-start gap-[6px] text-[#0B192C] hover:text-[#FF5500] font-semibold transition-colors group"
+                                    className="inline-flex items-center justify-center sm:justify-start gap-[6px] text-[#0B192C] hover:text-primary font-semibold transition-colors group"
                                     style={{ fontSize: '14px' }}
                                 >
                                     <span>Read More</span>

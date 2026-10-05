@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 86" width="100%" height="100%">
+  <!-- Left Person (behind) -->
+  <circle cx="24" cy="37" r="14" fill="#FE6F1F" />
+  <path d="M 3 83 L 3 72 C 3 56, 38 54, 46 66 L 35 83 Z" fill="#FE6F1F" />
+
+  <!-- Right Person (behind) -->
+  <circle cx="76" cy="37" r="14" fill="#FE6F1F" />
+  <path d="M 97 83 L 97 72 C 97 56, 62 54, 54 66 L 65 83 Z" fill="#FE6F1F" />
+
+  <!-- Crisp White Cutout Outline -->
+  <circle cx="50" cy="24" r="19" fill="white" />
+  <path d="M 16 86 L 16 68 C 16 48, 84 48, 84 68 L 84 86 Z" fill="white" />
+
+  <!-- Front Center Person -->
+  <circle cx="50" cy="24" r="15" fill="#FE6F1F" />
+  <path d="M 21 83 L 21 70 C 21 54, 79 54, 79 70 L 79 83 Z" fill="#FE6F1F" />
+</svg>

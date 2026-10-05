@@ -55,12 +55,12 @@ export default function Header() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className={`relative font-bold transition-all duration-300 py-2 group text-[15px] xl:text-[16px] ${isActive ? 'text-[#FF5500]' : 'text-[#0B192C] hover:text-[#FF5500]'
+                                className={`relative font-bold transition-all duration-300 py-2 group text-[15px] xl:text-[16px] ${isActive ? 'text-primary' : 'text-[#0B192C] hover:text-primary'
                                     }`}
                             >
                                 <span>{link.name}</span>
                                 <span
-                                    className={`absolute bottom-0 left-0 h-[2px] bg-[#FF5500] transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
+                                    className={`absolute bottom-0 left-0 h-[2px] bg-primary transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'
                                         }`}
                                 />
                             </Link>
@@ -161,14 +161,14 @@ export default function Header() {
                                                 href={link.href}
                                                 onClick={() => setIsMobileMenuOpen(false)}
                                                 className={`flex items-center justify-between px-3.5 py-3 rounded-[8px] font-bold transition-all duration-200 ${isActive
-                                                    ? 'bg-[#FF5500]/10 text-[#FF5500]'
-                                                    : 'text-[#0B192C] hover:bg-gray-50 hover:text-[#FF5500]'
+                                                    ? 'bg-primary/10 text-primary'
+                                                    : 'text-[#0B192C] hover:bg-gray-50 hover:text-primary'
                                                     }`}
                                                 style={{ fontSize: '15px' }}
                                             >
                                                 <span>{link.name}</span>
                                                 <span
-                                                    className={`w-1.5 h-1.5 rounded-[8px] transition-all duration-200 ${isActive ? 'bg-[#FF5500]' : 'opacity-0'
+                                                    className={`w-1.5 h-1.5 rounded-[8px] transition-all duration-200 ${isActive ? 'bg-primary' : 'opacity-0'
                                                         }`}
                                                 />
                                             </Link>
@@ -181,7 +181,7 @@ export default function Header() {
                                     <Link
                                         href="/find-talent"
                                         onClick={() => setIsMobileMenuOpen(false)}
-                                        className="w-full flex items-center justify-center gap-2 bg-[#0B192C] text-white hover:bg-[#FF5500] rounded-[8px] py-3 px-4 font-bold tracking-wide transition-all duration-300 shadow-md text-xs sm:text-sm"
+                                        className="w-full flex items-center justify-center gap-2 bg-[#0B192C] text-white hover:bg-primary rounded-[8px] py-3 px-4 font-bold tracking-wide transition-all duration-300 shadow-md text-xs sm:text-sm"
                                     >
                                         <span>FIND TALENT</span>
                                         <svg

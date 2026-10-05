@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="#FE6F1F">
+  <!-- 3 Rounded Bars -->
+  <rect x="3" y="65" width="21" height="35" rx="5" />
+  <rect x="34" y="51" width="21" height="49" rx="5" />
+  <rect x="65" y="35" width="22" height="65" rx="5" />
+  
+  <!-- Starting Dot -->
+  <circle cx="6" cy="49" r="4.5" />
+  
+  <!-- Wave Path with Arrow -->
+  <path d="M 6 49 C 14 47, 21 34, 33 34 C 43 34, 49 44, 60 41 C 68 39, 74 27, 82 17" 
+        fill="none" stroke="#FE6F1F" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+  
+  <!-- Arrow Head -->
+  <polygon points="60,11 93,5 88,38 78,24" fill="#FE6F1F" />
+</svg>
