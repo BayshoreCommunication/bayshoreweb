@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Link from 'next/link';
 import Image from 'next/image';
 
 export default function WhyBayshoreSection() {
@@ -78,17 +77,9 @@ export default function WhyBayshoreSection() {
                                 <h3 className="font-bold text-[#0B192C] mb-[8px]" style={{ fontSize: '18px', lineHeight: '1.4' }}>
                                     {item.title}
                                 </h3>
-                                <p className="text-[#475569] mb-[16px]" style={{ fontSize: '14px', lineHeight: '1.6' }}>
+                                <p className="text-[#475569]" style={{ fontSize: '14px', lineHeight: '1.6' }}>
                                     {item.description}
                                 </p>
-                                <Link
-                                    href={item.link}
-                                    className="inline-flex items-center justify-center sm:justify-start gap-[6px] text-[#0B192C] hover:text-primary font-semibold transition-colors group"
-                                    style={{ fontSize: '14px' }}
-                                >
-                                    <span>Read More</span>
-                                    <span className="transform group-hover:translate-x-1 transition-transform">→</span>
-                                </Link>
                             </div>
                         </div>
                     ))}
