@@ -247,15 +247,14 @@ export const Navbar: React.FC<NavbarProps> = ({
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 w-full max-w-full transition-all duration-300 border-none ${
-        theme === "dark"
+      className={`fixed top-0 left-0 right-0 z-50 w-full max-w-full transition-all duration-300 border-none ${theme === "dark"
           ? scrolled
             ? "bg-[#07192C]/95 backdrop-blur-md shadow-lg text-white"
             : "bg-[#07192C] text-white"
           : scrolled
-          ? "bg-white/95 backdrop-blur-md shadow-md text-[#07192C]"
-          : "bg-white text-[#07192C]"
-      }`}
+            ? "bg-white/95 backdrop-blur-md shadow-md text-[#07192C]"
+            : "bg-white text-[#07192C]"
+        }`}
     >
       {/* Container following main project width constraint */}
       <div className=" mx-auto max-w-[1650px] px-10 md:px-[30px]">
@@ -287,21 +286,19 @@ export const Navbar: React.FC<NavbarProps> = ({
                   key={item.title}
                   href={item.link}
                   onClick={(e) => handleNavClick(e, item)}
-                  className={`text-link group relative py-2 font-semibold transition-colors duration-200 focus:outline-none ${
-                    theme === "dark"
+                  className={`text-link group relative py-2 font-semibold transition-colors duration-200 focus:outline-none ${theme === "dark"
                       ? isActive
                         ? "!text-[#FF5500]"
                         : "!text-white hover:!text-[#FF5500]"
                       : isActive
-                      ? "!text-[#FF5500]"
-                      : "!text-[#07192C] hover:!text-[#FF5500]"
-                  }`}
+                        ? "!text-[#FF5500]"
+                        : "!text-[#07192C] hover:!text-[#FF5500]"
+                    }`}
                 >
                   {item.title}
                   <span
-                    className={`absolute bottom-0 left-0 h-[2.5px] bg-[#FF5500] rounded-full transition-all duration-300 ease-out ${
-                      isActive ? "w-full" : "w-0 group-hover:w-full"
-                    }`}
+                    className={`absolute bottom-0 left-0 h-[2.5px] bg-[#FF5500] rounded-full transition-all duration-300 ease-out ${isActive ? "w-full" : "w-0 group-hover:w-full"
+                      }`}
                   />
                 </Link>
               );
@@ -317,11 +314,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               onClick={toggleTheme}
               aria-label="Toggle Light/Dark Theme"
               title={`Switch to ${theme === "dark" ? "Light" : "Dark"} Mode`}
-              className={`p-2.5 rounded-full transition-all duration-300 border ${
-                theme === "dark"
+              className={`p-2.5 rounded-full transition-all duration-300 border ${theme === "dark"
                   ? "bg-slate-800/80 text-amber-400 border-slate-700 hover:bg-slate-700"
                   : "bg-white text-slate-700 border-slate-200 hover:bg-slate-100 shadow-sm"
-              }`}
+                }`}
             >
               {theme === "dark" ? <FiSun size={19} /> : <FiMoon size={19} />}
             </motion.button>
@@ -330,11 +326,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Link
                 href="/bayshore-solutions/get-started"
-                className={`text-link group px-6 py-2.5 lg:px-7 lg:py-3 rounded-full font-bold transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg ${
-                  theme === "dark"
+                className={`text-link group px-6 py-2.5 lg:px-7 lg:py-3 rounded-full font-bold transition-all duration-300 flex items-center gap-2 shadow-md hover:shadow-lg ${theme === "dark"
                     ? "bg-[#FF5500] !text-white hover:bg-[#e04a00] focus:ring-2 focus:ring-[#FF5500]/50"
                     : "bg-[#07192C] !text-white hover:bg-[#0f2844] focus:ring-2 focus:ring-[#07192C]/50"
-                }`}
+                  }`}
               >
                 <span>Find Talent</span>
                 <FiArrowRight
@@ -350,11 +345,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               onClick={toggleTheme}
               aria-label="Toggle Theme"
-              className={`p-2 rounded-full border ${
-                theme === "dark"
+              className={`p-2 rounded-full border ${theme === "dark"
                   ? "bg-slate-800 text-amber-400 border-slate-700"
                   : "bg-white text-slate-700 border-slate-200"
-              }`}
+                }`}
             >
               {theme === "dark" ? <FiSun size={18} /> : <FiMoon size={18} />}
             </button>
@@ -362,11 +356,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               onClick={toggleDrawer}
               aria-label="Open Menu"
-              className={`p-2 rounded-lg ${
-                theme === "dark"
+              className={`p-2 rounded-lg ${theme === "dark"
                   ? "text-white bg-slate-800"
                   : "text-[#07192C] bg-slate-200/60"
-              }`}
+                }`}
             >
               <RxHamburgerMenu size={24} />
             </button>
@@ -383,11 +376,10 @@ export const Navbar: React.FC<NavbarProps> = ({
         className="z-[9999]"
       >
         <div
-          className={`h-full flex flex-col justify-between p-6 ${
-            theme === "dark"
+          className={`h-full flex flex-col justify-between p-6 ${theme === "dark"
               ? "bg-[#07192C] text-white"
               : "bg-white text-[#07192C]"
-          }`}
+            }`}
         >
           <div>
             {/* Drawer Header */}
@@ -427,13 +419,12 @@ export const Navbar: React.FC<NavbarProps> = ({
                     <Link
                       href={item.link}
                       onClick={(e) => handleNavClick(e, item)}
-                      className={`text-link block py-3 px-4 rounded-xl font-semibold transition-colors ${
-                        isActive
+                      className={`text-link block py-3 px-4 rounded-xl font-semibold transition-colors ${isActive
                           ? "bg-[#FF5500]/10 !text-[#FF5500] font-bold"
                           : theme === "dark"
-                          ? "!text-white hover:!text-[#FF5500] hover:bg-slate-800"
-                          : "!text-[#07192C] hover:!text-[#FF5500] hover:bg-slate-100"
-                      }`}
+                            ? "!text-white hover:!text-[#FF5500] hover:bg-slate-800"
+                            : "!text-[#07192C] hover:!text-[#FF5500] hover:bg-slate-100"
+                        }`}
                     >
                       {item.title}
                     </Link>
@@ -451,11 +442,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               </span>
               <button
                 onClick={toggleTheme}
-                className={`px-4 py-2 rounded-full text-xs font-bold flex items-center gap-2 border ${
-                  theme === "dark"
+                className={`px-4 py-2 rounded-full text-xs font-bold flex items-center gap-2 border ${theme === "dark"
                     ? "bg-slate-800 text-amber-400 border-slate-700"
                     : "bg-slate-100 text-slate-700 border-slate-300"
-                }`}
+                  }`}
               >
                 {theme === "dark" ? (
                   <>
@@ -472,11 +462,10 @@ export const Navbar: React.FC<NavbarProps> = ({
             <Link
               href="/bayshore-solutions/get-started"
               onClick={toggleDrawer}
-              className={`text-link w-full py-3.5 rounded-full font-bold text-center flex items-center justify-center gap-2 shadow-md ${
-                theme === "dark"
+              className={`text-link w-full py-3.5 rounded-full font-bold text-center flex items-center justify-center gap-2 shadow-md ${theme === "dark"
                   ? "bg-[#FF5500] !text-white"
                   : "bg-[#07192C] !text-white"
-              }`}
+                }`}
             >
               <span>Find Talent</span>
               <FiArrowRight size={16} />
