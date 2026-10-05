@@ -8,6 +8,7 @@ import { Footer } from "@/components/bayshoreSolutions/Footer";
 import WhyBayshoreSection from "@/components/bayshoreSolutions/WhyBayshoreSection";
 import HowItWorksSection from "@/components/bayshoreSolutions/HowItWorksSection";
 import SupportSection from "@/components/bayshoreSolutions/SupportSection";
+import SolutionsSection from "@/components/bayshoreSolutions/SolutionsSection";
 
 export default function BayshoreSolutionsPage() {
 
@@ -18,12 +19,13 @@ export default function BayshoreSolutionsPage() {
         >
             {/* Bayshore Solutions Navbar Component */}
             <Navbar />
-            
+
             {/* Body */}
             <HeroSection />
             <WhyBayshoreSection />
             <HowItWorksSection />
             <SupportSection />
+            <SolutionsSection />
 
             {/* Bayshore Solutions Footer Component */}
             <Footer />
