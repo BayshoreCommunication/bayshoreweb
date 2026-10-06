@@ -34,7 +34,7 @@ export default function GlobalTalent() {
             role: "Business Development Associate",
             industry: "Digital Marketing",
             supportingSince: "2026",
-            image: "/assets/bayshoreSolutions/globaltalent/Tasnova.jpg",
+            image: "/assets/bayshoreSolutions/globaltalent/Tasnova.png",
             flagCode: "in"
         },
         {
@@ -154,7 +154,7 @@ export default function GlobalTalent() {
             role: "Client Communication Executive",
             industry: "Client Relationship Management",
             supportingSince: "September 2026",
-            image: "/assets/bayshoreSolutions/globaltalent/Fahim.png",
+            image: "/assets/bayshoreSolutions/globaltalent/FahimurRahman.png",
             flagCode: "my"
         },
         {
