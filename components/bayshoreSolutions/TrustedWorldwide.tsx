@@ -29,7 +29,7 @@ export default function TrustedWorldwide() {
     return (
         <section className="w-full bg-[#f9fafb] py-20 overflow-hidden">
             {/* Main Container */}
-            <div className="max-w-[1380px] mx-auto px-8">
+            <div className="max-w-[1800px] mx-auto px-8">
 
                 {/* Header Title Section */}
                 <div className="text-center max-w-[900px] mx-auto mb-16">
@@ -49,7 +49,7 @@ export default function TrustedWorldwide() {
                                 key={`row1-${index}`}
                                 className="flex items-center justify-center bg-white px-8 py-4 rounded-full shadow-sm border border-gray-100 flex-shrink-0 h-[60px]"
                             >
-                                <div className="relative w-[120px] h-[30px]">
+                                <div className="relative w-[160px] h-[40px]">
                                     <Image
                                         src={imgSrc}
                                         alt={`Company Logo ${index + 1}`}
@@ -68,7 +68,7 @@ export default function TrustedWorldwide() {
                                 key={`row2-${index}`}
                                 className="flex items-center justify-center bg-white px-8 py-4 rounded-full shadow-sm border border-gray-100 flex-shrink-0 h-[60px]"
                             >
-                                <div className="relative w-[120px] h-[30px]">
+                                <div className="relative w-[160px] h-[40px]">
                                     <Image
                                         src={imgSrc}
                                         alt={`Company Logo ${index + 9}`}
