@@ -10,6 +10,7 @@ import HowItWorksSection from "@/components/bayshoreSolutions/HowItWorksSection"
 import SupportSection from "@/components/bayshoreSolutions/SupportSection";
 import SolutionsSection from "@/components/bayshoreSolutions/SolutionsSection";
 import GlobalTalent from "@/components/bayshoreSolutions/GlobalTalent";
+import TrustedWorldwide from "@/components/bayshoreSolutions/TrustedWorldwide";
 
 export default function BayshoreSolutionsPage() {
 
@@ -28,6 +29,7 @@ export default function BayshoreSolutionsPage() {
             <SupportSection />
             <SolutionsSection />
             <GlobalTalent />
+            <TrustedWorldwide />
 
             {/* Bayshore Solutions Footer Component */}
             <Footer />
