@@ -59,7 +59,7 @@ export default function GlobalTalent() {
             industry: "Software Development",
             supportingSince: "2025",
             image: "/assets/bayshoreSolutions/globaltalent/Shamimahsan.png",
-            flagCode: "bd"
+            flagCode: "cn"
         },
         {
             name: "Faria Islam Laiba",
@@ -79,11 +79,11 @@ export default function GlobalTalent() {
         },
         {
             name: "Abu Kawsar",
-            role: "Jr. UI/UX Designer",
+            role: "UI/UX Designer",
             industry: "Software Development",
             supportingSince: "2024",
             image: "/assets/bayshoreSolutions/globaltalent/AbuKawsar.png",
-            flagCode: "bd"
+            flagCode: "my"
         },
         {
             name: "Md Jewel Rana",
@@ -107,11 +107,11 @@ export default function GlobalTalent() {
             industry: "Digital Marketing",
             supportingSince: "2026",
             image: "/assets/bayshoreSolutions/globaltalent/JoyantoRoy.png",
-            flagCode: "bd"
+            flagCode: "in"
         },
         {
             name: "MD. Sadit Ahasan",
-            role: "UI/UX Designer",
+            role: "Creative Director",
             industry: "Software Development",
             supportingSince: "2022",
             image: "/assets/bayshoreSolutions/globaltalent/SaditAhasan.png",
@@ -303,7 +303,7 @@ export default function GlobalTalent() {
                 .animate-marquee {
                     display: flex;
                     width: max-content;
-                    animation: marquee 120s linear infinite;
+                    animation: marquee 150s linear infinite;
                 }
                 .animate-marquee:hover {
                     animation-play-state: paused;

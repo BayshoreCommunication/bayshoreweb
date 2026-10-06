@@ -1,7 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
-import Image from "next/image";
+import React, { useRef } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Inter } from "next/font/google";
@@ -319,12 +318,10 @@ export const ALL_SOLUTIONS: SolutionCardItem[] = [
 
 export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
   theme = "light",
-  headerGraphicPath = "/assets/bayshore-solutions/home/header-graphic.png",
   solutions,
   showAll = false,
   onFindTalentClick,
 }) => {
-  const [graphicError, setGraphicError] = useState(false);
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const displaySolutions =
@@ -357,18 +354,18 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-12 sm:mb-16"
+          className="flex flex-col items-center justify-center text-center mb-12 sm:mb-16"
         >
-          {/* Left Header Titles */}
-          <div className="max-w-4xl text-left items-start">
-            <span
-              className={`inline-block text-sm sm:text-base font-semibold uppercase tracking-[0.2em] mb-3 text-left ${theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
+          {/* Header Titles */}
+          <div className=" mx-auto text-center">
+            {/* <span
+              className={`inline-block text-sm sm:text-base font-semibold uppercase tracking-[0.2em] mb-3 text-center ${theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
                 }`}
             >
               OUR SOLUTIONS
-            </span>
+            </span> */}
             <h2
-              className={`text-[36px] xs:text-[42px] sm:text-5xl lg:text-[44px] xl:text-[50px] font-extrabold tracking-tight leading-[1.15] mb-4 sm:mb-6 text-left ${theme === "dark" ? "!text-white" : "!text-[#0C1827]"
+              className={`text-[28px] md:text-[46px] font-extrabold tracking-tight leading-[1.15] mb-4 sm:mb-6 text-center ${theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}
             >
               Specialized Talent for{" "}
@@ -378,43 +375,12 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
             </h2>
             <p
               style={{ lineHeight: 1.6 }}
-              className={`text-[14px] md:text-[16px] text-left w-full ${theme === "dark" ? "!text-slate-300" : "!text-[#4B5563]"
+              className={`text-[14px] md:text-[16px] text-center  mx-auto ${theme === "dark" ? "!text-slate-300" : "!text-[#4B5563]"
                 }`}
             >
               From client intake to bookkeeping, we provide trained, industry-ready
               professionals who integrate with your team from day one.
             </p>
-          </div>
-
-          {/* Right Header Accent Graphic */}
-          <div className="flex items-center gap-5 shrink-0 self-start lg:self-end">
-            <div
-              className={`border-l-2 pl-4 flex flex-col font-extrabold text-[14px] md:text-[15px] tracking-wider uppercase leading-tight ${theme === "dark"
-                ? "border-[#FF5500] !text-white"
-                : "border-[#FE6F1F] !text-[#0C1827]"
-                }`}
-            >
-              <span>SKILLED</span>
-              <span>PEOPLE.</span>
-              <span className={theme === "dark" ? "!text-slate-300 font-bold" : "!text-[#556070] font-bold"}>
-                STRONGER
-              </span>
-              <span className={theme === "dark" ? "!text-slate-300 font-bold" : "!text-[#556070] font-bold"}>
-                BUSINESSES.
-              </span>
-            </div>
-
-            <div className="relative w-28 h-28 sm:w-36 sm:h-36 shrink-0 hidden sm:block">
-              {!graphicError ? (
-                <Image
-                  src={headerGraphicPath}
-                  alt="Skilled People Header Graphic"
-                  fill
-                  className="object-contain"
-                  onError={() => setGraphicError(true)}
-                />
-              ) : null}
-            </div>
           </div>
         </motion.div>
 
