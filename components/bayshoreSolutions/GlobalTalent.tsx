@@ -231,12 +231,12 @@ export default function GlobalTalent() {
                             >
                                 {/* Top Orange Section with Image & Real SVG Flag */}
                                 <div className="relative w-full h-[220px] bg-gradient-to-b from-[#ff9f5a] to-[#f05a00] flex items-end justify-center overflow-hidden">
-                                    <div className="relative w-full h-[200px] flex items-end justify-center">
+                                    <div className="">
                                         <Image
                                             src={talent.image}
                                             alt={talent.name}
                                             fill
-                                            sizes="280px"
+                                            // sizes="280px"
                                             className="object-contain object-bottom pointer-events-none"
                                         />
                                     </div>
