@@ -27,7 +27,7 @@ export default function GlobalTalent() {
             industry: "Digital Marketing",
             supportingSince: "2025",
             image: "/assets/bayshoreSolutions/globaltalent/TahiraChowdhury.png",
-            flagCode: "bd"
+            flagCode: "th"
         },
         {
             name: "Tasnova Rashnath",
@@ -35,7 +35,7 @@ export default function GlobalTalent() {
             industry: "Digital Marketing",
             supportingSince: "2026",
             image: "/assets/bayshoreSolutions/globaltalent/Tasnova.jpg",
-            flagCode: "bd"
+            flagCode: "in"
         },
         {
             name: "Shafikul Islam",
@@ -170,7 +170,7 @@ export default function GlobalTalent() {
             role: "Business Development Executive",
             industry: "CRM & Client Acquisition",
             supportingSince: "June 2026",
-            image: "/assets/bayshoreSolutions/globaltalent/Pritul.png",
+            image: "/assets/bayshoreSolutions/globaltalent/Tamim.png",
             flagCode: "bd"
         },
         {
