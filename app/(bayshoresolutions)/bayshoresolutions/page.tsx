@@ -14,6 +14,7 @@ import TrustedWorldwide from "@/components/bayshoreSolutions/TrustedWorldwide";
 import ClientStoriesSection from "@/components/bayshoreSolutions/ClientStoriesSection";
 import SupportForBusiness from "@/components/bayshoreSolutions/SupportForBusiness";
 import FaqSection from "@/components/bayshoreSolutions/FaqSection";
+import VirtualHiring from "@/components/bayshoreSolutions/VirtualHiring";
 
 export default function BayshoreSolutionsPage() {
 
@@ -36,6 +37,7 @@ export default function BayshoreSolutionsPage() {
             <ClientStoriesSection />
             <SupportForBusiness />
             <FaqSection />
+            <VirtualHiring />
 
             {/* Bayshore Solutions Footer Component */}
             <Footer />
