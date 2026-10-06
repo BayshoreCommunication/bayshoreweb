@@ -27,7 +27,7 @@ export default function GlobalTalent() {
             industry: "Digital Marketing",
             supportingSince: "2025",
             image: "/assets/bayshoreSolutions/globaltalent/TahiraChowdhury.png",
-            flagCode: "bd"
+            flagCode: "th"
         },
         {
             name: "Tasnova Rashnath",
@@ -35,7 +35,7 @@ export default function GlobalTalent() {
             industry: "Digital Marketing",
             supportingSince: "2026",
             image: "/assets/bayshoreSolutions/globaltalent/Tasnova.jpg",
-            flagCode: "bd"
+            flagCode: "in"
         },
         {
             name: "Shafikul Islam",
@@ -43,7 +43,7 @@ export default function GlobalTalent() {
             industry: "Digital Marketing",
             supportingSince: "2026",
             image: "/assets/bayshoreSolutions/globaltalent/shafikulislam.png",
-            flagCode: "bd"
+            flagCode: "pk"
         },
         {
             name: "Md. Abdur Raof Sahak",
@@ -59,7 +59,7 @@ export default function GlobalTalent() {
             industry: "Software Development",
             supportingSince: "2025",
             image: "/assets/bayshoreSolutions/globaltalent/Shamimahsan.png",
-            flagCode: "bd"
+            flagCode: "cn"
         },
         {
             name: "Faria Islam Laiba",
@@ -79,11 +79,11 @@ export default function GlobalTalent() {
         },
         {
             name: "Abu Kawsar",
-            role: "Jr. UI/UX Designer",
+            role: "UI/UX Designer",
             industry: "Software Development",
             supportingSince: "2024",
             image: "/assets/bayshoreSolutions/globaltalent/AbuKawsar.png",
-            flagCode: "bd"
+            flagCode: "my"
         },
         {
             name: "Md Jewel Rana",
@@ -107,11 +107,11 @@ export default function GlobalTalent() {
             industry: "Digital Marketing",
             supportingSince: "2026",
             image: "/assets/bayshoreSolutions/globaltalent/JoyantoRoy.png",
-            flagCode: "bd"
+            flagCode: "in"
         },
         {
             name: "MD. Sadit Ahasan",
-            role: "UI/UX Designer",
+            role: "Creative Director",
             industry: "Software Development",
             supportingSince: "2022",
             image: "/assets/bayshoreSolutions/globaltalent/SaditAhasan.png",
@@ -147,7 +147,7 @@ export default function GlobalTalent() {
             industry: "CRM Management & Strategy",
             supportingSince: "2023",
             image: "/assets/bayshoreSolutions/globaltalent/SakawatHossain.png",
-            flagCode: "cn"
+            flagCode: "ph"
         },
         {
             name: "MD. Fahimur Rahman",
@@ -155,7 +155,7 @@ export default function GlobalTalent() {
             industry: "Client Relationship Management",
             supportingSince: "September 2026",
             image: "/assets/bayshoreSolutions/globaltalent/Fahim.png",
-            flagCode: "hk"
+            flagCode: "my"
         },
         {
             name: "Md Alamin Arefen",
@@ -170,8 +170,8 @@ export default function GlobalTalent() {
             role: "Business Development Executive",
             industry: "CRM & Client Acquisition",
             supportingSince: "June 2026",
-            image: "/assets/bayshoreSolutions/globaltalent/Pritul.png",
-            flagCode: "np"
+            image: "/assets/bayshoreSolutions/globaltalent/Tamim.png",
+            flagCode: "bd"
         },
         {
             name: "Khandokar Yuvair Hasan",
@@ -241,9 +241,17 @@ export default function GlobalTalent() {
                                         />
                                     </div>
 
-                                    {/* Real SVG Country Flag Badge Overlapping */}
-                                    <div className="absolute right-4 bottom-4 w-[42px] h-[42px] bg-white rounded-full p-1 shadow-lg flex items-center justify-center z-10 overflow-hidden">
-                                        <span className={`fi fi-${talent.flagCode} text-[24px] rounded-full`} style={{ width: '28px', height: '28px', display: 'inline-block', backgroundSize: 'cover' }}></span>
+                                    {/* Country Flag Badge Overlapping */}
+                                    <div className="absolute right-4 bottom-4 w-[40px] h-[40px] bg-white rounded-full p-[3px] shadow-lg flex items-center justify-center z-10">
+                                        <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
+                                            <Image
+                                                src={`/assets/flags/${talent.flagCode}.svg`}
+                                                alt={`${talent.flagCode} flag`}
+                                                width={34}
+                                                height={34}
+                                                className="w-full h-full object-cover rounded-full"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
 
@@ -295,7 +303,7 @@ export default function GlobalTalent() {
                 .animate-marquee {
                     display: flex;
                     width: max-content;
-                    animation: marquee 120s linear infinite;
+                    animation: marquee 150s linear infinite;
                 }
                 .animate-marquee:hover {
                     animation-play-state: paused;
