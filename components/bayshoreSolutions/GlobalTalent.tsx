@@ -147,7 +147,7 @@ export default function GlobalTalent() {
             industry: "CRM Management & Strategy",
             supportingSince: "2023",
             image: "/assets/bayshoreSolutions/globaltalent/SakawatHossain.png",
-            flagCode: "cn"
+            flagCode: "ph"
         },
         {
             name: "MD. Fahimur Rahman",
@@ -155,7 +155,7 @@ export default function GlobalTalent() {
             industry: "Client Relationship Management",
             supportingSince: "September 2026",
             image: "/assets/bayshoreSolutions/globaltalent/Fahim.png",
-            flagCode: "hk"
+            flagCode: "my"
         },
         {
             name: "Md Alamin Arefen",
@@ -171,7 +171,7 @@ export default function GlobalTalent() {
             industry: "CRM & Client Acquisition",
             supportingSince: "June 2026",
             image: "/assets/bayshoreSolutions/globaltalent/Pritul.png",
-            flagCode: "np"
+            flagCode: "bd"
         },
         {
             name: "Khandokar Yuvair Hasan",
@@ -241,9 +241,17 @@ export default function GlobalTalent() {
                                         />
                                     </div>
 
-                                    {/* Real SVG Country Flag Badge Overlapping */}
-                                    <div className="absolute right-4 bottom-4 w-[42px] h-[42px] bg-white rounded-full p-1 shadow-lg flex items-center justify-center z-10 overflow-hidden">
-                                        <span className={`fi fi-${talent.flagCode} text-[24px] rounded-full`} style={{ width: '28px', height: '28px', display: 'inline-block', backgroundSize: 'cover' }}></span>
+                                    {/* Country Flag Badge Overlapping */}
+                                    <div className="absolute right-4 bottom-4 w-[40px] h-[40px] bg-white rounded-full p-[3px] shadow-lg flex items-center justify-center z-10">
+                                        <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
+                                            <Image
+                                                src={`/assets/flags/${talent.flagCode}.svg`}
+                                                alt={`${talent.flagCode} flag`}
+                                                width={34}
+                                                height={34}
+                                                className="w-full h-full object-cover rounded-full"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
 
