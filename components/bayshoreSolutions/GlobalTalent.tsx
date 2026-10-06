@@ -42,7 +42,7 @@ export default function GlobalTalent() {
             role: "Digital Marketing Executive",
             industry: "Digital Marketing",
             supportingSince: "2026",
-            image: "/assets/bayshoreSolutions/globaltalent/shafikulislam.png",
+            image: "/assets/bayshoreSolutions/globaltalent/ShafikulIslam.png",
             flagCode: "pk"
         },
         {
@@ -58,7 +58,7 @@ export default function GlobalTalent() {
             role: "Jr. Software Engineer",
             industry: "Software Development",
             supportingSince: "2025",
-            image: "/assets/bayshoreSolutions/globaltalent/Shamimahsan.png",
+            image: "/assets/bayshoreSolutions/globaltalent/ShamimAhsan.png",
             flagCode: "cn"
         },
         {
