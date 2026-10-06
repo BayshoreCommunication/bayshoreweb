@@ -43,7 +43,7 @@ export default function GlobalTalent() {
             industry: "Digital Marketing",
             supportingSince: "2026",
             image: "/assets/bayshoreSolutions/globaltalent/shafikulislam.png",
-            flagCode: "bd"
+            flagCode: "pk"
         },
         {
             name: "Md. Abdur Raof Sahak",
