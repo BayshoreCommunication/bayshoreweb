@@ -365,7 +365,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
               OUR SOLUTIONS
             </span> */}
             <h2
-              className={`text-[28px] md:text-[46px] font-extrabold tracking-tight leading-[1.15] mb-4 sm:mb-6 text-center ${theme === "dark" ? "!text-white" : "!text-[#0C1827]"
+              className={`text-[28px] md:text-[46px] font-bold tracking-tight leading-[1.15] mb-4 sm:mb-6 text-center ${theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}
             >
               Specialized Talent for{" "}
@@ -471,7 +471,7 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                       key={`${card.id}-${idx}`}
                       whileHover={{ y: -5 }}
                       transition={{ duration: 0.25 }}
-                      className={`solutions-marquee-card w-[260px] xs:w-[280px] shrink-0 rounded-[28px] p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 group/card shadow-sm hover:shadow-md cursor-pointer ${theme === "dark"
+                      className={`solutions-marquee-card w-[260px] xs:w-[280px] shrink-0 rounded-[12px] rounded-[20px] p-6 sm:p-7 flex flex-col justify-between transition-all duration-300 group/card shadow-sm hover:shadow-md cursor-pointer ${theme === "dark"
                         ? "bg-[#0B1A2D] border border-slate-800 text-white"
                         : "bg-white border border-[#E3E8EE] text-[#0C1827]"
                         }`}

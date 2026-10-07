@@ -307,7 +307,7 @@ export default function GlobalTalent() {
                 }
                 @media (max-width: 768px) {
                     .animate-marquee {
-                        animation-duration: 180s;
+                        animation-duration: 220s;
                     }
                 }
                 .animate-marquee:hover {

@@ -270,7 +270,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
               font-inter
               text-[28px]
               md:text-[46px]
-              font-extrabold
+              font-bold
               tracking-[-0.025em]
               leading-[1.1]
               mb-4
@@ -352,7 +352,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
               5 STEP COLUMNS
           ===================================================== */}
 
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-5 sm:gap-6 lg:gap-4 relative z-10 items-start">
+          <div className="grid grid-cols-2 lg:grid-cols-5 gap-y-10 gap-x-6 sm:gap-6 lg:gap-4 relative z-10 items-start">
             {steps.map((item, idx) => {
               const desktopPaddingTop =
                 idx === 0
@@ -409,11 +409,10 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   {/* Step Number */}
                   <span
                     className={`
-                      text-2xl
-                      sm:text-3xl
-                      lg:text-[36px]
-                      xl:text-[40px]
-                      font-extrabold
+                     
+                      text-[24px]
+                      lg:text-[40px]
+                      font-bold
                       mb-5
                       sm:mb-6
                       lg:mb-7
@@ -428,10 +427,9 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   {/* Icon Circle */}
                   <div
                     className={`
-                      w-20
-                      h-20
-                      sm:w-[104px]
-                      sm:h-[104px]
+                      w-24
+                      h-24
+                      
                       lg:w-28
                       lg:h-28
                       rounded-full
@@ -491,10 +489,9 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                   <div className="flex flex-col items-center text-center px-1 w-full">
                     <h3
                       className={`
-                        text-base
-                        sm:text-[22px]
+                        text-[18px]
                         lg:text-[24px]
-                        font-extrabold
+                        font-bold
                         tracking-tight
                         mb-1.5
                         max-w-[170px]
