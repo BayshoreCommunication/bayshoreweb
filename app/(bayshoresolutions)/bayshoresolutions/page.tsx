@@ -42,7 +42,6 @@ export default function BayshoreSolutionsPage() {
             <SupportForBusiness />
             <FaqSection />
             <VirtualHiring />
-            <SecureDataSection />
 
             {/* Bayshore Solutions Footer Component */}
             <Footer />
