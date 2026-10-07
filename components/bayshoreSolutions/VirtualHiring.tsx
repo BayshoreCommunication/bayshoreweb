@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -51,19 +52,16 @@ export const VirtualHiring = () => {
                 <div className="w-full max-w-[530px] bg-white rounded-[32px] shadow-2xl border border-gray-100 p-10 sm:p-12">
 
                     {/* Form Header Logo & Title */}
-                    <div className="flex items-center gap-3 mb-6">
-                        <div className="relative w-[40px] h-[40px]">
-                            <div className="w-full h-full bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center text-white font-bold text-[20px]">
-                                B
-                            </div>
-                        </div>
-                        <div className="flex flex-col">
-                            <span className="font-bold text-[18px] tracking-tight text-[#0d1b2a] leading-tight">
-                                BayShore
-                            </span>
-                            <span className="text-[9px] tracking-[0.2em] text-gray-500 uppercase font-medium">
-                                VIRTUAL SOLUTIONS
-                            </span>
+                    {/* Form Header Logo */}
+                    <div className="flex justify-center md:justify-start mb-6">
+                        <div className="relative w-[200px] h-[55px] sm:w-[210px] sm:h-[58px]">
+                            <Image
+                                src="/assets/bayshoreSolutions/logo-light.png"
+                                alt="Bayshore Virtual Solutions"
+                                fill
+                                priority
+                                className="object-contain object-center md:object-left"
+                            />
                         </div>
                     </div>
 
@@ -155,7 +153,7 @@ export const VirtualHiring = () => {
                         {/* Submit Button */}
                         <button
                             type="submit"
-                            className="mt-4 w-full py-3.5 px-8 bg-[#0B192C] hover:bg-[#f97316] text-white font-bold text-[16px] rounded-full shadow-lg flex items-center justify-center gap-3 transition-all duration-300 transform hover:scale-[1.01] cursor-pointer"
+                            className="mt-4 w-full py-3.5 px-8 bg-[#0B192C] hover:bg-[#f97316] text-white font-bold text-[14px] md:text-[16px] rounded-[8px] lg:rounded-[16px] shadow-lg flex items-center justify-center gap-3 transition-all duration-300 transform hover:scale-[1.01] cursor-pointer"
                         >
                             <span>BOOK FREE CALL</span>
                             <FiArrowRight className="text-[18px]" />
@@ -166,7 +164,7 @@ export const VirtualHiring = () => {
                 </div>
 
             </div>
-        </section>
+        </section >
     );
 };
 
