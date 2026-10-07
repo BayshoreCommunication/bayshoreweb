@@ -227,8 +227,8 @@ export default function HeroSection() {
         </div>
 
         {/* Content Overlaid at Top */}
-        <div className="relative z-10 flex flex-col items-center text-center px-5 pt-8 sm:pt-10">
-          <h1 className="font-bold lg:font-extrabold text-[#0B192C] tracking-tight text-[28px] sm:text-[32px] leading-[1.16] mb-3">
+        <div className="relative z-10 flex flex-col items-center text-center px-5 pt-28 ">
+          <h1 className="font-bold  text-[#0B192C] tracking-tight text-[28px] sm:text-[32px] leading-[1.16] mb-3">
             Build Your Team with <br />
             Global Talent <span className="text-[#FE6F1F]">Starting at <br className="xs:hidden" />$3 Per Hour</span>
           </h1>

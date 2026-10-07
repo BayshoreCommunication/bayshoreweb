@@ -49,8 +49,8 @@ export default function WhyBayshoreSection() {
             <div className="max-w-[1380px] mx-auto px-8">
 
                 {/* Section Header */}
-                <div className="text-center mb-[50px] lg:mb-[60px]">
-                    <h2 className="font-extrabold text-[#0B192C]" style={{ fontSize: '38px', lineHeight: '1.2' }}>
+                <div className="text-center mb-[30px] lg:mb-[45px]">
+                    <h2 className=" font-bold text-[#0B192C] text-[28px] md:text-[46px]" >
                         Why Bayshore Virtual <span className="text-primary">Solutions</span>
                     </h2>
                 </div>
