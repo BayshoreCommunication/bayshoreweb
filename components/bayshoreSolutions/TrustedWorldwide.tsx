@@ -40,16 +40,16 @@ export default function TrustedWorldwide() {
                 </div>
 
                 {/* Marquee Wrapper with Fade Mask */}
-                <div className="relative w-full overflow-hidden mask-gradient py-4 flex flex-col gap-8">
+                <div className="relative w-full overflow-hidden mask-gradient py-4 flex flex-col gap-3 md:gap-4">
 
                     {/* Row 1 - Scrolling Left */}
-                    <div className="flex w-max animate-marquee gap-8 items-center">
+                    <div className="flex w-max animate-marquee gap-4 md:gap-5 items-center">
                         {[...rowOneImages, ...rowOneImages, ...rowOneImages].map((imgSrc, index) => (
                             <div
                                 key={`row1-${index}`}
-                                className="flex items-center justify-center bg-white px-8 py-4 rounded-full shadow-sm border border-gray-100 flex-shrink-0 h-[60px]"
+                                className="flex items-center justify-center flex-shrink-0 h-[50px] md:h-[75px] lg:h-[85px]"
                             >
-                                <div className="relative w-[160px] h-[40px]">
+                                <div className="relative w-[140px] h-[36px] md:w-[260px] md:h-[65px] lg:w-[280px] lg:h-[75px]">
                                     <Image
                                         src={imgSrc}
                                         alt={`Company Logo ${index + 1}`}
@@ -62,13 +62,13 @@ export default function TrustedWorldwide() {
                     </div>
 
                     {/* Row 2 - Scrolling Right (Reverse Direction) */}
-                    <div className="flex w-max animate-marquee-reverse gap-8 items-center">
+                    <div className="flex w-max animate-marquee-reverse  items-center">
                         {[...rowTwoImages, ...rowTwoImages, ...rowTwoImages].map((imgSrc, index) => (
                             <div
                                 key={`row2-${index}`}
-                                className="flex items-center justify-center bg-white px-8 py-4 rounded-full shadow-sm border border-gray-100 flex-shrink-0 h-[60px]"
+                                className="flex items-center justify-center flex-shrink-0 h-[50px] md:h-[75px] lg:h-[85px]"
                             >
-                                <div className="relative w-[160px] h-[40px]">
+                                <div className="relative w-[140px] h-[36px] md:w-[260px] md:h-[65px] lg:w-[280px] lg:h-[75px]">
                                     <Image
                                         src={imgSrc}
                                         alt={`Company Logo ${index + 9}`}
