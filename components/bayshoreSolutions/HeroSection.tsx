@@ -91,12 +91,12 @@ export default function HeroSection() {
           <div className="pointer-events-auto">
             <Link
               href="/find-talent"
-              className="inline-flex items-center justify-center gap-2 bg-[#0B192C] text-white rounded-xl md:rounded-2xl px-5 sm:px-7 py-2.5 sm:py-3 text-sm sm:text-base font-semibold tracking-wide hover:bg-primary transition-all duration-300 shadow-md hover:shadow-lg group whitespace-nowrap"
+              className="group inline-flex items-center justify-center gap-2.5 sm:gap-3 bg-[#0B192C] hover:bg-[#FE6F1F] text-white rounded-full px-7 sm:px-9 py-3.5 sm:py-4 text-[15px] sm:text-[16px] md:text-[17px] font-bold tracking-wide transition-all duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] cursor-pointer whitespace-nowrap"
             >
-              <span>FIND YOUR TALENT</span>
+              <span>Find Your Talent</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300 shrink-0"
+                className="w-4 h-4 sm:w-5 sm:h-5 transform group-hover:translate-x-1.5 transition-transform duration-300 shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

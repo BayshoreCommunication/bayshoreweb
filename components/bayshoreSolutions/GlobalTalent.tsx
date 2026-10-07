@@ -1,24 +1,114 @@
 'use client';
 
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 // flag-icons styles are provided by the app's global stylesheet.
 
 export default function GlobalTalent() {
     const scrollRef = useRef<HTMLDivElement | null>(null);
+    const isHoveredRef = useRef(false);
+    const isInteractingRef = useRef(false);
+    const resumeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+    const currentPosRef = useRef(0);
+
+    const pauseAutoScroll = (duration = 2500) => {
+        isInteractingRef.current = true;
+        if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
+        resumeTimeoutRef.current = setTimeout(() => {
+            isInteractingRef.current = false;
+        }, duration);
+    };
+
+    const handleScroll = () => {
+        if (!scrollRef.current) return;
+        const el = scrollRef.current;
+        currentPosRef.current = el.scrollLeft;
+        const singleSetWidth = el.scrollWidth / 4;
+        if (singleSetWidth <= 0) return;
+
+        // Wrap seamlessly if near outer boundaries
+        if (el.scrollLeft >= 2.8 * singleSetWidth) {
+            el.scrollLeft -= singleSetWidth;
+            currentPosRef.current = el.scrollLeft;
+        } else if (el.scrollLeft <= 0.4 * singleSetWidth) {
+            el.scrollLeft += singleSetWidth;
+            currentPosRef.current = el.scrollLeft;
+        }
+    };
 
     const scrollLeft = () => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollBy({ left: -320, behavior: 'smooth' });
+        if (!scrollRef.current) return;
+        pauseAutoScroll(2000);
+        const el = scrollRef.current;
+        const singleSetWidth = el.scrollWidth / 4;
+        if (singleSetWidth > 0 && el.scrollLeft <= 0.8 * singleSetWidth) {
+            el.scrollLeft += singleSetWidth;
+            currentPosRef.current = el.scrollLeft;
         }
+        el.scrollBy({ left: -320, behavior: 'smooth' });
     };
 
     const scrollRight = () => {
-        if (scrollRef.current) {
-            scrollRef.current.scrollBy({ left: 320, behavior: 'smooth' });
+        if (!scrollRef.current) return;
+        pauseAutoScroll(2000);
+        const el = scrollRef.current;
+        const singleSetWidth = el.scrollWidth / 4;
+        if (singleSetWidth > 0 && el.scrollLeft >= 2.5 * singleSetWidth) {
+            el.scrollLeft -= singleSetWidth;
+            currentPosRef.current = el.scrollLeft;
         }
+        el.scrollBy({ left: 320, behavior: 'smooth' });
     };
+
+    useEffect(() => {
+        const el = scrollRef.current;
+        if (!el) return;
+
+        const initScroll = () => {
+            const singleSetWidth = el.scrollWidth / 4;
+            if (singleSetWidth > 0) {
+                el.scrollLeft = singleSetWidth * 1.5;
+                currentPosRef.current = el.scrollLeft;
+            }
+        };
+
+        initScroll();
+        const timer = setTimeout(initScroll, 200);
+
+        let animationFrameId: number;
+        let lastTimestamp = performance.now();
+
+        const autoScrollStep = (timestamp: number) => {
+            const delta = timestamp - lastTimestamp;
+            lastTimestamp = timestamp;
+
+            if (scrollRef.current && !isHoveredRef.current && !isInteractingRef.current) {
+                const elCurrent = scrollRef.current;
+                const isMobile = window.innerWidth <= 768;
+                // Smooth continuous scroll speed (px/sec)
+                const speed = isMobile ? 22 : 28;
+                currentPosRef.current += (speed * delta) / 1000;
+                elCurrent.scrollLeft = currentPosRef.current;
+
+                const singleSetWidth = elCurrent.scrollWidth / 4;
+                if (singleSetWidth > 0 && elCurrent.scrollLeft >= 2.8 * singleSetWidth) {
+                    elCurrent.scrollLeft -= singleSetWidth;
+                    currentPosRef.current = elCurrent.scrollLeft;
+                }
+            }
+
+            animationFrameId = requestAnimationFrame(autoScrollStep);
+        };
+
+        animationFrameId = requestAnimationFrame(autoScrollStep);
+
+        return () => {
+            cancelAnimationFrame(animationFrameId);
+            clearTimeout(timer);
+            if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
+        };
+    }, []);
 
     const talents = [
         {
@@ -219,12 +309,16 @@ export default function GlobalTalent() {
                 {/* Marquee & Scrollable Wrapper */}
                 <div
                     ref={scrollRef}
-                    className="w-full overflow-x-auto flex py-4 sm:py-8 px-4 scrollbar-none scroll-smooth mask-gradient"
+                    onScroll={handleScroll}
+                    onMouseEnter={() => { isHoveredRef.current = true; }}
+                    onMouseLeave={() => { isHoveredRef.current = false; }}
+                    onTouchStart={() => pauseAutoScroll(3000)}
+                    className="w-full overflow-x-auto flex py-4 sm:py-8 px-4 scrollbar-none mask-gradient cursor-grab active:cursor-grabbing"
                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >
-                    <div className="flex gap-6 animate-marquee whitespace-nowrap my-2">
-                        {/* Repeat talents array twice for seamless looping & manual scrolling */}
-                        {[...talents, ...talents].map((talent, index) => (
+                    <div className="flex gap-6 whitespace-nowrap my-2 w-max select-none">
+                        {/* Repeat talents 4 times for endless seamless bidirectional navigation */}
+                        {[...talents, ...talents, ...talents, ...talents].map((talent, index) => (
                             <div
                                 key={index}
                                 className="w-[280px] flex-shrink-0 bg-white rounded-[20px] md:rounded-[24px] shadow-2xl border border-orange-100 flex flex-col overflow-hidden"
@@ -294,25 +388,8 @@ export default function GlobalTalent() {
                 </button>
             </div>
 
-            {/* Custom CSS for Marquee Animation and Mask */}
+            {/* Custom CSS for Hide Scrollbar & Mask */}
             <style jsx global>{`
-                @keyframes marquee {
-                    0% { transform: translateX(0%); }
-                    100% { transform: translateX(-50%); }
-                }
-                .animate-marquee {
-                    display: flex;
-                    width: max-content;
-                    animation: marquee 150s linear infinite;
-                }
-                @media (max-width: 768px) {
-                    .animate-marquee {
-                        animation-duration: 220s;
-                    }
-                }
-                .animate-marquee:hover {
-                    animation-play-state: paused;
-                }
                 .scrollbar-none::-webkit-scrollbar {
                     display: none;
                 }
