@@ -106,15 +106,15 @@ export const SecureDataSection: React.FC<SecureDataSectionProps> = ({
                   key={item.id}
                   whileHover={{ y: -4, scale: 1.01 }}
                   transition={{ duration: 0.2 }}
-                  className="rounded-[16px] p-10 sm:p-6 flex flex-col justify-start border border-slate-200/80 bg-[#F8FAFC] text-[#0B192C] hover:border-[#FE6F1F]/40 hover:shadow-md transition-all duration-300 cursor-default"
+                  className="rounded-[16px] p-10 mdp-16 flex flex-col justify-start border border-slate-200/80 bg-[#F8FAFC] text-[#0B192C] hover:border-[#FE6F1F]/40 hover:shadow-md transition-all duration-300 cursor-default"
                 >
-                  <div className="text-[#FE6F1F] mb-3 shrink-0 [&>svg]:text-[24px] sm:[&>svg]:text-[26px]">
+                  <div className="text-[#FE6F1F] mb-3 shrink-0 [&>svg]:text-[24px] sm:[&>svg]:text-[26px] mx-auto text-center md:text-left">
                     {item.icon}
                   </div>
-                  <h3 className="text-[16px] sm:text-[17px] font-bold tracking-tight mb-1 text-[#0B192C]">
+                  <h3 className="text-[16px] sm:text-[17px] font-bold tracking-tight mb-1 text-[#0B192C] text-center  md:text-left">
                     {item.title}
                   </h3>
-                  <p className="text-[13px] sm:text-[14px] leading-relaxed text-[#475569]">
+                  <p className="text-[13px] sm:text-[14px] leading-relaxed text-[#475569] text-center  md:text-left">
                     {item.description}
                   </p>
                 </motion.div>

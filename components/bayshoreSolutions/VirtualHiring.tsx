@@ -38,11 +38,11 @@ export const VirtualHiring = () => {
 
                 {/* Left Side Content */}
                 <div className="flex-1 max-w-[600px] text-left">
-                    <h2 className="font-extrabold text-[36px] sm:text-[46px] lg:text-[54px] text-[#0d1b2a] leading-[1.15] tracking-tight mb-6">
+                    <h2 className="font-bold text-[28px] md:text-[46px] text-center lg:text-left text-[#0d1b2a] leading-[1.15] tracking-tight mb-6">
                         Virtual Hiring <br />
                         <span className="text-[#f97316]">Strategy Session</span>
                     </h2>
-                    <p className="font-medium text-[15px] sm:text-[17px] text-gray-700 leading-relaxed">
+                    <p className="font-medium text-[15px] sm:text-[17px] text-gray-700 leading-relaxed text-center lg:text-left">
                         During this meeting we will go over the role you&apos;re planning to hire for, what the process looks like, answer any questions you have, and proceed to next steps.
                     </p>
                 </div>
