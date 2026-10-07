@@ -76,24 +76,24 @@ const strictRouteMap: Record<string, string> = {
   "largo": "/seo-company-largo-fl",
   "orlando": "/orlando-law-firm-seo-agency",
   "fort myers": "/law-firm-seo-fort-myers",
-  "naples": "/local-seo-services-for-small-business-naples-florida",
+  "naples": "/local-seo-for-small-businesses-naples",
   "tampa": "/lawyer-seo-agency-tampa",
 
   // 100% Accurate Industry Matches ONLY
-  "dental clinics": "/seo-services-for-dentists-in-tampa",
-  "dental and orthodontic offices": "/seo-services-for-dentists-in-tampa",
-  "dental": "/seo-services-for-dentists-in-tampa",
+  "dental clinics": "/dental-seo-services-tampa",
+  "dental and orthodontic offices": "/dental-seo-services-tampa",
+  "dental": "/dental-seo-services-tampa",
 
-  "real estate agencies": "/real-estate-seo-services-in-florida",
-  "real estate & property management": "/real-estate-seo-services-in-florida",
-  "real estate agents and brokerages": "/real-estate-seo-services-in-florida",
-  "real estate law": "/real-estate-seo-services-in-florida",
-  "real estate & property": "/real-estate-seo-services-in-florida",
-  "real estate": "/real-estate-seo-services-in-florida",
+  "real estate agencies": "/real-estate-seo-services-florida",
+  "real estate & property management": "/real-estate-seo-services-florida",
+  "real estate agents and brokerages": "/real-estate-seo-services-florida",
+  "real estate law": "/real-estate-seo-services-florida",
+  "real estate & property": "/real-estate-seo-services-florida",
+  "real estate": "/real-estate-seo-services-florida",
 
-  "small businesses": "/seo-services-for-small-businesses-in-florida",
-  "small business": "/seo-services-for-small-businesses-in-florida",
-  "local businesses": "/seo-services-for-small-businesses-in-florida",
+  "small businesses": "/seo-for-small-businesses-florida",
+  "small business": "/seo-for-small-businesses-florida",
+  "local businesses": "/seo-for-small-businesses-florida",
 
   "legal services & law firms": "/local-seo-for-lawyers-florida",
   "legal services": "/local-seo-for-lawyers-florida",
@@ -126,7 +126,7 @@ const getInternalRoute = (name: any): string | undefined => {
 };
 
 export default function ServiceAreasSection() {
-  const currentPath = "/seo-services-for-dentists-in-tampa";
+  const currentPath = "/dental-seo-services-tampa";
   const linkedRoutes = new Set<string>();
 
   const getUniqueLink = (itemName: any): string | null => {

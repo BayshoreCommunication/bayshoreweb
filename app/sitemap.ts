@@ -48,16 +48,16 @@ export default async function Sitemap(): Promise<Sitemap> {
     "/law-firm-seo-fort-myers",
     "/lawyer-seo-agency-tampa",
     "/local-seo-for-lawyers-florida",
-    "/local-seo-services-for-small-business-naples-florida",
+    "/local-seo-for-small-businesses-naples",
     "/orlando-law-firm-seo-agency",
     "/plant-city-seo-company",
-    "/real-estate-seo-services-in-florida",
+    "/real-estate-seo-services-florida",
     "/seo-company-dunedin",
     "/seo-company-largo-fl",
     "/seo-company-spring-hill",
     "/seo-company-wesley-chapel",
-    "/seo-services-for-dentists-in-tampa",
-    "/seo-services-for-small-businesses-in-florida",
+    "/dental-seo-services-tampa",
+    "/seo-for-small-businesses-florida",
   ];
 
   const staticPageUrls: Sitemap = staticPages.map((route) => ({
