@@ -10,11 +10,13 @@ import HowItWorksSection from "@/components/bayshoreSolutions/HowItWorksSection"
 import SupportSection from "@/components/bayshoreSolutions/SupportSection";
 import SolutionsSection from "@/components/bayshoreSolutions/SolutionsSection";
 import GlobalTalent from "@/components/bayshoreSolutions/GlobalTalent";
+import CostEffectiveSection from "@/components/bayshoreSolutions/CostEffectiveSection";
 import TrustedWorldwide from "@/components/bayshoreSolutions/TrustedWorldwide";
 import ClientStoriesSection from "@/components/bayshoreSolutions/ClientStoriesSection";
 import SupportForBusiness from "@/components/bayshoreSolutions/SupportForBusiness";
 import FaqSection from "@/components/bayshoreSolutions/FaqSection";
 import VirtualHiring from "@/components/bayshoreSolutions/VirtualHiring";
+import SecureDataSection from "@/components/bayshoreSolutions/SecureDataSection";
 
 export default function BayshoreSolutionsPage() {
 
@@ -33,6 +35,8 @@ export default function BayshoreSolutionsPage() {
             <SupportSection />
             <SolutionsSection />
             <GlobalTalent />
+            <CostEffectiveSection />
+            <SecureDataSection />
             <TrustedWorldwide />
             <ClientStoriesSection />
             <SupportForBusiness />
