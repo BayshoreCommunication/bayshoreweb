@@ -151,19 +151,19 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            className="w-full lg:w-[320px] xl:w-[340px] shrink-0 rounded-[28px] p-7 sm:p-8 border-2 border-[#0066FF] flex flex-col justify-between items-start text-left shadow-xl bg-[#07192C] text-white"
+            className="w-full lg:w-[320px] xl:w-[340px] shrink-0 rounded-[28px] p-12 sm:p-8 border-2 border-[#0066FF] flex flex-col justify-between items-start  shadow-xl text-center md:text-left bg-[#07192C] text-white"
           >
             <div>
-              <span className="inline-block text-[11px] font-extrabold uppercase tracking-[0.22em] text-slate-300 mb-3">
+              <span className="inline-block text-[11px] font-bold uppercase tracking-[0.22em] text-slate-300 mb-3">
                 STILL HAVE A QUESTION?
               </span>
 
-              <h3 className="text-2xl sm:text-[26px] font-extrabold leading-snug tracking-tight mb-3 text-white">
+              <h3 className="text-2xl sm:text-[26px] font-extrabold leading-snug tracking-tight my-8 text-white">
                 Tell Us What <br />
                 You&apos;re <span className="text-[#FE6F1F]">Looking For.</span>
               </h3>
 
-              <p className="text-[14px] md:text-[16px] text-slate-300 leading-relaxed mb-6 font-medium text-left">
+              <p className="text-[14px] md:text-[16px] text-slate-300 leading-relaxed mb-6 font-medium text-center md:text-left">
                 Our team is here to help. Share a few details and we&apos;ll get back to you quickly.
               </p>
             </div>
@@ -174,17 +174,17 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                 whileTap={{ scale: 0.98 }}
                 type="button"
                 onClick={onContactClick}
-                className="w-full py-3.5 px-6 bg-white hover:bg-slate-100 text-[#07192C] font-extrabold text-sm sm:text-base rounded-full flex items-center justify-center gap-2.5 transition-all shadow-md mb-4 cursor-pointer"
+                className="w-full py-3.5 px-6 bg-white hover:bg-slate-100 text-[#07192C] font-extrabold text-[14px] md:text-[20px] rounded-full flex items-center justify-center gap-2.5 transition-all shadow-md mb-4 cursor-pointer"
               >
-                <FiMail size={18} />
+                <FiMail size={20} />
                 <span>Email Us</span>
               </motion.button>
 
               <a
                 href="mailto:hello@bayshorevirtual.com"
-                className="text-xs text-slate-300 hover:text-white flex items-center justify-center gap-1.5 transition-colors font-medium"
+                className="text-[14px] md:text-[20px] text-slate-300 hover:text-white flex items-center justify-center gap-1.5 transition-colors font-medium"
               >
-                <FiMail size={14} className="text-[#FE6F1F]" />
+                <FiMail size={18} className="text-[#FE6F1F] " />
                 <span>hello@bayshorevirtual.com</span>
               </a>
             </div>

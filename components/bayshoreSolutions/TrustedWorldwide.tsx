@@ -33,7 +33,7 @@ export default function TrustedWorldwide() {
 
                 {/* Header Title Section */}
                 <div className="text-center max-w-[900px] mx-auto mb-16">
-                    <h2 className="font-bold text-[32px] sm:text-[40px] lg:text-[46px] text-[#0d1b2a] leading-tight tracking-tight">
+                    <h2 className="font-bold text-[28px] md:text-[46px] text-[#0d1b2a] leading-tight tracking-tight">
                         Bayshore Solutions Trusted by The Best <br />
                         Companies <span className="text-[#f97316]">Worldwide</span>
                     </h2>
