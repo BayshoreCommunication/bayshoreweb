@@ -193,11 +193,11 @@ export default function GlobalTalent() {
 
     return (
         <section
-            className="relative w-full py-24 bg-cover bg-center bg-no-repeat overflow-hidden"
+            className="relative w-full pt-14 pb-24 sm:py-20 lg:py-24 min-h-[620px] sm:min-h-0 bg-cover bg-center bg-no-repeat overflow-hidden"
             style={{ backgroundImage: `url('/assets/bayshoreSolutions/global-talent-bg.png')` }}
         >
             {/* Header Title Section */}
-            <div className="text-center max-w-[1000px] mx-auto mb-16 px-4 sm:px-8 z-10 relative">
+            <div className="text-center max-w-[1000px] mx-auto mb-6 sm:mb-12 lg:mb-16 px-4 sm:px-8 z-10 relative">
                 <h2 className="font-bold text-[32px] sm:text-[38px] lg:text-[46px] text-[#0d1b2a] leading-tight tracking-tight">
                     All of your favorite companies and brands utilize{' '}
                     <span className="text-[#f97316]">global talent</span>, why don&apos;t you?
@@ -219,7 +219,7 @@ export default function GlobalTalent() {
                 {/* Marquee & Scrollable Wrapper */}
                 <div
                     ref={scrollRef}
-                    className="w-full overflow-x-auto flex py-8 px-4 scrollbar-none scroll-smooth mask-gradient"
+                    className="w-full overflow-x-auto flex py-4 sm:py-8 px-4 scrollbar-none scroll-smooth mask-gradient"
                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >
                     <div className="flex gap-6 animate-marquee whitespace-nowrap my-2">
@@ -227,10 +227,10 @@ export default function GlobalTalent() {
                         {[...talents, ...talents].map((talent, index) => (
                             <div
                                 key={index}
-                                className="w-[280px] flex-shrink-0 bg-white rounded-[8px] md:rounded-[16px] shadow-2xl border border-orange-100 flex flex-col overflow-hidden"
+                                className="w-[280px] flex-shrink-0 bg-white rounded-[20px] md:rounded-[24px] shadow-2xl border border-orange-100 flex flex-col overflow-hidden"
                             >
                                 {/* Top Orange Section with Image & Real SVG Flag */}
-                                <div className="relative w-full h-[220px] bg-gradient-to-b from-[#ff9f5a] to-[#f05a00] flex items-end justify-center overflow-hidden">
+                                <div className="relative w-full h-[235px] sm:h-[220px] bg-gradient-to-b from-[#ff9f5a] to-[#f05a00] flex items-end justify-center overflow-hidden">
                                     <div className="">
                                         <Image
                                             src={talent.image}
@@ -304,6 +304,11 @@ export default function GlobalTalent() {
                     display: flex;
                     width: max-content;
                     animation: marquee 150s linear infinite;
+                }
+                @media (max-width: 768px) {
+                    .animate-marquee {
+                        animation-duration: 180s;
+                    }
                 }
                 .animate-marquee:hover {
                     animation-play-state: paused;
