@@ -64,6 +64,57 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
     setExpandedId(expandedId === id ? null : id);
   };
 
+  const col1 = faqs.filter((_, idx) => idx % 2 === 0);
+  const col2 = faqs.filter((_, idx) => idx % 2 === 1);
+
+  const renderFaqCard = (faq: FaqItem, idx: number) => {
+    const isOpen = expandedId === faq.id;
+    return (
+      <motion.div
+        key={faq.id}
+        initial={{ opacity: 0, y: 35, scale: 0.94 }}
+        whileInView={{ opacity: 1, y: 0, scale: 1 }}
+        viewport={{ once: true, margin: "-40px" }}
+        transition={{ duration: 0.5, delay: idx * 0.08, type: "spring", stiffness: 100, damping: 14 }}
+        whileHover={{ y: -4, scale: 1.01 }}
+        onClick={() => toggleFaq(faq.id)}
+        className={`rounded-2xl p-5 sm:p-6 transition-all duration-300 cursor-pointer border shadow-xs hover:shadow-lg ${isOpen
+          ? "bg-white border-slate-300 text-[#0C1827] shadow-sm"
+          : "bg-white border-slate-200/90 text-[#0C1827] hover:border-slate-300"
+          }`}
+      >
+        <div className="flex items-center justify-between gap-4">
+          <h3 className="text-[16px] md:text-[18px] font-semibold tracking-tight leading-snug">
+            {faq.question}
+          </h3>
+          <motion.span
+            animate={{ rotate: isOpen ? 90 : 0 }}
+            transition={{ duration: 0.2 }}
+            className={`shrink-0 ${isOpen ? "text-[#FE6F1F]" : "text-slate-400"}`}
+          >
+            <FiArrowRight size={18} />
+          </motion.span>
+        </div>
+
+        {/* Expandable Answer */}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.p
+              initial={{ opacity: 0, height: 0, marginTop: 0 }}
+              animate={{ opacity: 1, height: "auto", marginTop: 14 }}
+              exit={{ opacity: 0, height: 0, marginTop: 0 }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
+              style={{ lineHeight: 1.65 }}
+              className="pt-3.5 border-t border-slate-100 text-[14px] md:text-[16px] font-normal text-[#0C1827] overflow-hidden"
+            >
+              {faq.answer}
+            </motion.p>
+          )}
+        </AnimatePresence>
+      </motion.div>
+    );
+  };
+
   return (
     <section className="py-16 sm:py-20 lg:py-24 w-full max-w-full overflow-hidden  text-[#0C1827] font-sans">
       {/* Container width 1380px and px-8 */}
@@ -94,55 +145,22 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
         {/* FAQ Grid & Right Contact Card Layout */}
         <div className="flex flex-col lg:flex-row items-start gap-8 xl:gap-10">
 
-          {/* FAQ Accordion Items (2 Columns) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 flex-1 w-full">
-            {faqs.map((faq, idx) => {
-              const isOpen = expandedId === faq.id;
-              return (
-                <motion.div
-                  key={faq.id}
-                  initial={{ opacity: 0, y: 35, scale: 0.94 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  viewport={{ once: true, margin: "-40px" }}
-                  transition={{ duration: 0.5, delay: idx * 0.08, type: "spring", stiffness: 100, damping: 14 }}
-                  whileHover={{ y: -4, scale: 1.01 }}
-                  onClick={() => toggleFaq(faq.id)}
-                  className={`rounded-2xl p-5 sm:p-6 transition-all duration-300 cursor-pointer border shadow-xs hover:shadow-lg ${isOpen
-                    ? "bg-white border-slate-300 text-[#0C1827] shadow-sm"
-                    : "bg-white border-slate-200/90 text-[#0C1827] hover:border-slate-300"
-                    }`}
-                >
-                  <div className="flex items-center justify-between gap-4">
-                    <h3 className="text-[16px] md:text-[18px] font-semibold tracking-tight leading-snug">
-                      {faq.question}
-                    </h3>
-                    <motion.span
-                      animate={{ rotate: isOpen ? 90 : 0 }}
-                      transition={{ duration: 0.2 }}
-                      className={`shrink-0 ${isOpen ? "text-[#FE6F1F]" : "text-slate-400"}`}
-                    >
-                      <FiArrowRight size={18} />
-                    </motion.span>
-                  </div>
+          {/* FAQ Accordion Items (2 Independent Columns on desktop) */}
+          <div className="flex-1 w-full">
+            {/* Mobile View (Single Column) */}
+            <div className="flex flex-col gap-4 md:hidden">
+              {faqs.map((faq, idx) => renderFaqCard(faq, idx))}
+            </div>
 
-                  {/* Expandable Answer */}
-                  <AnimatePresence>
-                    {isOpen && (
-                      <motion.p
-                        initial={{ opacity: 0, height: 0, marginTop: 0 }}
-                        animate={{ opacity: 1, height: "auto", marginTop: 14 }}
-                        exit={{ opacity: 0, height: 0, marginTop: 0 }}
-                        transition={{ duration: 0.3, ease: "easeInOut" }}
-                        style={{ lineHeight: 1.65 }}
-                        className="pt-3.5 border-t border-slate-100 text-[14px] md:text-[16px] font-normal text-[#0C1827] overflow-hidden"
-                      >
-                        {faq.answer}
-                      </motion.p>
-                    )}
-                  </AnimatePresence>
-                </motion.div>
-              );
-            })}
+            {/* Desktop View (2 Independent Columns - Prevents row stretching) */}
+            <div className="hidden md:grid md:grid-cols-2 gap-4 sm:gap-5 items-start">
+              <div className="flex flex-col gap-4 sm:gap-5">
+                {col1.map((faq, idx) => renderFaqCard(faq, idx * 2))}
+              </div>
+              <div className="flex flex-col gap-4 sm:gap-5">
+                {col2.map((faq, idx) => renderFaqCard(faq, idx * 2 + 1))}
+              </div>
+            </div>
           </div>
 
           {/* Right Contact Card ("STILL HAVE A QUESTION?") */}
