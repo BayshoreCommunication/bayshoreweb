@@ -34,20 +34,20 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
                         {/* =========================================================================
                             CARD 1: Bayshore VA (Dark Navy Blue Card)
                            ========================================================================= */}
-                        <div className="bg-[#0B192C] text-white rounded-[24px] p-6 sm:p-8 flex flex-col justify-between shadow-xl relative z-10">
+                        <div className="bg-[#0B192C] text-white rounded-[24px] p-16 md:p-8 flex flex-col justify-between shadow-xl relative z-10">
                             <div>
-                                <h3 className="font-bold text-center text-[22px] sm:text-[26px] text-white mb-6 pb-4 border-b border-white/15 tracking-wide">
+                                <h3 className="font-bold text-center text-[20px] md:text-[24px] text-white mb-6 pb-4 border-b border-white/10 tracking-wide">
                                     Bayshore VA
                                 </h3>
 
-                                <div className="space-y-6">
+                                <div className="space-y-16">
                                     {/* Item 1: Hourly Rate */}
                                     <div className="flex items-center gap-4 pb-5 border-b border-white/10">
-                                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FF6B2B] to-[#FF4500] text-white flex items-center justify-center flex-shrink-0 shadow-md border border-orange-400/30">
+                                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#FF6B2B] to-[#FF4500] text-white flex items-center justify-center flex-shrink-0 shadow-md border border-orange-400/30">
                                             <FiDollarSign className="text-2xl" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-[22px] sm:text-[26px] text-white leading-tight">
+                                            <h4 className="font-bold text-[16px] md:text-[24px] text-white leading-tight">
                                                 {isInView ? (
                                                     <CountUp start={0} end={3} duration={2} prefix="$" suffix=" / hour" />
                                                 ) : (
@@ -62,15 +62,15 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
 
                                     {/* Item 2: No Benefits */}
                                     <div className="flex items-center gap-4 pb-5 border-b border-white/10">
-                                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FF6B2B] to-[#FF4500] text-white flex items-center justify-center flex-shrink-0 shadow-md border border-orange-400/30">
-                                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
+                                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#FF6B2B] to-[#FF4500] text-white flex items-center justify-center flex-shrink-0 shadow-md border border-orange-400/30">
+                                            <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
                                                 <rect x="3" y="5" width="18" height="14" rx="2" />
                                                 <line x1="3" y1="10" x2="21" y2="10" />
                                                 <line x1="3" y1="3" x2="21" y2="21" strokeWidth="2.5" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-[20px] sm:text-[22px] text-white leading-tight">
+                                            <h4 className="font-bold text-[16px] md:text-[24px] text-white leading-tight">
                                                 No Benefits
                                             </h4>
                                             <p className="text-white/70 text-[13px] sm:text-[14px] font-medium mt-0.5">
@@ -81,13 +81,13 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
 
                                     {/* Item 3: No Overhead */}
                                     <div className="flex items-center gap-4 pb-5 border-b border-white/10">
-                                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FF6B2B] to-[#FF4500] text-white flex items-center justify-center flex-shrink-0 shadow-md border border-orange-400/30">
-                                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
+                                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#FF6B2B] to-[#FF4500] text-white flex items-center justify-center flex-shrink-0 shadow-md border border-orange-400/30">
+                                            <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-[20px] sm:text-[22px] text-white leading-tight">
+                                            <h4 className="font-bold text-[16px] md:text-[24px] text-white leading-tight">
                                                 No Overhead
                                             </h4>
                                             <p className="text-white/70 text-[13px] sm:text-[14px] font-medium mt-0.5">
@@ -98,11 +98,11 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
 
                                     {/* Item 4: Skilled Support */}
                                     <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#FF6B2B] to-[#FF4500] text-white flex items-center justify-center flex-shrink-0 shadow-md border border-orange-400/30">
+                                        <div className="w-16 h-16 rounded-full bg-gradient-to-br from-[#FF6B2B] to-[#FF4500] text-white flex items-center justify-center flex-shrink-0 shadow-md border border-orange-400/30">
                                             <FiUsers className="text-2xl" />
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-[20px] sm:text-[22px] text-white leading-tight">
+                                            <h4 className="font-bold text-[16px] md:text-[24px] text-white leading-tight">
                                                 Skilled Support
                                             </h4>
                                             <p className="text-white/70 text-[13px] sm:text-[14px] font-medium mt-0.5">
@@ -133,22 +133,22 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
                         {/* =========================================================================
                             CARD 2: Full-Time Hire (White Card)
                            ========================================================================= */}
-                        <div className="bg-white text-[#0B192C] rounded-[24px] p-6 sm:p-8 flex flex-col justify-between shadow-sm border border-gray-100 relative z-10">
+                        <div className="bg-white text-[#0B192C] rounded-[24px] p-16 md:p-8 flex flex-col justify-between shadow-sm border border-gray-100 relative z-10">
                             <div>
-                                <h3 className="font-bold text-center text-[22px] sm:text-[26px] text-[#0B192C] mb-6 pb-4 border-b border-gray-100 tracking-wide">
+                                <h3 className="font-bold text-center text-[20px] md:text-[24px] text-[#0B192C] mb-6 pb-4 border-b border-gray-100 tracking-wide">
                                     Full-Time Hire
                                 </h3>
 
-                                <div className="space-y-6">
+                                <div className="space-y-16">
                                     {/* Item 1: Annual Salary */}
                                     <div className="flex items-center gap-4 pb-5 border-b border-gray-100">
-                                        <div className="w-12 h-12 rounded-full border-2 border-[#FF5E1E] bg-[#FFF5F0] text-[#FF5E1E] flex items-center justify-center flex-shrink-0">
-                                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
+                                        <div className="w-16 h-16 rounded-full border-2 border-[#FF5E1E] bg-[#FFF5F0] text-[#FF5E1E] flex items-center justify-center flex-shrink-0">
+                                            <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-[20px] sm:text-[24px] text-[#0B192C] leading-tight">
+                                            <h4 className="font-bold text-[16px] md:text-[24px] text-[#0B192C] leading-tight">
                                                 {isInView ? (
                                                     <>
                                                         <CountUp start={0} end={45000} duration={2} separator="," prefix="$" />
@@ -167,13 +167,13 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
 
                                     {/* Item 2: Benefits */}
                                     <div className="flex items-center gap-4 pb-5 border-b border-gray-100">
-                                        <div className="w-12 h-12 rounded-full border-2 border-[#FF5E1E] bg-[#FFF5F0] text-[#FF5E1E] flex items-center justify-center flex-shrink-0">
-                                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
+                                        <div className="w-16 h-16 rounded-full border-2 border-[#FF5E1E] bg-[#FFF5F0] text-[#FF5E1E] flex items-center justify-center flex-shrink-0">
+                                            <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M12 4v16m8-8H4" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-[20px] sm:text-[24px] text-[#0B192C] leading-tight">
+                                            <h4 className="font-bold text-[16px] md:text-[24px] text-[#0B192C] leading-tight">
                                                 {isInView ? (
                                                     <CountUp start={0} end={10000} duration={2} separator="," prefix="$" suffix="+" />
                                                 ) : (
@@ -188,13 +188,13 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
 
                                     {/* Item 3: Equipment & Software */}
                                     <div className="flex items-center gap-4 pb-5 border-b border-gray-100">
-                                        <div className="w-12 h-12 rounded-full border-2 border-[#FF5E1E] bg-[#FFF5F0] text-[#FF5E1E] flex items-center justify-center flex-shrink-0">
-                                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
+                                        <div className="w-16 h-16 rounded-full border-2 border-[#FF5E1E] bg-[#FFF5F0] text-[#FF5E1E] flex items-center justify-center flex-shrink-0">
+                                            <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-[20px] sm:text-[24px] text-[#0B192C] leading-tight">
+                                            <h4 className="font-bold text-[16px] md:text-[24px] text-[#0B192C] leading-tight">
                                                 {isInView ? (
                                                     <CountUp start={0} end={5000} duration={2} separator="," prefix="$" suffix="+" />
                                                 ) : (
@@ -209,13 +209,13 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
 
                                     {/* Item 4: Office Space & Overhead */}
                                     <div className="flex items-center gap-4">
-                                        <div className="w-12 h-12 rounded-full border-2 border-[#FF5E1E] bg-[#FFF5F0] text-[#FF5E1E] flex items-center justify-center flex-shrink-0">
-                                            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
+                                        <div className="w-16 h-16 rounded-full border-2 border-[#FF5E1E] bg-[#FFF5F0] text-[#FF5E1E] flex items-center justify-center flex-shrink-0">
+                                            <svg className="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
                                                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5m0 0v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                                             </svg>
                                         </div>
                                         <div>
-                                            <h4 className="font-bold text-[20px] sm:text-[24px] text-[#0B192C] leading-tight">
+                                            <h4 className="font-bold text-[16px] md:text-[24px] text-[#0B192C] leading-tight">
                                                 {isInView ? (
                                                     <CountUp start={0} end={5000} duration={2} separator="," prefix="$" suffix="+" />
                                                 ) : (
@@ -346,7 +346,7 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
                                         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 15 }}
                                         transition={{ delay: 1.6, duration: 0.4 }}
                                     >
-                                        <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#0B192C] text-white flex items-center justify-center flex-shrink-0">
+                                        <div className="w-8 h-8 sm:w-7 sm:h-7 rounded-full bg-[#0B192C] text-white flex items-center justify-center flex-shrink-0">
                                             <FiUsers className="text-xs sm:text-sm" />
                                         </div>
                                         <div>
@@ -366,7 +366,7 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
                                         animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: 15 }}
                                         transition={{ delay: 1.6, duration: 0.4 }}
                                     >
-                                        <div className="w-6 h-6 sm:w-7 sm:h-7 rounded-full bg-[#FF5E1E] text-white flex items-center justify-center flex-shrink-0">
+                                        <div className="w-8 h-8 sm:w-7 sm:h-7 rounded-full bg-[#FF5E1E] text-white flex items-center justify-center flex-shrink-0">
                                             <FiUser className="text-xs sm:text-sm" />
                                         </div>
                                         <div>
@@ -409,7 +409,7 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-40px" }}
                     transition={{ duration: 0.6, ease: "easeOut" }}
-                    className="relative rounded-[32px] sm:rounded-[40px] p-8 sm:p-12 lg:p-14 overflow-hidden transition-all duration-300 bg-white border border-slate-200/80 text-[#0C1827] shadow-xl shadow-slate-200/40 mt-12 sm:mt-16 lg:mt-20"
+                    className="relative rounded-[16px] lg:rounded-[40px] p-10 lg:p-20 lg:p-14 overflow-hidden transition-all duration-300 bg-white border border-slate-200/80 text-[#0C1827] shadow-xl shadow-slate-200/40 mt-12 sm:mt-16 lg:mt-20"
                 >
                     {/* Dotted World Map Background Overlay with Orange Hotspot Glows */}
                     <div className="absolute inset-4 sm:inset-8 md:inset-10 lg:inset-12 pointer-events-none flex items-center justify-center opacity-40 z-0">
@@ -452,7 +452,7 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
                                 whileTap={{ scale: 0.98 }}
                                 type="button"
                                 onClick={onFindTalentForRoleClick}
-                                className="group inline-flex items-center justify-center gap-3 bg-[#0B192C] hover:bg-[#FE6F1F] text-white rounded-full px-7 sm:px-9 py-3.5 sm:py-4 text-[15px] sm:text-[16px] font-bold transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer shrink-0"
+                                className="group inline-flex items-center justify-center gap-3 bg-[#0B192C] hover:bg-[#FE6F1F] text-white rounded-[8px] lg:rounded-[16px] px-7 sm:px-9 py-3.5 sm:py-4 text-[15px] sm:text-[16px] font-bold transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer shrink-0"
                             >
                                 <span>Get Started Today</span>
                                 <FiArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
