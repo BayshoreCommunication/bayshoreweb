@@ -83,7 +83,7 @@ export const SecureDataSection: React.FC<SecureDataSectionProps> = ({
             </div> */}
 
             {/* Main Headline */}
-            <h2 className="text-[28px] md:text-[46px] font-bold text-[#0B192C] tracking-tight leading-[1.18] mb-4">
+            <h2 className="text-[28px] md:text-[46px] font-bold text-[#0B192C] tracking-tight leading-[1.18] mb-4 text-center lg:text-left  ">
               Your Business Data{" "}
               <span className="text-[#FE6F1F]">
                 Deserves a Secure Environment.
@@ -106,7 +106,7 @@ export const SecureDataSection: React.FC<SecureDataSectionProps> = ({
                   key={item.id}
                   whileHover={{ y: -4, scale: 1.01 }}
                   transition={{ duration: 0.2 }}
-                  className="rounded-[18px] p-5 sm:p-6 flex flex-col justify-start border border-slate-200/80 bg-[#F8FAFC] text-[#0B192C] hover:border-[#FE6F1F]/40 hover:shadow-md transition-all duration-300 cursor-default"
+                  className="rounded-[16px] p-10 sm:p-6 flex flex-col justify-start border border-slate-200/80 bg-[#F8FAFC] text-[#0B192C] hover:border-[#FE6F1F]/40 hover:shadow-md transition-all duration-300 cursor-default"
                 >
                   <div className="text-[#FE6F1F] mb-3 shrink-0 [&>svg]:text-[24px] sm:[&>svg]:text-[26px]">
                     {item.icon}
