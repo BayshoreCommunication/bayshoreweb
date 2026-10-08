@@ -294,7 +294,6 @@ export const VirtualHiring = () => {
                                 onClick={() => {
                                   setSelectedCountry(c);
                                   setIsCountryDropdownOpen(false);
-                                  Platform
                                 }}
                                 className={`w-full flex items-center justify-between px-3.5 py-2 text-left hover:bg-orange-50 transition-colors cursor-pointer ${isSelected
                                     ? "bg-orange-50 font-semibold text-[#f97316]"
