@@ -108,7 +108,7 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="flex flex-col items-center text-center max-w-[900px] mx-auto mb-12 sm:mb-16"
         >
-          <h2 className="text-[28px] md:text-[46px] font-extrabold tracking-tight leading-[1.2] mb-4 text-[#0C1827]">
+          <h2 className="text-[28px] md:text-[46px] font-bold tracking-tight leading-[1.2] mb-4 text-[#0C1827]">
             {headlineMain}{" "}
             <span className="text-[#FE6F1F]">
               {headlineHighlight}

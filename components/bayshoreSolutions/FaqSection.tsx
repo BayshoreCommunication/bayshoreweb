@@ -128,7 +128,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
           transition={{ duration: 0.6, ease: "easeOut" }}
           className="flex flex-col items-center text-center max-w-[900px] mx-auto mb-12 sm:mb-16"
         >
-          <h2 className="text-[28px] md:text-[46px] font-extrabold tracking-tight leading-[1.2] mb-4 text-[#0C1827]">
+          <h2 className="text-[28px] md:text-[46px] font-bold tracking-tight leading-[1.2] mb-4 text-[#0C1827]">
             {headlineMain}{" "}
             <span className="text-[#FE6F1F]">
               {headlineHighlight}
@@ -172,11 +172,9 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
             className="w-full lg:w-[320px] xl:w-[340px] shrink-0 rounded-[28px] p-12 sm:p-8 border-2 border-[#0066FF] flex flex-col justify-between items-start  shadow-xl text-center md:text-left bg-[#07192C] text-white"
           >
             <div>
-              <span className="inline-block text-[11px] font-bold uppercase tracking-[0.22em] text-slate-300 mb-3">
-                STILL HAVE A QUESTION?
-              </span>
 
-              <h3 className="text-2xl sm:text-[26px] font-extrabold leading-snug tracking-tight my-8 text-white">
+
+              <h3 className="text-2xl sm:text-[26px] font-bold leading-snug tracking-tight mb-8 text-white">
                 Tell Us What <br />
                 You&apos;re <span className="text-[#FE6F1F]">Looking For.</span>
               </h3>
@@ -191,6 +189,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
                 type="button"
+                data-calendly="true"
                 onClick={onContactClick}
                 className="w-full py-3.5 px-6 bg-white hover:bg-slate-100 text-[#07192C] font-extrabold text-[14px] md:text-[20px] rounded-full flex items-center justify-center gap-2.5 transition-all shadow-md mb-4 cursor-pointer"
               >

@@ -99,10 +99,14 @@ export function Footer() {
                 { name: 'How It Works', href: '/#how-it-works' },
                 { name: 'Our Talent Showcase', href: '/talents' },
                 { name: 'About Managed Staffing', href: '/about' },
-                { name: 'Get Started', href: '/find-talent' },
+                { name: 'Get Started', href: 'https://calendly.com/bayshorec/new-meeting', isCalendly: true },
               ].map((item) => (
                 <li key={item.name}>
-                  <Link href={item.href} className="text-[#334155] hover:text-primary text-[14px] transition-colors">
+                  <Link
+                    href={item.href}
+                    {...(item.isCalendly ? { 'data-calendly': 'true', target: '_blank', rel: 'noopener noreferrer' } : {})}
+                    className="text-[#334155] hover:text-primary text-[14px] transition-colors"
+                  >
                     {item.name}
                   </Link>
                 </li>

@@ -17,10 +17,9 @@ import SupportForBusiness from "@/components/bayshoreSolutions/SupportForBusines
 import FaqSection from "@/components/bayshoreSolutions/FaqSection";
 import VirtualHiring from "@/components/bayshoreSolutions/VirtualHiring";
 import SecureDataSection from "@/components/bayshoreSolutions/SecureDataSection";
+import CalendlyModal, { openCalendlyModal } from "@/components/bayshoreSolutions/CalendlyModal";
 
 export default function BayshoreSolutionsPage() {
-
-
     return (
         <div
             className="min-h-screen w-full max-w-full overflow-x-hidden transition-colors duration-300 font-inter"
@@ -33,18 +32,21 @@ export default function BayshoreSolutionsPage() {
             <WhyBayshoreSection />
             <HowItWorksSection />
             <SupportSection />
-            <SolutionsSection />
+            <SolutionsSection onFindTalentClick={() => openCalendlyModal()} />
             <GlobalTalent />
-            <CostEffectiveSection />
+            <CostEffectiveSection onFindTalentForRoleClick={() => openCalendlyModal()} />
             <SecureDataSection />
             <TrustedWorldwide />
             <ClientStoriesSection />
             <SupportForBusiness />
-            <FaqSection />
+            <FaqSection onContactClick={() => openCalendlyModal()} />
             <VirtualHiring />
 
             {/* Bayshore Solutions Footer Component */}
             <Footer />
+
+            {/* Calendly Interactive Popup Modal */}
+            <CalendlyModal />
         </div>
     );
 }
