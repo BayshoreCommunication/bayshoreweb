@@ -116,7 +116,7 @@ export default async function Sitemap(): Promise<Sitemap> {
   // 5. Blogs (Static & Dynamic API)
   const staticBlogUrls: Sitemap = (staticBlogs || []).map((blog) => ({
     url: `${baseUrl}/blog/${blog.slug}`,
-    lastModified: new Date(),
+    lastModified: blog.updatedAt ? new Date(blog.updatedAt) : new Date(),
     changeFrequency: "weekly",
     priority: 0.7,
   }));
