@@ -90,7 +90,10 @@ export default function HeroSection() {
 
           <div className="pointer-events-auto">
             <Link
-              href="/find-talent"
+              href="https://calendly.com/bayshorec/new-meeting"
+              data-calendly="true"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2.5 sm:gap-3 bg-[#0B192C] hover:bg-[#FE6F1F] text-white rounded-full px-7 sm:px-9 py-3.5 sm:py-4 text-[15px] sm:text-[16px] md:text-[17px] font-bold tracking-wide transition-all duration-300 shadow-md hover:shadow-xl hover:scale-[1.02] active:scale-[0.98] cursor-pointer whitespace-nowrap"
             >
               <span>Find Your Talent</span>
@@ -238,8 +241,11 @@ export default function HeroSection() {
           </p>
 
           <Link
-            href="/find-talent"
-            className="inline-flex items-center justify-center gap-2.5 bg-[#0B192C] text-white rounded-[10px] px-7 py-3 text-[14px] font-semibold lg:font-bold tracking-wider hover:bg-[#FE6F1F] transition-all duration-300 shadow-md group"
+            href="https://calendly.com/bayshorec/new-meeting"
+            data-calendly="true"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2.5 bg-[#0B192C] text-white rounded-[10px] px-7 py-3 text-[14px] font-semibold lg:font-bold tracking-wider hover:bg-[#FE6F1F] transition-all duration-300 shadow-md group cursor-pointer"
           >
             <span>FIND YOUR TALENT</span>
             <svg

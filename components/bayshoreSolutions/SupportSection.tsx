@@ -342,8 +342,11 @@ export function SupportSection() {
                 {/* Bottom CTA Button */}
                 <div className="flex justify-center mt-[50px] lg:mt-[70px]">
                     <Link
-                        href="/find-talent"
-                        className="inline-flex items-center justify-center gap-[6px] sm:gap-[10px] bg-[#0B192C] text-white rounded-[8px] px-[18px] sm:px-[26px] py-[11px] sm:py-[13px] text-[12px] sm:text-[13px] font-bold tracking-wide hover:bg-primary transition-all duration-300 shadow-sm hover:shadow-md group whitespace-nowrap"
+                        href="https://calendly.com/bayshorec/new-meeting"
+                        data-calendly="true"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center justify-center gap-[6px] sm:gap-[10px] bg-[#0B192C] text-white rounded-[8px] px-[18px] sm:px-[26px] py-[11px] sm:py-[13px] text-[12px] sm:text-[13px] font-bold tracking-wide hover:bg-primary transition-all duration-300 shadow-sm hover:shadow-md group whitespace-nowrap cursor-pointer"
                     >
                         <span>FIND YOUR TALENT</span>
                         <svg

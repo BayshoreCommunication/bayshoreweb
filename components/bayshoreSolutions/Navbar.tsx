@@ -72,8 +72,11 @@ export default function Header() {
                 <div className="flex items-center gap-[8px] sm:gap-[14px]">
                     {/* Find Talent Button - Fully rounded with responsive compact padding on mobile */}
                     <Link
-                        href="/find-talent"
-                        className="flex items-center gap-[6px] sm:gap-[10px] border border-[#0B192C] rounded-[8px] px-[14px] xs:px-[18px] sm:px-[26px] py-[10px] sm:py-[13px] text-[#0B192C] hover:bg-[#0B192C] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-md whitespace-nowrap"
+                        href="https://calendly.com/bayshorec/new-meeting"
+                        data-calendly="true"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center gap-[6px] sm:gap-[10px] border border-[#0B192C] rounded-[8px] px-[14px] xs:px-[18px] sm:px-[26px] py-[10px] sm:py-[13px] text-[#0B192C] hover:bg-[#0B192C] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-md whitespace-nowrap cursor-pointer"
                     >
                         <span className="font-bold tracking-wide text-[11px] xs:text-[12px] sm:text-[13px]">FIND TALENT</span>
                         <svg
@@ -179,9 +182,12 @@ export default function Header() {
                                 {/* Drawer Footer CTA */}
                                 <div className="p-4 sm:p-6 border-t border-gray-100 bg-gray-50/50">
                                     <Link
-                                        href="/find-talent"
+                                        href="https://calendly.com/bayshorec/new-meeting"
+                                        data-calendly="true"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
                                         onClick={() => setIsMobileMenuOpen(false)}
-                                        className="w-full flex items-center justify-center gap-2 bg-[#0B192C] text-white hover:bg-primary rounded-[8px] py-3 px-4 font-bold tracking-wide transition-all duration-300 shadow-md text-xs sm:text-sm"
+                                        className="w-full flex items-center justify-center gap-2 bg-[#0B192C] text-white hover:bg-primary rounded-[8px] py-3 px-4 font-bold tracking-wide transition-all duration-300 shadow-md text-xs sm:text-sm cursor-pointer"
                                     >
                                         <span>FIND TALENT</span>
                                         <svg

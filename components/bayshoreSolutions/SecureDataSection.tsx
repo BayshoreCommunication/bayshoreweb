@@ -108,7 +108,7 @@ export const SecureDataSection: React.FC<SecureDataSectionProps> = ({
                   transition={{ duration: 0.2 }}
                   className="rounded-[16px] p-10 mdp-16 flex flex-col justify-start border border-slate-200/80 bg-[#F8FAFC] text-[#0B192C] hover:border-[#FE6F1F]/40 hover:shadow-md transition-all duration-300 cursor-default"
                 >
-                  <div className="text-[#FE6F1F] mb-3 shrink-0 [&>svg]:text-[24px] sm:[&>svg]:text-[26px] mx-auto text-center md:text-left">
+                  <div className="text-[#FE6F1F] mb-3 shrink-0 [&>svg]:text-[24px] sm:[&>svg]:text-[26px] mx-auto md:mx-0 text-center md:text-left">
                     {item.icon}
                   </div>
                   <h3 className="text-[16px] sm:text-[17px] font-bold tracking-tight mb-1 text-[#0B192C] text-center  md:text-left">

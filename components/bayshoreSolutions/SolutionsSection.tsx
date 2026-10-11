@@ -515,8 +515,9 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                       {/* Action Button */}
                       <button
                         type="button"
+                        data-calendly="true"
                         onClick={() => onFindTalentClick && onFindTalentClick(card.id)}
-                        className={`w-full py-3.5 px-4 rounded-xl font-medium text-[14px] transition-all duration-300 flex items-center justify-center gap-2 ${theme === "dark"
+                        className={`w-full py-3.5 px-4 rounded-xl font-medium text-[14px] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer ${theme === "dark"
                           ? "bg-[#0C1827] border border-slate-700 text-white hover:bg-[#FF5500] hover:border-[#FF5500]"
                           : "bg-[#07192C] text-white hover:bg-[#000E1E]"
                           }`}
@@ -582,8 +583,9 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
                 {/* Action Button */}
                 <button
                   type="button"
+                  data-calendly="true"
                   onClick={() => onFindTalentClick && onFindTalentClick(card.id)}
-                  className={`w-full py-3.5 px-4 rounded-xl font-medium text-[14px] transition-all duration-300 flex items-center justify-center gap-2 ${theme === "dark"
+                  className={`w-full py-3.5 px-4 rounded-xl font-medium text-[14px] transition-all duration-300 flex items-center justify-center gap-2 cursor-pointer ${theme === "dark"
                     ? "bg-[#0C1827] border border-slate-700 text-white hover:bg-[#FF5500] hover:border-[#FF5500]"
                     : "bg-[#07192C] text-white hover:bg-[#000E1E]"
                     }`}
