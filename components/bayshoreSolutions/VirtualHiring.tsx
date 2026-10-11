@@ -102,11 +102,11 @@ export const VirtualHiring = () => {
         </div>
 
         {/* Right Side Form Card */}
-        <div className="w-full max-w-[530px] bg-white rounded-[32px] shadow-2xl border border-gray-100 p-10 sm:p-12">
+        <div className="w-full max-w-[630px] bg-white rounded-[32px] shadow-2xl border border-gray-100 p-10 sm:p-12">
 
           {/* Form Header Logo */}
           <div className="flex justify-center md:justify-start mb-6">
-            <div className="relative w-[200px] h-[55px] sm:w-[210px] sm:h-[58px]">
+            <div className="relative w-[150px] h-[55px] sm:w-[180px] sm:h-[58px]">
               <Image
                 src="/assets/bayshoreSolutions/logo-light.png"
                 alt="Bayshore Virtual Solutions"
@@ -346,9 +346,9 @@ export const VirtualHiring = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="mt-4 w-full py-3.5 px-8 bg-[#0B192C] hover:bg-[#f97316] text-white font-bold text-[14px] md:text-[16px] rounded-[8px] lg:rounded-[16px] shadow-lg flex items-center justify-center gap-3 transition-all duration-300 transform hover:scale-[1.01] cursor-pointer"
+              className="mt-4 w-full py-5 px-8 bg-[#0B192C] hover:bg-[#f97316] text-white font-semibold text-[14px] md:text-[16px] rounded-full shadow-lg flex items-center justify-center gap-3 transition-all duration-300 transform  cursor-pointer"
             >
-              <span>BOOK FREE CALL</span>
+              <span>Callback Request</span>
               <FiArrowRight className="text-[18px]" />
             </button>
 

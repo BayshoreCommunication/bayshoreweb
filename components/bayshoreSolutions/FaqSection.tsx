@@ -105,14 +105,13 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
             It never changes height on open or close, eliminating any bottom section jumping/lafalafi. */}
         <div
           onClick={() => toggleFaq(faq.id)}
-          className={`w-full rounded-[20px] px-6 py-4.5 sm:py-5 border bg-white cursor-pointer transition-all duration-200 ${
-            isOpen
-              ? "border-orange-300 shadow-sm"
-              : "border-slate-200/90 text-[#0C1827] hover:border-slate-300 shadow-xs hover:shadow-sm"
-          }`}
+          className={`w-full rounded-[10px] px-6 py-6 sm:py-8 border bg-white cursor-pointer transition-all duration-200 ${isOpen
+            ? "border-orange-300 shadow-sm"
+            : "border-slate-200/90 text-[#0C1827] hover:border-slate-300 shadow-xs hover:shadow-sm"
+            }`}
         >
           <div className="flex items-center justify-between gap-4">
-            <h3 className="text-[15px] sm:text-[16px] font-semibold tracking-tight leading-snug text-[#0C1827]">
+            <h3 className="text-[14px] sm:text-[16px]  font-meduim sm:font-semibold tracking-tight leading-snug text-[#0C1827]">
               {faq.question}
             </h3>
             <motion.span
@@ -138,9 +137,8 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
               exit={{ opacity: 0, y: isTopHalf ? -6 : 6 }}
               transition={{ duration: 0.2, ease: "easeOut" }}
               onClick={() => toggleFaq(faq.id)}
-              className={`absolute ${
-                isTopHalf ? "top-0" : "bottom-0"
-              } left-0 w-full z-50 bg-white rounded-[20px] px-6 py-4.5 sm:py-5 border border-orange-300 shadow-[0_20px_50px_rgba(0,0,0,0.18)] ring-1 ring-orange-500/20 cursor-pointer`}
+              className={`absolute ${isTopHalf ? "top-0" : "bottom-0"
+                } left-0 w-full z-50 bg-white rounded-[10px] px-6 py-4.5 sm:py-5 border border-orange-300 shadow-[0_20px_50px_rgba(0,0,0,0.18)] ring-1 ring-orange-500/20 cursor-pointer`}
             >
               <div className="flex items-center justify-between gap-4">
                 <h3 className="text-[15px] sm:text-[16px] font-semibold tracking-tight leading-snug text-[#0C1827]">
@@ -164,7 +162,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
   };
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 w-full max-w-full relative z-10 text-[#0C1827] font-sans">
+    <section className="py-16 sm:py-20 lg:py-24 w-full max-w-full relative z-10 text-[#0C1827] ">
       {/* Container width 1380px and px-8 */}
       <div className="mx-auto max-w-[1380px] px-6 sm:px-8">
 
@@ -217,7 +215,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            className="w-full lg:w-[320px] xl:w-[340px] shrink-0 rounded-[28px] p-7 sm:p-8 border border-slate-700/50 flex flex-col justify-between items-start shadow-xl text-center md:text-left bg-[#07192C] text-white self-stretch"
+            className="w-full lg:w-[320px] xl:w-[340px] shrink-0 rounded-[16px] p-7 sm:p-8 border border-slate-700/50 flex flex-col justify-between items-start shadow-xl text-center md:text-left bg-[#07192C] text-white self-stretch"
           >
             <div>
               {/* Subtle orange accent bar matching screenshot */}
@@ -243,7 +241,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
                 className="w-full py-3.5 px-6 bg-white hover:bg-slate-100 text-[#07192C] font-extrabold text-[15px] rounded-full flex items-center justify-center gap-2.5 transition-all shadow-md mb-4 cursor-pointer"
               >
                 <FiMail size={18} />
-                <span>Email Us</span>
+                <span>Contact</span>
               </motion.button>
 
               <a

@@ -76,7 +76,7 @@ export default function Header() {
                         data-calendly="true"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-[6px] sm:gap-[10px] border border-[#0B192C] rounded-[8px] px-[14px] xs:px-[18px] sm:px-[26px] py-[10px] sm:py-[13px] text-[#0B192C] hover:bg-[#0B192C] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-md whitespace-nowrap cursor-pointer"
+                        className="flex items-center gap-[6px] sm:gap-[10px] border border-[#0B192C] rounded-full px-[14px] xs:px-[18px] sm:px-[26px] py-[10px] sm:py-[13px] text-[#0B192C] hover:bg-[#0B192C] hover:text-white transition-all duration-300 group shadow-sm hover:shadow-md whitespace-nowrap cursor-pointer"
                     >
                         <span className="font-bold tracking-wide text-[11px] xs:text-[12px] sm:text-[13px]">FIND TALENT</span>
                         <svg

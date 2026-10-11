@@ -454,15 +454,14 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
                             </p>
 
                             <motion.button
-                                whileHover={{ scale: 1.02, y: -2 }}
-                                whileTap={{ scale: 0.98 }}
+
                                 type="button"
                                 data-calendly="true"
                                 onClick={onFindTalentForRoleClick}
-                                className="group inline-flex items-center justify-center gap-3 bg-[#0B192C] hover:bg-[#FE6F1F] text-white rounded-[8px] lg:rounded-[16px] px-7 sm:px-9 py-3.5 sm:py-4 text-[15px] sm:text-[16px] font-bold transition-all duration-300 shadow-md hover:shadow-lg cursor-pointer shrink-0"
+                                className="group inline-flex items-center justify-center gap-3 bg-[#0B192C] hover:bg-[#FE6F1F] text-white rounded-full px-7 sm:px-9 py-3.5 sm:py-5 text-[15px] sm:text-[16px] font-bold transition-all duration-300 shadow-md  cursor-pointer shrink-0"
                             >
                                 <span>Get Started Today</span>
-                                <FiArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
+                                <FiArrowRight className="w-5 h-5  " />
                             </motion.button>
                         </div>
 
@@ -473,7 +472,7 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
                                 whileHover={{ scale: 1.03, y: -3 }}
                                 className="rounded-2xl p-6 sm:p-7 shadow-md sm:w-[300px] border border-slate-100 bg-white text-[#0C1827] transition-all"
                             >
-                                <h4 className="text-xl sm:text-2xl font-extrabold leading-snug tracking-tight">
+                                <h4 className="text-xl sm:text-2xl font-bold leading-snug tracking-tight">
                                     Great Teams <br />
                                     Build Greater <br />
                                     Business
