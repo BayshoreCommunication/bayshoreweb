@@ -3,29 +3,29 @@ import Image from 'next/image';
 
 export default function TrustedWorldwide() {
     // Row 1 Images (1 to 8)
+    // Row 1 Images (1 to 8)
     const rowOneImages = [
-        "/assets/bayshoreSolutions/TrustedWorldwide/1.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/2.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/3.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/4.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/5.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/6.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/7.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/8.png",
+        "/assets/bayshoreSolutions/TrustedWorldwide/aci-logo.png",
+        "/assets/bayshoreSolutions/TrustedWorldwide/aireserv.svg",
+        "/assets/bayshoreSolutions/TrustedWorldwide/apex.svg",
+        "/assets/bayshoreSolutions/TrustedWorldwide/bully-projects.png",
+        "/assets/bayshoreSolutions/TrustedWorldwide/butterfly-foundation.svg",
+        "/assets/bayshoreSolutions/TrustedWorldwide/butterfly.svg",
+        "/assets/bayshoreSolutions/TrustedWorldwide/carter-injury-law.png",
+        "/assets/bayshoreSolutions/TrustedWorldwide/cynthia.png",
     ];
 
     // Row 2 Images (9 to 16)
     const rowTwoImages = [
-        "/assets/bayshoreSolutions/TrustedWorldwide/9.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/10.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/11.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/12.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/13.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/14.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/15.png",
-        "/assets/bayshoreSolutions/TrustedWorldwide/16.png",
+        "/assets/bayshoreSolutions/TrustedWorldwide/elite-spa.svg",
+        "/assets/bayshoreSolutions/TrustedWorldwide/embark-logo.png",
+        "/assets/bayshoreSolutions/TrustedWorldwide/essence-VFX.png",
+        "/assets/bayshoreSolutions/TrustedWorldwide/fitly-logo.png",
+        // "/assets/bayshoreSolutions/TrustedWorldwide/Golden-Wealth.png",
+        "/assets/bayshoreSolutions/TrustedWorldwide/Hess@2x.png",
+        "/assets/bayshoreSolutions/TrustedWorldwide/huraia.svg",
+        "/assets/bayshoreSolutions/TrustedWorldwide/klothen.svg",
     ];
-
     return (
         <section className="w-full bg-[#f9fafb] py-20 overflow-hidden">
             {/* Main Container */}
@@ -40,21 +40,22 @@ export default function TrustedWorldwide() {
                 </div>
 
                 {/* Marquee Wrapper with Fade Mask */}
-                <div className="relative w-full overflow-hidden mask-gradient py-4 flex flex-col gap-3 md:gap-4">
+                <div className="relative w-full overflow-hidden mask-gradient py-4 flex flex-col gap-y-6 md:gap-y-10">
 
                     {/* Row 1 - Scrolling Left */}
-                    <div className="flex w-max animate-marquee gap-4 md:gap-5 items-center">
+                    <div className="flex w-max animate-marquee gap-8 md:gap-14 items-center">
                         {[...rowOneImages, ...rowOneImages, ...rowOneImages].map((imgSrc, index) => (
                             <div
                                 key={`row1-${index}`}
-                                className="flex items-center justify-center flex-shrink-0 h-[50px] md:h-[75px] lg:h-[85px]"
+                                className="flex items-center justify-center flex-shrink-0 w-[110px] md:w-[150px] lg:w-[170px] h-[45px] md:h-[60px] lg:h-[70px] px-2"
                             >
-                                <div className="relative w-[140px] h-[36px] md:w-[260px] md:h-[65px] lg:w-[280px] lg:h-[75px]">
+                                <div className="relative w-full h-full flex items-center justify-center">
                                     <Image
                                         src={imgSrc}
                                         alt={`Company Logo ${index + 1}`}
                                         fill
-                                        className="object-contain"
+                                        sizes="(max-width: 768px) 110px, (max-width: 1024px) 150px, 170px"
+                                        className="object-contain max-h-[85%] max-w-[90%]"
                                     />
                                 </div>
                             </div>
@@ -62,18 +63,19 @@ export default function TrustedWorldwide() {
                     </div>
 
                     {/* Row 2 - Scrolling Right (Reverse Direction) */}
-                    <div className="flex w-max animate-marquee-reverse  items-center">
+                    <div className="flex w-max animate-marquee-reverse gap-8 md:gap-14 items-center">
                         {[...rowTwoImages, ...rowTwoImages, ...rowTwoImages].map((imgSrc, index) => (
                             <div
                                 key={`row2-${index}`}
-                                className="flex items-center justify-center flex-shrink-0 h-[50px] md:h-[75px] lg:h-[85px]"
+                                className="flex items-center justify-center flex-shrink-0 w-[110px] md:w-[150px] lg:w-[170px] h-[45px] md:h-[60px] lg:h-[70px] px-2"
                             >
-                                <div className="relative w-[140px] h-[36px] md:w-[260px] md:h-[65px] lg:w-[280px] lg:h-[75px]">
+                                <div className="relative w-full h-full flex items-center justify-center">
                                     <Image
                                         src={imgSrc}
                                         alt={`Company Logo ${index + 9}`}
                                         fill
-                                        className="object-contain"
+                                        sizes="(max-width: 768px) 110px, (max-width: 1024px) 150px, 170px"
+                                        className="object-contain max-h-[85%] max-w-[90%]"
                                     />
                                 </div>
                             </div>

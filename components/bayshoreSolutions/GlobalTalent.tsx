@@ -360,11 +360,7 @@ export default function GlobalTalent() {
                                             {talent.role}
                                         </p>
                                     </div>
-                                    <div className="w-full h-[1px] bg-orange-100 my-4"></div>
                                     <div>
-                                        <span className="text-[14px] font-medium text-gray-500 block mb-3">
-                                            Supporting Since: {talent.supportingSince}
-                                        </span>
 
                                         <div className="w-full bg-[#fff5ec] border border-orange-100 rounded-[16px] py-3 px-3 text-center whitespace-normal min-h-[55px] flex items-center justify-center">
                                             <span className="text-[14px] font-semibold text-[#0d1b2a] leading-tight block">

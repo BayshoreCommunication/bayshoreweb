@@ -126,7 +126,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
               alt="World Map Background"
               fill
               priority
-              className="object-contain object-center opacity-40 dark:opacity-20"
+              className="object-contain object-center opacity-20 "
               onError={() => setImgError(true)}
             />
 
