@@ -138,7 +138,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
               transition={{ duration: 0.2, ease: "easeOut" }}
               onClick={() => toggleFaq(faq.id)}
               className={`absolute ${isTopHalf ? "top-0" : "bottom-0"
-                } left-0 w-full z-50 bg-white rounded-[10px] px-6 py-4.5 sm:py-5 border border-orange-300 shadow-[0_20px_50px_rgba(0,0,0,0.18)] ring-1 ring-orange-500/20 cursor-pointer`}
+                } left-0 w-full z-50 bg-white rounded-[10px] px-6 py-6 sm:py-8 border border-orange-300 shadow-[0_20px_50px_rgba(0,0,0,0.18)] ring-1 ring-orange-500/20 cursor-pointer`}
             >
               <div className="flex items-center justify-between gap-4">
                 <h3 className="text-[15px] sm:text-[16px] font-semibold tracking-tight leading-snug text-[#0C1827]">
@@ -215,23 +215,23 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            className="w-full lg:w-[320px] xl:w-[340px] shrink-0 rounded-[16px] p-7 sm:p-8 border border-slate-700/50 flex flex-col justify-between items-start shadow-xl text-center md:text-left bg-[#07192C] text-white self-stretch"
+            className="w-full lg:w-[320px] xl:w-[340px] shrink-0 rounded-[16px] p-10 sm:p-12 border border-slate-700/50 flex flex-col justify-between items-start shadow-xl text-center md:text-left bg-[#07192C] text-white self-stretch"
           >
             <div>
               {/* Subtle orange accent bar matching screenshot */}
               <div className="w-8 h-[2px] bg-[#FE6F1F] mb-4 mx-auto md:mx-0" />
 
-              <h3 className="text-2xl sm:text-[26px] font-bold leading-snug tracking-tight mb-4 sm:mb-5 text-white text-center md:text-left">
+              <h3 className="text-[20px] sm:text-[26px] font-bold leading-snug tracking-tight mb-4 sm:mb-5 text-white text-center md:text-left">
                 Tell Us What <br />
                 You&apos;re <span className="text-[#FE6F1F]">Looking For.</span>
               </h3>
 
-              <p className="text-[13px] sm:text-[14px] text-slate-300 leading-relaxed mb-6 font-normal text-center md:text-left">
+              <p className="text-[14px] sm:text-[16px] text-slate-300 leading-relaxed mb-6 font-normal text-center md:text-left">
                 Our team is here to help. Share a few details and we&apos;ll get back to you quickly.
               </p>
             </div>
 
-            <div className="w-full">
+            <div className="w-full mt-4">
               <motion.button
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.98 }}
@@ -246,7 +246,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
 
               <a
                 href="mailto:hello@bayshorevirtual.com"
-                className="text-[13px] sm:text-[14px] text-slate-300 hover:text-white flex items-center justify-center gap-1.5 transition-colors font-medium"
+                className="text-[14px] sm:text-[16px] text-slate-300 hover:text-white flex items-center justify-center gap-1.5 transition-colors font-medium mt-8"
               >
                 <FiMail size={16} className="text-[#FE6F1F]" />
                 <span>hello@bayshorevirtual.com</span>

@@ -230,13 +230,13 @@ export default function HeroSection() {
         </div>
 
         {/* Content Overlaid at Top */}
-        <div className="relative z-10 flex flex-col items-center text-center px-5 pt-28 ">
-          <h1 className="font-bold  text-[#0B192C] tracking-tight text-[28px] sm:text-[32px] leading-[1.16] mb-3">
+        <div className="relative z-10 flex flex-col items-center text-center px-5 pt-16 ">
+          <h1 className="font-bold  text-[#0B192C] tracking-tight text-[28px] sm:text-[32px] leading-[1.16] mb-6">
             Build Your Team with <br />
             Global Talent <span className="text-[#FE6F1F]">Starting at <br className="xs:hidden" />$3 Per Hour</span>
           </h1>
 
-          <p className="text-[#475569] text-[14px] leading-[1.5] max-w-[320px] mx-auto mb-6">
+          <p className="text-[#475569] text-[14px] leading-[1.5] max-w-[320px] mx-auto mb-10">
             Hire dedicated, English-speaking professionals from Asia for up to 75% less than the cost of U.S. employees.
           </p>
 
@@ -245,7 +245,7 @@ export default function HeroSection() {
             data-calendly="true"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2.5 bg-[#0B192C] text-white rounded-[10px] px-7 py-3 text-[14px] font-semibold lg:font-bold tracking-wider hover:bg-[#FE6F1F] transition-all duration-300 shadow-md group cursor-pointer"
+            className="inline-flex items-center justify-center gap-2.5 bg-[#0B192C] text-white rounded-full px-[30px] py-[10px] text-[14px] font-semibold lg:font-bold tracking-wider hover:bg-[#FE6F1F] transition-all duration-300 shadow-md group cursor-pointer"
           >
             <span>FIND YOUR TALENT</span>
             <svg
@@ -259,6 +259,66 @@ export default function HeroSection() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </Link>
+
+
+          {/* Mobile Stats Cards — directly after CTA button */}
+          <div className="mt-10 grid w-full  grid-cols-2 gap-3 ">
+            {/* 75% Lower Cost */}
+            <div className="flex gap-5 min-w-0 items-center justify-center rounded-2xl border border-gray-100 bg-white/95 p-3 text-center shadow-lg backdrop-blur-sm">
+              <div className="mb-3 flex h-20 w-20 items-center justify-center rounded-xl bg-orange-50 p-2.5 text-orange-500">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-full w-full"
+                  aria-hidden="true"
+                >
+                  <path d="M3 17l6-6 4 4 8-8" />
+                  <path d="M15 7h6v6" />
+                </svg>
+              </div>
+              <div className="flex flex-col items-start gap-1">
+                <p className="whitespace-nowrap text-[16px] font-bold leading-tight text-slate-900">
+                  <AnimatedCounter end={75} suffix="%" />
+                </p>
+
+                <p className="text-[12px] font-medium text-gray-600">
+                  Lower Cost
+                </p>
+              </div>
+            </div>
+
+            {/* 48 Hours */}
+            <div className="flex gap-5 min-w-0 items-center justify-center rounded-2xl border border-gray-100 bg-white/95 p-3 text-center shadow-lg backdrop-blur-sm">
+              <div className="mb-3 flex h-20 w-20 items-center justify-center rounded-xl bg-orange-50 p-2.5 text-orange-500">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-full w-full"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+              </div>
+              <div className="flex flex-col items-start gap-1">
+                <p className="whitespace-nowrap text-[16px] font-bold leading-tight text-slate-900">
+                  <AnimatedCounter end={48} suffix=" Hours" />
+                </p>
+
+                <p className="text-[12px] font-medium text-gray-600">
+                  Quick Deployment
+                </p></div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>

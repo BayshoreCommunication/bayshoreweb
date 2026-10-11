@@ -126,22 +126,19 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
               alt="World Map Background"
               fill
               priority
-              className="object-contain object-center opacity-20 "
+              sizes="(max-width: 1350px) 100vw, 1350px"
+              className="h-full w-full object-cover object-center opacity-20"
               onError={() => setImgError(true)}
             />
 
             <div
               className={`
-                absolute
-                inset-0
-                pointer-events-none
-                transition-colors
-                duration-300
-                ${theme === "dark"
+      absolute inset-0 pointer-events-none transition-colors duration-300
+      ${theme === "dark"
                   ? "bg-gradient-to-b from-[#07192C]/40 via-transparent to-[#07192C]/60"
                   : "bg-gradient-to-b from-[#F8F9FA]/30 via-transparent to-[#F8F9FA]/40"
                 }
-              `}
+    `}
             />
           </div>
         ) : (
@@ -419,6 +416,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({
                       tracking-tight
                       font-inter
                       !text-primary
+                      hidden lg:inline-block
                     `}
                   >
                     {item.stepNumber}

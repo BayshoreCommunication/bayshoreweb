@@ -119,12 +119,12 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
                             VS BADGE (Positioned between Bayshore VA and Full-Time Hire)
                            ========================================================================= */}
                         <div className="hidden lg:flex absolute left-[33.333%] top-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
-                            <div className="w-16 h-16 rounded-full bg-[#FF5E1E] text-white font-bold text-xl flex items-center justify-center shadow-lg border-2 border-white tracking-wider">
+                            <div className="w-20 h-20 rounded-full bg-[#FF5E1E] text-white font-bold text-xl flex items-center justify-center shadow-lg border-2 border-white tracking-wider">
                                 VS
                             </div>
                         </div>
                         <div className="flex lg:hidden my-[-10px] mx-auto z-20 relative">
-                            <div className="w-10 h-10 rounded-full bg-[#FF5E1E] text-white font-extrabold text-xs flex items-center justify-center shadow-lg border-2 border-white tracking-wider">
+                            <div className="w-20 h-20 rounded-full bg-[#FF5E1E] text-white font-bold text-[16px] flex items-center justify-center shadow-lg border-2 border-white tracking-wider">
                                 VS
                             </div>
                         </div>
@@ -391,7 +391,7 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
 
                             {/* Bottom Box: Summary Callout Card */}
                             <div className="bg-[#FFF3EC] border border-[#FFE2D1] rounded-[20px] p-4 sm:p-5 flex items-center gap-4 shadow-sm">
-                                <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-[#FF5E1E] text-white flex items-center justify-center flex-shrink-0 shadow-md">
+                                <div className="w-20 h-20 sm:w-30 sm:h-30 rounded-[16px] bg-[#FF5E1E] text-white flex items-center justify-center flex-shrink-0 shadow-md">
                                     <FiTrendingUp className="text-2xl" />
                                 </div>
                                 <div>
@@ -472,7 +472,7 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
                                 whileHover={{ scale: 1.03, y: -3 }}
                                 className="rounded-2xl p-6 sm:p-7 shadow-md sm:w-[300px] border border-slate-100 bg-white text-[#0C1827] transition-all"
                             >
-                                <h4 className="text-xl sm:text-2xl font-bold leading-snug tracking-tight">
+                                <h4 className="text-[14px] sm:text-[16px] font-semibold leading-snug tracking-tight">
                                     Great Teams <br />
                                     Build Greater <br />
                                     Business
@@ -496,7 +496,7 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
                                             <span className="text-[#FE6F1F] font-bold text-lg flex-shrink-0">
                                                 <FiCheck className="stroke-[3]" />
                                             </span>
-                                            <span className="text-[14px] sm:text-[15px] font-semibold text-[#0C1827]">
+                                            <span className="text-[14px] sm:text-[16px] font-semibold text-[#0C1827]">
                                                 {item}
                                             </span>
                                         </li>
