@@ -15,7 +15,7 @@ export default function CostEffectiveSection({ onFindTalentForRoleClick }: CostE
     const isInView = useInView(sectionRef, { once: true, margin: '-100px' });
 
     return (
-        <section ref={sectionRef} className="w-full bg-[#f9fafb] py-16 sm:py-20 lg:py-24 overflow-hidden">
+        <section id="pricing" ref={sectionRef} className="scroll-mt-20 md:scroll-mt-24 w-full bg-[#f9fafb] py-16 sm:py-20 lg:py-24 overflow-hidden">
             {/* Main Outer Container */}
             <div className="max-w-[1380px] mx-auto px-4 sm:px-6 lg:px-8">
 

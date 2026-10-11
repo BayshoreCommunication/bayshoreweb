@@ -342,12 +342,13 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
 
   return (
     <section
-      className={`${inter.className} py-14 sm:py-20 lg:py-24 w-full max-w-full overflow-hidden transition-colors duration-300 ${theme === "dark"
+      id="solutions"
+      className={`${inter.className} scroll-mt-20 md:scroll-mt-24 py-14 sm:py-20 lg:py-24 w-full max-w-full overflow-hidden transition-colors duration-300 ${theme === "dark"
         ? "bg-[#07192C] text-white"
         : "bg-[#F5F7FD] text-[#0C1827]"
         }`}
     >
-      <div className="mx-auto max-w-[1650px] px-6 sm:px-10 md:px-[30px]" id="solutions">
+      <div className="mx-auto max-w-[1650px] px-6 sm:px-10 md:px-[30px]">
         {/* Section Header Top Area */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -358,12 +359,6 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({
         >
           {/* Header Titles */}
           <div className=" mx-auto text-center">
-            {/* <span
-              className={`inline-block text-sm sm:text-base font-semibold uppercase tracking-[0.2em] mb-3 text-center ${theme === "dark" ? "!text-slate-300" : "!text-[#556070]"
-                }`}
-            >
-              OUR SOLUTIONS
-            </span> */}
             <h2
               className={`text-[28px] md:text-[46px] font-bold tracking-tight leading-[1.15] mb-4 sm:mb-6 text-center ${theme === "dark" ? "!text-white" : "!text-[#0C1827]"
                 }`}

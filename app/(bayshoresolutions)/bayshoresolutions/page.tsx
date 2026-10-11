@@ -22,7 +22,7 @@ import CalendlyModal, { openCalendlyModal } from "@/components/bayshoreSolutions
 export default function BayshoreSolutionsPage() {
     return (
         <div
-            className="min-h-screen w-full max-w-full overflow-x-hidden transition-colors duration-300 font-inter"
+            className="min-h-screen w-full max-w-full overflow-x-clip transition-colors duration-300 font-inter"
         >
             {/* Bayshore Solutions Navbar Component */}
             <Navbar />

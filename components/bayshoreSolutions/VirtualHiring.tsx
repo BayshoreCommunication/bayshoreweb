@@ -81,7 +81,8 @@ export const VirtualHiring = () => {
 
   return (
     <section
-      className="relative w-full py-20 lg:py-28 bg-cover bg-center bg-no-repeat overflow-hidden font-sans"
+      id="contact"
+      className="scroll-mt-20 md:scroll-mt-24 relative w-full py-20 lg:py-28 bg-cover bg-center bg-no-repeat overflow-hidden font-sans"
       style={{ backgroundImage: `url('/assets/bayshoreSolutions/VirtualHiring.png')` }}
     >
       {/* Light overlay for readability over background image */}

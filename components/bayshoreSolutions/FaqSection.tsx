@@ -162,7 +162,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
   };
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 w-full max-w-full relative z-10 text-[#0C1827] ">
+    <section id="faq" className="scroll-mt-20 md:scroll-mt-24 py-16 sm:py-20 lg:py-24 w-full max-w-full relative z-10 text-[#0C1827] ">
       {/* Container width 1380px and px-8 */}
       <div className="mx-auto max-w-[1380px] px-6 sm:px-8">
 

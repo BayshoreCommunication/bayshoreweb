@@ -158,7 +158,7 @@ export default function HeroSection() {
                 </svg>
               </div>
             </div>
-            <div className="text-[#334155] text-xs lg:text-sm font-medium leading-[1.35]">
+            <div className="text-[#334155] text-[14px] lg:text-[16px] font-medium leading-[1.35]">
               Lower cost <br />than U.S. employees.
             </div>
           </div>
@@ -188,23 +188,24 @@ export default function HeroSection() {
           className="pointer-events-auto absolute z-20 transition-all duration-300 hover:scale-105"
           style={{ left: '80.86%', top: '49.77%', width: '17.0%' }}
         >
-          <div className="bg-white/95 backdrop-blur-md rounded-2xl lg:rounded-3xl p-3.5 lg:p-4.5 xl:p-5 shadow-lg border border-white/90 flex items-center gap-3.5">
-            <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#0B192C] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
-              <svg className="w-6 h-6 lg:w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <div className="bg-white/95 backdrop-blur-md rounded-2xl lg:rounded-3xl p-5 lg:p-6  shadow-lg border border-white/90 flex items-center gap-3.5">
+            <div className="w-12 h-12 lg:w-20 lg:h-20 rounded-[10px] bg-[#0B192C] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+              <svg className="w-10 h-10 lg:w-15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="9" />
                 <polyline points="12 7 12 12 9 12" />
               </svg>
             </div>
-            <div className="flex flex-col min-w-0">
+            <div className="flex flex-col min-w-0 gap-2">
               <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-base lg:text-lg xl:text-xl text-[#0B192C] leading-none tracking-tight">
+                <span className="font-extrabold text-[16px] lg:text-[18px]  text-[#0B192C] leading-none tracking-tight">
                   <AnimatedCounter end={48} duration={1400} /> Hours
                 </span>
                 <span className="w-3.5 h-3.5 rounded-full bg-[#86EFAC]/50 flex items-center justify-center flex-shrink-0">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#16A34A]" />
                 </span>
               </div>
-              <div className="text-[#334155] text-xs lg:text-sm font-medium leading-tight mt-1.5 truncate">
+              <div className="text-[#334155] text-[14px] lg:text-[16px] font-medium leading-[1.35]">
+
                 Interview before you hire.
               </div>
             </div>

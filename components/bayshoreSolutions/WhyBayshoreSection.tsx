@@ -44,9 +44,9 @@ export default function WhyBayshoreSection() {
     ];
 
     return (
-        <section className="w-full bg-white py-[60px] lg:py-[80px]">
+        <section id="about" className="w-full bg-white py-[60px] lg:py-[80px] scroll-mt-20 md:scroll-mt-24">
             {/* Main Container with max-w-[1380px] and px-8 */}
-            <div className="max-w-[1380px] mx-auto px-8">
+            <div id="why-bayshore" className="max-w-[1380px] mx-auto px-8">
 
                 {/* Section Header */}
                 <div className="text-center mb-[16px] lg:mb-[45px]">
@@ -73,7 +73,7 @@ export default function WhyBayshoreSection() {
                             </div>
 
                             {/* Feature Content */}
-                            <div className="flex flex-col text-start md:text-center sm:text-left">
+                            <div className="flex flex-col text-start  sm:text-left">
                                 <h3 className="font-semibold md:font-bold text-[#0B192C] mb-[8px] text-[16px] md:text-[18px]" >
                                     {item.title}
                                 </h3>
