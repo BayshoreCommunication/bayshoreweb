@@ -44,26 +44,26 @@ export default function WhyBayshoreSection() {
     ];
 
     return (
-        <section className="w-full bg-white py-[60px] lg:py-[80px]">
+        <section id="about" className="w-full bg-white py-[60px] lg:py-[80px] scroll-mt-20 md:scroll-mt-24">
             {/* Main Container with max-w-[1380px] and px-8 */}
-            <div className="max-w-[1380px] mx-auto px-8">
+            <div id="why-bayshore" className="max-w-[1380px] mx-auto px-8">
 
                 {/* Section Header */}
-                <div className="text-center mb-[30px] lg:mb-[45px]">
+                <div className="text-center mb-[16px] lg:mb-[45px]">
                     <h2 className=" font-bold text-[#0B192C] text-[28px] md:text-[46px]" >
                         Why Bayshore Virtual <span className="text-primary">Solutions</span>
                     </h2>
                 </div>
 
                 {/* 2x3 Grid Cards Container */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px] lg:gap-[24px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-[10px] lg:gap-[24px]">
                     {features.map((item, index) => (
                         <div
                             key={index}
-                            className="bg-white border border-gray-200 rounded-[24px] p-[28px] sm:p-[36px] flex flex-col sm:flex-row items-center gap-[24px] shadow-sm hover:shadow-md transition-shadow"
+                            className="bg-white border border-gray-200 rounded-[24px] p-[16px] sm:p-[36px] flex flex-row items-center gap-[24px] shadow-sm hover:shadow-md transition-shadow"
                         >
                             {/* Feature Illustration/Image */}
-                            <div className="relative w-[140px] h-[120px] sm:w-[180px] sm:h-[140px] flex-shrink-0">
+                            <div className="relative w-[100px] h-[80px] md:w-[140px] md:h-[120px] sm:w-[180px] sm:h-[140px] flex-shrink-0">
                                 <Image
                                     src={item.image}
                                     alt={item.title}
@@ -73,11 +73,11 @@ export default function WhyBayshoreSection() {
                             </div>
 
                             {/* Feature Content */}
-                            <div className="flex flex-col text-center sm:text-left">
-                                <h3 className="font-bold text-[#0B192C] mb-[8px]" style={{ fontSize: '18px', lineHeight: '1.4' }}>
+                            <div className="flex flex-col text-start  sm:text-left">
+                                <h3 className="font-semibold md:font-bold text-[#0B192C] mb-[8px] text-[16px] md:text-[18px]" >
                                     {item.title}
                                 </h3>
-                                <p className="text-[#475569]" style={{ fontSize: '14px', lineHeight: '1.6' }}>
+                                <p className="text-[#475569] text-[14px] leading-[1.6]" >
                                     {item.description}
                                 </p>
                             </div>

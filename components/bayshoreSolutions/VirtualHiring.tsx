@@ -81,7 +81,8 @@ export const VirtualHiring = () => {
 
   return (
     <section
-      className="relative w-full py-20 lg:py-28 bg-cover bg-center bg-no-repeat overflow-hidden font-sans"
+      id="contact"
+      className="scroll-mt-20 md:scroll-mt-24 relative w-full py-20 lg:py-28 bg-cover bg-center bg-no-repeat overflow-hidden font-sans"
       style={{ backgroundImage: `url('/assets/bayshoreSolutions/VirtualHiring.png')` }}
     >
       {/* Light overlay for readability over background image */}
@@ -336,9 +337,9 @@ export const VirtualHiring = () => {
                 id="consent"
                 checked={formData.consent}
                 onChange={handleChange}
-                className="mt-1 w-4 h-4 text-[#f97316] rounded border-gray-300 focus:ring-[#f97316] cursor-pointer"
+                className="mt-1 w-6 h-6 text-[#f97316] rounded border-gray-300 focus:ring-[#f97316] cursor-pointer"
               />
-              <label htmlFor="consent" className="text-[11px] text-gray-500 leading-tight">
+              <label htmlFor="consent" className="text-[13px] text-gray-500 leading-tight font-normal">
                 I consent to Bayshore Virtual Solutions contacting me by phone, SMS, and email. Messaging frequency varies. Standard message and data rates may apply. To unsubscribe, reply STOP anytime. By consenting I acknowledge I have read and agree to Bayshore Virtual Solutions&apos; <a href="#" className="underline text-gray-600 hover:text-[#f97316]">Terms & Conditions</a> and <a href="#" className="underline text-gray-600 hover:text-[#f97316]">Privacy Policy</a>. I can withdraw consent at any time.
               </label>
             </div>

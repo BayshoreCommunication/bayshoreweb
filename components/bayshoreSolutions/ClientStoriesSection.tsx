@@ -96,9 +96,12 @@ export const ClientStoriesSection: React.FC<ClientStoriesSectionProps> = ({
   }, [playingStoryId, stories]);
 
   return (
-    <section className="py-16 sm:py-20 lg:py-24 w-full max-w-full overflow-hidden  text-[#0C1827] font-sans">
+    <section
+      id="testimonials"
+      className="scroll-mt-20 md:scroll-mt-24 py-16 sm:py-20 lg:py-24 w-full max-w-full overflow-hidden text-[#0C1827] font-sans"
+    >
       {/* Container width 1380px and px-8 */}
-      <div className="mx-auto max-w-[1380px] px-8">
+      <div className="mx-auto max-w-[1380px] px-8" id="what-people-say">
 
         {/* Section Header Top Area (Centered) */}
         <motion.div

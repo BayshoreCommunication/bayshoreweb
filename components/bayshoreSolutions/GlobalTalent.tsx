@@ -283,11 +283,12 @@ export default function GlobalTalent() {
 
     return (
         <section
-            className="relative w-full pt-14 pb-24 sm:py-20 lg:py-24 min-h-[620px] sm:min-h-0 bg-cover bg-center bg-no-repeat overflow-hidden"
+            id="talents"
+            className="scroll-mt-20 md:scroll-mt-24 relative w-full pt-14 pb-24 sm:py-20 lg:py-24 min-h-[620px] sm:min-h-0 bg-cover bg-center bg-no-repeat overflow-hidden"
             style={{ backgroundImage: `url('/assets/bayshoreSolutions/global-talent-bg.png')` }}
         >
             {/* Header Title Section */}
-            <div className="text-center max-w-[1000px] mx-auto mb-6 sm:mb-12 lg:mb-16 px-4 sm:px-8 z-10 relative">
+            <div id="our-talents" className="text-center max-w-[1000px] mx-auto mb-6 sm:mb-12 lg:mb-16 px-4 sm:px-8 z-10 relative">
                 <h2 className="font-bold text-[32px] sm:text-[38px] lg:text-[46px] text-[#0d1b2a] leading-tight tracking-tight">
                     All of your favorite companies and brands utilize{' '}
                     <span className="text-[#f97316]">global talent</span>, why don&apos;t you?

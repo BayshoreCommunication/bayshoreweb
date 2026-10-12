@@ -158,7 +158,7 @@ export default function HeroSection() {
                 </svg>
               </div>
             </div>
-            <div className="text-[#334155] text-xs lg:text-sm font-medium leading-[1.35]">
+            <div className="text-[#334155] text-[14px] lg:text-[16px] font-medium leading-[1.35]">
               Lower cost <br />than U.S. employees.
             </div>
           </div>
@@ -188,23 +188,24 @@ export default function HeroSection() {
           className="pointer-events-auto absolute z-20 transition-all duration-300 hover:scale-105"
           style={{ left: '80.86%', top: '49.77%', width: '17.0%' }}
         >
-          <div className="bg-white/95 backdrop-blur-md rounded-2xl lg:rounded-3xl p-3.5 lg:p-4.5 xl:p-5 shadow-lg border border-white/90 flex items-center gap-3.5">
-            <div className="w-12 h-12 lg:w-14 lg:h-14 rounded-full bg-[#0B192C] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
-              <svg className="w-6 h-6 lg:w-7" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+          <div className="bg-white/95 backdrop-blur-md rounded-2xl lg:rounded-3xl p-5 lg:p-6  shadow-lg border border-white/90 flex items-center gap-3.5">
+            <div className="w-12 h-12 lg:w-20 lg:h-20 rounded-[10px] bg-[#0B192C] text-white flex items-center justify-center flex-shrink-0 shadow-sm">
+              <svg className="w-10 h-10 lg:w-15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="12" cy="12" r="9" />
                 <polyline points="12 7 12 12 9 12" />
               </svg>
             </div>
-            <div className="flex flex-col min-w-0">
+            <div className="flex flex-col min-w-0 gap-2">
               <div className="flex items-center gap-1.5">
-                <span className="font-extrabold text-base lg:text-lg xl:text-xl text-[#0B192C] leading-none tracking-tight">
+                <span className="font-extrabold text-[16px] lg:text-[18px]  text-[#0B192C] leading-none tracking-tight">
                   <AnimatedCounter end={48} duration={1400} /> Hours
                 </span>
                 <span className="w-3.5 h-3.5 rounded-full bg-[#86EFAC]/50 flex items-center justify-center flex-shrink-0">
                   <span className="w-1.5 h-1.5 rounded-full bg-[#16A34A]" />
                 </span>
               </div>
-              <div className="text-[#334155] text-xs lg:text-sm font-medium leading-tight mt-1.5 truncate">
+              <div className="text-[#334155] text-[14px] lg:text-[16px] font-medium leading-[1.35]">
+
                 Interview before you hire.
               </div>
             </div>
@@ -230,13 +231,13 @@ export default function HeroSection() {
         </div>
 
         {/* Content Overlaid at Top */}
-        <div className="relative z-10 flex flex-col items-center text-center px-5 pt-28 ">
-          <h1 className="font-bold  text-[#0B192C] tracking-tight text-[28px] sm:text-[32px] leading-[1.16] mb-3">
+        <div className="relative z-10 flex flex-col items-center text-center px-5 pt-16 ">
+          <h1 className="font-bold  text-[#0B192C] tracking-tight text-[28px] sm:text-[32px] leading-[1.16] mb-6">
             Build Your Team with <br />
             Global Talent <span className="text-[#FE6F1F]">Starting at <br className="xs:hidden" />$3 Per Hour</span>
           </h1>
 
-          <p className="text-[#475569] text-[14px] leading-[1.5] max-w-[320px] mx-auto mb-6">
+          <p className="text-[#475569] text-[14px] leading-[1.5] max-w-[320px] mx-auto mb-10">
             Hire dedicated, English-speaking professionals from Asia for up to 75% less than the cost of U.S. employees.
           </p>
 
@@ -245,7 +246,7 @@ export default function HeroSection() {
             data-calendly="true"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2.5 bg-[#0B192C] text-white rounded-[10px] px-7 py-3 text-[14px] font-semibold lg:font-bold tracking-wider hover:bg-[#FE6F1F] transition-all duration-300 shadow-md group cursor-pointer"
+            className="inline-flex items-center justify-center gap-2.5 bg-[#0B192C] text-white rounded-full px-[30px] py-[10px] text-[14px] font-semibold lg:font-bold tracking-wider hover:bg-[#FE6F1F] transition-all duration-300 shadow-md group cursor-pointer"
           >
             <span>FIND YOUR TALENT</span>
             <svg
@@ -259,6 +260,66 @@ export default function HeroSection() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
             </svg>
           </Link>
+
+
+          {/* Mobile Stats Cards — directly after CTA button */}
+          <div className="mt-10 grid w-full  grid-cols-2 gap-3 ">
+            {/* 75% Lower Cost */}
+            <div className="flex gap-5 min-w-0 items-center justify-center rounded-2xl border border-gray-100 bg-white/95 p-3 text-center shadow-lg backdrop-blur-sm">
+              <div className="mb-3 flex h-20 w-20 items-center justify-center rounded-xl bg-orange-50 p-2.5 text-orange-500">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-full w-full"
+                  aria-hidden="true"
+                >
+                  <path d="M3 17l6-6 4 4 8-8" />
+                  <path d="M15 7h6v6" />
+                </svg>
+              </div>
+              <div className="flex flex-col items-start gap-1">
+                <p className="whitespace-nowrap text-[16px] font-bold leading-tight text-slate-900">
+                  <AnimatedCounter end={75} suffix="%" />
+                </p>
+
+                <p className="text-[12px] font-medium text-gray-600">
+                  Lower Cost
+                </p>
+              </div>
+            </div>
+
+            {/* 48 Hours */}
+            <div className="flex gap-5 min-w-0 items-center justify-center rounded-2xl border border-gray-100 bg-white/95 p-3 text-center shadow-lg backdrop-blur-sm">
+              <div className="mb-3 flex h-20 w-20 items-center justify-center rounded-xl bg-orange-50 p-2.5 text-orange-500">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-full w-full"
+                  aria-hidden="true"
+                >
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" />
+                </svg>
+              </div>
+              <div className="flex flex-col items-start gap-1">
+                <p className="whitespace-nowrap text-[16px] font-bold leading-tight text-slate-900">
+                  <AnimatedCounter end={48} suffix=" Hours" />
+                </p>
+
+                <p className="text-[12px] font-medium text-gray-600">
+                  Quick Deployment
+                </p></div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
