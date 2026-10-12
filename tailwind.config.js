@@ -18,6 +18,7 @@ module.exports = withMT({
       fontFamily: {
         playfair: ["'Playfair Display'", "Georgia", "serif"],
         instrument: ["'Instrument Sans'", "sans-serif"],
+        inter: ["'Inter'", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
