@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { Users, Search, Target, Clock } from "lucide-react";
+import Link from "next/link";
+import { Users, Search, Target, Clock, ArrowRight } from "lucide-react";
 
 const PROBLEMS = [
   {
@@ -56,6 +57,17 @@ export default function NaplesProblem() {
             <p className="font-instrument mt-6 text-[15px] sm:text-[16px] md:text-[17px] leading-[1.7] text-[#4A5568] max-w-[520px]">
               You run Google Ads and hold a few page one rankings across Collier County. Calls arrive, yet too many come from Miami, Tampa or the wrong practice area. The cause sits in targeting, tracking and follow up rather than in budget.
             </p>
+
+            {/* CTA Button */}
+            <div className="mt-8 sm:mt-10">
+              <Link
+                href="/contact"
+                className="group inline-flex h-[52px] items-center justify-center gap-2.5 rounded-[8px] bg-[#FF5528] px-7 text-[15px] sm:text-[16px] font-semibold text-white shadow-[0_8px_20px_rgba(255,85,40,0.28)] transition-all duration-300 hover:bg-[#e44317] hover:shadow-[0_12px_26px_rgba(255,85,40,0.38)] hover:-translate-y-0.5"
+              >
+                <span>Request For Proposal</span>
+                <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
           </div>
 
           {/* Right Column: 4 Problem Cards Stack with Timeline */}

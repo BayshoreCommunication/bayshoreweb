@@ -86,8 +86,6 @@ const Page = () => {
       {/* 14. Why Choose Us */}
       <NaplesWhyUs />
 
-      
-
       {/* 16. FAQ & Final Free Audit Call to Action */}
       <NaplesFaq />
     </main>

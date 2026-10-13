@@ -150,7 +150,7 @@ export default function NaplesFaq() {
 
             <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-5 sm:gap-6">
               <Link
-                href="#contact"
+                href="/contact"
                 className="group inline-flex h-[52px] items-center justify-center gap-2.5 rounded-[8px] bg-[#FF5528] px-8 text-[15px] sm:text-[16px] font-semibold text-white shadow-[0_6px_20px_rgba(255,85,40,0.35)] transition-all duration-300 hover:bg-[#e44317] hover:shadow-[0_10px_25px_rgba(255,85,40,0.45)] hover:-translate-y-0.5"
               >
                 <span>Get Your Free Audit</span>

@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { MapPinOff, Link2Off, PhoneOff, Flame } from "lucide-react";
+import Link from "next/link";
+import { MapPinOff, Link2Off, PhoneOff, Flame, ArrowRight } from "lucide-react";
 
 const PROBLEMS = [
   {
@@ -62,6 +63,17 @@ export default function LegalRootProblem() {
             <p className="font-instrument mt-6 text-[15px] sm:text-[16px] md:text-[17px] leading-[1.7] text-[#4A5568] max-w-[520px]">
               Law firms frequently waste marketing dollars on web traffic that fails to convert into paying clients. High lead volume delivers little value if your intake staff spends hours sifting through out-of-state inquiries or unviable claims.
             </p>
+
+            {/* CTA Button */}
+            <div className="mt-8 sm:mt-10">
+              <Link
+                href="/contact"
+                className="group inline-flex h-[52px] items-center justify-center gap-2.5 rounded-[8px] bg-[#FF5528] px-7 text-[15px] sm:text-[16px] font-semibold text-white shadow-[0_8px_20px_rgba(255,85,40,0.28)] transition-all duration-300 hover:bg-[#e44317] hover:shadow-[0_12px_26px_rgba(255,85,40,0.38)] hover:-translate-y-0.5"
+              >
+                <span>Request For Proposal</span>
+                <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
+              </Link>
+            </div>
           </div>
 
           {/* ===================================================================
