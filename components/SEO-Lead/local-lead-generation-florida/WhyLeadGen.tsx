@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
-import { Landmark, Users, User, MapPin, TrendingUp } from "lucide-react";
+import React from "react";
+import { Search, Compass, Target, Landmark } from "lucide-react";
 
-// Law firms in the Florida trust bar
+// Businesses and firms trust bar
 const TRUSTED_FIRMS = [
   { name: "Carter Injury Law" },
   { name: "Melamed Law" },
@@ -12,76 +12,38 @@ const TRUSTED_FIRMS = [
   { name: "Trip Law" },
 ];
 
-// Reusable Animated Counter component with Inter font
-function AnimatedCounter({
-  value,
-  prefix = "",
-  suffix = "",
-  duration = 1.6,
-  formatNumber = true,
-}: {
-  value: number;
-  prefix?: string;
-  suffix?: string;
-  duration?: number;
-  formatNumber?: boolean;
-}) {
-  const [displayValue, setDisplayValue] = useState(value);
-  const hasAnimatedRef = useRef(false);
-
-  useEffect(() => {
-    if (hasAnimatedRef.current) return;
-    hasAnimatedRef.current = true;
-
-    let startTimestamp: number | null = null;
-    let animationFrameId: number;
-
-    setDisplayValue(0);
-
-    const step = (timestamp: number) => {
-      if (!startTimestamp) startTimestamp = timestamp;
-      const progress = Math.min(
-        (timestamp - startTimestamp) / (duration * 1000),
-        1
-      );
-      const easeProgress = progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
-      setDisplayValue(Math.round(easeProgress * value));
-
-      if (progress < 1) {
-        animationFrameId = requestAnimationFrame(step);
-      } else {
-        setDisplayValue(value);
-      }
-    };
-
-    animationFrameId = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(animationFrameId);
-  }, [value, duration]);
-
-  const formatted = formatNumber
-    ? displayValue.toLocaleString()
-    : displayValue.toString();
-
-  return (
-    <span className="tabular-nums font-inter">
-      {prefix}
-      {formatted}
-      {suffix}
-    </span>
-  );
-}
+const REASONS = [
+  {
+    icon: Search,
+    title: "Local Search Creates the First Customer Touchpoint",
+    description:
+      "People often begin with a local search.Google Search can return organic pages, local results, Google Maps listings and paid ads. Google Business Profile also gives customers access to phone numbers, directions, reviews, photos, services and other business details. Your business needs relevant visibility for the searches tied to your services and service area. Local search also gives you strong signals about intent. A person searching for a service plus a city often has a specific need and a specific market in mind.",
+  },
+  {
+    icon: Compass,
+    title: "Visibility Needs a Conversion Path",
+    description:
+      "A visit gives your business an opportunity. A conversion path turns the opportunity into an inquiry. That path can include a service page, city page, landing page, click to call button, short form, quote request, consultation request or booking flow. The page also needs a clear reason for action. A local offer can help. Strong reviews can help. Service details, credentials, pricing guidance and clear next steps can help. Your traffic source, landing page and call to action should work as one system.",
+  },
+  {
+    icon: Target,
+    title: "Businesses Need Location Specific Targeting",
+    description:
+      "Broad campaigns often attract a mixed audience. Local lead generation gives your budget a defined target. Targeting works best in layers, from region and metro to county, city and neighborhood. A Boca Raton estate attorney wants Palm Beach County and Broward County adds waste. Broad campaigns collect inquiries from Georgia, New York and counties outside your reach. Each stray inquiry costs ad budget, intake time and a little team morale. Service area business owners should set boundaries first, then buy traffic inside them.",
+  },
+];
 
 export default function WhyLeadGen() {
   return (
-    <section className="relative w-full bg-white py-14 sm:py-18 lg:py-20 border-t border-[#EEF2F6]/80">
+    <section className="relative w-full bg-white py-14 sm:py-18 lg:py-24 border-t border-[#EEF2F6]/80">
       <div className="mx-auto max-w-[1580px] px-16 sm:px-8 md:px-10 lg:px-12 xl:px-16">
         
         {/* =========================================================================
-            TRUSTED BY FLORIDA LAW FIRMS (TRUST BAR)
+            TRUSTED BY FLORIDA BUSINESSES (TRUST BAR)
             ========================================================================= */}
         <div className="mb-14 sm:mb-16 lg:mb-20">
           <p className="font-mono text-[11px] sm:text-[12px] font-semibold tracking-[0.16em] text-[#64748B] uppercase mb-4 sm:mb-5">
-            TRUSTED BY FLORIDA LAW FIRMS
+            TRUSTED BY FLORIDA BUSINESSES & PRACTICES
           </p>
 
           <div className="flex flex-wrap items-center gap-3 sm:gap-4 lg:gap-4">
@@ -102,117 +64,58 @@ export default function WhyLeadGen() {
         </div>
 
         {/* =========================================================================
-            SECTION CONTENT: THE WHY (2-COLUMN GRID)
+            SECTION CONTENT: WHY FLORIDA LOCAL BUSINESSES NEED LEAD GENERATION
             ========================================================================= */}
-        <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-12 xl:gap-16">
-          
-          {/* ---------------- LEFT: HEADLINE & COPY ---------------- */}
-          <div className="lg:col-span-6 xl:col-span-6">
-            
-            {/* Section Tag */}
-            <div className="inline-flex items-center">
-              <span className="font-mono text-[12px] sm:text-[13px] font-bold tracking-[0.16em] text-primary uppercase">
-                I. THE WHY
-              </span>
-            </div>
-
-            {/* Headline */}
-            <h2 className="font-playfair mt-4 text-[34px] sm:text-[42px] md:text-[48px] lg:text-[50px] xl:text-[54px] font-bold leading-[1.12] tracking-[-0.02em] text-[#0A192F]">
-              Why lead generation
-              <br />
-              decides whether your
-              <br />
-              firm{" "}
-              <span className="italic font-normal text-primary">
-                grows or stalls
-              </span>
-              .
-            </h2>
-
-            {/* Orange Decorative Accent Line */}
-            <div className="mt-4 mb-6 h-[3.5px] w-12 rounded-full bg-primary" />
-
-            {/* Paragraph Text */}
-            <p className="font-instrument text-[16px] sm:text-[17px] md:text-[18px] leading-[1.72] text-[#4A5568] max-w-[580px]">
-              Florida is one of the largest, fastest-growing, and most competitive legal markets in the country. The firms that grow aren&apos;t always the ones with the best case results — they&apos;re the ones prospective clients can actually find, trust, and reach first. If your visibility and intake aren&apos;t built for that scale of competition, referrals alone won&apos;t carry you.
-            </p>
+        <div>
+          {/* Section Tag */}
+          <div className="inline-flex items-center">
+            <span className="font-mono text-[12px] sm:text-[13px] font-bold tracking-[0.16em] text-primary uppercase">
+              I. THE WHY
+            </span>
           </div>
 
-          {/* ---------------- RIGHT: 2X2 STAT CARDS GRID ---------------- */}
-          <div className="lg:col-span-6 xl:col-span-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
-              
-              {/* CARD 1: TOP LEFT (Dark Navy) */}
-              <div className="group relative overflow-hidden rounded-[16px] bg-[#0E1D33] p-6 sm:p-7 shadow-[0_15px_35px_rgba(14,29,51,0.14)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(14,29,51,0.22)]">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition-transform duration-300 group-hover:scale-105">
-                    <Users size={24} strokeWidth={2.2} />
-                  </div>
+          {/* Headline from Doc */}
+          <h2 className="font-playfair mt-4 text-[32px] sm:text-[40px] md:text-[46px] lg:text-[48px] xl:text-[52px] font-bold leading-[1.14] tracking-[-0.02em] text-[#0A192F] max-w-[900px]">
+            Why Florida Local Businesses Need Lead Generation
+          </h2>
+
+          {/* Orange Accent Line */}
+          <div className="mt-4 mb-5 h-[3.5px] w-12 rounded-full bg-primary" />
+
+          {/* Intro Paragraph from Doc */}
+          <p className="font-instrument text-[16px] sm:text-[17px] md:text-[18px] leading-[1.72] text-[#4A5568] max-w-[860px]">
+            Businesses need local lead generation to capture nearby customers, beat intense competition in fast growing metros and survive predictable seasonal shifts. Google Search, Google Maps, the Local Pack and paid search all give local businesses opportunities to reach people with active service intent. The next step depends on the page, offer, call path and follow up process.
+          </p>
+
+          {/* 3 Pillar Cards Grid */}
+          <div className="mt-10 sm:mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-7 lg:gap-8">
+            {REASONS.map((reason, idx) => {
+              const Icon = reason.icon;
+              return (
+                <div
+                  key={idx}
+                  className="group relative flex flex-col justify-between rounded-[20px] border border-[#E2E8F0] bg-white p-7 sm:p-8 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-[0_16px_36px_rgba(15,23,42,0.08)]"
+                >
                   <div>
-                    <h3 className="font-inter text-[34px] sm:text-[38px] font-bold leading-none tracking-tight text-primary">
-                      <AnimatedCounter value={23} suffix="M+" />
+                    {/* Circle Icon Badge */}
+                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#FFF2ED] text-primary transition-transform duration-300 group-hover:scale-105">
+                      <Icon size={26} strokeWidth={2.2} />
+                    </div>
+
+                    {/* Card Title (H3) */}
+                    <h3 className="font-playfair mt-6 text-[20px] sm:text-[22px] font-bold leading-[1.25] text-[#0A192F]">
+                      {reason.title}
                     </h3>
-                    <p className="font-mono mt-2 text-[11px] sm:text-[12px] font-medium tracking-[0.12em] text-[#94A3B8] uppercase">
-                      FL Residents Statewide
+
+                    {/* Card Body from Doc */}
+                    <p className="font-instrument mt-3 text-[14.5px] sm:text-[15px] leading-[1.7] text-[#4A5568]">
+                      {reason.description}
                     </p>
                   </div>
                 </div>
-              </div>
-
-              {/* CARD 2: TOP RIGHT (White) */}
-              <div className="group relative overflow-hidden rounded-[16px] border border-[#E2E8F0] bg-white p-6 sm:p-7 shadow-[0_15px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(15,23,42,0.1)]">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#F1F5F9] text-[#0A192F] transition-transform duration-300 group-hover:scale-105">
-                    <User size={24} strokeWidth={2.2} />
-                  </div>
-                  <div>
-                    <h3 className="font-inter text-[34px] sm:text-[38px] font-bold leading-none tracking-tight text-primary">
-                      <AnimatedCounter value={80} suffix="K+" />
-                    </h3>
-                    <p className="font-mono mt-2 text-[11px] sm:text-[12px] font-medium tracking-[0.12em] text-[#64748B] uppercase">
-                      Active FL Attorneys
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* CARD 3: BOTTOM LEFT (White) */}
-              <div className="group relative overflow-hidden rounded-[16px] border border-[#E2E8F0] bg-white p-6 sm:p-7 shadow-[0_15px_35px_rgba(15,23,42,0.06)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(15,23,42,0.1)]">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#F1F5F9] text-[#0A192F] transition-transform duration-300 group-hover:scale-105">
-                    <MapPin size={24} strokeWidth={2.2} />
-                  </div>
-                  <div>
-                    <h3 className="font-inter text-[34px] sm:text-[38px] font-bold leading-none tracking-tight text-primary">
-                      <AnimatedCounter value={67} />
-                    </h3>
-                    <p className="font-mono mt-2 text-[11px] sm:text-[12px] font-medium tracking-[0.12em] text-[#64748B] uppercase">
-                      Counties, Each Different
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              {/* CARD 4: BOTTOM RIGHT (Dark Navy) */}
-              <div className="group relative overflow-hidden rounded-[16px] bg-[#0E1D33] p-6 sm:p-7 shadow-[0_15px_35px_rgba(14,29,51,0.14)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_45px_rgba(14,29,51,0.22)]">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-white/10 text-white transition-transform duration-300 group-hover:scale-105">
-                    <TrendingUp size={24} strokeWidth={2.2} />
-                  </div>
-                  <div>
-                    <h3 className="font-inter text-[34px] sm:text-[38px] font-bold leading-none tracking-tight text-primary">
-                      <AnimatedCounter value={3} prefix="#" />
-                    </h3>
-                    <p className="font-mono mt-2 text-[11px] sm:text-[12px] font-medium tracking-[0.12em] text-[#94A3B8] uppercase">
-                      Miami: US Attorney Demand
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-            </div>
+              );
+            })}
           </div>
-
         </div>
 
       </div>

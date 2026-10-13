@@ -2,205 +2,214 @@
 
 import React from "react";
 import Link from "next/link";
-import {
-  Target,
-  BarChart3,
-  Users,
-  Check,
-  ArrowRight,
-  type LucideIcon,
-} from "lucide-react";
+import { Check, Target, BarChart3, Users } from "lucide-react";
 
-interface PlanItem {
-  id: string;
-  badge?: string;
-  icon: LucideIcon;
-  tierLabel: string;
-  isPopular?: boolean;
-  title: string;
-  features: string[];
-  bestFor: string;
-  buttonText: string;
-  buttonHref: string;
-}
+// =============================================================================
+// PRICING PACKAGES DATA FROM GOOGLE DOC (100% UNCHANGED)
+// =============================================================================
+const FACTORS = [
+  "Industry",
+  "Search competition",
+  "Target location",
+  "Service area",
+  "Lead value",
+  "Lead volume",
+  "Number of services",
+  "Number of locations",
+  "Acquisition channels",
+  "Website condition",
+  "Landing page needs",
+  "Tracking requirements",
+  "CRM requirements",
+  "Ad budget",
+];
 
-const PLANS: PlanItem[] = [
+const PACKAGES = [
   {
     id: "starter",
     icon: Target,
     tierLabel: "STARTER",
-    title: "Single-Channel Focus",
-    features: [
-      "One core channel: SEO or Paid Search",
-      "One primary practice area",
-      "Monthly performance reporting",
+    title: "Starter (Single Channel Focus)",
+    target: "Solo practitioners and single location businesses",
+    priceRange: "$1,000 to $2,000 monthly",
+    priceSubtext: "Management & ad budget",
+    bullets: [
+      "Local SEO or Google Ads for one primary service",
+      "Google Business Profile optimization",
+      "One city landing page",
+      "Call and form tracking",
+      "Monthly report",
     ],
-    bestFor: "Solo practitioners & small firms",
-    buttonText: "Explore Starter Plan",
+    buttonText: "Get Started",
     buttonHref: "#contact",
   },
   {
     id: "growth",
-    badge: "MOST POPULAR",
     isPopular: true,
+    badge: "MOST POPULAR",
     icon: BarChart3,
     tierLabel: "GROWTH",
-    title: "Multi-Channel Pipeline",
-    features: [
-      "SEO + Paid Search + LSA",
-      "Conversion-optimized landing pages",
-      "Call tracking & monthly strategy calls",
+    title: "Growth (Multi Channel Pipeline)",
+    target: "Established practices and businesses",
+    priceRange: "$3,000 to $6,000 monthly",
+    priceSubtext: "Management & ad budget",
+    bullets: [
+      "Local SEO, Google Ads and Local Services Ads",
+      "City and service landing pages",
+      "Conversion testing",
+      "Call tracking",
+      "SMS and email follow up",
+      "Monthly strategy call",
     ],
-    bestFor: "Growing firms with 2–5 attorneys",
-    buttonText: "Explore Growth Plan",
+    buttonText: "Scale Your Leads",
     buttonHref: "#contact",
   },
   {
-    id: "enterprise",
+    id: "full-service",
     icon: Users,
-    tierLabel: "FULL-SERVICE PARTNER",
-    title: "End-to-End Program",
-    features: [
-      "Full pillar coverage: Visibility, Conversion, Follow-Through",
-      "Multi-office & multi-market management",
-      "Dedicated intake & CRM integration",
+    tierLabel: "FULL SERVICE",
+    title: "Full Service Partner (End to End Program)",
+    target: "Multi location and high volume businesses",
+    priceRange: "$6,000 to $10,000 monthly",
+    priceSubtext: "Management & ad budget",
+    bullets: [
+      "All three pillars across several Florida markets",
+      "Dedicated account lead",
+      "CRM integration and offline conversion imports",
+      "Weekly optimization",
+      "Quarterly strategy review",
+      "Spanish language campaigns where relevant",
     ],
-    bestFor: "Multi-office & high-volume firms",
-    buttonText: "Explore Enterprise Plan",
+    buttonText: "Partner With Us",
     buttonHref: "#contact",
   },
 ];
 
 export default function EngagementOptions() {
   return (
-    <section
-      id="engagement-options"
-      className="relative w-full bg-white py-14 sm:py-18 md:py-20 lg:py-24 xl:py-28 border-t border-[#EEF2F6]/90 overflow-hidden"
-    >
-      <div className="mx-auto max-w-[1580px] w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-        
-        {/* =======================================================================
-            HEADER: SERIAL TAG XIII, HEADLINE & INTRO
-            Strict Roman numeral serial, no border, matching design standard
-            ======================================================================= */}
-        <div className="max-w-[920px] mb-10 sm:mb-12 lg:mb-16">
-          {/* Section Tag */}
+    <section className="relative w-full bg-[#F8FAFC] py-14 sm:py-20 lg:py-28 overflow-hidden">
+      <div className="mx-auto max-w-[1580px] px-16 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+
+        {/* Section Header */}
+        <div className="max-w-[920px] mb-12 sm:mb-16">
           <div className="inline-flex items-center">
-            <span className="font-mono text-[11px] sm:text-[12px] md:text-[13px] tracking-[0.16em] text-[#FF5528] uppercase">
-              <span className="font-playfair italic mr-1">XIV.</span> ENGAGEMENT OPTIONS
+            <span className="font-mono text-[12px] sm:text-[13px] tracking-[0.16em] text-[#FF5528] uppercase">
+              <span className="font-playfair italic mr-1">X.</span> PRICING & TIERS
             </span>
           </div>
 
-          {/* Headline */}
-          <h2 className="font-playfair mt-3.5 sm:mt-4 md:mt-5 text-[30px] xs:text-[34px] sm:text-[42px] md:text-[48px] lg:text-[54px] xl:text-[58px] font-bold leading-[1.14] tracking-[-0.02em] text-[#0A192F]">
-            Ways to work{" "}
-            <span className="italic font-normal text-[#FF5528]">with us.</span>
+          <h2 className="font-playfair mt-4 text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] font-bold leading-[1.12] tracking-[-0.02em] text-[#0A192F]">
+            Local Lead Generation Pricing
           </h2>
 
-          {/* Subtitle / Paragraph */}
-          <p className="font-instrument mt-3.5 sm:mt-4 md:mt-5 text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] leading-[1.68] text-[#556377] max-w-[760px]">
-            Flexible engagement options designed for law firms at every stage of
-            growth — from focused support to a full-service partnership.
+          <p className="font-instrument mt-4 text-[15px] sm:text-[16px] md:text-[17px] leading-[1.68] text-[#4A5568]">
+            A local SEO campaign for one city has a different workload from a multi market program with SEO, Google Ads, landing pages and CRM integration. Several factors impact the investment:
           </p>
+
+          {/* Factors Pills */}
+          <div className="mt-5 flex flex-wrap gap-2">
+            {FACTORS.map((factor, idx) => (
+              <span
+                key={idx}
+                className="inline-flex items-center rounded-full border border-[#E2E8F0] bg-white px-3 py-1 font-mono text-[11px] sm:text-[12px] text-[#475569]"
+              >
+                &bull; {factor}
+              </span>
+            ))}
+          </div>
         </div>
 
-        {/* =======================================================================
-            THREE PRICING / ENGAGEMENT PLAN CARDS
-            Fully responsive grid: 1-col on mobile, 3-col on md & desktop
-            ======================================================================= */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-6 xl:gap-8 items-stretch">
-          {PLANS.map((plan) => {
-            const Icon = plan.icon;
+        {/* 3 Pricing Packages Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-7 lg:gap-8">
+          {PACKAGES.map((pkg) => {
+            const Icon = pkg.icon;
             return (
               <div
-                key={plan.id}
-                className={`relative flex flex-col justify-between rounded-[22px] sm:rounded-[24px] p-6 sm:p-7 lg:p-8 transition-all duration-300 hover:-translate-y-1.5 border border-[#E5E9F2] hover:border-[#FF5528] ${
-                  plan.isPopular
-                    ? "bg-[#FFFBF9] shadow-[0_12px_40px_rgba(255,85,40,0.08)] hover:shadow-[0_20px_50px_rgba(255,85,40,0.16)]"
-                    : "bg-white shadow-[0_4px_24px_rgba(15,23,42,0.04)] hover:shadow-[0_16px_40px_rgba(15,23,42,0.08)]"
+                key={pkg.id}
+                className={`group relative flex flex-col justify-between rounded-[24px] border p-7 sm:p-9 transition-all duration-300 hover:-translate-y-1 ${
+                  pkg.isPopular
+                    ? "bg-[#0A192F] text-white border-[#FF5528] shadow-[0_16px_40px_rgba(255,85,40,0.14)]"
+                    : "bg-white text-[#0A192F] border-[#E2E8F0] shadow-[0_4px_20px_rgba(15,23,42,0.03)] hover:border-[#FF5528]/40 hover:shadow-[0_16px_36px_rgba(15,23,42,0.08)]"
                 }`}
               >
-                {/* Most Popular Badge */}
-                {plan.badge && (
-                  <div className="absolute -top-3.5 right-6 z-10">
-                    <span className="inline-flex items-center rounded-full bg-[#FF5528] px-3.5 py-1 font-mono text-[10px] sm:text-[10.5px] font-bold tracking-[0.14em] text-white shadow-sm uppercase">
-                      {plan.badge}
-                    </span>
-                  </div>
-                )}
-
                 <div>
-                  {/* Top Icon Badge */}
-                  <div className="flex h-13 w-13 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-[14px] bg-[#FFF2ED] text-[#FF5528] transition-transform duration-300 hover:scale-105">
-                    <Icon size={24} strokeWidth={2.2} />
+                  {/* Popular Badge */}
+                  {pkg.badge && (
+                    <div className="absolute -top-3.5 right-6">
+                      <span className="rounded-full bg-[#FF5528] px-3.5 py-1 font-mono text-[10px] sm:text-[11px] font-bold tracking-[0.14em] text-white uppercase shadow-sm">
+                        {pkg.badge}
+                      </span>
+                    </div>
+                  )}
+
+                  {/* Header: Tier Label & Icon */}
+                  <div className="flex items-center justify-between mb-4">
+                    <span className="font-mono text-[11px] sm:text-[12px] font-bold tracking-[0.14em] text-[#FF5528] uppercase">
+                      {pkg.tierLabel}
+                    </span>
+                    <div
+                      className={`flex h-10 w-10 items-center justify-center rounded-full ${
+                        pkg.isPopular
+                          ? "bg-white/10 text-[#FF5528]"
+                          : "bg-[#FFF2ED] text-[#FF5528]"
+                      }`}
+                    >
+                      <Icon size={20} />
+                    </div>
                   </div>
 
-                  {/* Tier Label */}
-                  <p
-                    className={`font-mono text-[11px] sm:text-[11.5px] font-bold tracking-[0.14em] uppercase mt-4 sm:mt-5 ${
-                      plan.isPopular ? "text-[#FF5528]" : "text-[#94A3B8]"
-                    }`}
-                  >
-                    {plan.tierLabel}
-                  </p>
-
-                  {/* Plan Title */}
-                  <h3 className="font-playfair text-[22px] sm:text-[23px] lg:text-[25px] font-bold text-[#0A192F] mt-1.5 leading-tight">
-                    {plan.title}
+                  {/* Package Title */}
+                  <h3 className="font-playfair text-[21px] sm:text-[23px] font-bold leading-tight mb-2">
+                    {pkg.title}
                   </h3>
 
-                  {/* Feature Checklist */}
-                  <ul className="mt-6 space-y-3.5 sm:space-y-4">
-                    {plan.features.map((feature, fIdx) => (
-                      <li key={fIdx} className="flex items-start gap-3">
-                        <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#FFF2ED] text-[#FF5528] mt-0.5">
-                          <Check size={12} strokeWidth={3} />
-                        </div>
-                        <span className="font-instrument text-[14px] sm:text-[14.5px] text-[#475569] leading-relaxed">
-                          {feature}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+                  {/* Target Audience */}
+                  <p
+                    className={`font-instrument text-[13.5px] mb-5 ${
+                      pkg.isPopular ? "text-[#94A3B8]" : "text-[#64748B]"
+                    }`}
+                  >
+                    {pkg.target}
+                  </p>
 
-                {/* Bottom Section: Divider, Best For & CTA */}
-                <div className="mt-8 pt-6 sm:pt-7 border-t border-[#EEF2F6]">
-                  {/* Best For Eyebrow & Description */}
-                  <div>
-                    <span className="font-mono text-[10px] sm:text-[10.5px] font-bold tracking-[0.14em] text-[#94A3B8] uppercase">
-                      BEST FOR
-                    </span>
-                    <p className="font-instrument text-[13.5px] sm:text-[14px] font-medium text-[#334155] mt-1">
-                      {plan.bestFor}
+                  {/* Price Range */}
+                  <div className="pb-5 mb-5 border-b border-current/10">
+                    <p className="font-inter text-[24px] sm:text-[27px] font-bold tracking-tight">
+                      {pkg.priceRange}
+                    </p>
+                    <p
+                      className={`font-mono text-[11px] tracking-wider mt-1 ${
+                        pkg.isPopular ? "text-[#94A3B8]" : "text-[#64748B]"
+                      }`}
+                    >
+                      {pkg.priceSubtext}
                     </p>
                   </div>
 
-                  {/* Action Button */}
-                  {plan.isPopular ? (
-                    <Link
-                      href={plan.buttonHref}
-                      className="group mt-5 sm:mt-6 flex h-[48px] sm:h-[50px] w-full items-center justify-between rounded-[10px] bg-[#FF5528] px-5 sm:px-6 text-[14px] sm:text-[14.5px] font-semibold text-white shadow-[0_6px_20px_rgba(255,85,40,0.26)] transition-all duration-200 hover:bg-[#e64619] hover:shadow-[0_10px_26px_rgba(255,85,40,0.36)] hover:-translate-y-0.5 active:translate-y-0"
-                    >
-                      <span>{plan.buttonText}</span>
-                      <ArrowRight
-                        size={16}
-                        className="transition-transform duration-200 group-hover:translate-x-1"
-                      />
-                    </Link>
-                  ) : (
-                    <Link
-                      href={plan.buttonHref}
-                      className="group mt-5 sm:mt-6 flex h-[48px] sm:h-[50px] w-full items-center justify-between rounded-[10px] border border-[#0A192F] bg-white px-5 sm:px-6 text-[14px] sm:text-[14.5px] font-semibold text-[#0A192F] transition-all duration-200 hover:bg-[#0A192F] hover:text-white hover:-translate-y-0.5 active:translate-y-0 shadow-sm"
-                    >
-                      <span>{plan.buttonText}</span>
-                      <ArrowRight
-                        size={16}
-                        className="transition-transform duration-200 group-hover:translate-x-1"
-                      />
-                    </Link>
-                  )}
+                  {/* Bullets List */}
+                  <div className="space-y-3 mb-8">
+                    {pkg.bullets.map((bullet, bIdx) => (
+                      <div key={bIdx} className="flex items-start gap-2.5 text-[14px]">
+                        <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#FF5528]/20 text-[#FF5528] mt-0.5">
+                          <Check size={12} strokeWidth={3} />
+                        </div>
+                        <span className="font-instrument leading-snug">{bullet}</span>
+                      </div>
+                    ))}
+                  </div>
                 </div>
+
+                {/* CTA Button */}
+                <Link
+                  href={pkg.buttonHref}
+                  className={`inline-flex h-[48px] w-full items-center justify-center rounded-[8px] text-[14.5px] font-semibold transition-all duration-300 ${
+                    pkg.isPopular
+                      ? "bg-[#FF5528] text-white hover:bg-[#e44317] shadow-[0_6px_20px_rgba(255,85,40,0.35)]"
+                      : "bg-[#0A192F] text-white hover:bg-[#FF5528]"
+                  }`}
+                >
+                  {pkg.buttonText}
+                </Link>
               </div>
             );
           })}

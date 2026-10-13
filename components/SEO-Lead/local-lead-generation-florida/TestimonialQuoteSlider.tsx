@@ -14,26 +14,26 @@ const TESTIMONIALS: Testimonial[] = [
   {
     id: 1,
     quote:
-      "Bayshore didn’t just send us more leads — they sent us leads that actually turned into cases. Our intake team finally isn’t wasting time on the wrong calls.",
-    author: "MANAGING PARTNER, FLORIDA PERSONAL INJURY FIRM",
+      "Bayshore didn’t just send us more leads — they sent us leads that actually turned into customers. Our intake team finally isn’t wasting time on the wrong calls.",
+    author: "MANAGING PARTNER, FLORIDA FIRM",
   },
   {
     id: 2,
     quote:
-      "Within 90 days of launching our campaign in Orlando and Tampa, our signed retainer rate increased by 42%. Bayshore understands legal intake better than any agency we’ve worked with.",
-    author: "SENIOR LITIGATION PARTNER, ORLANDO & TAMPA LAW GROUP",
+      "Within 90 days of launching our campaign in Orlando and Tampa, our booked appointment rate increased by 42%. Bayshore understands local lead generation better than any agency we’ve worked with.",
+    author: "PRACTICE DIRECTOR, ORLANDO & TAMPA CLINIC",
   },
   {
     id: 3,
     quote:
-      "We used to spend tens of thousands on Google Ads with mediocre conversion. Bayshore restructured our targeting and landing pages — our cost per qualified case dropped by over 50%.",
-    author: "FOUNDING ATTORNEY, SOUTH FLORIDA CRIMINAL DEFENSE PRACTICE",
+      "We used to spend tens of thousands on Google Ads with mediocre conversion. Bayshore restructured our targeting and landing pages — our cost per qualified lead dropped by over 50%.",
+    author: "BUSINESS OWNER, SOUTH FLORIDA SERVICES",
   },
   {
     id: 4,
     quote:
-      "The geo-targeted campaigns Bayshore built for our commercial litigation practice put us in front of the exact high-value business clients we were missing. Outstanding execution.",
-    author: "PRINCIPAL ATTORNEY, MIAMI BUSINESS LAW CHAMBERS",
+      "The geo-targeted campaigns Bayshore built put us in front of the exact high-value local clients we were missing. Outstanding execution.",
+    author: "FOUNDER, FLORIDA COMMERCIAL ENTERPRISE",
   },
 ];
 
@@ -65,7 +65,7 @@ export default function TestimonialQuoteSlider() {
       className="relative w-full overflow-hidden bg-[#0A1628] px-16 md:px-0 py-16 sm:py-20 lg:py-24 text-white select-none"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
-      aria-label="Florida Law Firm Testimonials"
+      aria-label="What Florida Clients Say About Bayshore"
     >
       {/* =========================================================================
           BACKGROUND AMBIENT GLOW & WATERMARK QUOTE MARKS
@@ -92,6 +92,16 @@ export default function TestimonialQuoteSlider() {
           ========================================================================= */}
       <div className="relative z-10 mx-auto max-w-[1200px] px-5 sm:px-10 lg:px-16">
         
+        {/* Title from Doc */}
+        <div className="text-center mb-6 sm:mb-8">
+          <p className="font-mono text-[11px] sm:text-[12px] font-bold tracking-[0.16em] text-[#FE6F1F] uppercase mb-2">
+            CLIENT TESTIMONIALS
+          </p>
+          <h2 className="font-playfair text-[26px] sm:text-[34px] md:text-[38px] font-bold text-white">
+            What Florida Clients Say About Bayshore
+          </h2>
+        </div>
+
         {/* Center Top Ornament: Line — [Quote Circle] — Line */}
         <div className="flex items-center justify-center gap-3.5 mb-7 sm:mb-9">
           <div className="w-10 sm:w-14 h-[1.5px] bg-[#FE6F1F]/70" />

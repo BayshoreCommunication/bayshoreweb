@@ -1,10 +1,8 @@
 "use client";
 
 import React, { useEffect, useState, useRef } from "react";
-import Link from "next/link";
 import Image from "next/image";
 import {
-  ArrowRight,
   TrendingUp,
   ArrowDown,
   Users,
@@ -124,50 +122,30 @@ export default function Hero({ bgImage = HERO_BACKGROUND_IMAGE }: HeroProps) {
             {/* Top Filing Badge */}
             <div className="inline-flex items-center gap-2 rounded-[5px] border border-[#CBD5E1] bg-white px-3.5 py-1.5 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
               <span className="font-mono text-[11px] sm:text-[12px] font-semibold tracking-[0.14em] text-[#475569] uppercase">
-                FILED: LEGAL LEAD GENERATION — STATE OF FLORIDA
+                LOCAL LEAD GENERATION — STATE OF FLORIDA
               </span>
             </div>
 
-            {/* Headline matching exact 3 lines and italic colored styling */}
+            {/* Headline matching doc H1 */}
             <h1 className="font-playfair mt-6 sm:mt-7 text-[38px] sm:text-[46px] md:text-[52px] lg:text-[54px] xl:text-[62px] font-bold leading-[1.08] tracking-[-0.02em] text-[#0A192F]">
-              Get more{" "}
-              <span className="italic font-normal text-primary">qualified</span>{" "}
-              legal leads.
-              <br />
-              Not just more clicks.
+              Local Lead Generation <span className="italic font-normal text-primary">Florida</span>
             </h1>
 
-            {/* Sub-headline Paragraph */}
-            <p className="font-instrument mt-6 max-w-[560px] text-[16px] sm:text-[17px] md:text-[18px] leading-[1.68] text-[#4A5568]">
-              Bayshore Communication builds SEO, paid media, and intake systems for Florida law firms — tuned to your practice area and the metros where your next client is actually searching.
+            {/* Sub-headline from Doc */}
+            <h2 className="font-playfair mt-4 text-[20px] sm:text-[23px] md:text-[25px] font-semibold leading-[1.3] text-[#0A192F] max-w-[620px]">
+              Turn Search Demand Into Qualified Local Leads No More Losing Real Business Opportunities.
+            </h2>
+
+            {/* Body Paragraph from Doc */}
+            <p className="font-instrument mt-4 max-w-[580px] text-[16px] sm:text-[17px] md:text-[18px] leading-[1.68] text-[#4A5568]">
+              Customers search by service, city, neighborhood and urgency. Your marketing needs to meet them at the right point. Bayshore Communication builds local lead generation systems for Florida businesses. We connect local SEO, Google Maps, Google Ads, landing pages, conversion strategy and lead follow up around the markets you serve.
             </p>
 
-            {/* CTA Buttons */}
-            <div className="mt-8 sm:mt-10 flex flex-wrap items-center gap-3.5 sm:gap-4">
-              {/* Primary CTA */}
-              <Link
-                href="#audit"
-                className="group inline-flex h-[52px] items-center justify-center gap-2.5 rounded-[8px] bg-primary px-7 text-[15px] sm:text-[16px] font-semibold text-white shadow-[0_8px_20px_rgba(254,111,31,0.28)] transition-all duration-300 hover:bg-[#e65a0b] hover:shadow-[0_12px_26px_rgba(254,111,31,0.38)] hover:-translate-y-0.5 active:translate-y-0"
-              >
-                <span>Get Your Free Lead Gen Audit</span>
-                <ArrowRight
-                  size={18}
-                  className="transition-transform duration-300 group-hover:translate-x-1"
-                />
-              </Link>
-
-              {/* Secondary CTA */}
-              <Link
-                href="#case-studies"
-                className="group inline-flex h-[52px] items-center justify-center gap-2.5 rounded-[8px] border border-[#CBD5E1] bg-white px-7 text-[15px] sm:text-[16px] font-semibold text-[#0A192F] shadow-sm transition-all duration-300 hover:border-primary hover:text-primary hover:shadow-md hover:-translate-y-0.5 active:translate-y-0"
-              >
-                <span>See Case Studies</span>
-                <ArrowRight
-                  size={18}
-                  className="text-[#64748B] transition-all duration-300 group-hover:translate-x-1 group-hover:text-primary"
-                />
-              </Link>
+            {/* Goal Highlight from Doc */}
+            <div className="mt-5 max-w-[580px] rounded-lg border-l-4 border-primary bg-[#FFF7F4] p-3.5 sm:p-4 text-[14px] sm:text-[15px] font-medium text-[#0A192F]">
+              <span className="font-semibold text-primary">The goal stays clear</span> &rarr; More qualified local leads through calls, forms, quote requests, consultations and bookings.
             </div>
+
 
             {/* Mobile / Tablet Placement for Floating Exhibit Card (< lg) */}
             <div className="mt-10 lg:hidden w-full max-w-[480px]">

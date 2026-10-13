@@ -105,7 +105,7 @@ export default function FullFootprint({
           {/* Paragraph */}
           <p className="font-instrument mt-4 sm:mt-5 text-[15px] sm:text-[16px] md:text-[17px] leading-[1.7] text-[#94A3B8] max-w-[620px]">
             Active campaign markets and metros we build local presence in.
-            If your firm serves a city or county not listed, we&apos;ll scope
+            If your business serves a city or county not listed, we&apos;ll scope
             it during your audit.
           </p>
 

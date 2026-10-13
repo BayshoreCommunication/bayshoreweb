@@ -190,20 +190,14 @@ export default function ServiceTerritory({
               </span>
             </div>
 
-            {/* Headline */}
+            {/* Headline from Doc */}
             <h2 className="font-playfair mt-5 text-[30px] sm:text-[38px] md:text-[44px] lg:text-[48px] xl:text-[52px] font-bold leading-[1.14] tracking-[-0.02em] text-[#0A192F]">
-              We generate leads across
-              <br className="hidden sm:inline" />{" "}
-              every region of Florida
-              <span className="text-[#FF5528]">.</span>
+              Lead Generation Locally Starts With the Right Market
             </h2>
 
-            {/* Paragraph Text */}
-            <p className="font-instrument mt-4 sm:mt-5 text-[15px] sm:text-[16px] md:text-[17px] leading-[1.7] text-[#556377] max-w-[500px]">
-              Search behavior, competition, and case value vary by region.
-              We localize campaigns by metro and county — not just by state —
-              so your budget goes further and reaches the right clients where
-              your firm actually practices.
+            {/* Paragraph Text from Doc */}
+            <p className="font-instrument mt-4 sm:mt-5 text-[15px] sm:text-[16px] md:text-[17px] leading-[1.7] text-[#556377] max-w-[520px]">
+              Florida gives local businesses many potential markets. Tampa orlando, Miami, Jacksonville, Sarasota and Naples each have different customers, competitors and service areas. A campaign can perform differently across two cities even when the business offers the same service. Your local lead generation florida strategy should account for the market itself.
             </p>
 
             {/* Region Filter Buttons (6 Buttons in 2 Rows) */}

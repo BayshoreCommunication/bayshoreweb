@@ -7,151 +7,130 @@ import { MapPin } from "lucide-react";
 interface RegionalMarket {
   regionNum: string;
   title: string;
-  metros: string;
   description: string;
   image: string;
 }
 
 const REGIONAL_MARKETS: RegionalMarket[] = [
   {
-    regionNum: "REGION 01",
-    title: "Tampa Bay",
-    metros: "Tampa · St. Petersburg · Clearwater",
-    description:
-      "Dense, mid-size firm competition, heaviest in personal injury and workers' comp. Winning here takes sharp local SEO and LSA bid discipline, not just ad spend.",
-    image: "/assets/seo-lead/regional-01-tampa.jpg",
-  },
-  {
-    regionNum: "REGION 02",
-    title: "Central Florida",
-    metros: "Orlando · Kissimmee · Lakeland",
-    description:
-      "High tourist- and rideshare-accident volume plus strong immigration demand, driven by a large, transient, international population base.",
-    image: "/assets/seo-lead/regional-02-central.jpg",
-  },
-  {
-    regionNum: "REGION 03",
+    regionNum: "MARKET 01",
     title: "South Florida",
-    metros: "Miami · Fort Lauderdale · West Palm Beach",
     description:
-      "The most competitive — and highest case-value — legal market in the state. Bilingual, Spanish-language campaigns are often essential, not optional, here.",
+      "South Florida often carries the state's highest ad costs and its richest customer values. Miami Dade, Broward and Palm Beach counties each need separate budgets and messaging. Spanish language pages written natively often outperform translated English copy for Miami Dade searchers. Palm Beach County rewards premium positioning in estate law and cosmetic dentistry.",
     image: "/assets/seo-lead/regional-03-south.jpg",
   },
   {
-    regionNum: "REGION 04",
-    title: "North Florida",
-    metros: "Jacksonville · Tallahassee",
+    regionNum: "MARKET 02",
+    title: "Tampa Bay",
     description:
-      "Lower cost-per-click and a growing population make this an efficient market to scale early, with steady demand across PI and family law.",
-    image: "/assets/seo-lead/regional-04-north.jpg",
+      "Tampa Bay packs dense, mid size competition into three cities sharing one search audience. Injury law, chiropractic and workers' compensation dominate, so Local Pack strength decides results. St. Petersburg and Clearwater searchers often skip Tampa, so each gets its own page. LSA bid discipline and steady review velocity separate winners from crowded also rans here.",
+    image: "/assets/seo-lead/regional-01-tampa.jpg",
   },
   {
-    regionNum: "REGION 05",
-    title: "Southwest Florida",
-    metros: "Naples · Fort Myers · Sarasota",
+    regionNum: "MARKET 03",
+    title: "Central Florida",
     description:
-      "A large retiree population drives rising demand for estate planning, probate, and elder law — an underserved niche in most SWFL firms' current marketing.",
+      "Orlando and Kissimmee draw tourists, rideshare traffic and a large international resident base. Accident, immigration and vacation rental searches spike around theme park peaks and holidays. Lakeland sits between Tampa and Orlando, so overlapping service areas need clean boundaries. We set county exclusions early, keeping budget inside the metro you actually serve.",
+    image: "/assets/seo-lead/regional-02-central.jpg",
+  },
+  {
+    regionNum: "MARKET 04",
+    title: "Southwest Florida",
+    description:
+      "Southwest Florida serves retirees and seasonal residents, so demand follows winter arrivals. Estate planning, probate, elder law and dental implants rank among the steadiest local searches. Naples and Sarasota reward premium reviews. However Cape Coral and Fort Myers reward value. Marketing for estate and elder law here often runs thin, leaving room for specialists.",
     image: "/assets/seo-lead/regional-05-southwest.jpg",
   },
   {
-    regionNum: "REGION 06",
-    title: "The Panhandle",
-    metros: "Pensacola · Panama City · Tallahassee",
+    regionNum: "MARKET 05",
+    title: "North Florida",
     description:
-      "Smaller search volume but far less competition — often the fastest place for a new firm to rank and generate leads at low cost.",
+      "Jacksonville is largest city by population and Gainesville and Tallahassee anchor university economies. Competition often runs lighter than South Florida, so new campaigns reach page one sooner. Family law, criminal defense and injury cases produce steady demand across all three cities. Tallahassee adds legislative and university calendars, shifting demand timing for several local services.",
+    image: "/assets/seo-lead/regional-04-north.jpg",
+  },
+  {
+    regionNum: "MARKET 06",
+    title: "Florida Panhandle",
+    description:
+      "Search volume runs smaller across the Panhandle and so does the competition. New campaigns often reach the Local Pack here faster than in Miami or Tampa. Military families near Pensacola search for family law, homes and dental care. Panama City's rebuilding since Hurricane Michael keeps construction and home services searches active.",
     image: "/assets/seo-lead/regional-06-panhandle.jpg",
   },
 ];
 
 export default function RegionalBreakdown() {
   return (
-    <section className="relative w-full bg-white py-16 sm:py-20 lg:py-28 border-t border-[#EEF2F6]/90 overflow-hidden">
-      <div className="mx-auto max-w-[1580px] w-full px-16 sm:px-8 md:px-10 lg:px-12 xl:px-16">
-        
-        {/* ===================================================================
-            HEADER: TAG (VIII. REGIONAL BREAKDOWN), HEADLINE & INTRO COPY
-            =================================================================== */}
-        <div className="max-w-[900px] mb-10 sm:mb-12 lg:mb-14">
-          
-          {/* Section Tag (Maintains serial: VIII. REGIONAL BREAKDOWN, no border, no § sign) */}
+    <section className="relative w-full bg-[#0A192F] py-14 sm:py-20 lg:py-28 text-white overflow-hidden">
+      <div className="mx-auto max-w-[1580px] px-16 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+
+        {/* Section Header */}
+        <div className="mb-12 sm:mb-16 max-w-[900px]">
           <div className="inline-flex items-center">
             <span className="font-mono text-[12px] sm:text-[13px] tracking-[0.16em] text-[#FF5528] uppercase">
-              <span className="font-playfair italic mr-1">IX.</span> REGIONAL BREAKDOWN
+              <span className="font-playfair italic mr-1">VI.</span> REGIONAL BREAKDOWN
             </span>
           </div>
 
-          {/* Headline */}
-          <h2 className="font-playfair mt-5 text-[32px] sm:text-[42px] md:text-[48px] lg:text-[54px] font-bold leading-[1.12] tracking-[-0.02em] text-[#0A192F]">
-            Six Florida markets.{" "}
-            <span className="italic font-normal text-[#FF5528]">
-              Six different playbooks.
-            </span>
+          <h2 className="font-playfair mt-4 text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] font-bold leading-[1.12] tracking-[-0.02em] text-white">
+            Lead Generation Locally Starts With the Right Market
           </h2>
 
-          {/* Intro Paragraph */}
-          <p className="font-instrument mt-4 text-[15px] sm:text-[16px] md:text-[17px] leading-[1.7] text-[#556377] max-w-[760px]">
-            No two Florida metros hire attorneys the same way. Here&apos;s how we
-            adjust strategy by region to maximize qualified leads and ROI for
-            your firm.
+          <p className="font-instrument mt-4 text-[15px] sm:text-[16px] md:text-[17px] leading-[1.68] text-[#94A3B8] max-w-[780px]">
+            Florida gives local businesses many potential markets. Tampa orlando, Miami, Jacksonville, Sarasota and Naples each have different customers, competitors and service areas. A campaign can perform differently across two cities even when the business offers the same service. Your local lead generation florida strategy should account for the market itself.
           </p>
-
         </div>
 
-        {/* ===================================================================
-            6 REGIONAL CARDS: 3x2 GRID ON DESKTOP, 2 COLS ON TABLET, 1 ON MOBILE
-            Increased vertical padding (py-6 sm:py-7) for spacious elegant look
-            Marked CTA links removed per user request
-            =================================================================== */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 lg:gap-7">
+        {/* 6 Regional Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
           {REGIONAL_MARKETS.map((market) => (
             <div
               key={market.regionNum}
-              className="group relative flex flex-row gap-4 sm:gap-5 rounded-[20px] bg-white px-4 sm:px-5 py-6 sm:py-7 border border-[#E5E9F2] shadow-[0_4px_20px_rgba(15,23,42,0.04)] hover:shadow-[0_16px_36px_rgba(15,23,42,0.09)] hover:border-[#FF5528]/45 transition-all duration-300 items-start"
+              className="group relative flex flex-col justify-between overflow-hidden rounded-[20px] border border-white/10 bg-[#0E223D] transition-all duration-300 hover:-translate-y-1 hover:border-[#FF5528]/50 hover:shadow-[0_16px_40px_rgba(0,0,0,0.3)]"
             >
-              
-              {/* Left Column: City Waterfront/Skyline Photo */}
-              <div className="relative w-[110px] sm:w-[125px] xl:w-[135px] aspect-[3/4] shrink-0 overflow-hidden rounded-[14px] bg-[#F1F5F9] border border-[#EEF2F6]">
+              {/* Card Image */}
+              <div className="relative h-48 w-full overflow-hidden">
                 <Image
                   src={market.image}
-                  alt={`${market.title} skyline`}
+                  alt={market.title}
                   fill
-                  className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
-                  sizes="(max-width: 640px) 110px, (max-width: 1024px) 125px, 135px"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0E223D] via-[#0E223D]/50 to-transparent" />
+                <span className="absolute top-4 left-4 rounded-md bg-[#0A192F]/80 backdrop-blur-sm px-3 py-1 font-mono text-[11px] font-bold tracking-[0.14em] text-[#FF5528]">
+                  {market.regionNum}
+                </span>
               </div>
 
-              {/* Right Column: Region Badge, Title, Metros & Description Copy */}
-              <div className="flex-1 min-w-0 flex flex-col justify-start">
-                
-                {/* Region Badge Pill */}
-                <div className="flex items-center gap-1.5">
-                  <div className="flex h-5 w-5 sm:h-5.5 sm:w-5.5 items-center justify-center rounded-full bg-[#FFF0EB] text-[#FF5528] shrink-0">
-                    <MapPin size={11} className="fill-[#FF5528] text-[#FF5528]" />
-                  </div>
-                  <span className="font-mono text-[10.5px] sm:text-[11px] font-bold tracking-[0.12em] text-[#FF5528] uppercase">
-                    {market.regionNum}
-                  </span>
+              {/* Card Body */}
+              <div className="p-6 sm:p-7 flex-1 flex flex-col justify-between">
+                <div>
+                  <h3 className="font-playfair text-[22px] sm:text-[24px] font-bold text-white mb-3">
+                    {market.title}
+                  </h3>
+                  <p className="font-instrument text-[14px] sm:text-[14.5px] leading-[1.7] text-[#94A3B8]">
+                    {market.description}
+                  </p>
                 </div>
-
-                {/* Region Title */}
-                <h3 className="font-playfair text-[18px] sm:text-[19px] xl:text-[20px] font-bold text-[#0A192F] mt-2 leading-tight group-hover:text-[#FF5528] transition-colors duration-200">
-                  {market.title}
-                </h3>
-
-                {/* Metros List */}
-                <p className="font-instrument text-[11.5px] sm:text-[12px] text-[#64748B] mt-0.5 truncate">
-                  {market.metros}
-                </p>
-
-                {/* Description Copy */}
-                <p className="font-instrument text-[12px] sm:text-[12.5px] leading-[1.62] text-[#556377] mt-3">
-                  {market.description}
-                </p>
-
               </div>
-
             </div>
           ))}
+        </div>
+
+        {/* 7th Market Point: City, County & Metro Targeting Callout */}
+        <div className="mt-8 sm:mt-10 rounded-[20px] border border-[#FF5528]/30 bg-gradient-to-r from-[#0E223D] to-[#122b4d] p-6 sm:p-8 lg:p-10 flex flex-col md:flex-row items-start md:items-center gap-6">
+          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#FF5528]/15 text-[#FF5528]">
+            <MapPin size={28} />
+          </div>
+          <div>
+            <span className="font-mono text-[12px] font-bold tracking-[0.16em] text-[#FF5528] uppercase">
+              TARGETING HIERARCHY
+            </span>
+            <h3 className="font-playfair text-[20px] sm:text-[24px] font-bold text-white mt-1">
+              City, County & Metro Targeting
+            </h3>
+            <p className="font-instrument text-[14.5px] sm:text-[15.5px] text-[#94A3B8] leading-[1.7] mt-2 max-w-[1000px]">
+              Our targeting ladder runs from Florida to region, metro, county, city and service area. Each rung gets its own keywords, budget, landing page and Google Business Profile settings. Counties govern licensing and legal venue. However cities shape foot traffic and drive time. Neighborhood pages sit at the bottom, where &ldquo;Brickell dentist&rdquo; beats &ldquo;Miami dentist&rdquo; on intent.
+            </p>
+          </div>
         </div>
 
       </div>

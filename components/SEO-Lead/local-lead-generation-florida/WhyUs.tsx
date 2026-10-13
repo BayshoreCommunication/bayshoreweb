@@ -1,233 +1,152 @@
 "use client";
 
-import React, { useEffect, useState, useRef } from "react";
-import Image from "next/image";
-import { Scale, MapPin, BarChart3 } from "lucide-react";
+import React from "react";
+import { MapPin, BarChart3, Award, Check } from "lucide-react";
 
-/**
- * =============================================================================
- * ANIMATED COUNTER COMPONENT
- * Triggers smoothly when scrolled into view via IntersectionObserver.
- * Uses font-inter and tabular-nums for crisp, jitter-free number rendering.
- * =============================================================================
- */
-function AnimatedCounter({
-  value,
-  prefix = "",
-  suffix = "",
-  duration = 1.6,
-}: {
-  value: number;
-  prefix?: string;
-  suffix?: string;
-  duration?: number;
-}) {
-  const [displayValue, setDisplayValue] = useState(0);
-  const containerRef = useRef<HTMLSpanElement>(null);
-  const hasAnimatedRef = useRef(false);
-
-  useEffect(() => {
-    const el = containerRef.current;
-    if (!el) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting && !hasAnimatedRef.current) {
-          hasAnimatedRef.current = true;
-          let startTimestamp: number | null = null;
-          let animationFrameId: number;
-
-          const step = (timestamp: number) => {
-            if (!startTimestamp) startTimestamp = timestamp;
-            const progress = Math.min(
-              (timestamp - startTimestamp) / (duration * 1000),
-              1
-            );
-            // Smooth exponential ease-out
-            const easeOutExpo =
-              progress === 1 ? 1 : 1 - Math.pow(2, -10 * progress);
-            setDisplayValue(Math.round(easeOutExpo * value));
-
-            if (progress < 1) {
-              animationFrameId = requestAnimationFrame(step);
-            } else {
-              setDisplayValue(value);
-            }
-          };
-
-          animationFrameId = requestAnimationFrame(step);
-        }
-      },
-      { threshold: 0.2 }
-    );
-
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, [value, duration]);
-
-  return (
-    <span ref={containerRef} className="font-inter tabular-nums">
-      {prefix}
-      {displayValue}
-      {suffix}
-    </span>
-  );
-}
-
-/**
- * =============================================================================
- * WHY US CARDS DATA
- * Exact 1:1 match with user-provided screenshot
- * =============================================================================
- */
-const WHY_US_CARDS = [
-  {
-    icon: Scale,
-    titleLine1: "Legal-Industry",
-    titleLine2: "Experience",
-    description:
-      "We already work with Florida PI, immigration, and family law firms — we understand case value, ad-compliance rules, and what drives a consult booking.",
-    statValue: 90,
-    statSuffix: "%",
-    labelLine1: "CLIENT",
-    labelLine2: "RETENTION RATE",
-  },
+// =============================================================================
+// WHY US DATA & APPROACH TABLE FROM GOOGLE DOC (100% UNCHANGED)
+// =============================================================================
+const WHY_US_PILLARS = [
   {
     icon: MapPin,
-    titleLine1: "Local Florida",
-    titleLine2: "Targeting",
+    title: "Local Market Targeting",
     description:
-      "Our team knows how legal search behavior differs by Florida metro, so your budget isn't wasted on out-of-area or out-of-practice clicks.",
-    statValue: 96,
-    statSuffix: "%",
-    labelLine1: "OF LEADS",
-    labelLine2: "GEO-QUALIFIED",
+      "Our team plans by region, metro and county, so budgets land where you operate. Geo qualified leads reach 96% across campaigns, since ads and pages match your boundaries.",
+    statValue: "96%",
+    statLabel: "Geo-Qualified Leads",
   },
   {
     icon: BarChart3,
-    titleLine1: "Full-Funnel",
-    titleLine2: "Accountability",
+    title: "Full Funnel Accountability",
     description:
-      "We track cost-per-lead and cost-per-consult, and help connect that data through to signed cases.",
-    statValue: 500,
-    statSuffix: "K+",
-    labelLine1: "TOTAL",
-    labelLine2: "LEADS GENERATED",
+      "We report cost per lead, cost per qualified lead and cost per booked appointment. Your CRM shows each source, so you can judge us by customers instead.",
+    statValue: "100%",
+    statLabel: "CRM & Funnel Tracking",
   },
+  {
+    icon: Award,
+    title: "Industry Experience",
+    description:
+      "Bayshore was founded in 2016 and has served more than 70 clients. Law, dental, chiropractic and real estate campaigns taught us what each customer expects. Our 90% client retention rate reflects results and you can request references.",
+    statValue: "90%",
+    statLabel: "Client Retention Rate",
+  },
+];
+
+const APPROACH_ROWS = [
+  { ourApproach: "Local market targeting", typical: "Broad geographic targeting" },
+  { ourApproach: "City and service area campaigns", typical: "General campaigns" },
+  { ourApproach: "Local search strategy", typical: "General digital marketing" },
+  { ourApproach: "Qualified lead focus", typical: "Lead volume focus" },
+  { ourApproach: "Local landing pages", typical: "General website pages" },
+  { ourApproach: "Lead tracking", typical: "Basic traffic reporting" },
+  { ourApproach: "Follow up strategy", typical: "Lead delivery" },
+  { ourApproach: "CRM integration", typical: "Separate sales process" },
 ];
 
 export default function WhyUs() {
   return (
     <section
       id="why-us"
-      className="relative w-full overflow-hidden bg-[#071326] py-14 sm:py-18 md:py-20 lg:py-24 xl:py-28 text-white"
+      className="relative w-full overflow-hidden bg-[#071326] py-14 sm:py-20 lg:py-28 text-white"
     >
-      {/* =========================================================================
-          BACKGROUND COURTHOUSE COLUMNS (Right side background graphic)
-          ========================================================================= */}
-      <div className="absolute right-0 top-0 bottom-0 w-full sm:w-2/3 lg:w-1/2 pointer-events-none select-none z-0 overflow-hidden">
-        <Image
-          src="/images/legal-hero-bg.jpg"
-          alt="Courthouse Columns"
-          fill
-          priority
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          className="object-cover object-right opacity-35 mix-blend-luminosity lg:opacity-45"
-        />
-        {/* Soft directional gradient overlays for seamless text readability */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[#071326] via-[#071326]/90 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#071326] via-transparent to-[#071326]/60" />
-      </div>
+      <div className="relative z-10 mx-auto max-w-[1580px] w-full px-16 sm:px-8 md:px-10 lg:px-12 xl:px-16">
 
-      {/* =========================================================================
-          CONTENT CONTAINER
-          ========================================================================= */}
-      <div className="relative z-10 mx-auto max-w-[1580px] w-full px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16">
-        
-        {/* =======================================================================
-            HEADER: § WHY US BADGE, HEADLINE & SUBTITLE
-            ======================================================================= */}
-        <div className="max-w-[960px]">
-          {/* Section Tag: Strict Roman numeral serial XIII, no border, consistent with preceding sections */}
+        {/* Section Header */}
+        <div className="max-w-[920px] mb-12 sm:mb-16">
           <div className="inline-flex items-center">
-            <span className="font-mono text-[11px] sm:text-[12px] md:text-[13px] tracking-[0.16em] text-[#FF5528] uppercase">
-              <span className="font-playfair italic mr-1">XIII.</span> WHY US
+            <span className="font-mono text-[12px] sm:text-[13px] tracking-[0.16em] text-[#FF5528] uppercase">
+              <span className="font-playfair italic mr-1">&sect;</span> WHY US
             </span>
           </div>
 
-          {/* Headline */}
-          <h2 className="mt-4 sm:mt-5 md:mt-6 font-playfair text-[30px] xs:text-[34px] sm:text-[42px] md:text-[48px] lg:text-[54px] xl:text-[58px] font-bold leading-[1.14] tracking-[-0.02em] text-white">
-            Built for law firms,{" "}
-            <span className="italic font-normal text-[#FF5528]">
-              not generic businesses.
-            </span>
+          <h2 className="font-playfair mt-4 text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] font-bold leading-[1.12] tracking-[-0.02em] text-white">
+            Why Businesses Choose Bayshore for Local Lead Generation
           </h2>
 
-          {/* Subheading */}
-          <p className="mt-3.5 sm:mt-4 md:mt-5 font-instrument text-[15px] sm:text-[16px] md:text-[17px] lg:text-[18px] leading-[1.68] text-[#94A3B8] max-w-[760px]">
-            We combine legal industry expertise, local market intelligence, and
-            full-funnel execution to deliver more qualified cases — not just
-            clicks.
+          <p className="font-instrument mt-4 text-[15px] sm:text-[16px] md:text-[17px] leading-[1.68] text-[#94A3B8] max-w-[800px]">
+            Lead generation requires close alignment between market research, search visibility and customer conversion. Bayshore Communication builds the program around those connections. Search &ldquo;local lead generation florida&rdquo; and many agencies promise volume, BUT we promise qualified customers.
           </p>
         </div>
 
-        {/* =======================================================================
-            THREE STAT CARDS GRID
-            Responsive 1-col on mobile, 3-col on md & desktop
-            ======================================================================= */}
-        <div className="mt-10 sm:mt-12 lg:mt-16 grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 lg:gap-6 xl:gap-8">
-          {WHY_US_CARDS.map((card, idx) => {
-            const Icon = card.icon;
+        {/* 3 Main Pillars Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-7 mb-14 sm:mb-18">
+          {WHY_US_PILLARS.map((pillar, idx) => {
+            const Icon = pillar.icon;
             return (
               <div
                 key={idx}
-                className="group relative flex flex-col justify-between rounded-[20px] border border-white/10 bg-[#0B1B33]/70 p-6 sm:p-7 lg:p-8 backdrop-blur-md shadow-[0_12px_36px_rgba(3,10,24,0.4)] transition-all duration-300 hover:-translate-y-1 hover:border-[#FF5528]/40 hover:bg-[#0E2240]/80 hover:shadow-[0_20px_48px_rgba(0,0,0,0.5)]"
+                className="group relative flex flex-col justify-between rounded-[22px] border border-white/10 bg-[#0E223D] p-7 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[#FF5528]/50"
               >
                 <div>
-                  {/* Card Header: Icon Badge + 2-Line Playfair Title */}
-                  <div className="flex items-center gap-3.5 sm:gap-4">
-                    <div className="flex h-12 w-12 sm:h-13 sm:w-13 lg:h-14 lg:w-14 shrink-0 items-center justify-center rounded-[12px] bg-[#142A4A] border border-white/10 text-[#FF5528] transition-transform duration-300 group-hover:scale-105">
-                      <Icon className="h-6 w-6 sm:h-6.5 sm:w-6.5" strokeWidth={2.2} />
+                  <div className="flex items-center justify-between mb-6">
+                    <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#FF5528]/15 text-[#FF5528]">
+                      <Icon size={26} />
                     </div>
-
-                    <h3 className="font-playfair text-[18px] sm:text-[19px] lg:text-[21px] xl:text-[22px] font-bold text-white leading-[1.25]">
-                      <span>{card.titleLine1}</span>
-                      <br />
-                      <span>{card.titleLine2}</span>
-                    </h3>
+                    <div className="text-right">
+                      <span className="font-inter text-[28px] sm:text-[32px] font-bold text-[#FF5528] leading-none block">
+                        {pillar.statValue}
+                      </span>
+                      <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-wider text-[#94A3B8] mt-1 block">
+                        {pillar.statLabel}
+                      </span>
+                    </div>
                   </div>
 
-                  {/* Body Paragraph */}
-                  <p className="mt-4 sm:mt-5 font-instrument text-[13.5px] sm:text-[14px] lg:text-[14.5px] leading-[1.65] text-[#94A3B8]">
-                    {card.description}
+                  <h3 className="font-playfair text-[20px] sm:text-[22px] font-bold text-white mb-3">
+                    {pillar.title}
+                  </h3>
+
+                  <p className="font-instrument text-[14.5px] leading-[1.7] text-[#94A3B8]">
+                    {pillar.description}
                   </p>
-                </div>
-
-                {/* Bottom Stat Row: Number Counter + Divider + Monospace Label */}
-                <div className="mt-6 sm:mt-8 pt-5 sm:pt-6 border-t border-white/10 flex items-center gap-4 sm:gap-5">
-                  <div className="font-inter text-[34px] sm:text-[38px] lg:text-[42px] font-bold text-[#FF5528] leading-none tracking-tight">
-                    <AnimatedCounter
-                      value={card.statValue}
-                      suffix={card.statSuffix}
-                    />
-                  </div>
-
-                  {/* Vertical Divider Line */}
-                  <div
-                    className="h-8 sm:h-9 w-[1px] bg-white/20 shrink-0"
-                    aria-hidden="true"
-                  />
-
-                  {/* 2-line Monospace Label */}
-                  <div className="font-mono text-[10px] sm:text-[11px] font-semibold tracking-[0.14em] text-[#94A3B8] uppercase leading-[1.35]">
-                    <span>{card.labelLine1}</span>
-                    <br />
-                    <span>{card.labelLine2}</span>
-                  </div>
                 </div>
               </div>
             );
           })}
+        </div>
+
+        {/* Our Approach vs Typical Lead Generation Table */}
+        <div className="rounded-[22px] border border-white/10 bg-[#0A1A2F] overflow-hidden">
+          <div className="p-6 sm:p-7 border-b border-white/10">
+            <h3 className="font-playfair text-[20px] sm:text-[22px] font-bold text-white">
+              Our Approach vs. Typical Lead Generation
+            </h3>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-white/10">
+            {/* Our Approach Column */}
+            <div className="p-6 sm:p-8">
+              <h4 className="font-mono text-[12px] font-bold text-[#FF5528] tracking-[0.14em] uppercase mb-5">
+                OUR APPROACH
+              </h4>
+              <div className="space-y-3.5">
+                {APPROACH_ROWS.map((row, idx) => (
+                  <div key={idx} className="flex items-center gap-3 text-[14.5px] text-white">
+                    <div className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#FF5528]/20 text-[#FF5528]">
+                      <Check size={12} strokeWidth={3} />
+                    </div>
+                    <span className="font-instrument">{row.ourApproach}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Typical Lead Generation Column */}
+            <div className="p-6 sm:p-8 bg-white/[0.02]">
+              <h4 className="font-mono text-[12px] font-bold text-[#94A3B8] tracking-[0.14em] uppercase mb-5">
+                TYPICAL LEAD GENERATION
+              </h4>
+              <div className="space-y-3.5">
+                {APPROACH_ROWS.map((row, idx) => (
+                  <div key={idx} className="flex items-center gap-3 text-[14.5px] text-[#94A3B8]">
+                    <span className="h-1.5 w-1.5 rounded-full bg-[#64748B] shrink-0 ml-1.5 mr-1" />
+                    <span className="font-instrument">{row.typical}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
 
       </div>
