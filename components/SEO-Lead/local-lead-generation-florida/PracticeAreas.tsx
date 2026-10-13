@@ -53,7 +53,7 @@ const INDUSTRIES = [
 export default function PracticeAreas() {
   return (
     <section className="relative w-full bg-[#F3F5F8] py-14 sm:py-20 lg:py-28 overflow-hidden">
-      <div className="mx-auto max-w-[1580px] px-16 sm:px-8 md:px-10 lg:px-12 xl:px-16 relative z-10">
+      <div className="mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 relative z-10">
 
         {/* ===================================================================
             HEADER: EYEBROW (V. INDUSTRIES SERVED), HEADLINE & COPY FROM DOC

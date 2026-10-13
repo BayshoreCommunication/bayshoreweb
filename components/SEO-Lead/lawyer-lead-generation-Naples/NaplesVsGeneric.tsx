@@ -65,7 +65,7 @@ const COMPARISON_ROWS: ComparisonRow[] = [
 export default function NaplesVsGeneric() {
   return (
     <section className="relative w-full bg-[#F8FAFC] py-14 sm:py-20 lg:py-28 overflow-hidden">
-      <div className="mx-auto max-w-[1580px] px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+      <div className="mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
         
         {/* Section Header */}
         <div className="text-center max-w-[920px] mx-auto mb-12 sm:mb-16">
@@ -85,43 +85,45 @@ export default function NaplesVsGeneric() {
         </div>
 
         {/* Comparison Table */}
-        <div className="overflow-hidden rounded-[22px] sm:rounded-[26px] border border-[#E2E8F0] bg-white shadow-[0_10px_35px_rgba(15,23,42,0.05)]">
-          {/* Header Row */}
-          <div className="grid grid-cols-12 bg-[#0A192F] text-white p-5 sm:p-6 font-mono text-[11px] sm:text-[12px] font-bold tracking-[0.14em] uppercase">
-            <div className="col-span-4 sm:col-span-3">CATEGORY</div>
-            <div className="col-span-4 sm:col-span-4 text-[#94A3B8]">GENERIC LEAD GENERATION</div>
-            <div className="col-span-4 sm:col-span-5 text-[#FF5528] flex items-center gap-2">
-              <Sparkles size={16} />
-              <span>BAYSHORE LAWYER LEAD GENERATION</span>
-            </div>
-          </div>
-
-          {/* Body Rows */}
-          <div className="divide-y divide-[#EEF2F6]">
-            {COMPARISON_ROWS.map((row, idx) => (
-              <div
-                key={idx}
-                className="grid grid-cols-12 p-5 sm:p-6 items-center hover:bg-[#FFFDFB] transition-colors duration-200"
-              >
-                {/* Category */}
-                <div className="col-span-4 sm:col-span-3 font-playfair font-bold text-[15px] sm:text-[17px] text-[#0A192F]">
-                  {row.category}
-                </div>
-
-                {/* Generic */}
-                <div className="col-span-4 sm:col-span-4 pr-3 text-[13.5px] sm:text-[15px] text-[#64748B] font-instrument leading-relaxed">
-                  {row.generic}
-                </div>
-
-                {/* Bayshore */}
-                <div className="col-span-4 sm:col-span-5 font-semibold text-[14px] sm:text-[15.5px] text-[#0A192F] font-instrument flex items-center gap-2.5">
-                  <div className="hidden sm:flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FFF2ED] text-[#FF5528]">
-                    <Check size={14} strokeWidth={2.8} />
-                  </div>
-                  <span className="leading-snug">{row.bayshore}</span>
-                </div>
+        <div className="w-full overflow-x-auto pb-2">
+          <div className="min-w-[580px] lg:min-w-0 overflow-hidden rounded-[22px] sm:rounded-[26px] border border-[#E2E8F0] bg-white shadow-[0_10px_35px_rgba(15,23,42,0.05)]">
+            {/* Header Row */}
+            <div className="grid grid-cols-12 bg-[#0A192F] text-white p-5 sm:p-6 font-mono text-[11px] sm:text-[12px] font-bold tracking-[0.14em] uppercase">
+              <div className="col-span-4 sm:col-span-3">CATEGORY</div>
+              <div className="col-span-4 sm:col-span-4 text-[#94A3B8]">GENERIC LEAD GENERATION</div>
+              <div className="col-span-4 sm:col-span-5 text-[#FF5528] flex items-center gap-2">
+                <Sparkles size={16} />
+                <span>BAYSHORE LAWYER LEAD GENERATION</span>
               </div>
-            ))}
+            </div>
+
+            {/* Body Rows */}
+            <div className="divide-y divide-[#EEF2F6]">
+              {COMPARISON_ROWS.map((row, idx) => (
+                <div
+                  key={idx}
+                  className="grid grid-cols-12 p-5 sm:p-6 items-center hover:bg-[#FFFDFB] transition-colors duration-200"
+                >
+                  {/* Category */}
+                  <div className="col-span-4 sm:col-span-3 font-playfair font-bold text-[15px] sm:text-[17px] text-[#0A192F]">
+                    {row.category}
+                  </div>
+
+                  {/* Generic */}
+                  <div className="col-span-4 sm:col-span-4 pr-3 text-[13.5px] sm:text-[15px] text-[#64748B] font-instrument leading-relaxed">
+                    {row.generic}
+                  </div>
+
+                  {/* Bayshore */}
+                  <div className="col-span-4 sm:col-span-5 font-semibold text-[14px] sm:text-[15.5px] text-[#0A192F] font-instrument flex items-center gap-2.5">
+                    <div className="hidden sm:flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#FFF2ED] text-[#FF5528]">
+                      <Check size={14} strokeWidth={2.8} />
+                    </div>
+                    <span className="leading-snug">{row.bayshore}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

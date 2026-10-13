@@ -61,7 +61,7 @@ export default function LegalTestimonials() {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-[#0A1628] px-6 sm:px-10 lg:px-16 py-16 sm:py-20 lg:py-24 text-white select-none border-t border-white/5"
+      className="relative w-full overflow-hidden bg-[#0A1628] py-16 sm:py-20 lg:py-24 text-white select-none border-t border-white/5"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       aria-label="What Florida Legal Clients Say About Bayshore"
@@ -84,7 +84,7 @@ export default function LegalTestimonials() {
       </div>
 
       {/* Slider Content Container */}
-      <div className="relative z-10 mx-auto max-w-[1200px] px-4 sm:px-8">
+      <div className="relative z-10 mx-auto max-w-[1200px] px-4 sm:px-8 lg:px-16">
         
         {/* Title */}
         <div className="text-center mb-6 sm:mb-8">

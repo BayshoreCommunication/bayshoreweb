@@ -36,7 +36,7 @@ const REASONS = [
 export default function WhyLeadGen() {
   return (
     <section className="relative w-full bg-white py-14 sm:py-18 lg:py-24 border-t border-[#EEF2F6]/80">
-      <div className="mx-auto max-w-[1580px] px-16 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+      <div className="mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
         
         {/* =========================================================================
             TRUSTED BY FLORIDA BUSINESSES (TRUST BAR)

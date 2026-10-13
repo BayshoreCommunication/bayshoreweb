@@ -35,8 +35,8 @@ const REASONS = [
 
 export default function LegalPipelineWhy() {
   return (
-    <section className="relative w-full bg-white py-14 sm:py-18 lg:py-24 border-t border-[#EEF2F6]/80 px-16 md:px-0">
-      <div className="mx-auto max-w-[1580px] px-0 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+    <section className="relative w-full bg-white py-14 sm:py-18 lg:py-24 border-t border-[#EEF2F6]/80 overflow-hidden">
+      <div className="mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
         
         {/* =========================================================================
             TRUSTED BY FLORIDA FIRMS (TRUST BAR)

@@ -62,7 +62,7 @@ export default function TestimonialQuoteSlider() {
 
   return (
     <section
-      className="relative w-full overflow-hidden bg-[#0A1628] px-16 md:px-0 py-16 sm:py-20 lg:py-24 text-white select-none"
+      className="relative w-full overflow-hidden bg-[#0A1628] py-16 sm:py-20 lg:py-24 text-white select-none"
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
       aria-label="What Florida Clients Say About Bayshore"
@@ -90,7 +90,7 @@ export default function TestimonialQuoteSlider() {
       {/* =========================================================================
           SLIDER CONTENT CONTAINER
           ========================================================================= */}
-      <div className="relative z-10 mx-auto max-w-[1200px] px-5 sm:px-10 lg:px-16">
+      <div className="relative z-10 mx-auto max-w-[1200px] px-4 sm:px-8 lg:px-16">
         
         {/* Title from Doc */}
         <div className="text-center mb-6 sm:mb-8">

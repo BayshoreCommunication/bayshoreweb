@@ -162,7 +162,7 @@ export default function PillarTactics() {
 
   return (
     <section className="relative w-full bg-white py-14 sm:py-20 lg:py-28 border-t border-[#EEF2F6]/80 overflow-hidden">
-      <div className="mx-auto max-w-[1580px] px-16 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+      <div className="mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
 
         {/* ===================================================================
             HEADER: EYEBROW (IV. WHAT WE DO), HEADLINE & INTRO FROM DOC
@@ -203,7 +203,7 @@ export default function PillarTactics() {
                     key={service.id}
                     onClick={() => setActiveTab(idx)}
                     type="button"
-                    className={`group relative flex items-center justify-between px-6 sm:px-8 lg:px-9 py-5 sm:py-6 lg:py-[25px] text-left transition-all duration-200 border-b border-[#EEF2F6] last:border-b-0 cursor-pointer ${
+                    className={`group relative flex items-center justify-between px-4.5 sm:px-8 lg:px-9 py-5 sm:py-6 lg:py-[25px] text-left transition-all duration-200 border-b border-[#EEF2F6] last:border-b-0 cursor-pointer ${
                       isActive ? "bg-white shadow-[inset_0_1px_0_rgba(255,85,40,0.06)]" : "hover:bg-[#F8FAFC]"
                     }`}
                   >

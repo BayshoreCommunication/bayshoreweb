@@ -70,7 +70,7 @@ export default function NaplesSixMarkets() {
       {/* Background radial glow */}
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#162B4D_0%,_transparent_70%)] opacity-60" />
 
-      <div className="relative z-10 mx-auto max-w-[1580px] px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+      <div className="relative z-10 mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
         
         {/* Section Header */}
         <div className="max-w-[920px] mb-12 sm:mb-16">

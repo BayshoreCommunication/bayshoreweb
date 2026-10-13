@@ -36,8 +36,8 @@ const PRACTICE_AREAS = [
 
 export default function LegalPracticeAreas() {
   return (
-    <section className="relative w-full bg-[#F3F5F8] py-14 sm:py-20 lg:py-28 overflow-hidden px-16 md:px-0">
-      <div className="mx-auto max-w-[1580px] px-0 sm:px-8 md:px-10 lg:px-12 xl:px-16 relative z-10">
+    <section className="relative w-full bg-[#F3F5F8] py-14 sm:py-20 lg:py-28 overflow-hidden">
+      <div className="mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 relative z-10">
         
         {/* ===================================================================
             HEADER: EYEBROW (V. PRACTICE AREAS), HEADLINE & COPY FROM DOC

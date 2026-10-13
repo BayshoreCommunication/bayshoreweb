@@ -1,17 +1,17 @@
 import React from "react";
-import LegalHero from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalHero";
-import LegalPipelineWhy from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalPipelineWhy";
-import LegalRootProblem from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalRootProblem";
-import LegalThreePillars from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalThreePillars";
-import LegalExecutionTactics from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalExecutionTactics";
-import LegalPracticeAreas from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalPracticeAreas";
-import LegalSixMarkets from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalSixMarkets";
-import LegalVsGeneric from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalVsGeneric";
-import LegalProcess from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalProcess";
-import LegalEngagementModels from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalEngagementModels";
-import LegalProvenResults from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalProvenResults";
-import LegalTestimonials from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalTestimonials";
-import LegalFaq from "@/components/SEO-Lead/legal-lead-generation-Florida/LegalFaq";
+import LegalHero from "@/components/SEO-Lead/legal-lead-generation-florida/LegalHero";
+import LegalPipelineWhy from "@/components/SEO-Lead/legal-lead-generation-florida/LegalPipelineWhy";
+import LegalRootProblem from "@/components/SEO-Lead/legal-lead-generation-florida/LegalRootProblem";
+import LegalThreePillars from "@/components/SEO-Lead/legal-lead-generation-florida/LegalThreePillars";
+import LegalExecutionTactics from "@/components/SEO-Lead/legal-lead-generation-florida/LegalExecutionTactics";
+import LegalPracticeAreas from "@/components/SEO-Lead/legal-lead-generation-florida/LegalPracticeAreas";
+import LegalSixMarkets from "@/components/SEO-Lead/legal-lead-generation-florida/LegalSixMarkets";
+import LegalVsGeneric from "@/components/SEO-Lead/legal-lead-generation-florida/LegalVsGeneric";
+import LegalProcess from "@/components/SEO-Lead/legal-lead-generation-florida/LegalProcess";
+import LegalEngagementModels from "@/components/SEO-Lead/legal-lead-generation-florida/LegalEngagementModels";
+import LegalProvenResults from "@/components/SEO-Lead/legal-lead-generation-florida/LegalProvenResults";
+import LegalTestimonials from "@/components/SEO-Lead/legal-lead-generation-florida/LegalTestimonials";
+import LegalFaq from "@/components/SEO-Lead/legal-lead-generation-florida/LegalFaq";
 
 export const metadata = {
   title: "Legal Lead Generation Florida | Bayshore Communication",
@@ -36,7 +36,7 @@ export const metadata = {
 
 const Page = () => {
   return (
-    <main className="w-full">
+    <main className="w-full overflow-x-hidden">
       {/* 01. Hero / H1 */}
       <LegalHero />
 

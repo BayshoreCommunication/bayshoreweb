@@ -42,7 +42,7 @@ export const metadata = {
 
 const Page = () => {
   return (
-    <main className="w-full">
+    <main className="w-full overflow-x-hidden">
       {/* 01. Hero / H1 */}
       <Hero />
 

@@ -92,7 +92,7 @@ const PILLARS = [
 export default function TheSolution() {
   return (
     <section className="relative w-full bg-[#F3F4F7] py-14 sm:py-20 lg:py-28 overflow-hidden">
-      <div className="mx-auto max-w-[1580px] px-16 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+      <div className="mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
 
         {/* ===================================================================
             HEADER: EYEBROW (III. THE FRAMEWORK), TITLE & INTRO COPY FROM DOC

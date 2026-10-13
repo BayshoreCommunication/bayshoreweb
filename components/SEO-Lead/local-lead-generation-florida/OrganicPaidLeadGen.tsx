@@ -28,7 +28,7 @@ const PIPELINE_STEPS = [
 export default function OrganicPaidLeadGen() {
   return (
     <section className="relative w-full bg-[#FCFDFE] py-14 sm:py-20 lg:py-28 border-t border-[#EEF2F6]/90 overflow-hidden">
-      <div className="mx-auto max-w-[1580px] px-16 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+      <div className="mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
 
         {/* Section Header */}
         <div className="max-w-[900px] mb-12 sm:mb-16">

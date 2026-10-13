@@ -80,7 +80,7 @@ export default function FullFootprint({
       {/* =========================================================================
           CONTENT WRAPPER
           ========================================================================= */}
-      <div className="mx-auto max-w-[1580px] w-full px-16 sm:px-8 md:px-10 lg:px-12 xl:px-16 relative z-10">
+      <div className="mx-auto max-w-[1580px] w-full px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 relative z-10">
         
         {/* -------------------------------------------------------------
             HEADER: TAG, HEADLINE & INTRO

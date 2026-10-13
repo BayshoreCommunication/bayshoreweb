@@ -6,7 +6,7 @@ import { ShieldCheck, Scale, FileText, CheckCircle2 } from "lucide-react";
 export default function FloridaBarRules() {
   return (
     <section className="relative w-full bg-[#F8FAFC] py-14 sm:py-20 lg:py-28 overflow-hidden">
-      <div className="mx-auto max-w-[1580px] px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+      <div className="mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
         
         {/* Section Header */}
         <div className="max-w-[920px] mb-12 sm:mb-16">

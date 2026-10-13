@@ -37,8 +37,8 @@ const PROBLEMS = [
 
 export default function LegalRootProblem() {
   return (
-    <section className="relative w-full bg-white py-14 sm:py-20 lg:py-28 border-t border-[#EEF2F6]/80 overflow-hidden px-16 md:px-0">
-      <div className="mx-auto max-w-[1580px] px-0 sm:px-8 md:px-10 lg:px-12 xl:px-16">
+    <section className="relative w-full bg-white py-14 sm:py-20 lg:py-28 border-t border-[#EEF2F6]/80 overflow-hidden">
+      <div className="mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16">
         <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-10 xl:gap-16">
 
           {/* ===================================================================

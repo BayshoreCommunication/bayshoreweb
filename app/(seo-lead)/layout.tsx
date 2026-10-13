@@ -22,7 +22,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
       <Navbar />
-      <div className="mt-[8rem] md:mt-[8.5rem] lg:mt-[9.5rem]">{children}</div>
+      <div className="mt-[8rem] md:mt-[8.5rem] lg:mt-[9.5rem] overflow-x-hidden w-full">{children}</div>
       <Footer />
     </>
   );

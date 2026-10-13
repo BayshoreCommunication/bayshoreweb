@@ -1,20 +1,20 @@
 import React from "react";
-import NaplesHero from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesHero";
-import NaplesWhyLeadGen from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesWhyLeadGen";
-import NaplesProblem from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesProblem";
-import NaplesThreePillars from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesThreePillars";
-import NaplesTactics from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesTactics";
-import NaplesPracticeAreas from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesPracticeAreas";
-import NaplesMarketOverview from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesMarketOverview";
-import NaplesSixMarkets from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesSixMarkets";
-import FloridaBarRules from "@/components/SEO-Lead/lawyer-lead-generation-Naples/FloridaBarRules";
-import NaplesVsGeneric from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesVsGeneric";
-import NaplesProcess from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesProcess";
-import NaplesPackages from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesPackages";
-import NaplesResults from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesResults";
-import NaplesWhyUs from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesWhyUs";
-import NaplesTestimonials from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesTestimonials";
-import NaplesFaq from "@/components/SEO-Lead/lawyer-lead-generation-Naples/NaplesFaq";
+import NaplesHero from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesHero";
+import NaplesWhyLeadGen from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesWhyLeadGen";
+import NaplesProblem from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesProblem";
+import NaplesThreePillars from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesThreePillars";
+import NaplesTactics from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesTactics";
+import NaplesPracticeAreas from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesPracticeAreas";
+import NaplesMarketOverview from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesMarketOverview";
+import NaplesSixMarkets from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesSixMarkets";
+import FloridaBarRules from "@/components/SEO-Lead/lawyer-lead-generation-naples/FloridaBarRules";
+import NaplesVsGeneric from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesVsGeneric";
+import NaplesProcess from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesProcess";
+import NaplesPackages from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesPackages";
+import NaplesResults from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesResults";
+import NaplesWhyUs from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesWhyUs";
+import NaplesTestimonials from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesTestimonials";
+import NaplesFaq from "@/components/SEO-Lead/lawyer-lead-generation-naples/NaplesFaq";
 
 export const metadata = {
   title: "Lawyer Lead Generation Naples | Bayshore Communication",
@@ -39,7 +39,7 @@ export const metadata = {
 
 const Page = () => {
   return (
-    <main className="w-full">
+    <main className="w-full overflow-x-hidden">
       {/* 01. Hero / H1 */}
       <NaplesHero />
 

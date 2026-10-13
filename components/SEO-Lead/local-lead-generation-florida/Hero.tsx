@@ -114,7 +114,7 @@ export default function Hero({ bgImage = HERO_BACKGROUND_IMAGE }: HeroProps) {
       {/* =========================================================================
           CONTENT CONTAINER
           ========================================================================= */}
-      <div className="relative z-10 w-full mx-auto max-w-[1580px] px-6 sm:px-8 md:px-10 lg:px-12 xl:px-16 py-10 sm:py-14 lg:py-16">
+      <div className="relative z-10 w-full mx-auto max-w-[1580px] px-4 sm:px-6 md:px-10 lg:px-12 xl:px-16 py-10 sm:py-14 lg:py-16">
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-8 xl:gap-12">
           
           {/* =====================================================================
@@ -150,10 +150,10 @@ export default function Hero({ bgImage = HERO_BACKGROUND_IMAGE }: HeroProps) {
             </div>
 
             {/* CTA Buttons */}
-            <div className="mt-7 flex flex-wrap items-center gap-3.5 max-w-[520px]">
+            <div className="mt-7 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-3.5 max-w-[520px]">
               <Link
                 href="/contact"
-                className="group inline-flex h-[50px] items-center justify-center gap-2.5 rounded-[8px] bg-primary px-6 text-[15px] font-semibold text-white shadow-[0_8px_20px_rgba(254,111,31,0.28)] transition-all duration-300 hover:bg-[#e65a0b] hover:shadow-[0_12px_26px_rgba(254,111,31,0.38)] hover:-translate-y-0.5"
+                className="group inline-flex h-[50px] w-full sm:w-auto items-center justify-center gap-2.5 rounded-[8px] bg-primary px-6 text-[15px] font-semibold text-white shadow-[0_8px_20px_rgba(254,111,31,0.28)] transition-all duration-300 hover:bg-[#e65a0b] hover:shadow-[0_12px_26px_rgba(254,111,31,0.38)] hover:-translate-y-0.5 text-center"
               >
                 <span>Request For Proposal</span>
                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
@@ -161,15 +161,15 @@ export default function Hero({ bgImage = HERO_BACKGROUND_IMAGE }: HeroProps) {
 
               <a
                 href="tel:+15095921745"
-                className="group inline-flex h-[50px] items-center justify-center gap-2 rounded-[8px] border border-[#CBD5E1] bg-white px-5 text-[15px] font-semibold text-[#0A192F] shadow-[0_2px_6px_rgba(15,23,42,0.06)] transition-all duration-300 hover:border-primary hover:text-primary hover:shadow-[0_4px_12px_rgba(15,23,42,0.08)] hover:-translate-y-0.5"
+                className="group inline-flex h-[50px] w-full sm:w-auto items-center justify-center gap-2 rounded-[8px] border border-[#CBD5E1] bg-white px-5 text-[15px] font-semibold text-[#0A192F] shadow-[0_2px_6px_rgba(15,23,42,0.06)] transition-all duration-300 hover:border-primary hover:text-primary hover:shadow-[0_4px_12px_rgba(15,23,42,0.08)] hover:-translate-y-0.5 text-center"
               >
-                <Phone size={17} className="text-primary transition-colors" />
+                <Phone size={17} className="text-primary transition-colors shrink-0" />
                 <span>+1 (509) 592-1745</span>
               </a>
             </div>
 
             {/* Mobile / Tablet Placement for Floating Exhibit Card (< lg) */}
-            <div className="mt-9 lg:hidden w-full max-w-[460px]">
+            <div className="mt-8 lg:hidden w-full max-w-[460px]">
               <FloatingExhibitCard />
             </div>
 
@@ -266,7 +266,7 @@ function FloatingExhibitCard() {
           border
           border-[#EEF2F6]
           bg-white
-          p-5
+          p-3.5
           sm:p-7
           md:p-8
           shadow-[0_20px_50px_rgba(15,23,42,0.12)]
@@ -279,81 +279,81 @@ function FloatingExhibitCard() {
         <div className="grid grid-cols-2">
           
           {/* ---------------- ITEM 1: TOP LEFT (+180% QUALIFIED CONSULTS) ---------------- */}
-          <div className="p-3 sm:p-4 pr-3 sm:pr-5 pb-5 sm:pb-6 border-r border-b border-[#EEF2F6]">
-            <div className="flex items-center gap-3">
+          <div className="p-2 sm:p-4 pr-2.5 sm:pr-5 pb-3.5 sm:pb-6 border-r border-b border-[#EEF2F6]">
+            <div className="flex items-center gap-2 sm:gap-3">
               {/* Peach Circle with Trending Chart */}
-              <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-[#FFF0EB] text-[#FF5B22]">
-                <TrendingUp size={22} strokeWidth={2.4} />
+              <div className="flex h-9 w-9 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-[#FFF0EB] text-[#FF5B22]">
+                <TrendingUp className="h-[18px] w-[18px] sm:h-[22px] sm:w-[22px]" strokeWidth={2.4} />
               </div>
 
               <div>
-                <h4 className="font-inter text-[26px] sm:text-[30px] md:text-[34px] font-bold tracking-tight leading-none text-[#0A192F]">
+                <h4 className="font-inter text-[20px] sm:text-[30px] md:text-[34px] font-bold tracking-tight leading-none text-[#0A192F]">
                   <AnimatedCounter value={180} prefix="+" suffix="%" />
                 </h4>
               </div>
             </div>
 
-            <p className="font-mono mt-3 text-[10px] sm:text-[11px] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
+            <p className="font-mono mt-2 sm:mt-3 text-[9px] sm:text-[11px] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
               QUALIFIED CONSULTS
             </p>
           </div>
 
           {/* ---------------- ITEM 2: TOP RIGHT (-65% COST PER LEAD) ---------------- */}
-          <div className="p-3 sm:p-4 pl-3 sm:pl-5 pb-5 sm:pb-6 border-b border-[#EEF2F6]">
-            <div className="flex items-center gap-3">
+          <div className="p-2 sm:p-4 pl-2.5 sm:pl-5 pb-3.5 sm:pb-6 border-b border-[#EEF2F6]">
+            <div className="flex items-center gap-2 sm:gap-3">
               {/* Soft Blue Circle with Arrow Down */}
-              <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-[#EFF6FF] text-[#2563EB]">
-                <ArrowDown size={22} strokeWidth={2.4} />
+              <div className="flex h-9 w-9 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-[#EFF6FF] text-[#2563EB]">
+                <ArrowDown className="h-[18px] w-[18px] sm:h-[22px] sm:w-[22px]" strokeWidth={2.4} />
               </div>
 
               <div>
-                <h4 className="font-inter text-[26px] sm:text-[30px] md:text-[34px] font-bold tracking-tight leading-none text-[#0A192F]">
+                <h4 className="font-inter text-[20px] sm:text-[30px] md:text-[34px] font-bold tracking-tight leading-none text-[#0A192F]">
                   <AnimatedCounter value={65} prefix="-" suffix="%" />
                 </h4>
               </div>
             </div>
 
-            <p className="font-mono mt-3 text-[10px] sm:text-[11px] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
+            <p className="font-mono mt-2 sm:mt-3 text-[9px] sm:text-[11px] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
               COST PER LEAD
             </p>
           </div>
 
           {/* ---------------- ITEM 3: BOTTOM LEFT (90% CLIENT RETENTION) ---------------- */}
-          <div className="p-3 sm:p-4 pr-3 sm:pr-5 pt-5 sm:pt-6 border-r border-[#EEF2F6]">
-            <div className="flex items-center gap-3">
+          <div className="p-2 sm:p-4 pr-2.5 sm:pr-5 pt-3.5 sm:pt-6 border-r border-[#EEF2F6]">
+            <div className="flex items-center gap-2 sm:gap-3">
               {/* Soft Mint Circle with Users */}
-              <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-[#ECFDF5] text-[#10B981]">
-                <Users size={22} strokeWidth={2.4} />
+              <div className="flex h-9 w-9 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-[#ECFDF5] text-[#10B981]">
+                <Users className="h-[18px] w-[18px] sm:h-[22px] sm:w-[22px]" strokeWidth={2.4} />
               </div>
 
               <div>
-                <h4 className="font-inter text-[26px] sm:text-[30px] md:text-[34px] font-bold tracking-tight leading-none text-[#0A192F]">
+                <h4 className="font-inter text-[20px] sm:text-[30px] md:text-[34px] font-bold tracking-tight leading-none text-[#0A192F]">
                   <AnimatedCounter value={90} suffix="%" />
                 </h4>
               </div>
             </div>
 
-            <p className="font-mono mt-3 text-[10px] sm:text-[11px] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
+            <p className="font-mono mt-2 sm:mt-3 text-[9px] sm:text-[11px] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
               CLIENT RETENTION
             </p>
           </div>
 
           {/* ---------------- ITEM 4: BOTTOM RIGHT (96% GEO-QUALIFIED LEADS) ---------------- */}
-          <div className="p-3 sm:p-4 pl-3 sm:pl-5 pt-5 sm:pt-6">
-            <div className="flex items-center gap-3">
+          <div className="p-2 sm:p-4 pl-2.5 sm:pl-5 pt-3.5 sm:pt-6">
+            <div className="flex items-center gap-2 sm:gap-3">
               {/* Soft Purple Circle with Target */}
-              <div className="flex h-11 w-11 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-[#F3E8FF] text-[#9333EA]">
-                <Target size={22} strokeWidth={2.4} />
+              <div className="flex h-9 w-9 sm:h-12 sm:w-12 shrink-0 items-center justify-center rounded-full bg-[#F3E8FF] text-[#9333EA]">
+                <Target className="h-[18px] w-[18px] sm:h-[22px] sm:w-[22px]" strokeWidth={2.4} />
               </div>
 
               <div>
-                <h4 className="font-inter text-[26px] sm:text-[30px] md:text-[34px] font-bold tracking-tight leading-none text-[#0A192F]">
+                <h4 className="font-inter text-[20px] sm:text-[30px] md:text-[34px] font-bold tracking-tight leading-none text-[#0A192F]">
                   <AnimatedCounter value={96} suffix="%" />
                 </h4>
               </div>
             </div>
 
-            <p className="font-mono mt-3 text-[10px] sm:text-[11px] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
+            <p className="font-mono mt-2 sm:mt-3 text-[9px] sm:text-[11px] font-semibold tracking-[0.14em] text-[#64748B] uppercase">
               GEO-QUALIFIED LEADS
             </p>
           </div>
