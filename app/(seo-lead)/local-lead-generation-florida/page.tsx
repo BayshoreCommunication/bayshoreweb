@@ -12,6 +12,10 @@ import React from "react";
 import RegionalBreakdown from "@/components/SEO-Lead/local-lead-generation-florida/RegionalBreakdown";
 import TheDifference from "@/components/SEO-Lead/local-lead-generation-florida/TheDifference";
 import TheProcess from "@/components/SEO-Lead/local-lead-generation-florida/TheProcess";
+import WhyUs from "@/components/SEO-Lead/local-lead-generation-florida/WhyUs";
+import EngagementOptions from "@/components/SEO-Lead/local-lead-generation-florida/EngagementOptions";
+import RealResults from "@/components/SEO-Lead/local-lead-generation-florida/RealResults";
+import LegalFaq from "@/components/SEO-Lead/local-lead-generation-florida/LegalFaq";
 
 export const metadata = {
   title: "Local Lead Generation Florida | Bayshore Communication",
@@ -50,6 +54,10 @@ const Page = () => {
       <RegionalBreakdown />
       <TheDifference />
       <TheProcess />
+      <WhyUs />
+      <EngagementOptions />
+      <RealResults />
+      <LegalFaq />
     </main>
   );
 };
