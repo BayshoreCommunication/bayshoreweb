@@ -33,9 +33,17 @@ const Navbar = () => {
 
   const [isOpen, setIsOpen] = useState(false);
   const toggleDrawer = () => {
-    setIsOpen((prevState) => !prevState);
-    if (!isOpen) document.documentElement.style.overflow = "hidden";
-    else document.documentElement.style.overflow = "auto";
+    setIsOpen((prevState: boolean) => {
+      const nextState = !prevState;
+      if (typeof document !== "undefined") {
+        if (nextState) {
+          document.body.style.overflow = "hidden";
+        } else {
+          document.body.style.overflow = "";
+        }
+      }
+      return nextState;
+    });
   };
 
   const [hasAnimated, setHasAnimated] = useState(false);

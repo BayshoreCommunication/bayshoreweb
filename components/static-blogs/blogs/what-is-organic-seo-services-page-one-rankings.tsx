@@ -315,8 +315,8 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
         }}
       />
 
-      <section className="rounded-[12px] bg-[#101d34] p-4 sm:p-6 md:p-10 text-white shadow-md">
-        <p className="text-xs sm:text-sm md:text-base font-bold uppercase tracking-[0.18em] text-[#8ed8ff]">
+      <section className="rounded-[12px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-10 text-white shadow-md w-full max-w-full overflow-hidden">
+        <p className="text-xs sm:text-sm md:text-base font-bold uppercase tracking-[0.18em] text-[#8ed8ff] leading-normal">
           Bayshore Communication | Organic SEO Services
         </p>
         <p className="mt-3 sm:mt-4 max-w-4xl text-base sm:text-lg md:text-xl font-medium leading-relaxed sm:leading-8 text-[#d9e7f7]">
@@ -338,7 +338,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
       </section>
 
       <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-10">
-        <section className="rounded-[12px] bg-white p-4 sm:p-6 md:p-10 shadow-sm">
+        <section className="rounded-[12px] bg-white px-6 py-6 sm:p-6 md:p-10 shadow-sm w-full max-w-full overflow-hidden">
           <div className="space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl leading-7 sm:leading-8 md:leading-9">
             <p>
               Organic SEO is really just the honest and hard work you put in to
@@ -354,7 +354,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           </div>
         </section>
 
-        <section className="rounded-[12px] bg-white p-4 sm:p-6 md:p-10 shadow-sm">
+        <section className="rounded-[12px] bg-white px-6 py-6 sm:p-6 md:p-10 shadow-sm w-full max-w-full overflow-hidden">
           <h2 className="text-sm sm:text-base md:text-lg font-extrabold uppercase tracking-[0.18em] text-[#FE6F1F]">
             KEY POINTS
           </h2>
@@ -456,7 +456,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           </div>
 
           <div className="my-10 rounded-[12px] bg-[#101d34] p-6 text-white md:p-10 shadow-md">
-            <h3 className="!pt-0 text-xl font-bold uppercase tracking-[0.18em] text-[#8ed8ff] mb-6">
+            <h3 className="!pt-0 text-xl font-bold uppercase tracking-[0.18em] text-[#8ed8ff] leading-normal mb-6">
               THE 4 PILLARS BY THE NUMBERS
             </h3>
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -465,7 +465,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
                   key={stat.label}
                   className="rounded-[10px] bg-white/10 p-6 text-center shadow-xs"
                 >
-                  <p className="text-4xl md:text-5xl font-extrabold text-[#8ed8ff]">
+                  <p className="text-4xl md:text-5xl font-extrabold text-[#8ed8ff] leading-normal">
                     {stat.value}
                   </p>
                   <p className="mt-3 text-lg font-medium text-[#d9e7f7] leading-relaxed">
@@ -820,7 +820,7 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           </div>
         </NumberedSection>
 
-        <section className="rounded-[12px] bg-white p-4 sm:p-6 md:p-10 shadow-sm">
+        <section className="rounded-[12px] bg-white px-6 py-6 sm:p-6 md:p-10 shadow-sm w-full max-w-full overflow-hidden">
           <p className="text-sm sm:text-base font-extrabold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Frequently Asked Questions
           </p>
@@ -857,17 +857,17 @@ const NumberedSection = ({
   title: string;
   children: ReactNode;
 }) => (
-  <section className="rounded-[12px] bg-white p-4 sm:p-6 md:p-10 shadow-sm my-6 sm:my-10">
-    <div className="grid gap-4 sm:gap-6 md:grid-cols-[72px_1fr]">
+  <section className="rounded-[12px] bg-white px-6 py-6 sm:p-6 md:p-10 shadow-sm my-6 sm:my-10 w-full max-w-full overflow-hidden">
+    <div className="grid gap-4 sm:gap-6 md:grid-cols-[72px_1fr] min-w-0">
       <div className="hidden md:block text-4xl md:text-5xl font-extrabold leading-none text-[#FE6F1F]">
         {number}
       </div>
-      <div>
+      <div className="min-w-0 w-full max-w-full">
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-[#101d34] flex items-start gap-2.5 md:block">
           <span className="md:hidden text-[#FE6F1F] shrink-0 font-bold">{number}</span>
-          <span>{title}</span>
+          <span className="break-words">{title}</span>
         </h2>
-        <div className="mt-4 sm:mt-6 space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl leading-7 sm:leading-8 md:leading-9 text-[#2c3e50] [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-2.5 sm:[&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-sm sm:[&>ul]:text-base [&>ul]:leading-6 sm:[&>ul]:leading-7 [&>ul]:list-disc">
+        <div className="mt-4 sm:mt-6 space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl leading-7 sm:leading-8 md:leading-9 text-[#2c3e50] [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-2.5 sm:[&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-sm sm:[&>ul]:text-base [&>ul]:leading-6 sm:[&>ul]:leading-7 [&>ul]:list-disc min-w-0">
           {children}
         </div>
       </div>
@@ -877,7 +877,7 @@ const NumberedSection = ({
 
 const StatBlock = ({ value, label }: { value: string; label: string }) => (
   <div className="rounded-[10px] bg-[#101d34] p-4 sm:p-6 text-white shadow-xs">
-    <p className="!text-2xl sm:!text-3xl md:!text-4xl lg:!text-5xl !font-extrabold !text-[#8ed8ff] break-words">{value}</p>
+    <p className="!text-2xl sm:!text-3xl md:!text-4xl lg:!text-5xl !font-extrabold !text-[#8ed8ff] leading-normal break-words">{value}</p>
     <p className="mt-2 sm:mt-3 !text-sm sm:!text-base md:!text-lg !font-medium !text-[#d9e7f7] !leading-5 sm:!leading-6 md:!leading-relaxed">{label}</p>
   </div>
 );
@@ -889,11 +889,11 @@ const DataTable = ({
   columns: string[];
   rows: string[][];
 }) => (
-  <div className="my-6 sm:my-8 w-full max-w-full">
+  <div className="my-6 sm:my-8 w-full max-w-full overflow-hidden">
     <div className="mb-1.5 flex items-center justify-end sm:hidden text-[11px] text-[#FE6F1F] font-medium">
       <span>← Swipe horizontally to view full table →</span>
     </div>
-    <div className="overflow-x-auto rounded-[10px] border border-[#dce6f2] shadow-xs">
+    <div className="w-full max-w-full overflow-x-auto rounded-[10px] border border-[#dce6f2] shadow-sm overscroll-x-contain">
       <div className="min-w-[560px] sm:min-w-[760px]">
         <div
           className="grid bg-[#101d34] text-xs sm:text-base md:text-lg font-bold !text-white"
@@ -936,7 +936,7 @@ const PdfCta = ({
   text: string;
   button: string;
 }) => (
-  <section className="my-6 sm:my-10 rounded-[12px] bg-[#101d34] p-4 sm:p-6 md:p-10 shadow-md text-white">
+  <section className="my-6 sm:my-10 rounded-[12px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-10 shadow-md text-white w-full max-w-full overflow-hidden">
     <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">{title}</h2>
     <p className="mt-3 sm:mt-4 max-w-4xl text-base sm:text-lg md:text-xl font-medium leading-relaxed sm:leading-8 text-[#d9e7f7]">
       {text}

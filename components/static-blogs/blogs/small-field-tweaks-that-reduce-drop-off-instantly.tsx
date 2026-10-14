@@ -292,8 +292,8 @@ export const FormOptimizationBlog = () => {
           __html: JSON.stringify(schemaData).replace(/</g, "\\u003c"),
         }}
       />
-      <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
-        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
+      <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 text-white w-full max-w-full overflow-hidden">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff] leading-normal">
           Conversion Rate Optimization | UI/UX Design
         </p>
         <p className="mt-3 sm:mt-4 max-w-3xl !text-base sm:!text-lg !leading-7 sm:!leading-8 !text-[#d9e7f7]">
@@ -313,14 +313,14 @@ export const FormOptimizationBlog = () => {
       </section>
 
       <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
-        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+        <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
           <p className="text-base sm:text-lg leading-7 sm:leading-8">
             Forms are the final handshake between your business and a potential lead. Most Florida businesses treat them like an afterthought. That mindset is bleeding conversions.
             Our surveys show that 67% of users abandon a form the moment it feels too long or confusing. That&apos;s a lot of leads walking out the door before you even know they arrived.
           </p>
         </section>
 
-        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+        <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
           <h2 className="text-2xl sm:text-3xl font-bold">KEY POINTS</h2>
           <div className="mt-5 sm:mt-6 grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2">
             {keyPoints.map((point) => (
@@ -398,7 +398,7 @@ export const FormOptimizationBlog = () => {
             </p>
           </ContentSection>
 
-          <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
+          <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8 w-full max-w-full overflow-hidden">
             <h2 className="text-3xl font-bold">Losing Leads at Your Contact Form?</h2>
             <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">
               Bayshore Communication builds high-converting web forms backed by real UX data. Florida businesses trust us to plug their conversion leaks.
@@ -423,7 +423,7 @@ export const FormOptimizationBlog = () => {
             </p>
           </ContentSection>
 
-          <section className="grid gap-5 md:grid-cols-2">
+          <section className="grid gap-5 md:grid-cols-2 w-full max-w-full overflow-hidden">
             <div className="rounded-[8px] bg-white p-6 shadow-sm border border-red-100">
               <h2 className="text-2xl font-bold text-red-600">BEFORE</h2>
               <ul className="mt-5 space-y-3">
@@ -460,7 +460,7 @@ export const FormOptimizationBlog = () => {
             </div>
           </section>
 
-          <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
+          <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8 w-full max-w-full overflow-hidden">
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
               A/B Test Outcome
             </p>
@@ -505,7 +505,7 @@ export const FormOptimizationBlog = () => {
             </p>
           </ContentSection>
 
-          <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
+          <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8 w-full max-w-full overflow-hidden">
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
               Bayshore Survey Finding
             </p>
@@ -538,7 +538,7 @@ export const FormOptimizationBlog = () => {
             </div>
           </section>
 
-          <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
+          <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 text-white w-full max-w-full overflow-hidden">
             <h2 className="text-2xl sm:text-3xl font-bold">
               Stop Losing Leads at Your Contact Form
             </h2>
@@ -553,7 +553,7 @@ export const FormOptimizationBlog = () => {
             </Link>
           </section>
 
-          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
             <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#0077B3]">
               Frequently Asked Questions
             </p>
@@ -573,7 +573,7 @@ export const FormOptimizationBlog = () => {
             </div>
           </section>
 
-          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
             <h2 className="text-2xl sm:text-3xl font-bold">Final Thoughts</h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-7 sm:leading-8">
               A high conversion rate is built on subtle, customer-first design decisions. By reducing
@@ -604,9 +604,9 @@ const ContentSection = ({
   title: string;
   children: ReactNode;
 }) => (
-  <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+  <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
     <h2 className="text-2xl sm:text-3xl font-bold leading-tight">{title}</h2>
-    <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-2.5 sm:[&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-sm sm:[&>ul]:text-base [&>ul]:leading-6 sm:[&>ul]:leading-7 [&>ul]:list-disc">
+    <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-2.5 sm:[&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-sm sm:[&>ul]:text-base [&>ul]:leading-6 sm:[&>ul]:leading-7 [&>ul]:list-disc min-w-0">
       {children}
     </div>
   </section>
@@ -614,7 +614,7 @@ const ContentSection = ({
 
 const StatBlock = ({ value, label }: { value: string; label: string }) => (
   <div className="rounded-[8px] bg-[#101d34] p-4 sm:p-5 text-white">
-    <p className="!text-2xl sm:!text-3xl md:!text-4xl !font-bold !text-[#8ed8ff] break-words">{value}</p>
+    <p className="!text-2xl sm:!text-3xl md:!text-4xl !font-bold !text-[#8ed8ff] leading-normal break-words">{value}</p>
     <p className="mt-2 sm:mt-3 !text-sm sm:!text-base md:!text-lg !leading-5 sm:!leading-6 md:!leading-7 !text-[#d9e7f7]">{label}</p>
   </div>
 );
@@ -628,11 +628,11 @@ const DataTable = ({
 }) => {
   const gridClass = columns.length === 2 ? "grid-cols-2" : "grid-cols-3";
   return (
-    <div className="mt-5 w-full max-w-full">
+    <div className="mt-5 w-full max-w-full overflow-hidden">
       <div className="mb-1.5 flex items-center justify-end sm:hidden text-[11px] text-[#FE6F1F] font-medium">
         <span>← Swipe horizontally to view full table →</span>
       </div>
-      <div className="overflow-x-auto rounded-[8px] border border-[#dce6f2]">
+      <div className="w-full max-w-full overflow-x-auto rounded-[8px] border border-[#dce6f2] shadow-sm overscroll-x-contain">
         <div className="min-w-[500px] sm:min-w-[640px]">
           <div className={`grid ${gridClass} bg-[#101d34] text-xs sm:text-base font-semibold !text-white`}>
             {columns.map((column) => (

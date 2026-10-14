@@ -346,8 +346,8 @@ export const DentalWebsiteDesignCostBlog = () => {
         }}
       />
 
-      <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
-        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-[#8ed8ff]">
+      <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 text-white w-full max-w-full overflow-hidden">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-[#8ed8ff] leading-normal">
           Dental Web Design | Practice Cost &amp; ROI Guide
         </p>
         <p className="mt-3 sm:mt-4 max-w-3xl text-base sm:text-lg leading-7 sm:leading-8 !text-[#d9e7f7]">
@@ -374,7 +374,7 @@ export const DentalWebsiteDesignCostBlog = () => {
       </section>
 
       <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
-        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+        <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
           <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Key Takeaways
           </p>
@@ -393,7 +393,7 @@ export const DentalWebsiteDesignCostBlog = () => {
           </div>
         </section>
 
-        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+        <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
           <h2 className="text-2xl sm:text-3xl font-bold leading-tight">
             Quick Summary Of Dental Website Design Cost Ranges
           </h2>
@@ -490,7 +490,7 @@ export const DentalWebsiteDesignCostBlog = () => {
           </p>
         </NumberedSection>
 
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
+        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8 w-full max-w-full overflow-hidden">
           <h2 className="text-3xl font-bold leading-tight">
             The Biggest Cost Drivers That Change Your Quote Fast
           </h2>
@@ -652,7 +652,7 @@ export const DentalWebsiteDesignCostBlog = () => {
           </p>
         </NumberedSection>
 
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
+        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8 w-full max-w-full overflow-hidden">
           <h2 className="text-3xl font-bold leading-tight">Conclusion</h2>
           <div className="mt-5 space-y-5 text-lg leading-8">
             <p>
@@ -675,7 +675,7 @@ export const DentalWebsiteDesignCostBlog = () => {
           href="/contact"
         />
 
-        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+        <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
           <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#0077B3]">
             Frequently Asked Questions
           </p>
@@ -695,7 +695,7 @@ export const DentalWebsiteDesignCostBlog = () => {
           </div>
         </section>
 
-        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+        <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
           <h2 className="text-xl sm:text-2xl font-bold leading-tight text-gray-700">Disclaimer</h2>
           <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
             This blog is for informational purposes only. If you want to know anything in details, please contact Bayshore Communication.
@@ -715,17 +715,17 @@ const NumberedSection = ({
   title: string;
   children: ReactNode;
 }) => (
-  <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
-    <div className="grid gap-3 sm:gap-4 md:grid-cols-[72px_1fr]">
+  <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
+    <div className="grid gap-3 sm:gap-4 md:grid-cols-[72px_1fr] min-w-0">
       <div className="hidden md:block text-4xl font-bold leading-none text-[#FE6F1F]">
         {number}
       </div>
-      <div>
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight flex items-start gap-2.5 md:block">
+      <div className="min-w-0 w-full max-w-full">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight flex items-start gap-2.5 md:block break-words">
           <span className="md:hidden text-[#FE6F1F] shrink-0 font-bold">{number}</span>
-          <span>{title}</span>
+          <span className="break-words">{title}</span>
         </h2>
-        <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl">
+        <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl min-w-0">
           {children}
         </div>
       </div>
@@ -740,11 +740,11 @@ const DataTable = ({
   columns: string[];
   rows: string[][];
 }) => (
-  <div className="mt-5 w-full max-w-full">
+  <div className="mt-5 w-full max-w-full overflow-hidden">
     <div className="mb-1.5 flex items-center justify-end sm:hidden text-[11px] text-[#FE6F1F] font-medium">
       <span>← Swipe horizontally to view full table →</span>
     </div>
-    <div className="w-full max-w-full overflow-x-auto rounded-[8px] border border-[#dce6f2] shadow-sm">
+    <div className="w-full max-w-full overflow-x-auto rounded-[8px] border border-[#dce6f2] shadow-sm overscroll-x-contain">
       <div className="min-w-[560px] sm:min-w-[720px]">
         <div
           className="grid bg-[#101d34] text-xs sm:text-base font-semibold !text-white"
@@ -791,8 +791,8 @@ const PdfCta = ({
   button: string;
   href: string;
 }) => (
-  <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
-    <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
+  <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 text-white w-full max-w-full overflow-hidden">
+    <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff] leading-normal">
       {eyebrow}
     </p>
     <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold leading-tight">{title}</h2>

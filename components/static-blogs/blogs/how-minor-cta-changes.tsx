@@ -283,8 +283,8 @@ export const CtaOptimizationBlog = () => {
           __html: JSON.stringify(schemaData).replace(/</g, "\\u003c"),
         }}
       />
-      <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
-        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-[#8ed8ff]">
+      <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 text-white w-full max-w-full overflow-hidden">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-[#8ed8ff] leading-normal">
           CTA Optimization | Conversion Strategy
         </p>
         <p className="mt-3 sm:mt-4 max-w-3xl text-base sm:text-lg leading-7 sm:leading-8 !text-[#d9e7f7]">
@@ -303,7 +303,7 @@ export const CtaOptimizationBlog = () => {
 
       <div className="mt-6 sm:mt-8">
         <div className="space-y-6 sm:space-y-8">
-          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
             <p className="text-base sm:text-lg leading-7 sm:leading-8">
               Optimizing your call-to-action buttons can help boost conversion
               rates. When you refine button text, improve button visuals, and
@@ -313,7 +313,7 @@ export const CtaOptimizationBlog = () => {
             </p>
           </section>
 
-          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
             <h2 className="text-2xl sm:text-3xl font-bold">Quick Takeaways</h2>
             <div className="mt-4 sm:mt-6 grid gap-3 sm:gap-4 md:grid-cols-2">
               {takeaways.map((item) => (
@@ -331,7 +331,7 @@ export const CtaOptimizationBlog = () => {
                   key={stat.value}
                   className="rounded-[8px] bg-[#101d34] p-4 sm:p-5 text-white"
                 >
-                  <p className="!text-3xl sm:!text-4xl !font-bold !text-[#8ed8ff]">
+                  <p className="!text-3xl sm:!text-4xl !font-bold !text-[#8ed8ff] leading-normal">
                     {stat.value}
                   </p>
                   <p className="mt-2 sm:mt-3 !text-sm sm:!text-lg !leading-6 sm:!leading-7 !text-[#d9e7f7]">
@@ -409,7 +409,7 @@ export const CtaOptimizationBlog = () => {
             </p>
           </ContentSection>
 
-          <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
+          <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 text-white w-full max-w-full overflow-hidden">
             <h2 className="text-2xl sm:text-3xl font-bold">
               Ready to Turn Visitors Into Clients?
             </h2>
@@ -453,7 +453,7 @@ export const CtaOptimizationBlog = () => {
             </p>
           </ContentSection>
 
-          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
             <h2 className="text-2xl sm:text-3xl font-bold">
               Device-Specific CTA Optimization
             </h2>
@@ -483,7 +483,7 @@ export const CtaOptimizationBlog = () => {
             </div>
           </section>
 
-          <section className="grid gap-4 sm:gap-5 md:grid-cols-2">
+          <section className="grid gap-4 sm:gap-5 md:grid-cols-2 w-full max-w-full overflow-hidden">
             {comparison.map((group) => (
               <div
                 key={group.title}
@@ -523,7 +523,7 @@ export const CtaOptimizationBlog = () => {
             </p>
           </ContentSection>
 
-          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
             <h2 className="text-2xl sm:text-3xl font-bold">
               Step-by-Step CTA Optimization
             </h2>
@@ -545,7 +545,7 @@ export const CtaOptimizationBlog = () => {
             </div>
           </section>
 
-          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
             <h2 className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#0077B3]">
               Frequently Asked Questions
             </h2>
@@ -562,7 +562,7 @@ export const CtaOptimizationBlog = () => {
             </div>
           </section>
 
-          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
             <h2 className="text-2xl sm:text-3xl font-bold">Final Thoughts</h2>
             <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-7 sm:leading-8">
               Even small changes to your CTA copy, visual hierarchy, and
@@ -587,7 +587,7 @@ const ContentSection = ({
   title: string;
   children: ReactNode;
 }) => (
-  <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+  <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
     <h2 className="text-2xl sm:text-3xl font-bold leading-tight">{title}</h2>
     <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold">
       {children}

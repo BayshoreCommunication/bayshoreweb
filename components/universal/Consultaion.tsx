@@ -19,10 +19,11 @@ const Consultaion = () => {
             "https://calendly.com/info-bayshorecommunication/meeting?month=2025-04"
           }
           target="_blank"
+          className="max-w-full"
         >
-          <button className="btn text-small !py-4 flex items-center gap-4 md:gap-8 r-button border-2 border-primary hover:text-primary">
-            <span>Book now 45 min Free Consultation</span>
-            <span className="inline-block translate-y-[2px] ml-2">
+          <button className="btn text-small !py-3 sm:!py-4 flex items-center justify-center gap-2 sm:gap-4 md:gap-8 r-button border-2 border-primary hover:text-primary max-w-full flex-wrap text-center">
+            <span className="text-xs sm:text-sm md:text-base">Book now 45 min Free Consultation</span>
+            <span className="inline-block translate-y-[2px] ml-1 sm:ml-2 shrink-0">
               <AiOutlineRight />
             </span>
           </button>
