@@ -112,7 +112,7 @@ export default function SeoRoiSection() {
             <span className="font-bold text-[#081B4B]">VERIFIED PERFORMANCE</span>
           </div>
 
-          <h2 className="mx-auto mt-8 max-w-[1100px] text-[38px] font-bold leading-[1.1] text-[#081B4B] md:text-[52px]">
+          <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] mx-auto mt-8 max-w-[1100px] font-bold leading-[1.1] text-[#081B4B]">
             Real Results for Real{" "}
             <span className="text-[#FF6F00]">Florida Businesses</span>
           </h2>
@@ -201,7 +201,7 @@ export default function SeoRoiSection() {
               <span className="text-xl font-bold uppercase tracking-wider text-[#FF6F00]">
                 THE ROI OF SEO
               </span>
-              <h2 className="mt-4 text-[32px] font-bold leading-[1.15] text-[#081B4B] md:text-[44px]">
+              <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] mt-4 font-bold leading-[1.15] text-[#081B4B]">
                 The ROI of SEO for Florida Businesses
               </h2>
               <p className="mt-6 text-[15px] leading-8 text-black/70 md:text-[17px]">

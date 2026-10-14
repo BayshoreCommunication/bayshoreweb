@@ -84,7 +84,7 @@ export default function SeoRoiSection() {
             <span className="font-bold text-[#081B4B]">THE ROI OF SEO</span>
           </div>
 
-          <h2 className="mx-auto mt-8 max-w-[1100px] text-[38px] font-bold leading-[1.1] text-[#081B4B] md:text-[52px]">
+          <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] mx-auto mt-8 max-w-[1100px] font-bold leading-[1.1] text-[#081B4B]">
             The ROI of SEO for
             <br />
             <span className="text-[#FF6F00]">

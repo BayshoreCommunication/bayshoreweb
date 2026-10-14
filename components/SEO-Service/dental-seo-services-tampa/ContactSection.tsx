@@ -84,7 +84,7 @@ export default function ContactSection() {
               <div className="h-px w-12 bg-[#FF6F00]" />
             </div>
 
-            <h2 className="text-[38px] font-bold leading-[1.08] text-black md:text-[52px]">
+            <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] font-bold leading-[1.08] text-black">
               Let&apos;s Put Your
               <br />
               Tampa Dental Practice

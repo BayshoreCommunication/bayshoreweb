@@ -60,7 +60,7 @@ export default function CommonSeoMistakes() {
         {/* Header */}
         <div className="grid gap-8 lg:grid-cols-[1fr_380px] lg:items-start">
           <div>
-            <h2 className="max-w-[780px] text-[34px] font-bold leading-[1.05] text-black md:text-[52px]">
+            <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] max-w-[780px] font-bold leading-[1.05] text-black">
               Common <span className="text-[#FF6F00]">SEO</span> Mistakes{" "}
               <span className="text-[#FF6F00]">Brandon Florida</span>{" "}
               Businesses Make

@@ -226,7 +226,7 @@ export default function SeoPackagesSection() {
             SEO PACKAGES
           </p>
 
-          <h2 className="mx-auto mt-4 max-w-[1180px] text-[32px] font-bold leading-[1.08] text-[#081B4B] md:text-[50px]">
+          <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] mx-auto mt-4 max-w-[1180px] font-bold leading-[1.08] text-[#081B4B]">
             SEO Packages for Fort Myers Law Firms
           </h2>
 

@@ -66,7 +66,7 @@ export default function Hero() {
               Bayshore Communication
             </span>
 
-            <h1 className="mt-6 max-w-[780px] text-[36px] font-extrabold leading-[1.08] sm:text-[48px] md:text-[60px]">
+            <h1 className="text-[36px] sm:text-[44px] md:text-[48px] xl:text-[52px] mt-6 max-w-[780px] font-extrabold leading-[1.08]">
               Florida SEO Company:{" "}
               <span className="text-[#FF6F00]">
                 Reach Customers at the Right Search Moment

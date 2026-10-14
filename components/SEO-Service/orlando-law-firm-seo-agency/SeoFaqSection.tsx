@@ -78,7 +78,7 @@ export default function SeoFaqSection() {
               <span className="font-semibold text-[#FF6F00]">FAQ</span>
             </div>
 
-            <h2 className="mt-6 text-[38px] font-bold leading-[1.08] text-black md:text-[52px]">
+            <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] mt-6 font-bold leading-[1.08] text-black">
               Orlando Law Firm SEO
               <br />
               <span className="text-[#FF6F00]">Frequently Asked Questions</span>

@@ -45,7 +45,7 @@ export default function AiSearchSeoSection() {
       <div className="mx-auto max-w-[1620px] px-8 md:px-8">
         {/* Heading */}
         <div className="mx-auto max-w-[900px] text-left md:text-center">
-          <h2 className="text-[32px] font-bold leading-[1.15] text-[#081B4B] md:text-[42px]">
+          <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] font-bold leading-[1.15] text-[#081B4B]">
             Why AI Search Is Changing Legal SEO in{" "}
             <span className="text-[#FF6F00]">Fort Myers</span> in 2026
           </h2>

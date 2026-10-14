@@ -117,7 +117,7 @@ export default function ServiceAreasSection() {
             Coverage & Industries
           </span>
 
-          <h2 className="mt-4 text-[38px] font-bold leading-[1.1] text-black md:text-[52px]">
+          <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] mt-4 font-bold leading-[1.1] text-black">
             Serving Businesses Across{" "}
             <span className="text-[#FF6F00]">Florida</span> and Surrounding Markets
           </h2>

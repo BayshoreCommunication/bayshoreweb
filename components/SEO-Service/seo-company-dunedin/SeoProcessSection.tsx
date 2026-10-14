@@ -86,7 +86,7 @@ export default function SeoProcessSection() {
               Our Process
             </span>
 
-            <h2 className="mt-4 text-[38px] font-bold leading-[1.08] text-[#081B4B] md:text-[48px]">
+            <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] mt-4 font-bold leading-[1.08] text-[#081B4B]">
               Our Proven
               <br />
               SEO Process for

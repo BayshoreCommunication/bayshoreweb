@@ -68,7 +68,7 @@ export default function SeoPackagesSection() {
             Pricing & Plans
           </span>
 
-          <h2 className="mt-4 text-[38px] font-bold leading-[1.1] text-[#081B4B] md:text-[52px]">
+          <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] mt-4 font-bold leading-[1.1] text-[#081B4B]">
             SEO Packages for{" "}
             <span className="text-[#FF6F00]">Florida Businesses</span>
           </h2>

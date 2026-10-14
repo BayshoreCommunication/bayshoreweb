@@ -39,7 +39,7 @@ export default function WhyLosingCustomers() {
       <div className="mx-auto max-w-[1620px] px-8 md:px-8">
         {/* Heading */}
         <div className="max-w-[820px]">
-          <h2 className="text-[38px] font-bold leading-[1.05] text-black sm:text-[48px]">
+          <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] font-bold leading-[1.05] text-black">
             Why Fort Myers Law Firms
             <br />
             Are Losing Clients

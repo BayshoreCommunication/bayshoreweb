@@ -81,7 +81,7 @@ export default function ContactSection() {
               <div className="h-px w-12 bg-[#FF6F00]" />
             </div>
 
-            <h2 className="text-[36px] font-bold leading-[1.08] text-black md:text-[50px]">
+            <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] font-bold leading-[1.08] text-black">
               Get More Local Visibility{" "}
               <span className="text-[#FF6F00]">
                 for Your Business in Florida

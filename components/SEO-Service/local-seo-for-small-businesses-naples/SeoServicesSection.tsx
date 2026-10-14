@@ -77,7 +77,7 @@ export default function SeoServicesSection() {
               Our Services
             </span>
 
-            <h2 className="mt-4 text-[36px] font-bold leading-[1.1] text-black md:text-[54px]">
+            <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] mt-4 font-bold leading-[1.1] text-black">
               Complete <span className="text-[#FF6F00]">Local SEO</span>
               <br />
               Services for

@@ -69,7 +69,7 @@ export default function Hero() {
               Rank Higher, Get More Leads, Close More Deals
             </span>
 
-            <h1 className="mt-6 max-w-[720px] text-[38px] font-extrabold leading-[1.05] sm:text-[52px] md:text-[64px]">
+            <h1 className="text-[36px] sm:text-[44px] md:text-[48px] xl:text-[52px] mt-6 max-w-[720px] font-extrabold leading-[1.05]">
               Real Estate SEO
               <br />
               Services in

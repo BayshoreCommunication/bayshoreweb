@@ -65,15 +65,7 @@ export default function SeoAuditForm() {
         <div className="grid items-start gap-10 lg:grid-cols-[1fr_420px] lg:gap-24">
           <div>
             <h2
-              className="
-                max-w-[660px]
-                text-[38px]
-                font-bold
-                leading-[0.95]
-                tracking-[-0.02em]
-                md:text-[42px]
-                
-              "
+              className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] max-w-[660px] font-bold leading-[0.95] tracking-[-0.02em]"
             >
               Get Your Free{" "}
               <span className="text-[#FF6F00]">Naples Florida Small Business</span> SEO

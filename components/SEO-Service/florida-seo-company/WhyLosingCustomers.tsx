@@ -37,7 +37,7 @@ export default function WhyLosingCustomers() {
       <div className="mx-auto max-w-[1620px] px-8 md:px-8">
         {/* Heading */}
         <div className="max-w-[860px]">
-          <h2 className="text-[36px] font-bold leading-[1.08] text-black sm:text-[46px]">
+          <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] font-bold leading-[1.08] text-black">
             Why Businesses in Florida
             <br />
             Are Losing Customers

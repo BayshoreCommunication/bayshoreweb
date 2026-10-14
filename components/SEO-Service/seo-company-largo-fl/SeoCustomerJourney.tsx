@@ -39,7 +39,7 @@ export default function SeoCustomerJourney() {
       <div className="mx-auto max-w-[1620px] px-8 md:px-8">
         {/* Header */}
         <div className="mx-auto max-w-[900px] text-center">
-          <h2 className="text-[32px] font-bold leading-[1.1] text-[#081B4B] md:text-[48px]">
+          <h2 className="text-[32px] sm:text-[42px] md:text-[48px] lg:text-[52px] font-bold leading-[1.1] text-[#081B4B]">
             How SEO Turns <span className="text-[#FF6F00]">Largo</span>,
             Florida, Searches Into{" "}
             <span className="text-[#FF6F00]">Paying Customers</span>
