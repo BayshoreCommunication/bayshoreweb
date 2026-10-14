@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useRef, useEffect } from 'react';
+import React, { useRef, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 // flag-icons styles are provided by the app's global stylesheet.
@@ -11,6 +11,15 @@ export default function GlobalTalent() {
     const isInteractingRef = useRef(false);
     const resumeTimeoutRef = useRef<NodeJS.Timeout | null>(null);
     const currentPosRef = useRef(0);
+
+    // Drag-to-scroll refs and state
+    const isDraggingRef = useRef(false);
+    const startXRef = useRef(0);
+    const startScrollLeftRef = useRef(0);
+    const lastMouseXRef = useRef(0);
+    const lastTimeRef = useRef(0);
+    const velocityRef = useRef(0);
+    const [isDragging, setIsDragging] = useState(false);
 
     const pauseAutoScroll = (duration = 2500) => {
         isInteractingRef.current = true;
@@ -61,6 +70,85 @@ export default function GlobalTalent() {
         el.scrollBy({ left: 320, behavior: 'smooth' });
     };
 
+    // Mouse drag handlers
+    const handleMouseDown = (e: React.MouseEvent<HTMLDivElement>) => {
+        if (!scrollRef.current) return;
+        if (e.button !== 0) return; // Only primary left-click
+        e.preventDefault();
+
+        isDraggingRef.current = true;
+        isInteractingRef.current = true;
+        setIsDragging(true);
+
+        startXRef.current = e.clientX;
+        startScrollLeftRef.current = scrollRef.current.scrollLeft;
+        lastMouseXRef.current = e.clientX;
+        lastTimeRef.current = performance.now();
+        velocityRef.current = 0;
+
+        if (resumeTimeoutRef.current) clearTimeout(resumeTimeoutRef.current);
+    };
+
+    // Global drag tracking so mouse release or movement outside element still works seamlessly
+    useEffect(() => {
+        const handleGlobalMouseMove = (e: MouseEvent) => {
+            if (!isDraggingRef.current || !scrollRef.current) return;
+            const el = scrollRef.current;
+            const currentX = e.clientX;
+            const deltaX = currentX - startXRef.current;
+
+            el.scrollLeft = startScrollLeftRef.current - deltaX;
+            currentPosRef.current = el.scrollLeft;
+
+            const now = performance.now();
+            const dt = now - lastTimeRef.current;
+            if (dt > 10) {
+                velocityRef.current = (lastMouseXRef.current - currentX) / dt;
+                lastMouseXRef.current = currentX;
+                lastTimeRef.current = now;
+            }
+
+            const singleSetWidth = el.scrollWidth / 4;
+            if (singleSetWidth > 0) {
+                if (el.scrollLeft >= 2.8 * singleSetWidth) {
+                    el.scrollLeft -= singleSetWidth;
+                    startScrollLeftRef.current -= singleSetWidth;
+                    currentPosRef.current = el.scrollLeft;
+                } else if (el.scrollLeft <= 0.4 * singleSetWidth) {
+                    el.scrollLeft += singleSetWidth;
+                    startScrollLeftRef.current += singleSetWidth;
+                    currentPosRef.current = el.scrollLeft;
+                }
+            }
+        };
+
+        const handleGlobalMouseUp = () => {
+            if (!isDraggingRef.current) return;
+            isDraggingRef.current = false;
+            setIsDragging(false);
+
+            if (scrollRef.current) {
+                currentPosRef.current = scrollRef.current.scrollLeft;
+                const v = velocityRef.current;
+                if (Math.abs(v) > 0.2) {
+                    const glideDist = v * 160;
+                    scrollRef.current.scrollBy({ left: glideDist, behavior: 'smooth' });
+                }
+            }
+
+            pauseAutoScroll(2500);
+        };
+
+        window.addEventListener('mousemove', handleGlobalMouseMove);
+        window.addEventListener('mouseup', handleGlobalMouseUp);
+
+        return () => {
+            window.removeEventListener('mousemove', handleGlobalMouseMove);
+            window.removeEventListener('mouseup', handleGlobalMouseUp);
+        };
+    }, []);
+
+    // Auto-scroll loop
     useEffect(() => {
         const el = scrollRef.current;
         if (!el) return;
@@ -83,7 +171,7 @@ export default function GlobalTalent() {
             const delta = timestamp - lastTimestamp;
             lastTimestamp = timestamp;
 
-            if (scrollRef.current && !isHoveredRef.current && !isInteractingRef.current) {
+            if (scrollRef.current && !isHoveredRef.current && !isInteractingRef.current && !isDraggingRef.current) {
                 const elCurrent = scrollRef.current;
                 const isMobile = window.innerWidth <= 768;
                 // Smooth continuous scroll speed (px/sec)
@@ -116,7 +204,7 @@ export default function GlobalTalent() {
             role: "Digital Marketing Executive",
             industry: "Digital Marketing",
             supportingSince: "2025",
-            image: "/assets/bayshoreSolutions/globaltalent/TahiraChowdhury.png",
+            image: "/assets/bayshoreSolutions/globaltalent/TahiraChowdhury-1.png",
             flagCode: "th"
         },
         {
@@ -180,7 +268,7 @@ export default function GlobalTalent() {
             role: "Digital Marketing Manager (SEO)",
             industry: "Digital Marketing",
             supportingSince: "2026",
-            image: "/assets/bayshoreSolutions/globaltalent/JewelRana.png",
+            image: "/assets/bayshoreSolutions/globaltalent/JewelRana-1.png",
             flagCode: "bd"
         },
         {
@@ -278,7 +366,16 @@ export default function GlobalTalent() {
             supportingSince: "2025",
             image: "/assets/bayshoreSolutions/globaltalent/MinhazurRahmanKhan.png",
             flagCode: "bd"
+        },
+        {
+            name: "Istiak Ferdous Ishq",
+            role: "Digital Marketing Executive (SEO)",
+            industry: "Digital Marketing",
+            supportingSince: "2025",
+            image: "/assets/bayshoreSolutions/globaltalent/IstiakFerdousIshq.png",
+            flagCode: "bd"
         }
+
     ];
 
     return (
@@ -311,10 +408,12 @@ export default function GlobalTalent() {
                 <div
                     ref={scrollRef}
                     onScroll={handleScroll}
+                    onMouseDown={handleMouseDown}
                     onMouseEnter={() => { isHoveredRef.current = true; }}
                     onMouseLeave={() => { isHoveredRef.current = false; }}
                     onTouchStart={() => pauseAutoScroll(3000)}
-                    className="w-full overflow-x-auto flex py-4 sm:py-8 px-4 scrollbar-none mask-gradient cursor-grab active:cursor-grabbing"
+                    className={`w-full overflow-x-auto flex py-4 sm:py-8 px-4 scrollbar-none mask-gradient select-none ${isDragging ? 'cursor-grabbing' : 'cursor-grab'
+                        }`}
                     style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
                 >
                     <div className="flex gap-6 whitespace-nowrap my-2 w-max select-none">
@@ -322,7 +421,7 @@ export default function GlobalTalent() {
                         {[...talents, ...talents, ...talents, ...talents].map((talent, index) => (
                             <div
                                 key={index}
-                                className="w-[280px] flex-shrink-0 bg-white rounded-[20px] md:rounded-[24px] shadow-2xl border border-orange-100 flex flex-col overflow-hidden"
+                                className="w-[280px] flex-shrink-0 bg-white rounded-[20px] md:rounded-[24px] shadow-2xl border border-orange-100 flex flex-col overflow-hidden select-none"
                             >
                                 {/* Top Orange Section with Image & Real SVG Flag */}
                                 <div className="relative w-full h-[235px] sm:h-[220px] bg-gradient-to-b from-[#ff9f5a] to-[#f05a00] flex items-end justify-center overflow-hidden">
@@ -332,19 +431,19 @@ export default function GlobalTalent() {
                                             alt={talent.name}
                                             fill
                                             // sizes="280px"
-                                            className="object-contain object-bottom pointer-events-none"
+                                            className="object-contain object-bottom pointer-events-none select-none"
                                         />
                                     </div>
 
                                     {/* Country Flag Badge Overlapping */}
-                                    <div className="absolute right-4 bottom-4 w-[40px] h-[40px] bg-white rounded-full p-[3px] shadow-lg flex items-center justify-center z-10">
-                                        <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center">
+                                    <div className="absolute right-4 bottom-4 w-[40px] h-[40px] bg-white rounded-full p-[3px] shadow-lg flex items-center justify-center z-10 pointer-events-none">
+                                        <div className="w-full h-full rounded-full overflow-hidden flex items-center justify-center pointer-events-none">
                                             <Image
                                                 src={`/assets/flags/${talent.flagCode}.svg`}
                                                 alt={`${talent.flagCode} flag`}
                                                 width={34}
                                                 height={34}
-                                                className="w-full h-full object-cover rounded-full"
+                                                className="w-full h-full object-cover rounded-full pointer-events-none select-none"
                                             />
                                         </div>
                                     </div>
