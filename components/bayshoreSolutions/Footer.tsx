@@ -67,7 +67,7 @@ export function Footer() {
 
               {/* YouTube */}
               <a
-                href="https://www.youtube.com/channel/UCAaI96cOP7GGpYhEOPFhu8w"
+                href="https://www.youtube.com/@BayshoreVirtualSolution"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
@@ -85,7 +85,7 @@ export function Footer() {
 
               {/* Instagram */}
               <a
-                href="https://www.instagram.com/bayshorecommunication"
+                href="https://instagram.com/bayshorevirtualsolution?dlrf=MTczNzh3Mmlpd28wbg%3D%3D"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
@@ -121,7 +121,7 @@ export function Footer() {
 
               {/* Facebook */}
               <a
-                href="https://www.facebook.com/bayshorecommunication"
+                href="https://www.facebook.com/share/19ot9hyZ88/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Facebook"
