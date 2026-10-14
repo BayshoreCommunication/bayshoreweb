@@ -313,7 +313,7 @@ export default function GlobalTalent() {
         },
         {
             name: "S. M. Faisal Abrar",
-            role: "Director of Litigation",
+            role: "Litigation Paralegal",
             industry: "U.S. Immigration & Real Estate Law",
             supportingSince: "2026",
             image: "/assets/bayshoreSolutions/globaltalent/FaisalAbrar.png",
@@ -321,7 +321,7 @@ export default function GlobalTalent() {
         },
         {
             name: "Sakawat Hossain",
-            role: "Director of Legal Operations",
+            role: "Legal Intake Specialist",
             industry: "CRM Management & Strategy",
             supportingSince: "2023",
             image: "/assets/bayshoreSolutions/globaltalent/SakawatHossain.png",
