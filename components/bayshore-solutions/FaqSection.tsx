@@ -130,10 +130,10 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
           </div>
         </motion.div>
 
-        {/* FAQ Grid & Right Contact Card Layout */}
-        <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-8 xl:gap-10">
+        {/* FAQ Grid Layout */}
+        <div className="max-w-[1240px] mx-auto w-full">
           {/* FAQ Accordion Items (2 Columns) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 flex-1 w-full">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 w-full">
             {faqs.map((faq, idx) => {
               const isOpen = expandedId === faq.id;
               return (
@@ -193,54 +193,6 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
               );
             })}
           </div>
-
-          {/* Right Contact Card ("STILL HAVE A QUESTION?") */}
-          <motion.div
-            initial={{ opacity: 0, x: 25 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            className={`w-full lg:w-[320px] xl:w-[340px] shrink-0 rounded-[28px] p-7 sm:p-8 border-2 border-[#0066FF] flex flex-col justify-between items-start text-left shadow-xl transition-all duration-300 ${
-              theme === "dark" ? "bg-[#0B1A2D] text-white" : "bg-[#07192C] text-white"
-            }`}
-          >
-            <div>
-              <span className="inline-block text-[11px] font-extrabold uppercase tracking-[0.22em] text-slate-300 mb-3 font-playfair">
-                STILL HAVE A QUESTION?
-              </span>
-
-              <h3 className="text-2xl sm:text-[26px] font-extrabold leading-snug tracking-tight mb-3 text-white font-playfair">
-                Tell Us What <br />
-                You&apos;re{" "}
-                <span className="text-[#FF5500]">Looking For.</span>
-              </h3>
-
-              <p className="text-[14px] md:text-[16px] text-slate-300 leading-relaxed mb-6 font-medium text-left font-instrument">
-                Our team is here to help. Share a few details and we&apos;ll get back to you quickly.
-              </p>
-            </div>
-
-            <div className="w-full">
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                type="button"
-                onClick={onContactClick}
-                className="w-full py-3.5 px-6 bg-white hover:bg-slate-100 text-[#07192C] font-extrabold text-sm sm:text-base rounded-full flex items-center justify-center gap-2.5 transition-all shadow-md mb-4"
-              >
-                <FiMail size={18} />
-                <span>Email Us</span>
-              </motion.button>
-
-              <a
-                href="mailto:hello@bayshorevirtual.com"
-                className="text-xs text-slate-300 hover:text-white flex items-center justify-center gap-1.5 transition-colors font-medium"
-              >
-                <FiMail size={14} className="text-[#FF5500]" />
-                <span>hello@bayshorevirtual.com</span>
-              </a>
-            </div>
-          </motion.div>
         </div>
       </div>
     </section>
