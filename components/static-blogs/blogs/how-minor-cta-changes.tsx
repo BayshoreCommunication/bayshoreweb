@@ -276,7 +276,7 @@ const InlineLink = ({
 
 export const CtaOptimizationBlog = () => {
   return (
-    <article className="w-full max-w-full overflow-hidden bg-[#f7f8fb] text-[#162033] break-words">
+    <article className="w-full max-w-full overflow-hidden bg-[#f7f8fb] text-[#162033] break-words text-left">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -531,9 +531,9 @@ export const CtaOptimizationBlog = () => {
               {steps.map((step, index) => (
                 <div
                   key={step.title}
-                  className="grid gap-3 sm:gap-4 rounded-[8px] border border-[#dce6f2] p-3.5 sm:p-5 sm:grid-cols-[60px_1fr] md:grid-cols-[72px_1fr]"
+                  className="rounded-[8px] border border-[#dce6f2] p-3.5 sm:p-5 flex items-start gap-3 sm:grid sm:grid-cols-[60px_1fr] md:grid-cols-[72px_1fr] sm:gap-4"
                 >
-                  <div className="text-2xl sm:text-3xl font-bold text-[#FE6F1F]">
+                  <div className="text-2xl sm:text-3xl font-bold text-[#FE6F1F] shrink-0">
                     {String(index + 1).padStart(2, "0")}
                   </div>
                   <div>

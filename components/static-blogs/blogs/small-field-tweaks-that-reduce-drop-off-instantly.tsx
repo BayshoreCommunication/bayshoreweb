@@ -285,7 +285,7 @@ const ExternalLink = ({
 
 export const FormOptimizationBlog = () => {
   return (
-    <article className="w-full max-w-full overflow-hidden bg-[#f7f8fb] text-[#162033] break-words">
+    <article className="w-full max-w-full overflow-hidden bg-[#f7f8fb] text-[#162033] break-words text-left">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -614,8 +614,8 @@ const ContentSection = ({
 
 const StatBlock = ({ value, label }: { value: string; label: string }) => (
   <div className="rounded-[8px] bg-[#101d34] p-4 sm:p-5 text-white">
-    <p className="!text-3xl sm:!text-4xl !font-bold !text-[#8ed8ff]">{value}</p>
-    <p className="mt-2 sm:mt-3 !text-sm sm:!text-lg !leading-6 sm:!leading-7 !text-[#d9e7f7]">{label}</p>
+    <p className="!text-2xl sm:!text-3xl md:!text-4xl !font-bold !text-[#8ed8ff] break-words">{value}</p>
+    <p className="mt-2 sm:mt-3 !text-sm sm:!text-base md:!text-lg !leading-5 sm:!leading-6 md:!leading-7 !text-[#d9e7f7]">{label}</p>
   </div>
 );
 
@@ -628,27 +628,32 @@ const DataTable = ({
 }) => {
   const gridClass = columns.length === 2 ? "grid-cols-2" : "grid-cols-3";
   return (
-    <div className="mt-5 w-full max-w-full overflow-x-auto rounded-[8px] border border-[#dce6f2]">
-      <div className="min-w-[500px] sm:min-w-[640px]">
-        <div className={`grid ${gridClass} bg-[#101d34] text-sm sm:text-base font-semibold !text-white`}>
-          {columns.map((column) => (
-            <div key={column} className="p-3 sm:p-4">
-              {column}
-            </div>
-          ))}
-        </div>
-        {rows.map((row) => (
-          <div
-            key={row.join("-")}
-            className={`grid ${gridClass} border-t border-[#dce6f2] bg-white text-sm sm:text-base`}
-          >
-            {row.map((cell, index) => (
-              <div key={`${cell}-${index}`} className="p-3 sm:p-4 first:font-semibold">
-                {cell}
+    <div className="mt-5 w-full max-w-full">
+      <div className="mb-1.5 flex items-center justify-end sm:hidden text-[11px] text-[#FE6F1F] font-medium">
+        <span>← Swipe horizontally to view full table →</span>
+      </div>
+      <div className="overflow-x-auto rounded-[8px] border border-[#dce6f2]">
+        <div className="min-w-[500px] sm:min-w-[640px]">
+          <div className={`grid ${gridClass} bg-[#101d34] text-xs sm:text-base font-semibold !text-white`}>
+            {columns.map((column) => (
+              <div key={column} className="p-2.5 sm:p-4">
+                {column}
               </div>
             ))}
           </div>
-        ))}
+          {rows.map((row) => (
+            <div
+              key={row.join("-")}
+              className={`grid ${gridClass} border-t border-[#dce6f2] bg-white text-xs sm:text-base`}
+            >
+              {row.map((cell, index) => (
+                <div key={`${cell}-${index}`} className="p-2.5 sm:p-4 first:font-semibold">
+                  {cell}
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

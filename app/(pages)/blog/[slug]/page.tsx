@@ -178,44 +178,45 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
         <div className="h-[100%] service-style">
           <div className="flex flex-col md:flex-row gap-y-10 md:gap-x-10">
             <div className="flex-[3] min-w-0 w-full max-w-full">
-              <div>
+              <div className="w-full max-w-full">
                 <div>
-                  <h1 className="font-semibold text-[28px] sm:text-[36px] md:text-[54px] lg:text-[72px] xl:text-[80px] leading-tight">
+                  <h1 className="font-semibold !text-[24px] xs:!text-[28px] sm:!text-[36px] md:!text-[50px] lg:!text-[64px] xl:!text-[72px] leading-tight break-words !text-left">
                     {blog.title}
                   </h1>
                 </div>
-                <div className="flex flex-wrap gap-x-4 gap-y-2 py-6 text-sm text-gray-500 font-medium">
+                <div className="flex flex-wrap items-center gap-x-3 sm:gap-x-4 gap-y-2 py-4 sm:py-6 text-xs sm:text-sm text-gray-500 font-medium">
                   {blog.createdAt && (
                     <span>Published: {formatDate(blog.createdAt)}</span>
                   )}
                   {blog.updatedAt && blog.updatedAt !== blog.createdAt && (
-                    <span>|</span>
+                    <span className="hidden xs:inline">|</span>
                   )}
                   {blog.updatedAt && blog.updatedAt !== blog.createdAt && (
                     <span>Updated: {formatDate(blog.updatedAt)}</span>
                   )}
                 </div>
-                <figure>
+                <figure className="w-full max-w-full overflow-hidden">
                   <Image
                     src={getBlogImage(blog)}
                     alt={getBlogImageAlt(blog)}
                     title={getBlogImageTitle(blog)}
                     width={blog.imageWidth || 2400}
                     height={blog.imageHeight || 2400}
+                    priority
                     className={`w-full rounded-[8px] bg-[#f7f8fb] ${
                       blog.imageFit === "contain"
-                        ? "h-auto object-contain"
+                        ? "h-auto object-contain max-h-[500px]"
                         : "aspect-[16/9] object-cover"
                     }`}
                   />
                   {getBlogImageCaption(blog) && (
-                    <figcaption className="mt-3 text-sm text-gray-500">
+                    <figcaption className="mt-2 sm:mt-3 text-xs sm:text-sm text-gray-500">
                       {getBlogImageCaption(blog)}
                     </figcaption>
                   )}
                 </figure>
 
-                <div className="externallink mt-8 sm:mt-10 min-w-0 w-full max-w-full overflow-hidden">
+                <div className="externallink mt-6 sm:mt-10 min-w-0 w-full max-w-full overflow-hidden text-left">
                   {StaticBlogComponent ? (
                     <StaticBlogComponent />
                   ) : (

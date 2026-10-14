@@ -561,9 +561,68 @@ body {
   width: 100%;
 }
 
+.externallink {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  text-align: left !important;
+}
+
 .externallink a {
-  color: rgb(33, 35, 192);
+  color: #0077b3;
   text-decoration: underline;
+  word-break: break-word;
+}
+
+.externallink article {
+  width: 100% !important;
+  max-width: 100% !important;
+  text-align: left !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.externallink p,
+.externallink li,
+.externallink span,
+.externallink blockquote,
+.externallink div,
+.externallink h1,
+.externallink h2,
+.externallink h3,
+.externallink h4,
+.externallink h5,
+.externallink h6 {
+  text-align: left !important;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.externallink ul {
+  list-style: disc !important;
+  padding-left: 1.25rem !important;
+  text-align: left !important;
+}
+
+.externallink ol {
+  list-style: decimal !important;
+  padding-left: 1.25rem !important;
+  text-align: left !important;
+}
+
+.externallink li {
+  text-align: left !important;
+  padding-top: 6px !important;
+  margin-bottom: 6px !important;
+}
+
+.externallink blockquote {
+  text-align: left !important;
+}
+
+.externallink .overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+  max-width: 100%;
 }
 
 /* .slick-slide .slick-active .slick-center .slick-current {

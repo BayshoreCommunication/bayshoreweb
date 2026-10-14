@@ -307,7 +307,7 @@ const ExternalLink = ({
 
 export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
   return (
-    <article className="w-full max-w-full overflow-hidden bg-[#f7f8fb] text-[#162033] break-words">
+    <article className="w-full max-w-full overflow-hidden bg-[#f7f8fb] text-[#162033] break-words text-left">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -859,12 +859,13 @@ const NumberedSection = ({
 }) => (
   <section className="rounded-[12px] bg-white p-4 sm:p-6 md:p-10 shadow-sm my-6 sm:my-10">
     <div className="grid gap-4 sm:gap-6 md:grid-cols-[72px_1fr]">
-      <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-none text-[#FE6F1F]">
+      <div className="hidden md:block text-4xl md:text-5xl font-extrabold leading-none text-[#FE6F1F]">
         {number}
       </div>
       <div>
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-[#101d34]">
-          {title}
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-[#101d34] flex items-start gap-2.5 md:block">
+          <span className="md:hidden text-[#FE6F1F] shrink-0 font-bold">{number}</span>
+          <span>{title}</span>
         </h2>
         <div className="mt-4 sm:mt-6 space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl leading-7 sm:leading-8 md:leading-9 text-[#2c3e50] [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-2.5 sm:[&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-sm sm:[&>ul]:text-base [&>ul]:leading-6 sm:[&>ul]:leading-7 [&>ul]:list-disc">
           {children}
@@ -876,8 +877,8 @@ const NumberedSection = ({
 
 const StatBlock = ({ value, label }: { value: string; label: string }) => (
   <div className="rounded-[10px] bg-[#101d34] p-4 sm:p-6 text-white shadow-xs">
-    <p className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#8ed8ff]">{value}</p>
-    <p className="mt-2 sm:mt-3 text-sm sm:text-base md:text-lg font-medium text-[#d9e7f7] leading-relaxed">{label}</p>
+    <p className="!text-2xl sm:!text-3xl md:!text-4xl lg:!text-5xl !font-extrabold !text-[#8ed8ff] break-words">{value}</p>
+    <p className="mt-2 sm:mt-3 !text-sm sm:!text-base md:!text-lg !font-medium !text-[#d9e7f7] !leading-5 sm:!leading-6 md:!leading-relaxed">{label}</p>
   </div>
 );
 
@@ -888,35 +889,40 @@ const DataTable = ({
   columns: string[];
   rows: string[][];
 }) => (
-  <div className="my-6 sm:my-8 w-full max-w-full overflow-x-auto rounded-[10px] border border-[#dce6f2] shadow-xs">
-    <div className="min-w-[600px] sm:min-w-[760px]">
-      <div
-        className="grid bg-[#101d34] text-sm sm:text-base md:text-lg font-bold text-white"
-        style={{
-          gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
-        }}
-      >
-        {columns.map((column) => (
-          <div key={column} className="p-3 sm:p-5">
-            {column}
-          </div>
-        ))}
-      </div>
-      {rows.map((row) => (
+  <div className="my-6 sm:my-8 w-full max-w-full">
+    <div className="mb-1.5 flex items-center justify-end sm:hidden text-[11px] text-[#FE6F1F] font-medium">
+      <span>← Swipe horizontally to view full table →</span>
+    </div>
+    <div className="overflow-x-auto rounded-[10px] border border-[#dce6f2] shadow-xs">
+      <div className="min-w-[560px] sm:min-w-[760px]">
         <div
-          key={row.join("-")}
-          className="grid border-t border-[#dce6f2] bg-white text-sm sm:text-base md:text-lg leading-6 sm:leading-7"
+          className="grid bg-[#101d34] text-xs sm:text-base md:text-lg font-bold !text-white"
           style={{
             gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
           }}
         >
-          {row.map((cell, index) => (
-            <div key={`${cell}-${index}`} className="p-3 sm:p-5 first:font-bold">
-              {cell}
+          {columns.map((column) => (
+            <div key={column} className="p-2.5 sm:p-5">
+              {column}
             </div>
           ))}
         </div>
-      ))}
+        {rows.map((row) => (
+          <div
+            key={row.join("-")}
+            className="grid border-t border-[#dce6f2] bg-white text-xs sm:text-base md:text-lg leading-5 sm:leading-6 md:leading-7"
+            style={{
+              gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
+            }}
+          >
+            {row.map((cell, index) => (
+              <div key={`${cell}-${index}`} className="p-2.5 sm:p-5 first:font-bold">
+                {cell}
+              </div>
+            ))}
+          </div>
+        ))}
+      </div>
     </div>
   </div>
 );
