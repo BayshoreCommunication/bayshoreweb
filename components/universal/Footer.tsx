@@ -176,7 +176,7 @@ const Footer = () => {
             Copyright <span>© {new Date().getFullYear()}</span> All Rights
             Reserved by Bayshore Communication.
           </p>
-          <div className=" flex flex-col items-center  gap-6 pl-8 ">
+          <div className="flex flex-col items-center gap-6 pl-0 md:pl-8">
             <div className="center mt-8 gap-4 ">
               <Link
                 href={"https://www.facebook.com/bayshorecommunication"}
