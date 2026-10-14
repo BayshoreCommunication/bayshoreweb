@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { FiArrowRight, FiMail } from "react-icons/fi";
+import { FiArrowRight } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
 export interface FaqItem {
@@ -188,72 +188,22 @@ export const FaqSection: React.FC<FaqSectionProps> = ({
           </p>
         </motion.div>
 
-        {/* FAQ Grid & Right Contact Card Layout (Centered, matching preview image) */}
-        <div className="flex flex-col lg:flex-row items-stretch justify-center gap-6 xl:gap-8 max-w-[1340px] mx-auto w-full">
-
-          {/* FAQ Accordion Items (2 Independent Columns of 4 Items) */}
-          <div className="flex-1 w-full">
-            {/* Mobile View (Single Column: first 4 downwards, last 4 upwards) */}
-            <div className="flex flex-col gap-3.5 md:hidden">
-              {faqs.map((faq, idx) => renderFaqCard(faq, idx < 4))}
-            </div>
-
-            {/* Desktop View (2 Independent Columns: 1st 2 downwards, last 2 upwards) */}
-            <div className="hidden md:grid md:grid-cols-2 gap-3.5 sm:gap-4 items-start">
-              <div className="flex flex-col gap-3.5 sm:gap-4">
-                {col1.map((faq, idx) => renderFaqCard(faq, idx < 2))}
-              </div>
-              <div className="flex flex-col gap-3.5 sm:gap-4">
-                {col2.map((faq, idx) => renderFaqCard(faq, idx < 2))}
-              </div>
-            </div>
+        {/* FAQ Grid Layout (Centered 2 Columns of 4 Items) */}
+        <div className="max-w-[1240px] mx-auto w-full">
+          {/* Mobile View (Single Column: first 4 downwards, last 4 upwards) */}
+          <div className="flex flex-col gap-3.5 md:hidden">
+            {faqs.map((faq, idx) => renderFaqCard(faq, idx < 4))}
           </div>
 
-          {/* Right Contact Card ("Tell Us What You're Looking For.") - Stretched to match 4 cards height */}
-          <motion.div
-            initial={{ opacity: 0, x: 25 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
-            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
-            className="w-full lg:w-[320px] xl:w-[340px] shrink-0 rounded-[16px] p-10 sm:p-12 border border-slate-700/50 flex flex-col justify-between items-start shadow-xl text-center md:text-left bg-[#07192C] text-white self-stretch"
-          >
-            <div>
-              {/* Subtle orange accent bar matching screenshot */}
-              <div className="w-8 h-[2px] bg-[#FE6F1F] mb-4 mx-auto md:mx-0" />
-
-              <h3 className="text-[20px] sm:text-[26px] font-bold leading-snug tracking-tight mb-4 sm:mb-5 text-white text-center md:text-left">
-                Tell Us What <br />
-                You&apos;re <span className="text-[#FE6F1F]">Looking For.</span>
-              </h3>
-
-              <p className="text-[14px] sm:text-[16px] text-slate-300 leading-relaxed mb-6 font-normal text-center md:text-left">
-                Our team is here to help. Share a few details and we&apos;ll get back to you quickly.
-              </p>
+          {/* Desktop View (2 Independent Columns: 1st 2 downwards, last 2 upwards) */}
+          <div className="hidden md:grid md:grid-cols-2 gap-3.5 sm:gap-4 items-start">
+            <div className="flex flex-col gap-3.5 sm:gap-4">
+              {col1.map((faq, idx) => renderFaqCard(faq, idx < 2))}
             </div>
-
-            <div className="w-full mt-4">
-              <motion.button
-                whileHover={{ y: -2 }}
-                whileTap={{ scale: 0.98 }}
-                type="button"
-                data-calendly="true"
-                onClick={onContactClick}
-                className="w-full py-3.5 px-6 bg-white hover:bg-slate-100 text-[#07192C] font-extrabold text-[15px] rounded-full flex items-center justify-center gap-2.5 transition-all shadow-md mb-4 cursor-pointer"
-              >
-                <FiMail size={18} />
-                <span>Contact</span>
-              </motion.button>
-
-              <a
-                href="mailto:hello@bayshorevirtual.com"
-                className="text-[14px] sm:text-[16px] text-slate-300 hover:text-white flex items-center justify-center gap-1.5 transition-colors font-medium mt-8"
-              >
-                <FiMail size={16} className="text-[#FE6F1F]" />
-                <span>hello@bayshorevirtual.com</span>
-              </a>
+            <div className="flex flex-col gap-3.5 sm:gap-4">
+              {col2.map((faq, idx) => renderFaqCard(faq, idx < 2))}
             </div>
-          </motion.div>
-
+          </div>
         </div>
       </div>
     </section>

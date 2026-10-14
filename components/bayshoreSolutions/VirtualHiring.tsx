@@ -2,8 +2,23 @@
 
 import Image from "next/image";
 import React, { useState, useRef, useEffect, useMemo } from "react";
-import { FiArrowRight, FiChevronDown, FiSearch, FiCheck } from "react-icons/fi";
+import {
+  FiArrowRight,
+  FiChevronDown,
+  FiSearch,
+  FiCheck,
+  FiX,
+  FiCheckCircle,
+  FiLoader,
+  FiAlertCircle,
+} from "react-icons/fi";
+import { motion, AnimatePresence } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import { COUNTRIES, POPULAR_COUNTRIES, Country } from "./countries";
+
+const EMAILJS_SERVICE_ID = "service_iei07cm";
+const EMAILJS_TEMPLATE_ID = "template_f6bj8oe";
+const EMAILJS_PUBLIC_KEY = "v-ZgkUyuqs5r10gq-";
 
 export const VirtualHiring = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +28,19 @@ export const VirtualHiring = () => {
     phone: "",
     consent: false,
   });
+
+  const [errors, setErrors] = useState<{
+    email?: string;
+    firstName?: string;
+    lastName?: string;
+    phone?: string;
+    consent?: string;
+  }>({});
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccessModalOpen, setIsSuccessModalOpen] = useState(false);
+  const [submittedName, setSubmittedName] = useState("");
+  const [countdown, setCountdown] = useState(5);
 
   const [selectedCountry, setSelectedCountry] = useState<Country>(
     POPULAR_COUNTRIES[0] || COUNTRIES[0]
@@ -51,6 +79,25 @@ export const VirtualHiring = () => {
     }
   }, [isCountryDropdownOpen]);
 
+  // Handle 5-second countdown for success modal
+  useEffect(() => {
+    if (!isSuccessModalOpen) return;
+
+    setCountdown(5);
+    const interval = setInterval(() => {
+      setCountdown((prev) => {
+        if (prev <= 1) {
+          clearInterval(interval);
+          setIsSuccessModalOpen(false);
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [isSuccessModalOpen]);
+
   const filteredCountries = useMemo(() => {
     const q = searchQuery.trim().toLowerCase();
     if (!q) return COUNTRIES;
@@ -62,21 +109,107 @@ export const VirtualHiring = () => {
     );
   }, [searchQuery]);
 
+  const validate = () => {
+    const newErrors: {
+      email?: string;
+      firstName?: string;
+      lastName?: string;
+      phone?: string;
+      consent?: string;
+    } = {};
+
+    if (!formData.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email.trim())) {
+      newErrors.email = "Please enter a valid email address";
+    }
+
+    if (!formData.firstName.trim()) {
+      newErrors.firstName = "First name is required";
+    }
+
+    if (!formData.lastName.trim()) {
+      newErrors.lastName = "Last name is required";
+    }
+
+    if (!formData.phone.trim()) {
+      newErrors.phone = "Phone number is required";
+    }
+
+    if (!formData.consent) {
+      newErrors.consent = "Please check this box to agree to the terms";
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value, type, checked } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: type === "checkbox" ? checked : value,
     }));
+
+    // Dynamically clear field error as user types
+    if (errors[name as keyof typeof errors]) {
+      setErrors((prev) => ({
+        ...prev,
+        [name]: undefined,
+      }));
+    }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // এখানে আপনার ফর্ম সাবমিট লজিক বা API কল বসাতে পারেন
-    console.log("Form Submitted:", {
-      ...formData,
-      country: selectedCountry,
-    });
+
+    if (!validate()) {
+      return;
+    }
+
+    setIsSubmitting(true);
+
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          firstName: formData.firstName.trim(),
+          lastName: formData.lastName.trim(),
+          email: formData.email.trim(),
+          phone: formData.phone.trim(),
+          dialCode: selectedCountry.dialCode,
+          country: selectedCountry.name,
+          submission_date: new Date().toLocaleString(),
+          year: new Date().getFullYear(),
+          name: `${formData.firstName.trim()} ${formData.lastName.trim()}`,
+          first_name: formData.firstName.trim(),
+          last_name: formData.lastName.trim(),
+          user_email: formData.email.trim(),
+          user_phone: `${selectedCountry.dialCode} ${formData.phone.trim()}`,
+          consent: formData.consent ? "Agreed" : "No",
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+
+      setSubmittedName(`${formData.firstName.trim()} ${formData.lastName.trim()}`);
+      setIsSuccessModalOpen(true);
+
+      // Reset Form fields
+      setFormData({
+        email: "",
+        firstName: "",
+        lastName: "",
+        phone: "",
+        consent: false,
+      });
+      setErrors({});
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      alert("Failed to send your request. Please check your internet connection or try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -132,12 +265,21 @@ export const VirtualHiring = () => {
               <input
                 type="email"
                 name="email"
-                required
                 placeholder="name@company.com"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 text-[14px] text-gray-800 focus:outline-none focus:border-[#f97316] transition-colors bg-gray-50/50"
+                className={`w-full px-4 py-3 rounded-xl border text-[14px] text-gray-800 focus:outline-none transition-colors ${
+                  errors.email
+                    ? "border-red-500 bg-red-50/30 focus:border-red-500"
+                    : "border-gray-200 bg-gray-50/50 focus:border-[#f97316]"
+                }`}
               />
+              {errors.email && (
+                <p className="mt-1.5 text-[12px] font-medium text-red-500 flex items-center gap-1.5">
+                  <FiAlertCircle className="shrink-0 text-sm" />
+                  <span>{errors.email}</span>
+                </p>
+              )}
             </div>
 
             {/* First Name & Last Name */}
@@ -149,12 +291,21 @@ export const VirtualHiring = () => {
                 <input
                   type="text"
                   name="firstName"
-                  required
                   placeholder="First Name"
                   value={formData.firstName}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 text-[14px] text-gray-800 focus:outline-none focus:border-[#f97316] transition-colors bg-gray-50/50"
+                  className={`w-full px-4 py-3 rounded-xl border text-[14px] text-gray-800 focus:outline-none transition-colors ${
+                    errors.firstName
+                      ? "border-red-500 bg-red-50/30 focus:border-red-500"
+                      : "border-gray-200 bg-gray-50/50 focus:border-[#f97316]"
+                  }`}
                 />
+                {errors.firstName && (
+                  <p className="mt-1.5 text-[12px] font-medium text-red-500 flex items-center gap-1.5">
+                    <FiAlertCircle className="shrink-0 text-sm" />
+                    <span>{errors.firstName}</span>
+                  </p>
+                )}
               </div>
               <div>
                 <label className="block text-[13px] font-semibold text-gray-700 mb-1.5">
@@ -163,12 +314,21 @@ export const VirtualHiring = () => {
                 <input
                   type="text"
                   name="lastName"
-                  required
                   placeholder="Last Name"
                   value={formData.lastName}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 text-[14px] text-gray-800 focus:outline-none focus:border-[#f97316] transition-colors bg-gray-50/50"
+                  className={`w-full px-4 py-3 rounded-xl border text-[14px] text-gray-800 focus:outline-none transition-colors ${
+                    errors.lastName
+                      ? "border-red-500 bg-red-50/30 focus:border-red-500"
+                      : "border-gray-200 bg-gray-50/50 focus:border-[#f97316]"
+                  }`}
                 />
+                {errors.lastName && (
+                  <p className="mt-1.5 text-[12px] font-medium text-red-500 flex items-center gap-1.5">
+                    <FiAlertCircle className="shrink-0 text-sm" />
+                    <span>{errors.lastName}</span>
+                  </p>
+                )}
               </div>
             </div>
 
@@ -178,8 +338,13 @@ export const VirtualHiring = () => {
                 Phone: <span className="text-red-500">*</span>
               </label>
               <div className="relative" ref={dropdownRef}>
-                <div className="flex rounded-xl border border-gray-200 bg-gray-50/50 focus-within:border-[#f97316] focus-within:bg-white transition-colors">
-
+                <div
+                  className={`flex rounded-xl border transition-colors ${
+                    errors.phone
+                      ? "border-red-500 bg-red-50/30 focus-within:border-red-500"
+                      : "border-gray-200 bg-gray-50/50 focus-within:border-[#f97316] focus-within:bg-white"
+                  }`}
+                >
                   {/* Country Flag & Dial Code Trigger */}
                   <button
                     type="button"
@@ -195,8 +360,9 @@ export const VirtualHiring = () => {
                       {selectedCountry.dialCode}
                     </span>
                     <FiChevronDown
-                      className={`text-gray-500 text-sm transition-transform duration-200 ${isCountryDropdownOpen ? "rotate-180" : ""
-                        }`}
+                      className={`text-gray-500 text-sm transition-transform duration-200 ${
+                        isCountryDropdownOpen ? "rotate-180" : ""
+                      }`}
                     />
                   </button>
 
@@ -204,13 +370,19 @@ export const VirtualHiring = () => {
                   <input
                     type="tel"
                     name="phone"
-                    required
                     placeholder="(201) 555-0123"
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-3.5 py-3 rounded-r-xl text-[14px] md:text-[16px] text-gray-800 placeholder-gray-400 bg-transparent focus:outline-none"
                   />
                 </div>
+
+                {errors.phone && (
+                  <p className="mt-1.5 text-[12px] font-medium text-red-500 flex items-center gap-1.5">
+                    <FiAlertCircle className="shrink-0 text-sm" />
+                    <span>{errors.phone}</span>
+                  </p>
+                )}
 
                 {/* Dropdown Popover */}
                 {isCountryDropdownOpen && (
@@ -254,10 +426,11 @@ export const VirtualHiring = () => {
                                     setSelectedCountry(c);
                                     setIsCountryDropdownOpen(false);
                                   }}
-                                  className={`w-full flex items-center justify-between px-3.5 py-2 text-left hover:bg-orange-50 transition-colors cursor-pointer ${isSelected
-                                    ? "bg-orange-50 font-semibold text-[#f97316]"
-                                    : "text-gray-700"
-                                    }`}
+                                  className={`w-full flex items-center justify-between px-3.5 py-2 text-left hover:bg-orange-50 transition-colors cursor-pointer ${
+                                    isSelected
+                                      ? "bg-orange-50 font-semibold text-[#f97316]"
+                                      : "text-gray-700"
+                                  }`}
                                 >
                                   <div className="flex items-center gap-2.5 truncate pr-2">
                                     <span className="font-bold text-[14px] md:text-[16px] shrink-0">
@@ -269,8 +442,9 @@ export const VirtualHiring = () => {
                                   </div>
                                   <div className="flex items-center gap-2 shrink-0">
                                     <span
-                                      className={`font-mono text-[13px] md:text-[14px] ${isSelected ? "text-[#f97316]" : "text-gray-500"
-                                        }`}
+                                      className={`font-mono text-[13px] md:text-[14px] ${
+                                        isSelected ? "text-[#f97316]" : "text-gray-500"
+                                      }`}
                                     >
                                       {c.dialCode}
                                     </span>
@@ -296,10 +470,11 @@ export const VirtualHiring = () => {
                                   setSelectedCountry(c);
                                   setIsCountryDropdownOpen(false);
                                 }}
-                                className={`w-full flex items-center justify-between px-3.5 py-2 text-left hover:bg-orange-50 transition-colors cursor-pointer ${isSelected
-                                  ? "bg-orange-50 font-semibold text-[#f97316]"
-                                  : "text-gray-700"
-                                  }`}
+                                className={`w-full flex items-center justify-between px-3.5 py-2 text-left hover:bg-orange-50 transition-colors cursor-pointer ${
+                                  isSelected
+                                    ? "bg-orange-50 font-semibold text-[#f97316]"
+                                    : "text-gray-700"
+                                }`}
                               >
                                 <div className="flex items-center gap-2.5 truncate pr-2">
                                   <span className="font-bold text-[14px] md:text-[16px] shrink-0">
@@ -311,8 +486,9 @@ export const VirtualHiring = () => {
                                 </div>
                                 <div className="flex items-center gap-2 shrink-0">
                                   <span
-                                    className={`font-mono text-[13px] md:text-[14px] ${isSelected ? "text-[#f97316]" : "text-gray-500"
-                                      }`}
+                                    className={`font-mono text-[13px] md:text-[14px] ${
+                                      isSelected ? "text-[#f97316]" : "text-gray-500"
+                                    }`}
                                   >
                                     {c.dialCode}
                                   </span>
@@ -330,27 +506,61 @@ export const VirtualHiring = () => {
             </div>
 
             {/* Consent Checkbox */}
-            <div className="flex items-start gap-3 mt-1">
-              <input
-                type="checkbox"
-                name="consent"
-                id="consent"
-                checked={formData.consent}
-                onChange={handleChange}
-                className="mt-1 w-6 h-6 text-[#f97316] rounded border-gray-300 focus:ring-[#f97316] cursor-pointer"
-              />
-              <label htmlFor="consent" className="text-[13px] text-gray-500 leading-tight font-normal">
-                I consent to Bayshore Virtual Solutions contacting me by phone, SMS, and email. Messaging frequency varies. Standard message and data rates may apply. To unsubscribe, reply STOP anytime. By consenting I acknowledge I have read and agree to Bayshore Virtual Solutions&apos; <a href="#" className="underline text-gray-600 hover:text-[#f97316]">Terms & Conditions</a> and <a href="#" className="underline text-gray-600 hover:text-[#f97316]">Privacy Policy</a>. I can withdraw consent at any time.
-              </label>
+            <div>
+              <div className="flex items-start gap-3 mt-1">
+                <input
+                  type="checkbox"
+                  name="consent"
+                  id="consent"
+                  checked={formData.consent}
+                  onChange={handleChange}
+                  className={`mt-1 w-5 h-5 rounded cursor-pointer ${
+                    errors.consent
+                      ? "border-red-500 text-red-500 focus:ring-red-500"
+                      : "text-[#f97316] border-gray-300 focus:ring-[#f97316]"
+                  }`}
+                />
+                <label htmlFor="consent" className="text-[13px] text-gray-500 leading-tight font-normal">
+                  I consent to Bayshore Virtual Solutions contacting me by phone, SMS, and email. Messaging frequency varies. Standard message and data rates may apply. To unsubscribe, reply STOP anytime. By consenting I acknowledge I have read and agree to Bayshore Virtual Solutions&apos;{" "}
+                  <a href="#" className="underline text-gray-600 hover:text-[#f97316]">
+                    Terms & Conditions
+                  </a>{" "}
+                  and{" "}
+                  <a href="#" className="underline text-gray-600 hover:text-[#f97316]">
+                    Privacy Policy
+                  </a>
+                  . I can withdraw consent at any time.
+                </label>
+              </div>
+              {errors.consent && (
+                <p className="mt-1.5 ml-8 text-[12px] font-medium text-red-500 flex items-center gap-1.5">
+                  <FiAlertCircle className="shrink-0 text-sm" />
+                  <span>{errors.consent}</span>
+                </p>
+              )}
             </div>
 
             {/* Submit Button */}
             <button
               type="submit"
-              className="mt-4 w-full py-5 px-8 bg-[#0B192C] hover:bg-[#f97316] text-white font-semibold text-[14px] md:text-[16px] rounded-full shadow-lg flex items-center justify-center gap-3 transition-all duration-300 transform  cursor-pointer"
+              disabled={isSubmitting}
+              className={`mt-4 w-full py-5 px-8 rounded-full shadow-lg flex items-center justify-center gap-3 transition-all duration-300 transform font-semibold text-[14px] md:text-[16px] text-white ${
+                isSubmitting
+                  ? "bg-gray-400 cursor-not-allowed opacity-80"
+                  : "bg-[#0B192C] hover:bg-[#f97316] cursor-pointer"
+              }`}
             >
-              <span>Callback Request</span>
-              <FiArrowRight className="text-[18px]" />
+              {isSubmitting ? (
+                <>
+                  <FiLoader className="text-[20px] animate-spin" />
+                  <span>Sending Request...</span>
+                </>
+              ) : (
+                <>
+                  <span>Callback Request</span>
+                  <FiArrowRight className="text-[18px]" />
+                </>
+              )}
             </button>
 
           </form>
@@ -358,6 +568,85 @@ export const VirtualHiring = () => {
         </div>
 
       </div>
+
+      {/* 5-Second Animated Success Modal */}
+      <AnimatePresence>
+        {isSuccessModalOpen && (
+          <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
+            {/* Backdrop */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setIsSuccessModalOpen(false)}
+              className="absolute inset-0 bg-black/60 backdrop-blur-sm cursor-pointer"
+            />
+
+            {/* Modal Dialog Card */}
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9, y: 20 }}
+              animate={{ opacity: 1, scale: 1, y: 0 }}
+              exit={{ opacity: 0, scale: 0.9, y: 20 }}
+              transition={{ duration: 0.3, ease: "easeOut" }}
+              className="relative w-full max-w-[480px] bg-white rounded-[28px] p-8 sm:p-10 text-center shadow-2xl border border-slate-100 z-10 overflow-hidden"
+            >
+              {/* Top Accent Orange Bar */}
+              <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#FE6F1F] via-[#f97316] to-[#FF9454]" />
+
+              {/* Close Button */}
+              <button
+                type="button"
+                onClick={() => setIsSuccessModalOpen(false)}
+                className="absolute top-5 right-5 p-2 rounded-full text-gray-400 hover:text-gray-700 hover:bg-gray-100 transition-colors cursor-pointer"
+                aria-label="Close Modal"
+              >
+                <FiX size={20} />
+              </button>
+
+              {/* Success Icon */}
+              <div className="mx-auto w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-emerald-50 border-4 border-emerald-100 flex items-center justify-center text-emerald-500 mb-5 shadow-sm">
+                <FiCheckCircle className="w-9 h-9 sm:w-11 sm:h-11" />
+              </div>
+
+              {/* Heading */}
+              <h3 className="text-[22px] sm:text-[26px] font-bold text-[#0B192C] leading-snug mb-2">
+                Consultation Request Received!
+              </h3>
+
+              {/* Subheading */}
+              <p className="text-[14px] sm:text-[15px] text-gray-600 leading-relaxed mb-6">
+                Thank you{submittedName ? `, ${submittedName}` : ""}! We have received your booking for a{" "}
+                <span className="font-semibold text-[#0B192C]">Free 30-Minute Virtual Hiring Strategy Session</span>. Our team will contact you shortly.
+              </p>
+
+              {/* 5-Second Timer Bar & Countdown */}
+              <div className="bg-gray-50 border border-gray-100 rounded-2xl p-4 mb-6">
+                <div className="flex items-center justify-between text-xs text-gray-500 mb-2 font-medium">
+                  <span>Auto-closing in:</span>
+                  <span className="font-bold text-[#f97316] font-mono text-[13px]">
+                    {countdown}s
+                  </span>
+                </div>
+                <div className="w-full h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-[#f97316] transition-all duration-1000 ease-linear rounded-full"
+                    style={{ width: `${(countdown / 5) * 100}%` }}
+                  />
+                </div>
+              </div>
+
+              {/* Close Action Button */}
+              <button
+                type="button"
+                onClick={() => setIsSuccessModalOpen(false)}
+                className="w-full py-3.5 px-6 rounded-full bg-[#0B192C] hover:bg-[#f97316] text-white font-semibold text-[15px] transition-all duration-200 shadow-md cursor-pointer"
+              >
+                Got It
+              </button>
+            </motion.div>
+          </div>
+        )}
+      </AnimatePresence>
     </section>
   );
 };

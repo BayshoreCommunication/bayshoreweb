@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { FiArrowRight, FiChevronDown, FiMail } from "react-icons/fi";
+import { FiArrowRight, FiChevronDown } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
 export interface FaqItem {
