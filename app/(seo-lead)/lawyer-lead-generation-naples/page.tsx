@@ -30,7 +30,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "/lawyer-lead-generation-Naples",
+    canonical: "/lawyer-lead-generation-naples",
     languages: {
       "en-US": "/en-USA",
     },

@@ -27,7 +27,7 @@ export const metadata = {
     },
   },
   alternates: {
-    canonical: "/legal-lead-generation-Florida",
+    canonical: "/legal-lead-generation-florida",
     languages: {
       "en-US": "/en-USA",
     },
