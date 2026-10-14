@@ -324,7 +324,7 @@ const ExternalLink = ({
 
 export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
   return (
-    <article className="w-full bg-[#f7f8fb] text-[#162033]">
+    <article className="w-full max-w-full overflow-hidden bg-[#f7f8fb] text-[#162033] break-words">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -333,11 +333,11 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
       />
 
       {/* Top Banner / Hero Summary */}
-      <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
+      <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
           Medical Web Design | Healthcare Cost &amp; Strategy Guide
         </p>
-        <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">
+        <p className="mt-3 sm:mt-4 max-w-3xl !text-base sm:!text-lg !leading-7 sm:!leading-8 !text-[#d9e7f7]">
           The price of medical website design starts at $5,000 and can be
           $50,000+ for the initial setup. It is contingent upon the
           project&rsquo;s complexity, the size of the organization, and the
@@ -345,38 +345,38 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
           hundred dollars a year, whereas a professional site built by an agency
           varies by tier.
         </p>
-        <div className="mt-6 flex flex-wrap gap-3 !text-sm !text-[#d9e7f7]">
-          <span className="rounded-full border border-white/20 px-4 py-2">
+        <div className="mt-5 sm:mt-6 flex flex-wrap gap-2 sm:gap-3 !text-xs sm:!text-sm !text-[#d9e7f7]">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Published: September 27, 2026
           </span>
-          <span className="rounded-full border border-white/20 px-4 py-2">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Updated: September 27, 2026
           </span>
-          <span className="rounded-full border border-white/20 px-4 py-2">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Medical Website Design Cost
           </span>
-          <span className="rounded-full border border-white/20 px-4 py-2">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Healthcare Practice Growth
           </span>
         </div>
       </section>
 
-      <div className="mt-8 space-y-8">
+      <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
         {/* Key Takeaways */}
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
+        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Key Takeaways
           </p>
-          <p className="mt-3 text-lg leading-8">
+          <p className="mt-3 text-base sm:text-lg leading-7 sm:leading-8">
             You will waste money without clarity. Use these core takeaways to set your healthcare website budget fast.
           </p>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="mt-5 sm:mt-6 grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2">
             {keyPoints.map((point) => (
               <div
                 key={point}
-                className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-4"
+                className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-3.5 sm:p-4"
               >
-                <p className="text-base leading-7 text-[#162033]">{point}</p>
+                <p className="text-sm sm:text-base leading-6 sm:leading-7 text-[#162033]">{point}</p>
               </div>
             ))}
           </div>
@@ -656,7 +656,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             <InlineLink href="/">Bayshore Communication</InlineLink> offers
             several services that can support this approach:
           </p>
-          <div className="mt-4 grid gap-4 md:grid-cols-3">
+          <div className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             <div className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-5">
               <h3 className="text-lg font-bold text-[#101d34]">
                 Corporate Web Design
@@ -847,9 +847,9 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
         </NumberedSection>
 
         {/* Conclusion */}
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-          <h2 className="text-3xl font-bold leading-tight">Conclusion</h2>
-          <div className="mt-5 space-y-5 text-lg leading-8">
+        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <h2 className="text-2xl sm:text-3xl font-bold leading-tight">Conclusion</h2>
+          <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8">
             <p>
               Your website should do more than display your medical services. It
               should help patients understand their options. It should also make
@@ -884,11 +884,11 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
         />
 
         {/* FAQs */}
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
+        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
           <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0077B3]">
             Frequently Asked Questions
           </p>
-          <h2 className="mt-3 text-3xl font-bold leading-tight">
+          <h2 className="mt-3 text-2xl sm:text-3xl font-bold leading-tight">
             Frequently Asked Questions
           </h2>
           <div className="mt-6 space-y-5">
@@ -897,10 +897,10 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
                 key={faq.question}
                 className="border-b border-[#dce6f2] pb-5 last:border-b-0 last:pb-0"
               >
-                <h3 className="text-xl font-bold text-[#101d34]">
+                <h3 className="text-lg sm:text-xl font-bold text-[#101d34]">
                   Q. {faq.question}
                 </h3>
-                <p className="mt-2 text-lg leading-8 text-[#162033]">
+                <p className="mt-2 text-base sm:text-lg leading-7 sm:leading-8 text-[#162033]">
                   {faq.answer}
                 </p>
               </div>
@@ -909,11 +909,11 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
         </section>
 
         {/* Disclaimer */}
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-          <h2 className="text-2xl font-bold leading-tight text-gray-700">
+        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <h2 className="text-xl sm:text-2xl font-bold leading-tight text-gray-700">
             Disclaimer
           </h2>
-          <p className="mt-3 text-base leading-7 text-gray-600">
+          <p className="mt-3 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
             This blog is for informational purposes only. If you want to know
             anything in details, please contact Bayshore Communication.
           </p>
@@ -932,14 +932,14 @@ const NumberedSection = ({
   title: string;
   children: ReactNode;
 }) => (
-  <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-    <div className="grid gap-4 md:grid-cols-[72px_1fr]">
-      <div className="text-4xl font-bold leading-none text-[#FE6F1F]">
+  <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+    <div className="grid gap-3 sm:gap-4 md:grid-cols-[72px_1fr]">
+      <div className="text-3xl sm:text-4xl font-bold leading-none text-[#FE6F1F]">
         {number}
       </div>
       <div>
-        <h2 className="text-3xl font-bold leading-tight">{title}</h2>
-        <div className="mt-5 space-y-5 text-lg leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-5 [&>blockquote]:text-xl">
+        <h2 className="text-2xl sm:text-3xl font-bold leading-tight">{title}</h2>
+        <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-2.5 sm:[&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-sm sm:[&>ul]:text-base [&>ul]:leading-6 sm:[&>ul]:leading-7 [&>ul]:list-disc">
           {children}
         </div>
       </div>
@@ -954,16 +954,16 @@ const DataTable = ({
   columns: string[];
   rows: string[][];
 }) => (
-  <div className="mt-5 overflow-x-auto rounded-[8px] border border-[#dce6f2]">
-    <div className="min-w-[600px]">
+  <div className="mt-5 w-full max-w-full overflow-x-auto rounded-[8px] border border-[#dce6f2]">
+    <div className="min-w-[600px] sm:min-w-[640px]">
       <div
-        className="grid bg-[#101d34] text-base font-semibold !text-white"
+        className="grid bg-[#101d34] text-sm sm:text-base font-semibold !text-white"
         style={{
           gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
         }}
       >
         {columns.map((column) => (
-          <div key={column} className="p-4">
+          <div key={column} className="p-3 sm:p-4">
             {column}
           </div>
         ))}
@@ -971,7 +971,7 @@ const DataTable = ({
       {rows.map((row, idx) => (
         <div
           key={`${row[0]}-${idx}`}
-          className={`grid border-t border-[#dce6f2] text-base ${
+          className={`grid border-t border-[#dce6f2] text-sm sm:text-base ${
             idx % 2 === 1 ? "bg-[#f0f4f8]" : "bg-white"
           }`}
           style={{
@@ -981,7 +981,7 @@ const DataTable = ({
           {row.map((cell, cellIndex) => (
             <div
               key={`${cell}-${cellIndex}`}
-              className={`p-4 ${cellIndex === 0 ? "font-semibold" : ""}`}
+              className={`p-3 sm:p-4 ${cellIndex === 0 ? "font-semibold" : ""}`}
             >
               {cell}
             </div>
@@ -1003,17 +1003,17 @@ const CallToActionBox = ({
   buttonText: string;
   href: string;
 }) => (
-  <section className="rounded-[8px] bg-[#005a9c] p-6 text-white md:p-8 text-center">
-    <h2 className="text-2xl md:text-3xl font-bold leading-tight text-white">
+  <section className="rounded-[8px] bg-[#005a9c] p-4 sm:p-6 md:p-8 text-white text-center">
+    <h2 className="text-2xl sm:text-3xl font-bold leading-tight text-white">
       {title}
     </h2>
-    <p className="mt-3 max-w-2xl mx-auto !text-base md:!text-lg !leading-7 !text-[#e0f2fe]">
+    <p className="mt-3 max-w-2xl mx-auto !text-base sm:!text-lg !leading-7 sm:!leading-8 !text-[#e0f2fe]">
       {subtitle}
     </p>
-    <div className="mt-6">
+    <div className="mt-5 sm:mt-6">
       <Link
         href={href}
-        className="inline-flex rounded-full bg-white px-8 py-3.5 text-base font-bold text-[#005a9c] hover:bg-[#e0f2fe] transition-colors shadow-md"
+        className="inline-flex w-full sm:w-auto items-center justify-center text-center rounded-full bg-white px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-[#005a9c] hover:bg-[#e0f2fe] transition-colors shadow-md"
       >
         {buttonText}
       </Link>

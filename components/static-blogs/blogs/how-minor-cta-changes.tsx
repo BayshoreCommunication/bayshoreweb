@@ -276,35 +276,35 @@ const InlineLink = ({
 
 export const CtaOptimizationBlog = () => {
   return (
-    <article className="bg-[#f7f8fb] text-[#162033]">
+    <article className="w-full max-w-full overflow-hidden bg-[#f7f8fb] text-[#162033] break-words">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(schemaData).replace(/</g, "\\u003c"),
         }}
       />
-      <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
+      <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-[#8ed8ff]">
           CTA Optimization | Conversion Strategy
         </p>
-        <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">
+        <p className="mt-3 sm:mt-4 max-w-3xl text-base sm:text-lg leading-7 sm:leading-8 !text-[#d9e7f7]">
           A data-driven guide to CTA optimization for teams that want more
           visitors to become qualified leads.
         </p>
-        <div className="mt-6 flex flex-wrap gap-3 !text-sm !text-[#d9e7f7]">
-          <span className="rounded-full border border-white/20 px-4 py-2">
+        <div className="mt-4 sm:mt-6 flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm !text-[#d9e7f7]">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Updated 2025
           </span>
-          <span className="rounded-full border border-white/20 px-4 py-2">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             South Florida Digital Marketing
           </span>
         </div>
       </section>
 
-      <div className="mt-8">
-        <div className="space-y-8">
-          <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-            <p className="text-lg leading-8">
+      <div className="mt-6 sm:mt-8">
+        <div className="space-y-6 sm:space-y-8">
+          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+            <p className="text-base sm:text-lg leading-7 sm:leading-8">
               Optimizing your call-to-action buttons can help boost conversion
               rates. When you refine button text, improve button visuals, and
               test placements, you make it easier to turn browsers into buyers.
@@ -313,28 +313,28 @@ export const CtaOptimizationBlog = () => {
             </p>
           </section>
 
-          <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-bold">Quick Takeaways</h2>
-            <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-bold">Quick Takeaways</h2>
+            <div className="mt-4 sm:mt-6 grid gap-3 sm:gap-4 md:grid-cols-2">
               {takeaways.map((item) => (
                 <div
                   key={item}
-                  className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-4"
+                  className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-3.5 sm:p-4"
                 >
-                  <p className="text-base leading-7">{item}</p>
+                  <p className="text-sm sm:text-base leading-6 sm:leading-7">{item}</p>
                 </div>
               ))}
             </div>
-            <div className="mt-8 grid gap-4 md:grid-cols-3">
+            <div className="mt-6 sm:mt-8 grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-3">
               {stats.map((stat) => (
                 <div
                   key={stat.value}
-                  className="rounded-[8px] bg-[#101d34] p-5 text-white"
+                  className="rounded-[8px] bg-[#101d34] p-4 sm:p-5 text-white"
                 >
-                  <p className="!text-4xl !font-bold !text-[#8ed8ff]">
+                  <p className="!text-3xl sm:!text-4xl !font-bold !text-[#8ed8ff]">
                     {stat.value}
                   </p>
-                  <p className="mt-3 !text-lg !leading-7 !text-[#d9e7f7]">
+                  <p className="mt-2 sm:mt-3 !text-sm sm:!text-lg !leading-6 sm:!leading-7 !text-[#d9e7f7]">
                     {stat.label}
                   </p>
                 </div>
@@ -409,21 +409,23 @@ export const CtaOptimizationBlog = () => {
             </p>
           </ContentSection>
 
-          <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
-            <h2 className="text-3xl font-bold">
+          <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
+            <h2 className="text-2xl sm:text-3xl font-bold">
               Ready to Turn Visitors Into Clients?
             </h2>
-            <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">
+            <p className="mt-3 sm:mt-4 max-w-3xl text-base sm:text-lg leading-7 sm:leading-8 !text-[#d9e7f7]">
               Need help figuring out why people visit your website but do not
               convert? Talk with Bayshore Communication about conversion-focused
               design, content, and campaign strategy.
             </p>
-            <Link
-              href="/contact"
-              className="mt-6 inline-flex rounded-full bg-[#FE6F1F] px-6 py-4 text-base font-semibold text-white"
-            >
-              Contact Bayshore Communication Today
-            </Link>
+            <div className="mt-5 sm:mt-6">
+              <Link
+                href="/contact"
+                className="inline-flex w-full sm:w-auto items-center justify-center text-center rounded-full bg-[#FE6F1F] px-6 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white hover:bg-[#e05e14] transition-colors"
+              >
+                Contact Bayshore Communication Today
+              </Link>
+            </div>
           </section>
 
           <ContentSection title="Optimizing CTA Placement for Maximum Visibility">
@@ -451,46 +453,46 @@ export const CtaOptimizationBlog = () => {
             </p>
           </ContentSection>
 
-          <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-bold">
+          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-bold">
               Device-Specific CTA Optimization
             </h2>
-            <p className="mt-4 text-lg leading-8">
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-7 sm:leading-8">
               Desktop layouts can support hover effects and secondary options.
               Mobile layouts need thumb-friendly targets, compact forms, and
               clear spacing.
             </p>
-            <div className="mt-6 overflow-x-auto">
-              <div className="min-w-[600px] overflow-hidden rounded-[8px] border border-[#dce6f2]">
-                <div className="grid grid-cols-3 bg-[#101d34] text-base font-semibold !text-white">
-                  <div className="p-4">Factor</div>
-                  <div className="p-4">Desktop Approach</div>
-                  <div className="p-4">Mobile Approach</div>
+            <div className="mt-5 sm:mt-6 w-full max-w-full overflow-x-auto">
+              <div className="min-w-[560px] sm:min-w-[600px] overflow-hidden rounded-[8px] border border-[#dce6f2]">
+                <div className="grid grid-cols-3 bg-[#101d34] text-sm sm:text-base font-semibold !text-white">
+                  <div className="p-3 sm:p-4">Factor</div>
+                  <div className="p-3 sm:p-4">Desktop Approach</div>
+                  <div className="p-3 sm:p-4">Mobile Approach</div>
                 </div>
                 {deviceRows.map(([factor, desktop, mobile]) => (
                   <div
                     key={factor}
-                    className="grid grid-cols-3 border-t border-[#dce6f2] text-base"
+                    className="grid grid-cols-3 border-t border-[#dce6f2] text-sm sm:text-base"
                   >
-                    <div className="p-4 font-semibold">{factor}</div>
-                    <div className="p-4">{desktop}</div>
-                    <div className="p-4">{mobile}</div>
+                    <div className="p-3 sm:p-4 font-semibold">{factor}</div>
+                    <div className="p-3 sm:p-4">{desktop}</div>
+                    <div className="p-3 sm:p-4">{mobile}</div>
                   </div>
                 ))}
               </div>
             </div>
           </section>
 
-          <section className="grid gap-5 md:grid-cols-2">
+          <section className="grid gap-4 sm:gap-5 md:grid-cols-2">
             {comparison.map((group) => (
               <div
                 key={group.title}
-                className="rounded-[8px] bg-white p-6 shadow-sm"
+                className="rounded-[8px] bg-white p-4 sm:p-6 shadow-sm"
               >
-                <h2 className="text-2xl font-bold">{group.title}</h2>
-                <ul className="mt-5 space-y-3">
+                <h2 className="text-xl sm:text-2xl font-bold">{group.title}</h2>
+                <ul className="mt-4 sm:mt-5 space-y-2.5 sm:space-y-3">
                   {group.items.map((item) => (
-                    <li key={item} className="flex gap-3 text-base leading-7">
+                    <li key={item} className="flex gap-3 text-sm sm:text-base leading-6 sm:leading-7">
                       <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-[#FE6F1F]" />
                       <span>{item}</span>
                     </li>
@@ -521,51 +523,48 @@ export const CtaOptimizationBlog = () => {
             </p>
           </ContentSection>
 
-          <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-bold">
+          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-bold">
               Step-by-Step CTA Optimization
             </h2>
-            <div className="mt-6 space-y-4">
+            <div className="mt-4 sm:mt-6 space-y-3 sm:space-y-4">
               {steps.map((step, index) => (
                 <div
                   key={step.title}
-                  className="grid gap-4 rounded-[8px] border border-[#dce6f2] p-5 sm:grid-cols-[72px_1fr]"
+                  className="grid gap-3 sm:gap-4 rounded-[8px] border border-[#dce6f2] p-3.5 sm:p-5 sm:grid-cols-[60px_1fr] md:grid-cols-[72px_1fr]"
                 >
-                  <div className="text-3xl font-bold text-[#FE6F1F]">
+                  <div className="text-2xl sm:text-3xl font-bold text-[#FE6F1F]">
                     {String(index + 1).padStart(2, "0")}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold">{step.title}</h3>
-                    <p className="mt-2 text-base leading-7">{step.text}</p>
+                    <h3 className="text-lg sm:text-xl font-bold">{step.title}</h3>
+                    <p className="mt-1.5 sm:mt-2 text-sm sm:text-base leading-6 sm:leading-7">{step.text}</p>
                   </div>
                 </div>
               ))}
             </div>
           </section>
 
-          <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-sm font-semibold uppercase tracking-[0.18em] text-[#0077B3]">
+          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+            <h2 className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#0077B3]">
               Frequently Asked Questions
             </h2>
-            {/* <h2 className="mt-3 text-3xl font-bold">
-              People Also Ask About CTA Optimization
-            </h2> */}
-            <div className="mt-6 space-y-5">
+            <div className="mt-4 sm:mt-6 space-y-4 sm:space-y-5">
               {faqs.map((faq) => (
                 <div
                   key={faq.question}
-                  className="border-b border-[#dce6f2] pb-5"
+                  className="border-b border-[#dce6f2] pb-4 sm:pb-5 last:border-b-0 last:pb-0"
                 >
-                  <h3 className="text-xl font-bold">{faq.question}</h3>
-                  <p className="mt-2 text-base leading-7">{faq.answer}</p>
+                  <h3 className="text-lg sm:text-xl font-bold">{faq.question}</h3>
+                  <p className="mt-1.5 sm:mt-2 text-sm sm:text-base leading-6 sm:leading-7">{faq.answer}</p>
                 </div>
               ))}
             </div>
           </section>
 
-          <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-            <h2 className="text-3xl font-bold">Final Thoughts</h2>
-            <p className="mt-4 text-lg leading-8">
+          <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+            <h2 className="text-2xl sm:text-3xl font-bold">Final Thoughts</h2>
+            <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-7 sm:leading-8">
               Even small changes to your CTA copy, visual hierarchy, and
               placement can influence revenue. Start with a clean audit, connect
               CTA changes with your{" "}
@@ -588,9 +587,9 @@ const ContentSection = ({
   title: string;
   children: ReactNode;
 }) => (
-  <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-    <h2 className="text-3xl font-bold leading-tight">{title}</h2>
-    <div className="mt-5 space-y-5 text-lg leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-5 [&>blockquote]:text-xl [&>h3]:pt-3 [&>h3]:text-2xl [&>h3]:font-bold">
+  <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+    <h2 className="text-2xl sm:text-3xl font-bold leading-tight">{title}</h2>
+    <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold">
       {children}
     </div>
   </section>

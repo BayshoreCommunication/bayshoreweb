@@ -177,7 +177,7 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
       <SectionLayout bg="">
         <div className="h-[100%] service-style">
           <div className="flex flex-col md:flex-row gap-y-10 md:gap-x-10">
-            <div className="flex-[3]">
+            <div className="flex-[3] min-w-0 w-full max-w-full">
               <div>
                 <div>
                   <h1 className="font-semibold text-[28px] sm:text-[36px] md:text-[54px] lg:text-[72px] xl:text-[80px] leading-tight">
@@ -215,7 +215,7 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                   )}
                 </figure>
 
-                <div className="externallink mt-10">
+                <div className="externallink mt-8 sm:mt-10 min-w-0 w-full max-w-full overflow-hidden">
                   {StaticBlogComponent ? (
                     <StaticBlogComponent />
                   ) : (

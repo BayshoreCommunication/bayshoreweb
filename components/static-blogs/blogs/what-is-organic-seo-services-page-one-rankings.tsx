@@ -307,7 +307,7 @@ const ExternalLink = ({
 
 export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
   return (
-    <article className="w-full bg-[#f7f8fb] text-[#162033]">
+    <article className="w-full max-w-full overflow-hidden bg-[#f7f8fb] text-[#162033] break-words">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -315,31 +315,31 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
         }}
       />
 
-      <section className="rounded-[12px] bg-[#101d34] p-6 text-white md:p-10 shadow-md">
-        <p className="text-base font-bold uppercase tracking-[0.18em] text-[#8ed8ff]">
+      <section className="rounded-[12px] bg-[#101d34] p-4 sm:p-6 md:p-10 text-white shadow-md">
+        <p className="text-xs sm:text-sm md:text-base font-bold uppercase tracking-[0.18em] text-[#8ed8ff]">
           Bayshore Communication | Organic SEO Services
         </p>
-        <p className="mt-4 max-w-4xl text-lg font-medium leading-relaxed text-[#d9e7f7] md:text-xl md:leading-8">
+        <p className="mt-3 sm:mt-4 max-w-4xl text-base sm:text-lg md:text-xl font-medium leading-relaxed sm:leading-8 text-[#d9e7f7]">
           Organic SEO is really just the honest and hard work you put in to earn
           your spot on Google. You aren&apos;t renting a billboard or paying for an
           ad that disappears tomorrow.
         </p>
-        <div className="mt-6 flex flex-wrap gap-3 text-sm md:text-base text-[#d9e7f7]">
-          <span className="rounded-full border border-white/25 px-5 py-2 font-medium">
+        <div className="mt-5 sm:mt-6 flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm md:text-base text-[#d9e7f7]">
+          <span className="rounded-full border border-white/25 px-3.5 py-1.5 sm:px-5 sm:py-2 font-medium">
             Updated August 9, 2026
           </span>
-          <span className="rounded-full border border-white/25 px-5 py-2 font-medium">
+          <span className="rounded-full border border-white/25 px-3.5 py-1.5 sm:px-5 sm:py-2 font-medium">
             Organic SEO
           </span>
-          <span className="rounded-full border border-white/25 px-5 py-2 font-medium">
+          <span className="rounded-full border border-white/25 px-3.5 py-1.5 sm:px-5 sm:py-2 font-medium">
             Search Rankings
           </span>
         </div>
       </section>
 
-      <div className="mt-8 space-y-10">
-        <section className="rounded-[12px] bg-white p-6 shadow-sm md:p-10">
-          <div className="space-y-6 text-lg md:text-xl leading-8 md:leading-9">
+      <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-10">
+        <section className="rounded-[12px] bg-white p-4 sm:p-6 md:p-10 shadow-sm">
+          <div className="space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl leading-7 sm:leading-8 md:leading-9">
             <p>
               Organic SEO is really just the honest and hard work you put in to
               earn your spot on Google. You aren&apos;t renting a billboard or
@@ -354,24 +354,24 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           </div>
         </section>
 
-        <section className="rounded-[12px] bg-white p-6 shadow-sm md:p-10">
-          <h2 className="text-base md:text-lg font-extrabold uppercase tracking-[0.18em] text-[#FE6F1F]">
+        <section className="rounded-[12px] bg-white p-4 sm:p-6 md:p-10 shadow-sm">
+          <h2 className="text-sm sm:text-base md:text-lg font-extrabold uppercase tracking-[0.18em] text-[#FE6F1F]">
             KEY POINTS
           </h2>
-          <div className="mt-6 grid gap-6 md:grid-cols-2">
+          <div className="mt-5 sm:mt-6 grid gap-3 sm:gap-6 grid-cols-1 sm:grid-cols-2">
             {keyPoints.map((item) => (
               <div
                 key={item}
-                className="rounded-[10px] border border-[#dce6f2] bg-[#f7fbff] p-5 md:p-6 shadow-xs"
+                className="rounded-[10px] border border-[#dce6f2] bg-[#f7fbff] p-3.5 sm:p-5 md:p-6 shadow-xs"
               >
-                <p className="text-lg font-medium leading-8 text-[#162033]">
+                <p className="text-sm sm:text-base md:text-lg font-medium leading-6 sm:leading-8 text-[#162033]">
                   • {item}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="mt-8 space-y-6 text-lg md:text-xl leading-8 md:leading-9">
+          <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl leading-7 sm:leading-8 md:leading-9">
             <p>
               Organic search still generates 53% of all website traffic, more
               than paid search, social, and direct visits combined, according
@@ -820,23 +820,23 @@ export const WhatIsOrganicSeoServicesPageOneRankingsBlog = () => {
           </div>
         </NumberedSection>
 
-        <section className="rounded-[12px] bg-white p-6 shadow-sm md:p-10">
-          <p className="text-base font-extrabold uppercase tracking-[0.18em] text-[#FE6F1F]">
+        <section className="rounded-[12px] bg-white p-4 sm:p-6 md:p-10 shadow-sm">
+          <p className="text-sm sm:text-base font-extrabold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Frequently Asked Questions
           </p>
-          <h2 className="mt-3 text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
             FAQ About Organic SEO Services
           </h2>
-          <div className="mt-8 space-y-6">
+          <div className="mt-6 sm:mt-8 space-y-6">
             {faqs.map((faq) => (
               <div
                 key={faq.question}
                 className="border-b border-[#dce6f2] pb-6 last:border-b-0 last:pb-0"
               >
-                <h3 className="text-xl md:text-2xl font-bold text-[#101d34]">
+                <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-[#101d34]">
                   Q&nbsp; {faq.question}
                 </h3>
-                <p className="mt-3 text-lg md:text-xl leading-8 text-[#2c3e50]">
+                <p className="mt-2 sm:mt-3 text-base sm:text-lg md:text-xl leading-7 sm:leading-8 text-[#2c3e50]">
                   {faq.answer}
                 </p>
               </div>
@@ -857,16 +857,16 @@ const NumberedSection = ({
   title: string;
   children: ReactNode;
 }) => (
-  <section className="rounded-[12px] bg-white p-6 shadow-sm md:p-10 my-10">
-    <div className="grid gap-6 md:grid-cols-[72px_1fr]">
-      <div className="text-4xl md:text-5xl font-extrabold leading-none text-[#FE6F1F]">
+  <section className="rounded-[12px] bg-white p-4 sm:p-6 md:p-10 shadow-sm my-6 sm:my-10">
+    <div className="grid gap-4 sm:gap-6 md:grid-cols-[72px_1fr]">
+      <div className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-none text-[#FE6F1F]">
         {number}
       </div>
       <div>
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight text-[#101d34]">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight text-[#101d34]">
           {title}
         </h2>
-        <div className="mt-6 space-y-6 text-lg md:text-xl leading-8 md:leading-9 text-[#2c3e50]">
+        <div className="mt-4 sm:mt-6 space-y-4 sm:space-y-6 text-base sm:text-lg md:text-xl leading-7 sm:leading-8 md:leading-9 text-[#2c3e50] [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-2.5 sm:[&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-sm sm:[&>ul]:text-base [&>ul]:leading-6 sm:[&>ul]:leading-7 [&>ul]:list-disc">
           {children}
         </div>
       </div>
@@ -875,9 +875,9 @@ const NumberedSection = ({
 );
 
 const StatBlock = ({ value, label }: { value: string; label: string }) => (
-  <div className="rounded-[10px] bg-[#101d34] p-6 text-white shadow-xs">
-    <p className="text-4xl md:text-5xl font-extrabold text-[#8ed8ff]">{value}</p>
-    <p className="mt-3 text-lg font-medium text-[#d9e7f7] leading-relaxed">{label}</p>
+  <div className="rounded-[10px] bg-[#101d34] p-4 sm:p-6 text-white shadow-xs">
+    <p className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#8ed8ff]">{value}</p>
+    <p className="mt-2 sm:mt-3 text-sm sm:text-base md:text-lg font-medium text-[#d9e7f7] leading-relaxed">{label}</p>
   </div>
 );
 
@@ -888,16 +888,16 @@ const DataTable = ({
   columns: string[];
   rows: string[][];
 }) => (
-  <div className="my-8 overflow-x-auto rounded-[10px] border border-[#dce6f2] shadow-xs">
-    <div className="min-w-[760px]">
+  <div className="my-6 sm:my-8 w-full max-w-full overflow-x-auto rounded-[10px] border border-[#dce6f2] shadow-xs">
+    <div className="min-w-[600px] sm:min-w-[760px]">
       <div
-        className="grid bg-[#101d34] text-base md:text-lg font-bold text-white"
+        className="grid bg-[#101d34] text-sm sm:text-base md:text-lg font-bold text-white"
         style={{
           gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
         }}
       >
         {columns.map((column) => (
-          <div key={column} className="p-5">
+          <div key={column} className="p-3 sm:p-5">
             {column}
           </div>
         ))}
@@ -905,13 +905,13 @@ const DataTable = ({
       {rows.map((row) => (
         <div
           key={row.join("-")}
-          className="grid border-t border-[#dce6f2] bg-white text-base md:text-lg leading-7"
+          className="grid border-t border-[#dce6f2] bg-white text-sm sm:text-base md:text-lg leading-6 sm:leading-7"
           style={{
             gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
           }}
         >
           {row.map((cell, index) => (
-            <div key={`${cell}-${index}`} className="p-5 first:font-bold">
+            <div key={`${cell}-${index}`} className="p-3 sm:p-5 first:font-bold">
               {cell}
             </div>
           ))}
@@ -930,15 +930,15 @@ const PdfCta = ({
   text: string;
   button: string;
 }) => (
-  <section className="my-10 rounded-[12px] bg-[#101d34] p-6 text-white md:p-10 shadow-md">
-    <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">{title}</h2>
-    <p className="mt-4 max-w-4xl text-lg md:text-xl font-medium leading-relaxed text-[#d9e7f7] md:leading-8">
+  <section className="my-6 sm:my-10 rounded-[12px] bg-[#101d34] p-4 sm:p-6 md:p-10 shadow-md text-white">
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">{title}</h2>
+    <p className="mt-3 sm:mt-4 max-w-4xl text-base sm:text-lg md:text-xl font-medium leading-relaxed sm:leading-8 text-[#d9e7f7]">
       {text}
     </p>
-    <div className="mt-6">
+    <div className="mt-5 sm:mt-6">
       <Link
         href="/contact"
-        className="inline-flex rounded-full bg-[#FE6F1F] px-8 py-4 text-lg font-bold text-white hover:bg-[#e05e14] transition-all shadow-md"
+        className="inline-flex w-full sm:w-auto items-center justify-center text-center rounded-full bg-[#FE6F1F] px-6 sm:px-8 py-3.5 sm:py-4 text-sm sm:text-base md:text-lg font-bold text-white hover:bg-[#e05e14] transition-all shadow-md"
       >
         {button}
       </Link>

@@ -250,7 +250,7 @@ const ExternalLink = ({
 
 export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
   return (
-    <article className="w-full bg-[#f7f8fb] text-[#162033]">
+    <article className="w-full max-w-full overflow-hidden bg-[#f7f8fb] text-[#162033] break-words">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -258,45 +258,45 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
         }}
       />
 
-      <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
+      <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
           Digital Marketing | Agency Guide
         </p>
-        <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7] text-justify">
+        <p className="mt-4 max-w-3xl text-base sm:!text-lg leading-7 sm:!leading-8 !text-[#d9e7f7]">
           Agencies provide immediate access to specialized teams at a fraction
           of the cost of building an expensive in house department. So, stop
           throwing your hard earned money at trial and error and start scaling
           your revenue with real performance data. When you team up with local
           experts, your brand can own the search results for any area.
         </p>
-        <div className="mt-6 flex flex-wrap gap-3 !text-sm !text-[#d9e7f7]">
-          <span className="rounded-full border border-white/20 px-4 py-2">
+        <div className="mt-6 flex flex-wrap gap-2 sm:gap-3 !text-xs sm:!text-sm !text-[#d9e7f7]">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Published: July 21, 2026
           </span>
-          <span className="rounded-full border border-white/20 px-4 py-2">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Updated: July 21, 2026
           </span>
-          <span className="rounded-full border border-white/20 px-4 py-2">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             SEO
           </span>
-          <span className="rounded-full border border-white/20 px-4 py-2">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Digital Marketing
           </span>
         </div>
       </section>
 
-      <div className="mt-8 space-y-8">
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
+      <div className="mt-8 space-y-6 sm:space-y-8">
+        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <h2 className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Main Takeaways
           </h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="mt-6 grid gap-4 sm:grid-cols-2">
             {takeaways.map((item) => (
               <div
                 key={item}
                 className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-4"
               >
-                <p className="text-base leading-7">✓ {item}</p>
+                <p className="text-sm sm:text-base leading-6 sm:leading-7">✓ {item}</p>
               </div>
             ))}
           </div>
@@ -345,13 +345,13 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
           number="2."
           title="What Does an Agency Actually Do Better Than You?"
         >
-          <p className="text-justify">
+          <p>
             Most business owners are sharp. That is not the question. The
             question is whether your strength is digital marketing or your
             actual product. The two rarely overlap, and trying to do both
             strains both.
           </p>
-          <p className="text-justify">
+          <p>
             Over time, SEO efforts grow stronger when handled by agencies.{" "}
             <ExternalLink href="https://firstpagesage.com/seo-blog/the-roi-of-seo/">
               A study from First Page Sage
@@ -362,7 +362,7 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
             boost each other. Trying to match that balance on your own? Nearly
             impossible.
           </p>
-          <p className="text-justify">
+          <p>
             Every single day, agencies keep an eye on what your rivals are
             doing. When algorithms shift or seasons change, they notice first,
             way ahead of most teams. In busy spots across Florida - think Tampa
@@ -370,11 +370,11 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
             real difference.
           </p>
 
-          <div className="mt-8 rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-6">
-            <h3 className="pt-0 text-xl font-bold text-[#101d34]">
+          <div className="mt-6 sm:mt-8 rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-4 sm:p-6">
+            <h3 className="pt-0 text-lg sm:text-xl font-bold text-[#101d34]">
               What a Full-Service Agency Handles for You
             </h3>
-            <ul className="mt-4 space-y-3 pl-5 list-disc text-base leading-7">
+            <ul className="mt-4 space-y-3 pl-5 list-disc text-sm sm:text-base leading-6 sm:leading-7">
               {agencyServices.map((service, index) => (
                 <li key={index}>{service}</li>
               ))}
@@ -386,7 +386,7 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
           number="3."
           title="Outsource Your Marketing for Florida Business Growth"
         >
-          <p className="text-justify">
+          <p>
             Nearly 6 out of 10 small businesses reported outsourcing digital
             marketing in 2023,{" "}
             <ExternalLink href="https://www.sba.gov/business-guide/manage-your-business/market-your-business">
@@ -396,14 +396,14 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
             that stay purely in-house often cite control. The ones that
             outsource cite results.
           </p>
-          <p className="text-justify">
+          <p>
             Florida is not a slow market. In Pinellas County, Hillsborough
             County, and along the I-4 route, numerous agents pursue identical
             online visibility. To become visible, you need steady work in
             organic rankings, digital ads, alongside verified client feedback,
             all at once. That is a full-time operation.
           </p>
-          <p className="text-justify">
+          <p>
             Local digital marketing agency partners know Florida consumer
             behavior in particular. The campaign strategy is affected by
             seasonal tourism spikes, snowbird demographics, shifts in sentiment
@@ -428,19 +428,19 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
           number="4."
           title="Is Hiring an Agency Worth It If Your Budget Is Short?"
         >
-          <p className="text-justify">
+          <p>
             The actual mistake you run into here is not spending too little but
             not spending anything at all, as competitors swallow up your market.
             And yes, agencies scale. Your approach at first might be
             channel-focused and then branch out as revenue starts to rise.
           </p>
-          <p className="text-justify">
+          <p>
             Content marketing generates 3x as many leads per dollar and is 62%
             less expensive than old outbound marketing. For a lean Florida
             startup or regional service business, that ratio changes everything
             about budget allocation.
           </p>
-          <p className="text-justify">
+          <p>
             PPC delivers around 200 percent average ROI for well-run campaigns.
             Email returns $42 for every $1 spent. These are not theoretical
             numbers. They represent real channel performance benchmarks that
@@ -448,7 +448,7 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
             across multiple clients.
           </p>
 
-          <h3 className="text-2xl font-bold mt-6">
+          <h3 className="text-xl sm:text-2xl font-bold mt-6">
             PPC & Marketing Channel ROI Benchmarks
           </h3>
           <DataTable
@@ -461,13 +461,13 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
           number="5."
           title="Agencies Give You Data That Changes Every Decision You Make"
         >
-          <p className="text-justify">
+          <p>
             Good marketing is not creative guessing. It is a measurement system.
             Agencies instrument every dollar you spend. They measure the impact
             via cost per acquisition, return on ad spend, changes to organic
             rankings and conversion data broken down by channel and device.
           </p>
-          <p className="text-justify">
+          <p>
             When you first start tracking the returns on your marketing spend,
             it’s common to find that one channel is taking 20-30% of your
             budget and not delivering any returns. That problem tends to show
@@ -475,7 +475,7 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
             Outside teams spot it more reliably than independent founders
             working alone.
           </p>
-          <p className="text-justify">
+          <p>
             This matters in a market like Florida where digital ad spend is
             intensifying. By 2026, 68.7% of global ad spending will be on
             digital. It’s estimated at{" "}
@@ -485,19 +485,19 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
             . You are fighting companies with naturally data-centric approach.
             Agencies keep you in that game.
           </p>
-          <p className="text-justify">
+          <p>
             Bayshore Communication&apos;s analytics workflows give clients a monthly
             view of exactly what is working and what to cut. Explore their{" "}
             <InlineLink href="/our-services">growth marketing services</InlineLink>{" "}
             to see how they structure performance reporting.
           </p>
 
-          <blockquote>
+          <blockquote className="rounded-[8px] border-l-4 border-[#FE6F1F] bg-[#fff7f1] p-4 sm:p-5 text-base sm:text-lg italic text-[#162033]">
             &ldquo;Data isn’t a reporting tool but a decision engine. When you
             know your cost per lead by channel, you stop wasting money and start
             scaling what actually works. That’s the real value of partnering
             with an agency.&rdquo;
-            <span className="block mt-2 text-sm font-bold text-[#101d34]">
+            <span className="block mt-2 text-xs sm:text-sm font-bold not-italic text-[#101d34]">
               — Salman H Saikote (Managing Partner), Bayshore Communication
             </span>
           </blockquote>
@@ -507,26 +507,26 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
           number="6."
           title="What to Consider In A Web Partner?"
         >
-          <p className="text-justify">
+          <p>
             Not every agency deserves your budget. Florida has no shortage of
             firming promising overnight rankings and viral content. The ones that
             deliver share common traits.
           </p>
-          <p className="text-justify">
+          <p>
             First, we are transparent about timelines. Most people start
             noticing changes after about half a year of working on SEO. If
             someone guarantees number one spots within a month, they are not
             being honest. Second, we show you real case studies, with numbers,
             not testimonial with no metrics.
           </p>
-          <p className="text-justify">
+          <p>
             Third, we understand your local market. A Tampa Bay business
             competing for local service keywords has different needs than an
             e-commerce brand targeting national traffic. Your agency should know
             the difference between ranking in Clearwater versus ranking across
             Florida.
           </p>
-          <p className="text-justify">
+          <p>
             Having partnered with over 70 clients since its inception in 2016,
             Bayshore Communication have built 220-plus websites and harvested
             500k+ leads from our Florida home. The team bundle paid ad
@@ -538,17 +538,17 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
             solution, your campaign no longer has to run in a silo.
           </p>
 
-          <h3 className="text-2xl font-bold mt-8">
+          <h3 className="text-xl sm:text-2xl font-bold mt-6 sm:mt-8">
             Debunking Agency & Marketing Myths
           </h3>
           <DataTable columns={["Myth", "Fact"]} rows={mythFactData} />
         </NumberedSection>
 
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
+        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Frequently Asked Questions
           </p>
-          <h2 className="mt-3 text-3xl font-bold leading-tight">
+          <h2 className="mt-3 text-2xl sm:text-3xl font-bold leading-tight">
             People Also Ask About Hiring a Digital Marketing Agency
           </h2>
           <div className="mt-6 space-y-5">
@@ -557,8 +557,8 @@ export const WhyShouldIHireADigitalMarketingAgencyBlog = () => {
                 key={faq.question}
                 className="border-b border-[#dce6f2] pb-5 last:border-b-0 last:pb-0"
               >
-                <h3 className="text-xl font-bold">Q&nbsp; {faq.question}</h3>
-                <p className="mt-2 text-lg leading-8 text-justify">
+                <h3 className="text-lg sm:text-xl font-bold">Q&nbsp; {faq.question}</h3>
+                <p className="mt-2 text-base sm:text-lg leading-7 sm:leading-8">
                   {faq.answer}
                 </p>
               </div>
@@ -586,14 +586,14 @@ const NumberedSection = ({
   title: string;
   children: ReactNode;
 }) => (
-  <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-    <div className="grid gap-4 md:grid-cols-[72px_1fr]">
-      <div className="text-4xl font-bold leading-none text-[#FE6F1F]">
+  <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+    <div className="grid gap-3 sm:gap-4 md:grid-cols-[72px_1fr]">
+      <div className="text-3xl sm:text-4xl font-bold leading-none text-[#FE6F1F]">
         {number}
       </div>
       <div>
-        <h2 className="text-3xl font-bold leading-tight">{title}</h2>
-        <div className="mt-5 space-y-5 text-lg leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-5 [&>blockquote]:text-xl [&>blockquote]:font-serif [&>blockquote]:italic [&>h3]:pt-3 [&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-base [&>ul]:leading-7 [&>ul]:list-disc">
+        <h2 className="text-2xl sm:text-3xl font-bold leading-tight">{title}</h2>
+        <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-base sm:[&>blockquote]:text-xl [&>blockquote]:font-serif [&>blockquote]:italic [&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-sm sm:[&>ul]:text-base [&>ul]:leading-6 sm:[&>ul]:leading-7 [&>ul]:list-disc">
           {children}
         </div>
       </div>
@@ -602,18 +602,18 @@ const NumberedSection = ({
 );
 
 const ProTip = ({ title, text }: { title: string; text: string }) => (
-  <div className="rounded-[8px] border-l-4 border-[#FE6F1F] bg-[#fff7f1] p-5 mt-5">
-    <p className="text-sm font-bold uppercase tracking-[0.1em] text-[#FE6F1F]">
+  <div className="rounded-[8px] border-l-4 border-[#FE6F1F] bg-[#fff7f1] p-4 sm:p-5 mt-4 sm:mt-5">
+    <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.1em] text-[#FE6F1F]">
       {title}
     </p>
-    <p className="mt-2 text-lg leading-8 italic text-justify">{text}</p>
+    <p className="mt-2 text-base sm:text-lg leading-7 sm:leading-8 italic">{text}</p>
   </div>
 );
 
 const StatBlock = ({ value, label }: { value: string; label: string }) => (
-  <div className="rounded-[8px] bg-[#101d34] p-5 text-white">
-    <p className="!text-4xl !font-bold !text-[#8ed8ff]">{value}</p>
-    <p className="mt-3 !text-lg !leading-7 !text-[#d9e7f7]">{label}</p>
+  <div className="rounded-[8px] bg-[#101d34] p-4 sm:p-5 text-white">
+    <p className="!text-3xl sm:!text-4xl !font-bold !text-[#8ed8ff]">{value}</p>
+    <p className="mt-2 sm:mt-3 !text-sm sm:!text-lg !leading-6 sm:!leading-7 !text-[#d9e7f7]">{label}</p>
   </div>
 );
 
@@ -624,16 +624,16 @@ const DataTable = ({
   columns: string[];
   rows: string[][];
 }) => (
-  <div className="mt-5 overflow-x-auto rounded-[8px] border border-[#dce6f2]">
-    <div className="min-w-[760px]">
+  <div className="mt-5 w-full max-w-full overflow-x-auto rounded-[8px] border border-[#dce6f2]">
+    <div className="min-w-[600px] sm:min-w-[760px]">
       <div
-        className="grid bg-[#101d34] text-base font-semibold !text-white"
+        className="grid bg-[#101d34] text-sm sm:text-base font-semibold !text-white"
         style={{
           gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
         }}
       >
         {columns.map((column) => (
-          <div key={column} className="p-4">
+          <div key={column} className="p-3 sm:p-4">
             {column}
           </div>
         ))}
@@ -641,13 +641,13 @@ const DataTable = ({
       {rows.map((row) => (
         <div
           key={row.join("-")}
-          className="grid border-t border-[#dce6f2] bg-white text-base"
+          className="grid border-t border-[#dce6f2] bg-white text-sm sm:text-base"
           style={{
             gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
           }}
         >
           {row.map((cell, index) => (
-            <div key={`${cell}-${index}`} className="p-4 first:font-semibold">
+            <div key={`${cell}-${index}`} className="p-3 sm:p-4 first:font-semibold">
               {cell}
             </div>
           ))}
@@ -668,14 +668,14 @@ const PdfCta = ({
   button: string;
   href?: string;
 }) => (
-  <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
-    <h2 className="text-3xl font-bold leading-tight">{title}</h2>
-    <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">
+  <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
+    <h2 className="text-2xl sm:text-3xl font-bold leading-tight">{title}</h2>
+    <p className="mt-3 sm:mt-4 max-w-3xl !text-base sm:!text-lg !leading-7 sm:!leading-8 !text-[#d9e7f7]">
       {text}
     </p>
     <Link
       href={href}
-      className="mt-6 inline-flex rounded-full bg-[#FE6F1F] px-6 py-4 text-base font-semibold text-white hover:bg-[#e05e14] transition-colors"
+      className="mt-5 sm:mt-6 inline-flex w-full sm:w-auto items-center justify-center text-center rounded-full bg-[#FE6F1F] px-6 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white hover:bg-[#e05e14] transition-colors"
     >
       {button}
     </Link>

@@ -338,7 +338,7 @@ const ExternalLink = ({
 
 export const DentalWebsiteDesignCostBlog = () => {
   return (
-    <article className="w-full bg-[#f7f8fb] text-[#162033]">
+    <article className="w-full max-w-full overflow-hidden bg-[#f7f8fb] text-[#162033] break-words">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -346,58 +346,58 @@ export const DentalWebsiteDesignCostBlog = () => {
         }}
       />
 
-      <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
+      <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
+        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.15em] sm:tracking-[0.18em] text-[#8ed8ff]">
           Dental Web Design | Practice Cost &amp; ROI Guide
         </p>
-        <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">
+        <p className="mt-3 sm:mt-4 max-w-3xl text-base sm:text-lg leading-7 sm:leading-8 !text-[#d9e7f7]">
           The cost of designing a website for a dental practice can range from an
           average of $3,200 to $15,000, depending on the design type, the number of
           pages, the functionality and the level of customization required. Typical
           continuing costs for hosting, security, maintenance, updates and
           technical support are in the range of $50 to $500 per month.
         </p>
-        <div className="mt-6 flex flex-wrap gap-3 !text-sm !text-[#d9e7f7]">
-          <span className="rounded-full border border-white/20 px-4 py-2">
+        <div className="mt-4 sm:mt-6 flex flex-wrap gap-2 sm:gap-3 text-xs sm:text-sm !text-[#d9e7f7]">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Published: September 22, 2026
           </span>
-          <span className="rounded-full border border-white/20 px-4 py-2">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Updated: September 22, 2026
           </span>
-          <span className="rounded-full border border-white/20 px-4 py-2">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Dental Website Design Cost
           </span>
-          <span className="rounded-full border border-white/20 px-4 py-2">
+          <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Practice Growth
           </span>
         </div>
       </section>
 
-      <div className="mt-8 space-y-8">
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
-            <h2>Key Takeaways</h2>
+      <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
+        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
+            Key Takeaways
           </p>
-          <p className="mt-3 text-lg leading-8">
+          <p className="mt-2 sm:mt-3 text-base sm:text-lg leading-7 sm:leading-8">
             You will waste money without clarity. Use these points to set your budget fast.
           </p>
-          <div className="mt-6 grid gap-4 md:grid-cols-2">
+          <div className="mt-4 sm:mt-6 grid gap-3 sm:gap-4 md:grid-cols-2">
             {keyPoints.map((point) => (
               <div
                 key={point}
-                className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-4"
+                className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-3.5 sm:p-4"
               >
-                <p className="text-base leading-7">{point}</p>
+                <p className="text-sm sm:text-base leading-6 sm:leading-7">{point}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-          <h2 className="text-3xl font-bold leading-tight">
+        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <h2 className="text-2xl sm:text-3xl font-bold leading-tight">
             Quick Summary Of Dental Website Design Cost Ranges
           </h2>
-          <p className="mt-4 text-lg leading-8">
+          <p className="mt-3 sm:mt-4 text-base sm:text-lg leading-7 sm:leading-8">
             Dental clinics choose three budget tiers. Custom design increases the base price. Professional copywriting raises the cost. Advanced integrations inflate total expenses.
           </p>
           <DataTable
@@ -410,7 +410,7 @@ export const DentalWebsiteDesignCostBlog = () => {
             ]}
             rows={quickSummaryRows}
           />
-          <p className="mt-5 text-lg leading-8">
+          <p className="mt-4 sm:mt-5 text-base sm:text-lg leading-7 sm:leading-8">
             These ranges reflect real vendor quotes. We also sampled 27 dental sites. We checked visible stack signals. We checked page speed reports. We mapped typical deliverables to price.
           </p>
         </section>
@@ -675,29 +675,29 @@ export const DentalWebsiteDesignCostBlog = () => {
           href="/contact"
         />
 
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0077B3]">
+        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#0077B3]">
             Frequently Asked Questions
           </p>
-          <h2 className="mt-3 text-3xl font-bold leading-tight">
+          <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold leading-tight">
             Questions People Usually Ask Us
           </h2>
-          <div className="mt-6 space-y-5">
+          <div className="mt-4 sm:mt-6 space-y-4 sm:space-y-5">
             {faqs.map((faq) => (
               <div
                 key={faq.question}
-                className="border-b border-[#dce6f2] pb-5 last:border-b-0 last:pb-0"
+                className="border-b border-[#dce6f2] pb-4 sm:pb-5 last:border-b-0 last:pb-0"
               >
-                <h3 className="text-xl font-bold">Q. {faq.question}</h3>
-                <p className="mt-2 text-lg leading-8">{faq.answer}</p>
+                <h3 className="text-lg sm:text-xl font-bold">Q. {faq.question}</h3>
+                <p className="mt-2 text-base sm:text-lg leading-7 sm:leading-8">{faq.answer}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-          <h2 className="text-2xl font-bold leading-tight text-gray-700">Disclaimer</h2>
-          <p className="mt-3 text-base leading-7 text-gray-600">
+        <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+          <h2 className="text-xl sm:text-2xl font-bold leading-tight text-gray-700">Disclaimer</h2>
+          <p className="mt-2 sm:mt-3 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
             This blog is for informational purposes only. If you want to know anything in details, please contact Bayshore Communication.
           </p>
         </section>
@@ -715,14 +715,14 @@ const NumberedSection = ({
   title: string;
   children: ReactNode;
 }) => (
-  <section className="rounded-[8px] bg-white p-6 shadow-sm md:p-8">
-    <div className="grid gap-4 md:grid-cols-[72px_1fr]">
-      <div className="text-4xl font-bold leading-none text-[#FE6F1F]">
+  <section className="rounded-[8px] bg-white p-4 sm:p-6 md:p-8 shadow-sm">
+    <div className="grid gap-3 sm:gap-4 md:grid-cols-[72px_1fr]">
+      <div className="text-3xl sm:text-4xl font-bold leading-none text-[#FE6F1F]">
         {number}
       </div>
       <div>
-        <h2 className="text-3xl font-bold leading-tight">{title}</h2>
-        <div className="mt-5 space-y-5 text-lg leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-5 [&>blockquote]:text-xl">
+        <h2 className="text-2xl sm:text-3xl font-bold leading-tight">{title}</h2>
+        <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl">
           {children}
         </div>
       </div>
@@ -737,16 +737,16 @@ const DataTable = ({
   columns: string[];
   rows: string[][];
 }) => (
-  <div className="mt-5 overflow-x-auto rounded-[8px] border border-[#dce6f2]">
-    <div className="min-w-[760px]">
+  <div className="mt-5 w-full max-w-full overflow-x-auto rounded-[8px] border border-[#dce6f2]">
+    <div className="min-w-[640px] sm:min-w-[760px]">
       <div
-        className="grid bg-[#101d34] text-base font-semibold !text-white"
+        className="grid bg-[#101d34] text-sm sm:text-base font-semibold !text-white"
         style={{
           gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
         }}
       >
         {columns.map((column) => (
-          <div key={column} className="p-4">
+          <div key={column} className="p-3 sm:p-4">
             {column}
           </div>
         ))}
@@ -754,13 +754,13 @@ const DataTable = ({
       {rows.map((row) => (
         <div
           key={row.join("-")}
-          className="grid border-t border-[#dce6f2] bg-white text-base"
+          className="grid border-t border-[#dce6f2] bg-white text-sm sm:text-base"
           style={{
             gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
           }}
         >
           {row.map((cell, index) => (
-            <div key={`${cell}-${index}`} className="p-4 first:font-semibold">
+            <div key={`${cell}-${index}`} className="p-3 sm:p-4 first:font-semibold">
               {cell}
             </div>
           ))}
@@ -783,18 +783,20 @@ const PdfCta = ({
   button: string;
   href: string;
 }) => (
-  <section className="rounded-[8px] bg-[#101d34] p-6 text-white md:p-8">
-    <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
+  <section className="rounded-[8px] bg-[#101d34] p-4 sm:p-6 md:p-8 text-white">
+    <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff]">
       {eyebrow}
     </p>
-    <h2 className="mt-3 text-3xl font-bold leading-tight">{title}</h2>
-    <p className="mt-4 max-w-3xl !text-lg !leading-8 !text-[#d9e7f7]">{text}</p>
-    <Link
-      href={href}
-      className="mt-6 inline-flex rounded-full bg-[#FE6F1F] px-6 py-4 text-base font-semibold text-white hover:bg-[#e05e19] transition-colors"
-    >
-      {button}
-    </Link>
+    <h2 className="mt-2 sm:mt-3 text-2xl sm:text-3xl font-bold leading-tight">{title}</h2>
+    <p className="mt-3 sm:mt-4 max-w-3xl text-base sm:text-lg leading-7 sm:leading-8 !text-[#d9e7f7]">{text}</p>
+    <div className="mt-5 sm:mt-6">
+      <Link
+        href={href}
+        className="inline-flex w-full sm:w-auto items-center justify-center text-center rounded-full bg-[#FE6F1F] px-6 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white hover:bg-[#e05e19] transition-colors"
+      >
+        {button}
+      </Link>
+    </div>
   </section>
 );
 
