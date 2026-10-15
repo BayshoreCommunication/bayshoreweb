@@ -218,7 +218,7 @@ export function Footer() {
                   onClick={handleLinkClick}
                   className="text-[#0B192C] hover:text-primary text-[14px] font-medium transition-colors mt-[3px] cursor-pointer"
                 >
-                  hello@bayshorevirtual.com
+                  info@bayshorecommunication.org
                 </a>
               </div>
             </div>
