@@ -203,10 +203,10 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                     width={blog.imageWidth || 2400}
                     height={blog.imageHeight || 2400}
                     priority
-                    className={`w-full rounded-[8px] bg-[#f7f8fb] ${
-                      blog.imageFit === "contain"
-                        ? "h-auto object-contain max-h-[500px]"
-                        : "aspect-[16/9] object-cover"
+                    className={`w-full rounded-[8px] ${
+                      blog.imageFit === "cover"
+                        ? "aspect-[16/9] object-cover"
+                        : "h-auto object-contain"
                     }`}
                   />
                   {getBlogImageCaption(blog) && (
