@@ -76,7 +76,7 @@ export const DEFAULT_STORIES: ClientStoryItem[] = [
     videoUrl: "https://www.youtube.com/watch?v=dbCf1h9QixM",
     thumbnailPath: "/assets/bayshore-solutions/vongsyprasom-thumbnail.jpg",
     quote: '"You don\'t have to do it all yourself to run a successful law firm."',
-    authorName: "Vongsyprasom",
+    authorName: "Viengphone Vongsyprasom",
     authorTitle: "Founder & Immigration Attorney",
     companyName: "VONGSYPRASOM LAW, P.A.",
     companyLogo: "/assets/client-logo/vien.png",
