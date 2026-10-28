@@ -217,6 +217,8 @@ const schemaData = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
+      "@id":
+        "https://www.bayshorecommunication.com/blog/what-is-web-marketing-and-why-is-it-important#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -241,6 +243,8 @@ const schemaData = {
     },
     {
       "@type": "BlogPosting",
+      "@id":
+        "https://www.bayshorecommunication.com/blog/what-is-web-marketing-and-why-is-it-important#blogposting",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id":
@@ -256,27 +260,32 @@ const schemaData = {
         "https://www.bayshorecommunication.com/assets/static-blogs/what-is-web-marketing-and-why-is-it-important.webp",
       "isPartOf": {
         "@type": "Blog",
-        "@id": "https://www.bayshorecommunication.com/blog",
+        "name": "Bayshore Communication Blog",
+        "url": "https://www.bayshorecommunication.com/blog",
       },
       "about": {
         "@type": "Thing",
-        "name": "Web Marketing Strategy & Guide",
-        "description":
-          "A comprehensive guide to understanding web marketing, online marketing channels, SEO integration, paid advertising, and conversion funnels for business growth.",
+        "name": "Web Marketing",
       },
       "keywords": [
+        "web marketing",
         "what is web marketing",
-        "why is web marketing important",
-        "web marketing guide 2026",
-        "digital marketing channels",
-        "online marketing strategy",
-        "SEO and web marketing",
+        "web marketing strategy",
+        "online marketing",
+        "internet marketing",
+        "digital marketing",
+        "SEO",
+        "PPC",
+        "content marketing",
+        "email marketing",
         "conversion rate optimization",
-        "bayshore communication web marketing",
+        "web marketing funnel",
+        "web marketing metrics",
       ],
       "author": {
         "@type": "Organization",
         "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com/",
       },
       "publisher": {
         "@type": "Organization",
@@ -293,6 +302,8 @@ const schemaData = {
     },
     {
       "@type": "FAQPage",
+      "@id":
+        "https://www.bayshorecommunication.com/blog/what-is-web-marketing-and-why-is-it-important#faq",
       "mainEntity": faqs.map((faq) => ({
         "@type": "Question",
         "name": faq.question,

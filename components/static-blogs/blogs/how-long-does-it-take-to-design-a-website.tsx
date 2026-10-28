@@ -118,63 +118,76 @@ const schemaData = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
+      "@id":
+        "https://www.bayshorecommunication.com/blog/how-long-does-it-take-to-design-a-website#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.bayshorecommunication.com/"
+          "item": "https://www.bayshorecommunication.com/",
         },
         {
           "@type": "ListItem",
           "position": 2,
           "name": "Blog",
-          "item": "https://www.bayshorecommunication.com/blog"
+          "item": "https://www.bayshorecommunication.com/blog",
         },
         {
           "@type": "ListItem",
           "position": 3,
           "name": "How Long Does It Take to Design a Website",
-          "item": "https://www.bayshorecommunication.com/blog/how-long-does-it-take-to-design-a-website"
-        }
-      ]
+          "item":
+            "https://www.bayshorecommunication.com/blog/how-long-does-it-take-to-design-a-website",
+        },
+      ],
     },
     {
       "@type": "BlogPosting",
+      "@id":
+        "https://www.bayshorecommunication.com/blog/how-long-does-it-take-to-design-a-website#blogposting",
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://www.bayshorecommunication.com/blog/how-long-does-it-take-to-design-a-website"
+        "@id":
+          "https://www.bayshorecommunication.com/blog/how-long-does-it-take-to-design-a-website",
       },
       "headline": "How Long Does It Take to Design a Website",
       "name": "Proven Website Design Timeline Facts 2026",
       "description":
         "Learn how long website design typically takes, from planning and content to development, testing, and launch, with factors that can affect the timeline.",
-      "url": "https://www.bayshorecommunication.com/blog/how-long-does-it-take-to-design-a-website",
+      "url":
+        "https://www.bayshorecommunication.com/blog/how-long-does-it-take-to-design-a-website",
       "image":
         "https://www.bayshorecommunication.com/assets/static-blogs/how-long-does-it-take-to-design-a-website.webp",
       "isPartOf": {
         "@type": "Blog",
-        "@id": "https://www.bayshorecommunication.com/blog"
+        "name": "Bayshore Communication Blog",
+        "url": "https://www.bayshorecommunication.com/blog",
       },
       "about": {
         "@type": "Thing",
-        "name": "Website Design Timeline",
-        "description":
-          "Detailed breakdown of website design and development timelines, project phases, scope considerations, and strategies to prevent project delays."
+        "name": "Website Design Timeline and Process",
       },
       "keywords": [
-        "how long to design a website",
+        "how long does it take to design a website",
         "website design timeline",
-        "web design process",
         "website development timeline",
-        "web design phases",
+        "how long does website design take",
+        "website design process",
+        "web design timeline",
+        "website development",
+        "business website design",
+        "custom website design",
+        "ecommerce website development",
+        "website redesign",
+        "website design process",
         "website launch timeline",
-        "website redesign timeline",
-        "small business website timeline"
+        "small business website design",
       ],
       "author": {
         "@type": "Organization",
-        "name": "Bayshore Communication"
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com/",
       },
       "publisher": {
         "@type": "Organization",
@@ -182,14 +195,17 @@ const schemaData = {
         "url": "https://www.bayshorecommunication.com/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://www.bayshorecommunication.com/assets/bayshore-logo.svg"
-        }
+          "url":
+            "https://www.bayshorecommunication.com/assets/bayshore-logo.svg",
+        },
       },
       "datePublished": "2026-09-14",
-      "dateModified": "2026-09-14"
+      "dateModified": "2026-09-14",
     },
     {
       "@type": "FAQPage",
+      "@id":
+        "https://www.bayshorecommunication.com/blog/how-long-does-it-take-to-design-a-website#faq",
       "mainEntity": faqs.map((faq) => ({
         "@type": "Question",
         "name": faq.question,
@@ -198,8 +214,8 @@ const schemaData = {
           "text": faq.answer,
         },
       })),
-    }
-  ]
+    },
+  ],
 };
 
 const InlineLink = ({

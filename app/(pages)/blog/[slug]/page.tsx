@@ -188,10 +188,10 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
                   {blog.createdAt && (
                     <span>Published: {formatDate(blog.createdAt)}</span>
                   )}
-                  {blog.updatedAt && blog.updatedAt !== blog.createdAt && (
+                  {blog.updatedAt && (
                     <span className="hidden xs:inline">|</span>
                   )}
-                  {blog.updatedAt && blog.updatedAt !== blog.createdAt && (
+                  {blog.updatedAt && (
                     <span>Updated: {formatDate(blog.updatedAt)}</span>
                   )}
                 </div>

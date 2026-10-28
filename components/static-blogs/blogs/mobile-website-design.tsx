@@ -235,89 +235,174 @@ const schemaData = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
-      itemListElement: [
+      "@id":
+        "https://www.bayshorecommunication.com/blog/mobile-website-design#breadcrumb",
+      "itemListElement": [
         {
           "@type": "ListItem",
-          position: 1,
-          name: "Home",
-          item: "https://www.bayshorecommunication.com",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.bayshorecommunication.com/",
         },
         {
           "@type": "ListItem",
-          position: 2,
-          name: "Blog",
-          item: "https://www.bayshorecommunication.com/blog",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://www.bayshorecommunication.com/blog",
         },
         {
           "@type": "ListItem",
-          position: 3,
-          name: "Mobile Website Design",
-          item: "https://www.bayshorecommunication.com/blog/mobile-website-design",
+          "position": 3,
+          "name": "Mobile Website Design",
+          "item":
+            "https://www.bayshorecommunication.com/blog/mobile-website-design",
         },
       ],
     },
     {
       "@type": "BlogPosting",
-      mainEntityOfPage: {
+      "@id":
+        "https://www.bayshorecommunication.com/blog/mobile-website-design#blogposting",
+      "mainEntityOfPage": {
         "@type": "WebPage",
         "@id":
           "https://www.bayshorecommunication.com/blog/mobile-website-design",
       },
-      headline: "Mobile Website Design",
-      name: "Mobile Website Design: Powerful Tips 2026",
-      description:
+      "headline": "Mobile Website Design",
+      "name": "Mobile Website Design: Powerful Tips 2026",
+      "description":
         "Discover practical mobile website design tips for better usability, responsive layouts, faster experiences, and seamless browsing across devices",
-      url: "https://www.bayshorecommunication.com/blog/mobile-website-design",
-      image:
-        "https://www.bayshorecommunication.com/assets/static-blogs/mobile-website-design.webp",
-      isPartOf: {
+      "url": "https://www.bayshorecommunication.com/blog/mobile-website-design",
+      "isPartOf": {
         "@type": "Blog",
-        "@id": "https://www.bayshorecommunication.com/blog",
+        "@id": "https://www.bayshorecommunication.com/blog#blog",
+        "name": "Bayshore Communication Blog",
+        "url": "https://www.bayshorecommunication.com/blog",
       },
-      about: {
+      "about": {
         "@type": "Thing",
-        name: "Mobile Website Design",
-        description:
-          "Professional guide on mobile website design, responsive layouts, Core Web Vitals, touch usability, SEO performance, and business conversion strategy.",
+        "name": "Mobile Website Design and Responsive Web Development",
       },
-      keywords: [
+      "keywords": [
         "mobile website design",
-        "responsive mobile website design",
-        "mobile web design",
-        "mobile-first design",
+        "mobile-friendly website",
         "responsive web design",
-        "mobile website cost",
-        "mobile website speed",
-        "mobile usability",
-        "mobile seo tips",
-        "core web vitals mobile",
+        "mobile website development",
+        "mobile SEO",
+        "website user experience",
+        "small business website design",
+        "website design Florida",
+        "Bayshore Communication",
       ],
-      author: {
+      "author": {
         "@type": "Organization",
-        name: "Bayshore Communication",
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com/",
       },
-      publisher: {
+      "publisher": {
         "@type": "Organization",
-        name: "Bayshore Communication",
-        url: "https://www.bayshorecommunication.com",
-        logo: {
-          "@type": "ImageObject",
-          url: "https://www.bayshorecommunication.com/assets/bayshore-logo.svg",
-        },
+        "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com/",
       },
-      datePublished: "2026-10-14",
-      dateModified: "2026-10-14",
+      "inLanguage": "en-US",
     },
     {
       "@type": "FAQPage",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
+      "@id":
+        "https://www.bayshorecommunication.com/blog/mobile-website-design#faq",
+      "url": "https://www.bayshorecommunication.com/blog/mobile-website-design",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What Is Mobile Website Design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Mobile design optimizes smartphone websites. Layouts fit small screens. Pages display readable content. Buttons enable touch controls. Fast speeds improve loading. Simple menus guide visitors.",
+          },
         },
-      })),
+        {
+          "@type": "Question",
+          "name": "Why Is Mobile Website Design Important?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "People browse websites on smartphones. Mobile design aids user experience. Bad navigation frustrates visitors. Good design helps users. People find information easily. Visitors complete tasks quickly.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What Is Responsive Website Design?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Responsive sites match every screen. Layouts change sizes. Images scale dimensions. Text adjusts scale. Menus change structure. Responsive sites serve smartphones. Pages fit tablets. Screens support laptops. Desktops display full content.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Does Mobile Website Design Help SEO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Mobile design boosts search rankings. Good performance aids usability. Google indexes mobile websites. Site owners must keep vital content. Search engines need accessible pages.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "How Fast Should A Mobile Website Load?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Mobile websites need fast speeds. Google checks loading times. Core Web Vitals measure performance. Optimized images boost speed. Clean scripts help loading. Better hosting improves results. Good structure aids site performance.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "How Much Does Mobile Website Design Cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Mobile design costs vary widely. Simple sites cost hundreds. Basic websites take thousands. Custom pages need larger budgets. Online stores require more money. Web apps demand extra development.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What Are Common Mobile Website Design Mistakes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Tiny text strains eyes. Small buttons hinder taps. Heavy images slow pages. Complex menus confuse users. Intrusive popups block screens. Low contrast hurts visibility. Horizontal scrolling annoys visitors. These errors hurt mobile usability. Small screens need simple designs.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Is Mobile-First Design Better For Businesses?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Mobile-first design highlights vital content. Businesses target key messages. Google rewards mobile indexing. Small screens force clean layouts. Designers cut clutter. Simple layouts serve users.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "How Do I Test A Mobile Website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Test websites on multiple phones. Check pages in different browsers. Review layouts on various screens. Inspect site menus. Verify form fields. Tap all buttons. Examine page images. Measure loading speeds. Read site text. Run tests on slow connections.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Should I Build A Mobile Website Or Mobile App?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "A mobile website usually provides broader access. Users can open it without installing software. Apps become useful when businesses need advanced device features or frequent user interactions.",
+          },
+        },
+      ],
     },
   ],
 };
@@ -388,9 +473,9 @@ export const MobileWebsiteDesignBlog = () => {
       <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
         {/* Key Takeaways */}
         <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
-          <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
+          <h2 className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Key Takeaways
-          </p>
+          </h2>
           <p className="mt-2 sm:mt-3 text-base sm:text-lg leading-7 sm:leading-8">
             Modern mobile web experiences require speed, adaptability, and effortless usability. Keep these core principles front and center:
           </p>

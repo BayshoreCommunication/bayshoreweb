@@ -1,16 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
 const blogImage =
-  "/assets/static-blogs/how-long-does-it-take-to-design-a-website.webp";
+  "/assets/static-blogs/how-much-does-it-cost-to-design-a-medical-website.webp";
 
 const blogImageMeta = {
-  alt: "Laptop displaying a website design for BayShore Communication alongside a notepad outlining discovery, planning, design, development, testing, and launch.",
-  title: "How long does it take to design a website",
+  alt: "Laptop displaying a medical clinic website next to a stethoscope, books, and calculator on a doctor's desk.",
+  title: "Medical Website Design Cost and Budgeting Guide 2026",
   description:
-    "Wondering how long it takes to design a website? Explore the core steps including discovery, planning, design, development, testing, and launch with BayShore Communication to better plan your next digital project timeline.",
+    "A comprehensive breakdown of medical website design costs, covering custom development, patient integrations, features, and ongoing maintenance expenses for healthcare clinics.",
   caption:
-    "Learn about the complete web design process timeline from initial discovery to final launch.",
+    "Learn how much it costs to design and launch a professional medical website for your clinic.",
 };
 
 export const howMuchDoesItCostToDesignAMedicalWebsiteBlog = {
@@ -20,7 +21,7 @@ export const howMuchDoesItCostToDesignAMedicalWebsiteBlog = {
   metaDescription:
     "Discover Medical Website Cost factors in 2026, from design and features to compliance and maintenance, so you can plan your budget confidently.",
   description:
-    "Discover Medical Website Cost factors in 2026, from design and features to compliance and maintenance, so you can plan your budget confidently.",
+    "A comprehensive breakdown of medical website design costs, covering custom development, patient integrations, features, and ongoing maintenance expenses for healthcare clinics.",
   excerpt:
     "Discover Medical Website Cost factors in 2026, from design and features to compliance and maintenance, so you can plan your budget confidently.",
   canonical:
@@ -31,11 +32,11 @@ export const howMuchDoesItCostToDesignAMedicalWebsiteBlog = {
   imageDescription: blogImageMeta.description,
   imageCaption: blogImageMeta.caption,
   imageFit: "contain",
-  imageWidth: 1672,
-  imageHeight: 941,
-  createdAt: "2026-09-27",
-  updatedAt: "2026-09-27",
-  category: ["Web Design", "Healthcare Marketing"],
+  imageWidth: 1756,
+  imageHeight: 896,
+  createdAt: "2026-10-28",
+  updatedAt: "2026-10-28",
+  category: ["Web Design", "Healthcare Marketing", "Medical Website Design"],
   published: true,
   featuredImage: {
     image: {
@@ -54,6 +55,7 @@ const keyPoints = [
   "Custom appointment booking, patient portals, and EHR integrations represent the largest cost drivers.",
   "HIPAA compliance rules and HHS Section 504 accessibility standards should be planned early to avoid rework.",
   "Ongoing website maintenance ($100–$500/mo) is critical for system security, uptime, and compliance updates.",
+  "Phased development allows medical practices to launch essential pages first and expand functionality over time.",
 ];
 
 const bayshorePricingRows = [
@@ -147,7 +149,7 @@ const budgetQuestions = [
 
 const faqs = [
   {
-    question: "How Much Does It Cost To Design A Medical Website? ",
+    question: "How Much Does It Cost To Design A Medical Website?",
     answer:
       "Medical website costs vary widely across the U.S. Simple sites can cost several thousand dollars. Complex platforms exceed $40,000. Features impact the cost. Integrations alter pricing. Security measures change the total.",
   },
@@ -203,12 +205,14 @@ const schemaData = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
+      "@id":
+        "https://www.bayshorecommunication.com/blog/how-much-does-it-cost-to-design-a-medical-website#breadcrumb",
       itemListElement: [
         {
           "@type": "ListItem",
           position: 1,
           name: "Home",
-          item: "https://www.bayshorecommunication.com",
+          item: "https://www.bayshorecommunication.com/",
         },
         {
           "@type": "ListItem",
@@ -219,7 +223,7 @@ const schemaData = {
         {
           "@type": "ListItem",
           position: 3,
-          name: "Medical Website Design Cost",
+          name: "How Much Does It Cost To Design A Medical Website?",
           item:
             "https://www.bayshorecommunication.com/blog/how-much-does-it-cost-to-design-a-medical-website",
         },
@@ -227,6 +231,8 @@ const schemaData = {
     },
     {
       "@type": "BlogPosting",
+      "@id":
+        "https://www.bayshorecommunication.com/blog/how-much-does-it-cost-to-design-a-medical-website#blogposting",
       mainEntityOfPage: {
         "@type": "WebPage",
         "@id":
@@ -238,8 +244,12 @@ const schemaData = {
         "Discover Medical Website Cost factors in 2026, from design and features to compliance and maintenance, so you can plan your budget confidently.",
       url:
         "https://www.bayshorecommunication.com/blog/how-much-does-it-cost-to-design-a-medical-website",
-      image:
-        "https://www.bayshorecommunication.com/assets/static-blogs/how-long-does-it-take-to-design-a-website.webp",
+      image: {
+        "@type": "ImageObject",
+        url:
+          "https://www.bayshorecommunication.com/assets/static-blogs/how-much-does-it-cost-to-design-a-medical-website.webp",
+        caption: "Medical Website Design Cost and Budgeting Guide 2026",
+      },
       isPartOf: {
         "@type": "Blog",
         "@id": "https://www.bayshorecommunication.com/blog",
@@ -248,19 +258,17 @@ const schemaData = {
         "@type": "Thing",
         name: "Medical Website Design Cost",
         description:
-          "An in-depth guide on medical website design costs in 2026, including basic vs custom pricing, feature cost drivers, HIPAA compliance, patient portals, accessibility, and ongoing maintenance.",
+          "A comprehensive breakdown of medical website design costs, covering custom development, patient integrations, features, and ongoing maintenance expenses for healthcare clinics.",
       },
       keywords: [
         "medical website design cost",
         "how much does a medical website cost",
-        "medical website cost 2026",
-        "healthcare website design cost",
-        "doctor website cost",
-        "clinic website development cost",
-        "HIPAA compliant website cost",
+        "healthcare website development pricing",
+        "medical clinic website cost",
         "patient portal development cost",
-        "medical website maintenance cost",
-        "Bayshore Communication medical web design",
+        "HIPAA compliant website cost",
+        "medical website design 2026",
+        "bayshore communication medical web design",
       ],
       author: {
         "@type": "Organization",
@@ -272,15 +280,16 @@ const schemaData = {
         url: "https://www.bayshorecommunication.com",
         logo: {
           "@type": "ImageObject",
-          url:
-            "https://www.bayshorecommunication.com/assets/bayshore-logo.svg",
+          url: "https://www.bayshorecommunication.com/assets/bayshore-logo.svg",
         },
       },
-      datePublished: "2026-09-27",
-      dateModified: "2026-09-27",
+      datePublished: "2026-10-28",
+      dateModified: "2026-10-28",
     },
     {
       "@type": "FAQPage",
+      "@id":
+        "https://www.bayshorecommunication.com/blog/how-much-does-it-cost-to-design-a-medical-website#faq",
       mainEntity: faqs.map((faq) => ({
         "@type": "Question",
         name: faq.question,
@@ -300,7 +309,10 @@ const InlineLink = ({
   href: string;
   children: ReactNode;
 }) => (
-  <Link className="font-semibold text-[#0077B3] underline" href={href}>
+  <Link
+    className="font-semibold text-[#0077B3] underline hover:text-[#005580] transition-colors"
+    href={href}
+  >
     {children}
   </Link>
 );
@@ -313,7 +325,7 @@ const ExternalLink = ({
   children: ReactNode;
 }) => (
   <a
-    className="font-semibold text-[#0077B3] underline"
+    className="font-semibold text-[#0077B3] underline hover:text-[#005580] transition-colors"
     href={href}
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -335,7 +347,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
       {/* Top Banner / Hero Summary */}
       <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 text-white w-full max-w-full overflow-hidden">
         <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff] leading-normal">
-          Medical Web Design | Healthcare Cost &amp; Strategy Guide
+          Medical Web Design | Healthcare Cost &amp; Budgeting Guide
         </p>
         <p className="mt-3 sm:mt-4 max-w-3xl !text-base sm:!text-lg !leading-7 sm:!leading-8 !text-[#d9e7f7]">
           The price of medical website design starts at $5,000 and can be
@@ -347,16 +359,16 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
         </p>
         <div className="mt-5 sm:mt-6 flex flex-wrap gap-2 sm:gap-3 !text-xs sm:!text-sm !text-[#d9e7f7]">
           <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
-            Published: September 27, 2026
+            Published: October 28, 2026
           </span>
           <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
-            Updated: September 27, 2026
+            Updated: October 28, 2026
           </span>
           <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Medical Website Design Cost
           </span>
           <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
-            Healthcare Practice Growth
+            Healthcare Web Design
           </span>
         </div>
       </section>
@@ -364,11 +376,11 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
       <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
         {/* Key Takeaways */}
         <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
+          <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Key Takeaways
-          </p>
+          </h2>
           <p className="mt-3 text-base sm:text-lg leading-7 sm:leading-8">
-            You will waste money without clarity. Use these core takeaways to set your healthcare website budget fast.
+            You will waste money without clarity. Use these core takeaways to set your healthcare website budget fast:
           </p>
           <div className="mt-5 sm:mt-6 grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2">
             {keyPoints.map((point) => (
@@ -426,7 +438,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             does not need complex patient systems.
           </p>
           <p>A typical basic website may include:</p>
-          <ul className="mt-3 space-y-2 pl-5 list-disc text-base leading-7">
+          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
             {basicWebsiteItems.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -476,7 +488,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             requirements can also increase project complexity.
           </p>
           <p>Common cost drivers include:</p>
-          <ul className="mt-3 space-y-2 pl-5 list-disc text-base leading-7">
+          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
             {costDriversItems.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -516,11 +528,12 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
           </p>
         </NumberedSection>
 
-        {/* Mid-Article CTA Banner */}
-        <CallToActionBox
+        {/* Mid-Article CTA Banner matching PdfCta */}
+        <PdfCta
+          eyebrow="Custom Healthcare Web Solutions"
           title="Looking for a Custom Medical Website Solution?"
-          subtitle="Get expert development tailored to your practice's unique needs and compliance standards."
-          buttonText="CONTACT BAYSHORE COMMUNICATION TODAY"
+          text="Get expert development tailored to your practice's unique needs and compliance standards."
+          button="CONTACT BAYSHORE COMMUNICATION TODAY"
           href="/contact"
         />
 
@@ -567,7 +580,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             may also connect with healthcare systems.
           </p>
           <p>A portal might provide:</p>
-          <ul className="mt-3 space-y-2 pl-5 list-disc text-base leading-7">
+          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
             {portalFeatureItems.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -602,7 +615,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             deadline of May 11, 2027. Smaller recipients have until May 10, 2028.
           </p>
           <p>Accessibility can involve:</p>
-          <ul className="mt-3 space-y-2 pl-5 list-disc text-base leading-7">
+          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
             {accessibilityItems.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -630,7 +643,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             Vendor restrictions can also affect development.
           </p>
           <p>Before development, ask these questions:</p>
-          <ul className="mt-3 space-y-2 pl-5 list-disc text-base leading-7">
+          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
             {integrationQuestions.map((q) => (
               <li key={q}>{q}</li>
             ))}
@@ -752,8 +765,8 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             You should ask detailed questions before accepting any quote. A low
             upfront price may exclude important services.
           </p>
-          <p>Ask your provider about:</p>
-          <ul className="mt-3 space-y-2 pl-5 list-disc text-base leading-7">
+          <p className="font-semibold">Ask your provider about:</p>
+          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
             {hiringQuestions.map((q) => (
               <li key={q}>{q}</li>
             ))}
@@ -802,8 +815,8 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             Choose your budget based on your goals. Do not choose it based only
             on industry averages.
           </p>
-          <p>Ask yourself three questions:</p>
-          <ul className="mt-3 space-y-2 pl-5 list-disc text-base leading-7">
+          <p className="font-semibold">Ask yourself three questions:</p>
+          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
             {budgetQuestions.map((q) => (
               <li key={q}>{q}</li>
             ))}
@@ -816,7 +829,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
           <p>
             Bayshore Communication offers multiple development options:
           </p>
-          <ul className="mt-3 space-y-2 pl-5 list-disc text-base leading-7">
+          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
             <li>Corporate Website Design And Development costs $300–$1,500.</li>
             <li>CMS Development costs $600–$2,500.</li>
             <li>Web Application Development costs $1,500–$3,000.</li>
@@ -875,11 +888,12 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
           </div>
         </section>
 
-        {/* Bottom CTA Banner */}
-        <CallToActionBox
+        {/* Bottom CTA Banner matching PdfCta */}
+        <PdfCta
+          eyebrow="Healthcare Digital Solutions"
           title="Ready to Build or Upgrade Your Medical Website?"
-          subtitle="Contact Bayshore Communication for flexible pricing, expert strategy, and high-performing design."
-          buttonText="GET A FREE QUOTE NOW"
+          text="Contact Bayshore Communication for flexible pricing, expert strategy, and high-performing design."
+          button="GET A FREE QUOTE NOW →"
           href="/contact"
         />
 
@@ -938,11 +952,11 @@ const NumberedSection = ({
         {number}
       </div>
       <div className="min-w-0 w-full max-w-full">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight flex items-start gap-2.5 md:block">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight flex items-start gap-2.5 md:block break-words">
           <span className="md:hidden text-[#FE6F1F] shrink-0 font-bold">{number}</span>
           <span className="break-words">{title}</span>
         </h2>
-        <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-2.5 sm:[&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-sm sm:[&>ul]:text-base [&>ul]:leading-6 sm:[&>ul]:leading-7 [&>ul]:list-disc min-w-0">
+        <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-2.5 sm:[&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-base sm:[&>ul]:text-lg [&>ul]:leading-7 sm:[&>ul]:leading-8 [&>ul]:list-disc min-w-0">
           {children}
         </div>
       </div>
@@ -962,7 +976,7 @@ const DataTable = ({
       <span>← Swipe horizontally to view full table →</span>
     </div>
     <div className="w-full max-w-full overflow-x-auto rounded-[8px] border border-[#dce6f2] shadow-sm overscroll-x-contain">
-      <div className="min-w-[560px] sm:min-w-[720px]">
+      <div className="min-w-[560px] sm:min-w-[760px]">
         <div
           className="grid bg-[#101d34] text-xs sm:text-base font-semibold !text-white"
           style={{
@@ -977,19 +991,16 @@ const DataTable = ({
         </div>
         {rows.map((row, idx) => (
           <div
-            key={`${row[0]}-${idx}`}
+            key={`${row.join("-")}-${idx}`}
             className={`grid border-t border-[#dce6f2] text-xs sm:text-base ${
-              idx % 2 === 1 ? "bg-[#f0f4f8]" : "bg-white"
+              idx % 2 === 1 ? "bg-[#f7fbff]" : "bg-white"
             }`}
             style={{
               gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
             }}
           >
-            {row.map((cell, cellIndex) => (
-              <div
-                key={`${cell}-${cellIndex}`}
-                className={`p-2.5 sm:p-4 ${cellIndex === 0 ? "font-semibold" : ""}`}
-              >
+            {row.map((cell, index) => (
+              <div key={`${cell}-${index}`} className="p-2.5 sm:p-4 first:font-semibold">
                 {cell}
               </div>
             ))}
@@ -1000,32 +1011,31 @@ const DataTable = ({
   </div>
 );
 
-const CallToActionBox = ({
+const PdfCta = ({
+  eyebrow,
   title,
-  subtitle,
-  buttonText,
+  text,
+  button,
   href,
 }: {
+  eyebrow: string;
   title: string;
-  subtitle: string;
-  buttonText: string;
+  text: string;
+  button: string;
   href: string;
 }) => (
-  <section className="rounded-[8px] bg-[#005a9c] px-6 py-6 sm:p-6 md:p-8 text-white text-center w-full max-w-full overflow-hidden">
-    <h2 className="text-2xl sm:text-3xl font-bold leading-tight text-white">
-      {title}
-    </h2>
-    <p className="mt-3 max-w-2xl mx-auto !text-base sm:!text-lg !leading-7 sm:!leading-8 !text-[#e0f2fe]">
-      {subtitle}
+  <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 text-white w-full max-w-full overflow-hidden">
+    <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff] leading-normal">
+      {eyebrow}
     </p>
-    <div className="mt-5 sm:mt-6">
-      <Link
-        href={href}
-        className="inline-flex w-full sm:w-auto items-center justify-center text-center rounded-full bg-white px-8 py-3.5 sm:py-4 text-sm sm:text-base font-bold text-[#005a9c] hover:bg-[#e0f2fe] transition-colors shadow-md"
-      >
-        {buttonText}
-      </Link>
-    </div>
+    <h2 className="mt-3 text-2xl sm:text-3xl font-bold leading-tight">{title}</h2>
+    <p className="mt-3 sm:mt-4 max-w-3xl !text-base sm:!text-lg !leading-7 sm:!leading-8 !text-[#d9e7f7]">{text}</p>
+    <Link
+      href={href}
+      className="mt-5 sm:mt-6 inline-flex w-full sm:w-auto items-center justify-center text-center rounded-full bg-[#FE6F1F] px-6 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white hover:bg-[#e05e19] transition-colors"
+    >
+      {button}
+    </Link>
   </section>
 );
 

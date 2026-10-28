@@ -217,12 +217,14 @@ const schemaData = {
   "@graph": [
     {
       "@type": "BreadcrumbList",
+      "@id":
+        "https://www.bayshorecommunication.com/blog/dental-website-design-cost#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
           "position": 1,
           "name": "Home",
-          "item": "https://www.bayshorecommunication.com",
+          "item": "https://www.bayshorecommunication.com/",
         },
         {
           "@type": "ListItem",
@@ -241,6 +243,8 @@ const schemaData = {
     },
     {
       "@type": "BlogPosting",
+      "@id":
+        "https://www.bayshorecommunication.com/blog/dental-website-design-cost#blogposting",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id":
@@ -252,38 +256,43 @@ const schemaData = {
         "Explore dental website costs in 2026, including design, development, features, hosting, and maintenance factors that can affect the overall budget.",
       "url":
         "https://www.bayshorecommunication.com/blog/dental-website-design-cost",
-      "image":
-        "https://www.bayshorecommunication.com/assets/static-blogs/dental-website-design-cost.webp",
+      "image": {
+        "@type": "ImageObject",
+        "url":
+          "https://www.bayshorecommunication.com/assets/static-blogs/dental-website-design-cost.webp",
+        "caption": "Dental Website Design Cost",
+      },
       "isPartOf": {
         "@type": "Blog",
-        "@id": "https://www.bayshorecommunication.com/blog",
+        "@id": "https://www.bayshorecommunication.com/blog#blog",
+        "name": "Bayshore Communication Blog",
+        "url": "https://www.bayshorecommunication.com/blog",
       },
       "about": {
         "@type": "Thing",
-        "name": "Dental Website Design Cost",
-        "description":
-          "An overview of dental website design cost factors, packages, monthly maintenance, SEO features, and ROI for dental practices.",
+        "name": "Dental Website Design",
       },
       "keywords": [
         "dental website design cost",
+        "dental website design",
         "dental website cost",
-        "cost of dental website design",
-        "dentist website design cost",
+        "dentist website design",
+        "dental web design",
+        "dental website development",
         "dental website pricing",
-        "dental website development cost",
-        "dental clinic website cost",
-        "dental practice website cost",
-        "dental SEO cost",
-        "dental marketing cost",
+        "dental website design services",
+        "dental SEO",
+        "dental website",
       ],
       "author": {
         "@type": "Organization",
         "name": "Bayshore Communication",
+        "url": "https://www.bayshorecommunication.com/",
       },
       "publisher": {
         "@type": "Organization",
         "name": "Bayshore Communication",
-        "url": "https://www.bayshorecommunication.com",
+        "url": "https://www.bayshorecommunication.com/",
         "logo": {
           "@type": "ImageObject",
           "url":
@@ -295,14 +304,55 @@ const schemaData = {
     },
     {
       "@type": "FAQPage",
-      "mainEntity": faqs.map((faq) => ({
-        "@type": "Question",
-        "name": faq.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": faq.answer,
+      "@id":
+        "https://www.bayshorecommunication.com/blog/dental-website-design-cost#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What Is A Reasonable Budget For A Dental Website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "A reasonable budget is 2,500–8,000 upfront. Add 150–450 monthly. This range usually covers custom design, clear copy, mobile speed basics, and simple lead tracking.",
+          },
         },
-      })),
+        {
+          "@type": "Question",
+          "name": "Why Do Dental Websites Have Ongoing Monthly Fees?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Monthly fees cover hosting services. Regular plans include security updates. Neglect causes technical failures. Hackers target unprotected sites. Routine maintenance beats emergency repair costs.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Can I Use A Template And Still Get Patients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Yes, if your market is not crowded. Templates can convert with strong copy and clear calls. But ranking locally is harder. Custom UX and SEO pages usually outperform templates.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "How Long Does A Dental Website Project Take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Most projects take 3–6 weeks. Templates can take 1–2 weeks. High-performance SEO builds take 6–10 weeks. Delays often come from missing content and approvals.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What Adds The Most Cost To A Dental Website?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text":
+              "Custom copywriting and SEO service pages raise costs most. Photo and video also add cost. Integrations like booking and call tracking add setup time and testing needs.",
+          },
+        },
+      ],
     },
   ],
 };
@@ -375,9 +425,9 @@ export const DentalWebsiteDesignCostBlog = () => {
 
       <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
         <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
-          <p className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
+          <h2 className="text-xs sm:text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Key Takeaways
-          </p>
+          </h2>
           <p className="mt-2 sm:mt-3 text-base sm:text-lg leading-7 sm:leading-8">
             You will waste money without clarity. Use these points to set your budget fast.
           </p>

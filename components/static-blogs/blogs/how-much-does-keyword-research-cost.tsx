@@ -360,9 +360,9 @@ export const HowMuchDoesKeywordResearchCostBlog = () => {
 
       <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
         <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
+          <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Key Takeaways
-          </p>
+          </h2>
           <p className="mt-3 text-base sm:text-lg leading-7 sm:leading-8">
             Clear keyword research protects your budget and prevents wasted content. Use these essential takeaways to calibrate your investment:
           </p>
