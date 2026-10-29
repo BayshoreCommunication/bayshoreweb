@@ -346,10 +346,10 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
 
       {/* Top Banner / Hero Summary */}
       <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 text-white w-full max-w-full overflow-hidden">
-        <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff] leading-normal">
+        <p className="text-sm sm:text-base font-semibold uppercase tracking-[0.18em] text-[#8ed8ff] leading-normal">
           Medical Web Design | Healthcare Cost &amp; Budgeting Guide
         </p>
-        <p className="mt-3 sm:mt-4 max-w-3xl !text-base sm:!text-lg !leading-7 sm:!leading-8 !text-[#d9e7f7]">
+        <p className="mt-3 sm:mt-4 max-w-3xl !text-base sm:!text-lg md:!text-xl !leading-7 sm:!leading-8 md:!leading-9 !text-[#d9e7f7]">
           The price of medical website design starts at $5,000 and can be
           $50,000+ for the initial setup. It is contingent upon the
           project&rsquo;s complexity, the size of the organization, and the
@@ -357,7 +357,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
           hundred dollars a year, whereas a professional site built by an agency
           varies by tier.
         </p>
-        <div className="mt-5 sm:mt-6 flex flex-wrap gap-2 sm:gap-3 !text-xs sm:!text-sm !text-[#d9e7f7]">
+        <div className="mt-5 sm:mt-6 flex flex-wrap gap-2 sm:gap-3 !text-sm sm:!text-base !text-[#d9e7f7]">
           <span className="rounded-full border border-white/20 px-3 py-1.5 sm:px-4 sm:py-2">
             Published: October 28, 2026
           </span>
@@ -376,19 +376,19 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
       <div className="mt-6 sm:mt-8 space-y-6 sm:space-y-8">
         {/* Key Takeaways */}
         <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
-          <h2 className="text-sm font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
+          <h2 className="text-lg sm:text-xl md:text-2xl font-bold uppercase tracking-[0.18em] text-[#FE6F1F]">
             Key Takeaways
           </h2>
-          <p className="mt-3 text-base sm:text-lg leading-7 sm:leading-8">
+          <p className="mt-3 text-base sm:text-lg md:text-xl leading-7 sm:leading-8 md:leading-9">
             You will waste money without clarity. Use these core takeaways to set your healthcare website budget fast:
           </p>
           <div className="mt-5 sm:mt-6 grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2">
             {keyPoints.map((point) => (
               <div
                 key={point}
-                className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-3.5 sm:p-4"
+                className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-4 sm:p-5"
               >
-                <p className="text-sm sm:text-base leading-6 sm:leading-7 text-[#162033]">{point}</p>
+                <p className="!text-lg sm:!text-xl !leading-8 sm:!leading-9 font-medium text-[#162033]">{point}</p>
               </div>
             ))}
           </div>
@@ -438,7 +438,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             does not need complex patient systems.
           </p>
           <p>A typical basic website may include:</p>
-          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
+          <ul className="mt-3 sm:mt-4 space-y-3 sm:space-y-3.5 pl-6 sm:pl-8 list-disc !text-lg sm:!text-xl lg:!text-2xl !leading-8 sm:!leading-9 text-[#162033] [&>li]:!text-lg sm:[&>li]:!text-xl lg:[&>li]:!text-2xl [&>li]:!leading-8 sm:[&>li]:!leading-9">
             {basicWebsiteItems.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -488,7 +488,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             requirements can also increase project complexity.
           </p>
           <p>Common cost drivers include:</p>
-          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
+          <ul className="mt-3 sm:mt-4 space-y-3 sm:space-y-3.5 pl-6 sm:pl-8 list-disc !text-lg sm:!text-xl lg:!text-2xl !leading-8 sm:!leading-9 text-[#162033] [&>li]:!text-lg sm:[&>li]:!text-xl lg:[&>li]:!text-2xl [&>li]:!leading-8 sm:[&>li]:!leading-9">
             {costDriversItems.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -531,7 +531,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
         {/* Mid-Article CTA Banner matching PdfCta */}
         <PdfCta
           eyebrow="Custom Healthcare Web Solutions"
-          title="Looking for a Custom Medical Website Solution?"
+          title="Looking for an Affordable, High-Converting Medical Website?"
           text="Get expert development tailored to your practice's unique needs and compliance standards."
           button="CONTACT BAYSHORE COMMUNICATION TODAY"
           href="/contact"
@@ -580,7 +580,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             may also connect with healthcare systems.
           </p>
           <p>A portal might provide:</p>
-          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
+          <ul className="mt-3 sm:mt-4 space-y-3 sm:space-y-3.5 pl-6 sm:pl-8 list-disc !text-lg sm:!text-xl lg:!text-2xl !leading-8 sm:!leading-9 text-[#162033] [&>li]:!text-lg sm:[&>li]:!text-xl lg:[&>li]:!text-2xl [&>li]:!leading-8 sm:[&>li]:!leading-9">
             {portalFeatureItems.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -615,7 +615,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             deadline of May 11, 2027. Smaller recipients have until May 10, 2028.
           </p>
           <p>Accessibility can involve:</p>
-          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
+          <ul className="mt-3 sm:mt-4 space-y-3 sm:space-y-3.5 pl-6 sm:pl-8 list-disc !text-lg sm:!text-xl lg:!text-2xl !leading-8 sm:!leading-9 text-[#162033] [&>li]:!text-lg sm:[&>li]:!text-xl lg:[&>li]:!text-2xl [&>li]:!leading-8 sm:[&>li]:!leading-9">
             {accessibilityItems.map((item) => (
               <li key={item}>{item}</li>
             ))}
@@ -643,7 +643,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             Vendor restrictions can also affect development.
           </p>
           <p>Before development, ask these questions:</p>
-          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
+          <ul className="mt-3 sm:mt-4 space-y-3 sm:space-y-3.5 pl-6 sm:pl-8 list-disc !text-lg sm:!text-xl lg:!text-2xl !leading-8 sm:!leading-9 text-[#162033] [&>li]:!text-lg sm:[&>li]:!text-xl lg:[&>li]:!text-2xl [&>li]:!leading-8 sm:[&>li]:!leading-9">
             {integrationQuestions.map((q) => (
               <li key={q}>{q}</li>
             ))}
@@ -671,35 +671,35 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
           </p>
           <div className="mt-4 grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
             <div className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-5">
-              <h3 className="text-lg font-bold text-[#101d34]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#101d34]">
                 Corporate Web Design
               </h3>
-              <p className="mt-2 text-2xl font-bold text-[#FE6F1F]">
+              <p className="mt-2 text-2xl sm:text-3xl font-bold text-[#FE6F1F]">
                 $300 – $1,500
               </p>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
+              <p className="mt-2 text-base sm:text-lg leading-7 text-[#2c3e50]">
                 Ideal for clinics seeking a clean, trustworthy, and modern web presence.
               </p>
             </div>
             <div className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-5">
-              <h3 className="text-lg font-bold text-[#101d34]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#101d34]">
                 CMS Development
               </h3>
-              <p className="mt-2 text-2xl font-bold text-[#FE6F1F]">
+              <p className="mt-2 text-2xl sm:text-3xl font-bold text-[#FE6F1F]">
                 $600 – $2,500
               </p>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
+              <p className="mt-2 text-base sm:text-lg leading-7 text-[#2c3e50]">
                 Flexible content management for easy updates to staff, blogs, and services.
               </p>
             </div>
             <div className="rounded-[8px] border border-[#dce6f2] bg-[#f7fbff] p-5">
-              <h3 className="text-lg font-bold text-[#101d34]">
+              <h3 className="text-xl sm:text-2xl font-bold text-[#101d34]">
                 Web App Development
               </h3>
-              <p className="mt-2 text-2xl font-bold text-[#FE6F1F]">
+              <p className="mt-2 text-2xl sm:text-3xl font-bold text-[#FE6F1F]">
                 $1,500 – $3,000
               </p>
-              <p className="mt-2 text-sm leading-6 text-gray-600">
+              <p className="mt-2 text-base sm:text-lg leading-7 text-[#2c3e50]">
                 Custom interactive systems, workflows, and advanced clinic functionality.
               </p>
             </div>
@@ -766,7 +766,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             upfront price may exclude important services.
           </p>
           <p className="font-semibold">Ask your provider about:</p>
-          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
+          <ul className="mt-3 sm:mt-4 space-y-3 sm:space-y-3.5 pl-6 sm:pl-8 list-disc !text-lg sm:!text-xl lg:!text-2xl !leading-8 sm:!leading-9 text-[#162033] [&>li]:!text-lg sm:[&>li]:!text-xl lg:[&>li]:!text-2xl [&>li]:!leading-8 sm:[&>li]:!leading-9">
             {hiringQuestions.map((q) => (
               <li key={q}>{q}</li>
             ))}
@@ -816,7 +816,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
             on industry averages.
           </p>
           <p className="font-semibold">Ask yourself three questions:</p>
-          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
+          <ul className="mt-3 sm:mt-4 space-y-3 sm:space-y-3.5 pl-6 sm:pl-8 list-disc !text-lg sm:!text-xl lg:!text-2xl !leading-8 sm:!leading-9 text-[#162033] [&>li]:!text-lg sm:[&>li]:!text-xl lg:[&>li]:!text-2xl [&>li]:!leading-8 sm:[&>li]:!leading-9">
             {budgetQuestions.map((q) => (
               <li key={q}>{q}</li>
             ))}
@@ -829,7 +829,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
           <p>
             Bayshore Communication offers multiple development options:
           </p>
-          <ul className="mt-3 sm:mt-4 space-y-2.5 sm:space-y-3 pl-5 list-disc text-base sm:text-lg leading-7 sm:leading-8">
+          <ul className="mt-3 sm:mt-4 space-y-3 sm:space-y-3.5 pl-6 sm:pl-8 list-disc !text-lg sm:!text-xl lg:!text-2xl !leading-8 sm:!leading-9 text-[#162033] [&>li]:!text-lg sm:[&>li]:!text-xl lg:[&>li]:!text-2xl [&>li]:!leading-8 sm:[&>li]:!leading-9">
             <li>Corporate Website Design And Development costs $300–$1,500.</li>
             <li>CMS Development costs $600–$2,500.</li>
             <li>Web Application Development costs $1,500–$3,000.</li>
@@ -861,8 +861,8 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
 
         {/* Conclusion */}
         <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
-          <h2 className="text-2xl sm:text-3xl font-bold leading-tight">Conclusion</h2>
-          <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">Conclusion</h2>
+          <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg lg:text-xl leading-7 sm:leading-8 lg:leading-9">
             <p>
               Your website should do more than display your medical services. It
               should help patients understand their options. It should also make
@@ -891,7 +891,7 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
         {/* Bottom CTA Banner matching PdfCta */}
         <PdfCta
           eyebrow="Healthcare Digital Solutions"
-          title="Ready to Build or Upgrade Your Medical Website?"
+          title="Ready to Launch Your Healthcare Practice Website?"
           text="Contact Bayshore Communication for flexible pricing, expert strategy, and high-performing design."
           button="GET A FREE QUOTE NOW →"
           href="/contact"
@@ -899,10 +899,10 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
 
         {/* FAQs */}
         <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#0077B3]">
+          <p className="text-sm sm:text-base font-bold uppercase tracking-[0.18em] text-[#0077B3]">
             Frequently Asked Questions
           </p>
-          <h2 className="mt-3 text-2xl sm:text-3xl font-bold leading-tight">
+          <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">
             Frequently Asked Questions
           </h2>
           <div className="mt-6 space-y-5">
@@ -911,10 +911,10 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
                 key={faq.question}
                 className="border-b border-[#dce6f2] pb-5 last:border-b-0 last:pb-0"
               >
-                <h3 className="text-lg sm:text-xl font-bold text-[#101d34]">
+                <h3 className="text-xl sm:text-2xl font-bold text-[#101d34]">
                   Q. {faq.question}
                 </h3>
-                <p className="mt-2 text-base sm:text-lg leading-7 sm:leading-8 text-[#162033]">
+                <p className="mt-2 text-base sm:text-lg lg:text-xl leading-7 sm:leading-8 lg:leading-9 text-[#162033]">
                   {faq.answer}
                 </p>
               </div>
@@ -924,10 +924,10 @@ export const HowMuchDoesItCostToDesignAMedicalWebsiteBlog = () => {
 
         {/* Disclaimer */}
         <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
-          <h2 className="text-xl sm:text-2xl font-bold leading-tight text-gray-700">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight text-[#101d34]">
             Disclaimer
           </h2>
-          <p className="mt-3 text-sm sm:text-base leading-6 sm:leading-7 text-gray-600">
+          <p className="mt-3 text-base sm:text-lg leading-7 sm:leading-8 text-gray-700">
             This blog is for informational purposes only. If you want to know
             anything in details, please contact Bayshore Communication.
           </p>
@@ -948,15 +948,15 @@ const NumberedSection = ({
 }) => (
   <section className="rounded-[8px] bg-white px-6 py-6 sm:p-6 md:p-8 shadow-sm w-full max-w-full overflow-hidden">
     <div className="grid gap-3 sm:gap-4 md:grid-cols-[72px_1fr] min-w-0">
-      <div className="hidden md:block text-4xl font-bold leading-none text-[#FE6F1F]">
+      <div className="hidden md:block text-4xl md:text-5xl font-extrabold leading-none text-[#FE6F1F]">
         {number}
       </div>
       <div className="min-w-0 w-full max-w-full">
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight flex items-start gap-2.5 md:block break-words">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight flex items-start gap-2.5 md:block break-words">
           <span className="md:hidden text-[#FE6F1F] shrink-0 font-bold">{number}</span>
           <span className="break-words">{title}</span>
         </h2>
-        <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg leading-7 sm:leading-8 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl [&>h3]:font-bold [&>ul]:space-y-2.5 sm:[&>ul]:space-y-3 [&>ul]:pl-5 [&>ul]:text-base sm:[&>ul]:text-lg [&>ul]:leading-7 sm:[&>ul]:leading-8 [&>ul]:list-disc min-w-0">
+        <div className="mt-4 sm:mt-5 space-y-4 sm:space-y-5 text-base sm:text-lg lg:text-xl leading-7 sm:leading-8 lg:leading-9 [&>blockquote]:border-l-4 [&>blockquote]:border-[#FE6F1F] [&>blockquote]:bg-[#fff7f1] [&>blockquote]:p-4 sm:[&>blockquote]:p-5 [&>blockquote]:text-lg sm:[&>blockquote]:text-xl [&>h3]:pt-2 sm:[&>h3]:pt-3 [&>h3]:text-xl sm:[&>h3]:text-2xl md:[&>h3]:text-3xl [&>h3]:font-bold [&>ul]:space-y-3 sm:[&>ul]:space-y-3.5 [&>ul]:pl-6 sm:[&>ul]:pl-8 [&>ul]:!text-lg sm:[&>ul]:!text-xl lg:[&>ul]:!text-2xl [&>ul]:!leading-8 sm:[&>ul]:!leading-9 [&>ul]:list-disc [&>ul>li]:!text-lg sm:[&>ul>li]:!text-xl lg:[&>ul>li]:!text-2xl [&>ul>li]:!leading-8 sm:[&>ul>li]:!leading-9 [&>ul>li]:text-[#162033] min-w-0">
           {children}
         </div>
       </div>
@@ -978,13 +978,13 @@ const DataTable = ({
     <div className="w-full max-w-full overflow-x-auto rounded-[8px] border border-[#dce6f2] shadow-sm overscroll-x-contain">
       <div className="min-w-[560px] sm:min-w-[760px]">
         <div
-          className="grid bg-[#101d34] text-xs sm:text-base font-semibold !text-white"
+          className="grid bg-[#101d34] text-sm sm:text-base md:text-lg font-semibold !text-white"
           style={{
             gridTemplateColumns: `repeat(${columns.length}, minmax(0, 1fr))`,
           }}
         >
           {columns.map((column) => (
-            <div key={column} className="p-2.5 sm:p-4">
+            <div key={column} className="p-3 sm:p-4 md:p-5">
               {column}
             </div>
           ))}
@@ -992,7 +992,7 @@ const DataTable = ({
         {rows.map((row, idx) => (
           <div
             key={`${row.join("-")}-${idx}`}
-            className={`grid border-t border-[#dce6f2] text-xs sm:text-base ${
+            className={`grid border-t border-[#dce6f2] text-sm sm:text-base md:text-lg ${
               idx % 2 === 1 ? "bg-[#f7fbff]" : "bg-white"
             }`}
             style={{
@@ -1000,7 +1000,7 @@ const DataTable = ({
             }}
           >
             {row.map((cell, index) => (
-              <div key={`${cell}-${index}`} className="p-2.5 sm:p-4 first:font-semibold">
+              <div key={`${cell}-${index}`} className="p-3 sm:p-4 md:p-5 first:font-semibold">
                 {cell}
               </div>
             ))}
@@ -1025,16 +1025,17 @@ const PdfCta = ({
   href: string;
 }) => (
   <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 text-white w-full max-w-full overflow-hidden">
-    <p className="text-xs sm:text-sm font-semibold uppercase tracking-[0.18em] text-[#8ed8ff] leading-normal">
+    <p className="text-sm sm:text-base font-semibold uppercase tracking-[0.18em] text-[#8ed8ff] leading-normal">
       {eyebrow}
     </p>
-    <h2 className="mt-3 text-2xl sm:text-3xl font-bold leading-tight">{title}</h2>
-    <p className="mt-3 sm:mt-4 max-w-3xl !text-base sm:!text-lg !leading-7 sm:!leading-8 !text-[#d9e7f7]">{text}</p>
+    <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">{title}</h2>
+    <p className="mt-3 sm:mt-4 max-w-3xl !text-base sm:!text-lg lg:!text-xl !leading-7 sm:!leading-8 lg:!leading-9 !text-[#d9e7f7]">{text}</p>
     <Link
       href={href}
-      className="mt-5 sm:mt-6 inline-flex w-full sm:w-auto items-center justify-center text-center rounded-full bg-[#FE6F1F] px-6 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-white hover:bg-[#e05e19] transition-colors"
+      style={{ color: "#ffffff", textDecoration: "none" }}
+      className="mt-5 sm:mt-6 inline-flex w-full sm:w-auto items-center justify-center text-center rounded-full bg-[#FE6F1F] px-6 py-3.5 sm:py-4 text-base sm:text-lg font-bold !text-white !no-underline hover:bg-[#e05e19] hover:!text-white hover:!no-underline transition-colors shadow-md"
     >
-      {button}
+      <span className="!text-white font-bold">{button}</span>
     </Link>
   </section>
 );
