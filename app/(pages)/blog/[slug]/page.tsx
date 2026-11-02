@@ -180,7 +180,7 @@ const IndividualBlog = async ({ params }: { params: { slug: string } }) => {
             <div className="flex-[3] min-w-0 w-full max-w-full overflow-hidden">
               <div className="w-full max-w-full overflow-hidden">
                 <div>
-                  <h1 className="font-semibold !text-[24px] xs:!text-[28px] sm:!text-[36px] md:!text-[50px] lg:!text-[64px] xl:!text-[72px] leading-tight break-words !text-left">
+                  <h1 className="font-semibold !text-[24px] xs:!text-[28px] sm:!text-[32px] md:!text-[38px] lg:!text-[44px] xl:!text-[48px] leading-tight break-words !text-left">
                     {blog.title}
                   </h1>
                 </div>

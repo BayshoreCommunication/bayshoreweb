@@ -244,31 +244,30 @@ const schemaData = {
         "Discover Medical Website Cost factors in 2026, from design and features to compliance and maintenance, so you can plan your budget confidently.",
       url:
         "https://www.bayshorecommunication.com/blog/how-much-does-it-cost-to-design-a-medical-website",
-      image: {
-        "@type": "ImageObject",
-        url:
-          "https://www.bayshorecommunication.com/assets/static-blogs/how-much-does-it-cost-to-design-a-medical-website.webp",
-        caption: "Medical Website Design Cost and Budgeting Guide 2026",
-      },
       isPartOf: {
         "@type": "Blog",
-        "@id": "https://www.bayshorecommunication.com/blog",
+        "@id": "https://www.bayshorecommunication.com/blog#blog",
+        name: "Bayshore Communication Blog",
+        url: "https://www.bayshorecommunication.com/blog",
       },
       about: {
         "@type": "Thing",
-        name: "Medical Website Design Cost",
-        description:
-          "A comprehensive breakdown of medical website design costs, covering custom development, patient integrations, features, and ongoing maintenance expenses for healthcare clinics.",
+        name:
+          "Medical Website Design and Healthcare Website Development Costs",
       },
       keywords: [
         "medical website design cost",
-        "how much does a medical website cost",
-        "healthcare website development pricing",
-        "medical clinic website cost",
+        "healthcare website design cost",
+        "medical website development",
+        "medical web design",
+        "healthcare website development",
+        "custom medical website",
+        "HIPAA compliant website design",
         "patient portal development cost",
-        "HIPAA compliant website cost",
-        "medical website design 2026",
-        "bayshore communication medical web design",
+        "medical website maintenance",
+        "healthcare website accessibility",
+        "medical website integrations",
+        "Bayshore Communication",
       ],
       author: {
         "@type": "Organization",
@@ -277,27 +276,115 @@ const schemaData = {
       publisher: {
         "@type": "Organization",
         name: "Bayshore Communication",
-        url: "https://www.bayshorecommunication.com",
+        url: "https://www.bayshorecommunication.com/",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.bayshorecommunication.com/assets/bayshore-logo.svg",
+          url:
+            "https://www.bayshorecommunication.com/assets/bayshore-logo.svg",
         },
       },
       datePublished: "2026-10-28",
       dateModified: "2026-10-28",
+      inLanguage: "en-US",
     },
     {
       "@type": "FAQPage",
       "@id":
         "https://www.bayshorecommunication.com/blog/how-much-does-it-cost-to-design-a-medical-website#faq",
-      mainEntity: faqs.map((faq) => ({
-        "@type": "Question",
-        name: faq.question,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: faq.answer,
+      url:
+        "https://www.bayshorecommunication.com/blog/how-much-does-it-cost-to-design-a-medical-website",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "How Much Does It Cost To Design A Medical Website?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Medical website costs vary widely across the U.S. Simple sites can cost several thousand dollars. Complex platforms exceed $40,000. Features impact the cost. Integrations alter pricing. Security measures change the total.",
+          },
         },
-      })),
+        {
+          "@type": "Question",
+          name: "How Much Does A Basic Medical Website Cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "A basic medical website may cost 3,000–10,000. It usually includes essential pages, service information, provider profiles, contact details, and basic optimization. Simpler projects can cost less with limited customization.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How Much Does Bayshore Communication Charge?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Bayshore Communication offers corporate website development for 300–1,500. CMS development costs 600–2,500. Web application development costs 1,500–3,000. Maintenance costs 100–500.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Does HIPAA Make Medical Websites More Expensive?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "HIPAA-related requirements can increase costs when websites handle protected health information. Patient portals, medical forms, and certain integrations need additional safeguards. Your specific setup determines the necessary compliance measures.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How Much Does A Patient Portal Cost?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "A custom patient portal can cost 25,000–60,000+. Secure messaging, EHR integration, patient accounts, and medical information increase complexity. Existing platforms may reduce custom development requirements.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "How Long Does Medical Website Development Take?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "A simple website can take four to eight weeks. Complex websites can take eight to sixteen weeks. System integrations delay development schedules. Content preparation slows delivery. Client revisions lengthen project timelines. Approval waits stretch deadlines.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do Medical Websites Need Accessibility Features?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Accessibility should be considered during medical website development. Certain HHS-funded organizations have Section 504 accessibility requirements. HHS updated related compliance deadlines in May 2026.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What Features Increase Medical Website Costs?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Patient portals raise overall expenses. System integrations increase development costs. Booking tools expand software budgets. Telehealth options demand extra funds. Multiple locations require additional technical work. Custom workflows need extensive testing.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Can A Medical Website Start With A Small Budget?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "Yes, a medical practice can start with essential features. You can add advanced functionality later. Bayshore Communication offers corporate websites starting at $300. CMS projects start at $600.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "What Should A Medical Website Include?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text:
+              "A medical website should clearly explain services and providers. It should include contact information and location details. Depending on your needs, it can also include booking, FAQs, SEO, and patient features.",
+          },
+        },
+      ],
     },
   ],
 };
@@ -1024,18 +1111,18 @@ const PdfCta = ({
   button: string;
   href: string;
 }) => (
-  <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 text-white w-full max-w-full overflow-hidden">
-    <p className="text-sm sm:text-base font-semibold uppercase tracking-[0.18em] text-[#8ed8ff] leading-normal">
+  <section className="rounded-[8px] bg-[#101d34] px-6 py-6 sm:p-6 md:p-8 !text-white w-full max-w-full overflow-hidden">
+    <p className="text-sm sm:text-base font-semibold uppercase tracking-[0.18em] !text-[#8ed8ff] leading-normal">
       {eyebrow}
     </p>
-    <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight">{title}</h2>
+    <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold leading-tight !text-white">{title}</h2>
     <p className="mt-3 sm:mt-4 max-w-3xl !text-base sm:!text-lg lg:!text-xl !leading-7 sm:!leading-8 lg:!leading-9 !text-[#d9e7f7]">{text}</p>
     <Link
       href={href}
       style={{ color: "#ffffff", textDecoration: "none" }}
       className="mt-5 sm:mt-6 inline-flex w-full sm:w-auto items-center justify-center text-center rounded-full bg-[#FE6F1F] px-6 py-3.5 sm:py-4 text-base sm:text-lg font-bold !text-white !no-underline hover:bg-[#e05e19] hover:!text-white hover:!no-underline transition-colors shadow-md"
     >
-      <span className="!text-white font-bold">{button}</span>
+      <span style={{ color: "#ffffff", textDecoration: "none" }} className="!text-white font-bold">{button}</span>
     </Link>
   </section>
 );
