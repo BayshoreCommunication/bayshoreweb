@@ -61,8 +61,12 @@ import HowMuchDoesKeywordResearchCostBlog, {
 import MobileWebsiteDesignBlog, {
   mobileWebsiteDesignBlog,
 } from "./blogs/mobile-website-design";
+import HowToGetLeadsForYourBusinessBlog, {
+  howToGetLeadsForYourBusinessBlog,
+} from "./blogs/how-to-get-leads-for-your-business";
 
 export const staticBlogs = [
+  howToGetLeadsForYourBusinessBlog,
   howExpertiseBasedContentBuildsTrustBlog,
   smallFieldTweaksBlog,
   howMuchDoSeoServicesCostBlog,
@@ -123,6 +127,7 @@ export const staticBlogComponents = {
   [howMuchDoesKeywordResearchCostBlog.slug]:
     HowMuchDoesKeywordResearchCostBlog,
   [mobileWebsiteDesignBlog.slug]: MobileWebsiteDesignBlog,
+  [howToGetLeadsForYourBusinessBlog.slug]: HowToGetLeadsForYourBusinessBlog,
 };
 
 
