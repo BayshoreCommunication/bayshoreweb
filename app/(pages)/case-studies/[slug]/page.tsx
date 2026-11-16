@@ -4,7 +4,7 @@ import SectionLayout from "@/components/universal/SectionLayout";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
-import { caseindv } from "../page";
+import { caseindv } from "@/config/caseStudies";
 import parser from "html-react-parser";
 import AboutUs from "@/components/universal/AboutUs";
 import Reveal from "@/components/motion/Reveal";

@@ -16,7 +16,6 @@ export const metadata: Metadata = {
 };
 
 import { caseindv } from "@/config/caseStudies";
-export { caseindv };
 
 const Page = () => {
   return (
