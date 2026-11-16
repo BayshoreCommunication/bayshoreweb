@@ -1,93 +1,242 @@
+import fs from "fs";
+import path from "path";
+import type { MetadataRoute } from "next";
 import { services } from "@/components/unique/services/Service";
 import { serviceCategories } from "@/config/data";
+import { caseindv } from "@/config/caseStudies";
 import { staticBlogs } from "@/components/static-blogs";
 import GetAllBlogData from "@/lib/GetAllBlogData";
 
-type Sitemap = Array<{
-  url: string;
-  lastModified?: string | Date;
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
+const BASE_URL = "https://www.bayshorecommunication.com";
+
+type SitemapEntry = MetadataRoute.Sitemap[number] & {
   changeFrequency?: string;
   priority?: number;
-}>;
+};
 
-export default async function Sitemap(): Promise<Sitemap> {
-  const baseUrl = "https://www.bayshorecommunication.com";
+const EXCLUDED_SEGMENTS = new Set(["api", "private", "(auth)"]);
+const PAGE_FILE_NAMES = new Set(["page.tsx", "page.ts", "page.jsx", "page.js"]);
 
-  // 1. Static Pages
-  const staticPages = [
-    "",
-    "/about-us",
-    "/blog",
-    "/career",
-    "/case-studies",
-    "/company-profile",
-    "/contact",
-    "/corporate-photoshoot",
-    "/customize-plan",
-    "/faq",
-    "/growth-plan",
-    "/industries-we-serve",
-    "/marketing-perspectives-form",
-    "/our-services",
-    "/privacy-policy",
-    "/refer-client",
-    "/terms-conditions",
-    "/printing-package",
-    "/printing-package/services",
-    "/business-growth",
-    "/business-idea",
-    "/connect",
-    "/giftfromus",
-    "/marketing-for-law-firm",
-    "/marketing-solutions",
-    "/partner-up",
-    "/strategy-session",
-    
-    // SEO Services Pages
-    "/brandon-seo-company",
-    "/law-firm-seo-fort-myers",
-    "/lawyer-seo-agency-tampa",
-    "/local-seo-for-lawyers-florida",
-    "/local-seo-for-small-businesses-naples",
-    "/orlando-law-firm-seo-agency",
-    "/plant-city-seo-company",
-    "/real-estate-seo-services-florida",
-    "/seo-company-dunedin",
-    "/seo-company-largo-fl",
-    "/seo-company-spring-hill",
-    "/seo-company-wesley-chapel",
-    "/dental-seo-services-tampa",
-    "/seo-for-small-businesses-florida",
-  ];
+const FALLBACK_STATIC_PAGES = [
+  "",
+  "/about-us",
+  "/blog",
+  "/career",
+  "/case-studies",
+  "/company-profile",
+  "/contact",
+  "/corporate-photoshoot",
+  "/customize-plan",
+  "/faq",
+  "/growth-plan",
+  "/industries-we-serve",
+  "/marketing-perspectives-form",
+  "/our-services",
+  "/privacy-policy",
+  "/refer-client",
+  "/terms-conditions",
+  "/printing-package",
+  "/printing-package/services",
+  "/business-growth",
+  "/business-idea",
+  "/connect",
+  "/giftfromus",
+  "/marketing-for-law-firm",
+  "/marketing-solutions",
+  "/partner-up",
+  "/strategy-session",
+  "/bayshore-solutions",
+  "/bayshore-solutions/contact",
+  "/bayshore-solutions/get-started",
+  "/bayshore-solutions/solutions",
+  "/bayshoresolutions",
+  "/lawyer-lead-generation-naples",
+  "/legal-lead-generation-florida",
+  "/local-lead-generation-florida",
+  "/brandon-seo-company",
+  "/dental-seo-services-tampa",
+  "/florida-seo-company",
+  "/law-firm-seo-fort-myers",
+  "/lawyer-seo-agency-tampa",
+  "/local-seo-for-lawyers-florida",
+  "/local-seo-for-small-businesses-naples",
+  "/orlando-law-firm-seo-agency",
+  "/plant-city-seo-company",
+  "/real-estate-seo-services-florida",
+  "/seo-company-dunedin",
+  "/seo-company-largo-fl",
+  "/seo-company-spring-hill",
+  "/seo-company-wesley-chapel",
+  "/seo-for-small-businesses-florida",
+];
 
-  const staticPageUrls: Sitemap = staticPages.map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: route === "" ? 1.0 : 0.8,
-  }));
+function isRouteGroup(segment: string): boolean {
+  return segment.startsWith("(") && segment.endsWith(")");
+}
 
-  // 2. Services (Dynamic)
-  const serviceUrls: Sitemap = (services || [])
+function isDynamicSegment(segment: string): boolean {
+  return segment.startsWith("[") && segment.endsWith("]");
+}
+
+function isHiddenOrIgnored(segment: string): boolean {
+  return (
+    segment.startsWith("_") ||
+    segment.startsWith(".") ||
+    EXCLUDED_SEGMENTS.has(segment)
+  );
+}
+
+function discoverStaticAppRoutes(): Array<{ route: string; lastModified: Date }> {
+  const appDir = path.join(process.cwd(), "app");
+  if (!fs.existsSync(appDir)) {
+    const now = new Date();
+    return FALLBACK_STATIC_PAGES.map((route) => ({ route, lastModified: now }));
+  }
+
+  const discovered: Array<{ route: string; lastModified: Date }> = [];
+
+  const walk = (dir: string, urlSegments: string[]) => {
+    let entries: fs.Dirent[];
+    try {
+      entries = fs.readdirSync(dir, { withFileTypes: true });
+    } catch {
+      return;
+    }
+
+    for (const entry of entries) {
+      if (entry.isFile() && PAGE_FILE_NAMES.has(entry.name)) {
+        const route = urlSegments.length > 0 ? `/${urlSegments.join("/")}` : "";
+        let lastModified = new Date();
+        try {
+          lastModified = fs.statSync(path.join(dir, entry.name)).mtime;
+        } catch {
+          // fallback to current date
+        }
+        discovered.push({ route, lastModified });
+        continue;
+      }
+
+      if (!entry.isDirectory()) continue;
+      if (isHiddenOrIgnored(entry.name) || isDynamicSegment(entry.name)) {
+        continue;
+      }
+
+      const nextSegments = isRouteGroup(entry.name)
+        ? urlSegments
+        : [...urlSegments, entry.name];
+      walk(path.join(dir, entry.name), nextSegments);
+    }
+  };
+
+  walk(appDir, []);
+  return discovered.length > 0
+    ? discovered
+    : FALLBACK_STATIC_PAGES.map((route) => ({ route, lastModified: new Date() }));
+}
+
+function normalizeUrl(urlOrPath: string): string {
+  const trimmed = urlOrPath.trim();
+  if (!trimmed) return BASE_URL;
+
+  let fullUrl = trimmed.startsWith("http")
+    ? trimmed
+    : `${BASE_URL}${trimmed.startsWith("/") ? "" : "/"}${trimmed}`;
+
+  try {
+    const parsed = new URL(fullUrl);
+    if (parsed.hostname === "bayshorecommunication.com") {
+      parsed.hostname = "www.bayshorecommunication.com";
+    }
+    if (parsed.pathname !== "/" && parsed.pathname.endsWith("/")) {
+      parsed.pathname = parsed.pathname.slice(0, -1);
+    }
+    fullUrl = parsed.toString();
+    if (parsed.pathname === "/" && fullUrl.endsWith("/")) {
+      fullUrl = fullUrl.slice(0, -1);
+    }
+  } catch {
+    // keep constructed string if URL parsing fails
+  }
+
+  return fullUrl;
+}
+
+function safeDate(value?: string | Date): Date {
+  if (!value) return new Date();
+  const parsed = value instanceof Date ? value : new Date(value);
+  return Number.isNaN(parsed.getTime()) ? new Date() : parsed;
+}
+
+async function fetchAllPublishedApiBlogs(): Promise<any[]> {
+  const limit = 100;
+  const maxPages = 50;
+  const firstPage = await GetAllBlogData({ page: 1, limit });
+  const allBlogs: any[] = Array.isArray(firstPage?.data) ? [...firstPage.data] : [];
+
+  const totalPages = Math.min(
+    Number(firstPage?.pagination?.totalPages) || 1,
+    maxPages
+  );
+
+  if (totalPages > 1) {
+    const pageRequests: Promise<Awaited<ReturnType<typeof GetAllBlogData>>>[] = [];
+    for (let page = 2; page <= totalPages; page++) {
+      pageRequests.push(GetAllBlogData({ page, limit }));
+    }
+    const results = await Promise.all(pageRequests);
+    for (const res of results) {
+      if (Array.isArray(res?.data)) {
+        allBlogs.push(...res.data);
+      }
+    }
+  }
+
+  return allBlogs.filter(
+    (blog) => blog?.published === true && typeof blog?.slug === "string" && blog.slug.trim() !== ""
+  );
+}
+
+export default async function Sitemap(): Promise<SitemapEntry[]> {
+  // 1. Auto-discovered App Router Static Pages
+  const staticPageUrls: SitemapEntry[] = discoverStaticAppRoutes().map(
+    ({ route, lastModified }) => ({
+      url: normalizeUrl(route),
+      lastModified,
+      changeFrequency: "weekly",
+      priority: route === "" ? 1.0 : 0.8,
+    })
+  );
+
+  // 2. Dynamic Services (/our-services/[service])
+  const serviceUrls: SitemapEntry[] = (services || [])
     .map((service) => service.url)
     .filter(Boolean)
     .map((slug) => ({
-      url: `${baseUrl}/our-services/${slug}`,
+      url: normalizeUrl(`/our-services/${slug}`),
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     }));
 
-  // 3. Printing Packages (Dynamic)
-  const printingPackageUrls: Sitemap = [];
+  // 3. Dynamic Printing Packages (/printing-package/services/[slug])
+  const printingPackageUrls: SitemapEntry[] = [];
   try {
     for (const categoryKey in serviceCategories) {
-      const items = (serviceCategories as any)[categoryKey];
+      const items = (serviceCategories as Record<string, unknown>)[categoryKey];
       if (Array.isArray(items)) {
         for (const item of items) {
-          if (item && typeof item === "object" && "slug" in item && typeof item.slug === "string") {
+          if (
+            item &&
+            typeof item === "object" &&
+            "slug" in item &&
+            typeof item.slug === "string" &&
+            item.slug.trim() !== ""
+          ) {
             printingPackageUrls.push({
-              url: `${baseUrl}/printing-package/services/${item.slug}`,
+              url: normalizeUrl(`/printing-package/services/${item.slug}`),
               lastModified: new Date(),
               changeFrequency: "weekly",
               priority: 0.6,
@@ -100,48 +249,64 @@ export default async function Sitemap(): Promise<Sitemap> {
     console.error("Failed to parse serviceCategories for sitemap:", error);
   }
 
-  // 4. Case Studies
-  const caseStudySlugs = [
-    "bayshore-communication-case-study-of-apex-advisors",
-    "catflix-digital-marketing-case-study",
-    "immigration-lawyer-digital-marketing-case-study",
-  ];
-  const caseStudyUrls: Sitemap = caseStudySlugs.map((slug) => ({
-    url: `${baseUrl}/case-studies/${slug}`,
-    lastModified: new Date(),
-    changeFrequency: "monthly",
-    priority: 0.6,
-  }));
+  // 4. Dynamic Case Studies (/case-studies/[slug])
+  const caseStudyUrls: SitemapEntry[] = (caseindv || [])
+    .map((item) => item.url)
+    .filter(Boolean)
+    .map((rawSlug) => ({
+      url: normalizeUrl(
+        `/case-studies/${rawSlug.trim().replace(/\s+/g, "-").toLowerCase()}`
+      ),
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    }));
 
-  // 5. Blogs (Static & Dynamic API)
-  const staticBlogUrls: Sitemap = (staticBlogs || []).map((blog) => ({
-    url:
-      "canonical" in blog &&
-      typeof blog.canonical === "string" &&
-      blog.canonical.startsWith("http")
-        ? blog.canonical
-        : `${baseUrl}/blog/${blog.slug}`,
-    lastModified: blog.updatedAt ? new Date(blog.updatedAt) : new Date(),
-    changeFrequency: "weekly",
-    priority: 0.7,
-  }));
+  // 5. Static Blogs (/blog/[slug])
+  const staticBlogUrls: SitemapEntry[] = (staticBlogs || [])
+    .filter((blog) => blog?.published !== false && blog?.slug)
+    .map((blog) => {
+      const canonical =
+        "canonical" in blog &&
+        typeof blog.canonical === "string" &&
+        blog.canonical.trim() !== ""
+          ? blog.canonical
+          : `/blog/${blog.slug}`;
 
-  let apiBlogUrls: Sitemap = [];
-  try {
-    const blogData = await GetAllBlogData({ limit: 100 });
-    apiBlogUrls = (blogData?.data || [])
-      .filter((blog: any) => blog?.published === true && blog?.slug)
-      .map((blog: any) => ({
-        url: `${baseUrl}/blog/${blog.slug}`,
-        lastModified: blog.updatedAt ? new Date(blog.updatedAt) : new Date(),
+      return {
+        url: normalizeUrl(canonical),
+        lastModified: safeDate(
+          ("updatedAt" in blog && blog.updatedAt) ||
+            ("createdAt" in blog && blog.createdAt) ||
+            undefined
+        ),
         changeFrequency: "weekly",
         priority: 0.7,
-      }));
+      };
+    });
+
+  // 6. Dynamic API Blogs (/blog/[slug]) - all published pages
+  let apiBlogUrls: SitemapEntry[] = [];
+  try {
+    const publishedApiBlogs = await fetchAllPublishedApiBlogs();
+    apiBlogUrls = publishedApiBlogs.map((blog) => {
+      const target =
+        typeof blog?.canonical === "string" && blog.canonical.trim() !== ""
+          ? blog.canonical
+          : `/blog/${blog.slug}`;
+
+      return {
+        url: normalizeUrl(target),
+        lastModified: safeDate(blog.updatedAt || blog.createdAt),
+        changeFrequency: "weekly",
+        priority: 0.7,
+      };
+    });
   } catch (error) {
     console.error("Failed to fetch blog data for sitemap:", error);
   }
 
-  // Combine all sitemap entries
+  // Combine & deduplicate while preserving order
   const allEntries = [
     ...staticPageUrls,
     ...serviceUrls,
@@ -151,12 +316,10 @@ export default async function Sitemap(): Promise<Sitemap> {
     ...apiBlogUrls,
   ];
 
-  // Remove potential duplicates
-  const uniqueUrlsMap = new Map<string, typeof allEntries[0]>();
+  const uniqueUrlsMap = new Map<string, SitemapEntry>();
   for (const entry of allEntries) {
     uniqueUrlsMap.set(entry.url, entry);
   }
 
   return Array.from(uniqueUrlsMap.values());
 }
-

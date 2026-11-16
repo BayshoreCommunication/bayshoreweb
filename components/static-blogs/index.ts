@@ -64,8 +64,12 @@ import MobileWebsiteDesignBlog, {
 import HowToGetLeadsForYourBusinessBlog, {
   howToGetLeadsForYourBusinessBlog,
 } from "./blogs/how-to-get-leads-for-your-business";
+import WhatAreLocalSeoServicesACompleteGuideForBusinessesBlog, {
+  whatAreLocalSeoServicesACompleteGuideForBusinessesBlog,
+} from "./blogs/what-are-local-seo-services-a-complete-guide-for-businesses";
 
 export const staticBlogs = [
+  whatAreLocalSeoServicesACompleteGuideForBusinessesBlog,
   howToGetLeadsForYourBusinessBlog,
   howExpertiseBasedContentBuildsTrustBlog,
   smallFieldTweaksBlog,
@@ -128,6 +132,8 @@ export const staticBlogComponents = {
     HowMuchDoesKeywordResearchCostBlog,
   [mobileWebsiteDesignBlog.slug]: MobileWebsiteDesignBlog,
   [howToGetLeadsForYourBusinessBlog.slug]: HowToGetLeadsForYourBusinessBlog,
+  [whatAreLocalSeoServicesACompleteGuideForBusinessesBlog.slug]:
+    WhatAreLocalSeoServicesACompleteGuideForBusinessesBlog,
 };
 
 
