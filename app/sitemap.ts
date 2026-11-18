@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { MetadataRoute } from "next";
+import { headers } from "next/headers";
 import { services } from "@/components/unique/services/Service";
 import { serviceCategories } from "@/config/data";
 import { caseindv } from "@/config/caseStudies";
@@ -89,9 +90,59 @@ function isHiddenOrIgnored(segment: string): boolean {
   );
 }
 
+function discoverRoutesFromAppManifest(): Array<{
+  route: string;
+  lastModified: Date;
+}> {
+  const distDir = process.env.NEXT_DIST_DIR || ".next";
+  const manifestPath = path.join(
+    process.cwd(),
+    distDir,
+    "server",
+    "app-paths-manifest.json"
+  );
+  if (!fs.existsSync(manifestPath)) {
+    return [];
+  }
+
+  try {
+    const manifestStat = fs.statSync(manifestPath);
+    const manifest = JSON.parse(
+      fs.readFileSync(manifestPath, "utf-8")
+    ) as Record<string, string>;
+    const routes: Array<{ route: string; lastModified: Date }> = [];
+
+    for (const key of Object.keys(manifest)) {
+      if (!key.endsWith("/page")) continue;
+      const rawSegments = key.split("/").filter(Boolean);
+      rawSegments.pop(); // remove trailing "page"
+
+      if (
+        rawSegments.some(
+          (seg) => isHiddenOrIgnored(seg) || isDynamicSegment(seg)
+        )
+      ) {
+        continue;
+      }
+
+      const urlSegments = rawSegments.filter((seg) => !isRouteGroup(seg));
+      const route = urlSegments.length > 0 ? `/${urlSegments.join("/")}` : "";
+      routes.push({ route, lastModified: manifestStat.mtime });
+    }
+
+    return routes;
+  } catch {
+    return [];
+  }
+}
+
 function discoverStaticAppRoutes(): Array<{ route: string; lastModified: Date }> {
   const appDir = path.join(process.cwd(), "app");
   if (!fs.existsSync(appDir)) {
+    const manifestRoutes = discoverRoutesFromAppManifest();
+    if (manifestRoutes.length > 0) {
+      return manifestRoutes;
+    }
     const now = new Date();
     return FALLBACK_STATIC_PAGES.map((route) => ({ route, lastModified: now }));
   }
@@ -132,8 +183,13 @@ function discoverStaticAppRoutes(): Array<{ route: string; lastModified: Date }>
   };
 
   walk(appDir, []);
-  return discovered.length > 0
-    ? discovered
+  if (discovered.length > 0) {
+    return discovered;
+  }
+
+  const manifestRoutes = discoverRoutesFromAppManifest();
+  return manifestRoutes.length > 0
+    ? manifestRoutes
     : FALLBACK_STATIC_PAGES.map((route) => ({ route, lastModified: new Date() }));
 }
 
@@ -200,6 +256,9 @@ async function fetchAllPublishedApiBlogs(): Promise<any[]> {
 }
 
 export default async function Sitemap(): Promise<SitemapEntry[]> {
+  // Opt out of static build caching in Next.js 13.4.5 so new CMS blogs/URLs appear on every request
+  headers();
+
   // 1. Auto-discovered App Router Static Pages
   const staticPageUrls: SitemapEntry[] = discoverStaticAppRoutes().map(
     ({ route, lastModified }) => ({
