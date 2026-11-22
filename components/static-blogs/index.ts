@@ -67,8 +67,12 @@ import HowToGetLeadsForYourBusinessBlog, {
 import WhatAreLocalSeoServicesACompleteGuideForBusinessesBlog, {
   whatAreLocalSeoServicesACompleteGuideForBusinessesBlog,
 } from "./blogs/what-are-local-seo-services-a-complete-guide-for-businesses";
+import WhySeoIsImportantForBusinessBlog, {
+  whySeoIsImportantForBusinessBlog,
+} from "./blogs/why-seo-is-important-for-business";
 
 export const staticBlogs = [
+  whySeoIsImportantForBusinessBlog,
   whatAreLocalSeoServicesACompleteGuideForBusinessesBlog,
   howToGetLeadsForYourBusinessBlog,
   howExpertiseBasedContentBuildsTrustBlog,
@@ -98,6 +102,7 @@ export const getStaticBlogBySlug = (slug: string) =>
   staticBlogs.find((blog) => blog.slug === slug);
 
 export const staticBlogComponents = {
+  [whySeoIsImportantForBusinessBlog.slug]: WhySeoIsImportantForBusinessBlog,
   [howMuchDoSeoServicesCostBlog.slug]: HowMuchDoSeoServicesCostBlog,
   [firstClickVsLastClickAttributionMarketingBlog.slug]:
     FirstClickVsLastClickAttributionMarketingBlog,
