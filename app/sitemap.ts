@@ -13,6 +13,32 @@ export const revalidate = 0;
 
 const BASE_URL = "https://www.bayshorecommunication.com";
 
+/**
+ * Single deploy/build date used as `lastModified` for every sitemap entry.
+ * Determined at runtime from the compiled build artifacts (.next/BUILD_ID is
+ * written once per `next build`), so every deployed version reports its own
+ * deploy time instead of per-file mtimes or request-time dates.
+ */
+function getDeployDate(): Date {
+  const distDir = process.env.NEXT_DIST_DIR || ".next";
+  const deployMarkerCandidates = [
+    path.join(process.cwd(), distDir, "BUILD_ID"),
+    path.join(process.cwd(), distDir, "server", "app-paths-manifest.json"),
+  ];
+  for (const markerPath of deployMarkerCandidates) {
+    try {
+      const stat = fs.statSync(markerPath);
+      if (stat.isFile()) return stat.mtime;
+    } catch {
+      // marker not found, try next candidate
+    }
+  }
+  // Dev server / fresh checkout: fall back to current time
+  return new Date();
+}
+
+const DEPLOY_DATE: Date = getDeployDate();
+
 type SitemapEntry = MetadataRoute.Sitemap[number] & {
   changeFrequency?: string;
   priority?: number;
@@ -220,12 +246,6 @@ function normalizeUrl(urlOrPath: string): string {
   return fullUrl;
 }
 
-function safeDate(value?: string | Date): Date {
-  if (!value) return new Date();
-  const parsed = value instanceof Date ? value : new Date(value);
-  return Number.isNaN(parsed.getTime()) ? new Date() : parsed;
-}
-
 async function fetchAllPublishedApiBlogs(): Promise<any[]> {
   const limit = 100;
   const maxPages = 50;
@@ -261,9 +281,9 @@ export default async function Sitemap(): Promise<SitemapEntry[]> {
 
   // 1. Auto-discovered App Router Static Pages
   const staticPageUrls: SitemapEntry[] = discoverStaticAppRoutes().map(
-    ({ route, lastModified }) => ({
+    ({ route }) => ({
       url: normalizeUrl(route),
-      lastModified,
+      lastModified: DEPLOY_DATE,
       changeFrequency: "weekly",
       priority: route === "" ? 1.0 : 0.8,
     })
@@ -275,7 +295,7 @@ export default async function Sitemap(): Promise<SitemapEntry[]> {
     .filter(Boolean)
     .map((slug) => ({
       url: normalizeUrl(`/our-services/${slug}`),
-      lastModified: new Date(),
+      lastModified: DEPLOY_DATE,
       changeFrequency: "weekly",
       priority: 0.7,
     }));
@@ -296,7 +316,7 @@ export default async function Sitemap(): Promise<SitemapEntry[]> {
           ) {
             printingPackageUrls.push({
               url: normalizeUrl(`/printing-package/services/${item.slug}`),
-              lastModified: new Date(),
+              lastModified: DEPLOY_DATE,
               changeFrequency: "weekly",
               priority: 0.6,
             });
@@ -316,7 +336,7 @@ export default async function Sitemap(): Promise<SitemapEntry[]> {
       url: normalizeUrl(
         `/case-studies/${rawSlug.trim().replace(/\s+/g, "-").toLowerCase()}`
       ),
-      lastModified: new Date(),
+      lastModified: DEPLOY_DATE,
       changeFrequency: "monthly",
       priority: 0.6,
     }));
@@ -334,11 +354,7 @@ export default async function Sitemap(): Promise<SitemapEntry[]> {
 
       return {
         url: normalizeUrl(canonical),
-        lastModified: safeDate(
-          ("updatedAt" in blog && blog.updatedAt) ||
-            ("createdAt" in blog && blog.createdAt) ||
-            undefined
-        ),
+        lastModified: DEPLOY_DATE,
         changeFrequency: "weekly",
         priority: 0.7,
       };
@@ -356,7 +372,7 @@ export default async function Sitemap(): Promise<SitemapEntry[]> {
 
       return {
         url: normalizeUrl(target),
-        lastModified: safeDate(blog.updatedAt || blog.createdAt),
+        lastModified: DEPLOY_DATE,
         changeFrequency: "weekly",
         priority: 0.7,
       };
