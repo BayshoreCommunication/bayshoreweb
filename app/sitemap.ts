@@ -15,25 +15,26 @@ const BASE_URL = "https://www.bayshorecommunication.com";
 
 /**
  * Single deploy/build date used as `lastModified` for every sitemap entry.
- * Determined at runtime from the compiled build artifacts (.next/BUILD_ID is
- * written once per `next build`), so every deployed version reports its own
- * deploy time instead of per-file mtimes or request-time dates.
+ *
+ * `next build` finishes by writing `<dist>.next/deploy-date.json` (see
+ * scripts/write-deploy-date.js), so the server knows the true build time even
+ * when the deployment method (FTP, file copy, rsync -t) preserves ancient
+ * artifact mtimes. If the stamp is missing (dev server), fall back to the
+ * current time — never to artifact mtimes, which can be decades old.
  */
 function getDeployDate(): Date {
   const distDir = process.env.NEXT_DIST_DIR || ".next";
-  const deployMarkerCandidates = [
-    path.join(process.cwd(), distDir, "BUILD_ID"),
-    path.join(process.cwd(), distDir, "server", "app-paths-manifest.json"),
-  ];
-  for (const markerPath of deployMarkerCandidates) {
-    try {
-      const stat = fs.statSync(markerPath);
-      if (stat.isFile()) return stat.mtime;
-    } catch {
-      // marker not found, try next candidate
-    }
+  const stampPath = path.join(process.cwd(), distDir, "deploy-date.json");
+  try {
+    const stamp = JSON.parse(fs.readFileSync(stampPath, "utf-8")) as {
+      deployedAt?: string;
+    };
+    const parsed = stamp?.deployedAt ? new Date(stamp.deployedAt) : null;
+    if (parsed && !Number.isNaN(parsed.getTime())) return parsed;
+  } catch {
+    // stamp not found (dev server) or unreadable — fall through
   }
-  // Dev server / fresh checkout: fall back to current time
+  // Dev server / stampless deployment: current time (module load ≈ server start)
   return new Date();
 }
 
